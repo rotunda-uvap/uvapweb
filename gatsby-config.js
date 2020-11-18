@@ -13,12 +13,7 @@ module.exports = {
         path: `./src/data/`,
       },
     },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `./src/posts/`,
-      },
-    },
+    
     {
       resolve: `gatsby-source-filesystem`,
       options: {
