@@ -9,7 +9,7 @@ public_folder: /assets
 collections:
   - name: news
     label: News
-    folder: content/news
+    folder: news
     create: true
     slug: "{{slug}}"
     fields:

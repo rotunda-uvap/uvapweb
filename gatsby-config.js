@@ -13,19 +13,36 @@ module.exports = {
         path: `./src/data/`,
       },
     },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `./content/news/`,
-      },
-    },
+
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `./src/pages/`,
       },
     },
-    
+    //may not need this last two
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        // CommonMark mode (default: true)
+        commonmark: true,
+        // Footnotes mode (default: true)
+        footnotes: true,
+        // Pedantic mode (default: true)
+        pedantic: true,
+        // GitHub Flavored Markdown mode (default: true)
+        gfm: true,
+        // Plugins configs
+        plugins: [],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-netlify-cms-paths`,
+      options: {
+        // Path to your Netlify CMS config file
+        cmsConfig: `/static/admin/config.yml`
+      }
+    },
   `gatsby-plugin-slug`,
   `gatsby-plugin-netlify-cms`,
   ],
