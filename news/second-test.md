@@ -1,5 +1,5 @@
 ---
-path: test-two
+path: content/news/test-two
 date: 2020-11-18T21:42:09.964Z
 title: Second Test
 ---
