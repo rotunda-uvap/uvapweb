@@ -1,5 +1,5 @@
 ---
-path: Kapsidelis-up-week
+path: kapsidelis-up-week
 date: 2020-11-18T20:41:37.816Z
 title: Celebrating UP Week with Tom Kapsidelis, author of After Virginia Tech
 ---
