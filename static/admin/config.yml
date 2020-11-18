@@ -9,10 +9,9 @@ public_folder: /assets
 collections:
   - name: news
     label: News
-    folder: src/news
+    folder: content/news
     create: true
-    slug: "{{title}}"
-    preview_path: "news/{{slug}}"
+    slug: "{{slug}}"
     fields:
       - { name: path, label: Path }
       - { name: date, label: Date, widget: datetime }
