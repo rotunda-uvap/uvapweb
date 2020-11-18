@@ -11,6 +11,8 @@ collections:
     label: News
     folder: src/news
     create: true
+    slug: "{{title}}"
+    preview_path: "news/{{slug}}"
     fields:
       - { name: path, label: Path }
       - { name: date, label: Date, widget: datetime }
