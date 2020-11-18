@@ -1,0 +1,19 @@
+backend:
+  name: github
+  repo: meadowlarque/uvapjson
+  branch: main
+
+media_folder: static/assets
+public_folder: /assets
+
+collections:
+  - name: news
+    label: News
+    folder: content/news
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { name: path, label: Path }
+      - { name: date, label: Date, widget: datetime }
+      - { name: title, label: Title }
+      - { name: body, label: Body, widget: markdown }
