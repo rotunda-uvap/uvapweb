@@ -6,22 +6,25 @@ export default function Home() {
   return (
     <Layout>
     <div>UVA Press Test Website Using Gatsby JSON Sourcing with Netlify CMS</div>
-    <h3 className="text-2xl font-black mt-16 mb-2">
+    <div className="flex flex-col">
+      <button className="text-2xl bg-blue-500 px-5 py-5 my-5 rounded flex-auto">
                   <Link
-                    className="text-blue-400 shadow-none"
+                    className="text-white shadow-none"
                     to={"/news-posts"}
                   >
                     See All News Posts
                   </Link>
-                </h3>
-       <h3 className="text-2xl font-black mt-16 mb-2">
+                </button>
+       <button className="text-2xl bg-blue-500 px-5 py-5 my-5 flex-auto rounded">
                   <Link
-                    className="text-blue-400 shadow-none"
+                    className="text-white shadow-none"
                     to={"/books"}
                   >
                     See All Books Imported
                   </Link>
-                </h3>         
+                </button>         
+    </div>
+    
     </Layout>
   )
   

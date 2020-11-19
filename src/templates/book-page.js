@@ -18,8 +18,8 @@ export default ({ data }) => {
       {book.Reviews.map(review => (
             <>
             <div className="container px-5 py-5 mx-auto flex flex-wrap">
-            <div key={`teaser`} dangerouslySetInnerHTML={{ __html: review.html.split(' ').splice(0, 25).join(' ') + '...' }}></div>
-            <h6>{review.attribution}</h6>
+            <blockquote dangerouslySetInnerHTML={{ __html: review.html }}/>
+            <h6 className="pl-8 italic text-gray-500">-{review.attribution}</h6>
             </div>
             
             </>
@@ -38,6 +38,10 @@ export default ({ data }) => {
             </>
         ))}
     </div>
+    
+
+
+
 
    </Layout>
     
