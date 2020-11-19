@@ -10,14 +10,16 @@ collections:
   - name: 'news'
     label: 'News'
     folder: 'content/news'
+    publish_mode: editorial_workflow
+    preview_path: '{{title}}/index'
     create: true
     slug: 'index'
     media_folder: ''
     public_folder: ''
     path: '{{title}}/index'
     fields:
-      - { name: path, label: Path }
-      - { name: date, label: Date, widget: datetime }
+      - { name: path, label: Path, required: false, }
       - { name: title, label: Title }
       - { name: body, label: Body, widget: markdown }
-      - { label: 'Description', name: 'description', widget: 'string' }
+      - { label: 'Description', name: 'description', widget: 'string', required: false }
+    

@@ -1,6 +1,5 @@
 ---
 path: content/news/test-netlify
-date: 2020-11-19T03:00:19.855Z
 title: Test from Netflify
 description: I suppose this is the teaser?
 ---

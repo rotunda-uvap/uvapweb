@@ -1,6 +1,5 @@
 ---
 path: content/news/test-gatsby
-date: 2020-11-18T21:42:09.964Z
 title: Test made on gatsby
 ---
 Lörem ipsum dolor sit amet, dedeeshka duu. Leebur deroor iehroom, Börk Börk Börk! Nawei raitinen de wehbsyte. Nawei raitinen de wehbsyte. Yöva gäta stahrt sömwaer. Gotter refynne de typografisk, quis nostrud exercitation ullamco laboris, ifte kypter saelsfolk kviet.Ut enim ad minim veniam, letsi ifder svensk og latin makinen dehr graek.

@@ -1,6 +1,5 @@
 ---
 path: good-government
-date: 2020-11-19T03:25:49.007Z
 title: What Makes Good Government? A Conversation with History Editor Nadine
   Zimmerli and Author Christopher Pearl
 description: Blog post from Nadine Zimmerli, Editor for History and Social Sciences
