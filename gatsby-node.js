@@ -8,6 +8,20 @@ exports.createSchemaCustomization = ({ actions }) => {
       type BooksJson implements Node  {
         BookID: String!       
       }     
+      type MarkdownRemark implements Node {
+        frontmatter: Frontmatter
+        fields: Fields
+      }
+  
+      type Frontmatter {
+        title: String
+        description: String
+        date: Date @dateformat
+      }
+  
+      type Fields {
+        slug: String
+      }
     `
     createTypes(typeDefs)
   }
@@ -24,6 +38,18 @@ exports.createSchemaCustomization = ({ actions }) => {
                 }
               }
           }
+
+        allMarkdownRemark {
+          edges {
+            node {
+              id
+              fields {
+                slug
+              }
+            }
+          }
+        }
+
     }
  `
     ).then(result => {
@@ -37,10 +63,16 @@ exports.createSchemaCustomization = ({ actions }) => {
           })
         })
        
+        result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+          createPage({
+            path: node.fields.slug,
+            component: path.resolve(`./src/templates/news-page.js`),
+            context: {
+              id: node.id,
+            },
+          })
+        })
         
-        
-        
-
 
       })
       
