@@ -16,7 +16,15 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `./src/pages/news/`,
+        path: `${__dirname}/content/news`,
+        name: `news`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/assets`,
+        name: `assets`,
       },
     },
     {
@@ -25,7 +33,7 @@ module.exports = {
         path: `./src/pages/`,
       },
     },
-    //may not need this last two
+    //may not need last two
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -50,5 +58,6 @@ module.exports = {
     },
   `gatsby-plugin-slug`,
   `gatsby-plugin-netlify-cms`,
+  
   ],
 }
