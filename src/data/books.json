@@ -8,75 +8,41 @@
       "AuthorCredit": "Daryl Cumber Dance",
       "Series": [],
       "InternalSeriesVolume": [],
-      "MainDescription": [
-         "There is perhaps no other person who has been so often and obsessively featured in any writer’s canon as Jamaica Kincaid’s mother, Annie Drew. In this provocative new book, Daryl Dance argues that everything Kincaid has written, regardless of its apparent theme, actually relates to Kincaid’s efforts to free herself from her mother, whether her subject is ostensibly other family members, her home nation, a precolonial world, or even Kincaid herself.A devoted reader of Kincaid’s work, Dance had long been aware of the author’s love-hate relationship with her mother, but it was not until reading the 2008 essay \"The Estrangement\" that Dance began to ponder who this woman named Annie Victoria Richardson Drew really was. Dance decided to seek the answers herself, embarking on a years-long journey to unearth the real Annie Drew.",
-         {
-            "#text": [
-               "Through interviews and extensive research, Dance has pieced together a fuller, more contextualized picture in an attempt to tell Annie Drew’s story. Previous analyses of Kincaid’s relationship with her mother have not gone beyond the writer’s own carefully orchestrated and sometimes contrived portraits of her.",
-               "offers an alternate reading of Kincaid’s work that expands our understanding of the object of such passionate love and such ferocious hatred, an ordinary woman who became an unforgettable literary figure through her talented daughter’s renderings."
-            ],
-            "i": "In Search of Annie Drew"
-         }
+      "MainDescription": { "html": "<p>There is perhaps no other person who has been so often and obsessively featured in any writer’s canon as Jamaica Kincaid’s mother, Annie Drew. In this provocative new book, Daryl Dance argues that everything Kincaid has written, regardless of its apparent theme, actually relates to Kincaid’s efforts to free herself from her mother, whether her subject is ostensibly other family members, her home nation, a precolonial world, or even Kincaid herself.A devoted reader of Kincaid’s work, Dance had long been aware of the author’s love-hate relationship with her mother, but it was not until reading the 2008 essay &quotThe Estrangement&quot that Dance began to ponder who this woman named Annie Victoria Richardson Drew really was. Dance decided to seek the answers herself, embarking on a years-long journey to unearth the real Annie Drew.</p><p>Through interviews and extensive research, Dance has pieced together a fuller, more contextualized picture in an attempt to tell Annie Drew’s story. Previous analyses of Kincaid’s relationship with her mother have not gone beyond the writer’s own carefully orchestrated and sometimes contrived portraits of her. <i>In Search of Annie Drew</i> offers an alternate reading of Kincaid’s work that expands our understanding of the object of such passionate love and such ferocious hatred, an ordinary woman who became an unforgettable literary figure through her talented daughter’s renderings.</p>"},
+      "Bindings": [
+         {"type": "Cloth",
+          "price": "75.00",
+          "pages": "264",
+          "ISBN": "9780813938455",
+          "date": "Jun 2016",
+          "buylink": "http://uva.longleafservices.org/cart/add?productid=81393845"
+         },
+         {"type": "Paper",
+            "price": "29.50",
+            "pages": "264",
+            "ISBN": "9780813938455",
+            "date": "Jun 2016",
+            "buylink": "http://uva.longleafservices.org/cart/add?productid=81393846"
+           },
+           {"type": "Ebook",
+            "price": "29.50",
+            "pages": "264",
+            "ISBN": "9780813938455",
+            "date": "Jun 2016",
+            "buylink": "http://uva.longleafservices.org/cart/add?productid=81393846"
+           }
+
       ],
-      "BindingInfo": {
-         "div": [
-            {
-               "a": {
-                  "@href": "http://uva.longleafservices.org/cart/add?productid=81393845",
-                  "@id": "29.50",
-                  "#text": "BUY"
-               },
-               "#text": " Ebook · 264 pp. · ISBN 9780813938455 · $29.50 · Jun 2016"
-            },
-            {
-               "a": {
-                  "@href": "http://uva.longleafservices.org/cart/add?productid=81393846",
-                  "@id": "29.50",
-                  "#text": "BUY"
-               },
-               "#text": " Paper · 264 pp. · 6 × 9 · ISBN 9780813938462 · $29.50 · Jun 2016"
-            },
-            {
-               "a": {
-                  "@href": "http://uva.longleafservices.org/cart/add?productid=81393844",
-                  "@id": "75.00",
-                  "#text": "BUY"
-               },
-               "#text": " Cloth · 264 pp. · 6 × 9 · ISBN 9780813938448 · $75.00 · Jun 2016"
-            }
-         ]
-      },
-      "ReviewHead": "Reviews",
-      "ReviewQuotes": [
-         [
-            {
-               "p": {
-                  "i": "In Search of Annie Drew",
-                  "#text": "is daring, controversial, and impressive. Through meticulous attention to Kincaid’s own words, as well as to the few that Drew provided, Dance succeeds in showing a tangled emotional relationship between two exceptionally strong personalities, neither of whom would admit--consistently and directly--her tremendous love for the other. This war of a relationship is responsible for the writer Kincaid became as well as for the subject matter of most of her works."
-               }
-            },
-            "Trudier Harris, University of Alabama, author of Saints, Sinners, Saviors: Strong Black Women in African American Literature"
-         ],
-         [
-            {
-               "p": "This study, interwoven with Annie's friends' accounts and Kincaid's literary world, reveals a fascinating glimpse of Annie Drew's life.... Anyone acquainted with Kincaid's work will be intrigued by this portrayal."
-            },
-            "Journal of Postcolonial Writing"
-         ]
-      ],
+      "Reviews":[
+         {"html": "<p> <i>In Search of Annie Drew</i> is daring, controversial, and impressive. Through meticulous attention to Kincaid’s own words, as well as to the few that Drew provided, Dance succeeds in showing a tangled emotional relationship between two exceptionally strong personalities, neither of whom would admit--consistently and directly--her tremendous love for the other. This war of a relationship is responsible for the writer Kincaid became as well as for the subject matter of most of her works.</p>", 
+         "attribution": "Trudier Harris, University of Alabama, author of Saints, Sinners, Saviors: Strong Black Women in African American Literature"},
+         {"html": "<p>This study, interwoven with Annie's friends' accounts and Kincaid's literary world, reveals a fascinating glimpse of Annie Drew's life.... Anyone acquainted with Kincaid's work will be intrigued by this portrayal.</p>",
+          "attribution": "Journal of Postcolonial Writing"}
+       ],
+      
       "Prizes": [],
-      "BioNote": {
-         "p": {
-            "#text": [
-               "Daryl Cumber Dance, Professor of English Emerita at the University of Richmond, is the author of",
-               "and editor of"
-            ],
-            "i": [
-               "Shuckin’ and Jivin’: Folklore from Contemporary African Americans",
-               "Honey Hush! An Anthology of African American Women’s Humor."
-            ]
-         }
-      },
+      "BioNote": {"html": "<p>Daryl Cumber Dance, Professor of English Emerita at the University of Richmond, is the author of <i>Shuckin’ and Jivin’: Folklore from Contemporary African Americans</i> and editor of <i>Honey Hush! An Anthology of African American Women’s Humor.</i></p>"},
+      
       "Authors": {
          "Author": "Dance, Daryl Cumber"
       },
@@ -95,17 +61,12 @@
          "0813938449",
          "9780813938448"
       ],
-      "GooglePreview": {
-         "div": {
-            "script": {
-               "@type": "text/javascript",
-               "#text": "GBS_insertPreviewButtonPopup([ 0813938457,9780813938455,0813938465,9780813938462,0813938449,9780813938448 ]);"
-            }
-         }
-      },
+      
+      "CoverImageFull": "4412.jpg",
       "CoverImageThumb": "4412_T.jpg",
       "CoverImageMain": "4412_M.jpg"
    },
+
    {
       "BookID": "2705",
       "Title": "The Civilizations of Africa",
@@ -115,79 +76,42 @@
       "AuthorCredit": "Christopher Ehret",
       "Series": [],
       "InternalSeriesVolume": [],
-      "MainDescription": [
-         {
-            "#text": [
-               "Since its initial publication,",
-               "has established itself as the most authoritative text available on early African history. Addressing the glaring lack of works concentrating on earlier African eras, Christopher Ehret’s trailblazing book has been paired with histories of Africa since 1800 to build a full and well-rounded understanding of the roles of Africa’s peoples in human history. Examining inventions and civilizations from 22,000 BCE to 1800 CE, Ehret explores the wide range of social and cultural as well as technological and economic change in Africa, relating all these facets of African history to developments in the rest of the world."
-            ],
-            "i": "The Civilizationsof Africa"
-         },
-         "This updated edition incorporates new research, as well as an extensive new selection of color images."
+      "MainDescription":{"html": "<p>Since its initial publication, <i>The Civilizationsof Africa</i> has established itself as the most authoritative text available on early African history. Addressing the glaring lack of works concentrating on earlier African eras, Christopher Ehret’s trailblazing book has been paired with histories of Africa since 1800 to build a full and well-rounded understanding of the roles of Africa’s peoples in human history. Examining inventions and civilizations from 22,000 BCE to 1800 CE, Ehret explores the wide range of social and cultural as well as technological and economic change in Africa, relating all these facets of African history to developments in the rest of the world.</p><p>This updated edition incorporates new research, as well as an extensive new selection of color images.</p>"},
+      "Bindings": [
+         
+         {"type": "Paper",
+            "price": "35.00",
+            "pages": "488",
+            "ISBN": "9780813928807",
+            "date": "Aug 2016",
+            "buylink": "http://uva.longleafservices.org/cart/add?productid=81392880"
+           },
+           {"type": "Ebook",
+            "price": "35.00",
+            "pages": "264",
+            "ISBN": "9780813946030",
+            "date": "Nov 2020",
+            "buylink": "http://uva.longleafservices.org/cart/add?productid=81394603"
+           }
+
       ],
-      "BindingInfo": {
-         "div": [
-            {
-               "a": {
-                  "@href": "http://uva.longleafservices.org/cart/add?productid=81392880",
-                  "@id": "35.00",
-                  "#text": "BUY"
-               },
-               "#text": " Paper · 488 pp. · 7.25 × 9.25 · ISBN 9780813928807 · $35.00 · Aug 2016"
-            },
-            {
-               "a": {
-                  "@href": "http://uva.longleafservices.org/cart/add?productid=81394603",
-                  "@id": "35.00",
-                  "#text": "BUY"
-               },
-               "#text": " Ebook · 488 pp. · ISBN 9780813946030 · $35.00 · Nov 2020"
-            }
-         ]
-      },
-      "ReviewHead": "Reviews",
-      "ReviewQuotes": [
-         [
-            {
-               "p": "Challenging and innovative... thorough and masterful.... One hopes that Christopher Ehret has initiated a new trend in the writing of African history textbooks, one that challenges previously accepted chronologies and ideas and presents us with an interpretation that connects social, economic, political, and cultural history."
-            },
-            "African Studies Review"
-         ],
-         [
-            {
-               "p": "Challenges historians to rethink how they teach the African past.... Ehret goes boldly where no writer of an African history textbook has ever gone before.... [The book] has convinced me teachers should stress the deep past, the past that produced the intellectual, cultural, and—yes—spiritual resources that are the bedrock hope of an Africa battered by the past few centuries."
-            },
-            "International Journal of African Historical Studies"
-         ],
-         [
-            {
-               "p": "An authoritative and strikingly original overview of African history up to 1800, written at a level that will be accessible to entering college students."
-            },
-            "Patrick Manning, Northeastern University, author of Migration in Modern World History, 1500–2000"
-         ],
-         [
-            {
-               "p": "With this text, Christopher Ehret provides a compelling account of early African history suitable for undergraduates and those without background in the field, updating the first edition (2002) with recent research.... Anyone who has taught a survey course about Africa knows that the sheer scale of the undertaking is a significant challenge, but Ehret’s narrative moves back and forth easily between big-picture developments and closeto-the-ground details."
-            },
-            "The International Journal of African Historical Studies"
-         ],
-         [
-            {
-               "p": "Ehret offers us systematic and thoughtful coverage of Africa’s early history, dividing the period between 22,000 b.c.e. and 1450 into six long chapters, which draw mainly upon his own publications in the field of historical linguistics but also upon archaeology and occasionally other disciplines."
-            },
-            "Anthropos"
-         ]
-      ],
+      "Reviews":[
+         {"html": "<p>Challenging and innovative... thorough and masterful.... One hopes that Christopher Ehret has initiated a new trend in the writing of African history textbooks, one that challenges previously accepted chronologies and ideas and presents us with an interpretation that connects social, economic, political, and cultural history.</p>",
+         "attribution": "African Studies Review"},
+         {"html": "<p>Challenges historians to rethink how they teach the African past.... Ehret goes boldly where no writer of an African history textbook has ever gone before.... [The book] has convinced me teachers should stress the deep past, the past that produced the intellectual, cultural, and—yes—spiritual resources that are the bedrock hope of an Africa battered by the past few centuries.</p>",
+          "attribution": "International Journal of African Historical Studies"},
+         {"html": "<p>An authoritative and strikingly original overview of African history up to 1800, written at a level that will be accessible to entering college students.</p>",
+         "attribution": "Patrick Manning, Northeastern University, author of Migration in Modern World History, 1500–2000"},
+         {"html": "<p>With this text, Christopher Ehret provides a compelling account of early African history suitable for undergraduates and those without background in the field, updating the first edition (2002) with recent research.... Anyone who has taught a survey course about Africa knows that the sheer scale of the undertaking is a significant challenge, but Ehret’s narrative moves back and forth easily between big-picture developments and closeto-the-ground details.</p>",
+          "attribution": "The International Journal of African Historical Studies"},
+          {"html": "<p>Ehret offers us systematic and thoughtful coverage of Africa’s early history, dividing the period between 22,000 b.c.e. and 1450 into six long chapters, which draw mainly upon his own publications in the field of historical linguistics but also upon archaeology and occasionally other disciplines.</p>",
+            "attribution": "Anthropos"}
+       ],
+      
+      
+      
       "Prizes": [],
-      "BioNote": {
-         "p": {
-            "#text": [
-               "Christopher Ehret is Professor of History Emeritus at the University of California, Los Angeles, and the author of",
-               "(Virginia)."
-            ],
-            "i": "An African Classical Age: Eastern and Southern Africa in World History, 1000 B.C. to A.D. 400"
-         }
-      },
+      "BioNote": {"html": "<p>Christopher Ehret is Professor of History Emeritus at the University of California, Los Angeles, and the author of <i>An African Classical Age: Eastern and Southern Africa in World History, 1000 B.C. to A.D. 400</i> (Virginia).</p>"},
       "Authors": {
          "Author": "Ehret, Christopher"
       },
@@ -204,371 +128,10 @@
          "0813946034",
          "9780813946030"
       ],
-      "GooglePreview": {
-         "div": {
-            "script": {
-               "@type": "text/javascript",
-               "#text": "GBS_insertPreviewButtonPopup([ 081392880x,9780813928807,0813946034,9780813946030 ]);"
-            }
-         }
-      },
+      "CoverImageFull": [],
       "CoverImageThumb": [],
       "CoverImageMain": "2705_M.jpg"
-   },
-   {
-      "BookID": "4360",
-      "Title": "Victorian Poets and the Changing Bible",
-      "Subtitle": [],
-      "PublicationDate": "2011-11-17",
-      "DaysSincePublication": "3287",
-      "AuthorCredit": "Charles LaPorte",
-      "Series": "Victorian Literature and Culture Series",
-      "InternalSeriesVolume": [],
-      "MainDescription": [
-         {
-            "i": "Victorian Poets and the Changing Bible",
-            "#text": "charts the impact of post-Enlightenment biblical criticism on English literary culture. The eighteenth and nineteenth centuries saw a widespread reevaluation of biblical inspiration, in which the Bible’s poetic nature came to be seen as an integral part of its religious significance. Understandably, then, many poets who followed this interpretative revolution—including Alfred, Lord Tennyson, Robert Browning, and Elizabeth Barrett Browning—came to reconceive their highest vocational ambitions: if the Bible is essentially poetry, then modern poetry might perform a cultural role akin to that of scripture. This context equally illuminates the aims and achievements of famous Victorian unbelievers such as Arthur Hugh Clough and George Eliot, who also responded enthusiastically to the poetic ideal of an inspired text."
-         },
-         "Building upon a recent and ongoing reevaluation of religion as a vital aspect of Victorian culture, Charles LaPorte shows the enduring relevance of religion in a period usually associated with its decline. In doing so, he helps to delineate the midcentury shape of a literary dynamic that is generally better understood in Romantic poetry of the earlier part of the century. The poets he examines all wrestled with modern findings about the Bible's fortuitous historical composition, yet they owed much of their extraordinary literary success to their ability to capitalize upon the progress of avant-garde biblical interpretation.",
-         "This book's revisionary and provocative thesis speaks not only to the course of English poetics but also to the logic of nineteenth-century literary hierarchies and to the continuing evolution of religion in the modern era.",
-         {
-            "i": "Victorian Literature and Culture Series"
-         }
-      ],
-      "BindingInfo": {
-         "div": [
-            {
-               "a": {
-                  "@href": "http://uva.longleafservices.org/cart/add?productid=81393158",
-                  "@id": "49.50",
-                  "#text": "BUY"
-               },
-               "#text": " Cloth · 304 pp. · 6 × 9 · ISBN 9780813931586 · $49.50 · Nov 2011"
-            },
-            {
-               "a": {
-                  "@href": "http://uva.longleafservices.org/cart/add?productid=81393165",
-                  "@id": "49.50",
-                  "#text": "BUY"
-               },
-               "#text": " Ebook · 304 pp. · ISBN 9780813931654 · $49.50 · Nov 2011"
-            }
-         ]
-      },
-      "ReviewHead": "Reviews",
-      "ReviewQuotes": [
-         [
-            {
-               "p": {
-                  "#text": [
-                     "\"",
-                     "is an extraordinarily good book. The theme, that of the way in which the ‘higher criticism’ of the Bible affected a key selection of Victorian poets, is brilliantly original in the way that it explores the reverberation of critical ideas across the most unexpected poems. LaPorte is enormously literate and writes with clarity, subtlety, and a sharp wit. His range of reading is vast, covering not merely the works of the writers themselves but also their correspondence and related material, not to mention, of course, the miscellaneous works and sermons of die-hard opponents of the new criticism. This is an outstanding work.\""
-                  ],
-                  "i": "Victorian Poets and the Changing Bible"
-               }
-            },
-            "Stephen Prickett, Regius Professor Emeritus, University of Glasgow, and Honorary Professor of English, University of Kent at Canterbury"
-         ],
-         [
-            {
-               "p": {
-                  "i": [
-                     "Victorian Poetry and the Changing Bible",
-                     "Aurora Leigh, The Idylls of the King,",
-                     "The Ring and the Book"
-                  ],
-                  "#text": [
-                     "redefines a significant post-Romantic poetic tradition inspired by transformative nineteenth-century biblical studies. LaPorte’s readings of canonical works such as",
-                     "and",
-                     "will include something new for all Victorian scholars given his repeated ability to link his commentary on poetics, with a seemingly effortless touch, to the period’s wider literary culture. Drawing on a mastery of British and European biblical scholarship as well as an impressive range of sources snatched from the age’s vast archive of periodical writings, this exciting, learned study will renew and revise our understanding of the experimental verve animating so much of Victorian poetry."
-                  ]
-               }
-            },
-            {
-               "#text": "William R. McKelvy, author of",
-               "i": "The English Cult of Literature: Devoted Readers, 1774–1880"
-            }
-         ]
-      ],
-      "Prizes": "Sonya Rudikoff Northeast Victorian Studies Association Award, Northeast Victorian Studies Association (2011)",
-      "BioNote": {
-         "p": "Charles LaPorte is Assistant Professor of English at the University of Washington."
-      },
-      "Authors": {
-         "Author": "LaPorte, Charles"
-      },
-      "Subject": "Literary Criticism",
-      "Newsletter1": "Literary and Cultural Studies",
-      "Newsletter2": [],
-      "isUVAP": "true",
-      "isDelaware": "false",
-      "Rotunda": "false",
-      "List": "Backlist",
-      "ISBNs": [
-         "0813931584",
-         "9780813931586",
-         "0813931657",
-         "9780813931654"
-      ],
-      "GooglePreview": {
-         "div": {
-            "script": {
-               "@type": "text/javascript",
-               "#text": "GBS_insertPreviewButtonPopup([ 0813931584,9780813931586,0813931657,9780813931654 ]);"
-            }
-         }
-      },
-      "CoverImageThumb": "4360_T.jpg",
-      "CoverImageMain": "4360_M.jpg"
-   },
-   {
-      "BookID": "4348",
-      "Title": "At the Café and The Talisman",
-      "Subtitle": [],
-      "PublicationDate": "2011-05-20",
-      "DaysSincePublication": "3468",
-      "AuthorCredit": "Mohammed Dib. Translated by C. Dickson. afterword by Mildred P. Mortimer",
-      "Series": "CARAF Books: Caribbean and African Literature Translated from French",
-      "InternalSeriesVolume": [],
-      "MainDescription": [
-         {
-            "#text": [
-               "Reflecting distinct and important stages in the career of the preeminent Algerian writer Mohammed Dib,",
-               "brings together two collections that embroider on themes relating to the Algerian War for Independence (1954–1962).",
-               "published in 1955, is mostly realistic in style and illustrates particularly well Dib’s uncanny talent for storytelling.",
-               "published eleven years later, reflects Dib’s growing penchant for relating his perception of the magical or mystical qualities underlying everyday reality."
-            ],
-            "i": [
-               "\"At the Café\" and \"The Talisman\"",
-               "At the Café,",
-               "The Talisman,"
-            ]
-         },
-         {
-            "#text": [
-               "When he wrote",
-               "Dib felt it was his duty to witness or testify on behalf of the downtrodden of Algeria under French colonial rule. Three stories in this collection—\"Little Cousin,\" \"A Fine Wedding,\" and \"The Long Wait\"—poignantly describe the rampant poverty, hunger, sickness, and despair that prevailed under French rule. In others, such as the titular story and \"Forbidden Lands,\" Dib gives a voice to those who had been silenced but who were slowly learning to make themselves heard. On the eve of the war for independence, Dib felt obligated—as does the protagonist, Djeha, in \"The Companion\"—to take a stand on affirming one’s role within the community and take action."
-            ],
-            "i": "At the Café,"
-         },
-         {
-            "#text": [
-               "In",
-               "Dib no longer feels the need to testify. Although colonialism and the brutality of war are still central threads, his treatment of them in this collection is more scathingly critical. Dib’s style also shifts from the naturalism dominant in his earlier writing, showing a marked interest in the fantastic or magical. The under-lying themes in this collection take up, among other things, an obsession with the experience of death, a fascination with madness, the decrypting of symbols, the quest for a primordial language, and the possibilities of spiritual transcendence."
-            ],
-            "i": "The Talisman,"
-         }
-      ],
-      "BindingInfo": {
-         "div": [
-            {
-               "a": {
-                  "@href": "http://uva.longleafservices.org/cart/add?productid=81393119",
-                  "@id": "65.00",
-                  "#text": "BUY"
-               },
-               "#text": " Cloth · 192 pp. · 5.5 × 8.5 · ISBN 9780813931197 · $65.00 · May 2011"
-            },
-            {
-               "a": {
-                  "@href": "http://uva.longleafservices.org/cart/add?productid=81393120",
-                  "@id": "25.00",
-                  "#text": "BUY"
-               },
-               "#text": " Paper · 192 pp. · 5.5 × 8.5 · ISBN 9780813931203 · $25.00 · May 2011"
-            }
-         ]
-      },
-      "ReviewHead": [],
-      "ReviewQuotes": [],
-      "Prizes": [],
-      "BioNote": {
-         "p": {
-            "#text": [
-               "Mohammed Dib (1920–2003), poet, writer, and journalist, was the author of more than thirty novels and considered one of the \"founding fathers\" among Algerian francophone writers. C. Dickson is translator of",
-               "and",
-               "by J. M. G. Le Clézio as well as",
-               "and",
-               "by Gisèle Pineau, among other works. Mildred Mortimer is Professor of French Emerita at the University of Colorado and author of several works on the literature of the Maghreb."
-            ],
-            "i": [
-               "Desert, Wandering Star,",
-               "The Round",
-               "Devil’s Dance",
-               "Macadam Dreams"
-            ]
-         }
-      },
-      "Authors": {
-         "Author": "Dib, Mohammed"
-      },
-      "Subject": "Caribbean & African Literature",
-      "Newsletter1": "Caribbean and African Studies",
-      "Newsletter2": [],
-      "isUVAP": "true",
-      "isDelaware": "false",
-      "Rotunda": "false",
-      "List": "Backlist",
-      "ISBNs": [
-         "0813931193",
-         "9780813931197",
-         "0813931207",
-         "9780813931203"
-      ],
-      "GooglePreview": {
-         "div": {
-            "script": {
-               "@type": "text/javascript",
-               "#text": "GBS_insertPreviewButtonPopup([ 0813931193,9780813931197,0813931207,9780813931203 ]);"
-            }
-         }
-      },
-      "CoverImageThumb": "4348_T.jpg",
-      "CoverImageMain": "4348_M.jpg"
-   },
-   {
-      "BookID": "2739",
-      "Title": "The Diaries of George Washington",
-      "Subtitle": "July 1786-December 1789",
-      "PublicationDate": "1979-10-29",
-      "DaysSincePublication": "14994",
-      "AuthorCredit": "George Washington",
-      "Series": [],
-      "InternalSeriesVolume": [],
-      "MainDescription": [
-         "Washington was rarely isolated from the world during his eventful life. His diary for 1751-52 relates a voyage to Barbados when he was nineteen. The next two accounts concern the early phases of the French and Indian War, in which Washington commanded a Virginia regiment. By the 1760s when Washington's diaries resume, he considered himself retired from public life, but George III was on the British throne and in the American colonies the process of unrest was beginning that would ultimately place Washington in command of a revolutionary army.",
-         {
-            "#text": [
-               "Even as he traveled to Philadelphia in 1787 to chair the Constitutional Convention, however, and later as president, Washington's first love remained his plantation, Mount Vernon. In his diary, he religiously recorded the changing methods of farming he employed there and the pleasures of riding and hunting. Rich in material from this private sphere,",
-               "offer historians and anyone interested in Washington a closer view of the first president in this bicentennial year of his death."
-            ],
-            "i": "The Diaries of George Washington"
-         }
-      ],
-      "BindingInfo": {
-         "div": {
-            "div": {
-               "a": {
-                  "@href": "http://uva.longleafservices.org/cart/add?productid=81390801",
-                  "@id": "85.00",
-                  "#text": "BUY"
-               },
-               "#text": " Cloth · 559 pp. · 6.13 × 9.25 · ISBN 9780813908014 · $85.00 · Oct 1979"
-            }
-         }
-      },
-      "ReviewHead": [],
-      "ReviewQuotes": [],
-      "Prizes": [],
-      "BioNote": [],
-      "Authors": {
-         "Author": "Washington, George"
-      },
-      "Subject": "Early Republic",
-      "Newsletter1": "History and Political Science",
-      "Newsletter2": [],
-      "isUVAP": "true",
-      "isDelaware": "false",
-      "Rotunda": "false",
-      "List": "Backlist",
-      "ISBNs": [
-         "0813908019",
-         "9780813908014"
-      ],
-      "GooglePreview": {
-         "div": {
-            "script": {
-               "@type": "text/javascript",
-               "#text": "GBS_insertPreviewButtonPopup([ 0813908019,9780813908014 ]);"
-            }
-         }
-      },
-      "CoverImageThumb": "2739_T.jpg",
-      "CoverImageMain": "2739_M.jpg"
-   },
-   {
-      "BookID": "5042",
-      "Title": "Newest Born of Nations",
-      "Subtitle": "European Nationalist Movements and the Making of the Confederacy",
-      "PublicationDate": "2020-06-29",
-      "DaysSincePublication": "140",
-      "AuthorCredit": "Ann L. Tucker",
-      "Series": "A Nation Divided: Studies in the Civil War Era",
-      "InternalSeriesVolume": [],
-      "MainDescription": [
-         {
-            "#text": [
-               "From the earliest stirrings of southern nationalism to the defeat of the Confederacy, analysis of European nationalist movements played a critical role in how southerners thought about their new southern nation. Southerners argued that because the Confederate nation was cast in the same mold as its European counterparts, it deserved independence. In",
-               "Ann Tucker utilizes print sources such as newspapers and magazines to reveal how elite white southerners developed an international perspective on nationhood that helped them clarify their own national values, conceive of the South as distinct from the North, and ultimately define and legitimize the Confederacy."
-            ],
-            "i": "Newest Born of Nations,"
-         },
-         "While popular at home, claims to equivalency with European nations failed to resonate with Europeans and northerners, who viewed slavery as incompatible with liberal nationalism. Forced to reevaluate their claims about the international place of southern nationalism, some southerners redoubled their attempts to place the Confederacy within the broader trends of nineteenth-century nationalism. More conservative southerners took a different tack, emphasizing the distinctiveness of their nationalism, claiming that the Confederacy actually purified nationalism through slavery. Southern Unionists likewise internationalized their case for national unity. By examining the evolution of and variation within these international perspectives, Tucker reveals the making of a southern nationhood to be a complex, contested process."
-      ],
-      "BindingInfo": {
-         "div": [
-            {
-               "a": {
-                  "@href": "http://uva.longleafservices.org/cart/add?productid=81394428",
-                  "@id": "45.00",
-                  "#text": "BUY"
-               },
-               "#text": " Cloth · 272 pp. · 6 × 9 · ISBN 9780813944289 · $45.00 · Jun 2020"
-            },
-            {
-               "a": {
-                  "@href": "http://uva.longleafservices.org/cart/add?productid=81394429",
-                  "@id": "45.00",
-                  "#text": "BUY"
-               },
-               "#text": " Ebook · 272 pp. · ISBN 9780813944296 · $45.00 · Jun 2020"
-            }
-         ]
-      },
-      "ReviewHead": "Review",
-      "ReviewQuotes": {
-         "div": [
-            {
-               "p": "Ann Tucker’s work offers the most complete and thorough analysis to date of the global dimensions of southern nationalist thought. Most importantly, she carefully demonstrates how white southerners crafted both liberal and conservative understandings of their own nationhood, demonstrating that the creation of Confederate nationalism was a much longer, more dynamic, and more vigorously contested process than previously thought."
-            },
-            {
-               "#text": [
-                  "Andre M. Fleche, Castleton State College, author of ",
-                  " "
-               ],
-               "i": "The Revolution of 1861: The American Civil War in the Age of Nationalist Conflict"
-            }
-         ]
-      },
-      "Prizes": [],
-      "BioNote": {
-         "p": "Ann L. Tucker is Assistant Professor of History at the University of North Georgia."
-      },
-      "Authors": {
-         "Author": "Tucker, Ann L."
-      },
-      "Subject": "Civil War & Reconstruction",
-      "Newsletter1": "History and Political Science",
-      "Newsletter2": [],
-      "isUVAP": "true",
-      "isDelaware": "false",
-      "Rotunda": "false",
-      "List": "Spring 2020",
-      "ISBNs": [
-         "0813944287",
-         "9780813944289",
-         "0813944295",
-         "9780813944296"
-      ],
-      "GooglePreview": {
-         "div": {
-            "script": {
-               "@type": "text/javascript",
-               "#text": "GBS_insertPreviewButtonPopup([ 0813944287,9780813944289,0813944295,9780813944296 ]);"
-            }
-         }
-      },
-      "CoverImageThumb": "5042_T.jpg",
-      "CoverImageMain": "5042_M.jpg"
    }
+   
+   
 ]

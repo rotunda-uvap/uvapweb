@@ -58,6 +58,7 @@ module.exports = {
     },
   `gatsby-plugin-slug`,
   `gatsby-plugin-netlify-cms`,
+  `gatsby-plugin-postcss`,
   
   ],
 }

@@ -1,15 +1,20 @@
 import React from "react"
 import { graphql } from "gatsby"
 
+import Layout from "../components/layout"
+
 export default ({ data }) => {
     const news = data.markdownRemark
  return (
-    <div>
-        <h1>{news.frontmatter.title}</h1>
+   <Layout>
+     <div>
+        <h1 className="py5 text-1xl font-black mt-16 mb-2" >{news.frontmatter.title}</h1>
         <section
           dangerouslySetInnerHTML={{ __html: news.html }}
         />
     </div>
+   </Layout>
+    
  )
 }
 
