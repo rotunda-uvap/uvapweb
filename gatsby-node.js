@@ -65,7 +65,7 @@ exports.createSchemaCustomization = ({ actions }) => {
        
         result.data.allMarkdownRemark.edges.forEach(({ node }) => {
           createPage({
-            path: `/news/${node.fields.slug}`,
+            path: `/news${node.fields.slug}`,
             component: path.resolve(`./src/templates/news-page.js`),
             context: {
               id: node.id,
