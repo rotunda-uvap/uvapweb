@@ -19,7 +19,24 @@ collections:
     path: '{{title}}/index'
     fields:
       - { name: path, label: Path, required: false, }
+      - { label: "Is Draft?", name: "draft", widget: "string", default: "false"}
       - { name: title, label: Title }
       - { name: body, label: Body, widget: markdown }
       - { label: 'Description', name: 'description', widget: 'string', required: false }
-    
+      - { label: "Type", name: "type",widget: "select",options: ["news", "event", "media", "page", required: true]
+
+      }
+  - name: 'pages'
+    identifier_field: '{{title}}'
+    label: 'Pages'
+    folder: 'content/pages'
+    preview_path: '{{title}}/index'
+    create: true
+    slug: 'index'
+    media_folder: ''
+    public_folder: ''
+    path: '{{title}}/index'
+    fields:
+      - { name: path, label: Path, required: false, }
+      - { name: title, label: Title }
+      - { name: body, label: Body, widget: markdown }

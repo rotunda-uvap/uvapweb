@@ -7,8 +7,9 @@ export default ({ data }) => {
  return (
    <Layout>
      <div>
-        <h2 className="py5 text-1xl font-black mt-16 mb-2">{book.Title}</h2> 
-        <h3>by {book.Authors.Author}</h3>
+        <h2 className="py5 text-1xl font-black mt-5 mb-2">{book.Title}</h2> 
+        <h3 className="py5 text-1xl italic mt-2 mb-2">{book.Subtitle}</h3>
+        <h3>by {book.AuthorCredit}</h3>
     </div>
     <h3 className="py-5">Summary</h3>
     <div dangerouslySetInnerHTML={{ __html: book.MainDescription.html }}>
@@ -38,6 +39,13 @@ export default ({ data }) => {
             </>
         ))}
     </div>
+    <div>
+      <h3 className="py-5">Series</h3>
+
+      {book.Series}
+      {book.Subject}
+      {book.InternalSeriesVolume}
+    </div>
     
 
 
@@ -56,6 +64,7 @@ export const query = graphql`
       id
       BookID
       Title
+      Subtitle
       Bindings {
         type
         ISBN
@@ -64,9 +73,7 @@ export const query = graphql`
         date
         buylink
       }
-      Authors {
-        Author
-      }
+      AuthorCredit
       Reviews {
         attribution
         html
@@ -74,7 +81,9 @@ export const query = graphql`
       MainDescription {
         html
       }
-        Subject
+      Series
+      Subject
+      InternalSeriesVolume
     }
   }
 `

@@ -49,6 +49,31 @@ exports.createSchemaCustomization = ({ actions }) => {
             }
           }
         }
+        allMarkdownRemark {
+          edges {
+            node {
+              id
+              fields {
+                slug
+              }
+            }
+          }
+        }
+        allFile(filter: {sourceInstanceName: {eq: "pages"}}) {
+          edges {
+            node {
+              childMarkdownRemark {
+                frontmatter {
+                  title
+                }
+                fields {
+                  slug
+                }
+                id
+              }
+            }
+          }
+        }
 
     }
  `
@@ -69,6 +94,16 @@ exports.createSchemaCustomization = ({ actions }) => {
             component: path.resolve(`./src/templates/news-page.js`),
             context: {
               id: node.id,
+            },
+          })
+        })
+
+        result.data.allFile.edges.forEach(({ node }) => {
+          createPage({
+            path: `/content${node.childMarkdownRemark.fields.slug}`,
+            component: path.resolve(`./src/templates/page.js`),
+            context: {
+              id: node.childMarkdownRemark.id,
             },
           })
         })
