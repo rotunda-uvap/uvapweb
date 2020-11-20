@@ -26,12 +26,13 @@ export default function Articles({ data }) {
 
 export const query = graphql`
   query {
-    allMarkdownRemark {
+    allMarkdownRemark(filter: {frontmatter: {type: {ne: "page"}}}) {
         edges {
           node {
-              html
+            html
             frontmatter {
               title
+              type
             }
             fields {
               slug

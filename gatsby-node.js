@@ -39,7 +39,21 @@ exports.createSchemaCustomization = ({ actions }) => {
               }
           }
 
-        allMarkdownRemark {
+        news: allMarkdownRemark(
+          filter: {frontmatter: {type: {ne: "page"}}}) {
+          edges {
+            node {
+              id
+              fields {
+                slug
+              }
+              frontmatter {
+                type
+              }
+            }
+          }
+        }
+        pages: allMarkdownRemark(filter: {frontmatter: {type: {eq: "page"}}})  {
           edges {
             node {
               id
@@ -49,31 +63,7 @@ exports.createSchemaCustomization = ({ actions }) => {
             }
           }
         }
-        allMarkdownRemark {
-          edges {
-            node {
-              id
-              fields {
-                slug
-              }
-            }
-          }
-        }
-        allFile(filter: {sourceInstanceName: {eq: "pages"}}) {
-          edges {
-            node {
-              childMarkdownRemark {
-                frontmatter {
-                  title
-                }
-                fields {
-                  slug
-                }
-                id
-              }
-            }
-          }
-        }
+        
 
     }
  `
@@ -88,7 +78,7 @@ exports.createSchemaCustomization = ({ actions }) => {
           })
         })
        
-        result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+        result.data.news.edges.forEach(({ node }) => {
           createPage({
             path: `/news${node.fields.slug}`,
             component: path.resolve(`./src/templates/news-page.js`),
@@ -97,16 +87,17 @@ exports.createSchemaCustomization = ({ actions }) => {
             },
           })
         })
-
-        result.data.allFile.edges.forEach(({ node }) => {
+        result.data.pages.edges.forEach(({ node }) => {
           createPage({
-            path: `/content${node.childMarkdownRemark.fields.slug}`,
+            path: `/content${node.fields.slug}`,
             component: path.resolve(`./src/templates/page.js`),
             context: {
-              id: node.childMarkdownRemark.id,
+              id: node.id,
             },
           })
         })
+
+        
         
 
       })
