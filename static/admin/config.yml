@@ -19,31 +19,33 @@ collections:
     path: '{{title}}/index'
     fields:
       - { name: path, label: Path, required: false, }
+      - { label: "Type", name: "type",widget: "select", options: ["news", "event", "media", "page"], required: true}
       - { label: "Is Draft?", name: "draft", widget: "string", default: "false"}
       - { name: title, label: Title }
+      - { label: 'relbook', name: 'related book', widget: 'list', required: false }
       - { name: body, label: Body, widget: markdown }
       - { label: 'Description', name: 'description', widget: 'string', required: false }
-      - { label: "Type", name: "type",widget: "select", options: ["news", "event", "media", "page"], required: true}
     
-      - name: 'media'
-        label: 'Media'
-        identifier_field: name
-        folder: 'content/media'
-        publish_mode: editorial_workflow
-        preview_path: '{{title}}/index'
-        create: true
-        slug: 'index'
-        media_folder: ''
-        public_folder: ''
-        path: '{{title}}/index'
-        fields:
-          - { name: path, label: Path, required: false, }
-          - { label: "Is Draft?", name: "draft", widget: "string", default: "false"}
-          - { name: title, label: Title }
-          - { name: body, label: Body, widget: markdown }
-          - { label: 'Link', name: 'link', widget: 'string', required: false }
-          - { label: 'Description', name: 'description', widget: 'string', required: false }
-          - { label: "Type", name: "type",widget: "select", options: ["news", "event", "media", "page"], required: true}
+  - name: 'media'
+    label: 'Media'
+    identifier_field: name
+    folder: 'content/media'
+    publish_mode: editorial_workflow
+    preview_path: '{{title}}/index'
+    create: true
+    slug: 'index'
+    media_folder: ''
+    public_folder: ''
+    path: '{{title}}/index'      
+    fields:
+      - { name: path, label: Path, required: false, }
+      - { label: 'Type', name: 'type', widget: 'select', options: ['news', 'event', 'media', 'page'], required: true}  
+      - { label: "Is Draft?", name: "draft", widget: "string", default: "false"}
+      - { name: title, label: Title }
+      - { label: 'relbook', name: 'related book', widget: 'list', required: false }
+      - { name: body, label: Body, widget: markdown }
+      - { label: 'Link', name: 'link', widget: 'string', required: false }
+      - { label: 'Description', name: 'description', widget: 'string', required: false }
 
   - name: 'pages'
     identifier_field: '{{title}}'
