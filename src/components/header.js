@@ -1,17 +1,64 @@
-import React from "react"
+import React , { useState }from "react"
 import { Link } from "gatsby"
 
-const Header = () => {
-   
+const Header = ({data}) => {
+  const [isExpanded, toggleExpansion] = useState(false)
     return (
       <header className="text-gray-700 body-font border-b border-gray-300">
-        <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-           <span className="sitename"><Link to={`/`}>UNIVERSITY <i>of</i> VIRGINIA PRESS</Link></span>
-           
+       <nav className="flex items-center justify-between flex-wrap bg-teal-500 p-6">
+      <div className="flex items-center flex-shrink-0 mr-6">
+        <span className="text-gray-700"><Link to={`/`}>UNIVERSITY <i>of</i> VIRGINIA PRESS</Link></span>
+      </div>
+      <div className="block xl:hidden">
+        <button onClick={() => toggleExpansion(!isExpanded)} className="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-gray-400 hover:border-white">
+          <svg className="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+        </button>
+      </div>
+      <div className={`${ isExpanded ? `block` : `hidden` } w-full block flex-grow xl:flex xl:items-center xl:w-auto`}>
+        <div className="text-sm lg:flex-grow">
+          <Link to={`/content/about`} href="#responsive-header" className="uppercase block mt-4 xl:inline-block xl:mt-0 text-teal-200 hover:text-gray-300 mr-4">
+            About
+          </Link>
+          <Link to={`/content/prospective-authors`} className="uppercase block mt-4 xl:inline-block xl:mt-0 text-teal-200 hover:text-gray-300 mr-4">
+            Prospective Authors
+          </Link>
+          <Link to={`/content/current-authors`} className="uppercase block mt-4 xl:inline-block xl:mt-0 text-teal-200 hover:text-gray-300 mr-4">
+            Current Authors
+          </Link>
+          <Link to={`/books`} className="uppercase block mt-4 xl:inline-block xl:mt-0 text-teal-200 hover:text-gray-300">
+            Find Books
+          </Link>
+          <Link to={`/`} className="uppercase block mt-4 xl:inline-block xl:mt-0 text-teal-200 hover:text-gray-300">
+            Give
+          </Link>
+          <Link to={`/`} className="uppercase block mt-4 xl:inline-block xl:mt-0 text-teal-200 hover:text-gray-300">
+            Career
+          </Link>
         </div>
+        
+      </div>
+    </nav>
+
+        
+        
        
       </header>
     )
   }
   
   export default Header
+
+  export const query = graphql`
+    query  {
+      site {
+        siteMetadata {
+          title
+          logo
+          description
+          menuLinks {
+            name
+            link
+          }
+        }
+      }
+  }`

@@ -59,5 +59,6 @@ collections:
     path: '{{title}}/index'
     fields:
       - { name: path, label: Path, required: false, }
+      - { label: 'Type', name: 'type', widget: 'select', options: ['news', 'event', 'media', 'page'], required: true}  
       - { name: title, label: Title }
       - { name: body, label: Body, widget: markdown }

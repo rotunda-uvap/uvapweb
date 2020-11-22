@@ -8,8 +8,7 @@ export default ({ data }) => {
  return (
    <Layout>
      <div>
-         <h3>This is a page</h3>
-        <h1 className="py5 text-1xl font-black mt-16 mb-2" >{page.frontmatter.title}</h1>
+        <h1 className="py5 text-1xl font-black mt-5 mb-2" >{page.frontmatter.title}</h1>
         <section
           dangerouslySetInnerHTML={{ __html: page.html }}
         />

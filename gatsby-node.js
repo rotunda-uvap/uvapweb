@@ -53,7 +53,7 @@ exports.createSchemaCustomization = ({ actions }) => {
             }
           }
         }
-        pages: allMarkdownRemark(filter: {frontmatter: {type: {eq: "page"}}})  {
+        allpages: allMarkdownRemark(filter: {frontmatter: {type: {eq: "page"}}})  {
           edges {
             node {
               id
@@ -63,12 +63,24 @@ exports.createSchemaCustomization = ({ actions }) => {
             }
           }
         }
+        allSubjects: allBooksJson {
+          distinct(field: Subject)
+        }
+        allSeries: allBooksJson {
+          distinct(field: Series)
+        }
         
 
     }
  `
     ).then(result => {
-        result.data.allBooksJson.edges.forEach(({ node }) => {
+      if (result.errors) {
+        throw result.errors
+      }
+
+      const books = result.data.allBooksJson.edges
+
+        books.forEach(({ node }) => {
           createPage({
             path: `/title/${node.BookID}`,
             component: path.resolve(`./src/templates/book-page.js`),
@@ -77,8 +89,10 @@ exports.createSchemaCustomization = ({ actions }) => {
             },
           })
         })
+
+        const news = result.data.news.edges
        
-        result.data.news.edges.forEach(({ node }) => {
+        news.forEach(({ node }) => {
           createPage({
             path: `/news${node.fields.slug}`,
             component: path.resolve(`./src/templates/news-page.js`),
@@ -87,7 +101,9 @@ exports.createSchemaCustomization = ({ actions }) => {
             },
           })
         })
-        result.data.pages.edges.forEach(({ node }) => {
+
+        const pages = result.data.allpages.edges
+        pages.forEach(({ node }) => {
           createPage({
             path: `/content${node.fields.slug}`,
             component: path.resolve(`./src/templates/page.js`),
@@ -97,7 +113,27 @@ exports.createSchemaCustomization = ({ actions }) => {
           })
         })
 
-        
+        const subjects = result.data.allSubjects.distinct
+        subjects.forEach((subject) => {
+          createPage({
+            path: `/subject/${subject}`,
+            component: path.resolve(`./src/templates/subject-page.js`),
+            context: {
+              id: subject,
+            },
+          })
+        })
+
+        const series = result.data.allSeries.distinct
+        series.forEach((serie) => {
+          createPage({
+            path: `/series/${serie}`,
+            component: path.resolve(`./src/templates/series-page.js`),
+            context: {
+              id: serie,
+            },
+          })
+        })
         
 
       })
