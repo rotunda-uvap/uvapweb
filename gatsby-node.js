@@ -17,6 +17,7 @@ exports.createSchemaCustomization = ({ actions }) => {
         title: String
         description: String
         date: Date @dateformat
+        relbook: [String]
       }
   
       type Fields {
@@ -38,9 +39,21 @@ exports.createSchemaCustomization = ({ actions }) => {
                 }
               }
           }
-
         news: allMarkdownRemark(
           filter: {frontmatter: {type: {ne: "page"}}}) {
+          edges {
+            node {
+              id
+              fields {
+                slug
+              }
+              frontmatter {
+                type
+              }
+            }
+          }
+        }
+        allMedia: allMarkdownRemark(filter: {frontmatter: {type: {eq: "media"}}})  {
           edges {
             node {
               id
@@ -60,6 +73,9 @@ exports.createSchemaCustomization = ({ actions }) => {
               fields {
                 slug
               }
+              frontmatter {
+                type
+              }
             }
           }
         }
@@ -70,7 +86,6 @@ exports.createSchemaCustomization = ({ actions }) => {
           distinct(field: Series)
         }
         
-
     }
  `
     ).then(result => {
@@ -101,6 +116,19 @@ exports.createSchemaCustomization = ({ actions }) => {
             },
           })
         })
+
+        const media = result.data.allMedia.edges
+       
+        media.forEach(({ node }) => {
+          createPage({
+            path: `/media${node.fields.slug}`,
+            component: path.resolve(`./src/templates/media-page.js`),
+            context: {
+              id: node.id,
+            },
+          })
+        })
+        
 
         const pages = result.data.allpages.edges
         pages.forEach(({ node }) => {

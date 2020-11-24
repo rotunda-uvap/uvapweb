@@ -11,7 +11,7 @@ export default function Subjects({ data }) {
             {subs.distinct.map(d => (
             <>
            
-                <h4  className="text-1xl mb-2" key={d}><Link to={`../subject/${ d }`}>{ d }</Link></h4>
+                <h4  className="text-1xl mb-2" key={d}><Link to={`../../subject/${ d }`}>{ d }</Link></h4>
             
             
             </>

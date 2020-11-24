@@ -8,14 +8,18 @@ export default function Books({ data }) {
  return (
     
         <Layout>
+            <h2>Listing of All Books</h2>
+          <ul className="container px-5 py-5 mx-auto">
             {books.edges.map(edge => (
             <>
-            <div className="container px-5 py-5 mx-auto flex flex-wrap">
-                <h3  className="text-2xl font-black mt-16 mb-2"key={edge.node.Title}><Link to={`../title/${ edge.node.BookID }`}>{ edge.node.Title }</Link></h3>
-            </div>
+                <li  className="text-normal font-black text-blue-400 hover:text-blue-200 p-2" key={edge.node.Title}>
+                  <Link to={`../title/${ edge.node.BookID }`}>{ edge.node.Title }
+                  </Link>
+                  </li>
             
             </>
         ))}
+        </ul>
         </Layout>
 
  )

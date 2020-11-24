@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
 
@@ -8,11 +8,15 @@ export default ({ data }) => {
  return (
    <Layout>
      <div>
-       <h2>news</h2>
         <h1 className="py5 text-1xl font-black mt-16 mb-2" >{news.frontmatter.title}</h1>
-        <section
-          dangerouslySetInnerHTML={{ __html: news.html }}
-        />
+        <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1">
+          <article 
+          dangerouslySetInnerHTML={{ __html: news.html }}/>
+          <image/>
+          {news.frontmatter.relbook && <Link to={`../../title/${news.frontmatter.relbook}`}>Related Book: {news.frontmatter.relbook}</Link>}
+
+          </div>
+        
     </div>
    </Layout>
     
@@ -23,12 +27,13 @@ export default ({ data }) => {
 
 export const query = graphql`
   query($id: String!) {
-    markdownRemark(frontmatter: {type: {ne: "page"}},id: { eq: $id }) {
-        id
+    markdownRemark(frontmatter: {type: {nin: ["page", "media"]}},id: { eq: $id }) {
+      id
         html
         frontmatter {
             title
             type
+            relbook
           }
     }
   }

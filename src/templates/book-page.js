@@ -2,6 +2,7 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 
+
 export default ({ data }) => {
     const book = data.booksJson
  return (
@@ -32,43 +33,45 @@ export default ({ data }) => {
         ))}
     </div> : 
     <div className="py-2"><p>No review available</p></div>
-}
+    }
 
-{book.BioNote.html !== "EMPTY: BioNote" ? 
-    <div>
+    {book.BioNote.html !== "EMPTY: BioNote" ? 
+      <div>
       <h3 className="py-5">About the Author(s)</h3>
             <p dangerouslySetInnerHTML={{ __html: book.BioNote.html }}/>
-         
-    </div> 
+            </div> 
     :
     <div><p>No biographical information available</p></div>}
 
 
+<div className="font-sans grid lg:grid-cols-3 sm:grid-cols-1">
+  
+  {book.Bindings.map(binding => (
+        <>
+        <div className="overflow-hidden bg-white rounded max-w-xs w-full shadow-lg  leading-normal">
+                <a href={binding.buylink} className="block group hover:bg-blue-400 p-4 border-b">
+                    <p className="font-bold text-lg mb-1 text-black group-hover:text-white">{binding.type}</p>
+                    <p className="font-bold text-md mb-1 text-black group-hover:text-white">${binding.price}</p>
+                    <ul className="font-thin p-3 mb-2 text-sm  group-hover:text-white flex-column items-center"><li>- {binding.date}</li><li>{- binding.pages} pages</li><li>- {binding.ISBN}</li></ul>
+                    
+                </a>
+               
+          </div>
+        
+        </>
+    ))} 
+        </div>
 
-    <div>
-      <h3 className="py-5">Bindings</h3>
-      {book.Bindings.map(binding => (
-            <>
-            <div className="container px-5 py-5 mx-auto flex flex-wrap">
-              <div>
-                {binding.type} - ${binding.price}
-              </div>
-            </div>
-            
-            </>
-        ))}
-    </div>
+    
     <div>
       <h3 className="py-5">Tags</h3>
         {book.Series && <div><h3>Series</h3> <button className="text-white bg-green-400 p-2"><Link to={`../../series/${ book.Series }`}>{ book.Series }</Link></button></div>}
 
-      {book.Subject && <div><h3>Subject</h3> <button className="text-white bg-green-600 p-2"><Link to={`../../subject/${ book.Subject }`}>{ book.Subject }</Link></button></div>}
+      {book.Subject && <div><h3 className="mt-3">Subject</h3> <button className="text-white bg-green-600 p-2"><Link to={`../../subject/${ book.Subject }`}>{ book.Subject }</Link></button></div>}
     </div>
+
     
-
-
-
-
+    
    </Layout>
     
  )
