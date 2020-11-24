@@ -9,38 +9,7 @@ module.exports = {
     title: `University of Virginia Press`,
     logo: `uvap_logo.png`,
     description: `Using Gatsby JSON Sourcing with Netlify CMS`,
-    menuLinks: [
-      {
-        id: 1,
-        name: "home",
-        link: "/",
-      },
-      {
-        id: 2,
-        name: "about",
-        link: "/about",
-      },
-      {
-        id: 3,
-        name: "authors",
-        link: "/authors",
-      },
-      {
-        id: 4,
-        name: "books",
-        link: "/books",
-      },
-      {
-        id: 5,
-        name: "contact",
-        link: "/contact",
-      },
-      {
-        id: 6,
-        name: "rotunda",
-        link: "https://codepen.io/patricia-searl/full/MWyZKzE",
-      },
-    ],
+     
     socialLinks: {
       twitter: "https://twitter.com/uva_press",
       facebook: "#",
@@ -103,6 +72,14 @@ module.exports = {
       options: {
         // Path to your Netlify CMS config file
         cmsConfig: `/static/admin/config.yml`
+      }
+    },
+    {
+      resolve: "gatsby-transformer-remark",
+      options: {
+        plugins: [
+          "gatsby-remark-embed-soundcloud"
+        ]
       }
     },
     
