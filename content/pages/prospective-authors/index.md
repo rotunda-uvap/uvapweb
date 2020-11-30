@@ -1,5 +1,6 @@
 ---
 title: Prospective Authors
+type: page
 ---
 In seeking a publisher for your scholarly research, the most important consideration is finding a good fit. The reputation and strengths of publishers vary, and the most advantageous approach is to find a publisher that has proven success in publishing books similar to yours in subject, period, region, and readership. Virginia has a reputation for publishing quality scholarship in American history and government, eighteenth-century and Victorian literature, Afro-Caribbean studies, cultural religion, architectural and environmental history, and trade books of regional interest. We strongly encourage you to peruse our website or catalog to gauge whether your book would be a good fit for our publishing program. If so, please query the appropriate acquisitions editor.
 

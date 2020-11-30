@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[3],{RXBc:function(n,t,e){"use strict";e.r(t),e.d(t,"default",(function(){return c}));var r=e("q1tI"),u=e.n(r);function c(){return u.a.createElement("div",null,"UVA Press Test Gatsby JSON Sourcing")}}}]);
-//# sourceMappingURL=component---src-pages-index-js-26177d902ca654f9fd2f.js.map

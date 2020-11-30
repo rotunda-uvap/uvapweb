@@ -4,7 +4,7 @@ type: news
 draft: "false"
 title: What Makes Good Government? A Conversation with History Editor Nadine
   Zimmerli and Author Christopher Pearl
-related book:
+relbook:
   - "5457"
 description: Blog post from Nadine Zimmerli, Editor for History and Social Sciences
 ---

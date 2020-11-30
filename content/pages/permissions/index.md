@@ -1,5 +1,6 @@
 ---
 title: Permissions
+type: page
 ---
 #### Classroom and Academic Permissions Requests
 

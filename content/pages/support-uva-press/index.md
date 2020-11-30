@@ -1,5 +1,6 @@
 ---
 title: Support UVa Press
+type: page
 ---
 Founded in 1963, the UVA Press extends the reach of scholarly publishing to students, faculty, staff, and communities across the globe. Our society and our humanity are enriched by our collective understanding of our past, our deliberative analysis of our present, and our aspirational vision for our shared future.
 

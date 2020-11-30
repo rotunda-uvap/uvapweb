@@ -1,10 +1,7 @@
 ---
 type: media
 draft: "false"
-title: 'LISTEN: "UVA Press Presents" interview with Walter Hood and Grace
-  Mitchell Tada on Black Landscapes Matter'
-related book:
-  - "5389"
+title: 'LISTEN: "UVA Press Presents" interview with Walter Hood and Grace Mitchell Tada on Black Landscapes Matter'
 relbook:
   - "5389"
 ---
