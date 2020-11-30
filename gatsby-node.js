@@ -6,7 +6,8 @@ exports.createSchemaCustomization = ({ actions }) => {
     const { createTypes } = actions
     const typeDefs = `
       type BooksJson implements Node  {
-        BookID: String!       
+        BookID: String!  
+        DaysSincePublication: Int!    
       }     
       type MarkdownRemark implements Node {
         frontmatter: Frontmatter
@@ -40,7 +41,7 @@ exports.createSchemaCustomization = ({ actions }) => {
               }
           }
         news: allMarkdownRemark(
-          filter: {frontmatter: {type: {ne: "page"}}}) {
+          filter: {frontmatter: {type: {nin: ["page", "media"]}}}) {
           edges {
             node {
               id
