@@ -22,13 +22,13 @@ collections:
       - { label: "Type", name: "type",widget: "select", options: ["news", "event", "media", "page"], required: true}
       - { label: "Is Draft?", name: "draft", widget: "string", default: "false"}
       - { name: title, label: Title }
-      - { label: 'relbook', name: 'related book', widget: 'list', required: false }
+      - { label: 'related book id', name: 'relbook', widget: 'list', required: false }
       - { name: body, label: Body, widget: markdown }
       - { label: 'Description', name: 'description', widget: 'string', required: false }
     
   - name: 'media'
     label: 'Media'
-    identifier_field: name
+    identifier_field: '{{title}}'
     folder: 'content/media'
     publish_mode: editorial_workflow
     preview_path: '{{title}}/index'
@@ -42,7 +42,7 @@ collections:
       - { label: 'Type', name: 'type', widget: 'select', options: ['news', 'event', 'media', 'page'], required: true}  
       - { label: "Is Draft?", name: "draft", widget: "string", default: "false"}
       - { name: title, label: Title }
-      - { label: 'relbook', name: 'related book', widget: 'list', required: false }
+      - { label: 'related book id', name: 'relbook', widget: 'list', required: false }
       - { name: body, label: Body, widget: markdown }
       - { label: 'Link', name: 'link', widget: 'string', required: false }
       - { label: 'Description', name: 'description', widget: 'string', required: false }
@@ -62,3 +62,4 @@ collections:
       - { label: 'Type', name: 'type', widget: 'select', options: ['news', 'event', 'media', 'page'], required: true}  
       - { name: title, label: Title }
       - { name: body, label: Body, widget: markdown }
+

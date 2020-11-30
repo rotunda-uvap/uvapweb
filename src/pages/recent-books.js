@@ -30,7 +30,7 @@ export default function RecentBooks({ data }) {
 
 export const query = graphql`
   query {
-    allBooksJson(filter: {DaysSincePublication: {lt: 160}}) {
+    allBooksJson(filter: {DaysSincePublication: {gt: 0, lt: 365}}) {
         edges {
           node {
             BookID

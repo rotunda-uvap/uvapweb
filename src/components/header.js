@@ -20,7 +20,7 @@ const Header = ({data}) => {
             About
           </Link>
           <Link to={`/book-search`} className="uppercase block mt-4  text-teal-200 hover:text-gray-300">
-            Search (temporarily disabled)
+            Search
           </Link>
           <Link to={`/content/prospective-authors`} className="uppercase block mt-4  text-teal-200 hover:text-gray-300 mr-4">
             Prospective Authors
