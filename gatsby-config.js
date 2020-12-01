@@ -110,6 +110,7 @@ module.exports = {
   `gatsby-plugin-netlify-cms`,
   `gatsby-plugin-postcss`,
   `gatsby-image`,
+  `gatsby-plugin-image`,
   `gatsby-plugin-sharp`,
   `gatsby-transformer-sharp`,
   {
