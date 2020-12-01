@@ -5,7 +5,7 @@ title: Sharon Aronofsky Weltman on Hamilton, The King and I, and Racial Justice
 relbook:
   - "5450"
 ---
-https://www.youtube.com/embed/u2PEIGjKz-c
+`youtube:https://www.youtube.com/embed/u2PEIGjKz`
 
 Sharon Aronofsky Weltman, whose book [VICTORIANS ON BROADWAY: Literature, Adaptation, and the Modern American Musical](https://www.upress.virginia.edu/title/5450) was published this July, writes about what the hit *Hamilton* shares with the classic *The King and I*. Read on below, and watch a trailer for VICTORIANS ON BROADWAY above. 
 

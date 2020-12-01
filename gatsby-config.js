@@ -34,8 +34,29 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        name: `images`,
+        path: `${__dirname}/src/images/`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `downloads`,
+        path: `${__dirname}/src/downloads/`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
         path: `${__dirname}/content/pages`,
         name: `pages`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images/`,
       },
     },
     {
@@ -64,7 +85,16 @@ module.exports = {
         // GitHub Flavored Markdown mode (default: true)
         gfm: true,
         // Plugins configs
-        plugins: [],
+        plugins: [
+          "gatsby-remark-embed-soundcloud",
+          {
+            resolve: "gatsby-remark-embed-youtube",
+            options: {
+              width: 560,
+              height: 315
+            }
+          }
+        ],
       },
     },
     {
@@ -74,18 +104,14 @@ module.exports = {
         cmsConfig: `/static/admin/config.yml`
       }
     },
-    {
-      resolve: "gatsby-transformer-remark",
-      options: {
-        plugins: [
-          "gatsby-remark-embed-soundcloud"
-        ]
-      }
-    },
+    
    
   `gatsby-plugin-slug`,
   `gatsby-plugin-netlify-cms`,
   `gatsby-plugin-postcss`,
+  `gatsby-image`,
+  `gatsby-plugin-sharp`,
+  `gatsby-transformer-sharp`,
   {
     resolve: `gatsby-plugin-algolia`,
     options: {
