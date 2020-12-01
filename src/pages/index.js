@@ -9,7 +9,7 @@ export default function Home({data}) {
       <div id="slider-1" className="container mx-auto">
         <div className="bg-cover bg-center bg-blue-400 h-auto text-white py-24 px-10 object-fill">
        <div className="md:w-1/2">
-        <p className="font-bold text-sm uppercase">some sort of tagline</p>
+        <p className="font-bold text-sm uppercase">some sort of tagline. Latest update 12/1/2020 1:03pm</p>
         <p className="text-3xl font-bold">University of Virginia Press</p>
         <p className="text-2xl mb-10 leading-none">Put a little more text here</p>
         <div className="flex flex-auto content-center ">
