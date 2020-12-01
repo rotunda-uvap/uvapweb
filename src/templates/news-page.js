@@ -27,7 +27,7 @@ export default ({ data }) => {
 
 export const query = graphql`
   query($id: String!) {
-    markdownRemark(frontmatter: {type: {nin: ["page", "media"]}},id: { eq: $id }) {
+    markdownRemark(frontmatter: {type: {nin: ["page", "media", "promo"]}},id: { eq: $id }) {
       id
         html
         frontmatter {

@@ -91,6 +91,19 @@ exports.createSchemaCustomization = ({ actions }) => {
             }
           }
         }
+        allpromos: allMarkdownRemark(filter: {frontmatter: {type: {eq: "promo"}}})  {
+          edges {
+            node {
+              id
+              fields {
+                slug
+              }
+              frontmatter {
+                type
+              }
+            }
+          }
+        }
         allSubjects: allBooksJson {
           distinct(field: Subject)
         }
@@ -159,6 +172,17 @@ exports.createSchemaCustomization = ({ actions }) => {
           createPage({
             path: `/content${node.fields.slug}`,
             component: path.resolve(`./src/templates/page.js`),
+            context: {
+              id: node.id,
+            },
+          })
+        })
+
+        const promos = result.data.allpromos.edges
+        promos.forEach(({ node }) => {
+          createPage({
+            path: `/promotions${node.fields.slug}`,
+            component: path.resolve(`./src/templates/promo-page.js`),
             context: {
               id: node.id,
             },

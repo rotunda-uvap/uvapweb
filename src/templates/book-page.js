@@ -50,11 +50,10 @@ export default ({ data }) => {
         <>
         <div className="overflow-hidden bg-white rounded max-w-xs w-full shadow-lg  leading-normal">
                 <a href={binding.buylink} className="block group hover:bg-blue-400 p-4 border-b">
-                    <p className="font-bold text-lg mb-1 text-black group-hover:text-white">{binding.type}</p>
+                    <p className="font-bold text-lg mb-1 text-black group-hover:text-white">{binding.type}</p></a>
                     <p className="font-bold text-md mb-1 text-black group-hover:text-white">${binding.price}</p>
                     <ul className="font-thin p-3 mb-2 text-sm  group-hover:text-white flex-column items-center"><li>- {binding.date}</li><li>{- binding.pages} pages</li><li>- {binding.ISBN}</li></ul>
-                    
-                </a>
+                 
                
           </div>
         
