@@ -8,7 +8,10 @@ exports.createSchemaCustomization = ({ actions }) => {
       type BooksJson implements Node  {
         BookID: String!  
         DaysSincePublication: Int!    
-      }     
+      }  
+      type StaffJson implements Node  {
+        department: [String]      
+      }    
       type MarkdownRemark implements Node {
         frontmatter: Frontmatter
         fields: Fields
@@ -37,6 +40,14 @@ exports.createSchemaCustomization = ({ actions }) => {
                 node {
                   id
                   BookID
+                }
+              }
+          }
+          allStaffJson {
+            edges {
+                node {
+                  id
+                  slug
                 }
               }
           }
@@ -100,6 +111,18 @@ exports.createSchemaCustomization = ({ actions }) => {
           createPage({
             path: `/title/${node.BookID}`,
             component: path.resolve(`./src/templates/book-page.js`),
+            context: {
+              id: node.id,
+            },
+          })
+        })
+
+        const staffs = result.data.allStaffJson.edges
+
+        staffs.forEach(({ node }) => {
+          createPage({
+            path: `/staff/${node.slug}`,
+            component: path.resolve(`./src/templates/staff-page.js`),
             context: {
               id: node.id,
             },

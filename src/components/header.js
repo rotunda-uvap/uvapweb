@@ -11,7 +11,7 @@ const Header = ({data}) => {
       </div>
       <div className="block">
         <button onClick={() => toggleExpansion(!isExpanded)} className="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-gray-400 hover:border-white">
-          <svg className="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+         <span className="uppercase text-sm mr-1">MENU</span> <svg className="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
         </button>
       </div>
       <div className={`${ isExpanded ? `block` : `hidden` } w-full block flex-grow`}>
@@ -22,6 +22,7 @@ const Header = ({data}) => {
           <Link to={`/book-search`} className="uppercase block mt-4  text-teal-200 hover:text-gray-300">
             Search
           </Link>
+          
           <Link to={`/content/prospective-authors`} className="uppercase block mt-4  text-teal-200 hover:text-gray-300 mr-4">
             Prospective Authors
           </Link>
@@ -45,6 +46,9 @@ const Header = ({data}) => {
           </Link>
           <Link to={`/`} className="uppercase block mt-4 text-teal-200 hover:text-gray-300">
             Give
+          </Link>
+          <Link to={`/contact`} className="uppercase block mt-4  text-teal-200 hover:text-gray-300 mr-4">
+            Contact
           </Link>
           <Link to={`/`} className="uppercase block mt-4  text-teal-200 hover:text-gray-300">
             Career
