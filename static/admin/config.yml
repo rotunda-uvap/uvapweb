@@ -25,7 +25,6 @@ collections:
       - { label: 'related book id', name: 'relbook', widget: 'list', required: false }
       - { name: body, label: Body, widget: markdown }
       - { label: 'Description', name: 'description', widget: 'string', required: false }
-      - { label: 'YouTube Link', name: 'link', widget: 'string', required: false }
 
     
  

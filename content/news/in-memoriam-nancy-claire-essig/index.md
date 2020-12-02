@@ -2,6 +2,7 @@
 type: news
 draft: "false"
 title: "In Memoriam: Nancy Claire Essig"
+description: "It is with great sadness that we announce the passing of Reverend Nancy Claire Essig, former Director of the University of Virginia Press. Most recently"
 ---
 It is with great sadness that we announce the passing of Reverend Nancy Claire Essig, former Director of the University of Virginia Press. Most recently having served as the Minister at the Burkeville Presbyterian Church in Virginia, Essig had a long career in scholarly publishing starting in New York City and moving to Johns Hopkins University Press before retiring as Director of UVA Press in 2001.
 

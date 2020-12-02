@@ -4,10 +4,10 @@ import { Link } from "gatsby"
 const Header = ({data}) => {
   const [isExpanded, toggleExpansion] = useState(false)
     return (
-      <header className="text-gray-700 body-font border-b border-gray-300">
+      <header className="bg-gray-700 text-white body-font">
        <nav className="flex items-center justify-between flex-wrap bg-teal-500 p-6">
       <div className="flex items-center flex-shrink-0 mr-6">
-        <span className="text-gray-700"><Link to={`/`}>UNIVERSITY <i>of</i> VIRGINIA PRESS</Link></span>
+        <span className="text-white"><Link to={`/`}>UNIVERSITY <i>of</i> VIRGINIA PRESS</Link></span>
       </div>
       <div className="block">
         <button onClick={() => toggleExpansion(!isExpanded)} className="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-gray-400 hover:border-white">

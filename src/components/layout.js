@@ -6,9 +6,9 @@ import "./layout.css"
 
 const Layout = ({ children }) => {
   return (
-    <div className="max-w-5xl mx-auto px-5 py-10">
-      <Header />
-      <div className="max-w-5xl mx-auto py-5">
+    <div className="max-w-6xl mx-auto px-5 py-10">
+      <Header/>
+      <div className="max-w-6xl mx-auto pb-5">
          {children}
       </div>
       <Footer />

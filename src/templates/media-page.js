@@ -5,6 +5,7 @@ import Layout from "../components/layout"
 
 export default ({ data }) => {
     const media = data.markdownRemark
+
  return (
    <Layout>
      <div>
