@@ -4,27 +4,30 @@ import Layout from "../components/layout"
 import "../utils/global.css"
 
 
-export default function AuthorsPage({ data }) {
+export default function AboutPage({ data }) {
     const staff = data.allStaffJson
     const pagedata = data.markdownRemark
  return (
     
         <Layout>
-            <h2 className="text-5xl py-2">For Authors</h2>
-
-        <section className="py-5 grid grid-cols-2 mx-auto">
-            <div className="p-3 uppercase">Current Authors</div>
-            <button className="p-3 bg-green-500 hover:bg-green-400 text-white uppercase"><Link to={'/prospective'}>Prospective Authors</Link></button>
-
-        </section>
-            <section>
-            <p dangerouslySetInnerHTML={{__html: pagedata.html}}/>
+            <h2 className="text-4xl py-2">About UVa Press</h2>
+            <section className="grid md:grid-cols-5 py-5">
+                <Link to={'/contact'}><button className="p-3 border-b-4 border-white hover:border-black w-full">Contact</button></Link>
+                <Link to={'/staff-list'}><button className="p-3 border-b-4 border-white hover:border-black w-full">Staff Directory</button></Link>
+                <Link to={'/content/career'}><button className="p-3 border-b-4 border-white hover:border-black w-full">Career Opportunties</button></Link>
+                <Link to={'/content/support'}><button className="p-3 border-b-4 border-white hover:border-black w-full">Support</button></Link>
+                <Link to={'/content/permissions'}><button className="p-3 border-b-4 border-white hover:border-black w-full">Rights and Permissions</button></Link>
 
             </section>
 
-            <section className="py-10">
-                <h3 className="p-3 text-lg font-black">UVaP Editors</h3>
-                <div className="grid md:grid-cols-2 gap-2"> 
+         <p className="py-5" dangerouslySetInnerHTML={{__html: pagedata.html}}/>
+
+
+
+            <section className="py-20">
+                
+                <div id="staff" className="grid md:grid-cols-2 gap-2"> 
+                <h4 className="py-2 font-black text-2xl">UVa Staff</h4>
                 {staff.edges.map(edge => (
                     <>
                         <div className="flex flex-auto">
@@ -44,10 +47,7 @@ export default function AuthorsPage({ data }) {
                      </div>
                 
             </section>
-            <section className="py-20 bg-gray-100">
-                <h3 className="text-4xl">Files</h3>
-            <p>Files to download, how display? </p>
-            </section>
+          
 
            
         </Layout>
@@ -60,7 +60,7 @@ export default function AuthorsPage({ data }) {
 export const query = graphql`
   query {
    
-      allStaffJson(filter: {department: {eq: "Acquisitions"}}) {
+      allStaffJson{
         edges {
           node {
             name
@@ -72,8 +72,9 @@ export const query = graphql`
           }
         }
       }
-      markdownRemark(frontmatter: {type: {eq: "page"}, title: {eq: "Current Authors"}}) {
+      markdownRemark(frontmatter: {type: {eq: "page"}, title: {eq: "About"}}) {
         html
       }
+     
   }
 `

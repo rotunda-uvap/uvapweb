@@ -2,28 +2,24 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import "../utils/global.css"
+import ActiveSeries from "../components/active-series"
 
 
-export default function AuthorsPage({ data }) {
+export default function ProspectiveAuthorsPage({ data }) {
     const staff = data.allStaffJson
     const pagedata = data.markdownRemark
  return (
     
         <Layout>
-            <h2 className="text-5xl py-2">For Authors</h2>
+            <h2 className="text-4xl py-2">For Prospective Authors</h2>
 
-        <section className="py-5 grid grid-cols-2 mx-auto">
-            <div className="p-3 uppercase">Current Authors</div>
-            <button className="p-3 bg-green-500 hover:bg-green-400 text-white uppercase"><Link to={'/prospective'}>Prospective Authors</Link></button>
+         <p dangerouslySetInnerHTML={{__html: pagedata.html}}/>
 
-        </section>
-            <section>
-            <p dangerouslySetInnerHTML={{__html: pagedata.html}}/>
+         <ActiveSeries/>
 
-            </section>
 
-            <section className="py-10">
-                <h3 className="p-3 text-lg font-black">UVaP Editors</h3>
+            <section className="py-20">
+                
                 <div className="grid md:grid-cols-2 gap-2"> 
                 {staff.edges.map(edge => (
                     <>
@@ -72,7 +68,7 @@ export const query = graphql`
           }
         }
       }
-      markdownRemark(frontmatter: {type: {eq: "page"}, title: {eq: "Current Authors"}}) {
+      markdownRemark(frontmatter: {type: {eq: "page"}, title: {eq: "Prospective Authors"}}) {
         html
       }
   }

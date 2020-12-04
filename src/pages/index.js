@@ -4,7 +4,6 @@ import Layout from "../components/layout"
 import { StaticImage } from "gatsby-plugin-image"
 
 export default function Home({data}) {
-  const news = data.allMarkdownRemark.edges
   return (
     <Layout>
       <div className="py-20 bg-hero-pattern">

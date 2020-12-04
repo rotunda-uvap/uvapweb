@@ -9,18 +9,27 @@ export default function StaffList({ data }) {
     
         <Layout>
           <h2 className="py-5 text-4xl">UVaP Staff</h2>
-          <p>Turn into cards</p>
-          <ul className="container px-5 py-5 mx-auto">
+          
+          <section >
+          <ul className="container px-5 py-5 mx-auto grid md:grid-cols-2">
             {people.edges.map(edge => (
-            <>
-                <li  className="text-normal font-black hover:text-green-400 p-2" key={edge.node.name}>
-                  <Link to={`../staff/${ edge.node.slug }`}>{ edge.node.name }
-                  </Link>
-                  </li>
-            
-            </>
-        ))}
-        </ul>
+
+                  <>
+                  <div className="flex flex-auto py-2">
+                      <img src="/images/scooter.jpg" alt="muppet placeholder"/>
+                      <ul className="flex flex-col px-10">
+                          <li className="font-black"><Link to={`../staff/${ edge.node.slug }`}>{ edge.node.name }
+                          </Link></li> 
+                          <li>{edge.node.jobtitle}</li>
+                          <li>{edge.node.phone}</li>
+                          <li><a href={`mailto:${ edge.node.email }`}>{edge.node.email}</a></li>
+                    </ul>
+                  </div>
+                  </>   
+           
+              ))}
+              </ul>
+        </section>
         </Layout>
 
  )

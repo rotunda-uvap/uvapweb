@@ -52,7 +52,7 @@ exports.createSchemaCustomization = ({ actions }) => {
               }
           }
         news: allMarkdownRemark(
-          filter: {frontmatter: {type: {nin: ["page", "media"]}}}) {
+          filter: {frontmatter: {type: {nin: ["page", "media", "series", "promo"]}}}) {
           edges {
             node {
               id

@@ -14,7 +14,7 @@ export default function Articles({ data }) {
                 <p className="text-center p-5">Some intro text about Publicity related things</p>
                 
                 <div className="flex flex-auto">
-                    <img src="http://placeimg.com/100/100/animals"/>
+                    <img src="/images/beaker.jpeg" alt="muppet placeholder"/>
                     <ul className="flex flex-col px-10">
                         <li>Questions? Get in touch with Emily Grandstaff</li>
                         <li>Publicity and Social Media Director</li>

@@ -1,7 +1,6 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import "../utils/global.css"
 
 
@@ -10,8 +9,7 @@ import "../utils/global.css"
 
 export default ({ data }) => {
     const book = data.booksJson
-    const imageData = getImage(data.file)
-
+    const ImgSrc = "../../covers/" + data.booksJson.CoverImageFull
     
  return (
    
@@ -21,7 +19,7 @@ export default ({ data }) => {
     <section className="grid md:grid-cols-3 py-3">
       
       <div className="col-span-1">
-      <GatsbyImage image={imageData} alt="book cover" />
+      <img src={ImgSrc} className="max-w-xs" alt="book cover"/>
 
       </div>
       <div className="md:col-span-2">   
@@ -66,9 +64,9 @@ export default ({ data }) => {
         <input class="radio" id="two" name="group" type="radio"/>
         <input class="radio" id="three" name="group" type="radio"/>
           <div class="tabs">
-            <label class="tab" id="one-tab" for="one">Summary</label>
-            <label class="tab" id="two-tab" for="two">Reviews</label>
-            <label class="tab" id="three-tab" for="three">About the Author(s)</label>
+            <label class="tab" id="one-tab" htmlFor="one">Summary</label>
+            <label class="tab" id="two-tab" htmlFor="two">Reviews</label>
+            <label class="tab" id="three-tab" htmlFor="three">About the Author(s)</label>
           </div>
         <div class="panels">
             <div class="panel" id="one-panel">
@@ -119,12 +117,13 @@ export default ({ data }) => {
 
 
 export const query = graphql`
-  query($id: String!, $imageid: String) {
+  query($id: String!) {
     booksJson(id: { eq: $id }) {
       id
       BookID
       Title
       Subtitle
+      CoverImageFull
       Bindings {
         type
         ISBN
@@ -148,10 +147,6 @@ export const query = graphql`
       Subject
       InternalSeriesVolume
     }
-    file(relativePath: {eq: $imageid}) {
-      childImageSharp {
-        gatsbyImageData(layout: FIXED, width:300)
-      }
-    }
+    
   }
 `

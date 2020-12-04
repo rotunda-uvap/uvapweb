@@ -55,6 +55,20 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        path: `${__dirname}/content/seriesinfo`,
+        name: `seriesinfo`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/promos`,
+        name: `promos`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
         name: `images`,
         path: `${__dirname}/src/images/`,
       },
@@ -106,7 +120,16 @@ module.exports = {
         cmsConfig: `/static/admin/config.yml`
       }
     },
-    
+    {
+      resolve: 'gatsby-plugin-static-folders',
+      options: {
+        folders: [
+          './images',
+          './downloads',
+          './covers',
+        ]
+      }
+    },
    
   `gatsby-plugin-slug`,
   `gatsby-plugin-netlify-cms`,

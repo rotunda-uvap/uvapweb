@@ -17,7 +17,7 @@ export default function Marketing({data}) {
                 {staff.edges.map(edge => (
                     <>
                         <div className="flex flex-auto">
-                            <img src="http://placeimg.com/100/100/animals"/>
+                            <img src="/images/chef.jpeg" alt="muppet placeholder"/>
                              <ul className="flex flex-col px-10">
                                 <li><Link to={`../staff/${ edge.node.slug }`}>{ edge.node.name }
                                 </Link></li> 
@@ -61,6 +61,7 @@ export const query = graphql`
             jobtitle
             phone
             email
+            slug
           }
         }
       }

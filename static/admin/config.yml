@@ -73,7 +73,11 @@ collections:
     fields:
       - { label: 'Type', name: 'type', widget: 'select', options: ['news', 'event', 'media', 'page', 'promo', 'series'], required: true}  
       - { name: title, label: Title }
-      - { label: 'Series Status', name: 'status', widget: 'select', options: ['active', 'inactive'], required: true}  
+      - { label: 'Series Status', name: 'status', widget: 'select', options: ['active', 'completed'], required: true} 
+      - { label: 'Series Type', name: 'type', widget: 'select', options: ['Academic Book Series', 'Documentary Editions','Lecture Series', 'Institutional Collaborations'], required: true}  
       - { label: 'Series Editors', name: 'editors', widget: 'string', required: false }
+      - { label: 'UVaP Editor', name: 'uvaeditors', widget: 'string', required: false }
       - { name: body, label: Body, widget: markdown }
+      - { label: 'Series Slug', name: 'slug', widget: 'string', required: false, hint:'In case need to match URL-friendly Series name' }
+
            

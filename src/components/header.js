@@ -1,23 +1,17 @@
 import React , { useState }from "react"
-import { graphql, Link, useStaticQuery } from "gatsby"
-import { GatsbyImage } from "gatsby-plugin-image"
+import {Link } from "gatsby"
 
 const Header = () => {
-  const data = useStaticQuery(graphql`
-          query {
-            file(relativePath: {eq: "uvap_white@2x.png"}) {
-              childImageSharp {
-                gatsbyImageData(layout: FIXED, maxWidth: 300, placeholder: TRACED_SVG)
-              }
-            }
-          }`)
+  
         
   const [isExpanded, toggleExpansion] = useState(false)
     return (
       <header className="bg-gray-700 text-white body-font">
        <nav className="flex items-center justify-between flex-wrap bg-teal-500 p-6">
       <div className="flex items-center flex-shrink-0 mr-6">
-      <Link to={`/`}> <GatsbyImage image={data.file.childImageSharp.gatsbyImageData} alt="uvap logo" /> </Link>
+      <div className="hidden md:block"><Link to={`/`}> <img src="/uvap_white.png" alt="logo"/> </Link></div>
+      <div className="md:hidden"><Link to={`/`}> <img src="/uvap_stacked.png" alt="mobile logo"/> </Link></div>
+
       </div>
       <div className="block mt-2 md:mt-0">
         <button onClick={() => toggleExpansion(!isExpanded)} className="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-gray-400 hover:border-white">
@@ -26,17 +20,17 @@ const Header = () => {
       </div>
       <div className={`${ isExpanded ? `block` : `hidden` } w-full block flex-grow mt-3 md:mt-0`}>
         <div className="text-sm lg:flex-grow">
-          <Link to={`/content/about`} href="#responsive-header" className="uppercase block mt-4  text-teal-200 hover:text-gray-300 mr-4">
+          <Link to={`/about`} href="#responsive-header" className="uppercase block mt-4  text-teal-200 hover:text-gray-300 mr-4">
             About
           </Link>
           <Link to={`/book-search`} className="uppercase block mt-4  text-teal-200 hover:text-gray-300">
             Search
           </Link>
           
-          <Link to={`/content/prospective-authors`} className="uppercase block mt-4  text-teal-200 hover:text-gray-300 mr-4">
+          <Link to={`/prospective`} className="uppercase block mt-4  text-teal-200 hover:text-gray-300 mr-4">
             Prospective Authors
           </Link>
-          <Link to={`/content/current-authors`} className="uppercase block mt-4  text-teal-200 hover:text-gray-300 mr-4">
+          <Link to={`/authors`} className="uppercase block mt-4  text-teal-200 hover:text-gray-300 mr-4">
             Current Authors
           </Link>
           <Link to={`/books`} className="uppercase block mt-4  text-teal-200 hover:text-gray-300">

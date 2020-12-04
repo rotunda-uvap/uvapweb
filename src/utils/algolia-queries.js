@@ -21,7 +21,7 @@ const bookQuery = `{
   }
 }`
 
-function bookToAlgoliaRecord({ node: { id, BookID, Title, Subtitle, MainDescription, AuthorCredit, Subject, Series } }) {
+function bookToAlgoliaRecord({ node: { id, BookID, Title, Subtitle, MainDescription, AuthorCredit, Subject, Series, List } }) {
   return {
     objectID: id,
     BookID,
@@ -30,7 +30,8 @@ function bookToAlgoliaRecord({ node: { id, BookID, Title, Subtitle, MainDescript
     MainDescription,
     AuthorCredit,
     Subject,
-    Series
+    Series,
+    List
   }
 }
 
@@ -39,7 +40,7 @@ const queries = [
     query: bookQuery,
     transformer: ({ data }) => data.books.edges.map(bookToAlgoliaRecord),
     indexName,
-    settings: { attributesToSnippet: [`excerpt:20`] },
+    settings: { attributesToSnippet: [`MainDescription:20`], searchableAttributes: ['Title', 'Subtitle', 'MainDescription', 'AuthorCredit'], attributesForFaceting: ['Series', 'Subject', 'List'] },
   },
 ]
 
