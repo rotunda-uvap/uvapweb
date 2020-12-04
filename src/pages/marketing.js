@@ -17,7 +17,7 @@ export default function Marketing({data}) {
                 {staff.edges.map(edge => (
                     <>
                         <div className="flex flex-auto">
-                            <img src="/images/chef.jpeg" alt="muppet placeholder"/>
+                            <img src="chef.jpeg" alt="muppet placeholder"/>
                              <ul className="flex flex-col px-10">
                                 <li><Link to={`../staff/${ edge.node.slug }`}>{ edge.node.name }
                                 </Link></li> 

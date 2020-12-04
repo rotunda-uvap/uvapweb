@@ -28,7 +28,7 @@ export default function AuthorsPage({ data }) {
                 {staff.edges.map(edge => (
                     <>
                         <div className="flex flex-auto">
-                            <img src="/images/scooter.jpg" alt="muppet placeholder"/>
+                            <img src="scooter.jpg" alt="muppet placeholder"/>
                              <ul className="flex flex-col px-10">
                                 <li className="font-black"><Link to={`../staff/${ edge.node.slug }`}>{ edge.node.name }
                                 </Link></li> 

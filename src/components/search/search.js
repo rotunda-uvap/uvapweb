@@ -15,6 +15,9 @@ const Search = () => (
       <SearchBox className="p-2 m-1" translations={{ placeholder:'Search for a book'}} />
       <div className="grid md:grid-cols-3">
       <section className="py-5">
+      <div><h3 className="text-lg uppercase">Filter by List</h3>
+      
+      <RefinementList attribute="List"/></div>
         <div><h3 className="text-lg uppercase">Filter by Subject</h3>
       
       <RefinementList attribute="Subject"/></div>

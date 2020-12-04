@@ -16,7 +16,7 @@ export default function StaffList({ data }) {
 
                   <>
                   <div className="flex flex-auto py-2">
-                      <img src="/images/scooter.jpg" alt="muppet placeholder"/>
+                      <img src="scooter.jpg" alt="muppet placeholder"/>
                       <ul className="flex flex-col px-10">
                           <li className="font-black"><Link to={`../staff/${ edge.node.slug }`}>{ edge.node.name }
                           </Link></li> 
