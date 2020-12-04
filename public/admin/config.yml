@@ -18,17 +18,13 @@ collections:
     public_folder: ''
     path: '{{title}}/index'
     fields:
-      - { name: path, label: Path, required: false, }
       - { label: "Type", name: "type",widget: "select", options: ["news", "event", "media", "page", 'promo'], required: true}
       - { label: "Is Draft?", name: "draft", widget: "string", default: "false"}
       - { name: title, label: Title }
       - { label: 'related book id', name: 'relbook', widget: 'list', required: false }
+      - { label: 'Summary', name: 'description', widget: 'string', required: false, hint: 'Text for homepage and previews'}
       - { name: body, label: Body, widget: markdown }
-      - { label: 'Description', name: 'description', widget: 'string', required: false }
-
-    
- 
-
+      
   - name: 'pages'
     identifier_field: '{{title}}'
     label: 'Pages'
@@ -44,6 +40,8 @@ collections:
       - { label: 'Type', name: 'type', widget: 'select', options: ['news', 'event', 'media', 'page', 'promo'], required: true}  
       - { name: title, label: Title }
       - { name: body, label: Body, widget: markdown }
+      - { label: 'Internal Tag', name: 'int_tag', widget: 'select', options: ['authors'], required: false}  
+
 
   - name: 'promo'
     label: 'Promotion'
@@ -60,5 +58,22 @@ collections:
       - { name: title, label: Title }
       - { label: 'related book id', name: 'relbook', widget: 'list', required: false }
       - { name: body, label: Body, widget: markdown }
-      - { label: 'Description', name: 'description', widget: 'string', required: false }
+      - { label: 'Summary', name: 'description', widget: 'string', required: false, hint: 'Text for homepage and previews'}
 
+  - name: 'series_info'
+    identifier_field: '{{title}}'
+    label: 'Series Info'
+    folder: 'content/seriesinfo'
+    preview_path: '{{title}}/index'
+    create: true
+    slug: 'index'
+    media_folder: ''
+    public_folder: ''
+    path: '{{title}}/index'
+    fields:
+      - { label: 'Type', name: 'type', widget: 'select', options: ['news', 'event', 'media', 'page', 'promo', 'series'], required: true}  
+      - { name: title, label: Title }
+      - { label: 'Series Status', name: 'status', widget: 'select', options: ['active', 'inactive'], required: true}  
+      - { label: 'Series Editors', name: 'editors', widget: 'string', required: false }
+      - { name: body, label: Body, widget: markdown }
+           

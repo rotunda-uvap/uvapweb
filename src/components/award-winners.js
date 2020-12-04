@@ -20,14 +20,14 @@ export default function AwardWinners() {
       `}
       render={data => (
         <section>
-        <h2>Award Winners (make collapsible?)</h2>
+        <h3 className="text-3xl py-5">Award Winners (make collapsible?)</h3>
         <ul className="container px-5 py-5 mx-auto">
           {data.allBooksJson.edges.map(edge => (
           <>
-              <li  className="text-normal font-black text-blue-400 hover:text-blue-200 p-2" key={edge.node.Title}>
+              <li  className="text-normal font-black hover:text-green-400 p-2" key={edge.node.Title}>
                 <Link to={`../title/${ edge.node.BookID }`}>{ edge.node.Title }
                 </Link>
-                <p>{edge.node.Prizes}</p>
+                <p className="text-sm font-normal">{edge.node.Prizes}</p>
                 </li>
           
           </>

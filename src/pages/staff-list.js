@@ -8,11 +8,12 @@ export default function StaffList({ data }) {
  return (
     
         <Layout>
-            <h2>Listing of All Staff Members at Press</h2>
+          <h2 className="py-5 text-4xl">UVaP Staff</h2>
+          <p>Turn into cards</p>
           <ul className="container px-5 py-5 mx-auto">
             {people.edges.map(edge => (
             <>
-                <li  className="text-normal font-black text-blue-400 hover:text-blue-200 p-2" key={edge.node.name}>
+                <li  className="text-normal font-black hover:text-green-400 p-2" key={edge.node.name}>
                   <Link to={`../staff/${ edge.node.slug }`}>{ edge.node.name }
                   </Link>
                   </li>

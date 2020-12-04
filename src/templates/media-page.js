@@ -9,7 +9,7 @@ export default ({ data }) => {
  return (
    <Layout>
      <div>
-        <h1 className="py5 text-1xl font-black mt-16 mb-2" >{media.frontmatter.title}</h1>
+        <h1 className="py-5 text-2xl font-black uppercase" >{media.frontmatter.title}</h1>
         <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1">
           <article 
           dangerouslySetInnerHTML={{ __html: media.html }}/>

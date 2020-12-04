@@ -8,6 +8,7 @@ export default function Subjects({ data }) {
  return (
     
         <Layout>
+          <h2 className="py-5 text-4xl">Subjects</h2>
             {subs.distinct.map(d => (
             <>
            

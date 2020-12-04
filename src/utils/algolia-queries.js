@@ -10,6 +10,8 @@ const bookQuery = `{
         BookID
         Title
         Subtitle
+        Subject
+        Series
         MainDescription {
             html
         }
@@ -19,14 +21,16 @@ const bookQuery = `{
   }
 }`
 
-function bookToAlgoliaRecord({ node: { id, BookID, Title, Subtitle, MainDescription, AuthorCredit } }) {
+function bookToAlgoliaRecord({ node: { id, BookID, Title, Subtitle, MainDescription, AuthorCredit, Subject, Series } }) {
   return {
     objectID: id,
     BookID,
     Title,
     Subtitle,
     MainDescription,
-    AuthorCredit
+    AuthorCredit,
+    Subject,
+    Series
   }
 }
 

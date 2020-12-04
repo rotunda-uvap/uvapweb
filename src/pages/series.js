@@ -8,6 +8,7 @@ export default function Series({ data }) {
  return (
     
         <Layout>
+          <h2 className="py-5 text-4xl">Series</h2>
             {subs.distinct.map(d => (
             <>
            

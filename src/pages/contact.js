@@ -5,7 +5,7 @@ import { Link } from "gatsby"
 
 const ContactPage = () => (
     <Layout>
-            <h1>Contact Us</h1>
+            <h2 className="py-5 text-4xl">Contact Us</h2>
 
 <h5>Main Office</h5>
 <p>Phone: 434 924-3468 (toll-free: 1-800-831-3406)</p>

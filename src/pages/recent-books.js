@@ -8,7 +8,7 @@ export default function RecentBooks({ data }) {
  return (
     
         <Layout>
-            <h2>Recent Books</h2>
+            <h2 className="py-5 text-4xl">Recent Books</h2>
           <ul className="container px-5 py-5 mx-auto">
             {books.edges.map(edge => (
             <>

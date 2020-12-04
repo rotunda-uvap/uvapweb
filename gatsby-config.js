@@ -90,10 +90,12 @@ module.exports = {
           {
             resolve: "gatsby-remark-embed-youtube",
             options: {
-              width: 560,
-              height: 315
+              width: 300,
+              height: 200
             }
-          }
+          },
+          "gatsby-remark-responsive-iframe"
+          
         ],
       },
     },
