@@ -134,6 +134,7 @@ module.exports = {
   `gatsby-plugin-slug`,
   `gatsby-plugin-netlify-cms`,
   `gatsby-plugin-postcss`,
+  `gatsby-plugin-styled-components`,
   `gatsby-image`,
   `gatsby-plugin-image`,
   `gatsby-plugin-sharp`,

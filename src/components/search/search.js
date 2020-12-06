@@ -1,5 +1,5 @@
 import algoliasearch from "algoliasearch/lite"
-import { InstantSearch, SearchBox, Hits, Stats, RefinementList, Pagination} from "react-instantsearch-dom"
+import { InstantSearch, SearchBox, Hits, Stats, RefinementList, Pagination, SortBy} from "react-instantsearch-dom"
 import "./search.css"
 import React from 'react'
 import { Link } from "gatsby"
@@ -7,15 +7,20 @@ import { Link } from "gatsby"
 const appId = process.env.GATSBY_ALGOLIA_APP_ID;
 const searchKey = process.env.GATSBY_ALGOLIA_SEARCH_KEY;
 const searchClient = algoliasearch(appId, searchKey);
-const Hit = ( {hit}) => <span><Link to={`../title/${ hit.BookID }`}><h6 className="font-black uppercase">{hit.Title}</h6></Link><h6 className="text-sm uppercase">{hit.Subtitle}</h6><h6 className="text-xs uppercase">{hit.AuthorCredit}</h6>
+const Hit = ( {hit}) => <span><Link to={`../title/${ hit.BookID }`}><h6 className="font-black uppercase">{hit.Title}</h6></Link>
+<h6 className="text-sm italic uppercase">{hit.Subtitle}</h6>
+<h6 className="text-xs uppercase pt-2">{hit.AuthorCredit}</h6>
 
-<p dangerouslySetInnerHTML={{ __html: hit.MainDescription.html.split(' ').splice(0, 30).join(' ') + '...' }}/></span>
+<p className="pt-3" dangerouslySetInnerHTML={{ __html: hit.MainDescription.html.split(' ').splice(0, 30).join(' ') + '...' }}/>
+<h6 className="text-xs uppercase pt-2">{hit.DaysSincePublication}</h6></span>
+
 const Search = () => (
     <InstantSearch searchClient={searchClient} indexName={process.env.GATSBY_ALGOLIA_INDEX_NAME}>
       <SearchBox className="p-2 m-1" translations={{ placeholder:'Search for a book'}} />
       <div className="grid md:grid-cols-3">
       <section className="py-5">
-      <div><h3 className="text-lg uppercase">Filter by List</h3>
+      
+      <div className="pb-5"><h3 className="text-lg uppercase">Filter by List</h3>
       
       <RefinementList attribute="List"/></div>
         <div><h3 className="text-lg uppercase">Filter by Subject</h3>
@@ -24,9 +29,17 @@ const Search = () => (
       <div className="py-5"><h3 className="text-lg uppercase">Filter by Series</h3>
       <RefinementList attribute="Series"/></div></section>
       <section className="col-span-2">
-        <h3 className="text-lg uppercase pt-5">Results</h3>
-      <Stats/>
-      <Hits hitComponent={Hit} />
+        <h3 className="text-lg uppercase pb-5">Results</h3>
+       <div className="border-b border-gray-400 pb-3">
+        <SortBy className="text-xs text-gray-600"
+          defaultRefinement="Books"
+          items={[
+            {value: "Books", label:"Most Relevant"},
+            {value: "books_date_asc", label:"Most Recent Books First"}
+            ]}/>
+      <Stats className="text-xs text-gray-600"/>
+      </div>
+      <Hits className="pt-5" hitComponent={Hit} />
       </section>
       </div>
       

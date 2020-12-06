@@ -2,10 +2,11 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import "../utils/global.css"
+import AcqStaff from "../components/AcqStaff"
 
 
 export default function AuthorsPage({ data }) {
-    const staff = data.allStaffJson
+    
     const pagedata = data.markdownRemark
  return (
     
@@ -25,21 +26,7 @@ export default function AuthorsPage({ data }) {
             <section className="py-10">
                 <h3 className="p-3 text-lg font-black">UVaP Editors</h3>
                 <div className="grid md:grid-cols-2 gap-2"> 
-                {staff.edges.map(edge => (
-                    <>
-                        <div className="flex flex-auto">
-                            <img src="scooter.jpg" alt="muppet placeholder"/>
-                             <ul className="flex flex-col px-10">
-                                <li className="font-black"><Link to={`../staff/${ edge.node.slug }`}>{ edge.node.name }
-                                </Link></li> 
-                                <li>{edge.node.jobtitle}</li>
-                                <li>{edge.node.phone}</li>
-                                <li><a href={`mailto:${ edge.node.email }`}>{edge.node.email}</a></li>
-                          </ul>
-                        </div>
-                    </>
-
-                    ))}
+               <AcqStaff />
 
                      </div>
                 
@@ -60,18 +47,7 @@ export default function AuthorsPage({ data }) {
 export const query = graphql`
   query {
    
-      allStaffJson(filter: {department: {eq: "Acquisitions"}}) {
-        edges {
-          node {
-            name
-            department
-            jobtitle
-            phone
-            email
-            slug
-          }
-        }
-      }
+     
       markdownRemark(frontmatter: {type: {eq: "page"}, title: {eq: "Current Authors"}}) {
         html
       }

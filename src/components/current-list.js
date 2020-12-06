@@ -1,5 +1,44 @@
 import React from "react"
 import { StaticQuery, graphql, Link } from "gatsby"
+import styled from "styled-components"
+import "./BookCard.css"
+
+
+const BookCardWrapper = styled.div`
+`
+
+const Subtitle = styled.div`
+  
+`
+const Title = styled.h2`
+
+`
+const Author = styled.p`
+  margin: 0;
+
+`
+const BookImg = styled.p`
+  display:none;
+
+`
+const BookNo = styled.p`
+  display:none;
+
+`
+const BookCard = props => (
+  <BookCardWrapper className="flex flex-col border-1  shadow-md"
+  style={{backgroundImage: "url(" + "'../" + props.bookimg + "'" + ")", 
+  backgroundSize: 'cover',
+  backgroundRepeat: 'no-repeat', backgroundPosition: 'center'}}
+ ><div className="bookCard py-7 px-5 text-opacity-0 hover:text-white">
+      <BookNo>{props.bookno}</BookNo>
+<BookImg>{props.bookimg}</BookImg>
+      <Link to={`../title/${ props.bookno }`}><Title className="text-lg">{props.title}</Title></Link>
+      <Subtitle className="text-xs">{props.subtitle}</Subtitle>
+      <Author className="text-xs">{props.author}</Author></div>
+     
+  </BookCardWrapper>
+)
 
 export default function CurrentList() {
   return (
@@ -13,6 +52,7 @@ export default function CurrentList() {
               Subtitle
               BookID
               AuthorCredit
+              CoverImageMain
             }
           }
         }
@@ -22,20 +62,15 @@ export default function CurrentList() {
       render={data => (
         <section>
         <h2>Books in Current Catalog</h2>
-        <ul className="container px-5 py-5 grid md:grid-cols-6 md:gap-4">
+        <div className="container px-5 py-5 grid md:grid-cols-5 md:gap-4">
           {data.allBooksJson.edges.map(edge => (
           <>
-              <li  className="text-normal border-2 border-gray-800 p-2 hover:bg-green-400 hover:text-white" key={edge.node.Title}>
-                <div className="flex flex-col">
-                  <Link className="font-black" to={`../title/${ edge.node.BookID }`}>{ edge.node.Title } </Link>
-          {edge.node.Subtitle &&  <h5>{edge.node.Subtitle}</h5>}
-          <h6 className="uppercase">{edge.node.AuthorCredit}</h6>
-                  </div>
-                </li>
+          <BookCard  bookno={edge.node.BookID} bookimg={edge.node.CoverImageMain} title={edge.node.Title} subtitle={edge.node.Subtitle} author={edge.node.AuthorCredit}/>
+                
           
           </>
       ))}
-      </ul>
+      </div>
       </section>
       )}
     />
