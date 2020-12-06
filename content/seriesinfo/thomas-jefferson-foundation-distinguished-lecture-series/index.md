@@ -1,0 +1,7 @@
+---
+type: series
+title: Thomas Jefferson Foundation Distinguished Lecture Series
+status: active
+seriestype: Lecture Series
+---
+Description Needed
