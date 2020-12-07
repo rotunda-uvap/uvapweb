@@ -1,29 +1,31 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
+import BioCard from "../components/BioCard"
 
 
-export default function Articles({ data }) {
+export default function PubPage({ data }) {
     const news = data.allMarkdownRemark
+    const staff = data.allStaffJson
+
  return (
     
         <Layout>
             <h2 className="text-5xl py-2">Publicity</h2>
 
             <section className="py-20">
-                <p className="text-center p-5">Some intro text about Publicity related things</p>
                 
-                <div className="flex flex-auto">
-                    <img src="beaker.jpeg" alt="muppet placeholder"/>
-                    <ul className="flex flex-col px-10">
-                        <li>Questions? Get in touch with Emily Grandstaff</li>
-                        <li>Publicity and Social Media Director</li>
-                        <li> (434) 982-2932</li>
-                        <li>egrandstaff@virginia.edu</li>
-                    </ul>
-                </div>
+                <div className="grid md:grid-cols-2 gap-2"> 
+                {staff.edges.map(edge => (
+                    <>
+                    <BioCard name={edge.node.name} title={edge.node.jobtitle} phone={edge.node.phone} email={edge.node.email} slug={edge.node.slug} photo={edge.node.photo}/>
+                 </>
+
+
+                    ))}
+
+                     </div>
                 
-        
             </section>
             <section className="py-20 bg-gray-100">
                 <h3 className="text-4xl">Social Media</h3>
@@ -68,6 +70,19 @@ export const query = graphql`
             fields {
               slug
             }
+          }
+        }
+      }
+      allStaffJson(filter: {department: {eq: "Publicity"}}) {
+        edges {
+          node {
+            name
+            department
+            jobtitle
+            phone
+            email
+            slug
+            photo
           }
         }
       }

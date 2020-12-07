@@ -1,7 +1,8 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import AwardWinners from "../components/award-winners"
+import BioCard from "../components/BioCard"
 
 
 export default function Marketing({data}) {
@@ -16,17 +17,9 @@ export default function Marketing({data}) {
                 <div className="grid md:grid-cols-2 gap-2"> 
                 {staff.edges.map(edge => (
                     <>
-                        <div className="flex flex-auto">
-                            <img src="chef.jpeg" alt="muppet placeholder"/>
-                             <ul className="flex flex-col px-10">
-                                <li><Link to={`../staff/${ edge.node.slug }`}>{ edge.node.name }
-                                </Link></li> 
-                                <li>{edge.node.jobtitle}</li>
-                                <li>{edge.node.phone}</li>
-                                <li><a href={`mailto:${ edge.node.email }`}>{edge.node.email}</a></li>
-                          </ul>
-                        </div>
-                    </>
+                    <BioCard name={edge.node.name} title={edge.node.jobtitle} phone={edge.node.phone} email={edge.node.email} slug={edge.node.slug} photo={edge.node.photo}/>
+                 </>
+
 
                     ))}
 
@@ -63,6 +56,7 @@ export const query = graphql`
             phone
             email
             slug
+            photo
           }
         }
       }

@@ -1,5 +1,6 @@
 import React from "react"
 import { StaticQuery, graphql, Link } from "gatsby"
+import BookCard from "../components/BookCard"
 
 export default function AwardWinners() {
   return (
@@ -10,8 +11,11 @@ export default function AwardWinners() {
           edges {
             node {
               Title
+              Subtitle
               BookID
               Prizes
+              PublicationDate
+              CoverImageThumb
             }
           }
         }
@@ -22,18 +26,15 @@ export default function AwardWinners() {
         <section>
         <h3 className="text-3xl py-5">Award Winners</h3>
         <p>(Make collapsible?)</p>
-        <ul className="container px-5 py-5 mx-auto">
+
+        <div className="container px-5 py-5 grid md:grid-cols-5 md:gap-4">
           {data.allBooksJson.edges.map(edge => (
-          <>
-              <li  className="text-normal font-black hover:text-green-400 p-2" key={edge.node.Title}>
-                <Link to={`../title/${ edge.node.BookID }`}>{ edge.node.Title }
-                </Link>
-                <p className="text-sm font-normal">{edge.node.Prizes}</p>
-                </li>
-          
-          </>
+          <>  
+          <Link to={`../title/${ edge.node.BookID }`}>
+            <BookCard Title={edge.node.Title} Subtitle={edge.node.Subtitle} prizes={edge.node.Prizes} pubdate={edge.node.PublicationDate} Thumb={edge.node.CoverImageThumb} /></Link>
+       </>
       ))}
-      </ul>
+      </div>
       </section>
       )}
     />

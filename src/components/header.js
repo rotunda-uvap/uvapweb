@@ -6,7 +6,7 @@ const Header = () => {
         
   const [isExpanded, toggleExpansion] = useState(false)
     return (
-      <header className="bg-gray-700 text-white body-font">
+      <header className="bg-black text-white body-font">
        <nav className="flex items-center justify-between flex-wrap bg-teal-500 p-6">
       <div className="flex items-center flex-shrink-0 mr-6">
       <div className="hidden md:block"><Link to={`/`}> <img src="/uvap_white.png" alt="logo"/> </Link></div>
@@ -14,7 +14,7 @@ const Header = () => {
 
       </div>
       <div className="block mt-2 md:mt-0">
-        <button onClick={() => toggleExpansion(!isExpanded)} className="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-gray-400 hover:border-white">
+        <button onClick={() => toggleExpansion(!isExpanded)} className="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-blue-200 hover:border-white">
          <span className="uppercase text-sm mr-1">MENU</span> <svg className="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
         </button>
       </div>

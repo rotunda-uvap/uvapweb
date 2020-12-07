@@ -49,9 +49,9 @@ export default ({ data }) => {
          ))} 
         </div>
         <div>
-        {book.Series && <div><h3>Series</h3> <button className="text-white text-sm bg-green-400 rounded-md p-2"><Link to={`../../series/${ book.Series }`}>{ book.Series }</Link></button></div>}
+        {book.Series && <div><h3>Series</h3> <button className="text-white text-sm bg-blue-400 rounded-md p-2"><Link to={`../../series/${ book.Series }`}>{ book.Series }</Link></button></div>}
 
-      {book.Subject && <div><h3 className="mt-3">Subject</h3> <button className="text-white text-sm rounded-md bg-green-600 p-2"><Link to={`../../subject/${ book.Subject }`}>{ book.Subject }</Link></button></div>}
+      {book.Subject && <div><h3 className="mt-3">Subject</h3> <button className="text-white text-sm rounded-md bg-blue-500 p-2"><Link to={`../../subject/${ book.Subject }`}>{ book.Subject }</Link></button></div>}
     </div>
 
     </div>

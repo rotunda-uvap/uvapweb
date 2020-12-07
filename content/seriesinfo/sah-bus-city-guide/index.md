@@ -2,7 +2,7 @@
 type: series
 title: SAH/BUS City Guide
 status: active
-seriestype: Institutional Collaborations
+seriestype: Academic Book Series
 editors: "Series Editor: Karen Kingsley"
 uvaeditors: Mark Mones
 ---

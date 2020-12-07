@@ -18,7 +18,7 @@ collections:
     public_folder: ''
     path: '{{title}}/index'
     fields:
-      - { label: 'Type', name: 'type', widget: 'select', options: ['news', 'event', 'media', 'page', 'promo', 'series'], required: true}  
+      - { label: 'Type', name: 'type', widget: 'select', options: ['news', 'event', 'media'], required: true}  
       - { label: "Is Draft?", name: "draft", widget: "string", default: "false"}
       - { name: title, label: Title }
       - { label: 'related book id', name: 'relbook', widget: 'list', required: false }
@@ -37,7 +37,7 @@ collections:
     path: '{{title}}/index'
     fields:
       - { name: path, label: Path, required: false, }
-      - { label: 'Type', name: 'type', widget: 'select', options: ['news', 'event', 'media', 'page', 'promo', 'series'], required: true}  
+      - { label: 'Type', name: 'type', widget: 'select', options: ['news', 'event', 'media', 'page', 'promo', 'series'], required: true, default: ['pages']}  
       - { name: title, label: Title }
       - { name: body, label: Body, widget: markdown }
       - { label: 'Internal Tag', name: 'int_tag', widget: 'select', options: ['authors'], required: false}  
@@ -54,7 +54,7 @@ collections:
     public_folder: ''
     path: '{{title}}/index'      
     fields:
-      - { label: 'Type', name: 'type', widget: 'select', options: ['news', 'event', 'media', 'page', 'promo', 'series'], required: true}  
+      - { label: 'Type', name: 'type', widget: 'select', options: ['news', 'event', 'media', 'page', 'promo', 'series'], required: true, default: ['promo']}  
       - { name: title, label: Title }
       - { label: 'related book id', name: 'relbook', widget: 'list', required: false }
       - { name: body, label: Body, widget: markdown }
@@ -71,10 +71,10 @@ collections:
     public_folder: ''
     path: '{{title}}/index'
     fields:
-      - { label: 'Type', name: 'type', widget: 'select', options: ['news', 'event', 'media', 'page', 'promo', 'series'], required: true}  
+      - { label: 'Type', name: 'type', widget: 'select', options: ['news', 'event', 'media', 'page', 'promo', 'series'], required: true, default: ['series']}  
       - { name: title, label: Title }
       - { label: 'Series Status', name: 'status', widget: 'select', options: ['active', 'completed'], required: true} 
-      - { label: 'Series Type', name: 'seriestype', widget: 'select', options: ['Academic Book Series', 'Documentary Editions','Lecture Series', 'Institutional Collaborations'], required: true}  
+      - { label: 'Series Type', name: 'seriestype', widget: 'select', options: ['Academic Book Series', 'Documentary Editions','Lecture Series', 'Distributed Series'], required: true}  
       - { label: 'Series Editors', name: 'editors', widget: 'string', required: false }
       - { label: 'UVaP Editor', name: 'uvaeditors', widget: 'string', required: false }
       - { name: body, label: Body, widget: markdown }

@@ -2,6 +2,6 @@
 type: series
 title: Darden Business Series
 status: active
-seriestype: Institutional Collaborations
+seriestype: Academic Book Series
 ---
 Description Needed

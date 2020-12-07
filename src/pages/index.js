@@ -13,10 +13,10 @@ export default function Home({data}) {
     <h3 className="text-2xl mb-8 text-gray-200">
     Founded in 1963 to advance the intellectual interests not only of the University of Virginia, but of institutions of higher learning throughout the state.    </h3>
     <div className="flex">
-    <Link to={`/catalog`}><button className="bg-white font-bold rounded-full py-4 px-8 shadow-lg uppercase tracking-wider hover:bg-blue-200">
+    <Link to={`/catalog`}><button className="bg-blue-200 font-bold rounded-full py-4 px-8 shadow-lg uppercase tracking-wider hover:bg-white">
       See Current Catalog
     </button></Link>
-    <Link to={`/book-search`}><button className="bg-white font-bold rounded-full ml-2 py-4 px-8 shadow-lg uppercase tracking-wider hover:bg-blue-200">
+    <Link to={`/book-search`}><button className="bg-blue-200 font-bold rounded-full ml-2 py-4 px-8 shadow-lg uppercase tracking-wider hover:bg-white">
       Find a Book
     </button></Link>
     </div>
@@ -25,14 +25,14 @@ export default function Home({data}) {
 </div>
 <div className="container mx-auto ">
  <ul className="grid grid-cols-2 md:grid-cols-8 md:auto-rows-fr content-center justify-center">
-   <li><Link to={`/subjects`}><button className="hover:bg-white hover:text-black bg-gray-800 text-white p-4 w-full h-full">Browse by Subject</button></Link></li>
-   <li><Link to={`/series`}><button className="hover:bg-white hover:text-black bg-gray-800 text-white p-4 text-white w-full h-full">Browse by Series</button></Link></li>
-   <li><Link to={`/recent-books`}><button className="hover:bg-white hover:text-black bg-gray-800 text-white p-4 text-white w-full h-full">Recently Published</button></Link></li>
-   <li><Link to={`/authors`}><button className="hover:bg-white hover:text-black  bg-gray-800 text-white p-4 text-white w-full h-full">For Authors</button></Link></li>
-   <li><Link to={`/instructors`}><button className="hover:bg-white hover:text-black  bg-gray-800 text-white p-4 text-white w-full h-full">For Instructors</button></Link></li>
-   <li><Link to={`/marketing`}><button className="hover:bg-white hover:text-black  bg-gray-800 text-white p-4 text-white w-full h-full">For Book Vendors</button></Link></li>
-   <li><Link to={`/contact`}><button className="hover:bg-white hover:text-black p-4 bg-gray-800 text-white text-white w-full h-full">Contact</button></Link></li>
-   <li><Link to={`/content/support-uva-press`}><button className="hover:bg-white hover:text-black bg-gray-800 text-white p-4 text-white w-full h-full">Support</button></Link></li>
+   <li><Link to={`/subjects`}><button className="hover:bg-white hover:text-black bg-black text-blue-200 p-4 w-full h-full">Browse by Subject</button></Link></li>
+   <li><Link to={`/series`}><button className="hover:bg-white hover:text-black bg-black text-blue-200 p-4 text-white w-full h-full">Browse by Series</button></Link></li>
+   <li><Link to={`/recent-books`}><button className="hover:bg-white hover:text-black bg-black text-blue-200 p-4 text-white w-full h-full">New Releases</button></Link></li>
+   <li><Link to={`/authors`}><button className="hover:bg-white hover:text-black  bg-black text-blue-200 p-4 text-white w-full h-full">For Authors</button></Link></li>
+   <li><Link to={`/instructors`}><button className="hover:bg-white hover:text-black  bg-black text-blue-200 p-4 text-white w-full h-full">For Instructors</button></Link></li>
+   <li><Link to={`/marketing`}><button className="hover:bg-white hover:text-black  bg-black text-blue-200 p-4 text-white w-full h-full">For Book Vendors</button></Link></li>
+   <li><Link to={`/contact`}><button className="hover:bg-white hover:text-black p-4 bg-black text-blue-200 w-full h-full">Contact</button></Link></li>
+   <li><Link to={`/content/support-uva-press`}><button className="hover:bg-white hover:text-black bg-black text-blue-200 p-4  w-full h-full">Support</button></Link></li>
 
  </ul>
 </div>
@@ -51,7 +51,7 @@ export default function Home({data}) {
         ))}
 </div>
 
-<button className="bg-gray-800 text-white p-4 w-full text-center"><Link className to={`/publicity`}>see all news, media and publicity information</Link></button>
+<button className="bg-black text-white p-4 w-full text-center"><Link className to={`/publicity`}>see all news, media and publicity information</Link></button>
 </section>
 
 

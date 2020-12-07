@@ -1,5 +1,6 @@
 import React from "react"
-import { StaticQuery, graphql, Link } from "gatsby"
+import { StaticQuery, graphql} from "gatsby"
+import BioCard from "./BioCard"
 
 export default function AcqStaff({data}) {
 
@@ -15,6 +16,7 @@ export default function AcqStaff({data}) {
                 jobtitle
                 phone
                 email
+                photo
                 slug
               }
             }
@@ -29,16 +31,7 @@ export default function AcqStaff({data}) {
     
         {data.allStaffJson.edges.map(edge => (
                     <>
-                        <div className="flex flex-auto">
-                            <img src="../scooter.jpg" alt="placeholder"/>
-                             <ul className="flex flex-col px-10">
-                                <li className="font-black"><Link to={`../staff/${ edge.node.slug }`}>{ edge.node.name }
-                                </Link></li> 
-                                <li>{edge.node.jobtitle}</li>
-                                <li>{edge.node.phone}</li>
-                                <li><a href={`mailto:${ edge.node.email }`}>{edge.node.email}</a></li>
-                          </ul>
-                        </div>
+                       <BioCard name={edge.node.name} title={edge.node.jobtitle} phone={edge.node.phone} email={edge.node.email} slug={edge.node.slug} photo={edge.node.photo}/>
                     </>
 
                     ))}

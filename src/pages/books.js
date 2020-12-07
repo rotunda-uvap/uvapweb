@@ -1,6 +1,7 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
+import BookCard from "../components/BookCard"
 
 export default function Books({ data }) {
     const books = data.allBooksJson
@@ -16,17 +17,16 @@ export default function Books({ data }) {
    
  </ul>
 </div>
-          <ul className="container px-5 py-5 mx-auto">
-            {books.edges.map(edge => (
-            <>
-                <li  className="text-lg hover:text-gray-600 p-2" key={edge.node.Title}>
-                  <Link to={`../title/${ edge.node.BookID }`}>{ edge.node.Title }
-                  </Link>
-                  </li>
-            
-            </>
+   
+    <div className="container px-5 py-5 grid md:grid-cols-5 md:gap-4">
+          {books.edges.map(edge => (
+            <>  
+              <Link to={`../title/${ edge.node.BookID }`}>
+                <BookCard Title={edge.node.Title} Subtitle={edge.node.Subtitle} Author={edge.node.AuthorCredit} Thumb={edge.node.CoverImageThumb} Bookid ={edge.node.BookID} /></Link>
+           </>
         ))}
-        </ul>
+      </div>
+
         </Layout>
 
  )
@@ -36,11 +36,14 @@ export default function Books({ data }) {
 
 export const query = graphql`
   query {
-    allBooksJson {
+    allBooksJson(sort: {fields: DaysSincePublication}) {
         edges {
           node {
             BookID
+            Subtitle
             Title
+            AuthorCredit
+            CoverImageThumb
           }
         }
       }
