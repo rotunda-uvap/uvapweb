@@ -36,9 +36,9 @@ export default ({ data }) => {
         {book.Bindings.map(binding => (
          <>
           <div className="bg-white rounded  w-full leading-normal">
-                <a href={binding.buylink} className="block group hover:bg-green-400 p-2 border-b">
-                  <div className="font-bold text-normal group-hover:text-white uppercase">{binding.type} <span className="pl-2 font-normal">${binding.price}</span> </div>
-                  <div className="font-thin group-hover:text-white">{binding.date} {- binding.pages} pages - ISBN: {binding.ISBN}</div>
+                <a href={binding.buylink} className="block group hover:bg-blue-200 p-2 border-b">
+                  <div className="font-bold text-normal  uppercase">{binding.type} <span className="pl-2 font-normal">${binding.price}</span> </div>
+                  <div className="font-thin ">{binding.date} {- binding.pages} pages - ISBN: {binding.ISBN}</div>
                   
                   </a>
                  

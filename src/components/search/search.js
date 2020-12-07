@@ -12,7 +12,7 @@ const Hit = ( {hit}) => <span><Link to={`../title/${ hit.BookID }`}><h6 classNam
 <h6 className="text-xs uppercase pt-2">{hit.AuthorCredit}</h6>
 
 <p className="pt-3" dangerouslySetInnerHTML={{ __html: hit.MainDescription.html.split(' ').splice(0, 30).join(' ') + '...' }}/>
-<h6 className="text-xs uppercase pt-2">{hit.DaysSincePublication}</h6></span>
+<h6 className="text-xs uppercase pb-5">Published: {hit.PublicationDate}</h6></span>
 
 const Search = () => (
     <InstantSearch searchClient={searchClient} indexName={process.env.GATSBY_ALGOLIA_INDEX_NAME}>

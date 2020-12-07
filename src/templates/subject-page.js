@@ -9,7 +9,7 @@ const SubjectTemplate = ({ data }) => {
     <div>
 
         <Layout>
-            <h1 className="text-2xl font-black mt-1">{books.edges[0].node.Subject}</h1>
+            <h1 className="text-4xl py-3">{books.edges[0].node.Subject}</h1>
             {books.edges.map(edge => (
             <>
             

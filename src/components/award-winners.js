@@ -20,7 +20,8 @@ export default function AwardWinners() {
       `}
       render={data => (
         <section>
-        <h3 className="text-3xl py-5">Award Winners (make collapsible?)</h3>
+        <h3 className="text-3xl py-5">Award Winners</h3>
+        <p>(Make collapsible?)</p>
         <ul className="container px-5 py-5 mx-auto">
           {data.allBooksJson.edges.map(edge => (
           <>

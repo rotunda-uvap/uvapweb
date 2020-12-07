@@ -15,17 +15,21 @@ export default function ProspectiveAuthorsPage({ data }) {
 
          <p dangerouslySetInnerHTML={{__html: pagedata.html}}/>
 
-         <ActiveSeries/>
 
-
-            <section className="py-20">
+         <section className="py-20">
                 
-                <div className="grid md:grid-cols-2 gap-2"> 
+                <div className="grid md:grid-cols-2 gap-2 p-10 bg-green-400 text-white"> 
                 <AcqStaff/>
 
                      </div>
                 
             </section>
+         
+            <section>
+         <ActiveSeries/>
+            </section>
+
+           
             <section className="py-20 bg-gray-100">
                 <h3 className="text-4xl">Files</h3>
             <p>Files to download, how display? </p>

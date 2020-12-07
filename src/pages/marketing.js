@@ -35,6 +35,7 @@ export default function Marketing({data}) {
             </section>
        
         <h3 className="text-3xl py-5">Exhibits</h3>
+        <p>Individual custom pages or templated from CMS?</p>
         <section> <AwardWinners/></section>
        
 
