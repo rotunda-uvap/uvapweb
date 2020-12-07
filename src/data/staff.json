@@ -1,6 +1,6 @@
 [
     {"name":"Suzanne Morse Moomaw",
-    "slug":"../staff/suzanne-morse-moomaw", 
+    "slug":"suzanne-morse-moomaw", 
      "jobtitle": "Director",
      "email": "smoomaw​@​virginia.edu",
      "phone": "(434) 924-6064",
@@ -9,7 +9,7 @@
      "department":["Director"]
     },
     {"name":"Eric Brandt", 
-        "slug":"../staff/eric-brandt",
+        "slug":"eric-brandt",
         "jobtitle": "Editor in Chief and Humanities Editor",
         "email": "eab7fb@virginia.edu",
         "phone": "(434) 982-3033",
@@ -18,7 +18,7 @@
         "department":["Acquisitions"]
        },
        {"name":"Nadine Zimmerli", 
-        "slug":"../staff/nadine-zimmerli",
+        "slug":"nadine-zimmerli",
         "jobtitle": "Editor, History and Social Sciences",
         "email": "nizimmerli@virginia.edu",
         "phone": "(434) 924-7301",
@@ -27,7 +27,7 @@
         "department":["Acquisitions"]
        },
        {"name":"Angie Hogan", 
-        "slug":"../staff/angie-hogan",
+        "slug":"angie-hogan",
         "jobtitle": "Acquiring Editor, 18th-Century Studies",
         "email": "arh2h@virginia.edu",
         "phone": "(434) 924-3361",
@@ -36,7 +36,7 @@
         "department":["Acquisitions"]
        },
        {"name":"Mark Mones", 
-        "slug":"../staff/mark-mones",
+        "slug":"mark-mones",
         "jobtitle": "Acquisitions Editor, Architecture, Urban Design, and Regional Books",
         "email": "emm4t@virginia.edu",
         "phone": "(434) 924-6066",
@@ -45,7 +45,7 @@
         "department":["Acquisitions", "EDP"]
        },
        {"name":"Helen Chandler", 
-        "slug":"../staff/helen-chandler",
+        "slug":"helen-chandler",
         "jobtitle": "Acquisitions Assistant",
         "email": "​hc7kb@​virginia.edu",
         "phone": "(434) 924-4725",
@@ -54,7 +54,7 @@
         "department":["Acquisitions"]
        },
        {"name":"Ellen Satrom", 
-        "slug":"../staff/ellen-satrom",
+        "slug":"ellen-satrom",
         "jobtitle": "Managing Editor and Editorial, Design, and Production Manager",
         "email": "​esatrom​@​virginia.edu",
         "phone": "(434) 924-6065",
@@ -63,7 +63,7 @@
         "department":["EDP"]
        },
        {"name":"Morgan Myers",
-        "slug":"../staff/morgan-myers", 
+        "slug":"morgan-myers", 
         "jobtitle": "Senior Project Editor",
         "email": "jm3yg​@​virginia.edu​",
         "phone": "(434) 924-6067",
@@ -73,7 +73,7 @@
        },
        
        {"name":"Anne Hegeman", 
-        "slug":"../staff/anne-hegeman",
+        "slug":"anne-hegeman",
         "jobtitle": "Design and Production Manager",
         "email": "ahegeman​@​virginia.edu​",
         "phone": "(434) 924-3585",
@@ -82,7 +82,7 @@
         "department":["EDP"]
        },
        {"name":"Cecilia Sorochin", 
-        "slug":"../staff/cecilia-sorochin",
+        "slug":"cecilia-sorochin",
         "jobtitle": "Art Director and Assistant Production Manager",
         "email": "​scs6ak​@​virginia.edu",
         "phone": "(434) 924-6069",
@@ -91,7 +91,7 @@
         "department":["EDP"]
        },
        {"name":"Niccole Leilanionapae‘aina Coggins", 
-        "slug":"../staff/niccole-coggins",
+        "slug":"niccole-coggins",
         "jobtitle": "Editorial, Design, and Production Coordinator and Assistant Project Editor",
         "email": "ncoggins​@​virginia.edu​",
         "phone": "(434) 982-2704",
@@ -100,7 +100,7 @@
         "department":["EDP"]
        },
        {"name":"Jason Coleman", 
-        "slug":"../staff/jason-coleman",
+        "slug":"jason-coleman",
         "jobtitle": "Marketing and Sales Director",
         "email": "jcoleman​@​virginia.edu​",
         "phone": "(434) 924-1450",
@@ -109,7 +109,7 @@
         "department":["Marketing", "Rotunda"]
        },
        {"name":"Emily Grandstaff", 
-        "slug":"../staff/emily-grandstaff",
+        "slug":"emily-grandstaff",
         "jobtitle": "Publicity and Social Media Director",
         "email": "egrandstaff​@​virginia.edu​",
         "phone": "(434) 982-2932",
@@ -118,7 +118,7 @@
         "department":["Marketing", "Publicity"]
        },
        {"name":"Emma Donovan", 
-        "slug":"../staff/emma-donovan",
+        "slug":"emma-donovan",
         "jobtitle": "Marketing Manager",
         "email": "emma.donovan​@​virginia.edu​",
         "phone": "(434) 924-6070",
@@ -127,7 +127,7 @@
         "department":["Marketing"]
        },
        {"name":"Brenda W. Fitzgerald", 
-        "slug":"../staff/brenda-fitzgerald",
+        "slug":"brenda-fitzgerald",
         "jobtitle": "Director of Operations",
         "email": "​bwf​@​virginia.edu",
         "phone": "(434) 924-3469",
@@ -137,7 +137,7 @@
        },
 
        {"name":"Samantha Jackson", 
-        "slug":"../staff/samantha-jackson",
+        "slug":"samantha-jackson",
         "jobtitle": "Business Manager",
         "email": "​sja5h​@​virginia.edu",
         "phone": "(434) 924-6068",
@@ -146,7 +146,7 @@
         "department":["Operations"]
        },
        {"name":"David Sewell", 
-        "slug":"../staff/david-sewell",
+        "slug":"david-sewell",
         "jobtitle": "Manager of Digital Initiatives and the Rotunda Imprint",
         "email": "​dsewell​@​virginia.edu",
         "phone": "(434) 924-9973",
@@ -155,7 +155,7 @@
         "department":["Rotunda"]
        },
        {"name":"Patricia Searl", 
-        "slug":"../staff/patricia-searl",
+        "slug":"patricia-searl",
         "jobtitle": "Assistant Manager, Digital Initiatives and the Rotunda Imprint",
         "email": "pls4e​@​virginia.edu​",
         "phone": "(434) 982-2310",

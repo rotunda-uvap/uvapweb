@@ -23,8 +23,8 @@ export default function Home({data}) {
    
   </div>
 </div>
-<div className="container mx-auto ">
- <ul className="grid grid-cols-2 md:grid-cols-8 md:auto-rows-fr content-center justify-center">
+<div className="mx-auto">
+ <ul className="grid grid-cols-2 md:grid-cols-9 content-center justify-center">
    <li><Link to={`/subjects`}><button className="hover:bg-white hover:text-black bg-black text-blue-200 p-4 w-full h-full">Browse by Subject</button></Link></li>
    <li><Link to={`/series`}><button className="hover:bg-white hover:text-black bg-black text-blue-200 p-4 text-white w-full h-full">Browse by Series</button></Link></li>
    <li><Link to={`/recent-books`}><button className="hover:bg-white hover:text-black bg-black text-blue-200 p-4 text-white w-full h-full">New Releases</button></Link></li>
@@ -32,6 +32,8 @@ export default function Home({data}) {
    <li><Link to={`/instructors`}><button className="hover:bg-white hover:text-black  bg-black text-blue-200 p-4 text-white w-full h-full">For Instructors</button></Link></li>
    <li><Link to={`/marketing`}><button className="hover:bg-white hover:text-black  bg-black text-blue-200 p-4 text-white w-full h-full">For Book Vendors</button></Link></li>
    <li><Link to={`/contact`}><button className="hover:bg-white hover:text-black p-4 bg-black text-blue-200 w-full h-full">Contact</button></Link></li>
+   <li><Link to={`/`}><button className="hover:bg-white hover:text-black bg-black text-blue-200 p-4  w-full h-full">ROTUNDA Digital Imprint</button></Link></li>
+
    <li><Link to={`/content/support-uva-press`}><button className="hover:bg-white hover:text-black bg-black text-blue-200 p-4  w-full h-full">Support</button></Link></li>
 
  </ul>
@@ -56,7 +58,7 @@ export default function Home({data}) {
 
 
     <div className="sliderAx h-auto">
-      <div id="slider-1" className="container mx-auto bg-green-400">
+      <div id="slider-1" className="container mx-auto bg-blue-400">
         <div className="bg-cover bg-center h-auto text-white py-20 px-10 object-fill grid md:grid-cols-2">
        <div>
         <p className="font-bold text-sm uppercase">Featured Title:</p>

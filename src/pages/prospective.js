@@ -18,7 +18,7 @@ export default function ProspectiveAuthorsPage({ data }) {
 
          <section className="py-20">
                 
-                <div className="grid md:grid-cols-2 gap-2 p-10 bg-green-400 text-white"> 
+                <div className="grid md:grid-cols-2 gap-2 p-10"> 
                 <AcqStaff/>
 
                      </div>
