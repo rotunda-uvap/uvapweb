@@ -7,7 +7,8 @@ exports.createSchemaCustomization = ({ actions }) => {
     const typeDefs = `
       type BooksJson implements Node  {
         BookID: String!  
-        DaysSincePublication: Int!    
+        DaysSincePublication: Int!
+        Authors: [String]
       }  
       type StaffJson implements Node  {
         department: [String]      
@@ -21,7 +22,7 @@ exports.createSchemaCustomization = ({ actions }) => {
         title: String
         description: String
         date: Date @dateformat
-        relbook: [String]
+        relbook: String
       }
   
       type Fields {
@@ -30,6 +31,9 @@ exports.createSchemaCustomization = ({ actions }) => {
     `
     createTypes(typeDefs)
   }
+
+  
+
 
   exports.createPages = ({ graphql, actions }) => {
     const { createPage } = actions
@@ -40,6 +44,7 @@ exports.createSchemaCustomization = ({ actions }) => {
                 node {
                   id
                   BookID
+                  CoverImageThumb
                 }
               }
           }
@@ -110,6 +115,9 @@ exports.createSchemaCustomization = ({ actions }) => {
         allSeries: allBooksJson {
           distinct(field: Series)
         }
+
+       
+        
         
     }
  `
@@ -117,6 +125,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       if (result.errors) {
         throw result.errors
       }
+      
 
       const books = result.data.allBooksJson.edges
 
@@ -129,6 +138,7 @@ exports.createSchemaCustomization = ({ actions }) => {
               imageid: node.BookID + ".jpg"
             },
           })
+         
         })
 
         const staffs = result.data.allStaffJson.edges
@@ -150,7 +160,7 @@ exports.createSchemaCustomization = ({ actions }) => {
             path: `/news${node.fields.slug}`,
             component: path.resolve(`./src/templates/news-page.js`),
             context: {
-              id: node.id,
+              id: node.id
             },
           })
         })
@@ -162,7 +172,7 @@ exports.createSchemaCustomization = ({ actions }) => {
             path: `/media${node.fields.slug}`,
             component: path.resolve(`./src/templates/media-page.js`),
             context: {
-              id: node.id,
+              id: node.id
             },
           })
         })
@@ -185,7 +195,7 @@ exports.createSchemaCustomization = ({ actions }) => {
             path: `/promotions${node.fields.slug}`,
             component: path.resolve(`./src/templates/promo-page.js`),
             context: {
-              id: node.id,
+              id: node.id
             },
           })
         })
@@ -211,6 +221,8 @@ exports.createSchemaCustomization = ({ actions }) => {
             },
           })
         })
+
+       
         
 
       })

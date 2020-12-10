@@ -24,6 +24,11 @@
     font-size:1.5em;
     font-weight:bold
   }
+
+  input.radio {
+    width:40px;
+    height:40px;
+  }
   .radio{
     display:none;
   }

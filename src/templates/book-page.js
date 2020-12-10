@@ -2,24 +2,22 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import "../utils/global.css"
-
-
-
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 
 export default ({ data }) => {
     const book = data.booksJson
-    const ImgSrc = "../../covers/" + data.booksJson.CoverImageFull
-    
+    const imageData = getImage(data.file)
  return (
    
    <Layout>
     
 
-    <section className="grid md:grid-cols-3 py-3">
+    <section className="grid md:grid-cols-3 md:gap-10 py-3" >
       
       <div className="col-span-1">
-      <img src={ImgSrc} className="max-w-xs" alt="book cover"/>
+      <GatsbyImage image={imageData} alt="book cover" />
+
 
       </div>
       <div className="md:col-span-2">   
@@ -117,7 +115,7 @@ export default ({ data }) => {
 
 
 export const query = graphql`
-  query($id: String!) {
+  query($id: String!, $imageid: String) {
     booksJson(id: { eq: $id }) {
       id
       BookID
@@ -146,6 +144,11 @@ export const query = graphql`
       Series
       Subject
       InternalSeriesVolume
+    }
+    file(relativePath: {eq: $imageid}) {
+      childImageSharp {
+        gatsbyImageData(maxWidth: 300, layout: FLUID, placeholder: TRACED_SVG)
+      }
     }
     
   }

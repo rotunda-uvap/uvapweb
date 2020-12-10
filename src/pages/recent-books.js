@@ -5,10 +5,12 @@ import BookCard from "../components/BookCard"
 
 
 
+
 export default function RecentBooks({ data }) {
    
     const upc = data.upcoming
     const rec = data.recent
+
  return (
     
         <Layout>
@@ -24,8 +26,16 @@ export default function RecentBooks({ data }) {
                <ul className="container px-5 py-5 grid md:grid-cols-5 md:gap-4">
             {upc.edges.map(edge => (
            <>  
+
            <Link to={`../title/${ edge.node.BookID }`}>
-             <BookCard Title={edge.node.Title} Subtitle={edge.node.Subtitle} Author={edge.node.AuthorCredit} Thumb={edge.node.CoverImageThumb} Bookid ={edge.node.BookID} pubdate={edge.node.PublicationDate} /></Link>
+               <BookCard Title={edge.node.Title} 
+             Subtitle={edge.node.Subtitle} 
+             Author={edge.node.AuthorCredit} 
+             Thumb={edge.node.CoverImageThumb} 
+             Bookid ={edge.node.BookID} 
+             pubdate={edge.node.PublicationDate} />
+             
+             </Link>
         </>
         ))}
         </ul>
@@ -60,6 +70,7 @@ export const query = graphql`
             Title
             PublicationDate
             AuthorCredit
+            CoverImageThumb
           }
         }
       }
@@ -70,8 +81,10 @@ export const query = graphql`
             Title
             PublicationDate
             AuthorCredit
+            CoverImageThumb
           }
         }
       }
+      
   }
 `

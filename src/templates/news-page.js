@@ -5,6 +5,8 @@ import Layout from "../components/layout"
 
 export default ({ data }) => {
     const news = data.markdownRemark
+    const related_books = data.markdownRemark.frontmatter.relbook.split(',')
+    
  return (
    <Layout>
      <div>
@@ -13,7 +15,13 @@ export default ({ data }) => {
           <article 
           dangerouslySetInnerHTML={{ __html: news.html }}/>
           <image/>
-          {news.frontmatter.relbook && <Link to={`../../title/${news.frontmatter.relbook}`}>Related Book: {news.frontmatter.relbook}</Link>}
+          
+          {related_books && related_books.map(book => (
+            <> 
+            <Link to={`../../title/${book}`}>Related Book: {book}</Link>
+            
+            </>
+        ))}
 
           </div>
         

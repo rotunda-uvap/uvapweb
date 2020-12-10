@@ -4,6 +4,7 @@
  * See: https://www.gatsbyjs.com/docs/gatsby-config/
  */
 require("dotenv").config()
+const path = require(`path`)
 module.exports = {
   siteMetadata: {
     title: `University of Virginia Press`,
@@ -35,7 +36,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images/`,
+        path: path.join(__dirname, `src`, `images`),
       },
     },
     {
@@ -131,6 +132,7 @@ module.exports = {
       }
     },
    
+   
   `gatsby-plugin-slug`,
   `gatsby-plugin-netlify-cms`,
   `gatsby-plugin-postcss`,
@@ -147,6 +149,17 @@ module.exports = {
       indexName: process.env.GATSBY_ALGOLIA_INDEX_NAME,
       queries: require("./src/utils/algolia-queries")
     },
-  }
+  },
+  {
+  resolve: 'gatsby-plugin-slug-field',
+      options: {
+        filter: { internal: { type: 'BooksJson' } },
+        source: ['Authors'],
+        fieldName: 'authorSlug',
+        urlSlugOptions: {
+          separator: '-'
+        }
+      },
+    },
   ],
 }

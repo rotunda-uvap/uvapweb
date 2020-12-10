@@ -16,7 +16,8 @@ export default function CurrentList() {
               Subtitle
               BookID
               AuthorCredit
-              CoverImageMain
+              PublicationDate
+              CoverImageThumb
             }
           }
         }
@@ -32,7 +33,7 @@ export default function CurrentList() {
           {data.allBooksJson.edges.map(edge => (
             <>  
               <Link to={`../title/${ edge.node.BookID }`}>
-                <BookCard Title={edge.node.Title} Subtitle={edge.node.Subtitle} Author={edge.node.AuthorCredit} Thumb={edge.node.CoverImageThumb} Bookid ={edge.node.BookID} /></Link>
+                <BookCard Title={edge.node.Title} Subtitle={edge.node.Subtitle} Author={edge.node.AuthorCredit} Thumb={edge.node.CoverImageThumb} Bookid ={edge.node.BookID} pubdate={edge.node.PublicationDate} /></Link>
            </>
         ))}
       </div>

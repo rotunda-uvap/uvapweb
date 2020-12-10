@@ -5,6 +5,8 @@ import Layout from "../components/layout"
 
 export default ({ data }) => {
     const promos = data.markdownRemark
+    const related_books = data.markdownRemark.frontmatter.relbook.split(',')
+
  return (
    <Layout>
      <div>
@@ -13,9 +15,12 @@ export default ({ data }) => {
           <article 
           dangerouslySetInnerHTML={{ __html: promos.html }}/>
           <image/>
-          <h3>Related Book:</h3>
-         <Link to={`../../title/${promos.frontmatter.relbook}`}>Bookid: {promos.frontmatter.relbook}</Link>
-
+          {related_books && related_books.map(book => (
+            <> 
+            <Link to={`../../title/${book}`}>Related Book: {book}</Link>
+            
+            </>
+        ))}
           </div>
         
     </div>
@@ -37,6 +42,7 @@ export const query = graphql`
             relbook
         }
     }
+   
   }
 `
 

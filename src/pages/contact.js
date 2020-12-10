@@ -9,7 +9,7 @@ const ContactPage = () => (
 
             <section className="py-5 grid grid-cols-2 mx-auto">
             <div className="p-3 uppercase text-center">Location Information</div>
-            <Link className="p-3 bg-gray-700 hover:bg-blue-200 hover:text-black text-white uppercase text-center" to={'/staff-list'}><button >Staff Directory</button></Link>
+            <Link className="p-3 bg-black hover:bg-blue-200 hover:text-black text-white uppercase text-center" to={'/staff-list'}><button >Staff Directory</button></Link>
 
         </section>
             <h5 className="text-2xl py-3">Main Office</h5>

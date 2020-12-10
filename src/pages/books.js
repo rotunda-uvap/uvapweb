@@ -8,13 +8,14 @@ export default function Books({ data }) {
  return (
     
         <Layout>
-                 <h2 className="text-3xl py-5">Listing of All Books (replace with search?)</h2>
+                 <h2 className="text-3xl py-5">Browse All Books</h2>
             <div className="container">
- <ul className="grid md:grid-cols-3 md:auto-rows-fr content-center justify-center">
+ <ul className="grid md:grid-cols-4 md:auto-rows-fr content-center justify-center">
    <li><Link to={`/subjects`}><button className="border-b-4 border-white hover:border-black w-full h-full">Browse by Subject</button></Link></li>
    <li><Link to={`/series`}><button className="border-b-4 border-white hover:border-black w-full h-full">Browse by Series</button></Link></li>
+   <li><Link to={`/allauthors`}><button className="border-b-4 border-white hover:border-black w-full h-full">Browse by Author</button></Link></li>
    <li><Link to={`/recent-books`}><button className="border-b-4 border-white hover:border-black w-full h-full">Recently Published</button></Link></li>
-   
+
  </ul>
 </div>
    
@@ -22,7 +23,7 @@ export default function Books({ data }) {
           {books.edges.map(edge => (
             <>  
               <Link to={`../title/${ edge.node.BookID }`}>
-                <BookCard Title={edge.node.Title} Subtitle={edge.node.Subtitle} Author={edge.node.AuthorCredit} Thumb={edge.node.CoverImageThumb} Bookid ={edge.node.BookID} /></Link>
+                <BookCard Title={edge.node.Title} Subtitle={edge.node.Subtitle} Author={edge.node.AuthorCredit} Thumb={edge.node.CoverImageThumb} Bookid ={edge.node.BookID} pubdate={edge.node.PublicationDate} /></Link>
            </>
         ))}
       </div>
@@ -44,6 +45,7 @@ export const query = graphql`
             Title
             AuthorCredit
             CoverImageThumb
+            PublicationDate
           }
         }
       }

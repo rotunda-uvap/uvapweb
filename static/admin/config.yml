@@ -21,7 +21,7 @@ collections:
       - { label: 'Type', name: 'type', widget: 'select', options: ['news', 'event', 'media'], required: true}  
       - { label: "Is Draft?", name: "draft", widget: "string", default: "false"}
       - { name: title, label: Title }
-      - { label: 'related book id', name: 'relbook', widget: 'list', required: false }
+      - { label: 'related book id', name: 'relbook', widget: 'string', required: false }
       - { label: 'Summary', name: 'description', widget: 'string', required: false, hint: 'Text for homepage and previews'}
       - { name: body, label: Body, widget: markdown }
       
@@ -56,7 +56,7 @@ collections:
     fields:
       - { label: 'Type', name: 'type', widget: 'select', options: ['news', 'event', 'media', 'page', 'promo', 'series'], required: true, default: ['promo']}  
       - { name: title, label: Title }
-      - { label: 'related book id', name: 'relbook', widget: 'list', required: false }
+      - { label: 'related book id', name: 'relbook', widget: 'string', required: false }
       - { name: body, label: Body, widget: markdown }
       - { label: 'Summary', name: 'description', widget: 'string', required: false, hint: 'Text for homepage and previews'}
 
