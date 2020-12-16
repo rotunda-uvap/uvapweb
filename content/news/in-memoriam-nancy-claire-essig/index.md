@@ -3,8 +3,17 @@ templateKey: news
 type: news
 draft: "false"
 title: "In Memoriam: Nancy Claire Essig"
-description: "It is with great sadness that we announce the passing of Reverend Nancy Claire Essig, former Director of the University of Virginia Press. Most recently"
-relbook: "3241,2905,2918"
+relbook: 3241,2905,2918
+description: It is with great sadness that we announce the passing of Reverend
+  Nancy Claire Essig, former Director of the University of Virginia Press. Most
+  recently
+related_books:
+  - book_id: "3241"
+    book_title: Perfect Companionship
+  - book_id: "2905"
+    book_title: The Romantic Comedians
+  - book_id: "2918"
+    book_title: The Sheltered Life
 ---
 It is with great sadness that we announce the passing of Reverend Nancy Claire Essig, former Director of the University of Virginia Press. Most recently having served as the Minister at the Burkeville Presbyterian Church in Virginia, Essig had a long career in scholarly publishing starting in New York City and moving to Johns Hopkins University Press before retiring as Director of UVA Press in 2001.
 
