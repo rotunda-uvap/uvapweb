@@ -12,6 +12,6 @@ body1: People of the Founding Era is a powerful new online resource that
   (including both married and maiden names), birth date, place of birth, death
   date, place of death, occupation, gender, nationality, and condition of
   servitude. ...\[More]
-body2: Nothing in here
+body2: ""
 ---
 People of the Founding Era
