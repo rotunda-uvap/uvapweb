@@ -26,6 +26,13 @@ collections:
       - { label: 'Summary', name: 'description', widget: 'string', required: false, hint: 'Text for homepage and previews'}
       - { name: body, label: Body, widget: markdown }
       - {label: Image, name: image, widget: image}
+      - label: 'Related Books'
+        name: 'related_books'
+        widget: 'list'
+        summary: '{{fields.book_id}}'
+        fields:
+          - {label: 'Book ID', name: 'book_id', widget: string}
+          - {label: 'Book Title', name: 'book_title', widget: string, hint: 'Title to be shown next to book link and generated cover.'} 
       
   - name: 'pages'
     identifier_field: '{{title}}'
@@ -87,6 +94,13 @@ collections:
       - { label: 'related book id', name: 'relbook', widget: 'string', required: false, hint: "For multiple, separate book ids by commas with no spaces. Eg. 1234,4567" }
       - { name: body, label: Body, widget: markdown }
       - { label: 'Summary', name: 'description', widget: 'string', required: false, hint: 'Text for homepage and previews'}
+      - label: 'Promotion Books'
+        name: 'promo_books'
+        widget: 'list'
+        summary: '{{fields.book_id}}'
+        fields:
+          - {label: 'Book ID', name: 'book_id', widget: string}
+          - {label: 'Book Title', name: 'book_title', widget: string, hint: 'Title to be shown next to book link and generated cover.'} 
 
   - name: 'series_info'
     identifier_field: '{{title}}'
