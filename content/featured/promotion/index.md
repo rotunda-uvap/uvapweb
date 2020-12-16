@@ -1,5 +1,5 @@
 ---
-templatekey: homepage-promotion
+templateKey: homepage-promotion
 title: Homepage Promotion Section
 
 ---
