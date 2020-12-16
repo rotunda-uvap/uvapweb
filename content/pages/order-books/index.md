@@ -4,8 +4,6 @@ title: Order Books
 ---
 Individuals may purchase print and ebook versions (when available) of our titles online using the BUY buttons found on each book description page.
 
- 
-
 #### Orders & Customer Service at Longleaf
 
 University of Virginia Press c/o Longleaf Services, Inc\
