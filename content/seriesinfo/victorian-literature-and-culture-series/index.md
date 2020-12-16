@@ -1,4 +1,5 @@
 ---
+templateKey: series
 type: series
 title: Victorian Literature and Culture Series
 status: active

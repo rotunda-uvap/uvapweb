@@ -1,4 +1,5 @@
 ---
+templateKey: series
 type: series
 title: Traditions and Transformations in Tibetan Buddhism
 status: active

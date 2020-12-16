@@ -1,4 +1,5 @@
 ---
+templateKey: series
 type: series
 title: Constitutionalism and Democracy
 status: active

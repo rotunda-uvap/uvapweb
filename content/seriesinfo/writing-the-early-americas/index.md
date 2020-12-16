@@ -1,4 +1,5 @@
 ---
+templateKey: series
 type: series
 title: Writing the Early Americas
 status: active

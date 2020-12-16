@@ -1,4 +1,5 @@
 ---
+templateKey: series
 type: series
 title: Eleanor Roosevelt Papers
 status: completed

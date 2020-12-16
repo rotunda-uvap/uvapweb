@@ -1,4 +1,5 @@
 ---
+templateKey: series
 type: series
 title: Reconsiderations in Southern African History
 status: active

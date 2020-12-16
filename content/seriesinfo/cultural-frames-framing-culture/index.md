@@ -1,4 +1,5 @@
 ---
+templateKey: series
 type: series
 title: Cultural Frames, Framing Culture
 status: active

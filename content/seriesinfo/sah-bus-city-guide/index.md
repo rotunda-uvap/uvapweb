@@ -1,4 +1,5 @@
 ---
+templateKey: series
 type: series
 title: SAH/BUS City Guide
 status: active

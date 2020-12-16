@@ -1,4 +1,5 @@
 ---
+templateKey: series
 type: series
 title: "A Nation Divided: Studies in the Civil War Era"
 status: active

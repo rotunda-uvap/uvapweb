@@ -1,4 +1,5 @@
 ---
+templateKey: news
 type: news
 draft: "false"
 title: "In Memoriam: Nancy Claire Essig"

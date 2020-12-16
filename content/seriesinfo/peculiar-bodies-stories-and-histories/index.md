@@ -1,4 +1,5 @@
 ---
+templateKey: series
 type: series
 title: "Peculiar Bodies: Stories and Histories"
 status: active

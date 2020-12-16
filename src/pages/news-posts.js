@@ -27,7 +27,7 @@ export default function Articles({ data }) {
 
 export const query = graphql`
   query {
-    allMarkdownRemark(filter: {frontmatter: {type: {eq: "news"}}}) {
+    allMarkdownRemark(filter: {frontmatter: {templateKey: {eq: "news"}}}) {
       edges {
           node {
             html

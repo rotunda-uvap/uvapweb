@@ -1,4 +1,5 @@
 ---
+templateKey: series
 type: series
 title: Selected Papers of John Jay
 status: active

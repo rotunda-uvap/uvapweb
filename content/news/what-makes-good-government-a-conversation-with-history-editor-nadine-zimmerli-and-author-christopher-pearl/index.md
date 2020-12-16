@@ -1,4 +1,5 @@
 ---
+templateKey: news
 path: good-government
 type: news
 draft: "false"

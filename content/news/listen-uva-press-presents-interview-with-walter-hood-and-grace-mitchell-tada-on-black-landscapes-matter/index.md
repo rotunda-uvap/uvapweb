@@ -1,4 +1,5 @@
 ---
+templateKey: news
 type: media
 draft: "false"
 title: 'LISTEN: "UVA Press Presents" interview with Walter Hood and Grace Mitchell Tada on Black Landscapes Matter'

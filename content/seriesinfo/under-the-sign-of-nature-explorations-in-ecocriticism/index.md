@@ -1,4 +1,5 @@
 ---
+templateKey: series
 type: series
 title: "Under the Sign of Nature: Explorations in Ecocriticism"
 status: active

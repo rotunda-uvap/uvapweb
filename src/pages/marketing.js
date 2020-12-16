@@ -1,7 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
-import AwardWinners from "../components/award-winners"
 import BioCard from "../components/BioCard"
 
 
@@ -29,7 +28,7 @@ export default function Marketing({data}) {
        
         <h3 className="text-3xl py-5">Exhibits</h3>
         <p>Individual custom pages or templated from CMS?</p>
-        <section> <AwardWinners/></section>
+
        
 
    

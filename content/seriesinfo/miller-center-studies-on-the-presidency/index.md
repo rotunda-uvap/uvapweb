@@ -1,4 +1,5 @@
 ---
+templateKey: series
 type: series
 title: Miller Center Studies on the Presidency
 status: active

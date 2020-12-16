@@ -1,5 +1,10 @@
 import React , { useState }from "react"
 import {Link } from "gatsby"
+// import SearchPanel from "./search/SearchPanel"
+
+/* const searchIndices = [
+  { name: `Books`, title: `Books`, hitComp: `Hit` },
+] */
 
 const Header = () => {
   
@@ -57,8 +62,11 @@ const Header = () => {
           <Link to={`/content/career`} className="uppercase block mt-4  text-teal-200 hover:text-gray-300">
             Career
           </Link>
+          <Link to={`/content/order`} className="uppercase block mt-4  text-teal-200 hover:text-gray-300">
+            Order
+          </Link>
         </div>
-        
+        {/* <SearchPanel collapse indices={searchIndices} /> */}
       </div>
     </nav>
 

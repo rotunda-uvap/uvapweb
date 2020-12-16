@@ -3,11 +3,14 @@ import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import "../utils/global.css"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
-
+import BookHorizontalTabs from "../components/BookHorizontalTabs"
+import BookVerticalTabs from "../components/BookVerticalTabs"
 
 export default ({ data }) => {
     const book = data.booksJson
     const imageData = getImage(data.file)
+    const toc = "https://books.google.com/books?vid=ISBN" + book.ISBNs[0] + "&printsec=toc"
+   
  return (
    
    <Layout>
@@ -54,55 +57,19 @@ export default ({ data }) => {
 
     </div>
     </section>
-
-    <section>
-
-      <div class="wrapper">
-        <input class="radio" id="one" name="group" type="radio" checked/>
-        <input class="radio" id="two" name="group" type="radio"/>
-        <input class="radio" id="three" name="group" type="radio"/>
-          <div class="tabs">
-            <label class="tab" id="one-tab" htmlFor="one">Summary</label>
-            <label class="tab" id="two-tab" htmlFor="two">Reviews</label>
-            <label class="tab" id="three-tab" htmlFor="three">About the Author(s)</label>
-          </div>
-        <div class="panels">
-            <div class="panel" id="one-panel">
-              <div dangerouslySetInnerHTML={{ __html: book.MainDescription.html }}/>
-            </div>
-            <div class="panel" id="two-panel">
-            {book.Reviews.review ? 
-    <div className="py-2">
-      {book.Reviews.map(review => (
-            <>
-            <div className="container px-5 py-5 mx-auto flex flex-wrap">
-            <blockquote dangerouslySetInnerHTML={{ __html: review.html }}/>
-            <h6 className="pl-8 italic text-gray-500">-{review.attribution}</h6>
-            </div>
-            
-            </>
-        ))}
-    </div> : 
-    <div className="py-2"><p>No review available</p></div>
-    }
-        </div>
-            <div class="panel" id="three-panel">
-            {book.BioNote.html !== "EMPTY: BioNote" ? 
-          <div>
-            <p dangerouslySetInnerHTML={{ __html: book.BioNote.html }}/>
-            </div> 
-          :
-              <div><p>No biographical information available</p></div>}
-            </div>
-        </div>
-      </div>
-
+        
+ <div>
+ </div>
+   <section id="lg_horiz_tabs" className="py-10 hidden md:block">
+        <BookHorizontalTabs summary={book.MainDescription.html} reviews={book.Reviews} bio={book.BioNote.html}/>
     </section>
 
+    <section id="lg_horiz_tabs" className="py-10 md:hidden">
+        <BookVerticalTabs summary={book.MainDescription.html} reviews={book.Reviews} bio={book.BioNote.html}/>
+    </section>
+  
 
-   
-
-   
+   <section><a href={toc} >Google Books Link (Supposed to be to TOC, needs correct ISBN, links): {toc}</a></section>
 
   
 
@@ -135,6 +102,7 @@ export const query = graphql`
         attribution
         html
       }
+      ISBNs
       MainDescription {
         html
       }

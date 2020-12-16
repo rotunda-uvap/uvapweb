@@ -1,4 +1,5 @@
 ---
+templateKey: series
 type: series
 title: New World Studies
 status: active

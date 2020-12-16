@@ -1,4 +1,5 @@
 ---
+templateKey: series
 type: series
 title: The American South Series
 status: active

@@ -1,4 +1,5 @@
 ---
+templateKey: series
 type: series
 title: Early American Histories
 status: active

@@ -1,6 +1,6 @@
 import React from "react"
 import { StaticQuery, graphql, Link } from "gatsby"
-import BookCard from "../components/BookCard"
+import BookCard from "./BookCard"
 
 export default function AwardWinners() {
   return (
@@ -25,7 +25,6 @@ export default function AwardWinners() {
       render={data => (
         <section>
         <h3 className="text-3xl py-5">Award Winners</h3>
-        <p>(Make collapsible?)</p>
 
         <div className="container px-5 py-5 grid md:grid-cols-5 md:gap-4">
           {data.allBooksJson.edges.map(edge => (

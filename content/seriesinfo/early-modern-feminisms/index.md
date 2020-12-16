@@ -1,4 +1,5 @@
 ---
+templateKey: series
 type: series
 title: Early Modern Feminisms
 status: active

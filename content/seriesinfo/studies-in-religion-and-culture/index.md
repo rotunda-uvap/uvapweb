@@ -1,4 +1,5 @@
 ---
+templateKey: series
 type: series
 title: Studies in Religion and Culture
 status: active

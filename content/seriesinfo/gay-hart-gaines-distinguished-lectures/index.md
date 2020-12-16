@@ -1,4 +1,5 @@
 ---
+templateKey: series
 type: series
 title: Gay Hart Gaines Distinguished Lectures
 status: completed

@@ -33,15 +33,17 @@ export default function PubPage({ data }) {
             </section>
 
             <section className="py-20">
-                <h3 className="text-4xl">All News, Media and Events</h3>
+                <h3 className="text-4xl py-7">All News, Media and Events</h3>
             <div className="grid md:grid-cols-3">
               
               {news.edges.map(edge => (
             <>
-            <article className="flex flex-wrap p-5 shadow-md">
-                <h3  className="text-lg uppercase pb-1 pt-1"key={edge.node.frontmatter.title}><Link to={`../${ edge.node.frontmatter.type }${ edge.node.fields.slug }`}>{ edge.node.frontmatter.title }</Link></h3>
-            <div key={`teaser`} dangerouslySetInnerHTML={{ __html: edge.node.html.split(' ').splice(0, 25).join(' ') + '...' }}></div>
-            <Link className="w-full" to={`../${ edge.node.frontmatter.type }${ edge.node.fields.slug }`}><button className="w-full bg-green-400 p-4 text-center uppercase">go to article</button></Link>
+            <article className="flex flex-wrap place-content-center p-5 shadow-md hover:bg-black hover:text-white">
+              <div><button className="text-center uppercase px-5 py-3 rounded text-xs">{edge.node.frontmatter.type}</button></div>
+                <div className="mx-auto w-4/5"><h3 className="text-2xl font-black uppercase py-5 text-center" key={edge.node.frontmatter.title}><Link to={`../${ edge.node.frontmatter.type }${ edge.node.fields.slug }`}>{ edge.node.frontmatter.title }</Link></h3>
+                </div>
+                <Link to={`../${ edge.node.frontmatter.type }${ edge.node.fields.slug }`}>
+                  <button className="rounded bg-blue-400 text-white font-black p-5 text-center uppercase">go to article</button></Link>
                 </article>
             </>
         ))}  

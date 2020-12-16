@@ -1,4 +1,5 @@
 ---
+templateKey: series
 type: series
 title: Studies in Early Modern German History
 status: active

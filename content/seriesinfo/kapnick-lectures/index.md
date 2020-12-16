@@ -1,4 +1,5 @@
 ---
+templateKey: series
 type: series
 title: Kapnick Lectures
 status: active

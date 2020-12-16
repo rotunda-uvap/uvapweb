@@ -1,4 +1,5 @@
 ---
+templateKey: series
 type: series
 title: Colonial Society of Massachusetts
 status: active

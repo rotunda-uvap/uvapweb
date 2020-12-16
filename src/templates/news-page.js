@@ -1,6 +1,6 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
-
+import RelatedBook from "../components/RelatedBook"
 import Layout from "../components/layout"
 
 export default ({ data }) => {
@@ -11,18 +11,21 @@ export default ({ data }) => {
    <Layout>
      <div>
         <h1 className="py-5 text-2xl font-black uppercase" >{news.frontmatter.title}</h1>
-        <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1">
+        <div className="grid grid-cols-1">
           <article 
           dangerouslySetInnerHTML={{ __html: news.html }}/>
           <image/>
-          
-          {related_books && related_books.map(book => (
-            <> 
-            <Link to={`../../title/${book}`}>Related Book: {book}</Link>
+          <h4 className="py-5">Related Books</h4>
+          <section>
+          <div className="grid md:grid-cols-5 md:gap-2">
             
+            {related_books && related_books.map(book => (
+            <> 
+            <RelatedBook id={book}/>
             </>
         ))}
-
+        </div>
+          </section>
           </div>
         
     </div>

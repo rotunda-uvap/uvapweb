@@ -1,4 +1,5 @@
 ---
+templateKey: series
 type: series
 title: Carter G. Woodson Institute Series
 status: active

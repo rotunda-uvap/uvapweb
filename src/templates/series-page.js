@@ -62,11 +62,12 @@ export const query = graphql`
                 }
             }
         }  
-        markdownRemark(frontmatter: {title: {eq: $id}, type: {eq: "series"}}) {
+        markdownRemark(frontmatter: {title: {eq: $id}, templateKey: {eq: "series"}}) {
           
                 frontmatter {
                   status
                   type
+                  templateKey
                   title
                   editors
                   uvaeditors

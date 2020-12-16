@@ -1,4 +1,5 @@
 ---
+templateKey: series
 type: series
 title: The Virginia Bookshelf
 status: completed

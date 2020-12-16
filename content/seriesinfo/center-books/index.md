@@ -1,4 +1,5 @@
 ---
+templateKey: series
 type: series
 title: Center Books
 status: completed

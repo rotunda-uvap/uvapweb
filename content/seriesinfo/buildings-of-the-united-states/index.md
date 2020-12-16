@@ -1,4 +1,5 @@
 ---
+templateKey: series
 type: series
 title: Buildings of the United States
 status: active

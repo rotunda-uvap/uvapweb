@@ -1,4 +1,5 @@
 ---
+templateKey: series
 type: series
 title: Race, Ethnicity, and Politics
 status: active

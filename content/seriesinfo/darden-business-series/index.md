@@ -1,4 +1,5 @@
 ---
+templateKey: series
 type: series
 title: Darden Business Series
 status: active

@@ -1,4 +1,5 @@
 ---
+templateKey: series
 type: series
 title: "Feminist Issues: Practice, Politics, Theory"
 status: active

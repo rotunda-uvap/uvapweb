@@ -1,4 +1,5 @@
 ---
+templateKey: news
 type: media
 draft: "false"
 title: Sharon Aronofsky Weltman on Hamilton, The King and I, and Racial Justice

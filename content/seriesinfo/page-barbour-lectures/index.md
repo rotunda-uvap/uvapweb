@@ -1,4 +1,5 @@
 ---
+templateKey: series
 type: series
 title: Page-Barbour Lectures
 status: active

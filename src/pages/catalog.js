@@ -12,7 +12,7 @@ export default function Catalog({data}) {
          <a href={`spring21.pdf`}> <StaticImage  width={200} src="../images/spring21.jpg" alt="current catalog cover" /></a>
          <div className="self-center py-5 md:col-span-2 flex flex-inital">
            <a href={`fall20.pdf`}><button className="uppercase py-3 px-5 mx-2 rounded-full bg-black text-white">Download Current Catalog</button></a>
-           <button className="uppercase py-3 px-10 rounded-full bg-black text-white">View on Edelweiss (need link)</button>
+           <a href="https://www.edelweiss.plus/#catalogID=4534821"><button className="uppercase py-3 px-10 rounded-full bg-black text-white">View on Edelweiss</button></a>
            </div>
 
        </section>

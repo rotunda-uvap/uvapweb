@@ -1,4 +1,5 @@
 ---
+templateKey: series
 type: series
 title: Cultural Studies of Delaware and the Eastern Shore
 status: completed

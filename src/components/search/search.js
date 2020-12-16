@@ -1,8 +1,10 @@
 import algoliasearch from "algoliasearch/lite"
-import { InstantSearch, SearchBox, Hits, Stats, RefinementList, Pagination, SortBy} from "react-instantsearch-dom"
+import { InstantSearch, SearchBox, Hits, Stats, RefinementList, Pagination, SortBy, PoweredBy} from "react-instantsearch-dom"
 import "./search.css"
 import React from 'react'
 import { Link } from "gatsby"
+
+
 
 const appId = process.env.GATSBY_ALGOLIA_APP_ID;
 const searchKey = process.env.GATSBY_ALGOLIA_SEARCH_KEY;
@@ -15,7 +17,7 @@ const Hit = ( {hit}) => <span><Link to={`../title/${ hit.BookID }`}><h6 classNam
 <h6 className="text-xs uppercase pb-5">Published: {hit.PublicationDate}</h6></span>
 
 const Search = () => (
-    <InstantSearch searchClient={searchClient} indexName={process.env.GATSBY_ALGOLIA_INDEX_NAME}>
+    <InstantSearch searchClient={searchClient} indexName={process.env.GATSBY_ALGOLIA_INDEX_NAME} routing={true} >
       <SearchBox className="p-2 m-1" translations={{ placeholder:'Search for a book'}} />
       <div className="grid md:grid-cols-3">
       <section className="py-5">
@@ -29,7 +31,10 @@ const Search = () => (
       <div className="py-5"><h3 className="text-lg uppercase">Filter by Series</h3>
       <RefinementList attribute="Series"/></div></section>
       <section className="col-span-2">
-        <h3 className="text-lg uppercase pb-5">Results</h3>
+      
+        <h3 className="text-lg uppercase pb-5">Results
+</h3>
+
        <div className="border-b border-gray-400 pb-3">
         <SortBy className="text-xs text-gray-600"
           defaultRefinement="Books"
@@ -37,6 +42,7 @@ const Search = () => (
             {value: "Books", label:"Most Relevant"},
             {value: "books_date_asc", label:"Most Recent Books First"}
             ]}/>
+
       <Stats className="text-xs text-gray-600"/>
       </div>
       <Hits className="pt-5" hitComponent={Hit} />
@@ -44,6 +50,7 @@ const Search = () => (
       </div>
       
       <Pagination/>
+      <PoweredBy/>
     </InstantSearch>
   );
 export default Search;

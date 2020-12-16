@@ -1,4 +1,5 @@
 ---
+templateKey: series
 type: series
 title: "Midcentury: Architecture, Landscape, Urbanism, and Design"
 status: active
