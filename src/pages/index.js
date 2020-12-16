@@ -12,6 +12,7 @@ export default function Home({data}) {
   const mediaPost = data.media.edges[0].node
   const promoPost = data.promos.edges[0].node
   const topspot = data.primary
+  const rotpromo = data.rot
   return (
     <Layout>
       <div className="py-15 bg-blue-500">
@@ -71,9 +72,9 @@ export default function Home({data}) {
         <div className="bg-cover bg-center h-auto text-white py-20 px-10 object-fill grid md:grid-cols-2">
        <div>
         <p className="font-bold text-sm uppercase">Featured Rotunda:</p>
-        <Link to={'../../title/5477'}><p className="text-3xl font-bold">People of the Founding Era</p></Link>
+        <Link to={'../../title/5477'}><p className="text-3xl font-bold">{rotpromo.frontmatter.body1}</p></Link>
 
-        <p className="body-text p-5">People of the Founding Era is a powerful new online resource that provides biographical information for thousands of individuals active during a crucial period in our history. Beginning with 12,000 but eventually expanding to over 60,000 people born between 1713 and 1815, the subjects include members of many of the most important families of the era, as well as many people—including artisans, slaves, and Native Americans—whose lives are not typically documented in historical archives. All entries include some biographical data, and many have a complete prosopographical profile—full name (including both married and maiden names), birth date, place of birth, death date, place of death, occupation, gender, nationality, and condition of servitude. ...[More]</p>
+        <p className="body-text p-5">{rotpromo.frontmatter.body2} </p>
         </div>  
         <div>
         <Link to={'/'}><StaticImage className="mx-auto" src="../../images/pfe1.jpg"  alt="People of the Fouding Era" /></Link>
@@ -153,6 +154,13 @@ export const query = graphql`
         }
       }
     primary:  markdownRemark(frontmatter: {templateKey: {eq: "homepage-primary"}}) {
+      frontmatter {
+        body1
+        body2
+        relbook
+      }
+    }
+    rotunda:  markdownRemark(frontmatter: {templateKey: {eq: "homepage-rotunda"}}) {
       frontmatter {
         body1
         body2
