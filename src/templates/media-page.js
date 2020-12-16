@@ -1,11 +1,12 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
+import RelatedBook from "../components/RelatedBook"
 
 import Layout from "../components/layout"
 
 export default ({ data }) => {
     const media = data.markdownRemark
-    const related_books = data.markdownRemark.frontmatter.relbook.split(',')
+    const related_books = data.markdownRemark.frontmatter.related_books
  return (
    <Layout>
      <div>
@@ -16,7 +17,7 @@ export default ({ data }) => {
           <image/>
           {related_books && related_books.map(book => (
             <> 
-            <Link to={`../../title/${book}`}>Related Book: {book}</Link>
+            <RelatedBook id={book.book_id} title={book.book_title}/>
             
             </>
         ))}
@@ -38,7 +39,10 @@ export const query = graphql`
         frontmatter {
             type
             title
-            relbook
+            related_books {
+              book_id
+              book_title
+            }
         }
     }
     

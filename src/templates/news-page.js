@@ -5,7 +5,7 @@ import Layout from "../components/layout"
 
 export default ({ data }) => {
     const news = data.markdownRemark
-    const related_books = data.markdownRemark.frontmatter.relbook.split(',')
+    const related_books = data.markdownRemark.frontmatter.related_books
     
  return (
    <Layout>
@@ -21,7 +21,7 @@ export default ({ data }) => {
             
             {related_books && related_books.map(book => (
             <> 
-            <RelatedBook id={book}/>
+            <RelatedBook id={book.book_id} title={book.book_title}/>
             </>
         ))}
         </div>
@@ -44,7 +44,10 @@ export const query = graphql`
         frontmatter {
             title
             type
-            relbook
+            related_books {
+              book_id
+              book_title
+            }
           }
     }
   }
