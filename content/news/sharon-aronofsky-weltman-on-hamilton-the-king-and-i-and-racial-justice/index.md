@@ -4,8 +4,11 @@ type: media
 draft: "false"
 title: Sharon Aronofsky Weltman on Hamilton, The King and I, and Racial Justice
 relbook: "5450"
-link: "https://www.youtube.com/embed/u2PEIGjKz"
-description: "Watch a trailer for VICTORIANS ON BROADWAY by Sharon Aronofsky Weltman"
+description: Watch a trailer for VICTORIANS ON BROADWAY by Sharon Aronofsky Weltman
+related_books:
+  - book_id: "5450"
+    book_title: Victorians on Broadway
+link: https://www.youtube.com/embed/u2PEIGjKz
 ---
 `youtube:https://www.youtube.com/embed/u2PEIGjKz`
 
