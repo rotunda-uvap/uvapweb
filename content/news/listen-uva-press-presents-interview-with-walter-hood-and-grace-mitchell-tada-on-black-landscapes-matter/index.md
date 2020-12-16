@@ -2,9 +2,16 @@
 templateKey: news
 type: media
 draft: "false"
-title: 'LISTEN: "UVA Press Presents" interview with Walter Hood and Grace Mitchell Tada on Black Landscapes Matter'
+title: 'LISTEN: "UVA Press Presents" interview with Walter Hood and Grace
+  Mitchell Tada on Black Landscapes Matter'
 relbook: "5389"
-description: "We are delighted to offer the sixth installment in our new podcast series, 'UVA Press Presents,' via this interview with Walter Hood and Grace Mitchell Tada about their new book [Black Landscapes Matter](https://www.upress.virginia.edu/title/5389)"
+description: We are delighted to offer the sixth installment in our new podcast
+  series, 'UVA Press Presents,' via this interview with Walter Hood and Grace
+  Mitchell Tada about their new book [Black Landscapes
+  Matter](https://www.upress.virginia.edu/title/5389)
+related_books:
+  - book_id: "5389"
+    book_title: Black Landscapes Matter
 ---
 We are delighted to offer the sixth installment in our new podcast series, "UVA Press Presents," via this interview with Walter Hood, MacArthur Fellow and Professor of Landscape Architecture and Environmental Planning and Urban Design at the University of California, Berkeley, and Grace Mitchell Tada, independent scholar, writer, and journalist, about their new book [Black Landscapes Matter](https://www.upress.virginia.edu/title/5389).
 
