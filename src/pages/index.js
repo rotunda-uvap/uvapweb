@@ -77,7 +77,7 @@ export default function Home({data}) {
         <p className="body-text p-5">{rotpromo.frontmatter.body2} </p>
         </div>  
         <div>
-        <Link to={'/'}><StaticImage className="mx-auto" src="../../images/pfe1.jpg"  alt="People of the Fouding Era" /></Link>
+        <Link to={'/'}><StaticImage className="mx-auto" src="../../images/pfe1.jpg"  alt="People of the Founding Era" /></Link>
         
         </div>  
     </div>
@@ -160,11 +160,10 @@ export const query = graphql`
         relbook
       }
     }
-    rotunda:  markdownRemark(frontmatter: {templateKey: {eq: "homepage-rotunda"}}) {
+    rot:  markdownRemark(frontmatter: {templateKey: {eq: "homepage-rotunda"}}) {
       frontmatter {
         body1
         body2
-        relbook
       }
     }
   }`
