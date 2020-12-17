@@ -23,30 +23,6 @@ export default function AboutPage({ data }) {
          <p className="py-5" dangerouslySetInnerHTML={{__html: pagedata.html}}/>
 
 
-
-            <section className="py-20">
-                
-                <div id="staff" className="grid md:grid-cols-2 gap-2"> 
-                <h4 className="py-2 font-black text-2xl">UVa Staff</h4>
-                {staff.edges.map(edge => (
-                    <>
-                        <div className="flex flex-auto">
-                            <img src="scooter.jpg" alt="muppet placeholder"/>
-                             <ul className="flex flex-col px-10">
-                                <li className="font-black"><Link to={`../staff/${ edge.node.slug }`}>{ edge.node.name }
-                                </Link></li> 
-                                <li>{edge.node.jobtitle}</li>
-                                <li>{edge.node.phone}</li>
-                                <li><a href={`mailto:${ edge.node.email }`}>{edge.node.email}</a></li>
-                          </ul>
-                        </div>
-                    </>
-
-                    ))}
-
-                     </div>
-                
-            </section>
           
 
            

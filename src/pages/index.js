@@ -30,15 +30,15 @@ export default function Home({data}) {
 <section>
   <div className="mx-auto">
  <ul className="grid grid-cols-2 md:grid-cols-8 content-center justify-center">
-   <li key="1"><Link to={`/books`}><button className="hover:bg-white hover:text-black bg-black text-blue-200 p-4 w-full h-full uppercase">Browse Books</button></Link></li>
-   <li key="2"><Link to={`/catalog`}><button className="hover:bg-white hover:text-black bg-black text-blue-200 p-4 text-white w-full h-full uppercase">Current Catalog</button></Link></li>
-   <li key="3"><Link to={`/recent-books`}><button className="hover:bg-white hover:text-black bg-black text-blue-200 p-4 text-white w-full h-full uppercase">New Releases</button></Link></li>
-   <li key="4"><Link to={`/authors`}><button className="hover:bg-white hover:text-black  bg-black text-blue-200 p-4 text-white w-full h-full uppercase">For Authors</button></Link></li>
-   <li key="5"><Link to={`/instructors`}><button className="hover:bg-white hover:text-black  bg-black text-blue-200 p-4 text-white w-full h-full uppercase">For Instructors</button></Link></li>
-   <li key="7"><Link to={`/content/order`}><button className="hover:bg-white hover:text-black p-4 bg-black text-blue-200 w-full h-full uppercase">Order</button></Link></li>
-   <li key="8"><Link to={`/`}><button className="hover:bg-white hover:text-black bg-black text-blue-200 p-4  w-full h-full uppercase">ROTUNDA Digital Imprint</button></Link></li>
+   <li key="1"><Link to={`/books`}><button className="hover:bg-white hover:text-black bg-black text-white p-4 w-full h-full uppercase">Browse Books</button></Link></li>
+   <li key="2"><Link to={`/catalog`}><button className="hover:bg-white hover:text-black bg-black text-white p-4 text-white w-full h-full uppercase">Current Catalog</button></Link></li>
+   <li key="3"><Link to={`/recent-books`}><button className="hover:bg-white hover:text-black bg-black text-white p-4 text-white w-full h-full uppercase">New Releases</button></Link></li>
+   <li key="4"><Link to={`/authors`}><button className="hover:bg-white hover:text-black  bg-black text-white p-4 text-white w-full h-full uppercase">For Authors</button></Link></li>
+   <li key="5"><Link to={`/instructors`}><button className="hover:bg-white hover:text-black  bg-black text-white p-4 text-white w-full h-full uppercase">For Instructors</button></Link></li>
+   <li key="7"><Link to={`/content/order`}><button className="hover:bg-white hover:text-black p-4 bg-black text-white w-full h-full uppercase">Order</button></Link></li>
+   <li key="8"><Link to={`/`}><button className="hover:bg-white hover:text-black bg-black text-white p-4  w-full h-full uppercase">ROTUNDA Digital Imprint</button></Link></li>
 
-   <li key="9"><Link to={`/content/support-uva-press`}><button className="hover:bg-white hover:text-black bg-black text-blue-200 p-4  w-full h-full uppercase">Support</button></Link></li>
+   <li key="9"><Link to={`/content/support-uva-press`}><button className="hover:bg-white hover:text-black bg-black text-white p-4  w-full h-full uppercase">Support</button></Link></li>
 
  </ul>
 </div>
@@ -77,7 +77,7 @@ export default function Home({data}) {
         <p className="body-text p-5">{rotpromo.frontmatter.body2} </p>
         </div>  
         <div>
-        <Link to={'/'}><StaticImage className="mx-auto" src="../../images/pfe1.jpg"  alt="People of the Founding Era" /></Link>
+        <Link to={'/'}><StaticImage className="mx-auto" src="../../images/pfe1.jpg" alt="People of the Founding Era" /></Link>
         
         </div>  
     </div>
