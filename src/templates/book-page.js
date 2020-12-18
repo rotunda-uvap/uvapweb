@@ -25,12 +25,12 @@ export default ({ data }) => {
       </div>
       <div className="md:col-span-2">   
           <div>
-        <h2 className="py5 text-4xl font-black mt-5 mb-2">{book.Title}</h2> 
-        {book.InternalSeriesVolume && <h3 className="py5 text-1xl mt-2 mb-2">{book.InternalSeriesVolume}</h3> }
+        <h2 className="py-5 font-black leading-snug">{book.Title}</h2> 
+        {book.InternalSeriesVolume && <h6 className="py-3">{book.InternalSeriesVolume}</h6> }
 
-        {book.Subtitle && <h3 className="py5 text-2xl italic mt-2 mb-2">{book.Subtitle}</h3>}
+        {book.Subtitle && <h5 className="italic py-3">{book.Subtitle}</h5>}
 
-        <h3 className="mb-4">by {book.AuthorCredit}</h3>
+        <h6 className="py-3">by {book.AuthorCredit}</h6>
           </div>
 
           <div>
@@ -50,9 +50,20 @@ export default ({ data }) => {
          ))} 
         </div>
         <div>
-        {book.Series && <div><h3>Series</h3> <button className="text-white text-sm bg-blue-400 rounded-md p-2"><Link to={`../../series/${ book.Series }`}>{ book.Series }</Link></button></div>}
-
-      {book.Subject && <div><h3 className="mt-3">Subject</h3> <button className="text-white text-sm rounded-md bg-blue-500 p-2"><Link to={`../../subject/${ book.Subject }`}>{ book.Subject }</Link></button></div>}
+       
+       <section>
+         <div className="py-3">{book.Series && <div><span className="text-xs uppercase pr-5">Series:</span>
+          <button className="text-white text-sm bg-blue-400 rounded-md p-2">
+            <Link to={`../../series/${ book.Series }`}>{ book.Series }</Link>
+            </button></div>}
+            </div>
+          <div className="py-3">
+            {book.Subject && <div><span className="text-xs uppercase pr-5">subject:</span>
+       <button className="text-white text-sm rounded-md bg-blue-500 p-2">
+         <Link to={`../../subject/${ book.Subject }`}>{ book.Subject }</Link></button></div>}
+          </div>
+      
+         </section> 
     </div>
 
     </div>
@@ -64,8 +75,8 @@ export default ({ data }) => {
         <BookHorizontalTabs summary={book.MainDescription.html} reviews={book.Reviews} bio={book.BioNote.html}/>
     </section>
 
-    <section id="lg_horiz_tabs" className="py-10 md:hidden">
-        <BookVerticalTabs summary={book.MainDescription.html} reviews={book.Reviews} bio={book.BioNote.html}/>
+    <section id="sm_horiz_tabs" className="py-10 md:hidden">
+        <BookHorizontalTabs summary={book.MainDescription.html} reviews={book.Reviews} bio={book.BioNote.html}/>
     </section>
     
     <section>

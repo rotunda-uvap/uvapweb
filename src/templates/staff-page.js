@@ -8,7 +8,7 @@ export default ({ data }) => {
  return (
    <Layout>
      <div>
-        <h2 className="py5 text-1xl font-black mt-5 mb-2">{staffMember.name}</h2> 
+        <h2 className="py-10">{staffMember.name}</h2> 
         {staffMember.jobtitle && <h3 className="py5 text-1xl mt-2 mb-2">{staffMember.jobtitle}</h3> }
 
         {staffMember.email && <h3 className="py5 text-1xl italic mt-2 mb-2"><a href={`mailto:${ staffMember.email }`}>{staffMember.email}</a></h3>}

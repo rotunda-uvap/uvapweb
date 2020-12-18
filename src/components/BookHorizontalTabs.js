@@ -9,9 +9,9 @@ const BookHorizontalTabs = ({summary, reviews, bio}) => {
     
         <Tabs defaultTab="basic-tab-one" className="flex flex-col justify-center ">
         <TabList className="self-center">
-    <Tab className="font-black uppercase py-3 px-6 border-b-4 border-white hover:border-black" tabFor="basic-tab-one">Summary</Tab>
+    <Tab className="font-black uppercase py-3 px-5 border-b-4 border-white hover:border-black" tabFor="basic-tab-one">Summary</Tab>
           <Tab className="font-black uppercase py-3 px-6 border-b-4 border-white hover:border-black" tabFor="basic-tab-two">Reviews</Tab>
-          <Tab className="font-black uppercase py-3 px-6 border-b-4 border-white hover:border-black" tabFor="basic-tab-three">About the Author(s)</Tab>
+          <Tab className="font-black uppercase py-3 px-6 border-b-4 border-white hover:border-black" tabFor="basic-tab-three">Author Bio(s)</Tab>
         </TabList>
         <TabPanel className="p-6" tabId="basic-tab-one">
         <div dangerouslySetInnerHTML={{ __html: summary }}/>

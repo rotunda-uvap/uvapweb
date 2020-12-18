@@ -11,7 +11,7 @@ export default ({ data }) => {
  return (
    <Layout>
      <div>
-        <h1 className="py5 text-1xl font-black mt-16 mb-2" >{promos.frontmatter.title}</h1>
+        <h2 className="py-10">{promos.frontmatter.title}</h2>
         <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1">
           <article 
           dangerouslySetInnerHTML={{ __html: promos.html }}/>

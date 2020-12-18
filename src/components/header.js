@@ -41,11 +41,8 @@ const Header = () => {
           <Link to={`/books`} className="uppercase block mt-4  text-teal-200 hover:text-gray-300">
             Books
           </Link>
-          <Link to={`/subjects`} className="uppercase block mt-4  text-teal-200 hover:text-gray-300">
-            Subjects
-          </Link>
-          <Link to={`/series`} className="uppercase block mt-4  text-teal-200 hover:text-gray-300">
-            Series
+          <Link to={`/`} className="uppercase block mt-4  text-teal-200 hover:text-gray-300">
+            ROTUNDA DIGITAL IMPRINT
           </Link>
           <Link to={`/news-posts`} className="uppercase block mt-4  text-teal-200 hover:text-gray-300">
             News
