@@ -177,12 +177,12 @@ module.exports = {
         }
       },
     },
-   /*  {
+    {
       resolve: 'gatsby-plugin-mailchimp',
       options: {
-          endpoint: '', // string; add your MC list endpoint here; see instructions below
+          endpoint: 'https://virginia.us5.list-manage.com/subscribe/post?u=ef1bb24fccf12e802068da002&amp;id=471ea965df', // string; add your MC list endpoint here; see instructions below
           timeout: 3500, // number; the amount of time, in milliseconds, that you want to allow mailchimp to respond to your request before timing out. defaults to 3500
       },
-  }, */
+  }, 
   ]
 }

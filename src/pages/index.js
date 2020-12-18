@@ -6,6 +6,7 @@ import FeatNews from "../components/FeatNews"
 import FeatMedia from "../components/FeatMedia"
 import FeatPromo from "../components/FeatPromo"
 import { SocialIcon } from 'react-social-icons';
+import NewsletterMain from "../components/NewsletterMain"
 
 
 
@@ -95,12 +96,11 @@ export default function Home({data}) {
 
   <div className="py-10 bg-blue-500">
         <div className="container mx-auto px-6">
-        <div className="bg-cover bg-center h-auto text-white py-20 px-10 object-fill grid md:grid-cols-2">
-       <Link to={'/newsletters'}><div>
-       <p className="text-3xl font-bold">Our Newsletters</p>
-        <p className="body-text p-5">Subscribe to our e-newsletter and receive notifications of new releases and special offers in your choice of subjects.
-</p>
-        </div>  </Link>
+        <div className="bg-cover bg-center h-auto text-white py-20 px-10 object-fill">
+       <div>
+       <NewsletterMain/>
+
+        </div>  
     </div>
     </div>
       </div>
