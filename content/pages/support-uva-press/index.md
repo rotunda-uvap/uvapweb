@@ -1,25 +1,27 @@
 ---
-title: Support UVa Press
 type: page
+title: Support UVa Press
 ---
-Founded in 1963, the UVA Press extends the reach of scholarly publishing to students, faculty, staff, and communities across the globe. Our society and our humanity are enriched by our collective understanding of our past, our deliberative analysis of our present, and our aspirational vision for our shared future.
+Founded in 1963, UVA Press has published almost 2,000 books in history, the humanities, architecture and design, culture, and on ideas and places important to Virginians. Our ground-breaking digital imprint, Rotunda, extends the reach of scholarship across the world through primary sources available to students, faculty, and scholars. UVA Press seeks new voices, illuminates new perspectives, and fuels aspirations for our shared world. Through our mission as a scholarly press, we strive to provoke new and inclusive thinking that improves the human condition.
 
-The University of Virginia Press appreciates the support of individuals, organizations, and foundations. We believe that an investment in scholarship and intellectual inquiry  allows for new perspectives and possibilities that could literally change the world. Please consider joining with us in this mission.
+The University of Virginia Press appreciates the support of individuals, organizations, and foundations. Please join us in this important work.
 
-Bemiss Society—Gifts of $5,000 and above
+**Martin Society**—Gifts of $10,000 and above advance ideas through print and digital content that “ring the bell” on the systemic issues that tear at our shared humanity.
 
-Cowan Society—Gifts of $2500 to $4999
+**Bemiss Society**—Gifts of $5,000 to $9,999 fund new scholarship from scholars and writers whose voices have not historically been heard or valued.
 
-Kaserlian Society—Gifts of $1000 to $2499
+**Cowan Society**—Gifts of $2,500-$4,999 fund scholarship from international scholars and writers from the Caribbean, Africa, and the Global South
 
-Saunders Society—Gifts of any amount to endow series, fellowships, and symposium
+**Kaserlian Society**—Gifts of $1,000-$2,499 fund new venues and opportunities for interdisciplinary scholarly dialogue and symposia that address global challenges
 
-Unrestricted gifts should be addressed to:
+**Saunders Society**—Gifts of any amount support access to scholarship for students, faculty, scholars, and community members through open-access books, the digital imprint, and book series that advance new approaches to fields of study.
+
+Gifts can be made through the [UVA Giving](https://securelb.imodules.com/s/1535/16-uva/giving.aspx?sid=1535&gid=16&pgid=684&cid=1509&appealcode=21UVAQ14WG&bledit=1&dids=4515&sort=1) or:
 
 University of Virginia Press Unrestricted Gift Fund\
-Attention: Samantha Jackson\
+Attention: Samantha Anderson-Jackson\
 Bemiss House\
-210 Sprigg Lane\
+210 Sprigg Lane\
 Charlottesville, VA 22903
 
-Restricted gift opportunities and questions should be directed to Suzanne Morse Moomaw, Director at [swm2x@virginia.edu](mailto:swm2x@virginia.edu) or 434-924-6064
+Please direct questions to Suzanne Morse Moomaw, Director of the University of Virginia Press, [swm2x@virginia.edu](mailto:swm2x@virginia.edu) or 434-924-6064 (office)/434-981-7845 (cell).
