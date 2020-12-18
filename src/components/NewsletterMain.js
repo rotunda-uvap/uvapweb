@@ -41,7 +41,7 @@ export default class IndexPage extends React.Component {
         return (
             <div>
                 <p className="text-3xl font-bold">Join our Mailing List</p>
-                <p>Submit the form below to subscribe to our mailing list to get updates on new releases!</p>
+                <p>Submit the form below to subscribe to our mailing list for updates on new releases!</p>
                 <div className="py-10 px-5">
                     <form onSubmit={this._handleSubmit} className="grid md:grid-cols-2 md:gap-2 align-items">
                        
