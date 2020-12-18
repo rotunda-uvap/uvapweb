@@ -6,7 +6,7 @@ export default function NewsletterPage({  }) {
  return (
     
         <Layout>
-            <h2 className="text-4xl py-2">Newsletters</h2>
+            <h2 className="py-10">Newsletters</h2>
             
           <p>This will have a list of newsletters with signup forms, maybe descriptions? Sync with Mailchimp. </p>         
           

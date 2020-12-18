@@ -9,7 +9,7 @@ export default function StaffList({ data }) {
  return (
     
         <Layout>
-          <h2 className="py-5 text-4xl">UVaP Staff</h2>
+          <h2 className="py-10">UVaP Staff</h2>
           
           <section >
           <div className="container py-10 grid md:grid-cols-2">

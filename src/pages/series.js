@@ -9,7 +9,7 @@ export default function Series({ data }) {
     
         <Layout>
           <section>
-             <h2 className="py-5 text-4xl">Series</h2>
+             <h2 className="py-10">Series</h2>
             <div className="grid md:grid-cols-4 md:grid-4">
             {series.distinct.map(d => (
             <>

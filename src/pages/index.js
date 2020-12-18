@@ -5,6 +5,9 @@ import { StaticImage } from "gatsby-plugin-image"
 import FeatNews from "../components/FeatNews"
 import FeatMedia from "../components/FeatMedia"
 import FeatPromo from "../components/FeatPromo"
+import { SocialIcon } from 'react-social-icons';
+
+
 
 
 export default function Home({data}) {
@@ -56,7 +59,11 @@ export default function Home({data}) {
 
       <article className="flex flex-wrap place-content-center p-5 hover:bg-black hover:text-white">
               <div><button className="px-4 py-2 border-2 border-gray-700 uppercase">social media</button></div>
-                <div className="mx-auto w-4/5"><h3 className="text-2xl font-black uppercase py-5 text-center" >LINK/LOGOS HERE</h3>
+                <div className="mx-auto w-4/5 py-10">
+                <div><a href="https://twitter.com/uvapress" className="px-5"><SocialIcon network="twitter" bgColor="#00000" /></a>
+                <a href="https://facebook.com/uvapress" className="px-5"><SocialIcon network="facebook" bgColor="#00000" /></a></div>
+                <div><a href="https://twitter.com/uvapress" className="px-5"><SocialIcon network="twitter" bgColor="#ffffff" /></a>
+                <a href="https://facebook.com/uvapress" className="px-5"><SocialIcon network="facebook" bgColor="#ffffff" /></a></div>
                 </div>
                 <div></div>
       </article>

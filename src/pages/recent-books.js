@@ -14,7 +14,7 @@ export default function RecentBooks({ data }) {
  return (
     
         <Layout>
-            <h2 className="py-5 text-4xl">New and Upcoming Books from UVa Press</h2>
+            <h2 className="py-10">New and Upcoming Books from UVa Press</h2>
 
             <section className="py-5 grid grid-cols-2 mx-auto">
             <div className="p-3 border-b-4 border-white hover:border-black w-full hover:bg-black hover:text-white">Forthcoming Books</div>

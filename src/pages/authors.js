@@ -12,7 +12,7 @@ export default function AuthorsPage({ data }) {
  return (
     
         <Layout>
-            <h2 className="text-5xl py-2">For Authors</h2>
+            <h2 className="py-10">For Authors</h2>
 
         <section className="py-5 grid grid-cols-2 mx-auto">
             <div className="p-3 uppercase">Current Authors</div>

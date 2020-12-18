@@ -2,35 +2,40 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import BioCard from "../components/BioCard"
+import { Helmet } from 'react-helmet'
 
 
 export default function PubPage({ data }) {
     const news = data.allMarkdownRemark
     const staff = data.allStaffJson
+    const pagedata = data.markdownRemark
 
  return (
     
         <Layout>
-            <h2 className="text-5xl py-2">Publicity</h2>
-
-            <section className="py-20">
+            <h2 className="py-10">Publicity</h2>
+            <div className="grid md:grid-cols-3 md:gap-5 justify-center">
+              <section className="py-10 md:col-span-2">
                 
-                <div className="grid md:grid-cols-2 gap-2"> 
                 {staff.edges.map(edge => (
                     <>
                     <BioCard name={edge.node.name} title={edge.node.jobtitle} phone={edge.node.phone} email={edge.node.email} slug={edge.node.slug} photo={edge.node.photo}/>
                  </>
-
-
                     ))}
-
-                     </div>
-                
+                 <p className="py-5" dangerouslySetInnerHTML={{__html: pagedata.html}}/>
             </section>
-            <section className="py-20 bg-gray-100">
-                <h3 className="text-4xl">Social Media</h3>
-            <p>Facebook and Twitter integration (how much?) </p>
+            <section className="py-15 flex flex-col align-center">
+            <Helmet>
+            <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v9.0&appId=10916153062&autoLogAppEvents=1" nonce="Jr34ozA7"></script></Helmet>
+            
+            <div className="fb-page" data-href="https://www.facebook.com/uvapress" data-tabs="timeline" data-width="" data-height="500" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/uvapress" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/uvapress">University of Virginia Press</a></blockquote></div>
+            <div><a className="twitter-timeline" data-chrome="noheader"  data-widget-id="702210505897807872" data-height="420" data-width="340" href="https://twitter.com/uvapress">Tweets by @uvapress</a></div>
+           
             </section>
+            </div>
+            
+            
+            
 
             <section className="py-20">
                 <h3 className="text-4xl py-7">All News, Media and Events</h3>
@@ -87,6 +92,10 @@ export const query = graphql`
             photo
           }
         }
+       
+      }
+      markdownRemark(frontmatter: {type: {eq: "page"}, title: {eq: "Publicity"}}) {
+        html
       }
   }
 `

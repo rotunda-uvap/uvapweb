@@ -11,7 +11,7 @@ export default function Books({ data }) {
  return (
     
         <Layout>
-                 <h2 id="top" className="text-3xl py-5">Browse All Books</h2>
+                 <h2 id="top" className="py-10">Browse All Books</h2>
             <div className="container">
  <ul className="grid md:grid-cols-4 md:auto-rows-fr content-center justify-center py-7">
    <li><Link to={`#subjects`}><button className="border-b-4 border-white hover:border-black w-full h-full uppercase">Browse by Subject</button></Link></li>
@@ -27,7 +27,7 @@ export default function Books({ data }) {
           <div className="container px-5 py-5 grid md:grid-cols-5 md:gap-4">
             {rec.edges.map(edge => (
            <>  
-              <Link to={`../title/${ edge.node.BookID }`}>
+              <Link key={edge.node.BookID} to={`../title/${ edge.node.BookID }`}>
                 <BookCard Title={edge.node.Title} Subtitle={edge.node.Subtitle} Author={edge.node.AuthorCredit} Thumb={edge.node.CoverImageThumb} Bookid ={edge.node.BookID} pubdate={edge.node.PublicationDate} />
                 </Link>
            </>

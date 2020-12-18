@@ -8,7 +8,7 @@ export default function InstructorPage({data}) {
   const subs = data.subjects
   return (
     <Layout>
-        <h2 id="top" className="py-5 text-4xl">For Instructors</h2>
+        <h2 id="top" className="py-10">For Instructors</h2>
         <ul className="grid md:grid-cols-4 md:auto-rows-fr content-center justify-center py-7">
    <li><Link to={`#subjects`}><button className="border-b-4 border-white hover:border-black w-full h-full uppercase">Our Subjects</button></Link></li>
    <li><Link to={`#series`}><button className="border-b-4 border-white hover:border-black w-full h-full uppercase">Our Series</button></Link></li>

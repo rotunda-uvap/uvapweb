@@ -5,12 +5,11 @@ import "../utils/global.css"
 
 
 export default function AboutPage({ data }) {
-    const staff = data.allStaffJson
     const pagedata = data.markdownRemark
  return (
     
         <Layout>
-            <h2 className="text-4xl py-2">About UVa Press</h2>
+            <h2 className="py-10">About UVa Press</h2>
             <section className="grid md:grid-cols-5 py-5">
                 <Link to={'/contact'}><button className="p-3 border-b-4 border-white hover:border-black w-full">Contact</button></Link>
                 <Link to={'/staff-list'}><button className="p-3 border-b-4 border-white hover:border-black w-full">Staff Directory</button></Link>

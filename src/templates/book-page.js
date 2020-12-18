@@ -6,11 +6,11 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import BookHorizontalTabs from "../components/BookHorizontalTabs"
 import BookVerticalTabs from "../components/BookVerticalTabs"
 
+
 export default ({ data }) => {
     const book = data.booksJson
     const imageData = getImage(data.file)
-    const toc = "https://books.google.com/books?vid=ISBN" + book.ISBNs[0] + "&printsec=toc"
-   
+    
  return (
    
    <Layout>
@@ -67,9 +67,10 @@ export default ({ data }) => {
     <section id="lg_horiz_tabs" className="py-10 md:hidden">
         <BookVerticalTabs summary={book.MainDescription.html} reviews={book.Reviews} bio={book.BioNote.html}/>
     </section>
-  
-
-   <section><a href={toc} >Google Books Link (Supposed to be to TOC, needs correct ISBN, links): {toc}</a></section>
+    
+    <section>
+      
+    </section>
 
   
 

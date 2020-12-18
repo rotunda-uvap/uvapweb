@@ -1,46 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-
-.wrapper{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
+@layer base {
+  h1 {
+    @apply text-6xl;
   }
-  .tab{
-    cursor: pointer;
-    padding:10px 20px;
-    margin:0px 2px;
-    display:inline-block;
+  h2 {
+    @apply text-5xl;
   }
-  .panels{
-    
-    overflow:hidden;
-    padding:20px;  
+  h3 {
+    @apply text-4xl;
   }
-  .panel{
-    display:none;
+  h4 {
+    @apply text-3xl;
   }
- 
-  .panel-title{
-    font-size:1.5em;
-    font-weight:bold
+  h5 {
+    @apply text-2xl;
   }
-
-  input.radio {
-    width:40px;
-    height:40px;
+  h6 {
+    @apply text-xl;
   }
-  .radio{
-    display:none;
-  }
-  #one:checked ~ .panels #one-panel,
-  #two:checked ~ .panels #two-panel,
-  #three:checked ~ .panels #three-panel{
-    display:block
-  }
-  #one:checked ~ .tabs #one-tab,
-  #two:checked ~ .tabs #two-tab,
-  #three:checked ~ .tabs #three-tab{
-    background:#fffffff6;
-    color:#000;
-    border-bottom: 3px solid #000;
-  }
+}

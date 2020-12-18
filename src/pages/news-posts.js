@@ -8,7 +8,7 @@ export default function Articles({ data }) {
  return (
     
         <Layout>
-          <h2 className="py-5 text-4xl">All News Posts</h2>
+          <h2 className="py-10">All News Posts</h2>
             {news.edges.map(edge => (
             <>
             <div className="container px-5 py-5 mx-auto flex flex-wrap">
