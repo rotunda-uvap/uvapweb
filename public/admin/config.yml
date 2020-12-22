@@ -133,7 +133,7 @@ collections:
           - { label: "Template Key", name: "templateKey", widget: "hidden", default: "homepage-primary"}
           - { label: "Title", name: "title", widget: "string", hint: "This field needs to exist to show on the list of posts"}
           - { label: 'related book id', name: 'relbook', widget: 'string', required: false, hint: "For multiple, separate book ids by commas with no spaces. Eg. 1234,4567"}
-          - { label: Image, name: image, widget: image, required: false}
+          - { label: Primary Image, name: primary_image, widget: image, required: false}
           - { name: body1, label: Headline, widget: markdown, hint: "Optional: Larger Text" , required: false}
           - { name: body2, label: Body, widget: markdown, hint: "Optional: Smaller/Secondary text" , required: false}
       - file: "content/featured/secondary/index.md"
