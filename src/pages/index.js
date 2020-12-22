@@ -2,7 +2,6 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import { StaticImage } from "gatsby-plugin-image"
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import FeatNews from "../components/FeatNews"
 import FeatMedia from "../components/FeatMedia"
 import FeatPromo from "../components/FeatPromo"
@@ -18,7 +17,6 @@ export default function Home({data}) {
   const promoPost = data.promos.edges[0].node
   const topSpot = data.primary
   const rotpromo = data.rot
-  const topSpotImgData = getImage(topSpot.frontmatter.image)
   return (
     <Layout>
       <div className="py-15 bg-blue-500">
@@ -28,7 +26,8 @@ export default function Home({data}) {
   <h2 className="text-5xl font-bold mb-2 text-white">{topSpot.frontmatter.body1}</h2>
              <h3 className="text-3xl font-light text-gray-200">{topSpot.frontmatter.body2}</h3>
             </div>
-         <Link to={'../../title/5626'}><GatsbyImage image={topSpotImgData} alt="featured cover" /></Link>
+            {topSpot.frontmatter.image}
+         <Link to={'../../title/5626'}></Link>
         </div></Link>
         </div>
       </div>
