@@ -27,7 +27,7 @@ export default function Home({data}) {
              <h3 className="text-3xl font-light text-gray-200">{topSpot.frontmatter.body2}</h3>
             </div>
             
-         {/* <Link to={'../../title/5626'}><StaticImage src={ '"' + topSpot.frontmatter.image +'"'} alt="featured cover" /></Link> */}
+          <Link to={'../../title/5626'}><img src={ topSpot.frontmatter.primary_image} alt="featured cover" /></Link> 
         </div></Link>
         </div>
       </div>

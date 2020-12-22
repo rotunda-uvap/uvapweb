@@ -129,6 +129,7 @@ collections:
         name: "primary"
         media_folder: ''
         public_folder: ''
+        media_folder_relative: true
         fields:
           - { label: "Template Key", name: "templateKey", widget: "hidden", default: "homepage-primary"}
           - { label: "Title", name: "title", widget: "string", hint: "This field needs to exist to show on the list of posts"}
@@ -141,6 +142,7 @@ collections:
         name: "secondary"
         media_folder: ''
         public_folder: ''
+        media_folder_relative: true
         fields:
           - { label: "Template Key", name: "templateKey", widget: "hidden", default: "homepage-secondary"}
           - { label: "Title", name: "title", widget: "string", hint: "This field needs to exist to show on the list of posts"}
@@ -153,6 +155,7 @@ collections:
         name: "tertiary"
         media_folder: ''
         public_folder: ''
+        media_folder_relative: true
         fields:
           - { label: "Template Key", name: "templateKey", widget: "hidden", default: "homepage-tertiary"}
           - { label: "Title", name: "title", widget: "string", hint: "This field needs to exist to show on the list of posts"}
@@ -165,6 +168,7 @@ collections:
         name: "rotunda"
         media_folder: ''
         public_folder: ''
+        media_folder_relative: true
         fields:
           - { label: "Template Key", name: "templateKey", widget: "hidden", default: "homepage-rotunda"}
           - { label: "Title", name: "title", widget: "string", hint: "This field needs to exist to show on the list of posts"}
@@ -178,6 +182,7 @@ collections:
         name: "homepage-promotion"
         media_folder: ''
         public_folder: ''
+        media_folder_relative: true
         fields:
           - { label: "Template Key", name: "templateKey", widget: "hidden", default: "homepage-promotion"}
           - { label: "Title", name: "title", widget: "string", hint: "This field needs to exist to show on the list of posts"}
