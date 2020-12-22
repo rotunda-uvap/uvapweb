@@ -2,6 +2,7 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import { StaticImage } from "gatsby-plugin-image"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import FeatNews from "../components/FeatNews"
 import FeatMedia from "../components/FeatMedia"
 import FeatPromo from "../components/FeatPromo"
@@ -15,18 +16,19 @@ export default function Home({data}) {
   const newsPost = data.news.edges[0].node
   const mediaPost = data.media.edges[0].node
   const promoPost = data.promos.edges[0].node
-  const topspot = data.primary
+  const topSpot = data.primary
   const rotpromo = data.rot
+  const topSpotImgData = getImage(topSpot.frontmatter.image)
   return (
     <Layout>
       <div className="py-15 bg-blue-500">
         <div className="container mx-auto px-6">
         <Link to={'../../title/5626'}><div className="grid md:grid-cols-2 hover:text-underline">
             <div className="flex flex-col mx-auto place-content-center">
-  <h2 className="text-5xl font-bold mb-2 text-white">{topspot.frontmatter.body1}</h2>
-             <h3 className="text-3xl font-light text-gray-200">{topspot.frontmatter.body2}</h3>
+  <h2 className="text-5xl font-bold mb-2 text-white">{topSpot.frontmatter.body1}</h2>
+             <h3 className="text-3xl font-light text-gray-200">{topSpot.frontmatter.body2}</h3>
             </div>
-         <Link to={'../../title/5626'}><StaticImage className="mx-auto" src="../../images/5626.jpg" width={250} alt="Three Rings" /></Link>
+         <Link to={'../../title/5626'}><GatsbyImage image={topSpotImgData} alt="featured cover" /></Link>
         </div></Link>
         </div>
       </div>
@@ -96,7 +98,7 @@ export default function Home({data}) {
 
   <div className="py-10 bg-blue-500">
         <div className="container mx-auto px-6">
-        <div className="bg-cover bg-center h-auto text-white py-20 px-10 object-fill">
+        <div className="bg-cover bg-center h-auto text-white py-5 px-10 object-fill">
        <div>
        <NewsletterMain/>
 
@@ -173,4 +175,5 @@ export const query = graphql`
         body2
       }
     }
+    
   }`

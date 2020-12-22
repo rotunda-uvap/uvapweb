@@ -4,7 +4,6 @@ import Layout from "../components/layout"
 import "../utils/global.css"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import BookHorizontalTabs from "../components/BookHorizontalTabs"
-import BookVerticalTabs from "../components/BookVerticalTabs"
 
 
 export default ({ data }) => {

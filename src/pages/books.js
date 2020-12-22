@@ -22,7 +22,71 @@ export default function Books({ data }) {
  </ul>
 </div>
    
-   <section id="recent">
+
+   
+
+
+<section class="text-gray-700 body-font" id="series">
+  <div class="container flex flex-wrap px-5 py-24 mx-auto items-center">
+    <div class="md:w-1/3 md:pr-12 md:py-8 md:border-r md:border-b-0 mb-10 md:mb-0 pb-10 border-b border-gray-300">
+      <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Our Series</h1>
+      <p class="leading-relaxed text-base">This paragraph should have introductory information about our series.</p>
+      <a class="text-teal-500 inline-flex items-center mt-4">Learn More
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+          <path d="M5 12h14M12 5l7 7-7 7"></path>
+        </svg>
+      </a>
+    </div>
+    <div class="flex flex-col md:w-2/3 md:pl-12">
+      <h2 class="title-font font-medium text-gray-800 tracking-widest text-sm mb-3">SERIES CATEGORIES</h2>
+      <nav class="flex flex-wrap list-none -mb-1">
+      {sers.distinct.map(serie => (
+            <>
+           
+           <li class="lg:w-1/3 mb-1 w-1/2" key={serie}>
+          <Link to={`../series/${ serie }`} className="text-gray-600 hover:text-gray-800">{ serie }</Link>
+        </li>
+            
+            </>
+        ))}
+        
+       
+      </nav>
+    </div>
+  </div>
+</section>
+
+<section class="text-gray-700 body-font" id="subjects">
+  <div class="container flex flex-wrap px-5 py-24 mx-auto items-center">
+    <div class="md:w-1/3 md:pr-12 md:py-8 md:border-r md:border-b-0 mb-10 md:mb-0 pb-10 border-b border-gray-300">
+      <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Our Subject Categories</h1>
+      <p class="leading-relaxed text-base">This paragraph should have introductory information about our subjects.</p>
+      <a class="text-teal-500 inline-flex items-center mt-4">Learn More
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+          <path d="M5 12h14M12 5l7 7-7 7"></path>
+        </svg>
+      </a>
+    </div>
+    <div class="flex flex-col md:w-2/3 md:pl-12">
+      <h2 class="title-font font-medium text-gray-800 tracking-widest text-sm mb-3">CATEGORIES</h2>
+      <nav class="flex flex-wrap list-none -mb-1">
+      {subs.distinct.map(sub => (
+            <>
+           
+           <li class="lg:w-1/3 mb-1 w-1/2" key={sub}>
+          <Link to={`../../subject/${ sub }`} className="text-gray-600 hover:text-gray-800">{ sub }</Link>
+        </li>
+            
+            </>
+        ))}
+        
+       
+      </nav>
+    </div>
+  </div>
+</section>
+   
+<section id="recent">
    <h4 className="py-10 text-2xl  uppercase">Recent Releases</h4>
           <div className="container px-5 py-5 grid md:grid-cols-5 md:gap-4">
             {rec.edges.map(edge => (
@@ -34,39 +98,9 @@ export default function Books({ data }) {
         ))}
         </div>
    </section>
-   <section id="awardwinners"><AwardWinners/>
+
+<section id="awardwinners"><AwardWinners/>
    <Link to={`#top`} className="uppercase text-xs">Go to top</Link></section>
-
-    
-   <section id="series" >
-             <h2 className="py-5 text-2xl">Series</h2>
-            <div className="grid md:grid-cols-4 md:grid-4">
-            {sers.distinct.map(serie => (
-            <>
-           
-                <button className="text-md py-3 px-7 hover:bg-black hover:text-white" key={serie}><Link to={`../series/${ serie }`}>{ serie }</Link></button>
-            
-            
-            </>
-        ))}
-        </div>
-        <Link to={`#top`} className="uppercase text-xs">Go to top</Link>
-          </section>
-
-        <section id="subjects">
-        <h2 className="py-5 text-2xl">Subjects</h2>
-          <div className="grid md:grid-cols-4 md:grid-4">
-            {subs.distinct.map(d => (
-            <>
-           
-           <button className="text-md py-3 px-7 hover:bg-black hover:text-white" key={d}><Link to={`../../subject/${ d }`}>{ d }</Link></button>
-            
-            
-            </>
-        ))}
-        </div>
-        <Link to={`#top`} className="uppercase text-xs">Go to top</Link>
-        </section>
 
 
 
