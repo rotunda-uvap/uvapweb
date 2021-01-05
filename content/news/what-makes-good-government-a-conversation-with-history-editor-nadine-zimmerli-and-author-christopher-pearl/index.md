@@ -10,6 +10,7 @@ description: Blog post from Nadine Zimmerli, Editor for History and Social Scien
 related_books:
   - book_id: "5457"
     book_title: "Conceived in Crisis: The Revolutionary Creation of an American State"
+date: 2020-10-15T04:00:00.000Z
 ---
 *As the Editor for History, I am always gratified when UVA Press books illuminate the country’s past while also speaking to our present moment. A few months ago, Christopher Pearl’s* [Conceived in Crisis: The Revolutionary Creation of an American State](https://www.upress.virginia.edu/title/5457) *appeared as part of our* [Early American Histories](https://www.upress.virginia.edu/series/early-american-histories) *series, and his book’s insights into good governance appear deeply relevant as municipal, state, and national elections loom on the horizon and early voting is well underway. Prof. Pearl recently spoke to the History Channel’s podcast* History This Week *about the Stamp Act and its consequences, and I am happy to share the link to his engaging interview here:*
 
