@@ -12,7 +12,7 @@ description: We are delighted to offer the sixth installment in our new podcast
 related_books:
   - book_id: "5389"
     book_title: Black Landscapes Matter
-date: 2020-11-18T05:00:00.000Z
+date: 2020-11-18
 ---
 We are delighted to offer the sixth installment in our new podcast series, "UVA Press Presents," via this interview with Walter Hood, MacArthur Fellow and Professor of Landscape Architecture and Environmental Planning and Urban Design at the University of California, Berkeley, and Grace Mitchell Tada, independent scholar, writer, and journalist, about their new book [Black Landscapes Matter](https://www.upress.virginia.edu/title/5389).
 
