@@ -1,6 +1,7 @@
 ---
 templateKey: homepage-rotunda
 title: Rotunda Promotion Section
+image: pfe1.jpg
 body1: People of the Founding Era
 body2: People of the Founding Era is a powerful new online resource that
   provides biographical information for thousands of individuals active during a
