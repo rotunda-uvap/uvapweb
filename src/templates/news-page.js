@@ -48,6 +48,7 @@ export const query = graphql`
         frontmatter {
             title
             type
+            date(formatString: "YYYY-MM-DD")
             related_books {
               book_id
               book_title

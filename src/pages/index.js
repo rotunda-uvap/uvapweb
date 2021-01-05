@@ -58,8 +58,8 @@ export default function Home({data}) {
                 </div>
                   <button className="rounded bg-blue-400 text-white text-lg px-5 py-2 text-center uppercase">see all</button>
       </article>
-      <FeatNews title={newsPost.childMarkdownRemark.frontmatter.title} slug={newsPost.childMarkdownRemark.fields.slug} />
-      <FeatMedia title={mediaPost.childMarkdownRemark.frontmatter.title} slug={mediaPost.childMarkdownRemark.fields.slug} />
+      <FeatNews title={newsPost.frontmatter.title} slug={newsPost.fields.slug} />
+      <FeatMedia title={mediaPost.frontmatter.title} slug={mediaPost.fields.slug} />
 
       <article className="flex flex-wrap place-content-center p-5 hover:bg-black hover:text-white">
               <div><button className="px-4 py-2 border-2 border-gray-700 uppercase">social media</button></div>
@@ -80,7 +80,7 @@ export default function Home({data}) {
 
 <div className="py-10 bg-blue-500">
         <div className="container mx-auto px-6">
-        <div className="bg-cover bg-center h-auto text-white py-20 px-10 object-fill grid md:grid-cols-2 gap-4 content-center">
+        <div className="bg-cover bg-center h-auto text-white py-20 px-10 object-fill grid md:grid-cols-2 gap-4 content-center items-center">
        <div>
         <p className="font-bold text-sm uppercase">Featured Rotunda:</p>
         <Link to={'../../title/5477'}><p className="text-3xl font-bold">{rotpromo.frontmatter.body1}</p></Link>
@@ -122,40 +122,38 @@ export const query = graphql`
           description
         }
       }
-      news: allFile(limit: 1, filter: {childMarkdownRemark: {frontmatter: {templateKey: {eq: "news"}, type: {eq: "news"}}}}, sort: {fields: birthTime, order: DESC}) {
+      news:  allMarkdownRemark(limit:1, filter: {frontmatter: {templateKey: {eq: "news"}, type: {eq: "news"}}}) {
         edges {
           node {
-            birthtimeMs
-            childMarkdownRemark {
-              frontmatter {
-                templateKey
-                type
-                title
-              }
-              fields {
-                slug
-              }
+            id
+            frontmatter {
+              date(formatString: "YYYY-MM-DD")
+              templateKey
+              type
+              title
+            }
+            fields {
+              slug
             }
           }
         }
-      }
-      media: allFile(limit: 1, filter: {childMarkdownRemark: {frontmatter: {templateKey: {eq: "news"}, type: {eq: "media"}}}}, sort: {fields: birthTime, order: DESC}) {
+      } 
+      media: allMarkdownRemark(limit:1, filter: {frontmatter: {templateKey: {eq: "news"}, type: {eq: "media"}}}) {
         edges {
           node {
-            birthtimeMs
-            childMarkdownRemark {
-              frontmatter {
-                templateKey
-                type
-                title
-              }
-              fields {
-                slug
-              }
+            id
+            frontmatter {
+              date(formatString: "YYYY-MM-DD")
+              templateKey
+              type
+              title
+            }
+            fields {
+              slug
             }
           }
         }
-      }
+      } 
       promos: allMarkdownRemark(limit: 1, filter: {frontmatter: {type: {eq: "promo"}}}) {
         edges {
           node {
