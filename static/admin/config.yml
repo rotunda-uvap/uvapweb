@@ -36,7 +36,8 @@ collections:
         name: "date"
         widget: "datetime"
         default: ""
-        time_format: "false" # e.g. 21:07
+        date_format: "YYYY-MM-DD"
+        time_format: "false" 
         format: "YYYY-MM-DD"
         required: true
   - name: 'pages'
