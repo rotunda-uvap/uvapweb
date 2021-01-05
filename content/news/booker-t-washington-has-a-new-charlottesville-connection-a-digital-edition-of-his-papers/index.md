@@ -2,8 +2,8 @@
 templateKey: news
 type: news
 draft: "false"
-title: "Booker T. Washington Has a New Charlottesville Connection: A
-  Digital Edition of His Papers"
+title: "Booker T. Washington Has a New Charlottesville Connection: A Digital
+  Edition of His Papers"
 description: Booker T. Washington, who emerged from slavery to become one of the
   leading African American intellectuals around the turn of the 20th century,
   had ties to Charlottesville that eventually led to a city park being named
@@ -15,6 +15,7 @@ image: btwashington.jpg
 related_books:
   - book_id: "4600"
     book_title: Schooling Jim Crow
+date: 2020-12-15
 ---
 Booker T. Washington, who emerged from slavery to become one of the leading African American intellectuals around the turn of the 20th century, had ties to Charlottesville that eventually led to a city park being named after him.
 
