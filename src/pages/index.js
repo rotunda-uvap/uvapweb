@@ -1,12 +1,12 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
-import { StaticImage } from "gatsby-plugin-image"
 import FeatNews from "../components/FeatNews"
 import FeatMedia from "../components/FeatMedia"
 import FeatPromo from "../components/FeatPromo"
 import { SocialIcon } from 'react-social-icons';
 import NewsletterMain from "../components/NewsletterMain"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 
 
@@ -17,17 +17,19 @@ export default function Home({data}) {
   const promoPost = data.promos.edges[0].node
   const topSpot = data.primary
   const rotpromo = data.rot
+  const TopSpotImageData = getImage(data.primImg)
+  const RotundaImageData = getImage(data.rotImg)
   return (
     <Layout>
       <div className="py-15 bg-blue-500">
         <div className="container mx-auto px-6">
-        <Link to={'../../title/5626'}><div className="grid md:grid-cols-2 hover:text-underline">
+        <Link to={'../../title/5626'}><div className="grid grid-cols-2 gap-2 hover:text-underline">
             <div className="flex flex-col mx-auto place-content-center">
-  <h2 className="text-5xl font-bold mb-2 text-white">{topSpot.frontmatter.body1}</h2>
-             <h3 className="text-3xl font-light text-gray-200">{topSpot.frontmatter.body2}</h3>
+  <h2 className="text-2xl md:text-5xl font-bold mb-2 text-white">{topSpot.frontmatter.body1}</h2>
+             <h3 className="text-lg md:text-3xl font-light text-gray-200">{topSpot.frontmatter.body2}</h3>
             </div>
             
-          <Link to={'../../title/5626'}><img src={ topSpot.frontmatter.primary_image} alt="featured cover" /></Link> 
+          <Link to={'../../title/5626'}><GatsbyImage image={TopSpotImageData} alt="featured cover" /></Link> 
         </div></Link>
         </div>
       </div>
@@ -56,21 +58,21 @@ export default function Home({data}) {
                 </div>
                   <button className="rounded bg-blue-400 text-white text-lg px-5 py-2 text-center uppercase">see all</button>
       </article>
-      <FeatNews title={newsPost.frontmatter.title} slug={newsPost.fields.slug} />
-      <FeatMedia title={mediaPost.frontmatter.title} slug={mediaPost.fields.slug} />
+      <FeatNews title={newsPost.childMarkdownRemark.frontmatter.title} slug={newsPost.childMarkdownRemark.fields.slug} />
+      <FeatMedia title={mediaPost.childMarkdownRemark.frontmatter.title} slug={mediaPost.childMarkdownRemark.fields.slug} />
 
       <article className="flex flex-wrap place-content-center p-5 hover:bg-black hover:text-white">
               <div><button className="px-4 py-2 border-2 border-gray-700 uppercase">social media</button></div>
                 <div className="mx-auto w-4/5 py-10">
-                <div><a href="https://twitter.com/uvapress" className="px-5"><SocialIcon network="twitter" bgColor="#00000" /></a>
-                <a href="https://facebook.com/uvapress" className="px-5"><SocialIcon network="facebook" bgColor="#00000" /></a></div>
-                <div><a href="https://twitter.com/uvapress" className="px-5"><SocialIcon network="twitter" bgColor="#ffffff" /></a>
-                <a href="https://facebook.com/uvapress" className="px-5"><SocialIcon network="facebook" bgColor="#ffffff" /></a></div>
+                <div><a href="https://twitter.com/uvapress" className="px-5"><SocialIcon network="twitter" aria-label="twitter button" bgColor="#00000" /></a>
+                <a href="https://facebook.com/uvapress" className="px-5"><SocialIcon network="facebook" aria-label="facebook button" bgColor="#00000" /></a></div>
+                <div><a href="https://twitter.com/uvapress" className="px-5"><SocialIcon network="twitter" aria-label="twitter button mobile" bgColor="#ffffff" /></a>
+                <a href="https://facebook.com/uvapress" className="px-5"><SocialIcon network="facebook" aria-label="facebook button mobile" bgColor="#ffffff" /></a></div>
                 </div>
                 <div></div>
       </article>
       </div>
-      <button className="bg-black text-lg text-white p-4 w-full uppercase text-center"><Link className to={`/publicity`}>see all news posts</Link></button>
+      <button className="bg-black text-lg text-white p-4 w-full uppercase text-center"><Link className to={`/news-posts`}>see all news posts</Link></button>
 </section>
 
 
@@ -78,7 +80,7 @@ export default function Home({data}) {
 
 <div className="py-10 bg-blue-500">
         <div className="container mx-auto px-6">
-        <div className="bg-cover bg-center h-auto text-white py-20 px-10 object-fill grid md:grid-cols-2">
+        <div className="bg-cover bg-center h-auto text-white py-20 px-10 object-fill grid md:grid-cols-2 gap-4 content-center">
        <div>
         <p className="font-bold text-sm uppercase">Featured Rotunda:</p>
         <Link to={'../../title/5477'}><p className="text-3xl font-bold">{rotpromo.frontmatter.body1}</p></Link>
@@ -86,7 +88,7 @@ export default function Home({data}) {
         <p className="body-text p-5">{rotpromo.frontmatter.body2} </p>
         </div>  
         <div>
-        <Link to={'/'}><StaticImage className="mx-auto" src="../../images/pfe1.jpg" alt="People of the Founding Era" /></Link>
+        <Link to={'/'}><GatsbyImage image={RotundaImageData} alt="featured rotunda image" /></Link>
         
         </div>  
     </div>
@@ -120,28 +122,36 @@ export const query = graphql`
           description
         }
       }
-      news: allMarkdownRemark(limit: 1, filter: {frontmatter: {type: {eq: "news"}}}) {
+      news: allFile(limit: 1, filter: {childMarkdownRemark: {frontmatter: {templateKey: {eq: "news"}, type: {eq: "news"}}}}, sort: {fields: birthTime, order: DESC}) {
         edges {
           node {
-            frontmatter {
-              title
-              type
-            }
-            fields {
-              slug
+            birthtimeMs
+            childMarkdownRemark {
+              frontmatter {
+                templateKey
+                type
+                title
+              }
+              fields {
+                slug
+              }
             }
           }
         }
       }
-      media: allMarkdownRemark(limit: 1, filter: {frontmatter: {type: {eq: "media"}}}) {
+      media: allFile(limit: 1, filter: {childMarkdownRemark: {frontmatter: {templateKey: {eq: "news"}, type: {eq: "media"}}}}, sort: {fields: birthTime, order: DESC}) {
         edges {
           node {
-            frontmatter {
-              title
-              type
-            }
-            fields {
-              slug
+            birthtimeMs
+            childMarkdownRemark {
+              frontmatter {
+                templateKey
+                type
+                title
+              }
+              fields {
+                slug
+              }
             }
           }
         }
@@ -166,6 +176,12 @@ export const query = graphql`
         body1
         body2
         relbook
+        primary_image {
+          childImageSharp {
+            gatsbyImageData(maxWidth: 200, layout: FLUID, placeholder: TRACED_SVG)
+          }
+        }
+
       }
     }
     rot:  markdownRemark(frontmatter: {templateKey: {eq: "homepage-rotunda"}}) {
@@ -174,5 +190,14 @@ export const query = graphql`
         body2
       }
     }
-    
+    primImg: file(extension: {eq: "jpg"}, relativeDirectory: {eq: "primary"}) {
+      childImageSharp {
+        gatsbyImageData(maxWidth:300, layout: CONSTRAINED, placeholder: TRACED_SVG)
+      }
+    }
+    rotImg: file(extension: {eq: "jpg"}, relativeDirectory: {eq: "rotunda"}) {
+      childImageSharp {
+        gatsbyImageData(maxWidth:300, layout: CONSTRAINED, placeholder: TRACED_SVG)
+      }
+    }
   }`

@@ -68,6 +68,7 @@ export const query = graphql`
           node {
             BookID
             Title
+            Subtitle
             PublicationDate
             AuthorCredit
             CoverImageThumb
@@ -79,6 +80,7 @@ export const query = graphql`
           node {
             BookID
             Title
+            Subtitle
             PublicationDate
             AuthorCredit
             CoverImageThumb

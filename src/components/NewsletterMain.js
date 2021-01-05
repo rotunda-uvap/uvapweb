@@ -1,6 +1,5 @@
 import React from 'react'
 import addToMailchimp from 'gatsby-plugin-mailchimp'
-import Layout from "./layout"
 
 export default class IndexPage extends React.Component {
     state = {
@@ -47,11 +46,11 @@ export default class IndexPage extends React.Component {
                 </div>
                 <form onSubmit={this._handleSubmit} class="flex lg:w-2/3 w-full sm:flex-row flex-col mx-auto px-8 sm:px-0 items-end">
                 <div class="relative sm:mr-4 mb-4 sm:mb-0 flex-grow w-full">
-                    <label for="full-name" class="leading-7 text-sm text-white">Full Name</label>
+                    <label htmlFor="full-name" class="leading-7 text-sm text-white">Full Name</label>
                     <input type="text" onChange={this._handleChange} placeholder="name" name="name" height="60" class="w-full bg-gray-100 rounded border border-gray-300 focus:border-teal-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"/>
                 </div>
                 <div class="relative sm:mr-4 mb-4 sm:mb-0 flex-grow w-full">
-                    <label for="email" class="leading-7 text-sm text-white">Email</label>
+                    <label htmlFor="email" class="leading-7 text-sm text-white">Email</label>
                     <input type="email"
                                         onChange={this._handleChange}
                                         placeholder="email"

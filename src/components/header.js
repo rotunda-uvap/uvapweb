@@ -53,6 +53,9 @@ const Header = () => {
           <Link to={`/content/support-uva-press`} className="uppercase block mt-4 text-teal-200 hover:text-gray-300">
             Give
           </Link>
+          <Link to={`/publicity`} className="uppercase block mt-4  text-teal-200 hover:text-gray-300 mr-4">
+            Publicity
+          </Link>
           <Link to={`/contact`} className="uppercase block mt-4  text-teal-200 hover:text-gray-300 mr-4">
             Contact
           </Link>

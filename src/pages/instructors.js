@@ -15,34 +15,70 @@ export default function InstructorPage({data}) {
    <li><Link to={`#desk`}><button className="border-b-4 border-white hover:border-black w-full h-full uppercase">Desk/Exam Copy Information</button></Link></li>
 
  </ul>
- <section id="desk">
-   <p>Desk and Exam Copy info from CMS</p>
+ <section id="desk" className="py-8 px-5">
+ <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Desk and Exam Copies</h1>
+   <p className="leading-relaxed text-base text-gray-700">Desk and Exam Copy info from CMS</p>
  </section>
         
 
-        <section id="subjects" className="py-5 bg-blue-500">
-        <h2 className="text-2xl pb-5 pl-5 text-white uppercase">Subjects</h2>
-          <div className="grid md:grid-cols-4 md:grid-4">
-            {subs.distinct.map(d => (
+ <section className="text-gray-700 body-font" id="subjects">
+  <div className="container flex flex-wrap px-5 py-24 mx-auto items-center">
+    <div className="md:w-1/3 md:pr-12 md:py-8 md:border-r md:border-b-0 mb-10 md:mb-0 pb-10 border-b border-gray-300">
+      <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Our Subject Categories</h1>
+      <p className="leading-relaxed text-base">This paragraph should have introductory information about our subjects.</p>
+      <Link className="text-teal-500 inline-flex items-center mt-4">Learn More
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
+          <path d="M5 12h14M12 5l7 7-7 7"></path>
+        </svg>
+      </Link>
+    </div>
+    <div className="flex flex-col md:w-2/3 md:pl-12">
+      <h2 className="title-font font-medium text-gray-800 tracking-widest text-sm mb-3">CATEGORIES</h2>
+      <nav className="flex flex-wrap list-none -mb-1">
+      {subs.distinct.map(sub => (
             <>
-           <button className="text-sm py-3 px-7 hover:bg-black text-white hover:text-white" key={d}><Link to={`../../subject/${ d }`}>{ d }</Link></button>
-             </>
-        ))}
-        </div>
-        <Link to={`#top`} className="uppercase text-xs">Go to top</Link>
-        </section>
-        <section id="series">
-             <h2 className="py-5 text-2xl uppercase">Series</h2>
-            <div className="grid md:grid-cols-4 md:grid-4">
-            {sers.distinct.map(serie => (
-            <>
-            <button className="text-sm py-3 px-7 hover:bg-black hover:text-white" key={serie}><Link to={`../series/${ serie }`}>{ serie }</Link></button>
+           
+           <li className="lg:w-1/3 mb-1 w-1/2" key={sub}>
+          <Link to={`../../subject/${ sub }`} className="text-gray-600 hover:text-gray-800">{ sub }</Link>
+        </li>
             
             </>
         ))}
-        </div>
-        <Link to={`#top`} className="uppercase text-xs">Go to top</Link>
-          </section>
+        
+       
+      </nav>
+    </div>
+  </div>
+</section>
+<section className="text-gray-700 body-font" id="series">
+  <div className="container flex flex-wrap px-5 py-24 mx-auto items-center">
+    <div className="md:w-1/3 md:pr-12 md:py-8 md:border-r md:border-b-0 mb-10 md:mb-0 pb-10 border-b border-gray-300">
+      <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Our Series</h1>
+      <p className="leading-relaxed text-base">This paragraph should have introductory information about our series.</p>
+      <Link className="text-teal-500 inline-flex items-center mt-4">Learn More
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
+          <path d="M5 12h14M12 5l7 7-7 7"></path>
+        </svg>
+      </Link>
+    </div>
+    <div className="flex flex-col md:w-2/3 md:pl-12">
+      <h2 className="title-font font-medium text-gray-800 tracking-widest text-sm mb-3">SERIES CATEGORIES</h2>
+      <nav className="flex flex-wrap list-none -mb-1">
+      {sers.distinct.map(serie => (
+            <>
+           
+           <li className="lg:w-1/3 mb-1 w-1/2" key={serie}>
+          <Link to={`../series/${ serie }`} classNameName="text-gray-600 hover:text-gray-800">{ serie }</Link>
+        </li>
+            
+            </>
+        ))}
+        
+       
+      </nav>
+    </div>
+  </div>
+</section>
 
         
    

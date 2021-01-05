@@ -67,6 +67,7 @@ exports.createSchemaCustomization = ({ actions }) => {
               }
               frontmatter {
                 type
+                title
               }
             }
           }
@@ -161,7 +162,8 @@ exports.createSchemaCustomization = ({ actions }) => {
             path: `/news${node.fields.slug}`,
             component: path.resolve(`./src/templates/news-page.js`),
             context: {
-              id: node.id
+              id: node.id,
+              relDir: node.fields.slug.substring(1)
             },
           })
         })

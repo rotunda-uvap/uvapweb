@@ -32,7 +32,13 @@ collections:
         fields:
           - {label: 'Book ID', name: 'book_id', widget: string}
           - {label: 'Book Title', name: 'book_title', widget: string, hint: 'Title to be shown next to book link and generated cover.'} 
-      
+      - label: "date"
+        name: "date"
+        widget: "datetime"
+        default: ""
+        time_format: "false" # e.g. 21:07
+        format: "YYYY-MM-DD"
+        required: true
   - name: 'pages'
     identifier_field: '{{title}}'
     label: 'Pages'

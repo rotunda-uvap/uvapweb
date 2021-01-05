@@ -26,24 +26,24 @@ export default function Books({ data }) {
    
 
 
-<section class="text-gray-700 body-font" id="series">
-  <div class="container flex flex-wrap px-5 py-24 mx-auto items-center">
-    <div class="md:w-1/3 md:pr-12 md:py-8 md:border-r md:border-b-0 mb-10 md:mb-0 pb-10 border-b border-gray-300">
-      <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Our Series</h1>
-      <p class="leading-relaxed text-base">This paragraph should have introductory information about our series.</p>
-      <a class="text-teal-500 inline-flex items-center mt-4">Learn More
-        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+<section className="text-gray-700 body-font" id="series">
+  <div className="container flex flex-wrap px-5 py-24 mx-auto items-center">
+    <div className="md:w-1/3 md:pr-12 md:py-8 md:border-r md:border-b-0 mb-10 md:mb-0 pb-10 border-b border-gray-300">
+      <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Our Series</h1>
+      <p className="leading-relaxed text-base">This paragraph should have introductory information about our series.</p>
+      <Link className="text-teal-500 inline-flex items-center mt-4">Learn More
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
           <path d="M5 12h14M12 5l7 7-7 7"></path>
         </svg>
-      </a>
+      </Link>
     </div>
-    <div class="flex flex-col md:w-2/3 md:pl-12">
-      <h2 class="title-font font-medium text-gray-800 tracking-widest text-sm mb-3">SERIES CATEGORIES</h2>
-      <nav class="flex flex-wrap list-none -mb-1">
+    <div className="flex flex-col md:w-2/3 md:pl-12">
+      <h2 className="title-font font-medium text-gray-800 tracking-widest text-sm mb-3">SERIES CATEGORIES</h2>
+      <nav className="flex flex-wrap list-none -mb-1">
       {sers.distinct.map(serie => (
             <>
            
-           <li class="lg:w-1/3 mb-1 w-1/2" key={serie}>
+           <li className="lg:w-1/3 mb-1 w-1/2" key={serie}>
           <Link to={`../series/${ serie }`} className="text-gray-600 hover:text-gray-800">{ serie }</Link>
         </li>
             
@@ -56,24 +56,24 @@ export default function Books({ data }) {
   </div>
 </section>
 
-<section class="text-gray-700 body-font" id="subjects">
-  <div class="container flex flex-wrap px-5 py-24 mx-auto items-center">
-    <div class="md:w-1/3 md:pr-12 md:py-8 md:border-r md:border-b-0 mb-10 md:mb-0 pb-10 border-b border-gray-300">
-      <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Our Subject Categories</h1>
-      <p class="leading-relaxed text-base">This paragraph should have introductory information about our subjects.</p>
-      <a class="text-teal-500 inline-flex items-center mt-4">Learn More
-        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+<section className="text-gray-700 body-font" id="subjects">
+  <div className="container flex flex-wrap px-5 py-24 mx-auto items-center">
+    <div className="md:w-1/3 md:pr-12 md:py-8 md:border-r md:border-b-0 mb-10 md:mb-0 pb-10 border-b border-gray-300">
+      <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Our Subject Categories</h1>
+      <p className="leading-relaxed text-base">This paragraph should have introductory information about our subjects.</p>
+      <Link className="text-teal-500 inline-flex items-center mt-4">Learn More
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
           <path d="M5 12h14M12 5l7 7-7 7"></path>
         </svg>
-      </a>
+      </Link>
     </div>
-    <div class="flex flex-col md:w-2/3 md:pl-12">
-      <h2 class="title-font font-medium text-gray-800 tracking-widest text-sm mb-3">CATEGORIES</h2>
-      <nav class="flex flex-wrap list-none -mb-1">
+    <div className="flex flex-col md:w-2/3 md:pl-12">
+      <h2 className="title-font font-medium text-gray-800 tracking-widest text-sm mb-3">CATEGORIES</h2>
+      <nav className="flex flex-wrap list-none -mb-1">
       {subs.distinct.map(sub => (
             <>
            
-           <li class="lg:w-1/3 mb-1 w-1/2" key={sub}>
+           <li className="lg:w-1/3 mb-1 w-1/2" key={sub}>
           <Link to={`../../subject/${ sub }`} className="text-gray-600 hover:text-gray-800">{ sub }</Link>
         </li>
             
@@ -97,6 +97,7 @@ export default function Books({ data }) {
            </>
         ))}
         </div>
+        <Link to={`#top`} className="uppercase text-xs">Go to top</Link>
    </section>
 
 <section id="awardwinners"><AwardWinners/>
@@ -124,6 +125,7 @@ export const query = graphql`
         node {
           BookID
           Title
+          Subtitle
           PublicationDate
           AuthorCredit
           CoverImageThumb
