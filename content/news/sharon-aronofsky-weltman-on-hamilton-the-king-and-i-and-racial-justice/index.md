@@ -8,7 +8,7 @@ description: Watch a trailer for VICTORIANS ON BROADWAY by Sharon Aronofsky Welt
 related_books:
   - book_id: "5450"
     book_title: Victorians on Broadway
-date: 2020-09-21T04:00:00.000Z
+date: 2020-09-21
 link: https://www.youtube.com/embed/u2PEIGjKz
 ---
 `youtube:https://www.youtube.com/embed/u2PEIGjKz`
