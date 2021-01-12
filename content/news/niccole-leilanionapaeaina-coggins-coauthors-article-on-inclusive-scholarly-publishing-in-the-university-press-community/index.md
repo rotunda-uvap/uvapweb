@@ -4,6 +4,7 @@ type: news
 draft: "false"
 title: Niccole Leilanionapae'aina Coggins Coauthors Article on Inclusive
   Scholarly Publishing in the University Press Community
+image: niccole_b.jpg
 date: 2020-05-05
 ---
 Published this week in UKSG Insights, "Towards inclusive scholarly publishing: developments in the university press community," coauthored by Niccole Leilanionapae‘aina Coggins, UVA Press Editorial, Design, and Production Coordinator and Assistant Project Editor, provides an overview of the ways in which the members of the Association of University Presses are working towards more inclusive practices in scholarly publishing. 
