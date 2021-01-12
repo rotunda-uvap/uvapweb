@@ -1,6 +1,6 @@
 ---
 templateKey: news
-type: event
+type: media
 draft: "false"
 title: "Virtual Launch Event: By Broad Potomac's Shore by Kim Roberts"
 description: UVA Press is pleased to invite you to the launch event for BY BROAD
