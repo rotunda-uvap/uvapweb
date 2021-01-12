@@ -3,6 +3,18 @@ templateKey: news
 type: news
 draft: "false"
 title: Please Vote!
+description: Over 98 million U.S. citizens have already voted in this year’s
+  presidential election. Many millions more will do so today. Voting has been
+  central to U.S. democracy since the country’s inception, and the right to vote
+  has been fought over and suppressed for various groups, most notably Black
+  Americans, for just as long. Of course as a press that publishes books we’re
+  biased, but our team believes that books are one of the best ways to recount
+  these struggles, to assess the country’s political history and present
+  situation, and to encourage us to act and to ensure that all Americans have
+  and make use of their right to vote. Casting a ballot is the best way for
+  citizens to make their voices heard and to become actively involved in
+  politics by choosing who holds office and represents the U.S. population in
+  government.
 related_books:
   - book_title: Conceived in Crisis
     book_id: "5457"
