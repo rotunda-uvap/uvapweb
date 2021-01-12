@@ -155,6 +155,19 @@ module.exports = {
   `gatsby-image`,
   `gatsby-plugin-image`,
   `gatsby-plugin-sharp`,
+  {
+    resolve: `gatsby-plugin-mdx`,
+    options: {
+      gatsbyRemarkPlugins: [
+        {
+          resolve: `gatsby-remark-images`,
+          options: {
+            maxWidth: 800,
+          },
+        },
+      ],
+    },
+  },
   `gatsby-transformer-sharp`,
   `gatsby-plugin-react-helmet`,
   `gatsby-plugin-twitter`,

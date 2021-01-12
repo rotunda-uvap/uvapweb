@@ -41,7 +41,7 @@ const ContactPage = () => (
 <p>If you are driving, we usually have parking space available in the driveway just past Bemiss House on the left; we do not have visitor permits for the Alumni Hall parking lot.</p>
         
         <h5>Rights and Permissions</h5>
-        <p>For requests, email <a href="mailto:smoomaw@virginia.edu">here</a></p>
+        <p>For requests, email <a href="mailto:​hc7kb@​virginia.edu">here</a></p>
 
         </Layout>
 )
