@@ -89,7 +89,35 @@ collections:
           - {label: 'Book ID', name: 'book_id', widget: string}
           - {label: 'Book Title', name: 'book_title', widget: string, hint: 'Title to be shown next to book link and generated cover.'} 
           
-      
+  - name: 'bios'
+    label: 'Staff Bio'
+    identifier_field: '{{title}}'
+    folder: 'content/bios'
+    preview_path: '{{title}}/index'
+    create: true
+    slug: 'index'
+    media_folder: ''
+    public_folder: ''
+    path: '{{title}}/index'      
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "bio"}
+      - { name: title, label: Title }
+      - { label: Profile Photo, name: profile_photo, widget: image}
+      - { label: 'Name Slug', name: 'name_slug', widget: 'string', required: true}
+      - { label: 'Job Title', name: 'job_title', widget: 'string', required: true}
+      - { label: 'Department', name: 'department', widget: 'select', options: ['OPS', 'ACQ','EDP', 'MKG', 'PUB', 'ROT'], required: true}  
+      - { name: body, label: bio, widget: markdown }
+      - { label: 'Email', name: 'email', widget: 'string', required: true}
+      - { label: 'Phone', name: 'phone', widget: 'string', required: true, hint: "Format (XXX) XXX-XXXX"}
+      - label: "Related Series"
+        name: "related_series"
+        widget: "relation"
+        collection: "series_info"
+        search_fields: ['title']
+        value_field: "{{slug}}"
+        multiple: true
+        
+          
   
   - name: 'promo'
     label: 'Promotion'
