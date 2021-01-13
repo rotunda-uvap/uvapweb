@@ -9,15 +9,10 @@ description: Thanks to the generous support of the Robert David Lion Gardiner
   of Virginia (UVA) Press are collaborating to launch a two-year post-doctoral
   residential fellowship, in any area of American studies from 1700 to 1900, at
   Iona College in New Rochelle, New York.
+image: logos.jpg
 date: 2020-04-27
 ---
 Thanks to the generous support of the Robert David Lion Gardiner Foundation, the Institute for Thomas Paine Studies (ITPS) and the University of Virginia (UVA) Press are collaborating to launch a two-year post-doctoral residential fellowship, in any area of American studies from 1700 to 1900, at Iona College in New Rochelle, New York. 
-
-![UVa Press, Iona College and ITPS logos](logos.jpg)
-
-
-
-
 
 **Description**
 
@@ -52,6 +47,4 @@ Applications are due by *June 1st, 2020* via [Iona College](https://iona-open
 
 A final decision will be made by *July 1st, 2020*. 
 
-Please address any questions to Dr. Nora Slonimsky at [nslonimsky@iona.edu](mailto:nslonimsky@iona.edu) and Dr. Nadine Zimmerli at [nz5fm@virginia.edu](mailto:nz5fm@virginia.edu). 
-
-![]()
+Please address any questions to Dr. Nora Slonimsky at [nslonimsky@iona.edu](mailto:nslonimsky@iona.edu) and Dr. Nadine Zimmerli at [nz5fm@virginia.edu](mailto:nz5fm@virginia.edu).
