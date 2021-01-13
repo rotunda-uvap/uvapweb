@@ -74,6 +74,13 @@ collections:
       - { label: 'Exhibit Series', name: 'exhibit_series', widget: 'string', required: false}
       - { name: body, label: Body, widget: markdown }
       - { label: 'Color', name: 'color', widget: 'color' }
+      - label: "Related Series"
+        name: "related_series"
+        widget: "relation"
+        collection: "series_info"
+        search_fields: ['title']
+        value_field: "{{slug}}"
+        multiple: true
       - label: 'Exhibit Books'
         name: 'exhibit_books'
         widget: 'list'
@@ -81,13 +88,7 @@ collections:
         fields:
           - {label: 'Book ID', name: 'book_id', widget: string}
           - {label: 'Book Title', name: 'book_title', widget: string, hint: 'Title to be shown next to book link and generated cover.'} 
-          - label: "Related Series"
-            name: "related_series"
-            widget: "relation"
-            collection: "series_info"
-            search_fields: ['title']
-            value_field: "{{slug}}"
-            multiple: true
+          
       
   
   - name: 'promo'
