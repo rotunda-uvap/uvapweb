@@ -19,7 +19,7 @@ collections:
     path: '{{title}}/index'
     fields:
       - { label: "Template Key", name: "templateKey", widget: "hidden", default: "news"}
-      - { label: 'Type', name: 'type', widget: 'select', options: ['news', 'event', 'media'], required: true}  
+      - { label: 'Type', name: 'type', widget: 'select', options: ['news', 'media'], required: true}  
       - { label: "Is Draft?", name: "draft", widget: "string", default: "false"}
       - { name: title, label: Title }
       - { label: 'Summary', name: 'description', widget: 'string', required: false, hint: 'Text for homepage and previews'}
