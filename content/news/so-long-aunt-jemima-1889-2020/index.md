@@ -11,7 +11,7 @@ description: "UVA Press author Maurice M. Manring, whose book Slave in a Box:
 related_books:
   - book_id: "2502"
     book_title: So Long, Aunt Jemima
-date: 2021-06-19
+date: 2020-06-19
 ---
 UVA Press author Maurice M. Manring, whose book [Slave in a Box: The Strange Career of Aunt Jemima](https://www.upress.virginia.edu/title/2502) was published in 1998, writes about his experience researching and writing about the figure of Aunt Jemima. You can read more from Manring in this article published in ***[The Associated Press](https://apnews.com/afs:Content:9030960288)*** on 6/19/20.
 
