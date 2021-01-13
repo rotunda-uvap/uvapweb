@@ -5,16 +5,16 @@ import RelatedBook from "../components/RelatedBook"
 import Layout from "../components/layout"
 
 export default ({ data }) => {
-    const promos = data.markdownRemark
+    const exhibit = data.markdownRemark
     const related_books = data.markdownRemark.frontmatter.related_books
 
  return (
    <Layout>
      <div>
-        <h2 className="py-10">{promos.frontmatter.title}</h2>
+        <h2 className="py-10">{exhibit.frontmatter.title}</h2>
         <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1">
           <article 
-          dangerouslySetInnerHTML={{ __html: promos.html }}/>
+          dangerouslySetInnerHTML={{ __html:exhibit.html }}/>
           <image/>
           {related_books && related_books.map(book => (
             <> 
@@ -34,7 +34,7 @@ export default ({ data }) => {
 
 export const query = graphql`
   query($id: String!) {
-    markdownRemark(frontmatter: {templateKey: {eq: "promo"}}, id: { eq: $id }) {
+    markdownRemark(frontmatter: {templateKey: {eq: "exhibit"}}, id: { eq: $id }) {
         html
         id
         frontmatter {

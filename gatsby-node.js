@@ -112,6 +112,19 @@ exports.createSchemaCustomization = ({ actions }) => {
             }
           }
         }
+        allExhibits: allMarkdownRemark(filter: {frontmatter: {templateKey: {eq: "exhibit"}}})  {
+          edges {
+            node {
+              id
+              fields {
+                slug
+              }
+              frontmatter {
+                templateKey
+              }
+            }
+          }
+        }
         allSubjects: allBooksJson {
           distinct(field: Subject)
         }
@@ -199,6 +212,17 @@ exports.createSchemaCustomization = ({ actions }) => {
           createPage({
             path: `/promotions${node.fields.slug}`,
             component: path.resolve(`./src/templates/promo-page.js`),
+            context: {
+              id: node.id
+            },
+          })
+        })
+
+        const exhibits = result.data.allExhibits.edges
+        exhibits.forEach(({ node }) => {
+          createPage({
+            path: `/exhibits${node.fields.slug}`,
+            component: path.resolve(`./src/templates/exhibit-page.js`),
             context: {
               id: node.id
             },

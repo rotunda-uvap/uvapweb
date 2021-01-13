@@ -22,11 +22,11 @@ export default ({ data }) => {
 
 export const query = graphql`
   query($id: String!) {
-    markdownRemark(frontmatter: {type: {eq: "page"}}, id: { eq: $id }) {
+    markdownRemark(frontmatter: {templateKey: {eq: "promo"}}, id: { eq: $id }) {
         html
         id
         frontmatter {
-            type
+            templateKey
             title
         }
     }
