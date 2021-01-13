@@ -14,19 +14,7 @@ date: 2020-04-27
 ---
 Thanks to the generous support of the Robert David Lion Gardiner Foundation, the Institute for Thomas Paine Studies (ITPS) and the University of Virginia (UVA) Press are collaborating to launch a two-year post-doctoral residential fellowship, in any area of American studies from 1700 to 1900, at Iona College in New Rochelle, New York. 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-![Iona College Logo](thumbnail_iona_logo_sq_bckgrnd_cmyk.jpg)![ITPS Logo](thumbnail_logo.jpg)![UVa Press Logo](asset_2.png)
-=======
-![UVa Press, Iona College and ITPS logos](logos.jpg)
 
-
-
-
->>>>>>> 44436d7a54ee80b54caca759a086b47bedcf6692
-
-=======
->>>>>>> 334ac6ee9ed83c3eb6342fd1ace1e171319b0756
 **Description**
 
 Beginning in August of 2020 and concluding in May of 2022, this fellowship is focused on two components. The first is research, writing, and publication, and the second is archival development, preservation, and access. The appointed fellow will divide their time between research and writing on his/her/their individual project and the ongoing inventory, processing, and digitization of the Thomas Paine National Historical Association (TPNHA) collection held at Iona’s Ryan Library.
