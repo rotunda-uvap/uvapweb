@@ -116,6 +116,7 @@ collections:
         search_fields: ['title']
         value_field: "{{slug}}"
         multiple: true
+        required: false
         
           
   
