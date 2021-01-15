@@ -7,6 +7,6 @@ job_title: Editorial, Design, and Production Coordinator and Assistant Project E
 department:
   - EDP
 email: nlc5fy@virginia.edu
-phone: (434) 982-2704Bio Not Yet Available
+phone: (434) 982-2704
 ---
 Bio Not Yet Available
