@@ -4,7 +4,8 @@ title: Angie Hogan
 profile_photo: animal.jpg
 name_slug: angie-hogan
 job_title: Acquiring Editor, 18th-Century Studies
-department: ACQ
+department:
+  - ACQ
 email: arh2h@virginia.edu
 phone: (434) 924-3361
 ---
