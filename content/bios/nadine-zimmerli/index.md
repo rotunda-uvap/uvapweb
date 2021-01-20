@@ -4,7 +4,8 @@ title: Nadine Zimmerli
 profile_photo: fozzie.jpg
 name_slug: nadine-zimmerli
 job_title: Editor, History and Social Sciences
-department: ACQ
+department:
+  - ACQ
 email: nizimmerli@virginia.edu
 phone: (434) 924-7301
 ---
