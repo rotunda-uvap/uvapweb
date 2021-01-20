@@ -4,7 +4,8 @@ title: Eric Brandt
 profile_photo: beaker.jpeg
 name_slug: eric-brandt
 job_title: Editor in Chief and Humanities Editor
-department: ACQ
+department:
+  - ACQ
 email: eab7fb@virginia.edu
 phone: (434) 982-3033
 ---
