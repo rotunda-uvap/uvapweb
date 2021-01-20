@@ -5,8 +5,8 @@ profile_photo: sam.jpg
 name_slug: mark-mones
 job_title: Acquisitions Editor, Architecture, Urban Design, and Regional Books
 department:
-  - ACQ
   - EDP
+  - ACQ
 email: emm4t@virginia.edu
 phone: (434) 924-6066
 ---
