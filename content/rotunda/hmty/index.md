@@ -2,6 +2,7 @@
 templateKey: rotunda
 title: Herman Melville's 'Typee'
 id: HMTY
+rid: HMTY
 ---
 
 
