@@ -2,6 +2,7 @@
 templateKey: rotunda
 title: The Digital Temple
 id: TDTM
+rid: TDTM
 ---
 A public orator at Cambridge and later a priest in the Church of England, George Herbert (1593–1633) balanced a vigorous intellectual life with a passionate devotion to his faith. These two important strands in his life informed his great work, *The Temple: Sacred Poems and Private Ejaculations,* published shortly after his death at the age of thirty-nine. The Temple is considered one of the finest collections of devotional verse in the English language and among the most significant works of early modern literature.
 
