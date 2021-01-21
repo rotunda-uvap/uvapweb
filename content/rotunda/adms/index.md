@@ -2,6 +2,7 @@
 templateKey: rotunda
 title: The Adams Papers Digital Edition
 id: ADMS
+rid: ADMS
 ---
 One of the outstanding documentary editions in American scholarship, *The Adams Papers* collects the correspondence and other significant papers of our nation's first great political family. At the center, of course, is John Adams. Beginning with his early diaries and three volumes selected from his legal papers--documenting, among other cases, the Boston Massacre trials--this edition covers Adams’s ascent from young Boston lawyer to passionate advocate for American independence, including his time in the Continental Congress and his drafting of the Massachusetts state constitution (the oldest of the world’s active constitutions). As one of the great diplomats of the era, Adams spent eight years in Europe, called upon by his young country to negotiate treaties with France, the Netherlands, Great Britain, Prussia, and the Barbary States.
 
