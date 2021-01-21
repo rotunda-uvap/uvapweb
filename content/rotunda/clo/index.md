@@ -2,6 +2,7 @@
 templateKey: rotunda
 title: Clotel by William Wells Brown
 id: CLO
+rid: CLO
 ---
 The first African American novel, *Clotel* was published in 1853 in London, when its author was still legally a slave in the United States. The work's stature derives not only from its remarkable origin but from its explosive content, which is freely based on the relationship between Thomas Jefferson and Sally Hemings.
 
