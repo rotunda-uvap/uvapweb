@@ -2,6 +2,7 @@
 templateKey: rotunda
 title: The Papers of James Madison Digital Edition
 id: JMDE
+rid: JMDE
 ---
 The Papers of James Madison documents the life and work of one of the most important political and constitutional thinkers in our nation’s history. A vital project that continues to add new volumes, this publication has been consulted for decades by scholars and students for primary-source material by and about the fourth president. Rotunda now makes this invaluable resource available in a new online edition.
 
