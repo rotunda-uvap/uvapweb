@@ -119,7 +119,7 @@ collections:
         required: false
   - name: 'rotundas'
     label: 'Rotunda Items'
-    identifier_field: '{{id}}'
+    identifier_field: '{{rid}}'
     folder: 'content/rotunda'
     preview_path: '{{title}}/index'
     create: true

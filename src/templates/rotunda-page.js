@@ -28,7 +28,7 @@ export const query = graphql`
         RotID
         Title
     }
-    markdownRemark(frontmatter: {templateKey: {eq: "rotunda"}}, id: { eq: $id }) {
+    markdownRemark(frontmatter: {templateKey: {eq: "rotunda"}}, rid: { eq: $id }) {
       html
       frontmatter {
           templateKey
