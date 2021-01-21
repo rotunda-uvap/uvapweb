@@ -4,18 +4,16 @@ import Layout from "../components/layout"
 
 
 export default ({ data }) => {
-    const staffMember = data.staffJson
+    const staffMember = data.markdownRemark
  return (
    <Layout>
      <div>
-        <h2 className="py-10">{staffMember.name}</h2> 
-        {staffMember.jobtitle && <h3 className="py5 text-1xl mt-2 mb-2">{staffMember.jobtitle}</h3> }
+        <h2 className="py-10">{staffMember.frontmatter.title}</h2> 
+        {staffMember.frontmatter.job_title && <h4 className="py5 text-1xl mt-2 mb-2">{staffMember.frontmatter.job_title}</h4> }
 
-        {staffMember.email && <h3 className="py5 text-1xl italic mt-2 mb-2"><a href={`mailto:${ staffMember.email }`}>{staffMember.email}</a></h3>}
-        <p dangerouslySetInnerHTML={{ __html: staffMember.bio.html }}/> 
+        {staffMember.frontmatter.email && <h5 className="py5 text-1xl italic mt-2 mb-2"><a href={`mailto:${ staffMember.frontmatter.email }`}>{staffMember.frontmatter.email}</a></h5>}
+        
     </div>
-   
-    
     
    </Layout>
     
@@ -26,18 +24,17 @@ export default ({ data }) => {
 
 export const query = graphql`
   query($id: String!) {
-    staffJson(id: { eq: $id }) {
+    markdownRemark(frontmatter: {templateKey: {eq: "bio"}}, id: { eq: $id }) {
+      html
       id
-      name
-      slug
-      department
-      jobtitle
-      email
-      phone
-      bio {
-        html
-      }
-      
+      frontmatter {
+          templateKey
+          title
+          name_slug
+          job_title
+          email
+          phone
+        }
     }
-  }
+  } 
 `

@@ -11,9 +11,12 @@ exports.createSchemaCustomization = ({ actions }) => {
         DaysSincePublication: Int!
         Authors: [String]
       }  
-      type StaffJson implements Node  {
-        department: [String]      
-      }    
+      
+      type RotundaJson implements Node {
+        StartYear: Int
+        EndYear: Int
+        RotID: String!
+      }
       type MarkdownRemark implements Node {
         frontmatter: Frontmatter
         fields: Fields
@@ -24,6 +27,7 @@ exports.createSchemaCustomization = ({ actions }) => {
         description: String
         date: Date @dateformat
         relbook: String
+        department: [String]
       }
   
       type Fields {
@@ -49,13 +53,24 @@ exports.createSchemaCustomization = ({ actions }) => {
                 }
               }
           }
-          allStaffJson {
+          allRotundaJson {
             edges {
-                node {
-                  id
-                  slug
+              node {
+                RotID
+              }
+            }
+          }
+          
+          allBios: allMarkdownRemark(filter: {frontmatter: {templateKey: {eq: "bio"}}})  {
+            edges {
+              node {
+                id
+                frontmatter {
+                  templateKey
+                  name_slug
                 }
               }
+            }
           }
         news: allMarkdownRemark(
           filter: {frontmatter: {type: {nin: ["page", "media", "series", "promo"]}}}) {
@@ -86,7 +101,7 @@ exports.createSchemaCustomization = ({ actions }) => {
             }
           }
         }
-        allpages: allMarkdownRemark(filter: {frontmatter: {type: {eq: "page"}}})  {
+        allpages: allMarkdownRemark(filter: {frontmatter: {templateKey: {eq: "page"}}})  {
           edges {
             node {
               id
@@ -94,12 +109,12 @@ exports.createSchemaCustomization = ({ actions }) => {
                 slug
               }
               frontmatter {
-                type
+                templateKey
               }
             }
           }
         }
-        allpromos: allMarkdownRemark(filter: {frontmatter: {type: {eq: "promo"}}})  {
+        allpromos: allMarkdownRemark(filter: {frontmatter: {templateKey: {eq: "promo"}}})  {
           edges {
             node {
               id
@@ -157,11 +172,24 @@ exports.createSchemaCustomization = ({ actions }) => {
          
         })
 
-        const staffs = result.data.allStaffJson.edges
+        const rotundas = result.data.allRotundaJson.edges
+
+        rotundas.forEach(({ node }) => {
+          createPage({
+            path: `/title/${node.RotID}`,
+            component: path.resolve(`./src/templates/rotunda-page.js`),
+            context: {
+              id: node.RotID
+            },
+          })
+         
+        })
+
+        const staffs = result.data.allBios.edges
 
         staffs.forEach(({ node }) => {
           createPage({
-            path: `/staff/${node.slug}`,
+            path: `/staff/${node.frontmatter.name_slug}`,
             component: path.resolve(`./src/templates/staff-page.js`),
             context: {
               id: node.id,

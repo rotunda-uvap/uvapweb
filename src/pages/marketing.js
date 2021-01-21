@@ -1,11 +1,11 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
-import BioCard from "../components/BioCard"
+import MiniBio from "../components/MiniBio"
 
 
 export default function Marketing({data}) {
-  const staff = data.allStaffJson
+  const staff = data.staffs
 
   return (
     <Layout>
@@ -16,8 +16,7 @@ export default function Marketing({data}) {
                 <div className="grid md:grid-cols-2 gap-2"> 
                 {staff.edges.map(edge => (
                     <>
-                    <BioCard name={edge.node.name} title={edge.node.jobtitle} phone={edge.node.phone} email={edge.node.email} slug={edge.node.slug} photo={edge.node.photo}/>
-                 </>
+                  <MiniBio frontmatter={edge.node.frontmatter} />                 </>
 
 
                     ))}
@@ -39,24 +38,13 @@ export default function Marketing({data}) {
 
 export const query = graphql`
     query  {
-      site {
-        siteMetadata {
-          title
-          logo
-          description
-        }
-      }
-      allStaffJson(filter: {department: {eq: "Marketing"}}) {
+      staffs: allMarkdownRemark(filter: {frontmatter: {department: {in: "MKG"}}}) {
         edges {
           node {
-            name
-            department
-            jobtitle
-            phone
-            email
-            slug
-            photo
+            ...MiniBioFragment
           }
         }
       }
+      
+  
   }`

@@ -1,14 +1,14 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
-import BioCard from "../components/BioCard"
 import { Helmet } from 'react-helmet'
+import MiniBio from "../components/MiniBio"
 
 
 export default function PubPage({ data }) {
     const news = data.allMarkdownRemark
-    const staff = data.allStaffJson
-    const pagedata = data.markdownRemark
+    const staff = data.staffs
+    const pagedata = data.pubtext
 
  return (
     
@@ -19,8 +19,7 @@ export default function PubPage({ data }) {
                 
                 {staff.edges.map(edge => (
                     <>
-                    <BioCard name={edge.node.name} title={edge.node.jobtitle} phone={edge.node.phone} email={edge.node.email} slug={edge.node.slug} photo={edge.node.photo}/>
-                 </>
+                  <MiniBio frontmatter={edge.node.frontmatter} />                    </>
                     ))}
                  <p className="py-5" dangerouslySetInnerHTML={{__html: pagedata.html}}/>
             </section>
@@ -78,23 +77,17 @@ export const query = graphql`
               slug
             }
           }
+      }
+    }
+
+    staffs: allMarkdownRemark(filter: {frontmatter: {department: {in: "PUB"}}}) {
+      edges {
+        node {
+          ...MiniBioFragment
         }
       }
-      allStaffJson(filter: {department: {eq: "Publicity"}}) {
-        edges {
-          node {
-            name
-            department
-            jobtitle
-            phone
-            email
-            slug
-            photo
-          }
-        }
-       
-      }
-      markdownRemark(frontmatter: {type: {eq: "page"}, title: {eq: "Publicity"}}) {
+    }
+    pubtext:  markdownRemark(frontmatter: {type: {eq: "page"}, title: {eq: "Publicity"}}) {
         html
       }
   }

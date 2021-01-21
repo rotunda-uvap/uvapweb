@@ -35,18 +35,7 @@ export default function AboutPage({ data }) {
 export const query = graphql`
   query {
    
-      allStaffJson{
-        edges {
-          node {
-            name
-            department
-            jobtitle
-            phone
-            email
-            slug
-          }
-        }
-      }
+      
       markdownRemark(frontmatter: {type: {eq: "page"}, title: {eq: "About"}}) {
         html
       }

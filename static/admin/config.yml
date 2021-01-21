@@ -117,7 +117,29 @@ collections:
         value_field: "{{slug}}"
         multiple: true
         required: false
-        
+  - name: 'rotundas'
+    label: 'Rotunda Items'
+    identifier_field: '{{ID}}'
+    folder: 'content/rotunda'
+    preview_path: '{{title}}/index'
+    create: true
+    slug: 'index'
+    media_folder: ''
+    public_folder: ''
+    path: '{{id}}/index'      
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "rotunda"}
+      - { name: title, label: Title }
+      - { name: id, label: Rotunda Internal ID}
+      - { name: body, label: Marketing Summary, widget: markdown }
+      - label: 'Related Books'
+        name: 'rotunda_books'
+        widget: 'list'
+        summary: '{{fields.book_id}}'
+        optional: true
+        fields:
+          - {label: 'Book ID', name: 'book_id', widget: string}
+          - {label: 'Book Title', name: 'book_title', widget: string, hint: 'Title to be shown next to book link and generated cover.'} 
           
   
   - name: 'promo'

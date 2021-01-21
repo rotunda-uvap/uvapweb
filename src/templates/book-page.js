@@ -126,7 +126,7 @@ export const query = graphql`
     }
     file(relativePath: {eq: $imageid}) {
       childImageSharp {
-        gatsbyImageData(maxWidth: 300, layout: FLUID, placeholder: TRACED_SVG)
+        gatsbyImageData(width: 300, layout: CONSTRAINED, placeholder: TRACED_SVG)
       }
     }
     

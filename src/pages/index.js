@@ -176,7 +176,7 @@ export const query = graphql`
         relbook
         primary_image {
           childImageSharp {
-            gatsbyImageData(maxWidth: 200, layout: FLUID, placeholder: TRACED_SVG)
+            gatsbyImageData(width: 200, layout: CONSTRAINED, placeholder: TRACED_SVG)
           }
         }
 
@@ -190,12 +190,12 @@ export const query = graphql`
     }
     primImg: file(extension: {eq: "jpg"}, relativeDirectory: {eq: "primary"}) {
       childImageSharp {
-        gatsbyImageData(maxWidth:300, layout: CONSTRAINED, placeholder: TRACED_SVG)
+        gatsbyImageData(width:300, layout: CONSTRAINED, placeholder: TRACED_SVG)
       }
     }
     rotImg: file(extension: {eq: "jpg"}, relativeDirectory: {eq: "rotunda"}) {
       childImageSharp {
-        gatsbyImageData(maxWidth:300, layout: CONSTRAINED, placeholder: TRACED_SVG)
+        gatsbyImageData(width:300, layout: CONSTRAINED, placeholder: TRACED_SVG)
       }
     }
   }`

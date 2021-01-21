@@ -57,7 +57,7 @@ export const query = graphql`
     }
     Img: file(extension: {eq: "jpg"}, relativeDirectory: {eq: $relDir}) {
       childImageSharp {
-        gatsbyImageData(maxWidth:300, layout: CONSTRAINED, placeholder: TRACED_SVG)
+        gatsbyImageData(width:300, layout: CONSTRAINED, placeholder: TRACED_SVG)
       }
     }
   }
