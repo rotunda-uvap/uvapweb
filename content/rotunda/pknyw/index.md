@@ -2,6 +2,7 @@
 templateKey: rotunda
 title: The Papers of Eliza Lucas Pinckney & Harriott Pinckney Horry Digital Edition
 id: PKNYW
+rid: PKNYW
 ---
 The papers of Eliza Lucas Pinckney (1722–1793) and her daughter Harriott Pinckney Horry (1748–1830) document the lives of two observant and articulate founding-era women who were members of one of South Carolina’s leading families, as well as distinguished people in their own right. Their letters, diaries, and other documents span nearly a century (1739–1830) and provide a window on politics, social events, and people of the late colonial and early national periods, as well as the daily life of managing a household and plantation. In particular, Pinckney’s correspondence illustrates the importance of transatlantic friendships and social connections for women of her class. Horry’s correspondence documents the strength of personal ties between women that linked the elite families of the North and the South to each other even as connections were threatened by disputes over slavery, commercial differences, and political and constitutional conflict.
 
