@@ -126,7 +126,7 @@ collections:
     slug: 'index'
     media_folder: ''
     public_folder: ''
-    path: '{{id}}/index'      
+    path: '{{rid}}/index'      
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "rotunda"}
       - { name: title, label: Title }
