@@ -57,6 +57,8 @@ exports.createSchemaCustomization = ({ actions }) => {
             edges {
               node {
                 RotID
+                MainCollection
+                SubCollection
               }
             }
           }
@@ -147,7 +149,13 @@ exports.createSchemaCustomization = ({ actions }) => {
           distinct(field: Series)
         }
 
-       
+       rotMain: allRotundaJson{
+         distinct(field: MainCollection)
+       }
+
+       rotSub: allRotundaJson{
+        distinct(field: SubCollection)
+      }
         
         
     }
@@ -275,6 +283,17 @@ exports.createSchemaCustomization = ({ actions }) => {
             component: path.resolve(`./src/templates/series-page.js`),
             context: {
               id: serie,
+            },
+          })
+        })
+
+        const RotSeries = result.data.rotMain.distinct
+        RotSeries.forEach((rot) => {
+          createPage({
+            path: `/collection/${rot}`,
+            component: path.resolve(`./src/templates/rotunda-coll-page.js`),
+            context: {
+              coll: rot.MainCollection,
             },
           })
         })

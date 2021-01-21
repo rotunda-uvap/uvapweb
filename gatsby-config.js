@@ -84,6 +84,13 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        path: `${__dirname}/content/rotunda`,
+        name: `rotunda`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
         path: `${__dirname}/content/exhibits`,
         name: `exhibits`,
       },

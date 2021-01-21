@@ -30,10 +30,10 @@ export const query = graphql`
     }
     markdownRemark(frontmatter: {templateKey: {eq: "rotunda"}}, id: { eq: $id }) {
       html
-      id
       frontmatter {
           templateKey
           title
+          rid
           related_books {
             book_id
             book_title

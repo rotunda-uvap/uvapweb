@@ -130,7 +130,7 @@ collections:
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "rotunda"}
       - { name: title, label: Title }
-      - { name: id, label: Rotunda Internal ID}
+      - { name: rid, label: Rotunda Internal ID}
       - { name: body, label: Marketing Summary, widget: markdown }
       - label: 'Related Books'
         name: 'rotunda_books'
