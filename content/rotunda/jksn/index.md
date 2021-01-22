@@ -2,6 +2,7 @@
 templateKey: rotunda
 title: The Papers of Andrew Jackson
 id: JKSN
+rid: JKSN
 ---
 ***Now with links to Library of Congress manuscript facsimiles***
 
