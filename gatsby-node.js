@@ -262,7 +262,8 @@ exports.createSchemaCustomization = ({ actions }) => {
             path: `/exhibits${node.fields.slug}`,
             component: path.resolve(`./src/templates/exhibit-page.js`),
             context: {
-              id: node.id
+              id: node.id,
+              relDir: node.fields.slug.substring(1)
             },
           })
         })
