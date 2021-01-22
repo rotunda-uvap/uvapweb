@@ -3,7 +3,7 @@
         "Title":"The Digital Temple",
         "Subtitle":"A Documentary Edition of George Herbert's English Verse",
         "RotID":"TDTM",
-        "MainCollection":"Literature & Culture Collection",
+        "MainCollection":"Literature and Culture Collection",
         "SubCollection":"Literature",
         "StartYear":1633,
         "EndYear":1633,
@@ -186,7 +186,7 @@
         "EditorCredit":"C. James Taylor, Editor in Chief",
         "Prizes":"Choice Outstanding Academic Title, American Library Association (2009)",
         "Reviews":[],
-        "imageFilename":"ja.jpg"
+        "imageFilename":"ja.png"
     },{
         "Title":"The Documentary History of the First Federal Congress of the United States of America",
         "Subtitle":"",
@@ -216,7 +216,7 @@
         "EditorCredit":"Arthur S. Link, Editor",
         "Prizes":null,
         "Reviews":[],
-        "imageFilename":"wilson.jpg"
+        "imageFilename":"wilson.png"
     },{
         "Title":"The Papers of Thomas Jefferson Digital Edition",
         "Subtitle":"",
@@ -324,7 +324,7 @@
         "EditorCredit":"LeRoy P. Graf, Ralph W. Haskins and Paul H. Bergeron",
         "Prizes":null,
         "Reviews":[],
-        "imageFilename":"johnson_a.jpg"
+        "imageFilename":"johnson_a.png"
     },{
         "Title":"The Papers of Revolutionary Era Pinckney Statesmen",
         "Subtitle":"",
@@ -376,8 +376,8 @@
         "Title":"The Papers of Andrew Jackson",
         "Subtitle":"",
         "RotID":"JKSN",
-        "MainCollection":"Antebellum, Civil War and Reconstruction",
-        "SubCollection":"Founding Era Collection",
+        "MainCollection":"American History Collection",
+        "SubCollection":"Antebellum, Civil War and Reconstruction",
         "StartYear": 1751,
         "EndYear": 1826,
         "MainDescription":{"html":"<p>Andrew Jackson was born near the border of the colonial Carolinas and would take part in many of the early republic’s signal events, but he came to define a new era in American history and left the presidency forever changed.<\/p>"},

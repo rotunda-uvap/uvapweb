@@ -56,7 +56,7 @@ export default function Home({data}) {
               <div><button className="px-4 py-2 border-2 border-gray-700 uppercase">exhibits</button></div>
                 <div className="mx-auto w-4/5"><h3 className="text-2xl font-black uppercase py-5 text-center" >Featured Exhibit Title Here</h3>
                 </div>
-                  <button className="rounded bg-blue-400 text-white text-lg px-5 py-2 text-center uppercase">see all</button>
+                  <Link to={'/all-exhibits'}><button className="rounded bg-blue-400 text-white text-lg px-5 py-2 text-center uppercase">see all</button></Link>
       </article>
       <FeatNews title={newsPost.frontmatter.title} slug={newsPost.fields.slug} />
       <FeatMedia title={mediaPost.frontmatter.title} slug={mediaPost.fields.slug} />
@@ -115,13 +115,7 @@ export default function Home({data}) {
 
 export const query = graphql`
     query  {
-      site {
-        siteMetadata {
-          title
-          logo
-          description
-        }
-      }
+    
       news:  allMarkdownRemark(limit:1, filter: {frontmatter: {templateKey: {eq: "news"}, type: {eq: "news"}}},sort: {fields: frontmatter___date, order: DESC}) {
         edges {
           node {

@@ -51,7 +51,8 @@ export const query = graphql`
                   SubCollection
                 }
             }
-        }  
+        } 
+         
         
     }
 `

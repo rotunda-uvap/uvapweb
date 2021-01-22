@@ -7,7 +7,10 @@ import MiniBio from "../components/MiniBio"
 export default function RotundaHome({ data }) {
     const RotundaLogo = getImage(data.rotLogo)
     const staff = data.staffs
-    const pubs = data.allRotundaJson
+    const FEA = data.FE 
+    const ACC = data.AC
+    const LIT = data.LC 
+    const ACR = data.AT
  return (
    <Layout>
      <div>
@@ -22,8 +25,8 @@ export default function RotundaHome({ data }) {
       
       <button className="border-b-4 border-white hover:border-black w-full h-full uppercase">Customer Entrance</button>
       <button className="border-b-4 border-white hover:border-black w-full h-full uppercase">MARC Records</button>
-      <button className="border-b-4 border-white hover:border-black w-full h-full uppercase">Purchase</button>
-      <button className="border-b-4 border-white hover:border-black w-full h-full uppercase">Free Trial</button>
+      <Link to={'../rotunda-purchase'}><button className="border-b-4 border-white hover:border-black w-full h-full uppercase">Purchase</button></Link>
+      <a href="https://rotunda.upress.virginia.edu/register/default.xqy"><button className="border-b-4 border-white hover:border-black w-full h-full uppercase">Free Trial</button></a>
       </div>
     </section>
     <section class="coll">
@@ -34,9 +37,9 @@ export default function RotundaHome({ data }) {
           <div className="grid md:grid-cols-3 md:gap-3 py-7">
 
         
-        <button className="border-b-4 border-white hover:border-black w-full h-full uppercase">American History Collection</button>
-        <button className="border-b-4 border-white hover:border-black w-full h-full uppercase">Architecture</button>
-        <button className="border-b-4 border-white hover:border-black w-full h-full uppercase">Literature and Culture Collection</button>
+        <Link to={'../collection/American%20History%20Collection'}><button className="border-b-4 border-white hover:border-black w-full h-full uppercase">American History Collection</button></Link>
+        <Link to={'../collection/Architecture'}><button className="border-b-4 border-white hover:border-black w-full h-full uppercase">Architecture</button></Link>
+        <Link to={'../collection/Literature%20and%20Culture%20Collection'}><button className="border-b-4 border-white hover:border-black w-full h-full uppercase">Literature and Culture Collection</button></Link>
       </div>
     </section>
     <section>
@@ -57,7 +60,39 @@ export default function RotundaHome({ data }) {
     </section>
     <section>
     <h5 className="py-2">Publications</h5>
-    {pubs.edges.map(edge => (
+
+    <h6 className="py-5">Founding Era Collection</h6>
+    {FEA.edges.map(edge => (
+            <>
+            <div>
+                <Link to={`../title/${ edge.node.RotID }`} className="py-3 text-light text-lg">{edge.node.Title}</Link>
+                {edge.node.Subtitle && <span className="py-3 text-light text-lg text-italic">: {edge.node.Subtitle}</span>}
+            </div>
+            </>
+        ))}
+    
+    <h6 className="py-5">Antebellum, Civil War and Reconstruction</h6>
+    {ACR.edges.map(edge => (
+            <>
+            <div>
+                <Link to={`../title/${ edge.node.RotID }`} className="py-3 text-light text-lg">{edge.node.Title}</Link>
+                {edge.node.Subtitle && <span className="py-3 text-light text-lg text-italic">: {edge.node.Subtitle}</span>}
+            </div>
+            </>
+        ))}
+
+<h6 className="py-5">American Century Collection</h6>
+    {ACC.edges.map(edge => (
+            <>
+            <div>
+                <Link to={`../title/${ edge.node.RotID }`} className="py-3 text-light text-lg">{edge.node.Title}</Link>
+                {edge.node.Subtitle && <span className="py-3 text-light text-lg text-italic">: {edge.node.Subtitle}</span>}
+            </div>
+            </>
+        ))}
+    
+    <h6 className="py-5">Literature and Culture Collection</h6>
+    {LIT.edges.map(edge => (
             <>
             <div>
                 <Link to={`../title/${ edge.node.RotID }`} className="py-3 text-light text-lg">{edge.node.Title}</Link>
@@ -86,13 +121,12 @@ export const query = graphql`
           }
         }
       }
-      allRotundaJson {
+      AC: allRotundaJson(filter: {SubCollection: {eq: "American Century Collection"}}, sort: {fields: StartYear, order: ASC}) {
         edges {
           node {
             Title
             Subtitle
             RotID
-            Facts
             EndYear
             imageFilename
             StartYear
@@ -101,5 +135,48 @@ export const query = graphql`
           }
         }
       }
+      FE: allRotundaJson(filter: {SubCollection: {eq: "Founding Era Collection"}}, sort: {fields: StartYear, order: ASC}) {
+        edges {
+          node {
+            Title
+            Subtitle
+            RotID
+            EndYear
+            imageFilename
+            StartYear
+            MainCollection
+            SubCollection
+          }
+        }
+      }
+      AT: allRotundaJson(filter: {SubCollection: {eq: "Antebellum, Civil War and Reconstruction"}}, sort: {fields: StartYear, order: ASC}) {
+        edges {
+          node {
+            Title
+            Subtitle
+            RotID
+            EndYear
+            imageFilename
+            StartYear
+            MainCollection
+            SubCollection
+          }
+        }
+      }
+      LC: allRotundaJson(filter: {SubCollection: {eq: "Literature"}}, sort: {fields: StartYear, order: ASC}) {
+        edges {
+          node {
+            Title
+            Subtitle
+            RotID
+            EndYear
+            imageFilename
+            StartYear
+            MainCollection
+            SubCollection
+          }
+        }
+      }
+
   }
 `

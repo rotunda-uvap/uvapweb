@@ -22,3 +22,6 @@
     @apply text-xl;
   }
 }
+
+.title {text-align:left;}
+table.tiers td {padding-left:1rem; padding-bottom:1rem;}

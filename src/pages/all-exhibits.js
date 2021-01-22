@@ -8,7 +8,7 @@ export default function AllExhibits({ data }) {
  return (
     
         <Layout>
-          <h2 className="py-10">All Media Posts</h2>
+          <h2 className="py-10">Current Exhibits</h2>
             {exhibitList.edges.map(edge => (
             <>
              <div className="mt-6">

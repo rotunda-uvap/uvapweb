@@ -59,6 +59,7 @@ exports.createSchemaCustomization = ({ actions }) => {
                 RotID
                 MainCollection
                 SubCollection
+                imageFilename
               }
             }
           }
@@ -187,7 +188,8 @@ exports.createSchemaCustomization = ({ actions }) => {
             path: `/title/${node.RotID}`,
             component: path.resolve(`./src/templates/rotunda-page.js`),
             context: {
-              id: node.RotID
+              id: node.RotID,
+              imageid: node.imageFilename
             },
           })
          
@@ -293,7 +295,7 @@ exports.createSchemaCustomization = ({ actions }) => {
             path: `/collection/${rot}`,
             component: path.resolve(`./src/templates/rotunda-coll-page.js`),
             context: {
-              coll: rot.MainCollection,
+              coll: rot,
             },
           })
         })

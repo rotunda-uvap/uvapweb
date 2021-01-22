@@ -81,6 +81,7 @@ module.exports = {
         name: `featured`,
       },
     },
+    
     {
       resolve: `gatsby-source-filesystem`,
       options: {
