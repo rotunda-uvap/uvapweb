@@ -2,6 +2,7 @@
 templateKey: rotunda
 title: The Papers of Ulysses S. Grant
 id: GRNT
+rid: GRNT
 ---
 Ulysses S. Grant never intended to make a career in the military, much less go into politics, but he ended up commanding the U.S. forces in perhaps the most important war America ever fought and then serving as its eighteenth president during a period of profound change.\
     \
