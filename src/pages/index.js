@@ -132,6 +132,7 @@ export const query = graphql`
           }
         }
       } 
+      
       media: allMarkdownRemark(limit:1, filter: {frontmatter: {templateKey: {eq: "news"}, type: {eq: "media"}}},sort: {fields: frontmatter___date, order: DESC}) {
         edges {
           node {

@@ -70,6 +70,7 @@ collections:
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "exhibit"}
       - { name: title, label: Title }
+      - {label: "Featured", name: "featured", widget: "boolean", default: false, hint: "Will this be featured on Homepage? Note: Only 1 can."}
       - { label: Exhibit Logo, name: exhibit_logo, widget: image}
       - { label: 'Exhibit Series', name: 'exhibit_series', widget: 'string', required: false}
       - { name: body, label: Body, widget: markdown }
