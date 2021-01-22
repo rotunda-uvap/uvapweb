@@ -22,4 +22,4 @@ exhibit_books:
   - book_id: "5478"
     book_title: Magnificent Decay
 ---
-## 30% OFF + FREE SHIPPING with promo code 10MLA21
+### 30% OFF + FREE SHIPPING with promo code 10MLA21
