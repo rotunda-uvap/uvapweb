@@ -7,6 +7,7 @@ import Layout from "../components/layout"
 export default ({ data }) => {
     const exhibit = data.markdownRemark
     const related_books = data.markdownRemark.frontmatter.related_books
+    const related_series = data.markdownRemark.frontmatter.related_series
 
  return (
    <Layout>
@@ -20,6 +21,11 @@ export default ({ data }) => {
             <> 
             <RelatedBook id={book.book_id} title={book.book_title}/>
             
+            </>
+        ))}
+        {related_series && related_series.map(series => (
+            <> 
+            <div>{series}</div>
             </>
         ))}
           </div>
@@ -40,6 +46,8 @@ export const query = graphql`
         frontmatter {
             templateKey
             title
+            color
+            related_series
             related_books {
               book_id
               book_title

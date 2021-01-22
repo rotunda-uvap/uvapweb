@@ -79,7 +79,7 @@ collections:
         widget: "relation"
         collection: "series_info"
         search_fields: ['title']
-        value_field: "{{slug}}"
+        value_field: "{{title}}"
         multiple: true
       - label: 'Exhibit Books'
         name: 'exhibit_books'
