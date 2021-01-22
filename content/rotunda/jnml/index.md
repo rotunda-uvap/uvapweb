@@ -2,6 +2,7 @@
 templateKey: rotunda
 title: The Papers of John Marshall Digital Edition
 id: JNML
+rid: JNML
 ---
 John Marshall was the longest-serving chief justice on the U.S. Supreme Court, with a tenure lasting more than three decades. He was also arguably the most influential. Under his leadership the court defined itself in ways that persist to this day.
 
