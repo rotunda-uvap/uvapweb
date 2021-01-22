@@ -2,6 +2,7 @@
 templateKey: rotunda
 title: The Papers of Daniel Webster
 id: DWDE
+rid: DWDE
 ---
 Born in the final days of the American Revolution, Daniel Webster would leave his mark on the following century, of which he was one of its mightiest statesmen. His remarkable life and career illustrate like few others the central issues of that century, especially the growing rift that would undermine the union and set the stage for America’s greatest crisis.
 
