@@ -1,9 +1,10 @@
 ---
+color: "#0d2554"
 templateKey: exhibit
 title: MLA2021
+featured: true
 exhibit_logo: mla_21_topbar_1.jpg
 exhibit_series: ""
-color: "#0d2554"
 related_series:
   - Best New Poets
   - Carter G. Woodson Institute Series
