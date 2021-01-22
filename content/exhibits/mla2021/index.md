@@ -15,6 +15,9 @@ related_series:
   - "Under the Sign of Nature: Explorations in Ecocriticism"
   - Victorian Literature and Culture Series
   - Writing the Early Americas
+related_staff:
+  - Eric Brandt
+  - Angie Hogan
 exhibit_books:
   - book_id: "5478"
     book_title: Magnificent Decay
