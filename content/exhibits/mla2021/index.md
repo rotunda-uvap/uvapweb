@@ -1,7 +1,7 @@
 ---
 color: "#0d2554"
 templateKey: exhibit
-title: MLA2021
+title: " MLA 2021"
 featured: true
 exhibit_logo: mla_21_topbar_1.jpg
 exhibit_series: ""
