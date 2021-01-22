@@ -5,15 +5,18 @@ exhibit_logo: mla_21_topbar_1.jpg
 exhibit_series: ""
 color: "#0d2554"
 related_series:
-  - best-new-poets/index
-  - caraf-books-caribbean-and-african-literature-translated-from-french/index
-  - cultural-frames-framing-culture/index
-  - new-world-studies/index
-  - page-barbour-lectures/index
-  - peculiar-bodies-stories-and-histories/index
-  - the-malcolm-lester-phi-beta-kappa-lectures-on-liberal-arts-and-public-life/index
-  - under-the-sign-of-nature-explorations-in-ecocriticism/index
-  - victorian-literature-and-culture-series/index
-  - writing-the-early-americas/index
+  - Best New Poets
+  - Carter G. Woodson Institute Series
+  - Cultural Frames, Framing Culture
+  - New World Studies
+  - Page-Barbour Lectures
+  - "Peculiar Bodies: Stories and Histories"
+  - The Malcolm Lester Phi Beta Kappa Lectures on Liberal Arts and Public Life
+  - "Under the Sign of Nature: Explorations in Ecocriticism"
+  - Victorian Literature and Culture Series
+  - Writing the Early Americas
+exhibit_books:
+  - book_id: "5478"
+    book_title: Magnificent Decay
 ---
 ## 30% OFF + FREE SHIPPING with promo code 10MLA21
