@@ -2,6 +2,7 @@
 templateKey: rotunda
 title: The Papers of Andrew Johnson
 id: AJHN
+rid: AJHN
 ---
 In the current “age of impeachment,” Andrew Johnson has gained a new historical relevance. But Johnson’s career is notable for more than his impeachment, with much to tell us about Civil War–era politics and the complexity of Reconstruction, through a trajectory that is one of the most compelling, and strange, in presidential history.
 
