@@ -2,6 +2,7 @@
 templateKey: rotunda
 title: The Papers of Alexander Hamilton Digital Edition
 id: ARHN
+rid: ARHN
 ---
 Killed before he was fifty in the most famous duel in American history, Alexander Hamilton had the shortest life of all the major founding fathers and experienced a career filled with as much controversy as triumph. His influence on our nation, however, has been consistent and profound. We remember him above all as the nation’s first great fiscal voice, but his accomplishments extend into the arenas of diplomacy, law, warfare, and political strategy. Though never a president himself, he was a crucial advisor in Washington’s administration—where he served as the nation’s first secretary of the Treasury—and greatly influenced, not always benevolently, the elections of both Adams and Jefferson. Despite his reluctance to see America split into factions, Hamilton’s Federalists—who called for a strong central government and a national bank—signaled the emergence of political parties in the young nation.
 
