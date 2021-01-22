@@ -15,6 +15,7 @@ export default function Home({data}) {
   const newsPost = data.news.edges[0].node
   const mediaPost = data.media.edges[0].node
   const promoPost = data.promos.edges[0].node
+  const exhibits = data.exhibit.edges[0].node
   const topSpot = data.primary
   const rotpromo = data.rot
   const TopSpotImageData = getImage(data.primImg)
@@ -54,7 +55,7 @@ export default function Home({data}) {
 <div className="grid md:grid-cols-4 md:gap-4 py-7">
     <article className="flex flex-wrap place-content-center p-5 hover:bg-black hover:text-white">
               <div><button className="px-4 py-2 border-2 border-gray-700 uppercase">exhibits</button></div>
-                <div className="mx-auto w-4/5"><h3 className="text-2xl font-black uppercase py-5 text-center" >Featured Exhibit Title Here</h3>
+               <div className="mx-auto w-4/5"><Link to={'/exhibits' + exhibits.fields.slug}><h3 className="text-2xl font-black uppercase py-5 text-center" >{exhibits.frontmatter.title}</h3></Link>
                 </div>
                   <Link to={'/all-exhibits'}><button className="rounded bg-blue-400 text-white text-lg px-5 py-2 text-center uppercase">see all</button></Link>
       </article>
@@ -132,7 +133,19 @@ export const query = graphql`
           }
         }
       } 
-      
+      exhibit:  allMarkdownRemark(limit:1, filter: {frontmatter: {templateKey: {eq: "exhibit"}, featured: {eq: true}}}) {
+        edges {
+          node {
+            frontmatter {
+              templateKey
+              title
+            }
+            fields {
+              slug
+            }
+          }
+        }
+      } 
       media: allMarkdownRemark(limit:1, filter: {frontmatter: {templateKey: {eq: "news"}, type: {eq: "media"}}},sort: {fields: frontmatter___date, order: DESC}) {
         edges {
           node {

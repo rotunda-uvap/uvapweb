@@ -1,6 +1,7 @@
 ---
 type: page
 title: Privacy Policy
+templateKey: page
 ---
 **Our commitment to privacy**
 

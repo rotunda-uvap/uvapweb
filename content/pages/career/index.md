@@ -1,6 +1,6 @@
 ---
 title: Career
-type: page
+templateKey: page
 ---
 #### Full-Time Positions at UVaP
 

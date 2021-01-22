@@ -1,6 +1,7 @@
 ---
 type: page
 title: Order Books
+templateKey: page
 ---
 Individuals may purchase print and ebook versions (when available) of our titles online using the BUY buttons found on each book description page.
 
