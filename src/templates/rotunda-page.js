@@ -42,7 +42,7 @@ export default ({ data }) => {
             
             {related.edges.map(edge => (
                 <>
-                <Link className="px-3" to={`../title/${ edge.node.rotID }`} className="py-3 text-light text-lg">&#8226;&ensp; {edge.node.Title}&ensp;</Link>
+                <Link className="px-3" to={`../${ edge.node.RotID }`} className="py-3 text-light text-lg">&#8226;&ensp; {edge.node.Title}&ensp;</Link>
                
                 </>
           ))}

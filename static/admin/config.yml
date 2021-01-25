@@ -245,6 +245,7 @@ collections:
           - { label: "Template Key", name: "templateKey", widget: "hidden", default: "homepage-rotunda"}
           - { label: "Title", name: "title", widget: "string", hint: "This field needs to exist to show on the list of posts"}
           - { label: "Link", name: "link", widget: 'string', required: false, hint: 'for external links, use full URL'}
+          - { name: rid, label: Rotunda Internal ID}
           - { label: 'related book id', name: 'relbook', widget: 'string', required: false, hint: "For multiple, separate book ids by commas with no spaces. Eg. 1234,4567"}
           - { label: Image, name: image, widget: image, required: false}
           - { name: body1, label: Headline, widget: markdown, hint: "Optional: Larger Text", required: false }

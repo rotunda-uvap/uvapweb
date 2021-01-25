@@ -10,6 +10,7 @@ export default function RotundaPromo() {
                 frontmatter {
                   body1
                   body2
+                  
                 }
               }
               rotImg: file(extension: {eq: "jpg"}, relativeDirectory: {eq: "rotunda"}) {
