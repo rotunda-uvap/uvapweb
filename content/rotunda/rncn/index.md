@@ -1,0 +1,12 @@
+---
+templateKey: rotunda
+title: The Documentary History of the Ratification of the Constitution
+rid: RNCN
+---
+As the largest, oldest, and wealthiest of the original thirteen colonies, Virginia played a central role in the fight for independence and as a state in the new republic. This importance is reflected in the number of Virginians who filled key national leadership positions. Three remarkable Virginians stand out in their service to the new nation: George Washington as commander in chief during the Revolutionary War, Thomas Jefferson as the philosophic voice of the country, and James Madison as the chief architect of the nation’s new constitutional system. In The Great Virginia Triumvirate, John Kaminski presents a series of biographical portraits that bring these three men remarkably to life for the modern reader.
+
+The passage of time, coupled with the veneration so often surrounding historical figures, has obscured the subtleties and complexities of the founding fathers’ characters. To cut through this fog of myth, Kaminski relies on the words of the three Virginians themselves, sharing with us a trio of eloquent, and often candid, voices. (Jefferson once told John Adams that he had not written a history of his times because that history was to be found in his correspondence, where he could be especially direct and honest.) Kaminski also turns to the people who personally knew the three great Virginians—their friends, family, acquaintances, and enemies. Through their public and private writings, as well as the observations of their contemporaries, the subjects’ distinctive qualities as individuals can be glimpsed with depth and immediacy.
+
+Taken from letters, speeches, diaries, and memoirs, the quotations and vignettes included here shed light on the actual person behind each public image. George Washington offering a bowl of hot tea at night to a guest at Mount Vernon who has a cold; Thomas Jefferson extending condolences to John Adams on the death of his wife, Abigail; and James Madison bequeathing the silver-hilted walking cane, left him by Jefferson, in turn to the third president’s grandson, Thomas Jefferson Randolph—such moments reveal personality and character in a way that no official act ever could.
+
+"Much is known to one which is not known to the other," Jefferson wrote, "and no one knows everything." The cumulative effect of many voices, however, can create a portrait of invaluable insight.
