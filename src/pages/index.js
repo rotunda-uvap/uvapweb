@@ -28,10 +28,10 @@ export default function Home() {
    <li key="3"><Link to={`/recent-books`}><button className="hover:bg-white hover:text-black bg-black text-white p-4 text-white w-full h-full uppercase">New Releases</button></Link></li>
    <li key="4"><Link to={`/authors`}><button className="hover:bg-white hover:text-black  bg-black text-white p-4 text-white w-full h-full uppercase">For Authors</button></Link></li>
    <li key="5"><Link to={`/instructors`}><button className="hover:bg-white hover:text-black  bg-black text-white p-4 text-white w-full h-full uppercase">For Instructors</button></Link></li>
-   <li key="7"><Link to={`/content/order`}><button className="hover:bg-white hover:text-black p-4 bg-black text-white w-full h-full uppercase">Order</button></Link></li>
-   <li key="8"><Link to={`/`}><button className="hover:bg-white hover:text-black bg-black text-white p-4  w-full h-full uppercase">ROTUNDA Digital Imprint</button></Link></li>
+   <li key="7"><Link to={`/order`}><button className="hover:bg-white hover:text-black p-4 bg-black text-white w-full h-full uppercase">Order</button></Link></li>
+   <li key="8"><Link to={`/rotunda`}><button className="hover:bg-white hover:text-black bg-black text-white p-4  w-full h-full uppercase">ROTUNDA Digital Imprint</button></Link></li>
 
-   <li key="9"><Link to={`/content/support-uva-press`}><button className="hover:bg-white hover:text-black bg-black text-white p-4  w-full h-full uppercase">Support</button></Link></li>
+   <li key="9"><Link to={`/support`}><button className="hover:bg-white hover:text-black bg-black text-white p-4  w-full h-full uppercase">Support</button></Link></li>
 
  </ul>
 </div>

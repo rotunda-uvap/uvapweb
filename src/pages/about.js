@@ -35,7 +35,6 @@ export default function AboutPage({ data }) {
 export const query = graphql`
   query {
    
-      
       markdownRemark(frontmatter: {type: {eq: "page"}, title: {eq: "About"}}) {
         html
       }
