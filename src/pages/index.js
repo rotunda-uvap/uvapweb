@@ -1,39 +1,24 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { Link} from "gatsby"
 import Layout from "../components/layout"
-import FeatNews from "../components/FeatNews"
 import FeatMedia from "../components/FeatMedia"
 import FeatPromo from "../components/FeatPromo"
 import { SocialIcon } from 'react-social-icons';
 import NewsletterMain from "../components/NewsletterMain"
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import Banner from "../components/BannerPromo"
+import FeatExhibit from "../components/FeatExhibit"
+import FeatNews from "../components/FeatNews"
+import RotundaPromo from "../components/RotundaPromo"
 
 
-
-
-export default function Home({data}) {
-  const newsPost = data.news.edges[0].node
-  const mediaPost = data.media.edges[0].node
-  const promoPost = data.promos.edges[0].node
-  const exhibits = data.exhibit.edges[0].node
-  const topSpot = data.primary
-  const rotpromo = data.rot
-  const TopSpotImageData = getImage(data.primImg)
-  const RotundaImageData = getImage(data.rotImg)
+export default function Home() {
+  
   return (
     <Layout>
-      <div className="py-15 bg-blue-500">
-        <div className="container mx-auto px-6">
-        <Link to={'../../title/5626'}><div className="grid grid-cols-2 gap-2 hover:text-underline">
-            <div className="flex flex-col mx-auto place-content-center">
-  <h2 className="text-2xl md:text-5xl font-bold mb-2 text-white">{topSpot.frontmatter.body1}</h2>
-             <h3 className="text-lg md:text-3xl font-light text-gray-200">{topSpot.frontmatter.body2}</h3>
-            </div>
-            
-          <Link to={'../../title/5626'}><GatsbyImage image={TopSpotImageData} alt="featured cover" /></Link> 
-        </div></Link>
-        </div>
-      </div>
+      <section>
+        <Banner/>
+      </section>
+       
 
 <section>
   <div className="mx-auto">
@@ -53,14 +38,9 @@ export default function Home({data}) {
 </section>
 <section >
 <div className="grid md:grid-cols-4 md:gap-4 py-7">
-    <article className="flex flex-wrap place-content-center p-5 hover:bg-black hover:text-white">
-              <div><button className="px-4 py-2 border-2 border-gray-700 uppercase">exhibits</button></div>
-               <div className="mx-auto w-4/5"><Link to={'/exhibits' + exhibits.fields.slug}><h3 className="text-2xl font-black uppercase py-5 text-center" >{exhibits.frontmatter.title}</h3></Link>
-                </div>
-                  <Link to={'/all-exhibits'}><button className="rounded bg-blue-400 text-white text-lg px-5 py-2 text-center uppercase">see all</button></Link>
-      </article>
-      <FeatNews title={newsPost.frontmatter.title} slug={newsPost.fields.slug} />
-      <FeatMedia title={mediaPost.frontmatter.title} slug={mediaPost.fields.slug} />
+     <FeatExhibit/>
+     <FeatNews/>
+      <FeatMedia />
 
       <article className="flex flex-wrap place-content-center p-5 hover:bg-black hover:text-white">
               <div><button className="px-4 py-2 border-2 border-gray-700 uppercase">social media</button></div>
@@ -76,27 +56,12 @@ export default function Home({data}) {
       <button className="bg-black text-lg text-white p-4 w-full uppercase text-center"><Link className to={`/news-posts`}>see all news posts</Link></button>
 </section>
 
-
-
-
 <div className="py-10 bg-blue-500">
-        <div className="container mx-auto px-6">
-        <div className="bg-cover bg-center h-auto text-white py-20 px-10 object-fill grid md:grid-cols-2 gap-4 content-center items-center">
-       <div>
-        <p className="font-bold text-sm uppercase">Featured Rotunda:</p>
-        <Link to={'../../title/5477'}><p className="text-3xl font-bold">{rotpromo.frontmatter.body1}</p></Link>
-
-        <p className="body-text p-5">{rotpromo.frontmatter.body2} </p>
-        </div>  
-        <div>
-        <Link to={'/'}><GatsbyImage image={RotundaImageData} alt="featured rotunda image" /></Link>
-        
-        </div>  
-    </div>
-    </div>
+        <RotundaPromo/>
       </div>
 
-  <FeatPromo title={promoPost.frontmatter.title} relbooks={promoPost.frontmatter.relbook} body={promoPost.html} />
+<section><FeatPromo /></section>
+  
 
   <div className="py-10 bg-blue-500">
         <div className="container mx-auto px-6">
@@ -114,96 +79,3 @@ export default function Home({data}) {
   
 }
 
-export const query = graphql`
-    query  {
-    
-      news:  allMarkdownRemark(limit:1, filter: {frontmatter: {templateKey: {eq: "news"}, type: {eq: "news"}}},sort: {fields: frontmatter___date, order: DESC}) {
-        edges {
-          node {
-            id
-            frontmatter {
-              date(formatString: "YYYY-MM-DD")
-              templateKey
-              type
-              title
-            }
-            fields {
-              slug
-            }
-          }
-        }
-      } 
-      exhibit:  allMarkdownRemark(limit:1, filter: {frontmatter: {templateKey: {eq: "exhibit"}, featured: {eq: true}}}) {
-        edges {
-          node {
-            frontmatter {
-              templateKey
-              title
-            }
-            fields {
-              slug
-            }
-          }
-        }
-      } 
-      media: allMarkdownRemark(limit:1, filter: {frontmatter: {templateKey: {eq: "news"}, type: {eq: "media"}}},sort: {fields: frontmatter___date, order: DESC}) {
-        edges {
-          node {
-            id
-            frontmatter {
-              date(formatString: "YYYY-MM-DD")
-              templateKey
-              type
-              title
-            }
-            fields {
-              slug
-            }
-          }
-        }
-      } 
-      promos: allMarkdownRemark(limit: 1, filter: {frontmatter: {type: {eq: "promo"}}}) {
-        edges {
-          node {
-            frontmatter {
-              title
-              type
-              relbook
-            }
-            html
-            fields {
-              slug
-            }
-          }
-        }
-      }
-    primary:  markdownRemark(frontmatter: {templateKey: {eq: "homepage-primary"}}) {
-      frontmatter {
-        body1
-        body2
-        relbook
-        primary_image {
-          childImageSharp {
-            gatsbyImageData(width: 200, layout: CONSTRAINED, placeholder: TRACED_SVG)
-          }
-        }
-
-      }
-    }
-    rot:  markdownRemark(frontmatter: {templateKey: {eq: "homepage-rotunda"}}) {
-      frontmatter {
-        body1
-        body2
-      }
-    }
-    primImg: file(extension: {eq: "jpg"}, relativeDirectory: {eq: "primary"}) {
-      childImageSharp {
-        gatsbyImageData(width:300, layout: CONSTRAINED, placeholder: TRACED_SVG)
-      }
-    }
-    rotImg: file(extension: {eq: "jpg"}, relativeDirectory: {eq: "rotunda"}) {
-      childImageSharp {
-        gatsbyImageData(width:300, layout: CONSTRAINED, placeholder: TRACED_SVG)
-      }
-    }
-  }`

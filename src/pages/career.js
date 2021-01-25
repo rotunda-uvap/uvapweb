@@ -4,12 +4,12 @@ import Layout from "../components/layout"
 import "../utils/global.css"
 
 
-export default function SupportPage({ data }) {
+export default function CareerPage({ data }) {
     const pagedata = data.markdownRemark
  return (
     
         <Layout>
-            <h2 className="py-10">Support UVA Press</h2>
+            <h2 className="py-10">Job Opportunties at UVa Press</h2>
 
          <p dangerouslySetInnerHTML={{__html: pagedata.html}}/>
 
@@ -25,7 +25,7 @@ export default function SupportPage({ data }) {
 export const query = graphql`
   query {
    
-      markdownRemark(frontmatter: {templateKey: {eq: "page"}, title: {eq: "Support UVa Press"}}) {
+      markdownRemark(frontmatter: {templateKey: {eq: "page"}, title: {eq: "Career"}}) {
         html
       }
   }

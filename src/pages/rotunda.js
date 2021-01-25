@@ -3,14 +3,14 @@ import Layout from "../components/layout"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import { Link, graphql } from "gatsby"
 import MiniBio from "../components/MiniBio"
+import FEList from "../components/FoundingEra"
+import ACRList from "../components/ACR"
+import ACList from "../components/AMC"
+import LACList from "../components/LAC"
 
 export default function RotundaHome({ data }) {
     const RotundaLogo = getImage(data.rotLogo)
     const staff = data.staffs
-    const FEA = data.FE 
-    const ACC = data.AC
-    const LIT = data.LC 
-    const ACR = data.AT
  return (
    <Layout>
      <div>
@@ -62,44 +62,16 @@ export default function RotundaHome({ data }) {
     <h5 className="py-2">Publications</h5>
 
     <h6 className="py-5">Founding Era Collection</h6>
-    {FEA.edges.map(edge => (
-            <>
-            <div>
-                <Link to={`../title/${ edge.node.RotID }`} className="py-3 text-light text-lg">{edge.node.Title}</Link>
-                {edge.node.Subtitle && <span className="py-3 text-light text-lg text-italic">: {edge.node.Subtitle}</span>}
-            </div>
-            </>
-        ))}
+    <FEList/>
     
     <h6 className="py-5">Antebellum, Civil War and Reconstruction</h6>
-    {ACR.edges.map(edge => (
-            <>
-            <div>
-                <Link to={`../title/${ edge.node.RotID }`} className="py-3 text-light text-lg">{edge.node.Title}</Link>
-                {edge.node.Subtitle && <span className="py-3 text-light text-lg text-italic">: {edge.node.Subtitle}</span>}
-            </div>
-            </>
-        ))}
+    <ACRList/>
 
 <h6 className="py-5">American Century Collection</h6>
-    {ACC.edges.map(edge => (
-            <>
-            <div>
-                <Link to={`../title/${ edge.node.RotID }`} className="py-3 text-light text-lg">{edge.node.Title}</Link>
-                {edge.node.Subtitle && <span className="py-3 text-light text-lg text-italic">: {edge.node.Subtitle}</span>}
-            </div>
-            </>
-        ))}
+    <ACList/>
     
     <h6 className="py-5">Literature and Culture Collection</h6>
-    {LIT.edges.map(edge => (
-            <>
-            <div>
-                <Link to={`../title/${ edge.node.RotID }`} className="py-3 text-light text-lg">{edge.node.Title}</Link>
-                {edge.node.Subtitle && <span className="py-3 text-light text-lg text-italic">: {edge.node.Subtitle}</span>}
-            </div>
-            </>
-        ))}
+    <LACList/>
     </section>
     </div>
    </Layout>
@@ -121,62 +93,10 @@ export const query = graphql`
           }
         }
       }
-      AC: allRotundaJson(filter: {SubCollection: {eq: "American Century Collection"}}, sort: {fields: StartYear, order: ASC}) {
-        edges {
-          node {
-            Title
-            Subtitle
-            RotID
-            EndYear
-            imageFilename
-            StartYear
-            MainCollection
-            SubCollection
-          }
-        }
-      }
-      FE: allRotundaJson(filter: {SubCollection: {eq: "Founding Era Collection"}}, sort: {fields: StartYear, order: ASC}) {
-        edges {
-          node {
-            Title
-            Subtitle
-            RotID
-            EndYear
-            imageFilename
-            StartYear
-            MainCollection
-            SubCollection
-          }
-        }
-      }
-      AT: allRotundaJson(filter: {SubCollection: {eq: "Antebellum, Civil War and Reconstruction"}}, sort: {fields: StartYear, order: ASC}) {
-        edges {
-          node {
-            Title
-            Subtitle
-            RotID
-            EndYear
-            imageFilename
-            StartYear
-            MainCollection
-            SubCollection
-          }
-        }
-      }
-      LC: allRotundaJson(filter: {SubCollection: {eq: "Literature"}}, sort: {fields: StartYear, order: ASC}) {
-        edges {
-          node {
-            Title
-            Subtitle
-            RotID
-            EndYear
-            imageFilename
-            StartYear
-            MainCollection
-            SubCollection
-          }
-        }
-      }
+      
+      
+      
+     
 
   }
 `

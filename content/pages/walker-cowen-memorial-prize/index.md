@@ -1,6 +1,7 @@
 ---
 type: page
 title: Walker Cowen Memorial Prize
+templateKey: page
 ---
 #### 2020 Walker Cowen Manuscript Prize Competition in Eighteenth-Century Studies
 

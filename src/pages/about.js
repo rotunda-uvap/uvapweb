@@ -13,8 +13,8 @@ export default function AboutPage({ data }) {
             <section className="grid md:grid-cols-5 py-5">
                 <Link to={'/contact'}><button className="p-3 border-b-4 border-white hover:border-black w-full">Contact</button></Link>
                 <Link to={'/staff-list'}><button className="p-3 border-b-4 border-white hover:border-black w-full">Staff Directory</button></Link>
-                <Link to={'/content/career'}><button className="p-3 border-b-4 border-white hover:border-black w-full">Career Opportunties</button></Link>
-                <Link to={'/content/support-uva-press'}><button className="p-3 border-b-4 border-white hover:border-black w-full">Support</button></Link>
+                <Link to={'/career'}><button className="p-3 border-b-4 border-white hover:border-black w-full">Career Opportunties</button></Link>
+                <Link to={'/support'}><button className="p-3 border-b-4 border-white hover:border-black w-full">Support</button></Link>
                 <Link to={'/permissions'}><button className="p-3 border-b-4 border-white hover:border-black w-full">Rights and Permissions</button></Link>
 
             </section>
