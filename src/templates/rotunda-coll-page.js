@@ -1,5 +1,6 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
+import RotundaCard from "../components/RotundaCard"
 import Layout from "../components/layout"
 
 
@@ -21,7 +22,8 @@ const RotundaCollTemplate = ({ data }) => {
                     <div className="container px-5 py-5 grid md:grid-cols-5 md:gap-4">
                         {items.edges.map(edge => (
                   <>  
-                  <Link to={`../../title/${ edge.node.RotID }`}><h5>{edge.node.Title}</h5></Link>
+                   <RotundaCard Title={edge.node.Title} Subtitle={edge.node.Subtitle} ID={edge.node.RotID} file={edge.node.imageFilename}/>
+
                      </>
                     ))}
                         </div> 
@@ -49,6 +51,7 @@ export const query = graphql`
                   RotID
                   MainCollection
                   SubCollection
+                  imageFilename
                 }
             }
         } 

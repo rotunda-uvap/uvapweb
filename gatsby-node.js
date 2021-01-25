@@ -104,19 +104,7 @@ exports.createSchemaCustomization = ({ actions }) => {
             }
           }
         }
-        allpages: allMarkdownRemark(filter: {frontmatter: {templateKey: {eq: "page"}}})  {
-          edges {
-            node {
-              id
-              fields {
-                slug
-              }
-              frontmatter {
-                templateKey
-              }
-            }
-          }
-        }
+       
         allpromos: allMarkdownRemark(filter: {frontmatter: {templateKey: {eq: "promo"}}})  {
           edges {
             node {
@@ -189,7 +177,8 @@ exports.createSchemaCustomization = ({ actions }) => {
             component: path.resolve(`./src/templates/rotunda-page.js`),
             context: {
               id: node.RotID,
-              imageid: node.imageFilename
+              imageid: node.imageFilename,
+              relSeries: node.SubCollection
             },
           })
          
@@ -233,18 +222,6 @@ exports.createSchemaCustomization = ({ actions }) => {
           })
         })
         
-
-        const pages = result.data.allpages.edges
-        pages.forEach(({ node }) => {
-          createPage({
-            path: `/content${node.fields.slug}`,
-            component: path.resolve(`./src/templates/page.js`),
-            context: {
-              id: node.id,
-            },
-          })
-        })
-
         const promos = result.data.allpromos.edges
         promos.forEach(({ node }) => {
           createPage({

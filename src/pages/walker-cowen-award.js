@@ -24,7 +24,6 @@ export default function WalkerCowenPage({ data }) {
 
 export const query = graphql`
   query {
-   
       markdownRemark(frontmatter: {templateKey: {eq: "page"}, title: {eq: "Walker Cowen Memorial Prize"}}) {
         html
       }
