@@ -16,10 +16,10 @@ export default function RotundaHome({ data }) {
      <div>
          <div className="grid md:grid-cols-3 py-10">
          <GatsbyImage image={RotundaLogo} alt="Rotunda logo" className="justify-self-center" />
-         <p class="tracking-wide leading-normal md:col-span-2 font-light ">Rotunda was created for the publication of original digital scholarship along with newly digitized critical and documentary editions in the humanities and social sciences. The collection combines the originality, intellectual rigor, and scholarly value of traditional peer-reviewed university press publishing with thoughtful technological innovation designed for scholars and students.</p>
+         <p className="tracking-wide leading-normal md:col-span-2 font-light ">Rotunda was created for the publication of original digital scholarship along with newly digitized critical and documentary editions in the humanities and social sciences. The collection combines the originality, intellectual rigor, and scholarly value of traditional peer-reviewed university press publishing with thoughtful technological innovation designed for scholars and students.</p>
          </div>
          
-    <section class="subs">
+    <section>
       <p className="font-light">If you are connecting via a campus Internet connection, you can expect to gain access to any Rotunda publication purchased by your institution. If your institution has not purchased a particular Rotunda publication, contact your institution’s library about ordering. You may also sign up for an individual free trial to evaluate Rotunda before making a purchase decision.</p>
       <div className="grid md:grid-cols-4 md:gap-4 py-7">
       
@@ -29,7 +29,7 @@ export default function RotundaHome({ data }) {
       <a href="https://rotunda.upress.virginia.edu/register/default.xqy"><button className="border-b-4 border-white hover:border-black w-full h-full uppercase">Free Trial</button></a>
       </div>
     </section>
-    <section class="coll">
+    <section>
       <h5>Collections</h5>
       <div class="collections">
           <p className="font-light pt-2">Rotunda publications are available to both libraries and independent scholars as single titles or as collections. The American History Collection includes the sub-collections American Founding Era; Antebellum, Civil War, and Reconstruction; and the American Century.</p>

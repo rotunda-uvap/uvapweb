@@ -187,6 +187,7 @@ module.exports = {
   `gatsby-transformer-sharp`,
   `gatsby-plugin-react-helmet`,
   `gatsby-plugin-twitter`,
+  `gatsby-plugin-postcss`,
   {
     resolve: `gatsby-plugin-algolia`,
     options: {
@@ -214,20 +215,6 @@ module.exports = {
           timeout: 3500, // number; the amount of time, in milliseconds, that you want to allow mailchimp to respond to your request before timing out. defaults to 3500
       },
   },
-  {
-    resolve: `gatsby-plugin-postcss`,
-options: {
-    postCssPlugins: [require("tailwindcss")],
-    },
-},
-{
-    resolve: `gatsby-plugin-purgecss`,
-    options: {
-        printRejected: false,
-        develop: true,
-        tailwind: true
-    }
-}, 
 {
   resolve: "gatsby-plugin-webpack-bundle-analyser-v2",
   options: {

@@ -14,7 +14,7 @@ export default ({ data }) => {
         <h2 className="py-10">{item.Title}</h2>
           <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1">
         <GatsbyImage image={imageData} alt="publication image"/>
-          <Link to={item.URL} className="py-7"><button>Go to Publication</button></Link>
+          <a href={item.URL} className="py-7"><button>Go to Publication</button></a>
         <section>
         <h6 className="py-7">Summary</h6>
         <article dangerouslySetInnerHTML={{ __html:summary.html }}/>

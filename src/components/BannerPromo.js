@@ -17,7 +17,7 @@ export default function Banner() {
             
             primImg: file(extension: {eq: "jpg"}, relativeDirectory: {eq: "primary"}) {
                 childImageSharp {
-                  gatsbyImageData(width:250, height:320, layout: FIXED, placeholder: TRACED_SVG)
+                  gatsbyImageData(width:200, height:320, layout: FIXED, placeholder: TRACED_SVG)
                 }
               }
         }
