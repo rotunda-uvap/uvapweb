@@ -182,7 +182,6 @@ module.exports = {
    
   `gatsby-plugin-slug`,
   `gatsby-plugin-netlify-cms`,
-  `gatsby-plugin-postcss`,
   `gatsby-plugin-image`,
   `gatsby-plugin-sharp`,
   `gatsby-transformer-sharp`,
@@ -221,7 +220,6 @@ options: {
     postCssPlugins: [require("tailwindcss")],
     },
 },
-// highlight-start
 {
     resolve: `gatsby-plugin-purgecss`,
     options: {
