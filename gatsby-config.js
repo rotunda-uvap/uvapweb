@@ -183,23 +183,8 @@ module.exports = {
   `gatsby-plugin-slug`,
   `gatsby-plugin-netlify-cms`,
   `gatsby-plugin-postcss`,
-  `gatsby-plugin-styled-components`,
-  `gatsby-image`,
   `gatsby-plugin-image`,
   `gatsby-plugin-sharp`,
-  {
-    resolve: `gatsby-plugin-mdx`,
-    options: {
-      gatsbyRemarkPlugins: [
-        {
-          resolve: `gatsby-remark-images`,
-          options: {
-            maxWidth: 800,
-          },
-        },
-      ],
-    },
-  },
   `gatsby-transformer-sharp`,
   `gatsby-plugin-react-helmet`,
   `gatsby-plugin-twitter`,
@@ -229,6 +214,27 @@ module.exports = {
           endpoint: 'https://virginia.us5.list-manage.com/subscribe/post?u=ef1bb24fccf12e802068da002&amp;id=471ea965df', // string; add your MC list endpoint here; see instructions below
           timeout: 3500, // number; the amount of time, in milliseconds, that you want to allow mailchimp to respond to your request before timing out. defaults to 3500
       },
-  }, 
+  },
+  {
+    resolve: `gatsby-plugin-postcss`,
+options: {
+    postCssPlugins: [require("tailwindcss")],
+    },
+},
+// highlight-start
+{
+    resolve: `gatsby-plugin-purgecss`,
+    options: {
+        printRejected: false,
+        develop: true,
+        tailwind: true
+    }
+}, 
+{
+  resolve: "gatsby-plugin-webpack-bundle-analyser-v2",
+  options: {
+    devMode: true,
+  },
+}
   ]
 }

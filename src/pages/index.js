@@ -36,7 +36,7 @@ export default function Home() {
  </ul>
 </div>
 </section>
-<section >
+<section>
 <div className="grid md:grid-cols-4 md:gap-4 py-7">
      <FeatExhibit/>
      <FeatNews/>
@@ -45,22 +45,22 @@ export default function Home() {
       <article className="flex flex-wrap place-content-center p-5 hover:bg-black hover:text-white">
               <div><button className="px-4 py-2 border-2 border-gray-700 uppercase">social media</button></div>
                 <div className="mx-auto w-4/5 py-10">
-                <div><a href="https://twitter.com/uvapress" className="px-5"><SocialIcon network="twitter" aria-label="twitter button" bgColor="#00000" /></a>
-                <a href="https://facebook.com/uvapress" className="px-5"><SocialIcon network="facebook" aria-label="facebook button" bgColor="#00000" /></a></div>
-                <div><a href="https://twitter.com/uvapress" className="px-5"><SocialIcon network="twitter" aria-label="twitter button mobile" bgColor="#ffffff" /></a>
-                <a href="https://facebook.com/uvapress" className="px-5"><SocialIcon network="facebook" aria-label="facebook button mobile" bgColor="#ffffff" /></a></div>
+                <div><SocialIcon  className="px-5" url="https://twitter.com/uvapress"  network="twitter" aria-label="twitter button" bgColor="#00000" />
+                <SocialIcon className="px-5" url="https://facebook.com/uvapress" network="facebook" aria-label="facebook button" bgColor="#00000" /></div>
+                <div><SocialIcon className="px-5" url="https://twitter.com/uvapress" network="twitter" aria-label="twitter button mobile" bgColor="#ffffff" />
+                <SocialIcon className="px-5" url="https://facebook.com/uvapress" network="facebook" aria-label="facebook button mobile" bgColor="#ffffff" /></div>
                 </div>
                 <div></div>
       </article>
       </div>
-      <button className="bg-black text-lg text-white p-4 w-full uppercase text-center"><Link className to={`/news-posts`}>see all news posts</Link></button>
+      <button className="bg-black text-lg text-white p-4 w-full uppercase text-center"><Link to={`/news-posts`}>see all news posts</Link></button>
 </section>
 
 <div className="py-10 bg-blue-500">
         <RotundaPromo/>
       </div>
 
-<section><FeatPromo /></section>
+<section><FeatPromo/></section>
   
 
   <div className="py-10 bg-blue-500">

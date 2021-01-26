@@ -36,7 +36,7 @@ export default function Banner() {
                         <h2 className="text-2xl md:text-5xl font-bold mb-2 text-white">{data.markdownRemark.frontmatter.body1}</h2>
                         <h3 className="text-lg md:text-3xl font-light text-gray-200">{data.markdownRemark.frontmatter.body2}</h3>
                             </div>
-                            <Link to={'../../title/' + data.markdownRemark.frontmatter.relbook}><GatsbyImage image={getImage(data.primImg)} alt="featured cover" /></Link>
+                            <GatsbyImage image={getImage(data.primImg)} alt="featured cover" />
 
                         </div>
                     </Link>
