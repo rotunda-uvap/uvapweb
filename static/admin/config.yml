@@ -148,7 +148,7 @@ collections:
       - label: 'Related Books'
         name: 'rotunda_books'
         widget: 'list'
-        summary: '{{fields.book_id}}'
+        summary: '{{book.*.BookID}}'
         required: false
         fields:
           - label: Find Book
