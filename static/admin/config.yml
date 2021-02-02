@@ -277,7 +277,7 @@ collections:
       files:
       - label: 'Books'
         name: 'books'
-        file: 'src/data/books.json'
+        file: 'src/data/booklist.json'
         fields:
           - label: 'Booklist'
             name: 'Booklist'
