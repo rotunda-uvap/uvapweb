@@ -93,7 +93,7 @@ collections:
         summary: '{{fields.book_id}}'
         required: false
         fields:
-          - label: Related
+          - label: Find Book
             name: related
             widget: relation
             collection: files
@@ -101,14 +101,7 @@ collections:
             search_fields: ['book.*.Title'] 
             display_fields: ['book.*.Title']
             file: books
-      - label: Relation
-        name: relation
-        widget: relation
-        collection: files
-        value_field: "book.*.BookID"
-        search_fields: ['book.*.Title'] 
-        display_fields: ['book.*.Title']
-        file: books
+      
   - name: 'bios'
     label: 'Staff Bio'
     identifier_field: '{{title}}'
@@ -156,11 +149,16 @@ collections:
         name: 'rotunda_books'
         widget: 'list'
         summary: '{{fields.book_id}}'
-        optional: true
+        required: false
         fields:
-          - {label: 'Book ID', name: 'book_id', widget: string}
-          - {label: 'Book Title', name: 'book_title', widget: string, hint: 'Title to be shown next to book link and generated cover.'} 
-          
+          - label: Find Book
+            name: related
+            widget: relation
+            collection: files
+            value_field: "book.*.BookID"
+            search_fields: ['book.*.Title'] 
+            display_fields: ['book.*.Title']
+            file: books   
   
   - name: 'promo'
     label: 'Promotion'
