@@ -9,5 +9,7 @@ related_staff:
   - Angie Hogan
 exhibit_books:
   - related: "5042"
+  - related: "5042"
+  - related: "1581"
 ---
 Vlajlljaafe
