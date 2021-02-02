@@ -273,8 +273,8 @@ collections:
         file: 'content/booklist.json'
         extension: "json"
         fields:
-          - label: 'Books'
-            name: 'books'
+          - label: 'Book'
+            name: 'book'
             widget: 'list'
             fields:
               - {label: "Title", name: "Title", widget: "string"}
