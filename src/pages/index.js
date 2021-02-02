@@ -3,12 +3,12 @@ import { Link} from "gatsby"
 import Layout from "../components/layout"
 import FeatMedia from "../components/FeatMedia"
 import FeatPromo from "../components/FeatPromo"
-import { SocialIcon } from 'react-social-icons';
 import NewsletterMain from "../components/NewsletterMain"
 import Banner from "../components/BannerPromo"
 import FeatExhibit from "../components/FeatExhibit"
 import FeatNews from "../components/FeatNews"
 import RotundaPromo from "../components/RotundaPromo"
+import { FaSearch } from "react-icons/fa";
 
 
 export default function Home() {
@@ -38,20 +38,19 @@ export default function Home() {
 </section>
 <section>
 <div className="grid md:grid-cols-4 md:gap-4 py-7">
-     <FeatExhibit/>
-     <FeatNews/>
-      <FeatMedia />
-
-      <article className="flex flex-wrap place-content-center p-5 hover:bg-black hover:text-white">
-              <div><button className="px-4 py-2 border-2 border-gray-700 uppercase">social media</button></div>
-                <div className="mx-auto w-4/5 py-10">
-                <div><SocialIcon  className="px-5" url="https://twitter.com/uvapress"  network="twitter" aria-label="twitter button" bgColor="#00000" />
-                <SocialIcon className="px-5" url="https://facebook.com/uvapress" network="facebook" aria-label="facebook button" bgColor="#00000" /></div>
-                <div><SocialIcon className="px-5" url="https://twitter.com/uvapress" network="twitter" aria-label="twitter button mobile" bgColor="#ffffff" />
-                <SocialIcon className="px-5" url="https://facebook.com/uvapress" network="facebook" aria-label="facebook button mobile" bgColor="#ffffff" /></div>
-                </div>
-                <div></div>
+<article className="flex flex-wrap place-content-center p-5 hover:bg-black hover:text-white">
+              <div><button className="px-4 py-2 border-2 border-gray-700 uppercase">search</button></div>
+                <div className="mx-auto w-4/5 py-10 flex flex-col justify-center">
+                <FaSearch className="self-center" />
+                <div className="mx-auto"><h3 className="text-xl font-black uppercase py-5 text-center"><Link to={'/book-search'}>Find a book</Link></h3>
+            </div>  
+            </div>  
       </article>
+      <FeatNews/>
+      <FeatMedia />
+     <FeatExhibit/>
+
+      
       </div>
       <button className="bg-black text-lg text-white p-4 w-full uppercase text-center"><Link to={`/news-posts`}>see all news posts</Link></button>
 </section>

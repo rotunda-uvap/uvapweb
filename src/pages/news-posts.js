@@ -17,8 +17,9 @@ export default function Articles({ data }) {
                                 className="px-2 py-1 bg-gray-600 text-gray-100 font-bold rounded hover:bg-gray-500">{edge.node.frontmatter.type}</span>
                         </div>
                         <div className="mt-2"><Link className="text-2xl text-gray-700 font-bold hover:underline" to={`../${ edge.node.frontmatter.type }${ edge.node.fields.slug }`}>{ edge.node.frontmatter.title }</Link>
-                          {edge.node.frontmatter.description &&  <p className="mt-2 text-gray-600" dangerouslySetInnerHTML={{ __html: edge.node.frontmatter.description.split(' ').splice(0, 50).join(' ') + '...' }}></p>}
+                          {edge.node.frontmatter.description &&  <p className="mt-2 text-gray-600 font-light" dangerouslySetInnerHTML={{ __html: edge.node.frontmatter.description.split(' ').splice(0, 50).join(' ') + '...' }}></p>}
                         </div>
+                        <div><p>{edge.node.frontmatter.related_books ? <img src={'https://www.upress.virginia.edu/sites/default/files/covers/' + edge.node.frontmatter.related_books[0].book_id + "_T.jpg"}/> : <div></div>}</p></div>
                         <div className="flex justify-between items-center mt-4"><Link  to={`../${ edge.node.frontmatter.type }${ edge.node.fields.slug }`}>Read more</Link>
                                 
                             
@@ -43,7 +44,9 @@ export const query = graphql`
             frontmatter {
               title
               type
-              relbook
+              related_books {
+                book_id
+              }
               description
               date(formatString: "YYYY-MM-DD")
             }

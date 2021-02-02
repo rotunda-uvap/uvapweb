@@ -14,10 +14,10 @@ export default function Books({ data }) {
                  <h2 id="top" className="py-10">Browse All Books</h2>
             <div className="container">
  <ul className="grid md:grid-cols-4 md:auto-rows-fr content-center justify-center py-7">
-   <li><Link to={`#subjects`}><button className="border-b-4 border-white hover:border-black w-full h-full uppercase">Browse by Subject</button></Link></li>
+ <li><Link to={`#recent`}><button className="border-b-4 border-white hover:border-black w-full h-full uppercase">Recently Published</button></Link></li>
+<li><Link to={`#subjects`}><button className="border-b-4 border-white hover:border-black w-full h-full uppercase">Browse by Subject</button></Link></li>
    <li><Link to={`#series`}><button className="border-b-4 border-white hover:border-black w-full h-full uppercase">Browse by Series</button></Link></li>
    <li><Link to={`#awardwinners`}><button className="border-b-4 border-white hover:border-black w-full h-full uppercase">Award Winners</button></Link></li>
-   <li><Link to={`#recent`}><button className="border-b-4 border-white hover:border-black w-full h-full uppercase">Recently Published</button></Link></li>
 
  </ul>
 </div>

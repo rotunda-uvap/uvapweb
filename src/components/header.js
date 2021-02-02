@@ -50,6 +50,9 @@ const Header = () => {
           <Link to={`/media-posts`} className="uppercase block mt-4  text-teal-200 hover:text-gray-300">
             Media
           </Link>
+          <Link to={`/all-exhibits`} className="uppercase block mt-4  text-teal-200 hover:text-gray-300">
+            Exhibits
+          </Link>
           <Link to={`/support`} className="uppercase block mt-4 text-teal-200 hover:text-gray-300">
             Give
           </Link>

@@ -72,7 +72,6 @@ collections:
       - { name: title, label: Title }
       - {label: "Featured", name: "featured", widget: "boolean", default: false, hint: "Will this be featured on Homepage? Note: Only 1 can."}
       - { label: Exhibit Logo, name: exhibit_logo, widget: image}
-      - { label: 'Exhibit Series', name: 'exhibit_series', widget: 'string', required: false}
       - { name: body, label: Body, widget: markdown }
       - label: "Related Series"
         name: "related_series"
@@ -94,9 +93,17 @@ collections:
         summary: '{{fields.book_id}}'
         required: false
         fields:
+          - {label: 'Sort Label', name: 'sort_id', widget: string, hint: ''}
           - {label: 'Book ID', name: 'book_id', widget: string}
           - {label: 'Book Title', name: 'book_title', widget: string, hint: 'Title to be shown next to book link and generated cover.'} 
-          
+      - label: Relation
+        name: relation
+        widget: relation
+        collection: files
+        valueField: books.*.bookid
+        searchFields: [books.*.bookid] # not really used
+        displayFields: [books.*.title]
+        file: books  
   - name: 'bios'
     label: 'Staff Bio'
     identifier_field: '{{title}}'
@@ -122,7 +129,7 @@ collections:
         widget: "relation"
         collection: "series_info"
         search_fields: ['title']
-        value_field: "{{slug}}"
+        value_field: "{{title}}"
         multiple: true
         required: false
   - name: 'rotundas'
@@ -264,3 +271,18 @@ collections:
           - { name: body, label: Body, widget: markdown }
           - { name: body1, label: Headline, widget: markdown, hint: "Optional: Larger Text" , required: false}
           - { name: body2, label: Body, widget: markdown, hint: "Optional: Smaller/Secondary text", required: false}
+  -   name: files
+      label: Files
+      label_singular: 'File'
+      files:
+      - label: Books
+        name: books
+        file: src/data/books.json
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: BookID, name: bookid, widget: string}
+  
+  
+         
+          
+          

@@ -25,7 +25,7 @@ export default function FeatMedia() {
       `}
       render={data => (
         <article className="flex flex-wrap place-content-center p-5 hover:bg-black hover:text-white">
-        <div><button className="px-4 py-2 border-2 border-gray-700 uppercase">media</button></div>
+        <div><Link to={'/media-posts'}><button className="px-4 py-2 border-2 border-gray-700 uppercase">media</button></Link></div>
     <div className="mx-auto"><h3 className="text-xl font-black uppercase py-5 text-center"><Link to={'/media' + data.media.edges[0].node.fields.slug}>{data.media.edges[0].node.frontmatter.title}</Link></h3>
           </div>
           <Link to={'/media' + data.media.edges[0].node.fields.slug}>

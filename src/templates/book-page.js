@@ -9,6 +9,8 @@ import BookHorizontalTabs from "../components/BookHorizontalTabs"
 export default ({ data }) => {
     const book = data.booksJson
     const imageData = getImage(data.file)
+    const isbn = book.Bindings[0].ISBN
+    const GoogleB = 'https://books.google.com/books?vid=' + isbn
     
  return (
    
@@ -78,8 +80,11 @@ export default ({ data }) => {
         <BookHorizontalTabs summary={book.MainDescription.html} reviews={book.Reviews} bio={book.BioNote.html}/>
     </section>
     
+    <section className="py-3">
+      <p className="font-black uppercase py-3 px-5 border-b-4 border-white hover:border-black">Additional Resources</p>
+    </section>
     <section>
-      
+    <a href={GoogleB}><img src="/gbs_preview_sticker1.png" alt="view on google books" /></a>
     </section>
 
   

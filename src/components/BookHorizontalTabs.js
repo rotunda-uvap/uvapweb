@@ -12,6 +12,7 @@ const BookHorizontalTabs = ({summary, reviews, bio}) => {
     <Tab className="font-black uppercase py-3 px-5 border-b-4 border-white hover:border-black" tabFor="basic-tab-one">Summary</Tab>
           <Tab className="font-black uppercase py-3 px-6 border-b-4 border-white hover:border-black" tabFor="basic-tab-two">Reviews</Tab>
           <Tab className="font-black uppercase py-3 px-6 border-b-4 border-white hover:border-black" tabFor="basic-tab-three">Author Bio(s)</Tab>
+          <Tab className="font-black uppercase py-3 px-6 border-b-4 border-white hover:border-black" tabFor="basic-tab-four">Table of Contents</Tab>
         </TabList>
         <TabPanel className="p-6" tabId="basic-tab-one">
         <div dangerouslySetInnerHTML={{ __html: summary }}/>
@@ -39,6 +40,10 @@ const BookHorizontalTabs = ({summary, reviews, bio}) => {
             </div> 
           :
               <div><p>No biographical information available</p></div>}
+        </TabPanel>
+        <TabPanel className="p-6" tabId="basic-tab-four">
+        <p>From CMS?</p> 
+
         </TabPanel>
       </Tabs>
       )

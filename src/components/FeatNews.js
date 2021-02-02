@@ -25,7 +25,7 @@ export default function FeatNews() {
       `}
       render={data => (
         <article className="flex flex-wrap place-content-center p-5 hover:bg-black hover:text-white">
-        <div><button className="px-4 py-2 border-2 border-gray-700 uppercase">news</button></div>
+        <div><Link to={'/news-posts'}><button className="px-4 py-2 border-2 border-gray-700 uppercase">news</button></Link></div>
     <div className="mx-auto"><h3 className="text-xl font-black uppercase py-5 text-center"><Link to={'/news' + data.news.edges[0].node.fields.slug}>{data.news.edges[0].node.frontmatter.title}</Link></h3>
           </div>
           <Link to={'/news' + data.news.edges[0].node.fields.slug}>

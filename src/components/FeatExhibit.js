@@ -22,7 +22,7 @@ export default function FeatExhibit() {
       `}
       render={data => (
         <article className="flex flex-wrap place-content-center p-5 hover:bg-black hover:text-white">
-              <div><button className="px-4 py-2 border-2 border-gray-700 uppercase">exhibits</button></div>
+              <div><Link to={'/all-exhibits'}><button className="px-4 py-2 border-2 border-gray-700 uppercase">exhibits</button></Link></div>
                <div className="mx-auto w-4/5"><Link to={'/exhibits' + data.exhibit.edges[0].node.fields.slug}><h3 className="text-2xl font-black uppercase py-5 text-center" >{data.exhibit.edges[0].node.frontmatter.title}</h3></Link>
                 </div>
                   <Link to={'/all-exhibits'}><button className="rounded bg-blue-400 text-white text-lg px-5 py-2 text-center uppercase">see all</button></Link>
