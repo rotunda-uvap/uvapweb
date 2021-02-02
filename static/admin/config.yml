@@ -100,9 +100,9 @@ collections:
         name: relation
         widget: relation
         collection: files
-        valueField: books.*.bookid
-        searchFields: [books.*.bookid] # not really used
-        displayFields: [books.*.title]
+        valueField: books.*.BookID
+        searchFields: [books.*.BookID] # not really used
+        displayFields: [books.*.Title]
         file: books  
   - name: 'bios'
     label: 'Staff Bio'
@@ -279,8 +279,8 @@ collections:
         name: books
         file: src/data/books.json
         fields:
-          - {label: Title, name: title, widget: string}
-          - {label: BookID, name: bookid, widget: string}
+          - {label: Title, name: Title, widget: string}
+          - {label: BookID, name: BookID, widget: string}
   
   
          
