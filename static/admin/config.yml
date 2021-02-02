@@ -275,14 +275,15 @@ collections:
       label: Files
       label_singular: 'File'
       files:
-      - label: Books
-        name: books
-        file: src/data/books.json
+      - label: 'Books'
+        name: 'books'
+        file: 'src/data/books.json'
         fields:
-          - {label: Title, name: Title, widget: string}
-          - {label: BookID, name: BookID, widget: string}
+          - label: 'Booklist'
+            name: 'Booklist'
+            widget: 'list'
+            fields:
+            - {label: Title, name: Title, widget: string}
+            - {label: BookID, name: BookID, widget: string}
   
   
-         
-          
-          
