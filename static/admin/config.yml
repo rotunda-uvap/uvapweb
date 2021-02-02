@@ -96,7 +96,14 @@ collections:
           - {label: 'Sort Label', name: 'sort_id', widget: string, hint: ''}
           - {label: 'Book ID', name: 'book_id', widget: string}
           - {label: 'Book Title', name: 'book_title', widget: string, hint: 'Title to be shown next to book link and generated cover.'} 
-      
+      - label: Relation
+        name: relation
+        widget: relation
+        collection: files
+        value_field: books.*.BookID
+        search_fields: [books.*.Title] 
+        display_fields: [books.*.Title]
+        file: books
   - name: 'bios'
     label: 'Staff Bio'
     identifier_field: '{{title}}'
@@ -277,8 +284,8 @@ collections:
             name: 'book'
             widget: 'list'
             fields:
-              - {label: "Title", name: "Title", widget: "string"}
               - {label: "BookID", name: "BookID", widget: "string"}
+              - {label: "Title", name: "Title", widget: "string"}
            
   
   
