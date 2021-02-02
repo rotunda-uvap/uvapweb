@@ -93,9 +93,14 @@ collections:
         summary: '{{fields.book_id}}'
         required: false
         fields:
-          - {label: 'Sort Label', name: 'sort_id', widget: string, hint: ''}
-          - {label: 'Book ID', name: 'book_id', widget: string}
-          - {label: 'Book Title', name: 'book_title', widget: string, hint: 'Title to be shown next to book link and generated cover.'} 
+          - label: Related
+            name: related
+            widget: relation
+            collection: files
+            value_field: "book.*.BookID"
+            search_fields: ['book.*.Title'] 
+            display_fields: ['book.*.Title']
+            file: books
       - label: Relation
         name: relation
         widget: relation
