@@ -5,7 +5,7 @@ title: Publicity
 ---
 #### Review Copies
 
-If you are requesting a review copy of a University of Virginia Press title, please submit your request either via e-mail to Emily Grandstaff at [egrandstaff@virginia.edu](mailto:egrandstaff@virginia.edu) or on your publication's letterhead. Please be sure to include the mailing address to which we should send the review copy.
+If you are requesting a review copy of a University of Virginia Press title, please submit your request via e-mail to Emily Grandstaff at [egrandstaff@virginia.edu](mailto:egrandstaff@virginia.edu). Please be sure to include the mailing address to which we should send the review copy.
 
 **Please note:**
 
