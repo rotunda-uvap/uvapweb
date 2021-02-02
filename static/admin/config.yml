@@ -100,9 +100,9 @@ collections:
         name: relation
         widget: relation
         collection: files
-        valueField: books.*.BookID
-        searchFields: [books.*.BookID] # not really used
-        displayFields: [books.*.Title]
+        valueField: books.BookID
+        searchFields: [books.BookID] # not really used
+        displayFields: [books.Title]
         file: books  
   - name: 'bios'
     label: 'Staff Bio'
