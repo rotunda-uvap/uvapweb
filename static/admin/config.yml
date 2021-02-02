@@ -275,14 +275,10 @@ collections:
         fields:
           - label: 'Books'
             name: 'books'
-            allow_add: false
             widget: 'list'
             fields:
-              - label: 'Title'
-                name: 'Title'
-                widget: 'string'
-              - label: 'BookID'
-                name: 'BookID'
-                widget: 'string'
+              - {label: "Title", name: "Title", widget: "string"}
+              - {label: "BookID", name: "BookID", widget: "string"}
+           
   
   
