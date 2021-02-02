@@ -1,5 +1,10 @@
-  {
-    "BookID": "1581",
-    "Title": "Equity and Excellence in American Higher Education"
-  }
-
+{
+  "BookID": "1581",
+  "Title": "Equity and Excellence in American Higher Education",
+  "book": [
+    {
+      "Title": "Test",
+      "BookID": "1234"
+    }
+  ]
+}
