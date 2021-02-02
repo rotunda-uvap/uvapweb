@@ -100,9 +100,9 @@ collections:
         name: relation
         widget: relation
         collection: files
-        value_field: ['BookID']
-        search_fields: ['Title']
-        display_fields: ['Title']
+        value_field: [BookID]
+        search_fields: [Title] 
+        display_fields: [Title]
         file: books
   - name: 'bios'
     label: 'Staff Bio'
