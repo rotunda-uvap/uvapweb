@@ -100,7 +100,7 @@ collections:
         name: relation
         widget: relation
         collection: files
-        value_field: "{{book.*.BookID}}"
+        value_field: "book.*.BookID"
         search_fields: ['book.*.Title'] 
         display_fields: ['book.*.Title']
         file: books
