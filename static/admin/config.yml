@@ -279,10 +279,6 @@ collections:
         name: 'books'
         file: 'content/booklist.json'
         fields:
-          - label: 'Books'
-            name: 'books'
-            widget: 'list'
-            fields:
             - {label: Title, name: Title, widget: string}
             - {label: BookID, name: BookID, widget: string}
   
