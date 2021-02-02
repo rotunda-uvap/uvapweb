@@ -279,7 +279,16 @@ collections:
         name: 'books'
         file: 'content/booklist.json'
         fields:
-            - {label: Title, name: Title, widget: string}
-            - {label: BookID, name: BookID, widget: string}
+          - label: 'Books'
+            name: 'books'
+            allow_add: false
+            widget: 'list'
+            fields:
+              - label: 'Title'
+                name: 'title'
+                widget: 'string'
+              - label: 'BookID'
+                name: 'BookID'
+                widget: 'string'
   
   
