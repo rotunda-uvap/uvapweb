@@ -28,10 +28,17 @@ collections:
       - label: 'Related Books'
         name: 'related_books'
         widget: 'list'
-        summary: '{{fields.book_id}}'
+        summary: '{{book.*.BookID}}'
+        required: false
         fields:
-          - {label: 'Book ID', name: 'book_id', widget: string}
-          - {label: 'Book Title', name: 'book_title', widget: string, hint: 'Title to be shown next to book link and generated cover.'} 
+          - label: Find Book
+            name: related
+            widget: relation
+            collection: files
+            value_field: "book.*.BookID"
+            search_fields: ['book.*.Title'] 
+            display_fields: ['book.*.Title']
+            file: books
       - label: "date"
         name: "date"
         widget: "datetime"
@@ -90,7 +97,7 @@ collections:
       - label: 'Exhibit Books'
         name: 'exhibit_books'
         widget: 'list'
-        summary: '{{fields.book_id}}'
+        summary: '{{book.*.BookID}}'
         required: false
         fields:
           - label: Find Book
@@ -178,11 +185,17 @@ collections:
       - label: 'Promotion Books'
         name: 'promo_books'
         widget: 'list'
-        summary: '{{fields.book_id}}'
+        summary: '{{book.*.BookID}}'
+        required: false
         fields:
-          - {label: 'Book ID', name: 'book_id', widget: string}
-          - {label: 'Book Title', name: 'book_title', widget: string, hint: 'Title to be shown next to book link and generated cover.'} 
-
+          - label: Find Book
+            name: related
+            widget: relation
+            collection: files
+            value_field: "book.*.BookID"
+            search_fields: ['book.*.Title'] 
+            display_fields: ['book.*.Title']
+            file: books  
   - name: 'series_info'
     identifier_field: '{{title}}'
     label: 'Series Info'
