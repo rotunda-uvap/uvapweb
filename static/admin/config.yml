@@ -285,7 +285,7 @@ collections:
             widget: 'list'
             fields:
               - label: 'Title'
-                name: 'title'
+                name: 'Title'
                 widget: 'string'
               - label: 'BookID'
                 name: 'BookID'
