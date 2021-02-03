@@ -132,10 +132,10 @@ exports.createSchemaCustomization = ({ actions }) => {
           }
         }
         allSubjects: allBooksJson {
-          distinct(field: Subject)
+          distinct(field: Subject___subjectID)
         }
         allSeries: allBooksJson {
-          distinct(field: Series)
+          distinct(field: Series___seriesID)
         }
 
        rotMain: allRotundaJson{

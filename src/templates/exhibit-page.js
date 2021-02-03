@@ -6,7 +6,7 @@ import Layout from "../components/layout"
 
 export default ({ data }) => {
     const exhibit = data.markdownRemark
-    const related_books = data.markdownRemark.frontmatter.exhibit_books
+    const related_book_group1 = data.markdownRemark.frontmatter.related_1
     const related_series = data.markdownRemark.frontmatter.related_series
     const related_staff = data.markdownRemark.frontmatter.related_staff
     const image = getImage(data.Img)
@@ -25,9 +25,9 @@ export default ({ data }) => {
             </>
         ))}
          <h6 className="py-5">Related Books:</h6>
-          {related_books && related_books.map(book => (
+          {related_book_group1 && related_book_group1.map(book => (
             <> 
-            <RelatedBook id={book.book_id} title={book.book_title}/>
+            <RelatedBook id={book.book_id}/>
             
             </>
         ))}
@@ -56,13 +56,10 @@ export const query = graphql`
         frontmatter {
             templateKey
             title
-            color
             related_series
             related_staff
-            exhibit_books {
-              book_id
-              book_title
-            }
+            bkg1_title
+            related_1
         } 
       }
     Img: file(extension: {eq: "jpg"}, relativeDirectory: {eq: $relDir}) {

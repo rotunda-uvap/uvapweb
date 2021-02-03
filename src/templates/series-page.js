@@ -54,7 +54,10 @@ export const query = graphql`
                   Title
                   Subtitle
                   BookID
-                  Series
+                  Series {
+                    name
+                    seriesID
+                  }
                   AuthorCredit
                   PublicationDate
                   DaysSincePublication
@@ -62,7 +65,7 @@ export const query = graphql`
                 }
             }
         }  
-        markdownRemark(frontmatter: {title: {eq: $id}, templateKey: {eq: "series"}}) {
+        markdownRemark(frontmatter: {seriesID: {eq: $id}, templateKey: {eq: "series"}}) {
           
                 frontmatter {
                   status
@@ -72,6 +75,7 @@ export const query = graphql`
                   editors
                   uvaeditors
                   seriestype
+                  seriesID
                 }
                 html
             

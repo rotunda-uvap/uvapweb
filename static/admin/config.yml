@@ -240,7 +240,7 @@ collections:
       - { label: 'Series Editors', name: 'editors', widget: 'string', required: false }
       - { label: 'UVaP Editor', name: 'uvaeditors', widget: 'string', required: false }
       - { name: body, label: Body, widget: markdown , required: false}
-      - { label: 'Series Slug', name: 'slug', widget: 'string', required: false, hint: 'In case need to match URL-friendly Series name' }
+      - { label: 'Series ID', name: 'seriesID', widget: 'string' }
       
   - name: "featured"
     label: "Featured Content"
