@@ -29,6 +29,7 @@ collections:
         name: related
         widget: relation
         collection: files
+        multiple: true
         value_field: "book.*.BookID"
         search_fields: ['book.*.Title'] 
         display_fields: ['book.*.Title']
