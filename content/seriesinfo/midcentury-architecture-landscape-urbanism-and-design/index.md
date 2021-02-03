@@ -5,6 +5,7 @@ title: "Midcentury: Architecture, Landscape, Urbanism, and Design"
 status: active
 seriestype: Academic Book Series
 uvaeditors: Mark Mones
+seriesID: MIDC
 ---
 Encompassing architectural, landscape, urban, interior, and other forms of design, Midcentury Modernism was an international movement that had its inception in the era immediately preceding World War II and extended well into the 1960s. It was expressed not only in important High Modernist works by Frank Lloyd Wright and Walter Gropius, and the daring futuristic constructions of Buckminster Fuller, but also, more modestly, in the new vernacular landscapes, architecture, and cityscapes of suburbia. Today we have enough distance on the quotidian works of the era to consider them of historical and cultural significance. In fact, stylistic aspects of both high-style and mass-market design of the time are frequently reiterated in contemporary architecture, and period buildings have escalated substantially in value. 
 
