@@ -11,6 +11,7 @@ export default ({ data }) => {
     const imageData = getImage(data.file)
     const isbn = book.Bindings[0].ISBN
     const GoogleB = 'https://books.google.com/books?vid=' + isbn
+    const resources = data.markdownRemark
     
  return (
    
@@ -82,6 +83,7 @@ export default ({ data }) => {
     
     <section className="py-3">
       <p className="font-black uppercase py-3 px-5 border-b-4 border-white hover:border-black">Additional Resources</p>
+      {resources && resources.id}
     </section>
     <section>
     <a href={GoogleB}><img src="/gbs_preview_sticker1.png" alt="view on google books" /></a>
@@ -140,7 +142,18 @@ export const query = graphql`
         gatsbyImageData(width: 300, layout: CONSTRAINED, placeholder: TRACED_SVG)
       }
     }
-   
+   markdownRemark(frontmatter: {templateKey: {eq: "resource"}, attached_book: {eq: $id}}) {
+    id
+    frontmatter {
+      attached_files {
+        relativePath
+      }
+      attached_links {
+        link
+        name
+      }
+    }
+   }
     
   }
 `

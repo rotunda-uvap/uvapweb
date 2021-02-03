@@ -29,6 +29,7 @@ exports.createSchemaCustomization = ({ actions }) => {
         relbook: String
         department: [String]
         related: [String]
+        attached_book: String
       }
   
       type Fields {
