@@ -28,6 +28,7 @@ exports.createSchemaCustomization = ({ actions }) => {
         date: Date @dateformat
         relbook: String
         department: [String]
+        related: [String]
       }
   
       type Fields {
