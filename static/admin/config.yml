@@ -91,7 +91,7 @@ collections:
         value_field: "{{title}}"
         multiple: true
       - label: Featured Books 
-        name: related
+        name: featured_books
         widget: relation
         collection: files
         multiple: true
