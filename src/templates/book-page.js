@@ -55,13 +55,13 @@ export default ({ data }) => {
        <section>
          <div className="py-3">{book.Series && <div><span className="text-xs uppercase pr-5">Series:</span>
           <button className="text-white text-sm bg-blue-400 rounded-md p-2">
-            <Link to={`../../series/${ book.Series }`}>{ book.Series }</Link>
+            <Link to={`../../series/${ book.Series.seriesID }`}>{ book.Series.name }</Link>
             </button></div>}
             </div>
           <div className="py-3">
             {book.Subject && <div><span className="text-xs uppercase pr-5">subject:</span>
        <button className="text-white text-sm rounded-md bg-blue-500 p-2">
-         <Link to={`../../subject/${ book.Subject }`}>{ book.Subject }</Link></button></div>}
+         <Link to={`../../subject/${ book.Subject.subjectID }`}>{ book.Subject.name }</Link></button></div>}
           </div>
       
          </section> 
@@ -125,8 +125,14 @@ export const query = graphql`
       BioNote {
         html
       }
-      Series
-      Subject
+      Series {
+        seriesID
+        name
+      }
+      Subject{
+        subjectID
+        name
+      }
       InternalSeriesVolume
     }
     file(relativePath: {eq: $imageid}) {

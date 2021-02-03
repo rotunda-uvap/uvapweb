@@ -4,22 +4,13 @@ import Layout from "../components/layout"
 
 
 export default function Series({ data }) {
-    const series = data.allBooksJson
+    const series = data.allBooksJson.edges.node
  return (
     
         <Layout>
           <section>
              <h2 className="py-10">Series</h2>
-            <div className="grid md:grid-cols-4 md:grid-4">
-            {series.distinct.map(d => (
-            <>
-           
-                <button className="text-xl py-3 px-7 hover:bg-black hover:text-white" key={d}><Link to={`../series/${ d }`}>{ d }</Link></button>
-            
-            
-            </>
-        ))}
-        </div>
+           {console.log(series)}
           </section>
          
 
@@ -34,7 +25,14 @@ export default function Series({ data }) {
 export const query = graphql`
   query {
     allBooksJson {
-        distinct(field: Series)
+      edges {
+        node {
+          Series {
+            seriesID
+            name
+          }
+        }
+      }
     }
     
   }

@@ -29,7 +29,7 @@ export default function Subjects({ data }) {
 export const query = graphql`
   query {
     allBooksJson {
-        distinct(field: Subject)
+      distinct(field: Subject___subjectID)
       }
   }
 `

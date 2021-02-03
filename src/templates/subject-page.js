@@ -11,7 +11,7 @@ const SubjectTemplate = ({ data }) => {
     <div>
 
         <Layout>
-            <h1 className="text-4xl py-3">{books.edges[0].node.Subject}</h1>
+            <h1 className="text-4xl py-3">{books.edges[0].node.Subject.name}</h1>
                     <div className="container px-5 py-5 grid md:grid-cols-5 md:gap-4">
                         {books.edges.map(edge => (
                   <>  
@@ -33,13 +33,16 @@ export default SubjectTemplate;
 
 export const query = graphql`
     query($id: String!){
-        allBooksJson(filter: {Subject: { eq: $id }}, sort: {fields: DaysSincePublication}) {
+        allBooksJson(filter: {Subject: {subjectID: { eq: $id }}}, sort: {fields: DaysSincePublication}) {
             edges {
                 node {
                   Title
                   Subtitle
                   BookID
-                  Subject
+                  Subject {
+                    subjectID
+                    name
+                  }
                   AuthorCredit
                   PublicationDate
                   DaysSincePublication

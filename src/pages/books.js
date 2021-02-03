@@ -115,16 +115,20 @@ export default function Books({ data }) {
 export const query = graphql`
   query {
     series: allBooksJson {
-      distinct(field: Series)
+      distinct(field: Series___seriesID)
   }
   subjects: allBooksJson {
-    distinct(field: Subject)
+    distinct(field: Subject___subjectID)
 }
     recent: allBooksJson(filter: {DaysSincePublication: {gt: 0, lt: 365}}, sort: {fields: DaysSincePublication}) {
       edges {
         node {
           BookID
           Title
+          Series {
+            seriesID
+            name
+          }
           Subtitle
           PublicationDate
           AuthorCredit

@@ -14,7 +14,7 @@ const SeriesTemplate = ({ data }) => {
         <Layout>
             <section>
             <div className="grid grid-cols-3 content-center">
-                <h3 className="py-3 col-span-2">{books.edges[0].node.Series} </h3>
+                <h3 className="py-3 col-span-2">{seriesinfo.frontmatter.title} </h3>
             <div className="self-center"><button className="bg-blue-200 py-1 px-4 text-black text-xs rounded-full">{seriesinfo.frontmatter.status} series</button></div>
                 </div>
             <p className="pt-5" dangerouslySetInnerHTML={{ __html: seriesinfo.html }}/>
@@ -48,7 +48,7 @@ export default SeriesTemplate;
 
 export const query = graphql`
     query($id: String!){
-        allBooksJson(filter: {Series: { eq: $id }}, sort: {fields: DaysSincePublication}) {
+        allBooksJson(filter: {Series: {seriesID: { eq: $id }}}, sort: {fields: DaysSincePublication}) {
             edges {
                 node {
                   Title

@@ -90,9 +90,9 @@ export default function InstructorPage({data}) {
 export const query = graphql`
     query  {
       series: allBooksJson {
-        distinct(field: Series)
+        distinct(field: Series___seriesID)
     }
     subjects: allBooksJson {
-      distinct(field: Subject)
+      distinct(field: Subject___subjectID)
   }
   }`

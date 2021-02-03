@@ -55,11 +55,48 @@ collections:
     path: '{{title}}/index'
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "page"}
-      - { name: path, label: Path, required: false, }
       - { name: title, label: Title }
       - { name: body, label: Body, widget: markdown }
       - { label: 'Internal Tag', name: 'int_tag', widget: 'select', options: ['authors'], required: false}  
-
+  - name: 'addl_resources'
+    identifier_field: '{{title}}'
+    label: 'Additional Resources'
+    folder: 'content/resources'
+    preview_path: '{{title}}/index'
+    create: true
+    slug: 'index'
+    media_folder: ''
+    public_folder: ''
+    path: '{{title}}/index'
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "resource"}
+      - { name: title, label: Title, hint: "Title of Book Connected to these Resources", required: true }
+      - label: Related Book
+        name: related
+        widget: relation
+        collection: files
+        value_field: "book.*.BookID"
+        search_fields: ['book.*.Title'] 
+        display_fields: ['book.*.Title']
+        file: books
+        required: true
+      - label: "Related Files"
+        name: "attached_files"
+        widget: "file"
+        required: false
+        media_library:
+          config:
+          multiple: true
+      - label: "Related Links"
+        name: "attached_links"
+        widget: "list"
+        multiple: true
+        required: false
+        summary: '{{fields.name}}'
+        fields:
+         - {label: Name, name: name, widget: string, hint: "Text to display for the link"}
+         - {label: Link, name: link, widget: string, hint: "Hyperlink to resource"}
+         
   - name: 'exhibits'
     label: 'Exhibits'
     identifier_field: '{{title}}'
