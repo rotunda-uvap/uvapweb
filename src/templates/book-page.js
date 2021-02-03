@@ -140,6 +140,7 @@ export const query = graphql`
         gatsbyImageData(width: 300, layout: CONSTRAINED, placeholder: TRACED_SVG)
       }
     }
+   
     
   }
 `

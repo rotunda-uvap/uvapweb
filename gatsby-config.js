@@ -225,5 +225,7 @@ module.exports = {
   
 
   ],
- 
+  mapping: {
+    "BooksJson.BookID" : "MarkdownRemark.frontmatter.attached_book"
+  } 
 }
