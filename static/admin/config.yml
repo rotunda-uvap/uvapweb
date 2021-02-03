@@ -101,7 +101,7 @@ collections:
         file: books
       - { label: 'Book Group One Name', name: 'bkg1_title', widget: 'string', required: false }
       - label: Book Group One
-        name: related
+        name: related_1
         widget: relation
         collection: files
         multiple: true
@@ -112,7 +112,7 @@ collections:
         required: false
       - { label: 'Book Group Two Name', name: 'bkg2_title', widget: 'string', required: false }
       - label: Book Group Two
-        name: related
+        name: related_2
         widget: relation
         collection: files
         multiple: true
@@ -123,7 +123,7 @@ collections:
         required: false
       - { label: 'Book Group Three Name', name: 'bkg3_title', widget: 'string', required: false }
       - label: Book Group Three
-        name: related
+        name: related_3
         widget: relation
         collection: files
         multiple: true
@@ -134,7 +134,7 @@ collections:
         required: false 
       - { label: 'Book Group Four Name', name: 'bkg4_title', widget: 'string', required: false }
       - label: Book Group Four
-        name: related
+        name: related_4
         widget: relation
         collection: files
         multiple: true
