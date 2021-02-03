@@ -12,10 +12,12 @@ description: Booker T. Washington, who emerged from slavery to become one of the
   which has acquired “The Booker T. Washington Papers” to create a digital
   edition.
 image: btwashington.jpg
+related:
+  - "4600"
+date: 2020-12-15
 related_books:
   - book_id: "4600"
     book_title: Schooling Jim Crow
-date: 2020-12-15
 ---
 Booker T. Washington, who emerged from slavery to become one of the leading African American intellectuals around the turn of the 20th century, had ties to Charlottesville that eventually led to a city park being named after him.
 
