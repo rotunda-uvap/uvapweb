@@ -71,8 +71,8 @@ collections:
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "resource"}
       - { name: title, label: Title, hint: "Title of Book Connected to these Resources", required: true }
-      - label: Related Book
-        name: related
+      - label: Attached Book
+        name: attached_book
         widget: relation
         collection: files
         value_field: "book.*.BookID"
