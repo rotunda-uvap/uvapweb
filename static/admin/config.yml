@@ -25,20 +25,14 @@ collections:
       - { label: 'Summary', name: 'description', widget: 'string', required: false, hint: 'Text for homepage and previews'}
       - { name: body, label: Body, widget: markdown }
       - {label: Image, name: image, widget: image, required: false}
-      - label: 'Related Books'
-        name: 'related_books'
-        widget: 'list'
-        summary: '{{book.*.BookID}}'
-        required: false
-        fields:
-          - label: Find Book
-            name: related
-            widget: relation
-            collection: files
-            value_field: "book.*.BookID"
-            search_fields: ['book.*.Title'] 
-            display_fields: ['book.*.Title']
-            file: books
+      - label: Find Book
+        name: related
+        widget: relation
+        collection: files
+        value_field: "book.*.BookID"
+        search_fields: ['book.*.Title'] 
+        display_fields: ['book.*.Title']
+        file: books
       - label: "date"
         name: "date"
         widget: "datetime"
