@@ -25,7 +25,7 @@ collections:
       - { label: 'Summary', name: 'description', widget: 'string', required: false, hint: 'Text for homepage and previews'}
       - { name: body, label: Body, widget: markdown }
       - {label: Image, name: image, widget: image, required: false}
-      - label: Find Book
+      - label: Related Book
         name: related
         widget: relation
         collection: files
@@ -34,6 +34,7 @@ collections:
         search_fields: ['book.*.Title'] 
         display_fields: ['book.*.Title']
         file: books
+        required: false
       - label: "date"
         name: "date"
         widget: "datetime"
@@ -89,21 +90,59 @@ collections:
         search_fields: ['title']
         value_field: "{{title}}"
         multiple: true
-      - label: 'Exhibit Books'
-        name: 'exhibit_books'
-        widget: 'list'
-        summary: '{{book.*.BookID}}'
+      - label: Featured Books 
+        name: related
+        widget: relation
+        collection: files
+        multiple: true
+        value_field: "book.*.BookID"
+        search_fields: ['book.*.Title'] 
+        display_fields: ['book.*.Title']
+        file: books
+      - { label: 'Book Group One Name', name: 'bkg1_title', widget: 'string', required: false }
+      - label: Book Group One
+        name: related
+        widget: relation
+        collection: files
+        multiple: true
+        value_field: "book.*.BookID"
+        search_fields: ['book.*.Title'] 
+        display_fields: ['book.*.Title']
+        file: books
         required: false
-        fields:
-          - label: Find Book
-            name: related
-            widget: relation
-            collection: files
-            value_field: "book.*.BookID"
-            search_fields: ['book.*.Title'] 
-            display_fields: ['book.*.Title']
-            file: books
-      
+      - { label: 'Book Group Two Name', name: 'bkg2_title', widget: 'string', required: false }
+      - label: Book Group Two
+        name: related
+        widget: relation
+        collection: files
+        multiple: true
+        value_field: "book.*.BookID"
+        search_fields: ['book.*.Title'] 
+        display_fields: ['book.*.Title']
+        file: books
+        required: false
+      - { label: 'Book Group Three Name', name: 'bkg3_title', widget: 'string', required: false }
+      - label: Book Group Three
+        name: related
+        widget: relation
+        collection: files
+        multiple: true
+        value_field: "book.*.BookID"
+        search_fields: ['book.*.Title'] 
+        display_fields: ['book.*.Title']
+        file: books 
+        required: false 
+      - { label: 'Book Group Four Name', name: 'bkg4_title', widget: 'string', required: false }
+      - label: Book Group Four
+        name: related
+        widget: relation
+        collection: files
+        multiple: true
+        value_field: "book.*.BookID"
+        search_fields: ['book.*.Title'] 
+        display_fields: ['book.*.Title']
+        file: books
+        required: false
   - name: 'bios'
     label: 'Staff Bio'
     identifier_field: '{{title}}'
@@ -147,20 +186,16 @@ collections:
       - { name: title, label: Title }
       - { name: rid, label: Rotunda Internal ID}
       - { name: body, label: Marketing Summary, widget: markdown }
-      - label: 'Related Books'
-        name: 'rotunda_books'
-        widget: 'list'
-        summary: '{{book.*.BookID}}'
+      - label: Related Books
+        name: related
+        widget: relation
+        collection: files
+        multiple: true
+        value_field: "book.*.BookID"
+        search_fields: ['book.*.Title'] 
+        display_fields: ['book.*.Title']
+        file: books
         required: false
-        fields:
-          - label: Find Book
-            name: related
-            widget: relation
-            collection: files
-            value_field: "book.*.BookID"
-            search_fields: ['book.*.Title'] 
-            display_fields: ['book.*.Title']
-            file: books   
   
   - name: 'promo'
     label: 'Promotion'
@@ -177,20 +212,16 @@ collections:
       - { name: title, label: Title }
       - { name: body, label: Body, widget: markdown }
       - { label: 'Summary', name: 'description', widget: 'string', required: false, hint: 'Text for homepage and previews'}
-      - label: 'Promotion Books'
-        name: 'promo_books'
-        widget: 'list'
-        summary: '{{book.*.BookID}}'
-        required: false
-        fields:
-          - label: Find Book
-            name: related
-            widget: relation
-            collection: files
-            value_field: "book.*.BookID"
-            search_fields: ['book.*.Title'] 
-            display_fields: ['book.*.Title']
-            file: books  
+      - label: Promotion Books
+        name: related
+        widget: relation
+        collection: files
+        multiple: true
+        value_field: "book.*.BookID"
+        search_fields: ['book.*.Title'] 
+        display_fields: ['book.*.Title']
+        file: books
+        required: false  
   - name: 'series_info'
     identifier_field: '{{title}}'
     label: 'Series Info'
