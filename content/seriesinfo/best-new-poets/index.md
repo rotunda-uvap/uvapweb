@@ -4,5 +4,6 @@ type: series
 title: Best New Poets
 status: active
 seriestype: Academic Book Series
+seriesID: BNP
 ---
 Description Needed
