@@ -112,8 +112,8 @@ collections:
         name: "related_series"
         widget: "relation"
         collection: "series_info"
-        search_fields: ['title', seriesID]
-        value_field: "{{title}}"
+        search_fields: ['title', 'seriesID']
+        value_field: "{{seriesID}}"
         multiple: true
       - label: "Related Staff"
         name: "related_staff"
