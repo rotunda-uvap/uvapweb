@@ -165,7 +165,8 @@ exports.createSchemaCustomization = ({ actions }) => {
             component: path.resolve(`./src/templates/book-page.js`),
             context: {
               id: node.id,
-              imageid: node.BookID + ".jpg"
+              imageid: node.BookID + ".jpg",
+              bid: node.BookID
             },
           })
          

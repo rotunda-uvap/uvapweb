@@ -16,7 +16,6 @@ export default ({ data }) => {
  return (
    
    <Layout>
-    
 
     <section className="grid md:grid-cols-3 md:gap-10 py-3" >
       
@@ -81,10 +80,21 @@ export default ({ data }) => {
         <BookHorizontalTabs summary={book.MainDescription.html} reviews={book.Reviews} bio={book.BioNote.html}/>
     </section>
     
+    {resources && 
     <section className="py-3">
       <p className="font-black uppercase py-3 px-5 border-b-4 border-white hover:border-black">Additional Resources</p>
-      {resources && resources.id}
-    </section>
+      {resources.frontmatter.attached_links && <ul> {resources.frontmatter.attached_links.map(edge => (
+        
+        <li className="p-2">
+        <a href={edge.link} target="_blank">{edge.name}</a>
+        </li>
+        
+      ))}
+      </ul>
+      }
+      
+    </section>}
+
     <section>
     <a href={GoogleB}><img src="/gbs_preview_sticker1.png" alt="view on google books" /></a>
     </section>
@@ -100,7 +110,7 @@ export default ({ data }) => {
 
 
 export const query = graphql`
-  query($id: String!, $imageid: String) {
+  query($id: String!, $imageid: String, $bid: String!) {
     booksJson(id: { eq: $id }) {
       id
       BookID
@@ -142,18 +152,16 @@ export const query = graphql`
         gatsbyImageData(width: 300, layout: CONSTRAINED, placeholder: TRACED_SVG)
       }
     }
-   markdownRemark(frontmatter: {templateKey: {eq: "resource"}, attached_book: {eq: $id}}) {
-    id
-    frontmatter {
-      attached_files {
-        relativePath
-      }
-      attached_links {
-        link
-        name
+    markdownRemark(frontmatter: {templateKey: {eq: "resource"}, attached_book: {eq: $bid}}) {
+      id
+      frontmatter {
+        attached_links {
+          link
+          name
+        }
+        attached_book
       }
     }
-   }
     
   }
 `

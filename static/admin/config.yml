@@ -80,13 +80,6 @@ collections:
         display_fields: ['book.*.Title']
         file: books
         required: true
-      - label: "Related Files"
-        name: "attached_files"
-        widget: "file"
-        required: false
-        media_library:
-          config:
-          multiple: true
       - label: "Related Links"
         name: "attached_links"
         widget: "list"
@@ -110,6 +103,9 @@ collections:
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "exhibit"}
       - { name: title, label: Title }
+      - { name: textbox, label: Text Box, widget: string, hint: 'Box for promo text, can be on colored background' }
+      - { name: bgcolor, label: Background Box Color, widget: "string", hint: 'Go to https://tailwindcss.com/docs/customizing-colors#overview and choose color, example: bg-blue-400', required: false }
+      - { name: txtcolor, label: Text Box Text Color, widget: "string", hint: 'Go to https://tailwindcss.com/docs/customizing-colors#overview and choose color, example: bg-blue-400 or text-white', required: true, default: text-black }
       - {label: "Featured", name: "featured", widget: "boolean", default: false, hint: "Will this be featured on Homepage? Note: Only 1 can."}
       - { label: Exhibit Logo, name: exhibit_logo, widget: image}
       - { name: body, label: Body, widget: markdown }
