@@ -1,6 +1,7 @@
 ---
 related_4:
   - "5478"
+  - "5626"
 color: "#0d2554"
 exhibit_books:
   - book_id: "5478"
@@ -41,12 +42,15 @@ featured_books:
 bkg1_title: Collection 1
 related_1:
   - "5498"
+  - "4348"
 bkg2_title: Collection 2
 related_2:
   - "5417"
+  - "4348"
 bkg3_title: Collection 3
 related_3:
   - "5336"
+  - "5477"
 bkg4_title: Collection 4
 exhibit_series: ""
 ---
