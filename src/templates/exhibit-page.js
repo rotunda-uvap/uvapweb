@@ -18,6 +18,7 @@ export default ({ data }) => {
         <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1">
           <p className="py-5"
           dangerouslySetInnerHTML={{ __html:exhibit.html }}/>
+          
           <h6 className="py-5">Meet our Editors:</h6>
         {related_staff && related_staff.map(staff => (
             <> 
