@@ -36,7 +36,7 @@ collections:
         file: books
         required: false
       - label: Related Series
-        name: related
+        name: related_series
         widget: relation
         collection: files
         multiple: true
