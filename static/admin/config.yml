@@ -108,13 +108,6 @@ collections:
       - {label: "Featured", name: "featured", widget: "boolean", default: false, hint: "Will this be featured on Homepage? Note: Only 1 can."}
       - { label: Exhibit Logo, name: exhibit_logo, widget: image}
       - { name: body, label: Body, widget: markdown }
-      - label: "Related Series"
-        name: "related_series"
-        widget: "relation"
-        collection: "series_info"
-        search_fields: ['title', 'seriesID']
-        value_field: "{{seriesID}}"
-        multiple: true
       - label: "Related Staff"
         name: "related_staff"
         widget: "relation"

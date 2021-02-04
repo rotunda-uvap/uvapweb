@@ -69,12 +69,7 @@ export default ({ data }) => {
             </>
         ))}
          </section>}
-        <h6 className="py-5">Related Series:</h6>
-        {related_series && related_series.map(series => (
-            <> 
-            <div>{series}</div>
-            </>
-        ))}
+       
         
           </div>
         
@@ -94,7 +89,6 @@ export const query = graphql`
         frontmatter {
             templateKey
             title
-            related_series
             related_staff
             featured_books
             bkg1_title
