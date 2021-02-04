@@ -3,6 +3,7 @@ import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import BookCard from "../components/BookCard"
 import AwardWinners from "../components/AwardWinners"
+import SeriesTemplate from "../templates/series-page"
 
 export default function Books({ data }) {
   const rec = data.recent
@@ -40,13 +41,11 @@ export default function Books({ data }) {
     <div className="flex flex-col md:w-2/3 md:pl-12">
       <h2 className="title-font font-medium text-gray-800 tracking-widest text-sm mb-3">SERIES CATEGORIES</h2>
       <nav className="flex flex-wrap list-none -mb-1">
-      {sers.distinct.map(serie => (
-            <>
-           
-           <li className="lg:w-1/3 mb-1 w-1/2" key={serie}>
-          <Link to={`../series/${ serie }`} className="text-gray-600 hover:text-gray-800">{ serie }</Link>
-        </li>
-            
+      {sers.edges.map(edge => (
+            <>           
+           <li className="lg:w-1/3 mb-1 w-1/2" key={edge.node.seriesID}>
+          <Link to={`../series/${ edge.node.seriesID }`} className="text-gray-600 hover:text-gray-800">{ edge.node.seriesName }</Link>
+        </li>            
             </>
         ))}
         
@@ -70,11 +69,11 @@ export default function Books({ data }) {
     <div className="flex flex-col md:w-2/3 md:pl-12">
       <h2 className="title-font font-medium text-gray-800 tracking-widest text-sm mb-3">CATEGORIES</h2>
       <nav className="flex flex-wrap list-none -mb-1">
-      {subs.distinct.map(sub => (
+      {subs.edges.map(edge => (
             <>
            
-           <li className="lg:w-1/3 mb-1 w-1/2" key={sub}>
-          <Link to={`../../subject/${ sub }`} className="text-gray-600 hover:text-gray-800">{ sub }</Link>
+           <li className="lg:w-1/3 mb-1 w-1/2" key={edge.node.subjectID}>
+          <Link to={`../../subject/${ edge.node.subjectID }`} className="text-gray-600 hover:text-gray-800">{ edge.node.subjectName }</Link>
         </li>
             
             </>
@@ -114,12 +113,25 @@ export default function Books({ data }) {
 
 export const query = graphql`
   query {
-    series: allBooksJson {
-      distinct(field: Series___seriesID)
+    series: allSeriesJson {
+      edges {
+        node {
+            seriesID
+            seriesName
+        }
+      }
+    }
+  subjects: allSubjectsJson {
+    edges {
+      node {
+          subjectID
+          subjectName
+        
+      }
+    }
   }
-  subjects: allBooksJson {
-    distinct(field: Subject___subjectID)
-}
+
+
     recent: allBooksJson(filter: {DaysSincePublication: {gt: 0, lt: 365}}, sort: {fields: DaysSincePublication}) {
       edges {
         node {

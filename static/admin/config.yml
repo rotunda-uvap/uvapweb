@@ -35,6 +35,16 @@ collections:
         display_fields: ['book.*.Title']
         file: books
         required: false
+      - label: Related Series
+        name: related
+        widget: relation
+        collection: files
+        multiple: true
+        value_field: "series.*.seriesID"
+        search_fields: ['series.*.SeriesName'] 
+        display_fields: ['series.*.SeriesName']
+        file: books
+        required: false 
       - label: "date"
         name: "date"
         widget: "datetime"
@@ -361,5 +371,19 @@ collections:
               - {label: "BookID", name: "BookID", widget: "string"}
               - {label: "Title", name: "Title", widget: "string"}
            
-  
+  -   name: files
+      label: Files
+      label_singular: 'File'
+      files:
+      - label: 'SeriesList'
+        name: 'series'
+        file: 'content/series.json'
+        extension: "json"
+        fields:
+          - label: 'series'
+            name: 'series'
+            widget: 'list'
+            fields:
+              - {label: "Series ID", name: "seriesID", widget: "string"}
+              - {label: "Series Name", name: "seriesName", widget: "string"}
   

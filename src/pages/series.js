@@ -4,36 +4,28 @@ import Layout from "../components/layout"
 
 
 export default function Series({ data }) {
-    const series = data.allBooksJson.edges.node
- return (
-    
+    const series = data.allSeriesJson
+ return (    
         <Layout>
-          <section>
-             <h2 className="py-10">Series</h2>
-           {console.log(series)}
-          </section>
-         
-
-       
+         {series.edges.map(edge => (
+            <>           
+           <li className="lg:w-1/3 mb-1 w-1/2" >
+          <Link to={`../series/${ edge.node.seriesID }`} className="text-gray-600 hover:text-gray-800">{ edge.node.seriesName }</Link>
+        </li>            
+            </>
+        ))}       
         </Layout>
-
  )
 }
-
-
-
 export const query = graphql`
   query {
-    allBooksJson {
+    allSeriesJson {
       edges {
         node {
-          Series {
             seriesID
-            name
-          }
+            seriesName
         }
       }
     }
-    
   }
 `

@@ -4,20 +4,21 @@ import Layout from "../components/layout"
 
 
 export default function Subjects({ data }) {
-    const subs = data.allBooksJson
+  const subs = data.allSubjectsJson
  return (
     
         <Layout>
           <h2 className="py-10">Subjects</h2>
           <div className="grid md:grid-cols-4 md:grid-4">
-            {subs.distinct.map(d => (
-            <>
-           
-           <button className="text-xl py-3 px-7 hover:bg-black hover:text-white" key={d}><Link to={`../../subject/${ d }`}>{ d }</Link></button>
             
-            
+          {subs.edges.map(edge => (
+            <>           
+           <li className="lg:w-1/3 mb-1 w-1/2" >
+          <Link to={`../subject/${ edge.node.subjectID }`} className="text-gray-600 hover:text-gray-800">{ edge.node.subjectName }</Link>
+        </li>            
             </>
-        ))}
+        ))}       
+          
         </div>
         </Layout>
 
@@ -28,8 +29,14 @@ export default function Subjects({ data }) {
 
 export const query = graphql`
   query {
-    allBooksJson {
-      distinct(field: Subject___subjectID)
+    allSubjectsJson {
+      edges {
+        node {
+            subjectID
+            subjectName
+          
+        }
       }
+    }
   }
 `
