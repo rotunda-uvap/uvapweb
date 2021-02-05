@@ -126,7 +126,7 @@ collections:
       - { name: bgcolor, label: Body Background Color, widget: "string", hint: 'Go to https://tailwindcss.com/docs/customizing-colors#overview and choose color, example: bg-blue-400', required: false }
       - { name: txtcolor, label: Body Text Color, widget: "string", hint: 'Go to https://tailwindcss.com/docs/customizing-colors#overview and choose color, example: bg-blue-400 or text-white',  default: text-black }
       - {label: "Featured", name: "featured", widget: "boolean", default: false, hint: "Will this be featured on Homepage? Note: Only 1 can."}
-      - { label: Exhibit Logo, name: exhibit_logo, widget: image}
+      - { label: Exhibit Logo, name: exhibit_logo, widget: image, required: false}
       - { name: body, label: Body, widget: markdown }
       - label: Related Series
         name: related_series
@@ -145,6 +145,7 @@ collections:
         search_fields: ['title']
         value_field: "{{title}}"
         multiple: true
+        required: false
       - label: Featured Books 
         name: featured_books
         widget: relation
@@ -154,6 +155,7 @@ collections:
         search_fields: ['book.*.Title'] 
         display_fields: ['book.*.Title']
         file: books
+        required: false
       - label: Book Clusters
         name: book_clusters
         widget: 'list'
