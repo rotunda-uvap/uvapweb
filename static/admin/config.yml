@@ -25,7 +25,7 @@ collections:
       - { label: 'Summary', name: 'description', widget: 'string', required: false, hint: 'Text for homepage and previews'}
       - { name: body, label: Body, widget: markdown }
       - {label: Image, name: image, widget: image, required: false}
-      - label: Related Book
+      - label: Related Book(s)
         name: related_book
         widget: relation
         collection: files
@@ -81,6 +81,16 @@ collections:
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "resource"}
       - { name: title, label: Title, hint: "Title of Book Connected to these Resources", required: true }
+      - label: Related Book(s)
+        name: related_book
+        widget: relation
+        collection: files
+        multiple: true
+        value_field: "book.*.id"
+        search_fields: ['book.*.Title'] 
+        display_fields: ['book.*.Title']
+        file: books
+        required: false
       - label: Attached Book
         name: attached_book
         widget: relation
@@ -144,6 +154,22 @@ collections:
         search_fields: ['book.*.Title'] 
         display_fields: ['book.*.Title']
         file: books
+      - label: Book Clusters
+        name: book_clusters
+        widget: 'list'
+        allow_add: true
+        fields:
+          - { label: Cluster Title, widget: string, name: cluster_title }
+          - label: Related Book(s)
+            name: related_book
+            widget: relation
+            collection: files
+            multiple: true
+            value_field: "book.*.id"
+            search_fields: ['book.*.Title'] 
+            display_fields: ['book.*.Title']
+            file: books
+            required: false
       - { label: 'Book Group One Name', name: 'bkg1_title', widget: 'string', required: false }
       - label: Book Group One
         name: related_1
