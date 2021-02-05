@@ -224,5 +224,8 @@ module.exports = {
   }, 
   
 
-  ]
+  ],
+  mapping: {
+    "MarkdownRemark.frontmatter.related_series" : "SeriesJson"
+  } 
 }

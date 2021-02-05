@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { Link, graphql } from "gatsby"
 import RelatedBook from "../components/RelatedBook"
 import Layout from "../components/layout"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
@@ -7,6 +7,7 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image"
 export default ({ data }) => {
     const news = data.markdownRemark
     const related_books = data.markdownRemark.frontmatter.related_books
+    const related_series = data.markdownRemark.frontmatter.related_series
     const image = getImage(data.Img)
     
  return (
@@ -26,6 +27,16 @@ export default ({ data }) => {
             {related_books && related_books.map(book => (
             <> 
             <RelatedBook id={book.book_id} title={book.book_title}/>
+            </>
+        ))}
+        </div>
+          </section>
+          <section>
+          <div className="grid md:grid-cols-5 md:gap-2">
+            
+            {related_series && related_series.map(series => (
+            <> 
+            <h6 className="py-3"><Link to={`../../series/${ series.id }`}>{series.seriesName}</Link></h6>
             </>
         ))}
         </div>
@@ -52,6 +63,10 @@ export const query = graphql`
             related_books {
               book_id
               book_title
+            }
+            related_series {
+              id
+              seriesName
             }
           }
     }

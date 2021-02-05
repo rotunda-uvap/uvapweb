@@ -10,7 +10,7 @@ export default function Series({ data }) {
          {series.edges.map(edge => (
             <>           
            <li className="lg:w-1/3 mb-1 w-1/2" >
-          <Link to={`../series/${ edge.node.seriesID }`} className="text-gray-600 hover:text-gray-800">{ edge.node.seriesName }</Link>
+          <Link to={`../series/${ edge.node.id }`} className="text-gray-600 hover:text-gray-800">{ edge.node.seriesName }</Link>
         </li>            
             </>
         ))}       
@@ -22,7 +22,7 @@ export const query = graphql`
     allSeriesJson {
       edges {
         node {
-            seriesID
+            id
             seriesName
         }
       }

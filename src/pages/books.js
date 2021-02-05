@@ -43,8 +43,8 @@ export default function Books({ data }) {
       <nav className="flex flex-wrap list-none -mb-1">
       {sers.edges.map(edge => (
             <>           
-           <li className="lg:w-1/3 mb-1 w-1/2" key={edge.node.seriesID}>
-          <Link to={`../series/${ edge.node.seriesID }`} className="text-gray-600 hover:text-gray-800">{ edge.node.seriesName }</Link>
+           <li className="lg:w-1/3 mb-1 w-1/2" key={edge.node.id}>
+          <Link to={`../series/${ edge.node.id }`} className="text-gray-600 hover:text-gray-800">{ edge.node.seriesName }</Link>
         </li>            
             </>
         ))}
@@ -116,7 +116,7 @@ export const query = graphql`
     series: allSeriesJson {
       edges {
         node {
-            seriesID
+            id
             seriesName
         }
       }

@@ -1,210 +1,210 @@
 [
   {
-    "seriesID": "AND",
+    "id": "AND",
     "seriesName": "A Nation Divided: Studies in the Civil War Era"
   },
   {
-    "seriesID": "BNP",
+    "id": "BNP",
     "seriesName": "Best New Poets"
   },
   {
-    "seriesID": "BUS",
+    "id": "BUS",
     "seriesName": "Buildings of the United States"
   },
   {
-    "seriesID": "CAP",
+    "id": "CAP",
     "seriesName": "Center Books"
   },
   {
-    "seriesID": "CARAF",
+    "id": "CARAF",
     "seriesName": "CARAF Books: Caribbean and African Literature Translated from French"
   },
   {
-    "seriesID": "CD",
+    "id": "CD",
     "seriesName": "Constitutionalism and Democracy"
   },
   {
-    "seriesID": "CFFC",
+    "id": "CFFC",
     "seriesName": "Cultural Frames, Framing Culture"
   },
   {
-    "seriesID": "CGWIS",
+    "id": "CGWIS",
     "seriesName": "Carter G. Woodson Institute Series"
   },
   {
-    "seriesID": "CSDES",
+    "id": "CSDES",
     "seriesName": "Cultural Studies of Delaware and the Eastern Shore"
   },
   {
-    "seriesID": "CSM",
+    "id": "CSM",
     "seriesName": "Colonial Society of Massachusetts"
   },
   {
-    "seriesID": "DBS",
+    "id": "DBS",
     "seriesName": "Darden Business Series"
   },
   {
-    "seriesID": "EAH",
+    "id": "EAH",
     "seriesName": "Early American Histories"
   },
   {
-    "seriesID": "EMF",
+    "id": "EMF",
     "seriesName": "Early Modern Feminisms"
   },
   {
-    "seriesID": "EMX",
+    "id": "EMX",
     "seriesName": "Early Modern Exchange"
   },
   {
-    "seriesID": "ERP",
+    "id": "ERP",
     "seriesName": "Eleanor Roosevelt Papers"
   },
   {
-    "seriesID": "FIPPT",
+    "id": "FIPPT",
     "seriesName": "Feminist Issues: Practice, Politics, Theory"
   },
   {
-    "seriesID": "GGL",
+    "id": "GGL",
     "seriesName": "Gay Hart Gaines Distinguished Lectures"
   },
   {
-    "seriesID": "GWB",
+    "id": "GWB",
     "seriesName": "George Washington BookShelf"
   },
   {
-    "seriesID": "JA",
+    "id": "JA",
     "seriesName": "Jeffersonian America"
   },
   {
-    "seriesID": "JF",
+    "id": "JF",
     "seriesName": "Jamestown Essays on Representation"
   },
   {
-    "seriesID": "KDB",
+    "id": "KDB",
     "seriesName": "Knowledge: Disciplinarity and Beyond"
   },
   {
-    "seriesID": "KL",
+    "id": "KL",
     "seriesName": "Kapnick Lectures"
   },
   {
-    "seriesID": "LAAB",
+    "id": "LAAB",
     "seriesName": "Louisiana Artists Biography Series"
   },
   {
-    "seriesID": "MCSP",
+    "id": "MCSP",
     "seriesName": "Miller Center Studies on the Presidency"
   },
   {
-    "seriesID": "MIDC",
+    "id": "MIDC",
     "seriesName": "Midcentury: Architecture, Landscape, Urbanism, and Design"
   },
   {
-    "seriesID": "MNS",
+    "id": "MNS",
     "seriesName": "Minds of the New South"
   },
   {
-    "seriesID": "NWS",
+    "id": "NWS",
     "seriesName": "New World Studies"
   },
   {
-    "seriesID": "PAL",
+    "id": "PAL",
     "seriesName": "The Papers of Abraham Lincoln"
   },
   {
-    "seriesID": "PBK",
+    "id": "PBK",
     "seriesName": "The Malcolm Lester Phi Beta Kappa Lectures on Liberal Arts and Public Life"
   },
   {
-    "seriesID": "PBL",
+    "id": "PBL",
     "seriesName": "Page-Barbour Lectures"
   },
   {
-    "seriesID": "PBSH",
+    "id": "PBSH",
     "seriesName": "Peculiar Bodies: Stories and Histories"
   },
   {
-    "seriesID": "PGW",
+    "id": "PGW",
     "seriesName": "Papers of George Washington"
   },
   {
-    "seriesID": "PJJ",
+    "id": "PJJ",
     "seriesName": "Selected Papers of John Jay"
   },
   {
-    "seriesID": "PJM",
+    "id": "PJM",
     "seriesName": "Papers of James Madison"
   },
   {
-    "seriesID": "RA",
+    "id": "RA",
     "seriesName": "The Revolutionary Age"
   },
   {
-    "seriesID": "REP",
+    "id": "REP",
     "seriesName": "Race, Ethnicity, and Politics"
   },
   {
-    "seriesID": "RL",
+    "id": "RL",
     "seriesName": "Richard Lectures"
   },
   {
-    "seriesID": "RMLS",
+    "id": "RMLS",
     "seriesName": "Richard E. Myers Lectures"
   },
   {
-    "seriesID": "RSAH",
+    "id": "RSAH",
     "seriesName": "Reconsiderations in Southern African History"
   },
   {
-    "seriesID": "SAHCG",
+    "id": "SAHCG",
     "seriesName": "SAH/BUS City Guide"
   },
   {
-    "seriesID": "SEMGH",
+    "id": "SEMGH",
     "seriesName": "Studies in Early Modern German History"
   },
   {
-    "seriesID": "SPS",
+    "id": "SPS",
     "seriesName": "Studies in Pure Sociology"
   },
   {
-    "seriesID": "SRC",
+    "id": "SRC",
     "seriesName": "Studies in Religion and Culture"
   },
   {
-    "seriesID": "STS",
+    "id": "STS",
     "seriesName": "Southern Texts Society"
   },
   {
-    "seriesID": "TASS",
+    "id": "TASS",
     "seriesName": "The American South Series"
   },
   {
-    "seriesID": "TJFS",
+    "id": "TJFS",
     "seriesName": "Thomas Jefferson Foundation Distinguished Lecture Series"
   },
   {
-    "seriesID": "TTTB",
+    "id": "TTTB",
     "seriesName": "Traditions and Transformations in Tibetan Buddhism"
   },
   {
-    "seriesID": "TVB",
+    "id": "TVB",
     "seriesName": "The Virginia Bookshelf"
   },
   {
-    "seriesID": "USCHS",
+    "id": "USCHS",
     "seriesName": "United States Capitol Historical Society"
   },
   {
-    "seriesID": "USN",
+    "id": "USN",
     "seriesName": "Under the Sign of Nature: Explorations in Ecocriticism"
   },
   {
-    "seriesID": "VLCS",
+    "id": "VLCS",
     "seriesName": "Victorian Literature and Culture Series"
   },
   {
-    "seriesID": "WEA",
+    "id": "WEA",
     "seriesName": "Writing the Early Americas"
   }
 ]
