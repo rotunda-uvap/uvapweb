@@ -376,6 +376,10 @@ collections:
         extension: "json"
         allow_add: true
         fields:
+          - label: 'Series'
+            name: 'series'
+            widget: 'list'
+            fields:
               - {label: "Series ID", name: "seriesID", widget: "string"}
               - {label: "Series Name", name: "seriesName", widget: "string"}
        
