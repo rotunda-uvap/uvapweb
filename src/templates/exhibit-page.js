@@ -6,7 +6,7 @@ import Layout from "../components/layout"
 
 export default ({ data }) => {
     const exhibit = data.markdownRemark
-    const related_book_group1 = data.markdownRemark.frontmatter.related_1
+    const book_clusters = data.markdownRemark.frontmatter.book_clusters
     const related_series = data.markdownRemark.frontmatter.related_series
     const related_staff = data.markdownRemark.frontmatter.related_staff
     const bgcolor = exhibit.frontmatter.bgcolor
@@ -45,48 +45,22 @@ export default ({ data }) => {
         }
           </section>
          
-         {exhibit.frontmatter.bkg1_title &&
-         <section>
-         <h6 className="py-5">{exhibit.frontmatter.bkg1_title}</h6>
-          {related_book_group1 && related_book_group1.map(book => (
-            <> 
-            <RelatedBook id={book}/>
-            
-            </>
-        ))}
-         </section>}
-
-         {exhibit.frontmatter.bkg2_title &&
-         <section>
-         <h6 className="py-5">{exhibit.frontmatter.bkg2_title}</h6>
-          {data.markdownRemark.frontmatter.related_2 && data.markdownRemark.frontmatter.related_2.map(book => (
-            <> 
-            <RelatedBook id={book}/>
-            
-            </>
-        ))}
-         </section>}
-         {exhibit.frontmatter.bkg3_title &&
-         <section>
-         <h6 className="py-5">{exhibit.frontmatter.bkg3_title}</h6>
-          {data.markdownRemark.frontmatter.related_3 && data.markdownRemark.frontmatter.related_3.map(book => (
-            <> 
-            <RelatedBook id={book}/>
-            
-            </>
-        ))}
-         </section>}
+         {book_clusters &&
+         <>
+           {book_clusters.map(cluster => (
+             <>
+             <h6 className="py-5">{cluster.cluster_title}</h6>
+             {cluster.related_book.map(book => (
+              <RelatedBook id={book}/>
+          ))}
+          </>
+           ))}
+         </>
+}
          
-         {exhibit.frontmatter.bkg4_title &&
-         <section>
-         <h6 className="py-5">{exhibit.frontmatter.bkg4_title}</h6>
-          {data.markdownRemark.frontmatter.related_4 && data.markdownRemark.frontmatter.related_4.map(book => (
-            <> 
-            <RelatedBook id={book}/>
-            
-            </>
-        ))}
-         </section>}
+      
+         
+        
        
         
           </div>
@@ -106,16 +80,12 @@ export const query = graphql`
         id
         frontmatter {
             templateKey
+            book_clusters {
+              cluster_title
+              related_book
+            }
             title
             featured_books
-            bkg1_title
-            bkg2_title
-            bkg3_title
-            bkg4_title
-            related_1
-            related_2
-            related_3
-            related_4
             bgcolor
             txtcolor
             related_series {
