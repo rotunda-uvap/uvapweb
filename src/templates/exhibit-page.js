@@ -51,7 +51,7 @@ export default ({ data }) => {
              <>
              <h6 className="py-5">{cluster.cluster_title}</h6>
              {cluster.related_book.map(book => (
-              <RelatedBook id={book}/>
+              <RelatedBook id={book.id} title={book.title}/>
           ))}
           </>
            ))}

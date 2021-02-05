@@ -6,7 +6,7 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 export default ({ data }) => {
     const news = data.markdownRemark
-    const related_books = data.markdownRemark.frontmatter.related_books
+    const related_books = data.markdownRemark.frontmatter.related_book
     const related_series = data.markdownRemark.frontmatter.related_series
     const image = getImage(data.Img)
     
@@ -26,7 +26,7 @@ export default ({ data }) => {
             
             {related_books && related_books.map(book => (
             <> 
-            <RelatedBook id={book.book_id} title={book.book_title}/>
+            <RelatedBook id={book.id} title={book.Title}/>
             </>
         ))}
         </div>
@@ -60,9 +60,9 @@ export const query = graphql`
             title
             type
             date(formatString: "YYYY-MM-DD")
-            related_books {
-              book_id
-              book_title
+            related_book {
+              id
+              Title
             }
             related_series {
               id
