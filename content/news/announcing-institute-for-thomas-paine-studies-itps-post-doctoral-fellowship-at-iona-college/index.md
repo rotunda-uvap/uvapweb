@@ -10,6 +10,8 @@ description: Thanks to the generous support of the Robert David Lion Gardiner
   residential fellowship, in any area of American studies from 1700 to 1900, at
   Iona College in New Rochelle, New York.
 image: logos.jpg
+related_series:
+  - EAH
 date: 2020-04-27
 ---
 Thanks to the generous support of the Robert David Lion Gardiner Foundation, the Institute for Thomas Paine Studies (ITPS) and the University of Virginia (UVA) Press are collaborating to launch a two-year post-doctoral residential fellowship, in any area of American studies from 1700 to 1900, at Iona College in New Rochelle, New York. 
