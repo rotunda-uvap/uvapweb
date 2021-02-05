@@ -1,4 +1,5 @@
-[
+{
+  "series": [
   {
     "seriesID": "AND",
     "seriesName": "A Nation Divided: Studies in the Civil War Era"
@@ -208,3 +209,4 @@
     "seriesName": "Writing the Early Americas"
   }
 ]
+}
