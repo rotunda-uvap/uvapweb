@@ -30,7 +30,7 @@ collections:
         widget: relation
         collection: files
         multiple: true
-        value_field: "book.*.BookID"
+        value_field: "book.*.id"
         search_fields: ['book.*.Title'] 
         display_fields: ['book.*.Title']
         file: books
@@ -85,7 +85,7 @@ collections:
         name: attached_book
         widget: relation
         collection: files
-        value_field: "book.*.BookID"
+        value_field: "book.*.id"
         search_fields: ['book.*.Title'] 
         display_fields: ['book.*.Title']
         file: books
@@ -140,7 +140,7 @@ collections:
         widget: relation
         collection: files
         multiple: true
-        value_field: "book.*.BookID"
+        value_field: "book.*.id"
         search_fields: ['book.*.Title'] 
         display_fields: ['book.*.Title']
         file: books
@@ -150,7 +150,7 @@ collections:
         widget: relation
         collection: files
         multiple: true
-        value_field: "book.*.BookID"
+        value_field: "book.*.id"
         search_fields: ['book.*.Title'] 
         display_fields: ['book.*.Title']
         file: books
@@ -161,7 +161,7 @@ collections:
         widget: relation
         collection: files
         multiple: true
-        value_field: "book.*.BookID"
+        value_field: "book.*.id"
         search_fields: ['book.*.Title'] 
         display_fields: ['book.*.Title']
         file: books
@@ -172,7 +172,7 @@ collections:
         widget: relation
         collection: files
         multiple: true
-        value_field: "book.*.BookID"
+        value_field: "book.*.id"
         search_fields: ['book.*.Title'] 
         display_fields: ['book.*.Title']
         file: books 
@@ -183,7 +183,7 @@ collections:
         widget: relation
         collection: files
         multiple: true
-        value_field: "book.*.BookID"
+        value_field: "book.*.id"
         search_fields: ['book.*.Title'] 
         display_fields: ['book.*.Title']
         file: books
@@ -239,7 +239,7 @@ collections:
         widget: relation
         collection: files
         multiple: true
-        value_field: "book.*.BookID"
+        value_field: "book.*.id"
         search_fields: ['book.*.Title'] 
         display_fields: ['book.*.Title']
         file: books
@@ -265,7 +265,7 @@ collections:
         widget: relation
         collection: files
         multiple: true
-        value_field: "book.*.BookID"
+        value_field: "book.*.id"
         search_fields: ['book.*.Title'] 
         display_fields: ['book.*.Title']
         file: books
@@ -357,7 +357,7 @@ collections:
           - { label: "Template Key", name: "templateKey", widget: "hidden", default: "homepage-promotion"}
           - { label: "Title", name: "title", widget: "string", hint: "This field needs to exist to show on the list of posts"}
           - { label: 'related book id', name: 'relbook', widget: 'string', required: false, hint: "For multiple, separate book ids by commas with no spaces. Eg. 1234,4567"}
-          - { label: Image, name: image, widget: image, required: false, hint: "Use BookID if cover, use this if custom image"}
+          - { label: Image, name: image, widget: image, required: false, hint: "Use id if cover, use this if custom image"}
           - { name: body, label: Body, widget: markdown }
           - { name: body1, label: Headline, widget: markdown, hint: "Optional: Larger Text" , required: false}
           - { name: body2, label: Body, widget: markdown, hint: "Optional: Smaller/Secondary text", required: false}
@@ -374,7 +374,7 @@ collections:
             name: 'book'
             widget: 'list'
             fields:
-              - {label: "BookID", name: "BookID", widget: "string"}
+              - {label: "id", name: "id", widget: "string"}
               - {label: "Title", name: "Title", widget: "string"}
       - label: 'SeriesList'
         name: 'series'
