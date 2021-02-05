@@ -8,7 +8,7 @@ export default ({ data }) => {
     const exhibit = data.markdownRemark
     const related_book_group1 = data.markdownRemark.frontmatter.related_1
     const related_series = data.markdownRemark.frontmatter.related_series
-    // const related_staff = data.markdownRemark.frontmatter.related_staff
+    const related_staff = data.markdownRemark.frontmatter.related_staff
     const bgcolor = exhibit.frontmatter.bgcolor
     const txtcolor = exhibit.frontmatter.txtcolor
     const image = getImage(data.Img)
@@ -21,13 +21,15 @@ export default ({ data }) => {
           <p className={`${bgcolor} ${txtcolor} py-5`}
           dangerouslySetInnerHTML={{ __html:exhibit.html }}/>
 
-         {/*  <h6 className="py-5">Meet our Editors:</h6>
+          <h6 className="py-5">Meet our Editors:</h6>
         {related_staff && related_staff.map(staff => (
             <> 
-            <Link to={'../../staff/' + staff.replace(" ", "-").toLowerCase()}> <div>{staff}</div></Link>
+            <Link to={'../../staff/' + staff.frontmatter.title.replace(" ", "-").toLowerCase()}> <div>{staff.frontmatter.title}</div></Link>
+            <p className="py-2 text-light text-xs"
+          dangerouslySetInnerHTML={{ __html:staff.html }}/>
             </>
         ))}
-          */}
+          
          <section>
        
           {related_series && 
@@ -119,6 +121,12 @@ export const query = graphql`
             related_series {
               id
               seriesName
+            }
+            related_staff {
+              frontmatter {
+                title
+              }
+              html
             }
         } 
       }

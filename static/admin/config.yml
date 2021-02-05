@@ -26,7 +26,7 @@ collections:
       - { name: body, label: Body, widget: markdown }
       - {label: Image, name: image, widget: image, required: false}
       - label: Related Book
-        name: related
+        name: related_book
         widget: relation
         collection: files
         multiple: true
