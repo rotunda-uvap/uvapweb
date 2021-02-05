@@ -41,8 +41,8 @@ collections:
         collection: files
         multiple: true
         value_field: "series.*.seriesID"
-        search_fields: ['series.*.SeriesName'] 
-        display_fields: ['series.*.SeriesName']
+        search_fields: ['series.*.seriesName'] 
+        display_fields: ['series.*.seriesName']
         file: series
         required: false 
       - label: "date"
