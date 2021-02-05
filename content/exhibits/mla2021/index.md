@@ -13,6 +13,7 @@ txtcolor: text-white
 featured: true
 exhibit_logo: mla_21_topbar_1.jpg
 related_series:
+  - BNP
 related_staff:
   - Eric Brandt
   - Angie Hogan
