@@ -40,7 +40,7 @@ collections:
         widget: relation
         collection: files
         multiple: true
-        value_field: "series.*.series_ID"
+        value_field: "series.*.seriesID"
         search_fields: ['series.*.SeriesName'] 
         display_fields: ['series.*.SeriesName']
         file: books
@@ -374,8 +374,9 @@ collections:
         name: 'series'
         file: 'content/series.json'
         extension: "json"
+        allow_add: true
         fields:
-              - {label: "Series ID", name: "series_ID", widget: "string"}
+              - {label: "Series ID", name: "seriesID", widget: "string"}
               - {label: "Series Name", name: "seriesName", widget: "string"}
        
   
