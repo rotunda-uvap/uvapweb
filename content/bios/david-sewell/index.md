@@ -1,7 +1,7 @@
 ---
 templateKey: bio
 title: David Sewell
-staff-name: David Sewell
+staff_name: David Sewell
 profile_photo: bunsen.jpg
 name_slug: david-sewell
 job_title: Manager of Digital Initiatives and the Rotunda Imprint

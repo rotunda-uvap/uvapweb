@@ -1,7 +1,7 @@
 ---
 templateKey: bio
 title: Emma Donovan
-staff-name: Emma Donovan
+staff_name: Emma Donovan
 profile_photo: zoot.jpg
 name_slug: emma-donovan
 job_title: Marketing Manager

@@ -201,7 +201,7 @@ collections:
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "bio"}
       - { name: title, label: Title }
-      - { name: staff-name, label: Staff Name}
+      - { name: staff_name, label: Staff Name}
       - { label: Profile Photo, name: profile_photo, widget: image}
       - { label: 'Name Slug', name: 'name_slug', widget: 'string', required: true}
       - { label: 'Job Title', name: 'job_title', widget: 'string', required: true}

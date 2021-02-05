@@ -1,7 +1,7 @@
 ---
 templateKey: bio
 title: Helen Chandler
-staff-name: Helen Chandler
+staff_name: Helen Chandler
 profile_photo: scooter.jpg
 name_slug: helen-chandler
 job_title: Acquisitions Assistant

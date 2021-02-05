@@ -227,6 +227,6 @@ module.exports = {
   ],
   mapping: {
     "MarkdownRemark.frontmatter.related_series" : "SeriesJson",
-    "MarkdownRemark.frontmatter.related_staff" : "MarkdownRemark.frontmatter.title"
+    "MarkdownRemark.frontmatter.related_staff" : "MarkdownRemark.frontmatter.staff_name"
   } 
 }
