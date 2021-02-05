@@ -375,10 +375,6 @@ collections:
         file: 'content/series.json'
         extension: "json"
         fields:
-          - label: 'series'
-            name: 'series'
-            widget: 'list'
-            fields:
               - {label: "Series ID", name: "series_ID", widget: "string"}
               - {label: "Series Name", name: "seriesName", widget: "string"}
        
