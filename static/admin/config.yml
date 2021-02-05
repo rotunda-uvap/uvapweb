@@ -43,7 +43,7 @@ collections:
         value_field: "series.*.seriesID"
         search_fields: ['series.*.SeriesName'] 
         display_fields: ['series.*.SeriesName']
-        file: books
+        file: series
         required: false 
       - label: "date"
         name: "date"
@@ -378,7 +378,6 @@ collections:
           - label: 'Series'
             name: 'series'
             widget: 'list'
-            allow_add: true
             fields:
               - {label: "Series ID", name: "seriesID", widget: "string"}
               - {label: "Series Name", name: "seriesName", widget: "string"}
