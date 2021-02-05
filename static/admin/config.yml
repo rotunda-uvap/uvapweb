@@ -118,13 +118,16 @@ collections:
       - {label: "Featured", name: "featured", widget: "boolean", default: false, hint: "Will this be featured on Homepage? Note: Only 1 can."}
       - { label: Exhibit Logo, name: exhibit_logo, widget: image}
       - { name: body, label: Body, widget: markdown }
-      - label: "Related Series"
-        name: "related_series"
-        widget: "relation"
-        collection: "series_info"
-        search_fields: ['title', 'seriesID']
-        value_field: "{{title}}"
+      - label: Related Series
+        name: related_series
+        widget: relation
+        collection: files
         multiple: true
+        value_field: "series.*.seriesID"
+        search_fields: ['series.*.seriesName'] 
+        display_fields: ['series.*.seriesName']
+        file: series
+        required: false 
       - label: "Related Staff"
         name: "related_staff"
         widget: "relation"
@@ -205,14 +208,16 @@ collections:
       - { name: body, label: bio, widget: markdown }
       - { label: 'Email', name: 'email', widget: 'string', required: true}
       - { label: 'Phone', name: 'phone', widget: 'string', required: true, hint: "Format (XXX) XXX-XXXX"}
-      - label: "Related Series"
-        name: "related_series"
-        widget: "relation"
-        collection: "series_info"
-        search_fields: ['title']
-        value_field: "{{title}}"
+      - label: Related Series
+        name: related_series
+        widget: relation
+        collection: files
         multiple: true
-        required: false
+        value_field: "series.*.seriesID"
+        search_fields: ['series.*.seriesName'] 
+        display_fields: ['series.*.seriesName']
+        file: series
+        required: false 
   - name: 'rotundas'
     label: 'Rotunda Items'
     identifier_field: '{{rid}}'
