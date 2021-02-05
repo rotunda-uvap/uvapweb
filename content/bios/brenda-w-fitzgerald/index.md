@@ -1,6 +1,7 @@
 ---
 templateKey: bio
 title: Brenda W. Fitzgerald
+staff-name: Brenda W. Fitzgerald
 profile_photo: rowlf.jpg
 name_slug: brenda-fitzgerald
 job_title: Director of Operations
