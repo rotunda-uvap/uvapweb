@@ -1,6 +1,7 @@
 ---
 templateKey: bio
 title: Jason Coleman
+staff-name: Jason Coleman
 profile_photo: floyd.jpg
 name_slug: jason-coleman
 job_title: Marketing and Sales Director

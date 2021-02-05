@@ -1,6 +1,7 @@
 ---
 templateKey: bio
 title: Nadine Zimmerli
+staff-name: Nadine Zimmerli
 profile_photo: fozzie.jpg
 name_slug: nadine-zimmerli
 job_title: Editor, History and Social Sciences

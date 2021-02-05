@@ -1,6 +1,7 @@
 ---
 templateKey: bio
 title: Ellen Satrom
+staff-name: Ellen Satrom
 profile_photo: janice.jpg
 name_slug: ellen-satrom
 job_title: Managing Editor and Editorial, Design, and Production Manager

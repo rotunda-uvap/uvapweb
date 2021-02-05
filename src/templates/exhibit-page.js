@@ -27,6 +27,22 @@ export default ({ data }) => {
             <Link to={'../../staff/' + staff.replace(" ", "-").toLowerCase()}> <div>{staff}</div></Link>
             </>
         ))}
+         
+         <section>
+       
+          {related_series && 
+             <>
+            <h6 className="py-2">Related Series</h6>
+            
+            {related_series.map(series => (
+            
+            <h6 className="py-3"><Link to={`../../series/${ series.id }`}>{series.seriesName}</Link></h6>
+            
+        ))}
+        </>
+        }
+          </section>
+         
          {exhibit.frontmatter.bkg1_title &&
          <section>
          <h6 className="py-5">{exhibit.frontmatter.bkg1_title}</h6>
@@ -101,6 +117,10 @@ export const query = graphql`
             related_4
             bgcolor
             txtcolor
+            related_series {
+              id
+              seriesName
+            }
         } 
       }
     Img: file(extension: {eq: "jpg"}, relativeDirectory: {eq: $relDir}) {
