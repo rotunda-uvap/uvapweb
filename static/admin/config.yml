@@ -155,7 +155,7 @@ collections:
         search_fields: ['book.*.Title'] 
         display_fields: ['book.*.Title']
         file: books
-        required: false
+        required: false 
       - label: Book Clusters
         name: book_clusters
         widget: 'list'
@@ -172,10 +172,50 @@ collections:
             display_fields: ['book.*.Title']
             file: books
             required: false
-      
-      
-      
-      
+      - { label: 'Book Group One Name', name: 'bkg1_title', widget: 'string', required: false }
+      - label: Book Group One
+        name: related_1
+        widget: relation
+        collection: files
+        multiple: true
+        value_field: "book.*.id"
+        search_fields: ['book.*.Title'] 
+        display_fields: ['book.*.Title']
+        file: books
+        required: false
+      - { label: 'Book Group Two Name', name: 'bkg2_title', widget: 'string', required: false }
+      - label: Book Group Two
+        name: related_2
+        widget: relation
+        collection: files
+        multiple: true
+        value_field: "book.*.id"
+        search_fields: ['book.*.Title'] 
+        display_fields: ['book.*.Title']
+        file: books
+        required: false
+      - { label: 'Book Group Three Name', name: 'bkg3_title', widget: 'string', required: false }
+      - label: Book Group Three
+        name: related_3
+        widget: relation
+        collection: files
+        multiple: true
+        value_field: "book.*.id"
+        search_fields: ['book.*.Title'] 
+        display_fields: ['book.*.Title']
+        file: books 
+        required: false 
+      - { label: 'Book Group Four Name', name: 'bkg4_title', widget: 'string', required: false }
+      - label: Book Group Four
+        name: related_4
+        widget: relation
+        collection: files
+        multiple: true
+        value_field: "book.*.id"
+        search_fields: ['book.*.Title'] 
+        display_fields: ['book.*.Title']
+        file: books
+        required: false
   - name: 'bios'
     label: 'Staff Bio'
     identifier_field: '{{title}}'
