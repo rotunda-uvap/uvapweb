@@ -374,11 +374,11 @@ collections:
         name: 'series'
         file: 'content/series.json'
         extension: "json"
-        allow_add: true
         fields:
           - label: 'Series'
             name: 'series'
             widget: 'list'
+            allow_add: true
             fields:
               - {label: "Series ID", name: "seriesID", widget: "string"}
               - {label: "Series Name", name: "seriesName", widget: "string"}
