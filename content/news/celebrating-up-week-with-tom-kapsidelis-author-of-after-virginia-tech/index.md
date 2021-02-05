@@ -3,6 +3,12 @@ templateKey: news
 type: news
 draft: "false"
 title: Celebrating UP Week with Tom Kapsidelis, author of After Virginia Tech
+related_book:
+  - "5226"
+date: 2020-11-30
+related_books:
+  - book_title: After Virginia Tech
+    book_id: "5226"
 description: "Last year, UVA Press was proud to publish Tom Kapsidelis’s After
   Virginia Tech: Guns, Safety, and Healing in the Era of Mass Shootings, which
   illuminates the experiences of the survivors of the 2007 Virginia Tech
@@ -12,10 +18,6 @@ description: "Last year, UVA Press was proud to publish Tom Kapsidelis’s After
   available in paper, and the author has created study guide questions for
   college students and book club questions for general readers to ponder."
 image: logo_upw2020_lowres_0.jpg
-related_books:
-  - book_title: After Virginia Tech
-    book_id: "5226"
-date: 2020-11-30
 ---
 *Last year, UVA Press was proud to publish Tom Kapsidelis’s* [After Virginia Tech: Guns, Safety, and Healing in the Era of Mass Shootings](https://www.upress.virginia.edu/title/5226)*, which illuminates the experiences of the survivors of the 2007 Virginia Tech massacre—then the deadliest to date—and other community members and portrays in depth their advocacy for reforms in gun safety, campus security, trauma recovery, and mental health over the past decade. Now this book is also available in paper, and the author has created [study guide questions](https://www.upress.virginia.edu/sites/default/files/BookChapters/Kapsidelis_AVaT_Study_Guide_Questions.pdf) for college students and [book club questions](https://www.upress.virginia.edu/sites/default/files/BookChapters/Kapsidelis_AVaT_Book_Club_Questions.pdf) for general readers to ponder. We invite you to check out these resources and to read Tom Kapsidelis’s reflections on evolving student activism around the issue of gun safety—a topic that remains highly pertinent in 2020.*
 
