@@ -3,12 +3,14 @@ templateKey: news
 type: news
 draft: "false"
 title: "Echoes from the Revolution: Why the States and How they Govern Matter"
-description: Christopher R. Pearl, author of Conceived in Crisis, finds echoes
-  of the past in our current moment. 
+date: 2020-07-22
 related_books:
   - book_title: Conceived in Crisis
     book_id: "5457"
-date: 2020-07-22
+description: Christopher R. Pearl, author of Conceived in Crisis, finds echoes
+  of the past in our current moment. 
+related_book:
+  - "5457"
 ---
 *Christopher R. Pearl, author of* [Conceived in Crisis](https://www.upress.virginia.edu/title/5457), *finds echoes of the past in our current moment.* 
 
