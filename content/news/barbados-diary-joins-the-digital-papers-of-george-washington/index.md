@@ -8,6 +8,8 @@ description: We’re pleased to announce the addition of the recently published
   and Lynn A. Price, to The Papers of George Washington Digital Edition, and to
   offer this wonderfully annotated text free of charge to interested readers
   through the middle of August.
+related_book:
+  - "5139"
 date: 2020-06-22
 ---
 We’re pleased to announce the addition of the recently published edition of *[George Washington’s Barbados Diary,](https://www.upress.virginia.edu/title/5139)* edited by Alicia K. Anderson and Lynn A. Price, to [*The Papers of George Washington Digital Edition*,](https://www.upress.virginia.edu/content/papers-george-washington-digital-edition) and to offer this wonderfully [annotated text](https://rotunda.upress.virginia.edu/founders/GEWN-01-07) free of charge to interested readers through the middle of August.
