@@ -4,6 +4,10 @@ type: news
 draft: "false"
 title: In Honor of Earth Day, A Post From Our Senior Acquiring Editor,
   Architecture and Environment, Boyd Zenner
+date: 2020-04-22
+related_books:
+  - book_id: "4705"
+    book_title: Dancing with Disaster
 description: "As the noted possum-philosopher Pogo bleakly commented from a
   trash-strewn Okefenokee Swamp on a 1970 poster announcing the first Earth Day,
   “We have met the enemy, and he is us.”  Fifty years on, evidence of the damage
@@ -12,10 +16,8 @@ description: "As the noted possum-philosopher Pogo bleakly commented from a
   temperatures. Tiny Tangier Island’s inevitably losing battle to stave off the
   waters of the Chesapeake offers one potent example; the 2019-20 Australian
   bushfires whose images horrified millions the world over illustrate another."
-related_books:
-  - book_id: "4705"
-    book_title: Dancing with Disaster
-date: 2020-04-22
+related_book:
+  - "4705"
 ---
 As the noted possum-philosopher Pogo bleakly commented from a trash-strewn Okefenokee Swamp on a 1970 poster announcing the first Earth Day, “We have met the enemy, and he is us.”
 
