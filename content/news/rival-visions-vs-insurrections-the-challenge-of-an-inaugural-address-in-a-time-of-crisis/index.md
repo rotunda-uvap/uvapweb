@@ -5,9 +5,6 @@ draft: "false"
 title: "Rival Visions vs. Insurrections: The Challenge of an Inaugural Address
   in a Time of Crisis"
 date: 2021-01-21
-related_books:
-  - book_id: "5178"
-    book_title: Rival Visions
 description: "We are pleased to offer this guest blog post by Dr. Dustin Gish,
   coeditor with Andrew Bibby of RIVAL VISIONS: How Jefferson and His
   Contemporaries Defined the Early American Republic to be published in

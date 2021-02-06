@@ -4,10 +4,7 @@ type: news
 draft: "false"
 title: The Need for African American Studies to Make George Floyd a Visible Man
 date: 2020-06-18
-related_books:
-  - book_title: "The Haverford Discussions: A Black Integrationist Manifesto for
-      Racial Justice"
-    book_id: "4640"
+
 description: "UVA Press author Michael Lackey, whose book The Haverford
   Discussions: A Black Integrationist Manifesto for Racial Justice was published
   in 2013, reflects on the murder of George Floyd, Ralph Ellison's Invisible

@@ -5,9 +5,6 @@ draft: "false"
 title: Q&A with Winner of the New Academy Prize in Literature, Maryse Condé, and
   translator Nicole Simek
 date: 2020-05-06
-related_books:
-  - book_id: "5336"
-    book_title: The Belle Creole
 image: conde_author_0.jpg
 related_book:
   - "5336"

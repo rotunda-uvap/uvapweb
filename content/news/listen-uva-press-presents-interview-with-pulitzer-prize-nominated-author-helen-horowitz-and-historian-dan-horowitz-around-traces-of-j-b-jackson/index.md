@@ -6,9 +6,6 @@ title: 'LISTEN: "UVA Press Presents" interview with Pulitzer Prize-nominated
   author Helen Horowitz and historian Dan Horowitz around TRACES OF J. B.
   JACKSON'
 date: 2020-05-22
-related_books:
-  - book_id: "5339"
-    book_title: Traces of J.B. Jackson
 description: 'We are delighted to offer the second installment in our new
   podcast series, "UVA Press Presents," via this interview with Pulitzer-Prize
   nominated author Helen Horowitz, author of the new book **[TRACES OF J. B.

@@ -5,9 +5,6 @@ path: good-government
 templateKey: news
 description: Blog post from Nadine Zimmerli, Editor for History and Social Sciences
 date: 2020-10-15
-related_books:
-  - book_id: "5457"
-    book_title: "Conceived in Crisis: The Revolutionary Creation of an American State"
 type: news
 title: What Makes Good Government? A Conversation with History Editor Nadine
   Zimmerli and Author Christopher Pearl

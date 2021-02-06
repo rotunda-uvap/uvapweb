@@ -4,9 +4,6 @@ type: news
 draft: "false"
 title: On Entanglements and Viruses by Shane Graham
 date: 2020-06-12
-related_books:
-  - book_id: "5333"
-    book_title: Cultural Entanglements
 description: "We are pleased to offer this blog post from UVA Press author Shane
   Graham, whose book Cultural Entanglements: Langston Hughes and the Rise of
   African and Caribbean Literature was published this May."

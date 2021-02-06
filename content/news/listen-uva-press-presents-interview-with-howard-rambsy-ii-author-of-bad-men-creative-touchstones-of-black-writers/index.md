@@ -5,9 +5,6 @@ draft: "false"
 title: 'LISTEN: "UVA Press Presents" interview with Howard Rambsy II, author of
   BAD MEN: Creative Touchstones of Black Writers'
 date: 2020-07-10
-related_books:
-  - book_id: "5428"
-    book_title: Bad Men
 description: 'We are delighted to offer the third installment in our new podcast
   series, "UVA Press Presents," via this interview with Howard Rambsy, Professor
   of English at Southern Illinois University Edwardsville and author of the new

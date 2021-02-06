@@ -12,23 +12,7 @@ related_series:
   - AND
   - CGWIS
 date: 2020-04-09
-related_books:
-  - book_id: "5063"
-    book_title: The Life of William Faulkner, Vol 1
-  - book_id: "5250"
-    book_title: Virginians and their Histories
-  - book_id: "5354"
-    book_title: The False Cause
-  - book_id: "5479"
-    book_title: The Worst Passions of Human Nature
-  - book_title: Redemption from Tyranny
-    book_id: "5188"
-  - book_id: "5042"
-    book_title: Newest Born of Nations
-  - book_id: "5194"
-    book_title: Colossal Ambitions
-  - book_id: "5357"
-    book_title: Lighting the Way
+
 ---
 *By Nadine Zimmerli, editor for history and social sciences*
 

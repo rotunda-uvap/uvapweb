@@ -4,9 +4,6 @@ type: news
 draft: "false"
 title: So long, Aunt Jemima (1889-2020)
 date: 2020-06-19
-related_books:
-  - book_id: "2502"
-    book_title: So Long, Aunt Jemima
 description: "UVA Press author Maurice M. Manring, whose book Slave in a Box:
   The Strange Career of Aunt Jemima was published in 1998, writes about his
   experience researching and writing about the figure of Aunt Jemima. You can

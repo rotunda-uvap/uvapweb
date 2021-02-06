@@ -6,9 +6,6 @@ type: media
 related_book:
   - "5389"
 date: 2020-11-18
-related_books:
-  - book_id: "5389"
-    book_title: Black Landscapes Matter
 title: 'LISTEN: "UVA Press Presents" interview with Walter Hood and Grace
   Mitchell Tada on Black Landscapes Matter'
 description: We are delighted to offer the sixth installment in our new podcast

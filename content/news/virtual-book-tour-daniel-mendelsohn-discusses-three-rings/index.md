@@ -4,9 +4,6 @@ type: news
 draft: "false"
 title: "Virtual Book Tour: Daniel Mendelsohn Discusses Three Rings"
 date: 2020-08-24
-related_books:
-  - book_id: "5626"
-    book_title: Three Rings
 description: We are delighted to announce dates for Daniel Mendelsohn's virtual
   book tour around THREE RINGS: A Tale of Exile, Narrative, and Fate (September
   8).
