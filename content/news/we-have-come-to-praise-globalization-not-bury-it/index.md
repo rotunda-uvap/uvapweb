@@ -3,14 +3,16 @@ templateKey: news
 type: news
 draft: "false"
 title: We Have Come to Praise Globalization, Not Bury It
+date: 2020-09-01
+related_books:
+  - book_title: Colossal Ambitions
+    book_id: "5194"
 description: "UVA Press author Adrian Brettle, whose book COLOSSAL AMBITIONS:
   Confederate Planning for a Post–Civil War World was published this July,
   writes about the history of globalization and the dangers of it being under
   attack. "
-related_books:
-  - book_title: Colossal Ambitions
-    book_id: "5194"
-date: 2020-09-01
+related_book:
+  - "5194"
 ---
 **We Have Come to Praise Globalization, Not Bury It**
 
