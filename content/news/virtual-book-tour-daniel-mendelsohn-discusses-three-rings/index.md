@@ -3,13 +3,15 @@ templateKey: news
 type: news
 draft: "false"
 title: "Virtual Book Tour: Daniel Mendelsohn Discusses Three Rings"
-description: We are delighted to announce dates for Daniel Mendelsohn's virtual
-  book tour around THREE RINGS: A Tale of Exile, Narrative, and Fate (September
-  8).
+date: 2020-08-24
 related_books:
   - book_id: "5626"
     book_title: Three Rings
-date: 2020-08-24
+description: We are delighted to announce dates for Daniel Mendelsohn's virtual
+  book tour around THREE RINGS: A Tale of Exile, Narrative, and Fate (September
+  8).
+related_book:
+  - "5626"
 ---
 We are delighted to announce dates for Daniel Mendelsohn's virtual book tour around [THREE RINGS: A Tale of Exile, Narrative, and Fate](https://www.upress.virginia.edu/title/5626) (September 8). Tune in this fall to hear Mendelsohn discuss his new book, of which [Kirkus](https://www.kirkusreviews.com/book-reviews/daniel-mendelsohn/three-rings/) in a starred review said "\[a] luminous narrative . . . this slender, exquisite book rewards on many levels."
 
