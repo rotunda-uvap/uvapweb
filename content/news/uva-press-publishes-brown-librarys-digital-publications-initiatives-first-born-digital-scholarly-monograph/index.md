@@ -10,6 +10,8 @@ description: "The University of Virginia Press is pleased to announce the
   Commentary*](https://www.upress.virginia.edu/content/furnace-and-fugue), the
   first born-digital scholarly monograph developed by the Center for Digital
   Scholarship at Brown University."
+related_book:
+  - "5501"
 date: 2020-07-17
 ---
 **The pathbreaking multimodal digital book—*Furnace and Fugue—*was developed with support from the Andrew W. Mellon Foundation.**
