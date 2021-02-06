@@ -3,13 +3,7 @@ templateKey: news
 type: news
 draft: "false"
 title: Announcing UVA Press Reading Club - Virginia Pathways and People
-description: The University of Virginia Press is pleased to announce the new UVA
-  Press Reading Club, which will feature themed books throughout the year at a
-  40% discounted rate. The 2020 theme, already underway, is Virginia Pathways
-  and People and is geared towards all those interested in the flora, fauna, and
-  people of Virginia. Selected by Press staff, these books are journeys through
-  beautiful landscapes, remarkable and conflicting histories, and engaging ideas
-  and perspectives through fiction, biography, and design.
+date: 2020-07-13
 related_books:
   - book_title: Mr. and Mrs. Dog
     book_id: "4654"
@@ -33,7 +27,25 @@ related_books:
     book_id: "5136"
   - book_title: Cultural Entanglements
     book_id: "5333"
-date: 2020-07-13
+description: The University of Virginia Press is pleased to announce the new UVA
+  Press Reading Club, which will feature themed books throughout the year at a
+  40% discounted rate. The 2020 theme, already underway, is Virginia Pathways
+  and People and is geared towards all those interested in the flora, fauna, and
+  people of Virginia. Selected by Press staff, these books are journeys through
+  beautiful landscapes, remarkable and conflicting histories, and engaging ideas
+  and perspectives through fiction, biography, and design.
+related_book:
+  - "5333"
+  - "5136"
+  - "4924"
+  - "4700"
+  - "4298"
+  - "1941"
+  - "5145"
+  - "4457"
+  - "5249"
+  - "4544"
+  - "4654"
 ---
 The University of Virginia Press is pleased to announce the new **[UVA Press Reading Club,](https://www.upress.virginia.edu/readingclub)** which will feature themed books throughout the year at a 40% discounted rate. The 2020 theme, already underway, is Virginia Pathways and People and is geared towards all those interested in the flora, fauna, and people of Virginia. Selected by Press staff, these books are journeys through beautiful landscapes, remarkable and conflicting histories, and engaging ideas and perspectives through fiction, biography, and design.
 
