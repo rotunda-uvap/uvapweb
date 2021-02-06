@@ -5,6 +5,10 @@ draft: "false"
 title: 'LISTEN: "UVA Press Presents" interview with Pulitzer Prize-nominated
   author Helen Horowitz and historian Dan Horowitz around TRACES OF J. B.
   JACKSON'
+date: 2020-05-22
+related_books:
+  - book_id: "5339"
+    book_title: Traces of J.B. Jackson
 description: 'We are delighted to offer the second installment in our new
   podcast series, "UVA Press Presents," via this interview with Pulitzer-Prize
   nominated author Helen Horowitz, author of the new book **[TRACES OF J. B.
@@ -15,10 +19,8 @@ description: 'We are delighted to offer the second installment in our new
   Horowitz below, and read more about the book, which [The New York Review of
   Books](https://www.nybooks.com/articles/2020/04/09/american-landscapes-crapola-sublime/) called
   "\[An] excellent biography."'
-related_books:
-  - book_id: "5339"
-    book_title: Traces of J.B. Jackson
-date: 2020-05-22
+related_book:
+  - "5339"
 ---
 https://soundcloud.com/wtju/horowitz-514-with-bed-mixdown
 
