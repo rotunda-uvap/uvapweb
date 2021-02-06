@@ -3,14 +3,16 @@ templateKey: news
 type: news
 draft: "false"
 title: Sandra Rebok on Bringing Enlightenment Science into Practice
+date: 2021-01-04
+related_books:
+  - book_title: Humboldt and Jefferson
+    book_id: "4332"
 description: "Putting Enlightenment Science into Practice: Humboldt, Jefferson,
   and the Transatlantic Fight against Smallpox. A guest post by Sandra Rebok,
   author of Humboldt and Jefferson: A Transatlantic Friendship of the
   Enlightenment."
-related_books:
-  - book_title: Humboldt and Jefferson
-    book_id: "4332"
-date: 2021-01-04
+related_book:
+  - "4332"
 ---
 **Putting Enlightenment Science into Practice: Humboldt, Jefferson, and the Transatlantic Fight against Smallpox**
 
