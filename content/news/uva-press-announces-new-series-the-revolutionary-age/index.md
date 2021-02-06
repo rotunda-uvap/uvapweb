@@ -7,6 +7,8 @@ description: The University of Virginia Press is pleased to announce “The
   Revolutionary Age,” a new series designed to bring a fresh and international
   perspective to the study of the American Revolution within the broader context
   of the Age of Revolution.
+related_series:
+  - RA
 date: 2020-07-14
 ---
 The University of Virginia Press is pleased to announce “The Revolutionary Age,” a new series designed to bring a fresh and international perspective to the study of the American Revolution within the broader context of the Age of Revolution.

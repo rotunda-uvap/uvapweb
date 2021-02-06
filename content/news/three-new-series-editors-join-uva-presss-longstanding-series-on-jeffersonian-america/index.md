@@ -9,6 +9,8 @@ description: The University of Virginia Press is pleased to announce that
   joined existing Jeffersonian America series editors Peter S. Onuf and Andrew
   J. O’Shaughnessy to identify and publish the best new scholarship on the
   American republic’s formative decades.
+related_series:
+  - JA
 date: 2020-06-15
 ---
 The University of Virginia Press is pleased to announce that Charlene M. Boyer Lewis, Annette Gordon-Reed, and Robert G. Parkinson have joined existing [Jeffersonian America](https://www.upress.virginia.edu/series/jeffersonian-america) series editors Peter S. Onuf and Andrew J. O’Shaughnessy to identify and publish the best new scholarship on the American republic’s formative decades.

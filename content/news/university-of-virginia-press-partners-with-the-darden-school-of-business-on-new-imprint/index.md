@@ -4,6 +4,8 @@ type: news
 draft: "false"
 title: University of Virginia Press Partners with the Darden School of Business
   on New Imprint
+related_series:
+  - DBS
 date: 2020-04-06
 ---
 University of Virginia Press and the University of Virginia Darden School of Business have announced a publishing partnership to launch UVA Darden Business Publishing, an imprint of the University of Virginia Press. Through the partnership, UVA Press will publish books in print and digital editions under the auspices and imprint of the business school.

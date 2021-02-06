@@ -3,14 +3,16 @@ templateKey: news
 type: media
 draft: "false"
 title: "Virtual Launch Event: By Broad Potomac's Shore by Kim Roberts"
+related_book:
+  - "5493"
+date: 2020-10-06
+related_books:
+  - book_title: By Broad Potomac's Shore
+    book_id: "5493"
 description: UVA Press is pleased to invite you to the launch event for BY BROAD
   POTOMAC'S SHORE: Great Poems from the Early Days of Our Nation's Capital with
   poet and literary historian Kim Roberts on Thursday, October 8, from 6-7 pm
 image: roberts_cover.jpg
-related_books:
-  - book_title: By Broad Potomac's Shore
-    book_id: "5493"
-date: 2020-10-06
 ---
 UVA Press is pleased to invite you to the launch event for [BY BROAD POTOMAC'S SHORE: Great Poems from the Early Days of Our Nation's Capital](https://www.upress.virginia.edu/title/5493) with poet and literary historian Kim Roberts on Thursday, October 8, from 6-7 pm. Order the book at 30% OFF with promo code [10BROAD!](https://www.upress.virginia.edu/title/5493) UVA Press Editor-in-Chief, Eric Brandt, will introduce the event to be followed by a reading by Kim Roberts. The event will also feature mixologist Jon Gann (see cocktail recipe below) and guest readers Teri Ellen Cross Davis and Dan Vera. You can read an interview with Roberts in Washington City Paper [here.](https://washingtoncitypaper.com/article/362880/a-new-poetry-collection-features-the-work-of-writers-both-famous-and-forgotten-from-d-c-s-past/) 
 

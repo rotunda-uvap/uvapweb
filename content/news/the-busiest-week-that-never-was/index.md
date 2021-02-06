@@ -4,6 +4,14 @@ type: news
 draft: "false"
 title: The Busiest Week That Never Was
 description: A post from our History editor, Nadine Zimmerli
+related_book:
+  - "5250"
+related_series:
+  - EAH
+  - JA
+  - AND
+  - CGWIS
+date: 2020-04-09
 related_books:
   - book_id: "5063"
     book_title: The Life of William Faulkner, Vol 1
@@ -21,7 +29,6 @@ related_books:
     book_title: Colossal Ambitions
   - book_id: "5357"
     book_title: Lighting the Way
-date: 2020-04-09
 ---
 *By Nadine Zimmerli, editor for history and social sciences*
 

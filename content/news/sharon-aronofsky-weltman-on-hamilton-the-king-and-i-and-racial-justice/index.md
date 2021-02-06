@@ -3,13 +3,15 @@ draft: "false"
 relbook: "5450"
 templateKey: news
 type: media
-title: Sharon Aronofsky Weltman on Hamilton, The King and I, and Racial Justice
 description: Watch a trailer for VICTORIANS ON BROADWAY by Sharon Aronofsky Weltman
+date: 2020-09-21
 related_books:
   - book_id: "5450"
     book_title: Victorians on Broadway
-date: 2020-09-21
+title: Sharon Aronofsky Weltman on Hamilton, The King and I, and Racial Justice
 link: https://www.youtube.com/embed/u2PEIGjKz
+related_book:
+  - "5450"
 ---
 `youtube:https://www.youtube.com/embed/u2PEIGjKz`
 
