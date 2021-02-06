@@ -51,7 +51,7 @@ export default ({ data }) => {
              <>
              <h6 className="py-5">{cluster.cluster_title}</h6>
              {cluster.related_book.map(book => (
-              <RelatedBook id={book.id} title={book.title}/>
+              <RelatedBook id={book.id} title={book.Title}/>
           ))}
           </>
            ))}
@@ -82,7 +82,10 @@ export const query = graphql`
             templateKey
             book_clusters {
               cluster_title
-              related_book
+              related_book {
+                id
+                Title
+              }
             }
             title
             featured_books

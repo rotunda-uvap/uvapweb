@@ -6,9 +6,6 @@ title: Celebrating UP Week with Tom Kapsidelis, author of After Virginia Tech
 related_book:
   - "5226"
 date: 2020-11-30
-related_books:
-  - book_title: After Virginia Tech
-    book_id: "5226"
 description: "Last year, UVA Press was proud to publish Tom Kapsidelis’s After
   Virginia Tech: Guns, Safety, and Healing in the Era of Mass Shootings, which
   illuminates the experiences of the survivors of the 2007 Virginia Tech

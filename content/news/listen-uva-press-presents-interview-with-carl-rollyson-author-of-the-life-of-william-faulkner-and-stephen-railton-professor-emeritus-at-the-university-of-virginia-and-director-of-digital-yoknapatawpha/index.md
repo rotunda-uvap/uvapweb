@@ -11,11 +11,7 @@ description: We are delighted to introduce our new podcast series, "UVA Press
   Railton, Emeritus Professor of English at the University of Virginia and
   Director of the [Digital Yoknapatawpha
   project](http://faulkner.iath.virginia.edu/).
-related_books:
-  - book_title: "The Life of William Faulkner: Volume 1"
-    book_id: "5063"
-  - book_title: "The Life of William Faulkner: Volume 2"
-    book_id: "5477"
+
 date: 2020-05-13
 ---
 https://soundcloud.com/wtju/uva-press-presents-the-life-of-william-faulkner

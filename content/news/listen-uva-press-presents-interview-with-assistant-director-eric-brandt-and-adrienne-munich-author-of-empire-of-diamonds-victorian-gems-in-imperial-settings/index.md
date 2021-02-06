@@ -12,9 +12,7 @@ description: 'We are delighted to offer the fourth installment in our new
   Emerita, at Stony Brook University and author of the new book [EMPIRE OF
   DIAMONDS: Victorian Gems in Imperial
   Settings.](https://www.upress.virginia.edu/title/5391)'
-related_books:
-  - book_title: Empire of Diamonds
-    book_id: "5391"
+
 date: 2020-08-14
 ---
 https://soundcloud.com/wtju/uva-press-presents-empire-of-diamonds

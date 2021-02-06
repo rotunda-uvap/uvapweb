@@ -5,9 +5,6 @@ draft: "false"
 title: In Honor of Earth Day, A Post From Our Senior Acquiring Editor,
   Architecture and Environment, Boyd Zenner
 date: 2020-04-22
-related_books:
-  - book_id: "4705"
-    book_title: Dancing with Disaster
 description: "As the noted possum-philosopher Pogo bleakly commented from a
   trash-strewn Okefenokee Swamp on a 1970 poster announcing the first Earth Day,
   “We have met the enemy, and he is us.”  Fifty years on, evidence of the damage
