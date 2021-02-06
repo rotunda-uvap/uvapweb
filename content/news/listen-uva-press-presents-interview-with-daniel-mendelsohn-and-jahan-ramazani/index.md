@@ -4,16 +4,18 @@ type: media
 draft: "false"
 title: 'LISTEN: "UVA Press Presents" interview with Daniel Mendelsohn and Jahan
   Ramazani'
+date: 2020-09-18
+related_books:
+  - book_id: "5626"
+    book_title: Three Rings
 description: 'We are delighted to offer the fifth installment in our new podcast
   series, "UVA Press Presents," via this interview with Daniel Mendelsohn,
   Editor at Large at The New York Review of Books and author of Three Rings: A
   Tale of Exile, Narrative, and Fate and Jahan Ramazani, University Professor
   and Edgar F. Shannon Professor at the University of Virginia. Listen above,
   and read more about Professors Mendelsohn and Ramazani below.'
-related_books:
-  - book_id: "5626"
-    book_title: Three Rings
-date: 2020-09-18
+related_book:
+  - "5626"
 ---
 We are delighted to offer the fifth installment in our new podcast series, "UVA Press Presents," via this interview with Daniel Mendelsohn, Editor at Large at [The New York Review of Books](https://www.nybooks.com/) and author of [Three Rings: A Tale of Exile, Narrative, and Fate](https://www.upress.virginia.edu/title/5626) and Jahan Ramazani, University Professor and Edgar F. Shannon Professor at the University of Virginia. Listen above, and read more about Professors Mendelsohn and Ramazani below.
 
