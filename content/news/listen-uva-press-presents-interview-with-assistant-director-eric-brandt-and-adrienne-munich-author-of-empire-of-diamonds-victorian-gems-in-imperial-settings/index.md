@@ -5,6 +5,10 @@ draft: "false"
 title: 'LISTEN: "UVA Press Presents" interview with Assistant Director, Eric
   Brandt, and Adrienne Munich, author of EMPIRE OF DIAMONDS: Victorian Gems in
   Imperial Settings'
+date: 2020-08-14
+related_books:
+  - book_title: Empire of Diamonds
+    book_id: "5391"
 description: 'We are delighted to offer the fourth installment in our new
   podcast series, "UVA Press Presents," via this interview with Eric Brandt,
   Assistant Director and Editor-in-Chief at UVA Press and Adrienne
@@ -12,10 +16,8 @@ description: 'We are delighted to offer the fourth installment in our new
   Emerita, at Stony Brook University and author of the new book [EMPIRE OF
   DIAMONDS: Victorian Gems in Imperial
   Settings.](https://www.upress.virginia.edu/title/5391)'
-related_books:
-  - book_title: Empire of Diamonds
-    book_id: "5391"
-date: 2020-08-14
+related_book:
+  - "5391"
 ---
 https://soundcloud.com/wtju/uva-press-presents-empire-of-diamonds
 
