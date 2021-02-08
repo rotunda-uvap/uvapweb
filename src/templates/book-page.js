@@ -12,7 +12,7 @@ export default ({ data }) => {
     const isbn = book.Bindings[0].ISBN
     const GoogleB = 'https://books.google.com/books?vid=' + isbn
     const resources = data.markdownRemark
-    
+    const news = data.newsMD
  return (
    
    <Layout>
@@ -95,6 +95,15 @@ export default ({ data }) => {
       
     </section>}
 
+    {news && 
+    <section className="py-3">
+    <p className="font-black uppercase py-3 px-5 border-b-4 border-white hover:border-black">Related News</p>
+
+      <Link to={`../../news${news.fields.slug}`}>{news.frontmatter.title}</Link>
+      
+    </section>}
+
+
     <section>
     <a href={GoogleB}><img src="/gbs_preview_sticker1.png" alt="view on google books" /></a>
     </section>
@@ -110,7 +119,7 @@ export default ({ data }) => {
 
 
 export const query = graphql`
-  query($id: String!, $imageid: String, $bid: String!) {
+  query($id: String!, $imageid: String, $bid: String) {
     booksJson(id: { eq: $id }) {
       id
       BookID
@@ -162,6 +171,17 @@ export const query = graphql`
         attached_book
       }
     }
-    
+    newsMD: markdownRemark(frontmatter: {templateKey: {eq: "news"}, related_book: {elemMatch: {id: {eq: $bid}}}}) {
+      id
+      frontmatter {
+        title
+        related_book {
+          id
+        }
+      }
+      fields {
+        slug
+      }
+    }
   }
 `

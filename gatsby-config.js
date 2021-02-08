@@ -6,6 +6,7 @@
 require("dotenv").config()
 const path = require(`path`)
 module.exports = {
+  flags: { PRESERVE_WEBPACK_CACHE: true },
   siteMetadata: {
     title: `University of Virginia Press`,
     logo: `uvap_logo.png`,
