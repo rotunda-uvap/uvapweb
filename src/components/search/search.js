@@ -27,9 +27,9 @@ const Search = () => (
       <RefinementList attribute="List"/></div>
         <div><h3 className="text-lg uppercase">Filter by Subject</h3>
       
-      <RefinementList attribute="Subject"/></div>
+      <RefinementList attribute="Subject.name"/></div>
       <div className="py-5"><h3 className="text-lg uppercase">Filter by Series</h3>
-      <RefinementList attribute="Series"/></div></section>
+      <RefinementList attribute="Series.name"/></div></section>
       <section className="col-span-2">
       
         <h3 className="text-lg uppercase pb-5">Results
