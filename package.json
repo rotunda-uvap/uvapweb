@@ -1,7 +1,7 @@
 {
-  "name": "UVa Press",
+  "name": "uvapress",
   "private": true,
-  "description": "Initiated from Gatsby Hello World starter",
+  "description": "uva press website built with gatsbyjs and netlify cms",
   "version": "0.1.0",
   "license": "0BSD",
   "scripts": {
@@ -50,7 +50,7 @@
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
     "react-helmet": "^6.1.0",
-    "react-icons": "^4.1.0",
+    "react-icons": "^4.2.0",
     "react-instantsearch-dom": "^6.8.3",
     "react-share": "^4.3.1",
     "react-social-icons": "^4.1.0",
