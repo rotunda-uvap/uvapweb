@@ -10,8 +10,12 @@ const bookQuery = `{
         BookID
         Title
         Subtitle
-        Subject
-        Series
+        Series {
+          name
+        }
+        Subject{
+          name
+        }
         List
         PublicationDate
         DaysSincePublication

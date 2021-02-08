@@ -181,8 +181,7 @@ module.exports = {
       options: {
         folders: [
           './images',
-          './downloads',
-          './covers',
+          './downloads'
         ]
       }
     },
