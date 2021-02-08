@@ -49,7 +49,7 @@ const queries = [
     query: bookQuery,
     transformer: ({ data }) => data.books.edges.map(bookToAlgoliaRecord),
     indexName,
-    settings: { attributesToSnippet: [`MainDescription:20`], searchableAttributes: ['Title', 'Subtitle', 'MainDescription', 'AuthorCredit'], attributesForFaceting: ['Series', 'Subject', 'List'], typoTolerance: 'min', minWordSizefor1Typo:5 },
+    settings: { attributesToSnippet: [`MainDescription:20`], searchableAttributes: ['Title', 'Subtitle', 'MainDescription', 'AuthorCredit'], attributesForFaceting: ['Series.name', 'Subject.name', 'List'], typoTolerance: 'min', minWordSizefor1Typo:5 },
   },
 ]
 
