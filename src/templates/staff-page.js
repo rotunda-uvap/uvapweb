@@ -12,7 +12,8 @@ export default ({ data }) => {
         {staffMember.frontmatter.job_title && <h4 className="py5 text-1xl mt-2 mb-2">{staffMember.frontmatter.job_title}</h4> }
 
         {staffMember.frontmatter.email && <h5 className="py5 text-1xl italic mt-2 mb-2"><a href={`mailto:${ staffMember.frontmatter.email }`}>{staffMember.frontmatter.email}</a></h5>}
-        
+        {staffMember.html && <article 
+          dangerouslySetInnerHTML={{ __html: staffMember.html }}/> }
     </div>
     
    </Layout>

@@ -92,8 +92,8 @@ export const query = graphql`
             bgcolor
             txtcolor
             related_series {
-              id
               seriesName
+              id
             }
             related_staff {
               frontmatter {
