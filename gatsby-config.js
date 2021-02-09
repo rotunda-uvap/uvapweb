@@ -194,15 +194,8 @@ module.exports = {
   `gatsby-plugin-react-helmet`,
   `gatsby-plugin-twitter`,
   `gatsby-plugin-postcss`,
-  {
-    resolve: `gatsby-plugin-netlify-cms`,
-    options: {
-      enableIdentityWidget: true,
-      publicPath: `admin`,
-      htmlTitle: `UVa Press Content Manager`,
-      includeRobots: false,
-    },
-  },
+  `gatsby-plugin-netlify-cms`,
+ 
   {
     resolve: `gatsby-plugin-algolia`,
     options: {
