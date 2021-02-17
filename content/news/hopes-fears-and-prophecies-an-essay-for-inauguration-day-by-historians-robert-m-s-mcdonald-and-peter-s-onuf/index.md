@@ -5,7 +5,7 @@ draft: "false"
 title: Hopes, Fears, and Prophecies. An Essay for Inauguration Day by Historians
   Robert M. S. McDonald and Peter S. Onuf
 related_book:
-  - ""
+  - "5617"
 date: 2021-01-20
 ---
 We are pleased to offer this essay for Inauguration Day by Robert M. S. McDonald and Peter S. Onuf, editors of the new book *[Revolutionary Prophecies: The Founders and America’s Future](https://www.upress.virginia.edu/title/5617)*. Enjoy! 
