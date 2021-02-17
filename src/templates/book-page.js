@@ -99,7 +99,7 @@ export default ({ data }) => {
     <section className="py-3">
     <p className="font-black uppercase py-3 px-5 border-b-4 border-white hover:border-black">Related News</p>
 
-      <Link to={`../../news${news.fields.slug}`}>{news.frontmatter.title}</Link>
+      <Link to={`../../${news.frontmatter.type}${news.fields.slug}`}>{news.frontmatter.title}</Link>
       
     </section>}
 
@@ -178,6 +178,7 @@ export const query = graphql`
         related_book {
           id
         }
+        type
       }
       fields {
         slug
