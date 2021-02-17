@@ -7,7 +7,7 @@ description: "We join everyone celebrating MLK Day with this blog post from
   Peter Eisenstadt, author of the new book Against the Hounds of Hell: A Life of
   Howard Thurman (February 2021).   "
 related_book:
-  - ""
+  - "5390"
 date: 2021-01-18
 ---
 We join everyone celebrating MLK Day with this blog post from Peter Eisenstadt, author of the new book [*Against the Hounds of Hell: A Life of Howard Thurman* ](https://www.upress.virginia.edu/title/5390)(February 2021).   
