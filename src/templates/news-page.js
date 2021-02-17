@@ -14,23 +14,29 @@ const newsPage = ({ data }) => {
    <Layout>
      <div>
         <h1 className="py-5 text-2xl font-black uppercase" >{news.frontmatter.title}</h1>
-        <div>
+        <div className="grid md:grid-cols-3">
+        <section className="md:col-span-2">
         <div className="float-left px-5 pb-5"><GatsbyImage image={image} alt="related image"   width={300}/></div>
-        
           <article 
           dangerouslySetInnerHTML={{ __html: news.html }}/>
-         
-          <h4 className="py-5">Related Books</h4>
-          <section>
-          <div className="grid md:grid-cols-5 md:gap-2">
-            
-            {related_books && related_books.map(book => (
-            <> 
-            <RelatedBook id={book.id} title={book.Title}/>
-            </>
-        ))}
-        </div>
+
+          
           </section>
+         
+         <section className="flex flex-col p-10">
+            
+            {related_books && 
+            <> 
+            {related_books.map(book => (
+            
+            <RelatedBook id={book.id} title={book.Title}/>
+            
+        ))}
+        </>
+        }
+        </section>
+        </div>
+         
           <section>
           <div className="grid md:grid-cols-5 md:gap-2">
             
@@ -43,7 +49,6 @@ const newsPage = ({ data }) => {
           </section>
           </div>
         
-    </div>
    </Layout>
     
  )

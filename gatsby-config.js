@@ -11,6 +11,7 @@ module.exports = {
     title: `University of Virginia Press`,
     logo: `uvap_logo.png`,
     description: `Using Gatsby JSON Sourcing with Netlify CMS`,
+    siteUrl: `https://uvap-draft-13b347.netlify.app/`,
      
     socialLinks: {
       twitter: "https://twitter.com/uva_press",

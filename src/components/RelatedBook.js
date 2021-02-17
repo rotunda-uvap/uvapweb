@@ -6,7 +6,7 @@ const RelatedBook = ({id, title}) => {
    const booklink = "../../title/" + id
 
     return (
-            <Link to={booklink}><img src={cover} alt="link to related book"/>{title}</Link>
+            <Link to={booklink} ><img src={cover} alt={title} title={title}/></Link>
   
       )
   }
