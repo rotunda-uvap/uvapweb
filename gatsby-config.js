@@ -6,7 +6,7 @@
 require("dotenv").config()
 const path = require(`path`)
 module.exports = {
-  flags: { PRESERVE_WEBPACK_CACHE: true },
+  flags: { PRESERVE_WEBPACK_CACHE: true, DEV_SSR: true, FAST_REFRESH: true },
   siteMetadata: {
     title: `University of Virginia Press`,
     logo: `uvap_logo.png`,
@@ -224,8 +224,14 @@ module.exports = {
       },
   }, 
 
-     'gatsby-plugin-netlify-identity-widget'
-  
+     'gatsby-plugin-netlify-identity-widget',
+  {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://uvap-draft-13b347.netlify.app/',
+        policy: [{ userAgent: '*', allow: '/' }]
+      }
+    }
   ],
   mapping: {
     "MarkdownRemark.frontmatter.related_series" : "SeriesJson",

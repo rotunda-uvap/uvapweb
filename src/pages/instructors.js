@@ -35,16 +35,16 @@ export default function InstructorPage({data}) {
     <div className="flex flex-col md:w-2/3 md:pl-12">
       <h2 className="title-font font-medium text-gray-800 tracking-widest text-sm mb-3">CATEGORIES</h2>
       <nav className="flex flex-wrap list-none -mb-1">
-      {subs.distinct.map(sub => (
+     
+        {subs.edges.map(edge => (
             <>
            
-           <li className="lg:w-1/3 mb-1 w-1/2" key={sub}>
-          <Link to={`../../subject/${ sub }`} className="text-gray-600 hover:text-gray-800">{ sub }</Link>
+           <li className="lg:w-1/3 mb-1 w-1/2" key={edge.node.subjectID}>
+          <Link to={`../../subject/${ edge.node.subjectID }`} className="text-gray-600 hover:text-gray-800">{ edge.node.subjectName }</Link>
         </li>
             
             </>
         ))}
-        
        
       </nav>
     </div>
@@ -64,13 +64,11 @@ export default function InstructorPage({data}) {
     <div className="flex flex-col md:w-2/3 md:pl-12">
       <h2 className="title-font font-medium text-gray-800 tracking-widest text-sm mb-3">SERIES CATEGORIES</h2>
       <nav className="flex flex-wrap list-none -mb-1">
-      {sers.distinct.map(serie => (
-            <>
-           
-           <li className="lg:w-1/3 mb-1 w-1/2" key={serie}>
-          <Link to={`../series/${ serie }`} classNameName="text-gray-600 hover:text-gray-800">{ serie }</Link>
-        </li>
-            
+      {sers.edges.map(edge => (
+            <>           
+           <li className="lg:w-1/3 mb-1 w-1/2" key={edge.node.id}>
+          <Link to={`../series/${ edge.node.id }`} className="text-gray-600 hover:text-gray-800">{ edge.node.seriesName }</Link>
+        </li>            
             </>
         ))}
         
@@ -89,10 +87,21 @@ export default function InstructorPage({data}) {
 
 export const query = graphql`
     query  {
-      series: allBooksJson {
-        distinct(field: Series___seriesID)
+      series: allSeriesJson {
+      edges {
+        node {
+            id
+            seriesName
+        }
+      }
     }
-    subjects: allBooksJson {
-      distinct(field: Subject___subjectID)
+  subjects: allSubjectsJson {
+    edges {
+      node {
+          subjectID
+          subjectName
+        
+      }
+    }
   }
   }`

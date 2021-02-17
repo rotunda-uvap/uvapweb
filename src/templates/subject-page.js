@@ -15,8 +15,9 @@ const SubjectTemplate = ({ data }) => {
                     <div className="container px-5 py-5 grid md:grid-cols-5 md:gap-4">
                         {books.edges.map(edge => (
                   <>  
-                  <Link to={`../../title/${ edge.node.BookID }`}>
-                    <BookCard Title={edge.node.Title} Subtitle={edge.node.Subtitle} Author={edge.node.AuthorCredit} Thumb={edge.node.CoverImageThumb} Bookid ={edge.node.BookID} pubdate={edge.node.PublicationDate}/></Link>
+                  <Link key={`l${edge.node.BookID}`} to={`../../title/${ edge.node.BookID }`}>
+                    <BookCard key={`b${edge.node.BookID}`} Title={edge.node.Title} Subtitle={edge.node.Subtitle} Author={edge.node.AuthorCredit} Thumb={edge.node.CoverImageThumb} Bookid ={edge.node.BookID} pubdate={edge.node.PublicationDate}/>
+                    </Link>
                      </>
                     ))}
                         </div> 

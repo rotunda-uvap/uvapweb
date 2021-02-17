@@ -4,7 +4,7 @@ import RelatedBook from "../components/RelatedBook"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import Layout from "../components/layout"
 
-export default ({ data }) => {
+const mediaPage = ({ data }) => {
     const media = data.markdownRemark
     const related_books = data.markdownRemark.frontmatter.related_books
     const image = getImage(data.Img)
@@ -31,7 +31,7 @@ export default ({ data }) => {
  )
 }
 
-
+export default mediaPage
 
 export const query = graphql`
   query($id: String!, $relDir: String!) {

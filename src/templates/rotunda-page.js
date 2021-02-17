@@ -3,7 +3,7 @@ import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
-export default ({ data }) => {
+const rotundaPage = ({ data }) => {
     const item = data.rotundaJson
     const summary = data.markdownRemark
     const related = data.rels
@@ -53,7 +53,7 @@ export default ({ data }) => {
  )
 }
 
-
+export default rotundaPage
 
 export const query = graphql`
   query($id: String!, $imageid: String!, $relSeries: String!) {

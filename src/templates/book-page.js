@@ -6,7 +6,7 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import BookHorizontalTabs from "../components/BookHorizontalTabs"
 
 
-export default ({ data }) => {
+const bookPage = ({ data }) => {
     const book = data.booksJson
     const imageData = getImage(data.file)
     const isbn = book.Bindings[0].ISBN
@@ -86,7 +86,7 @@ export default ({ data }) => {
       {resources.frontmatter.attached_links && <ul> {resources.frontmatter.attached_links.map(edge => (
         
         <li className="p-2">
-        <a href={edge.link} target="_blank">{edge.name}</a>
+        <a href={edge.link} target="_blank" rel="noreferrer">{edge.name}</a>
         </li>
         
       ))}
@@ -116,7 +116,7 @@ export default ({ data }) => {
  )
 }
 
-
+export default bookPage
 
 export const query = graphql`
   query($id: String!, $imageid: String, $bid: String) {

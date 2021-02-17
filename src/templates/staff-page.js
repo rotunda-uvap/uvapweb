@@ -2,8 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 
-
-export default ({ data }) => {
+const staffPage = ({ data }) => {
     const staffMember = data.markdownRemark
  return (
    <Layout>
@@ -21,7 +20,7 @@ export default ({ data }) => {
  )
 }
 
-
+export default staffPage
 
 export const query = graphql`
   query($id: String!) {

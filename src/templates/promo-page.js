@@ -4,7 +4,7 @@ import RelatedBook from "../components/RelatedBook"
 
 import Layout from "../components/layout"
 
-export default ({ data }) => {
+const promoPage = ({ data }) => {
     const promos = data.markdownRemark
     const related_books = data.markdownRemark.frontmatter.related_books
 
@@ -30,7 +30,7 @@ export default ({ data }) => {
  )
 }
 
-
+export default promoPage
 
 export const query = graphql`
   query($id: String!) {
