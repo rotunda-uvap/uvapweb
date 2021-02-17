@@ -11,7 +11,7 @@ description: "In July 2020, UVA Press was proud to publish Dr. Adrian Brettle’
   on Abraham Lincoln, the American Civil War soldier, or the American Civil War
   era."
 related_book:
-  - ""
+  - "5194"
 date: 2021-02-12
 ---
 In July 2020, UVA Press was proud to publish Dr. Adrian Brettle’s debut book: [*Colossal Ambitions: Confederate Planning for a Post-Civil War World*.](https://www.upress.virginia.edu/title/5194) Recently, Dr. Brettle’s book was named a finalist for the Gilder Lehrman Lincoln Prize, awarded annually to the best scholarly work in English on Abraham Lincoln, the American Civil War soldier, or the American Civil War era. Past winners include Elizabeth Varon’s *Armies of Deliverance*, Doris Kearns Goodwin’s *Team of Rivals*, and David Blight’s *Race and Reunion*. As the editorial fellow at the press, Clayton Butler recently had the opportunity to interview Dr. Brettle about his work. Our discussion touched on Confederates’ economic and social philosophies, how Dr. Brettle’s work relates to contemporary historiography, and the way that Confederates’ wartime planning and visions for the future give the lie to the Lost Cause, providing a final nail in the coffin of that persistent and pernicious narrative of Civil War history. Read more below, and join Dr. Brettle for an event with the [Virginia Festival of the Book](https://vabook.org/speakers/adrian-brettle/) on March 17th at 2:00 pm.
