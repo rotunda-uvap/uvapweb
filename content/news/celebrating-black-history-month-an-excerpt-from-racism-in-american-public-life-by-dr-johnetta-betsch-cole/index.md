@@ -5,7 +5,7 @@ draft: "false"
 title: Celebrating Black History Month - An Excerpt from RACISM IN AMERICAN
   PUBLIC LIFE by Dr. Johnetta Betsch Cole
 related_book:
-  - ""
+  - "5628"
 date: 2021-02-02
 ---
 In celebration of Black History Month, we are pleased to offer this selection from the introduction of Dr. Johnetta Cole's new book[ RACISM IN AMERICAN PUBLIC LIFE: A Call to Action. ](https://www.upress.virginia.edu/title/5628)
