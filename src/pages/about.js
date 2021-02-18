@@ -21,7 +21,7 @@ export default function AboutPage({ data }) {
 
             </section>
 
-         <p className="py-5" dangerouslySetInnerHTML={{__html: pagedata.html}}/>
+         <div className="py-5" dangerouslySetInnerHTML={{__html: pagedata.html}}/>
 
 
           
