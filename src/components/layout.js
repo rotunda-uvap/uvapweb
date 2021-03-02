@@ -1,6 +1,7 @@
 import React from "react"
 import Header from "./header" 
 import Footer from "./footer" 
+import Sidebar from "./sidebar.js"
 import "./layout.css"
 
 
@@ -8,6 +9,7 @@ const Layout = ({ children }) => {
  
   return (
     <div className="max-w-7xl mx-auto px-5 py-10">
+      <Sidebar/>
       <Header/>
       <div className="max-w-7xl mx-auto pb-5">
          {children}

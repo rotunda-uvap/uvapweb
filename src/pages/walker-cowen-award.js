@@ -11,7 +11,7 @@ export default function WalkerCowenPage({ data }) {
         <Layout>
             <h2 className="py-10">Walker Cowen Memorial Prize</h2>
 
-         <p dangerouslySetInnerHTML={{__html: pagedata.html}}/>
+         <div dangerouslySetInnerHTML={{__html: pagedata.html}}/>
 
          
            

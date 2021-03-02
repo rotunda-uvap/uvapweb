@@ -35,14 +35,13 @@ const BookHorizontalTabs = ({summary, reviews, bio}) => {
         </TabPanel>
         <TabPanel className="p-6" tabId="basic-tab-three">
         {bio !== "EMPTY: BioNote" ? 
-          <div>
-            <p dangerouslySetInnerHTML={{ __html: bio }}/>
+          <div dangerouslySetInnerHTML={{ __html: bio }}>
             </div> 
           :
               <div><p>No biographical information available</p></div>}
         </TabPanel>
         <TabPanel className="p-6" tabId="basic-tab-four">
-        <p>From CMS?</p> 
+        <p>Not yet available</p> 
 
         </TabPanel>
       </Tabs>

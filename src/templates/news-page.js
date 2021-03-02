@@ -17,7 +17,7 @@ const newsPage = ({ data }) => {
         <div className="grid md:grid-cols-3">
         <section className="md:col-span-2">
         <div className="float-left px-5 pb-5"><GatsbyImage image={image} alt="related image"   width={300}/></div>
-          <article 
+          <article className="md:px-10"
           dangerouslySetInnerHTML={{ __html: news.html }}/>
 
           

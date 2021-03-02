@@ -65,6 +65,9 @@ const bookPage = ({ data }) => {
           </div>
       
          </section> 
+         <section>
+    <a href={GoogleB}><img src="/gbs_preview_sticker1.png" alt="view on google books" /></a>
+    </section>
     </div>
 
     </div>
@@ -99,14 +102,18 @@ const bookPage = ({ data }) => {
     <section className="py-3">
     <p className="font-black uppercase py-3 px-5 border-b-4 border-white hover:border-black">Related News</p>
 
-      <Link to={`../../${news.frontmatter.type}${news.fields.slug}`}>{news.frontmatter.title}</Link>
       
+            <article className="flex flex-wrap place-content-center p-5 shadow-md hover:bg-black hover:text-white">
+                <div className="mx-auto w-4/5"><h3 className="text-xl font-black uppercase py-5 text-center" key={news.frontmatter.title}><Link to={news.frontmatter.type}>{ news.frontmatter.title }</Link></h3>
+                </div>
+                <Link to={`../../${news.frontmatter.type}${news.fields.slug}`}>
+                  <button className="rounded bg-gray-400 text-white font-black p-5 text-center uppercase">go to article</button></Link>
+                </article>
+            
     </section>}
 
 
-    <section>
-    <a href={GoogleB}><img src="/gbs_preview_sticker1.png" alt="view on google books" /></a>
-    </section>
+   
 
   
 

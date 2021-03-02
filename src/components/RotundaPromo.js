@@ -23,7 +23,7 @@ export default function RotundaPromo() {
       `}
       render={data => (
         <div className="container mx-auto px-6">
-        <div className="bg-cover bg-center h-auto text-white py-20 px-10 object-fill grid md:grid-cols-2 gap-4 content-center items-center">
+        <div className="bg-cover bg-center h-auto text-gray-600 py-20 px-10 object-fill grid md:grid-cols-2 gap-4 content-center items-center">
        <div>
         <p className="font-bold text-sm uppercase">Featured Rotunda:</p>
         <Link to={'../../title/' + data.rot.frontmatter.rid}><p className="text-3xl font-bold">{data.rot.frontmatter.body1}</p></Link>

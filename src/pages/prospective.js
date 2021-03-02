@@ -13,7 +13,7 @@ export default function ProspectiveAuthorsPage({ data }) {
         <Layout>
             <h2 className="py-10">For Prospective Authors</h2>
 
-         <p dangerouslySetInnerHTML={{__html: pagedata.html}}/>
+         <div dangerouslySetInnerHTML={{__html: pagedata.html}}/>
 
          <section className="pt-10 px-5">
            <h5 className="text-2xl font-black">Outline for a Book Proposal</h5>

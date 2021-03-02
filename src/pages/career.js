@@ -11,7 +11,7 @@ export default function CareerPage({ data }) {
         <Layout>
             <h2 className="py-10">Job Opportunties at UVa Press</h2>
 
-         <p dangerouslySetInnerHTML={{__html: pagedata.html}}/>
+         <div dangerouslySetInnerHTML={{__html: pagedata.html}}/>
 
          
            

@@ -11,7 +11,7 @@ export default function OrderPage({ data }) {
         <Layout>
             <h2 className="py-10">Order</h2>
 
-         <p dangerouslySetInnerHTML={{__html: pagedata.html}}/>
+         <div dangerouslySetInnerHTML={{__html: pagedata.html}}/>
 
          
            

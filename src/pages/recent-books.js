@@ -43,7 +43,7 @@ export default function RecentBooks({ data }) {
            
       <section id="new">
            <h4 className="py-10 text-2xl font-black">Recent Releases</h4>
-          <div className="container px-5 py-5 grid md:grid-cols-5 md:gap-4">
+          <div className="container px-5 py-5 grid grid-cols-2 md:grid-cols-5 md:gap-4">
             {rec.edges.map(edge => (
            <>  
               <Link to={`../title/${ edge.node.BookID }`}>

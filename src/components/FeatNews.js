@@ -29,7 +29,7 @@ export default function FeatNews() {
     <div className="mx-auto"><h3 className="text-xl font-black uppercase py-5 text-center"><Link to={'/news' + data.news.edges[0].node.fields.slug}>{data.news.edges[0].node.frontmatter.title}</Link></h3>
           </div>
           <Link to={'/news' + data.news.edges[0].node.fields.slug}>
-            <button className="rounded bg-blue-400 text-white text-lg px-5 py-2 text-center uppercase">read</button></Link>
+            <button className="rounded bg-gray-400 text-white text-lg px-5 py-2 text-center uppercase">read</button></Link>
           </article>
       )}
     />

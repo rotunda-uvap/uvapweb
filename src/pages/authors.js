@@ -20,7 +20,7 @@ export default function AuthorsPage({ data }) {
 
         </section>
             <section>
-            <p dangerouslySetInnerHTML={{__html: pagedata.html}}/>
+            <div dangerouslySetInnerHTML={{__html: pagedata.html}}/>
 
             </section>
 
