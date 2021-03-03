@@ -22,7 +22,8 @@
   
 
 @media (min-width: 800px) {
-#banner {;
+
+    #banner {
     display:grid;
     grid-template-columns:1fr 1fr 1fr;
     grid-template-areas:
