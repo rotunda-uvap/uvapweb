@@ -4,21 +4,18 @@ import Layout from "../components/layout"
 import FeatMedia from "../components/FeatMedia"
 import FeatPromo from "../components/FeatPromo"
 import NewsletterMain from "../components/NewsletterMain"
-import Banner from "../components/BannerPromo"
 import FeatExhibit from "../components/FeatExhibit"
 import FeatNews from "../components/FeatNews"
 import RotundaPromo from "../components/RotundaPromo"
 import { FaSearch } from "react-icons/fa";
+import HomepageBanner from "../components/HomepageBanner"
 
 export default function Home() {
   
   return (
     <Layout>
-      <section>
-        <Banner/>
-      </section>
-       
 
+ <HomepageBanner/>
 
 <section>
 <div className="grid md:grid-cols-4 md:gap-4 py-7 bg-gray-100 ">

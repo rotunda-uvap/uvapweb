@@ -1,0 +1,54 @@
+#banner {
+    height:500px;
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows:auto;
+    grid-template-areas:
+      "left topblock topblock"
+      "left bottomL bottomR"
+  }
+  
+  .text-box {
+    padding:2rem;
+    margin:2rem;
+    background-color:rgba(0, 0, 0, 0.25);
+  }
+  
+  #book  div.text-box {
+    position:relative;
+    top:60%;
+  }
+  
+  
+  #book {
+    grid-area:left;
+    background-image:url("https://www.upress.virginia.edu/sites/default/files/covers/5626.jpg");
+      background-repeat:no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  #rotunda { 
+  grid-area: topblock;
+    background-image:url("https://www.upress.virginia.edu/sites/default/files/btwashington.jpg");
+    background-position: center;
+      background-repeat:no-repeat;
+    background-size: cover;
+  }
+  
+  #newsa {
+    grid-area: bottomL;
+    background-image:url("https://www.upress.virginia.edu/sites/default/files/covers/5194.jpg");
+    background-position: center;
+      background-repeat:no-repeat;
+    background-size: cover;
+  }
+  
+  #newsb {
+    grid-area: bottomR;
+    background-color:#9CA3AF;
+    background-image:url("https://www.upress.virginia.edu/sites/default/files/UVA_Press_Presents_logo.png");
+    background-position: center;
+      background-repeat:no-repeat;
+    background-size: cover
+  }
+  

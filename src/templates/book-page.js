@@ -104,7 +104,7 @@ const bookPage = ({ data }) => {
 
       
             <article className="flex flex-wrap place-content-center p-5 shadow-md hover:bg-black hover:text-white">
-                <div className="mx-auto w-4/5"><h3 className="text-xl font-black uppercase py-5 text-center" key={news.frontmatter.title}><Link to={news.frontmatter.type}>{ news.frontmatter.title }</Link></h3>
+                <div className="mx-auto w-4/5"><h3 className="text-xl font-black uppercase py-5 text-center" key={news.frontmatter.title}><Link to={`../../${news.frontmatter.type}${news.fields.slug}`}>{ news.frontmatter.title }</Link></h3>
                 </div>
                 <Link to={`../../${news.frontmatter.type}${news.fields.slug}`}>
                   <button className="rounded bg-gray-400 text-white font-black p-5 text-center uppercase">go to article</button></Link>
