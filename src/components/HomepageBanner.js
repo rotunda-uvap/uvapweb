@@ -4,7 +4,7 @@ import { Link} from "gatsby"
 
 const Donate = () => {
     return(
-        <section id="banner" className="mb-5">
+        <section id="banner" className="pb-10">
         
         <div id="book">
           <Link to={`/title/5626`}><div className="text-box">
@@ -21,13 +21,13 @@ const Donate = () => {
 
          
        
-          <div id="newsa">
+          <div id="newsa" className="bg-indigo-100">
           <Link to={`/news/interview-with-dr-adrian-brettle-author-of-colossal-ambitions-confederate-planning-for-a-post-civil-war-world`}><div className="text-box">
                 <h6 className="uppercase text-md font-black text-white text-center">News</h6>
               <h4 className="text-lg font-black text-white">INTERVIEW WITH DR. ADRIAN BRETTLE, AUTHOR OF COLOSSAL AMBITIONS: CONFEDERATE PLANNING FOR A POST-CIVIL WAR WORLD</h4>
             </div></Link>
           </div>
-          <div id="newsb">
+          <div id="newsb" className="bg-indigo-400">
           <Link to={'/media/listen-uva-press-presents-interview-with-walter-hood-and-grace-mitchell-tada-on-black-landscapes-matter'}><div className="text-box">
             <h6 className="uppercase text-md font-black text-white text-center">Media</h6>
 

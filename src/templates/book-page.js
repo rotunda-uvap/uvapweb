@@ -2,17 +2,18 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import "../utils/global.css"
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
+// import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import BookHorizontalTabs from "../components/BookHorizontalTabs"
 
 
 const bookPage = ({ data }) => {
     const book = data.booksJson
-    const imageData = getImage(data.file)
+    // const imageData = getImage(data.file)
     const isbn = book.Bindings[0].ISBN
     const GoogleB = 'https://books.google.com/books?vid=' + isbn
     const resources = data.markdownRemark
     const news = data.newsMD
+    const imglink = 'https://www.upress.virginia.edu/sites/default/files/covers/' + book.BookID + '.jpg'
  return (
    
    <Layout>
@@ -20,11 +21,10 @@ const bookPage = ({ data }) => {
     <section className="grid md:grid-cols-3 md:gap-10 py-3" >
       
       <div className="col-span-1">
-      <GatsbyImage image={imageData} alt="book cover" />
-
-
+      {/* <GatsbyImage image={imageData} alt="book cover" /> */}
+      <img src={imglink} alt="cover"/>
       </div>
-      <div className="md:col-span-2">   
+      <div className="md:col-span-2 pr-5">   
           <div>
         <h2 className="py-5 font-black leading-snug">{book.Title}</h2> 
         {book.InternalSeriesVolume && <h6 className="py-3">{book.InternalSeriesVolume}</h6> }

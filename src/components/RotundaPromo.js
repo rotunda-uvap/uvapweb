@@ -31,7 +31,7 @@ export default function RotundaPromo() {
         <p className="body-text p-5">{data.rot.frontmatter.body2} </p>
         </div>  
         <div>
-        <Link to={'../../title/' + data.rot.frontmatter.rid}><GatsbyImage image={getImage(data.rotImg)} alt="featured rotunda image" /></Link>
+        <Link to={'../../title/' + data.rot.frontmatter.rid}><GatsbyImage image={getImage(data.rotImg)} alt="featured rotunda image" className="object-cover w-full"/></Link>
         
         </div>  
     </div>

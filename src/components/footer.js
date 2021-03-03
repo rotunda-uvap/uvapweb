@@ -39,7 +39,7 @@ const Footer = () => {
             <div id="contact" className="content-center col-span-2">
             <h6 className="hidden">Contact Us</h6>
               <section className="grid grid-cols-3 pt-7">
-              <FaMapMarkedAlt className="self-center justify-self-center" aria-label="physical address"/>
+              <FaMapMarkedAlt className="self-center justify-self-center text-2xl" aria-label="physical address"/>
               <ul className="col-span-2 flex flex-col">
                 <li>P.O. Box 400318 (Postal)</li>
                 <li>210 Sprigg Lane (Courier)</li>
@@ -47,14 +47,14 @@ const Footer = () => {
               </ul>
               </section> 
               <section className="grid grid-cols-3  py-2">
-              <FaEnvelope className="self-center justify-self-center" aria-label="email"/>
+              <FaEnvelope className="self-center justify-self-center text-2xl" aria-label="email"/>
                 <ul className="col-span-2 flex flex-col">
                   <li><a href="mailto:vapress@virginia.edu">General Inquiries</a></li>
                   <li><Link to={'/staff-list'}>Staff Directory</Link></li>
                 </ul>
               </section> 
               <section className="grid grid-cols-3  py-2">
-              <FaPhone className="self-center justify-self-center" aria-label="phone and fax numbers"/>
+              <FaPhone className="self-center justify-self-center text-2xl" aria-label="phone and fax numbers"/>
               <ul className="col-span-2 flex flex-col">
                 <li>434 924-3468 (main)</li>
                 <li>1-800-831-3406 (toll-free)</li>

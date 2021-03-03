@@ -275,7 +275,6 @@
     { "id": "5493", "Title": "By Broad Potomac's Shore" },
     { "id": "4969", "Title": "Boston Furniture, 1700-1900" },
     { "id": "3035", "Title": "Turning To Earth" },
-    { "id": "5444", "Title": "Milton among Spaniards" },
     { "id": "4982", "Title": "Novel Ventures" },
     { "id": "5322", "Title": "Monumental Jesus" },
     {
@@ -373,7 +372,6 @@
     { "id": "3743", "Title": "Law, Politics, and Perception" },
     { "id": "2449", "Title": "Ruskin's Culture Wars" },
     { "id": "5326", "Title": "Charlottesville 2017" },
-    { "id": "5440", "Title": "The Dark Thread" },
     { "id": "4986", "Title": "New Woman Ecologies" },
     { "id": "5468", "Title": "Reclaiming Patriotism" },
     { "id": "3019", "Title": "Trailers" },
@@ -439,7 +437,6 @@
     { "id": "2306", "Title": "Privacy and Print" },
     { "id": "2460", "Title": "Saving Monticello" },
     { "id": "4011", "Title": "Fixing College Education" },
-    { "id": "5441", "Title": "Exquisite Materials" },
     { "id": "4993", "Title": "Elizabeth Bishop's Brazil" },
     { "id": "5333", "Title": "Cultural Entanglements" },
     { "id": "3742", "Title": "Gilbert White" },
@@ -520,10 +517,6 @@
     { "id": "3191", "Title": "Women and Laughter" },
     { "id": "3807", "Title": "A \"Topping People\"" },
     { "id": "1962", "Title": "Kierkegaard" },
-    {
-      "id": "5443",
-      "Title": "Innovation in the Italian Counter-Reformation"
-    },
     { "id": "4985", "Title": "Skyscraper Gothic" },
     { "id": "1625", "Title": "Federalists Reconsidered" },
     { "id": "5457", "Title": "Conceived in Crisis" },
@@ -569,7 +562,6 @@
     { "id": "3966", "Title": "Buildings of Hawaii" },
     { "id": "3972", "Title": "The Selected Papers of John Jay" },
     { "id": "4953", "Title": "Best New Poets 2015" },
-    { "id": "5495", "Title": "The Papist Represented" },
     { "id": "6", "Title": "Daybooks of Discovery" },
     { "id": "5481", "Title": "Ireland and America" },
     { "id": "1181", "Title": "At the Picture Show" },
@@ -590,7 +582,6 @@
       "Title": "Featherless Chickens, Laughing Women, and Serious Stories"
     },
     { "id": "4984", "Title": "Fatal Politics" },
-    { "id": "5442", "Title": "Grant Wood's Secrets" },
     { "id": "3806", "Title": "American Iconographic" },
     { "id": "4827", "Title": "Democracy's Muse" },
     { "id": "5293", "Title": "After Print" },
@@ -630,10 +621,6 @@
     { "id": "4101", "Title": "The Great Valley Road of Virginia" },
     { "id": "3108", "Title": "Virginia Reconsidered" },
     { "id": "4667", "Title": "Patriotism and Piety" },
-    {
-      "id": "5579",
-      "Title": "Character and the Individual Personality in English Renaissance Drama"
-    },
     { "id": "2216", "Title": "The Papers of William Thornton" },
     { "id": "5551", "Title": "Perique" },
     { "id": "4897", "Title": "A Year in Rock Creek Park" },
@@ -645,13 +632,11 @@
     { "id": "4883", "Title": "Unnatural Frenchmen" },
     { "id": "3861", "Title": "The Papers of George Washington" },
     { "id": "3875", "Title": "The Papers of George Washington" },
-    { "id": "5592", "Title": "Shapely Bodies" },
     { "id": "4854", "Title": "Monticello in Mind" },
     {
       "id": "1938",
       "Title": "Journal of a Residence in Chile during the Year 1822, and a Voyage from Chile to Brazil"
     },
-    { "id": "5586", "Title": "Authorship in the Long Eighteenth Century" },
     { "id": "4840", "Title": "Shaping the Postwar Landscape" },
     { "id": "2410", "Title": "Revolutionary Outlaws" },
     { "id": "4713", "Title": "Buildings of Mississippi" },
@@ -660,10 +645,6 @@
     { "id": "5343", "Title": "Of Land, Bones, and Money" },
     { "id": "3726", "Title": "Male Armor" },
     { "id": "5357", "Title": "Lighting the Way" },
-    {
-      "id": "5431",
-      "Title": "Retelling the Siege of Jerusalem in Early Modern England"
-    },
     { "id": "3040", "Title": "Two Novels by Mary Chestnut." },
     { "id": "1864", "Title": "Indians in Seventeenth-Century Virginia" },
     { "id": "3901", "Title": "\"A God of Justice?\"" },
@@ -685,10 +666,6 @@
     { "id": "4539", "Title": "The Papers of George Washington" },
     { "id": "1455", "Title": "Cumberland Island National Seashore" },
     { "id": "3242", "Title": "Just Below South" },
-    {
-      "id": "5633",
-      "Title": "Portraiture and Friendship in Enlightenment France"
-    },
     { "id": "2835", "Title": "The Papers of George Washington" },
     { "id": "5182", "Title": "Broken Government" },
     { "id": "3281", "Title": "Selections" },
@@ -732,7 +709,6 @@
       "id": "4841",
       "Title": "Performance and Personhood in Caribbean Literature"
     },
-    { "id": "5587", "Title": "Jonathan Swift" },
     { "id": "1905", "Title": "Jefferson and the Ordeal of Liberty" },
     { "id": "4869", "Title": "American Road Narratives" },
     { "id": "1911", "Title": "Jefferson the President" },
@@ -809,13 +785,11 @@
     { "id": "1907", "Title": "Jefferson at Monticello" },
     { "id": "3862", "Title": "The Papers of George Washington" },
     { "id": "1913", "Title": "The Sage of Monticello" },
-    { "id": "5585", "Title": "Shakespeare and Contemporary Fiction" },
     { "id": "4843", "Title": "Natural Virginia" },
     {
       "id": "3692",
       "Title": "Alexis de Tocqueville and Gustave de Beaumont in America"
     },
-    { "id": "5591", "Title": "The Stage's Glory" },
     { "id": "4857", "Title": "Being Apart" },
     { "id": "5368", "Title": "Fashioning the New England Family" },
     { "id": "4062", "Title": "Remaking Custom" },
@@ -896,7 +870,6 @@
       "Title": "The Papers of Robert Treat Paine, 1787-1814"
     },
     { "id": "4856", "Title": "Bridges to Memory" },
-    { "id": "5590", "Title": "Shakespeare without Boundaries" },
     { "id": "4842", "Title": "Imagining a Nation" },
     { "id": "5584", "Title": "Narrating the Mesh" },
     { "id": "1912", "Title": "Jefferson the President" },
@@ -952,8 +925,6 @@
       "Title": "The Republican Party in the Age of Roosevelt"
     },
     { "id": "3697", "Title": "Tree of Liberty" },
-    { "id": "5580", "Title": "Picturing Religious Experience" },
-    { "id": "5594", "Title": "Figurations of France" },
     { "id": "1094", "Title": "Aging and Gender in Literature" },
     { "id": "3873", "Title": "A Storm over This Court" },
     { "id": "1137", "Title": "An Evening When Alone" },
@@ -977,7 +948,6 @@
     },
     { "id": "5386", "Title": "Evangelical Gothic" },
     { "id": "3244", "Title": "Socrates and the Irrational" },
-    { "id": "5635", "Title": "Rivers in Russian Literature" },
     { "id": "5153", "Title": "Character and Mourning" },
     { "id": "3522", "Title": "A Guide to Documentary Editing" },
     { "id": "3536", "Title": "Lessons in Integration" },
@@ -985,7 +955,6 @@
     { "id": "5621", "Title": "The Elections of 2020" },
     { "id": "4517", "Title": "Polygraphies" },
     { "id": "2166", "Title": "Norfolk" },
-    { "id": "5609", "Title": "Technologies of Empire" },
     { "id": "4503", "Title": "Studies in Bibliography, Volume 59" },
     { "id": "2172", "Title": "Obedient Germans? A Rebuttal" },
     { "id": "3287", "Title": "English Silver" },
@@ -999,10 +968,6 @@
     { "id": "2826", "Title": "The Papers of George Washington" },
     { "id": "4264", "Title": "Word, Like Fire" },
     { "id": "4502", "Title": "The Educational Legacy of Woodrow Wilson" },
-    {
-      "id": "5608",
-      "Title": "Theory and Practice in Eighteenth Century Dance"
-    },
     { "id": "2167", "Title": "Northrop Frye" },
     { "id": "4270", "Title": "Portrait of a Patriot" },
     { "id": "1308", "Title": "Caribbean Discourse" },
@@ -1043,15 +1008,10 @@
     { "id": "2359", "Title": "Religion and Violence in a Secular World" },
     { "id": "1917", "Title": "Jefferson's Empire" },
     { "id": "3872", "Title": "In Good Keeping" },
-    { "id": "5595", "Title": "The Theatre of Death" },
     { "id": "3682", "Title": "Latino Politics" },
     {
       "id": "1095",
       "Title": "The Agrarian Origins of American Capitalism"
-    },
-    {
-      "id": "5581",
-      "Title": "Literary Celebrity, Gender, and Victorian Authorship, 1850-1915"
     },
     { "id": "5556", "Title": "The Katrina Decade" },
     { "id": "4890", "Title": "The Pagan Writes Back" },
@@ -1098,15 +1058,10 @@
     { "id": "43", "Title": "A Natural History of Quiet Waters" },
     { "id": "3858", "Title": "The Papers of George Washington" },
     { "id": "4851", "Title": "Catching Sight" },
-    { "id": "5597", "Title": "Notorious Facts" },
     { "id": "4689", "Title": "The Diaries of Gouverneur Morris" },
     {
       "id": "1929",
       "Title": "John Henry Ingram's Poe Collection at the University of Virginia"
-    },
-    {
-      "id": "5583",
-      "Title": "Dramatic Extracts in Seventeenth Century English Manuscripts"
     },
     { "id": "4879", "Title": "Reading Trauma Narratives" },
     { "id": "3870", "Title": "Jefferson vs. the Patent Trolls" },
@@ -1116,7 +1071,6 @@
     { "id": "1120", "Title": "American Exceptionalism, American Anxiety" },
     { "id": "5420", "Title": "Speculative Enterprise" },
     { "id": "3051", "Title": "Unheard Voices" },
-    { "id": "5434", "Title": "Eliza Fenwick" },
     { "id": "5352", "Title": "Reading the Hindu and Christian Classics" },
     { "id": "4064", "Title": "Showdown in Virginia" },
     { "id": "4702", "Title": "The Camaro in the Pasture" },
@@ -1169,13 +1123,10 @@
     { "id": "4717", "Title": "The Mudimbe Reader" },
     { "id": "4071", "Title": "Brothers Born of One Mother" },
     { "id": "1653", "Title": "Flowerdew Hundred" },
-    { "id": "5435", "Title": "Women Warriors in Early Modern Spain" },
     { "id": "3722", "Title": "Segregation's Science" },
     { "id": "1135", "Title": "An American Homeplace" },
     { "id": "3050", "Title": "Understanding the American Revolution" },
-    { "id": "5421", "Title": "The Circuit of Apollo" },
     { "id": "1914", "Title": "Jefferson the Virginian" },
-    { "id": "5582", "Title": "Jonathan Swift's WordBook" },
     { "id": "4844", "Title": "The Cabinetmaker and the Carver" },
     {
       "id": "3695",
@@ -1183,17 +1134,9 @@
     },
     { "id": "1096", "Title": "Albemarle" },
     { "id": "4688", "Title": "Writing through Jane Crow" },
-    {
-      "id": "5596",
-      "Title": "Frances Burney and Narrative Prior to Ideology"
-    },
     { "id": "2212", "Title": "The Papers of George Washington" },
     { "id": "4111", "Title": "The Great Virginia Triumvirate" },
     { "id": "56", "Title": "Soon Come" },
-    {
-      "id": "5569",
-      "Title": "Crusoes and Other Castaways in Modern French Literature"
-    },
     { "id": "3118", "Title": "Visitors to Monticello" },
     { "id": "4677", "Title": "The First Republican Army" },
     { "id": "5541", "Title": "Birds of a Feather" },
@@ -1265,14 +1208,6 @@
     { "id": "5160", "Title": "In the Red and in the Black" },
     { "id": "3511", "Title": "Out of the Shadow" },
     { "id": "4518", "Title": "Artistic Ambassadors" },
-    {
-      "id": "5606",
-      "Title": "Pastiche, Fashion, and Galanterie in Chardin's Genre Subjects"
-    },
-    {
-      "id": "5612",
-      "Title": "Prologues and Epilogues of Restoration Theater"
-    },
     { "id": "1474", "Title": "Democratizing the Old Dominion" },
     { "id": "2828", "Title": "The Papers of George Washington" },
     { "id": "4281", "Title": "Sustainable, Affordable, Prefab" },
@@ -1286,7 +1221,6 @@
     { "id": "4294", "Title": "Wild Dog Dreaming" },
     { "id": "2829", "Title": "The Papers of George Washington" },
     { "id": "1475", "Title": "Demon or Doll" },
-    { "id": "5613", "Title": "The Tactics of Toleration" },
     { "id": "3504", "Title": "What's Bugging You?" },
     {
       "id": "5175",
@@ -1294,10 +1228,6 @@
     },
     { "id": "1307", "Title": "Carolyn G. Heilbrun" },
     { "id": "2168", "Title": "Nostalgia in Transition, 1780-1917" },
-    {
-      "id": "5607",
-      "Title": "Transformations of Memory and Forgetting in Sixteenth Century France"
-    },
     { "id": "4519", "Title": "Family Matters" },
     { "id": "3538", "Title": "Masterpieces: Food and Art in Virginia" },
     { "id": "5149", "Title": "Recomposing Ecopoetics" },
@@ -1319,7 +1249,6 @@
     { "id": "2424", "Title": "Richmond" },
     { "id": "2342", "Title": "Recollections of a Happy Life" },
     { "id": "3048", "Title": "Under the Cover of Kindness" },
-    { "id": "5439", "Title": "Epic Landscapes" },
     {
       "id": "1139",
       "Title": "An Illustrated Guide to Eastern Woodland Wildflowers and Trees"
@@ -1334,7 +1263,6 @@
     { "id": "4690", "Title": "Enlightenment Underground" },
     { "id": "5203", "Title": "The Cowboy Capitalist" },
     { "id": "3114", "Title": "Virginia's Wild Side" },
-    { "id": "5571", "Title": "The Politics of Rape" },
     { "id": "3666", "Title": "Backstage in the Novel" },
     { "id": "4121", "Title": "Noble Cows and Hybrid Zebras" },
     { "id": "5559", "Title": "New Orleans, the Founding Era" },
@@ -1376,8 +1304,6 @@
     { "id": "5229", "Title": "Women in the American Revolution" },
     { "id": "2220", "Title": "Paradise and Plantation" },
     { "id": "3116", "Title": "Visions of the Land" },
-    { "id": "5573", "Title": "Shakespeare's Folktale Sources" },
-    { "id": "5598", "Title": "Familial Forms" },
     { "id": "3857", "Title": "Studies in Bibliography, Volume 58" },
     { "id": "4692", "Title": "Failed Frontiersmen" },
     { "id": "4876", "Title": "The Haitian Declaration of Independence" },
@@ -1386,7 +1312,6 @@
     { "id": "4043", "Title": "Cuba and the Fall" },
     { "id": "1885", "Title": "Irons in the Fire" },
     { "id": "2354", "Title": "Refiguring the Map of Sorrow" },
-    { "id": "5413", "Title": "The Enemy in Italian Renaissance Epic" },
     { "id": "3710", "Title": "Portrait of a Patriot" },
     { "id": "3089", "Title": "Victorian Poetry As Cultural Critique" },
     { "id": "4916", "Title": "Barbaric Culture and Black Critique" },
@@ -1399,12 +1324,7 @@
       "Title": "Culture and Liberty in the Age of the American Revolution"
     },
     { "id": "4269", "Title": "Portrait of a Patriot" },
-    { "id": "5611", "Title": "Citoyennes" },
     { "id": "1477", "Title": "Depression and New Deal in Virginia" },
-    {
-      "id": "5605",
-      "Title": "Renaissance Shakespeare/Shakespeare Renaissances"
-    },
     { "id": "5163", "Title": "East-West Exchange and Late Modernism" },
     { "id": "4296", "Title": "Greening the City" },
     { "id": "5188", "Title": "Redemption from Tyranny" },
@@ -1421,10 +1341,6 @@
       "Title": "Letters and Photographs from the Battle Country"
     },
     { "id": "2180", "Title": "Old Southampton" },
-    {
-      "id": "5604",
-      "Title": "Shakespeare and Interpretation, or What You Will"
-    },
     { "id": "1304", "Title": "Caribbean Shadows and Victorian Ghosts" },
     { "id": "5162", "Title": "Beyond 1776" },
     {
@@ -1432,7 +1348,6 @@
       "Title": "American Art at the Virginia Museum of Fine Arts"
     },
     { "id": "5176", "Title": "Buildings of New Orleans" },
-    { "id": "5610", "Title": "The Limits of Orientalism" },
     { "id": "2143", "Title": "Never Ask Permission" },
     { "id": "4532", "Title": "World's Fair Gardens" },
     { "id": "4903", "Title": "After the Deluge" },
@@ -1458,12 +1373,7 @@
       "Title": "Poetry and the Thought of Song in Nineteenth-Century Britain"
     },
     { "id": "3842", "Title": "Pilgrimage to Vallombrosa" },
-    {
-      "id": "5599",
-      "Title": "Theology and Literature in the Age of Johnson"
-    },
     { "id": "1099", "Title": "Almost a Girl" },
-    { "id": "5572", "Title": "Shopping" },
     {
       "id": "5566",
       "Title": "Interest and Connection in the Eighteenth Century"
@@ -1517,10 +1427,6 @@
     { "id": "3675", "Title": "The Papers of George Washington" },
     { "id": "3113", "Title": "Virginia's Hunting Guide" },
     { "id": "2219", "Title": "Paradigm and Parody" },
-    {
-      "id": "5576",
-      "Title": "Women, Epic, and Transition in British Romanticism"
-    },
     { "id": "49", "Title": "Cities of Affluence and Anger" },
     { "id": "3649", "Title": "Accommodating Revolutions" },
     { "id": "4640", "Title": "The Haverford Discussions" },
@@ -1531,7 +1437,6 @@
     { "id": "4867", "Title": "Treasure in Heaven" },
     { "id": "3852", "Title": "The Papers of James Madison" },
     { "id": "4683", "Title": "Between Sovereignty and Anarchy" },
-    { "id": "5589", "Title": "French Women Authors" },
     { "id": "4697", "Title": "Prophetic Remembrance" },
     {
       "id": "1937",
@@ -1556,15 +1461,10 @@
     { "id": "3098", "Title": "Violence, Silence, and Anger" },
     { "id": "1843", "Title": "Imagining Miami" },
     { "id": "3932", "Title": "Mariana Griswold Van Rensselaer" },
-    {
-      "id": "5614",
-      "Title": "Women as Translators in Early Modern England"
-    },
     { "id": "5166", "Title": "Bound for Work" },
     { "id": "3517", "Title": "The Citizenship Revolution" },
     { "id": "4278", "Title": "Buildings of Texas" },
     { "id": "1300", "Title": "Captured by Texts" },
-    { "id": "5600", "Title": "Women Warriors in Romantic Drama" },
     { "id": "4536", "Title": "The Punitive Turn" },
     { "id": "5628", "Title": "Racism in American Public Life" },
     { "id": "4250", "Title": "Reconstructing the Campus" },
@@ -1584,9 +1484,7 @@
     { "id": "5629", "Title": "Cajun Document" },
     { "id": "4279", "Title": "Slavery by Any Other Name" },
     { "id": "3516", "Title": "Capturing Beauty" },
-    { "id": "5601", "Title": "Arras Hanging" },
     { "id": "3270", "Title": "Tropical Circle" },
-    { "id": "5615", "Title": "A Taste for the Foreign" },
     { "id": "3264", "Title": "The Fowl and the Pussycat" },
     { "id": "5173", "Title": "Parting Words" },
     { "id": "1842", "Title": "Imagining Eden" },
@@ -1608,7 +1506,6 @@
     { "id": "3714", "Title": "Border Fictions" },
     { "id": "4709", "Title": "Establishing Religious Freedom" },
     { "id": "5417", "Title": "Wandering Memory" },
-    { "id": "5588", "Title": "Jonathan Swift" },
     { "id": "4866", "Title": "Settler Jamaica in the 1750s" },
     { "id": "2224", "Title": "Parlor Politics" },
     { "id": "3884", "Title": "The Founders on the Founders" },
@@ -1617,10 +1514,6 @@
     { "id": "60", "Title": "Prodigy Houses of Virginia" },
     { "id": "4899", "Title": "The Papers of Francis Bernard" },
     { "id": "2230", "Title": "Peace and the Peacemakers" },
-    {
-      "id": "5577",
-      "Title": "Spenser, Milton, and the Redemption of the Epic Hero"
-    },
     { "id": "3106", "Title": "Virginia Landmarks of Black History" },
     { "id": "4669", "Title": "Satan and Salem" },
     { "id": "1077", "Title": "Across the Continent" },
@@ -1661,7 +1554,6 @@
     { "id": "5788", "Title": "Economy Hall" },
     { "id": "4482", "Title": "The Madman and the Medusa" },
     { "id": "3104", "Title": "Virginia Folk Legends" },
-    { "id": "5575", "Title": "Decorative Games" },
     { "id": "3138", "Title": "The Works of Stephen Crane" },
     { "id": "5549", "Title": "Unfinished Blues" },
     { "id": "3892", "Title": "Confederate Visions" },
@@ -1674,7 +1566,6 @@
     },
     { "id": "3716", "Title": "What Should I Read Next?" },
     { "id": "5367", "Title": "George Washington and Native Americans" },
-    { "id": "5415", "Title": "Advertising the Self in Renaissance France" },
     { "id": "5373", "Title": "Fashioning Character" },
     { "id": "2352", "Title": "Red Gentlemen and White Savages" },
     { "id": "5429", "Title": "The Unlikely Reformer" },
@@ -1686,10 +1577,6 @@
     { "id": "1840", "Title": "Design with Culture" },
     { "id": "1854", "Title": "In Pursuit of Flavor" },
     { "id": "3272", "Title": "Tigers and Sails and ABC Tales" },
-    {
-      "id": "5603",
-      "Title": "Involuntary Confessions of the Flesh in Early Modern France"
-    },
     { "id": "3514", "Title": "Easy On, Easy Off" },
     { "id": "1303", "Title": "Caribbean Romances" },
     { "id": "5171", "Title": "Higher Calling" },
@@ -1713,9 +1600,7 @@
     { "id": "2145", "Title": "New Communitarian Thinking" },
     { "id": "2637", "Title": "Sugarloaf" },
     { "id": "5158", "Title": "Guilty Pleasures" },
-    { "id": "5616", "Title": "Bad Books" },
     { "id": "4508", "Title": "Marching Masters" },
-    { "id": "5602", "Title": "Hey Presto!" },
     { "id": "1302", "Title": "Caribbean Literature and the Environment" },
     { "id": "3515", "Title": "Witchcraft and the Papacy" },
     { "id": "5164", "Title": "Dézafi" },
@@ -1746,7 +1631,6 @@
     { "id": "3139", "Title": "A Voyage to Virginia in 1609" },
     { "id": "3111", "Title": "Virginia's Civil War" },
     { "id": "2569", "Title": "Story Line" },
-    { "id": "5574", "Title": "Visualizing the Text" },
     { "id": "5789", "Title": "The Correspondence of Thomas Hutchinson" },
     { "id": "2958", "Title": "The Virginia Landmarks Register" },
     {
@@ -1786,7 +1670,6 @@
     { "id": "10", "Title": "Empires in the Forest" },
     { "id": "4625", "Title": "Crossing the Boundaries of Belief" },
     { "id": "3162", "Title": "Wild Enlightenment" },
-    { "id": "5513", "Title": "The Delaware Naturalist Handbook" },
     { "id": "4619", "Title": "Pathologies of Paradise" },
     { "id": "5261", "Title": "Picturing Harrisonburg" },
     { "id": "3189", "Title": "Women and British Aestheticism" },
@@ -1855,7 +1738,6 @@
     },
     { "id": "3177", "Title": "Williamsburg, Virginia" },
     { "id": "5260", "Title": "Caribbean Jewish Crossings" },
-    { "id": "5512", "Title": "Hostile Humor in Renaissance France" },
     { "id": "4142", "Title": "After Apartheid" },
     { "id": "4630", "Title": "Religious Freedom" },
     { "id": "2916", "Title": "The Shad Treatment" },
@@ -1980,7 +1862,6 @@
     },
     { "id": "4828", "Title": "Blood from the Sky" },
     { "id": "3821", "Title": "Distant Revolutions" },
-    { "id": "5511", "Title": "Realism and Role-Play" },
     {
       "id": "4169",
       "Title": "The Legitimacy of the Business Corporation in the Law of the United States, 1780-1970"
@@ -2028,10 +1909,6 @@
     { "id": "5267", "Title": "A World of Disorderly Notions" },
     { "id": "3616", "Title": "The Papers of Abraham Lincoln" },
     { "id": "4179", "Title": "Ralph Ellison and Kenneth Burke" },
-    {
-      "id": "5515",
-      "Title": "Inventing the Critic in Renaissance England"
-    },
     { "id": "4623", "Title": "Race, Romance, and Rebellion" },
     { "id": "2534", "Title": "Southern Rights" },
     { "id": "4145", "Title": "The Preacher and the Politician" },
@@ -2054,10 +1931,6 @@
     { "id": "5313", "Title": "Against Popery" },
     { "id": "4019", "Title": "Is Killing Wrong?" },
     { "id": "5307", "Title": "Trump's First Year" },
-    {
-      "id": "5461",
-      "Title": "The Complete Writings and Selected Correspondence of John Dickinson"
-    },
     { "id": "3010", "Title": "Topographies of the Sacred" },
     { "id": "3986", "Title": "Above All, Don't Look Back" },
     { "id": "4025", "Title": "Not Only War" },
@@ -2193,7 +2066,6 @@
     { "id": "2286", "Title": "Praise of the Secular" },
     { "id": "4191", "Title": "Seeing Jefferson Anew" },
     { "id": "3832", "Title": "The Constitution before the Judgment Seat" },
-    { "id": "5462", "Title": "Art and Artifact in Austen" },
     { "id": "5304", "Title": "Trans-Atlantic Sojourners" },
     { "id": "5310", "Title": "Listening In" },
     { "id": "4768", "Title": "The Newark Earthworks" },
