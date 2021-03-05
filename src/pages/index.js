@@ -3,7 +3,6 @@ import { Link} from "gatsby"
 import Layout from "../components/layout"
 import FeatPromo from "../components/FeatPromo"
 import FeatMedia from "../components/FeatMedia"
-import FeatExhibit from "../components/FeatExhibit"
 import FeatNews from "../components/FeatNews"
 import NewsletterMain from "../components/NewsletterMain"
 import RotundaPromo from "../components/RotundaPromo"
@@ -29,22 +28,15 @@ export default function Home() {
       </div>
 </section>
 <section>
-<div className="grid md:grid-cols-4 md:gap-4 py-7">
-<article className="flex flex-wrap place-content-center p-5 hover:bg-gray-800 hover:text-white">
-              <div><button className="px-4 py-2 border-2 border-gray-700 uppercase">search</button></div>
-                <div className="mx-auto w-4/5 py-10 flex flex-col justify-center">
-                <FaSearch className="self-center" />
-                <div className="mx-auto"><h3 className="text-xl font-black uppercase py-5 text-center"><Link to={'/book-search'}>Find a book</Link></h3>
-            </div>  
-            </div>  
-      </article>
+<div className="container mx-auto px-6">
+<p className="font-bold text-sm uppercase text-gray-600">Recent News</p>
+
       <FeatNews/>
       <FeatMedia />
-     <FeatExhibit/>
 
       
       </div>
-      <button className="bg-gray-800 text-lg text-white p-4 w-full uppercase text-center"><Link to={`/news-posts`}>see all news posts</Link></button>
+      <button className="bg-gray-800 text-lg text-white p-4 w-full uppercase text-center"><Link to={`/news-posts`}>see all the latest news</Link></button>
 </section>
 <section>
 <div className="container mx-auto px-6">
