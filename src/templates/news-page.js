@@ -13,27 +13,27 @@ const newsPage = ({ data }) => {
  return (
    <Layout>
      <div>
-        <h1 className="py-5 text-2xl font-black uppercase" >{news.frontmatter.title}</h1>
+        <h1 className="px-10 py-5 text-2xl font-black uppercase" >{news.frontmatter.title}</h1>
         <div className="grid md:grid-cols-3">
         <section className="md:col-span-2">
-        <div className="float-left px-5 pb-5"><GatsbyImage image={image} alt="related image"   width={300}/></div>
+        <div className="float-left px-10 pb-5"><GatsbyImage image={image} alt="related image"   width={300}/></div>
           <article className="md:px-10"
           dangerouslySetInnerHTML={{ __html: news.html }}/>
 
           
           </section>
          
-         <section className="flex flex-col p-10">
+         <section className="flex flex-col bg-gray-200 pl-10">
             
             {related_books && 
-            <> 
+            <>
+            <h6 className="uppercase px-7 py-5">Related</h6>
             {related_books.map(book => (
             
             <RelatedBook id={book.id} title={book.Title}/>
-            
-        ))}
-        </>
-        }
+           
+        ))}</>
+        } 
         </section>
         </div>
          

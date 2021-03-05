@@ -23,11 +23,12 @@ export default function FeatPromo() {
       render={data => (
         <div className="container mx-auto px-6 py-10">
          
-        <div className="flex flex-col mx-auto place-content-center">
-      <h2 className="text-5xl font-bold my-5">{data.promos.edges[0].node.frontmatter.title} </h2>
-          <p className="pt-2" dangerouslySetInnerHTML={{ __html: data.promos.edges[0].node.html }}></p>
+        <div className="flex flex-col mx-auto place-content-center px-10 ">
+        <p className="font-bold text-sm uppercase">Featured Promotion:</p>
+      <h2 className="text-3xl font-bold text-gray-600">{data.promos.edges[0].node.frontmatter.title} </h2>
+          <div className="p-5" dangerouslySetInnerHTML={{ __html: data.promos.edges[0].node.html }}></div>
         </div>
-        <div className="grid md:grid-cols-5 md:gap-2">
+        <div className="grid md:grid-cols-5 md:gap-2 px-10">
         {data.promos.edges[0].node.frontmatter.relbook && data.promos.edges[0].node.frontmatter.relbook.split(',').map(book => (
         <> 
         <RelatedBook key={book} id={book}/>

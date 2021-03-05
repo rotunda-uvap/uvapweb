@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import { slide as Menu } from 'react-burger-menu'
+import { FaSearch } from "react-icons/fa";
 import "./sidebar.css"
 
 
@@ -8,6 +9,8 @@ const Burger = () => {
  
     return (
       <div className="burger-menu">
+        <Link to={`/book-search`}> <FaSearch className="text-right search-icon text-white" /></Link>
+        <h6 className="text-right menu-text text-white uppercase">Menu</h6>
         <Menu right isOpen={ false } noOverlay width={ 400 }>
         <div className="tab w-full overflow-hidden border-t">
                <input className="absolute opacity-0 " id="about" type="checkbox" name="tabs"/>
@@ -46,7 +49,7 @@ const Burger = () => {
                 New Releases
                 </Link>
                 <Link to={`/catalog`} className="uppercase block text-lg hover:text-gray-300">
-                Current Catalog
+                Seasonal Catalog
                 </Link>
                 <Link to={`/all-exhibits`} className="uppercase block text-lg  hover:text-gray-300">
       Conference Exhibits
@@ -74,6 +77,27 @@ const Burger = () => {
 
                </div>
             </div>
+            <div className="tab w-full overflow-hidden border-t">
+               <input className="absolute opacity-0 " id="instructors" type="checkbox" name="tabs"/>
+               <label className="block p-5 leading-normal cursor-pointer" htmlFor="instructors">FOR INSTRUCTORS</label>
+               <div className="tab-content overflow-hidden leading-normal">
+               <Link to={`/permissions`} className="uppercase block text-lg hover:text-gray-300">
+                    Desk/Exam Copy requests
+              </Link>
+              <a href={`/books/#series`} className="uppercase block text-lg hover:text-gray-300">
+                    Our Book Series
+              </a>
+              <Link to={`/books/#subjects`} className="uppercase block text-lg hover:text-gray-300">
+                    Our Book Subjects
+              </Link>
+              <Link to={`/collection/American%20History%20Collection`} className="uppercase block text-lg hover:text-gray-300">
+                    Rotunda's History Collection
+              </Link>
+              <Link to={`/collection/Literature%20and%20Culture%20Collection`} className="uppercase block text-lg hover:text-gray-300">
+                    Rotunda's Literature Collection
+              </Link>
+               </div>
+        </div>
         <div className="tab w-full overflow-hidden border-t">
                <input className="absolute opacity-0 " id="rotunda" type="checkbox" name="tabs"/>
                <label className="block p-5 leading-normal cursor-pointer" htmlFor="rotunda">ROTUNDA DIGITAL</label>

@@ -5,7 +5,7 @@ import { FaPhone, FaMapMarkedAlt, FaEnvelope, FaFacebookSquare, FaTwitterSquare,
 const Footer = () => {
    
     return (
-      <footer className="body-font border-t bg-black text-white text-sm container md:grid md:grid-cols-4 items-center">
+      <footer className="body-font bg-gray-800 text-white text-sm  md:grid md:grid-cols-4 items-center">
          
             <div id="links col-span-1">
               <h6 className="hidden">QuickLinks</h6>
@@ -62,7 +62,7 @@ const Footer = () => {
               </ul>
               </section> 
            </div>
-           <div id="affiliates" className="py-4 px-4 md:py-0"><h6 className="hidden">Affiliates</h6>
+           <div id="affiliates" className="py-4  col-span-1 px-4 md:py-0"><h6 className="hidden">Affiliates</h6>
            <ul>
              <li><a href="http://www.virginia.edu/"> <img src="/uva_white.png" alt="uva"/> </a></li>
              <li><a href="http://http//www.aupresses.org"> <img src="/aup_member.jpg" alt="aup"/> </a></li>

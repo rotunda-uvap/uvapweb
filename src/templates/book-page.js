@@ -18,13 +18,13 @@ const bookPage = ({ data }) => {
    
    <Layout>
 
-    <section className="grid md:grid-cols-3 md:gap-10 py-3" >
+    <section className="grid md:grid-cols-3 md:gap-10 py-3 " >
       
       <div className="col-span-1">
       {/* <GatsbyImage image={imageData} alt="book cover" /> */}
       <img src={imglink} alt="cover"/>
       </div>
-      <div className="md:col-span-2 pr-5">   
+      <div className="md:col-span-2 pr-5 px-10">   
           <div>
         <h2 className="py-5 font-black leading-snug">{book.Title}</h2> 
         {book.InternalSeriesVolume && <h6 className="py-3">{book.InternalSeriesVolume}</h6> }
@@ -54,13 +54,13 @@ const bookPage = ({ data }) => {
        
        <section>
          <div className="py-3">{book.Series && <div><span className="text-xs uppercase pr-5">Series:</span>
-          <button className="text-white text-sm bg-blue-400 rounded-md p-2">
+          <button className="text-white text-sm bg-gray-600 rounded-md p-2">
             <Link to={`../../series/${ book.Series.seriesID }`}>{ book.Series.name }</Link>
             </button></div>}
             </div>
           <div className="py-3">
             {book.Subject && <div><span className="text-xs uppercase pr-5">subject:</span>
-       <button className="text-white text-sm rounded-md bg-blue-500 p-2">
+       <button className="text-white text-sm rounded-md bg-gray-700 p-2">
          <Link to={`../../subject/${ book.Subject.subjectID }`}>{ book.Subject.name }</Link></button></div>}
           </div>
       
@@ -100,10 +100,11 @@ const bookPage = ({ data }) => {
 
     {news && 
     <section className="py-3">
-    <p className="font-black uppercase py-3 px-5 border-b-4 border-white hover:border-black">Related News</p>
+    <p className="font-bold text-sm uppercase text-gray-600">Related News:</p>
+
 
       
-            <article className="flex flex-wrap place-content-center p-5 shadow-md hover:bg-black hover:text-white">
+            <article className="flex flex-wrap place-content-center p-5 shadow-md hover:bg-gray-800 hover:text-white">
                 <div className="mx-auto w-4/5"><h3 className="text-xl font-black uppercase py-5 text-center" key={news.frontmatter.title}><Link to={`../../${news.frontmatter.type}${news.fields.slug}`}>{ news.frontmatter.title }</Link></h3>
                 </div>
                 <Link to={`../../${news.frontmatter.type}${news.fields.slug}`}>

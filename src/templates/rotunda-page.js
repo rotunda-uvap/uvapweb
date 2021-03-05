@@ -2,6 +2,7 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import {FaArrowAltCircleRight, FaUserPlus} from "react-icons/fa"
 
 const rotundaPage = ({ data }) => {
     const item = data.rotundaJson
@@ -14,9 +15,11 @@ const rotundaPage = ({ data }) => {
         <h2 className="py-10">{item.Title}</h2>
           <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1">
         <GatsbyImage image={imageData} alt="publication image"/>
-          <a href={item.URL} className="py-7"><button>Go to Publication</button></a>
-        <section>
-        <h6 className="py-7">Summary</h6>
+        <div className="flex flex-col pl-6"><a href={item.URL} className="py-7"><button> <FaArrowAltCircleRight className="inline"/> Go to Publication </button></a>
+          <button className="py-1 text-left"> <FaUserPlus className="inline"/> No Access?  Click <a href="https://rotunda.upress.virginia.edu/register/default.xqy"> here for a free trial</a>, or here to tell your librarian that you'd like it</button></div>
+       
+        <section className="py-7">
+          <hr className="py-2"/>
         <article dangerouslySetInnerHTML={{ __html:summary.html }}/>
 
         </section>

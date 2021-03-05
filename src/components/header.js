@@ -9,7 +9,7 @@ import {Link } from "gatsby"
 const Header = () => {
   
     return (
-      <header className="bg-black text-white body-font">
+      <header className="bg-gray-800 text-white body-font">
        <nav className="flex items-center justify-between flex-wrap p-6">
       <div className="flex items-center flex-shrink-0 mr-6">
       <div className="hidden md:block"><Link to={`/`}> <img src="/uvap_white.png" alt="logo"/> </Link></div>
