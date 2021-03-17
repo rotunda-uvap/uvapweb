@@ -13,7 +13,7 @@ export default function SupportPage({ data }) {
             <a href="https://securelb.imodules.com/s/1535/16-uva/giving.aspx?sid=1535&gid=16&pgid=684&cid=1509&appealcode=21UVAQ14WG&bledit=1&dids=4515&sort=1">
             <button className="text-gray-800 hover:bg-gray-800 hover:text-white text-xl w-full py-6 text-center mx-auto border-b-4 border-gray-800">MAKE A GIFT</button></a>
          <div className="py-5" dangerouslySetInnerHTML={{__html: pagedata.html}}/>
-
+          <div>List of supporters?</div>
          
            
         </Layout>

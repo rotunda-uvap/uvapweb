@@ -36,7 +36,7 @@ export default function Home() {
 
       
       </div>
-      <button className="bg-gray-800 text-lg text-white p-4 w-full uppercase text-center"><Link to={`/news-posts`}>see all the latest news</Link></button>
+      <button className="bg-gray-800 text-lg text-white p-4 w-full uppercase text-center"><Link to={`/publicity`}>see all the latest news</Link></button>
 </section>
 <section>
 <div className="container mx-auto px-6">
