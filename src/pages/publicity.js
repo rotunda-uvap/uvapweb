@@ -52,11 +52,13 @@ export default function PubPage({ data }) {
             </section>
             <div className="md:col-span-1 p-10">
             <section className="flex flex-col">
+            <h5 className="py-2">UVaP on Facebook</h5>
             <Helmet>
+            
             <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v9.0&appId=10916153062&autoLogAppEvents=1" nonce="Jr34ozA7"></script></Helmet>
             
-            <div className="fb-page" data-href="https://www.facebook.com/uvapress" data-tabs="timeline" data-width="" data-height="700" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/uvapress" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/uvapress">University of Virginia Press</a></blockquote></div>
-            <div className="py-2"><a className="twitter-timeline" data-chrome="noheader"  data-widget-id="702210505897807872" data-height="700" data-width="340" href="https://twitter.com/uvapress">Tweets by @uvapress</a></div>
+            <div className="fb-page" data-href="https://www.facebook.com/uvapress" data-tabs="timeline" data-width="" data-height="800" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/uvapress" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/uvapress">University of Virginia Press</a></blockquote></div>
+            <div className="py-5"><h5 className="py-2">UVaP on Twitter</h5><a className="twitter-timeline" data-chrome="noheader"  data-widget-id="702210505897807872" data-height="800" data-width="340" href="https://twitter.com/uvapress">Tweets by @uvapress</a></div>
            
             </section>
             </div>

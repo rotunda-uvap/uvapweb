@@ -9,8 +9,8 @@ const Burger = () => {
  
     return (
       <div className="burger-menu">
-        <Link to={`/book-search`}> <FaSearch className="text-right search-icon text-white" /></Link>
-        <h6 className="text-right menu-text text-white uppercase">Menu</h6>
+        <Link to={`/book-search`}> <FaSearch className="text-right search-icon text-gray-700" /></Link>
+        <h6 className="text-right menu-text text-gray-700 uppercase">Menu</h6>
         <Menu right isOpen={ false } noOverlay width={ 400 }>
         <div className="tab w-full overflow-hidden border-t">
                <input className="absolute opacity-0 " id="about" type="checkbox" name="tabs"/>
@@ -59,6 +59,9 @@ const Burger = () => {
     </Link>
                 <Link to={`/order`} className="uppercase block text-lg hover:text-gray-300">
                 Vendor Ordering
+              </Link>
+              <Link to={`#`} className="uppercase block text-lg hover:text-gray-300">
+                Open Access
               </Link>
 
                </div>

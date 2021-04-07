@@ -18,7 +18,7 @@ const bookPage = ({ data }) => {
    
    <Layout>
 
-    <section className="grid md:grid-cols-3 md:gap-10 py-3 " >
+    <section className="grid md:grid-cols-3 md:gap-10 py-3 ml-6 " >
       
       <div className="col-span-1">
       {/* <GatsbyImage image={imageData} alt="book cover" /> */}
@@ -26,19 +26,19 @@ const bookPage = ({ data }) => {
       </div>
       <div className="md:col-span-2 pr-5 px-10">   
           <div>
-        <h2 className="py-5 font-black leading-snug">{book.Title}</h2> 
+        <h2 className="py-5 leading-snug font-light">{book.Title}</h2> 
         {book.InternalSeriesVolume && <h6 className="py-3">{book.InternalSeriesVolume}</h6> }
 
-        {book.Subtitle && <h5 className="italic py-3">{book.Subtitle}</h5>}
+        {book.Subtitle && <h5 className="italic py-3 font-light">{book.Subtitle}</h5>}
 
-        <h6 className="py-3">by {book.AuthorCredit}</h6>
+        <h6 className="py-3 font-light">by {book.AuthorCredit}</h6>
           </div>
 
           <div>
         {book.Bindings.map(binding => (
          <>
           <div className="bg-white rounded  w-full leading-normal">
-                <a href={binding.buylink} className="block group hover:bg-blue-200 p-2 border-b">
+                <a href={binding.buylink} className="block group hover:bg-gray-100 p-2 border-b">
                   <div className="font-bold text-normal  uppercase">{binding.type} <span className="pl-2 font-normal">${binding.price}</span> </div>
                   <div className="font-thin ">{binding.date} {- binding.pages} pages - ISBN: {binding.ISBN}</div>
                   
@@ -54,13 +54,13 @@ const bookPage = ({ data }) => {
        
        <section>
          <div className="py-3">{book.Series && <div><span className="text-xs uppercase pr-5">Series:</span>
-          <button className="text-white text-sm bg-gray-600 rounded-md p-2">
+          <button className="text-gray-700 text-sm greige rounded-md p-2">
             <Link to={`../../series/${ book.Series.seriesID }`}>{ book.Series.name }</Link>
             </button></div>}
             </div>
           <div className="py-3">
             {book.Subject && <div><span className="text-xs uppercase pr-5">subject:</span>
-       <button className="text-white text-sm rounded-md bg-gray-700 p-2">
+       <button className="greige text-sm rounded-md text-gray-700 p-2">
          <Link to={`../../subject/${ book.Subject.subjectID }`}>{ book.Subject.name }</Link></button></div>}
           </div>
       
@@ -104,11 +104,12 @@ const bookPage = ({ data }) => {
 
 
       
-            <article className="flex flex-wrap place-content-center p-5 shadow-md hover:bg-gray-800 hover:text-white">
-                <div className="mx-auto w-4/5"><h3 className="text-xl font-black uppercase py-5 text-center" key={news.frontmatter.title}><Link to={`../../${news.frontmatter.type}${news.fields.slug}`}>{ news.frontmatter.title }</Link></h3>
+            <article className="flex flex-wrap place-content-center p-5  ">
+            <Link to={`../../${news.frontmatter.type}${news.fields.slug}`}>
+                  <button className="rounded greige text-gray-700  p-5 text-center uppercase">article</button></Link>
+                <div className="mx-auto w-4/5"><h3 className="text-xl uppercase py-5 font-light text-left" key={news.frontmatter.title}><Link to={`../../${news.frontmatter.type}${news.fields.slug}`}>{ news.frontmatter.title }</Link></h3>
                 </div>
-                <Link to={`../../${news.frontmatter.type}${news.fields.slug}`}>
-                  <button className="rounded bg-gray-400 text-white font-black p-5 text-center uppercase">go to article</button></Link>
+                
                 </article>
             
     </section>}

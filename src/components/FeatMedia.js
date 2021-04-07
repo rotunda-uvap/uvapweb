@@ -31,7 +31,7 @@ export default function FeatMedia() {
         }
       `}
       render={data => (
-        <section className="md:col-span-2 mr-5">
+        <section className="md:col-span-2 mr-5 greige">
             {data.media.edges.map(edge => (
             <>
               <div className="flex flex-row">
@@ -42,7 +42,7 @@ export default function FeatMedia() {
                         <div className="flex items-center"><span class="font-light text-gray-800">{data.media.edges[0].node.frontmatter.date}</span>
                         {/* <span className="px-2 py-1 bg-gray-600 text-gray-100 font-bold rounded hover:bg-gray-500">{edge.node.frontmatter.type}</span> */}
                         </div>
-                        <div className="mt-2"><Link className="text-xl text-gray-700 font-bold hover:underline" to={`../${ data.media.edges[0].node.frontmatter.type }${ data.media.edges[0].node.fields.slug }`}>{ edge.node.frontmatter.title }</Link>
+                        <div className="m-2"><Link className="text-xl text-gray-700 font-bold hover:underline ml-4" to={`../${ data.media.edges[0].node.frontmatter.type }${ data.media.edges[0].node.fields.slug }`}>{ edge.node.frontmatter.title }</Link>
                           {edge.node.frontmatter.description &&  <p className="mt-2 text-gray-600 font-light" dangerouslySetInnerHTML={{ __html: data.media.edges[0].node.frontmatter.description.split(' ').splice(0, 50).join(' ') + '...' }}></p>}
                         </div>
                         <div className="flex justify-between items-center mt-4"><Link  to={`../${ data.media.edges[0].node.frontmatter.type }${ data.media.edges[0].node.fields.slug }`}><FaArrowAltCircleRight className="inline mx-4"/> Read more</Link>

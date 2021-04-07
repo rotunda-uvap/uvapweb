@@ -3,7 +3,7 @@
     display: inline-block;
     text-decoration: none;
     margin-bottom: 2vh;
-    color: white;
+    color: rgb(31, 29, 29);
     transition: color 0.2s;
     text-transform: uppercase;
 }
@@ -17,14 +17,16 @@
     height: 30px;
     right: 10vw;
     top: 7vh;
+    font-weight:100px;
 }
 
 .search-icon {
     position: fixed;
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     right: 15vw;
-    top: 7vh;
+    top: 7.5vh;
+    font-weight:100px !important;
 }
 .bm-burger-button {
     position: fixed;
@@ -34,8 +36,8 @@
     top: 7vh;
 }
 .bm-burger-bars {
-    /* background: #7e7f80; */
-    background:white;
+     background: #7e7f80; 
+    /* background:white; */
 }
 .bm-cross-button {
     height: 30px;
@@ -45,7 +47,8 @@
     background: #bdc3c7;
 }
 .bm-menu {
-    background: #1F2937;
+    /* background: #1F2937; */
+    background:#f7f7f7;
     padding: 2em 1.5em 0;
     font-size: 1.5em;
 }

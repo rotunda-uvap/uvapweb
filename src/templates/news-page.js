@@ -13,9 +13,9 @@ const newsPage = ({ data }) => {
  return (
    <Layout>
      <div>
-        <h1 className="px-10 py-5 text-2xl font-black uppercase" >{news.frontmatter.title}</h1>
+        
         <div className="grid md:grid-cols-3">
-        <section className="md:col-span-2">
+        <section className="md:col-span-2"><h1 className="px-10 py-5 text-2xl font-light uppercase" >{news.frontmatter.title}</h1>
         <div className="float-left px-10 pb-5"><GatsbyImage image={image} alt="related image"   width={300}/></div>
           <article className="md:px-10"
           dangerouslySetInnerHTML={{ __html: news.html }}/>
@@ -23,7 +23,7 @@ const newsPage = ({ data }) => {
           
           </section>
          
-         <section className="flex flex-col bg-gray-200 pl-10">
+         <section className="flex flex-col greige pl-10">
             
             {related_books && 
             <>
