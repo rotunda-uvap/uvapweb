@@ -14,6 +14,7 @@ const bookPage = ({ data }) => {
     const resources = data.markdownRemark
     const news = data.newsMD
     const imglink = 'https://www.upress.virginia.edu/sites/default/files/covers/' + book.BookID + '.jpg'
+    const imglink_sm = 'https://www.upress.virginia.edu/sites/default/files/covers/' + book.BookID + '_M.jpg'
  return (
    
    <Layout>
@@ -22,9 +23,10 @@ const bookPage = ({ data }) => {
       
       <div className="col-span-1">
       {/* <GatsbyImage image={imageData} alt="book cover" /> */}
-      <img src={imglink} alt="cover"/>
+      <img className="hidden md:block" src={imglink} alt="cover"/>
+      <img className="md:hidden mx-auto" src={imglink_sm} alt="mobile cover"/>
       </div>
-      <div className="md:col-span-2 pr-5 px-10">   
+      <div className="md:col-span-2 pr-5 md:px-10">   
           <div>
         <h2 className="py-5 leading-snug font-light">{book.Title}</h2> 
         {book.InternalSeriesVolume && <h6 className="py-3">{book.InternalSeriesVolume}</h6> }
@@ -69,20 +71,19 @@ const bookPage = ({ data }) => {
     <a href={GoogleB}><img src="/gbs_preview_sticker1.png" alt="view on google books" /></a>
     </section>
     </div>
+    <section id="lg_horiz_tabs" className="py-10 hidden md:block">
+        <BookHorizontalTabs summary={book.MainDescription.html} reviews={book.Reviews} bio={book.BioNote.html}/>
+    </section>
 
+    
     </div>
     </section>
         
- <div>
- </div>
-   <section id="lg_horiz_tabs" className="py-10 hidden md:block">
-        <BookHorizontalTabs summary={book.MainDescription.html} reviews={book.Reviews} bio={book.BioNote.html}/>
-    </section>
-
+ 
+   
     <section id="sm_horiz_tabs" className="py-10 md:hidden">
         <BookHorizontalTabs summary={book.MainDescription.html} reviews={book.Reviews} bio={book.BioNote.html}/>
     </section>
-    
     {resources && 
     <section className="py-3">
       <p className="font-black uppercase py-3 px-5 border-b-4 border-white hover:border-black">Additional Resources</p>

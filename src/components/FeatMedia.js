@@ -31,14 +31,14 @@ export default function FeatMedia() {
         }
       `}
       render={data => (
-        <section className="md:col-span-2 mr-5 greige">
+        <section className="greige">
             {data.media.edges.map(edge => (
             <>
               <div className="flex flex-row">
                   
                     {data.media.edges[0].node.frontmatter.related_book ? <img src={'https://www.upress.virginia.edu/sites/default/files/covers/' + data.media.edges[0].node.frontmatter.related_book[0].id + "_M.jpg"} alt="cover" className="object-contain self-center justify-self-center"/> : <div></div>}
                   
-                    <div className="py-6 px-10 ">
+                    <div className="py-6 px-5 ">
                         <div className="flex items-center"><span class="font-light text-gray-800">{data.media.edges[0].node.frontmatter.date}</span>
                         {/* <span className="px-2 py-1 bg-gray-600 text-gray-100 font-bold rounded hover:bg-gray-500">{edge.node.frontmatter.type}</span> */}
                         </div>

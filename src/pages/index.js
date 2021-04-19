@@ -6,7 +6,6 @@ import FeatMedia from "../components/FeatMedia"
 import FeatNews from "../components/FeatNews"
 import NewsletterMain from "../components/NewsletterMain"
 import RotundaPromo from "../components/RotundaPromo"
-import { FaSearch } from "react-icons/fa";
 import HomepageBanner from "../components/HomepageBanner"
 
 export default function Home() {
@@ -28,7 +27,7 @@ export default function Home() {
       </div>
 </section>
 <section>
-<div className="container mx-auto px-6">
+<div className="container">
 <p className="font-bold text-sm uppercase text-gray-600">Recent News</p>
 
       <FeatNews/>
@@ -39,8 +38,8 @@ export default function Home() {
       <button className="bg-gray-800 text-lg text-white p-4 w-full uppercase text-center"><Link to={`/publicity`}>see all the latest news</Link></button>
 </section>
 <section>
-<div className="container mx-auto px-6">
-        <div className="bg-cover bg-center text-gray-600 py-10 grid md:grid-cols-6 gap-6 content-center items-center">
+<div className="container mx-auto">
+        <div className="text-gray-600 py-10 grid md:grid-cols-6 gap-6 content-center items-center">
         <div className="bg-gray-300 hover:bg-gray-500 py-20">
         <p className="font-bold text-sm uppercase">Catalog:</p>
         <p className="text-3xl font-bold">Spring 2021</p>
@@ -69,7 +68,7 @@ export default function Home() {
     </div>
     </div>
 </section>
-<div className="bg-gray-300">
+<div className="greige">
         <RotundaPromo/>
       </div>
 

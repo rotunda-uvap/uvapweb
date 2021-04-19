@@ -27,3 +27,10 @@
 table.tiers td {padding-left:1rem; padding-bottom:1rem;}
 p {padding:0 1rem 1rem 1rem;}
 a:hover { text-decoration: underline;}
+article ul {padding:1em; list-style: disc;}
+button[aria-selected="false"]{
+  background-color: #f7f7f7f7;
+}
+div[aria-expanded="false"]{
+  background-color: #f7f7f7f7;
+}
