@@ -6,7 +6,7 @@ import Search from "../components/search/search"
 
 const SearchPage = () => (
     <Layout>
-            <h2 className="py-10">Search for Books</h2>
+            <h2 className="py-10 px-3 font-light">Search for Books</h2>
   
            <div className="mx-auto py-5">
                <Search />

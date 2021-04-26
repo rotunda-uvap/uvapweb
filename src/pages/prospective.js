@@ -11,7 +11,7 @@ export default function ProspectiveAuthorsPage({ data }) {
  return (
     
         <Layout>
-            <h2 className="py-10">For Prospective Authors</h2>
+            <h2 className="py-10 px-3 font-light">For Prospective Authors</h2>
 
          <div dangerouslySetInnerHTML={{__html: pagedata.html}}/>
 

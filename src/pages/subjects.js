@@ -8,7 +8,7 @@ export default function Subjects({ data }) {
  return (
     
         <Layout>
-          <h2 className="py-10">Subjects</h2>
+          <h2 className="py-10 px-3 font-light">Subjects</h2>
           <div className="grid md:grid-cols-4 md:grid-4">
             
           {subs.edges.map(edge => (

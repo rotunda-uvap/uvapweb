@@ -9,7 +9,7 @@ export default function WalkerCowenPage({ data }) {
  return (
     
         <Layout>
-            <h2 className="py-10">Walker Cowen Memorial Prize</h2>
+            <h2 className="py-10 px-3 font-light">Walker Cowen Memorial Prize</h2>
 
          <div dangerouslySetInnerHTML={{__html: pagedata.html}}/>
 

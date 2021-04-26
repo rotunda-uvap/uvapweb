@@ -9,7 +9,7 @@ export default function CareerPage({ data }) {
  return (
     
         <Layout>
-            <h2 className="py-10">Job Opportunties at UVa Press</h2>
+            <h2 className="py-10 px-3 font-light">Job Opportunties at UVa Press</h2>
 
          <div dangerouslySetInnerHTML={{__html: pagedata.html}}/>
 

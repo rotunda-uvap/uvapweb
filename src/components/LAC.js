@@ -24,9 +24,9 @@ export default function LACList() {
         `}
         render={data => (
             data.LAC.edges.map(edge => (
-                <>
+              <div class="p-2 sm:w-1/2 w-full">
                  <RotundaCard Title={edge.node.Title} Subtitle={edge.node.Subtitle} ID={edge.node.RotID}/>
-                </>
+                </div>
             ))
         )}
       />

@@ -18,7 +18,7 @@ const RotundaCollTemplate = ({ data }) => {
                </section> 
                 
                 <section>
-                     <h3 className="text-2xl font-black py-2">Publications in This Collection:</h3>
+                     {/* <h3 className="text-2xl font-black py-2">Publications in This Collection:</h3> */}
                     <div className="container px-5 py-5 grid md:grid-cols-5 md:gap-4">
                         {items.edges.map(edge => (
                   <>  

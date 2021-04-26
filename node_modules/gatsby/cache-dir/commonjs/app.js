@@ -43,8 +43,10 @@ require("./blank.css");
 // ensure in develop we have at least some .css (even if it's empty).
 // this is so there is no warning about not matching content-type when site doesn't include any regular css (for example when css-in-js is used)
 // this also make sure that if all css is removed in develop we are not left with stale commons.css that have stale content
-// Enable fast-refresh for virtual sync-requires and gatsby-browser
-module.hot.accept([`$virtual/async-requires`, `./api-runner-browser`]);
+// Enable fast-refresh for virtual sync-requires, gatsby-browser & navigation
+// To ensure that our <Root /> component can hot reload in case anything below doesn't
+// satisfy fast-refresh constraints
+module.hot.accept([`$virtual/async-requires`, `./api-runner-browser`, `./navigation`]);
 window.___emitter = _emitter.default;
 const loader = new _devLoader.default(_asyncRequires.default, _matchPaths.default);
 (0, _loader.setLoader)(loader);

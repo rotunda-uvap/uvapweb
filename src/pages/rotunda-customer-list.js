@@ -8,7 +8,7 @@ export default function RotundaCustomerList({data}) {
     return (
        
            <Layout>
-               <h2 className="py-10">Current Rotunda Customers</h2>
+               <h2 className="py-10 px-3 font-light">Current Rotunda Customers</h2>
                <ul className="pl-2">
                {custs.edges.map(edge => (
             <>

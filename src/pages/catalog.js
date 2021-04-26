@@ -6,7 +6,7 @@ import { StaticImage } from "gatsby-plugin-image"
 export default function Catalog({data}) {
     return (
       <Layout>
-       <h2 className="py-10">Catalog</h2>
+       <h2 className="py-10 px-3 font-light">Catalog</h2>
        
        <section className="grid md:grid-cols-3 py-5">
          <a href={`spring21.pdf`}> <StaticImage  width={200} src="../images/spring21.jpg" alt="current catalog cover" /></a>

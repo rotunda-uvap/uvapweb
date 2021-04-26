@@ -17,32 +17,50 @@ export default function StaffList({ data }) {
  return (
     
         <Layout>
-          <h2 className="py-10">UVaP Staff</h2>
+          <h2 className="py-10 px-3 font-light">UVaP Staff</h2>
           
           <section >
-          <h5 className="text-2xl font-black py-2">Operations</h5>
-          <div className="container py-5 grid md:grid-cols-2">
+          <div className="text-center mb-10">
+           <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">Operations</h1>
+           </div>
+           <div className="flex mt-6 justify-center">
+        <div className="w-16 h-1 rounded-full bg-gray-800 inline-flex"></div>
+      </div>
+          <div className="container px-5 py-12 mx-auto">
+          <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
+
            {opss.edges.map(edge => (
              <>
               <MiniBio frontmatter={edge.node.frontmatter} />                 
              </>
                  
              ))}
+             </div>
            </div>
-           <h5 className="text-2xl font-black py-2">Acquisitions</h5>
-
-          <div className="container py-5 grid md:grid-cols-2">
-
+           <div className="text-center mb-10">
+           <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">Acquisitions</h1>
+           </div>  
+           <div className="flex mt-6 justify-center">
+        <div className="w-16 h-1 rounded-full bg-gray-800 inline-flex"></div>
+      </div>
+                    <div className="container px-5 py-12 mx-auto">
+           <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
             {acqs.edges.map(edge => (
               <>
                <MiniBio frontmatter={edge.node.frontmatter} />                 
               </>
                   
               ))}
+              </div>
             </div>
-            <h5 className="text-2xl font-black py-2">Editorial, Design and Production</h5>
-
-            <div className="container py-5 grid md:grid-cols-2">
+            <div className="text-center mb-10">
+           <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">Editorial, Design and Production</h1>
+           </div>
+           <div className="flex mt-6 justify-center">
+        <div className="w-16 h-1 rounded-full bg-gray-800 inline-flex"></div>
+      </div>
+            <div className="container px-5 py-12 mx-auto">
+           <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
 
             {edps.edges.map(edge => (
               <>
@@ -51,9 +69,16 @@ export default function StaffList({ data }) {
                   
               ))}
               </div>
-              <h5 className="text-2xl font-black py-2">Marketing</h5>
+              </div>
+              <div className="text-center mb-10">
+           <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">Marketing</h1>
+           </div>
+           <div className="flex mt-6 justify-center">
+        <div className="w-16 h-1 rounded-full bg-gray-800 inline-flex"></div>
+      </div>
 
-              <div className="container py-5 grid md:grid-cols-2">
+              <div className="container px-5 py-12 mx-auto">
+           <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
            
            {mkgs.edges.map(edge => (
              <>
@@ -61,10 +86,17 @@ export default function StaffList({ data }) {
              </>
                  
              ))}
+             </div>
            </div>
-           <h5 className="text-2xl font-black py-2">Publicity</h5>
-
-           <div className="container py-5 grid md:grid-cols-2">
+         
+           <div className="text-center mb-10">
+           <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">Publicity</h1>
+           </div>
+           <div className="flex mt-6 justify-center">
+        <div className="w-16 h-1 rounded-full bg-gray-800 inline-flex"></div>
+      </div>
+           <div className="container px-5 py-12 mx-auto">
+           <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
            
            {pubs.edges.map(edge => (
              <>
@@ -72,10 +104,17 @@ export default function StaffList({ data }) {
              </>
                  
              ))}
+             </div>
            </div>
-           <h5 className="text-2xl font-black py-2">ROTUNDA Digital Imprint</h5>
+           <div className="text-center mb-10">
+           <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">ROTUNDA Digital Imprint</h1>
+           </div>
+           <div className="flex mt-6 justify-center">
+        <div className="w-16 h-1 rounded-full bg-gray-800 inline-flex"></div>
+      </div>
 
-           <div className="container py-5 grid md:grid-cols-2">
+           <div className="container px-5 py-12 mx-auto">
+           <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
            
            {rots.edges.map(edge => (
              <>
@@ -83,6 +122,7 @@ export default function StaffList({ data }) {
              </>
                  
              ))}
+           </div>
            </div>
         </section>
         </Layout>

@@ -5,7 +5,7 @@ import { Link } from "gatsby"
 
 const ContactPage = () => (
     <Layout>
-            <h2 className="py-10">Contact Us</h2>
+            <h2 className="py-10 px-3 font-light">Contact Us</h2>
 
             <section className="py-5 grid grid-cols-2 mx-auto">
             <div className="p-3 uppercase text-center">Location Information</div>

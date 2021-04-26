@@ -9,7 +9,7 @@ export default function OrderPage({ data }) {
  return (
     
         <Layout>
-            <h2 className="py-10">Order</h2>
+            <h2 className="py-10 px-3 font-light">Order</h2>
 
          <div dangerouslySetInnerHTML={{__html: pagedata.html}}/>
 

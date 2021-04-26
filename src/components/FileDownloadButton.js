@@ -1,13 +1,14 @@
 import React from "react"
+import {FaCloudDownloadAlt} from "react-icons/fa"
 
 
 const FileDownloadButton = ({name, file}) => {
    
     return (
         
-        <a href={file} className="self-center py-3 w-full">
-        <button className="rounded w-full hover:bg-blue-200 hover:text-black bg-black text-white py-3 px-7 center">{name}</button>
-        </a>
+        <li className="lg:w-1/3 mb-1 w-1/2" key={name}>
+        <a href={file} className="text-gray-600 hover:text-gray-800">{name}</a></li>
+          
         
       )
   }
