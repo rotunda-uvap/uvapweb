@@ -17,13 +17,14 @@ export default function MiniBio({ frontmatter: { title, job_title, name_slug, em
        <div className="p-4 md:w-1/3 flex flex-col text-center items-center">
         
        <div className="flex-grow">
-       <Link to={slink}><h2 className="text-gray-900 text-lg title-font font-medium mb-3">{title}</h2></Link>
-       <p className="text-md leading-relaxed">{job_title}</p>
-       <p className="text-base">{phone}</p>
-         <a className="mt-3 text-gray-800 inline-flex items-center" href={`mailto:${ clean_email }`}>Email {title}
+       <Link to={slink}><h5 className="title-font font-medium text-md text-gray-900">{title}</h5></Link>
+       <p className="text-gray-500 font-light">{job_title}</p>
+       <p className="text-base leading-relaxed">{phone}</p>
+         <a className="text-gray-500 text-base inline-flex items-center" href={`mailto:${ clean_email }`}>Email {title}
            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
-             <path d="M5 12h14M12 5l7 7-7 7"></path>
+             <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
            </svg>
+           
          </a>
        </div>
      </div>

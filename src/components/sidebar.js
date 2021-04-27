@@ -22,7 +22,7 @@ const Burger = () => {
               <Link to={`/publicity`} className="uppercase block text-lg hover:text-gray-300">
       Latest News and Events
     </Link>
-              <Link to={`/contact`} className="uppercase block text-lg hover:text-gray-300 mr-4">
+              <Link to={`/about#contact`} className="uppercase block text-lg hover:text-gray-300 mr-4">
       Contact US
     </Link>
     <Link to={`/career`} className="uppercase block text-lg hover:text-gray-300">

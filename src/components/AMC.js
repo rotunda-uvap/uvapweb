@@ -24,7 +24,7 @@ export default function ACList() {
         `}
         render={data => (
             data.AC.edges.map(edge => (
-              <div class="p-2 sm:w-1/2 w-full">
+              <div className="p-2 sm:w-1/2 w-full">
                  <RotundaCard Title={edge.node.Title} Subtitle={edge.node.Subtitle} ID={edge.node.RotID}/>
                 </div>
             ))

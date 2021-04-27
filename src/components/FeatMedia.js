@@ -39,7 +39,7 @@ export default function FeatMedia() {
                     {data.media.edges[0].node.frontmatter.related_book ? <img src={'https://www.upress.virginia.edu/sites/default/files/covers/' + data.media.edges[0].node.frontmatter.related_book[0].id + "_M.jpg"} alt="cover" className="object-contain self-center justify-self-center"/> : <div></div>}
                   
                     <div className="py-6 px-5 ">
-                        <div className="flex items-center"><span class="font-light text-gray-800">{data.media.edges[0].node.frontmatter.date}</span>
+                        <div className="flex items-center"><span className="font-light text-gray-800">{data.media.edges[0].node.frontmatter.date}</span>
                         {/* <span className="px-2 py-1 bg-gray-600 text-gray-100 font-bold rounded hover:bg-gray-500">{edge.node.frontmatter.type}</span> */}
                         </div>
                         <div className="m-2"><Link className="text-xl text-gray-700 font-bold hover:underline ml-4" to={`../${ data.media.edges[0].node.frontmatter.type }${ data.media.edges[0].node.fields.slug }`}>{ edge.node.frontmatter.title }</Link>

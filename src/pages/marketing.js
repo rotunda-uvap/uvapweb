@@ -31,7 +31,7 @@ export default function Marketing({data}) {
             <>
              <div className="mt-6" key={edge.node.title}>
                     <div className="max-w-4xl px-10 py-6 bg-white rounded-lg shadow-md">
-                        <div className="flex justify-between items-center"><span class="font-light text-gray-800">{edge.node.frontmatter.date}</span>
+                        <div className="flex justify-between items-center"><span className="font-light text-gray-800">{edge.node.frontmatter.date}</span>
                         </div>
                         <div className="mt-2"><Link className="text-2xl text-gray-700 font-bold hover:underline" to={`../exhibits${ edge.node.fields.slug }`}>{ edge.node.frontmatter.title }</Link>
                         </div>
