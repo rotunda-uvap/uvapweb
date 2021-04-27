@@ -15,11 +15,9 @@ This series will investigate both the stability of Tibetan religious culture fro
 
 **Tibet in its Historical Milieu:** researching the historical interactions of Tibetan Buddhist practices and beliefs with the world and peoples around Tibet
 
-**Tibet and the Modern World:** investigating the contemporary renaissance of Tibetan religous practice and identity in the People’s Republic of China and India
+**Tibet and the Modern World:** investigating the contemporary renaissance of Tibetan religious practice and identity in the People’s Republic of China and India
 
 **Tibetan Buddhism in Diaspora**: examining how Tibetan Buddhist practices are being transformed as Tibetan communities spread throughout India, Europe, and America
-
-*Series Editors: David Germano & Michael Sheehy*
 
 David Germano is Professor of Religious Studies and Director of both the Contemplative Sciences Center and the Tibet Center at the University of Virginia
 
