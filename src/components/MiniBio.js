@@ -14,9 +14,9 @@ export default function MiniBio({ frontmatter: { title, job_title, name_slug, em
              <li key={"4" + name_slug}><a href={`mailto:${ clean_email }`}>{email}</a></li>
        </ul>
        </div> */
-       <div className="p-4 md:w-1/3 flex flex-col text-center items-center">
-        
-       <div className="flex-grow">
+       
+       <div className="p-4 md:w-1/3 sm:w-1/2 w-full">
+<div className="flex-grow">
        <Link to={slink}><h5 className="title-font font-medium text-md text-gray-900">{title}</h5></Link>
        <p className="text-gray-500 font-light">{job_title}</p>
        <p className="text-base leading-relaxed">{phone}</p>
@@ -27,7 +27,7 @@ export default function MiniBio({ frontmatter: { title, job_title, name_slug, em
            
          </a>
        </div>
-     </div>
+         </div>
   )
 }
 export const query = graphql`

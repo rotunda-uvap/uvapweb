@@ -19,14 +19,15 @@ export default function AcqStaff({data}) {
       
       `}
       render={data => (
-        <>
+       <div className="container px-5 py-12 mx-auto">
+       <div className="flex flex-wrap -m-4 text-center">
         {data.acq.edges.map(edge => (
-                    <>
+                    
                      <MiniBio frontmatter={edge.node.frontmatter} />
-                    </>
-                  
+                    
                     ))}
-      </>
+                    </div>
+      </div>
       )}
     />
   )

@@ -26,9 +26,8 @@ export default function StaffList({ data }) {
            <div className="flex mt-6 justify-center">
         <div className="w-16 h-1 rounded-full bg-gray-800 inline-flex"></div>
       </div>
-          <div className="container px-5 py-12 mx-auto">
-          <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
-
+      <div className="container px-5 py-12 mx-auto">
+       <div className="flex flex-wrap -m-4 text-center">
            {opss.edges.map(edge => (
              <>
               <MiniBio frontmatter={edge.node.frontmatter} />                 
@@ -43,8 +42,8 @@ export default function StaffList({ data }) {
            <div className="flex mt-6 justify-center">
         <div className="w-16 h-1 rounded-full bg-gray-800 inline-flex"></div>
       </div>
-                    <div className="container px-5 py-12 mx-auto">
-           <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
+      <div className="container px-5 py-12 mx-auto">
+       <div className="flex flex-wrap -m-4 text-center">
             {acqs.edges.map(edge => (
               <>
                <MiniBio frontmatter={edge.node.frontmatter} />                 
@@ -59,8 +58,8 @@ export default function StaffList({ data }) {
            <div className="flex mt-6 justify-center">
         <div className="w-16 h-1 rounded-full bg-gray-800 inline-flex"></div>
       </div>
-            <div className="container px-5 py-12 mx-auto">
-           <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
+      <div className="container px-5 py-12 mx-auto">
+       <div className="flex flex-wrap -m-4 text-center">
 
             {edps.edges.map(edge => (
               <>
@@ -77,8 +76,8 @@ export default function StaffList({ data }) {
         <div className="w-16 h-1 rounded-full bg-gray-800 inline-flex"></div>
       </div>
 
-              <div className="container px-5 py-12 mx-auto">
-           <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
+      <div className="container px-5 py-12 mx-auto">
+       <div className="flex flex-wrap -m-4 text-center">
            
            {mkgs.edges.map(edge => (
              <>
@@ -95,8 +94,8 @@ export default function StaffList({ data }) {
            <div className="flex mt-6 justify-center">
         <div className="w-16 h-1 rounded-full bg-gray-800 inline-flex"></div>
       </div>
-           <div className="container px-5 py-12 mx-auto">
-           <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
+      <div className="container px-5 py-12 mx-auto">
+       <div className="flex flex-wrap -m-4 text-center">
            
            {pubs.edges.map(edge => (
              <>
@@ -112,9 +111,8 @@ export default function StaffList({ data }) {
            <div className="flex mt-6 justify-center">
         <div className="w-16 h-1 rounded-full bg-gray-800 inline-flex"></div>
       </div>
-
-           <div className="container px-5 py-12 mx-auto">
-           <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
+      <div className="container px-5 py-12 mx-auto">
+       <div className="flex flex-wrap -m-4 text-center">
            
            {rots.edges.map(edge => (
              <>

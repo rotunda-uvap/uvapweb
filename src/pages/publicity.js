@@ -14,18 +14,22 @@ export default function PubPage({ data }) {
  return (
     
         <Layout>
-          <div className="grid xs:grid-cols-1 md:grid-cols-3 py-10">
-            <h2>News and Events</h2>
-            <div></div>
-            <section>
-                
+          <div className="container px-5 py-12 mx-auto">
+            <div className="flex flex-col text-center w-full">
+            <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">News and Events</h1>
+              </div>
+            </div>
+        
+          <section>
+            <div className="container px-5 py-12 mx-auto">
+       <div className="flex flex-wrap -m-4 text-center">
                 {staff.edges.map(edge => (
                     <>
                   <MiniBio frontmatter={edge.node.frontmatter} /> 
                    </>
                     ))}
+                    </div></div>
             </section>
-          </div>
           <div className="grid md:grid-cols-3">
             <section className="md:col-span-2 mr-5">
             {news.edges.map(edge => (

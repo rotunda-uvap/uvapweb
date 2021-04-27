@@ -23,7 +23,7 @@ export default function RotundaHome({ data }) {
   <GatsbyImage image={RotundaLogo} alt="Rotunda logo" className="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" />
     <div className="text-center lg:w-2/3 w-full">
       {/* <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">About Rotunda</h1> */}
-      <p className="mb-8 leading-relaxed">Rotunda was created for the publication of original digital scholarship along with newly digitized critical and documentary editions in the humanities and social sciences. The collection combines the originality, intellectual rigor, and scholarly value of traditional peer-reviewed university press publishing with thoughtful technological innovation designed for scholars and students.</p>
+      <p className="leading-relaxed">Rotunda was created for the publication of original digital scholarship along with newly digitized critical and documentary editions in the humanities and social sciences. The collection combines the originality, intellectual rigor, and scholarly value of traditional peer-reviewed university press publishing with thoughtful technological innovation designed for scholars and students.</p>
       
     </div>
     <div className="flex mt-6 justify-center">
@@ -36,9 +36,6 @@ export default function RotundaHome({ data }) {
   <div className="text-center mb-20">
       <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">About Rotunda Publications</h1>
       <p className="text-base leading-relaxed xl:w-3/4 lg:w-3/4 mx-auto text-gray-500s">If you are connecting via a campus Internet connection, you can expect to gain access to any Rotunda publication purchased by your institution. If your institution has not purchased a particular Rotunda publication, contact your institution’s library about ordering. You may also sign up for an individual free trial to evaluate Rotunda before making a purchase decision.</p>
-      <div className="flex mt-6 justify-center">
-        <div className="w-16 h-1 rounded-full bg-gray-800 inline-flex"></div>
-      </div>
     </div>
     <div className="flex flex-wrap -m-4">
       <div className="p-4 md:w-1/4">
@@ -55,7 +52,7 @@ export default function RotundaHome({ data }) {
           </div>
           <div className="flex-grow">
             <p className="leading-relaxed text-base">Access the Rotunda titles provided by your institution (must be on Campus network or VPN).</p>
-            <a className="mt-3 text-gray-800 inline-flex items-center">Visit Collections
+            <a href="https://rotunda.upress.virginia.edu/entrance.xqy" className="mt-3 text-gray-800 inline-flex items-center">Visit Collections
             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
                 <path d="M5 12h14M12 5l7 7-7 7"></path>
               </svg>
@@ -74,13 +71,13 @@ export default function RotundaHome({ data }) {
             <h2 className="text-gray-900 text-lg title-font font-medium">MARC Records</h2>
           </div>
           <div className="flex-grow">
-            <p className="leading-relaxed text-base">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine.</p>
-            <a className="mt-3 text-gray-800 inline-flex items-center">Learn More
+            <p className="leading-relaxed text-base">Customer information and statistics for librarians or purchasers of Rotunda Publications.</p>
+            <Link to={'/rotunda-customer-list'} className="mt-3 text-gray-800 inline-flex items-center">Learn More
               <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
                 <path d="M5 12h14M12 5l7 7-7 7"></path>
               </svg>
              
-            </a>
+            </Link>
           </div>
         </div>
       </div>
@@ -144,14 +141,12 @@ export default function RotundaHome({ data }) {
     </section> */}
 
     <section className="text-gray-600 body-font">
-  <div className="container px-5 py-24 mx-auto">
-    <div className="text-center mb-20">
+  <div className="container px-5 py-12 mx-auto">
+    <div className="text-center mb-10">
       <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">Rotunda Collections</h1>
       <p className="text-base leading-relaxed xl:w-3/4 lg:w-3/4 mx-auto text-gray-500s">Rotunda publications are available to both libraries and independent scholars as single titles or as collections. The American History Collection includes the sub-collections American Founding Era; Antebellum, Civil War, and Reconstruction; and the American Century.</p>
       <p className="text-base leading-relaxed xl:w-3/4 lg:w-3/4 mx-auto text-gray-500s">Rotunda publications are produced by staff members of UVA Press. We have in-house expertise in Web development; MarkLogic Server programming and administration; development using XQuery, XSLT, JavaScript, JQuery and related tools; and markup or conversion of documents to XML using the TEI Guidelines.</p>
-      <div className="flex mt-6 justify-center">
-        <div className="w-16 h-1 rounded-full bg-gray-800 inline-flex"></div>
-      </div>
+     
     </div>
     <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
       <div className="p-4 md:w-1/3 flex flex-col text-center items-center">
@@ -241,16 +236,14 @@ export default function RotundaHome({ data }) {
     </section> */}
 
     <section className="text-gray-600 body-font">
-  <div className="container px-5 py-12 mx-auto">
+  <div className="container px-5 py-12 mx-auto greige">
     <div className="text-center mb-20">
       <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">Rotunda Contacts</h1>
       <p className="text-base leading-relaxed xl:w-3/4 lg:w-3/4 mx-auto text-gray-500s">If you are the author or editor of a digital project that you think might be a suitable candidate for publication within Rotunda, please send an inquiry to UVa Press editor in chief Eric Brandt.</p>
-      <div className="flex mt-6 justify-center">
-        <div className="w-16 h-1 rounded-full bg-gray-800 inline-flex"></div>
-      </div>
+   
     </div>
 
-    <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
+       <div className="flex flex-wrap -m-4 text-center">
     {staff.edges.map(edge => (
                     <>
                   <MiniBio frontmatter={edge.node.frontmatter} /> 

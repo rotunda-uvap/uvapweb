@@ -6,8 +6,8 @@ const FileDownloadButton = ({name, file}) => {
    
     return (
         
-        <li className="lg:w-1/3 mb-1 w-1/2" key={name}>
-        <a href={file} className="text-gray-600 hover:text-gray-800">{name}</a></li>
+       
+        <a href={file} className="text-gray-600 hover:text-gray-800">{name}</a>
           
         
       )

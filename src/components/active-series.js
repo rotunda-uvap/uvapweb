@@ -25,8 +25,10 @@ export default function ActiveSeries() {
       render={data => (
         
         <section className="overflow-hidden">
+  
   <div className="container px-5 py-12 mx-auto">
-    <h5 className="text-2xl font-light">Active Series</h5>
+            <div className="flex flex-col text-center w-full">
+         <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Active Series</h1></div>
     <div className="flex flex-wrap text-gray-600 body-font">
     {data.allMarkdownRemark.edges.map(edge => (
         
