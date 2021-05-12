@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import { slide as Menu } from 'react-burger-menu'
-import { FaSearch } from "react-icons/fa";
+import { FaSearch} from "react-icons/fa";
 import "./sidebar.css"
 
 
@@ -87,9 +87,9 @@ const Burger = () => {
                <Link to={`/permissions`} className="uppercase block text-lg hover:text-gray-300">
                     Desk/Exam Copy requests
               </Link>
-              <a href={`/books/#series`} className="uppercase block text-lg hover:text-gray-300">
+              <Link to={`/books/#series`} className="uppercase block text-lg hover:text-gray-300">
                     Our Book Series
-              </a>
+              </Link>
               <Link to={`/books/#subjects`} className="uppercase block text-lg hover:text-gray-300">
                     Our Book Subjects
               </Link>
