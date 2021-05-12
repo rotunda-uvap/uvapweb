@@ -16,10 +16,10 @@ const newsPage = ({ data }) => {
 <section className="text-gray-600 body-font">
   <div className="container px-5 py-12 mx-auto">
   <div className="flex flex-col  w-full mb-10">
-  <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">{news.frontmatter.title}</h1>
+  <h1 className="sm:text-3xl text-2xl font-medium font-sans mb-4 text-gray-900">{news.frontmatter.title}</h1>
   
  
-  <p className="lg:w-3/3  leading-relaxed text-base">
+  <p className="lg:w-3/3  leading-relaxed font-serif">
   <div className="float-left px-10 pb-5"><GatsbyImage image={image} alt="related image"   width={300}/></div>
   {related_books && 
             <>

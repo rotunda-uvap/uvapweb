@@ -5,8 +5,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        serif: ["Merriweather", ...defaultTheme.fontFamily.serif],
-        sans: ["Montserrat", ...defaultTheme.fontFamily.sans],
+        serif: ["Crimson Text", ...defaultTheme.fontFamily.serif],
+        sans: ["Antonio", ...defaultTheme.fontFamily.sans],
+        display: ["Quicksand", ...defaultTheme.fontFamily.sans],
       },
       backgroundImage: theme => ({
         'hero-pattern': "url('/bemiss_blue.jpg')"

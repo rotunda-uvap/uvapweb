@@ -5,7 +5,7 @@ export default function FeatExhibit() {
     <StaticQuery
       query={graphql`
         query ExhibitQuery {
-            exhibit: allMarkdownRemark(limit:1, filter: {frontmatter: {templateKey: {eq: "exhibit"}, featured: {eq: true}}}) {
+            exhibit: allMarkdownRemark(limit:3, filter: {frontmatter: {templateKey: {eq: "exhibit"}}}) {
                 edges {
                   node {
                     frontmatter {
@@ -21,12 +21,29 @@ export default function FeatExhibit() {
         }
       `}
       render={data => (
-        <article className="flex flex-wrap place-content-center p-5 hover:bg-gray-800 hover:text-white">
-              <div><Link to={'/all-exhibits'}><button className="px-4 py-2 border-2 border-gray-700 uppercase">exhibits</button></Link></div>
-               <div className="mx-auto w-4/5"><Link to={'/exhibits' + data.exhibit.edges[0].node.fields.slug}><h3 className="text-2xl font-black uppercase py-5 text-center" >{data.exhibit.edges[0].node.frontmatter.title}</h3></Link>
-                </div>
-                  <Link to={'/all-exhibits'}><button className="rounded bg-gray-400 text-white text-lg px-5 py-2 text-center uppercase">see all</button></Link>
+        <section className="flex flex-row justify-center place-content-center space-x-8 py-10">
+        <article className="flex flex-col flex-wrap place-content-center p-5">
+            <div className="flex flex-row">
+              <div className="border-r-2 uppercase tracking-widest font-serif text-xs pr-3"><Link to={'/all-exhibits'}>exhibits</Link></div>
+            </div>
+            <Link to={'/exhibits' + data.exhibit.edges[0].node.fields.slug}><span className="font-display tracking-widest text-2xl">{data.exhibit.edges[0].node.frontmatter.title}</span></Link>
+            <div className="font-serif text-base">Text</div>
         </article>
+        <article className="flex flex-col flex-wrap place-content-center p-5">
+        <div className="flex flex-row">
+          <div className="border-r-2 uppercase tracking-widest font-serif text-xs pr-3"><Link to={'/all-exhibits'}>exhibits</Link></div>
+        </div>
+        <Link to={'/exhibits' + data.exhibit.edges[1].node.fields.slug}><span className="font-display tracking-widest text-2xl">{data.exhibit.edges[1].node.frontmatter.title}</span></Link>
+        <div className="font-serif text-base">Text</div>
+    </article>
+    <article className="flex flex-col flex-wrap place-content-center p-5">
+    <div className="flex flex-row">
+      <div className="border-r-2 uppercase tracking-widest font-serif text-xs pr-3"><Link to={'/all-exhibits'}>exhibits</Link></div>
+    </div>
+    <Link to={'/exhibits' + data.exhibit.edges[2].node.fields.slug}><span className="font-display tracking-widest text-2xl">{data.exhibit.edges[2].node.frontmatter.title}</span></Link>
+    <div className="font-serif text-base">Text</div>
+</article>
+</section>
       )}
     />
   )

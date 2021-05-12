@@ -1,20 +1,20 @@
 import React from "react"
 import Header from "./header" 
 import Footer from "./footer" 
-import Sidebar from "./sidebar.js"
+import MegaHeader from "./Megamenu"
 import "./layout.css"
 
 
 const Layout = ({ children }) => {
  
   return (
-    <div className="max-w-8xl mx-auto px-5 py-10">
-      <Sidebar/>
-      <Header/>
-      <div className="max-w-8xl mx-auto pb-5">
+    <div className="max-w-6xl mx-auto px-5 py-10">
+     
+      <MegaHeader/>
+      <div className="max-w-6xl mx-auto pb-5">
          {children}
       </div>
-      <div className="max-w-8xl mx-auto pb-5">
+      <div className="max-w-6xl mx-auto pb-5">
       <Footer />
       <div data-netlify-identity-menu></div>
       

@@ -1,6 +1,6 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
-import RelatedBook from "./RelatedBook"
+import RelatedBookList from "./RelatedBookList"
 export default function FeatPromo() { 
   return (
     <StaticQuery
@@ -21,21 +21,26 @@ export default function FeatPromo() {
         }
       `}
       render={data => (
-        <div className="container mx-auto px-6 py-10">
+       
          
-        <div className="flex flex-col mx-auto place-content-center px-10 ">
-        <p className="font-bold text-sm uppercase">Featured Promotion:</p>
-      <h2 className="text-3xl font-bold text-gray-600">{data.promos.edges[0].node.frontmatter.title} </h2>
-          <div className="p-5" dangerouslySetInnerHTML={{ __html: data.promos.edges[0].node.html }}></div>
+        <div className="col-span-2 flex flex-row">
+          <div className="flex flex-col w-2/3">
+            <p className="text-3xl font-sans text-gray-600">{data.promos.edges[0].node.frontmatter.title} </p>
+          <div className="font-serif dropCap" dangerouslySetInnerHTML={{ __html: data.promos.edges[0].node.html }}></div>
         </div>
-        <div className="grid md:grid-cols-5 md:gap-2 px-10">
+
+        
+          <div className="grid grid-cols-3 place-content-center" id="promobooks">
         {data.promos.edges[0].node.frontmatter.relbook && data.promos.edges[0].node.frontmatter.relbook.split(',').map(book => (
         <> 
-        <RelatedBook key={book} id={book}/>
+        <RelatedBookList key={book} id={book}/>
         </>
     ))}
     </div>
-    </div>
+          </div>
+      
+        
+    
       )}
     />
   )

@@ -1,49 +1,27 @@
 import React from 'react'
-import "./homepagebanner.css"
 import { Link} from "gatsby"
+import { StaticImage } from "gatsby-plugin-image"
 
-const Donate = () => {
+const Banner = () => {
     return(
-        <section id="banner" className="pb-10">
-        
-        <div id="book">
-        {/* <h6 className="pt-10 pl-20 uppercase text-sm font-black">Featured Book Cover</h6> */}
-
-          <Link to={`/title/5626`}><div className="text-box bg-black">
-          <h4 className="text-2xl text-center text-white">"A Best Book of 2020" <br/>- <span className="font-normal text-lg">Kirkus and LitHub</span> </h4>
-          </div></Link>
-        </div>
-        
-          <div id="rotunda">
-          <Link to={`/news/booker-t-washington-has-a-new-charlottesville-connection-a-digital-edition-of-his-papers/`}>
-              <div className="text-box">
-              <h6 className="uppercase text-sm font-black text-white text-left">Rotunda Announcement</h6>
-
-                <h4 className="text-2xl font-medium uppercase text-left text-white leading-relaxed">Booker T Washington Papers Coming to Rotunda's "American Century" Collection</h4>
-            </div>
-            </Link></div>
-
-       
-          <div id="newsa" className="bg-gray-300">
-          <Link to={`/news/uva-press-announces-new-series-the-black-soldier-in-war-and-society`}><div className="text-box">
-                <h6 className="uppercase text-sm font-black text-white text-center">Featured News</h6>
-              <h4 className="text-2xl font-medium text-white">UVA PRESS ANNOUNCES NEW SERIES "THE BLACK SOLDIER IN WAR AND SOCIETY"</h4>
-            </div></Link>
-          </div>
-          <div id="newsb" className="bg-white">
-          <Link to={'/media/listen-uva-press-presents-interview-with-daniel-mendelsohn-and-jahan-ramazani'}>
-            <div className="text-box-media">
-            <h6 className="uppercase text-sm font-black text-gray-700 text-center">Featured Media</h6>
-
-            <div className="flex"><img className="float-left m-2" src="https://www.upress.virginia.edu/sites/default/files/UVA_Press_Presents_logo.png" width="150px;"></img><h4 className="text-xl text-gray-800 px-2">LISTEN: "UVA PRESS PRESENTS" INTERVIEW WITH DANIEL MENDELSOHN AND JAHAN RAMAZANI
-</h4></div>
-            </div></Link>
-          </div>
-       
-        
-      </section>  
+       <section className="border-b-2 border-gray-200"><Link to={'../title/5628'}>
+         <div className="py-5 flex flex-row justify-center place-content-center"><StaticImage src="../../static/uvap_logo_full.png" alt="uvap logo" /></div>
+         <div className="flex flex-1 flex-row justify-center place-content-center space-x-8 py-10">
+         <div className="flex flex-col text-center space-y-3 place-content-center">
+           <div className="font-sans light text-sm tracking-wide text-right uppercase">JOHNNETTA BETSCH COLE</div>
+           <div className="font-display text-3xl font-light text-right w-64 tracking-wide uppercase">RACISM IN
+AMERICAN LIFE</div>
+           <div className="font-serif text-xl max-w-xs text-right">a call to action</div>
+         </div>
+         <div><StaticImage width={100} src="https://www.upress.virginia.edu/sites/default/files/covers/5628.jpg" alt="feat book" /></div>
+         <div className="flex flex-col flex-wrap text-left place-content-center font-serif font-light w-64 text-2xl">opportunities
+for honest, interracial,
+"courageous conversations"
+to confront...</div>
+         </div></Link>
+       </section>
     )
 }
 
-export default Donate
+export default Banner
 

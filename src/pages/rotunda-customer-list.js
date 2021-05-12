@@ -10,9 +10,14 @@ export default function RotundaCustomerList({data}) {
            <Layout>
                      <section className="text-gray-600 body-font">
   <div className="container px-5 py-12 mx-auto">
-    
+    <div>
+            
+    </div>
   <div>
       <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">Customer Information and Usage Statistics</h1>
+      
+      <p>Current institutional users (IP-authenticated accounts): <a href="https://rotunda.upress.virginia.edu/UsageStats/?tab=home&amp;job=dates">view statistics for your usage of <span class="rotunda">Rotunda</span> publications</a>.</p>
+<p>Note that your usage stats may show access to publications which you have not purchased, as your users will be able to navigate to contents pages within them, and those page views are logged.</p>
       <h5 className="leading-relaxed xl:w-3/4 lg:w-3/4 text-gray-500s">MARC Records are available for the following Rotunda Publications:
 </h5>
 <ul className="py-5">
