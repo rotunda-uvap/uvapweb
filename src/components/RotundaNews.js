@@ -2,7 +2,7 @@ import React from "react"
 import { Link} from "gatsby"
 import {FaArrowAltCircleRight} from "react-icons/fa"
 
-export default function FeatRotNews() { 
+export default function rotundaNews() { 
   return (
     
         <section className="flex flex-row justify-center place-content-center space-x-8 py-10">

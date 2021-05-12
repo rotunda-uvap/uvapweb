@@ -6,7 +6,7 @@ import FeatNews from "../components/FeatNews"
 import FeatExhibit from "../components/FeatExhibit"
 import NewsletterMain from "../components/NewsletterMain"
 import HomepageBanner from "../components/HomepageBanner"
-import FeatRotNews from "../components/RotundaNews"
+import rotundaNews from "../components/RotundaNews"
 
 export default function Home() {
   
@@ -39,7 +39,7 @@ export default function Home() {
 
 <section className="py-10 border-b-2">
 <p className="text-center uppercase text-gray-500 mx-auto  font-sans tracking-wide">rotunda</p>
-<FeatRotNews/></section>
+<rotundaNews/></section>
        
        <section className="py-10 border-b-2">
        <p className="text-center uppercase text-gray-500 mx-auto  font-sans tracking-wide">exhibits</p>
