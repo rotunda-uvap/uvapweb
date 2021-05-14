@@ -53,3 +53,22 @@ div[aria-expanded="false"]{
   background-color: #f7f7f7f7;
 }
 .light {font-weight: 200;}
+.quoted {position:relative;}
+.quoted::before {
+  float:left;
+  font-size: 4rem;
+  line-height: 1rem;
+  padding-right: 4px;
+  content: "\201C";
+  font-family: "Crimson Text";
+  color:darkgrey;
+}
+.quoted::after {
+  font-size: 3em;
+  position:absolute;
+  bottom:1rem;
+  content: "\201E";
+  left:50%;
+  color:darkgrey;
+  font-family: "Crimson Text";
+}

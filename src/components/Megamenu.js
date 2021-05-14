@@ -7,169 +7,171 @@ import "./megamenu.css"
 const MegaHeader = () => {
   
     return (
-        <nav className="text-gray-500 uppercase light border-b-2 border-t-2 flex flex-row justify-center place-content-center z-40">
+        <nav className="text-gray-500 uppercase divght border-b-2 border-t-2 flex flex-row justify-center place-content-center z-40">
         <div className="flex flex-row justify-center place-content-center">
  
-    <nav class="flex">
-	 
-      <div class="toggleable">
-        <input type="checkbox" value="selected" id="toggle-one" class="toggle-input"/>
+    <nav className="flex">
+    <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+    <div className="block"><Link to={`/`}> <img src="/black.png" alt="logo"/> </Link></div>
+    </a>
+      <div className="toggleable">
+        <input type="checkbox" value="selected" id="toggle-one" className="toggle-input"/>
           
 <div className="space-x-6 flex flex-wrap items-center justify-center place-content-center py-3 text-sm">
 <a className="hover:text-gray-900 md:ml-5" href="/">Home</a>
-<label for="toggle-one"><a className="hover:text-gray-900">About</a></label>
-<label for="toggle-one"><a className="hover:text-gray-900">Books</a></label>
-<label for="toggle-one"><a className="hover:text-gray-900">For Authors</a></label>
-<label for="toggle-one"><a className="hover:text-gray-900">For Instructors</a></label>
-<label for="toggle-one"><a className="hover:text-gray-900">Rotunda Digital</a></label>
+<label htmlFor="toggle-one"><a className="hover:text-gray-900">About</a></label>
+<label htmlFor="toggle-one"><a className="hover:text-gray-900">Books</a></label>
+<label htmlFor="toggle-one"><a className="hover:text-gray-900">For Authors</a></label>
+<label htmlFor="toggle-one"><a className="hover:text-gray-900">For Instructors</a></label>
+<label htmlFor="toggle-one"><a className="hover:text-gray-900">Rotunda Digital</a></label>
       <a href="https://www.facebook.com/uvapress"><FaFacebookSquare className="hover:text-gray-900 text-gray-500" /></a>
       <a href="https://twitter.com/uvapress"><FaTwitterSquare className="hover:text-gray-900 text-gray-500" /></a>
       <a href="https://www.instagram.com/uvapress"><FaInstagramSquare className="hover:text-gray-900 text-gray-500" /></a>
       <Link to={`/book-search`} > <FaSearch className="hover:text-gray-900 text-gray-500" /></Link>
 </div>
 
-          <div role="toggle" class="p-6 mega-menu mb-16 sm:mb-0 shadow-xl bg-gray-800">
-            <div class="container mx-auto w-full flex flex-wrap justify-between mx-2">
-              <ul class="px-4 w-full sm:w-1/2 lg:w-1/5 border-gray-600 border-b sm:border-r lg:border-b-0 pb-6 pt-6 lg:pt-3">
-                <h3 class="font-bold text-xl text-white text-bold mb-2">About</h3>
-                <li>
+          <div role="toggle" className="p-6 mega-menu mb-16 sm:mb-0 shadow-xl bg-gray-800">
+            <div className="container mx-auto w-full flex flex-wrap justify-between mx-2">
+              <div className="px-4 w-full sm:w-1/2 lg:w-1/5 border-gray-600 border-b sm:border-r lg:border-b-0 pb-6 pt-6 lg:pt-3">
+                <h3 className="font-bold text-xl text-white text-bold mb-2">About</h3>
+                <div>
                 <Link to={`/about`} className="uppercase block text-lg hover:text-gray-300">
                     About UVa Press
               </Link>
-                </li>
-                <li>
-                <Link to={`/publicity`} className="uppercase block text-lg hover:text-gray-300">
+                </div>
+                <div>
+                <Link to={`/pubdivcity`} className="uppercase block text-lg hover:text-gray-300">
       Latest News and Events
-    </Link></li>
-    <li>
+    </Link></div>
+    <div>
     <Link to={`/about#contact`} className="uppercase block text-lg hover:text-gray-300">
       Contact US
     </Link>
-                </li>
-                <li>
+                </div>
+                <div>
                 <Link to={`/career`} className="uppercase block text-lg hover:text-gray-300">
-      Career Opportunities
+      Career & Internship
     </Link>
-                </li>
-                <li>
+                </div>
+                <div>
                 <Link to={`/support`} className="uppercase block text-lg hover:text-gray-300">
       Support UVa Press
     </Link>
-                </li>
+                </div>
             
-              </ul>
-              <ul class="px-4 w-full sm:w-1/2 lg:w-1/5 border-gray-600 border-b sm:border-r-0 lg:border-r lg:border-b-0 pb-6 pt-6 lg:pt-3">
-                <h3 class=" text-xl text-white font-sans mb-2">Books</h3>
-                <li>
+              </div>
+              <ul className="px-4 w-full sm:w-1/2 lg:w-1/5 border-gray-600 border-b sm:border-r-0 lg:border-r lg:border-b-0 pb-6 pt-6 lg:pt-3">
+                <h3 className=" text-xl text-white font-sans mb-2">Books</h3>
+                <div>
                 <Link to={`/book-search`} className="uppercase block text-lg hover:text-gray-300">
                     Search Books
               </Link>
-                </li>
-                <li>
+                </div>
+                <div>
                 <Link to={`/books`} className="uppercase block text-lg hover:text-gray-300">
                 Browse All
                 </Link>
-                </li>
-                <li>
+                </div>
+                <div>
                 <Link to={`/recent-books`} className="uppercase block text-lg hover:text-gray-300">
                 New Releases
                 </Link>
-                </li>
-                <li>
+                </div>
+                <div>
                 <Link to={`/catalog`} className="uppercase block text-lg hover:text-gray-300">
                 Seasonal Catalog
                 </Link>
-                </li>
-                <li>
+                </div>
+                <div>
                 <Link to={`/all-exhibits`} className="uppercase block text-lg  hover:text-gray-300">
       Conference Exhibits
     </Link>
-                </li>
-                <li>
+                </div>
+                <div>
                 <Link to={`/permissions`} className="uppercase block text-lg   hover:text-gray-300 mr-4">
       Rights and Permissions
     </Link>
-                </li>
-                <li>
+                </div>
+                <div>
                 <Link to={`/order`} className="uppercase block text-lg hover:text-gray-300">
                 Vendor Ordering
               </Link>
-                </li>
-                <li>
+                </div>
+                <div>
                 <Link to={`#`} className="uppercase block text-lg hover:text-gray-300">
                 Open Access
               </Link>
-                </li>
+                </div>
               </ul>
-              <ul class="px-4 w-full sm:w-1/2 lg:w-1/5 border-gray-600 border-b sm:border-b-0 sm:border-r md:border-b-0 pb-6 pt-6 lg:pt-3">
-                <h3 class="font-sans text-xl text-white ">For Authors</h3>
-                <li>
+              <ul className="px-4 w-full sm:w-1/2 lg:w-1/5 border-gray-600 border-b sm:border-b-0 sm:border-r md:border-b-0 pb-6 pt-6 lg:pt-3">
+                <h3 className="font-sans text-xl text-white ">For Authors</h3>
+                <div>
                 <Link to={`/prospective`} className="uppercase block text-lg hover:text-gray-300 mr-4">
       Prospective Authors
     </Link>
-                </li>
-                <li>
+                </div>
+                <div>
                 <Link to={`/authors`} className="uppercase block text-lg hover:text-gray-300 mr-4">
       Current Authors
     </Link>
-                </li>
+                </div>
                 
               </ul>
-              <ul class="px-4 w-full sm:w-1/2 lg:w-1/5 border-gray-600 border-b sm:border-b-0 sm:border-r md:border-b-0 pb-6 pt-6 lg:pt-3">
-                <h3 class="font-sans text-xl text-white ">For Instructors</h3>
-                <li>
+              <ul className="px-4 w-full sm:w-1/2 lg:w-1/5 border-gray-600 border-b sm:border-b-0 sm:border-r md:border-b-0 pb-6 pt-6 lg:pt-3">
+                <h3 className="font-sans text-xl text-white ">For Instructors</h3>
+                <div>
                 <Link to={`/permissions`} className="uppercase block text-lg hover:text-gray-300">
                     Desk/Exam Copy requests
               </Link>
-                </li>
-                <li>
+                </div>
+                <div>
                 <Link to={`/books/#series`} className="uppercase block text-lg hover:text-gray-300">
                     Our Book Series
               </Link>
-                </li>
-                <li>
+                </div>
+                <div>
                 <Link to={`/books/#subjects`} className="uppercase block text-lg hover:text-gray-300">
                     Our Book Subjects
               </Link>
-                </li>
-                <li>
+                </div>
+                <div>
                 <Link to={`/collection/American%20History%20Collection`} className="uppercase block text-lg hover:text-gray-300">
                     Rotunda's History Collection
               </Link>
-                </li>
-                <li>
+                </div>
+                <div>
                 <Link to={`/collection/Literature%20and%20Culture%20Collection`} className="uppercase block text-lg hover:text-gray-300">
                     Rotunda's Literature Collection
               </Link>
-                </li>
+                </div>
               </ul>
-              <ul class="px-4 w-full sm:w-1/2 lg:w-1/5 border-gray-600 pb-6 pt-6 lg:pt-3">
-                <h3 class="font-bold text-xl text-white text-bold mb-2">Rotunda Digital</h3>
-                <li>
+              <ul className="px-4 w-full sm:w-1/2 lg:w-1/5 border-gray-600 pb-6 pt-6 lg:pt-3">
+                <h3 className="font-bold text-xl text-white text-bold mb-2">Rotunda Digital</h3>
+                <div>
                 <Link to={`/rotunda`} className="uppercase block text-lg hover:text-gray-300">
                     About Rotunda
               </Link>
-                </li>
-                <li>
+                </div>
+                <div>
                 <a href={`https://rotunda.upress.virginia.edu/entrance.xqy`} className="uppercase block text-lg hover:text-gray-300">
                     Customer Entrance
               </a>
-                </li>
-                <li>
+                </div>
+                <div>
                 <Link to={`/collection/American%20History%20Collection`} className="uppercase block text-lg hover:text-gray-300">
                     American History Collection
               </Link>
-                </li>
-                <li>
+                </div>
+                <div>
                 <Link to={`/collection/Literature%20and%20Culture%20Collection`} className="uppercase block text-lg hover:text-gray-300">
                     Literature & Culture Collection
               </Link>
-                </li>
-                <li>
+                </div>
+                <div>
                 <Link to={`/collection/Architecture`} className="uppercase block text-lg hover:text-gray-300">
                     Architecture
               </Link>
-                </li>
+                </div>
                 </ul>
               </div>
             </div>

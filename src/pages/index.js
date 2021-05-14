@@ -17,7 +17,7 @@ export default function Home() {
 
 <section className="py-10 border-b-2">
 <p className="text-center uppercase text-gray-500 mx-auto  font-sans tracking-wide">Featured Books:</p>
-<div className="md:grid xs:hidden sm:hidden md:grid md:grid-cols-5 md:gap-6 justify-center place-content-center">
+<div className="grid grid-cols-5 md:gap-6 justify-center place-content-center">
     <Link to={`/title/5628`}><img src="https://www.upress.virginia.edu/sites/default/files/covers/5628.jpg" className="object-contain object-scale-down shadow-lg"/></Link>
     <Link to={`/title/5617`}><img src="https://www.upress.virginia.edu/sites/default/files/covers/5617.jpg" className="object-contain object-scale-down shadow-lg"/></Link>
     <Link to={`/title/5679`}><img src="https://www.upress.virginia.edu/sites/default/files/covers/5679.jpg" className="object-contain object-scale-down shadow-lg"/></Link>
@@ -49,8 +49,8 @@ export default function Home() {
        </section>
    
 
-<section className="grid grid-cols-3 border-b-2 py-10">
-  <div className="col-span-1">
+<section className="md:grid md:grid-cols-3 border-b-2 py-10">
+  <div className="md:col-span-1">
   <p className="text-center uppercase text-gray-500 mx-auto  font-sans tracking-wide">Events:</p>
 
     <ul>
@@ -63,7 +63,7 @@ export default function Home() {
   </section>
   
 
-  <div className="py-10 greige">
+  <div className="py-4 greige">
         <div className="container mx-auto px-6">
        
        <div>

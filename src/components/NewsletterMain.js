@@ -39,18 +39,17 @@ export default class IndexPage extends React.Component {
     render() {
         return (
          <section className="body-font">
-            <div className="container px-5 py-2 mx-auto">
-                <div className="flex flex-col text-center w-full mb-4">
-                <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 ">Join our Mailing List</h1>
-                <p className="lg:w-2/3 mx-auto leading-relaxed text-base ">Submit the form below to subscribe to our mailing list for updates on new releases</p>
-                </div>
+            <div className="container px-5 py-2 flex flex-col md:flex-row mx-auto place-content-center items-center">
+               
+                <p className="font-sans sm:text-lg md:text-xl text-center md:pt-4">Get Updates on our New Releases</p>
+            
                 <form onSubmit={this._handleSubmit} className="flex lg:w-2/3 w-full sm:flex-row flex-col mx-auto px-8 sm:px-0 items-end">
                 <div className="relative sm:mr-4 mb-4 sm:mb-0 flex-grow w-full">
-                    <label htmlFor="full-name" className="leading-7 text-sm ">Full Name</label>
+                    {/* <label htmlFor="full-name" className="leading-7 text-sm ">Full Name</label> */}
                     <input type="text" onChange={this._handleChange} placeholder="name" name="name" height="60" className="w-full bg-gray-100 rounded border border-gray-300 focus:border-teal-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"/>
                 </div>
                 <div className="relative sm:mr-4 mb-4 sm:mb-0 flex-grow w-full">
-                    <label htmlFor="email" className="leading-7 text-sm ">Email</label>
+                    {/* <label htmlFor="email" className="leading-7 text-sm ">Email</label> */}
                     <input type="email"
                                         onChange={this._handleChange}
                                         placeholder="email"

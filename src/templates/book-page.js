@@ -28,12 +28,12 @@ const bookPage = ({ data }) => {
       </div>
       <div className="md:col-span-2 pr-5 md:px-10">   
           <div>
-        <h2 className="py-5 leading-snug font-light">{book.Title}</h2> 
+        <h2 className="py-5 leading-snug font-light font-sans">{book.Title}</h2> 
         {book.InternalSeriesVolume && <h6 className="py-3">{book.InternalSeriesVolume}</h6> }
 
-        {book.Subtitle && <h5 className="italic py-3 font-light">{book.Subtitle}</h5>}
+        {book.Subtitle && <h5 className="italic py-3 font-light text-gray-600">{book.Subtitle}</h5>}
 
-        <h6 className="py-3 font-light">by {book.AuthorCredit}</h6>
+        <h6 className="py-3 font-light font-display">by {book.AuthorCredit}</h6>
           </div>
 
           <div>
@@ -42,7 +42,7 @@ const bookPage = ({ data }) => {
           <div className="bg-white rounded  w-full leading-normal">
                 <a href={binding.buylink} className="block group hover:bg-gray-100 p-2 border-b">
                   <div className="font-bold text-normal  uppercase">{binding.type} <span className="pl-2 font-normal">${binding.price}</span> </div>
-                  <div className="font-thin ">{binding.date} {- binding.pages} pages - ISBN: {binding.ISBN}</div>
+                  <div className="font-thin font-display ">{binding.date} {- binding.pages} pages - ISBN: {binding.ISBN}</div>
                   
                   </a>
                  

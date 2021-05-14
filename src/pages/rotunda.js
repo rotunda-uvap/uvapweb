@@ -95,12 +95,12 @@ export default function RotundaHome({ data }) {
           </div>
           <div className="flex-grow">
             <p className="leading-relaxed text-base">Information about institutional or individual purchase of Rotunda publications.</p>
-            <Link to={'../rotunda-purchase'}> <a className="mt-3 text-gray-800 inline-flex items-center">Learn More
+            <Link to={'../rotunda-purchase'} className="mt-3 text-gray-800 inline-flex items-center">Learn More
               <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-4 h-4 ml-2" viewBox="0 0 20 24">
                 <path d="M5 12h14M12 5l7 7-7 7"></path>
               </svg>
               
-            </a></Link>
+            </Link>
           </div>
         </div>
       </div>
@@ -159,11 +159,11 @@ export default function RotundaHome({ data }) {
         <div className="flex-grow">
         <Link to={'../collection/American%20History%20Collection'}><h2 className="text-gray-900 text-lg title-font font-medium mb-3">American History</h2></Link>
           <p className="leading-relaxed text-base">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi pug VHS try-hard.</p>
-          <a className="mt-3 text-gray-800 inline-flex items-center">Learn More
+          <Link to={'../collection/American%20History%20Collection'} className="mt-3 text-gray-800 inline-flex items-center">See All
             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
               <path d="M5 12h14M12 5l7 7-7 7"></path>
             </svg>
-          </a>
+          </Link>
         </div>
       </div>
       <div className="p-4 md:w-1/3 flex flex-col text-center items-center">
@@ -177,11 +177,11 @@ export default function RotundaHome({ data }) {
         <div className="flex-grow">
         <Link to={'../collection/Literature%20and%20Culture%20Collection'}><h2 className="text-gray-900 text-lg title-font font-medium mb-3">Literature and Culture</h2></Link>
           <p className="leading-relaxed text-base">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi pug VHS try-hard.</p>
-          <a className="mt-3 text-gray-800 inline-flex items-center">Learn More
+          <Link to={'../collection/Literature%20and%20Culture%20Collection'} className="mt-3 text-gray-800 inline-flex items-center">See All
             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
               <path d="M5 12h14M12 5l7 7-7 7"></path>
             </svg>
-          </a>
+          </Link>
         </div>
       </div>
       <div className="p-4 md:w-1/3 flex flex-col text-center items-center">
@@ -195,11 +195,11 @@ export default function RotundaHome({ data }) {
         <div className="flex-grow">
         <Link to={'../collection/Architecture'}><h2 className="text-gray-900 text-lg title-font font-medium mb-3">Architecture</h2></Link>
           <p className="leading-relaxed text-base">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi pug VHS try-hard.</p>
-          <a className="mt-3 text-gray-800 inline-flex items-center">Learn More
+          <Link to={'../collection/Architecture'} className="mt-3 text-gray-800 inline-flex items-center">See All
             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
               <path d="M5 12h14M12 5l7 7-7 7"></path>
             </svg>
-          </a>
+          </Link>
         </div>
       </div>
     </div>
@@ -256,7 +256,7 @@ export default function RotundaHome({ data }) {
   </div>
 </section>
 
-    <section className="text-gray-600 body-font">
+    <section className="text-gray-600 body-font" id="fe">
       <div className="container px-5 py-12 mx-auto">
         <div className="text-center mb-10">
       <h1 className="sm:text-3xl text-2xl font-medium text-center title-font text-gray-900 mb-4">Founding Era Collection</h1>
@@ -269,7 +269,7 @@ export default function RotundaHome({ data }) {
       </div>
     </section>
 
-    <section className="text-gray-600 body-font">
+    <section className="text-gray-600 body-font" id="acwr">
       <div className="container px-5 py-12 mx-auto">
         <div className="text-center mb-10">
       <h1 className="sm:text-3xl text-2xl font-medium text-center title-font text-gray-900 mb-4">Antebellum, Civil War and Reconstruction</h1>

@@ -2,7 +2,6 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import "../utils/global.css"
-import { FaUsers, FaPhoneAlt, FaAddressBook, FaDonate, FaPenAlt } from "react-icons/fa";
 
 
 
@@ -11,7 +10,7 @@ export default function AboutPage({ data }) {
  return (
     
         <Layout>
-            {/* <h2 className="py-10 px-3 font-light">About UVa Press</h2> */}
+          
             <section className="text-gray-600 body-font">
   <div className="container px-5 py-12 mx-auto">
     <div className="flex flex-col text-center w-full mb-10">
@@ -115,7 +114,7 @@ export default function AboutPage({ data }) {
         </div>
       </div>
     </div>
-    <div className="lg:w-1/3 md:w-1/2 bg-white flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
+    <div className="lg:w-1/3 md:w-1/2 bg-white flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0 font-display">
       <h2 className="text-gray-900 text-lg mb-1 font-medium title-font">Postal and Shipping Address</h2>
      <ul className="leading-relaxed mb-5 text-gray-600">
              <li>University of Virginia Press</li> 
