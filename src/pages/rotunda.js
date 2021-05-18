@@ -321,7 +321,7 @@ export default function RotundaHome({ data }) {
                
                <path xmlns="http://www.w3.org/2000/svg" d="M9 5l7 7-7 7"/>
              </svg>
-             <Link to={`../../title/sah-archipedia`}><span className="title-font font-medium">SAH Archipedia</span></Link>
+             <Link to={`../../title/ARCHI`}><span className="title-font font-medium">SAH Archipedia</span></Link>
         </div></div>
         </div>
       </div>
