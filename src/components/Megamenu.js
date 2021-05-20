@@ -40,7 +40,7 @@ const MegaHeader = () => {
               </Link>
                 </div>
                 <div>
-                <Link to={`/pubdivcity`} className="uppercase block text-lg hover:text-gray-300">
+                <Link to={`/publicity`} className="uppercase block text-lg hover:text-gray-300">
       Latest News and Events
     </Link></div>
     <div>

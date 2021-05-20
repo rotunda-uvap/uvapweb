@@ -1,22 +1,26 @@
 import React from "react"
 import { Link } from "gatsby"
 
-const RotundaCard = ({Title, Subtitle, ID}) => { 
+
+
+const RotundaCard = ({Title, ID, Image}) => { 
+    
     return (
-       /*  <div className="flex flex-col">
-            <Link to={`../../title/${ ID }`} className="py-3 text-light text-lg">{Title}
-             {Subtitle && <span className="py-3 text-light text-lg text-italic">: {Subtitle}</span>}</Link>
-        </div> */
+      
        
          
-        <div className="bg-gray-100 rounded flex p-4 h-full items-center">
+       /*  <div className="bg-gray-100 rounded flex p-4 h-full items-center">
              <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" className="text-gray-800 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
                
                <path xmlns="http://www.w3.org/2000/svg" d="M9 5l7 7-7 7"/>
              </svg>
              <Link to={`../../title/${ ID }`}><span className="title-font font-medium">{Title}</span></Link>
-        </div>
-        
+        </div> */
+        <div className="bg-gray-100 rounded flex p-4 h-full items-center">
+        <img className="flex-shrink-0 mr-4" src={"https://www.upress.virginia.edu/sites/default/files/rotunda/" + Image} width="50px"/>
+        <Link to={`../../title/${ ID }`}><span className="title-font font-medium tracking-wide">{Title}</span></Link>
+   </div>
+       
       )
   }
   

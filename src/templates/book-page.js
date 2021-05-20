@@ -28,7 +28,7 @@ const bookPage = ({ data }) => {
       </div>
       <div className="md:col-span-2 pr-5 md:px-10">   
           <div>
-        <h2 className="py-5 leading-snug font-light font-sans">{book.Title}</h2> 
+        <h2 className="py-5 font-light font-sans">{book.Title}</h2> 
         {book.InternalSeriesVolume && <h6 className="py-3">{book.InternalSeriesVolume}</h6> }
 
         {book.Subtitle && <h5 className="italic py-3 font-light text-gray-600">{book.Subtitle}</h5>}
@@ -55,14 +55,14 @@ const bookPage = ({ data }) => {
         <div>
        
        <section>
-         <div className="py-3">{book.Series && <div><span className="text-xs uppercase pr-5">Series:</span>
-          <button className="text-gray-700 text-sm greige rounded-md p-2">
+         <div className="py-3">{book.Series && <div><span className="text-xs uppercase pr-5 tracking-wider">Series:</span>
+          <button className="text-gray-700 text-sm greige rounded-md p-2 tracking-wider">
             <Link to={`../../series/${ book.Series.seriesID }`}>{ book.Series.name }</Link>
             </button></div>}
             </div>
           <div className="py-3">
-            {book.Subject && <div><span className="text-xs uppercase pr-5">subject:</span>
-       <button className="greige text-sm rounded-md text-gray-700 p-2">
+            {book.Subject && <div><span className="text-xs uppercase pr-5 tracking-wider">subject:</span>
+       <button className="greige text-sm rounded-md text-gray-700 p-2 tracking-wider">
          <Link to={`../../subject/${ book.Subject.subjectID }`}>{ book.Subject.name }</Link></button></div>}
           </div>
       
@@ -105,12 +105,12 @@ const bookPage = ({ data }) => {
 
 
       
-            <article className="flex flex-wrap place-content-center p-5  "><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <article className="flex flex-wrap items-center p-5  ">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" />
 </svg>
-            <Link to={`../../${news.frontmatter.type}${news.fields.slug}`}>
-                  <button className="rounded greige text-gray-700  p-5 text-center uppercase">article</button></Link>
-                <div className="mx-auto w-4/5"><h3 className="text-xl uppercase py-5 font-light text-left" key={news.frontmatter.title}><Link to={`../../${news.frontmatter.type}${news.fields.slug}`}>{ news.frontmatter.title }</Link></h3>
+           
+                <div className="w-4/5 ml-5"><h3 className="text-xl font-light tracking-wide text-left" key={news.frontmatter.title}><Link to={`../../${news.frontmatter.type}${news.fields.slug}`}>{ news.frontmatter.title }</Link></h3>
                 </div>
                 
                 </article>

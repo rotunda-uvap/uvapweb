@@ -14,15 +14,11 @@ export default function RotundaHome({ data }) {
  return (
    <Layout>
      <div>
-       {/*   <div className="grid md:grid-cols-4 py-10">
-         <GatsbyImage image={RotundaLogo} alt="Rotunda logo" className="justify-self-center" />
-         <p className="tracking-wide leading-normal md:col-span-2 font-light ">Rotunda was created for the publication of original digital scholarship along with newly digitized critical and documentary editions in the humanities and social sciences. The collection combines the originality, intellectual rigor, and scholarly value of traditional peer-reviewed university press publishing with thoughtful technological innovation designed for scholars and students.</p>
-         </div> */}
+     
          <section className="text-gray-600 body-font">
-  <div className="container mx-auto flex px-5 py-12 items-center justify-center flex-col">
+  <div className="container mx-auto flex px-5 py-7 items-center justify-center flex-col">
   <GatsbyImage image={RotundaLogo} alt="Rotunda logo" className="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" />
     <div className="text-center lg:w-2/3 w-full">
-      {/* <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">About Rotunda</h1> */}
       <p className="leading-relaxed">Rotunda was created for the publication of original digital scholarship along with newly digitized critical and documentary editions in the humanities and social sciences. The collection combines the originality, intellectual rigor, and scholarly value of traditional peer-reviewed university press publishing with thoughtful technological innovation designed for scholars and students.</p>
       
     </div>
@@ -32,7 +28,7 @@ export default function RotundaHome({ data }) {
   </div>
 </section>
          <section className="text-gray-600 body-font">
-  <div className="container px-5 py-12 mx-auto">
+  <div className="container px-5 py-7 mx-auto">
   <div className="text-center mb-20">
       <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">About Rotunda Publications</h1>
       <p className="text-base leading-relaxed xl:w-3/4 lg:w-3/4 mx-auto text-gray-500s">If you are connecting via a campus Internet connection, you can expect to gain access to any Rotunda publication purchased by your institution. If your institution has not purchased a particular Rotunda publication, contact your institution’s library about ordering. You may also sign up for an individual free trial to evaluate Rotunda before making a purchase decision.</p>
@@ -72,7 +68,7 @@ export default function RotundaHome({ data }) {
           </div>
           <div className="flex-grow">
             <p className="leading-relaxed text-base">Customer information and statistics for librarians or purchasers of Rotunda Publications.</p>
-            <Link to={'/rotunda-customer-list'} className="mt-3 text-gray-800 inline-flex items-center">Learn More
+            <Link to={'/rotunda-customer-list'} className="mt-3 text-gray-800 inline-flex items-center">See Records
               <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
                 <path d="M5 12h14M12 5l7 7-7 7"></path>
               </svg>
@@ -118,7 +114,7 @@ export default function RotundaHome({ data }) {
           </div>
           <div className="flex-grow">
             <p className="leading-relaxed text-base">Register for a free trial.</p>
-            <a className="mt-3 text-gray-800 inline-flex items-center" href="https://rotunda.upress.virginia.edu/register/default.xqy">Learn More
+            <a className="mt-3 text-gray-800 inline-flex items-center" href="https://rotunda.upress.virginia.edu/register/default.xqy">Register
               <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
                 <path d="M5 12h14M12 5l7 7-7 7"></path>
               </svg>
@@ -129,16 +125,7 @@ export default function RotundaHome({ data }) {
     </div>
   </div>
 </section>
-    {/* <section>
-      <p className="font-light">If you are connecting via a campus Internet connection, you can expect to gain access to any Rotunda publication purchased by your institution. If your institution has not purchased a particular Rotunda publication, contact your institution’s library about ordering. You may also sign up for an individual free trial to evaluate Rotunda before making a purchase decision.</p>
-      <div className="grid md:grid-cols-4 md:gap-4 py-7">
-      
-      <button className="border-b-4 border-white hover:border-black w-full h-full uppercase">Customer Entrance</button>
-      <button className="border-b-4 border-white hover:border-black w-full h-full uppercase">MARC Records</button>
-      <Link to={'../rotunda-purchase'}><button className="border-b-4 border-white hover:border-black w-full h-full uppercase">Purchase</button></Link>
-      <a href="https://rotunda.upress.virginia.edu/register/default.xqy"><button className="border-b-4 border-white hover:border-black w-full h-full uppercase">Free Trial</button></a>
-      </div>
-    </section> */}
+  
 
     <section className="text-gray-600 body-font">
   <div className="container px-5 py-12 mx-auto">
@@ -205,35 +192,7 @@ export default function RotundaHome({ data }) {
     </div>
   </div>
 </section>
-  {/*   <section>
-      <h5>Collections</h5>
-      <div className="collections">
-          <p className="font-light pt-2">Rotunda publications are available to both libraries and independent scholars as single titles or as collections. The American History Collection includes the sub-collections American Founding Era; Antebellum, Civil War, and Reconstruction; and the American Century.</p>
-          <p className="font-light">Rotunda publications are produced by staff members of UVA Press. We have in-house expertise in Web development; MarkLogic Server programming and administration; development using XQuery, XSLT, JavaScript, JQuery and related tools; and markup or conversion of documents to XML using the TEI Guidelines.</p></div>
-          <div className="grid md:grid-cols-3 md:gap-3 py-7">
-
-        
-        <Link to={'../collection/American%20History%20Collection'}><button className="border-b-4 border-white hover:border-black w-full h-full uppercase">American History Collection</button></Link>
-        <Link to={'../collection/Architecture'}><button className="border-b-4 border-white hover:border-black w-full h-full uppercase">Architecture</button></Link>
-        <Link to={'../collection/Literature%20and%20Culture%20Collection'}><button className="border-b-4 border-white hover:border-black w-full h-full uppercase">Literature and Culture Collection</button></Link>
-      </div>
-    </section> */}
-  {/*   <section>
-        <h5>Contacts</h5>
-        <p className="font-light py-2">If you are the author or editor of a digital project that you think might be a suitable candidate for publication within Rotunda, please send an inquiry to UVa Press editor in chief Eric Brandt.
-
-</p>
-    <div className="grid md:grid-cols-3 gap-2"> 
-                {staff.edges.map(edge => (
-                    <>
-                  <MiniBio frontmatter={edge.node.frontmatter} />                 </>
-
-
-                    ))}
-
-    </div>
-                
-    </section> */}
+  
 
     <section className="text-gray-600 body-font">
   <div className="container px-5 py-12 mx-auto greige">
@@ -265,7 +224,7 @@ export default function RotundaHome({ data }) {
         <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
         <FEList/>
         </div>
-       <button className="flex mx-auto mt-16 text-white bg-gray-800 border-0 py-2 px-8 focus:outline-none hover:text-gray-900 hover:bg-gray-100 rounded text-lg">See All in the Founding Era Collection</button>
+       {/* <button className="flex mx-auto mt-16 text-white bg-gray-800 border-0 py-2 px-8 focus:outline-none hover:text-gray-900 hover:bg-gray-100 rounded text-lg">See All in the Founding Era Collection</button> */}
       </div>
     </section>
 
@@ -278,7 +237,7 @@ export default function RotundaHome({ data }) {
         <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
         <ACRList/>
         </div>
-       <button className="flex mx-auto mt-16 text-white bg-gray-800 border-0 py-2 px-8 focus:outline-none hover:text-gray-900 hover:bg-gray-100 rounded text-lg">See All in the Antebellum, Civil War and Reconstruction Collection</button>
+       {/* <button className="flex mx-auto mt-16 text-white bg-gray-800 border-0 py-2 px-8 focus:outline-none hover:text-gray-900 hover:bg-gray-100 rounded text-lg">See All in the Antebellum, Civil War and Reconstruction Collection</button> */}
       </div>
     </section>
 
@@ -291,7 +250,7 @@ export default function RotundaHome({ data }) {
         <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
         <ACList/>
         </div>
-       <button className="flex mx-auto mt-16 text-white bg-gray-800 border-0 py-2 px-8 focus:outline-none hover:text-gray-900 hover:bg-gray-100 rounded text-lg">See All in the American Century Collection</button>
+       {/* <button className="flex mx-auto mt-16 text-white bg-gray-800 border-0 py-2 px-8 focus:outline-none hover:text-gray-900 hover:bg-gray-100 rounded text-lg">See All in the American Century Collection</button> */}
       </div>
     </section>
 
@@ -304,7 +263,7 @@ export default function RotundaHome({ data }) {
         <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
         <LACList/>
         </div>
-       <button className="flex mx-auto mt-16 text-white bg-gray-800 border-0 py-2 px-8 focus:outline-none hover:text-gray-900 hover:bg-gray-100 rounded text-lg">See All in the Literature and Culture Collection</button>
+       {/* <button className="flex mx-auto mt-16 text-white bg-gray-800 border-0 py-2 px-8 focus:outline-none hover:text-gray-900 hover:bg-gray-100 rounded text-lg">See All in the Literature and Culture Collection</button> */}
       </div>
     </section>
     
@@ -317,10 +276,7 @@ export default function RotundaHome({ data }) {
         <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
         <div className="p-2 sm:w-1/2 w-full"> 
         <div className="bg-gray-100 rounded flex p-4 h-full items-center">
-        <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" className="text-gray-800 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
-               
-               <path xmlns="http://www.w3.org/2000/svg" d="M9 5l7 7-7 7"/>
-             </svg>
+        <img className="flex-shrink-0 mr-4" src={"https://www.upress.virginia.edu/sites/default/files/rotunda/arch_sm.png"} width="50px"/>
              <Link to={`../../title/ARCHI`}><span className="title-font font-medium">SAH Archipedia</span></Link>
         </div></div>
         </div>

@@ -15,7 +15,7 @@ const SeriesTemplate = ({ data }) => {
             <section>
             <div className="grid grid-cols-3 content-center">
                 <h3 className="py-3 col-span-2">{seriesinfo.frontmatter.title} </h3>
-            <div className="self-center"><button className="bg-blue-200 py-1 px-4 text-black text-xs rounded-full">{seriesinfo.frontmatter.status} series</button></div>
+            <div className="self-center"><button className="bg-gray-200 py-1 px-4 text-black text-sm tracking-wider leading-7 rounded-full">{seriesinfo.frontmatter.status} series</button></div>
                 </div>
             <div className="pt-5" dangerouslySetInnerHTML={{ __html: seriesinfo.html }}/>
             <p dangerouslySetInnerHTML={{ __html: seriesinfo.frontmatter.editors }}/>

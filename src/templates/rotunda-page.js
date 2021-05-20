@@ -31,7 +31,7 @@ const rotundaPage = ({ data }) => {
        
         <section className="py-5">
           <hr className="py-2"/>
-        <article dangerouslySetInnerHTML={{ __html:summary.html }}/>
+        <article className="text-lg leading-8" dangerouslySetInnerHTML={{ __html:summary.html }}/>
 
         </section>
       {/*   <section>

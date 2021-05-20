@@ -7,13 +7,13 @@ import "./layout.css"
 const Layout = ({ children }) => {
  
   return (
-    <div className="max-w-6xl mx-auto px-5 py-10">
+    <div className="max-w-7xl mx-auto px-5 py-10">
      
       <MegaHeader/>
-      <div className="max-w-6xl mx-auto pb-5">
+      <div className="max-w-7xl mx-auto pb-5">
          {children}
       </div>
-      <div className="max-w-6xl mx-auto pb-5">
+      <div className="max-w-7xl mx-auto pb-5">
       <Footer />
       <div data-netlify-identity-menu></div>
       

@@ -1,7 +1,6 @@
 import React from "react"
 // @ts-ignore
 import { Tabs, Tab, TabPanel, TabList } from 'react-web-tabs';
-import {FaQuoteLeft} from "react-icons/fa";
 
 
 const BookHorizontalTabs = ({summary, reviews, bio}) => {
@@ -10,10 +9,10 @@ const BookHorizontalTabs = ({summary, reviews, bio}) => {
     
         <Tabs defaultTab="basic-tab-one" className="flex flex-col justify-center ">
         <TabList className="self-center">
-    <Tab className=" uppercase py-2 px-3 sm:px-6 text-xs md:text-md border-b-4 border-white hover:border-black" tabFor="basic-tab-one">Summary</Tab>
-          <Tab className="uppercase py-2 px-3 sm:px-6 text-xs md:text-md border-b-4 border-white hover:border-black" tabFor="basic-tab-two">Reviews</Tab>
-          <Tab className="uppercase py-2 px-3 sm:px-6 text-xs md:text-md border-b-4 border-white hover:border-black" tabFor="basic-tab-three">Author Bio(s)</Tab>
-          <Tab className="uppercase py-2 px-3 sm:px-6 text-xs md:text-md border-b-4 border-white hover:border-black" tabFor="basic-tab-four">Table of Contents</Tab>
+    <Tab className=" uppercase py-2 tracking-widest px-3 sm:px-6 text-xs md:text-md border-b-4 border-white hover:border-black" tabFor="basic-tab-one">Summary</Tab>
+          <Tab className="uppercase tracking-widest py-2 px-3 sm:px-6 text-xs md:text-md border-b-4 border-white hover:border-black" tabFor="basic-tab-two">Reviews</Tab>
+          <Tab className="uppercase tracking-widest py-2 px-3 sm:px-6 text-xs md:text-md border-b-4 border-white hover:border-black" tabFor="basic-tab-three">Author Bio(s)</Tab>
+          <Tab className="uppercase tracking-widest py-2 px-3 sm:px-6 text-xs md:text-md border-b-4 border-white hover:border-black" tabFor="basic-tab-four">Table of Contents</Tab>
         </TabList>
         <TabPanel className="py-3" tabId="basic-tab-one">
         <div dangerouslySetInnerHTML={{ __html: summary }}/>

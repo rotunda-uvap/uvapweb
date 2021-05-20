@@ -14,7 +14,7 @@ export default function AboutPage({ data }) {
             <section className="text-gray-600 body-font">
   <div className="container px-5 py-12 mx-auto">
     <div className="flex flex-col text-center w-full mb-10">
-       <h1 className="sm:text-3xl text-2xl  font-display uppercase mb-4 text-gray-900">About UVa Press</h1> 
+       <h1 className="sm:text-3xl text-2xl  font-sans uppercase mb-4 text-gray-900">About UVa Press</h1> 
       <div className="lg:w-3/3 mx-auto leading-relaxed text-base"><span className="dropCap" dangerouslySetInnerHTML={{__html: pagedata.html}}/></div>
     </div>
     <div className="flex flex-wrap -m-4">
