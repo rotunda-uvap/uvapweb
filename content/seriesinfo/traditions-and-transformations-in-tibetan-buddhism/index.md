@@ -1,11 +1,12 @@
 ---
 templateKey: series
-type: series
 title: Traditions and Transformations in Tibetan Buddhism
 status: active
 seriestype: Academic Book Series
 editors: "Series Editors: David Germano & Michael Sheehy"
+uvaeditors: ""
 seriesID: TTTB
+type: series
 ---
 Building on the extraordinary scholarly reputation and archival resources of the University of Virginia, this series seeks to publish the most innovative scholarship on the cultural, intellectual, and social life of Tibetan Buddhism.
 
