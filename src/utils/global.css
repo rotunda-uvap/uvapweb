@@ -26,6 +26,10 @@
 .title {text-align:left;}
 table.tiers td {padding-left:1rem; padding-bottom:1rem;}
 p {padding:0 1rem 1rem 1rem; font-family: "Crimson Text";}
+.cms ul {padding:1em; list-style:none;}
+.cms ul li:first-child {padding-top:0;}
+.cms ul li {padding-left:2em; padding-top:1em;}
+.cms strong {font-weight: bolder;}
 .dropCap p:first-child:first-letter {
   color: rgb(29, 28, 28);
   font-family: "Crimson Text";

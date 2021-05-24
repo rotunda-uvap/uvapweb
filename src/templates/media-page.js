@@ -24,7 +24,7 @@ const mediaPage = ({ data }) => {
            
         ))}</div></>
         } 
-    <article
+    <article className="cms"
           dangerouslySetInnerHTML={{ __html: media.html }}/>
           </p>
           

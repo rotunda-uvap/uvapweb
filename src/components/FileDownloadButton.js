@@ -1,5 +1,5 @@
 import React from "react"
-import {FaCloudDownloadAlt} from "react-icons/fa"
+
 
 
 const FileDownloadButton = ({name, file}) => {

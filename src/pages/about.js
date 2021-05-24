@@ -15,7 +15,7 @@ export default function AboutPage({ data }) {
   <div className="container px-5 py-12 mx-auto">
     <div className="flex flex-col text-center w-full mb-10">
        <h1 className="sm:text-3xl text-2xl  font-sans uppercase mb-4 text-gray-900">About UVa Press</h1> 
-      <div className="lg:w-3/3 mx-auto leading-relaxed text-base"><span className="dropCap" dangerouslySetInnerHTML={{__html: pagedata.html}}/></div>
+      <div className="lg:w-3/3 mx-auto leading-relaxed text-base"><span className="dropCap cms" dangerouslySetInnerHTML={{__html: pagedata.html}}/></div>
     </div>
     <div className="flex flex-wrap -m-4">
       
@@ -133,15 +133,7 @@ export default function AboutPage({ data }) {
   </div>
 </section>
             
-            
-            {/* <section className="grid md:grid-cols-5 py-2">
-                <Link to={'/contact'}><button className="p-3 text-base leading-relaxed  w-full flex flex-col items-center"><FaPhoneAlt/>Contact</button></Link>
-                <Link to={'/staff-list'}><button className="p-3 text-base leading-relaxed  w-full flex flex-col items-center"><FaAddressBook className="self-center"/> Staff Directory</button></Link>
-                <Link to={'/career'}><button className="p-3 text-base leading-relaxed  w-full flex flex-col items-center"><FaUsers/>Career Opportunties</button></Link>
-                <Link to={'/support'}><button className="p-3 text-base leading-relaxed  w-full flex flex-col items-center"><FaDonate/>Support</button></Link>
-                <Link to={'/permissions'}><button className="p-3 text-base leading-relaxed  w-full flex flex-col items-center"><FaPenAlt/>Rights and Permissions</button></Link>
-
-            </section> */}
+        
 
          
 

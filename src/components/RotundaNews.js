@@ -6,7 +6,7 @@ export default function RotundaNews() {
   return (
     
         <section className="flex flex-row justify-center place-content-center space-x-8 py-10">
-            <img src="../static/7bc9ac842932d37df002324345febb9a/9b21f/btwashington.webp"/>
+            <img alt="booker " src="../static/7bc9ac842932d37df002324345febb9a/9b21f/btwashington.webp"/>
            <article className="flex flex-1 flex-col flex-wrap p-5">
            
             <>

@@ -5,7 +5,7 @@ import "../utils/global.css"
 
 
 export default function SupportPage({ data }) {
-    const pagedata = data.markdownRemark
+    // const pagedata = data.markdownRemark
  return (
     
         <Layout>

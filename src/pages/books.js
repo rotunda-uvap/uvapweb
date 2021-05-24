@@ -38,6 +38,7 @@ export default function Books({ data }) {
         </div></Link>
       </div>
       
+     
       <div className="p-4 md:w-1/4 sm:w-1/2 w-full"><Link to={`#series`}>
         <div className="border-2 border-gray-200 px-4 py-6 rounded-lg">
           <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="text-gray-500 w-8 h-8 mb-3 inline-block" viewBox="0 0 24 24">
@@ -77,6 +78,7 @@ export default function Books({ data }) {
    
       <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Our Series</h1>
       
+      <Link to={'../series'} className="text-gray-700 pl-4 py-2">See all Active Series</Link>
       <nav className="flex flex-wrap py-5 list-none -mb-1">
       {sers.edges.map(edge => (
             <>           

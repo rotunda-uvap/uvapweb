@@ -30,7 +30,7 @@ const newsPage = ({ data }) => {
            
         ))}</div></>
         } 
-    <article
+    <article className="cms"
           dangerouslySetInnerHTML={{ __html: news.html }}/>
           </p>
 

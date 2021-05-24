@@ -12,43 +12,6 @@ module.exports = {
     logo: `uvap_logo.png`,
     description: `Using Gatsby JSON Sourcing with Netlify CMS`,
     siteUrl: `https://uvap-draft-13b347.netlify.app/`,
-    menuLinks: [
-      {
-        id: 1,
-        name: "home",
-        link: "/",
-      },
-      {
-        id: 2,
-        name: "about",
-        link: "/about",
-      },
-      {
-        id: 3,
-        name: "authors",
-        link: "/authors",
-      },
-      {
-        id: 4,
-        name: "books",
-        link: "/books",
-      },
-      {
-        id: 5,
-        name: "contact",
-        link: "/contact",
-      },
-      {
-        id: 6,
-        name: "rotunda digital",
-        link: "/rotunda",
-      },
-    ],
-    socialLinks: {
-      twitter: "https://twitter.com/uva_press",
-      facebook: "#",
-    },
-
   },
   plugins: [
     `gatsby-transformer-json`,
@@ -72,13 +35,13 @@ module.exports = {
         name: `news`,
       },
     },
-    {
+    /* {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
         path: path.join(__dirname, `src`, `images`),
       },
-    },
+    }, */
     {
       resolve: `gatsby-source-filesystem`,
       options: {

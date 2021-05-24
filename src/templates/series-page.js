@@ -17,8 +17,8 @@ const SeriesTemplate = ({ data }) => {
                 <h3 className="py-3 col-span-2">{seriesinfo.frontmatter.title} </h3>
             <div className="self-center"><button className="bg-gray-200 py-1 px-4 text-black text-sm tracking-wider leading-7 rounded-full">{seriesinfo.frontmatter.status} series</button></div>
                 </div>
-            <div className="pt-5" dangerouslySetInnerHTML={{ __html: seriesinfo.html }}/>
-            <p dangerouslySetInnerHTML={{ __html: seriesinfo.frontmatter.editors }}/>
+            <div className="pt-5 cms" dangerouslySetInnerHTML={{ __html: seriesinfo.html }}/>
+            <div dangerouslySetInnerHTML={{ __html: seriesinfo.frontmatter.editors }}/>
      {seriesinfo.frontmatter.uvapeditors && <h4 className="text-normal p-5">UVaP Editor: </h4>}
                </section> 
                 

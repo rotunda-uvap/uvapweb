@@ -276,7 +276,7 @@ export default function RotundaHome({ data }) {
         <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
         <div className="p-2 sm:w-1/2 w-full"> 
         <div className="bg-gray-100 rounded flex p-4 h-full items-center">
-        <img className="flex-shrink-0 mr-4" src={"https://www.upress.virginia.edu/sites/default/files/rotunda/arch_sm.png"} width="50px"/>
+        <img className="flex-shrink-0 mr-4" src={"https://www.upress.virginia.edu/sites/default/files/rotunda/arch_sm.png"} width="50px" alt="archipedia"/>
              <Link to={`../../title/ARCHI`}><span className="title-font font-medium">SAH Archipedia</span></Link>
         </div></div>
         </div>

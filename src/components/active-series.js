@@ -32,11 +32,11 @@ export default function ActiveSeries() {
     <div className="flex flex-wrap text-gray-600 body-font">
     {data.allMarkdownRemark.edges.map(edge => (
         
-            <div className="px-6 py-3  flex flex-col items-start">
+            <div className="px-6 py-3  w-full flex flex-col items-start">
                       <span className="inline-block py-1 px-2 rounded bg-indigo-50 text-gray-500 text-xs font-medium tracking-widest">{ edge.node.frontmatter.seriestype }</span>
 
       <Link  to={`../series/${ edge.node.frontmatter.seriesID }`}><h2 className="sm:text-2xl text-xl title-font font-medium text-gray-900 mt-4 mb-4">{ edge.node.frontmatter.title }</h2></Link>
-        <p className="leading-relaxed"><span dangerouslySetInnerHTML={{ __html: edge.node.html}}/></p>
+        <article className="cms leading-relaxed" dangerouslySetInnerHTML={{ __html: edge.node.html}}/>
         <div className="flex items-center flex-wrap pb-4 mb-4 border-b-2 border-gray-100 mt-auto w-full">
           <span className="text-gray-500 inline-flex items-center">{edge.node.frontmatter.editors}
             

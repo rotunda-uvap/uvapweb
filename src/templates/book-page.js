@@ -39,11 +39,13 @@ const bookPage = ({ data }) => {
           <div>
         {book.Bindings.map(binding => (
          <>
-          <div className="bg-white rounded  w-full leading-normal">
-                <a href={binding.buylink} className="block group hover:bg-gray-100 p-2 border-b">
-                  <div className="font-bold text-normal  uppercase">{binding.type} <span className="pl-2 font-normal">${binding.price}</span> </div>
-                  <div className="font-thin font-display ">{binding.date} {- binding.pages} pages - ISBN: {binding.ISBN}</div>
-                  
+          <div className="bg-white rounded  flex flex-row inline-flex items-center w-full leading-normal">
+             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122" />
+</svg> 
+      <a href={binding.buylink} className="block group hover:bg-gray-100 p-2 border-b"> 
+      <div className="font-bold text-normal  uppercase">{binding.type} <span className="pl-2 font-normal">${binding.price}</span> </div>
+     <div className="font-thin font-display ">{binding.date} {- binding.pages} pages - ISBN: {binding.ISBN}</div>
                   </a>
                  
              </div>  

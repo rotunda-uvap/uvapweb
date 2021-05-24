@@ -17,7 +17,7 @@ const RotundaCard = ({Title, ID, Image}) => {
              <Link to={`../../title/${ ID }`}><span className="title-font font-medium">{Title}</span></Link>
         </div> */
         <div className="bg-gray-100 rounded flex p-4 h-full items-center">
-        <img className="flex-shrink-0 mr-4" src={"https://www.upress.virginia.edu/sites/default/files/rotunda/" + Image} width="50px"/>
+        <img className="flex-shrink-0 mr-4" src={"https://www.upress.virginia.edu/sites/default/files/rotunda/" + Image} width="50px" alt={Title}/>
         <Link to={`../../title/${ ID }`}><span className="title-font font-medium tracking-wide">{Title}</span></Link>
    </div>
        
