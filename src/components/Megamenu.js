@@ -52,7 +52,7 @@ const MegaHeader = () => {
                 </div>
                 <div>
                 <Link to={`/career`} className="uppercase block text-lg hover:text-gray-300">
-      Career & Internship
+      Career & Internships
     </Link>
                 </div>
                 <div>
@@ -100,9 +100,9 @@ const MegaHeader = () => {
               </Link>
                 </div>
                 <div>
-                <Link to={`#`} className="uppercase block text-lg hover:text-gray-300">
+                <a href="https://open.upress.virginia.edu/" className="uppercase block text-lg hover:text-gray-300">
                 Open Access
-              </Link>
+              </a>
                 </div>
               </ul>
               <ul className="px-4 w-full sm:w-1/2 lg:w-1/5 border-gray-600 border-b sm:border-b-0 sm:border-r md:border-b-0 pb-6 pt-6 lg:pt-3">
@@ -122,6 +122,9 @@ const MegaHeader = () => {
               <ul className="px-4 w-full sm:w-1/2 lg:w-1/5 border-gray-600 border-b sm:border-b-0 sm:border-r md:border-b-0 pb-6 pt-6 lg:pt-3">
                 <h3 className="font-sans text-xl text-white ">For Instructors</h3>
                 <div>
+                <Link to={`/instructors`} className="uppercase block text-lg hover:text-gray-300">
+                    Instructor Resource Hub
+              </Link>
                 <Link to={`/permissions`} className="uppercase block text-lg hover:text-gray-300">
                     Desk/Exam Copy requests
               </Link>
@@ -137,14 +140,14 @@ const MegaHeader = () => {
               </Link>
                 </div>
                 <div>
-                <Link to={`/collection/American%20History%20Collection`} className="uppercase block text-lg hover:text-gray-300">
-                    Rotunda's History Collection
+                <Link to={`/rotunda`} className="uppercase block text-lg hover:text-gray-300">
+                    Rotunda Digital Collections
               </Link>
                 </div>
                 <div>
-                <Link to={`/collection/Literature%20and%20Culture%20Collection`} className="uppercase block text-lg hover:text-gray-300">
-                    Rotunda's Literature Collection
-              </Link>
+                <a href="https://open.upress.virginia.edu/" className="uppercase block text-lg hover:text-gray-300">
+                Open Access Resources
+              </a>
                 </div>
               </ul>
               <ul className="px-4 w-full sm:w-1/2 lg:w-1/5 border-gray-600 pb-6 pt-6 lg:pt-3">

@@ -13,6 +13,8 @@ const BookHorizontalTabs = ({summary, reviews, bio}) => {
           <Tab className="uppercase tracking-widest py-2 px-3 sm:px-6 text-xs md:text-md border-b-4 border-white hover:border-black" tabFor="basic-tab-two">Reviews</Tab>
           <Tab className="uppercase tracking-widest py-2 px-3 sm:px-6 text-xs md:text-md border-b-4 border-white hover:border-black" tabFor="basic-tab-three">Author Bio(s)</Tab>
           <Tab className="uppercase tracking-widest py-2 px-3 sm:px-6 text-xs md:text-md border-b-4 border-white hover:border-black" tabFor="basic-tab-four">Table of Contents</Tab>
+
+          <Tab className="uppercase tracking-widest py-2 px-3 sm:px-6 text-xs md:text-md border-b-4 border-white hover:border-black" tabFor="basic-tab-five">Additional Resources</Tab>
         </TabList>
         <TabPanel className="py-3" tabId="basic-tab-one">
         <div dangerouslySetInnerHTML={{ __html: summary }}/>
@@ -42,6 +44,10 @@ const BookHorizontalTabs = ({summary, reviews, bio}) => {
               <div><p>No biographical information available</p></div>}
         </TabPanel>
         <TabPanel className="py-3" tabId="basic-tab-four">
+        <p>Not yet available</p> 
+
+        </TabPanel>
+        <TabPanel className="py-3" tabId="basic-tab-five">
         <p>Not yet available</p> 
 
         </TabPanel>

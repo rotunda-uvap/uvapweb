@@ -40,10 +40,10 @@ const bookPage = ({ data }) => {
         {book.Bindings.map(binding => (
          <>
           <div className="bg-white rounded  flex flex-row inline-flex items-center w-full leading-normal">
-             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122" />
-</svg> 
-      <a href={binding.buylink} className="block group hover:bg-gray-100 p-2 border-b"> 
+          <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+</svg>
+      <a href={binding.buylink} className="block group hover:bg-gray-100 p-2 ml-4 border-b"> 
       <div className="font-bold text-normal  uppercase">{binding.type} <span className="pl-2 font-normal">${binding.price}</span> </div>
      <div className="font-thin font-display ">{binding.date} {- binding.pages} pages - ISBN: {binding.ISBN}</div>
                   </a>
@@ -53,6 +53,16 @@ const bookPage = ({ data }) => {
         
         </>
          ))} 
+         <div className="bg-white rounded  flex flex-row inline-flex items-center w-full leading-normal">
+         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 21h7a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v11m0 5l4.879-4.879m0 0a3 3 0 104.243-4.242 3 3 0 00-4.243 4.242z" />
+</svg>
+      <a href="#" className="block group hover:bg-gray-100 p-2 ml-4 border-b"> 
+      <div className="font-bold text-normal  uppercase">Exam Copy  </div>
+     <div className="font-thin font-display ">For Instructors or Reviewers</div>
+                  </a>
+                 
+             </div>  
         </div>
         <div>
        

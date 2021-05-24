@@ -49,7 +49,8 @@ export default function Home() {
          <FeatExhibit/>
        </section>
    
-
+      
+   
 <section className="md:grid md:grid-cols-3 border-b-2 py-10">
   <div className="md:col-span-1">
   <p className="text-center uppercase text-gray-500 mx-auto  font-sans tracking-wide">Events:</p>
@@ -63,7 +64,18 @@ export default function Home() {
   <FeatPromo/>
   </section>
   
+  <section className="py-10 border-b-2">
+       <p className="text-center uppercase text-gray-500 mx-auto  font-sans tracking-wide">Open Access</p>
 
+         <p>Open Access Feature here</p>
+       </section>
+
+       <section className="py-10 border-b-2">
+       <p className="text-center uppercase text-gray-500 mx-auto  font-sans tracking-wide">Catalog</p>
+
+       <p>Catalog Feature here</p>
+
+       </section>
   <div className="py-4 greige">
         <div className="container mx-auto px-6">
        
