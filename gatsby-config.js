@@ -175,7 +175,6 @@ module.exports = {
       resolve: 'gatsby-plugin-static-folders',
       options: {
         folders: [
-          './images',
           './downloads'
         ]
       }
