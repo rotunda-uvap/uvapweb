@@ -7,6 +7,8 @@ title: Join Governor Chuck Robb at Virtual Events in Celebration of His New
 description: Governor Robb will be taking part in a series of online
   author events. Please check out the schedule below and join him for an evening
   of illuminating, inspiring stories.
+related_book:
+  - "5679"
 date: 2021-04-19
 ---
 UVA Press is proud to be publishing the memoir of one of America's great public servants, former Virginia Governor and Senator Chuck Robb. [In the Arena: A Memoir of Love, War, and Politics](https://www.upress.virginia.edu/title/5679) moves from a White House wedding to the trenches of Vietnam to the halls of power in Washington D.C. to create a portrait of a man and an era that were innovative, refreshingly less partisan, and impactful on us to this day. "In my lifetime," President Bill Clinton writes in his foreword, "few have served our country as ably and honorably as Chuck Robb."
