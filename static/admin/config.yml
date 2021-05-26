@@ -33,6 +33,7 @@ collections:
         value_field: "book.*.id"
         search_fields: ['book.*.Title'] 
         display_fields: ['book.*.Title']
+        target_field: book
         file: books
         required: false
       - label: Related Series
@@ -44,6 +45,7 @@ collections:
         search_fields: ['series.*.seriesName'] 
         display_fields: ['series.*.seriesName']
         file: series
+        target_field: series
         required: false 
       - label: "date"
         name: "date"
@@ -352,7 +354,7 @@ collections:
       files:
       - label: 'Books'
         name: 'books'
-        file: 'content/booklist.json'
+        file: 'content/booklist_cms.json'
         extension: "json"
         fields:
           - label: 'Book'
@@ -363,7 +365,7 @@ collections:
               - {label: "Title", name: "Title", widget: "string"}
       - label: 'SeriesList'
         name: 'series'
-        file: 'content/series.json'
+        file: 'content/series_cms.json'
         extension: "json"
         fields:
           - label: 'Series'
