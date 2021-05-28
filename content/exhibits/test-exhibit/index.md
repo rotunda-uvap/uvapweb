@@ -18,5 +18,6 @@ featured_books:
   - "2063"
 related_collection:
   - Test Collection Two
+  - Test Collection
 ---
 This is a test.
