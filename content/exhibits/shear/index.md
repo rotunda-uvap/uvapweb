@@ -1,7 +1,18 @@
 ---
 templateKey: exhibit
 title: SHEAR
+txtcolor: text-black
+featured: true
 exhibit_logo: shear_logo_0.png
+related_series:
+  - GWB
+related_staff:
+  - Nadine Zimmerli
+featured_books:
+  - "5042"
+related_collection:
+  - Test Collection
+  - Test Collection Two
 ---
 ANNOUNCING [“The Revolutionary Age,”](https://www.upress.virginia.edu/2020/07/14/uva-press-announces-new-series-revolutionary-age) a new series designed to bring a fresh and international perspective to the study of the American Revolution within the broader context of the Age of Revolution.
 
