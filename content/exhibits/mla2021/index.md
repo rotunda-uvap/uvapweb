@@ -7,16 +7,20 @@ exhibit_books:
   - book_id: "5478"
     book_title: Magnificent Decay
 templateKey: exhibit
-title: " MLA 2021"
-bgcolor: bg-blue-900
-txtcolor: text-white
-featured: true
-exhibit_logo: mla_21_topbar_1.jpg
 related_series:
   - BNP
+bkg1_title: Collection 1
+title: " MLA 2021"
+txtcolor: text-white
 related_staff:
   - Eric Brandt
   - Angie Hogan
+bkg2_title: Collection 2
+featured: true
+bkg3_title: Collection 3
+bkg4_title: Collection 4
+bgcolor: bg-blue-900
+exhibit_logo: mla_21_topbar_1.jpg
 featured_books:
   - "5498"
   - "5247"
@@ -30,19 +34,17 @@ featured_books:
   - "5438"
   - "5281"
   - "5478"
-bkg1_title: Collection 1
+related_collection:
+  - Test Collection Two
 related_1:
   - "5498"
   - "4348"
-bkg2_title: Collection 2
+exhibit_series: ""
 related_2:
   - "5417"
   - "4348"
-bkg3_title: Collection 3
 related_3:
   - "5336"
   - "5477"
-bkg4_title: Collection 4
-exhibit_series: ""
 ---
 ### 30% OFF + FREE SHIPPING with promo code 10MLA21
