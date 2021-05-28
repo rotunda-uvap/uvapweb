@@ -102,6 +102,13 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        path: `${__dirname}/content/collections`,
+        name: `collections`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
         path: `${__dirname}/content/bios`,
         name: `bios`,
       },
@@ -179,7 +186,20 @@ module.exports = {
         ]
       }
     },
-   
+   /*  This plugin throws errors, check if other issues are reported later
+   {
+      resolve: `gatsby-source-google-calendar`,
+      options: {
+        calendarIds: [
+          'uvapressweb@gmail.com',
+        ],
+        // options to retrieve the next 20 upcoming events
+        timeMin: (new Date()).toISOString(),
+        maxResults: 20,
+        singleEvents: true,
+        orderBy: 'startTime',
+      }
+    }, */
    
   `gatsby-plugin-slug`,
   `gatsby-plugin-image`,
@@ -231,6 +251,7 @@ module.exports = {
     "MarkdownRemark.frontmatter.related_series" : "SeriesJson",
     "MarkdownRemark.frontmatter.related_staff" : "MarkdownRemark.frontmatter.staff_name",
     "MarkdownRemark.frontmatter.related_book" : "BooklistJson",
-    "MarkdownRemark.frontmatter.book_clusters.related_book" : "BooklistJson"
+    "MarkdownRemark.frontmatter.book_clusters.related_book" : "BooklistJson",
+    "MarkdownRemark.frontmatter.related_collection" : "MarkdownRemark.frontmatter.title",
   } 
 }

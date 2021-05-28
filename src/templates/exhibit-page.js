@@ -1,12 +1,12 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
-import RelatedBook from "../components/RelatedBook"
+import RelatedBookList from "../components/RelatedBookList"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import Layout from "../components/layout"
 
 const exhibitPage = ({ data }) => {
     const exhibit = data.markdownRemark
-    const book_clusters = data.markdownRemark.frontmatter.book_clusters
+    const book_colls = data.markdownRemark.frontmatter.related_collection
     const related_series = data.markdownRemark.frontmatter.related_series
     const related_staff = data.markdownRemark.frontmatter.related_staff
     const bgcolor = exhibit.frontmatter.bgcolor
@@ -38,25 +38,36 @@ const exhibitPage = ({ data }) => {
             
             {related_series.map(series => (
             
-            <h6 className="py-3"><Link to={`../../series/${ series.id }`}>{series.seriesName}</Link></h6>
+            <h6 className="py-3 font-light pl-4"><Link to={`../../series/${ series.id }`}>{series.seriesName}</Link></h6>
             
         ))}
         </>
         }
           </section>
          
-         {book_clusters &&
-         <>
-           {book_clusters.map(cluster => (
-             <>
-             <h6 className="py-5">{cluster.cluster_title}</h6>
-             {cluster.related_book.map(book => (
-              <RelatedBook id={book.id} title={book.Title}/>
+         <section>
+          {book_colls && 
+        
+            <>
+            <h6 className="py-4">Book Collections</h6>
+            {book_colls.map(coll => (
+              <div>
+                <h6 className="py-2 font-display ">{coll.frontmatter.title}</h6>
+                <span className="cms font-serif py-5 pl-4" dangerouslySetInnerHTML={{__html: coll.frontmatter.description}}/>
+            <div className="flex flex-row py-4 space-x-4">
+            {coll.frontmatter.related_book.map(book => (
+              
+              <RelatedBookList id={book.id} title={book.Title}/>
+         
+             
           ))}
-          </>
-           ))}
-         </>
-}     
+           </div>
+              </div>
+            
+        ))}
+            </>
+        }</section>
+
           </div>
         
     </div>
@@ -74,13 +85,17 @@ export const query = graphql`
         id
         frontmatter {
             templateKey
-            book_clusters {
-              cluster_title
+            related_collection {
+              frontmatter {
+              Collection_Type
+              title
               related_book {
-                id
                 Title
+                id
               }
+            description
             }
+          }
             title
             featured_books
             bgcolor

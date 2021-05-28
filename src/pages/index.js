@@ -7,6 +7,7 @@ import FeatExhibit from "../components/FeatExhibit"
 import NewsletterMain from "../components/NewsletterMain"
 import HomepageBanner from "../components/HomepageBanner"
 import RotundaNews from "../components/RotundaNews"
+import { ReactEmbeddedGoogleCalendar } from 'react-embedded-google-calendar';
 
 export default function Home() {
   
@@ -51,15 +52,11 @@ export default function Home() {
    
       
    
-<section className="md:grid md:grid-cols-3 border-b-2 py-10">
+<section className="md:grid md:grid-cols-3 border-b-2 py-10 gap-2">
   <div className="md:col-span-1">
   <p className="text-center uppercase text-gray-500 mx-auto  font-sans tracking-wide">Events:</p>
 
-    <ul>
-      <li>Event 1</li>
-    <li>Event 1</li>
-    <li>Event 1</li>
-    </ul>
+  <ReactEmbeddedGoogleCalendar publicUrl ="https://calendar.google.com/calendar/embed?height=300&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FNew_York&amp;src=dXZhcHJlc3N3ZWJAZ21haWwuY29t&amp;color=%23039BE5&amp;showCalendars=0&amp;showPrint=0&amp;showTitle=0&amp;showNav=1&amp;showDate=1&amp;showTabs=0"/>
   </div>  
   <FeatPromo/>
   </section>

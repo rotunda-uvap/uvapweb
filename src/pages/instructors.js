@@ -1,20 +1,46 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
+import RelatedBookList from "../components/RelatedBookList"
+
 
 
 export default function InstructorPage({data}) {
   const sers = data.series
   const subs = data.subjects
+  const pagedata = data.markdownRemark
+  const book_colls = data.markdownRemark.frontmatter.related_collection
   return (
     <Layout>
-        <h2 id="top" className="py-10">For Instructors</h2>
-        <ul className="grid md:grid-cols-4 md:auto-rows-fr content-center justify-center py-7">
-   <li><Link to={`#subjects`}><button className="border-b-4 border-white hover:border-black w-full h-full uppercase">Our Subjects</button></Link></li>
-   <li><Link to={`#series`}><button className="border-b-4 border-white hover:border-black w-full h-full uppercase">Our Series</button></Link></li>
-   <li><Link to={`#desk`}><button className="border-b-4 border-white hover:border-black w-full h-full uppercase">Desk/Exam Copy Information</button></Link></li>
+        
+<div className="flex flex-col text-center w-full mb-10">
+       <h1 id="top" className="sm:text-3xl text-2xl pt-5 font-sans uppercase mb-4 text-gray-900">For Instructors</h1> 
+      <div className="lg:w-2/3 mx-auto leading-relaxed text-base"><span className="dropCap cms" dangerouslySetInnerHTML={{__html: pagedata.html}}/></div>
+    </div>
 
- </ul>
+<section>
+<h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Course Collections</h1>
+{book_colls && 
+            <>
+            {book_colls.map(coll => (
+              <div>
+                <h5 className="py-2">{coll.frontmatter.title}</h5>
+                <span className="cms py-5" dangerouslySetInnerHTML={{__html: coll.frontmatter.description}}/>
+            <div className="flex flex-row py-4 space-x-4">
+            {coll.frontmatter.related_book.map(book => (
+              
+              <RelatedBookList id={book.id} title={book.Title}/>
+         
+             
+          ))}
+           </div>
+              </div>
+            
+        ))}
+            </>
+        } 
+</section>
+
  <section id="desk" className="py-8 px-5">
  <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Desk and Exam Copies</h1>
    <p className="leading-relaxed text-base text-gray-700">Desk and Exam Copy info from CMS</p>
@@ -87,6 +113,22 @@ export default function InstructorPage({data}) {
 
 export const query = graphql`
     query  {
+      markdownRemark(frontmatter: {templateKey: {eq: "page"}, title: {eq: "Instructors"}}) {
+        html
+        frontmatter {
+          related_collection {
+           frontmatter {
+            Collection_Type
+            title
+            related_book {
+              Title
+              id
+          }
+          description
+        }
+      }
+    }
+      }
       series: allSeriesJson {
       edges {
         node {

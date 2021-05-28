@@ -69,7 +69,15 @@ collections:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "page"}
       - { name: title, label: Title }
       - { name: body, label: Body, widget: markdown }
-      - { label: 'Internal Tag', name: 'int_tag', widget: 'select', options: ['authors'], required: false}  
+      - { label: 'Internal Tag', name: 'int_tag', widget: 'select', options: ['authors'], required: false}
+      - label: "Related Book Collection(s)"
+        name: "related_collection"
+        widget: "relation"
+        collection: "book_collection"
+        search_fields: ['title']
+        value_field: "{{title}}"
+        multiple: true
+        required: false    
   - name: 'addl_resources'
     identifier_field: '{{title}}'
     label: 'Additional Resources'
@@ -126,7 +134,7 @@ collections:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "exhibit"}
       - { name: title, label: Title }
       - { name: bgcolor, label: Body Background Color, widget: "string", hint: 'Go to https://tailwindcss.com/docs/customizing-colors#overview and choose color, example: bg-blue-400', required: false }
-      - { name: txtcolor, label: Body Text Color, widget: "string", hint: 'Go to https://tailwindcss.com/docs/customizing-colors#overview and choose color, example: bg-blue-400 or text-white',  default: text-black }
+      - { name: txtcolor, label: Body Text Color, widget: "string", hint: 'Go to https://tailwindcss.com/docs/customizing-colors#overview and choose color, example: bg-blue-400 or text-white',  default: text-black, required: false}
       - {label: "Featured", name: "featured", widget: "boolean", default: false, hint: "Will this be featured on Homepage? Note: Only 1 can."}
       - { label: Exhibit Logo, name: exhibit_logo, widget: image, required: false}
       - { name: body, label: Body, widget: markdown }
@@ -158,23 +166,41 @@ collections:
         display_fields: ['book.*.Title']
         file: booklist_cms
         required: false 
-      - label: Book Clusters
-        name: book_clusters
-        widget: 'list'
-        allow_add: true
-        fields:
-          - { label: Cluster Title, widget: string, name: cluster_title }
-          - label: Related Book(s)
-            name: related_book
-            widget: relation
-            collection: files
-            multiple: true
-            value_field: "book.*.id"
-            search_fields: ['book.*.Title'] 
-            display_fields: ['book.*.Title']
-            file: booklist_cms
-            required: false
+      - label: "Related Book Collection(s)"
+        name: "related_collection"
+        widget: "relation"
+        collection: "book_collection"
+        search_fields: ['title']
+        value_field: "{{title}}"
+        multiple: true
+        required: false 
       
+  - name: 'book_collection'
+    label: 'Book Collection'
+    identifier_field: '{{title}}'
+    folder: 'content/collections'
+    preview_path: '{{title}}/index'
+    create: true
+    slug: 'index'
+    media_folder: ''
+    public_folder: ''
+    path: '{{title}}/index'      
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "collection"}
+      - { name: title, label: Title, required: true }
+      - { label: 'collection_type', name: 'Collection Type', widget: 'select', options: ['Course Adoption', 'Exhibit', 'AdHoc' ], multiple: true, required: true}  
+      - { name: description, label: description, widget: markdown, required: false }
+      - label: Related Book(s)
+        name: related_book
+        widget: relation
+        collection: files
+        multiple: true
+        value_field: "book.*.id"
+        search_fields: ['book.*.Title'] 
+        display_fields: ['book.*.Title']
+        file: booklist_cms
+        required: true
+          
   - name: 'bios'
     label: 'Staff Bio'
     identifier_field: '{{title}}'
@@ -221,8 +247,8 @@ collections:
       - { name: title, label: Title }
       - { name: rid, label: Rotunda Internal ID}
       - { name: body, label: Marketing Summary, widget: markdown }
-      - label: Related Books
-        name: related
+      - label: Related Book(s)
+        name: related_book
         widget: relation
         collection: files
         multiple: true

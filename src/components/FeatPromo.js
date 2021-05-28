@@ -23,8 +23,11 @@ export default function FeatPromo() {
       render={data => (
        
          
-        <div className="col-span-2 flex flex-row">
+        <div className="col-span-2 flex md:flex-row">
+
           <div className="flex flex-col w-2/3">
+          <p className="text-center uppercase text-gray-500 mx-auto  font-sans tracking-wide">Featured Promotion:</p>
+
             <p className="text-3xl font-sans text-gray-600">{data.promos.edges[0].node.frontmatter.title} </p>
           <div className="font-serif dropCap" dangerouslySetInnerHTML={{ __html: data.promos.edges[0].node.html }}></div>
         </div>
