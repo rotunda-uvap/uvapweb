@@ -5,7 +5,8 @@ draft: "false"
 title: "Mourning the Passing of Cornelia Hahn Oberlander: A Tribute by Susan
   Herrington"
 image: cho_pho.jpg
-related_book: []
+related_book:
+  - "4295"
 date: 2021-05-08
 ---
 UVA Press joins the architecture community in mourning the loss of acclaimed landscape architect Cornelia Hahn Oberlander, who passed away on May 22, 2021. We asked Susan Herrington, a personal friend of Oberlander's and author of the biography *[Cornelia Hahn Oberlander: Making the Modern Landscape](https://www.upress.virginia.edu/title/4295)* to share her remembrances, which we offer below. 
