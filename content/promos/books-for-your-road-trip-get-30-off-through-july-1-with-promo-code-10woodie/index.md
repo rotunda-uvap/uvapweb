@@ -1,0 +1,19 @@
+---
+templateKey: promo
+title: Books for Your Road Trip! Get 30% OFF Through July 1 with Promo Code 10WOODIE
+related:
+  - "4865"
+  - "5176"
+  - "4713"
+  - "4920"
+  - "4259"
+  - "31"
+  - "3114"
+  - "2193"
+  - "1941"
+---
+With the prospect of road-tripping back on the horizon, we’re looking forward to the kind of nostalgic jaunts that once defined the American summer, when families piled into the Woodie wagon and toured wonders in their own backyards, and beyond.
+
+Here’s a [sampling of UVA Press books,](https://mailchi.mp/virginia/woodie?e=c2717c4164) easily tucked into a backpack or a glove compartment, to help you map your travels. Order these titles before July 1, at 30% off, and you’ll save some money to fill the tank!
+
+30% OFF through July 1 with promo code 10WOODIE.
