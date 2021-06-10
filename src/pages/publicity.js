@@ -4,11 +4,12 @@ import Layout from "../components/layout"
 import { Helmet } from 'react-helmet'
 import MiniBio from "../components/MiniBio"
 import {FaArrowAltCircleRight} from "react-icons/fa"
+import GoogleCalendar from "../components/Calendar"
 
 
 export default function PubPage({ data }) {
     const news = data.allMarkdownRemark
-    const staff = data.staffs
+    // const staff = data.staffs
     // const pagedata = data.pubtext
 
  return (
@@ -21,15 +22,25 @@ export default function PubPage({ data }) {
             </div>
         
           <section>
-            <div className="container px-5 py-12 mx-auto">
-       <div className="flex flex-wrap -m-4 text-center">
-                {staff.edges.map(edge => (
-                    <>
-                  <MiniBio frontmatter={edge.node.frontmatter} /> 
-                   </>
-                    ))}
-                    </div></div>
+            <div className="container flex md:flex-row px-5 py-12">
+              
+              <div className="flex flex-col text-center items-center w-2/4">
+              <Link to={'../staff/emily-grandstaff'}><h5 className="title-font font-medium text-md text-gray-900">Emily Grandstaff</h5></Link>
+       <p className="text-gray-500 font-light">Publicity and Social Media Director</p>
+       <p className="text-base leading-relaxed">(434) 982-2932</p>
+         <a className="text-gray-500 text-base inline-flex items-center" href="mailto:egrandstaff@virginia.edu">Email Emily
+           <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
+             <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+           </svg>
+         </a>
+                </div>
+                 <div className="w-2/4">
+                    <GoogleCalendar/>
+                    </div>          
+            </div>
             </section>
+
+
           <div className="grid md:grid-cols-3">
             <section className="md:col-span-2 mr-5">
             {news.edges.map(edge => (

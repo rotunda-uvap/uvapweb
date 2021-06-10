@@ -90,10 +90,21 @@ collections:
     path: '{{title}}/index'
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "resource"}
-      - { name: title, label: Title, hint: "Title of Book Connected to these Resources", required: true }
+      - { name: title, label: Title, hint: "Title of book attached to these resources. (For CMS label)", required: true }
+      - label: Attached Book
+        name: attached_book
+        widget: relation
+        hint: "ID of book to which these resources attach. Required to connect!"
+        collection: files
+        value_field: "book.*.id"
+        search_fields: ['book.*.Title'] 
+        display_fields: ['book.*.Title']
+        file: booklist_cms
+        required: true
       - label: Related Book(s)
         name: related_book
         widget: relation
+        hint: "Manual list of UVaP books that may be similar"
         collection: files
         multiple: true
         value_field: "book.*.id"
@@ -101,17 +112,9 @@ collections:
         display_fields: ['book.*.Title']
         file: booklist_cms
         required: false
-      - label: Attached Book
-        name: attached_book
-        widget: relation
-        collection: files
-        value_field: "book.*.id"
-        search_fields: ['book.*.Title'] 
-        display_fields: ['book.*.Title']
-        file: booklist_cms
-        required: true
       - label: "Related Links"
         name: "attached_links"
+        hint: "Links to resources (internal files or external sites)"
         widget: "list"
         multiple: true
         required: false
@@ -135,7 +138,7 @@ collections:
       - { name: title, label: Title }
       - { name: bgcolor, label: Body Background Color, widget: "string", hint: 'Go to https://tailwindcss.com/docs/customizing-colors#overview and choose color, example: bg-blue-400', required: false }
       - { name: txtcolor, label: Body Text Color, widget: "string", hint: 'Go to https://tailwindcss.com/docs/customizing-colors#overview and choose color, example: bg-blue-400 or text-white',  default: text-black, required: false}
-      - {label: "Featured", name: "featured", widget: "boolean", default: false, hint: "Will this be featured on Homepage? Note: Only 1 can."}
+      # - {label: "Featured", name: "featured", widget: "boolean", default: false, hint: "Will this be featured on Homepage? Note: Only 1 can."}
       - { label: Exhibit Logo, name: exhibit_logo, widget: image, required: false}
       - { name: body, label: Body, widget: markdown }
       - label: Related Series
@@ -273,6 +276,7 @@ collections:
       - { name: title, label: Title }
       - { name: body, label: Body, widget: markdown }
       - { label: 'Summary', name: 'description', widget: 'string', required: false, hint: 'Text for homepage and previews'}
+      - {label: Image, name: image, widget: image, required: false}
       - label: Promotion Books
         name: related
         widget: relation
@@ -282,7 +286,39 @@ collections:
         search_fields: ['book.*.Title'] 
         display_fields: ['book.*.Title']
         file: booklist_cms
+        required: false 
+      - label: "Related Book Collection(s)"
+        name: "related_collection"
+        widget: "relation"
+        collection: "book_collection"
+        search_fields: ['title']
+        value_field: "{{title}}"
+        multiple: true
         required: false  
+  - name: 'reading-series'
+    label: 'Reading Series'
+    identifier_field: '{{title}}'
+    folder: 'content/reading-series'
+    preview_path: '{{title}}/index'
+    create: true
+    slug: 'index'
+    media_folder: ''
+    public_folder: ''
+    path: '{{title}}/index'      
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "reading-series"}
+      - { name: title, label: Title }
+      - { name: body, label: Body, widget: markdown }
+      - { label: 'Summary', name: 'description', widget: 'string', required: false, hint: 'Text for homepage and previews'}
+      - label: "Related Book Collection(s)"
+        name: "related_collection"
+        widget: "relation"
+        collection: "book_collection"
+        search_fields: ['title']
+        value_field: "{{title}}"
+        multiple: true
+        required: true
+       
   - name: 'series_info'
     identifier_field: '{{title}}'
     label: 'Series Info'

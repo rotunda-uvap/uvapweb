@@ -8,6 +8,7 @@ import { get, isEmpty, debounce } from 'lodash';
 import { Value, Document, Block, Text } from 'slate';
 import { Editor as Slate } from 'slate-react';
 import { lengths, fonts, zIndex } from 'netlify-cms-ui-default';
+
 import { editorStyleVars, EditorControlBar } from '../styles';
 import { slateToMarkdown, markdownToSlate } from '../serializers';
 import Toolbar from '../MarkdownControl/Toolbar';
@@ -164,6 +165,8 @@ export default class Editor extends React.Component {
   hasMark = type => this.editor && this.editor.hasMark(type);
   hasInline = type => this.editor && this.editor.hasInline(type);
   hasBlock = type => this.editor && this.editor.hasBlock(type);
+  hasQuote = type => this.editor && this.editor.hasQuote(type);
+  hasListItems = type => this.editor && this.editor.hasListItems(type);
 
   handleToggleMode = () => {
     this.props.onMode('raw');
@@ -218,6 +221,8 @@ export default class Editor extends React.Component {
             hasMark={this.hasMark}
             hasInline={this.hasInline}
             hasBlock={this.hasBlock}
+            hasQuote={this.hasQuote}
+            hasListItems={this.hasListItems}
             isShowModeToggle={isShowModeToggle}
             t={t}
             disabled={isDisabled}

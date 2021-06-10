@@ -1,9 +1,12 @@
-import semaphore, { Semaphore } from 'semaphore';
+import semaphore from 'semaphore';
 import { unionBy, sortBy } from 'lodash';
-import Cursor from './Cursor';
-import { AsyncLock } from './asyncLock';
-import { FileMetadata } from './API';
+
 import { basename } from './path';
+
+import type { Semaphore } from 'semaphore';
+import type Cursor from './Cursor';
+import type { AsyncLock } from './asyncLock';
+import type { FileMetadata } from './API';
 
 export type DisplayURLObject = { id: string; path: string };
 
