@@ -1,7 +1,7 @@
 ---
 templateKey: promo
 type: promo
-title: UVA Press Reading Series
+title: Books for Your Road Trip! Get 30% OFF Through July 1 with Promo Code 10WOODIE
 relbook: 5063,5333,5339,5136,5105
 promo_books:
   - book_id: "5063"
@@ -9,4 +9,8 @@ promo_books:
   - book_id: "5333"
     book_title: Cultural Entanglements
 ---
-The University of Virginia Press is pleased to announce a new [reading club](https://www.upress.virginia.edu/readingclub) that features themed books throughout the year at a discounted rate. The 2020 theme is **[Virginia Pathways and People](https://www.upress.virginia.edu/readingclub)** for those interested in the flora, fauna, and people of Virginia. Books in the annual series are appropriate for book clubs, classrooms, or just your nearby easy chair. Selected by Press staff, these books will take you on journeys through beautiful landscapes, remarkable and conflicting histories, and engaging ideas and perspectives through fiction, biography, and design. The book series selections for 2020 are specially priced at a 40% discount to you, your family members, or friends with free shipping. Buy all 20 or mix and match to your own interests. Use code 10VPP.
+With the prospect of road-tripping back on the horizon, we’re looking forward to the kind of nostalgic jaunts that once defined the American summer, when families piled into the Woodie wagon and toured wonders in their own backyards, and beyond.
+
+Here’s a [sampling of UVA Press books,](https://mailchi.mp/virginia/woodie?e=c2717c4164) easily tucked into a backpack or a glove compartment, to help you map your travels. Order these titles before July 1, at 30% off, and you’ll save some money to fill the tank!
+
+30% OFF through July 1 with promo code 10WOODIE.
