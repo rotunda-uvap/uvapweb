@@ -1,6 +1,6 @@
 ---
 templateKey: reading-series
-title: Pathways & People
+title: Pathways and People
 description: As the world opens post-COVID, there are new places to explore,
   food and drink to taste, and memories to savor. This edition of the reading
   series focuses on travel, sustenance, and the joys of the natural.
