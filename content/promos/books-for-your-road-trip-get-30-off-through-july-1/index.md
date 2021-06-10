@@ -1,6 +1,7 @@
 ---
 templateKey: promo
 title: Books for Your Road Trip! Get 30% OFF Through July 1
+image: road-again.jpg
 related:
   - "4713"
   - "5176"
