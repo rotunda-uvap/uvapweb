@@ -15,11 +15,11 @@ date: 2021-06-09
 
 <https://www.surveymonkey.com/r/Preview/?sm=Fsxx_2B_2Fqbn9F8HDZa5spVUG1QiUKr1XuUgt8jzrZUpp_2BKdlkmfIAEP3WMrpEqCuji> 
 
-*\*note: this survey is related only to content within its Rotunda academic editions, not the open-access \[Founders Online] site with content deriving from the Rotunda collection.*
+\**note: this survey is related only to content within its Rotunda academic editions, not the open-access \[Founders Online] site with content deriving from the Rotunda collection.*
 
 **About Rotunda:**
 
-In 2002 the University of Virginia Press launched its electronic imprint, [Rotunda](/rotunda), to make digital documentary editions available to scholars, students, and practitioners. Since then, Rotunda's flagship \[American History Collection] has evolved from a resource focused on the \[American Founding Era] to span political and cultural history well into the twentieth century.
+In 2002 the University of Virginia Press launched its electronic imprint, [Rotunda](/rotunda), to make digital documentary editions available to scholars, students, and practitioners. Since then, Rotunda's flagship American History Collection has evolved from a resource focused on the American Founding Era to span political and cultural history well into the twentieth century.
 
 The types of content in each documentary series include personal, wartime, and presidential correspondence, diaries, speeches, financial tables, and news clippings.  Most of the AHC publications derive from authoritative letterpress editions, but others are born-digital.
 
