@@ -3,15 +3,15 @@ templateKey: news
 type: news
 draft: "false"
 title: Rotunda Imprint Seeking User Feedback for its American History Collection
-description: Rotunda, UVaP's digital imprint, is seeking feedback on the user
-  experience of its \[American History Collection]. If you have used this
-  collection* for research, school, or personal interest, please consider taking
-  a few minutes to fill in this survey, as it will greatly help develop these
-  resources so they can be most effective for your research
+description: "[Rotunda](/rotunda), UVA Press's digital imprint, is seeking
+  feedback on the user experience of its American History Collection. If you
+  have used this collection* for research, school, or personal interest, please
+  consider taking a few minutes to fill in this survey, as it will greatly help
+  develop these resources so they can be most effective for your research."
 image: ""
 date: 2021-06-09
 ---
-[Rotunda](/rotunda), UVaP's digital imprint, is seeking feedback on the user experience of its American History Collection. If you have used this collection* for research, school, or personal interest, please consider taking a few minutes to fill in this survey, as it will greatly help develop these resources so they can be most effective for your research:
+[Rotunda](/rotunda), UVA Press's digital imprint, is seeking feedback on the user experience of its American History Collection. If you have used this collection* for research, school, or personal interest, please consider taking a few minutes to fill in this survey, as it will greatly help develop these resources so they can be most effective for your research:
 
 > <https://www.surveymonkey.com/r/Preview/?sm=Fsxx_2B_2Fqbn9F8HDZa5spVUG1QiUKr1XuUgt8jzrZUpp_2BKdlkmfIAEP3WMrpEqCuji> 
 
