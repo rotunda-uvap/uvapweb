@@ -20,7 +20,7 @@ const newsPage = ({ data }) => {
   
  
   <p className="lg:w-3/3  leading-relaxed font-serif">
-  <div className="float-left px-10 pb-5"><GatsbyImage image={image} alt="related image"   width={300}/></div>
+  {image && <div className="float-left px-10 pb-5"><GatsbyImage image={image} alt="related image"   width={300}/></div> }
   {related_books && 
             <>
              <div className="float-right px-5 pb-5">
