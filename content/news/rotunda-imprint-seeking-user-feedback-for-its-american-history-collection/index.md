@@ -15,7 +15,9 @@ date: 2021-06-09
 
 <https://www.surveymonkey.com/r/Preview/?sm=Fsxx_2B_2Fqbn9F8HDZa5spVUG1QiUKr1XuUgt8jzrZUpp_2BKdlkmfIAEP3WMrpEqCuji> 
 
-\**note: this survey is related only to content within its Rotunda academic editions, not the open-access \[Founders Online] site with content deriving from the Rotunda collection.*
+\**note: this survey is related only to content within its Rotunda academic editions, not the open-access [Founders Online](https://founders.archives.gov/) site with content deriving from the Rotunda collection.*
+
+**\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_**
 
 **About Rotunda:**
 
