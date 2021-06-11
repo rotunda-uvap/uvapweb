@@ -17,8 +17,6 @@ date: 2021-06-09
 
 \**note: this survey is related only to content within its Rotunda academic editions, not the open-access [Founders Online](https://founders.archives.gov/) site with content deriving from the Rotunda collection.*
 
-**\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_**
-
 **About Rotunda:**
 
 In 2002 the University of Virginia Press launched its electronic imprint, [Rotunda](/rotunda), to make digital documentary editions available to scholars, students, and practitioners. Since then, Rotunda's flagship American History Collection has evolved from a resource focused on the American Founding Era to span political and cultural history well into the twentieth century.
