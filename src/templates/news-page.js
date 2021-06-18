@@ -13,13 +13,14 @@ const newsPage = ({ data }) => {
     const image = getImage(data.Img)
     const title = news.frontmatter.title
     const description = news.frontmatter.description
+    const altDesc = news.frontmatter.html
     const siteUrl = 'https://uvap-draft-13b347.netlify.app'
     const url = siteUrl + news.fields.slug 
  return (
    <Layout>
 <SEO
   title={title}
-  description={description}
+  description={news.html}
   image={image}
 />
 <section className="text-gray-600 body-font">
