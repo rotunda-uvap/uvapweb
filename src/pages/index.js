@@ -1,5 +1,5 @@
 import React from "react"
-import { Link} from "gatsby"
+import { graphql, Link} from "gatsby"
 import Layout from "../components/layout"
 import FeatPromo from "../components/FeatPromo"
 import ReadingSeries from "../components/ReadingSeries"
@@ -10,12 +10,18 @@ import HomepageBanner from "../components/HomepageBanner"
 import RotundaNews from "../components/RotundaNews"
 // import { ReactEmbeddedGoogleCalendar } from 'react-embedded-google-calendar';
 import GoogleCalendar from "../components/Calendar"
+import { useSiteMetadata } from "../hooks/use-site-metadata"
+import SEO from 'react-seo-component'
 
-export default function Home() {
-  
+export default function Home(data) {
+  const meta = useSiteMetadata()
   return (
     <Layout>
-
+<SEO
+  title={meta.title}
+  description={meta.description}
+  image={meta.logo}
+/>
  <HomepageBanner/>
 
 
@@ -58,7 +64,6 @@ export default function Home() {
   <div className="md:col-span-1">
   <p className="text-center uppercase text-gray-500 mx-auto  font-sans tracking-wide">Events:</p>
 <GoogleCalendar/>
-  {/* <ReactEmbeddedGoogleCalendar publicUrl ="https://calendar.google.com/calendar/embed?height=300&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FNew_York&amp;src=dXZhcHJlc3N3ZWJAZ21haWwuY29t&amp;color=%23039BE5&amp;showCalendars=0&amp;showPrint=0&amp;showTitle=0&amp;showNav=1&amp;showDate=1&amp;showTabs=0"/> */}
   </div>  
   <FeatPromo/>
   </section>
@@ -98,3 +103,13 @@ export default function Home() {
   
 }
 
+export const query = graphql`
+    query  {
+      site {
+        siteMetadata {
+          title
+          logo
+          description
+        }
+      }
+  }`

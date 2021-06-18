@@ -4,6 +4,7 @@ import Layout from "../components/layout"
 import "../utils/global.css"
 // import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import BookHorizontalTabs from "../components/BookHorizontalTabs"
+import ShareButtons from "../components/ShareButtons"
 
 
 const bookPage = ({ data }) => {
@@ -12,6 +13,8 @@ const bookPage = ({ data }) => {
     const isbn = book.Bindings[0].ISBN
     const GoogleB = 'https://books.google.com/books?vid=' + isbn
     const resources = data.markdownRemark
+    const title = book.title
+    const url = 'https://www.upress.virginia.edu/title/' + book.BookID
     const news = data.newsMD
     const imglink = 'https://www.upress.virginia.edu/sites/default/files/covers/' + book.BookID + '.jpg'
     const imglink_sm = 'https://www.upress.virginia.edu/sites/default/files/covers/' + book.BookID + '_M.jpg'
@@ -65,7 +68,8 @@ const bookPage = ({ data }) => {
              </div>  
         </div>
         <div>
-       
+        
+
        <section>
          <div className="py-3">{book.Series && <div><span className="text-xs uppercase pr-5 tracking-wider">Series:</span>
           <button className="text-gray-700 text-sm greige rounded-md p-2 tracking-wider">
@@ -86,6 +90,7 @@ const bookPage = ({ data }) => {
     <section id="lg_horiz_tabs" className="py-10 hidden md:block">
         <BookHorizontalTabs summary={book.MainDescription.html} reviews={book.Reviews} bio={book.BioNote.html}/>
     </section>
+    
 
     
     </div>
@@ -110,6 +115,10 @@ const bookPage = ({ data }) => {
       }
       
     </section>}
+
+    <section>
+    <ShareButtons title={title} url={url}/>
+    </section>
 
     {news && 
     <section className="py-3">
