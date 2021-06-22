@@ -15,7 +15,7 @@ date: 2021-06-09
 
 > Fill out the survey here: <https://www.surveymonkey.com/r/RJLQMQX>
 
-\**note: this survey is related only to content within its Rotunda academic editions, not the open-access [Founders Online](https://founders.archives.gov/) site with content deriving from the Rotunda collection.*
+\**note: this survey is related only to content within our Rotunda academic editions, not the open-access [Founders Online](https://founders.archives.gov/) site with content deriving from the Rotunda collection.*
 
 **About Rotunda:**
 
