@@ -21,7 +21,7 @@ const newsPage = ({ data }) => {
 <SEO
   title={title}
   description={news.html}
-  image={image}
+  image={image || 'no image available'}
 />
 <section className="text-gray-600 body-font">
   <div className="container px-5 py-12 mx-auto">
