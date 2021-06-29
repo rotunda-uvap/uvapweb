@@ -20,8 +20,11 @@ const newsPage = ({ data }) => {
    <Layout>
 <SEO
   title={title}
+  titleTemplate={'University of Virginia Press'}
+  titleSeparator={`-`}
   description={news.html}
   image={image || 'no image available'}
+  article={true}
 />
 <section className="text-gray-600 body-font">
   <div className="container px-5 py-12 mx-auto">
@@ -30,7 +33,7 @@ const newsPage = ({ data }) => {
   
  
   <p className="lg:w-3/3  leading-relaxed font-serif">
-  {image && <div className="float-left px-10 pb-5"><GatsbyImage image={image} alt="related image"   width={300}/></div> }
+  {image && <div className="float-left px-10 pb-5"><GatsbyImage image={image} alt="related image" width={300}/></div> }
   {related_books && 
             <>
              <div className="float-right px-5 pb-5">
@@ -44,7 +47,7 @@ const newsPage = ({ data }) => {
           dangerouslySetInnerHTML={{ __html: news.html }}/>
           </p>
 
-          <ShareButtons title={title} url={url} image={image} quote={description} article={true}/>
+          <ShareButtons title={title} url={url} image={image || "no image available"} quote={description} article={true}/>
 
 
           
