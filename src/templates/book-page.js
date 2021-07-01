@@ -4,6 +4,7 @@ import Layout from "../components/layout"
 import "../utils/global.css"
 // import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import BookHorizontalTabs from "../components/BookHorizontalTabs"
+import BookSEO from "../components/BookSeo"
 import ShareButtons from "../components/ShareButtons"
 
 
@@ -18,10 +19,17 @@ const bookPage = ({ data }) => {
     const news = data.newsMD
     const imglink = 'https://www.upress.virginia.edu/sites/default/files/covers/' + book.BookID + '.jpg'
     const imglink_sm = 'https://www.upress.virginia.edu/sites/default/files/covers/' + book.BookID + '_M.jpg'
+    const defaultImage = "/static/uvap_sm.png"
  return (
    
    <Layout>
-
+<BookSEO
+  title={title}
+  description={book.MainDescription.html.substring(0, 150)}
+  pathname={url}
+  image={"https://www.upress.virginia.edu/sites/default/files/covers/" + book.CoverImageFull || defaultImage}
+  article={false}
+/>
     <section className="grid md:grid-cols-3 md:gap-10 py-3 ml-6 " >
       
       <div className="col-span-1">
@@ -91,13 +99,9 @@ const bookPage = ({ data }) => {
         <BookHorizontalTabs summary={book.MainDescription.html} reviews={book.Reviews} bio={book.BioNote.html}/>
     </section>
     
-
-    
     </div>
     </section>
         
- 
-   
     <section id="sm_horiz_tabs" className="py-10 md:hidden">
         <BookHorizontalTabs summary={book.MainDescription.html} reviews={book.Reviews} bio={book.BioNote.html}/>
     </section>

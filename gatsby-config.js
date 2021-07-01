@@ -9,9 +9,13 @@ module.exports = {
   flags: { PRESERVE_WEBPACK_CACHE: true, DEV_SSR: true, FAST_REFRESH: true },
   siteMetadata: {
     title: `University of Virginia Press`,
+    titleTemplate: "%s - UVA Press",
     logo: `uvap_logo.png`,
-    description: `Using Gatsby JSON Sourcing with Netlify CMS`,
-    siteUrl: `https://uvap-draft-13b347.netlify.app/`,
+    image: '/static/uvap_sm.png',
+    description: `The website for the University of Virginia Press`,
+    siteUrl: `https://uvap-draft-13b347.netlify.app`,
+    twitterUsername: "@uvapress"
+
   },
   plugins: [
     `gatsby-transformer-json`,

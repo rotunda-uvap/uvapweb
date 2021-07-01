@@ -4,36 +4,36 @@ import RelatedBook from "../components/RelatedBook"
 import Layout from "../components/layout"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import ShareButtons from "../components/ShareButtons"
-import SEO from 'react-seo-component'
+// import SEO from 'react-seo-component'
+import NewsSEO from "../components/NewsSeo"
 
 const newsPage = ({ data }) => {
     const news = data.markdownRemark
     const related_books = data.markdownRemark.frontmatter.related_book
     const related_series = data.markdownRemark.frontmatter.related_series
-    const image = getImage(data.Img)
+    const news_image = getImage(data.Img)
     const title = news.frontmatter.title
-    const description = news.frontmatter.description
-    const altDesc = news.frontmatter.html
-    const siteUrl = 'https://uvap-draft-13b347.netlify.app'
-    const url = siteUrl + news.fields.slug 
+    let metaImage;
+if(news_image) metaImage = news.frontmatter.image.childImageSharp.fixed.src;
+else metaImage = null;
+   
  return (
    <Layout>
-<SEO
+<NewsSEO
   title={title}
-  titleTemplate={'University of Virginia Press'}
-  titleSeparator={`-`}
-  description={news.html}
-  image={image || 'no image available'}
+  description={news.html.substring(0, 150)}
+  pathname={news.fields.slug}
+  image={metaImage || "/uvap_sm.png"}
   article={true}
 />
 <section className="text-gray-600 body-font">
   <div className="container px-5 py-12 mx-auto">
   <div className="flex flex-col  w-full mb-10">
   <h1 className="sm:text-3xl text-2xl font-medium font-sans mb-4 text-gray-900">{title}</h1>
-  
+ 
  
   <p className="lg:w-3/3  leading-relaxed font-serif">
-  {image && <div className="float-left px-10 pb-5"><GatsbyImage image={image} alt="related image" width={300}/></div> }
+  {news_image && <div className="float-left px-10 pb-5"><GatsbyImage image={news_image} alt="related image" width={300}/></div> }
   {related_books && 
             <>
              <div className="float-right px-5 pb-5">
@@ -47,8 +47,9 @@ const newsPage = ({ data }) => {
           dangerouslySetInnerHTML={{ __html: news.html }}/>
           </p>
 
-          <ShareButtons title={title} url={url} image={image || "no image available"} quote={description} article={true}/>
+       
 
+          <ShareButtons title={title} url={`https://uvap-draft-13b347.netlify.app/${news.fields.slug}`}/>
 
           
             {related_series && related_series.map(series => (
@@ -61,7 +62,6 @@ const newsPage = ({ data }) => {
   </div>
   </section>
 
-     
         
    </Layout>
     
@@ -79,6 +79,15 @@ export const query = graphql`
         frontmatter {
             title
             type
+            image {
+              name
+              extension
+              childImageSharp{
+                fixed{
+                  src
+                }
+              }
+            }
             description
             date(formatString: "YYYY-MM-DD")
             
@@ -97,6 +106,9 @@ export const query = graphql`
     }
     Img: file(extension: {eq: "jpg"}, relativeDirectory: {eq: $relDir}) {
       childImageSharp {
+        fixed {
+          src
+        }
         gatsbyImageData(width:300, layout: CONSTRAINED, placeholder: TRACED_SVG)
         
       }
