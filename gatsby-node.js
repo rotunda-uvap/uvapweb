@@ -78,7 +78,7 @@ exports.createSchemaCustomization = ({ actions }) => {
             }
           }
         news: allMarkdownRemark(
-          filter: {frontmatter: {type: {nin: ["page", "media", "series", "promo", "bio"]}}}) {
+          filter: {frontmatter: {templateKey: {eq: "news"},type: { eq: "news" }}}) {
           edges {
             node {
               id
@@ -88,6 +88,7 @@ exports.createSchemaCustomization = ({ actions }) => {
               frontmatter {
                 type
                 title
+                templateKey
               }
             }
           }

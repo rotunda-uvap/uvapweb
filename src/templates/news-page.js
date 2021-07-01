@@ -73,12 +73,15 @@ export default newsPage
 
 export const query = graphql`
   query($id: String!, $relDir: String!) {
-    markdownRemark(frontmatter: {type: {nin: ["page", "media", "promo"]}},id: { eq: $id }) {
+    # markdownRemark(frontmatter: {type: {nin: ["page", "media", "promo"]}},id: { eq: $id }) {
+      markdownRemark(frontmatter: {templateKey: {eq: "news"}},id: { eq: $id }) {
+
       id
         html
         frontmatter {
             title
             type
+            templateKey
             image {
               name
               extension
