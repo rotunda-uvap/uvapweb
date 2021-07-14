@@ -13,13 +13,13 @@ export default function RotundaNews() {
               <div className="flex flex-row px-10"> 
               
                   <div className="border-r-2 uppercase tracking-widest font-serif text-xs pr-3">rotunda news</div>
-                  <div className="tracking-widest font-serif text-xs pl-3">Dec 15, 2020</div>
+                  <div className="tracking-widest font-serif text-xs pl-3">July 4, 2021</div>
               </div>
                 
               <div className="px-10 flex flex-col">
-              <Link className="font-display tracking-wide uppercase py-2" to={`../news/booker-t-washington-has-a-new-charlottesville-connection-a-digital-edition-of-his-papers`}>Booker T. Washington Has a New Charlottesville Connection: A Digital Edition of His Papers</Link>
-            <div className="font-serif text-base dropCap"><p>Booker T. Washington, who emerged from slavery to become one of the leading African American intellectuals around the turn of the 20th century, had ties to Charlottesville that eventually led to a city park being named after him.</p> </div>  
-            <div className="font-display uppercase text-xs tracking-widest"><Link className="font-display tracking-wide uppercase py-2" to={`../news/booker-t-washington-has-a-new-charlottesville-connection-a-digital-edition-of-his-papers`}><FaArrowAltCircleRight className="inline mx-4"/> Read more</Link> </div></div>
+              <Link className="font-display tracking-wide uppercase py-2" to={`../title/BTWN`}>ROTUNDA Launches the Booker T. Washington Digital Edition</Link>
+            <div className="font-serif text-base dropCap"><p>The ROTUNDA digital edition includes the full contents of the 14-volume letterpress edition, including speeches, correspondence, major autobiographical writing, and cumulative index.</p> </div>  
+            <div className="font-display uppercase text-xs tracking-widest"><Link className="font-display tracking-wide uppercase py-2" to={`../title/BTWN`}><FaArrowAltCircleRight className="inline mx-4"/> Read more</Link> </div></div>
          
             
             </>

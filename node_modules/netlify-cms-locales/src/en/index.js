@@ -131,9 +131,13 @@ const en = {
       deleteEntry: 'Delete entry',
       saving: 'Saving...',
       save: 'Save',
+      statusInfoTooltipDraft:
+        'Entry status is set to draft. To finalize and submit it for review, set the status to ‘In review’',
+      statusInfoTooltipInReview:
+        'Entry is being reviewed, no further actions are required. However, you can still make additional changes while it is being reviewed.',
       deleting: 'Deleting...',
       updating: 'Updating...',
-      setStatus: 'Set status',
+      status: 'Status: %{status}',
       backCollection: ' Writing in %{collectionLabel} collection',
       unsavedChanges: 'Unsaved Changes',
       changesSaved: 'Changes saved',

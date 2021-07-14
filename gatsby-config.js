@@ -6,7 +6,7 @@
 require("dotenv").config()
 const path = require(`path`)
 module.exports = {
-  flags: { PRESERVE_WEBPACK_CACHE: true, DEV_SSR: true, FAST_REFRESH: true },
+  flags: { PARALLEL_SOURCING: true, DEV_SSR: true, FAST_DEV: true },
   siteMetadata: {
     title: `University of Virginia Press`,
     titleTemplate: "%s - UVA Press",

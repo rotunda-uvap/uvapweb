@@ -2,7 +2,6 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import { Helmet } from 'react-helmet'
-import MiniBio from "../components/MiniBio"
 import {FaArrowAltCircleRight} from "react-icons/fa"
 import GoogleCalendar from "../components/Calendar"
 
@@ -29,7 +28,7 @@ export default function PubPage({ data }) {
        <p className="text-gray-500 font-light">Publicity and Social Media Director</p>
        <p className="text-base leading-relaxed">(434) 982-2932</p>
          <a className="text-gray-500 text-base inline-flex items-center" href="mailto:egrandstaff@virginia.edu">Email Emily
-           <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
+           <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" stroke-width="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
              <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
            </svg>
          </a>

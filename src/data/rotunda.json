@@ -203,7 +203,7 @@
         "Reviews":[],
         "imageFilename":"ffcp.jpg"
     },{
-        "Title":"The Papers of Woodrow Wilson",
+        "Title":"The Papers of Woodrow Wilson Digital Edition",
         "Subtitle":"",
         "RotID":"WILS",
         "MainCollection":"American History Collection",
@@ -434,5 +434,20 @@
         "Prizes":null,
         "Reviews":[],
         "imageFilename":"dhrc.jpg"
+    },{
+        "Title":"The Booker T. Washington Papers Digital Edition",
+        "Subtitle":"",
+        "RotID":"BTWN",
+        "MainCollection":"American History Collection",
+        "SubCollection":"American Century Collection",
+        "StartYear": 1860,
+        "EndYear": 1915,
+        "MainDescription":{"html":"<p>The ROTUNDA DIGITAL EDITION includes the full contents of the 14-volume letterpress edition, including speeches, correspondence, major autobiographical writing, and cumulative index.<\/p>"},
+        "Facts":[],
+        "URL":"https://rotunda.upress.virginia.edu/founders/BTWN.html",
+        "EditorCredit":"Louis R. Harlon and Raymond W. Smock",
+        "Prizes":"",
+        "Reviews":[],
+        "imageFilename":"btwn.jpg"
     }
 ]

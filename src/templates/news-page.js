@@ -3,8 +3,6 @@ import { Link, graphql } from "gatsby"
 import RelatedBook from "../components/RelatedBook"
 import Layout from "../components/layout"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
-import ShareButtons from "../components/ShareButtons"
-// import SEO from 'react-seo-component'
 import NewsSEO from "../components/NewsSeo"
 
 const newsPage = ({ data }) => {
@@ -49,7 +47,6 @@ else metaImage = null;
 
        
 
-          <ShareButtons title={title} url={`https://uvap-draft-13b347.netlify.app/${news.fields.slug}`}/>
 
           
             {related_series && related_series.map(series => (

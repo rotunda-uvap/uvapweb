@@ -17,7 +17,7 @@ export default function AuthorsPage({ data }) {
   <div className="container px-5 py-12 mx-auto">
   <span className="font-medium title-font mb-4 text-indigo-500"><Link to={'/prospective'}>
             Prospective Authors <span className="inline-flex items-center mt-4">
-              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
+              <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" stroke-width="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
                 <path d="M5 12h14M12 5l7 7-7 7"></path>
               </svg></span>
               </Link></span>
@@ -39,7 +39,7 @@ export default function AuthorsPage({ data }) {
             <button className="p-3 uppercase  md:border-b-0 border-b border-gray-300"><Link to={'/prospective'}>
             
       Prospective Authors <span className="inline-flex items-center mt-4">
-        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
+        <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" stroke-width="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
           <path d="M5 12h14M12 5l7 7-7 7"></path>
         </svg></span></Link></button>
 
@@ -60,7 +60,7 @@ export default function AuthorsPage({ data }) {
         
         <div className="p-2 sm:w-1/2 w-full">
         <div className="bg-gray-100 rounded flex p-4 h-full items-center">
-             <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" className="text-gray-800 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+             <svg fill="currentColor" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" stroke-width="1" className="text-gray-800 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
                
                <path xmlns="http://www.w3.org/2000/svg" d="M9 5l7 7-7 7"/>
              </svg>
@@ -68,7 +68,7 @@ export default function AuthorsPage({ data }) {
           </div></div>
           <div className="p-2 sm:w-1/2 w-full">
           <div className="bg-gray-100 rounded flex p-4 h-full items-center">
-             <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" className="text-gray-800 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+             <svg fill="currentColor" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" stroke-width="1" className="text-gray-800 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
                
                <path xmlns="http://www.w3.org/2000/svg" d="M9 5l7 7-7 7"/>
              </svg>
@@ -76,7 +76,7 @@ export default function AuthorsPage({ data }) {
           </div></div>
           <div className="p-2 sm:w-1/2 w-full">
           <div className="bg-gray-100 rounded flex p-4 h-full items-center">
-             <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" className="text-gray-800 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+             <svg fill="currentColor" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" stroke-width="1" className="text-gray-800 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
                
                <path xmlns="http://www.w3.org/2000/svg" d="M9 5l7 7-7 7"/>
              </svg><FileDownloadButton name="Cover Design Questionnaire" file="UVAP_Author-Cover-Q_0.docx"/></div>
@@ -96,7 +96,7 @@ export default function AuthorsPage({ data }) {
         
         <div className="p-2 sm:w-1/2 w-full">
         <div className="bg-gray-100 rounded flex p-4 h-full items-center">
-             <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" className="text-gray-800 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+             <svg fill="currentColor" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" stroke-width="1" className="text-gray-800 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
                
                <path xmlns="http://www.w3.org/2000/svg" d="M9 5l7 7-7 7"/>
              </svg>
@@ -104,7 +104,7 @@ export default function AuthorsPage({ data }) {
           </div></div>
           <div className="p-2 sm:w-1/2 w-full">
           <div className="bg-gray-100 rounded flex p-4 h-full items-center">
-             <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" className="text-gray-800 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+             <svg fill="currentColor" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" stroke-width="1" className="text-gray-800 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
                
                <path xmlns="http://www.w3.org/2000/svg" d="M9 5l7 7-7 7"/>
              </svg>
@@ -112,7 +112,7 @@ export default function AuthorsPage({ data }) {
           </div></div>
           <div className="p-2 sm:w-1/2 w-full">
           <div className="bg-gray-100 rounded flex p-4 h-full items-center">
-             <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" className="text-gray-800 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+             <svg fill="currentColor" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" stroke-width="1" className="text-gray-800 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
                
                <path xmlns="http://www.w3.org/2000/svg" d="M9 5l7 7-7 7"/>
              </svg>
@@ -135,7 +135,7 @@ export default function AuthorsPage({ data }) {
         
           <div className="p-2 sm:w-1/2 w-full">
           <div className="bg-gray-100 rounded flex p-4 h-full items-center">
-             <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" className="text-gray-800 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+             <svg fill="currentColor" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" stroke-width="1" className="text-gray-800 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
                
                <path xmlns="http://www.w3.org/2000/svg" d="M9 5l7 7-7 7"/>
              </svg>
@@ -143,7 +143,7 @@ export default function AuthorsPage({ data }) {
           </div></div>
           <div className="p-2 sm:w-1/2 w-full">
           <div className="bg-gray-100 rounded flex p-4 h-full items-center">
-             <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" className="text-gray-800 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+             <svg fill="currentColor" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" stroke-width="1" className="text-gray-800 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
                
                <path xmlns="http://www.w3.org/2000/svg" d="M9 5l7 7-7 7"/>
              </svg>
@@ -166,7 +166,7 @@ export default function AuthorsPage({ data }) {
         
           <div className="p-2 sm:w-1/2 w-full">
           <div className="bg-gray-100 rounded flex p-4 h-full items-center">
-             <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" className="text-gray-800 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+             <svg fill="currentColor" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" stroke-width="1" className="text-gray-800 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
                
                <path xmlns="http://www.w3.org/2000/svg" d="M9 5l7 7-7 7"/>
              </svg>
@@ -174,7 +174,7 @@ export default function AuthorsPage({ data }) {
           </div></div>
           <div className="p-2 sm:w-1/2 w-full">
           <div className="bg-gray-100 rounded flex p-4 h-full items-center">
-             <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" className="text-gray-800 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+             <svg fill="currentColor" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" stroke-width="1" className="text-gray-800 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
                
                <path xmlns="http://www.w3.org/2000/svg" d="M9 5l7 7-7 7"/>
              </svg>
@@ -197,7 +197,7 @@ export default function AuthorsPage({ data }) {
         
           <div className="p-2 sm:w-1/2 w-full">
           <div className="bg-gray-100 rounded flex p-4 h-full items-center">
-             <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" className="text-gray-800 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+             <svg fill="currentColor" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" stroke-width="1" className="text-gray-800 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
                
                <path xmlns="http://www.w3.org/2000/svg" d="M9 5l7 7-7 7"/>
              </svg>
@@ -206,7 +206,7 @@ export default function AuthorsPage({ data }) {
           </div></div>
           <div className="p-2 sm:w-1/2 w-full">
           <div className="bg-gray-100 rounded flex p-4 h-full items-center">
-             <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" className="text-gray-800 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+             <svg fill="currentColor" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" stroke-width="1" className="text-gray-800 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
                
                <path xmlns="http://www.w3.org/2000/svg" d="M9 5l7 7-7 7"/>
              </svg>
@@ -215,7 +215,7 @@ export default function AuthorsPage({ data }) {
           </div></div>
           <div className="p-2 sm:w-1/2 w-full">
           <div className="bg-gray-100 rounded flex p-4 h-full items-center">
-             <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" className="text-gray-800 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+             <svg fill="currentColor" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" stroke-width="1" className="text-gray-800 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
                
                <path xmlns="http://www.w3.org/2000/svg" d="M9 5l7 7-7 7"/>
              </svg>
@@ -239,7 +239,7 @@ export default function AuthorsPage({ data }) {
           
           <div className="p-2 sm:w-1/2 w-full">
           <div className="bg-gray-100 rounded flex p-4 h-full items-center">
-             <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" className="text-gray-800 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+             <svg fill="currentColor" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" stroke-width="1" className="text-gray-800 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
                
                <path xmlns="http://www.w3.org/2000/svg" d="M9 5l7 7-7 7"/>
              </svg>

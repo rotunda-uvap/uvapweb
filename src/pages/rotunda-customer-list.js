@@ -52,6 +52,7 @@ export default function RotundaCustomerList({data}) {
                     Edition</a></li>
             <li><a href="http://rotunda.upress.virginia.edu/MARC/23-people.mrc">People of the
                     Founding Era</a></li>
+                    
         </ul>
     </li>
     <li><b>Antebellum, Civil War, and Reconstruction</b></li>
@@ -73,6 +74,8 @@ export default function RotundaCustomerList({data}) {
             <li><a href="http://rotunda.upress.virginia.edu/MARC/14-presrecord.mrc">Presidential Recordings Digital
                     Edition</a></li>
             <li><a href="http://rotunda.upress.virginia.edu/MARC/25-woodrowwilson.mrc">Papers of Woodrow Wilson Digital
+                    Edition</a></li>
+                    <li><a href="https://rotunda.upress.virginia.edu/MARC/32-BookerTWashington.mrc">Papers of Booker T. Washington Digital
                     Edition</a></li>
         </ul>
       </li>

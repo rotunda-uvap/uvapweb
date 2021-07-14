@@ -10,28 +10,18 @@ import HomepageBanner from "../components/HomepageBanner"
 import RotundaNews from "../components/RotundaNews"
 // import { ReactEmbeddedGoogleCalendar } from 'react-embedded-google-calendar';
 import GoogleCalendar from "../components/Calendar"
-import { useSiteMetadata } from "../hooks/use-site-metadata"
-import SEO from 'react-seo-component'
 
 export default function Home(data) {
-  const meta = useSiteMetadata()
+  
   return (
     <Layout>
-<SEO
-  title={meta.title}
-  description={meta.description}
-  image={meta.logo}
-/>
- <HomepageBanner/>
 
+ <HomepageBanner/>
 
 <section className="border-b-2 py-10">
 <p className="text-center uppercase text-gray-500 mx-auto  font-sans tracking-wide">Recent News</p>
-
       
       <FeatNews/>
-
-      
 
       <button className="text-lg p-4 w-full uppercase text-center"><Link to={`/publicity`}>see all the latest news</Link></button>
 </section>
