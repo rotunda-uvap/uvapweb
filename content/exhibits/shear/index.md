@@ -1,5 +1,6 @@
 ---
 templateKey: exhibit
+title: SHEAR
 related_series:
   - EAH
   - JA
@@ -9,9 +10,10 @@ related_series:
 related_staff:
   - Nadine Zimmerli
 featured: true
-title: SHEAR
 txtcolor: text-black
 exhibit_logo: shear_logo_0.png
+related_blog:
+  - "SHEAR 2021: A Q&A with Frank Cogliano"
 featured_books: []
 related_collection:
   - Test Collection
