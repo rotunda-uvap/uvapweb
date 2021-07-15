@@ -1,26 +1,20 @@
 ---
 templateKey: exhibit
-title: SHEAR
-txtcolor: text-black
-featured: true
-exhibit_logo: shear_logo_0.png
 related_series:
-  - GWB
+  - EAH
+  - JA
+  - TASS
+  - RA
+  - WEA
 related_staff:
   - Nadine Zimmerli
-featured_books:
-  - "5042"
+featured: true
+title: SHEAR
+txtcolor: text-black
+exhibit_logo: shear_logo_0.png
+featured_books: []
 related_collection:
   - Test Collection
   - Test Collection Two
 ---
-ANNOUNCING [“The Revolutionary Age,”](https://www.upress.virginia.edu/2020/07/14/uva-press-announces-new-series-revolutionary-age) a new series designed to bring a fresh and international perspective to the study of the American Revolution within the broader context of the Age of Revolution.
-
-###### RELATED SERIES
-
-* [ROTUNDA: ](https://www.upress.virginia.edu/rotundacollections/american-history-collection)[American Founding Era Collection](https://www.upress.virginia.edu/rotundacollections/american-founding-era-collection)
-* [A Nation Divided: Studies in the Civil War Era](https://www.upress.virginia.edu/series/nation-divided-studies-civil-war-era)
-* [Carter G. Woodson Institute Series](https://www.upress.virginia.edu/series/carter-g-woodson-institute-series)
-* [Early American Histories](https://www.upress.virginia.edu/series/early-american-histories)
-* [Jeffersonian America](https://www.upress.virginia.edu/series/jeffersonian-america)
-* [The American South Series](https://www.upress.virginia.edu/series/american-south-series)
+##### Use promo code 10SUMMER for 30% all books through September 1
