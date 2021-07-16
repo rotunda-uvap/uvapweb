@@ -1,7 +1,7 @@
 ---
 templateKey: exhibit
 title: SHEAR 2021
-bgcolor: bg-blue-900
+bgcolor: ""
 related_series:
   - EAH
   - JA
@@ -11,7 +11,7 @@ related_series:
 related_staff:
   - Nadine Zimmerli
 featured: true
-txtcolor: text-white
+txtcolor: text-gray-600
 exhibit_logo: shear_logo_0.png
 related_blog:
   - "SHEAR 2021: A Q&A with Frank Cogliano"
