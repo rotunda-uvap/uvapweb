@@ -19,5 +19,7 @@ featured_books:
   - "5479"
   - "5042"
   - "5192"
+related_collection:
+  - SCWH
 ---
 30% OFF + FREE SHIPPING with promo code 10SCWH
