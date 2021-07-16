@@ -7,6 +7,8 @@ related_series:
   - AND
   - CGWIS
   - TASS
+related_blog:
+  - In Remembrance of the Firing on Fort Sumter
 related_staff:
   - Nadine Zimmerli
 featured_books:
