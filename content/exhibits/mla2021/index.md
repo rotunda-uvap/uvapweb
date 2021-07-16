@@ -9,6 +9,15 @@ exhibit_books:
 templateKey: exhibit
 related_series:
   - BNP
+  - CARAF
+  - CFFC
+  - NWS
+  - PBL
+  - PBSH
+  - PBK
+  - USN
+  - VLCS
+  - WEA
 bkg1_title: Collection 1
 title: " MLA 2021"
 txtcolor: text-white
