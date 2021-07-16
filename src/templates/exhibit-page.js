@@ -3,12 +3,15 @@ import { Link, graphql } from "gatsby"
 import RelatedBookList from "../components/RelatedBookList"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import Layout from "../components/layout"
+import Gallery from "../components/ExCarousel"
 
 const exhibitPage = ({ data }) => {
     const exhibit = data.markdownRemark
     const book_colls = data.markdownRemark.frontmatter.related_collection
     const related_series = data.markdownRemark.frontmatter.related_series
     const related_staff = data.markdownRemark.frontmatter.related_staff
+    const related_posts = data.markdownRemark.frontmatter.related_blog
+    const feat_books = data.markdownRemark.frontmatter.featured_books
     const bgcolor = exhibit.frontmatter.bgcolor
     const txtcolor = exhibit.frontmatter.txtcolor
     const image = getImage(data.Img)
@@ -16,45 +19,80 @@ const exhibitPage = ({ data }) => {
  return (
    <Layout>
      <div>
+       <h1 className="py-5">{data.markdownRemark.frontmatter.title}</h1>
         <GatsbyImage image={image} alt="related image"/>
         <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1">
-          <div className={`${bgcolor} ${txtcolor} py-5`}
+          <div className={`${bgcolor} ${txtcolor} py-5 px-5 text-2xl text-center`}
           dangerouslySetInnerHTML={{ __html:exhibit.html }}/>
 
-          <h6 className="py-5">Meet our Editors:</h6>
-        {related_staff && related_staff.map(staff => (
-            <> 
-            <Link to={'../../staff/' + staff.frontmatter.title.replace(" ", "-").toLowerCase()}> <div>{staff.frontmatter.title}</div></Link>
-            <div className="py-2 text-light text-xs"
+        
+       
+        {feat_books &&
+         
+        <section className="py-8 border-b-2">
+        <p className="text-center uppercase text-gray-500 mx-auto  font-sans tracking-wide py-4">Featured Books:</p>
+          <Gallery book_id_array={feat_books}/>
+        </section>
+        
+        }
+
+      
+         
+
+        {related_staff && 
+        
+        <section className="py-8 border-b-2"> 
+            
+            <p className="text-center uppercase text-gray-500 mx-auto  font-sans tracking-wide py-4">Meet our Editors:</p>
+        {related_staff.map(staff => (
+            <>
+            <Link to={'../../staff/' + staff.frontmatter.title.replace(" ", "-").toLowerCase()}> <div>{staff.frontmatter.title} <span className="text-sm">&nbsp; - &nbsp;{staff.frontmatter.job_title}</span></div></Link>
+            <div className="py-2 text-light text-md"
           dangerouslySetInnerHTML={{ __html:staff.html }}/>
             </>
         ))}
-          
-         <section>
+          </section>}
+         <section className="py-8 border-b-2">
        
           {related_series && 
              <>
-            <h6 className="py-2">Related Series</h6>
-            
+            <p className="text-center uppercase text-gray-500 mx-auto  font-sans tracking-wide py-4">Related Series</p>
+            <ul className="content-center">
             {related_series.map(series => (
             
-            <h6 className="py-3 font-light pl-4"><Link to={`../../series/${ series.id }`}>{series.seriesName}</Link></h6>
+            <li className="py-3 text-gray-700 text-center"><Link to={`../../series/${ series.id }`}>{series.seriesName}</Link></li>
             
-        ))}
+        ))}</ul>
         </>
         }
           </section>
+
+          
+          
+{related_posts && 
+             <section className="py-8 border-b-2">
+            <p className="text-center uppercase text-gray-500 mx-auto  font-sans tracking-wide py-4">Related Posts</p>
+            <ul className="content-center">
+            {related_posts.map(post => (
+            
+            <li className="py-3 text-gray-700 text-center">{post}</li>
+            
+        ))}</ul>
+        </section>
+    }
+
          
-         <section>
+         <section className="py-8 border-b-2">
           {book_colls && 
         
             <>
-            <h6 className="py-4">Book Collections</h6>
+            <p className="text-center uppercase text-gray-500 mx-auto  font-sans tracking-wide py-4">Books</p>
             {book_colls.map(coll => (
               <div>
-                <h6 className="py-2 font-display ">{coll.frontmatter.title}</h6>
+                {/* <h6 className="py-2 font-display ">{coll.frontmatter.title}</h6> */}
                 <span className="cms font-serif py-5 pl-4" dangerouslySetInnerHTML={{__html: coll.frontmatter.description}}/>
-            <div className="flex flex-row py-4 space-x-4">
+            <div className="flex flex-row flex-wrap p-4">
+            
             {coll.frontmatter.related_book.map(book => (
               
               <RelatedBookList id={book.id} title={book.Title}/>
@@ -85,13 +123,16 @@ export const query = graphql`
         id
         frontmatter {
             templateKey
+            title
+            related_blog
+            featured_books
             related_collection {
               frontmatter {
-              Collection_Type
-              title
-              related_book {
-                Title
-                id
+                Collection_Type
+                title
+                related_book {
+                  Title
+                  id
               }
             description
             }
@@ -107,6 +148,8 @@ export const query = graphql`
             related_staff {
               frontmatter {
                 title
+                job_title
+
               }
               html
             }

@@ -151,6 +151,14 @@ collections:
         display_fields: ['series.*.seriesName']
         file: series_cms
         required: false 
+      - label: "Related Blog(s)"
+        name: "related_blog"
+        widget: "relation"
+        collection: "news"
+        search_fields: ['title']
+        value_field: "{{title}}"
+        multiple: true
+        required: false
       - label: "Related Staff"
         name: "related_staff"
         widget: "relation"

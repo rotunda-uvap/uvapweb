@@ -1,6 +1,6 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
-import RelatedBookList from "./RelatedBookList"
+import Gallery from "../components/RelCarousel"
 export default function ReadingSeries() { 
   return (
     <StaticQuery
@@ -42,24 +42,16 @@ export default function ReadingSeries() {
         </div>
 
         
-          
+     <div className="py-6">
 
           {data.rseries.edges[0].node.frontmatter.related_collection.map(coll => (
               
-                
-            <div className="grid grid-cols-7 w-full pt-5">
-            {coll.frontmatter.related_book.map(book => (
-              
-              <RelatedBookList id={book.id} title={book.Title}/>
-         
-             
-          ))}
-           </div>
-              
+          <Gallery book_obj_array={coll.frontmatter.related_book}/>
+        
             
         ))}
 
-        
+        </div>
     
           </div>
       

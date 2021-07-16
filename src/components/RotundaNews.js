@@ -1,12 +1,13 @@
 import React from "react"
 import { Link} from "gatsby"
 import {FaArrowAltCircleRight} from "react-icons/fa"
+import { StaticImage } from "gatsby-plugin-image"
 
 export default function RotundaNews() { 
   return (
     
-        <section className="flex flex-row justify-center place-content-center space-x-8 py-10">
-            <img alt="booker " src="../static/7bc9ac842932d37df002324345febb9a/9b21f/btwashington.webp"/>
+        <section className="flex flex-row justify-center place-content-center space-x-8">
+            <StaticImage  width={300} src="../images/btwn_entr.png" alt="Booker T Washington Digital Edition" />
            <article className="flex flex-1 flex-col flex-wrap p-5">
            
             <>
@@ -18,7 +19,7 @@ export default function RotundaNews() {
                 
               <div className="px-10 flex flex-col">
               <Link className="font-display tracking-wide uppercase py-2" to={`../title/BTWN`}>ROTUNDA Launches the Booker T. Washington Digital Edition</Link>
-            <div className="font-serif text-base dropCap"><p>The ROTUNDA digital edition includes the full contents of the 14-volume letterpress edition, including speeches, correspondence, major autobiographical writing, and cumulative index.</p> </div>  
+            <div><p className="font-serif font-sm leading-tight dropCap">The ROTUNDA digital edition includes the full contents of the 14-volume letterpress edition, including speeches, correspondence, major autobiographical writing, and cumulative index.</p> </div>  
             <div className="font-display uppercase text-xs tracking-widest"><Link className="font-display tracking-wide uppercase py-2" to={`../title/BTWN`}><FaArrowAltCircleRight className="inline mx-4"/> Read more</Link> </div></div>
          
             

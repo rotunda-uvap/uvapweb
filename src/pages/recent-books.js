@@ -14,11 +14,11 @@ export default function RecentBooks({ data }) {
  return (
     
         <Layout>
-            <h2 className="py-10 px-3 font-light">New and Upcoming Books from UVa Press</h2>
+            <h5 className="py-10 px-3 font-light tracking-wide text-gray-500 text-center uppercase">New and Upcoming Books from UVa Press</h5>
 
             <section className="py-5 grid grid-cols-2 mx-auto">
-            <div className="p-3 border-b-4 border-white hover:border-black w-full hover:bg-gray-800 hover:text-white">Forthcoming Books</div>
-            <a className="p-3 border-b-4 border-white hover:border-black w-full hover:bg-bg-800 hover:text-white" href="#new"><button > Books Published This Year</button></a>
+            <div className="text-center text-gray-500 mx-auto font-sans tracking-wide py-4">Forthcoming Books</div>
+            <a className="text-center  text-gray-500 mx-auto  font-sans tracking-wide py-4" href="#new">Books Published This Year</a>
 
             </section>
             
@@ -42,7 +42,7 @@ export default function RecentBooks({ data }) {
             </section>
            
       <section id="new">
-           <h4 className="py-10 text-2xl font-black">Recent Releases</h4>
+           <div className="py-5 text-center text-gray-500 mx-auto font-sans tracking-wide py-4">Recent Releases</div>
           <div className="container px-5 py-5 grid grid-cols-2 md:grid-cols-5 md:gap-4">
             {rec.edges.map(edge => (
            <>  

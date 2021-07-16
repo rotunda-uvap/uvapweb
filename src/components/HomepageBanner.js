@@ -13,7 +13,7 @@ const Banner = () => {
 AMERICAN LIFE</div>
            <div className="font-serif text-xl max-w-xs text-right">a call to action</div>
          </div>
-         <div><StaticImage width={100} src="https://www.upress.virginia.edu/sites/default/files/covers/5628.jpg" alt="feat book" /></div>
+         <div><StaticImage width={100} src="https://www.upress.virginia.edu/sites/default/files/covers/5628.jpg" alt="feat book" className="drop-shadow-img" /></div>
          <div className="flex flex-col flex-wrap text-left place-content-center font-serif font-light w-64 text-2xl quoted">opportunities
 for honest, interracial,
 "courageous conversations"

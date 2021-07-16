@@ -41,7 +41,16 @@ p {padding:0 1rem 1rem 1rem; font-family: "Crimson Text";}
 }
 p.dropCap:first-child:first-letter {
   color: rgb(29, 28, 28);
-  font-family: "Crimson Text";
+  font-family: "Quicksand";
+  float:left;
+  font-size: 2.5rem;
+  line-height: 2rem;
+  padding-top:4px;
+  padding-right: 4px;
+}
+div.dropCap:first-child:first-letter {
+  color: rgb(29, 28, 28);
+  font-family: "Quicksand";
   float:left;
   font-size: 2.5rem;
   line-height: 2rem;
@@ -75,4 +84,14 @@ div[aria-expanded="false"]{
   left:50%;
   color:darkgrey;
   font-family: "Crimson Text";
+}
+
+.drop-shadow-img  {
+  -webkit-filter: drop-shadow(0 5px 5px #222222);
+  filter: drop-shadow(0 5px 5px #222222);
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color:#727272 !important; 
 }

@@ -17,7 +17,7 @@ const BookHorizontalTabs = ({summary, reviews, bio}) => {
           <Tab className="uppercase tracking-widest py-2 px-3 sm:px-6 text-xs md:text-md border-b-4 border-white hover:border-black" tabFor="basic-tab-five">Additional Resources</Tab>
         </TabList>
         <TabPanel className="py-3" tabId="basic-tab-one">
-        <div dangerouslySetInnerHTML={{ __html: summary }}/>
+        <div dangerouslySetInnerHTML={{ __html: summary }} className="dropCap"/>
         </TabPanel>
         <TabPanel className="py-3 " tabId="basic-tab-two">
         {reviews ?
