@@ -35,7 +35,7 @@ featured_books:
   - "5281"
   - "5478"
 related_collection:
-  - Test Collection Two
+  - MLA2021
 related_1:
   - "5498"
   - "4348"
