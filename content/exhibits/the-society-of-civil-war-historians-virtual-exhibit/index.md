@@ -1,8 +1,8 @@
 ---
 templateKey: exhibit
 title: The SOCIETY of CIVIL WAR HISTORIANS
-bgcolor: bg-blue-800
-txtcolor: text-white
+bgcolor: ""
+txtcolor: text-gray-700
 related_series:
   - AND
   - CGWIS
