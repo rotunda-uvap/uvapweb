@@ -92,8 +92,9 @@ const exhibitPage = ({ data }) => {
                 {/* <h6 className="py-2 font-display ">{coll.frontmatter.title}</h6> */}
                 <span className="cms font-serif py-5 pl-4" dangerouslySetInnerHTML={{__html: coll.frontmatter.description}}/>
             <div className="flex flex-row flex-wrap p-4">
-            
-            {coll.frontmatter.related_book.map(book => (
+             
+            {coll.frontmatter.related_book && 
+            coll.frontmatter.related_book.map(book => (
               
               <RelatedBookList id={book.id} title={book.Title}/>
          
