@@ -1,6 +1,6 @@
 ---
 templateKey: exhibit
-title: The SOCIETY of CIVIL WAR HISTORIANS Virtual Exhibit
+title: The SOCIETY of CIVIL WAR HISTORIANS
 bgcolor: bg-blue-800
 txtcolor: text-white
 related_series:
