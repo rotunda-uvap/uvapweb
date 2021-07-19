@@ -38,7 +38,11 @@ Check the book to make sure the image or figure you wish to reproduce has not be
 If you are interested in acquiring foreign, translation, book club, audio, digital/e-book, dramatic, or paperback/hardcover reprint rights to a University of Virginia Press book, please contact:
 
  **Helen Chandler** 
-  University of Virginia Press 
-  P.O. Box 400318 Charlottesville, VA 22904-4318 
- [hc7kb@virginia.edu](mailto:hc7kb@virginia.edu) 
- **Fax:** (434) 982-2655
+
+University of Virginia Press
+
+P.O. Box 400318 Charlottesville, VA 22904-4318 
+
+[hc7kb@virginia.edu](mailto:hc7kb@virginia.edu) 
+
+**Fax:** (434) 982-2655
