@@ -14,11 +14,17 @@ If you are requesting permission to photocopy or scan material for classroom use
 
 If you are requesting permission to reprint or otherwise reproduce material from a University of Virginia Press book, please submit your request directly to our Intellectual Property Manager using the contact information below. All requests **must be in writing**. Before submitting a permission request, please be sure that the material you are requesting belongs to the University of Virginia Press and is not credited to another source. Credit lines can be found in the footnotes, endnotes, acknowledgments, captions, or on the copyright page. If the material is credited to another source, direct your request to that other party and not to the Press. Please be aware that other departments at the University publish their own material. For permission, contact those departments directly; this applies to *The Hedgehog Review, Meridian,* and *The Virginia Quarterly Review*, among other publications.
 
-###### Mailing address:
+**Mailing address:**
 
-Intellectual Property Manager University of Virginia Press P.O. Box 400318 Charlottesville, VA 22904-4318 
+Intellectual Property Manager  
+University of Virginia Press  
+P.O. Box 400318  
+Charlottesville, VA 22904-4318 
 
-**Email:** [hc7kb@virginia.edu](mailto:hc7kb@virginia.edu) **Fax:** (434) 982-2655 **Please include:**
+**Email:** [hc7kb@virginia.edu](mailto:hc7kb@virginia.edu)  
+**Fax:** (434) 982-2655
+
+**Please include:**
 
 * Your publisher’s name. It is the Press’s policy not to grant permission until you have contracted with a publisher.
 * Name of the author(s)/editor(s) and title of the book in which the requested material was originally published, together with the inclusive page numbers you wish to reproduce (give the actual page numbers, e.g. pp. 24-48).
@@ -37,11 +43,8 @@ Check the book to make sure the image or figure you wish to reproduce has not be
 
 If you are interested in acquiring foreign, translation, book club, audio, digital/e-book, dramatic, or paperback/hardcover reprint rights to a University of Virginia Press book, please contact:
 
- **Helen Chandler** 
-
+**Helen Chandler**  
 University of Virginia Press  
-P.O. Box 400318 Charlottesville, VA 22904-4318 
-
-[hc7kb@virginia.edu](mailto:hc7kb@virginia.edu) 
-
+P.O. Box 400318 Charlottesville, VA 22904-4318  
+[hc7kb@virginia.edu](mailto:hc7kb@virginia.edu)  
 **Fax:** (434) 982-2655
