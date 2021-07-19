@@ -16,7 +16,7 @@ export default function PubPage({ data }) {
         <Layout>
           <div className="container px-5 py-12 mx-auto">
             <div className="flex flex-col text-center w-full">
-            <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">News and Events</h1>
+            <h1 className="sm:text-3xl text-2xl uppercase font-medium title-font mb-4 text-gray-900">News and Events</h1>
               </div>
             </div>
         
