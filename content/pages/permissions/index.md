@@ -39,7 +39,8 @@ If you are interested in acquiring foreign, translation, book club, audio, digit
 
  **Helen Chandler** 
 
-University of Virginia Press . P.O. Box 400318 Charlottesville, VA 22904-4318 
+University of Virginia Press  
+P.O. Box 400318 Charlottesville, VA 22904-4318 
 
 [hc7kb@virginia.edu](mailto:hc7kb@virginia.edu) 
 
