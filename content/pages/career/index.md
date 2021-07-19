@@ -1,12 +1,12 @@
 ---
-title: Career
 templateKey: page
+title: Career
 ---
-#### Full-Time Positions at UVaP
+###### Full-Time Positions at UVaP
 
 There currently are no full-time opportunities at the Press.
 
-#### UVaP Internship Program
+###### UVaP Internship Program
 
 The University of Virginia Press seeks volunteer interns on an ongoing basis. These unpaid internships are a wonderful chance to gain valuable job experience and an understanding of the field of scholarly publishing. Past interns have gone on to successful careers in both scholarly and trade publishing. Opportunities are available in Marketing and Publicity. Duties vary by department.
 
