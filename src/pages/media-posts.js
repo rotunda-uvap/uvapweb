@@ -8,7 +8,8 @@ export default function MediaArticles({ data }) {
  return (
     
         <Layout>
-          <h2 className="py-10 px-3 font-light">All Media Posts</h2>
+           <div className="container px-5 py-12 mx-auto">
+          <h1 className="sm:text-3xl text-2xl p-4 font-sans uppercase text-gray-900 text-center">All Media Posts</h1>
             {media.edges.map(edge => (
             <>
              <div className="mt-6">
@@ -27,7 +28,7 @@ export default function MediaArticles({ data }) {
             </div>
             
             </>
-        ))}
+        ))}</div>
         </Layout>
 
  )

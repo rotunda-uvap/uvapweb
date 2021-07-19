@@ -28,8 +28,11 @@ table.tiers td {padding-left:1rem; padding-bottom:1rem;}
 p {padding:0 1rem 1rem 1rem; font-family: "Crimson Text";}
 .cms ul {padding:1em; list-style:none;}
 .cms ul li:first-child {padding-top:0;}
-.cms ul li {padding-left:2em; padding-top:1em;}
+.cms ul li {padding-left:2em; padding-top:1em; font-family: "Crimson Text";}
 .cms strong {font-weight: bolder; font-weight: 600;}
+.cms h6 {color: #6B7280;
+  padding: 1em 0;
+  letter-spacing: .0235em;}
 .dropCap p:first-child:first-letter {
   color: rgb(29, 28, 28);
   font-family: "Crimson Text";

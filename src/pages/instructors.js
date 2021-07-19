@@ -19,7 +19,7 @@ export default function InstructorPage({data}) {
     </div>
 
 <section>
-<h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Course Collections</h1>
+<h3 className="text-2xl py-5 uppercase text-gray-500">Course Collections</h3>
 {book_colls && 
             <>
             {book_colls.map(coll => (
@@ -42,65 +42,44 @@ export default function InstructorPage({data}) {
 </section>
 
  <section id="desk" className="py-8 px-5">
- <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Desk and Exam Copies</h1>
+ <h3 className="text-2xl py-5 uppercase text-gray-500">Desk and Exam Copies</h3>
    <p className="leading-relaxed text-base text-gray-700">Desk and Exam Copy info from CMS</p>
  </section>
         
 
  <section className="text-gray-700 body-font" id="subjects">
-  <div className="container flex flex-wrap px-5 py-24 mx-auto items-center">
-    <div className="md:w-1/3 md:pr-12 md:py-8 md:border-r md:border-b-0 mb-10 md:mb-0 pb-10 border-b border-gray-300">
-      <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Our Subject Categories</h1>
-      <p className="leading-relaxed text-base">This paragraph should have introductory information about our subjects.</p>
-      <Link className="text-teal-500 inline-flex items-center mt-4">Learn More
-        <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" stroke-width="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
-          <path d="M5 12h14M12 5l7 7-7 7"></path>
-        </svg>
-      </Link>
-    </div>
-    <div className="flex flex-col md:w-2/3 md:pl-12">
-      <h2 className="title-font font-medium text-gray-800 tracking-widest text-sm mb-3">CATEGORIES</h2>
-      <nav className="flex flex-wrap list-none -mb-1">
-     
-        {subs.edges.map(edge => (
-            <>
-           
-           <li className="lg:w-1/3 mb-1 w-1/2" key={edge.node.subjectID}>
+  <div className="container flex flex-wrap py-10 mx-auto items-center">
+   
+      <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Our Subjects</h1>
+      
+      <nav className="flex flex-wrap py-5 list-none -mb-1">
+      {subs.edges.map(edge => (
+            <>           
+           <li className="lg:w-1/2 mb-2 font-display" key={edge.node.subjectid}>
           <Link to={`../../subject/${ edge.node.subjectID }`} className="text-gray-600 hover:text-gray-800">{ edge.node.subjectName }</Link>
-        </li>
-            
+        </li>            
             </>
         ))}
-       
       </nav>
-    </div>
+    
   </div>
-</section>
+</section> 
 <section className="text-gray-700 body-font" id="series">
-  <div className="container flex flex-wrap px-5 py-24 mx-auto items-center">
-    <div className="md:w-1/3 md:pr-12 md:py-8 md:border-r md:border-b-0 mb-10 md:mb-0 pb-10 border-b border-gray-300">
+  <div className="container flex flex-wrap py-10 mx-auto items-center">
+   
       <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Our Series</h1>
-      <p className="leading-relaxed text-base">This paragraph should have introductory information about our series.</p>
-      <Link className="text-teal-500 inline-flex items-center mt-4">Learn More
-        <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" stroke-width="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
-          <path d="M5 12h14M12 5l7 7-7 7"></path>
-        </svg>
-      </Link>
-    </div>
-    <div className="flex flex-col md:w-2/3 md:pl-12">
-      <h2 className="title-font font-medium text-gray-800 tracking-widest text-sm mb-3">SERIES CATEGORIES</h2>
-      <nav className="flex flex-wrap list-none -mb-1">
+      
+      <Link to={'../series'} className="text-gray-700 pl-4 py-2">See all Active Series</Link>
+      <nav className="flex flex-wrap py-5 list-none -mb-1">
       {sers.edges.map(edge => (
             <>           
-           <li className="lg:w-1/3 mb-1 w-1/2" key={edge.node.id}>
+           <li className="lg:w-1/2 mb-2 font-display" key={edge.node.id}>
           <Link to={`../series/${ edge.node.id }`} className="text-gray-600 hover:text-gray-800">{ edge.node.seriesName }</Link>
         </li>            
             </>
         ))}
-        
-       
       </nav>
-    </div>
+    
   </div>
 </section>
 

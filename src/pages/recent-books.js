@@ -14,7 +14,8 @@ export default function RecentBooks({ data }) {
  return (
     
         <Layout>
-            <h5 className="py-10 px-3 font-light tracking-wide text-gray-500 text-center uppercase">New and Upcoming Books from UVa Press</h5>
+          <div className="container px-5 py-12 mx-auto">
+             <h1 className="sm:text-3xl text-2xl p-4 font-sans uppercase text-gray-900 text-center">New and Upcoming Books from UVa Press</h1>
 
             <section className="py-5 grid grid-cols-2 mx-auto">
             <div className="text-center text-gray-500 mx-auto font-sans tracking-wide py-4">Forthcoming Books</div>
@@ -53,7 +54,7 @@ export default function RecentBooks({ data }) {
         ))}
         </div>
 </section>
-        
+        </div>
         </Layout>
 
  )

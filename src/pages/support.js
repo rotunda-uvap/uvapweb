@@ -11,10 +11,10 @@ export default function SupportPage({ data }) {
         <Layout>
           
           
-              <div className="text-gray-600 body-font">
-            <div className="container px-5 py-12 mx-auto flex flex-wrap items-center">
+              <div className="container px-5 py-12 mx-auto text-gray-600">
+              <h1 className="sm:text-3xl text-2xl p-4 font-sans uppercase text-gray-900 text-center">Support UVA Press</h1>
+            <div className="flex flex-wrap items-center">
             <div className="lg:w-3/5 md:w-1/2 md:pr-16 lg:pr-0 pr-0">
-             <h1 className="font-display font-medium text-3xl text-gray-900 uppercase">Support UVa Press</h1>
              <div className="dropCap">
              <p className="font-serif mt-4">Founded in 1963, UVA Press has published almost 2,000 books in history, the humanities, architecture and design, culture, and on ideas and places important to Virginians. Our ground-breaking digital imprint, Rotunda, extends the reach of scholarship across the world through primary sources available to students, faculty, and scholars. UVA Press seeks new voices, illuminates new perspectives, and fuels aspirations for our shared world. Through our mission as a scholarly press, we strive to provoke new and inclusive thinking that improves the human condition.</p>
          </div> <p className="leading-relaxed">The University of Virginia Press appreciates the support of individuals, organizations, and foundations. Please join us in this important work.

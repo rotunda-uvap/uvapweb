@@ -6,7 +6,8 @@ import { StaticImage } from "gatsby-plugin-image"
 export default function Catalog({data}) {
     return (
       <Layout>
-       <h2 className="py-10 px-3 font-light">Catalog</h2>
+        <div className="container px-5 py-12 mx-auto">
+          <h1 className="sm:text-3xl text-2xl p-4 font-sans uppercase text-gray-900 text-center">UVA Press Catalogs</h1>
        
        <section className="grid md:grid-cols-3 py-5">
          <a href={`spring21.pdf`}> <StaticImage  width={200} src="../images/spring21.jpg" alt="current catalog cover" /></a>
@@ -18,7 +19,7 @@ export default function Catalog({data}) {
        </section>
         
         <section className="py-10">
-          <h3 className="text-2xl py-5 uppercase">Previous catalog links</h3>
+          <h3 className="text-2xl py-5 uppercase text-gray-500">Previous catalog links</h3>
        <ul className="grid grid-cols-2 md:grid-cols-6 gap-y-1">
        <li><a href={'fall20.pdf'} title="Fall 2020"><StaticImage  width={149} src="../images/fall20.jpg" alt="Fall 2020" /></a></li>
        <li><a href={'spring20.pdf'} title="Spring 2020"><StaticImage  width={149} src="../images/spring20.jpg" alt="Spring 2020" /></a></li>
@@ -30,7 +31,7 @@ export default function Catalog({data}) {
          </ul></section>
        
        <CurrentList/>
-       
+       </div>
 
       </Layout>
     )

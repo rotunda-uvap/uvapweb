@@ -28,6 +28,9 @@ const Footer = () => {
           <Link to={`/career`} className="uppercase block mt-2 text-xs  hover:text-gray-300">
             Career Opportunities
           </Link>
+          <Link to={`/walker-cowen-award`} className="uppercase block mt-2 text-xs  hover:text-gray-300">
+            Walker Cowen Memorial Prize
+          </Link>
           <div className="flex flex-row py-2">
             <a href="https://www.facebook.com/uvapress" aria-label="facebook" className="pr-2"><FaFacebookSquare/></a>
           <a href="https://twitter.com/uvapress" aria-label="twitter" className="pr-2"><FaTwitterSquare/></a>

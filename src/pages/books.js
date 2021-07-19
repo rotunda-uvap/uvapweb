@@ -11,13 +11,16 @@ export default function Books({ data }) {
  return (
     
         <Layout>
-          <h1 id="top" className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Browse All Books</h1>
+         
+          
 
                  
 
                  <section className="text-gray-600 body-font">
   <div className="container px-5 py-12 mx-auto">
+  <h1 id="top" className="sm:text-3xl text-2xl p-4 mb-4 font-sans uppercase text-gray-900 text-center">Browse All Books</h1>
   <div className="flex flex-wrap -m-4 text-center">
+
   <div className="p-4 md:w-1/4 sm:w-1/2 w-full"><Link to={`#recent`}>
         <div className="border-2 border-gray-200 px-4 py-6 rounded-lg">
           <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" stroke-width="2" className="text-gray-500 w-8 h-8 mb-3 inline-block" viewBox="0 0 24 24">
@@ -92,7 +95,25 @@ export default function Books({ data }) {
   </div>
 </section>
 
+
 <section className="text-gray-700 body-font" id="subjects">
+  <div className="container flex flex-wrap py-10 mx-auto items-center">
+   
+      <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Our Subjects</h1>
+      
+      <nav className="flex flex-wrap py-5 list-none -mb-1">
+      {subs.edges.map(edge => (
+            <>           
+           <li className="lg:w-1/2 mb-2 font-display" key={edge.node.subjectid}>
+          <Link to={`../../subject/${ edge.node.subjectID }`} className="text-gray-600 hover:text-gray-800">{ edge.node.subjectName }</Link>
+        </li>            
+            </>
+        ))}
+      </nav>
+    
+  </div>
+</section> 
+{/* <section className="text-gray-700 body-font" id="subjects">
   <div className="container flex flex-wrap px-5 py-24 mx-auto items-center">
     <div className="md:w-1/3 md:pr-12 md:py-8 md:border-r md:border-b-0 mb-10 md:mb-0 pb-10 border-b border-gray-300">
       <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Our Subject Categories</h1>
@@ -120,7 +141,7 @@ export default function Books({ data }) {
       </nav>
     </div>
   </div>
-</section>
+</section> */}
    
 <section id="recent">
 <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Recent Releases</h1>

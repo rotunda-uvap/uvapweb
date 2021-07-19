@@ -9,9 +9,10 @@ export default function RightsandPermissionsPage({ data }) {
  return (
     
         <Layout>
-            <h2 className="py-10 px-3 font-light">Rights and Permissions</h2>
+          <div className="container px-5 py-12 mx-auto">
+          <h1 className="sm:text-3xl text-2xl p-4 font-sans uppercase text-gray-900 text-center">Rights and Permissions</h1>
 
-         <div dangerouslySetInnerHTML={{__html: pagedata.html}}/>
+         <div className="cms" dangerouslySetInnerHTML={{__html: pagedata.html}}/></div>
         </Layout>
 
  )

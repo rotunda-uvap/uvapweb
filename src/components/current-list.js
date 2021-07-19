@@ -26,7 +26,7 @@ export default function CurrentList() {
       `}
       render={data => (
         <section>
-       <h3 className="text-2xl py-5 uppercase">Books in Current Catalog</h3>
+       <h3 className="text-2xl py-5 uppercase text-gray-500">Books in Current Catalog</h3>
        
 
       <div className="container px-5 py-5 grid md:grid-cols-5 md:gap-4">

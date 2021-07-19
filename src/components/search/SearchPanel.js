@@ -9,9 +9,9 @@ import { Link } from "gatsby"
 const appId = process.env.GATSBY_ALGOLIA_APP_ID;
 const searchKey = process.env.GATSBY_ALGOLIA_SEARCH_KEY;
 const searchClient = algoliasearch(appId, searchKey);
-const Hit = ( {hit}) => <span><Link to={`../title/${ hit.BookID }`}><h6 className="font-black uppercase">{hit.Title}</h6></Link>
-<h6 className="text-sm italic uppercase">{hit.Subtitle}</h6>
-<h6 className="text-xs uppercase pt-2">{hit.AuthorCredit}</h6>
+const Hit = ( {hit}) => <span><Link to={`../title/${ hit.BookID }`}><h6 className="text-gray-900 uppercase tracking-widest">{hit.Title}</h6></Link>
+<h6 className="text-sm italic uppercase text-gray-500 py-2 tracking-widest">{hit.Subtitle}</h6>
+<h6 className="text-xs uppercase pt-2 tracking-widest">{hit.AuthorCredit}</h6>
 
 <p className="pt-3" dangerouslySetInnerHTML={{ __html: hit.MainDescription.html.split(' ').splice(0, 15).join(' ') + '...' }}/>
 <h6 className="text-xs uppercase pb-5">Published: {hit.PublicationDate}</h6></span>
@@ -20,7 +20,7 @@ const SearchPanel = () => (
     <InstantSearch searchClient={searchClient} indexName={process.env.GATSBY_ALGOLIA_INDEX_NAME} routing={true}>
       <SearchBox className="p-2 m-1" translations={{ placeholder:'Search for a book'}} />
       <div className="grid md:grid-cols-3">
-      <section className="py-5">
+      <section className="py-5 greige">
       
       <div className="pb-5"><h3 className="text-lg uppercase">Filter by List</h3>
       

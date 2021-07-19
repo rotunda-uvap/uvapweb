@@ -15,17 +15,16 @@ export default function AuthorsPage({ data }) {
 
 <section className="text-gray-600 body-font">
   <div className="container px-5 py-12 mx-auto">
-  <span className="font-medium title-font mb-4 text-indigo-500"><Link to={'/prospective'}>
+  <div className="flex flex-col text-center w-full">
+     <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">For Current Authors</h1>
+     <span className="font-medium title-font pb-4 text-gray-500"><Link to={'/prospective'}>
             Prospective Authors <span className="inline-flex items-center mt-4">
               <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" stroke-width="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
                 <path d="M5 12h14M12 5l7 7-7 7"></path>
               </svg></span>
               </Link></span>
-  <div className="flex flex-col text-center w-full">
-     <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">For Current Authors</h1>
-     
       <p className="lg:w-3/3 mx-auto leading-relaxed text-base">
-         <div dangerouslySetInnerHTML={{__html: pagedata.html}}/></p>
+         <div className="dropCap cms" dangerouslySetInnerHTML={{__html: pagedata.html}}/></p>
     </div>
    
     </div>

@@ -10,7 +10,7 @@ export default function Marketing({data}) {
 
   return (
     <Layout>
-        <h2 className="py-10 px-3 font-light">Marketing</h2>
+        <h1 className="sm:text-3xl text-2xl p-4 font-sans uppercase text-gray-900 text-center">Marketing</h1>
         
         <section className="py-20">
                 

@@ -17,17 +17,14 @@ export default function StaffList({ data }) {
  return (
     
         <Layout>
-          <h2 className="py-10 px-3 font-light">UVaP Staff</h2>
+          <div className="container px-5 py-12 mx-auto">
+          <h1 className="sm:text-3xl text-2xl p-4 font-sans uppercase text-gray-900 text-center">UVaP Staff</h1>
           
-          <section >
-          <div className="text-center mb-10">
-           <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">Operations</h1>
-           </div>
-           <div className="flex mt-6 justify-center">
-        <div className="w-16 h-1 rounded-full bg-gray-800 inline-flex"></div>
-      </div>
-      <div className="container px-5 py-12 mx-auto">
-       <div className="flex flex-wrap -m-4 text-center">
+          <section className="greige">
+           <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-500 m-4">Operations</h1>
+         
+          <div className="container px-5 py-12 mx-auto">
+             <div className="flex flex-wrap -m-4 text-center">
            {opss.edges.map(edge => (
              <>
               <MiniBio frontmatter={edge.node.frontmatter} />                 
@@ -36,49 +33,46 @@ export default function StaffList({ data }) {
              ))}
              </div>
            </div>
-           <div className="text-center mb-10">
-           <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">Acquisitions</h1>
-           </div>  
-           <div className="flex mt-6 justify-center">
-        <div className="w-16 h-1 rounded-full bg-gray-800 inline-flex"></div>
-      </div>
-      <div className="container px-5 py-12 mx-auto">
-       <div className="flex flex-wrap -m-4 text-center">
-            {acqs.edges.map(edge => (
-              <>
-               <MiniBio frontmatter={edge.node.frontmatter} />                 
-              </>
-                  
-              ))}
-              </div>
-            </div>
-            <div className="text-center mb-10">
-           <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">Editorial, Design and Production</h1>
-           </div>
-           <div className="flex mt-6 justify-center">
-        <div className="w-16 h-1 rounded-full bg-gray-800 inline-flex"></div>
-      </div>
-      <div className="container px-5 py-12 mx-auto">
-       <div className="flex flex-wrap -m-4 text-center">
+         </section>  
 
-            {edps.edges.map(edge => (
-              <>
-               <MiniBio frontmatter={edge.node.frontmatter} />                 
-              </>
-                  
-              ))}
-              </div>
-              </div>
-              <div className="text-center mb-10">
-           <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">Marketing</h1>
-           </div>
-           <div className="flex mt-6 justify-center">
-        <div className="w-16 h-1 rounded-full bg-gray-800 inline-flex"></div>
-      </div>
+          
 
-      <div className="container px-5 py-12 mx-auto">
-       <div className="flex flex-wrap -m-4 text-center">
-           
+            <section >
+           <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-500 m-4">Acquisitions</h1>
+         
+          <div className="container px-5 py-12 mx-auto">
+             <div className="flex flex-wrap -m-4 text-center">
+           {acqs.edges.map(edge => (
+             <>
+              <MiniBio frontmatter={edge.node.frontmatter} />                 
+             </>
+                 
+             ))}
+             </div>
+           </div>
+         </section>  
+
+
+              <section className="greige">
+           <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-500 m-4">Editorial, Design and Production</h1>
+         
+          <div className="container px-5 py-12 mx-auto">
+             <div className="flex flex-wrap -m-4 text-center">
+           {edps.edges.map(edge => (
+             <>
+              <MiniBio frontmatter={edge.node.frontmatter} />                 
+             </>
+                 
+             ))}
+             </div>
+           </div>
+         </section>  
+
+         <section >
+           <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-500 m-4">Marketing</h1>
+         
+          <div className="container px-5 py-12 mx-auto">
+             <div className="flex flex-wrap -m-4 text-center">
            {mkgs.edges.map(edge => (
              <>
               <MiniBio frontmatter={edge.node.frontmatter} />                 
@@ -87,16 +81,13 @@ export default function StaffList({ data }) {
              ))}
              </div>
            </div>
+         </section>  
+
+         <section className="greige">
+           <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-500 m-4">Publicity</h1>
          
-           <div className="text-center mb-10">
-           <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">Publicity</h1>
-           </div>
-           <div className="flex mt-6 justify-center">
-        <div className="w-16 h-1 rounded-full bg-gray-800 inline-flex"></div>
-      </div>
-      <div className="container px-5 py-12 mx-auto">
-       <div className="flex flex-wrap -m-4 text-center">
-           
+          <div className="container px-5 py-12 mx-auto">
+             <div className="flex flex-wrap -m-4 text-center">
            {pubs.edges.map(edge => (
              <>
               <MiniBio frontmatter={edge.node.frontmatter} />                 
@@ -105,24 +96,23 @@ export default function StaffList({ data }) {
              ))}
              </div>
            </div>
-           <div className="text-center mb-10">
-           <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">ROTUNDA Digital Imprint</h1>
-           </div>
-           <div className="flex mt-6 justify-center">
-        <div className="w-16 h-1 rounded-full bg-gray-800 inline-flex"></div>
-      </div>
-      <div className="container px-5 py-12 mx-auto">
-       <div className="flex flex-wrap -m-4 text-center">
-           
+         </section>  
+         
+         <section >
+           <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-500 m-4">ROTUNDA Digital Imprint</h1>
+         
+          <div className="container px-5 py-12 mx-auto">
+             <div className="flex flex-wrap -m-4 text-center">
            {rots.edges.map(edge => (
              <>
               <MiniBio frontmatter={edge.node.frontmatter} />                 
              </>
                  
              ))}
+             </div>
            </div>
-           </div>
-        </section>
+         </section>  
+          </div>
         </Layout>
 
  )
