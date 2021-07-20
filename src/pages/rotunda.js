@@ -47,7 +47,7 @@ export default function RotundaHome({ data }) {
             <h2 className="text-gray-900 text-lg title-font font-medium">Customer Entrance</h2>
           </div>
           <div className="flex-grow">
-            <p className="leading-relaxed text-base">Access the Rotunda titles provided by your institution (must be on Campus network or VPN).</p>
+            <p className="leading-relaxed text-base">Access the Rotunda titles provided by your institution (must be on campus network or VPN), or log in with individual account.</p>
             <a href="https://rotunda.upress.virginia.edu/entrance.xqy" className="mt-3 text-gray-800 inline-flex items-center">Visit Collections
             <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" stroke-width="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
                 <path d="M5 12h14M12 5l7 7-7 7"></path>

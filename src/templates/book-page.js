@@ -39,12 +39,12 @@ const bookPage = ({ data }) => {
       </div>
       <div className="md:col-span-2 pr-5 md:px-10">   
           <div>
-        <h2 className="py-5 font-light font-sans">{book.Title}</h2> 
+        <h2 className="pb-3 font-light font-sans">{book.Title}</h2> 
         {book.InternalSeriesVolume && <h6 className="py-3">{book.InternalSeriesVolume}</h6> }
 
-        {book.Subtitle && <h5 className="italic py-3 font-light text-gray-600">{book.Subtitle}</h5>}
+        {book.Subtitle && <h6 className="italic font-light text-gray-600">{book.Subtitle}</h6>}
 
-        <h6 className="py-3 font-light font-display">by {book.AuthorCredit}</h6>
+        <h6 className="py-2 font-light font-display">by {book.AuthorCredit}</h6>
           </div>
 
           <div>
@@ -66,25 +66,36 @@ const bookPage = ({ data }) => {
          ))} 
          <div className="bg-white rounded  flex flex-row inline-flex items-center w-full leading-normal">
          <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-  <path strokeLinecap="round" strokeLinejoin="round" stroke-width="2" d="M10 21h7a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v11m0 5l4.879-4.879m0 0a3 3 0 104.243-4.242 3 3 0 00-4.243 4.242z" />
+  <path strokeLinecap="round" strokeLinejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
 </svg>
-      <a href="#" className="block group hover:bg-gray-100 p-2 ml-4 border-b"> 
+      <a href={`../../examination_Copy_Form_2021.pdf`} className="block group hover:bg-gray-100 p-2 ml-4 border-b"> 
       <div className="font-bold text-normal  uppercase">Exam Copy  </div>
      <div className="font-thin font-display ">For Instructors or Reviewers</div>
                   </a>
-                 
+                  
              </div>  
         </div>
         <div>
-        
-
+        <div className="bg-white rounded  flex flex-row inline-flex items-center w-full leading-normal">
+         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+  <path strokeLinecap="round" strokeLinejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
+</svg>
+      <a href="https://forms.gle/H8J1NbtN4BBZZwgy7" className="block group hover:bg-gray-100 p-2 ml-4 border-b"> 
+      <div className="font-bold text-normal  uppercase">Desk Copy  </div>
+     <div className="font-thin font-display ">For Instructors</div>
+                  </a>
+                  
+             </div>  
+        </div>
+        <div>
+       
        <section>
          <div className="py-3">{book.Series && <div><span className="text-xs uppercase pr-5 tracking-wider">Series:</span>
           <button className="text-gray-700 text-sm greige rounded-md p-2 tracking-wider">
             <Link to={`../../series/${ book.Series.seriesID }`}>{ book.Series.name }</Link>
             </button></div>}
             </div>
-          <div className="py-3">
+          <div className="py-1">
             {book.Subject && <div><span className="text-xs uppercase pr-5 tracking-wider">subject:</span>
        <button className="greige text-sm rounded-md text-gray-700 p-2 tracking-wider">
          <Link to={`../../subject/${ book.Subject.subjectID }`}>{ book.Subject.name }</Link></button></div>}
