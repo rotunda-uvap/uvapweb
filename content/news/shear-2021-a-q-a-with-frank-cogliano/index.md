@@ -4,18 +4,15 @@ type: news
 draft: "false"
 title: "SHEAR 2021: A Q&A with Frank Cogliano"
 description: >-
-  This month, right in time
-  for [SHEAR,](https://www.upress.virginia.edu/content/shear-2021) UVA Press is
-  proud to release [Ireland and America: Empire, Revolution, and
-  Sovereignty](https://www.upress.virginia.edu/title/5481), edited by Patrick
-  Griffin and Francis D. Cogliano, and featuring contributions by Rachel Banke,
-  T. H. Breen, Trevor Burnard, Nicholas Canny, Christa Dierksheide, Matthew P.
-  Dziennik, S. Max Edelson, Annette Gordon-Reed, Eliga Gould, Robert G. Ingram,
-  Peter S. Onuf, Andrew J. O’Shaughnessy, Jessica Choppin Roney, and Gordon S.
-  Wood.
+  This month, right in time for SHEAR, UVA Press is proud to release Ireland and
+  America: Empire, Revolution, and Sovereignty, edited by Patrick Griffin and
+  Francis D. Cogliano, and featuring contributions by Rachel Banke, T. H. Breen,
+  Trevor Burnard, Nicholas Canny, Christa Dierksheide, Matthew P. Dziennik, S.
+  Max Edelson, Annette Gordon-Reed, Eliga Gould, Robert G. Ingram, Peter S.
+  Onuf, Andrew J. O’Shaughnessy, Jessica Choppin Roney, and Gordon S. Wood.
 
 
-  To celebrate the release of this volume, Frank Cogliano here answers a few questions that provide a glimpse behind the curtain on how this volume came to be, its main lessons, and what’s next for him and his coeditor Patrick Griffin. I was particularly happy to learn that their plans involve more conversations with me as we continue to acquire titles for their new book series, [The Revolutionary Age](https://www.upress.virginia.edu/series/revolutionary-age).
+  To celebrate the release of this volume, Frank Cogliano here answers a few questions that provide a glimpse behind the curtain on how this volume came to be, its main lessons, and what’s next for him and his coeditor Patrick Griffin. I was particularly happy to learn that their plans involve more conversations with me as we continue to acquire titles for their new book series, The Revolutionary Age.
 related_book:
   - "5481"
 related_series:
