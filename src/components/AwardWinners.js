@@ -15,7 +15,7 @@ export default function AwardWinners() {
               BookID
               Prizes
               PublicationDate
-              CoverImageThumb
+              CoverImageMain
             }
           }
         }
@@ -30,7 +30,7 @@ export default function AwardWinners() {
           {data.allBooksJson.edges.map(edge => (
           <>  
           <Link to={`../title/${ edge.node.BookID }`}>
-            <BookCard Title={edge.node.Title} Subtitle={edge.node.Subtitle} prizes={edge.node.Prizes} pubdate={edge.node.PublicationDate} Thumb={edge.node.CoverImageThumb} /></Link>
+          <BookCard Title={edge.node.Title} Subtitle={edge.node.Subtitle} Author={edge.node.AuthorCredit} Thumb={edge.node.CoverImageMain} Bookid ={edge.node.BookID}  /></Link>
        </>
       ))}
       </div>
