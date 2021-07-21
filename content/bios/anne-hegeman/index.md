@@ -2,7 +2,7 @@
 templateKey: bio
 title: Anne Hegeman
 staff_name: Anne Hegeman
-profile_photo: gonzo.jpg
+profile_photo: ""
 name_slug: anne-hegeman
 job_title: Design and Production Manager
 department:
