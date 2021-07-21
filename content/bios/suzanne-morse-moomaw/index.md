@@ -2,7 +2,7 @@
 templateKey: bio
 title: Suzanne Morse Moomaw
 staff_name: Suzanne Morse Moomaw
-profile_photo: kermit.jpg
+profile_photo: ""
 name_slug: suzanne-morse-moomaw
 job_title: Director
 department:
