@@ -2,7 +2,7 @@
 templateKey: bio
 title: Cecilia Sorochin
 staff_name: Cecilia Sorochin
-profile_photo: pepe.jpg
+profile_photo: ""
 name_slug: cecilia-sorochin
 job_title: Art Director and Assistant Production Manager
 department:
