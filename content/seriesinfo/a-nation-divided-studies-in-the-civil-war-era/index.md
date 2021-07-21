@@ -4,6 +4,7 @@ title: "A Nation Divided: Studies in the Civil War Era"
 status: active
 seriestype: Academic Book Series
 editors: "Series Editors: Orville Vernon Burton and Elizabeth R. Varon"
+uvaeditors: nadine
 related_staff:
   - Nadine Zimmerli
 seriesID: AND
