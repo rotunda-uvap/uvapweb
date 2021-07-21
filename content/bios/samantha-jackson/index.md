@@ -2,7 +2,7 @@
 templateKey: bio
 title: Samantha Jackson
 staff_name: Samantha Jackson
-profile_photo: robin.jpg
+profile_photo: ""
 name_slug: samantha-jackson
 job_title: Business Manager
 department:
