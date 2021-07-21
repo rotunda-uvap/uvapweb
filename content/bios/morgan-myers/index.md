@@ -2,7 +2,7 @@
 templateKey: bio
 title: Morgan Myers
 staff_name: Morgan Myers
-profile_photo: lew.jpg
+profile_photo: ""
 name_slug: morgan-myers
 job_title: Senior Project Editor
 department:
