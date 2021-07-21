@@ -2,7 +2,7 @@
 templateKey: bio
 title: Patricia Searl
 staff_name: Patricia Searl
-profile_photo: piggy.jpg
+profile_photo: ""
 name_slug: patricia-searl
 job_title: Assistant Manager, Digital Initiatives and the Rotunda Imprint
 department:
