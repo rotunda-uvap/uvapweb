@@ -2,7 +2,7 @@
 templateKey: bio
 title: Mark Mones
 staff_name: Mark Mones
-profile_photo: sam.jpg
+profile_photo: ""
 name_slug: mark-mones
 job_title: Acquisitions Editor, Architecture, Urban Design, and Regional Books
 department:
