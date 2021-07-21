@@ -2,7 +2,7 @@
 templateKey: bio
 title: Emily Grandstaff
 staff_name: Emily Grandstaff
-profile_photo: drteeth.jpg
+profile_photo: ""
 name_slug: emily-grandstaff
 job_title: Publicity and Social Media Director
 department:
