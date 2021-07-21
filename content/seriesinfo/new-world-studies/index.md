@@ -3,8 +3,8 @@ templateKey: series
 title: New World Studies
 status: active
 seriestype: Academic Book Series
-editors: Marlene Daut
-uvaeditors: Eric Brandt
+editors: "Series Editor: Marlene Daut"
+uvaeditors: "UVAP Editor: Eric Brandt"
 seriesID: NWS
 type: series
 ---
