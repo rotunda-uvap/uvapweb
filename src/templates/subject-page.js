@@ -16,7 +16,7 @@ const SubjectTemplate = ({ data }) => {
                         {books.edges.map(edge => (
                   <>  
                   <Link key={`l${edge.node.BookID}`} to={`../../title/${ edge.node.BookID }`}>
-                    <BookCard key={`b${edge.node.BookID}`} Title={edge.node.Title} Subtitle={edge.node.Subtitle} Author={edge.node.AuthorCredit} Thumb={edge.node.CoverImageThumb} Bookid ={edge.node.BookID} pubdate={edge.node.PublicationDate}/>
+                    <BookCard key={`b${edge.node.BookID}`} Title={edge.node.Title} Subtitle={edge.node.Subtitle} Author={edge.node.AuthorCredit} Thumb={edge.node.CoverImageMain} Bookid ={edge.node.BookID} pubdate={edge.node.PublicationDate}/>
                     </Link>
                      </>
                     ))}
@@ -47,7 +47,7 @@ export const query = graphql`
                   AuthorCredit
                   PublicationDate
                   DaysSincePublication
-                  CoverImageThumb
+                  CoverImageMain
                 }
             }
         }   

@@ -32,7 +32,7 @@ export default function RecentBooks({ data }) {
                <BookCard Title={edge.node.Title} 
              Subtitle={edge.node.Subtitle} 
              Author={edge.node.AuthorCredit} 
-             Thumb={edge.node.CoverImageThumb} 
+             Thumb={edge.node.CoverImageMain} 
              Bookid ={edge.node.BookID} 
              pubdate={edge.node.PublicationDate} />
              
@@ -48,7 +48,7 @@ export default function RecentBooks({ data }) {
             {rec.edges.map(edge => (
            <>  
               <Link to={`../title/${ edge.node.BookID }`}>
-                <BookCard Title={edge.node.Title} Subtitle={edge.node.Subtitle} Author={edge.node.AuthorCredit} Thumb={edge.node.CoverImageThumb} Bookid ={edge.node.BookID} pubdate={edge.node.PublicationDate} />
+                <BookCard Title={edge.node.Title} Subtitle={edge.node.Subtitle} Author={edge.node.AuthorCredit} Thumb={edge.node.CoverImageMain} Bookid ={edge.node.BookID} pubdate={edge.node.PublicationDate} />
                 </Link>
            </>
         ))}
@@ -72,7 +72,7 @@ export const query = graphql`
             Subtitle
             PublicationDate
             AuthorCredit
-            CoverImageThumb
+            CoverImageMain
           }
         }
       }
@@ -84,7 +84,7 @@ export const query = graphql`
             Subtitle
             PublicationDate
             AuthorCredit
-            CoverImageThumb
+            CoverImageMain
           }
         }
       }

@@ -2,7 +2,7 @@ backend:
   name: github
   repo: rotunda-uvap/uvapweb
   branch: main
-
+publish_mode: editorial_workflow
 media_folder: static/assets
 public_folder: /assets
 
@@ -20,7 +20,6 @@ collections:
     fields:
       - { label: "Template Key", name: "templateKey", widget: "hidden", default: "news"}
       - { label: 'Type', name: 'type', widget: 'select', options: ['news', 'media'], required: true}  
-      - { label: "Is Draft?", name: "draft", widget: "string", default: "false"}
       - { name: title, label: Title }
       - { label: 'Summary', name: 'description', widget: 'markdown', modes: ['rich_text', 'raw'], required: false, hint: 'Text for homepage and previews'}
       - { name: body, label: Body, widget: markdown }
@@ -226,7 +225,7 @@ collections:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "bio"}
       - { name: title, label: Title }
       - { name: staff_name, label: Staff Name}
-      - { label: Profile Photo, name: profile_photo, widget: image}
+      - { label: Profile Photo, name: profile_photo, widget: image, required: false}
       - { label: 'Name Slug', name: 'name_slug', widget: 'string', required: true}
       - { label: 'Job Title', name: 'job_title', widget: 'string', required: true}
       - { label: 'Department', name: 'department', widget: 'select', options: ['OPS', 'ACQ','EDP', 'MKG', 'PUB', 'ROT'], multiple: true, required: true}  
@@ -343,7 +342,14 @@ collections:
       - { label: 'Series Status', name: 'status', widget: 'select', options: ['active', 'completed'], required: true} 
       - { label: 'Series Type', name: 'seriestype', widget: 'select', options: ['Academic Book Series', 'Documentary Editions','Lecture Series', 'Distributed Series'], required: true}  
       - { label: 'Series Editors', name: 'editors', widget: 'string', required: false }
-      - { label: 'UVaP Editor', name: 'uvaeditors', widget: 'string', required: false }
+      - label: "UVaP Editor"
+        name: "related_staff"
+        widget: "relation"
+        collection: "bios"
+        search_fields: ['title']
+        value_field: "{{title}}"
+        multiple: true
+        required: false
       - { name: body, label: Body, widget: markdown , required: false}
       - { label: 'Series ID', name: 'seriesID', widget: 'string' }
       

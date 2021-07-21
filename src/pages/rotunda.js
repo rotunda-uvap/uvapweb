@@ -19,8 +19,12 @@ export default function RotundaHome({ data }) {
   <div className="container mx-auto flex px-5 py-7 items-center justify-center flex-col">
   <GatsbyImage image={RotundaLogo} alt="Rotunda logo" className="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" />
     <div className="text-center lg:w-2/3 w-full">
-      <p className="leading-relaxed">Rotunda was created for the publication of original digital scholarship along with newly digitized critical and documentary editions in the humanities and social sciences. The collection combines the originality, intellectual rigor, and scholarly value of traditional peer-reviewed university press publishing with thoughtful technological innovation designed for scholars and students.</p>
-      
+      <p className="leading-relaxed">Since 2004, our Rotunda imprint has published innovative peer-reviewed digital projects, both born-digital and from authoritative letterpress editions. Our core offering is the American History Collection of documentary editions spanning three centuries, from the work of young Ben Franklin through the presidential correspondence of Woodrow Wilson: more than 20 publications with content from over 550 letterpress and born-digital volumes, for a total of nearly 500,000 documents, diary entries, and editorial essays, all cross-searchable.
+
+ </p>
+
+<p className="leading-relaxed">Our major stand-alone publications are the Presidential Recordings Digital Edition, with transcripts and audio of nearly 4000 conversations from White House recordings; People of the Founding Era, a biographical reference to over 75,000 individuals; the open-access SAH Archipedia, an authoritative encyclopedia of the American built environment, with over 25,000 entries and 5000 editorial essays. Finally, our Literature and Culture Collection features seven editions of literary work and correspondence from nineteenth-century America and Britain.</p>
+    
     </div>
     <div className="flex mt-6 justify-center">
         <div className="w-16 h-1 rounded-full bg-gray-800 inline-flex"></div>
@@ -30,7 +34,7 @@ export default function RotundaHome({ data }) {
          <section className="text-gray-600 body-font">
   <div className="container px-5 py-7 mx-auto">
   <div className="text-center mb-20">
-      <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">About Rotunda Publications</h1>
+      <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">Accessing Rotunda Publications</h1>
       <p className="text-base leading-relaxed xl:w-3/4 lg:w-3/4 mx-auto text-gray-500s">If you are connecting via a campus Internet connection, you can expect to gain access to any Rotunda publication purchased by your institution. If your institution has not purchased a particular Rotunda publication, contact your institution’s library about ordering. You may also sign up for an individual free trial to evaluate Rotunda before making a purchase decision.</p>
     </div>
     <div className="flex flex-wrap -m-4">
@@ -44,7 +48,7 @@ export default function RotundaHome({ data }) {
               </svg>
               
             </div>
-            <h2 className="text-gray-900 text-lg title-font font-medium">Customer Entrance</h2>
+            <h2 className="text-gray-900 text-lg title-font font-medium">Collection Entrance</h2>
           </div>
           <div className="flex-grow">
             <p className="leading-relaxed text-base">Access the Rotunda titles provided by your institution (must be on campus network or VPN), or log in with individual account.</p>
@@ -64,7 +68,7 @@ export default function RotundaHome({ data }) {
                 <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
               </svg>
             </div>
-            <h2 className="text-gray-900 text-lg title-font font-medium">MARC Records</h2>
+            <h2 className="text-gray-900 text-lg title-font font-medium">MARC Records and Access Statistics</h2>
           </div>
           <div className="flex-grow">
             <p className="leading-relaxed text-base">Customer information and statistics for librarians or purchasers of Rotunda Publications.</p>
@@ -132,8 +136,8 @@ export default function RotundaHome({ data }) {
     <div className="text-center mb-10">
       <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">Rotunda Collections</h1>
       <p className="text-base leading-relaxed xl:w-3/4 lg:w-3/4 mx-auto text-gray-500s">Rotunda publications are available to both libraries and independent scholars as single titles or as collections. The American History Collection includes the sub-collections American Founding Era; Antebellum, Civil War, and Reconstruction; and the American Century.</p>
-      <p className="text-base leading-relaxed xl:w-3/4 lg:w-3/4 mx-auto text-gray-500s">Rotunda publications are produced by staff members of UVA Press. We have in-house expertise in Web development; MarkLogic Server programming and administration; development using XQuery, XSLT, JavaScript, JQuery and related tools; and markup or conversion of documents to XML using the TEI Guidelines.</p>
-     
+{/*       <p className="text-base leading-relaxed xl:w-3/4 lg:w-3/4 mx-auto text-gray-500s">Rotunda publications are produced by staff members of UVA Press. We have in-house expertise in Web development; MarkLogic Server programming and administration; development using XQuery, XSLT, JavaScript, JQuery and related tools; and markup or conversion of documents to XML using the TEI Guidelines.</p>
+ */}     
     </div>
     <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
       <div className="p-4 md:w-1/3 flex flex-col text-center items-center">
@@ -145,12 +149,12 @@ export default function RotundaHome({ data }) {
         </div>
         <div className="flex-grow">
         <Link to={'../collection/American%20History%20Collection'}><h2 className="text-gray-900 text-lg title-font font-medium mb-3">American History</h2></Link>
-          <p className="leading-relaxed text-base">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi pug VHS try-hard.</p>
-          <Link to={'../collection/American%20History%20Collection'} className="mt-3 text-gray-800 inline-flex items-center">See All
+          {/* <p className="leading-relaxed text-base">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi pug VHS try-hard.</p> */}
+         {/*  <Link to={'../collection/American%20History%20Collection'} className="mt-3 text-gray-800 inline-flex items-center">See All
             <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" stroke-width="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
               <path d="M5 12h14M12 5l7 7-7 7"></path>
             </svg>
-          </Link>
+          </Link> */}
         </div>
       </div>
       <div className="p-4 md:w-1/3 flex flex-col text-center items-center">
@@ -163,12 +167,12 @@ export default function RotundaHome({ data }) {
         </div>
         <div className="flex-grow">
         <Link to={'../collection/Literature%20and%20Culture%20Collection'}><h2 className="text-gray-900 text-lg title-font font-medium mb-3">Literature and Culture</h2></Link>
-          <p className="leading-relaxed text-base">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi pug VHS try-hard.</p>
-          <Link to={'../collection/Literature%20and%20Culture%20Collection'} className="mt-3 text-gray-800 inline-flex items-center">See All
+          {/* <p className="leading-relaxed text-base">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi pug VHS try-hard.</p> */}
+         {/*  <Link to={'../collection/Literature%20and%20Culture%20Collection'} className="mt-3 text-gray-800 inline-flex items-center">See All
             <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" stroke-width="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
               <path d="M5 12h14M12 5l7 7-7 7"></path>
             </svg>
-          </Link>
+          </Link> */}
         </div>
       </div>
       <div className="p-4 md:w-1/3 flex flex-col text-center items-center">
@@ -181,12 +185,8 @@ export default function RotundaHome({ data }) {
         </div>
         <div className="flex-grow">
         <Link to={'../collection/Architecture'}><h2 className="text-gray-900 text-lg title-font font-medium mb-3">Architecture</h2></Link>
-          <p className="leading-relaxed text-base">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi pug VHS try-hard.</p>
-          <Link to={'../collection/Architecture'} className="mt-3 text-gray-800 inline-flex items-center">See All
-            <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" stroke-width="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
-              <path d="M5 12h14M12 5l7 7-7 7"></path>
-            </svg>
-          </Link>
+          {/* <p className="leading-relaxed text-base">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi pug VHS try-hard.</p> */}
+         
         </div>
       </div>
     </div>
@@ -198,7 +198,6 @@ export default function RotundaHome({ data }) {
   <div className="container px-5 py-12 mx-auto greige">
     <div className="text-center mb-20">
       <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">Rotunda Contacts</h1>
-      <p className="text-base leading-relaxed xl:w-3/4 lg:w-3/4 mx-auto text-gray-500s">If you are the author or editor of a digital project that you think might be a suitable candidate for publication within Rotunda, please send an inquiry to UVa Press editor in chief Eric Brandt.</p>
    
     </div>
 
@@ -211,7 +210,8 @@ export default function RotundaHome({ data }) {
      
      
     </div>
-   
+    <p className="text-base leading-relaxed xl:w-3/4 lg:w-3/4 mx-auto text-gray-500s py-5 text-center">If you are the author or editor of a digital project that you think might be a suitable candidate for publication within Rotunda, please send an inquiry to UVa Press editor in chief <a href="mailto:eab7fb@virginia.edu">Eric Brandt</a>.</p>
+
   </div>
 </section>
 
@@ -219,7 +219,7 @@ export default function RotundaHome({ data }) {
       <div className="container px-5 py-12 mx-auto">
         <div className="text-center mb-10">
       <h1 className="sm:text-3xl text-2xl font-medium text-center title-font text-gray-900 mb-4">Founding Era Collection</h1>
-      <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi pug.</p>
+      {/* <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi pug.</p> */}
         </div>
         <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
         <FEList/>
@@ -232,7 +232,7 @@ export default function RotundaHome({ data }) {
       <div className="container px-5 py-12 mx-auto">
         <div className="text-center mb-10">
       <h1 className="sm:text-3xl text-2xl font-medium text-center title-font text-gray-900 mb-4">Antebellum, Civil War and Reconstruction</h1>
-      <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi pug.</p>
+      {/* <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi pug.</p> */}
         </div>
         <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
         <ACRList/>
@@ -245,7 +245,7 @@ export default function RotundaHome({ data }) {
       <div className="container px-5 py-12 mx-auto">
         <div className="text-center mb-10">
       <h1 className="sm:text-3xl text-2xl font-medium text-center title-font text-gray-900 mb-4">American Century Collection</h1>
-      <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi pug.</p>
+      {/* <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi pug.</p> */}
         </div>
         <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
         <ACList/>
@@ -258,7 +258,7 @@ export default function RotundaHome({ data }) {
       <div className="container px-5 py-12 mx-auto">
         <div className="text-center mb-10">
       <h1 className="sm:text-3xl text-2xl font-medium text-center title-font text-gray-900 mb-4">Literature and Culture Collection</h1>
-      <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi pug.</p>
+      {/* <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi pug.</p> */}
         </div>
         <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
         <LACList/>
@@ -271,8 +271,8 @@ export default function RotundaHome({ data }) {
       <div className="container px-5 py-12 mx-auto">
         <div className="text-center mb-10">
       <h1 className="sm:text-3xl text-2xl font-medium text-center title-font text-gray-900 mb-4">Architecture</h1>
-      <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi pug.</p>
-        </div>
+{/*       <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi pug.</p>
+ */}        </div>
         <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
         <div className="p-2 sm:w-1/2 w-full"> 
         <div className="bg-gray-100 rounded flex p-4 h-full items-center">

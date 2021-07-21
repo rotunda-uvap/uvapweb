@@ -1,12 +1,12 @@
 import React from "react"
 import { StaticQuery, graphql, Link } from "gatsby"
 
-export default function ActiveSeries() {
+export default function CompletedSeries() {
   return (
     <StaticQuery
       query={graphql`
       query  {
-        allMarkdownRemark(filter: {frontmatter: {type: {eq: "series"}, status: {eq: "active"}}}) {
+        allMarkdownRemark(filter: {frontmatter: {type: {eq: "series"}, status: {eq: "completed"}}}) {
             edges {
               node {
                 frontmatter {
@@ -27,9 +27,9 @@ export default function ActiveSeries() {
         <section className="overflow-hidden">
   
   <div className="container px-5 py-12 mx-auto">
-            <div className="flex flex-col text-center w-full" id="active">
-         <h1 className="sm:text-3xl text-2xl uppercase font-medium title-font mb-4 text-gray-900">Active Series</h1></div>
-         <Link to={`#completed`}><div className="text-sm text-center text-gray-500">Completed Series <span className="inline-flex items-center mt-4">
+            <div className="flex flex-col text-center w-full">
+         <h1 className="sm:text-3xl text-2xl uppercase font-medium title-font mb-4 text-gray-900">Completed Series</h1></div>
+         <Link to={`#active`}><div className="text-sm text-center text-gray-500">Active Series <span className="inline-flex items-center mt-4">
               <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" stroke-width="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
                 <path d="M5 12h14M12 5l7 7-7 7"></path>
               </svg></span></div></Link>

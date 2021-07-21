@@ -17,13 +17,13 @@ export default function CurrentList() {
               BookID
               AuthorCredit
               PublicationDate
-              CoverImageThumb
+              CoverImageMain
             }
           }
         }
       }
       
-      `}
+      `} 
       render={data => (
         <section>
        <h3 className="text-2xl py-5 uppercase text-gray-500">Books in Current Catalog</h3>
@@ -33,7 +33,7 @@ export default function CurrentList() {
           {data.allBooksJson.edges.map(edge => (
             <>  
               <Link to={`../title/${ edge.node.BookID }`}>
-                <BookCard Title={edge.node.Title} Subtitle={edge.node.Subtitle} Author={edge.node.AuthorCredit} Thumb={edge.node.CoverImageThumb} Bookid ={edge.node.BookID}  /></Link>
+                <BookCard Title={edge.node.Title} Subtitle={edge.node.Subtitle} Author={edge.node.AuthorCredit} Thumb={edge.node.CoverImageMain} Bookid ={edge.node.BookID}  /></Link>
            </>
         ))}
       </div>

@@ -7,7 +7,7 @@ const booksrc = "https://www.upress.virginia.edu/sites/default/files/covers/"
         <div className="flip-card">
   <div className="flip-card-inner">
     <div className="flip-card-front">
-      {Thumb ?  <img src={booksrc + Bookid + "_M.jpg"} className="mx-auto my-auto self-center" alt="cover"/> : <img src={"../noimg.png"} alt="cover placeholder" className="mx-auto my-auto self-center"/>}
+      {Thumb ?  <img src={booksrc + Thumb} className="mx-auto my-auto self-center" alt="cover"/> : <img src={"../noimg.png"} alt="cover placeholder" className="mx-auto my-auto self-center"/>}
     </div>
     <div className="flip-card-back px-1 bg-white  ">
     <h6 className="text-base text-gray-700 uppercase pt-3 px-1 underline">{Title}</h6>
