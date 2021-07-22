@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 import "../utils/global.css"
 import AcqStaff from "../components/AcqStaff"
 import FileDownloadButton from "../components/FileDownloadButton"
-
+import SEO from "../components/SEO"
 
 export default function AuthorsPage({ data }) {
     
@@ -12,7 +12,7 @@ export default function AuthorsPage({ data }) {
  return (
     
         <Layout>
-
+<SEO title="Information for Current Authors"/>
 <section className="text-gray-600 body-font">
   <div className="container px-5 py-12 mx-auto">
   <div className="flex flex-col text-center w-full">

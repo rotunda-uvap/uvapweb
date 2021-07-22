@@ -2,6 +2,7 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import BookCard from "../components/BookCard"
+import SEO from "../components/SEO"
 
 
 
@@ -13,6 +14,7 @@ const SeriesTemplate = ({ data }) => {
     <div>
 
         <Layout>
+            <SEO title={seriesinfo.frontmatter.title}/>
             <section>
             <div className="grid grid-cols-3 content-center">
                 <h3 className="py-3 col-span-2">{seriesinfo.frontmatter.title} </h3>

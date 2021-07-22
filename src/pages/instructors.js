@@ -2,6 +2,7 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import RelatedBookList from "../components/RelatedBookList"
+import SEO from "../components/SEO"
 
 
 
@@ -12,7 +13,7 @@ export default function InstructorPage({data}) {
   const book_colls = data.markdownRemark.frontmatter.related_collection
   return (
     <Layout>
-        
+        <SEO title="For Instructors"/>
 <div className="flex flex-col text-center w-full mb-10">
        <h1 id="top" className="sm:text-3xl text-2xl pt-5 font-sans uppercase mb-4 text-gray-900">For Instructors</h1> 
       <div className="lg:w-2/3 mx-auto leading-relaxed text-base"><span className="dropCap cms" dangerouslySetInnerHTML={{__html: pagedata.html}}/></div>

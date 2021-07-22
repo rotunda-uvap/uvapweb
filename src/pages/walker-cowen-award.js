@@ -2,6 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import "../utils/global.css"
+import SEO from "../components/SEO"
 
 
 export default function WalkerCowenPage({ data }) {
@@ -9,6 +10,7 @@ export default function WalkerCowenPage({ data }) {
  return (
     
         <Layout>
+          <SEO title="Walker Cowen Memorial Prize" description="The prize is awarded to the author of a scholarly book-length manuscript in eighteenth-century studies, including the Americas and the Atlantic world. "/>
             <div className="container px-5 py-12 mx-auto">
 
 <h1 className="sm:text-3xl text-2xl p-4 font-sans uppercase text-gray-900 text-center">

@@ -2,6 +2,7 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import "../utils/global.css"
+import SEO from "../components/SEO"
 
 
 
@@ -10,7 +11,8 @@ export default function AboutPage({ data }) {
  return (
     
         <Layout>
-          
+          <SEO
+          title="About The University of Virginia Press" />
             <section className="text-gray-600 body-font">
   <div className="container px-5 py-12 mx-auto">
     <div className="flex flex-col text-center w-full mb-10">
@@ -153,6 +155,9 @@ export const query = graphql`
    
       markdownRemark(frontmatter: {type: {eq: "page"}, title: {eq: "About"}}) {
         html
+        frontmatter{
+          title
+        }
       }
      
   }

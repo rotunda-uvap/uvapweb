@@ -7,12 +7,15 @@ import FEList from "../components/FoundingEra"
 import ACRList from "../components/ACR"
 import ACList from "../components/AMC"
 import LACList from "../components/LAC"
+import SEO from "../components/SEO"
 
 export default function RotundaHome({ data }) {
     const RotundaLogo = getImage(data.rotLogo)
     const staff = data.staffs
  return (
    <Layout>
+     <SEO title="ROTUNDA: Digital Imprint of the University of Virginia Press"
+     description="Since 2004, Rotunda has published innovative peer-reviewed digital projects, both born-digital and from authoritative letterpress editions."/>
      <div>
      
          <section className="text-gray-600 body-font">

@@ -4,8 +4,7 @@ import Layout from "../components/layout"
 import { Helmet } from 'react-helmet'
 import {FaArrowAltCircleRight} from "react-icons/fa"
 import GoogleCalendar from "../components/Calendar"
-
-
+import SEO from "../components/SEO"
 export default function PubPage({ data }) {
     const news = data.allMarkdownRemark
     // const staff = data.staffs
@@ -14,6 +13,7 @@ export default function PubPage({ data }) {
  return (
     
         <Layout>
+          <SEO title="Publicity Information: News and Events"/>
           <div className="container px-5 py-12 mx-auto">
             <div className="flex flex-col text-center w-full">
             <h1 className="sm:text-3xl text-2xl uppercase font-medium title-font mb-4 text-gray-900">News and Events</h1>

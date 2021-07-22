@@ -1,11 +1,13 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
+import SEO from "../components/SEO"
 
 const staffPage = ({ data }) => {
     const staffMember = data.markdownRemark
  return (
    <Layout>
+     <SEO title={staffMember.frontmatter.title}/>
      <div>
         <h2 className="py-10">{staffMember.frontmatter.title}</h2> 
         {staffMember.frontmatter.job_title && <h4 className="py5 text-1xl mt-2 mb-2">{staffMember.frontmatter.job_title}</h4> }

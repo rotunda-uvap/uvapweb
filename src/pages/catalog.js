@@ -2,10 +2,12 @@ import React from "react"
 import Layout from "../components/layout"
 import CurrentList from "../components/current-list"
 import { StaticImage } from "gatsby-plugin-image"
+import SEO from "../components/SEO"
 
 export default function Catalog({data}) {
     return (
       <Layout>
+        <SEO title="Seasonal Catalogs"/>
         <div className="container px-5 py-12 mx-auto">
           <h1 className="sm:text-3xl text-2xl p-4 font-sans uppercase text-gray-900 text-center">UVA Press Catalogs</h1>
        

@@ -14,7 +14,7 @@ const bookPage = ({ data }) => {
     const isbn = book.Bindings[0].ISBN
     const GoogleB = 'https://books.google.com/books?vid=' + isbn
     const resources = data.markdownRemark
-    const title = book.title
+    const title = book.Title
     const url = 'https://www.upress.virginia.edu/title/' + book.BookID
     const news = data.newsMD
     const imglink = 'https://www.upress.virginia.edu/sites/default/files/covers/' + book.BookID + '.jpg'
@@ -24,9 +24,11 @@ const bookPage = ({ data }) => {
    
    <Layout>
 <BookSEO
-  title={title}
+  title={book.Title}
   description={book.MainDescription.html.substring(0, 150)}
   pathname={url}
+  author={book.AuthorCredit}
+  isbn={isbn}
   image={"https://www.upress.virginia.edu/sites/default/files/covers/" + book.CoverImageFull || defaultImage}
   article={false}
 />

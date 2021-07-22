@@ -2,6 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import MiniBio from "../components/MiniBio"
+import SEO from "../components/SEO"
 
 
 
@@ -17,6 +18,7 @@ export default function StaffList({ data }) {
  return (
     
         <Layout>
+          <SEO title="Staff Directory"/>
           <div className="container px-5 py-12 mx-auto">
           <h1 className="sm:text-3xl text-2xl p-4 font-sans uppercase text-gray-900 text-center">UVaP Staff</h1>
           

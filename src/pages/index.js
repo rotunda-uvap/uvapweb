@@ -11,12 +11,14 @@ import HomepageBanner from "../components/HomepageBanner"
 import RotundaNews from "../components/RotundaNews"
 // import { ReactEmbeddedGoogleCalendar } from 'react-embedded-google-calendar';
 import GoogleCalendar from "../components/Calendar"
+import SEO from "../components/SEO"
+
 
 export default function Home(data) {
   
   return (
     <Layout>
-
+<SEO/>
  <HomepageBanner/>
 
 

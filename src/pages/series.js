@@ -3,12 +3,12 @@ import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import ActiveSeries from "../components/active-series"
 import CompletedSeries from "../components/CompletedSeries"
-
+import SEO from "../components/SEO"
 
 export default function Series({ data }) {
-    const series = data.allSeriesJson
  return (    
         <Layout>
+          <SEO title="Our Series"/>
           <ActiveSeries/>
           <div id="completed">
          <CompletedSeries/></div>

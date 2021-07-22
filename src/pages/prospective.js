@@ -4,6 +4,7 @@ import Layout from "../components/layout"
 import "../utils/global.css"
 import ActiveSeries from "../components/active-series"
 import AcqStaff from "../components/AcqStaff"
+import SEO from "../components/SEO"
 
 
 export default function ProspectiveAuthorsPage({ data }) {
@@ -11,6 +12,7 @@ export default function ProspectiveAuthorsPage({ data }) {
  return (
     
         <Layout>
+          <SEO title="Prospective Authors"/>
             {/* <h2 className="py-10 px-3 font-light">For Prospective Authors</h2> */}
             <section className="text-gray-600 body-font">
   <div className="container px-5 py-12 mx-auto">
