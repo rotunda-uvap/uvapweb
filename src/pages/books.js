@@ -3,7 +3,7 @@ import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import BookCard from "../components/BookCard"
 import AwardWinners from "../components/AwardWinners"
-import SEO from "../components/SEO"
+import SEO from "../components/SeoComponent"
 
 export default function Books({ data }) {
   const rec = data.recent

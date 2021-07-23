@@ -4,7 +4,7 @@ import RelatedBookList from "../components/RelatedBookList"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import Layout from "../components/layout"
 import Gallery from "../components/ExCarousel"
-import SEO from "../components/SEO"
+import SEO from "../components/SeoComponent"
 
 const exhibitPage = ({ data }) => {
     const exhibit = data.markdownRemark

@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 import "../utils/global.css"
 // import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import BookHorizontalTabs from "../components/BookHorizontalTabs"
-import SEO from "../components/SEO"
+import SEO from "../components/SeoComponent"
 import ShareButtons from "../components/ShareButtons"
 
 

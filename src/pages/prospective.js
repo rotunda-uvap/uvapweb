@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 import "../utils/global.css"
 import ActiveSeries from "../components/active-series"
 import AcqStaff from "../components/AcqStaff"
-import SEO from "../components/SEO"
+import SEO from "../components/SeoComponent"
 
 
 export default function ProspectiveAuthorsPage({ data }) {

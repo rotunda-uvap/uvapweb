@@ -3,7 +3,7 @@ import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import ActiveSeries from "../components/active-series"
 import CompletedSeries from "../components/CompletedSeries"
-import SEO from "../components/SEO"
+import SEO from "../components/SeoComponent"
 
 export default function Series({ data }) {
  return (    

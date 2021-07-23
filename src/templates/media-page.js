@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 import RelatedBook from "../components/RelatedBook"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import Layout from "../components/layout"
-import SEO from "../components/SEO"
+import SEO from "../components/SeoComponent"
 
 const mediaPage = ({ data }) => {
     const media = data.markdownRemark

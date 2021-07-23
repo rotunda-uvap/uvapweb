@@ -2,7 +2,7 @@ import React from "react"
 import { graphql, Link } from "gatsby"
 import RotundaCard from "../components/RotundaCard"
 import Layout from "../components/layout"
-import SEO from "../components/SEO"
+import SEO from "../components/SeoComponent"
 
 
 const RotundaCollTemplate = ({ data }) => {

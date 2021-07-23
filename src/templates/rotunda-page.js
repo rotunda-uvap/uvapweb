@@ -2,7 +2,7 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
-import SEO from "../components/SEO"
+import SEO from "../components/SeoComponent"
 
 const rotundaPage = ({ data }) => {
     const item = data.rotundaJson

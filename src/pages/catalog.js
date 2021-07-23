@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import CurrentList from "../components/current-list"
 import { StaticImage } from "gatsby-plugin-image"
-import SEO from "../components/SEO"
+import SEO from "../components/SeoComponent"
 
 export default function Catalog({data}) {
     return (

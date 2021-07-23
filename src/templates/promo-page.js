@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import RelatedBook from "../components/RelatedBook"
-import SEO from "../components/SEO"
+import SEO from "../components/SeoComponent"
 import Layout from "../components/layout"
 
 const promoPage = ({ data }) => {

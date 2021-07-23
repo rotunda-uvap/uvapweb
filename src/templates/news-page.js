@@ -3,7 +3,7 @@ import { Link, graphql } from "gatsby"
 import RelatedBook from "../components/RelatedBook"
 import Layout from "../components/layout"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
-import SEO from "../components/SEO"
+import SEO from "../components/SeoComponent"
 import ShareButtons from "../components/ShareButtons"
 
 const newsPage = ({ data }) => {

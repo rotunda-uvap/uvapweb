@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 import { Helmet } from 'react-helmet'
 import {FaArrowAltCircleRight} from "react-icons/fa"
 import GoogleCalendar from "../components/Calendar"
-import SEO from "../components/SEO"
+import SEO from "../components/SeoComponent"
 export default function PubPage({ data }) {
     const news = data.allMarkdownRemark
     // const staff = data.staffs

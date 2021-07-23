@@ -7,7 +7,7 @@ import FEList from "../components/FoundingEra"
 import ACRList from "../components/ACR"
 import ACList from "../components/AMC"
 import LACList from "../components/LAC"
-import SEO from "../components/SEO"
+import SEO from "../components/SeoComponent"
 
 export default function RotundaHome({ data }) {
     const RotundaLogo = getImage(data.rotLogo)

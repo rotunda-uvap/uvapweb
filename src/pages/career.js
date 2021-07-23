@@ -2,7 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import "../utils/global.css"
-import SEO from "../components/SEO"
+import SEO from "../components/SeoComponent"
 
 export default function CareerPage({ data }) {
     const pagedata = data.markdownRemark
