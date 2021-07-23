@@ -2,12 +2,15 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import "../utils/global.css"
+import SEO from "../components/SEO"
+
 
 export default function RotundaCustomerList({data}) {
     const custs = data.allCustomersJson
     return (
        
            <Layout>
+                   <SEO title="A list of our current customers"/>
                      <section className="text-gray-600 body-font">
   <div className="container px-5 py-12 mx-auto">
     <div>

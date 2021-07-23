@@ -14,10 +14,6 @@ export default function Books({ data }) {
         <Layout>
          <SEO 
          title="Browse all books"/>
-          
-
-                 
-
                  <section className="text-gray-600 body-font">
   <div className="container px-5 py-12 mx-auto">
   <h1 id="top" className="sm:text-3xl text-2xl p-4 mb-4 font-sans uppercase text-gray-900 text-center">Browse All Books</h1>

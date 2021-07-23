@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 import "../utils/global.css"
 // import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import BookHorizontalTabs from "../components/BookHorizontalTabs"
-import BookSEO from "../components/BookSeo"
+import SEO from "../components/SEO"
 import ShareButtons from "../components/ShareButtons"
 
 
@@ -23,14 +23,15 @@ const bookPage = ({ data }) => {
  return (
    
    <Layout>
-<BookSEO
+<SEO
   title={book.Title}
   description={book.MainDescription.html.substring(0, 150)}
   pathname={url}
   author={book.AuthorCredit}
   isbn={isbn}
-  image={"https://www.upress.virginia.edu/sites/default/files/covers/" + book.CoverImageFull || defaultImage}
+  cover={"https://www.upress.virginia.edu/sites/default/files/covers/" + book.CoverImageFull || defaultImage}
   article={false}
+  book={true}
 />
     <section className="grid md:grid-cols-3 md:gap-10 py-3 ml-6 " >
       

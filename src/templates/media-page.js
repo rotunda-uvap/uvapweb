@@ -3,6 +3,7 @@ import { graphql } from "gatsby"
 import RelatedBook from "../components/RelatedBook"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import Layout from "../components/layout"
+import SEO from "../components/SEO"
 
 const mediaPage = ({ data }) => {
     const media = data.markdownRemark
@@ -10,6 +11,7 @@ const mediaPage = ({ data }) => {
     const image = getImage(data.Img)
  return (
    <Layout>
+     <SEO/>
      <div>
         <h1 className="py-5 px-5 text-2xl font-light uppercase" >{media.frontmatter.title}</h1>
         <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1">

@@ -3,13 +3,15 @@ import { Link, graphql } from "gatsby"
 import RelatedBook from "../components/RelatedBook"
 import Layout from "../components/layout"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
-import NewsSEO from "../components/NewsSeo"
+import SEO from "../components/SEO"
+import ShareButtons from "../components/ShareButtons"
 
 const newsPage = ({ data }) => {
     const news = data.markdownRemark
     const related_books = data.markdownRemark.frontmatter.related_book
     const related_series = data.markdownRemark.frontmatter.related_series
     const news_image = getImage(data.Img)
+    const url = data.site.siteMetadata.siteUrl + "/news" + news.fields.slug
     const title = news.frontmatter.title
     let metaImage;
 if(news_image) metaImage = news.frontmatter.image.childImageSharp.fixed.src;
@@ -17,7 +19,7 @@ else metaImage = null;
    
  return (
    <Layout>
-<NewsSEO
+<SEO
   title={title}
   description={news.html.substring(0, 150)}
   pathname={news.fields.slug}
@@ -28,7 +30,7 @@ else metaImage = null;
   <div className="container px-5 py-12 mx-auto">
   <div className="flex flex-col  w-full mb-10">
   <h1 className="sm:text-3xl text-2xl font-medium font-sans mb-4 text-gray-900">{title}</h1>
- 
+
  
   <p className="lg:w-3/3  leading-relaxed font-serif">
   {news_image && <div className="float-left px-10 pb-5"><GatsbyImage image={news_image} alt="related image" width={300}/></div> }
@@ -47,6 +49,7 @@ else metaImage = null;
 
        
 
+          <ShareButtons title={title} url={url}/>
 
           
             {related_series && related_series.map(series => (
@@ -70,7 +73,11 @@ export default newsPage
 
 export const query = graphql`
   query($id: String!, $relDir: String!) {
-    # markdownRemark(frontmatter: {type: {nin: ["page", "media", "promo"]}},id: { eq: $id }) {
+    site {
+    siteMetadata {
+      siteUrl
+    }
+  }
       markdownRemark(frontmatter: {templateKey: {eq: "news"}},id: { eq: $id }) {
 
       id

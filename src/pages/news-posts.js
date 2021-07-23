@@ -1,13 +1,13 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
-
-
+import SEO from "../components/SEO"
 export default function Articles({ data }) {
     const news = data.allMarkdownRemark
  return (
     
         <Layout>
+          <SEO/>
            <div className="container px-5 py-12 mx-auto">
            <h1 className="sm:text-3xl text-2xl p-4 font-sans uppercase text-gray-900 text-center">All News</h1>
           

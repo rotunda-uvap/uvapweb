@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useLocation } from "@reach/router"
 import { useStaticQuery, graphql } from "gatsby"
-const SEO = ({ title, description, image, article }) => {
+const SEO = ({ title, description, image, article, cover, book, author, isbn}) => {
   const { pathname } = useLocation()
   const { site } = useStaticQuery(query)
  
@@ -21,6 +21,11 @@ const SEO = ({ title, description, image, article }) => {
       description: description || defaultDescription,
       image: `${siteUrl}${image || defaultImage}`,
       siteUrl: `${siteUrl}${pathname}`,
+      author: author || null,
+      isbn: isbn || null,
+      cover:  cover || defaultImage
+
+
   }
 
   return (
@@ -29,11 +34,15 @@ const SEO = ({ title, description, image, article }) => {
       <meta name="image" content={seo.image} />
       {seo.url && <meta property="og:url" content={seo.url} />}
       {(article ? true : null) && <meta property="og:type" content="article" />}
+      {(book ? true : null) && <meta property="og:type" content="book" />}
       {seo.title && <meta property="og:title" content={seo.title} />}
+      {seo.author && <meta property="book:author" content={seo.author} />}
       {seo.description && (
         <meta property="og:description" content={seo.description} />
       )}
-      {seo.image && <meta property="og:image" content={seo.image} />}
+      {/* {seo.image && <meta property="og:image" content={seo.image} />} */}
+      {cover ? <meta property="og:image" content={seo.cover} /> : <meta property="og:image" content={seo.image} />}
+      {seo.isbn && <meta property="book:isbn" content={seo.isbn} />}
       <meta name="twitter:card" content="summary_large_image" />
       {twitterUsername && (
         <meta name="twitter:creator" content={twitterUsername} />
@@ -55,6 +64,9 @@ SEO.propTypes = {
   image: PropTypes.string,
   cover: PropTypes.string,
   article: PropTypes.bool,
+  book: PropTypes.bool,
+  author: PropTypes.string,
+  isbn: PropTypes.string,
 }
 SEO.defaultProps = {
   title: null,
@@ -62,6 +74,9 @@ SEO.defaultProps = {
   image: null,
   cover: null,
   article: false,
+  book: false,
+  isbn:null,
+  author:null
 }
 
 const query = graphql`

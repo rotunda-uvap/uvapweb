@@ -4,6 +4,7 @@ import RelatedBookList from "../components/RelatedBookList"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import Layout from "../components/layout"
 import Gallery from "../components/ExCarousel"
+import SEO from "../components/SEO"
 
 const exhibitPage = ({ data }) => {
     const exhibit = data.markdownRemark
@@ -18,6 +19,7 @@ const exhibitPage = ({ data }) => {
 
  return (
    <Layout>
+     <SEO title={`Virtual Book Exhibit: + ${data.markdownRemark.frontmatter.title}`}/>
      <div>
        <h1 className="py-5">{data.markdownRemark.frontmatter.title}</h1>
         <GatsbyImage image={image} alt="related image"/>

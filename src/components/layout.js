@@ -1,7 +1,6 @@
 import React from "react"
 import Footer from "./footer" 
 import MegaHeader from "./Megamenu"
-import SEO from "../components/SEO"
 import "./layout.css"
 
 
@@ -10,7 +9,6 @@ const Layout = ({ children }) => {
   return (
     
     <div className="max-w-7xl mx-auto px-5 py-10">
-    <SEO/>
     
       <MegaHeader/>
       <div className="max-w-7xl mx-auto pb-5">
