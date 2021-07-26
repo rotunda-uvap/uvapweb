@@ -5,6 +5,8 @@ status: active
 seriestype: Academic Book Series
 editors: "Series Editor: Robert Newman; Associate Series Editor: Justin D. Neuman"
 uvaeditors: Angie Hogan
+related_staff:
+  - Angie Hogan
 seriesID: CFFC
 type: series
 ---
