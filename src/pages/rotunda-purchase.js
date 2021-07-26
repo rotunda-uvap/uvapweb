@@ -2,14 +2,14 @@ import React from "react"
 import { Link } from "gatsby"
 import Layout from "../components/layout"
 import "../utils/global.css"
-import SEO from "../components/SeoComponent"
+import SeO from "../components/SeoComponent"
 
 
 export default function RotundaPurchasePage() {
  return (
     
         <Layout>
-            <SEO title="How to Purchase ROTUNDA Publications"/>
+            <SeO title="How to Purchase ROTUNDA Publications"/>
             <h2 className="py-10 px-3 font-light">Purchasing Rotunda Publications</h2>
             <p className="font-light">If you are connecting via a campus Internet connection, you can expect to gain access to any Rotunda publication purchased by your institution. If your institution has not purchased a particular Rotunda publication, contact your institution’s library about ordering. You may also sign up for an individual <a href="https://rotunda.upress.virginia.edu/register/default.xqy">free trial</a> to evaluate Rotunda before making a purchase decision.</p>
             <p className="font-light">View a <Link to={'../rotunda-customer-list'}>list of Rotunda customers</Link></p>

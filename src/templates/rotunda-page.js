@@ -2,7 +2,7 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
-import SEO from "../components/SeoComponent"
+import SeO from "../components/SeoComponent"
 
 const rotundaPage = ({ data }) => {
     const item = data.rotundaJson
@@ -11,7 +11,7 @@ const rotundaPage = ({ data }) => {
     const imageData = getImage(data.file)
  return (
    <Layout>
-     <SEO title={item.Title} description="SAH Archipedia is an authoritative online encyclopedia of the built world published by the Society of Architectural Historians and the University of Virginia Press."/>
+     <SeO title={item.Title} description="SAH Archipedia is an authoritative online encyclopedia of the built world published by the Society of Architectural Historians and the University of Virginia Press."/>
      <div>
         <h2 className="py-10">{item.Title}</h2>
         <div className="flex flex-1 flex-col md:flex-row  items-center">

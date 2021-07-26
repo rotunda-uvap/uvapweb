@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useLocation } from "@reach/router"
 import { useStaticQuery, graphql } from "gatsby"
-const SEO = ({ title, description, image, article, cover, book, author, isbn}) => {
+const SeO = ({ title, description, image, article, cover, book, author, isbn}) => {
   const { pathname } = useLocation()
   const { site } = useStaticQuery(query)
  
@@ -55,10 +55,10 @@ const SEO = ({ title, description, image, article, cover, book, author, isbn}) =
     </Helmet>
   )
 }
-export default SEO
+export default SeO
 
 
-SEO.propTypes = {
+SeO.propTypes = {
   title: PropTypes.string,
   description: PropTypes.string,
   image: PropTypes.string,
@@ -68,7 +68,7 @@ SEO.propTypes = {
   author: PropTypes.string,
   isbn: PropTypes.string,
 }
-SEO.defaultProps = {
+SeO.defaultProps = {
   title: null,
   description: null,
   image: null,

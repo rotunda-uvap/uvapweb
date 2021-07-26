@@ -2,7 +2,7 @@ import React from "react"
 import { graphql, Link } from "gatsby"
 import RotundaCard from "../components/RotundaCard"
 import Layout from "../components/layout"
-import SEO from "../components/SeoComponent"
+import SeO from "../components/SeoComponent"
 
 
 const RotundaCollTemplate = ({ data }) => {
@@ -10,7 +10,7 @@ const RotundaCollTemplate = ({ data }) => {
     return (
     <div>
         <Layout>
-            <SEO title={items.edges[0].node.MainCollection}/>
+            <SeO title={items.edges[0].node.MainCollection}/>
             <section>
             <div className="grid grid-cols-3 content-center">
                 <h3 className="py-3 col-span-2">{items.edges[0].node.MainCollection} </h3>

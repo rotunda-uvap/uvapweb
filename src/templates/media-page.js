@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 import RelatedBook from "../components/RelatedBook"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import Layout from "../components/layout"
-import SEO from "../components/SeoComponent"
+import SeO from "../components/SeoComponent"
 
 const mediaPage = ({ data }) => {
     const media = data.markdownRemark
@@ -11,11 +11,11 @@ const mediaPage = ({ data }) => {
     const image = getImage(data.Img)
  return (
    <Layout>
-     <SEO/>
+     <SeO/>
      <div>
         <h1 className="py-5 px-5 text-2xl font-light uppercase" >{media.frontmatter.title}</h1>
         <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1">
-        <div className="float-left px-5 pb-5"><GatsbyImage image={image} alt="related image"   width={300}/></div>
+        <div className="float-left px-5 pb-5"><GatsbyImage image={image} alt="related image"/></div>
         <p className="lg:w-3/3  leading-relaxed text-base">
   {related_books && 
             <>

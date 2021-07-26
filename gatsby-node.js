@@ -196,6 +196,7 @@ exports.createSchemaCustomization = ({ actions }) => {
             component: path.resolve(`./src/templates/staff-page.js`),
             context: {
               id: node.id,
+              relDir: node.frontmatter.name_slug
             },
           })
         })

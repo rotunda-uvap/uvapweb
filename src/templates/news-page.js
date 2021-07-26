@@ -3,7 +3,7 @@ import { Link, graphql } from "gatsby"
 import RelatedBook from "../components/RelatedBook"
 import Layout from "../components/layout"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
-import SEO from "../components/SeoComponent"
+import SeO from "../components/SeoComponent"
 import ShareButtons from "../components/ShareButtons"
 
 const newsPage = ({ data }) => {
@@ -19,7 +19,7 @@ else metaImage = null;
    
  return (
    <Layout>
-<SEO
+<SeO
   title={title}
   description={news.html.substring(0, 150)}
   pathname={news.fields.slug}
@@ -33,7 +33,7 @@ else metaImage = null;
 
  
   <p className="lg:w-3/3  leading-relaxed font-serif">
-  {news_image && <div className="float-left px-10 pb-5"><GatsbyImage image={news_image} alt="related image" width={300}/></div> }
+  {news_image && <div className="float-left px-10 pb-5"><GatsbyImage image={news_image} alt="related image"/></div> }
   {related_books && 
             <>
              <div className="float-right px-5 pb-5">

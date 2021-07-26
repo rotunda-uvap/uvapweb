@@ -34,7 +34,7 @@ export default function FeatPromo() {
             <p className="text-3xl font-sans text-gray-600">{data.promos.edges[0].node.frontmatter.title} </p></div>
             <div className="flex flex-row">
           <div className="font-serif dropCap" dangerouslySetInnerHTML={{ __html: data.promos.edges[0].node.html }}></div>
-          <img src={data.promos.edges[0].node.frontmatter.image.publicURL} width="50%;"/>
+          <img src={data.promos.edges[0].node.frontmatter.image.publicURL} width="50%;" alt="promotion"/>
         </div>
 
        

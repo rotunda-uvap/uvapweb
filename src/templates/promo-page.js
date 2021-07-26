@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import RelatedBook from "../components/RelatedBook"
-import SEO from "../components/SeoComponent"
+import SeO from "../components/SeoComponent"
 import Layout from "../components/layout"
 
 const promoPage = ({ data }) => {
@@ -10,7 +10,7 @@ const promoPage = ({ data }) => {
 
  return (
    <Layout>
-     <SEO/>
+     <SeO/>
      <div>
         <h2 className="py-10">{promos.frontmatter.title}</h2>
         <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1">

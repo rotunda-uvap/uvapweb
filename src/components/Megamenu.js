@@ -7,29 +7,29 @@ import "./megamenu.css"
 const MegaHeader = () => {
   
     return (
-        <nav className="text-gray-500 uppercase divght border-b-2 border-t-2 flex flex-row justify-center place-content-center z-40">
+        <nav className="text-gray-400 font-sans font-thin uppercase border-b-2 flex flex-row justify-center place-content-center z-40 tracking-wide">
         <div className="flex flex-row justify-center place-content-center">
  
     <nav className="flex">
-    <divide className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+    <div className="flex items-center text-gray-900 mb-4 md:mb-0">
     <div className="block"><Link to={`/`}> <img src="/black.png" alt="logo"/> </Link></div>
-    </divide>
+    </div>
       <div className="toggleable">
         <input type="checkbox" value="selected" id="toggle-one" className="toggle-input"/>
           
-<div className="space-x-6 flex flex-wrap items-center justify-center place-content-center py-3 text-sm">
-<a className="hover:text-gray-900 md:ml-5" href="/">Home</a>
-<label htmlFor="toggle-one"><span className="hover:text-gray-900">About</span></label>
+<div className="space-x-6 flex flex-wrap items-center justify-center place-content-center py-3">
+{/* <a className="hover:text-gray-900 md:ml-5" href="/">Home</a> */}
+<label htmlFor="toggle-one"><span className="hover:text-gray-900 md:ml-5">About</span></label>
 <label htmlFor="toggle-one"><span className="hover:text-gray-900">Books</span></label>
 <label htmlFor="toggle-one"><span className="hover:text-gray-900">For Authors</span></label>
 <label htmlFor="toggle-one"><span className="hover:text-gray-900">For Instructors</span></label>
 <label htmlFor="toggle-one"><span className="hover:text-gray-900">Rotunda Digital</span></label>
 <a className="hover:text-gray-900 md:ml-5" href="/support">Give</a>
 
-      <a href="https://www.facebook.com/uvapress"><FaFacebookSquare  aria-label="facebook button" className="hover:text-gray-900 text-gray-500" /></a>
-      <a href="https://twitter.com/uvapress"><FaTwitterSquare aria-label="twitter button" className="hover:text-gray-900 text-gray-500" /></a>
-      <a href="https://www.instagram.com/uvapress"><FaInstagramSquare aria-label="insta button" className="hover:text-gray-900 text-gray-500" /></a>
-      <Link to={`/book-search`} > <FaSearch aria-label="search button" className="hover:text-gray-900 text-gray-500" /></Link>
+      <a href="https://www.facebook.com/uvapress"><FaFacebookSquare  aria-label="facebook button" className="hover:text-gray-900 text-gray-400" /></a>
+      <a href="https://twitter.com/uvapress"><FaTwitterSquare aria-label="twitter button" className="hover:text-gray-900 text-gray-400" /></a>
+      <a href="https://www.instagram.com/uvapress"><FaInstagramSquare aria-label="insta button" className="hover:text-gray-900 text-gray-400" /></a>
+      <Link to={`/book-search`} > <FaSearch aria-label="search button" className="hover:text-gray-900 text-gray-400" /></Link>
 </div>
 
           <div role="toggle" className="p-6 mega-menu mb-16 sm:mb-0 shadow-xl bg-gray-800">

@@ -10,7 +10,7 @@ const RotundaCard = ({Title, ID, Image}) => {
        
          
        /*  <div className="bg-gray-100 rounded flex p-4 h-full items-center">
-             <svg fill="currentColor" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" stroke-width="1" className="text-gray-800 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+             <svg fill="currentColor" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" className="text-gray-800 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
                
                <path xmlns="http://www.w3.org/2000/svg" d="M9 5l7 7-7 7"/>
              </svg>

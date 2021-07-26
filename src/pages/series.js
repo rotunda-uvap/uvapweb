@@ -1,14 +1,14 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import ActiveSeries from "../components/active-series"
 import CompletedSeries from "../components/CompletedSeries"
-import SEO from "../components/SeoComponent"
+import SeO from "../components/SeoComponent"
 
 export default function Series({ data }) {
  return (    
         <Layout>
-          <SEO title="Our Series"/>
+          <SeO title="Our Series"/>
           <ActiveSeries/>
           <div id="completed">
          <CompletedSeries/></div>

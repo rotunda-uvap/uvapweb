@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 import "../utils/global.css"
 // import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import BookHorizontalTabs from "../components/BookHorizontalTabs"
-import SEO from "../components/SeoComponent"
+import SeO from "../components/SeoComponent"
 import ShareButtons from "../components/ShareButtons"
 
 
@@ -23,7 +23,7 @@ const bookPage = ({ data }) => {
  return (
    
    <Layout>
-<SEO
+<SeO
   title={book.Title}
   description={book.MainDescription.html.substring(0, 150)}
   pathname={url}
@@ -55,7 +55,7 @@ const bookPage = ({ data }) => {
          <>
           <div className="bg-white rounded  flex flex-row inline-flex items-center w-full leading-normal">
           <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-  <path strokeLinecap="round" strokeLinejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
 </svg>
       <a href={binding.buylink} className="block group hover:bg-gray-100 p-2 ml-4 border-b"> 
       <div className="font-bold text-normal  uppercase">{binding.type} <span className="pl-2 font-normal">${binding.price}</span> </div>
@@ -69,7 +69,7 @@ const bookPage = ({ data }) => {
          ))} 
          <div className="bg-white rounded  flex flex-row inline-flex items-center w-full leading-normal">
          <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-  <path strokeLinecap="round" strokeLinejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
 </svg>
       <a href={`../../examination_Copy_Form_2021.pdf`} className="block group hover:bg-gray-100 p-2 ml-4 border-b"> 
       <div className="font-bold text-normal  uppercase">Exam Copy  </div>
@@ -81,7 +81,7 @@ const bookPage = ({ data }) => {
         <div>
         <div className="bg-white rounded  flex flex-row inline-flex items-center w-full leading-normal">
          <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-  <path strokeLinecap="round" strokeLinejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
+  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
 </svg>
       <a href="https://forms.gle/H8J1NbtN4BBZZwgy7" className="block group hover:bg-gray-100 p-2 ml-4 border-b"> 
       <div className="font-bold text-normal  uppercase">Desk Copy  </div>
@@ -146,7 +146,7 @@ const bookPage = ({ data }) => {
       
             <article className="flex flex-wrap items-center p-5  ">
               <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-  <path strokeLinecap="round" strokeLinejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" />
+  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" />
 </svg>
            
                 <div className="w-4/5 ml-5"><h3 className="text-xl font-light tracking-wide text-left" key={news.frontmatter.title}><Link to={`../../${news.frontmatter.type}${news.fields.slug}`}>{ news.frontmatter.title }</Link></h3>

@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 import "../utils/global.css"
 import ActiveSeries from "../components/active-series"
 import AcqStaff from "../components/AcqStaff"
-import SEO from "../components/SeoComponent"
+import SeO from "../components/SeoComponent"
 
 
 export default function ProspectiveAuthorsPage({ data }) {
@@ -12,7 +12,7 @@ export default function ProspectiveAuthorsPage({ data }) {
  return (
     
         <Layout>
-          <SEO title="Prospective Authors"/>
+          <SeO title="Prospective Authors"/>
             {/* <h2 className="py-10 px-3 font-light">For Prospective Authors</h2> */}
             <section className="text-gray-600 body-font">
   <div className="container px-5 py-12 mx-auto">
@@ -21,7 +21,7 @@ export default function ProspectiveAuthorsPage({ data }) {
       <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 uppercase text-gray-900">Prospective Authors</h1>
       <span className="font-medium title-font text-gray-500 pb-4"><Link to={'/authors'}>
             Current Authors <span className="inline-flex items-center mt-4">
-              <svg fill="none" stroke="currentColor" strokeLinecap="round" stroke-linejoin="round" stroke-width="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
+              <svg fill="none" stroke="currentColor" strokeLinecap="round" stroke-linejoin="round" strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
                 <path d="M5 12h14M12 5l7 7-7 7"></path>
               </svg>
               </span>
@@ -41,7 +41,7 @@ export default function ProspectiveAuthorsPage({ data }) {
         <h2 className="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">Prospective Author Questionnaire</h2>
         <p className="leading-relaxed text-base mb-4">Submit this questionnaire to the acquisitions department only after your manuscript has been invited for consideration by an acquisitions editor. The questionnaire should accompany any manuscript invited for consideration.</p>
         <a className="text-gray-500 inline-flex items-center" href={'UVaP_Author_Questionnaire.doc'} title="Download form">Download
-          <svg fill="none" stroke="currentColor" strokeLinecap="round" stroke-linejoin="round" stroke-width="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
+          <svg fill="none" stroke="currentColor" strokeLinecap="round" stroke-linejoin="round" strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
             <path d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
           </svg>
         </a>
@@ -50,7 +50,7 @@ export default function ProspectiveAuthorsPage({ data }) {
         <h2 className="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">Outline for a Book Proposal</h2>
         <p className="leading-relaxed text-base mb-4">NEEDS INSTRUCTIONS</p>
         <a className="text-gray-500 inline-flex items-center" href={'UVaP_Book_Proposal.doc'} title="Download form">Download
-          <svg fill="none" stroke="currentColor" strokeLinecap="round" stroke-linejoin="round" stroke-width="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
+          <svg fill="none" stroke="currentColor" strokeLinecap="round" stroke-linejoin="round" strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
             <path d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
           </svg>
         </a>
@@ -70,7 +70,7 @@ export default function ProspectiveAuthorsPage({ data }) {
           
           <div className="p-2 sm:w-1/2 w-full">
           <div className="bg-gray-100 rounded flex p-4 h-full items-center">
-             <svg fill="currentColor" stroke="currentColor" strokeLinecap="round" stroke-linejoin="round" stroke-width="1" className="text-gray-800 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+             <svg fill="currentColor" stroke="currentColor" strokeLinecap="round" stroke-linejoin="round" strokeWidth="1" className="text-gray-800 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
                
                <path xmlns="http://www.w3.org/2000/svg" d="M9 5l7 7-7 7"/>
              </svg>
@@ -94,7 +94,7 @@ export default function ProspectiveAuthorsPage({ data }) {
           
           <div className="p-2 sm:w-1/2 w-full">
           <div className="bg-gray-100 rounded flex p-4 h-full items-center">
-             <svg fill="currentColor" stroke="currentColor" strokeLinecap="round" stroke-linejoin="round" stroke-width="1" className="text-gray-800 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+             <svg fill="currentColor" stroke="currentColor" strokeLinecap="round" stroke-linejoin="round" strokeWidth="1" className="text-gray-800 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
                
                <path xmlns="http://www.w3.org/2000/svg" d="M9 5l7 7-7 7"/>
              </svg>

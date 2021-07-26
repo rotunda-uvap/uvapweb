@@ -2,7 +2,7 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import BookCard from "../components/BookCard"
-import SEO from "../components/SeoComponent"
+import SeO from "../components/SeoComponent"
 
 
 
@@ -14,7 +14,7 @@ export default function RecentBooks({ data }) {
  return (
     
         <Layout>
-          <SEO title="Books most recently published by the University of Virginia Press"/>
+          <SeO title="Books most recently published by the University of Virginia Press"/>
           <div className="container px-5 py-12 mx-auto">
              <h1 className="sm:text-3xl text-2xl p-4 font-sans uppercase text-gray-900 text-center">New and Upcoming Books from UVa Press</h1>
 

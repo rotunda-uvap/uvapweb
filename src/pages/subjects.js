@@ -1,14 +1,14 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
-import SEO from "../components/SeoComponent"
+import SeO from "../components/SeoComponent"
 
 export default function Subjects({ data }) {
   const subs = data.allSubjectsJson
  return (
     
         <Layout>
-          <SEO title="Our Subjects"/>
+          <SeO title="Our Subjects"/>
           <h2 className="py-10 px-3 font-light">Subjects</h2>
           <div className="grid md:grid-cols-4 md:grid-4">
             

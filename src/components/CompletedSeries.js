@@ -30,7 +30,7 @@ export default function CompletedSeries() {
             <div className="flex flex-col text-center w-full">
          <h1 className="sm:text-3xl text-2xl uppercase font-medium title-font mb-4 text-gray-900">Completed Series</h1></div>
          <Link to={`#active`}><div className="text-sm text-center text-gray-500">Active Series <span className="inline-flex items-center mt-4">
-              <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" stroke-width="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
+              <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
                 <path d="M5 12h14M12 5l7 7-7 7"></path>
               </svg></span></div></Link>
 

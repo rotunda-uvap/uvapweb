@@ -2,7 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import "../utils/global.css"
-import SEO from "../components/SeoComponent"
+import SeO from "../components/SeoComponent"
 
 
 export default function RotundaCustomerList({data}) {
@@ -10,7 +10,7 @@ export default function RotundaCustomerList({data}) {
     return (
        
            <Layout>
-                   <SEO title="A list of our current customers"/>
+                   <SeO title="A list of our current customers"/>
                      <section className="text-gray-600 body-font">
   <div className="container px-5 py-12 mx-auto">
     <div>

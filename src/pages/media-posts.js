@@ -1,7 +1,7 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
-import SEO from "../components/SeoComponent"
+import SeO from "../components/SeoComponent"
 
 
 
@@ -10,7 +10,7 @@ export default function MediaArticles({ data }) {
  return (
     
         <Layout>
-          <SEO/>
+          <SeO/>
            <div className="container px-5 py-12 mx-auto">
           <h1 className="sm:text-3xl text-2xl p-4 font-sans uppercase text-gray-900 text-center">All Media Posts</h1>
             {media.edges.map(edge => (
