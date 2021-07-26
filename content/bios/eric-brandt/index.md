@@ -2,7 +2,7 @@
 templateKey: bio
 title: Eric Brandt
 staff_name: Eric Brandt
-profile_photo: eric-brandt.png
+profile_photo: brandt_big.jpg
 name_slug: eric-brandt
 job_title: Editor in Chief and Humanities Editor
 department:
