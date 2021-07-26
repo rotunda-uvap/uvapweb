@@ -2,7 +2,7 @@
 templateKey: bio
 title: Angie Hogan
 staff_name: Angie Hogan
-profile_photo: ""
+profile_photo: angie-hogan.png
 name_slug: angie-hogan
 job_title: Acquiring Editor, 18th-Century Studies
 department:
