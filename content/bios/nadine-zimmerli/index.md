@@ -2,7 +2,7 @@
 templateKey: bio
 title: Nadine Zimmerli
 staff_name: Nadine Zimmerli
-profile_photo: ""
+profile_photo: nadine-zimmerli.png
 name_slug: nadine-zimmerli
 job_title: Editor, History and Social Sciences
 department:
