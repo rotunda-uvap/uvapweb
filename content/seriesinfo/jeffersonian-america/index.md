@@ -1,11 +1,13 @@
 ---
 templateKey: series
-title: Jeffersonian America
 status: active
-seriestype: Academic Book Series
 editors: "Series Editors: Charlene M. Boyer Lewis, Annette Gordon-Reed, Peter S.
   Onuf, Andrew J. O’Shaughnessy, Robert G. Parkinson"
 uvaeditors: Nadine Zimmerli
+title: Jeffersonian America
+seriestype: Academic Book Series
+related_staff:
+  - Nadine Zimmerli
 seriesID: JA
 type: series
 ---
