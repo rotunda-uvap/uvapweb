@@ -34,14 +34,14 @@ export default function Home(data) {
 
       </div>
 </section>
-<section className="py-4">
+<section className="py-4 border-b-2 border-gray-100">
 <FeatTrio/>
 
       {/* <button className="text-lg p-2 w-full uppercase text-center"><Link to={`/publicity`}>see all the latest news</Link></button> */}
 </section>
 
 <section className="py-4 border-b-2 border-gray-100">
-<p className="text-center uppercase text-gray-500 text-md font-thin tracking-widest mx-auto  font-sans tracking-wide">rotunda</p>
+{/* <p className="text-center uppercase text-gray-500 text-md font-thin tracking-widest mx-auto  font-sans tracking-wide">rotunda</p> */}
 <RotundaNews/>
 </section>
        
@@ -51,7 +51,7 @@ export default function Home(data) {
          <FeatExhibit/>
        </section> */}
    
-     <section className="py-4">
+     <section className="py-4 border-b-2 border-gray-100">
      <FeatPromo/>
      
        </section>   
@@ -64,8 +64,8 @@ export default function Home(data) {
   <FeatPromo/>
   </section> */}
   
-  <section className="py-8 border-b-2">
-       <p className="text-center uppercase text-gray-500 text-md font-thin tracking-widest mx-auto  font-sans tracking-wide">Open Access</p>
+  <section className="py-4 border-b-2 border-gray-100">
+       {/* <p className="text-center uppercase text-gray-500 text-md font-thin tracking-widest mx-auto  font-sans tracking-wide">Open Access</p> */}
           <a href="https://open.upress.virginia.edu/"><h5>Virginia Open</h5></a>
           <p className="py-4">V/O: Virginia Open, a collection of University of Virginia Press titles made freely available. On this imprint, you will find both open-access monographs from The University of Virginia Press, readable in your browser or via download, and links to open-access websites published under our Rotunda imprint or in collaboration with partner institutions.</p>
           <a href="https://open.upress.virginia.edu/" className="tracking-wide font-sans">Learn More</a>
@@ -78,7 +78,7 @@ export default function Home(data) {
 
 
        <section className="py-4 border-b-2 border-gray-100">
-<p className="text-center uppercase text-gray-500 text-md font-thin tracking-widest mx-auto  font-sans tracking-wide">Catalog</p>
+{/* <p className="text-center uppercase text-gray-500 text-md font-thin tracking-widest mx-auto  font-sans tracking-wide">Catalog</p> */}
     
     <div className="grid grid-cols-1 md:grid-cols-3 ">
        <button className="md:pb-0 pb-4"><a href={`spring21.pdf`}> <StaticImage  width={300} src="../images/spring21.jpg" alt="current catalog cover" /></a></button>

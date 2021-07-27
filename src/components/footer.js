@@ -31,6 +31,9 @@ const Footer = () => {
           <Link to={`/walker-cowen-award`} className="uppercase block mt-2 text-xs  hover:text-gray-300">
             Walker Cowen Memorial Prize
           </Link>
+          <Link to={`/privacy`} className="uppercase block mt-2 text-xs  hover:text-gray-300">
+            Privacy Policy
+          </Link>
           <div className="flex flex-row py-2">
             <a href="https://www.facebook.com/uvapress" aria-label="facebook" className="pr-2"><FaFacebookSquare/></a>
           <a href="https://twitter.com/uvapress" aria-label="twitter" className="pr-2"><FaTwitterSquare/></a>
@@ -39,7 +42,7 @@ const Footer = () => {
           
               </div>
             </div>
-            <div id="contact" className="content-center col-span-2">
+            <div id="contact" className="md:scontent-center col-span-2">
             <h6 className="hidden">Contact Us</h6>
               <section className="grid grid-cols-3 pt-7">
               <FaMapMarkedAlt className="self-center justify-self-center text-2xl" aria-label="physical address"/>
