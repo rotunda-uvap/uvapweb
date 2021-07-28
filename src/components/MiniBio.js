@@ -16,11 +16,11 @@ export default function MiniBio({ frontmatter: { title, job_title, name_slug, em
        </div> */
        
        <div className="p-4 md:w-1/3 sm:w-1/2 w-full">
-<div className="flex-grow">
+<div className="flex flex-col items-center">
        <Link to={slink}><h5 className="title-font font-medium text-md text-gray-900">{title}</h5></Link>
-       <p className="text-gray-500 font-light">{job_title}</p>
-       <p className="text-base leading-relaxed">{phone}</p>
-         <a className="text-gray-500 text-base inline-flex items-center" href={`mailto:${ clean_email }`}>Email {title}
+       <span className="text-gray-500 py-1 font-thin font-display text-sm">{job_title}</span>
+       <span className="text-sm text-gray-500">{phone}</span>
+         <a className="text-gray-500 py-2 text-sm inline-flex items-center" href={`mailto:${ clean_email }`}>Email {title}
            <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
              <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
            </svg>

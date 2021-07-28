@@ -1,0 +1,928 @@
+
+{
+  "events": [
+    {
+      "media": {
+        "url": "https://www.upress.virginia.edu/sites/default/files/rotunda/gh.jpg",
+        "credit": "",
+        "caption": "",
+        "thumbnail": "https://www.upress.virginia.edu/sites/default/files/rotunda/gh.jpg"
+      },
+      "start_date": {
+        "year": "1633",
+        "month": "1",
+        "day": "1",
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "display_date": "1633 - 1633"
+      },
+      "end_date": {
+        "year": "1633",
+        "month": "12",
+        "day": "31",
+        "hour": 0,
+        "minute": 0,
+        "second": 0
+      },
+      "text": {
+        "headline": "The Digital Temple",
+        "text": "<p>  A Documentary Edition of George Herbert's English Verse</p>"
+      },
+      "group": "Literature and Culture Collection",
+      "background": {
+        "color": "#4B5563"
+      }
+    },
+    {
+        "media": {
+          "url": "https://www.upress.virginia.edu/sites/default/files/rotunda/pfe1.jpg",
+          "credit": "",
+          "caption": "",
+          "thumbnail": "https://www.upress.virginia.edu/sites/default/files/rotunda/pfe1.jpg"
+        },
+        "start_date": {
+          "year": "1713",
+          "month": "1",
+          "day": "1",
+          "hour": 0,
+          "minute": 0,
+          "second": 0,
+          "display_date": "1713 - 1815"
+        },
+        "end_date": {
+          "year": "1815",
+          "month": "12",
+          "day": "31",
+          "hour": 0,
+          "minute": 0,
+          "second": 0
+        },
+        "text": {
+          "headline": "People of the Founding Era",
+          "text": "<p>  People of the Founding Era</i> is a powerful new online resource that provides biographical information for thousands of individuals active during a crucial period in our history. Beginning with 12,000 but eventually expanding to over 60,000 people born between 1713 and 1815, the subjects include members of many of the most important families of the era, as well as many people&mdash;including artisans, slaves, and Native Americans&mdash;whose lives are not typically documented in historical archives...</p>"
+        },
+        "group": "Founding Era Collection",
+        "background": {
+          "color": "#4B5563"
+        }
+      },
+      {
+        "media": {
+          "url": "https://www.upress.virginia.edu/sites/default/files/rotunda/ed.jpg",
+          "credit": "",
+          "caption": "",
+          "thumbnail": "https://www.upress.virginia.edu/sites/default/files/rotunda/ed.jpg"
+        },
+        "start_date": {
+          "year": "1850",
+          "month": "1",
+          "day": "1",
+          "hour": 0,
+          "minute": 0,
+          "second": 0,
+          "display_date": "1850 - 1886"
+        },
+        "end_date": {
+          "year": "1886",
+          "month": "12",
+          "day": "31",
+          "hour": 0,
+          "minute": 0,
+          "second": 0
+        },
+        "text": {
+          "headline": "Emily Dickinson's Correspondences",
+          "text": "<p> A Born-Digital Textual Inquiry</p>"
+        },
+        "group": "Literature and Culture Collection",
+        "background": {
+          "color": "#4B5563"
+        }
+      },
+      {
+        "media": {
+          "url": "https://www.upress.virginia.edu/sites/default/files/rotunda/prde.jpg",
+          "credit": "",
+          "caption": "",
+          "thumbnail": "https://www.upress.virginia.edu/sites/default/files/rotunda/prde.jpg"
+        },
+        "start_date": {
+          "year": "1962",
+          "month": "1",
+          "day": "1",
+          "hour": 0,
+          "minute": 0,
+          "second": 0,
+          "display_date": "1962 - 1973"
+        },
+        "end_date": {
+          "year": "1973",
+          "month": "12",
+          "day": "31",
+          "hour": 0,
+          "minute": 0,
+          "second": 0
+        },
+        "text": {
+          "headline": "Presidential Recordings Digital Edition",
+          "text": "<p> The online edition of The Presidential Recordings includes hundreds of hours of presidential tapes covering the major issues of the LBJ administration, from the War on Poverty to the Civil Rights Movement to the Vietnam War. Each conversation is fully transcribed and annotated, and accompanied by its audio file. This multimedia presentation includes photo and video galleries, a linked timeline, and powerful XML-based searching ability. Winner of the 2011 PROSE Award for best eProduct in the Humanities.</p>"
+        },
+        "group": "American Century Collection",
+        "background": {
+          "color": "#4B5563"
+        }
+      },{
+        "media": {
+          "url": "https://www.upress.virginia.edu/sites/default/files/rotunda/pknyw.jpg",
+          "credit": "",
+          "caption": "",
+          "thumbnail": "https://www.upress.virginia.edu/sites/default/files/rotunda/pknyw.jpg"
+        },
+        "start_date": {
+          "year": "1739",
+          "month": "1",
+          "day": "1",
+          "hour": 0,
+          "minute": 0,
+          "second": 0,
+          "display_date": "1739 - 1830"
+        },
+        "end_date": {
+          "year": "1830",
+          "month": "12",
+          "day": "31",
+          "hour": 0,
+          "minute": 0,
+          "second": 0
+        },
+        "text": {
+          "headline": "The Papers of Eliza Lucas Pinckney & Harriott Pinckney Horry",
+          "text": "<p>The papers of Eliza Lucas Pinckney (1722–1793) and her daughter Harriott Pinckney Horry (1748–1830) document the lives of two observant and articulate founding-era women who were members of one of South Carolina’s leading families, as well as distinguished people in their own right. Their letters, diaries, and other documents span nearly a century (1739–1830) and provide a window on politics, social events, and people of the late colonial and early national periods, as well as the daily life of managing a household and plantation.</p>"
+        },
+        "group": "Founding Era Collection",
+        "background": {
+          "color": "#4B5563"
+        }
+      },{
+        "media": {
+          "url": "https://www.upress.virginia.edu/sites/default/files/rotunda/ma.jpg",
+          "credit": "",
+          "caption": "",
+          "thumbnail": "https://www.upress.virginia.edu/sites/default/files/rotunda/ma.jpg"
+        },
+        "start_date": {
+          "year": "1829",
+          "month": "1",
+          "day": "1",
+          "hour": 0,
+          "minute": 0,
+          "second": 0,
+          "display_date": "1829 - 1888"
+        },
+        "end_date": {
+          "year": "1888",
+          "month": "12",
+          "day": "31",
+          "hour": 0,
+          "minute": 0,
+          "second": 0
+        },
+        "text": {
+          "headline": "The Letters of Matthew Arnold",
+          "text": "<p>Matthew Arnold was the preeminent poet/critic of the second half of the nineteenth century. Including nearly 4,000 letters, this work represents the most comprehensive and assiduously annotated collection of his correspondence available.</p>"
+        },
+        "group": "Literature and Culture Collection",
+        "background": {
+          "color": "#4B5563"
+        }
+      },
+      {
+        "media": {
+          "url": "https://www.upress.virginia.edu/sites/default/files/rotunda/gw.jpg",
+          "credit": "",
+          "caption": "",
+          "thumbnail": "https://www.upress.virginia.edu/sites/default/files/rotunda/gw.jpg"
+        },
+        "start_date": {
+          "year": "1748",
+          "month": "1",
+          "day": "1",
+          "hour": 0,
+          "minute": 0,
+          "second": 0,
+          "display_date": "1748 - 1799"
+        },
+        "end_date": {
+          "year": "1799",
+          "month": "12",
+          "day": "31",
+          "hour": 0,
+          "minute": 0,
+          "second": 0
+        },
+        "text": {
+          "headline": "The Papers of George Washington",
+          "text": "<p>All 59 volumes of the celebrated print edition published through 2009, encompassing five series and the complete diaries, are now available in one XML-based publication. Users may search on full text and by date, author, and recipient. The exceptional indexing of the print volumes is combined here into a single master index, and all internal document cross-references are linked. The content may be navigated by series, date, or index entry.</p>"
+        },
+        "group": "Founding Era Collection",
+        "background": {
+          "color": "#4B5563"
+        }
+      },
+      {
+        "media": {
+          "url": "https://www.upress.virginia.edu/sites/default/files/rotunda/clotel.jpg",
+          "credit": "",
+          "caption": "",
+          "thumbnail": "https://www.upress.virginia.edu/sites/default/files/rotunda/clotel.jpg"
+        },
+        "start_date": {
+          "year": "1853",
+          "month": "1",
+          "day": "1",
+          "hour": 0,
+          "minute": 0,
+          "second": 0,
+          "display_date": "1853 - 1853"
+        },
+        "end_date": {
+          "year": "1853",
+          "month": "12",
+          "day": "31",
+          "hour": 0,
+          "minute": 0,
+          "second": 0
+        },
+        "text": {
+          "headline": "Clotel by William Wells Brown",
+          "text": "<p>An Electronic Scholarly Edition</p>"
+        },
+        "group": "Literature and Culture Collection",
+        "background": {
+          "color": "#4B5563"
+        }
+      },
+      {
+        "media": {
+          "url": "https://www.upress.virginia.edu/sites/default/files/rotunda/melville.jpg",
+          "credit": "",
+          "caption": "",
+          "thumbnail": "https://www.upress.virginia.edu/sites/default/files/rotunda/melville.jpg"
+        },
+        "start_date": {
+          "year": "1865",
+          "month": "1",
+          "day": "1",
+          "hour": 0,
+          "minute": 0,
+          "second": 0,
+          "display_date": "1865 - 1865"
+        },
+        "end_date": {
+          "year": "1865",
+          "month": "12",
+          "day": "31",
+          "hour": 0,
+          "minute": 0,
+          "second": 0
+        },
+        "text": {
+          "headline": "Herman Melville's 'Typee'",
+          "text": "<p>A Fluid Text Edition</p>"
+        },
+        "group": "Literature and Culture Collection",
+        "background": {
+          "color": "#4B5563"
+        }
+      },
+      {
+        "media": {
+          "url": "https://www.upress.virginia.edu/sites/default/files/rotunda/cr.jpg",
+          "credit": "",
+          "caption": "",
+          "thumbnail": "https://www.upress.virginia.edu/sites/default/files/rotunda/cr.jpg"
+        },
+        "start_date": {
+          "year": "1868",
+          "month": "1",
+          "day": "1",
+          "hour": 0,
+          "minute": 0,
+          "second": 0,
+          "display_date": "1868 - 1892"
+        },
+        "end_date": {
+          "year": "1892",
+          "month": "12",
+          "day": "31",
+          "hour": 0,
+          "minute": 0,
+          "second": 0
+        },
+        "text": {
+          "headline": "The Letters of Christina Rossetti",
+          "text": "<p>Christina Rossetti has come to be considered one of the major poets of the Victorian era.This digital edition incorporates the complete text of the 4-volume print edition, The Letters of Christina Rossetti, edited by Antony H. Harrison. All 2124 letters may be read in chronological order or searched by full text or recipient. In addition, indexes from the print volumes have been consolidated into a powerful single online index.</p>"
+        },
+        "group": "Literature and Culture Collection",
+        "background": {
+          "color": "#4B5563"
+        }
+      },
+      {
+        "media": {
+          "url": "https://www.upress.virginia.edu/sites/default/files/rotunda/jmadison.jpg",
+          "credit": "",
+          "caption": "",
+          "thumbnail": "https://www.upress.virginia.edu/sites/default/files/rotunda/jmadison.jpg"
+        },
+        "start_date": {
+          "year": "1751",
+          "month": "1",
+          "day": "1",
+          "hour": 0,
+          "minute": 0,
+          "second": 0,
+          "display_date": "1751 - 1826"
+        },
+        "end_date": {
+          "year": "1826",
+          "month": "12",
+          "day": "31",
+          "hour": 0,
+          "minute": 0,
+          "second": 0
+        },
+        "text": {
+          "headline": "The Papers of James Madison",
+          "text": "<p>The Papers of James Madison documents the life and work of one of the most important political and constitutional thinkers in our nation&rsquo;s history. A vital project that continues to add new volumes, this publication has been consulted for decades by scholars and students for primary-source material by and about the fourth president. Rotunda now makes this invaluable resource available in a new online edition.</p>"
+        },
+        "group": "Founding Era Collection",
+        "background": {
+          "color": "#4B5563"
+        }
+      },
+      {
+        "media": {
+          "url": "https://www.upress.virginia.edu/sites/default/files/rotunda/ja.png",
+          "credit": "",
+          "caption": "",
+          "thumbnail": "https://www.upress.virginia.edu/sites/default/files/rotunda/ja.png"
+        },
+        "start_date": {
+          "year": "1755",
+          "month": "1",
+          "day": "1",
+          "hour": 0,
+          "minute": 0,
+          "second": 0,
+          "display_date": "1755 - 1799"
+        },
+        "end_date": {
+          "year": "1799",
+          "month": "12",
+          "day": "31",
+          "hour": 0,
+          "minute": 0,
+          "second": 0
+        },
+        "text": {
+          "headline": "The Adams Papers",
+          "text": "<p>One of the outstanding documentary editions in American scholarship, <i>The Adams Papers</i> collects the correspondence and other significant papers of our nation&#39;s first great political family. At the center, of course, is John Adams. Beginning with his early diaries and three volumes selected from his legal papers--documenting, among other cases, the Boston Massacre trials--this edition covers Adams&rsquo;s ascent from young Boston lawyer to passionate advocate for American independence, including his time in the Continental Congress and his drafting of the Massachusetts state constitution.</p>"
+        },
+        "group": "Founding Era Collection",
+        "background": {
+          "color": "#4B5563"
+        }
+      },
+      {
+        "media": {
+          "url": "https://www.upress.virginia.edu/sites/default/files/rotunda/ffcp.jpg",
+          "credit": "",
+          "caption": "",
+          "thumbnail": "https://www.upress.virginia.edu/sites/default/files/rotunda/ffcp.jpg"
+        },
+        "start_date": {
+          "year": "1789",
+          "month": "1",
+          "day": "1",
+          "hour": 0,
+          "minute": 0,
+          "second": 0,
+          "display_date": "1789 - 1791"
+        },
+        "end_date": {
+          "year": "1791",
+          "month": "12",
+          "day": "31",
+          "hour": 0,
+          "minute": 0,
+          "second": 0
+        },
+        "text": {
+          "headline": "The Documentary History of the First Federal Congress of the United States of America",
+          "text": "<p>Convening first in New York and later in Philadelphia from March 1789 to March 1791, these earliest iterations of the Senate and the House of Representatives worked with a new president to establish a government subject to the vision of a constitution less than a year in existence. Containing all of the contents of the celebrated twenty-two-volume letterpress edition from Johns Hopkins University Press, this digital edition is fully searchable and interoperable with other titles in Rotunda’s American Founding Era Collection. </p>"
+        },
+        "group": "Founding Era Collection",
+        "background": {
+          "color": "#4B5563"
+        }
+      },
+      {
+        "media": {
+          "url": "https://www.upress.virginia.edu/sites/default/files/rotunda/wilson.png",
+          "credit": "",
+          "caption": "",
+          "thumbnail": "https://www.upress.virginia.edu/sites/default/files/rotunda/wilson.png"
+        },
+        "start_date": {
+          "year": "1856",
+          "month": "1",
+          "day": "1",
+          "hour": 0,
+          "minute": 0,
+          "second": 0,
+          "display_date": "1856 - 1924"
+        },
+        "end_date": {
+          "year": "1924",
+          "month": "12",
+          "day": "31",
+          "hour": 0,
+          "minute": 0,
+          "second": 0
+        },
+        "text": {
+          "headline": "The Papers of Woodrow Wilson",
+          "text": "<p> Rotunda’s digital edition of Wilson’s papers includes the complete contents of the landmark letterpress edition of the papers, with nearly 40,000 documents covering personal correspondence, academic work, and speeches, spread across 69 volumes, including a five-part index.</p>"
+        },
+        "group": "American Century Collection",
+        "background": {
+          "color": "#4B5563"
+        }
+      },
+      {
+        "media": {
+          "url": "https://www.upress.virginia.edu/sites/default/files/rotunda/tj.jpg",
+          "credit": "",
+          "caption": "",
+          "thumbnail": "https://www.upress.virginia.edu/sites/default/files/rotunda/tj.jpg"
+        },
+        "start_date": {
+          "year": "1760",
+          "month": "1",
+          "day": "1",
+          "hour": 0,
+          "minute": 0,
+          "second": 0,
+          "display_date": "1962 - 1819"
+        },
+        "end_date": {
+          "year": "1819",
+          "month": "12",
+          "day": "31",
+          "hour": 0,
+          "minute": 0,
+          "second": 0
+        },
+        "text": {
+          "headline": "The Papers of Thomas Jefferson",
+          "text": "<p>The Papers of Thomas Jefferson. Rotunda’s digital edition brings together all 38 volumes published through 2011 into one searchable online resource. It also includes the first eight volumes of the Retirement Series sponsored by the Thomas Jefferson Foundation, which documents the time between Jefferson’s return to private life and his death in 1826. This XML edition includes all the illustrations and bibliographical content of the print edition, with the added convenience of linked cross-references and indexes.</p>"
+        },
+        "group": "Founding Era Collection",
+        "background": {
+          "color": "#4B5563"
+        }
+      },
+      {
+        "media": {
+          "url": "https://www.upress.virginia.edu/sites/default/files/rotunda/es.jpg",
+          "credit": "",
+          "caption": "",
+          "thumbnail": "https://www.upress.virginia.edu/sites/default/files/rotunda/es.jpg"
+        },
+        "start_date": {
+          "year": "1831",
+          "month": "1",
+          "day": "1",
+          "hour": 0,
+          "minute": 0,
+          "second": 0,
+          "display_date": "1831 - 1839"
+        },
+        "end_date": {
+          "year": "1839",
+          "month": "12",
+          "day": "31",
+          "hour": 0,
+          "minute": 0,
+          "second": 0
+        },
+        "text": {
+          "headline": "Journal of Emily Shore",
+          "text": "<p>Emily Shore's journal is the unique self-representation of a prodigious young Victorian woman. From July 5, 1831, at the age of eleven, until June 24, 1839, two weeks before her death from consumption, Margaret Emily Shore recorded her reactions to the world around her. She wrote of political issues, natural history, her progress as a scholar and scientist, and the worlds of art and literature. Written in an authoritative voice more often associated with men of her time, her journal reveals her to be well versed in the life of an early Victorian woman. </p>"
+        },
+        "group": "Literature and Culture Collection",
+        "background": {
+          "color": "#4B5563"
+        }
+      },
+      {
+        "media": {
+          "url": "https://www.upress.virginia.edu/sites/default/files/rotunda/jjay.jpg",
+          "credit": "",
+          "caption": "",
+          "thumbnail": "https://www.upress.virginia.edu/sites/default/files/rotunda/jjay.jpg"
+        },
+        "start_date": {
+          "year": "1760",
+          "month": "1",
+          "day": "1",
+          "hour": 0,
+          "minute": 0,
+          "second": 0,
+          "display_date": "1760 - 1794"
+        },
+        "end_date": {
+          "year": "1794",
+          "month": "12",
+          "day": "31",
+          "hour": 0,
+          "minute": 0,
+          "second": 0
+        },
+        "text": {
+          "headline": "The Selected Papers of John Jay",
+          "text": "<p>The careers of few figures in American history have encompassed as much as did John Jay&rsquo;s. His accomplishments span pre- and post-Revolutionary history and extend into all three branches of government. Best known as the first chief justice of the Supreme Court, Jay entered public service as a representative in the Continental Congress, where this Anglican member of the New York elite gradually became an ardent supporter of independence. Jay played a central role in the 1783 peace treaty with Great Britain, ending the American Revolution.  </p>"
+        },
+        "group": "Founding Era Collection",
+        "background": {
+          "color": "#4B5563"
+        }
+      },
+      {
+        "media": {
+          "url": "https://www.upress.virginia.edu/sites/default/files/rotunda/gmorris.jpg",
+          "credit": "",
+          "caption": "",
+          "thumbnail": "https://www.upress.virginia.edu/sites/default/files/rotunda/gmorris.jpg"
+        },
+        "start_date": {
+          "year": "1794",
+          "month": "1",
+          "day": "1",
+          "hour": 0,
+          "minute": 0,
+          "second": 0,
+          "display_date": "1794 - 1816"
+        },
+        "end_date": {
+          "year": "1816",
+          "month": "12",
+          "day": "31",
+          "hour": 0,
+          "minute": 0,
+          "second": 0
+        },
+        "text": {
+          "headline": "The Diaries of Gouverneur Morris",
+          "text": "<p>Gouverneur Morris played an important role in the American Revolution, made profound contributions to the Constitution (including writing its Preamble), and was the American minister to France during the height of the French Revolution. He began keeping a diary after arriving in France in 1789 and continued until his death in 1816. This Rotunda version of his diaries includes both the new UVA Press edition of his European diaries covering 1794–98 and his New York diaries from 1799 through 1816, and a corrected version of the two-volume 1939 edition of his Paris diaries from 1789–1793. </p>"
+        },
+        "group": "Founding Era Collection",
+        "background": {
+          "color": "#4B5563"
+        }
+      },
+      {
+        "media": {
+          "url": "https://www.upress.virginia.edu/sites/default/files/rotunda/grant.png",
+          "credit": "",
+          "caption": "",
+          "thumbnail": "https://www.upress.virginia.edu/sites/default/files/rotunda/grant.png"
+        },
+        "start_date": {
+          "year": "1837",
+          "month": "1",
+          "day": "1",
+          "hour": 0,
+          "minute": 0,
+          "second": 0,
+          "display_date": "1837 - 1885"
+        },
+        "end_date": {
+          "year": "1885",
+          "month": "12",
+          "day": "31",
+          "hour": 0,
+          "minute": 0,
+          "second": 0
+        },
+        "text": {
+          "headline": "The Papers of Ulysses S. Grant",
+          "text": "<p>Ulysses S. Grant never intended to make a career in the military, much less go into politics, but he ended up commanding the U.S. forces in perhaps the most important war America ever fought and then serving as its eighteenth president during a period of profound change. </p>"
+        },
+        "group": "Antebellum, Civil War and Reconstruction",
+        "background": {
+          "color": "#4B5563"
+        }
+      },
+      {
+        "media": {
+          "url": "https://www.upress.virginia.edu/sites/default/files/rotunda/ah.jpg",
+          "credit": "",
+          "caption": "",
+          "thumbnail": "https://www.upress.virginia.edu/sites/default/files/rotunda/ah.jpg"
+        },
+        "start_date": {
+          "year": "1768",
+          "month": "1",
+          "day": "1",
+          "hour": 0,
+          "minute": 0,
+          "second": 0,
+          "display_date": "1768 - 1802"
+        },
+        "end_date": {
+          "year": "1802",
+          "month": "12",
+          "day": "31",
+          "hour": 0,
+          "minute": 0,
+          "second": 0
+        },
+        "text": {
+          "headline": "The Papers of Alexander Hamilton",
+          "text": "<p>Killed before he was fifty in the most famous duel in American history, Alexander Hamilton had the shortest life of all the major founding fathers and experienced a career filled with as much controversy as triumph. His influence on our nation, however, has been consistent and profound.  </p>"
+        },
+        "group": "Founding Era Collection",
+        "background": {
+          "color": "#4B5563"
+        }
+      },
+      {
+        "media": {
+          "url": "https://www.upress.virginia.edu/sites/default/files/rotunda/ajackson.jpg",
+          "credit": "",
+          "caption": "",
+          "thumbnail": "https://www.upress.virginia.edu/sites/default/files/rotunda/ajackson.jpg"
+        },
+        "start_date": {
+          "year": "1962",
+          "month": "1",
+          "day": "1",
+          "hour": 0,
+          "minute": 0,
+          "second": 0,
+          "display_date": "1822 - 1875"
+        },
+        "end_date": {
+          "year": "1822",
+          "month": "12",
+          "day": "31",
+          "hour": 0,
+          "minute": 0,
+          "second": 0
+        },
+        "text": {
+          "headline": "The Papers of Andrew Johnson",
+          "text": "<p>In the current “age of impeachment,” Andrew Johnson has gained a new historical relevance. But Johnson’s career is notable for more than his impeachment, with much to tell us about Civil War–era politics and the complexity of Reconstruction, through a trajectory that is one of the most compelling, and strange, in presidential history.</p>"
+        },
+        "group": "Antebellum, Civil War and Reconstruction",
+        "background": {
+          "color": "#4B5563"
+        }
+      },
+      {
+        "media": {
+          "url": "https://www.upress.virginia.edu/sites/default/files/rotunda/pnkymen.jpg",
+          "credit": "",
+          "caption": "",
+          "thumbnail": "https://www.upress.virginia.edu/sites/default/files/rotunda/pnkymen.jpg"
+        },
+        "start_date": {
+          "year": "1770",
+          "month": "1",
+          "day": "1",
+          "hour": 0,
+          "minute": 0,
+          "second": 0,
+          "display_date": "1770 - 1798"
+        },
+        "end_date": {
+          "year": "1798",
+          "month": "12",
+          "day": "31",
+          "hour": 0,
+          "minute": 0,
+          "second": 0
+        },
+        "text": {
+          "headline": "The Papers of Revolutionary Era Pinckney Statesmen",
+          "text": "<>One of the leading families of colonial South Carolina and the early republic, the Pinckneys of Charleston were witnesses to—and often active participants in—many of the defining customs and transforming events of the early national South. This digital resource collects, for the first time, the papers of three of the most notable Pinckneys: brothers Charles Cotesworth Pinckney (1746–1825) and Thomas Pinckney (1750–1828) and their cousin Charles Pinckney (1757–1824).</p>"
+        },
+        "group": "Founding Era Collection",
+        "background": {
+          "color": "#4B5563"
+        }
+      },
+      {
+        "media": {
+          "url": "https://www.upress.virginia.edu/sites/default/files/rotunda/dw.jpg",
+          "credit": "",
+          "caption": "",
+          "thumbnail": "https://www.upress.virginia.edu/sites/default/files/rotunda/dw.jpg"
+        },
+        "start_date": {
+          "year": "1751",
+          "month": "1",
+          "day": "1",
+          "hour": 0,
+          "minute": 0,
+          "second": 0,
+          "display_date": "1751 - 1826"
+        },
+        "end_date": {
+          "year": "1826",
+          "month": "12",
+          "day": "31",
+          "hour": 0,
+          "minute": 0,
+          "second": 0
+        },
+        "text": {
+          "headline": "The Papers of Daniel Webster",
+          "text": "<p>Born in the final days of the American Revolution, Daniel Webster would leave his mark on the following century, of which he was one of its mightiest statesmen. His remarkable life and career illustrate like few others the central issues of that century, especially the growing rift that would undermine the union and set the stage for America’s greatest crisis.</p></p>"
+        },
+        "group": "Antebellum, Civil War and Reconstruction",
+        "background": {
+          "color": "#4B5563"
+        }
+      },
+      {
+        "media": {
+          "url": "https://www.upress.virginia.edu/sites/default/files/rotunda/jmarshall.jpg",
+          "credit": "",
+          "caption": "",
+          "thumbnail": "https://www.upress.virginia.edu/sites/default/files/rotunda/jmarshall.jpg"
+        },
+        "start_date": {
+          "year": "1775",
+          "month": "1",
+          "day": "1",
+          "hour": 0,
+          "minute": 0,
+          "second": 0,
+          "display_date": "1775 - 1835"
+        },
+        "end_date": {
+          "year": "1835",
+          "month": "12",
+          "day": "31",
+          "hour": 0,
+          "minute": 0,
+          "second": 0
+        },
+        "text": {
+          "headline": "The Papers of John Marshall",
+          "text": "<p>John Marshall was the longest-serving chief justice on the U.S. Supreme Court, with a tenure lasting more than three decades. He was also arguably the most influential. Under his leadership the court defined itself in ways that persist to this day.</p>"
+        },
+        "group": "Founding Era Collection",
+        "background": {
+          "color": "#4B5563"
+        }
+      },
+      {
+        "media": {
+          "url": "https://www.upress.virginia.edu/sites/default/files/rotunda/ajackson.jpg",
+          "credit": "",
+          "caption": "",
+          "thumbnail": "https://www.upress.virginia.edu/sites/default/files/rotunda/ajackson.jpg"
+        },
+        "start_date": {
+          "year": "1751",
+          "month": "1",
+          "day": "1",
+          "hour": 0,
+          "minute": 0,
+          "second": 0,
+          "display_date": "1751 - 1826"
+        },
+        "end_date": {
+          "year": "1826",
+          "month": "12",
+          "day": "31",
+          "hour": 0,
+          "minute": 0,
+          "second": 0
+        },
+        "text": {
+          "headline": "The Papers of Andrew Jackson",
+          "text": "<p>Andrew Jackson was born near the border of the colonial Carolinas and would take part in many of the early republic’s signal events, but he came to define a new era in American history and left the presidency forever changed. </p>"
+        },
+        "group": "Antebellum, Civil War and Reconstruction",
+        "background": {
+          "color": "#4B5563"
+        }
+      },
+      {
+        "media": {
+          "url": "https://www.upress.virginia.edu/sites/default/files/rotunda/dolley.jpg",
+          "credit": "",
+          "caption": "",
+          "thumbnail": "https://www.upress.virginia.edu/sites/default/files/rotunda/dolley.jpg"
+        },
+        "start_date": {
+          "year": "1788",
+          "month": "1",
+          "day": "1",
+          "hour": 0,
+          "minute": 0,
+          "second": 0,
+          "display_date": "1788 - 1849"
+        },
+        "end_date": {
+          "year": "1849",
+          "month": "12",
+          "day": "31",
+          "hour": 0,
+          "minute": 0,
+          "second": 0
+        },
+        "text": {
+          "headline": "The Dolley Madison Digital Edition",
+          "text": "<p>Containing over 2,400 letters, with another thousand letters to follow in periodic updates, this XML-based archive allows users to perform simple or advanced searches by period, correspondent, or topic. The letters may also be accessed directly through a sortable list or read in chronological order. Proper names link to a glossary that identifies over 2,500 people and places, providing a unique biographical view on the elites of the early Republic.</p>"
+        },
+        "group": "Founding Era Collection",
+        "background": {
+          "color": "#4B5563"
+        }
+      },
+      {
+        "media": {
+          "url": "https://www.upress.virginia.edu/sites/default/files/rotunda/dhrc.jpg",
+          "credit": "",
+          "caption": "",
+          "thumbnail": "https://www.upress.virginia.edu/sites/default/files/rotunda/dhrc.jpg"
+        },
+        "start_date": {
+          "year": "1787",
+          "month": "1",
+          "day": "1",
+          "hour": 0,
+          "minute": 0,
+          "second": 0,
+          "display_date": "1787 - 1791"
+        },
+        "end_date": {
+          "year": "1791",
+          "month": "12",
+          "day": "31",
+          "hour": 0,
+          "minute": 0,
+          "second": 0
+        },
+        "text": {
+          "headline": "The Documentary History of the Ratification of the Constitution",
+          "text": "<p>This landmark work in historical and legal scholarship draws upon thousands of sources to trace the Constitution’s progress through each of the thirteen states’ conventions. The digital edition allows users to search the complete contents by date, title, author, recipient, or state affiliation and preserves the copious annotations of the print edition..</p>"
+        },
+        "group": "Founding Era Collection",
+        "background": {
+          "color": "#4B5563"
+        }
+      },
+      {
+        "media": {
+          "url": "https://www.upress.virginia.edu/sites/default/files/rotunda/btwn.jpg",
+          "credit": "",
+          "caption": "",
+          "thumbnail": "https://www.upress.virginia.edu/sites/default/files/rotunda/btwn.jpg"
+        },
+        "start_date": {
+          "year": "1860",
+          "month": "1",
+          "day": "1",
+          "hour": 0,
+          "minute": 0,
+          "second": 0,
+          "display_date": "1860 - 1915"
+        },
+        "end_date": {
+          "year": "1915",
+          "month": "12",
+          "day": "31",
+          "hour": 0,
+          "minute": 0,
+          "second": 0
+        },
+        "text": {
+          "headline": "The Booker T. Washington Papers",
+          "text": "<p>The ROTUNDA DIGITAL EDITION includes the full contents of the 14-volume letterpress edition, including speeches, correspondence, major autobiographical writing, and cumulative index.</p>"
+        },
+        "group": "American Century Collection",
+        "background": {
+          "color": "#4B5563"
+        }
+      }
+]
+    
+}

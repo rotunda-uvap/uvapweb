@@ -24,7 +24,7 @@ const BookHorizontalTabs = ({summary, reviews, bio}) => {
     <div className="py-3">
        {reviews[0] ? reviews.map(review => (
             <>
-            <blockquote className="pt-3  dropCap cms" dangerouslySetInnerHTML={{ __html: review.html }}/>
+            <blockquote className="pt-3 cms" dangerouslySetInnerHTML={{ __html: review.html }}/>
             <h6 className="pl-10 pb-5  font-display text-md italic text-gray-600"> - {review.attribution}</h6>
             <hr/>
             </>

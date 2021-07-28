@@ -289,3 +289,42 @@ exports.createSchemaCustomization = ({ actions }) => {
       })
       
     }
+
+    exports.onCreateWebpackConfig = ({ actions, stage, loaders, plugins }) => {
+      actions.setWebpackConfig({
+        resolve: {
+          alias: {
+            path: require.resolve("path-browserify"),
+          },
+          fallback: {
+            fs: false,
+          },
+        },
+      })
+    
+      if (stage == "build-javascript" || stage == "develop") {
+        actions.setWebpackConfig({
+          plugins: [plugins.provide({ process: "process/browser" })],
+        })
+      }
+     
+      // This prevents TimelineJS from being loaded during build since it 
+      // attempts to use global navigator variable which is only available
+      // in a browser (not in Node).
+      //
+      // https://www.gatsbyjs.com/docs/debugging-html-builds/#fixing-third-party-modules
+    
+      if (stage === 'build-html' || stage === 'develop-html') {
+        actions.setWebpackConfig({
+          module: {
+            rules: [
+              {
+                test: /timelinejs/,
+                use: loaders.null()
+              }
+            ]
+          }
+        })
+      }
+    
+    }

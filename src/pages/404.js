@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import Layout from "../components/layout"
-import SeO from "../components/SeoComponent"
+import SeO from "../components/SeOComponent"
 const NotFound = () => {
   return (
     <Layout>

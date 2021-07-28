@@ -250,6 +250,7 @@ module.exports = {
   }, 
 
      'gatsby-plugin-netlify-identity-widget',
+     'gatsby-plugin-less',
   {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
