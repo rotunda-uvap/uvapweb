@@ -30,6 +30,7 @@ exports.createSchemaCustomization = ({ actions }) => {
         department: [String]
         related: [String]
         attached_book: String
+        profile_photo: String
       }
   
       type Fields {
