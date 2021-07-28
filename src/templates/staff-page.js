@@ -37,7 +37,7 @@ export const query = graphql`
           title
           name_slug
           job_title
-          profile_photo
+          profile_photo 
           email
           phone
           
