@@ -14,7 +14,7 @@ import events from "../../static/timeline-data.json"
 
 export default function RotundaHome({ data }) {
   const timelineEl = useRef(null)
-  const options = {initial_zoom:55}
+  const options = {initial_zoom:5}
 
     useEffect(() => {
       if (timelineEl.current) {
@@ -40,11 +40,12 @@ export default function RotundaHome({ data }) {
 <p className="leading-relaxed">Our major stand-alone publications are the Presidential Recordings Digital Edition, with transcripts and audio of nearly 4000 conversations from White House recordings; People of the Founding Era, a biographical reference to over 75,000 individuals; the open-access SAH Archipedia, an authoritative encyclopedia of the American built environment, with over 25,000 entries and 5000 editorial essays. Finally, our Literature and Culture Collection features seven editions of literary work and correspondence from nineteenth-century America and Britain.</p>
     
     </div>
-    <div className="flex mt-6 justify-center">
+  {/*   <div className="flex mt-6 justify-center">
         <div className="w-16 h-1 rounded-full bg-gray-800 inline-flex"></div>
-      </div>
+      </div> */}
   </div>
 </section>
+
          <section className="text-gray-600 body-font">
   <div className="container px-5 py-7 mx-auto">
   <div className="text-center mb-20">
@@ -149,9 +150,13 @@ export default function RotundaHome({ data }) {
   <div className="container px-5 py-12 mx-auto">
     <div className="text-center mb-10">
       <h1 className="sm:text-3xl text-2xl font-thin title-font tracking-wider text-gray-900 mb-4">Rotunda Collections</h1>
-      <p className="text-base leading-relaxed xl:w-3/4 lg:w-3/4 mx-auto text-gray-500s">Rotunda publications are available to both libraries and independent scholars as single titles or as collections. The American History Collection includes the sub-collections American Founding Era; Antebellum, Civil War, and Reconstruction; and the American Century.</p>
+      <p className="text-base leading-relaxed xl:w-3/4 lg:w-3/4 mx-auto text-gray-500">Rotunda publications are available to both libraries and independent scholars as single titles or as collections. The American History Collection includes the sub-collections American Founding Era; Antebellum, Civil War, and Reconstruction; and the American Century.</p>
 {/*       <p className="text-base leading-relaxed xl:w-3/4 lg:w-3/4 mx-auto text-gray-500s">Rotunda publications are produced by staff members of UVA Press. We have in-house expertise in Web development; MarkLogic Server programming and administration; development using XQuery, XSLT, JavaScript, JQuery and related tools; and markup or conversion of documents to XML using the TEI Guidelines.</p>
- */}     
+ */}    <a className="mt-3 text-gray-800 inline-flex tracking-wider items-center font-thin" href="https://rotunda.upress.virginia.edu/register/default.xqy">Timeline of Rotunda Publications
+              <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+            </a>
     </div>
     <div className="flex flex-col md:flex-row items-center">
       <div className="p-4 md:w-1/3 flex flex-col text-center items-center">
@@ -296,9 +301,11 @@ export default function RotundaHome({ data }) {
         </div>
       </div>
     </section>
-    <section
-    className="hidden md:block"><div ref={timelineEl} /></section>
-    
+   
+    <section id="timeline"
+    className="hidden md:block">
+      <h1 className="sm:text-3xl text-2xl font-thin title-font tracking-wider text-gray-900 mb-4 text-center">Timeline of Rotunda Documentary Collections</h1>
+      <p className="text-base leading-relaxed xl:w-3/4 lg:w-3/4 mx-auto text-gray-500s py-5 text-center font-display">Note: The year ranges represent the earliest and latest documents in each publication</p><div ref={timelineEl} /></section>
     </div>
    </Layout>
     
