@@ -8,4 +8,6 @@ related_book:
 attached_links:
   - name: Google
     link: http://www.google.com
+  - name: File
+    link: http://www.google.com
 ---
