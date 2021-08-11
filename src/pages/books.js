@@ -80,10 +80,10 @@ export default function Books({ data }) {
       <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Our Series</h1>
       
       <Link to={'../series'} className="text-gray-700 pl-4 py-2">See all Active Series</Link>
-      <nav className="flex flex-wrap py-5 list-none -mb-1">
+      <nav className="flex flex-wrap py-5 list-none ">
       {sers.edges.map(edge => (
             <>           
-           <li className="lg:w-1/2 mb-2 font-display" key={edge.node.id}>
+           <li className="lg:w-1/2 mb-2 px-2 font-display" key={edge.node.id}>
           <Link to={`../series/${ edge.node.id }`} className="text-gray-600 hover:text-gray-800">{ edge.node.seriesName }</Link>
         </li>            
             </>
@@ -102,7 +102,7 @@ export default function Books({ data }) {
       <nav className="flex flex-wrap py-5 list-none -mb-1">
       {subs.edges.map(edge => (
             <>           
-           <li className="lg:w-1/2 mb-2 font-display" key={edge.node.subjectid}>
+           <li className="lg:w-1/2 mb-2 px-4 font-display" key={edge.node.subjectid}>
           <Link to={`../../subject/${ edge.node.subjectID }`} className="text-gray-600 hover:text-gray-800">{ edge.node.subjectName }</Link>
         </li>            
             </>
@@ -144,7 +144,7 @@ export default function Books({ data }) {
 <section id="recent">
 <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Recent Releases</h1>
  
-          <div className="container px-5 py-5 grid md:grid-cols-5 md:gap-4">
+          <div className="container flex flex-wrap gap-2 md:gap-4 py-5">
             {rec.edges.map(edge => (
            <>  
               <Link key={edge.node.BookID} to={`../title/${ edge.node.BookID }`}>

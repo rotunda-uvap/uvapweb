@@ -17,7 +17,7 @@ const SeriesTemplate = ({ data }) => {
             <SeO title={seriesinfo.frontmatter.title}/>
             <section>
             <div className="grid grid-cols-3 content-center">
-                <h3 className="py-3 col-span-2">{seriesinfo.frontmatter.title} </h3>
+                <h3 className="py-3 leading-tight col-span-2">{seriesinfo.frontmatter.title} </h3>
             <div className="self-center"><Link to={'/series'}><button className="bg-gray-200 py-1 px-4 text-black text-sm tracking-wider leading-7 rounded-full">{seriesinfo.frontmatter.status} series</button></Link></div>
                 </div>
             <div className="pt-5 cms" dangerouslySetInnerHTML={{ __html: seriesinfo.html }}/>
@@ -35,7 +35,7 @@ const SeriesTemplate = ({ data }) => {
                 
                 <section>
                      <h3 className="text-2xl py-5 uppercase text-gray-500">Books in This Series:</h3>
-                    <div className="container px-5 py-5 grid grid-cols-2 md:grid-cols-5 md:gap-4">
+                    <div className="container px-5 py-5 flex flex-wrap gap-2 md:gap-4">
                         {books.edges.map(edge => (
                   <>  
                   <Link to={`../../title/${ edge.node.BookID }`}>

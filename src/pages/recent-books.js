@@ -19,9 +19,20 @@ export default function RecentBooks({ data }) {
              <h1 className="sm:text-3xl text-2xl p-4 font-sans uppercase text-gray-900 text-center">New and Upcoming Books from UVa Press</h1>
 
             <section className="py-5 grid grid-cols-2 mx-auto">
-            <div className="text-center text-gray-500 mx-auto font-sans tracking-wide py-4">Forthcoming Books</div>
-            <a className="text-center  text-gray-500 mx-auto  font-sans tracking-wide py-4" href="#new">Books Published This Year</a>
-
+            {/* <div className="text-center text-gray-500 mx-auto font-sans tracking-wide py-4">Forthcoming Books</div> */}
+            {/* <a className="text-center  text-gray-500 mx-auto  font-sans tracking-wide py-4" href="#new">Books Published This Year</a> */}
+            <span className="text-center font-medium pb-4 text-gray-500"><Link to={'#new'}>
+            Forthcoming Books <span className="inline-flex items-center mt-4">
+              <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                <path d="M16 17l-4 4m0 0l-4-4m4 4V3"></path>
+              </svg></span>
+              </Link></span>
+            <span className="font-medium text-center pb-4 text-gray-500"><Link to={'#new'}>
+            Books Published This Year <span className="inline-flex items-center mt-4">
+              <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg></span>
+              </Link></span>
             </section>
             
             <section>

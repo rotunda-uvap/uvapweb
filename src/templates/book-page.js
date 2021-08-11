@@ -46,14 +46,14 @@ const bookPage = ({ data }) => {
           {/* <GatsbyImage image={imageData} alt="book cover" /> */}
           <img className="hidden md:block" src={imglink} alt="cover" />
           <img
-            className="md:hidden text-left px-5"
+            className="md:hidden text-center w-1/2 mx-auto"
             src={imglink_sm}
             alt="mobile cover"
           />
         </div>
         <div className="md:col-span-2 pr-5 md:px-10">
-          <h3 className="hidden md:block pb-3 font-light font-sans leading-none ">{book.Title}</h3>
-          <h4 className="md:hidden pb-3 font-light  font-sans">{book.Title}</h4>
+          <h4 className="hidden md:block pb-3 font-light font-sans leading-none ">{book.Title}</h4>
+          <h4 className="md:hidden pb-3 font-light leading-relaxed font-sans">{book.Title}</h4>
 
           {book.InternalSeriesVolume && (
             <h6 className="py-3">{book.InternalSeriesVolume}</h6>
@@ -144,7 +144,7 @@ const bookPage = ({ data }) => {
               </svg>
               <a
                 href="https://forms.gle/H8J1NbtN4BBZZwgy7"
-                className="block group hover:bg-gray-100 p-2 ml-4 border-b"
+                className="block group hover:bg-gray-100 p-2 mb-4 ml-4 border-b"
               >
                 <div className="font-thin  uppercase">
                   Desk Copy{" "}
@@ -204,6 +204,7 @@ const bookPage = ({ data }) => {
             summary={book.MainDescription.html}
             reviews={book.Reviews}
             bio={book.BioNote.html}
+            add={resources}
           />
         </section>
 
@@ -212,9 +213,11 @@ const bookPage = ({ data }) => {
             summary={book.MainDescription.html}
             reviews={book.Reviews}
             bio={book.BioNote.html}
+            add={resources}
           />
         </section>
-        {resources && (
+
+        {/* {resources && (
           <section className="py-3">
             <p className="font-black uppercase py-3 px-5 border-b-4 border-white hover:border-black">
               Additional Resources
@@ -232,7 +235,7 @@ const bookPage = ({ data }) => {
               </ul>
             )}
           </section>
-        )}
+        )} */}
 
 {news && (
         <section className="py-3 inline-flex items-center">

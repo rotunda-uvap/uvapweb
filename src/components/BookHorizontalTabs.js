@@ -3,7 +3,7 @@ import React from "react"
 import { Tabs, Tab, TabPanel, TabList } from 'react-web-tabs';
 
 
-const BookHorizontalTabs = ({summary, reviews, bio}) => {
+const BookHorizontalTabs = ({summary, reviews, bio, TOC, add}) => {
    
     return (
     
@@ -13,8 +13,7 @@ const BookHorizontalTabs = ({summary, reviews, bio}) => {
           <Tab className="uppercase font-thin racking-widest py-2 px-3 sm:px-6 text-sm md:text-lg border-b-4 border-white hover:border-black" tabFor="basic-tab-two">Reviews</Tab>
           <Tab className="uppercase font-thin tracking-widest py-2 px-3 sm:px-6 text-sm md:text-lg border-b-4 border-white hover:border-black" tabFor="basic-tab-three">Author Bio(s)</Tab>
           <Tab className="uppercase font-thin tracking-widest py-2 px-3 sm:px-6 text-sm md:text-lg border-b-4 border-white hover:border-black" tabFor="basic-tab-four">Table of Contents</Tab>
-
-          <Tab className="uppercase font-thin tracking-widest py-2 px-3 sm:px-6 text-sm md:text-lg border-b-4 border-white hover:border-black" tabFor="basic-tab-five">Additional Resources</Tab>
+          { add ? <Tab className="uppercase font-thin tracking-widest py-2 px-3 sm:px-6 text-sm md:text-lg border-b-4 border-white hover:border-black" tabFor="basic-tab-five">Additional Resources</Tab> : ""} 
         </TabList>
         <TabPanel className="py-3" tabId="basic-tab-one">
         <div dangerouslySetInnerHTML={{ __html: summary }} className="dropCap cms"/>
@@ -48,7 +47,18 @@ const BookHorizontalTabs = ({summary, reviews, bio}) => {
 
         </TabPanel>
         <TabPanel className="py-3" tabId="basic-tab-five">
-        <p>Not yet available</p> 
+        {add ? add.frontmatter.attached_links.map(edge => (
+            <>
+              <div className="p-2">
+                    <a href={edge.link} target="_blank" rel="noreferrer">
+                      {edge.name}
+                    </a>
+                  </div>
+            </>
+            ))
+              : 
+              <p>Not yet available</p>
+            }
 
         </TabPanel>
       </Tabs>
