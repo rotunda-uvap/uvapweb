@@ -2,6 +2,7 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import SeO from "../components/SeoComponent"
+import PageHeader from "../components/PageHeader"
 export default function Articles({ data }) {
     const news = data.allMarkdownRemark
  return (
@@ -9,8 +10,7 @@ export default function Articles({ data }) {
         <Layout>
           <SeO/>
            <div className="container px-5 py-12 mx-auto">
-           <h1 className="sm:text-3xl text-2xl p-4 font-sans uppercase text-gray-900 text-center">All News</h1>
-          
+<PageHeader text={"All News"}/>          
             {news.edges.map(edge => (
             <>
             <div className="grid grid-cols-3">

@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 import RelatedBook from "../components/RelatedBook"
 import SeO from "../components/SeoComponent"
 import Layout from "../components/layout"
-
+import PageHeader from "../components/PageHeader"
 const promoPage = ({ data }) => {
     const promos = data.markdownRemark
     const related_books = data.markdownRemark.frontmatter.related_books
@@ -12,8 +12,8 @@ const promoPage = ({ data }) => {
    <Layout>
      <SeO/>
      <div>
-        <h2 className="py-10">{promos.frontmatter.title}</h2>
-        <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1">
+<PageHeader text={promos.frontmatter.title}/>    
+    <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1">
           <article 
           dangerouslySetInnerHTML={{ __html: promos.html }}/>
           <image/>

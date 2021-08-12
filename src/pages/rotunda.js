@@ -10,7 +10,6 @@ import LACList from "../components/LAC"
 import SeO from "../components/SeoComponent"
 import { Timeline } from "@knight-lab/timelinejs"
 import events from "../../static/timeline-data.json"
-import RotundaUpdateCard from "../components/RotundaUpdateCard"
 import "../components/updateTicker.css"
 
 
@@ -344,9 +343,6 @@ export const query = graphql`
         }
       }
       
-      
-      
-     
 
   }
 `

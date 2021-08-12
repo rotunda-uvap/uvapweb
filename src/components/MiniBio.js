@@ -17,7 +17,7 @@ export default function MiniBio({ frontmatter: { title, job_title, name_slug, em
        
        <div className="p-4 md:w-1/3 sm:w-1/2 w-full">
 <div className="flex flex-col items-center">
-       <Link to={slink}><h5 className="title-font font-medium text-md text-gray-900">{title}</h5></Link>
+       <Link to={slink}><h5 className="text-md font-thin tracking-widest text-gray-700">{title}</h5></Link>
        <span className="text-gray-500 py-1 font-thin font-display text-sm">{job_title}</span>
        <span className="text-sm text-gray-500">{phone}</span>
          <a className="text-gray-500 py-2 text-sm inline-flex items-center" href={`mailto:${ clean_email }`}>Email {title}

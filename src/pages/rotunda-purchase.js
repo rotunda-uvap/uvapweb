@@ -3,14 +3,14 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import "../utils/global.css"
 import SeO from "../components/SeoComponent"
-
+import PageHeader from "../components/PageHeader"
 
 export default function RotundaPurchasePage() {
  return (
     
         <Layout>
             <SeO title="How to Purchase ROTUNDA Publications"/>
-            <h2 className="py-10 px-3 font-light">Purchasing Rotunda Publications</h2>
+            <PageHeader text={'Purchasing Rotunda Publications'}/>
             <p className="font-light">If you are connecting via a campus Internet connection, you can expect to gain access to any Rotunda publication purchased by your institution. If your institution has not purchased a particular Rotunda publication, contact your institution’s library about ordering. You may also sign up for an individual <a href="https://rotunda.upress.virginia.edu/register/default.xqy">free trial</a> to evaluate Rotunda before making a purchase decision.</p>
             <p className="font-light">View a <Link to={'../rotunda-customer-list'}>list of Rotunda customers</Link></p>
             <p className="font-light">Rotunda publications are available for purchase by libraries, schools, and individuals. To order, send the <Link to={'../rotunda_license.pdf'}>signed Rotunda license agreement</Link> and completed <Link to={'../rotunda_registration.pdf'}>registration form</Link> to Jason Coleman, University of Virginia Press, Rotunda, P.O. Box 400318, Charlottesville, VA 22904-4318.</p>

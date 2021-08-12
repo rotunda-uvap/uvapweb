@@ -3,6 +3,8 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import MiniBio from "../components/MiniBio"
 import SeO from "../components/SeoComponent"
+import SectionHeader from "../components/SectionHeader"
+import PageHeader from "../components/PageHeader"
 
 
 
@@ -20,10 +22,10 @@ export default function StaffList({ data }) {
         <Layout>
           <SeO title="Staff Directory"/>
           <div className="container px-5 py-12 mx-auto">
-          <h1 className="sm:text-3xl text-2xl p-4 font-sans uppercase text-gray-900 text-center">UVaP Staff</h1>
+          <PageHeader text={'Our Team'}/>
           
-          <section className="greige">
-           <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-500 m-4">Operations</h1>
+          <section className="py-4 border-b-2 border-gray-100">
+            <SectionHeader text={'Operations'}/>
          
           <div className="container px-5 py-12 mx-auto">
              <div className="flex flex-wrap -m-4 text-center">
@@ -39,8 +41,8 @@ export default function StaffList({ data }) {
 
           
 
-            <section >
-           <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-500 m-4">Acquisitions</h1>
+            <section className="py-4 border-b-2 border-gray-100">
+            <SectionHeader text={'Acquisitions'}/>
          
           <div className="container px-5 py-12 mx-auto">
              <div className="flex flex-wrap -m-4 text-center">
@@ -55,8 +57,8 @@ export default function StaffList({ data }) {
          </section>  
 
 
-              <section className="greige">
-           <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-500 m-4">Editorial, Design and Production</h1>
+              <section className="py-4 border-b-2 border-gray-100">
+              <SectionHeader text={'Editorial, Design and Production'}/>
          
           <div className="container px-5 py-12 mx-auto">
              <div className="flex flex-wrap -m-4 text-center">
@@ -70,8 +72,8 @@ export default function StaffList({ data }) {
            </div>
          </section>  
 
-         <section >
-           <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-500 m-4">Marketing</h1>
+         <section className="py-4 border-b-2 border-gray-100">
+         <SectionHeader text={'Marketing'}/>
          
           <div className="container px-5 py-12 mx-auto">
              <div className="flex flex-wrap -m-4 text-center">
@@ -85,8 +87,8 @@ export default function StaffList({ data }) {
            </div>
          </section>  
 
-         <section className="greige">
-           <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-500 m-4">Publicity</h1>
+         <section className="py-4 border-b-2 border-gray-100">
+         <SectionHeader text={'Publicity'}/>
          
           <div className="container px-5 py-12 mx-auto">
              <div className="flex flex-wrap -m-4 text-center">
@@ -100,8 +102,8 @@ export default function StaffList({ data }) {
            </div>
          </section>  
          
-         <section >
-           <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-500 m-4">ROTUNDA Digital Imprint</h1>
+         <section className="py-4" >
+         <SectionHeader text={'ROTUNDA Digital Imprint'}/>
          
           <div className="container px-5 py-12 mx-auto">
              <div className="flex flex-wrap -m-4 text-center">

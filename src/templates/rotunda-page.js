@@ -3,6 +3,7 @@ import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import SeO from "../components/SeoComponent"
+import PageHeader from "../components/PageHeader"
 
 const rotundaPage = ({ data }) => {
     const item = data.rotundaJson
@@ -13,8 +14,8 @@ const rotundaPage = ({ data }) => {
    <Layout>
      <SeO title={item.Title} description="SAH Archipedia is an authoritative online encyclopedia of the built world published by the Society of Architectural Historians and the University of Virginia Press."/>
      <div className="container">
-        <h3 className="py-10 pl-6 uppercase tracking-wide leading-tight font-thin">{item.Title}</h3>
-        <div className="flex flex-1 flex-col md:flex-row  items-center">
+<PageHeader text={item.Title}/>       
+        <div className="py-4 flex flex-1 flex-col md:flex-row  items-center">
           <div className="pl-6"><GatsbyImage image={imageData} alt="publication image"/></div>
           
           <div className="pl-4 text-5xl md:text-8xl text-gray-200 font-black tracking-widest">{item.StartYear} - {item.EndYear}</div>

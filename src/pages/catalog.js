@@ -3,36 +3,65 @@ import Layout from "../components/layout"
 import CurrentList from "../components/current-list"
 import { StaticImage } from "gatsby-plugin-image"
 import SeO from "../components/SeoComponent"
+import SectionHeader from "../components/SectionHeader"
 
 export default function Catalog({data}) {
     return (
       <Layout>
         <SeO title="Seasonal Catalogs"/>
         <div className="container px-5 py-12 mx-auto">
-          <h1 className="sm:text-3xl text-2xl p-4 font-sans uppercase text-gray-900 text-center">UVA Press Catalogs</h1>
        
-       <section className="grid md:grid-cols-3 py-5">
-         <a href={`spring21.pdf`}> <StaticImage  width={200} src="../images/spring21.jpg" alt="current catalog cover" /></a>
-         <div className="self-center py-5 md:col-span-2 flex flex-inital">
-           <a href={`fall20.pdf`}><button className="uppercase py-3 px-5 mx-2 rounded-full bg-black text-white">Download Current Catalog</button></a>
-           <a href="https://www.edelweiss.plus/#catalogID=4534821"><button className="uppercase py-3 px-10 rounded-full bg-black text-white">View on Edelweiss</button></a>
-           </div>
+<section className="py-4 border-b-2 border-gray-100">
+<div className="container flex flex-col px-6 py-4 mx-auto space-y-6 md:h-128  md:flex-row md:items-center md:space-x-6">
+        <div className="flex  w-full md:w-1/3">
+        <StaticImage  src="../images/fall21.jpg" alt="current catalog cover" />
+        </div>
+       
+        <div className="flex flex-col items-center w-full md:flex-row md:w-1/2">
+            <div className="max-w-lg md:mx-12 md:order-2">
+                <h1 className="ml-4 text-3xl text-gray-500 font-medium tracking-wide text-gray-500 md:text-4xl">Current Catalog</h1>
+                <span className="my-2 ml-4 font-serif text-base text-gray-600 dark:text-gray-300">View the selection of books from our Fall 2021 list.</span>
+                <div className="ml-4 flex flex-row">
+                <span className="font-thin text-sm text-gray-500"><a href={'fall21.pdf'}>
+            Download Catalog<span className="inline-flex items-center mt-4">
+              <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg></span>
+              </a></span>
+              <span className="font-thin text-sm ml-4 text-gray-500"><a href="https://www.edelweiss.plus/#catalogID=4590230&page=1">
+            View on Edelweiss<span className="inline-flex items-center mt-4">
+              <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg></span></a></span>
+             {/*  <span className="font-light text-sm text-gray-500"><a href="#list">
+            See All Books<span className="inline-flex items-center mt-4">
+              <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg></span></a></span> */}
+                    {/* <a href={`fall21.pdf`} className="px-3 py-2 font-serif tracking-widest text-center text-gray-500 ">Download</a> */}
+{/*                     <a href="https://www.edelweiss.plus/#catalogID=4590230&page=1" className="px-3 py-2 mx-10 font-sans tracking-widest text-center text-gray-500">View on Edelweiss</a>
+                    <a href="#list" className="px-3 py-2 mx-10 font-sans tracking-widest text-center text-gray-500">See Books</a> */}
+                </div>
+            </div>
+        </div>
 
-       </section>
         
-        <section className="py-10">
-          <h3 className="text-2xl py-5 uppercase text-gray-500">Previous catalog links</h3>
-       <ul className="grid grid-cols-2 md:grid-cols-6 gap-y-1">
-       <li><a href={'fall20.pdf'} title="Fall 2020"><StaticImage  width={149} src="../images/fall20.jpg" alt="Fall 2020" /></a></li>
-       <li><a href={'spring20.pdf'} title="Spring 2020"><StaticImage  width={149} src="../images/spring20.jpg" alt="Spring 2020" /></a></li>
-         <li><a href={'fall19.pdf'} title="Fall 2019"><StaticImage  width={149} src="../images/fall19.jpg" alt="Fall 2019" /></a></li>
-         <li><a href={'spring19.pdf'} title="Spring 2019"><StaticImage  width={149} src="../images/spring_19.jpg" alt="Spring 2019" /></a></li>
-         <li><a href={'fall18.pdf'} title="Fall 2018"><StaticImage  width={149} src="../images/fall18.jpg" alt="Fall 2018" /></a></li>
-         <li><a href={'spring18.pdf'} title="Spring 2018"><StaticImage  width={149} src="../images/spring_18.jpg" alt="Spring 2018" /></a></li>
+    </div>
+</section>
+<SectionHeader text={"Previous Seasons"}/>
+    <section className="flex flex-row gap-0 py-4 border-b-2 border-gray-100">
+       <a href={'spring21.pdf'} className="h-full" title="Fall 2020"><StaticImage src="../images/spring21.jpg" alt="current catalog cover" className="object-cover"></StaticImage></a>
+       <a href={'fall20.pdf'} className="h-full"><StaticImage src="../images/fall20.jpg" alt="current catalog cover" className="object-cover"></StaticImage></a>
+       <a href={'spring20.pdf'} className="h-full"><StaticImage src="../images/spring20.jpg" alt="current catalog cover" className="object-cover"></StaticImage></a>
+       <a href={'fall19.pdf'} className="h-full"><StaticImage src="../images/fall19.jpg" alt="current catalog cover" className="object-cover"></StaticImage></a>
 
-         </ul></section>
+    </section>
+
+       <section id="list" className="py-4">
+       <p className="py-2 text-center uppercase text-gray-500 text-md font-thin tracking-widest mx-auto  font-sans tracking-wide">Books in Current Catalog</p>
+
+         <CurrentList/></section>
        
-       <CurrentList/>
        </div>
 
       </Layout>

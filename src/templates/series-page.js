@@ -3,6 +3,8 @@ import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import BookCard from "../components/BookCard"
 import SeO from "../components/SeoComponent"
+import PageHeader from "../components/PageHeader"
+import SectionHeader from "../components/SectionHeader"
 
 
 
@@ -15,16 +17,14 @@ const SeriesTemplate = ({ data }) => {
 
         <Layout>
             <SeO title={seriesinfo.frontmatter.title}/>
-            <section>
-            <div className="grid grid-cols-3 content-center">
-                <h3 className="py-3 leading-tight col-span-2">{seriesinfo.frontmatter.title} </h3>
-            <div className="self-center"><Link to={'/series'}><button className="bg-gray-200 py-1 px-4 text-black text-sm tracking-wider leading-7 rounded-full">{seriesinfo.frontmatter.status} series</button></Link></div>
-                </div>
+            <PageHeader text={seriesinfo.frontmatter.title}/>
+            <section className="py-4 border-b-2 border-gray-100">
+            <div className="ml-4 text-center"><Link to={'/series'}>{seriesinfo.frontmatter.status} series</Link></div>
             <div className="pt-5 cms" dangerouslySetInnerHTML={{ __html: seriesinfo.html }}/>
-            <div dangerouslySetInnerHTML={{ __html: seriesinfo.frontmatter.editors }}/>
+            <div className="text-base text-gray-600 leading-relaxed font-serif ml-4 cms" dangerouslySetInnerHTML={{ __html: seriesinfo.frontmatter.editors }}/>
 <div>
 {related_staff && related_staff.map(staff => (
-            <div className="pt-5 cms">UVA Editor: 
+            <div className="pt-5 text-base text-gray-600 leading-relaxed font-display ml-4 cms">UVA Editor: 
             <Link to={'../../staff/' + staff.frontmatter.title.replace(" ", "-").toLowerCase()}> {staff.frontmatter.title} </Link>
             
             </div>
@@ -33,9 +33,8 @@ const SeriesTemplate = ({ data }) => {
 
                </section> 
                 
-                <section>
-                     <h3 className="text-2xl py-5 uppercase text-gray-500">Books in This Series:</h3>
-                    <div className="container px-5 py-5 flex flex-wrap gap-2 md:gap-4">
+                <section className="py-4 border-b-2 border-gray-100">
+<SectionHeader text={'Books in this Series'}/>                    <div className="container px-5 py-5 flex flex-wrap gap-2 md:gap-4">
                         {books.edges.map(edge => (
                   <>  
                   <Link to={`../../title/${ edge.node.BookID }`}>

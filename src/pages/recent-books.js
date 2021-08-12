@@ -3,6 +3,7 @@ import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import BookCard from "../components/BookCard"
 import SeO from "../components/SeoComponent"
+import PageHeader from "../components/PageHeader"
 
 
 
@@ -16,7 +17,7 @@ export default function RecentBooks({ data }) {
         <Layout>
           <SeO title="Books most recently published by the University of Virginia Press"/>
           <div className="container px-5 py-12 mx-auto">
-             <h1 className="sm:text-3xl text-2xl p-4 font-sans uppercase text-gray-900 text-center">New and Upcoming Books from UVa Press</h1>
+          <PageHeader text={'New and Forthcoming Books'}/>
 
             <section className="py-5 grid grid-cols-2 mx-auto">
             {/* <div className="text-center text-gray-500 mx-auto font-sans tracking-wide py-4">Forthcoming Books</div> */}

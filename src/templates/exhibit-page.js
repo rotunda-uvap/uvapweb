@@ -5,6 +5,7 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import Layout from "../components/layout"
 import Gallery from "../components/ExCarousel"
 import SeO from "../components/SeoComponent"
+import PageHeader from "../components/PageHeader"
 
 const exhibitPage = ({ data }) => {
     const exhibit = data.markdownRemark
@@ -21,7 +22,8 @@ const exhibitPage = ({ data }) => {
    <Layout>
      <SeO title={`Virtual Book Exhibit: + ${data.markdownRemark.frontmatter.title}`}/>
      <div>
-       <h1 className="py-5">{data.markdownRemark.frontmatter.title}</h1>
+     <PageHeader text={data.markdownRemark.frontmatter.title}/>
+
         <GatsbyImage image={image} alt="related image"/>
         <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1">
           <div className={`${bgcolor} ${txtcolor} py-5 px-5 text-2xl text-center`}
@@ -83,7 +85,7 @@ const exhibitPage = ({ data }) => {
         </section>
     }
 
-         
+
          <section className="py-8 border-b-2">
           {book_colls && 
         
