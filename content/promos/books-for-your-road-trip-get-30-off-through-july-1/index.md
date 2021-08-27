@@ -8,6 +8,8 @@ related:
   - "4865"
   - "4920"
   - "1941"
+related_collection:
+  - Reading Series 2021
 ---
 With the prospect of road-tripping back on the horizon, we’re looking forward to the kind of nostalgic jaunts that once defined the American summer, when families piled into the Woodie wagon and toured wonders in their own backyards, and beyond.
 
