@@ -4,8 +4,11 @@ import Layout from "../components/layout"
 import "../utils/global.css"
 import SeO from "../components/SeoComponent"
 import PageHeader from "../components/PageHeader"
+<<<<<<< HEAD
 import SectionHeader from "../components/SectionHeader"
 import BoardMember from "../components/BoardMember"
+=======
+>>>>>>> 1d6c64aa3668bb4875ce04585a954a42adf82395
 
 
 
