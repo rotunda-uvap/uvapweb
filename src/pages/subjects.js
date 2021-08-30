@@ -2,14 +2,14 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import SeO from "../components/SeoComponent"
-
+import PageHeader from "../components/PageHeader"
 export default function Subjects({ data }) {
   const subs = data.allSubjectsJson
  return (
     
         <Layout>
           <SeO title="Our Subjects"/>
-          <h2 className="py-10 px-3 font-light">Subjects</h2>
+          <PageHeader text={'Book Subjects'}/>
           <div className="grid md:grid-cols-4 md:grid-4">
             
           {subs.edges.map(edge => (

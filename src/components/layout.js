@@ -17,7 +17,7 @@ const Layout = ({ children }) => {
       <div className="max-w-7xl mx-auto pb-5">
       <Footer />
       <div data-netlify-identity-menu></div>
-      <button>Staff Dashboard</button>
+      <a href="/admin"><button>Staff Dashboard</button></a>
       </div>
       
       {/* <button data-netlify-identity-button className="p-5 bg-blue-500 text-white"> Login</button> */}

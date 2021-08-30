@@ -30,7 +30,6 @@ export default function FeatPromo() {
          
         <div className="md:col-span-2 xs:mt-5 sm:mt-5">
           <div className="flex flex-col">
-          {/* <p className="text-center uppercase text-gray-500 mx-auto  font-sans tracking-wide">Featured Promotion:</p> */}
             <p className="text-3xl font-sans text-gray-600">{data.promos.edges[0].node.frontmatter.title} </p></div>
             <div className="md:flex md:flex-row">
           <div className="font-serif dropCap" dangerouslySetInnerHTML={{ __html: data.promos.edges[0].node.html }}></div>
@@ -38,13 +37,6 @@ export default function FeatPromo() {
         </div>
 
        
-         {/*  <div className="grid grid-cols-3 place-content-center" id="promobooks">
-        {data.promos.edges[0].node.frontmatter.relbook && data.promos.edges[0].node.frontmatter.relbook.split(',').map(book => (
-        <> 
-        <RelatedBookList key={book} id={book}/>
-        </>
-    ))}
-    </div> */}
           </div>
       
         

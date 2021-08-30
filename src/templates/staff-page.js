@@ -3,6 +3,7 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import SeO from "../components/SeoComponent"
+import PageHeader from "../components/PageHeader"
 
 const staffPage = ({ data }) => {
     const staffMember = data.markdownRemark
@@ -11,11 +12,11 @@ const staffPage = ({ data }) => {
    <Layout>
      <SeO title={staffMember.frontmatter.title}/>
      <div className="container px-5 py-7 mx-auto">
-        <h2 className="text-5xl font-medium title-font text-gray-900 mb-4 text-center">{staffMember.frontmatter.title}</h2>
+       <PageHeader text={staffMember.frontmatter.title}/>
         {staffMember.frontmatter.profile_photo && <div className="text-center py-2"><GatsbyImage image={staff_image} alt={staffMember.frontmatter.title}/></div>}
-        {staffMember.frontmatter.job_title && <h5 className="pt-4 pb-2 text-gray-500 text-center italic">{staffMember.frontmatter.job_title}</h5> }
+        {staffMember.frontmatter.job_title && <h5 className="pt-4 pb-2 text-gray-500 font-thin tracking-wider text-center italic">{staffMember.frontmatter.job_title}</h5> }
 
-        {staffMember.frontmatter.email && <h6 className="text-center"><a href={`mailto:${ staffMember.frontmatter.email }`}>{staffMember.frontmatter.email}</a></h6>}
+        {staffMember.frontmatter.email && <h6 className="text-center tracking-wider font-thin"><a href={`mailto:${ staffMember.frontmatter.email }`}>{staffMember.frontmatter.email}</a></h6>}
         {staffMember.html && <article 
           dangerouslySetInnerHTML={{ __html: staffMember.html }} className="md:w-1/2 md:mx-auto py-7 cms dropCap"/> }
     </div>

@@ -5,6 +5,7 @@ import Layout from "../components/layout"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import SeO from "../components/SeoComponent"
 import ShareButtons from "../components/ShareButtons"
+import PageHeader from "../components/PageHeader"
 
 const newsPage = ({ data }) => {
     const news = data.markdownRemark
@@ -29,8 +30,7 @@ else metaImage = null;
 <section className="text-gray-600 body-font">
   <div className="container px-5 py-12 mx-auto">
   <div className="flex flex-col  w-full mb-10">
-  <h1 className="sm:text-3xl text-2xl font-medium font-sans mb-4 text-gray-900">{title}</h1>
-
+<PageHeader text={title}/>
  
   <p className="lg:w-3/3  leading-relaxed font-serif">
   {news_image && <div className="float-left px-10 pb-5"><GatsbyImage image={news_image} alt="related image"/></div> }
@@ -48,14 +48,15 @@ else metaImage = null;
           </p>
 
        
-
+          <div className="px-10">
           <ShareButtons title={title} url={url}/>
-
+</div>
           
             {related_series && related_series.map(series => (
             <> 
-            <h6 className="py-3"><Link to={`../../series/${ series.id }`}>{series.seriesName}</Link></h6>
-            </>
+            <div className="float-right px-7 pb-5">
+            <h6 className="uppercase py-2">Related Series: <Link to={`../../series/${ series.id }`} className="pl-2">{series.seriesName}</Link></h6>
+            </div></>
         ))} 
   </div>
   

@@ -9,30 +9,21 @@ import { Link } from "gatsby"
 const appId = process.env.GATSBY_ALGOLIA_APP_ID;
 const searchKey = process.env.GATSBY_ALGOLIA_SEARCH_KEY;
 const searchClient = algoliasearch(appId, searchKey);
-const Hit = ( {hit}) => <span><Link to={`../title/${ hit.BookID }`}><h6 className="font-black uppercase">{hit.Title}</h6></Link>
-<h6 className="text-sm italic uppercase">{hit.Subtitle}</h6>
-<h6 className="text-xs uppercase pt-2">{hit.AuthorCredit}</h6>
+const Hit = ( {hit}) => <div className="py-4 border-b-2 border-gray-100"><Link to={`../title/${ hit.BookID }`}><h6 className="font-thin text-md text-gray-600 uppercase">{hit.Title}</h6>
+{hit.Subtitle ? <h6 className="text-sm tracking-wide text-gray-500 italic py-2 ">{hit.Subtitle}</h6> : ""}
+<h6 className="text-xs tracking-widest font-display uppercase pt-2">{hit.AuthorCredit}</h6>
 
-<p className="pt-3" dangerouslySetInnerHTML={{ __html: hit.MainDescription.html.split(' ').splice(0, 30).join(' ') + '...' }}/>
-<h6 className="text-xs uppercase pb-5">Published: {hit.PublicationDate}</h6></span>
+<div className="pt-3" dangerouslySetInnerHTML={{ __html: hit.MainDescription.html.split(' ').splice(0, 30).join(' ') + '...' }}/>
+<h6 className="text-xs uppercase tracking-widest font-thin pb-5">Published: {hit.PublicationDate}</h6></Link></div>
 
 const Search = () => (
     <InstantSearch searchClient={searchClient} indexName={process.env.GATSBY_ALGOLIA_INDEX_NAME} routing={true} >
       <SearchBox className="p-2 m-1" translations={{ placeholder:'Search for a book'}} />
-      <div className="grid md:grid-cols-3">
-      <section className="py-5">
-      
-      <div className="pb-5"><h3 className="text-lg uppercase">Filter by List</h3>
-      
-      <RefinementList attribute="List"/></div>
-        <div><h3 className="text-lg uppercase">Filter by Subject</h3>
-      
-      <RefinementList attribute="Subject.name"/></div>
-      <div className="py-5"><h3 className="text-lg uppercase">Filter by Series</h3>
-      <RefinementList attribute="Series.name"/></div></section>
-      <section className="col-span-2">
-      
-        <h3 className="text-lg uppercase pb-5">Results
+      <div className="flex flex-col md:flex-row gap-8">
+     
+      <section className="col-span-2" id="results">
+      <a href="#filter" className="md:hidden py-6 text-sm tracking-wide font-thin">Filter Results</a>
+        <h3 className="text-lg uppercase text-gray-500 py-2 font-thin tracking-widest">Results
 </h3>
 
        <div className="border-b border-gray-400 pb-3">
@@ -47,6 +38,17 @@ const Search = () => (
       </div>
       <Hits className="pt-5" hitComponent={Hit} />
       </section>
+      <section className="py-5 md:order-first" id="filter">
+      <a href="#results" className="md:hidden py-8 text-sm tracking-wide font-thin">Jump up to Results</a>
+
+      <div className="pb-5"><h3 className="text-lg uppercase text-gray-500 font-thin tracking-widest">Filter by List</h3>
+      
+      <RefinementList attribute="List"/></div>
+        <div><h3 className="text-lg uppercase text-gray-500 font-thin tracking-widest">Filter by Subject</h3>
+      
+      <RefinementList attribute="Subject.name"/></div>
+      <div className="py-5"><h3 className="text-lg uppercase text-gray-500 font-thin tracking-widest">Filter by Series</h3>
+      <RefinementList attribute="Series.name"/></div></section>
       </div>
       
       <Pagination/>

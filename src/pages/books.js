@@ -4,6 +4,8 @@ import Layout from "../components/layout"
 import BookCard from "../components/BookCard"
 import AwardWinners from "../components/AwardWinners"
 import SeO from "../components/SeoComponent"
+import SectionHeader from "../components/SectionHeader"
+import PageHeader from "../components/PageHeader"
 
 export default function Books({ data }) {
   const rec = data.recent
@@ -14,13 +16,13 @@ export default function Books({ data }) {
         <Layout>
          <SeO 
          title="Browse all books"/>
-                 <section className="text-gray-600 body-font">
+                 {/* <section className="text-gray-600 body-font">
   <div className="container px-5 py-12 mx-auto">
   <h1 id="top" className="sm:text-3xl text-2xl p-4 mb-4 font-sans uppercase text-gray-900 text-center">Browse All Books</h1>
   <div className="flex flex-wrap -m-4 text-center">
 
   <div className="p-4 md:w-1/4 sm:w-1/2 w-full"><Link to={`#recent`}>
-        <div className="border-2 border-gray-200 px-4 py-6 rounded-lg">
+        <div className="px-4 py-6">
           <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="text-gray-500 w-8 h-8 mb-3 inline-block" viewBox="0 0 24 24">
          
             <path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
@@ -30,7 +32,7 @@ export default function Books({ data }) {
       </div>
       
         <div className="p-4 md:w-1/4 sm:w-1/2 w-full">
-       <Link to={`#subjects`}> <div className="border-2 border-gray-200 px-4 py-6 rounded-lg">
+       <Link to={`#subjects`}> <div className="px-4 py-6">
         <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="text-gray-500 w-8 h-8 mb-3 inline-block" viewBox="0 0 24 24">
             
             <path d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z"></path>
@@ -41,7 +43,7 @@ export default function Books({ data }) {
       
      
       <div className="p-4 md:w-1/4 sm:w-1/2 w-full"><Link to={`#series`}>
-        <div className="border-2 border-gray-200 px-4 py-6 rounded-lg">
+        <div className="px-4 py-6">
           <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="text-gray-500 w-8 h-8 mb-3 inline-block" viewBox="0 0 24 24">
             
             <path d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z"></path>
@@ -51,7 +53,7 @@ export default function Books({ data }) {
         </div></Link>
       </div>
       <div className="p-4 md:w-1/4 sm:w-1/2 w-full"><Link to={`#awardwinners`}>
-        <div className="border-2 border-gray-200 px-4 py-6 rounded-lg">
+        <div className="px-4 py-6">
           <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="text-gray-500 w-8 h-8 mb-3 inline-block" viewBox="0 0 24 24">
             <path d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5"></path>
           </svg>
@@ -62,89 +64,58 @@ export default function Books({ data }) {
       
       </div>
 
-    </div></section>
+    </div></section> */}
+<PageHeader text={"Browse our Books"}/>
+<section className="flex flex-wrap gap-4 md:gap-8 items-center justify-center py-8 md:py-10 border-b-2 border-gray-100" id="top">
+<div className="uppercase text-gray-500 text-md font-thin tracking-widest font-sans"><Link to={`#recent`}>Recently Published</Link></div>
+<div className="uppercase text-gray-500 text-md font-thin tracking-widest font-sans"><Link to={`#subjects`}>Browse by Subject</Link></div>
+<div className="uppercase text-gray-500 text-md font-thin tracking-widest font-sans"><Link to={`#series`}>Browse by Series</Link></div>
+<div className="uppercase text-gray-500 text-md font-thin tracking-widest font-sans"><Link to={`#awardwinners`}>Award Winners</Link></div>
 
-  {/*           <div className="container">
- <ul className="grid md:grid-cols-4 md:auto-rows-fr content-center justify-center py-7">
- <li><Link to={`#recent`}><button className="border-b-4 border-white hover:border-black w-full h-full uppercase">Recently Published</button></Link></li>
-<li><Link to={`#subjects`}><button className="border-b-4 border-white hover:border-black w-full h-full uppercase">Browse by Subject</button></Link></li>
-   <li><Link to={`#series`}><button className="border-b-4 border-white hover:border-black w-full h-full uppercase">Browse by Series</button></Link></li>
-   <li><Link to={`#awardwinners`}><button className="border-b-4 border-white hover:border-black w-full h-full uppercase">Award Winners</button></Link></li>
+</section>
+ 
+<SectionHeader className="py-4" text={"Our Series"}/>
+<div className="p-4 text-center uppercase text-gray-700 text-xs font-thin tracking-widest mx-auto font-sans"><Link to={'../series'}>See all Active Series</Link></div>
+<section className="text-gray-700 py-4 border-b-2 border-gray-100" id="series">
 
- </ul>
-</div> */}
-   
-<section className="text-gray-700 body-font" id="series">
   <div className="container flex flex-wrap py-10 mx-auto items-center">
-   
-      <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Our Series</h1>
-      
-      <Link to={'../series'} className="text-gray-700 pl-4 py-2">See all Active Series</Link>
-      <nav className="flex flex-wrap py-5 list-none -mb-1">
+
       {sers.edges.map(edge => (
             <>           
-           <li className="lg:w-1/2 mb-2 font-display" key={edge.node.id}>
+           <div className="md:w-1/2 mb-2 px-2 font-display" key={edge.node.id}>
           <Link to={`../series/${ edge.node.id }`} className="text-gray-600 hover:text-gray-800">{ edge.node.seriesName }</Link>
-        </li>            
+        </div>            
             </>
         ))}
-      </nav>
     
   </div>
+  <Link to={`#top`} className="uppercase text-gray-500 text-xs">Go to top</Link>
+
 </section>
 
 
-<section className="text-gray-700 body-font" id="subjects">
+<section className="py-5 text-gray-700 border-b-2 border-gray-100" id="subjects">
+  <SectionHeader text={"Our Subjects"}/> 
   <div className="container flex flex-wrap py-10 mx-auto items-center">
-   
-      <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Our Subjects</h1>
-      
-      <nav className="flex flex-wrap py-5 list-none -mb-1">
+       
       {subs.edges.map(edge => (
             <>           
-           <li className="lg:w-1/2 mb-2 font-display" key={edge.node.subjectid}>
+           <div className="mb-2 px-4 font-display items-center" key={edge.node.subjectid}>
           <Link to={`../../subject/${ edge.node.subjectID }`} className="text-gray-600 hover:text-gray-800">{ edge.node.subjectName }</Link>
-        </li>            
+        </div>            
             </>
         ))}
-      </nav>
+     
     
   </div>
+  <Link to={`#top`} className="uppercase text-gray-500 text-xs">Go to top</Link>
+
 </section> 
-{/* <section className="text-gray-700 body-font" id="subjects">
-  <div className="container flex flex-wrap px-5 py-24 mx-auto items-center">
-    <div className="md:w-1/3 md:pr-12 md:py-8 md:border-r md:border-b-0 mb-10 md:mb-0 pb-10 border-b border-gray-300">
-      <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Our Subject Categories</h1>
-      <p className="leading-relaxed text-base">This paragraph should have introductory information about our subjects.</p>
-      <Link className="text-teal-500 inline-flex items-center mt-4">Learn More
-        <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
-          <path d="M5 12h14M12 5l7 7-7 7"></path>
-        </svg>
-      </Link>
-    </div>
-    <div className="flex flex-col md:w-2/3 md:pl-12">
-      <h2 className="title-font font-medium text-gray-800 tracking-widest text-sm mb-3">CATEGORIES</h2>
-      <nav className="flex flex-wrap list-none -mb-1">
-      {subs.edges.map(edge => (
-            <>
-           
-           <li className="lg:w-1/3 mb-1 w-1/2" key={edge.node.subjectID}>
-          <Link to={`../../subject/${ edge.node.subjectID }`} className="text-gray-600 hover:text-gray-800">{ edge.node.subjectName }</Link>
-        </li>
-            
-            </>
-        ))}
-        
-       
-      </nav>
-    </div>
-  </div>
-</section> */}
-   
-<section id="recent">
-<h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Recent Releases</h1>
+
  
-          <div className="container px-5 py-5 grid md:grid-cols-5 md:gap-4">
+<section id="recent" className="py-5 text-gray-700 border-b-2 border-gray-100">
+  <SectionHeader text={"Recent Releases"}/>
+          <div className="container flex flex-wrap gap-2 py-5">
             {rec.edges.map(edge => (
            <>  
               <Link key={edge.node.BookID} to={`../title/${ edge.node.BookID }`}>
@@ -153,11 +124,12 @@ export default function Books({ data }) {
            </>
         ))}
         </div>
-        <Link to={`#top`} className="uppercase text-xs">Go to top</Link>
+        <Link to={`#top`} className="uppercase text-gray-500 text-xs">Go to top</Link>
    </section>
 
-<section id="awardwinners"><AwardWinners/>
-   <Link to={`#top`} className="uppercase text-xs">Go to top</Link></section>
+<section id="awardwinners">
+  <AwardWinners/>
+   <Link to={`#top`} className="text-gray-500 uppercase text-xs">Go to top</Link></section>
 
 
 

@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import "../utils/global.css"
 import SeO from "../components/SeoComponent"
-
+import PageHeader from "../components/PageHeader"
 
 export default function WalkerCowenPage({ data }) {
     const pagedata = data.markdownRemark
@@ -13,8 +13,8 @@ export default function WalkerCowenPage({ data }) {
           <SeO title="Walker Cowen Memorial Prize" description="The prize is awarded to the author of a scholarly book-length manuscript in eighteenth-century studies, including the Americas and the Atlantic world. "/>
             <div className="container px-5 py-12 mx-auto">
 
-<h1 className="sm:text-3xl text-2xl p-4 font-sans uppercase text-gray-900 text-center">
-            Walker Cowen Memorial Prize</h1>
+            <PageHeader text={'Walker Cowen Memorial Prize'}/>
+
 
          <div className="cms" dangerouslySetInnerHTML={{__html: pagedata.html}}/>
 

@@ -3,6 +3,9 @@ import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import "../utils/global.css"
 import SeO from "../components/SeoComponent"
+import PageHeader from "../components/PageHeader"
+import SectionHeader from "../components/SectionHeader"
+import BoardMember from "../components/BoardMember"
 
 
 
@@ -16,8 +19,7 @@ export default function AboutPage({ data }) {
             <section className="text-gray-600 body-font">
   <div className="container px-5 py-12 mx-auto">
     <div className="flex flex-col text-center w-full mb-10">
-       <h1 className="sm:text-3xl text-2xl  font-sans uppercase mb-4 text-gray-900">About UVa Press</h1> 
-      <div className="lg:w-3/3 mx-auto leading-relaxed text-base"><span className="dropCap cms" dangerouslySetInnerHTML={{__html: pagedata.html}}/></div>
+<PageHeader text={'About UVa Press'}/>      <div className="lg:w-3/3 mx-auto leading-relaxed text-base"><span className="dropCap cms" dangerouslySetInnerHTML={{__html: pagedata.html}}/></div>
     </div>
     <div className="flex flex-wrap -m-4">
       
@@ -134,7 +136,26 @@ export default function AboutPage({ data }) {
     </div>
   </div>
 </section>
-            
+            <section className="py-5 text-gray-700 border-b-2 border-gray-100">
+  <SectionHeader text={"Current Board Members"}/>
+              <div>
+              <BoardMember name={"Matthew Hedstrom, chair"} title={"Associate Professor, Department of Religious Studies, University of Virginia"}/>
+              <BoardMember name={"Derrick Aldridge"} title={"Professor and Program Coordinator, Social Foundations of Education, University of Virginia"}/>
+              <BoardMember name={"Asher Biemann"} title={"Professor of Religious Studies, University of Virginia"}/>
+              <BoardMember name={"Amy Clark"} title={"Professor of English and Chair of Communications Studies, University of Virginia at Wise"}/>
+              <BoardMember name={"Felipe Correa"} title={"Vincent + Eleanor Shea Professor and Chair, Department of Architecture, University of Virginia"}/>
+                <BoardMember name={"David Getsy"} title={"Eleanor Shea Professor of Art History, Department of Art, University of Virginia"}/>
+                <BoardMember name={"Claudrena Harold"} title={"Professor of African American and African Studies and History and Department Chair, Corcoran Department of History, University of Virginia"}/>
+                <BoardMember name={"Cassandra Newby-Alexander"} title={"Dean, College of Liberal Studies, Professor of History, and Director, Joseph Jenkins Roberts Center for African Diaspora, Norfolk State University"}/>
+                <BoardMember name={"Jenny Roe"} title={"Mary Irene DeShong Professor of Design and Health, Urban + Environmental Planning and Director, Center for Design and Health, School of Architecture, University of Virginia"}/>
+                <BoardMember name={"Sandhya Shukla"} title={"Associate Professor of English and American Studies and Director of Graduate Admissions, University of Virginia"}/>
+                <p className="py-4 px-5 italic">Ex Officio</p>
+                <BoardMember name={"M. Elizabeth Magill"} title={"Executive Vice President and Provost, University of Virginia"}/>
+                <BoardMember name={"Jonathan D. Bowen"} title={"Assistant to the President and Writer, University of Virginia"}/>
+                <BoardMember name={"Suzanne Morse Moomaw"} title={"Director, University of Virginia Press"}/>
+
+              </div>
+            </section>
         
 
          

@@ -3,6 +3,7 @@ import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import SeO from "../components/SeoComponent"
+import PageHeader from "../components/PageHeader"
 
 const rotundaPage = ({ data }) => {
     const item = data.rotundaJson
@@ -13,11 +14,11 @@ const rotundaPage = ({ data }) => {
    <Layout>
      <SeO title={item.Title} description="SAH Archipedia is an authoritative online encyclopedia of the built world published by the Society of Architectural Historians and the University of Virginia Press."/>
      <div className="container">
-        <h3 className="py-10 pl-6 uppercase tracking-wide leading-tight font-thin">{item.Title}</h3>
-        <div className="flex flex-1 flex-col md:flex-row  items-center">
+<PageHeader text={item.Title}/>       
+        <div className="py-4 flex flex-1 flex-col md:flex-row  items-center">
           <div className="pl-6"><GatsbyImage image={imageData} alt="publication image"/></div>
           
-          <div className="pl-2 text-5xl md:text-8xl text-gray-300 font-black tracking-widest">{item.StartYear} - {item.EndYear}</div>
+          <div className="pl-4 text-5xl md:text-8xl text-gray-200 font-black tracking-widest">{item.StartYear} - {item.EndYear}</div>
             
         </div>
           <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1">
@@ -49,12 +50,12 @@ const rotundaPage = ({ data }) => {
         </ul>
         </section> */}
        
-        {item.Prizes && <section className="items-center inline-flex px-5"><svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+        {item.Prizes && <section className="items-center inline-flex px-5 pb-5"><svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
   <path d="M2 10.5a1.5 1.5 0 113 0v6a1.5 1.5 0 01-3 0v-6zM6 10.333v5.43a2 2 0 001.106 1.79l.05.025A4 4 0 008.943 18h5.416a2 2 0 001.962-1.608l1.2-6A2 2 0 0015.56 8H12V4a2 2 0 00-2-2 1 1 0 00-1 1v.667a4 4 0 01-.8 2.4L6.8 7.933a4 4 0 00-.8 2.4z" />
 </svg> <span className="pl-5 font-thin">{item.Prizes}</span></section>}
         
           </div>
-          <section>
+          <section className="pl-5">
             <h6 className="py-5 font-thin">Others in <span className="font-bold font-thin">{item.SubCollection}</span>:</h6>
             
             {related.edges.map(edge => (

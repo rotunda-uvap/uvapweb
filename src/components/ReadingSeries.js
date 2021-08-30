@@ -33,7 +33,7 @@ export default function ReadingSeries() {
       render={data => (
        
          
-        <div className="flex flex-col w-11/12 mx-auto">
+        <div className="flex flex-col  mx-auto">
 
           <div className="flex flex-col ">
 

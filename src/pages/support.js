@@ -3,6 +3,7 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import "../utils/global.css"
 import SeO from "../components/SeoComponent"
+import PageHeader from "../components/PageHeader"
 
 export default function SupportPage({ data }) {
     // const pagedata = data.markdownRemark
@@ -12,7 +13,7 @@ export default function SupportPage({ data }) {
           <SeO title="Support UVA Press"/>
           
               <div className="container px-5 py-12 mx-auto text-gray-600">
-              <h1 className="sm:text-3xl text-2xl p-4 font-sans uppercase text-gray-900 text-center">Support UVA Press</h1>
+              <PageHeader text={'Support UVa Press'}/>
             <div className="flex flex-wrap items-center">
             <div className="lg:w-3/5 md:w-1/2 md:pr-16 lg:pr-0 pr-0">
              <div className="dropCap">

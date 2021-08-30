@@ -3,6 +3,7 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import "../utils/global.css"
 import SeO from "../components/SeoComponent"
+import PageHeader from "../components/PageHeader"
 
 
 export default function RotundaCustomerList({data}) {
@@ -17,7 +18,7 @@ export default function RotundaCustomerList({data}) {
             
     </div>
   <div>
-      <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">Customer Information and Usage Statistics</h1>
+  <PageHeader text={'Customer Information'}/>
       
       <p>Current institutional users (IP-authenticated accounts): <a href="https://rotunda.upress.virginia.edu/UsageStats/?tab=home&amp;job=dates">view statistics for your usage of <span className="rotunda">Rotunda</span> publications</a>.</p>
 <p>Note that your usage stats may show access to publications which you have not purchased, as your users will be able to navigate to contents pages within them, and those page views are logged.</p>

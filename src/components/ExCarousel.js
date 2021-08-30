@@ -14,7 +14,7 @@ const Gallery = ({book_id_array}) => {
       let cover = "https://www.upress.virginia.edu/sites/default/files/covers/" + image + "_M.jpg"
       let booklink = "../../title/" + image
         return (
-            <div className="image-slider-container" key={image}>
+            <div className="image-slider-container items-center px-10" key={image}>
                 <Link to={booklink} ><img src={cover} alt={image} /></Link>
             </div>
         )
@@ -30,8 +30,32 @@ const Gallery = ({book_id_array}) => {
         speed: 500,
         slidesToShow: 5,
         slidesToScroll: 1,
-        className:'slider'
-        
+        className:'slider',
+        responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
+              }
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                initialSlide: 2
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              },
+            },
+          ],
        
       };
 
