@@ -94,6 +94,8 @@ div[aria-expanded="false"]{
   filter: drop-shadow(0 5px 5px #222222);
 }
 
+.slick-prev {left:-10px !important;}
+.slick-next {right:0 !important;}
 .slick-prev:before,
 .slick-next:before {
     color:#727272 !important; 

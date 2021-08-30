@@ -88,13 +88,13 @@ module.exports = {
         name: `reading-series`,
       },
     },
-    {
+    /* {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/content/featured`,
         name: `featured`,
       },
-    },
+    }, */
     
     {
       resolve: `gatsby-source-filesystem`,
