@@ -4,10 +4,11 @@ type: news
 draft: "false"
 title: Q&A with Winner of the New Academy Prize in Literature, Maryse Condé, and
   translator Nicole Simek
-date: 2020-05-06
 image: conde_author_0.jpg
 related_book:
   - "5336"
+  - "3840"
+date: 2020-05-06
 ---
 As *[The New York Times Book Review](https://www.nytimes.com/2020/05/05/books/review/maryse-conde-belle-creole-wondrous-tragic-life-of-ivan-and-ivana.html)* writes of Maryse Condé in their review of her newly translated book *[The Belle Créole,](https://www.upress.virginia.edu/title/5336)* "For the past half century, Condé has been chronicling the black diaspora in novels that are rollicking and scandalous, that examine gender and culture, class and religion, African and Caribbean society. She performs a kind of alchemic conversion from abstract theories of power to very human lusts and appetites, where costs are paid in the flesh.
 
