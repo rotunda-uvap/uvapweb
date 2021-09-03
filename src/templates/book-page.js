@@ -296,6 +296,7 @@ export const query = graphql`
       }
       AuthorCredit
       Reviews {
+        attribution
         html
       }
       ISBNs

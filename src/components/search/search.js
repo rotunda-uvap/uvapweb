@@ -17,8 +17,8 @@ const Hit = ( {hit}) => <div className="py-4 border-b-2 border-gray-100"><Link t
 <h6 className="text-xs uppercase tracking-widest font-thin pb-5">Published: {hit.PublicationDate}</h6></Link></div>
 
 const Search = () => (
-    <InstantSearch searchClient={searchClient} indexName={process.env.GATSBY_ALGOLIA_INDEX_NAME} routing={true} >
-      <SearchBox className="p-2 m-1" translations={{ placeholder:'Search for a book'}} />
+    <InstantSearch searchClient={searchClient} indexName={process.env.GATSBY_ALGOLIA_INDEX_NAME} routing={true}  >
+      <SearchBox className="p-2 m-1" translations={{ placeholder:'Search for a book'}} searchAsYouType={false} />
       <div className="flex flex-col md:flex-row gap-8">
      
       <section className="col-span-2" id="results">
