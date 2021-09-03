@@ -65,11 +65,11 @@ export default function Home(data) {
   </section> */}
   
   <section className="py-4 border-b-2 border-gray-100">
-       {/* <p className="text-center uppercase text-gray-500 text-md font-thin tracking-widest mx-auto  font-sans tracking-wide">Open Access</p> */}
-          <a href="https://open.upress.virginia.edu/"><h5>Virginia Open</h5></a>
-          <StaticImage src="../images/vo.png" alt="virginia open logo"/>
-          <p className="py-4">V/O: Virginia Open, a collection of University of Virginia Press titles made freely available. On this imprint, you will find both open-access monographs from The University of Virginia Press, readable in your browser or via download, and links to open-access websites published under our Rotunda imprint or in collaboration with partner institutions.</p>
-          <a href="https://open.upress.virginia.edu/" className="tracking-wide font-sans">Learn More</a>
+  <p className="text-center uppercase text-gray-500 text-md font-thin tracking-widest mx-auto  font-sans tracking-wide">Open Access</p>
+          <div className="flex flex-col items-center"><a href="https://open.upress.virginia.edu/">
+          <StaticImage src="../images/vo.png" width={500} alt="virginia open"/></a>
+          <p className="py-4 dropCap">V/O: Virginia Open, a collection of University of Virginia Press titles made freely available. On this imprint, you will find both open-access monographs from The University of Virginia Press, readable in your browser or via download, and links to open-access websites published under our Rotunda imprint or in collaboration with partner institutions.</p>
+          </div>
        </section>
        <section className="py-4 border-b-2 border-gray-100">
 <p className="text-center uppercase text-gray-500 text-md font-thin tracking-widest mx-auto  font-sans tracking-wide">2021 Reading Series</p>

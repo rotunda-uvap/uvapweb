@@ -9,7 +9,7 @@ import { Link } from "gatsby"
 const appId = process.env.GATSBY_ALGOLIA_APP_ID;
 const searchKey = process.env.GATSBY_ALGOLIA_SEARCH_KEY;
 const searchClient = algoliasearch(appId, searchKey);
-const Hit = ( {hit}) => <div className="py-4 border-b-2 border-gray-100"><Link to={`../title/${ hit.BookID }`}><h6 className="font-thin text-md text-gray-600 uppercase">{hit.Title}</h6>
+const Hit = ( {hit}) => <div className="py-4 border-b-2 border-gray-100"><Link to={`../title/${ hit.BookID }`} className="hover:text-gray-500"><h6 className="font-thin text-md text-gray-600 uppercase">{hit.Title}</h6>
 {hit.Subtitle ? <h6 className="text-sm tracking-wide text-gray-500 italic py-2 ">{hit.Subtitle}</h6> : ""}
 <h6 className="text-xs tracking-widest font-display uppercase pt-2">{hit.AuthorCredit}</h6>
 
@@ -18,7 +18,9 @@ const Hit = ( {hit}) => <div className="py-4 border-b-2 border-gray-100"><Link t
 
 const Search = () => (
     <InstantSearch searchClient={searchClient} indexName={process.env.GATSBY_ALGOLIA_INDEX_NAME} routing={true}  >
-      <SearchBox className="p-2 m-1" translations={{ placeholder:'Search for a book'}} searchAsYouType={false} />
+      {/* <SearchBox className="p-2 m-1" translations={{ placeholder:'Search for a book'}} searchAsYouType={false} /> */}
+      <SearchBox className="p-2 m-1" translations={{ placeholder:'Search for a book'}}/>
+
       <div className="flex flex-col md:flex-row gap-8">
      
       <section className="col-span-2" id="results">

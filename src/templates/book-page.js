@@ -86,7 +86,7 @@ const bookPage = ({ data }) => {
                 </svg>
                 <a
                   href={binding.buylink}
-                  className="block group hover:bg-gray-100 hover:text-white p-2 ml-4 border-b"
+                  className="block group   p-2 ml-4 border-b"
                 >
                   <div className="font-thin uppercase">
                     {binding.type}{" "}
@@ -117,7 +117,7 @@ const bookPage = ({ data }) => {
             </svg>
             <a
               href={`../../examination_Copy_Form_2021.pdf`}
-              className="block group hover:bg-gray-100 p-2 ml-4 border-b"
+              className="block group  p-2 ml-4 border-b"
             >
               <div className="font-thin uppercase">Exam Copy </div>
               <div className="text-sm font-display ">
@@ -144,9 +144,9 @@ const bookPage = ({ data }) => {
               </svg>
               <a
                 href="https://forms.gle/H8J1NbtN4BBZZwgy7"
-                className="block group hover:bg-gray-100 p-2 mb-4 ml-4 border-b"
+                className="block group  p-2 mb-4 ml-4 border-b"
               >
-                <div className="font-thin  uppercase">
+                <div className="font-thin  uppercase ">
                   Desk Copy{" "}
                 </div>
                 <div className="text-sm font-display ">For Instructors</div>
@@ -296,7 +296,7 @@ export const query = graphql`
       }
       AuthorCredit
       Reviews {
-        attribution
+     
         html
       }
       ISBNs
