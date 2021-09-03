@@ -42,9 +42,7 @@ export default function RotundaHome({ data }) {
 <p className="leading-relaxed">Our major stand-alone publications are the Presidential Recordings Digital Edition, with transcripts and audio of nearly 4000 conversations from White House recordings; People of the Founding Era, a biographical reference to over 75,000 individuals; the open-access SAH Archipedia, an authoritative encyclopedia of the American built environment, with over 25,000 entries and 5000 editorial essays. Finally, our Literature and Culture Collection features seven editions of literary work and correspondence from nineteenth-century America and Britain.</p>
     
     </div>
-  {/*   <div className="flex mt-6 justify-center">
-        <div className="w-16 h-1 rounded-full bg-gray-800 inline-flex"></div>
-      </div> */}
+ 
   </div>
 </section>
 
