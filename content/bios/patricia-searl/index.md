@@ -10,4 +10,4 @@ department:
 email: pls4e​@​virginia.edu
 phone: (434) 982-2310
 ---
-Bio Not Yet Available
+Bio coming soon
