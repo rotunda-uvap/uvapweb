@@ -2,14 +2,14 @@
 templateKey: news
 type: news
 title: Announcing UVA Press Author's Corner!
-description: "*Welcome to the UVA Press Author's Corner! Here, we feature
+description: Welcome to the UVA Press Author's Corner! Here, we feature
   conversations with the authors of our latest releases to provide a glimpse
   into the writer's mind, their book's main lessons, and what’s next for them.
   We hope you enjoy these inside stories. We're beginning the series with a
   conversation with Rex Bowman and Carlos Santos, coauthors of [ALMOST
   HEMINGWAY: The Adventures of Negley Farson, Foreign
   Correspondent,](https://www.upress.virginia.edu/title/5722) out today (August
-  31).*"
+  31).
 image: farson10.jpg
 related_book:
   - "5722"
