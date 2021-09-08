@@ -16,6 +16,8 @@ const bookPage = ({ data }) => {
   const title = book.Title
   const url = "https://www.upress.virginia.edu/title/" + book.BookID
   const news = data.newsMD
+  const noimg_big = "https://www.upress.virginia.edu/sites/default/files/covers/noimg_lg.png"
+  const noimg_sm = "https://www.upress.virginia.edu/sites/default/files/covers/noimg.png"
   const imglink =
     "https://www.upress.virginia.edu/sites/default/files/covers/" +
     book.BookID +
@@ -44,12 +46,18 @@ const bookPage = ({ data }) => {
       <div className="grid md:grid-cols-3 md:gap-10 py-3 ml-6 ">
         <div className="col-span-1">
           {/* <GatsbyImage image={imageData} alt="book cover" /> */}
-          <img className="hidden md:block" src={imglink} alt="cover" />
-          <img
+          { book.CoverImageFull ? <img className="hidden md:block" src={imglink} alt="cover" /> : <img className="hidden md:block" src={noimg_big} alt="cover" />}
+           { book.CoverImageFull ? <img
             className="md:hidden text-center w-1/2 mx-auto"
             src={imglink_sm}
             alt="mobile cover"
-          />
+          /> : 
+          <img
+            className="md:hidden text-center w-1/2 mx-auto"
+            src={noimg_sm}
+            alt="mobile cover"
+          />  }
+
         </div>
         <div className="md:col-span-2 pr-5 md:px-10">
           <h4 className="hidden md:block pb-3 font-light font-sans leading-none ">{book.Title}</h4>
