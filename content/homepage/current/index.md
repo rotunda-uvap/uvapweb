@@ -2,11 +2,11 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: Racism in American Life
-    banner_author: Johnnetta Betsch Cole
-    banner_subtitle: A Call to Action
-    banner_quote: opportunities for honest, interracial, courageous conversations
-    banner_id: "5628"
+  - banner_title: The Topography of Wellness
+    banner_id: "5781"
+    banner_subtitle: How Health and Disease Shaped the American Landscape
+    banner_quote: I cannot imagine a more perfect post-pandemic book
+    banner_author: Sara Jensen Carr
 related_book: []
 related_books:
   - "5744"
@@ -17,10 +17,10 @@ related_books:
   - "5493"
   - "5410"
 featured_books:
-  - "5042"
-  - "5095"
-  - "4176"
   - "4549"
   - "5410"
   - "4228"
+  - "5057"
+  - "5469"
+  - "5744"
 ---
