@@ -7,14 +7,7 @@ top_banner:
     banner_subtitle: A Call to Action
     banner_quote: opportunities for honest, interracial, courageous conversations
     banner_id: "5628"
-related_book:
-  - "5744"
-  - "5617"
-  - "5679"
-  - "5417"
-  - "5493"
-  - "5292"
-  - "5410"
+related_book: []
 related_books:
   - "5744"
   - "5292"
@@ -23,4 +16,11 @@ related_books:
   - "5417"
   - "5493"
   - "5410"
+featured_books:
+  - "5042"
+  - "5095"
+  - "4176"
+  - "4549"
+  - "5410"
+  - "4228"
 ---
