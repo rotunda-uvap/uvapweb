@@ -8,6 +8,9 @@ related:
   - "4865"
   - "4920"
   - "1941"
+related_book:
+  - "4412"
+  - "5042"
 related_collection:
   - Reading Series 2021
 ---
