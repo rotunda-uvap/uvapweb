@@ -1,20 +1,21 @@
 ---
 templateKey: exhibit
 title: SHEAR 2021
+exhibit_slug: shear-2021
 bgcolor: ""
+txtcolor: text-gray-600
 related_series:
   - EAH
   - JA
   - TASS
   - RA
   - WEA
+related_blog:
+  - "SHEAR 2021: A Q&A with Frank Cogliano"
 related_staff:
   - Nadine Zimmerli
 featured: true
-txtcolor: text-gray-600
 exhibit_logo: shear_logo_0.png
-related_blog:
-  - "SHEAR 2021: A Q&A with Frank Cogliano"
 featured_books:
   - "4994"
   - "4361"
