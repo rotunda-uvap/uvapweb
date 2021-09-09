@@ -1,5 +1,9 @@
 ---
 templateKey: exhibit
+title: " MLA 2021"
+exhibit_slug: mla-2021
+bgcolor: bg-blue-900
+txtcolor: text-white
 related_series:
   - BNP
   - CARAF
@@ -11,13 +15,10 @@ related_series:
   - USN
   - VLCS
   - WEA
-title: " MLA 2021"
-txtcolor: text-white
 related_staff:
   - Eric Brandt
   - Angie Hogan
 featured: true
-bgcolor: bg-blue-900
 exhibit_logo: mla_21_topbar_1.jpg
 featured_books:
   - "5498"
