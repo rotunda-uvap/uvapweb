@@ -24,13 +24,15 @@ export default function Home(data) {
 <section className="py-4 border-b-2 border-gray-100">
 <p className="text-center uppercase text-gray-500 text-md font-thin tracking-widest mx-auto  font-sans tracking-wide">Featured Books</p>
 <div className="grid grid-cols-7 md:gap-4 justify-center place-content-center">
-    <Link to={`/title/5744`}><img src="https://www.upress.virginia.edu/sites/default/files/covers/5744.jpg" className="object-contain object-scale-down shadow-lg" alt="cover"/></Link>
+  
+
+     <Link to={`/title/5744`}><img src="https://www.upress.virginia.edu/sites/default/files/covers/5744.jpg" className="object-contain object-scale-down shadow-lg" alt="cover"/></Link>
     <Link to={`/title/5617`}><img src="https://www.upress.virginia.edu/sites/default/files/covers/5617.jpg" className="object-contain object-scale-down shadow-lg" alt="cover"/></Link>
     <Link to={`/title/5679`}><img src="https://www.upress.virginia.edu/sites/default/files/covers/5679.jpg" className="object-contain object-scale-down shadow-lg" alt="cover"/></Link>
     <Link to={`/title/5417`}><img src="https://www.upress.virginia.edu/sites/default/files/covers/5417.jpg" className="object-contain object-scale-down shadow-lg" alt="cover"/></Link>
     <Link to={`/title/5493`}><img src="https://www.upress.virginia.edu/sites/default/files/covers/5493.jpg" className="object-contain object-scale-down shadow-lg" alt="cover"/></Link>
     <Link to={`/title/5292`}><img src="https://www.upress.virginia.edu/sites/default/files/covers/5292.jpg" className="object-contain object-scale-down shadow-lg" alt="cover"/></Link>
-    <Link to={`/title/5410`}><img src="https://www.upress.virginia.edu/sites/default/files/covers/5410.jpg" className="object-contain object-scale-down shadow-lg" alt="cover"/></Link>
+    <Link to={`/title/5410`}><img src="https://www.upress.virginia.edu/sites/default/files/covers/5410.jpg" className="object-contain object-scale-down shadow-lg" alt="cover"/></Link> 
 
       </div>
 </section>
@@ -122,6 +124,18 @@ export const query = graphql`
           title
           logo
           description
+        }
+      },
+      markdownRemark(frontmatter: {title: {eq: "Current"}, templateKey: {eq: "homepage"}}) {
+        frontmatter {
+          featured_books
+          top_banner {
+            banner_author
+            banner_id
+            banner_quote
+            banner_subtitle
+            banner_title
+          }
         }
       }
   }`

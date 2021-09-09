@@ -17,7 +17,7 @@ export default function AllExhibits({ data }) {
                     <div className="max-w-4xl px-10 py-6">
                         <div className="flex justify-between items-center"><span className="font-light text-gray-800">{edge.node.frontmatter.date}</span>
                         </div>
-                        <div className="mt-2"><Link className="text-2xl text-gray-700 font-bold hover:underline" to={`../exhibits${ edge.node.fields.slug }`}>{ edge.node.frontmatter.title }</Link>
+                        <div className="mt-2"><Link className="text-2xl text-gray-700 font-bold hover:underline" to={`../exhibits/${ edge.node.frontmatter.exhibit_slug }`}>{ edge.node.frontmatter.title }</Link>
                         </div>
                     </div>
             </div>
@@ -39,6 +39,7 @@ export const query = graphql`
             html
             frontmatter {
               title
+              exhibit_slug
               templateKey
               description
               date(formatString: "YYYY-MM-DD")

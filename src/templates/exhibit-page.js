@@ -135,6 +135,7 @@ export const query = graphql`
               frontmatter {
                 Collection_Type
                 title
+                exhibit_slug
                 related_book {
                   Title
                   id

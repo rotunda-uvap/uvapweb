@@ -102,10 +102,7 @@ export const query = graphql`
           templateKey
           title
           rid
-          related_books {
-            book_id
-            book_title
-          }
+          
       }
      }
      rels: allRotundaJson(filter: {SubCollection: {eq: $relSeries}}) {

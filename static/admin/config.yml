@@ -7,6 +7,36 @@ media_folder: static/assets
 public_folder: /assets
 
 collections:
+  - name: 'homepage'
+    label: "Homepage"
+    folder: "content/homepage" 
+    create: true
+    identifier_field: '{{title}}'
+    slug: "index"
+    path: "{{title}}/index"
+    fields:
+      - {label: Template Key", name: "templateKey", widget: "hidden", default: "homepage"}
+      - {label: "version", name: "title", default: "Current"}
+      - label: "Top Banner"
+        name: "top_banner"
+        widget: "list"
+        fields:
+          - {label: "Book Title", name: "banner_title", widget: "string"}
+          - {label: "Author", name: "banner_author", widget: "string"}
+          - {label: "Subtitle", name: "banner_subtitle", widget: "string"}
+          - {label: "Quote", name: "banner_quote", widget: "string"}
+          - {label: "Book ID", name: "banner_id", widget: string}
+      - label: Featured Books
+        name: featured_books
+        widget: relation
+        hint: "Choose 6-7"
+        collection: files
+        multiple: true
+        value_field: "book.*.id"
+        search_fields: ['book.*.Title'] 
+        display_fields: ['book.*.Title']
+        target_field: book
+        file: booklist_cms
   - name: 'news'
     label: 'News'
     folder: 'content/news'
@@ -134,10 +164,10 @@ collections:
     path: '{{title}}/index'      
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "exhibit"}
-      - { name: title, label: Title }
+      - { name: title, label: Title, hint: "This will be the title of the page and the link from the main exhibits page"}
+      - { name: exhibit_slug, label: URL shortcut, hint: "will appear after /exhibits/", required: true}
       - { name: bgcolor, label: Body Background Color, widget: "string", hint: 'Go to https://tailwindcss.com/docs/customizing-colors#overview and choose color, example: bg-blue-400', required: false }
       - { name: txtcolor, label: Body Text Color, widget: "string", hint: 'Go to https://tailwindcss.com/docs/customizing-colors#overview and choose color, example: bg-blue-400 or text-white',  default: text-black, required: false}
-      # - {label: "Featured", name: "featured", widget: "boolean", default: false, hint: "Will this be featured on Homepage? Note: Only 1 can."}
       - { label: Exhibit Logo, name: exhibit_logo, widget: image, required: false}
       - { name: body, label: Body, widget: markdown }
       - label: Related Series
@@ -285,7 +315,7 @@ collections:
       - { label: 'Summary', name: 'description', widget: 'string', required: false, hint: 'Text for homepage and previews'}
       - {label: Image, name: image, widget: image, required: false}
       - label: Promotion Books
-        name: related
+        name: related_book
         widget: relation
         collection: files
         multiple: true
@@ -352,12 +382,11 @@ collections:
         required: false
       - { name: body, label: Body, widget: markdown , required: false}
       - { label: 'Series ID', name: 'seriesID', widget: 'string' }
-      
   
-  -   name: files
-      label: Files
-      label_singular: 'File'
-      files:
+  - name: files
+    label: Files
+    label_singular: 'File'
+    files:
       - label: 'Books'
         name: 'booklist_cms'
         file: 'content/booklist_cms.json'

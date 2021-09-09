@@ -136,7 +136,7 @@ export default function AboutPage({ data }) {
     </div>
   </div>
 </section>
-            <section className="py-5 text-gray-700 border-b-2 border-gray-100">
+            <section className="py-5 text-gray-700 border-b-2 border-gray-100" id="board">
   <SectionHeader text={"Current Board Members"}/>
               <div>
               <BoardMember name={"Matthew Hedstrom, chair"} title={"Associate Professor, Department of Religious Studies, University of Virginia"}/>

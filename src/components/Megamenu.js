@@ -73,7 +73,7 @@ const MegaHeader = () => {
                     </div>
                     <div>
                       <Link
-                        to={`/about#contact`}
+                        to={`/staff-list`}
                         className="uppercase block text-lg hover:text-gray-300"
                       >
                         Contact US
@@ -134,6 +134,14 @@ const MegaHeader = () => {
                     </div>
                     <div>
                       <Link
+                        to={`/exhibits`}
+                        className="uppercase block text-lg  hover:text-gray-300"
+                      >
+                        Conference Exhibits
+                      </Link>
+                    </div>
+                    <div>
+                      <Link
                         to={`/books/#series`}
                         className="uppercase block text-lg hover:text-gray-300"
                       >
@@ -149,14 +157,7 @@ const MegaHeader = () => {
                       </Link>
                     </div>
 
-                    <div>
-                      <Link
-                        to={`/all-exhibits`}
-                        className="uppercase block text-lg  hover:text-gray-300"
-                      >
-                        Conference Exhibits
-                      </Link>
-                    </div>
+                    
                     <div>
                       <Link
                         to={`/permissions`}

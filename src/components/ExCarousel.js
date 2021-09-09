@@ -28,7 +28,7 @@ const Gallery = ({book_id_array}) => {
         infinite: true,
         swipeToSlide: true,
         speed: 500,
-        slidesToShow: 5,
+        slidesToShow: 6,
         slidesToScroll: 1,
         className:'slider',
         responsive: [

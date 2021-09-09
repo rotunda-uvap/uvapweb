@@ -35,10 +35,9 @@ export default function FeatTrio() {
                     frontmatter {
                       templateKey
                       title
+                      exhibit_slug
                     }
-                    fields {
-                      slug
-                    }
+                  
                   }
                 }
               } 
@@ -66,14 +65,13 @@ export default function FeatTrio() {
            
            <>
              <div className="flex flex-row">
-                 <div className="border-r-2 uppercase tracking-widest font-serif text-xs pr-3"><Link to={`/publicity`}>exhibits</Link></div>
-                 {/* <div className="tracking-widest font-serif text-xs pl-3">{data.exhibit.edges[0].node.frontmatter.date}</div> */}
+                 <div className="border-r-2 uppercase tracking-widest font-serif text-xs pr-3"><Link to={`/exhibits`}>exhibits</Link></div>
              </div>
             
-             <Link className="font-display tracking-widest uppercase py-2" to={`../exhibits/${ data.exhibit.edges[0].node.fields.slug }`}>{data.exhibit.edges[0].node.frontmatter.title }</Link>
-             <Link className="font-display tracking-widest uppercase py-2" to={`../exhibits/${ data.exhibit.edges[1].node.fields.slug }`}>{data.exhibit.edges[1].node.frontmatter.title }</Link>
-             <Link className="font-display tracking-widest uppercase py-2" to={`../exhibits/${ data.exhibit.edges[2].node.fields.slug }`}>{data.exhibit.edges[2].node.frontmatter.title }</Link>
-           <div className="font-display uppercase text-xs tracking-widest py-2"><Link  to={`../all-exhibits`}><FaArrowAltCircleRight className="inline mr-4"/> see more exhibits</Link> 
+             <Link className="font-display tracking-widest uppercase py-2" to={`../exhibits/${ data.exhibit.edges[0].node.frontmatter.exhibit_slug }`}>{data.exhibit.edges[0].node.frontmatter.title }</Link>
+             <Link className="font-display tracking-widest uppercase py-2" to={`../exhibits/${ data.exhibit.edges[1].node.frontmatter.exhibit_slug }`}>{data.exhibit.edges[1].node.frontmatter.title }</Link>
+             <Link className="font-display tracking-widest uppercase py-2" to={`../exhibits/${ data.exhibit.edges[2].node.frontmatter.exhibit_slug }`}>{data.exhibit.edges[2].node.frontmatter.title }</Link>
+           <div className="font-display uppercase text-xs tracking-widest py-2"><Link  to={`../exhibits`}><FaArrowAltCircleRight className="inline mr-4"/> see more exhibits</Link> 
              </div>
            </>
            </article>

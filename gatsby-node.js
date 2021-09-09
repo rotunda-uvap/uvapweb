@@ -31,6 +31,7 @@ exports.createSchemaCustomization = ({ actions }) => {
         related: [String]
         attached_book: String
         profile_photo: String
+        exhibit_slug: String
       }
   
       type Fields {
@@ -109,19 +110,7 @@ exports.createSchemaCustomization = ({ actions }) => {
           }
         }
        
-        allpromos: allMarkdownRemark(filter: {frontmatter: {templateKey: {eq: "promo"}}})  {
-          edges {
-            node {
-              id
-              fields {
-                slug
-              }
-              frontmatter {
-                type
-              }
-            }
-          }
-        }
+      
         allExhibits: allMarkdownRemark(filter: {frontmatter: {templateKey: {eq: "exhibit"}}})  {
           edges {
             node {
@@ -131,6 +120,7 @@ exports.createSchemaCustomization = ({ actions }) => {
               }
               frontmatter {
                 templateKey
+                exhibit_slug
               }
             }
           }
@@ -228,7 +218,7 @@ exports.createSchemaCustomization = ({ actions }) => {
           })
         })
         
-        const promos = result.data.allpromos.edges
+       /*  const promos = result.data.allpromos.edges
         promos.forEach(({ node }) => {
           createPage({
             path: `/promotions${node.fields.slug}`,
@@ -237,16 +227,16 @@ exports.createSchemaCustomization = ({ actions }) => {
               id: node.id
             },
           })
-        })
+        }) */
 
         const exhibits = result.data.allExhibits.edges
         exhibits.forEach(({ node }) => {
           createPage({
-            path: `/exhibits${node.fields.slug}`,
+            path: `/exhibits${node.frontmatter.exhibit_slug}`,
             component: path.resolve(`./src/templates/exhibit-page.js`),
             context: {
               id: node.id,
-              relDir: node.fields.slug.substring(1)
+              relDir: node.frontmatter.exhibit_slug
             },
           })
         })

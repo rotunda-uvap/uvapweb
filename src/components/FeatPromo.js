@@ -14,7 +14,6 @@ export default function FeatPromo() {
                     frontmatter {
                       title
                       templateKey
-                      relbook
                       image {
                         publicURL
                       }

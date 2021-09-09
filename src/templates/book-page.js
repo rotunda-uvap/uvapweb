@@ -72,7 +72,7 @@ const bookPage = ({ data }) => {
           )}
 
           <h6 className="py-2 font-display">
-            by {book.AuthorCredit}
+            {book.AuthorCredit}
           </h6>
 
           {book.Bindings.map(binding => (

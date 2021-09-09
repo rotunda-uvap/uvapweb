@@ -39,13 +39,7 @@ module.exports = {
         name: `news`,
       },
     },
-    /* {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: path.join(__dirname, `src`, `images`),
-      },
-    }, */
+    
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -65,6 +59,13 @@ module.exports = {
       options: {
         path: `${__dirname}/content/seriesinfo`,
         name: `seriesinfo`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/homepage`,
+        name: `homepage`,
       },
     },
     {
