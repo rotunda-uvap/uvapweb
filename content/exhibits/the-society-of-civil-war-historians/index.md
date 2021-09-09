@@ -1,6 +1,7 @@
 ---
 templateKey: exhibit
 title: The SOCIETY of CIVIL WAR HISTORIANS
+exhibit_slug: scwh-virtual-exhibit
 bgcolor: ""
 txtcolor: text-gray-700
 related_series:
@@ -8,7 +9,7 @@ related_series:
   - CGWIS
   - TASS
 related_blog:
-  - In Remembrance of the Firing on Fort Sumter
+  - "SHEAR 2021: A Q&A with Frank Cogliano"
 related_staff:
   - Nadine Zimmerli
 featured_books:
