@@ -83,23 +83,16 @@ export default function Home(data) {
        <section className="py-4 border-b-2 border-gray-100">
 {/* <p className="text-center uppercase text-gray-500 text-md font-thin tracking-widest mx-auto  font-sans tracking-wide">Catalog</p> */}
     
-    <div className="grid grid-cols-1 md:grid-cols-3 ">
-       <button className="md:pb-0 pb-4"><a href={`spring21.pdf`}> <StaticImage  width={300} src="../images/spring21.jpg" alt="current catalog cover" /></a></button>
+    <div className="grid grid-cols-1 md:grid-cols-2 ">
+       <button className="md:pb-0 pb-4"><Link to={'../catalog'}> <StaticImage  width={300} src="../images/spring21.jpg" alt="current catalog cover" /></Link></button>
        <button className="text-gray-600">
        <div className="flex flex-col">
          <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-8 h-8 self-center" viewBox="0 0 24 24">
               <path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
             </svg> 
 <Link to={'recent-books'} className="text-2xl font-light">All New Releases</Link></div></button>
-       <button className="text-gray-600">
-         <div className="flex flex-col"><svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-8 h-8 self-center" viewBox="0 0 24 24">
-              <path d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"></path>
-            </svg>
-             <Link to={'../catalog'} className="text-2xl font-light">Previous Catalogs</Link>
-            </div>
-            </button>
-       </div>
-
+     
+</div>
        </section>
   <div className="py-4 greige">
         <div className="container mx-auto px-6">
