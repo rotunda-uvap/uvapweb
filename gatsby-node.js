@@ -232,7 +232,7 @@ exports.createSchemaCustomization = ({ actions }) => {
         const exhibits = result.data.allExhibits.edges
         exhibits.forEach(({ node }) => {
           createPage({
-            path: `/exhibits${node.frontmatter.exhibit_slug}`,
+            path: `/exhibits/${node.frontmatter.exhibit_slug}`,
             component: path.resolve(`./src/templates/exhibit-page.js`),
             context: {
               id: node.id,
