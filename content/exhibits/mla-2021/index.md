@@ -15,6 +15,8 @@ related_series:
   - USN
   - VLCS
   - WEA
+related_blog:
+  - Announcing UVA Press Reading Club - Virginia Pathways and People
 related_staff:
   - Eric Brandt
   - Angie Hogan
