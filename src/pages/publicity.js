@@ -106,7 +106,7 @@ export default function PubPage({ data }) {
 
 export const query = graphql`
   query {
-    allMarkdownRemark(filter: {frontmatter: {type: {in: ["news", "media", "event"]}}},sort: {fields: frontmatter___date, order: DESC}) {
+    allMarkdownRemark(filter: {frontmatter: {templateKey: {eq: "news"}}},sort: {fields: frontmatter___date, order: DESC}) {
       edges {
         node {
             html
@@ -114,9 +114,9 @@ export const query = graphql`
               title
               type
               related_book {
-              id
-              Title
-            }
+                id
+                Title
+              }
               description
               date(formatString: "YYYY-MM-DD")
             }
