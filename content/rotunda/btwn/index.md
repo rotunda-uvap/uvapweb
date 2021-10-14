@@ -1,0 +1,10 @@
+---
+templateKey: rotunda
+title: The Booker T. Washington Papers
+rid: BTWN
+---
+Born into slavery, Booker T. Washington became the leading voice for Black Americans at the turn of the twentieth century. Author, pioneer in higher education, adviser to presidents and business leaders, and a pillar in the emerging Black elite and middle class, Washington helped conceive a future for an educated, prosperous Black society in the wake of emancipation and Reconstruction.
+
+The son of an enslaved Virginia woman, Washington identified education as the pathway out of poverty, a necessity for his voracious intellect, and the focus of his professional life. He served as the first president of what is now Tuskegee University, to this day one of the premier historically Black universities in America. As president he forged relationships with the most powerful philanthropists of the day, including Carnegie and Rockefeller, establishing a network of donors that reflected a belief in and talent for working with the white establishment. Washington’s landmark Atlanta Exposition Speech in 1895 called for an African American investment in industrial education and accumulation of wealth as a way of integrating Blacks into society at large. This position was not uncontroversial—passionate activists such as NAACP cofounder W. E. B. Du Bois criticized it as being too conservative—and the surrounding debates are foundational to the most vital discussions in Black discourse: how can Black Americans best advance themselves, and can true equality and equity be achieved in the face of white oppression and the legacies of segregationist public policy?
+
+This digital edition is based on the landmark fourteen-volume print series of Washington’s papers, one of the great documentary editions in American scholarship—“a major enterprise in Black historiography” (Times Literary Supplement). This online archive collects the complete contents of the print edition; it is fully searchable and is interoperable with other titles in Rotunda’s American History Collection.

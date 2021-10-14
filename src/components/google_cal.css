@@ -1,0 +1,13 @@
+
+.calendar-body {
+    grid-template-columns: repeat(7, minmax(15px, 1fr));
+    grid-template-rows: 20px;
+    grid-auto-rows: minmax(50px, auto)}
+
+.calendar-title {
+    font-size:1.5rem;
+    margin-top:.25em;
+    margin-bottom:.25em;
+}
+
+.day-name { font-size:12px;line-height: 15px;}

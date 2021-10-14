@@ -1,0 +1,9 @@
+---
+templateKey: rotunda
+title: The Selected Papers of John Jay Digital Edition
+id: JNJY
+rid: JNJY
+---
+The careers of few figures in American history have encompassed as much as did John Jay’s. His accomplishments span pre- and post-Revolutionary history and extend into all three branches of government. Best known as the first chief justice of the Supreme Court, Jay entered public service as a representative in the Continental Congress, where this Anglican member of the New York elite gradually became an ardent supporter of independence. Jay played a central role in the 1783 peace treaty with Great Britain, ending the American Revolution. Dissatisfied with the Articles of Confederation, Jay argued for the ratification of the new Constitution in pseudonymously authored articles in the Federalist Papers. When President Washington appointed Jay chief justice, the Supreme Court was a blank slate, and his papers provide a fascinating look at the creation of court procedure, much of which survives to this day. Jay’s most important act during his years as chief justice was not judicial but diplomatic--namely his negotiating the ultimately controversial 1794 Jay Treaty with Great Britain. After leaving the court, Jay continued to exercise his influence, serving two terms as governor of New York and advocating on a number of issues, including the abolition of slavery.
+
+Building on and revising the pioneering scholarship begun by Richard B. Morris in the 1950s, the digital edition of Jay’s papers will include all seven volumes planned for the complete print edition. This XML-based archive is fully annotated and searchable, and as part of Rotunda’s American Founding Era collection it is interoperable with digital editions covering the first four presidents, as well as with the papers of Alexander Hamilton and John Marshall and the *Documentary History of the Ratification of the Constitution.*

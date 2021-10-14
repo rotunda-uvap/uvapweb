@@ -1,0 +1,416 @@
+backend:
+  name: github
+  repo: rotunda-uvap/uvapweb
+  branch: main
+# publish_mode: editorial_workflow
+media_folder: static/assets
+public_folder: /assets
+
+collections:
+  - name: 'homepage'
+    label: "Homepage"
+    folder: "content/homepage" 
+    create: true
+    identifier_field: '{{title}}'
+    slug: "index"
+    path: "{{title}}/index"
+    fields:
+      - {label: Template Key", name: "templateKey", widget: "hidden", default: "homepage"}
+      - {label: "version", name: "title", default: "Current"}
+      - label: "Top Banner"
+        name: "top_banner"
+        widget: "list"
+        hint: "Featured book above the fold. Create new Top Banner (remove/X out old) and fill out the required fields "
+        fields:
+          - {label: "Book Title", name: "banner_title", widget: "string"}
+          - {label: "Author", name: "banner_author", widget: "string"}
+          - {label: "Subtitle", name: "banner_subtitle", widget: "string"}
+          - {label: "Quote", name: "banner_quote", widget: "string"}
+          - {label: "Quote Attribution", name: "banner_attr", widget: "string"}
+          - {label: "Book ID", name: "banner_id", widget: string}
+      - label: Featured Books 
+        name: featured_books
+        widget: relation
+        hint: "Slider of featured books. Choose at least 5"
+        collection: files
+        multiple: true
+        value_field: "book.*.id"
+        search_fields: ['book.*.Title'] 
+        display_fields: ['book.*.Title']
+        file: booklist_cms
+  - name: 'news'
+    label: 'News'
+    folder: 'content/news'
+    publish_mode: editorial_workflow
+    preview_path: '{{title}}/index'
+    create: true
+    slug: 'index'
+    media_folder: ''
+    public_folder: ''
+    path: '{{title}}/index'
+    fields:
+      - { label: "Template Key", name: "templateKey", widget: "hidden", default: "news"}
+      - { label: 'Type', name: 'type', widget: 'select', options: ['news', 'media', 'author-corner'], required: true}  
+      - { name: title, label: Title }
+      - { label: 'Summary', name: 'description', widget: 'markdown', modes: ['rich_text', 'raw'], required: false, hint: 'Text for homepage and previews'}
+      - { name: body, label: Body, widget: markdown }
+      - {label: Image, name: image, widget: image, required: false}
+      - label: Related Book(s)
+        name: related_book
+        widget: relation
+        collection: files
+        multiple: true
+        value_field: "book.*.id"
+        search_fields: ['book.*.Title'] 
+        display_fields: ['book.*.Title']
+        target_field: book
+        file: booklist_cms
+        required: false
+      - label: Related Series
+        name: related_series
+        widget: relation
+        collection: files
+        multiple: true
+        value_field: "series.*.seriesID"
+        search_fields: ['series.*.seriesName'] 
+        display_fields: ['series.*.seriesName']
+        file: series_cms
+        target_field: series
+        required: false 
+      - label: "date"
+        name: "date"
+        widget: "datetime"
+        default: ""
+        date_format: "YYYY-MM-DD"
+        time_format: "false" 
+        format: "YYYY-MM-DD"
+        required: true
+  - name: 'pages'
+    identifier_field: '{{title}}'
+    label: 'Pages'
+    folder: 'content/pages'
+    preview_path: '{{title}}/index'
+    create: true
+    slug: 'index'
+    media_folder: ''
+    public_folder: ''
+    path: '{{title}}/index'
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "page"}
+      - { name: title, label: Title }
+      - { name: body, label: Body, widget: markdown }
+      - { label: 'Internal Tag', name: 'int_tag', widget: 'select', options: ['authors'], required: false}
+      - label: "Related Book Collection(s)"
+        name: "related_collection"
+        widget: "relation"
+        collection: "book_collection"
+        search_fields: ['title']
+        value_field: "{{title}}"
+        multiple: true
+        required: false    
+  - name: 'addl_resources'
+    identifier_field: '{{title}}'
+    label: 'Additional Resources'
+    folder: 'content/resources'
+    preview_path: '{{title}}/index'
+    create: true
+    slug: 'index'
+    media_folder: ''
+    public_folder: ''
+    path: '{{title}}/index'
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "resource"}
+      - { name: title, label: Title, hint: "Title of book attached to these resources. (For CMS label)", required: true }
+      - label: Attached Book
+        name: attached_book
+        widget: relation
+        hint: "ID of book to which these resources attach. Required to connect!"
+        collection: files
+        value_field: "book.*.id"
+        search_fields: ['book.*.Title'] 
+        display_fields: ['book.*.Title']
+        file: booklist_cms
+        required: true
+      - label: Related Book(s)
+        name: related_book
+        widget: relation
+        hint: "Manual list of UVaP books that may be similar"
+        collection: files
+        multiple: true
+        value_field: "book.*.id"
+        search_fields: ['book.*.Title'] 
+        display_fields: ['book.*.Title']
+        file: booklist_cms
+        required: false
+      - label: "Related Links"
+        name: "attached_links"
+        hint: "Links to resources (internal files or external sites)"
+        widget: "list"
+        multiple: true
+        required: false
+        summary: '{{fields.name}}'
+        fields:
+         - {label: Name, name: name, widget: string, hint: "Text to display for the link"}
+         - {label: Link, name: link, widget: string, hint: "Hyperlink to resource"}
+         
+  - name: 'exhibits'
+    label: 'Exhibits'
+    identifier_field: '{{title}}'
+    folder: 'content/exhibits'
+    preview_path: '{{title}}/index'
+    create: true
+    slug: 'index'
+    media_folder: ''
+    public_folder: ''
+    path: '{{title}}/index'      
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "exhibit"}
+      - { name: title, label: Title, hint: "This will be the title of the page and the link from the main exhibits page"}
+      - { name: exhibit_slug, label: URL shortcut, hint: "will appear after /exhibits/", required: true}
+      - { name: coupon, label: Coupon Promo, widget: text, required: false}
+      - { name: bgcolor, label: Coupon Area Background Color, widget: "string", hint: 'Go to https://tailwindcss.com/docs/customizing-colors#overview and choose color, example: bg-blue-400', required: false }
+      - { name: txtcolor, label: Coupon Text Color, widget: "string", hint: 'Go to https://tailwindcss.com/docs/customizing-colors#overview and choose color, example: bg-blue-400 or text-white',  default: text-black, required: false}
+      - { label: Exhibit Logo, name: exhibit_logo, widget: image, required: false}
+      - { name: body, label: Body, widget: markdown, required: false }
+      - label: Related Series
+        name: related_series
+        widget: relation
+        collection: files
+        multiple: true
+        value_field: "series.*.seriesID"
+        search_fields: ['series.*.seriesName'] 
+        display_fields: ['series.*.seriesName']
+        file: series_cms
+        required: false 
+      - label: "Related Blog(s)"
+        name: "related_blog"
+        widget: "relation"
+        collection: "news"
+        search_fields: ['title']
+        value_field: "{{title}}"
+        display_fields: ["{{title}}"]
+        multiple: true
+        required: false
+      - label: "Related Staff"
+        name: "related_staff"
+        widget: "relation"
+        collection: "bios"
+        search_fields: ['title']
+        value_field: "{{title}}"
+        multiple: true
+        required: false
+      - label: Featured Books 
+        name: featured_books
+        widget: relation
+        collection: files
+        multiple: true
+        value_field: "book.*.id"
+        search_fields: ['book.*.Title'] 
+        display_fields: ['book.*.Title']
+        file: booklist_cms
+        required: false 
+      - label: "Related Book Collection(s)"
+        name: "related_collection"
+        widget: "relation"
+        collection: "book_collection"
+        search_fields: ['title']
+        value_field: "{{title}}"
+        multiple: true
+        required: false 
+      
+  - name: 'book_collection'
+    label: 'Book Collection'
+    identifier_field: '{{title}}'
+    folder: 'content/collections'
+    preview_path: '{{title}}/index'
+    create: true
+    slug: 'index'
+    media_folder: ''
+    public_folder: ''
+    path: '{{title}}/index'      
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "collection"}
+      - { name: title, label: Title, required: true }
+      - { name: description, label: description, widget: markdown, required: false }
+      - label: Related Book(s)
+        name: related_book
+        widget: relation
+        collection: files
+        multiple: true
+        value_field: "book.*.id"
+        search_fields: ['book.*.Title'] 
+        display_fields: ['book.*.Title']
+        file: booklist_cms
+        required: true
+          
+  - name: 'bios'
+    label: 'Staff Bio'
+    identifier_field: '{{title}}'
+    folder: 'content/bios'
+    preview_path: '{{title}}/index'
+    create: true
+    slug: 'index'
+    media_folder: ''
+    public_folder: ''
+    path: '{{title}}/index'      
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "bio"}
+      - { name: title, label: Title }
+      - { name: staff_name, label: Staff Name}
+      - { label: Profile Photo, name: profile_photo, widget: image, required: false}
+      - { label: 'Name Slug', name: 'name_slug', widget: 'string', required: true}
+      - { label: 'Job Title', name: 'job_title', widget: 'string', required: true}
+      - { label: 'Department', name: 'department', widget: 'select', options: ['OPS', 'ACQ','EDP', 'MKG', 'PUB', 'ROT'], multiple: true, required: true}  
+      - { name: body, label: bio, widget: markdown }
+      - { label: 'Email', name: 'email', widget: 'string', required: true}
+      - { label: 'Phone', name: 'phone', widget: 'string', required: true, hint: "Format (XXX) XXX-XXXX"}
+      - label: Related Series
+        name: related_series
+        widget: relation
+        collection: files
+        multiple: true
+        value_field: "series.*.seriesID"
+        search_fields: ['series.*.seriesName'] 
+        display_fields: ['series.*.seriesName']
+        file: series
+        required: false 
+  - name: 'rotundas'
+    label: 'Rotunda Items'
+    identifier_field: '{{rid}}'
+    folder: 'content/rotunda'
+    preview_path: '{{title}}/index'
+    create: true
+    slug: 'index'
+    media_folder: ''
+    public_folder: ''
+    path: '{{rid}}/index'      
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "rotunda"}
+      - { name: title, label: Title }
+      - { name: rid, label: Rotunda Internal ID}
+      - { name: body, label: Marketing Summary, widget: markdown }
+      - label: Related Book(s)
+        name: related_book
+        widget: relation
+        collection: files
+        multiple: true
+        value_field: "book.*.id"
+        search_fields: ['book.*.Title'] 
+        display_fields: ['book.*.Title']
+        file: booklist_cms
+        required: false
+  
+  - name: 'promo'
+    label: 'Promotion'
+    identifier_field: '{{title}}'
+    folder: 'content/promos'
+    preview_path: '{{title}}/index'
+    create: true
+    slug: 'index'
+    media_folder: ''
+    public_folder: ''
+    path: '{{title}}/index'      
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "promo"}
+      - { name: title, label: Title }
+      - { name: body, label: Body, widget: markdown }
+      - { label: 'Summary', name: 'description', widget: 'string', required: false, hint: 'Text for homepage and previews'}
+      - {label: Image, name: image, widget: image, required: false}
+      - label: Promotion Books
+        name: related_book
+        widget: relation
+        collection: files
+        multiple: true
+        value_field: "book.*.id"
+        search_fields: ['book.*.Title'] 
+        display_fields: ['book.*.Title']
+        file: booklist_cms
+        required: false 
+      - label: "Related Book Collection(s)"
+        name: "related_collection"
+        widget: "relation"
+        collection: "book_collection"
+        search_fields: ['title']
+        value_field: "{{title}}"
+        multiple: true
+        required: false  
+  - name: 'featured-collection'
+    label: 'Featured Collection'
+    identifier_field: '{{title}}'
+    folder: 'content/featured-collection'
+    preview_path: '{{title}}/index'
+    create: true
+    slug: 'index'
+    media_folder: ''
+    public_folder: ''
+    path: '{{title}}/index'      
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "featured-collection"}
+      - { name: title, label: Title }
+      - { name: body, label: Body, widget: markdown }
+      - { label: 'Summary', name: 'description', widget: 'string', required: false, hint: 'Text for homepage and previews'}
+      - label: "Related Book Collection(s)"
+        name: "related_collection"
+        widget: "relation"
+        collection: "book_collection"
+        search_fields: ['title']
+        value_field: "{{title}}"
+        multiple: true
+        required: true
+       
+  - name: 'series_info'
+    identifier_field: '{{title}}'
+    label: 'Series Info'
+    folder: 'content/seriesinfo'
+    preview_path: '{{title}}/index'
+    create: true
+    slug: 'index'
+    media_folder: ''
+    public_folder: ''
+    path: '{{title}}/index'
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "series"}
+      - { name: title, label: Title }
+      - { label: 'Series Status', name: 'status', widget: 'select', options: ['active', 'completed'], required: true} 
+      - { label: 'Series Type', name: 'seriestype', widget: 'select', options: ['Academic Book Series', 'Documentary Editions','Lecture Series', 'Distributed Series'], required: true}  
+      - { label: 'Series Editors', name: 'editors', widget: 'string', required: false }
+      - label: "UVaP Editor"
+        name: "related_staff"
+        widget: "relation"
+        collection: "bios"
+        search_fields: ['title']
+        value_field: "{{title}}"
+        multiple: true
+        required: false
+      - { name: body, label: Body, widget: markdown , required: false}
+      - { label: 'Series ID', name: 'seriesID', widget: 'string' }
+  
+  - name: files
+    label: Files
+    label_singular: 'File'
+    files:
+      - label: 'Books'
+        name: 'booklist_cms'
+        file: 'content/booklist_cms.json'
+        extension: "json"
+        fields:
+          - label: 'Book'
+            name: 'book'
+            widget: 'list'
+            fields:
+              - {label: "id", name: "id", widget: "string"}
+              - {label: "Title", name: "Title", widget: "string"}
+      - label: 'SeriesList'
+        name: 'series_cms'
+        file: 'content/series_cms.json'
+        extension: "json"
+        fields:
+          - label: 'Series'
+            name: 'series'
+            widget: 'list'
+            fields:
+              - {label: "Series ID", name: "seriesID", widget: "string"}
+              - {label: "Series Name", name: "seriesName", widget: "string"}
+       
+  
+  
