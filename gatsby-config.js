@@ -220,6 +220,7 @@ module.exports = {
     }, */
    
   `gatsby-plugin-slug`,
+  `gatsby-plugin-preact`,
   `gatsby-plugin-image`,
   `gatsby-plugin-sharp`,
   `gatsby-transformer-sharp`,
