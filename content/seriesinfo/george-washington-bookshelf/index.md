@@ -6,4 +6,4 @@ status: completed
 seriestype: Academic Book Series
 seriesID: GWB
 ---
-Description Needed
+description unavailable

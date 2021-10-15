@@ -6,4 +6,4 @@ status: active
 seriestype: Lecture Series
 seriesID: TJFS
 ---
-Description Needed
+description unavailable

@@ -4,7 +4,7 @@ import { StaticImage } from "gatsby-plugin-image"
 
 
 const Banner = ({id, author, quote, subtitle, book_title, attr}) => {
-  const cover = "https://www.upress.virginia.edu/sites/default/files/covers/" + id + ".jpg"
+  const cover = "https://covers.upress.virginia.edu/sites/default/" + id + ".jpg"
   const booklink = "../../title/" + id
 
    return (

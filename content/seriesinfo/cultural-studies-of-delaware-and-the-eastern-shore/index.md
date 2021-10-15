@@ -6,4 +6,4 @@ status: completed
 seriestype: Academic Book Series
 seriesID: CSDES
 ---
-Description Needed
+description unavailable

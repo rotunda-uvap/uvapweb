@@ -11,7 +11,7 @@ const Gallery = ({book_id_array}) => {
   
 
     const imageMap = book_id_array.map((image) => {
-      let cover = "https://www.upress.virginia.edu/sites/default/files/covers/" + image + "_M.jpg"
+      let cover = "https://covers.upress.virginia.edu/mediums/" + image + "_M.jpg"
       let booklink = "../../title/" + image
         return (
             <div className="image-slider-container items-center px-10" key={image}>

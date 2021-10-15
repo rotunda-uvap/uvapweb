@@ -5,4 +5,4 @@ status: active
 seriestype: Academic Book Series
 seriesID: AMSP
 ---
-Description Needed
+description unavailable

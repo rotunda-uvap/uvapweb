@@ -6,4 +6,4 @@ status: completed
 seriestype: Lecture Series
 seriesID: GGL
 ---
-Description Needed
+description unavailable

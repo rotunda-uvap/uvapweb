@@ -7,7 +7,7 @@ import "slick-carousel/slick/slick-theme.css";
 const Gallery = ({book_obj_array}) => {
 
     const imageMap = book_obj_array.map((book) => {
-      let cover = "https://www.upress.virginia.edu/sites/default/files/covers/" + book.id + "_M.jpg"
+      let cover = "https://covers.upress.virginia.edu/mediums/" + book.id + "_M.jpg"
       let booklink = "../../title/" + book.id
         return (
             <div className="image-slider-container items-center px-10" key={book.Title}>

@@ -6,4 +6,4 @@ status: active
 seriestype: Lecture Series
 seriesID: RMLS
 ---
-Description Needed
+description unavailable

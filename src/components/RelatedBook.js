@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 
 const RelatedBook = ({id, title}) => {
-   const cover = "https://www.upress.virginia.edu/sites/default/files/covers/" + id + "_M.jpg"
+   const cover = "https://covers.upress.virginia.edu/mediums/" + id + "_M.jpg"
    const booklink = "../../title/" + id
 
     return (

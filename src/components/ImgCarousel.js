@@ -7,7 +7,7 @@ import "slick-carousel/slick/slick-theme.css";
 const ImgGallery = ({filename_array}) => {
 
     const imageMap = filename_array.map((name) => {
-      let src = "https://www.upress.virginia.edu/sites/default/files/covers/" + name
+      let src = "https://covers.upress.virginia.edu/" + name
         return (
             <div className="image-slider-container items-center sm:px-5 md:px-10" key={name}>
                 <Link to={src} ><img src={src} alt={name} /></Link>

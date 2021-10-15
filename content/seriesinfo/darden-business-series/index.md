@@ -6,4 +6,4 @@ status: active
 seriestype: Academic Book Series
 seriesID: DBS
 ---
-Description Needed
+description unavailable

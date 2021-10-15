@@ -6,4 +6,4 @@ status: completed
 seriestype: Academic Book Series
 seriesID: EMX
 ---
-Description Needed
+description unavailable
