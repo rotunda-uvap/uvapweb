@@ -23,7 +23,7 @@ const bookPage = ({ data }) => {
     book.BookID +
     ".jpg"
   const imglink_sm =
-    "https://ik.imagekit.io/uvapress/" +
+    "https://ik.imagekit.io/uvapress/mediums/" +
     book.BookID +
     "_M.jpg"
   const defaultImage = "/static/uvap_sm.png"
