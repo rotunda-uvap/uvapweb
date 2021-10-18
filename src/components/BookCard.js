@@ -2,12 +2,12 @@ import React from "react"
 import "./BookCard.css"
 
 const BookCard = ({Title, Subtitle, Author, Thumb, Bookid, prizes}) => {
-const booksrc = "https://covers.upress.virginia.edu/mediums/"  
+const booksrc = "https://ik.imagekit.io/uvapress/mediums/"  
     return (
         <div className="flip-card">
   <div className="flip-card-inner">
     <div className="flip-card-front">
-      {Thumb ?  <img src={booksrc + Thumb} className="mx-auto my-auto self-center" alt="cover"/> : <img src={ "https://covers.upress.virginia.edu/noimg.png"} alt="cover placeholder" className="mx-auto my-auto self-center"/>}
+      {Thumb ?  <img src={booksrc + Thumb} className="mx-auto my-auto self-center" alt="cover"/> : <img src={ "https://ik.imagekit.io/uvapress/noimg.png"} alt="cover placeholder" className="mx-auto my-auto self-center"/>}
     </div>
     <div className="flip-card-back px-1 bg-white  ">
     <h6 className="text-base text-gray-700 uppercase pt-3 px-1 underline">{Title}</h6>

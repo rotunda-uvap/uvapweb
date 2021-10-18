@@ -16,14 +16,14 @@ const bookPage = ({ data }) => {
   const title = book.Title
   const url = "https://www.upress.virginia.edu/title/" + book.BookID
   const news = data.newsMD
-  const noimg_big = "https://covers.upress.virginia.edu/noimg_lg.png"
-  const noimg_sm = "https://covers.upress.virginia.edu/noimg.png"
+  const noimg_big = "https://ik.imagekit.io/uvapress/noimg_lg.png"
+  const noimg_sm = "https://ik.imagekit.io/uvapress/noimg.png"
   const imglink =
-    "https://covers.upress.virginia.edu/" +
+    "https://ik.imagekit.io/uvapress/" +
     book.BookID +
     ".jpg"
   const imglink_sm =
-    "https://covers.upress.virginia.edu/" +
+    "https://ik.imagekit.io/uvapress/" +
     book.BookID +
     "_M.jpg"
   const defaultImage = "/static/uvap_sm.png"
@@ -36,7 +36,7 @@ const bookPage = ({ data }) => {
         author={book.AuthorCredit}
         isbn={isbn}
         cover={
-          "https://covers.upress.virginia.edu/" +
+          "https://ik.imagekit.io/uvapress/" +
             book.CoverImageFull || defaultImage
         }
         article={false}

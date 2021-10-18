@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 
 const FeaturedBooks = ({id}) => {
-   const cover = "https://covers.upress.virginia.edu/mediums/" + id + ".jpg"
+   const cover = "https://ik.imagekit.io/uvapress/mediums/" + id + ".jpg"
    const booklink = "../../title/" + id
 
     return (
