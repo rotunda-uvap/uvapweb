@@ -7,4 +7,4 @@ seriestype: Academic Book Series
 uvaeditors: Angie Hogan
 seriesID: USN
 ---
-description unavailable
+Description not yet available. 

@@ -6,4 +6,4 @@ status: active
 seriestype: Academic Book Series
 seriesID: PBK
 ---
-description unavailable
+Description not yet available. 

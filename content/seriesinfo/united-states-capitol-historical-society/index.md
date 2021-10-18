@@ -6,4 +6,4 @@ status: active
 seriestype: Academic Book Series
 seriesID: USCHS
 ---
-description unavailable
+Description not yet available. 

@@ -6,4 +6,4 @@ status: active
 seriestype: Academic Book Series
 seriesID: MNS
 ---
-description unavailable
+Description not yet available. 

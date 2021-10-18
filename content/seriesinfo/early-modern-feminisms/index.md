@@ -6,4 +6,4 @@ status: completed
 seriestype: Academic Book Series
 seriesID: EMF
 ---
-description unavailable
+Description not yet available. 

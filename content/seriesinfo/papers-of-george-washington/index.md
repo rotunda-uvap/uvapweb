@@ -6,4 +6,4 @@ status: active
 seriestype: Documentary Editions
 seriesID: PGW
 ---
-description unavailable
+Description not yet available. 

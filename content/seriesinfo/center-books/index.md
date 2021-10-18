@@ -6,4 +6,4 @@ status: completed
 seriestype: Academic Book Series
 seriesID: CAP
 ---
-description unavailable
+Description not yet available. 

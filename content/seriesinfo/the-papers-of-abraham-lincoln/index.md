@@ -6,4 +6,4 @@ status: completed
 seriestype: Documentary Editions
 seriesID: PAL
 ---
-description unavailable
+Description not yet available. 

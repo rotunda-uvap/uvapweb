@@ -19,9 +19,9 @@ const SeriesTemplate = ({ data }) => {
             <SeO title={seriesinfo.frontmatter.title}/>
             <PageHeader text={seriesinfo.frontmatter.title}/>
             <section className="py-4 border-b-2 border-gray-100">
-            <div className="ml-4 text-center"><Link to={'/series'}>{seriesinfo.frontmatter.status} series</Link></div>
-            <div className="pt-5 cms" dangerouslySetInnerHTML={{ __html: seriesinfo.html }}/>
-            <div className="text-base text-gray-600 leading-relaxed font-serif ml-4 cms" dangerouslySetInnerHTML={{ __html: seriesinfo.frontmatter.editors }}/>
+            <div className="ml-4 text-center uppercase"><Link to={'/series'}>{seriesinfo.frontmatter.status} series</Link></div>
+            {seriesinfo.html ? <div className="pt-5 cms" dangerouslySetInnerHTML={{ __html: seriesinfo.html }}/> :<div/> }
+            {seriesinfo.frontmatter.editors ? <div className="text-base text-gray-600 leading-relaxed font-serif ml-4 cms" dangerouslySetInnerHTML={{ __html: seriesinfo.frontmatter.editors }}/> : <div/> }
 <div>
 {related_staff && related_staff.map(staff => (
             <div className="pt-5 text-base text-gray-600 leading-relaxed font-display ml-4 cms">UVA Editor: 

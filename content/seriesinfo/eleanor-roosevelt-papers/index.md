@@ -6,4 +6,4 @@ status: completed
 seriestype: Documentary Editions
 seriesID: ERP
 ---
-description unavailable
+Description not yet available. 

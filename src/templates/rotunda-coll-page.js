@@ -3,6 +3,8 @@ import { graphql, Link } from "gatsby"
 import RotundaCard from "../components/RotundaCard"
 import Layout from "../components/layout"
 import SeO from "../components/SeoComponent"
+import PageHeader from "../components/PageHeader"
+
 
 
 const RotundaCollTemplate = ({ data }) => {
@@ -10,12 +12,8 @@ const RotundaCollTemplate = ({ data }) => {
     return (
     <div>
         <Layout>
-            <SeO title={items.edges[0].node.MainCollection}/>
-            <section>
-            <div className="grid grid-cols-3 content-center">
-                <h3 className="py-3 col-span-2">{items.edges[0].node.MainCollection} </h3>
-                </div>
-               </section> 
+            <SeO title={items.edges[0].node.MainCollection}/> 
+            <PageHeader text={items.edges[0].node.MainCollection}/>
                 
                 <section>
                     <div className="container px-5 py-5 grid md:grid-cols-3 md:gap-4">

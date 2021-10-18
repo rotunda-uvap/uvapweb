@@ -6,4 +6,4 @@ status: active
 seriestype: Academic Book Series
 seriesID: PBL
 ---
-description unavailable
+Description not yet available. 

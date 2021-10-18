@@ -5,39 +5,39 @@ import { FaPhone, FaMapMarkedAlt, FaEnvelope, FaFacebookSquare, FaTwitterSquare,
 const Footer = () => {
    
     return (
-      <footer className="body-font border-t-2 border-b-2 text-gray-500 text-sm  grid grid-cols-1 md:grid md:grid-cols-4 items-center">
+      <footer className="body-font border-t-2 border-b-2 text-gray-500 text-md  grid grid-cols-1 md:grid md:grid-cols-4 items-center">
          
             <div id="links col-span-1">
               <h6 className="hidden">QuickLinks</h6>
-            <div className="px-5 py-2">
+            <div className="px-5 py-4">
             
-          <Link to={`/book-search`} className="uppercase text-xs block mt-2   hover:text-gray-300">
+          <Link to={`/book-search`} className="uppercase  block mt-2   hover:text-gray-300">
             Find a Book
           </Link>
-          <Link to={`/authors`} className="uppercase block mt-2  text-xs  hover:text-gray-300 mr-4">
+          <Link to={`/authors`} className="uppercase block mt-2    hover:text-gray-300 mr-4">
             For Our Authors
           </Link>
-          <Link to={`/permissions/`} href="#responsive-header" className="uppercase text-xs block mt-2   hover:text-gray-300 mr-4">
+          <Link to={`/permissions/`} href="#responsive-header" className="uppercase  block mt-2   hover:text-gray-300 mr-4">
             Rights and Permissions</Link>
-          <Link to={`/rotunda`} className="uppercase block mt-2  text-xs  hover:text-gray-300">
+          <Link to={`/rotunda`} className="uppercase block mt-2   hover:text-gray-300">
             ROTUNDA DIGITAL IMPRINT
           </Link>
-          <Link to={`/support`} className="uppercase block mt-2 text-xs hover:text-gray-300">
+          <Link to={`/support`} className="uppercase block mt-2  hover:text-gray-300">
             Support UVa Press
           </Link>
-          <Link to={`/career`} className="uppercase block mt-2 text-xs  hover:text-gray-300">
+          <Link to={`/career`} className="uppercase block mt-2  hover:text-gray-300">
             Career Opportunities
           </Link>
-          <Link to={`/walker-cowen-award`} className="uppercase block mt-2 text-xs  hover:text-gray-300">
+          <Link to={`/walker-cowen-award`} className="uppercase block mt-2   hover:text-gray-300">
             Walker Cowen Memorial Prize
           </Link>
-          <Link to={`/privacy`} className="uppercase block mt-2 text-xs  hover:text-gray-300">
+          <Link to={`/privacy`} className="uppercase block mt-2   hover:text-gray-300">
             Privacy Policy
           </Link>
           <div className="flex flex-row py-2">
-            <a href="https://www.facebook.com/uvapress" aria-label="facebook" className="pr-2"><FaFacebookSquare/></a>
-          <a href="https://twitter.com/uvapress" aria-label="twitter" className="pr-2"><FaTwitterSquare/></a>
-          <a href="https://www.instagram.com/uvapress" aria-label="instagram" className="pr-2"><FaInstagramSquare/></a>
+            <a href="https://www.facebook.com/uvapress" aria-label="facebook" className="pr-2"><FaFacebookSquare  className="text-3xl"/></a>
+          <a href="https://twitter.com/uvapress" aria-label="twitter" className="pr-2"><FaTwitterSquare className="text-3xl"/></a>
+          <a href="https://www.instagram.com/uvapress" aria-label="instagram" className="pr-2"><FaInstagramSquare className="text-3xl"/></a>
           </div>
           
               </div>

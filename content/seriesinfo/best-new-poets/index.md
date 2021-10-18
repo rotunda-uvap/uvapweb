@@ -8,4 +8,4 @@ related_staff:
   - Angie Hogan
 seriesID: BNP
 ---
-description unavailable
+Description not yet available. 

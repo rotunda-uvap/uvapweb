@@ -7,4 +7,4 @@ seriestype: Documentary Editions
 editors: John Jay. Edited by Elizabeth M. Nuxoll
 seriesID: JAY
 ---
-description unavailable
+Description not yet available. 

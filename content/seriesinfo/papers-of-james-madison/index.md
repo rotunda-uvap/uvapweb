@@ -6,4 +6,4 @@ status: active
 seriestype: Documentary Editions
 seriesID: PJM
 ---
-description unavailable
+Description not yet available. 
