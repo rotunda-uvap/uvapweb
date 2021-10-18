@@ -1,7 +1,7 @@
 backend:
   name: github
   repo: rotunda-uvap/uvapweb
-  branch: main
+  branch: master
 # publish_mode: editorial_workflow
 media_folder: static/assets
 public_folder: /assets
