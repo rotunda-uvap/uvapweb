@@ -7,7 +7,7 @@ import FeatTrio from "../components/NewsEventEx"
 import NewsletterMain from "../components/NewsletterMain"
 import Banner from "../components/HomepageBanner"
 import RotundaNews from "../components/RotundaNews"
-import GoogleCalendar from "../components/Calendar"
+// import GoogleCalendar from "../components/Calendar"
 import Gallery from "../components/ExCarousel.js"
 // import { ReactEmbeddedGoogleCalendar } from 'react-embedded-google-calendar';
 
@@ -70,7 +70,7 @@ const Home = ({ data }) => {
     
     <div className="grid grid-cols-1 md:grid-cols-2 ">
        <div className="md:pb-0 pb-4"><Link to={'../catalog'}> <StaticImage  width={300} src="../images/spring21.jpg" alt="current catalog cover" /></Link></div>
-       <GoogleCalendar/>
+       {/* <GoogleCalendar/> */}
       {/*  <button className="text-gray-600">
        <div className="flex flex-col">
          <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-8 h-8 self-center" viewBox="0 0 24 24">
