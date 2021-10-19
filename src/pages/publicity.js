@@ -15,16 +15,16 @@ export default function PubPage({ data }) {
     
         <Layout>
           <SeO title="Publicity Information: News and Events"/>
-          <div className="container px-5 py-12 mx-auto">
+          <div className="container md:p-5 mx-auto">
             <div className="flex flex-col text-center w-full">
             <PageHeader text={'News and Events'}/>
               </div>
             </div>
         
           <section>
-            <div className="container flex md:flex-row px-5 py-12">
+            <div className="container items-center flex flex-col md:flex-row py-12">
               
-              <div className="flex flex-col text-center items-center w-2/4">
+              <div className="flex flex-col text-center items-center md:w-2/4 ">
               <Link to={'../staff/emily-grandstaff'}><h5 className="title-font font-medium text-md text-gray-900">Emily Grandstaff</h5></Link>
        <p className="text-gray-500 font-light">Publicity and Social Media Director</p>
        <p className="text-base leading-relaxed">(434) 982-2932</p>
@@ -34,7 +34,7 @@ export default function PubPage({ data }) {
            </svg>
          </a>
                 </div>
-                 <div className="w-2/4">
+                 <div className="md:w-2/4 pt-5 md:pt-0">
                     <GoogleCalendar/>
                     </div>          
             </div>
