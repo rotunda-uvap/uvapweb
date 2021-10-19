@@ -19,7 +19,7 @@ export default function Books({ data }) {
          title="Browse all books"/>
                  
 <PageHeader text={"Browse our Books"}/>
-<section className="flex flex-wrap gap-4 md:gap-8 items-center justify-center py-8 md:py-10 border-b-2 border-gray-100" id="top">
+<section className="flex flex-col md:flex-row gap-4 md:gap-8 items-center justify-center py-8 md:py-10 border-b-2 border-gray-100" id="top">
 <div className="uppercase text-gray-500 text-md font-thin tracking-widest font-sans"><Link to={`#AZ`}>A - Z</Link></div>
 <div className="uppercase text-gray-500 text-md font-thin tracking-widest font-sans"><Link to={`#recent`}>Recently Published</Link></div>
 <div className="uppercase text-gray-500 text-md font-thin tracking-widest font-sans"><Link to={`#subjects`}>Browse by Subject</Link></div>

@@ -62,7 +62,7 @@ div.dropCap:first-child:first-letter {
   padding-top:4px;
   padding-right: 4px;
 }
-a:hover { text-decoration: underline; font-weight: bold; color:#1F2937; }
+a:hover { text-decoration: underline; color:#1F2937; }
 article ul {padding:1em; list-style: disc;}
 button[aria-selected="false"]{
   background-color: #f7f7f7f7;

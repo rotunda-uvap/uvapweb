@@ -15,7 +15,7 @@ const MegaHeader = () => {
         id="mobile menu"
         className="md:hidden border-b-2 flex flex-row  z-40 tracking-wide"
       >
-        <div className="flex flex-row">
+        <div className="flex flex-row w-full">
           <nav className="flex">
             <div className="block text-gray-900 w-64 py-4">
               <Link to={`/`}>
@@ -81,6 +81,14 @@ const MegaHeader = () => {
                     </div>
                     <div>
                       <Link
+                        to={`/permissions`}
+                        className="uppercase block text-lg   hover:text-gray-300 mr-4"
+                      >
+                        Rights and Permissions
+                      </Link>
+                    </div>
+                    <div>
+                      <Link
                         to={`/career`}
                         className="uppercase block text-lg hover:text-gray-300"
                       >
@@ -100,6 +108,14 @@ const MegaHeader = () => {
                     <h3 className=" text-xl text-white font-sans mb-2">
                       Books
                     </h3>
+                    <div>
+                      <Link
+                        to={`/books#AZ`}
+                        className="uppercase block text-lg hover:text-gray-300"
+                      >
+                        All A-Z
+                      </Link>
+                    </div>
                     <div>
                       <Link
                         to={`/book-search`}
@@ -158,14 +174,7 @@ const MegaHeader = () => {
                     </div>
 
                     
-                    <div>
-                      <Link
-                        to={`/permissions`}
-                        className="uppercase block text-lg   hover:text-gray-300 mr-4"
-                      >
-                        Rights and Permissions
-                      </Link>
-                    </div>
+                    
                     <div>
                       <Link
                         to={`/order`}
@@ -310,7 +319,7 @@ const MegaHeader = () => {
       <nav
         className="hidden md:block text-gray-400 font-sans font-thin uppercase border-b-2 flex flex-row justify-center place-content-center z-40 tracking-wide"
       >
-        <div className="flex flex-row justify-center place-content-center">
+        <div className="flex flex-row justify-center place-content-center lg:text-xl">
           <nav className="flex">
             <div className="flex items-center text-gray-900 mb-4 md:mb-0">
               <div className="block">
@@ -411,6 +420,14 @@ const MegaHeader = () => {
                     </div>
                     <div>
                       <Link
+                        to={`/permissions`}
+                        className="uppercase block text-lg   hover:text-gray-300 mr-4"
+                      >
+                        Rights and Permissions
+                      </Link>
+                    </div>
+                    <div>
+                      <Link
                         to={`/career`}
                         className="uppercase block text-lg hover:text-gray-300"
                       >
@@ -430,6 +447,14 @@ const MegaHeader = () => {
                     <h3 className=" text-xl text-white font-sans mb-2">
                       Books
                     </h3>
+                    <div>
+                      <Link
+                        to={`/books#AZ`}
+                        className="uppercase block text-lg hover:text-gray-300"
+                      >
+                        All A-Z
+                      </Link>
+                    </div>
                     <div>
                       <Link
                         to={`/book-search`}
@@ -487,14 +512,7 @@ const MegaHeader = () => {
                       </Link>
                     </div>
 
-                    <div>
-                      <Link
-                        to={`/permissions`}
-                        className="uppercase block text-lg   hover:text-gray-300 mr-4"
-                      >
-                        Rights and Permissions
-                      </Link>
-                    </div>
+                    
                     <div>
                       <Link
                         to={`/order`}

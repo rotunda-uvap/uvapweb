@@ -4,6 +4,7 @@ import Layout from "../components/layout"
 import BookCard from "../components/BookCard"
 import SeO from "../components/SeoComponent"
 import PageHeader from "../components/PageHeader"
+import SectionHeader from "../components/SectionHeader"
 
 
 
@@ -16,27 +17,42 @@ export default function RecentBooks({ data }) {
     
         <Layout>
           <SeO title="Books most recently published by the University of Virginia Press"/>
-          <div className="container px-5 py-12 mx-auto">
+          <div className="container px-5 py-12 mx-auto" id="top">
           <PageHeader text={'New and Forthcoming Books'}/>
 
-            <section className="py-5 grid grid-cols-2 mx-auto">
-            {/* <div className="text-center text-gray-500 mx-auto font-sans tracking-wide py-4">Forthcoming Books</div> */}
-            {/* <a className="text-center  text-gray-500 mx-auto  font-sans tracking-wide py-4" href="#new">Books Published This Year</a> */}
+            <section className="py-5 flex md:flex-row items-center gap-4 md:gap-8 justify-center flex-col mx-auto border-b">
+       
             <span className="text-center font-medium pb-4 text-gray-500"><Link to={'#upc'}>
-            Forthcoming Books <span className="inline-flex items-center mt-4">
+            Forthcoming Books {/* <span className="inline-flex items-center mt-4">
               <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
                 <path d="M16 17l-4 4m0 0l-4-4m4 4V3"></path>
-              </svg></span>
+              </svg></span> */}
               </Link></span>
             <span className="font-medium text-center pb-4 text-gray-500"><Link to={'#new'}>
-            Books Published This Year <span className="inline-flex items-center mt-4">
+            Books Published This Year {/* <span className="inline-flex items-center mt-4">
               <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
                 <path d="M5 12h14M12 5l7 7-7 7"></path>
-              </svg></span>
+              </svg></span> */}
               </Link></span>
             </section>
             
-            <section id="upc">
+           
+           
+      <section id="new">
+      <SectionHeader className="py-4" text={"Recent Releases"}/>
+          <div className="container grid grid-cols-2 md:flex md:flex-wrap gap-2 py-5">
+            {rec.edges.map(edge => (
+           <>  
+              <Link to={`../title/${ edge.node.BookID }`}>
+                <BookCard Title={edge.node.Title} Subtitle={edge.node.Subtitle} Author={edge.node.AuthorCredit} Thumb={edge.node.CoverImageMain} Bookid ={edge.node.BookID} pubdate={edge.node.PublicationDate} />
+                </Link>
+           </>
+        ))}
+        </div>
+        <Link to={`#top`} className="uppercase text-gray-500 text-xs">Go to top</Link>
+</section>
+<section id="upc">
+            <SectionHeader className="py-4" text={"Coming Soon"}/>
                <ul className="container grid grid-cols-2 md:flex md:flex-wrap gap-2 py-5">
             {upc.edges.map(edge => (
            <>  
@@ -53,20 +69,8 @@ export default function RecentBooks({ data }) {
         </>
         ))}
         </ul>
+        <Link to={`#top`} className="uppercase text-gray-500 text-xs">Go to top</Link>
             </section>
-           
-      <section id="new">
-           <div className="py-5 text-center text-gray-500 mx-auto font-sans tracking-wide py-4">Recent Releases</div>
-          <div className="container grid grid-cols-2 md:flex md:flex-wrap gap-2 py-5">
-            {rec.edges.map(edge => (
-           <>  
-              <Link to={`../title/${ edge.node.BookID }`}>
-                <BookCard Title={edge.node.Title} Subtitle={edge.node.Subtitle} Author={edge.node.AuthorCredit} Thumb={edge.node.CoverImageMain} Bookid ={edge.node.BookID} pubdate={edge.node.PublicationDate} />
-                </Link>
-           </>
-        ))}
-        </div>
-</section>
         </div>
         </Layout>
 
