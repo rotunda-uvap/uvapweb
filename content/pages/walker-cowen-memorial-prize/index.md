@@ -3,7 +3,7 @@ type: page
 templateKey: page
 title: Walker Cowen Memorial Prize
 ---
-#### 2022 Walker Cowen Manuscript Prize Competition in Eighteenth-Century Studies
+##### 2022 Walker Cowen Manuscript Prize Competition in Eighteenth-Century Studies
 
 We invite submissions for the Walker Cowen Memorial Prize. The prize is awarded to the author of a scholarly book-length manuscript in eighteenth-century studies, including the Americas and the Atlantic world. Submissions may be in history (including history of science), literature, philosophy, or the arts. The competition is held annually. The winner of the Cowen Prize will receive a $5,000 award and will be offered an advance publishing contract by the University of Virginia Press. The prize honors the late Walker Cowen, second Director of the Press from 1969 until his death in 1987. [Click here for an official application form](https://www.upress.virginia.edu/walker-cowen-application.pdf). 
 
