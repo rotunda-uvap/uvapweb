@@ -21,7 +21,7 @@ University of Virginia Press\
 P.O. Box 400318\
 Charlottesville, VA 22904-4318 
 
-**Email:** [hc7kb@virginia.edu](mailto:hc7kb@virginia.edu)\
+**Email:** [](mailto:hc7kb@virginia.edu)[](mailto:leahstearns@virginia.edu)[leahstearns@virginia.edu](mailto:leahstearns@virginia.edu)\
 **Fax:** (434) 982-2655
 
 **Please include:**
