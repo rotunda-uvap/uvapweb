@@ -85,6 +85,20 @@ export default function InstructorPage({data}) {
   <a href={`#top`} className="uppercase text-gray-500 text-xs">Go to top</a>
 
 </section>
+<SectionHeader className="py-4" text={"Rotunda Collections"}/>
+
+
+<section className="text-gray-700 py-4" id="rotunda">
+
+  <div className="container flex flex-wrap py-10 mx-auto items-center">
+    <Link to={"../collections/American%20History%20Collection"}>American History Collection</Link>
+    <Link to={"../collections/Literature%20and%20Culture%20Collection"}>Literature and Culture Collection</Link>
+    <Link to={"../collections/Architecture"}>Architecture</Link>
+
+  </div>
+  <a href={`#top`} className="uppercase text-gray-500 text-xs">Go to top</a>
+
+</section>
 
 <section className="py-4 border-b-2 border-gray-100" id="copyinfo">
    <SectionHeader text={'Desk and Exam Copies'} />

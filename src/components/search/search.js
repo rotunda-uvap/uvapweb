@@ -10,7 +10,7 @@ const appId = process.env.GATSBY_ALGOLIA_APP_ID;
 const searchKey = process.env.GATSBY_ALGOLIA_SEARCH_KEY;
 const searchClient = algoliasearch(appId, searchKey);
 const Hit = ( {hit}) => <div className="py-4 border-b-2 border-gray-100"><Link to={`../title/${ hit.BookID }`} className="hover:text-gray-500"><h6 className="font-thin text-md text-gray-600 uppercase">{hit.Title}</h6>
-{hit.Subtitle ? <h6 className="text-sm tracking-wide text-gray-500 italic py-2 ">{hit.Subtitle}</h6> : ""}
+{hit.Subtitle ? <h6 className="text-sm tracking-widest text-gray-500 italic py-2 ">{hit.Subtitle}</h6> : ""}
 <h6 className="text-xs tracking-widest font-display uppercase pt-2">{hit.AuthorCredit}</h6>
 
 <div className="pt-3" dangerouslySetInnerHTML={{ __html: hit.MainDescription.html.split(' ').splice(0, 30).join(' ') + '...' }}/>

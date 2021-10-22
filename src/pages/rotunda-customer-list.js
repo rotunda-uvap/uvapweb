@@ -4,6 +4,7 @@ import Layout from "../components/layout"
 import "../utils/global.css"
 import SeO from "../components/SeoComponent"
 import PageHeader from "../components/PageHeader"
+import SectionHeader from "../components/SectionHeader"
 
 
 export default function RotundaCustomerList({data}) {
@@ -13,21 +14,21 @@ export default function RotundaCustomerList({data}) {
            <Layout>
                    <SeO title="A list of our current customers"/>
                      <section className="text-gray-600 body-font">
-  <div className="container px-5 py-12 mx-auto">
+  <div className="container px-5 py-7 mx-auto">
     <div>
             
     </div>
   <div>
   <PageHeader text={'Customer Information'}/>
       
-      <p>Current institutional users (IP-authenticated accounts): <a href="https://rotunda.upress.virginia.edu/UsageStats/?tab=home&amp;job=dates">view statistics for your usage of <span className="rotunda">Rotunda</span> publications</a>.</p>
-<p>Note that your usage stats may show access to publications which you have not purchased, as your users will be able to navigate to contents pages within them, and those page views are logged.</p>
-      <h5 className="leading-relaxed xl:w-3/4 lg:w-3/4 text-gray-500s">MARC Records are available for the following Rotunda Publications:
-</h5>
-<ul className="py-5">
-    <li><b>American Founding Era</b></li>
+      <p className="text-center">Current institutional users (IP-authenticated accounts): <a href="https://rotunda.upress.virginia.edu/UsageStats/?tab=home&amp;job=dates">view statistics for your usage of <span className="rotunda">Rotunda</span> publications</a>.</p>
+<p className="text-center">Note that your usage stats may show access to publications which you have not purchased, as your users will be able to navigate to contents pages within them, and those page views are logged.</p>
+      
+<SectionHeader text="MARC Records are available for the following Rotunda Publications:"/>
+<ul className="py-2 px-5">
+    <li className="tracking-wider"><b>American Founding Era</b></li>
     <li>
-        <ul className="py-5">
+        <ul className="py-5 font-serif">
             <li><a href="http://rotunda.upress.virginia.edu/MARC/10-adams.mrc">Adams Papers Digital Edition</a></li>
             <li><a href="http://rotunda.upress.virginia.edu/MARC/12-docu.mrc">Documentary History of the Ratification of
                     the Constitution</a></li>
@@ -59,9 +60,9 @@ export default function RotundaCustomerList({data}) {
                     
         </ul>
     </li>
-    <li><b>Antebellum, Civil War, and Reconstruction</b></li>
+    <li className="tracking-wide"><b>Antebellum, Civil War, and Reconstruction</b></li>
     <li>
-        <ul  className="py-5">
+        <ul  className="py-5 font-serif">
             <li><a href="http://rotunda.upress.virginia.edu/MARC/27-grant.mrc">Papers of Ulysses S. Grant Digital
                     Edition</a></li>
             <li><a href="http://rotunda.upress.virginia.edu/MARC/20-jackson.mrc">Papers of Andrew Jackson Digital
@@ -72,9 +73,9 @@ export default function RotundaCustomerList({data}) {
                     Edition</a></li>
         </ul>
     </li>
-    <li><b>American Century</b></li>
+    <li className="tracking-wide"><b>American Century</b></li>
     <li>
-        <ul className="py-5">
+        <ul className="py-5 font-serif">
             <li><a href="http://rotunda.upress.virginia.edu/MARC/14-presrecord.mrc">Presidential Recordings Digital
                     Edition</a></li>
             <li><a href="http://rotunda.upress.virginia.edu/MARC/25-woodrowwilson.mrc">Papers of Woodrow Wilson Digital
@@ -83,8 +84,8 @@ export default function RotundaCustomerList({data}) {
                     Edition</a></li>
         </ul>
       </li>
-      <li><b>Literature and Culture Collection</b></li>
-        <li><ul className="py-5">
+      <li className="tracking-wide"><b>Literature and Culture Collection</b></li>
+        <li><ul className="py-5 font-serif">
             <li><a href="http://rotunda.upress.virginia.edu/MARC/5-arnold.mrc">The Letters of Matthew Arnold</a></li>
             <li><a href="http://rotunda.upress.virginia.edu/MARC/6-clotel.mrc"><i>Clotel</i> by William Wells Brown</a>
             </li>
@@ -99,8 +100,8 @@ export default function RotundaCustomerList({data}) {
             <li><a href="http://rotunda.upress.virginia.edu/MARC/3-shore.mrc">Journal of Emily Shore</a></li>
         </ul>
     </li>
-    <li><b>Architecture</b></li>
-        <li><ul className="py-5">
+    <li className="tracking-wide"><b>Architecture</b></li>
+        <li><ul className="py-5 font-serif">
             <li><a href="http://rotunda.upress.virginia.edu/MARC/18-sah-archipedia.mrc">SAH Archipedia</a></li>
     </ul>
     </li>
@@ -109,14 +110,14 @@ export default function RotundaCustomerList({data}) {
     </div>
     </section>
 
-    <section className="text-gray-600 body-font">
+    <section className="text-gray-600">
   <div className="container px-5 mx-auto">
   <div>
-      <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">List of Current Rotunda Customers</h1>
+          <SectionHeader text="Current Rotunda Customers"/>
       <ul className="text-base leading-relaxed xl:w-3/4 lg:w-3/4 text-gray-500s">
       {custs.edges.map(edge => (
             <>
-           <li className="font-light py-1" key={edge.node.id}>{edge.node.name }</li>
+           <li className="font-serif" key={edge.node.id}>{edge.node.name }</li>
             
             </>
         ))}

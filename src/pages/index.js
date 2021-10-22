@@ -67,9 +67,11 @@ const Home = ({ data }) => {
 
 
        <section className="py-4 border-b-2 border-gray-100">
-    
-    <div className="grid grid-cols-1 md:grid-cols-2 ">
-       <div className="md:pb-0 pb-4"><Link to={'../catalog'}> <StaticImage  width={300} src="../images/spring21.jpg" alt="current catalog cover" /></Link></div>
+       <p className="text-center uppercase text-gray-500 text-md font-thin tracking-widest mx-auto  font-sans tracking-wide">Current Catalog</p>
+
+    {/* <div className="grid grid-cols-1 md:grid-cols-2 "> */}
+    <div className="flex flex-col items-center">
+       <div className="md:pb-0 pb-4"><Link to={'../catalog'}> <StaticImage  width={300} src="../images/fall21.jpg" alt="current catalog cover" /></Link></div>
        {/* <GoogleCalendar/> */}
       {/*  <button className="text-gray-600">
        <div className="flex flex-col">
@@ -77,7 +79,6 @@ const Home = ({ data }) => {
               <path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
             </svg> 
 <Link to={'recent-books'} className="text-2xl font-light">All New Releases</Link></div></button> */}
-     
 </div>
        </section>
   <div className="py-4 greige">

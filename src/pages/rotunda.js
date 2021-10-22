@@ -35,11 +35,11 @@ export default function RotundaHome({ data }) {
   <div className="container mx-auto flex px-5 py-7 items-center justify-center flex-col">
   <GatsbyImage image={RotundaLogo} alt="Rotunda logo" className="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" />
     <div className="text-center lg:w-2/3 w-full">
-      <p className="leading-relaxed">Since 2004, our Rotunda imprint has published innovative peer-reviewed digital projects, both born-digital and from authoritative letterpress editions. Our core offering is the American History Collection of documentary editions spanning three centuries, from the work of young Ben Franklin through the presidential correspondence of Woodrow Wilson: more than 20 publications with content from over 550 letterpress and born-digital volumes, for a total of nearly 500,000 documents, diary entries, and editorial essays, all cross-searchable.
+      <p className="leading-relaxed">Since 2004, our Rotunda imprint has published innovative peer-reviewed digital projects, both born-digital and from authoritative letterpress editions. Our core offering is the <Link to={'../collection/American%20History%20Collection'}>American History Collection</Link> of documentary editions spanning three centuries, from the work of young Ben Franklin through the presidential correspondence of Woodrow Wilson: more than <span className="font-semibold">20 publications</span> with content from <span className="font-semibold">over 550 letterpress and born-digital volumes</span>, for a total of <span className="font-semibold">nearly 500,000 documents, diary entries, and editorial essays, all cross-searchable.</span>
 
  </p>
 
-<p className="leading-relaxed">Our major stand-alone publications are the Presidential Recordings Digital Edition, with transcripts and audio of nearly 4000 conversations from White House recordings; People of the Founding Era, a biographical reference to over 75,000 individuals; the open-access SAH Archipedia, an authoritative encyclopedia of the American built environment, with over 25,000 entries and 5000 editorial essays. Finally, our Literature and Culture Collection features seven editions of literary work and correspondence from nineteenth-century America and Britain.</p>
+<p className="leading-relaxed">Our major stand-alone publications are the <Link to={'../title/PRDE'}>Presidential Recordings Digital Edition</Link>, with transcripts and audio of nearly 4000 conversations from White House recordings; <Link to={'../title/PRDE'}>People of the Founding Era</Link>, a biographical reference to <span className="font-semibold">over 75,000 individuals</span>; the open-access <Link to={'../title/ARCHI'}>SAH Archipedia</Link>, an authoritative encyclopedia of the American built environment, with <span className="font-semibold">over 25,000 entries and 5000 editorial essays</span>. Finally, our <Link to={'../title/Literature%20and%20Culture%20Collection'}>Literature and Culture Collection</Link> features seven editions of literary work and correspondence from nineteenth-century America and Britain.</p>
     
     </div>
  
@@ -238,10 +238,10 @@ export default function RotundaHome({ data }) {
 <div className="container px-5 py-7 mx-auto text-center">
 <h1 className="sm:text-3xl text-2xl font-thin title-font tracking-wider text-gray-900 mb-4">Rotunda News and Updates</h1>
 <div className="md:vwrap text-gray-500 tracking-wide text-sm  font-thin leading-normal md:text-lg"><div className="md:vmove">
-  <div className="md:vitem">Aug 2021: 277 new building images for SAH Archipedia</div>
-  <div className="md:vitem">Aug 2021: Added George Washington Revolutionary War Volume 27</div>
-  <div className="md:vitem">Jul 2021: 136 new building images for SAH Archipedia</div>
-  <div className="md:vitem">Jul 2021: Launch of the Papers of Booker T. Washington</div>
+  <div className="md:vitem">Aug 2021: 277 new building images for <a href="../title/ARCHI">SAH Archipedia</a></div>
+  <div className="md:vitem">Aug 2021: Added <a href="../title/GEWN">George Washington Revolutionary War</a> Volume 27</div>
+  <div className="md:vitem">Jul 2021: 136 new building images <a href="../title/ARCHI">for SAH Archipedia</a></div>
+  <div className="md:vitem">Jul 2021: Launch of the <a href="../title/BTWN">Papers of Booker T. Washington</a></div>
 
 </div></div>
 

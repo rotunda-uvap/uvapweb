@@ -15,8 +15,8 @@ export default function AuthorsPage({ data }) {
     
         <Layout>
 <SeO title="Information for Current Authors"/>
-<section className="text-gray-600 body-font py-4 border-b-2 border-gray-100">
-  <div className="container px-5 py-12 mx-auto">
+<section className="text-gray-600 body-font border-b-2 border-gray-100">
+  <div className="container p-5 mx-auto">
   <div className="flex flex-col text-center w-full">
 <PageHeader text={"For Current Authors"} />    <span className="font-medium title-font pb-4 text-gray-500"><Link to={'/prospective'}>
             Prospective Authors <span className="inline-flex items-center mt-4">
@@ -34,8 +34,8 @@ export default function AuthorsPage({ data }) {
        
  
         
- <section className="text-gray-600 body-font py-4 border-b-2 border-gray-100">
-      <div className="container px-5 pb-12 mx-auto">
+ <section className="text-gray-600 body-font  border-b-2 border-gray-100">
+      <div className="container p-5 mx-auto">
         <div className="text-center mb-10">
         <SectionHeader text={'Illustrations Guidelines'}/>
       {/* <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi pug.</p> */}
@@ -54,8 +54,8 @@ export default function AuthorsPage({ data }) {
       </div>
     </section>
     
-    <section className="text-gray-600 body-font py-4 border-b-2 border-gray-100">
-      <div className="container px-5 py-12 mx-auto">
+    <section className="text-gray-600 body-font  border-b-2 border-gray-100">
+      <div className="container p-5 mx-auto">
         <div className="text-center mb-10">
         <SectionHeader text={'Manuscript Guidelines'}/>
       {/* <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi pug.</p> */}
@@ -74,8 +74,8 @@ export default function AuthorsPage({ data }) {
       </div>
     </section>
 
-    <section className="text-gray-600 body-font py-4 border-b-2 border-gray-100">
-      <div className="container px-5 py-12 mx-auto">
+    <section className="text-gray-600 body-font  border-b-2 border-gray-100">
+      <div className="container p-5 mx-auto">
         <div className="text-center mb-10">
         <SectionHeader text={'Permissions'}/>
       <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi pug.</p>
@@ -93,8 +93,8 @@ export default function AuthorsPage({ data }) {
       </div>
     </section>
           
-    <section className="text-gray-600 body-font py-4 border-b-2 border-gray-100">
-      <div className="container px-5 py-12 mx-auto">
+    <section className="text-gray-600 body-font  border-b-2 border-gray-100">
+      <div className="container p-5 mx-auto">
         <div className="text-center mb-10">
         <SectionHeader text={'Proofs'}/>
       {/* <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi pug.</p> */}
@@ -112,8 +112,8 @@ export default function AuthorsPage({ data }) {
       </div>
     </section>
 
-    <section className="text-gray-600 body-font py-4 border-b-2 border-gray-100">
-      <div className="container px-5 py-12 mx-auto">
+    <section className="text-gray-600 body-font  border-b-2 border-gray-100">
+      <div className="container p-5 mx-auto">
         <div className="text-center mb-10">
           <SectionHeader text={'Marketing Your Book'}/>
       {/* <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi pug.</p> */}
@@ -133,8 +133,8 @@ export default function AuthorsPage({ data }) {
       </div>
     </section>
 
-    <section className="text-gray-600 body-font py-4 border-b-2 border-gray-100">
-      <div className="container px-5 py-12 mx-auto">
+    <section className="text-gray-600 body-font  border-b-2 border-gray-100">
+      <div className="container p-5 mx-auto">
         <div className="text-center mb-10">
       <SectionHeader text={'Multi-Author Volumes'}/>
       {/* <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi pug.</p> */}

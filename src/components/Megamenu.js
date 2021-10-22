@@ -108,14 +108,7 @@ const MegaHeader = () => {
                     <h3 className=" text-xl text-white font-sans mb-2">
                       Books
                     </h3>
-                    <div>
-                      <Link
-                        to={`/books#AZ`}
-                        className="uppercase block text-lg hover:text-gray-300"
-                      >
-                        All A-Z
-                      </Link>
-                    </div>
+                   
                     <div>
                       <Link
                         to={`/book-search`}
@@ -447,14 +440,7 @@ const MegaHeader = () => {
                     <h3 className=" text-xl text-white font-sans mb-2">
                       Books
                     </h3>
-                    <div>
-                      <Link
-                        to={`/books#AZ`}
-                        className="uppercase block text-lg hover:text-gray-300"
-                      >
-                        All A-Z
-                      </Link>
-                    </div>
+                  
                     <div>
                       <Link
                         to={`/book-search`}

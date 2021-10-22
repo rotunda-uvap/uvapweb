@@ -12,7 +12,7 @@ export default function OrderPage({ data }) {
     
         <Layout>
           <SeO title="How to Order Books"/>
-                     <div className="container px-5 py-12 mx-auto">
+                     <div className="container p-5 mx-auto">
 
 <PageHeader text={'Order Books'}/>
          <div className="cms" dangerouslySetInnerHTML={{__html: pagedata.html}}/>

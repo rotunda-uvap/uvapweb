@@ -16,8 +16,8 @@ export default function ProspectiveAuthorsPage({ data }) {
         <Layout>
           <SeO title="Prospective Authors"/>
             {/* <h2 className="py-10 px-3 font-light">For Prospective Authors</h2> */}
-            <section className="py-4 border-b-2 border-gray-100 text-gray-600 body-font">
-  <div className="container px-5 py-12 mx-auto">
+            <section className="border-b-2 border-gray-100 text-gray-600 body-font">
+  <div className="container p-5 mx-auto">
   
             <div className="flex flex-col text-center w-full">
 <PageHeader text={"For Prospective Authors"}/>      <span className="font-medium title-font text-gray-500 pb-4"><Link to={'/authors'}>
@@ -38,8 +38,8 @@ export default function ProspectiveAuthorsPage({ data }) {
 
      
 
-      <section className="py-4 border-b-2 border-gray-100 text-gray-600 body-font">
-      <div className="container px-5 pb-12 mx-auto">
+      <section className="border-b-2 border-gray-100 text-gray-600 body-font">
+      <div className="container p-5 mx-auto">
         <div className="text-center mb-10">
           <SectionHeader text={'Prospective Author Questionnaire'}/>
       {/* <h1 className="sm:text-3xl text-2xl font-medium text-center title-font text-gray-900 mb-4">Prospective Author Questionnaire</h1> */}
@@ -59,7 +59,7 @@ export default function ProspectiveAuthorsPage({ data }) {
     </section>
 
       <section className="py-4 border-b-2 border-gray-100 text-gray-600 body-font">
-      <div className="container px-5 py-12 mx-auto">
+      <div className="container p-5 mx-auto">
         <div className="text-center mb-10">
           <SectionHeader text={'Outline for a Book Proposal'}/>
       {/* <h1 className="sm:text-3xl text-2xl font-medium text-center title-font text-gray-900 mb-4">Outline for a Book Proposal</h1> */}
@@ -80,8 +80,8 @@ export default function ProspectiveAuthorsPage({ data }) {
 
        
          
-         <section className="py-4 border-b-2 border-gray-100">
-         <div className="container px-5 py-12 mx-auto">
+         <section className="border-b-2 border-gray-100">
+         <div className="container p-5 mx-auto">
             <div className="flex flex-col text-center w-full">
               <SectionHeader text={'Our Acquisitions Team'}/>
         </div>
