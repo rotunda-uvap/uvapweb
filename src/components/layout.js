@@ -16,7 +16,7 @@ const Layout = ({ children }) => {
       </div>
       <div className="max-w-full md:max-w-7xl mx-auto pb-5">
       <Footer />
-      <a href="/admin/"><button>Staff Dashboard</button></a>
+      <a href="https://uvap-draft-13b347.netlify.app/admin/#"><button>Staff Dashboard</button></a>
       </div>
       
     </div>
