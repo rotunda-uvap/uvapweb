@@ -50,7 +50,7 @@ export default function InstructorPage({data}) {
 
         
 
- <section className="py-5 text-gray-700 border-b-2 border-gray-100" id="subjects">
+ <section className="py-4 text-gray-700 border-b-2 border-gray-100" id="subjects">
   <SectionHeader text={"Our Subjects"}/> 
   <div className="container flex flex-wrap py-10 mx-auto items-center">
        
@@ -67,9 +67,9 @@ export default function InstructorPage({data}) {
   <a href={`#top`} className="uppercase text-gray-500 text-xs">Go to top</a>
 
 </section>  
+<section className="text-gray-700 py-4 border-b-2 border-gray-100" id="series">
 <SectionHeader className="py-4" text={"Our Series"}/>
 <div className="p-4 text-center uppercase text-gray-700 text-xs font-thin tracking-widest mx-auto font-sans"><Link to={'../series'}>See all Active Series</Link></div>
-<section className="text-gray-700 py-4" id="series">
 
   <div className="container flex flex-wrap py-10 mx-auto items-center">
 
@@ -85,28 +85,27 @@ export default function InstructorPage({data}) {
   <a href={`#top`} className="uppercase text-gray-500 text-xs">Go to top</a>
 
 </section>
-<SectionHeader className="py-4" text={"Rotunda Collections"}/>
 
 
-<section className="text-gray-700 py-4" id="rotunda">
+<section className="text-gray-700 py-4 border-b-2 border-gray-100" id="rotunda">
+<SectionHeader className="py-4" text={"Rotunda Digital Collections"}/>
 
-  <div className="container flex flex-wrap py-10 mx-auto items-center">
-    <Link to={"../collections/American%20History%20Collection"}>American History Collection</Link>
-    <Link to={"../collections/Literature%20and%20Culture%20Collection"}>Literature and Culture Collection</Link>
-    <Link to={"../collections/Architecture"}>Architecture</Link>
+  <div className="container flex flex-col  mx-auto items-center">
+    <Link to={"../collections/American%20History%20Collection"} className="mb-2 font-display text-gray-600 hover:text-gray-800">American History Collection</Link>
+    <Link to={"../collections/Literature%20and%20Culture%20Collection"} className="mb-2 font-display text-gray-600 hover:text-gray-800">Literature and Culture Collection</Link>
+    <Link to={"../collections/Architecture"} className="mb-2 font-display text-gray-600 hover:text-gray-800">Architecture</Link>
 
   </div>
   <a href={`#top`} className="uppercase text-gray-500 text-xs">Go to top</a>
 
 </section>
 
-<section className="py-4 border-b-2 border-gray-100" id="copyinfo">
+<section className="py-4 " id="copyinfo">
    <SectionHeader text={'Desk and Exam Copies'} />
- <h3 className="text-2xl py-5 uppercase text-gray-500"></h3>
  <p className="leading-relaxed text-base text-gray-700">A desk copy may be requested if a book has been adopted and an order has been placed or will be forthcoming. To receive a desk copy, please fill out an online form here, or if you prefer, print out and complete the Desk Copy Request Form. Examination copies of most of our books are available to course instructors for a prepaid fee of $6.00 including shipping (see below). To receive an examination copy, please print out and complete the Examination Copy Request Form. If a paperback copy is not available, a hardback edition may be shipped to you. We ask that you provide a valid Visa or Mastercard number and expiration date. With your shipment you will receive an invoice with a 20% discount, plus postage. You have 60 days to notify us if you wish to adopt the book; you may notify us using the acceptance card included in your shipment. If you decide not to adopt, you may return the book or keep it and pay the invoice. If we receive no instructions after 60 days, we will charge the amount on the invoice to your credit card.</p>
 
 <p className="leading-relaxed text-base text-gray-700">If you are requesting permission to photocopy or scan material for classroom use or place material on e-reserves, please contact: </p>
-<ul className="leading-relaxed text-base text-gray-700 pb-5 mx-10">
+<ul className="leading-relaxed text-base text-gray-700 pb-5 mx-10 font-display">
 <li>Copyright Clearance Center</li>
    <li>222 Rosewood Drive Danver, MA 01923 </li>
    <li>Fax: (978) 646-8600 </li>
