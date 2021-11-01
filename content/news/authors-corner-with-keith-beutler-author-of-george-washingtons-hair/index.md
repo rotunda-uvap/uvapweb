@@ -6,8 +6,6 @@ related_book:
   - "4361"
 date: 2021-10-22
 ---
-Welcome back to the UVA Press Author's Corner! Here, we feature conversations with the authors of our latest releases to provide a glimpse into the writer's mind, their book's main lessons, and what’s next for them. We hope you enjoy these inside stories.
-
 Today, we are happy to bring you our conversation with Keith Beutler, Author of [GEORGE WASHINGTON'S HAIR: How Early Americans Remembered the Founders](https://www.upress.virginia.edu/title/4361), out this month. 
 
 **\*\*\*\*\*\*\*\*\*\*\*\****
