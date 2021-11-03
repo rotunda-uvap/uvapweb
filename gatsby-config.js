@@ -38,21 +38,14 @@ module.exports = {
         path: `${__dirname}/content/news`,
         name: `news`,
       },
-    },/* 
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/content/authors-corner`,
-        name: `authors-corner`,
-      },
-    }, */
-    {
+    },
+    /* {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `downloads`,
         path: `${__dirname}/src/downloads/`,
       },
-    },
+    }, */
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -95,14 +88,6 @@ module.exports = {
         name: `featured-collection`,
       },
     },
-    /* {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/content/featured`,
-        name: `featured`,
-      },
-    }, */
-    
     {
       resolve: `gatsby-source-filesystem`,
       options: {

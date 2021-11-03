@@ -21,9 +21,9 @@ export default function InstructorPage({data}) {
 
 
     <div className="container w-2/3 flex flex-row border-b-2 border-gray-100 pt-5 pb-7 mx-auto text-gray-700 font-thin space-x-5 place-content-center items-center">
-   <span> <a href={`../../examination_Copy_Form_2021.pdf`}>Exam Copies</a></span>
-    <span><a href={`https://forms.gle/H8J1NbtN4BBZZwgy7`}>Desk Copies</a></span>
-    <span><a href={`#copyinfo`}>More Info</a></span>
+   {/* <span> <a href={`../../examination_Copy_Form_2021.pdf`}>Exam Copies</a></span> */}
+    {/* <span><a href={`https://forms.gle/H8J1NbtN4BBZZwgy7`}>Desk and Exam Copies</a></span> */}
+    <span><a href={`#copyinfo`}>Desk and Exam Copies</a></span>
       </div>
 
 
@@ -91,9 +91,9 @@ export default function InstructorPage({data}) {
 <SectionHeader className="py-4" text={"Rotunda Digital Collections"}/>
 
   <div className="container flex flex-col  mx-auto items-center">
-    <Link to={"../collections/American%20History%20Collection"} className="mb-2 font-display text-gray-600 hover:text-gray-800">American History Collection</Link>
-    <Link to={"../collections/Literature%20and%20Culture%20Collection"} className="mb-2 font-display text-gray-600 hover:text-gray-800">Literature and Culture Collection</Link>
-    <Link to={"../collections/Architecture"} className="mb-2 font-display text-gray-600 hover:text-gray-800">Architecture</Link>
+    <Link to={"../collection/American%20History%20Collection"} className="mb-2 font-display text-gray-600 hover:text-gray-800">American History Collection</Link>
+    <Link to={"../collection/Literature%20and%20Culture%20Collection"} className="mb-2 font-display text-gray-600 hover:text-gray-800">Literature and Culture Collection</Link>
+    <Link to={"../collection/Architecture"} className="mb-2 font-display text-gray-600 hover:text-gray-800">Architecture</Link>
 
   </div>
   <a href={`#top`} className="uppercase text-gray-500 text-xs">Go to top</a>
@@ -102,7 +102,7 @@ export default function InstructorPage({data}) {
 
 <section className="py-4 " id="copyinfo">
    <SectionHeader text={'Desk and Exam Copies'} />
- <p className="leading-relaxed text-base text-gray-700">Examination copies are available to qualified instructors of relevant courses at the discretion of UVA Press. Please provide affiliation and course details to be considered. Examination copies are available in print format only. To request an exam copy, please fill out this form.</p>
+ <p className="leading-relaxed text-base text-gray-700">Examination copies are available to qualified instructors of relevant courses at the discretion of UVA Press. Please provide affiliation and course details to be considered. Examination copies are available in print format only. To request an exam copy, <a href="https://docs.google.com/forms/d/e/1FAIpQLSdM83xFI63YLUWkuv7zEko9cMBD-9csrbizC_VH7U7Mmmr5sg/viewform">please fill out this form.</a></p>
  <p className="leading-relaxed text-base text-gray-700">Complimentary desk copies are provided to professors who have already adopted a title for course use and an order with a university or local bookstore has been placed or will be forthcoming. Please indicate the name of this bookstore in your request. To receive a desk copy, <a href="https://docs.google.com/forms/d/e/1FAIpQLSdM83xFI63YLUWkuv7zEko9cMBD-9csrbizC_VH7U7Mmmr5sg/viewform">please fill out this form.</a>  </p>
 
 <p className="leading-relaxed text-base text-gray-700">If you are requesting permission to photocopy or scan material for classroom use or place material on e-reserves, please contact: </p>
