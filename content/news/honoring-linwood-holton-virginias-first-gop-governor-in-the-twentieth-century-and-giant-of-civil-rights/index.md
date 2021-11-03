@@ -6,6 +6,7 @@ title: Honoring Linwood Holton, Virginia's First GOP Governor in the Twentieth
 image: linwood-holton-and-william-b.-robertson.png
 related_book:
   - "3908"
+  - "5780"
 date: 2021-10-29
 ---
 We share today in mourning the loss of Linwood Holton, Virginia's First GOP Governor in the Twentieth Century and Giant of Civil Rights, who died yesterday at 98.
