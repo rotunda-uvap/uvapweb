@@ -31,6 +31,7 @@
     "gatsby-cli": "^3.11.0",
     "gatsby-legacy-polyfills": "^1.11.0",
     "gatsby-plugin-algolia": "^0.22.0",
+    "gatsby-plugin-gatsby-cloud": "^4.0.0",
     "gatsby-plugin-image": "^1.11.0",
     "gatsby-plugin-less": "^5.11.0",
     "gatsby-plugin-mailchimp": "^5.2.2",
