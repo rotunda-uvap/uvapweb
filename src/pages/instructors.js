@@ -102,7 +102,8 @@ export default function InstructorPage({data}) {
 
 <section className="py-4 " id="copyinfo">
    <SectionHeader text={'Desk and Exam Copies'} />
- <p className="leading-relaxed text-base text-gray-700">A desk copy may be requested if a book has been adopted and an order has been placed or will be forthcoming. To receive a desk copy, please fill out an online form here, or if you prefer, print out and complete the Desk Copy Request Form. Examination copies of most of our books are available to course instructors for a prepaid fee of $6.00 including shipping (see below). To receive an examination copy, please print out and complete the Examination Copy Request Form. If a paperback copy is not available, a hardback edition may be shipped to you. We ask that you provide a valid Visa or Mastercard number and expiration date. With your shipment you will receive an invoice with a 20% discount, plus postage. You have 60 days to notify us if you wish to adopt the book; you may notify us using the acceptance card included in your shipment. If you decide not to adopt, you may return the book or keep it and pay the invoice. If we receive no instructions after 60 days, we will charge the amount on the invoice to your credit card.</p>
+ <p className="leading-relaxed text-base text-gray-700">Examination copies are available to qualified instructors of relevant courses at the discretion of UVA Press. Please provide affiliation and course details to be considered. Examination copies are available in print format only. To request an exam copy, please fill out this form.</p>
+ <p className="leading-relaxed text-base text-gray-700">Complimentary desk copies are provided to professors who have already adopted a title for course use and an order with a university or local bookstore has been placed or will be forthcoming. Please indicate the name of this bookstore in your request. To receive a desk copy, <a href="https://docs.google.com/forms/d/e/1FAIpQLSdM83xFI63YLUWkuv7zEko9cMBD-9csrbizC_VH7U7Mmmr5sg/viewform">please fill out this form.</a>  </p>
 
 <p className="leading-relaxed text-base text-gray-700">If you are requesting permission to photocopy or scan material for classroom use or place material on e-reserves, please contact: </p>
 <ul className="leading-relaxed text-base text-gray-700 pb-5 mx-10 font-display">
@@ -111,7 +112,7 @@ export default function InstructorPage({data}) {
    <li>Fax: (978) 646-8600 </li>
    <li>Email: <a href="mailto:info@copyright.com">info@copyright.com</a> </li></ul>
    
-   <p className="leading-relaxed text-base text-gray-700">If the Copyright Clearance Center cannot grant permission, you may request permission directly from our Permissions Manager (use contact information listed below). Please include:</p>
+   <p className="leading-relaxed text-base text-gray-700">If the Copyright Clearance Center cannot grant permission, you may request permission directly from our Permissions Manager. Please include:</p>
 
 <ul className="leading-relaxed text-base text-gray-700 pb-5 mx-10 list-disc">
   <li className="font-serif">Name of the author(s)/editor(s) and title of the book in which the requested material was originally published, together with the inclusive page numbers you wish to reproduce (give the actual page numbers, e.g. pp. 24-48).</li>
