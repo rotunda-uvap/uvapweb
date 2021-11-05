@@ -39,13 +39,13 @@ module.exports = {
         name: `news`,
       },
     },
-    /* {
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `downloads`,
         path: `${__dirname}/src/downloads/`,
       },
-    }, */
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
