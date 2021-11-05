@@ -27,7 +27,7 @@ const exhibitPage = ({ data }) => {
         <GatsbyImage image={image} alt="related image"/>
         {data.markdownRemark.frontmatter.coupon && <div className={`${bgcolor} ${txtcolor} py-5 px-5 text-2xl text-center`}>{data.markdownRemark.frontmatter.coupon}</div>}
         <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1">
-          <div className={`py-5 px-5 text-xl text-center`}
+          <div className={`py-5 px-5 text-lg text-light tracking-wide text-center font-serif`}
           dangerouslySetInnerHTML={{ __html:exhibit.html }}/>
 
         
@@ -48,11 +48,11 @@ const exhibitPage = ({ data }) => {
         
         <section className="py-8 border-b-2"> 
             
-            <p className="text-center uppercase text-gray-500 mx-auto  font-sans tracking-wide py-4">Meet our Editors:</p>
+            <p className="text-center uppercase text-gray-500 mx-auto  font-sans py-4">Meet our Editors:</p>
         {related_staff.map(staff => (
             <>
-            <Link to={'../../staff/' + staff.frontmatter.title.replace(" ", "-").toLowerCase()}> <div>{staff.frontmatter.title} <span className="text-sm">&nbsp; - &nbsp;{staff.frontmatter.job_title}</span></div></Link>
-            <div className="py-2 text-light text-md"
+            <Link to={'../../staff/' + staff.frontmatter.title.replace(" ", "-").toLowerCase()}> <div className="tracking-wide text-lg text-light text-gray-800">{staff.frontmatter.title} <span className="text-sm">&nbsp; - &nbsp;{staff.frontmatter.job_title}</span></div></Link>
+            <div className="py-2 text-light text-lg leading-normal"
           dangerouslySetInnerHTML={{ __html:staff.html }}/>
             </>
         ))}
@@ -68,7 +68,7 @@ const exhibitPage = ({ data }) => {
             <ul className="content-center">
             {related_series.map(series => (
             
-            <li className="py-3 text-gray-700 text-center"><Link to={`../../series/${ series.id }`}>{series.seriesName}</Link></li>
+            <li className="py-3 text-gray-700 text-center font-display"><Link to={`../../series/${ series.id }`}>{series.seriesName}</Link></li>
             
         ))}</ul>
         </div>
@@ -82,7 +82,7 @@ const exhibitPage = ({ data }) => {
             <p className="text-center uppercase text-gray-500 mx-auto font-sans tracking-wide py-4">Related Posts</p>
             <ul className="content-center">
             {related_posts && related_posts.map(post => (
-            post.frontmatter.title && <Link to={`../../news${ post.fields.slug }`}><li className="py-3 text-gray-700 text-center" key={post.id}>{post.frontmatter.title}</li></Link> 
+            post.frontmatter.title && <Link to={`../../news${ post.fields.slug }`}><li className="py-3 text-gray-700 text-center font-display" key={post.id}>{post.frontmatter.title}</li></Link> 
         ))}</ul>
         </div>
     

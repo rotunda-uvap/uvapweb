@@ -12,7 +12,7 @@ export default function SupportPage({ data }) {
         <Layout>
           <SeO title="Support UVA Press"/>
           
-              <div className="container px-5 py-12 mx-auto text-gray-600">
+              <div className="container px-5 py-3 mx-auto text-gray-600">
               <PageHeader text={'Support UVa Press'}/>
             <div className="flex flex-wrap items-center">
             <div className="lg:w-3/5 md:w-1/2 md:pr-16 lg:pr-0 pr-0">
