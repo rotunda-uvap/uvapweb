@@ -1,6 +1,6 @@
 ---
 templateKey: exhibit
-title: Association for the Study of the Worldwide African Diaspora
+title: Association for the Study of the Worldwide African Diaspora 2021
 exhibit_slug: aswad
 coupon: Use promo code 10FALL to get 30% OFF through December 31.
 txtcolor: text-black
