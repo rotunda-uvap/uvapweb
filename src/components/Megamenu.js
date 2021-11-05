@@ -303,7 +303,11 @@ const MegaHeader = () => {
                     </div>
                   </ul>
                 </div>
+                <label htmlFor="toggle-one">
+                  <span className="uppercase block text-xs text-gray-300 float-right">Close X</span>
+                </label>
               </div>
+              
             </div>
           </nav>
         </div>
@@ -634,6 +638,9 @@ const MegaHeader = () => {
                     </div>
                   </ul>
                 </div>
+                <label htmlFor="toggle-big">
+                  <span className="uppercase block text-xs hover:text-gray-300 float-right">Close X</span>
+                </label>
               </div>
             </div>
           </nav>
