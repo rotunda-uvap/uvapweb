@@ -10,14 +10,14 @@ export default function AllExhibits({ data }) {
     
         <Layout>
           <SeO title="Current Exhibits"/>
-          <div className="container px-5 py-12 mx-auto">
+          <div className="container px-5 py-2 mx-auto">
 <PageHeader text={"Current Exhibits"}/>            {exhibitList.edges.map(edge => (
             <>
-             <div className="mt-6">
-                    <div className="max-w-4xl px-10 py-6">
+             <div>
+                    <div className="px-10">
                         <div className="flex justify-between items-center"><span className="font-light text-gray-800">{edge.node.frontmatter.date}</span>
                         </div>
-                        <div className="mt-4"><Link className="text-2xl text-gray-700 font-bold hover:underline" to={`../exhibits/${ edge.node.frontmatter.exhibit_slug }`}>{ edge.node.frontmatter.title }</Link>
+                        <div className="mt-2"><Link className="text-lg font-display text-gray-700 tracking-wider hover:underline" to={`../exhibits/${ edge.node.frontmatter.exhibit_slug }`}>{ edge.node.frontmatter.title }</Link>
                         </div>
                     </div>
             </div>

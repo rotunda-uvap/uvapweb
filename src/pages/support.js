@@ -45,7 +45,7 @@ export default function SupportPage({ data }) {
 
 <p className="mt-4">Please direct questions to Suzanne Morse Moomaw, Director of the University of Virginia Press, swm2x@virginia.edu or 434-924-6064.</p>
       
-         <a href="https://securelb.imodules.com/s/1535/16-uva/giving.aspx?sid=1535&gid=16&pgid=684&cid=1509&appealcode=21UVAQ14WG&bledit=1&dids=4515&sort=1"><button className="text-white bg-gray-900 border-0 py-2 px-8 focus:outline-none hover:bg-gray-600 rounded text-lg">Make a Gift Online</button></a>
+         <a href="https://www.givecampus.com/xypyf3"><button className="text-white bg-gray-900 border-0 py-2 px-8 focus:outline-none hover:bg-gray-600 rounded text-lg">Make a Gift Online</button></a>
     </div>
   </div>
 </div>
