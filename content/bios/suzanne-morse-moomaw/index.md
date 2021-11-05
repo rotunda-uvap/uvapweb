@@ -4,7 +4,7 @@ title: Suzanne Morse Moomaw
 staff_name: Suzanne Morse Moomaw
 profile_photo: ""
 name_slug: suzanne-morse-moomaw
-job_title: Director
+job_title: Director of UVa Press
 department:
   - OPS
 email: smoomaw​@​virginia.edu
