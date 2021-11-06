@@ -22,7 +22,7 @@ export default function Catalog({data}) {
                 <h1 className="ml-4 text-3xl text-gray-500 font-medium tracking-wide text-gray-500 md:text-4xl">Current Catalog</h1>
                 <span className="my-2 ml-4 font-serif text-base text-center md:text-left text-gray-600 dark:text-gray-300">View the selection of books from our Fall 2021 list.</span>
                 <div className="ml-4 flex flex-row py-5">
-                <span className="font-thin text-sm text-gray-500"><a href={'../fall21.pdf'}>
+                <span className="font-thin text-sm text-gray-500"><a href={'../../fall21.pdf'}>
             Download Catalog<span className="inline-flex items-center mt-4">
               <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
                 <path d="M5 12h14M12 5l7 7-7 7"></path>
@@ -50,10 +50,10 @@ export default function Catalog({data}) {
 </section>
 <SectionHeader text={"Previous Seasons"}/>
     <section className="flex flex-row gap-0 py-4 border-b-2 border-gray-100">
-       <a href={'../spring21.pdf'} className="h-full" title="Fall 2020"><StaticImage src="../images/spring21.jpg" alt="current catalog cover" className="object-cover"></StaticImage></a>
-       <a href={'../fall20.pdf'} className="h-full"><StaticImage src="../images/fall20.jpg" alt="current catalog cover" className="object-cover"></StaticImage></a>
-       <a href={'../spring20.pdf'} className="h-full"><StaticImage src="../images/spring20.jpg" alt="current catalog cover" className="object-cover"></StaticImage></a>
-       <a href={'../fall19.pdf'} className="h-full"><StaticImage src="../images/fall19.jpg" alt="current catalog cover" className="object-cover"></StaticImage></a>
+       <a href={'../../spring21.pdf'} className="h-full" title="Fall 2020"><StaticImage src="../images/spring21.jpg" alt="current catalog cover" className="object-cover"></StaticImage></a>
+       <a href={'../../fall20.pdf'} className="h-full"><StaticImage src="../images/fall20.jpg" alt="current catalog cover" className="object-cover"></StaticImage></a>
+       <a href={'../../spring20.pdf'} className="h-full"><StaticImage src="../images/spring20.jpg" alt="current catalog cover" className="object-cover"></StaticImage></a>
+       <a href={'../../fall19.pdf'} className="h-full"><StaticImage src="../images/fall19.jpg" alt="current catalog cover" className="object-cover"></StaticImage></a>
 
     </section>
 
