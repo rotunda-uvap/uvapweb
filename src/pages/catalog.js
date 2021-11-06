@@ -50,9 +50,9 @@ export default function Catalog({data}) {
 </section>
 <SectionHeader text={"Previous Seasons"}/>
     <section className="flex flex-row gap-0 py-4 border-b-2 border-gray-100">
-       <a href={'../../spring21.pdf'} className="h-full" title="Fall 2020"><StaticImage src="../images/spring21.jpg" alt="current catalog cover" className="object-cover"></StaticImage></a>
-       <a href={'../../fall20.pdf'} className="h-full"><StaticImage src="../images/fall20.jpg" alt="current catalog cover" className="object-cover"></StaticImage></a>
-       <a href={'../../spring20.pdf'} className="h-full"><StaticImage src="../images/spring20.jpg" alt="current catalog cover" className="object-cover"></StaticImage></a>
+       <a href={'spring21.pdf'} className="h-full" title="Fall 2020"><StaticImage src="../images/spring21.jpg" alt="current catalog cover" className="object-cover"></StaticImage></a>
+       <a href={'../fall20.pdf'} className="h-full"><StaticImage src="../images/fall20.jpg" alt="current catalog cover" className="object-cover"></StaticImage></a>
+       <a href={'/spring20.pdf'} className="h-full"><StaticImage src="../images/spring20.jpg" alt="current catalog cover" className="object-cover"></StaticImage></a>
        <a href={'../../fall19.pdf'} className="h-full"><StaticImage src="../images/fall19.jpg" alt="current catalog cover" className="object-cover"></StaticImage></a>
 
     </section>
