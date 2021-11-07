@@ -94,10 +94,10 @@ const bookPage = ({ data }) => {
                 </svg>
                 <a
                   href={binding.buylink}
-                  className="block group   p-2 ml-4 border-b"
+                  className="block group p-2 ml-4 border-b"
                 >
-                  <div className="font-thin uppercase">
-                    {binding.type}{" "}
+                  <div className="font-thin uppercase ">
+                    <span className="tracking-widest">{binding.type}{" "}</span>
                     <span className="pl-2 font-thin">${binding.price}</span>{" "}
                   </div>
                   <div className="font-display text-sm ">
