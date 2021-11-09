@@ -4,7 +4,35 @@ title: Career
 ---
 ###### Full-Time Positions at UVaP
 
-There currently are no full-time opportunities at the Press.
+**Acquisitions Department Coordinator**
+
+The University of Virginia Press at the University of Virginia seeks applications for an Acquisition Coordinator. Founded in 1963 to advance the intellectual interests of the university, [The University of Virginia Press](https://www.upress.virginia.edu/) currently publishes seventy to eighty new books annually and operates a successful digital imprint.
+
+The Acquisition Coordinator (AC) assists four editors in the acquisition of new books in the fields of history, politics, literature, culture, religion, architecture, design, and regional interest. The AC helps manage and facilitate the publishing process, particularly at the key stages of final manuscript preparation and transmittal into copyediting, design, and production.
+
+The AC also supports the acquiring editors' administrative responsibilities, maintaining all routine procedures and processes regarding authors, readers, databases, and communications between the acquisitions department and other departments at the Press. Responsibilities will also include coaching authors on manuscript preparation, requesting cost estimates from the production manager, managing logistics for meetings, and other duties as assigned.
+
+Qualified candidates must have a bachelor’s degree in English or Communications with at least one year of work experience. Excellent verbal and written communications, with strong organizational and interpersonal skills are required.  Should have Microsoft Word and Microsoft Outlook experience. Experience with FileMaker Pro is preferred. 
+
+For additional information about the position, please contact Eric Brandt, Editor in Chief at [eab7fb@virginia.edu](mailto:eab7fb@virginia.edu).
+
+This position will remain open until filled.  This is a Non-Exempt level, benefited position. Anticipated Hiring Range: $35,000 - $45,000 commensurate with education and experience. The University will perform background checks on all new hires prior to employment.
+
+**To Apply:**
+
+Please apply through [Workday](http://uva.wd1.myworkdayjobs.com/UVAJobs), and search for R0030282. Internal applicants must apply through their UVA Workday profile by searching 'Find Jobs'.   Complete an application online with the following documents:
+
+* Cover Letter
+* CV/Resume
+* 3 References – name, email, phone
+
+Upload all materials into the resume submission field, multiple documents can be submitted into this one field. Alternatively, merge all documents into one PDF for submission.  Applications that do not contain all required documents will not receive full consideration.
+
+For questions about the application process, please contact Ashley Cochran, Senior Recruiter at [alc6dk@virginia.edu](mailto:alc6dk@virginia.edu).
+
+For more information about UVA and the Charlottesville community please see <http://www.virginia.edu/life/charlottesville> and [https://embarkcva.com/](https://dualcareer.virginia.edu/).
+
+For more information on the benefits at UVA, visit [hr.virginia.edu/benefits](https://urldefense.proofpoint.com/v2/url?u=http-3A__hr.virginia.edu_benefits&d=DwMGaQ&c=Cu5g146wZdoqVuKpTNsYHeFX_rg6kWhlkLF8Eft-wwo&r=vc6Qja9eoPBnlgIE5EUK0g&m=OO516Gnq_-L1tY4J4dV3ApY5ij9aOqYrapE9z6RNG_g&s=hyZUs1gwzbnuh0FphzYoHvEH57oDfrHshRePFRvE1oc&e=). 
 
 ###### UVaP Internship Program
 
