@@ -78,14 +78,14 @@ export default function FeatTrio() {
            <article className="flex flex-1 flex-col flex-wrap p-5">
            
             <>
-              <div className="flex flex-row">
-                  <div className="border-r-2 uppercase tracking-widest font-serif text-xs pr-3"><Link to={`/publicity`}>{data.news.edges[0].node.frontmatter.type}</Link></div>
+              <div className="flex flex-row mb-2">
+                  <div className="border-r-2 border-gray-600 uppercase tracking-widest text-gray-600 font-bold font-serif text-md pr-3"><Link to={`/publicity`}>{data.news.edges[0].node.frontmatter.type}</Link></div>
                   <div className="tracking-widest font-serif text-xs pl-3">{data.news.edges[0].node.frontmatter.date}</div>
               </div>
               {data.news.edges[0].node.frontmatter.related_book ? <div className="flex flex-row"><img src={'https://ik.imagekit.io/uvapress/mediums/' + data.news.edges[0].node.frontmatter.related_book[0].id + "_M.jpg"} alt="cover" className="justify-self-center object-cover w-1/3 p-2"/> <Link className="font-display tracking-wide uppercase py-2" to={`../${ data.news.edges[0].node.frontmatter.type }${ data.news.edges[0].node.fields.slug }`}>{data.news.edges[0].node.frontmatter.title }</Link></div> :<Link className="font-display tracking-wide uppercase py-2" to={`../${ data.news.edges[0].node.frontmatter.type }${ data.news.edges[0].node.fields.slug }`}>{data.news.edges[0].node.frontmatter.title }</Link> }
 
               {/* <Link className="font-display tracking-widest uppercase py-2" to={`../${ data.news.edges[0].node.frontmatter.type }${ data.news.edges[0].node.fields.slug }`}>{data.news.edges[0].node.frontmatter.title }</Link> */}
-            {data.news.edges[0].node.html &&  <div className=" font-serif font-sm leading-relaxed text-base dropCap" dangerouslySetInnerHTML={{ __html: data.news.edges[0].node.html.split(' ').splice(0, 30).join(' ') + '...' }}/>}
+            {data.news.edges[0].node.html &&  <div className=" font-serif text-sm leading-relaxed text-base dropCap" dangerouslySetInnerHTML={{ __html: data.news.edges[0].node.html.split(' ').splice(0, 30).join(' ') + '...' }}/>}
             <div className="font-display uppercase text-xs tracking-widest"><Link  to={`../${ data.news.edges[0].node.frontmatter.type }${ data.news.edges[0].node.fields.slug }`}><FaArrowAltCircleRight className="inline mx-4"/> Read more</Link> 
               </div>
             </>
@@ -95,7 +95,7 @@ export default function FeatTrio() {
            <>
              <div className="flex flex-row md:px-10 "> 
              
-                 <div className="border-r-2 uppercase tracking-widest font-serif text-xs pr-3"><Link to={`/authors-corner`}>Author's Corner</Link></div>
+                 <div className="border-r-2 border-gray-600 uppercase text-gray-600 tracking-widest font-serif text-md font-bold pr-3"><Link to={`/authors-corner`}>Author's Corner</Link></div>
                  <div className="tracking-widest font-serif text-xs pl-3">{data.ac.edges[0].node.frontmatter.date}</div>
              </div>
                
@@ -112,7 +112,7 @@ export default function FeatTrio() {
            
            <>
              <div className="flex flex-row">
-                 <div className="border-r-2 uppercase tracking-widest font-serif text-xs pr-3"><Link to={`/exhibits`}>exhibits</Link></div>
+                 <div className="border-r-2 border-gray-600 uppercase tracking-widest text-gray-600 font-serif font-bold text-md pr-3"><Link to={`/exhibits`}>exhibits</Link></div>
              </div>
             
              <Link className="font-display tracking-widest uppercase py-2" to={`../exhibits/${ data.exhibit.edges[0].node.frontmatter.exhibit_slug }`}>{data.exhibit.edges[0].node.frontmatter.title }</Link>

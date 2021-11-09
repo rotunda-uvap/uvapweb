@@ -22,7 +22,7 @@ const Home = ({ data }) => {
  <Banner id={top.banner_id} book_title={top.banner_title} author={top.banner_author} quote={top.banner_quote} subtitle={top.banner_subtitle} attr={top.banner_attr}/>
 
 <section className="py-4 border-b-2 border-gray-100">
-<p className="text-center uppercase text-gray-500 text-md font-thin tracking-widest mx-auto  font-sans tracking-wide">Featured Books</p>
+<p className="text-center uppercase text-gray-500 text-lg font-thin tracking-widest mx-auto  font-sans tracking-wide">Featured Books</p>
 <div>
 <Gallery book_id_array={featured_slider}/>
            </div>
@@ -53,21 +53,21 @@ const Home = ({ data }) => {
   </section> */}
   
   <section className="py-4 border-b-2 border-gray-100">
-  <p className="text-center uppercase text-gray-500 text-md font-thin tracking-widest mx-auto  font-sans tracking-wide">Open Access</p>
+  <p className="text-center uppercase text-gray-500 text-lg font-thin tracking-widest mx-auto  font-sans tracking-wide">Open Access</p>
           <div className="flex flex-col items-center"><a href="https://open.upress.virginia.edu/">
           <StaticImage src="../images/vo.png" width={500} alt="virginia open"/></a>
           <p className="py-4 dropCap">V/O: Virginia Open, a collection of University of Virginia Press titles made freely available. On this imprint, you will find both open-access monographs from The University of Virginia Press, readable in your browser or via download, and links to open-access websites published under our Rotunda imprint or in collaboration with partner institutions.</p>
           </div>
        </section>
        <section className="py-4 border-b-2 border-gray-100">
-<p className="text-center uppercase text-gray-500 text-md font-thin tracking-widest mx-auto  font-sans tracking-wide">Featured Collection</p>
+<p className="text-center uppercase text-gray-500 text-lg font-thin tracking-widest mx-auto  font-sans tracking-wide">Featured Collection</p>
 
        <FeatColl/>
        </section>
 
 
        <section className="py-4 border-b-2 border-gray-100">
-       <p className="text-center uppercase text-gray-500 text-md font-thin tracking-widest mx-auto  font-sans tracking-wide">Current Catalog</p>
+       <p className="text-center uppercase text-gray-500 text-lg font-thin tracking-widest mx-auto  font-sans tracking-wide">Current Catalog</p>
 
     {/* <div className="grid grid-cols-1 md:grid-cols-2 "> */}
     <div className="flex flex-col items-center">
