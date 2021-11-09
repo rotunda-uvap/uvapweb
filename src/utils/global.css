@@ -27,9 +27,9 @@ p > a {text-decoration: underline;}
 .title {text-align:left;}
 table.tiers td {padding-left:1rem; padding-bottom:1rem;}
 p {padding:0 1rem 1rem 1rem; font-family: "Crimson Text";}
-.cms ul {padding:1em; list-style:none;}
+.cms ul {margin-left:2em; padding:1em; list-style:circle;}
 .cms ul li:first-child {padding-top:0;}
-.cms ul li {padding-left:2em; padding-top:1em; font-family: "Quicksand";}
+.cms ul li {padding-top:.5em; font-family: "Crimson Text";}
 .cms strong {font-weight: bolder; font-weight: 600;}
 strong {font-weight: bolder; font-weight: 600;}
 .cms h6 {color: #6B7280;

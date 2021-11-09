@@ -191,9 +191,9 @@ module.exports = {
     },
    /*  This plugin throws errors, check if other issues are reported later
    {
-      resolve: `gatsby-source-google-calendar`,
+      resolve: `gatsby-source-google-id`,
       options: {
-        calendarIds: [
+        idIds: [
           'uvapressweb@gmail.com',
         ],
         // options to retrieve the next 20 upcoming events

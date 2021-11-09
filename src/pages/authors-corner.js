@@ -10,7 +10,7 @@ export default function Articles({ data }) {
         <Layout>
           <SeO/>
            <div className="container px-5 py-12 mx-auto">
-<PageHeader text={"Authors Corner"}/>          
+<PageHeader text={"Author's Corner"}/>          
             {news.edges.map(edge => (
             <>
             <div className="grid grid-cols-3">

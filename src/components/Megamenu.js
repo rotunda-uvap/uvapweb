@@ -217,12 +217,11 @@ const MegaHeader = () => {
                       >
                         Instructor Resource Hub
                       </Link>
-                      <Link
-                        to={`/instructors/#copyinfo`}
+                      <a href="https://docs.google.com/forms/d/e/1FAIpQLSdM83xFI63YLUWkuv7zEko9cMBD-9csrbizC_VH7U7Mmmr5sg/viewform"
                         className="uppercase block text-lg hover:text-gray-300"
                       >
                         Desk/Exam Copy requests
-                      </Link>
+                      </a>
                     </div>
                     <div>
                       <Link
@@ -314,7 +313,7 @@ const MegaHeader = () => {
       </nav>
 
       <nav
-        className="hidden md:block text-gray-500 font-sans font-thin uppercase border-b-2 flex flex-row justify-center place-content-center z-40 tracking-wide"
+        className="hidden md:block text-gray-400 font-sans font-thin uppercase border-b-2 flex flex-row justify-center place-content-center z-40 tracking-wide"
       >
         <div className="flex flex-row justify-center place-content-center lg:text-xl">
           <nav className="flex">
@@ -552,12 +551,12 @@ const MegaHeader = () => {
                       >
                         Instructor Resource Hub
                       </Link>
-                      <Link
-                        to={`/instructors/#copyinfo`}
+                      <a href="https://docs.google.com/forms/d/e/1FAIpQLSdM83xFI63YLUWkuv7zEko9cMBD-9csrbizC_VH7U7Mmmr5sg/viewform"
+
                         className="uppercase block text-lg hover:text-gray-300"
                       >
                         Desk/Exam Copy requests
-                      </Link>
+                      </a>
                     </div>
                     <div>
                       <Link

@@ -19,7 +19,7 @@ export default function RotundaNews() {
                 
               <div className="md:px-10 flex flex-col">
               <Link className="font-display tracking-wide uppercase py-2" to={`../title/BTWN`}>ROTUNDA Launches the Booker T. Washington Digital Edition</Link>
-            <div><p className="font-serif font-sm leading-tight dropCap">The ROTUNDA digital edition includes the full contents of the 14-volume letterpress edition, including speeches, correspondence, major autobiographical writing, and cumulative index.</p> </div>  
+            <div><p className="font-serif text-md text-gray-800 leading-tight dropCap">The ROTUNDA digital edition includes the full contents of the 14-volume letterpress edition, including speeches, correspondence, major autobiographical writing, and cumulative index.</p> </div>  
             <div className="font-display uppercase text-xs tracking-widest"><Link className="font-display tracking-wide uppercase py-2" to={`../title/BTWN`}><FaArrowAltCircleRight className="inline mx-4"/> Read more</Link> </div></div>
          
             

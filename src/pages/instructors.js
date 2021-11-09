@@ -27,22 +27,11 @@ export default function InstructorPage({data}) {
 
 <section className="py-4 border-b-2 border-gray-100" id="copyinfo">
    <SectionHeader text={'Desk and Exam Copies'} />
- <p className="leading-relaxed text-base text-gray-700">Examination copies are available to qualified instructors of relevant courses at the discretion of UVA Press. Please provide affiliation and course details to be considered. Examination copies are available in print format only. To request an exam copy, <a href="https://docs.google.com/forms/d/e/1FAIpQLSdM83xFI63YLUWkuv7zEko9cMBD-9csrbizC_VH7U7Mmmr5sg/viewform">please fill out this form.</a></p>
- <p className="leading-relaxed text-base text-gray-700">Complimentary desk copies are provided to professors who have already adopted a title for course use and an order with a university or local bookstore has been placed or will be forthcoming. Please indicate the name of this bookstore in your request. To receive a desk copy, <a href="https://docs.google.com/forms/d/e/1FAIpQLSdM83xFI63YLUWkuv7zEko9cMBD-9csrbizC_VH7U7Mmmr5sg/viewform">please fill out this form.</a>  </p>
+ <p className="leading-relaxed text-base text-gray-700"><span className="font-bold">Complimentary desk copies</span> are provided to professors who have already adopted a title for course use and an order with a university or local bookstore has been placed or will be forthcoming. Please indicate the name of this bookstore in your request. To receive a desk copy, <a href="https://docs.google.com/forms/d/e/1FAIpQLSdM83xFI63YLUWkuv7zEko9cMBD-9csrbizC_VH7U7Mmmr5sg/viewform">please fill out this form.</a>  </p>
+ <p className="leading-relaxed text-base text-gray-700"><span className="font-bold">Examination copies</span> are available to qualified instructors of relevant courses at the discretion of UVA Press. Please provide affiliation and course details to be considered. Examination copies are available in print format only. To request an exam copy, <a href="https://docs.google.com/forms/d/e/1FAIpQLSdM83xFI63YLUWkuv7zEko9cMBD-9csrbizC_VH7U7Mmmr5sg/viewform">please fill out this form.</a></p>
+ <p className="leading-relaxed text-base text-gray-700">For classroom and academic permission requests, please see <Link to={'../permissions'}>this page</Link></p>
 
-<p className="leading-relaxed text-base text-gray-700">If you are requesting permission to photocopy or scan material for classroom use or place material on e-reserves, please contact: </p>
-<ul className="leading-relaxed text-base text-gray-700 pb-5 mx-10 font-display">
-<li>Copyright Clearance Center</li>
-   <li>222 Rosewood Drive Danver, MA 01923 </li>
-   <li>Fax: (978) 646-8600 </li>
-   <li>Email: <a href="mailto:info@copyright.com">info@copyright.com</a> </li></ul>
-   
-   <p className="leading-relaxed text-base text-gray-700">If the Copyright Clearance Center cannot grant permission, you may request permission directly from our Permissions Manager. Please include:</p>
 
-<ul className="leading-relaxed text-base text-gray-700 pb-5 mx-10 list-disc">
-  <li className="font-serif">Name of the author(s)/editor(s) and title of the book in which the requested material was originally published, together with the inclusive page numbers you wish to reproduce (give the actual page numbers, e.g. pp. 24-48).</li>
-<li className="font-serif font-normal" >Name of school and faculty member requesting material, together with the course name and number.</li>
-<li className="font-serif text-base">Approximate number of copies needed; for electronic use, approximate number of students enrolled in the class.</li></ul>
    
  </section>
 
@@ -104,6 +93,22 @@ export default function InstructorPage({data}) {
   <a href={`#top`} className="uppercase text-gray-500 text-xs">Go to top</a>
 </section>
 
+{/* <section className="text-gray-700 py-4 border-b-2 border-gray-100" id="copyright">
+<SectionHeader text={'Classroom and Academic Permissions Requests'} />
+<p className="leading-relaxed text-base text-gray-700">If you are requesting permission to photocopy or scan material for classroom use or place material on e-reserves, please contact: </p>
+<ul className="leading-relaxed text-base text-gray-700 pb-5 mx-10 font-display">
+<li>Copyright Clearance Center</li>
+   <li>222 Rosewood Drive Danver, MA 01923 </li>
+   <li>Fax: (978) 646-8600 </li>
+   <li>Email: <a href="mailto:info@copyright.com">info@copyright.com</a> </li></ul>
+   
+   <p className="leading-relaxed text-base text-gray-700">If the Copyright Clearance Center cannot grant permission, you may request permission directly from our Permissions Manager. Please include:</p>
+
+<ul className="leading-relaxed text-base text-gray-700 pb-5 mx-10 list-disc">
+  <li className="font-serif">Name of the author(s)/editor(s) and title of the book in which the requested material was originally published, together with the inclusive page numbers you wish to reproduce (give the actual page numbers, e.g. pp. 24-48).</li>
+<li className="font-serif font-normal" >Name of school and faculty member requesting material, together with the course name and number.</li>
+<li className="font-serif text-base">Approximate number of copies needed; for electronic use, approximate number of students enrolled in the class.</li></ul>
+  </section>
 
 <section className="text-gray-700 py-4" id="rotunda">
 <SectionHeader className="py-4" text={"Rotunda Digital Collections"}/>
@@ -117,7 +122,7 @@ export default function InstructorPage({data}) {
   <a href={`#top`} className="uppercase text-gray-500 text-xs">Go to top</a>
 
 </section>
-
+ */}
 
         
 

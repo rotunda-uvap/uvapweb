@@ -25,8 +25,8 @@ collections:
           - {label: "Book Title", name: "banner_title", widget: "string"}
           - {label: "Author", name: "banner_author", widget: "string"}
           - {label: "Subtitle", name: "banner_subtitle", widget: "string"}
-          - {label: "Quote", name: "banner_quote", widget: "string"}
-          - {label: "Quote Attribution", name: "banner_attr", widget: "string"}
+          - {label: "Quote", name: "banner_quote", widget: "string", hint: "max 60ish characters"}
+          - {label: "Quote Attribution", name: "banner_attr", widget: "string", hint: "max 50ish characters"}
           - {label: "Book ID", name: "banner_id", widget: string}
       - label: Featured Books 
         name: featured_books
@@ -99,7 +99,6 @@ collections:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "page"}
       - { name: title, label: Title }
       - { name: body, label: Body, widget: markdown }
-      - { label: 'Internal Tag', name: 'int_tag', widget: 'select', options: ['authors'], required: false}
       - label: "Related Book Collection(s)"
         name: "related_collection"
         widget: "relation"
@@ -216,7 +215,15 @@ collections:
         search_fields: ['title']
         value_field: "{{title}}"
         multiple: true
-        required: false 
+        required: false
+      - label: "date"
+        name: "date"
+        widget: "datetime"
+        default: ""
+        date_format: "YYYY-MM-DD"
+        time_format: "false" 
+        format: "YYYY-MM-DD"
+        required: true 
       
   - name: 'book_collection'
     label: 'Book Collection'
