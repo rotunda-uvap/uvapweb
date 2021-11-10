@@ -223,7 +223,7 @@ collections:
         date_format: "YYYY-MM-DD"
         time_format: "false" 
         format: "YYYY-MM-DD"
-        required: true 
+        required: false
       
   - name: 'book_collection'
     label: 'Book Collection'
