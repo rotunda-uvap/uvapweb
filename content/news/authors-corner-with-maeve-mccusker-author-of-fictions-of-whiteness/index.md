@@ -13,7 +13,7 @@ date: 2021-11-10
 ---
 Welcome back to the UVA Press Author's Corner! Here, we feature conversations with the authors of our latest releases to provide a glimpse into the writer's mind, their book's main lessons, and what’s next for them. We hope you enjoy these inside stories.
 
-Today, we are happy to bring you our conversation with Maeve McCusker, author of [FICTIONS OF WHITENESS: Imagining the Planter Caste in the French Caribbean Novel.](https://upress.virginia.edu/title/5156)
+Today, we are happy to bring you our conversation with Maeve McCusker, author of [FICTIONS OF WHITENESS: Imagining the Planter Caste in the French Caribbean Novel](https://upress.virginia.edu/title/5156), out later this month.
 
 **\*\*\*\*\*\*\*\*\*\*\*\****
 
