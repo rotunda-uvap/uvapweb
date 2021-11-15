@@ -8,8 +8,7 @@ import SeO from "../components/SeoComponent"
 import PageHeader from "../components/PageHeader"
 export default function PubPage({ data }) {
     const news = data.allMarkdownRemark
-    // const staff = data.staffs
-    // const pagedata = data.pubtext
+  
 
  return (
     
@@ -110,15 +109,6 @@ export const query = graphql`
       }
     }
 
-    staffs: allMarkdownRemark(filter: {frontmatter: {department: {in: "PUB"}}}) {
-      edges {
-        node {
-          ...MiniBioFragment
-        }
-      }
-    }
-    pubtext:  markdownRemark(frontmatter: {type: {eq: "page"}, title: {eq: "Publicity"}}) {
-        html
-      }
+    
   }
 `

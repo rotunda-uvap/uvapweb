@@ -79,11 +79,13 @@ export const query = graphql`
             }
       }
     }
-    Img: file(extension: {eq: "jpg"}, relativeDirectory: {eq: $relDir}) {
-      childImageSharp {
-        gatsbyImageData(width:300, layout: CONSTRAINED, placeholder: TRACED_SVG)
+    Img: file(extension: {regex: "/(jpeg|jpg|gif|png)/"}, relativeDirectory: {eq: $relDir}) {
+      publicURL
+            childImageSharp {
+        gatsbyImageData(width:300, layout: CONSTRAINED, placeholder: TRACED_SVG, formats: [AUTO, WEBP, AVIF])
+        
       }
-    } 
+    }
   }
 `
 

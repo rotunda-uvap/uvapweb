@@ -1,7 +1,6 @@
 import React from "react"
 import Footer from "./footer" 
 import MegaHeader from "./Megamenu"
-import "./layout.css"
 
 
 const Layout = ({ children }) => {

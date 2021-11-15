@@ -15,7 +15,7 @@ const newsPage = ({ data }) => {
     const url = data.site.siteMetadata.siteUrl + "/author-corner" + news.fields.slug
     const title = news.frontmatter.title
     let metaImage;
-if(news_image) metaImage = news.frontmatter.image.childImageSharp.fixed.src;
+if(news_image) metaImage = news.frontmatter.image.publicURL;
 else metaImage = null;
    
  return (
@@ -30,8 +30,8 @@ else metaImage = null;
 <section className="text-gray-600 body-font">
   <div className="container px-5 py-12 mx-auto">
   <div className="flex flex-row px-5 inline-flex items-center w-full leading-normal">
-     <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
-  <path fill-rule="evenodd" d="M7.707 14.707a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l2.293 2.293a1 1 0 010 1.414z" clip-rule="evenodd" />
+     <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
+  <path fill-rule="evenodd" d="M7.707 14.707a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l2.293 2.293a1 1 0 010 1.414z" clipRule="evenodd" />
     </svg>
             <a
               href={`../../publicity`}
@@ -103,12 +103,9 @@ export const query = graphql`
             templateKey
             image {
               name
+              publicURL
               extension
-              childImageSharp{
-                fixed{
-                  src
-                }
-              }
+              
             }
             description
             date(formatString: "YYYY-MM-DD")
@@ -126,12 +123,10 @@ export const query = graphql`
           slug
         }
     }
-    Img: file(extension: {eq: "jpg"}, relativeDirectory: {eq: $relDir}) {
-      childImageSharp {
-        fixed {
-          src
-        }
-        gatsbyImageData(width:300, layout: CONSTRAINED, placeholder: TRACED_SVG)
+    Img: file(extension: {regex: "/(jpeg|jpg|gif|png)/"}, relativeDirectory: {eq: $relDir}) {
+      publicURL
+            childImageSharp {
+        gatsbyImageData(width:300, layout: CONSTRAINED, placeholder: TRACED_SVG, formats: [AUTO, WEBP, AVIF])
         
       }
     }

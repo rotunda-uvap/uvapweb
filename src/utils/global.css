@@ -26,7 +26,7 @@
 p > a {text-decoration: underline;}
 .title {text-align:left;}
 table.tiers td {padding-left:1rem; padding-bottom:1rem;}
-p {padding:0 1rem 1rem 1rem; font-family: "Crimson Text";}
+p {padding:0 1rem 1rem 1rem; font-family: "Crimson Text"; line-height: 1.6rem; font-weight: 300;}
 .cms ul {margin-left:2em; padding:1em; list-style:circle;}
 .cms ul li:first-child {padding-top:0;}
 .cms ul li {padding-top:.5em; font-family: "Crimson Text";}
@@ -104,3 +104,7 @@ div[aria-expanded="false"]{
 }
 
 .tl-storyslider {height:500px !important;}
+
+h4 {padding-top:1rem; padding-bottom:1rem;}
+.greige {background-color: #f7f7f7;}
+
