@@ -40,5 +40,6 @@ featured_books:
   - "5390"
 related_collection:
   - OAH 2021
+date: 2021-04-15
 ---
 THE UNIVERSITY OF VIRGINIA PRESS was founded in 1963 to advance the intellectual interests not only of the University of Virginia, but of institutions of higher learning throughout the state. A member of the Association of University Presses, UVaP currently publishes seventy new titles annually. The UVaP editorial program focuses primarily on the humanities and social sciences with special concentrations in American history, African American studies, southern studies, literature, ecocriticism, architecture, and regional books. While it continuously pursues new titles, UVaP also maintains a backlist of over 1,000 titles in print.

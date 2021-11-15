@@ -23,4 +23,5 @@ featured_books:
   - "5192"
 related_collection:
   - SCWH
+date: 2021-06-07
 ---

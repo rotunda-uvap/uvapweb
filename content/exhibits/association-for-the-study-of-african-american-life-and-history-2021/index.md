@@ -29,5 +29,6 @@ featured_books:
   - "5340"
 related_collection:
   - ASECS 2021
+date: 2021-09-14
 ---
 ##### UVA Press is proud to sponsor the panel [“‘Won’t You Celebrate with Me?:’ The Black Family Through the Black Military Experience”](https://convention2.allacademic.com/one/asalh/asalh21/index.php?cmd=Online+Program+View+Session&selected_session_id=1875564&PHPSESSID=ecm9bamg5i58c1dgtuegjkca0i) on September 21 at 1:30 p.m. EDT

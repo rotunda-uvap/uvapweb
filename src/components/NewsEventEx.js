@@ -31,11 +31,12 @@ export default function FeatTrio() {
                   }
                 }
               } 
-              exhibit: allMarkdownRemark(limit:4, filter: {frontmatter: {templateKey: {eq: "exhibit"}}}) {
+              exhibit: allMarkdownRemark(limit:4, filter: {frontmatter: {templateKey: {eq: "exhibit"}}},sort: {fields: frontmatter___date, order: DESC}) {
                 edges {
                   node {
                     frontmatter {
                       templateKey
+                      date(formatString: "YYYY-MM-DD")
                       title
                       exhibit_slug
                     }

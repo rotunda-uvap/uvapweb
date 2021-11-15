@@ -38,4 +38,5 @@ featured_books:
   - "5478"
 related_collection:
   - MLA2021
+date: 2021-01-07
 ---

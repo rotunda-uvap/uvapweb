@@ -34,6 +34,7 @@ featured_books:
   - "5744"
 related_collection:
   - ASECS 2021
+date: 2021-04-07
 ---
 UVA Press invites submissions for the 2022 Walker Cowen Memorial Prize in Eighteenth-Century Studies | DEADLINE: November 1, 2021
 

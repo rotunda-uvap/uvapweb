@@ -30,5 +30,6 @@ featured_books:
   - "5776"
 related_collection:
   - APSA 2021
+date: 2021-09-30
 ---
 *Scroll down to browse new and featured books.*

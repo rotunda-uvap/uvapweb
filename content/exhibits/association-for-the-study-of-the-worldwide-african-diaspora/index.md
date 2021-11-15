@@ -34,5 +34,6 @@ featured_books:
   - "5716"
 related_collection:
   - ASWAD 2021
+date: 2021-11-06
 ---
 The University of Virginia Press publishes over seventy books a year across the humanities and social sciences. With special concentrations in African American studies, American history, southern African history, Caribbean studies, literature, architecture, and regional books, UVA Press is committed to rigorous scholarship, beautiful design, and diverse intellectual inquiry. Our digital imprint, ROTUNDA, publishes original digital scholarship and newly digitized critical and documentary editions in history, architecture, literature, and culture.

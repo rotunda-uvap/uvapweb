@@ -31,4 +31,5 @@ featured_books:
   - "5672"
 related_collection:
   - SHEAR 2021
+date: 2021-07-14
 ---
