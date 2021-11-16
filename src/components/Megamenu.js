@@ -357,26 +357,26 @@ const MegaHeader = () => {
                 <a href="https://www.facebook.com/uvapress">
                   <FaFacebookSquare
                     aria-label="facebook button"
-                    className="hover:text-gray-900 text-gray-400"
+                    className="hover:text-ceci-gray-dark text-ceci-gray-mid"
                   />
                 </a>
                 <a href="https://twitter.com/uvapress">
                   <FaTwitterSquare
                     aria-label="twitter button"
-                    className="hover:text-gray-900 text-gray-400"
+                    className="hover:text-ceci-gray-dark text-ceci-gray-mid"
                   />
                 </a>
                 <a href="https://www.instagram.com/uvapress">
                   <FaInstagramSquare
                     aria-label="insta button"
-                    className="hover:text-gray-900 text-gray-400"
+                    className="hover:text-ceci-gray-dark text-ceci-gray-mid"
                   />
                 </a>
                 <Link to={`/book-search`}>
                   {" "}
                   <FaSearch
                     aria-label="search button"
-                    className="hover:text-gray-900 text-gray-400"
+                    className="hover:text-ceci-gray-dark text-ceci-gray-mid"
                   />
                 </Link>
               </div>

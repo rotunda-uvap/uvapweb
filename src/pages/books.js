@@ -58,7 +58,7 @@ export default function Books({ data }) {
        
       {subs.edges.map(edge => (
             <>           
-           <div className="mb-2 px-4 font-display items-center" key={edge.node.subjectid}>
+           <div className="mb-2 px-4 font-display items-center" key={edge.node.subjectID}>
           <Link to={`../../subject/${ edge.node.subjectID }`} className="text-ceci-gray-dark hover:text-gray-800">{ edge.node.subjectName }</Link>
         </div>            
             </>

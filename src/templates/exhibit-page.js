@@ -6,6 +6,7 @@ import Layout from "../components/layout"
 import Gallery from "../components/ExCarousel"
 import SeO from "../components/SeoComponent"
 import PageHeader from "../components/PageHeader"
+import SectionHeader from "../components/SectionHeader"
 
 const exhibitPage = ({ data }) => {
     const exhibit = data.markdownRemark
@@ -25,9 +26,9 @@ const exhibitPage = ({ data }) => {
      <PageHeader text={data.markdownRemark.frontmatter.title}/>
 
         <GatsbyImage image={image} alt="related image"/>
-        {data.markdownRemark.frontmatter.coupon && <div className={`${bgcolor} ${txtcolor} py-5 px-5 text-2xl text-center`}>{data.markdownRemark.frontmatter.coupon}</div>}
-        <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1">
-          <div className={`py-5 px-5 text-lg text-light tracking-wide text-center font-serif`}
+        {data.markdownRemark.frontmatter.coupon && <div className={`${bgcolor} ${txtcolor} py-5 px-5 text-2xl tracking-wide text-center`}>{data.markdownRemark.frontmatter.coupon}</div>}
+        <div>
+          <div className={`py-5 px-5 text-md font-light tracking-wide text-center`}
           dangerouslySetInnerHTML={{ __html:exhibit.html }}/>
 
         
@@ -35,7 +36,8 @@ const exhibitPage = ({ data }) => {
         {feat_books &&
          
         <section className="py-8 border-b-2">
-        <p className="text-center uppercase text-gray-500 mx-auto  font-sans tracking-wide py-4">Featured Books:</p>
+          <SectionHeader text="Featured Books" className="pb-4"/>
+        {/* <p className="text-center uppercase text-gray-500 mx-auto  font-sans tracking-wide py-4">Featured Books:</p> */}
           <Gallery book_id_array={feat_books}/>
         </section>
         
@@ -47,24 +49,24 @@ const exhibitPage = ({ data }) => {
         {related_staff && 
         
         <section className="py-8 border-b-2"> 
-            
-            <p className="text-center uppercase text-gray-500 mx-auto  font-sans py-4">Meet our Editors:</p>
+            <SectionHeader text="Meet our Editors"/>
+            {/* <p className="text-center uppercase text-gray-500 mx-auto  font-sans py-4">Meet our Editors:</p> */}
         {related_staff.map(staff => (
             <>
-            <Link to={'../../staff/' + staff.frontmatter.title.replace(" ", "-").toLowerCase()}> <div className="tracking-wide text-lg text-light text-gray-800">{staff.frontmatter.title} <span className="text-sm">&nbsp; - &nbsp;{staff.frontmatter.job_title}</span></div></Link>
-            <div className="py-2 text-light text-lg leading-normal"
+            <Link to={'../../staff/' + staff.frontmatter.title.replace(" ", "-").toLowerCase()}> <div className="tracking-wide text-lg font-thin text-ceci-gray-mid">{staff.frontmatter.title} <span className="text-sm">&nbsp; - &nbsp;{staff.frontmatter.job_title}</span></div></Link>
+            <div className="py-2 font-light text-ceci-gray-dark text-lg leading-relaxed"
           dangerouslySetInnerHTML={{ __html:staff.html }}/>
             </>
         ))}
           </section>}
         
-        
+        <SectionHeader text="Related Content"/>
          <section className="py-8 border-b-2 flex flex-col md:flex-row">
        
           {related_series && 
              
              <div className="md:w-1/2">
-            <p className="text-center uppercase text-gray-500 mx-auto font-sans tracking-wide py-4">Related Series</p>
+            <p className="text-center uppercase text-ceci-gray-mid mx-auto font-sans tracking-wide py-4">Related Series</p>
             <ul className="content-center">
             {related_series.map(series => (
             
@@ -73,13 +75,9 @@ const exhibitPage = ({ data }) => {
         ))}</ul>
         </div>
         }
-          
-
-          
-          
 
             <div className="md:w-1/2">
-            <p className="text-center uppercase text-gray-500 mx-auto font-sans tracking-wide py-4">Related Posts</p>
+            <p className="text-center uppercase text-ceci-gray-mid mx-auto font-sans tracking-wide py-4">Related Posts</p>
             <ul className="content-center">
             {related_posts && related_posts.map(post => (
             post.frontmatter.title && <Link to={`../../news${ post.fields.slug }`}><li className="py-3 text-gray-700 text-center font-display" key={post.id}>{post.frontmatter.title}</li></Link> 
@@ -89,10 +87,11 @@ const exhibitPage = ({ data }) => {
 </section>
 
          <section className="py-8">
+           <SectionHeader text="Books"/>
           {book_colls && 
         
             <>
-            <p className="text-center uppercase text-gray-500 mx-auto  font-sans tracking-wide py-4">Books</p>
+            {/* <p className="text-center uppercase text-gray-500 mx-auto  font-sans tracking-wide py-4">Books</p> */}
             {book_colls.map(coll => (
               <div>
                 {/* <h6 className="py-2 font-display ">{coll.frontmatter.title}</h6> */}

@@ -68,7 +68,7 @@ const Footer = () => {
               </ul>
               </section> 
            </div>
-           <div className="flex flex-col"><Link to={`/support`} className="hover:text-gray-300">
+           <div className="flex flex-col px-5"><Link to={`/support`} className="hover:text-gray-300">
              <img src="/book-stack.png" alt="support uva press" width="75px"/>
              <div className="uppercase font-thin py-2 tracking-wide text-xl">Be a part of<br/> the future<br/> of publishing</div><div className="uppercase text-2xl font-bold">          
            
