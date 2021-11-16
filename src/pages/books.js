@@ -20,16 +20,20 @@ export default function Books({ data }) {
                  
 <PageHeader text={"Browse our Books"}/>
 <section className="flex flex-col md:flex-row gap-4 md:gap-8 items-center justify-center py-8 md:py-10 border-b-2 border-gray-100" id="top">
-<div className="uppercase text-gray-500 text-md font-thin tracking-widest font-sans"><Link to={`#AZ`}>A - Z</Link></div>
-<div className="uppercase text-gray-500 text-md font-thin tracking-widest font-sans"><Link to={`#recent`}>Recently Published</Link></div>
-<div className="uppercase text-gray-500 text-md font-thin tracking-widest font-sans"><Link to={`#subjects`}>Browse by Subject</Link></div>
-<div className="uppercase text-gray-500 text-md font-thin tracking-widest font-sans"><Link to={`#series`}>Browse by Series</Link></div>
-<div className="uppercase text-gray-500 text-md font-thin tracking-widest font-sans"><Link to={`#awardwinners`}>Award Winners</Link></div>
+<div className="uppercase text-ceci-gray-mid text-md font-thin tracking-wider font-sans"><Link to={`#AZ`}>A - Z</Link></div>
+<div className="uppercase text-ceci-gray-mid text-md font-thin tracking-wider font-sans"><Link to={`#recent`}>Recently Published</Link></div>
+<div className="uppercase text-ceci-gray-mid text-md font-thin tracking-wider font-sans"><Link to={`#subjects`}>Browse by Subject</Link></div>
+<div className="uppercase text-ceci-gray-mid text-md font-thin tracking-wider font-sans"><Link to={`#series`}>Browse by Series</Link></div>
+<div className="uppercase text-ceci-gray-mid text-md font-thin tracking-wider font-sans"><Link to={`#awardwinners`}>Award Winners</Link></div>
 
 </section>
  
 <SectionHeader className="py-4" text={"Our Series"}/>
-<div className="p-4 text-center uppercase text-gray-700 text-xs font-thin tracking-widest mx-auto font-sans"><Link to={'../series'}>See all Active Series</Link></div>
+{/* <div className="p-4 text-center uppercase text-ceci-gray-dark text-sm font-thin tracking-wide mx-auto font-sans"><Link to={'../series'}>See all Active Series</Link></div> */}
+<Link to={'../series'}><div className="text-sm text-center text-ceci-gray-mid">See all Active Series <span className="inline-flex items-center mt-4">
+              <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg></span></div></Link>
 <section className="text-gray-700 py-4 border-b-2 border-gray-100" id="series">
 
   <div className="container flex flex-wrap py-10 mx-auto items-center">
@@ -37,13 +41,13 @@ export default function Books({ data }) {
       {sers.edges.map(edge => (
             <>           
            <div className="md:w-1/2 mb-2 px-2 font-display" key={edge.node.id}>
-          <Link to={`../series/${ edge.node.id }`} className="text-gray-600 hover:text-gray-800">{ edge.node.seriesName }</Link>
+          <Link to={`../series/${ edge.node.id }`} className="text-ceci-gray-dark hover:text-gray-800">{ edge.node.seriesName }</Link>
         </div>            
             </>
         ))}
     
   </div>
-  <Link to={`#top`} className="uppercase text-gray-500 text-xs">Go to top</Link>
+  <Link to={`#top`} className="uppercase text-ceci-gray-mid text-xs">Go to top</Link>
 
 </section>
 
@@ -55,14 +59,15 @@ export default function Books({ data }) {
       {subs.edges.map(edge => (
             <>           
            <div className="mb-2 px-4 font-display items-center" key={edge.node.subjectid}>
-          <Link to={`../../subject/${ edge.node.subjectID }`} className="text-gray-600 hover:text-gray-800">{ edge.node.subjectName }</Link>
+          <Link to={`../../subject/${ edge.node.subjectID }`} className="text-ceci-gray-dark hover:text-gray-800">{ edge.node.subjectName }</Link>
         </div>            
             </>
         ))}
      
     
   </div>
-  <Link to={`#top`} className="uppercase text-gray-500 text-xs">Go to top</Link>
+  <Link to={`#top`} className="uppercase text-ceci-gray-mid text-xs">Go to top</Link>
+
 
 </section> 
 
@@ -78,12 +83,14 @@ export default function Books({ data }) {
            </>
         ))}
         </div>
-        <Link to={`#top`} className="uppercase text-gray-500 text-xs">Go to top</Link>
+        <Link to={`#top`} className="uppercase text-ceci-gray-mid text-xs">Go to top</Link>
+
    </section>
 
 <section id="awardwinners">
   <AwardWinners/>
-   <Link to={`#top`} className="text-gray-500 uppercase text-xs">Go to top</Link></section>
+  <Link to={`#top`} className="uppercase text-ceci-gray-mid text-xs">Go to top</Link>
+</section>
 
    <section id="AZ" className="py-5 text-gray-700 border-b-2 border-gray-100">
   <SectionHeader text={"All Books A - Z "}/>
@@ -97,7 +104,8 @@ export default function Books({ data }) {
            </>
         ))}
         </div>
-        <Link to={`#top`} className="uppercase text-gray-500 text-xs">Go to top</Link>
+        <Link to={`#top`} className="uppercase text-ceci-gray-mid text-xs">Go to top</Link>
+
    </section>
 
         </Layout>

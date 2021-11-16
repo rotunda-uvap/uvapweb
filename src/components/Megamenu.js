@@ -17,7 +17,7 @@ const MegaHeader = () => {
       >
         <div className="flex flex-row w-full">
           <nav className="flex">
-            <div className="block text-gray-900 w-64 py-4">
+            <div className="block text-ceci-gray-dark w-64 py-4">
               <Link to={`/`}>
                 {" "}
                 <img src="/black.png" alt="logo" />{" "}
@@ -48,7 +48,7 @@ const MegaHeader = () => {
 
               <div
                 role="toggle"
-                className="p-3 mega-menu mb-16 sm:mb-0 shadow-xl bg-gray-800"
+                className="p-3 mega-menu mb-16 sm:mb-0 shadow-xl bg-ceci-gray-dark"
               >
                 <div className="w-full flex flex-wrap justify-between mx-2 text-gray-400  font-sans font-thin uppercase">
                   <div className="px-4 w-full sm:w-1/2 lg:w-1/5 border-gray-600 border-b sm:border-r lg:border-b-0 pb-6 pt-6 lg:pt-3">
@@ -383,7 +383,7 @@ const MegaHeader = () => {
 
               <div
                 role="toggle"
-                className="p-6 mega-menu mb-16 sm:mb-0 shadow-xl bg-gray-800"
+                className="p-6 mega-menu mb-16 sm:mb-0 shadow-xl bg-ceci-gray-dark"
               >
                 <div className="container mx-auto w-full flex flex-wrap justify-between mx-2">
                   <div className="px-4 w-full sm:w-1/2 lg:w-1/5 border-gray-600 border-b sm:border-r lg:border-b-0 pb-6 pt-6 lg:pt-3">

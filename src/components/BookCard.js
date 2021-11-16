@@ -12,8 +12,8 @@ const booksrc = "https://ik.imagekit.io/uvapress/mediums/"
     {Thumb ? <div className="flip-card-front">
        <img src={booksrc + Thumb} className="mx-auto my-auto self-center" alt="cover"/> </div>:  
        <div className="flip-card-front px-1 bg-white ">
-    <h6 className="text-base text-gray-700 uppercase pt-3 px-1 underline">{Title}</h6>
-    <h5 className="text-sm pt-2 text-gray-500 italic font-serif ">{Subtitle}</h5>
+    <h6 className="text-base text-ceci-gray-dark uppercase pt-3 px-1 underline">{Title}</h6>
+    <h5 className="text-sm pt-2 text-ceci-gray-mid italic font-serif ">{Subtitle}</h5>
     <h6 className="text-xs font-light font-display text-gray-400  pt-2">{Author}</h6>
     <span className="text-sm py-2">{prizes}</span>
     </div>

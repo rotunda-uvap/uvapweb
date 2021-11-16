@@ -18,7 +18,7 @@ module.exports = {
         current: 'currentColor',
         'ceci-gray-light': '#cecfce',
         'ceci-gray-mid': '#808080',
-        'ceci-gray-dark' : '414042',
+        'ceci-gray-dark' : '#414042',
       },
       fontFamily: {
         serif: ["Crimson Text", ...defaultTheme.fontFamily.serif],

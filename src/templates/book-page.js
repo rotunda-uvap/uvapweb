@@ -43,7 +43,7 @@ const bookPage = ({ data }) => {
         book={true}
       />
 
-      <div className="grid md:grid-cols-3 md:gap-10 py-3 ml-6 ">
+      <div className="grid md:grid-cols-3 md:gap-10 py-3 ml-6 text-ceci-gray-dark ">
         <div className="col-span-1">
           {/* <GatsbyImage image={imageData} alt="book cover" /> */}
           { book.CoverImageFull ? <img className="hidden md:block" src={imglink} alt="cover" /> : <img className="hidden md:block" src={noimg_big} alt="cover" />}
@@ -80,7 +80,7 @@ const bookPage = ({ data }) => {
               <div className=" flex flex-row inline-flex items-center w-full leading-normal">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6 text-gray-600"
+                  className="h-6 w-6 text-ceci-gray-mid"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -111,7 +111,7 @@ const bookPage = ({ data }) => {
           <div className="flex flex-row inline-flex items-center w-full leading-normal">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6 text-gray-600"
+              className="h-6 w-6 text-ceci-gray-mid"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -138,7 +138,7 @@ const bookPage = ({ data }) => {
           <div className="flex flex-row inline-flex items-center w-full leading-normal">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6 text-gray-600"
+                className="h-6 w-6 text-ceci-gray-mid"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -163,10 +163,10 @@ const bookPage = ({ data }) => {
             
                   {book.Series && (
                     <div className="py-2">
-                      <span className="text-xs uppercase pr-5 font-thin tracking-wider">
+                      <span className="text-sm text-ceci-gray-mid uppercase pr-5 font-thin tracking-wide">
                         Series:
                       </span>
-                      <button className="text-gray-700 font-thin text-sm greige rounded-md p-2 tracking-wider">
+                      <button className="text-ceci-gray-mid font-thin text-sm greige rounded-md p-2 tracking-wide">
                         <Link to={`../../series/${book.Series.seriesID}`}>
                           {book.Series.name}
                         </Link>
@@ -176,10 +176,10 @@ const bookPage = ({ data }) => {
           
                   {book.Subject && (
                     <div>
-                      <span className="text-xs font-thin uppercase pr-5 tracking-wider">
+                      <span className="text-sm font-thin uppercase pr-5 text-ceci-gray-mid tracking-wide">
                         subject:
                       </span>
-                      <button className="greige font-thin text-sm rounded-md text-gray-700 p-2 tracking-wider">
+                      <button className="greige font-thin text-sm rounded-md text-ceci-gray-mid p-2 tracking-wide">
                         <Link to={`../../subject/${book.Subject.subjectID}`}>
                           {book.Subject.name}
                         </Link>
@@ -189,7 +189,7 @@ const bookPage = ({ data }) => {
                  <section>
           {book.Prizes && (
             <div className="py-2 flex flex-row inline-flex items-center w-full leading-normal text-gray-700">
-              <span className="text-xs uppercase pr-5 tracking-wider">
+              <span className="text-sm uppercase pr-5 tracking-wider">
                 awards:
               </span>
               <p>{book.Prizes}</p>

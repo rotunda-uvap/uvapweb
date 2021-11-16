@@ -24,7 +24,7 @@ export default function PubPage({ data }) {
             <div className="container items-center flex flex-col md:flex-row py-12">
               
               <div className="flex flex-col text-center items-center md:w-2/4 ">
-              <Link to={'../staff/emily-grandstaff'}><h5 className="title-font font-medium text-md text-gray-900">Emily Grandstaff</h5></Link>
+              <Link to={'../staff/emily-grandstaff'}><h5 className="title-font font-medium text-md text-ceci-gray-mid">Emily Grandstaff</h5></Link>
        <p className="text-gray-500 font-light">Publicity and Social Media Director</p>
        <p className="text-base leading-relaxed">(434) 982-2932</p>
          <a className="text-gray-500 text-base inline-flex items-center" href="mailto:egrandstaff@virginia.edu">Email Emily
@@ -49,13 +49,13 @@ export default function PubPage({ data }) {
                     {edge.node.frontmatter.related_book ? <img src={'https://www.upress.virginia.edu/sites/default/files/covers/' + edge.node.frontmatter.related_book[0].id + "_M.jpg"} alt="cover" className="object-contain self-center justify-self-center"/> : <div></div>}
                   
                     <div className="py-6 px-10 ">
-                        <div className="flex items-center"><span className="font-light text-gray-800">{edge.node.frontmatter.date}</span>
+                        <div className="flex items-center"><span className="font-light text-ceci-gray-mid">{edge.node.frontmatter.date}</span>
                         {/* <span className="px-2 py-1 bg-gray-600 text-gray-100 font-bold rounded hover:bg-gray-500">{edge.node.frontmatter.type}</span> */}
                         </div>
-                        <div className="mt-2"><Link className="text-xl text-gray-700 font-semibold tracking-wide hover:underline" to={`../${ edge.node.frontmatter.type }${ edge.node.fields.slug }`}>{ edge.node.frontmatter.title }</Link>
-                          {edge.node.frontmatter.description &&  <p className="mt-2 text-gray-600 font-light" dangerouslySetInnerHTML={{ __html: edge.node.frontmatter.description.split(' ').splice(0, 50).join(' ') + '...' }}></p>}
+                        <div className="mt-2"><Link className="text-xl text-ceci-gray-mid font-thin tracking-wide hover:underline hover:text-ceci-gray-dark" to={`../${ edge.node.frontmatter.type }${ edge.node.fields.slug }`}>{ edge.node.frontmatter.title }</Link>
+                          {edge.node.frontmatter.description &&  <p className="mt-2 text-ceci-gray-dark font-light" dangerouslySetInnerHTML={{ __html: edge.node.frontmatter.description.split(' ').splice(0, 50).join(' ') + '...' }}></p>}
                         </div>
-                        <div className="flex justify-between items-center mt-4"><Link  to={`../${ edge.node.frontmatter.type }${ edge.node.fields.slug }`}><FaArrowAltCircleRight className="inline mx-4"/> Read more</Link>
+                        <div className="flex justify-between items-center mt-4 text-ceci-gray-mid"><Link  to={`../${ edge.node.frontmatter.type }${ edge.node.fields.slug }`}><FaArrowAltCircleRight className="inline mx-4"/> Read more</Link>
                                 
                             
                     </div>
@@ -66,13 +66,13 @@ export default function PubPage({ data }) {
             </section>
             <div className="md:col-span-1 p-10">
             <section className="flex flex-col">
-            <h5 className="py-2">UVaP on Facebook</h5>
+            <h5 className="py-2 text-ceci-gray-mid">UVaP on Facebook</h5>
             <Helmet>
             
             <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v9.0&appId=10916153062&autoLogAppEvents=1" nonce="Jr34ozA7"></script></Helmet>
             
             <div className="fb-page" data-href="https://www.facebook.com/uvapress" data-tabs="timeline" data-width="" data-height="800" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/uvapress" className="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/uvapress">University of Virginia Press</a></blockquote></div>
-            <div className="py-5"><h5 className="py-2">UVaP on Twitter</h5><a className="twitter-timeline" data-chrome="noheader"  data-widget-id="702210505897807872" data-height="800" data-width="340" href="https://twitter.com/uvapress">Tweets by @uvapress</a></div>
+            <div className="py-5"><h5 className="py-2 text-ceci-gray-mid">UVaP on Twitter</h5><a className="twitter-timeline" data-chrome="noheader"  data-widget-id="702210505897807872" data-height="800" data-width="340" href="https://twitter.com/uvapress">Tweets by @uvapress</a></div>
            
             </section>
             </div>
