@@ -72,7 +72,7 @@ const Home = ({ data }) => {
 
     {/* <div className="grid grid-cols-1 md:grid-cols-2 "> */}
     <div className="flex flex-col items-center">
-       <div className="md:pb-0 pb-4"><Link to={'../catalog'}> <StaticImage  width={300} src="../images/fall21.jpg" alt="current catalog cover" /></Link></div>
+       <div className="md:pb-0 pb-4"><Link to={'../catalog'}> <StaticImage  width={300} src="../images/spring22.jpg" alt="current catalog cover" /></Link></div>
        {/* <GoogleCalendar/> */}
       {/*  <button className="text-gray-600">
        <div className="flex flex-col">

@@ -13,8 +13,8 @@ export default function RotundaNews() {
             <>
               <div className="flex flex-row md:px-10 "> 
               
-                  <div className="border-r-2 uppercase tracking-widest font-serif text-xs pr-3">rotunda news</div>
-                  <div className="tracking-widest font-serif text-xs pl-3">July 4, 2021</div>
+                  <div className="border-r-2 border-gray-600 uppercase tracking-wider text-ceci-gray-dark font-serif text-md pr-3">rotunda news</div>
+                  <div className="tracking-widest text-ceci-gray-mid font-serif text-xs pl-3">July 4, 2021</div>
               </div>
                 
               <div className="md:px-10 flex flex-col">

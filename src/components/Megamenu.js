@@ -317,7 +317,7 @@ const MegaHeader = () => {
       >
         <div className="flex flex-row justify-center place-content-center lg:text-xl">
           <nav className="flex">
-            <div className="flex items-center text-gray-900 mb-4 md:mb-0">
+            <div className="flex items-center text-ceci-gray-dark mb-4 md:mb-0">
               <div className="block">
                 <Link to={`/`}>
                   {" "}
@@ -333,7 +333,7 @@ const MegaHeader = () => {
                 className="toggle-input"
               />
 
-              <div className="space-x-6 flex flex-wrap items-center justify-center place-content-center py-3">
+              <div className="space-x-7 flex text-ceci-gray-mid font-thin tracking-wide items-center justify-center place-content-center py-3">
                 {/* <a className="hover:text-gray-900 md:ml-5" href="/">Home</a> */}
                 <label htmlFor="toggle-big">
                   <span className="hover:text-gray-900 md:ml-5">About</span>

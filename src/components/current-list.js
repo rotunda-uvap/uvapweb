@@ -9,7 +9,7 @@ export default function CurrentList() {
     <StaticQuery
       query={graphql`
       query  {
-        allBooksJson(filter: {List: {eq: "Fall 2021"}}) {
+        allBooksJson(filter: {List: {eq: "Spring 2022"}}) {
           edges {
             node {
               Title

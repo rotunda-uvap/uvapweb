@@ -37,7 +37,7 @@ strong {font-weight: bolder; font-weight: 600;}
   letter-spacing: .0235em;}
 .dropCap p:first-child:first-letter {
   color: rgb(29, 28, 28);
-  font-family: "Crimson Text";
+  font-family: "Quicksand";
   float:left;
   font-size: 2.5rem;
   line-height: 2rem;
@@ -86,7 +86,7 @@ div[aria-expanded="false"]{
   position:relative;
   bottom:1rem;
   content: "\201E";
-  left:70%;
+  left:80%;
   color:darkgrey;
   font-family: "Crimson Text";
 }

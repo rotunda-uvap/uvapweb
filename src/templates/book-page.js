@@ -59,16 +59,16 @@ const bookPage = ({ data }) => {
           />  }
 
         </div>
-        <div className="md:col-span-2 pr-5 md:px-10">
-          <h4 className="hidden md:block pb-3 font-light font-sans leading-none ">{book.Title}</h4>
-          <h4 className="md:hidden pb-3 font-light leading-relaxed font-sans">{book.Title}</h4>
+        <div className="md:col-span-2 pr-5 md:px-10 text-ceci-gray-dark">
+          <h4 className="hidden md:block pb-3 font-thin font-sans leading-none ">{book.Title}</h4>
+          <h4 className="md:hidden pb-3 font-thin leading-relaxed font-sans">{book.Title}</h4>
 
           {book.InternalSeriesVolume && (
             <h6 className="py-3">{book.InternalSeriesVolume}</h6>
           )}
 
           {book.Subtitle && (
-            <h6 className="italic font-thin text-gray-600 tracking-wider">{book.Subtitle}</h6>
+            <h6 className="italic font-thin text-ceci-gray-mid tracking-wide">{book.Subtitle}</h6>
           )}
 
           <h6 className="py-2 font-display">

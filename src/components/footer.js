@@ -5,7 +5,7 @@ import { FaPhone, FaMapMarkedAlt, FaEnvelope, FaFacebookSquare, FaTwitterSquare,
 const Footer = () => {
    
     return (
-      <footer className="body-font border-t-2 border-b-2 text-gray-500 text-md  grid grid-cols-1 md:grid md:grid-cols-4 items-center">
+      <footer className="body-font border-t-2 border-b-2 text-ceci-gray-mid text-md  grid grid-cols-1 md:grid md:grid-cols-4 items-center">
          
             <div id="links col-span-1">
               <h6 className="hidden">QuickLinks</h6>
