@@ -22,13 +22,13 @@ export default function RecentBooks({ data }) {
 
             <section className="py-5 flex md:flex-row items-center gap-4 md:gap-8 justify-center flex-col mx-auto border-b">
        
-            <span className="text-center font-medium pb-4 text-gray-500"><Link to={'#upc'}>
+            <span className="text-center font-medium pb-4 text-ceci-gray-mid tracking-wide uppercase"><Link to={'#upc'}>
             Forthcoming Books {/* <span className="inline-flex items-center mt-4">
               <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
                 <path d="M16 17l-4 4m0 0l-4-4m4 4V3"></path>
               </svg></span> */}
               </Link></span>
-            <span className="font-medium text-center pb-4 text-gray-500"><Link to={'#new'}>
+            <span className="font-medium text-center pb-4 text-ceci-gray-mid tracking-wide uppercase"><Link to={'#new'}>
             Books Published This Year {/* <span className="inline-flex items-center mt-4">
               <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
                 <path d="M5 12h14M12 5l7 7-7 7"></path>
@@ -40,7 +40,7 @@ export default function RecentBooks({ data }) {
            
       <section id="new">
       <SectionHeader className="py-4" text={"Recent Releases"}/>
-          <div className="container grid grid-cols-2 md:flex md:flex-wrap gap-2 py-5">
+          <div className="container flex flex-wrap gap-2 py-5">
             {rec.edges.map(edge => (
            <>  
               <Link to={`../title/${ edge.node.BookID }`}>
@@ -49,7 +49,7 @@ export default function RecentBooks({ data }) {
            </>
         ))}
         </div>
-        <Link to={`#top`} className="uppercase text-gray-500 text-xs">Go to top</Link>
+        <Link to={`#top`} className="uppercase text-ceci-gray-mid text-xs">Go to top</Link>
 </section>
 <section id="upc">
             <SectionHeader className="py-4" text={"Coming Soon"}/>
@@ -69,7 +69,7 @@ export default function RecentBooks({ data }) {
         </>
         ))}
         </ul>
-        <Link to={`#top`} className="uppercase text-gray-500 text-xs">Go to top</Link>
+        <Link to={`#top`} className="uppercase text-ceci-gray-mid text-xs">Go to top</Link>
             </section>
         </div>
         </Layout>
