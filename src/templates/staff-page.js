@@ -14,7 +14,7 @@ const staffPage = ({ data }) => {
      <div className="container px-5 py-7 mx-auto">
        <PageHeader text={staffMember.frontmatter.title}/>
         {staffMember.frontmatter.profile_photo && <div className="text-center py-2"><GatsbyImage image={staff_image} alt={staffMember.frontmatter.title}/></div>}
-        {staffMember.frontmatter.job_title && <h5 className="pt-4 pb-2 text-gray-500 font-thin tracking-wider text-center italic">{staffMember.frontmatter.job_title}</h5> }
+        {staffMember.frontmatter.job_title && <h5 className="pt-4 pb-2 text-ceci-gray-mid font-thin tracking-wider text-center italic">{staffMember.frontmatter.job_title}</h5> }
 
         {staffMember.frontmatter.email && <h6 className="text-center tracking-wider font-thin"><a href={`mailto:${ staffMember.frontmatter.email }`}>{staffMember.frontmatter.email}</a></h6>}
         {staffMember.html && <article 

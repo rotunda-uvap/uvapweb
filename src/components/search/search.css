@@ -1,10 +1,10 @@
 .ais-SearchBox { margin: 1em 0; text-align: center; padding:1em;}
-.ais-SearchBox-input { padding-left:1em; min-width: 80%;  min-height: 3rem; background-color:#F9FAFB; color:#4B5563;}
+.ais-SearchBox-input { padding-left:1em; min-width: 90%;  min-height: 3rem; background-color:#f7f7f7; color:#808080;}
 .ais-Pagination-list {margin-left:25%;}
 .ais-Pagination-item {display: inline; padding:0 1em;}
 .ais-RefinementList-item {padding-bottom:.15em;}
 .ais-RefinementList-labelText {padding-left:1em; font-size:.9rem; font-weight:100; font-family:Quicksand; }
-.ais-RefinementList-count {margin-left:.5em; padding:0 .5rem; color:#9CA3AF; font-size:.75rem;}
+.ais-RefinementList-count {margin-left:.3em; padding:0 .5rem; color:#cecfce; font-size:.75rem;}
 .ais-Stats {padding-bottom:.8rem;}
 .ais-SearchBox-submitIcon {width:20px; height: 20px; margin-left:5px;}
 .ais-SearchBox-reset {margin-left:1em;}

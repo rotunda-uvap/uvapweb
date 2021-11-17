@@ -79,7 +79,7 @@ Support UVA Press</div></Link></div>
              <li><a href="http://http//www.aupresses.org"> <img src="/aup_member.jpg" alt="aup"/> </a></li>
              </ul></div>
         </div>
-         <div className="text-center uppercase text-ceci-gray-mid font-light tracking-wider py-2">© 2021 UNIVERSITY OF VIRGINIA PRESS</div>
+        <div className="text-center uppercase text-ceci-gray-mid text-md font-thin tracking-wider py-2">© 2021 UNIVERSITY OF VIRGINIA PRESS</div>
       </footer>
       
     )

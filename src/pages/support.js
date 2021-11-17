@@ -33,11 +33,11 @@ export default function SupportPage({ data }) {
 <p>
 <span className="font-medium">Saunders Society—</span>Gifts of any amount support access to scholarship for students, faculty, scholars, and community members through open-access books, the digital imprint, and book series that advance new approaches to fields of study.</p>
    </p>         </div>
-          <div className="lg:w-2/6 md:w-1/2 bg-gray-100 rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0">
+          <div className="lg:w-2/6 md:w-1/2 greige rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0">
          <h2 className="text-gray-900 text-lg font-medium title-font mb-5">Make a Gift</h2>
           <p>Gifts can be made online through the UVA Giving at the button below or by mail:</p>
 
-<ul className="ml-4"><li>University of Virginia Press Unrestricted Gift Fund</li>
+<ul className="ml-4 tracking-wide"><li>University of Virginia Press Unrestricted Gift Fund</li>
 <li>Attention: Samantha Anderson-Jackson</li>
 <li>Bemiss House</li>
 <li>210 Sprigg Lane</li>
@@ -45,7 +45,7 @@ export default function SupportPage({ data }) {
 
 <p className="mt-4">Please direct questions to Suzanne Morse Moomaw, Director of the University of Virginia Press, swm2x@virginia.edu or 434-924-6064.</p>
       
-         <a href="https://www.givecampus.com/xypyf3"><button className="text-white bg-gray-900 border-0 py-2 px-8 focus:outline-none hover:bg-gray-600 rounded text-lg">Make a Gift Online</button></a>
+         <a href="https://www.givecampus.com/xypyf3"><button className="text-white bg-ceci-gray-dark border-0 py-2 px-8 focus:outline-none hover:bg-ceci-gray-mid rounded text-lg">Make a Gift Online</button></a>
     </div>
   </div>
 </div>
