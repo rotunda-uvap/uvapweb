@@ -53,7 +53,7 @@ export default function RecentBooks({ data }) {
 </section>
 <section id="upc">
             <SectionHeader className="py-4" text={"Coming Soon"}/>
-               <ul className="container grid grid-cols-2 md:flex md:flex-wrap gap-2 py-5">
+               <ul className="container flex flex-wrap gap-2 py-5">
             {upc.edges.map(edge => (
            <>  
 
