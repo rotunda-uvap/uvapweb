@@ -32,7 +32,10 @@ p {padding:0 1rem 1rem 1rem; font-family: "Crimson Text"; line-height: 1.6rem; f
 .cms ul li {padding-top:.5em; font-family: "Crimson Text";}
 .cms strong {font-weight: bolder; font-weight: 600;}
 strong {font-weight: bolder; font-weight: 600;}
-.cms h6 {color: #6B7280;
+.cms h3 {margin:2rem 0; font-size:3rem; color:#808080;letter-spacing: .02em; }
+.cms h4 {margin:2em 0; font-size: 2rem;color:#808080;letter-spacing: .02em;}
+.cms h5 {margin:1em 0; font-size:1.5rem; color:#808080;letter-spacing: .02em;}
+.cms h6 {color: #808080;
   padding: 1em 0;
   letter-spacing: .0235em;}
 .dropCap p:first-child:first-letter {
