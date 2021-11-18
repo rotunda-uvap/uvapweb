@@ -207,8 +207,16 @@ module.exports = {
   `gatsby-plugin-react-helmet`,
   `gatsby-plugin-twitter`,
   `gatsby-plugin-postcss`,
-  `gatsby-plugin-netlify-cms`,
- 
+  {
+  resolve: `gatsby-plugin-netlify-cms`,
+    options: {
+      /**
+       * One convention is to place your Netlify CMS customization code in a
+       * `src/cms` directory.
+       */
+      modulePath: `${__dirname}/src/utils/cms-css.js`,
+    },
+  },
   {
     resolve: `gatsby-plugin-algolia`,
     options: {
