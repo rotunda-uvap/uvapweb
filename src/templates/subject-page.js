@@ -14,6 +14,15 @@ const SubjectTemplate = ({ data }) => {
         <Layout>
             <SeO title={books.edges[0].node.Subject.name}/>
             <PageHeader text={books.edges[0].node.Subject.name}/>
+            <div className="flex flex-row px-5 inline-flex items-center w-full leading-normal">
+     <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
+  <path fillRule="evenodd" d="M7.707 14.707a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l2.293 2.293a1 1 0 010 1.414z" clipRule="evenodd" />
+    </svg>
+            <a
+              href={`../../books#subject`}
+              className="block p-2  text-xs font-thin uppercase "
+            >All Subjects</a>
+    </div>
                     <div className="container grid grid-cols-2 md:flex md:flex-wrap gap-2 py-5">
                         {books.edges.map(edge => (
                   <>  

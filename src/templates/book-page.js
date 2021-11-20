@@ -247,7 +247,7 @@ const bookPage = ({ data }) => {
 
 {news && (
         <section className="py-3 ml-6 inline-flex items-center">
-          <span className="text-xs uppercase pr-5 tracking-wider">
+          <span className="text-xs uppercase pr-5 text-ceci-gray-dark tracking-wider">
             Related News:
           </span>
 
@@ -256,7 +256,7 @@ const bookPage = ({ data }) => {
 
             <div className="w-4/5 ml-5">
               <h3
-                className="text-lg font-thin tracking-widest text-gray-700 text-left"
+                className="text-lg font-thin tracking-wide text-ceci-gray-dark text-left"
                 key={news.frontmatter.title}
               >
                 <Link to={`../../${news.frontmatter.type}${news.fields.slug}`}>
