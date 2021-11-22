@@ -18,7 +18,7 @@ const staffPage = ({ data }) => {
 
         {staffMember.frontmatter.email && <h6 className="text-center tracking-wider font-thin"><a href={`mailto:${ staffMember.frontmatter.email }`}>{staffMember.frontmatter.email}</a></h6>}
         {staffMember.html && <article 
-          dangerouslySetInnerHTML={{ __html: staffMember.html }} className="md:w-1/2 md:mx-auto py-7 cms dropCap"/> }
+          dangerouslySetInnerHTML={{ __html: staffMember.html }} className="md:w-1/2 md:mx-auto py-7 cms dropCap text-lg"/> }
     </div>
     
    </Layout>

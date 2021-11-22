@@ -60,7 +60,8 @@ export default function FeatTrio() {
                       }
                       image {
                         childrenImageSharp {
-                        gatsbyImageData
+                        gatsbyImageData(placeholder: BLURRED
+                          formats: [AUTO, WEBP, AVIF])
                         }
                       }
                     }
