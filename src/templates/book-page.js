@@ -166,8 +166,8 @@ const bookPage = ({ data }) => {
                       <span className="text-sm text-ceci-gray-mid uppercase pr-5 font-thin tracking-wide">
                         Series:
                       </span>
-                      <button className="text-ceci-gray-dark font-thin text-sm hover:bg-white bg-greige rounded-md p-2 tracking-wide">
-                        <Link to={`../../series/${book.Series.seriesID}`}>
+                      <button className="text-ceci-gray-mid font-thin text-sm hover:bg-white bg-greige rounded-md p-2 tracking-wide">
+                        <Link to={`../../series/${book.Series.seriesID}`} className="tracking-wide uppercase">
                           {book.Series.name}
                         </Link>
                       </button>
@@ -179,8 +179,8 @@ const bookPage = ({ data }) => {
                       <span className="text-sm font-thin uppercase pr-5 text-ceci-gray-mid tracking-wide">
                         subject:
                       </span>
-                      <button className="bg-greige hover:bg-white font-thin text-sm rounded-md text-ceci-gray-dark p-2 tracking-wide">
-                        <Link to={`../../subject/${book.Subject.subjectID}`}>
+                      <button className="bg-greige hover:bg-white font-thin text-sm rounded-md text-ceci-gray-mid p-2 tracking-wide">
+                        <Link to={`../../subject/${book.Subject.subjectID}`} className="tracking-wide uppercase">
                           {book.Subject.name}
                         </Link>
                       </button>

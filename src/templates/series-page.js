@@ -29,7 +29,7 @@ const SeriesTemplate = ({ data }) => {
     </div>
             <section className="py-4 border-b-2 border-gray-100">
             <div className="ml-4 text-center uppercase text-ceci-gray-mid tracking-wide"><Link to={'/series'}>{seriesinfo.frontmatter.status} series</Link></div>
-            {seriesinfo.html ? <div className="pt-5 cms text-ceci-gray-dark leading-relaxed" dangerouslySetInnerHTML={{ __html: seriesinfo.html }}/> :<div/> }
+            {seriesinfo.html ? <div className="pt-5 cms  text-lg text-ceci-gray-dark leading-relaxed" dangerouslySetInnerHTML={{ __html: seriesinfo.html }}/> :<div/> }
             {seriesinfo.frontmatter.editors ? <div className="text-ceci-gray-dark leading-relaxed font-serif ml-4 cms" dangerouslySetInnerHTML={{ __html: seriesinfo.frontmatter.editors }}/> : <div/> }
 <div>
 {related_staff && related_staff.map(staff => (
