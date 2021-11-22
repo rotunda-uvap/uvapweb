@@ -19,6 +19,11 @@ module.exports = {
         'ceci-gray-light': '#cecfce',
         'ceci-gray-mid': '#808080',
         'ceci-gray-dark' : '#414042',
+        'greige': '#f7f7f7;'
+      },
+      height: {
+        '500': '500px',
+        '250': '250px',
       },
       fontFamily: {
         serif: ["Crimson Text", ...defaultTheme.fontFamily.serif],

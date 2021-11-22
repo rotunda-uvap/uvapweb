@@ -96,11 +96,11 @@ const bookPage = ({ data }) => {
                   href={binding.buylink}
                   className="block group p-2 ml-4 border-b"
                 >
-                  <div className="font-thin uppercase ">
-                    <span className="tracking-widest">{binding.type}{" "}</span>
+                  <div className="font-thin uppercase text-ceci-gray-dark ">
+                    <span className="tracking-wide ">{binding.type}{" "}</span>
                     <span className="pl-2 font-thin">${binding.price}</span>{" "}
                   </div>
-                  <div className="font-display text-sm ">
+                  <div className="font-display text-sm">
                     {binding.date && binding.date} {binding.pages && <span>{binding.pages} pages</span> } {binding.ISBN && <span>ISBN: {binding.ISBN} </span>}
                   </div>
                 </a>
@@ -127,7 +127,7 @@ const bookPage = ({ data }) => {
               href={`../../examination_Copy_Form_2021.pdf`}
               className="block group  p-2 ml-4 border-b"
             >
-              <div className="font-thin uppercase">Exam Copy </div>
+              <div className="font-thin uppercase text-ceci-gray-dark tracking-wide">Exam Copy </div>
               <div className="text-sm font-display ">
                 For Instructors or Reviewers
               </div>
@@ -154,7 +154,7 @@ const bookPage = ({ data }) => {
                 href="https://forms.gle/H8J1NbtN4BBZZwgy7"
                 className="block group  p-2 mb-4 ml-4 border-b"
               >
-                <div className="font-thin  uppercase ">
+                <div className="font-thin tracking-wide text-ceci-gray-dark uppercase ">
                   Desk Copy{" "}
                 </div>
                 <div className="text-sm font-display ">For Instructors</div>
@@ -166,7 +166,7 @@ const bookPage = ({ data }) => {
                       <span className="text-sm text-ceci-gray-mid uppercase pr-5 font-thin tracking-wide">
                         Series:
                       </span>
-                      <button className="text-ceci-gray-mid font-thin text-sm greige rounded-md p-2 tracking-wide">
+                      <button className="text-ceci-gray-dark font-thin text-sm hover:bg-white bg-greige rounded-md p-2 tracking-wide">
                         <Link to={`../../series/${book.Series.seriesID}`}>
                           {book.Series.name}
                         </Link>
@@ -179,7 +179,7 @@ const bookPage = ({ data }) => {
                       <span className="text-sm font-thin uppercase pr-5 text-ceci-gray-mid tracking-wide">
                         subject:
                       </span>
-                      <button className="greige font-thin text-sm rounded-md text-ceci-gray-mid p-2 tracking-wide">
+                      <button className="bg-greige hover:bg-white font-thin text-sm rounded-md text-ceci-gray-dark p-2 tracking-wide">
                         <Link to={`../../subject/${book.Subject.subjectID}`}>
                           {book.Subject.name}
                         </Link>
@@ -189,10 +189,10 @@ const bookPage = ({ data }) => {
                  <section>
           {book.Prizes && (
             <div className="py-2 flex flex-row inline-flex items-center w-full leading-normal text-gray-700">
-              <span className="text-sm uppercase pr-5 tracking-wider">
+              <span className="text-sm uppercase pr-5 tracking-wider font-thin text-ceci-gray-mid">
                 awards:
               </span>
-              <p>{book.Prizes}</p>
+              <p className="text-ceci-gray-mid tracking-wide font-thin text-sm p-2">{book.Prizes}</p>
             </div>
           )}
         </section>

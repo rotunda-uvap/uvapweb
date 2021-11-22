@@ -34,7 +34,7 @@ export default function Books({ data }) {
               <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
                 <path d="M5 12h14M12 5l7 7-7 7"></path>
               </svg></span></div></Link>
-<section className="text-gray-700 py-4 border-b-2 border-gray-100" id="series">
+<section className="text-ceci-gray-dark py-4 border-b-2 border-gray-100" id="series">
 
   <div className="container flex flex-wrap py-10 mx-auto items-center">
 
@@ -52,13 +52,14 @@ export default function Books({ data }) {
 </section>
 
 
-<section className="py-5 text-gray-700 border-b-2 border-gray-100" id="subjects">
+<section className="py-5 text-ceci-gray-dark border-b-2 border-gray-100" id="subjects">
   <SectionHeader text={"Our Subjects"}/> 
-  <div className="container flex flex-wrap py-10 mx-auto items-center">
+  <div className="container md:flex md:flex-wrap py-10 mx-auto items-center">
        
       {subs.edges.map(edge => (
             <>           
-           <div className="mb-2 px-4 font-display items-center" key={edge.node.subjectID}>
+          <div className="mb-2 px-2 font-display items-center" key={edge.node.subjectID}> 
+
           <Link to={`../../subject/${ edge.node.subjectID }`} className="text-ceci-gray-dark hover:text-gray-800">{ edge.node.subjectName }</Link>
         </div>            
             </>

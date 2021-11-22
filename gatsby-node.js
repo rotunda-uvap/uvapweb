@@ -44,7 +44,14 @@ exports.createSchemaCustomization = ({ actions }) => {
   
   
   exports.createPages = ({ graphql, actions }) => {
+    const { createRedirect } = actions
+    createRedirect({ fromPath: '/2021/11/16/authors-corner-sara-jensen-carr-author-topography-wellness', toPath: '/author-corner/authors-corner-with-sara-jensen-carr-author-of-the-topography-of-wellness', isPermanent: true, redirectInBrowser: true })
+    createRedirect({ fromPath: '/2021/11/09/celebrating-week-keepup-grace-mitchell-tada-and-walter-hood-coeditors-black-landscapes', toPath: '/news/celebrating-up-week-keepup-with-grace-mitchell-tada-and-walter-hood-coeditors-of-black-landscapes-matter', isPermanent: true, redirectInBrowser: true })
+    createRedirect({ fromPath: '/title/5501', toPath: '/furnace-and-fugue', isPermanent: true, redirectInBrowser: true })
+
+    
     const { createPage } = actions
+
     return graphql(`
       {
         allBooksJson {
@@ -271,16 +278,7 @@ exports.createSchemaCustomization = ({ actions }) => {
           })
         })
         
-       /*  const promos = result.data.allpromos.edges
-        promos.forEach(({ node }) => {
-          createPage({
-            path: `/promotions${node.fields.slug}`,
-            component: path.resolve(`./src/templates/promo-page.js`),
-            context: {
-              id: node.id
-            },
-          })
-        }) */
+       
 
         const exhibits = result.data.allExhibits.edges
         exhibits.forEach(({ node }) => {

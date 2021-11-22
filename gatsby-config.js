@@ -242,7 +242,8 @@ module.exports = {
         host: 'https://uvap-draft-13b347.netlify.app/',
         policy: [{ userAgent: '*', allow: '/' }]
       }
-    }
+    },
+    "gatsby-plugin-meta-redirect"
   ],
   mapping: {
     "MarkdownRemark.frontmatter.related_series" : "SeriesJson",
