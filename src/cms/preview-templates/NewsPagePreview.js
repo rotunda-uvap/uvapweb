@@ -1,6 +1,6 @@
 
 import React from 'react'
-import NewsPageTemplate from "../../components/NewsPageTemplate"
+import NewsPageTemplate from "../../templates/news-page"
 
 const NewsPagePreview = ({ entry, widgetFor, getAsset }) => {
     
