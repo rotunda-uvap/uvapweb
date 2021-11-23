@@ -48,6 +48,12 @@ exports.createSchemaCustomization = ({ actions }) => {
     createRedirect({ fromPath: '/2021/11/16/authors-corner-sara-jensen-carr-author-topography-wellness', toPath: '/author-corner/authors-corner-with-sara-jensen-carr-author-of-the-topography-of-wellness', isPermanent: true, redirectInBrowser: true })
     createRedirect({ fromPath: '/2021/11/09/celebrating-week-keepup-grace-mitchell-tada-and-walter-hood-coeditors-black-landscapes', toPath: '/news/celebrating-up-week-keepup-with-grace-mitchell-tada-and-walter-hood-coeditors-of-black-landscapes-matter', isPermanent: true, redirectInBrowser: true })
     createRedirect({ fromPath: '/title/5501', toPath: '/furnace-and-fugue', isPermanent: true, redirectInBrowser: true })
+    createRedirect({ fromPath: '/2021/11/22/federal-fixation-new-blog-post-david-j-toscano-author-fighting-political-gridlock', toPath: '/news/federal-fixation-a-new-blog-post-by-david-j-toscano-author-of-fighting-political-gridlock', isPermanent: true, redirectInBrowser: true })
+    createRedirect({ fromPath: '/content/apsa', toPath: '/exhibits/apsa', isPermanent: true, redirectInBrowser: true })
+    createRedirect({ fromPath: '/content/asa-2021', toPath: '/exhibits/asa-2021', isPermanent: true, redirectInBrowser: true })
+    createRedirect({ fromPath: '/content/sha-2021', toPath: '/exhibits/sha-2021', isPermanent: true, redirectInBrowser: true })
+    createRedirect({ fromPath: '/content/neasecs-2021', toPath: '/exhibits/neasecs-2021', isPermanent: true, redirectInBrowser: true })
+    createRedirect({ fromPath: '/content/aswad', toPath: '/exhibits/aswad', isPermanent: true, redirectInBrowser: true })
 
     
     const { createPage } = actions

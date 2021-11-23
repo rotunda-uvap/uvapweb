@@ -5,6 +5,7 @@
  */
 require("dotenv").config()
 const path = require(`path`)
+//const siteURL = 'https://upress.virginia.edu'
 module.exports = {
   flags: { PARALLEL_SOURCING: true, DEV_SSR: true, FAST_DEV: true },
   siteMetadata: {
@@ -13,7 +14,7 @@ module.exports = {
     logo: `uvap_logo.png`,
     image: '/static/uvap_sm.png',
     description: `The website for the University of Virginia Press`,
-    siteUrl: `https://uvap-draft-13b347.netlify.app`,
+    siteUrl: `https://upress.virginia.edu`,
     twitterUsername: "@uvapress"
 
   },
@@ -174,7 +175,9 @@ module.exports = {
       resolve: `gatsby-plugin-netlify-cms-paths`,
       options: {
         // Path to your Netlify CMS config file
-        cmsConfig: `/static/admin/config.yml`
+        cmsConfig: `/static/admin/config.yml`,
+        modulePath: `${__dirname}/src/cms/cms.js`,
+        // stylesPath: `${__dirname}/src/utils/global.css`
       }
     },
     {
@@ -185,6 +188,73 @@ module.exports = {
         ]
       }
     },
+    /* {
+      resolve: "gatsby-plugin-google-tagmanager",
+      options: {
+        id: "YOUR_GOOGLE_TAGMANAGER_ID",
+  
+        // Include GTM in development.
+        //
+        // Defaults to false meaning GTM will only be loaded in production.
+        includeInDevelopment: false,
+  
+        // datalayer to be set before GTM is loaded
+        // should be an object or a function that is executed in the browser
+        //
+        // Defaults to null
+        defaultDataLayer: { platform: "gatsby" },
+  
+        // Specify optional GTM environment details.
+        gtmAuth: "YOUR_GOOGLE_TAGMANAGER_ENVIRONMENT_AUTH_STRING",
+        gtmPreview: "YOUR_GOOGLE_TAGMANAGER_ENVIRONMENT_PREVIEW_NAME",
+        dataLayerName: "YOUR_DATA_LAYER_NAME",
+  
+        // Name of the event that is triggered
+        // on every Gatsby route change.
+        //
+        // Defaults to gatsby-route-change
+        routeChangeEventName: "YOUR_ROUTE_CHANGE_EVENT_NAME",
+        // Defaults to false
+        enableWebVitalsTracking: true,
+        // Defaults to https://www.googletagmanager.com
+        selfHostedOrigin: "YOUR_SELF_HOSTED_ORIGIN",
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        // The property ID; the tracking code won't be generated without it
+        trackingId: "YOUR_GOOGLE_ANALYTICS_TRACKING_ID",
+        // Defines where to place the tracking script - `true` in the head and `false` in the body
+        head: false,
+        // Setting this parameter is optional
+        anonymize: true,
+        // Setting this parameter is also optional
+        respectDNT: true,
+        // Avoids sending pageview hits from custom paths
+        exclude: ["/preview/**", "/do-not-track/me/too/"],
+        // Delays sending pageview hits on route update (in milliseconds)
+        pageTransitionDelay: 0,
+        // Enables Google Optimize using your container Id
+        optimizeId: "YOUR_GOOGLE_OPTIMIZE_TRACKING_ID",
+        // Enables Google Optimize Experiment ID
+        experimentId: "YOUR_GOOGLE_EXPERIMENT_ID",
+        // Set Variation ID. 0 for original 1,2,3....
+        variationId: "YOUR_GOOGLE_OPTIMIZE_VARIATION_ID",
+        // Defers execution of google analytics script after page load
+        defer: false,
+        // Any additional optional fields
+        sampleRate: 5,
+        siteSpeedSampleRate: 10,
+        cookieDomain: "example.com",
+        // defaults to false
+        enableWebVitalsTracking: true,
+      },
+    }, 
+    */
+
+    `gatsby-plugin-advanced-sitemap`,
+
    /*  This plugin throws errors, check if other issues are reported later
    {
       resolve: `gatsby-source-google-id`,
@@ -234,7 +304,6 @@ module.exports = {
           timeout: 3500, // number; the amount of time, in milliseconds, that you want to allow mailchimp to respond to your request before timing out. defaults to 3500
       },
   }, 
-  'gatsby-plugin-webpack-bundle-analyser-v2',
      'gatsby-plugin-less',
   {
       resolve: 'gatsby-plugin-robots-txt',
@@ -243,6 +312,7 @@ module.exports = {
         policy: [{ userAgent: '*', allow: '/' }]
       }
     },
+    
     "gatsby-plugin-meta-redirect"
   ],
   mapping: {
