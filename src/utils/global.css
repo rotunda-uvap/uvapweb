@@ -22,7 +22,8 @@
     @apply text-lg;
   }
 }
-
+ol {margin-left:1em; list-style-type:decimal;}
+ol > li {margin: 1em;}
 p > a {text-decoration: underline;}
 .title {text-align:left;}
 table.tiers td {padding-left:1rem; padding-bottom:1rem;}
