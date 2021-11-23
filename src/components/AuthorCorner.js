@@ -19,7 +19,8 @@ export default function AuthorCornerFront() {
                       title
                       image {
                         childrenImageSharp {
-                        gatsbyImageData
+                        gatsbyImageData(placeholder: BLURRED
+                          formats: [AUTO, WEBP, AVIF])
                         }
                       }
                     }
