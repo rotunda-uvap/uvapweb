@@ -1,10 +1,9 @@
-// import CMS from 'netlify-cms-app'
 import CMS from 'netlify-cms-app';
+import NewsPagePreview from './preview-templates/NewsPagePreview'
 
-CMS.registerPreviewStyle("../utils/global.css");
+//CMS.registerPreviewStyle("../utils/global.css");
 // import "../utils/global.css"
-/* import NewsPagePreview from './preview-templates/NewsPagePreview'
-import BasicPagePreview from './preview-templates/BasicPagePreview'
+//import BasicPagePreview from './preview-templates/BasicPagePreview'
 
 CMS.registerPreviewTemplate('news', NewsPagePreview)
-CMS.registerPreviewTemplate('Pages', BasicPagePreview) */
+//CMS.registerPreviewTemplate('Pages', BasicPagePreview) */
