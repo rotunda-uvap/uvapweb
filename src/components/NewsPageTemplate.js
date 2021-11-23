@@ -3,7 +3,6 @@ import RelatedBook from "../components/RelatedBook"
 import { GatsbyImage } from "gatsby-plugin-image"
 import PageHeader from "../components/PageHeader"
 import BackArrow from "../components/BackArrow"
-// import HTMLContent from "../components/Content";
 
  const NewsPageTemplate = ({title, content, related_list, pic, contentComponent }) => {
     
