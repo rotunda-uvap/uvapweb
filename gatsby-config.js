@@ -176,7 +176,6 @@ module.exports = {
       options: {
         // Path to your Netlify CMS config file
         cmsConfig: `/static/admin/config.yml`,
-        modulePath: `${__dirname}/src/cms/cms.js`,
         // stylesPath: `${__dirname}/src/utils/global.css`
       }
     },
@@ -284,7 +283,7 @@ module.exports = {
        * One convention is to place your Netlify CMS customization code in a
        * `src/cms` directory.
        */
-      modulePath: `${__dirname}/src/utils/cms-css.js`,
+      modulePath: `${__dirname}/src/cms/cms.js`,
     },
   },
   {
