@@ -284,6 +284,7 @@ module.exports = {
        * `src/cms` directory.
        */
       modulePath: `${__dirname}/src/cms/cms.js`,
+      enableIdentityWidget:false
     },
   },
   {

@@ -5,7 +5,7 @@ import { getImage } from "gatsby-plugin-image"
 import SeO from "../components/SeoComponent"
 import ShareButtons from "../components/ShareButtons"
 import NewsPageTemplate from "../components/NewsPageTemplate"
-import HTMLContent from "../components/Content";
+
 
 const newsPage = ({ data }) => {
     const news = data.markdownRemark
@@ -27,7 +27,6 @@ else metaImage = null;
   article={true}
 />
 <NewsPageTemplate 
- contentComponent={HTMLContent}
   title={title}
   content={news.html}
   related_list={related_books}
