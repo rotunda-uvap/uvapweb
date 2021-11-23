@@ -4,7 +4,7 @@ import { GatsbyImage } from "gatsby-plugin-image"
 import PageHeader from "../components/PageHeader"
 import BackArrow from "../components/BackArrow"
 
- const NewsPageTemplate = ({title, content, related_list, pic }) => {
+ const NewsPageTemplate = ({title, content, related_list, pic, contentComponent }) => {
 
     return (
       <section className="text-gray-600">

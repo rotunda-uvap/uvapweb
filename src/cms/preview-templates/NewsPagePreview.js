@@ -2,7 +2,7 @@
 import React from 'react'
 import NewsPageTemplate from "../../components/NewsPageTemplate"
 
-const NewsPagePreview = ({ entry, widgetFor }) => {
+const NewsPagePreview = ({ entry, widgetFor, getAsset }) => {
     
     const books = entry.getIn(['data', 'related_book'])
     
@@ -10,7 +10,7 @@ const NewsPagePreview = ({ entry, widgetFor }) => {
  <NewsPageTemplate
     title={entry.getIn(['data', 'title'])}
     content={widgetFor('body')}
-    pic={entry.getIn(['data', 'image'])}
+    pic={getAsset(entry.getIn(['data', 'image']))}
     related_list={books && books.toJS()}
   />
 )
