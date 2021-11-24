@@ -55,6 +55,7 @@ exports.createSchemaCustomization = ({ actions }) => {
     createRedirect({ fromPath: '/content/sha-2021', toPath: '/exhibits/sha-2021', isPermanent: true, redirectInBrowser: true })
     createRedirect({ fromPath: '/content/neasecs-2021', toPath: '/exhibits/neasecs-2021', isPermanent: true, redirectInBrowser: true })
     createRedirect({ fromPath: '/content/aswad', toPath: '/exhibits/aswad', isPermanent: true, redirectInBrowser: true })
+    createRedirect({ fromPath: '/content/opportunities', toPath: '/career', isPermanent: true, redirectInBrowser: true })
 
     
     const { createPage } = actions
