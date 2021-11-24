@@ -2,7 +2,7 @@ import React from "react"
 
 
 const EvenCard = ({Title, Subtitle, Author, Thumb, Bookid, prizes}) => {
-    const booksrc = "https://www.upress.virginia.edu/sites/default/files/covers/"  
+    const booksrc = "https://ik.imagekit.io/uvapress/mediums/"  
         return (
             <div className="md:grid md:grid-cols-3 py-7 border-b-2 border-gray-100 ">
              <div className="md:grid-span-1">{Thumb ?  <img src={booksrc + Bookid + "_M.jpg"} className="mx-auto my-auto self-center" alt="cover"/> : <img src={"../noimg.png"} alt="cover placeholder" className="mx-auto my-auto self-center"/>}</div>

@@ -46,7 +46,7 @@ export default function PubPage({ data }) {
             <>
               <div className="flex flex-row">
                   
-                    {edge.node.frontmatter.related_book ? <img src={'https://www.upress.virginia.edu/sites/default/files/covers/' + edge.node.frontmatter.related_book[0].id + "_M.jpg"} alt="cover" className="object-contain self-center justify-self-center"/> : <div></div>}
+                    {edge.node.frontmatter.related_book ? <img src={'https://ik.imagekit.io/uvapress/mediums/' + edge.node.frontmatter.related_book[0].id + "_M.jpg"} alt="cover" className="object-contain self-center justify-self-center"/> : <div></div>}
                   
                     <div className="py-6 px-10 ">
                         <div className="flex items-center"><span className="font-light text-ceci-gray-mid">{edge.node.frontmatter.date}</span>

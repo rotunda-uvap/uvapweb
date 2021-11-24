@@ -187,10 +187,10 @@ module.exports = {
         ]
       }
     },
-    /* {
+     {
       resolve: "gatsby-plugin-google-tagmanager",
       options: {
-        id: "YOUR_GOOGLE_TAGMANAGER_ID",
+        id: "GTM-MRC4NJR",
   
         // Include GTM in development.
         //
@@ -204,53 +204,53 @@ module.exports = {
         defaultDataLayer: { platform: "gatsby" },
   
         // Specify optional GTM environment details.
-        gtmAuth: "YOUR_GOOGLE_TAGMANAGER_ENVIRONMENT_AUTH_STRING",
+        /* gtmAuth: "YOUR_GOOGLE_TAGMANAGER_ENVIRONMENT_AUTH_STRING",
         gtmPreview: "YOUR_GOOGLE_TAGMANAGER_ENVIRONMENT_PREVIEW_NAME",
-        dataLayerName: "YOUR_DATA_LAYER_NAME",
+        dataLayerName: "YOUR_DATA_LAYER_NAME", */
   
         // Name of the event that is triggered
         // on every Gatsby route change.
         //
         // Defaults to gatsby-route-change
-        routeChangeEventName: "YOUR_ROUTE_CHANGE_EVENT_NAME",
+        //routeChangeEventName: "YOUR_ROUTE_CHANGE_EVENT_NAME",
         // Defaults to false
         enableWebVitalsTracking: true,
         // Defaults to https://www.googletagmanager.com
-        selfHostedOrigin: "YOUR_SELF_HOSTED_ORIGIN",
+        //selfHostedOrigin: "YOUR_SELF_HOSTED_ORIGIN",
       },
     },
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         // The property ID; the tracking code won't be generated without it
-        trackingId: "YOUR_GOOGLE_ANALYTICS_TRACKING_ID",
+        trackingId: "UA-27351877-1",
         // Defines where to place the tracking script - `true` in the head and `false` in the body
         head: false,
         // Setting this parameter is optional
-        anonymize: true,
+        //anonymize: true,
         // Setting this parameter is also optional
         respectDNT: true,
         // Avoids sending pageview hits from custom paths
-        exclude: ["/preview/**", "/do-not-track/me/too/"],
+        exclude: ["/admin"],
         // Delays sending pageview hits on route update (in milliseconds)
         pageTransitionDelay: 0,
         // Enables Google Optimize using your container Id
-        optimizeId: "YOUR_GOOGLE_OPTIMIZE_TRACKING_ID",
+        //optimizeId: "YOUR_GOOGLE_OPTIMIZE_TRACKING_ID",
         // Enables Google Optimize Experiment ID
-        experimentId: "YOUR_GOOGLE_EXPERIMENT_ID",
+        //experimentId: "YOUR_GOOGLE_EXPERIMENT_ID",
         // Set Variation ID. 0 for original 1,2,3....
-        variationId: "YOUR_GOOGLE_OPTIMIZE_VARIATION_ID",
+        //variationId: "YOUR_GOOGLE_OPTIMIZE_VARIATION_ID",
         // Defers execution of google analytics script after page load
-        defer: false,
+        defer: true,
         // Any additional optional fields
         sampleRate: 5,
         siteSpeedSampleRate: 10,
-        cookieDomain: "example.com",
+        //cookieDomain: "example.com",
         // defaults to false
         enableWebVitalsTracking: true,
       },
     }, 
-    */
+    
 
     `gatsby-plugin-advanced-sitemap`,
 
@@ -308,7 +308,7 @@ module.exports = {
   {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
-        host: 'https://uvap-draft-13b347.netlify.app/',
+        host: 'https://upress.virginia.edu',
         policy: [{ userAgent: '*', allow: '/' }]
       }
     },

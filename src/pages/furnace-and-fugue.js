@@ -16,7 +16,7 @@ export default function FFPage() {
         pathname="https://www.upress.virginia.edu/furnace-and-fugue"
         author="Edited by Tara Nummedal and Donna Bilak"
         cover={
-          "https://www.upress.virginia.edu/sites/default/files/covers/furnace.png"
+          "https://ik.imagekit.io/uvapress/furnace.png"
         }
         article={false}
       />
