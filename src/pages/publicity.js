@@ -44,16 +44,16 @@ export default function PubPage({ data }) {
             <section className="md:col-span-2 mr-5">
             {news.edges.map(edge => (
             <>
-              <div className="flex flex-row">
+              <div className="flex flex-col md:flex-row">
                   
-                    {edge.node.frontmatter.related_book ? <img src={'https://ik.imagekit.io/uvapress/mediums/' + edge.node.frontmatter.related_book[0].id + "_M.jpg"} alt="cover" className="object-contain self-center justify-self-center"/> : <div></div>}
+                    {edge.node.frontmatter.related_book ? <img src={'https://ik.imagekit.io/uvapress/mediums/' + edge.node.frontmatter.related_book[0].id + "_M.jpg"} alt="cover" className="xs:hidden md:block object-contain self-center justify-self-center"/> : <div></div>}
                   
                     <div className="py-6 px-10 ">
                         <div className="flex items-center"><span className="font-light text-ceci-gray-mid">{edge.node.frontmatter.date}</span>
                         {/* <span className="px-2 py-1 bg-gray-600 text-gray-100 font-bold rounded hover:bg-gray-500">{edge.node.frontmatter.type}</span> */}
                         </div>
                         <div className="mt-2"><Link className="text-xl text-ceci-gray-dark font-thin tracking-wide hover:underline hover:text-ceci-gray-dark" to={`../${ edge.node.frontmatter.type }${ edge.node.fields.slug }`}>{ edge.node.frontmatter.title }</Link>
-                          {edge.node.html &&  <p className="mt-2 text-ceci-gray-dark font-light" dangerouslySetInnerHTML={{ __html: edge.node.html.split(' ').splice(0, 50).join(' ') + '...' }}></p>}
+                          {edge.node.html &&  <div className="mt-2 text-ceci-gray-dark font-light" dangerouslySetInnerHTML={{ __html: edge.node.html.split(' ').splice(0, 50).join(' ') + '...' }}></div>}
                         </div>
                         <div className="flex justify-between items-center mt-4 text-ceci-gray-mid"><Link  to={`../${ edge.node.frontmatter.type }${ edge.node.fields.slug }`}><FaArrowAltCircleRight className="inline mx-4"/> Read more</Link>
                                 
