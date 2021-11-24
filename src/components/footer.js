@@ -76,7 +76,7 @@ Support UVA Press</div></Link></div>
            <div id="affiliates" className="py-4  col-span-1 px-4 md:py-0"><h6 className="hidden">Affiliates</h6>
            <ul>
              <li><a href="http://www.virginia.edu/"> <img src="/rev_uva_logo_color.png" alt="uva"/> </a></li>
-             <li><a href="http://http//www.aupresses.org"> <img src="/aup_member.jpg" alt="aup"/> </a></li>
+             <li><a href="http://www.aupresses.org"> <img src="/aup_member.jpg" alt="aup"/> </a></li>
              </ul></div>
         </div>
         <div className="text-center uppercase text-ceci-gray-mid text-md font-thin tracking-wider py-2">© 2021 UNIVERSITY OF VIRGINIA PRESS</div>

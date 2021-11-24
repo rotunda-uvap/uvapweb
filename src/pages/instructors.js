@@ -75,7 +75,7 @@ export default function InstructorPage({data}) {
   <a href={`#top`} className="uppercase text-gray-500 text-xs">Go to top</a>
 
 </section>  
-<section className="text-gray-700 py-4 border-b-2 border-gray-100" id="series">
+<section className="text-gray-700 py-4" id="series">
 <SectionHeader className="py-4" text={"Our Series"}/>
 <div className="p-4 text-center uppercase text-gray-700 text-xs font-thin tracking-widest mx-auto font-sans"><Link to={'../series'}>See all Active Series</Link></div>
 
