@@ -7,6 +7,6 @@ job_title: Marketing Assistant
 department:
   - MKG
 email: cjb3sm@virginia.edu
-phone: "4349243468"
+phone: (434) 924-3468
 ---
 Coming Soon
