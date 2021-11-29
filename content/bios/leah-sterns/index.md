@@ -1,8 +1,8 @@
 ---
 templateKey: bio
-title: Leah Sterns
-staff_name: Leah Sterns
-name_slug: leah-sterns
+title: Leah Stearns
+staff_name: Leah Stearns
+name_slug: leah-stearns
 job_title: Database and Intellectual Properties Manager
 department:
   - OPS
