@@ -381,6 +381,7 @@ collections:
       - { label: 'Series Status', name: 'status', widget: 'select', options: ['active', 'completed'], required: true} 
       - { label: 'Series Type', name: 'seriestype', widget: 'select', options: ['Academic Book Series', 'Documentary Editions','Lecture Series', 'Distributed Series'], required: true}  
       - { label: 'Series Editors', name: 'editors', widget: 'string', required: false }
+      - { label: 'Addtional Editors', name: 'moreEditors', widget: 'string', required: false }
       - label: "UVaP Editor"
         name: "related_staff"
         widget: "relation"

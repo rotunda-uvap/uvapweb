@@ -112,3 +112,5 @@ div[aria-expanded="false"]{
 h4 {padding-top:1rem; padding-bottom:1rem;}
 .greige {background-color: #f7f7f7;}
 
+.money {text-align:center;}
+.pricing tr {margin-top:2em;}

@@ -20,7 +20,7 @@ const SubjectTemplate = ({ data }) => {
     </svg>
             <a
               href={`../../books/#subjects`}
-              className="block p-2  text-xs font-thin uppercase "
+              className="block p-2  text-xs font-thin tracking-wide uppercase "
             >All Subjects</a>
     </div>
                     <div className="container grid grid-cols-2 md:flex md:flex-wrap gap-2 py-5">

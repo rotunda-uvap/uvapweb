@@ -449,5 +449,21 @@
         "Prizes":"",
         "Reviews":[],
         "imageFilename":"btwn.jpg"
+    },
+    {
+        "Title":"The Correspondence of James K. Polk ",
+        "Subtitle":"",
+        "RotID":"POLK",
+        "MainCollection":"American History Collection",
+        "SubCollection":"Antebellum, Civil War and Reconstruction",
+        "StartYear": 1817,
+        "EndYear": 1948,
+        "MainDescription":{"html":"<p>Governor of Tennessee, Speaker of the House of Representatives, and eleventh president of the United States, James K. Polk was a fierce Jacksonian who expanded the nation’s boundaries more than anyone since Thomas Jefferson. He is remembered today as one of the strongest presidents of the nineteenth century. Like Andrew Jackson before him, Polk increased the power of the presidency in ways that extend to this day. When complete, this digital edition of Polk’s correspondence will include the complete contents of the print edition’s fourteen volumes. It is fully searchable, and is interoperable with other titles in the Antebellum, Civil War, and Reconstruction collection.<\/p>"},
+        "Facts":[],
+        "URL":"https://rotunda.upress.virginia.edu/founders/POLK.html",
+        "EditorCredit":"Michael David Cohen et al.",
+        "Prizes":"",
+        "Reviews":[],
+        "imageFilename":"polk.jpg"
     }
 ]
