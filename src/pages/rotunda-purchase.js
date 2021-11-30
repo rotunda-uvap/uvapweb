@@ -489,7 +489,7 @@ export default function RotundaPurchasePage() {
             </tr>
             <tr>
               <th className="title text-ceci-gray-mid tracking-wide font-thin">
-                <a href="https://www.upress.virginia.edu/title/LMAD">
+              &emsp;<a href="https://www.upress.virginia.edu/title/LMAD">
                   The Letters of Matthew Arnold
                 </a>
               </th>
@@ -499,7 +499,7 @@ export default function RotundaPurchasePage() {
             </tr>
             <tr>
               <th className="title text-ceci-gray-mid tracking-wide font-thin">
-                <a href="https://www.upress.virginia.edu/title/CLO">
+              &emsp;<a href="https://www.upress.virginia.edu/title/CLO">
                   <em>Clotel,</em> by William Wells Brown
                 </a>
               </th>
@@ -509,7 +509,7 @@ export default function RotundaPurchasePage() {
             </tr>
             <tr>
               <th className="title text-ceci-gray-mid tracking-wide font-thin">
-                <a href="https://www.upress.virginia.edu/title/EDKC">
+              &emsp;<a href="https://www.upress.virginia.edu/title/EDKC">
                   Emily Dickinson&rsquo;s Correspondences
                 </a>
               </th>
@@ -519,7 +519,7 @@ export default function RotundaPurchasePage() {
             </tr>
             <tr>
               <th className="title text-ceci-gray-mid tracking-wide font-thin">
-                <a href="https://www.upress.virginia.edu/title/TDTM">
+              &emsp;<a href="https://www.upress.virginia.edu/title/TDTM">
                   <em>The Digital Temple:</em> George Herbert&rsquo;s Verse
                 </a>
               </th>
@@ -531,7 +531,7 @@ export default function RotundaPurchasePage() {
             </tr>
             <tr>
               <th className="title text-ceci-gray-mid tracking-wide font-thin">
-                <a href="https://www.upress.virginia.edu/title/HMTY">
+              &emsp;<a href="https://www.upress.virginia.edu/title/HMTY">
                   Herman Melville&rsquo;s <em>Typee</em>
                 </a>
               </th>
@@ -541,7 +541,7 @@ export default function RotundaPurchasePage() {
             </tr>
             <tr>
               <th className="title text-ceci-gray-mid tracking-wide font-thin">
-                <a href="https://www.upress.virginia.edu/title/CROS">
+              &emsp;<a href="https://www.upress.virginia.edu/title/CROS">
                   The Letters of Christina Rossetti
                 </a>
               </th>
@@ -551,7 +551,7 @@ export default function RotundaPurchasePage() {
             </tr>
             <tr>
               <th className="title text-ceci-gray-mid tracking-wide font-thin">
-                <a href="https://www.upress.virginia.edu/title/ESHR">
+              &emsp;<a href="https://www.upress.virginia.edu/title/ESHR">
                   Journal of Emily Shore
                 </a>
               </th>

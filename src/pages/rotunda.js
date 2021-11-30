@@ -55,8 +55,8 @@ export default function RotundaHome({ data }) {
       {/* <h1 className="sm:text-3xl text-2xl font-thin title-font tracking-wider text-ceci-gray-dark mb-4">Accessing Rotunda Publications</h1> */}
       <p className="text-base leading-relaxed xl:w-3/4 lg:w-3/4 mx-auto text-gray-500s">If you are connecting via a campus Internet connection, you can expect to gain access to any Rotunda publication purchased by your institution. If your institution has not purchased a particular Rotunda publication, contact your institution’s library about ordering. You may also sign up for an individual free trial to evaluate Rotunda before making a purchase decision.</p>
     </div>
-    <div className="flex flex-wrap -m-4">
-      <div className="p-4 md:w-1/4">
+    <div className="flex flex-col md:flex-row -m-4">
+      <div className="p-4 lg:w-1/4">
         <div className="flex rounded-lg h-full greige p-8 flex-col">
           <div className="flex items-center mb-3">
             <div className="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-ceci-gray-dark text-white flex-shrink-0">
@@ -78,7 +78,7 @@ export default function RotundaHome({ data }) {
           </div>
         </div>
       </div>
-      <div className="p-4 md:w-1/4">
+      <div className="p-4 lg:w-1/4">
         <div className="flex rounded-lg h-full greige p-8 flex-col">
           <div className="flex items-center mb-3">
             <div className="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-ceci-gray-dark text-white flex-shrink-0">
@@ -99,7 +99,7 @@ export default function RotundaHome({ data }) {
           </div>
         </div>
       </div>
-      <div className="p-4 md:w-1/4">
+      <div className="p-4 lg:w-1/4">
         <div className="flex rounded-lg h-full greige p-8 flex-col">
           <div className="flex items-center mb-3">
             <div className="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-ceci-gray-dark text-white flex-shrink-0">
@@ -122,7 +122,7 @@ export default function RotundaHome({ data }) {
           </div>
         </div>
       </div>
-      <div className="p-4 md:w-1/4">
+      <div className="p-4 lg:w-1/4">
         <div className="flex rounded-lg h-full greige p-8 flex-col">
           <div className="flex items-center mb-3">
             <div className="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-ceci-gray-dark text-white flex-shrink-0">
@@ -134,7 +134,7 @@ export default function RotundaHome({ data }) {
             </div>
             <h2 className="text-ceci-gray-dark text-lg title-font font-thin ">Free Trial</h2>
           </div>
-          <div className="flex-grow">
+          <div>
             <p className="leading-relaxed text-base">Register for a free trial.</p>
             <a className="mt-3 text-ceci-gray-dark inline-flex items-center font-thin" href="https://rotunda.upress.virginia.edu/register/default.xqy">Register
               <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
