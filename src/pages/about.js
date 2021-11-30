@@ -21,9 +21,9 @@ export default function AboutPage({ data }) {
     <div className="flex flex-col text-center w-full mb-10">
 <PageHeader text={'About UVa Press'}/>      <div className="lg:w-3/3 mx-auto leading-relaxed text-base"><span className="dropCap cms" dangerouslySetInnerHTML={{__html: pagedata.html}}/></div>
     </div>
-    <div className="flex flex-wrap -m-4">
+    <div className="flex flex-col lg:flex-row  -m-4">
       
-      <div className="p-4 md:w-1/4 lg:w-1/4">
+      <div className="p-4 lg:w-1/4">
         <div className="flex rounded-lg h-full greige p-8 flex-col">
           <div className="flex items-center mb-3">
             <div className="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-ceci-gray-mid text-white flex-shrink-0">
@@ -41,7 +41,7 @@ export default function AboutPage({ data }) {
           </div>
         </div>
       </div>
-      <div className="p-4 md:w-1/4 lg:w-1/4">
+      <div className="p-4 lg:w-1/4">
         <div className="flex rounded-lg h-full greige p-8 flex-col">
           <div className="flex items-center mb-3">
             <div className="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-ceci-gray-mid text-white flex-shrink-0">
@@ -58,7 +58,7 @@ export default function AboutPage({ data }) {
             
           </div>
         </div>
-      </div> <div className="p-4 md:w-1/4 lg:w-1/4">
+      </div> <div className="p-4 lg:w-1/4">
         <div className="flex rounded-lg h-full greige p-8 flex-col">
           <div className="flex items-center mb-3">
             <div className="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-ceci-gray-mid text-white flex-shrink-0">
@@ -76,7 +76,7 @@ export default function AboutPage({ data }) {
           </div>
         </div>
       </div>
-      <div className="p-4 md:w-1/4 lg:w-1/4">
+      <div className="p-4 lg:w-1/4">
         <div className="flex rounded-lg h-full greige p-8 flex-col">
           <div className="flex items-center mb-3">
             <div className="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-ceci-gray-mid text-white flex-shrink-0">
