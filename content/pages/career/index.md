@@ -76,7 +76,7 @@ The University of Virginia Press seeks volunteer interns on an ongoing basis. Th
 
 We ask for a time commitment of ten hours a week and prefer that interns stay at the Press for two semesters, though shorter internships are occasionally possible. Graduate and undergraduate students from all areas of the humanities and social sciences are encouraged to apply.
 
-If you would like to find out more about our internship program please send your resume to Emma Donovan at [efd4s@virginia.edu](mailto:efd4s@virginia.edu).
+If you would like to find out more about our internship program please send your resume to Emily Grandstaff at [ekg4a@virginia.edu](mailto:ekg4a@virginia.edu)[](mailto:efd4s@virginia.edu)
 
 - - -
 
