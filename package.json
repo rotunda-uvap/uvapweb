@@ -33,7 +33,6 @@
     "gatsby-legacy-polyfills": "^1.11.0",
     "gatsby-plugin-advanced-sitemap": "^2.0.0",
     "gatsby-plugin-algolia": "^0.22.0",
-    "gatsby-plugin-gatsby-cloud": "^4.0.0",
     "gatsby-plugin-google-analytics": "^4.2.0",
     "gatsby-plugin-google-tagmanager": "^4.2.0",
     "gatsby-plugin-image": "^1.11.0",
