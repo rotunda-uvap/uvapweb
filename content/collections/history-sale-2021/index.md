@@ -1,6 +1,7 @@
 ---
 templateKey: collection
 title: Big History Sale 2021
+description: Use code 10HISTORY for 50% all books through 1/30/22!
 related_book:
   - "5368"
   - "4370"
@@ -180,5 +181,4 @@ related_book:
   - "5646"
   - "5481"
   - "5265"
-
 ---
