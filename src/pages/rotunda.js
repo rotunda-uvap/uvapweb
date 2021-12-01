@@ -70,7 +70,7 @@ export default function RotundaHome({ data }) {
           </div>
           <div className="flex-grow">
             <p className="leading-relaxed text-base">Access the Rotunda titles provided by your institution (must be on campus network or VPN), or log in with individual account.</p>
-            <a href="https://rotunda.upress.virginia.edu/entrance.xqy" className="mt-3 text-ceci-gray-dark inline-flex items-center">Visit Collections
+            <a href="https://rotunda.upress.virginia.edu/entrance.xqy" className="mt-3 pl-4 text-md text-ceci-gray-dark tracking-wide font-thin inline-flex items-center">Visit Collections
             <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
                 <path d="M5 12h14M12 5l7 7-7 7"></path>
               </svg>
@@ -90,7 +90,7 @@ export default function RotundaHome({ data }) {
           </div>
           <div className="flex-grow">
             <p className="leading-relaxed text-base">Customer information and statistics for librarians or purchasers of Rotunda Publications.</p>
-            <Link to={'/rotunda-customer-list'} className="mt-3 text-ceci-gray-dark inline-flex items-center">See Records
+            <Link to={'/rotunda-customer-list'} className="mt-3 pl-4 text-md text-ceci-gray-dark tracking-wide font-thin inline-flex items-center">See Records
               <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
                 <path d="M5 12h14M12 5l7 7-7 7"></path>
               </svg>
@@ -113,7 +113,7 @@ export default function RotundaHome({ data }) {
           </div>
           <div className="flex-grow">
             <p className="leading-relaxed text-base">Information about institutional or individual purchase of Rotunda publications.</p>
-            <Link to={'../rotunda-purchase'} className="mt-3 text-ceci-gray-dark inline-flex items-center">Learn More
+            <Link to={'../rotunda-purchase'} className="mt-3 pl-4 text-md text-ceci-gray-dark font-thin tracking-wide inline-flex items-center">Learn More
               <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 20 24">
                 <path d="M5 12h14M12 5l7 7-7 7"></path>
               </svg>
@@ -136,7 +136,7 @@ export default function RotundaHome({ data }) {
           </div>
           <div>
             <p className="leading-relaxed text-base">Register for a free trial.</p>
-            <a className="mt-3 text-ceci-gray-dark inline-flex items-center font-thin" href="https://rotunda.upress.virginia.edu/register/default.xqy">Register
+            <a className="mt-3 text-ceci-gray-dark pl-4 text-md inline-flex items-center tracking-wide font-thin" href="https://rotunda.upress.virginia.edu/register/default.xqy">Register
               <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
                 <path d="M5 12h14M12 5l7 7-7 7"></path>
               </svg>
@@ -165,40 +165,40 @@ export default function RotundaHome({ data }) {
     </div>
     <div className="flex flex-col md:flex-row items-center">
       <div className="p-4 md:w-1/3 flex flex-col text-center items-center">
-        <div className="w-20 h-20 inline-flex items-center justify-center rounded-full greige text-ceci-gray-dark mb-5 flex-shrink-0">
-          <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-10 h-10" viewBox="0 0 24 24">
+        <div className="w-20 h-20 inline-flex items-center justify-center greige text-ceci-gray-dark mb-5 flex-shrink-0">
+          <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" className="w-10 h-10" viewBox="0 0 24 24">
             <path d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"></path>
           </svg>
          
         </div>
         <div className="flex flex-row">
-        <Link to={'#fe'}><h2 className="text-ceci-gray-dark text-lg title-font font-medium mb-3">American History</h2></Link>
+        <Link to={'#fe'}><h2 className="text-ceci-gray-dark text-lg font-thin tracking-wide mb-3">American History</h2></Link>
        
         </div>
       </div>
       <div className="p-4 md:w-1/3 flex flex-col text-center items-center">
-        <div className="w-20 h-20 inline-flex items-center justify-center rounded-full greige text-ceci-gray-dark mb-5 flex-shrink-0">
-          <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-10 h-10" viewBox="0 0 24 24">
+        <div className="w-20 h-20 inline-flex items-center justify-center  greige text-ceci-gray-dark mb-5 flex-shrink-0">
+          <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" className="w-10 h-10" viewBox="0 0 24 24">
            
             <path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
           </svg>
         
         </div>
         <div className="flex-grow">
-        <Link to={'#lit'}><h2 className="text-ceci-gray-dark text-lg title-font font-medium mb-3">Literature and Culture</h2></Link>
+        <Link to={'#lit'}><h2 className="text-ceci-gray-dark text-lg font-thin tracking-wide mb-3">Literature and Culture</h2></Link>
        
         </div>
       </div>
       <div className="p-4 md:w-1/3 flex flex-col text-center items-center">
-        <div className="w-20 h-20 inline-flex items-center justify-center rounded-full greige text-ceci-gray-dark mb-5 flex-shrink-0">
-          <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-10 h-10" viewBox="0 0 24 24">
+        <div className="w-20 h-20 inline-flex items-center justify-center greige text-ceci-gray-dark mb-5 flex-shrink-0">
+          <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" className="w-10 h-10" viewBox="0 0 24 24">
             <path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
             
           </svg>
          
         </div>
         <div className="flex-grow">
-        <Link to={'#arch'}><h2 className="text-ceci-gray-dark text-lg title-font font-medium mb-3">Architecture</h2></Link>
+        <Link to={'#arch'}><h2 className="text-ceci-gray-dark text-lg font-thin tracking-wide mb-3">Architecture</h2></Link>
           {/* <p className="leading-relaxed text-base">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi pug VHS try-hard.</p> */}
          
         </div>
@@ -309,9 +309,9 @@ export default function RotundaHome({ data }) {
  */}        </div>
         <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
         <div className="p-2 sm:w-1/2 w-full"> 
-        <div className="greige rounded flex p-4 h-full items-center">
+        <div className="hover:bg-gray-100 flex p-2 h-full items-center">
         <img className="flex-shrink-0 mr-4" src={"https://ik.imagekit.io/uvapress/rotunda/archi.png"} width="50px" alt="archipedia"/>
-             <Link to={`../../title/ARCHI`}><span className="title-font font-medium">SAH Archipedia</span></Link>
+             <Link to={`../../title/ARCHI`}><span className="text-lg text-ceci-gray-dark font-display uppercase">SAH Archipedia</span></Link>
         </div></div>
         </div>
       </div>
