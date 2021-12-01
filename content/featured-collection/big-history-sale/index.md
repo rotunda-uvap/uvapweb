@@ -1,6 +1,6 @@
 ---
 templateKey: featured-collection
-title: Big History Sale
+title: BIG HISTORY SALE
 related_collection:
   - Big History Sale 2021
 ---
