@@ -1,6 +1,6 @@
 ---
 templateKey: collection
-title: Big History Sale 2021
+title: Big History Sale
 description: ""
 related_book:
   - "4370"
