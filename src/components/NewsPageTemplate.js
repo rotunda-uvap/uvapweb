@@ -3,8 +3,10 @@ import RelatedBook from "../components/RelatedBook"
 import { GatsbyImage } from "gatsby-plugin-image"
 import PageHeader from "../components/PageHeader"
 import BackArrow from "../components/BackArrow"
+import Content, { HTMLContent } from "../components/Content";
 
  const NewsPageTemplate = ({title, content, related_list, pic, contentComponent }) => {
+  const PageContent = contentComponent || Content;
 
     return (
       <section className="text-gray-600">
@@ -32,8 +34,8 @@ import BackArrow from "../components/BackArrow"
             }
         <div className="md:w-4/5">
           {pic && <div className="float-left px-10 pb-5"><GatsbyImage image={pic} alt="related image"/></div> }
-         <div className="cms" dangerouslySetInnerHTML={{ __html: content }} />    
-               
+          <PageContent className="cms" content={content} />
+
       </div>
       
       </div>

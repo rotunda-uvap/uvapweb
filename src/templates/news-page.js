@@ -1,15 +1,16 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import { getImage } from "gatsby-plugin-image"
 import SeO from "../components/SeoComponent"
 import ShareButtons from "../components/ShareButtons"
-import Content, { HTMLContent } from "../components/Content";
-import RelatedBook from "../components/RelatedBook"
+import { HTMLContent } from "../components/Content";
+/* import RelatedBook from "../components/RelatedBook"
 import PageHeader from "../components/PageHeader"
-import BackArrow from "../components/BackArrow"
+import BackArrow from "../components/BackArrow" */
+import NewsPageTemplate from "../components/NewsPageTemplate"
 
-export const NewsPageTemplate = ({ title, content, related_list, pic, contentComponent }) => {
+/* export const NewsPageTemplate = ({ title, content, related_list, pic, contentComponent }) => {
   const PageContent = contentComponent || Content;
 
   return (
@@ -48,7 +49,7 @@ export const NewsPageTemplate = ({ title, content, related_list, pic, contentCom
     </section>
   );
 };
-
+ */
 
 const newsPage = ({ data }) => {
     const news = data.markdownRemark

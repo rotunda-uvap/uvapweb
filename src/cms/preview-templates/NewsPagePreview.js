@@ -1,17 +1,18 @@
 
 import React from 'react'
-import {NewsPageTemplate} from "../../templates/news-page"
+import NewsPageTemplate from "../../components/NewsPageTemplate"
 
 const NewsPagePreview = ({ entry, widgetFor, getAsset }) => {
     
-    const books = entry.getIn(['data', 'related_book'])
-    
+  //  const books = entry.getIn(['data', 'related_book', 'Files'])
+   // const rbooks = books && books.toJS() 
+
     return (
  <NewsPageTemplate
     title={entry.getIn(['data', 'title'])}
     content={widgetFor('body')}
     pic={getAsset(entry.getIn(['data', 'image']))}
-    related_list={books && books.toJS()}
+    //related_list={rbooks}
   />
 )
 }
