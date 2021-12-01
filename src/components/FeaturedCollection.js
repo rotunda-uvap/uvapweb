@@ -1,5 +1,5 @@
 import React from "react"
-import { StaticQuery, graphql, Link } from "gatsby"
+import { StaticQuery, graphql } from "gatsby"
 import Gallery from "../components/RelCarousel"
 export default function FeaturedColl() { 
   return (
@@ -37,8 +37,8 @@ export default function FeaturedColl() {
 
           <div className="flex flex-col ">
 
-          <Link to={`../../collections/${data.rseries.edges[0].node.frontmatter.title }`} className="text-xl font-sans text-ceci-gray-dark py-2 tracking-wide self-center font-thin">{data.rseries.edges[0].node.frontmatter.title}</Link> 
-          <div className="font-serif dropCap text-center self-center" dangerouslySetInnerHTML={{ __html: data.rseries.edges[0].node.frontmatter.description }}></div>
+            <p className="text-xl font-sans text-ceci-gray-dark py-2 tracking-wide self-center font-thin">{data.rseries.edges[0].node.frontmatter.title} </p>
+          <div className="font-serif dropCap text-center" dangerouslySetInnerHTML={{ __html: data.rseries.edges[0].node.frontmatter.description }}></div>
         </div>
 
         
