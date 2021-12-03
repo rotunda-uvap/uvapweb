@@ -96,7 +96,7 @@ const bookPage = ({ data }) => {
                   href={binding.buylink}
                   className="block group p-2 ml-4 border-b"
                 >
-                  <div className="font-thin uppercase text-ceci-gray-dark ">
+                  <div className="font-thin uppercase text-ceci-gray-dark buyme ">
                     <span className="tracking-wide ">{binding.type}{" "}</span>
                     <span className="pl-2 font-thin">${binding.price}</span>{" "}
                   </div>
