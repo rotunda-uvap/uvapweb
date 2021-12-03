@@ -8,7 +8,7 @@ related_book:
   - "5776"
 date: 2021-11-22
 ---
-We are pleased to offer this original blog post by David J. Toscano, author of [FIGHTING POLITICAL GRIDLOCK: How States Shape Our Nation and Our Lives](https://upress.virginia.edu/title/5776) with a foreword by Senator Mark R. Warner. You can read more in the *Falls Church News-Press* [here. ](https://www.fcnp.com/2021/11/19/so-what-just-happened-an-evaluation-of-this-months-election-results/)
+We are pleased to offer this original blog post by David J. Toscano, author of [FIGHTING POLITICAL GRIDLOCK: How States Shape Our Nation and Our Lives](https://www.upress.virginia.edu/title/5776) with a foreword by Senator Mark R. Warner. You can read more in the *Falls Church News-Press* [here. ](https://www.fcnp.com/2021/11/19/so-what-just-happened-an-evaluation-of-this-months-election-results/)
 
 **Lessons from Virginia**
 

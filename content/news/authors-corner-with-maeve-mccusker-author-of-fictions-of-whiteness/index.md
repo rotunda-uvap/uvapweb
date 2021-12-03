@@ -8,7 +8,7 @@ related_book:
   - "5156"
 date: 2021-11-10
 ---
-Today, we are happy to bring you our conversation with Maeve McCusker, author of [FICTIONS OF WHITENESS: Imagining the Planter Caste in the French Caribbean Novel](https://upress.virginia.edu/title/5156), out later this month.
+Today, we are happy to bring you our conversation with Maeve McCusker, author of [FICTIONS OF WHITENESS: Imagining the Planter Caste in the French Caribbean Novel](https://www.upress.virginia.edu/title/5156), out later this month.
 
 **\*\*\*\*\*\*\*\*\*\*\*\****
 

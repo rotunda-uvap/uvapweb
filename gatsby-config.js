@@ -5,7 +5,7 @@
  */
 require("dotenv").config()
 const path = require(`path`)
-//const siteURL = 'https://upress.virginia.edu'
+//const siteURL = 'https://www.upress.virginia.edu'
 module.exports = {
   flags: { PARALLEL_SOURCING: true, DEV_SSR: true, FAST_DEV: true },
   siteMetadata: {
@@ -14,7 +14,7 @@ module.exports = {
     logo: `uvap_logo.png`,
     image: '/static/uvap_sm.png',
     description: `The website for the University of Virginia Press`,
-    siteUrl: `https://upress.virginia.edu`,
+    siteUrl: `https://www.upress.virginia.edu`,
     twitterUsername: "@uvapress"
 
   },
@@ -309,7 +309,7 @@ module.exports = {
   {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
-        host: 'https://upress.virginia.edu',
+        host: 'https://www.upress.virginia.edu',
         policy: [{ userAgent: '*', allow: '/' }]
       }
     },
