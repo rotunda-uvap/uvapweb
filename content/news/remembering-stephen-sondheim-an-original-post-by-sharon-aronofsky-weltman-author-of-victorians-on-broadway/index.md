@@ -4,15 +4,15 @@ type: news
 title: "Remembering Stephen Sondheim: An Original Post by Sharon Aronofsky
   Weltman, Author of VICTORIANS ON BROADWAY"
 description: "Thanks to Sharon Aronofsky Weltman, author of [VICTORIANS ON
-  BROADWAY: Literature, Adaptation,](https://www.upress.virginia.edu/title/5450)
-  and the Modern American Musical, for this original reflection on the life and
-  work of Stephen Sondheim."
+  BROADWAY: Literature, Adaptation, and the Modern American
+  Musical,](https://www.upress.virginia.edu/title/5450) for this original
+  reflection on the life and work of Stephen Sondheim."
 image: weltman_cover_9780813944319.jpg
 related_book:
   - "5450"
 date: 2021-12-03
 ---
-Thanks to Sharon Aronofsky Weltman, author of [VICTORIANS ON BROADWAY: Literature, Adaptation,](https://www.upress.virginia.edu/title/5450) and the Modern American Musical, for this original reflection on the life and work of Stephen Sondheim.
+Thanks to Sharon Aronofsky Weltman, author of [VICTORIANS ON BROADWAY: Literature, Adaptation, and the Modern American Musical,](https://www.upress.virginia.edu/title/5450) for this original reflection on the life and work of Stephen Sondheim.
 
 **\*\*\*\*\*\*\*\*\*\*\*\****
 
