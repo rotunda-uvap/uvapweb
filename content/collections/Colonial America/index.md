@@ -2,8 +2,6 @@
 templateKey: collection
 title: Colonial America
 related_book:
-  - "5425"
-  - "5426"
   - "5290"
   - "4599"
   - "4866"
@@ -22,7 +20,6 @@ related_book:
   - "5706"
   - "5617"
   - "5457"
-  - "5713"
   - "4670"
   - "5646"
   - "5481"
