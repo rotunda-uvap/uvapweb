@@ -21,14 +21,14 @@ export default function HistorySalePage({data}) {
 
 <section>
 
-   <div className="container py-8 border-b-2 border-gray-100">
+   <div className="w-full py-8 border-b-2 border-gray-100">
 
 {book_colls && 
             <>
             {book_colls.map(coll => (
           
-              <div className="px-4 flex flex-col items-center">
-                <span className="font-display text-ceci-gray-mid text-lg tracking-wide uppercase"><a href={`#${coll.frontmatter.title}`}>{coll.frontmatter.title}</a></span>
+              <div className="flex flex-col w-full mx-auto">
+                <span className="font-display text-ceci-gray-mid text-lg text-center  tracking-wide uppercase"><a href={`#${coll.frontmatter.title}`}>{coll.frontmatter.title}</a></span>
                
               </div>
               
