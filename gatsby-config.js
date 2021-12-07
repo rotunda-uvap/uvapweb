@@ -245,7 +245,11 @@ module.exports = {
         // should be an object or a function that is executed in the browser
         //
         // Defaults to null
-        defaultDataLayer: { platform: "gatsby" },
+        defaultDataLayer: function() {
+          return {
+            pageType: window.pageType,
+          }
+        },
   
         // Specify optional GTM environment details.
         /* gtmAuth: "YOUR_GOOGLE_TAGMANAGER_ENVIRONMENT_AUTH_STRING",
@@ -258,7 +262,7 @@ module.exports = {
         // Defaults to gatsby-route-change
         //routeChangeEventName: "YOUR_ROUTE_CHANGE_EVENT_NAME",
         // Defaults to false
-        enableWebVitalsTracking: true,
+        enableWebVitalsTracking: false,
         // Defaults to https://www.googletagmanager.com
         //selfHostedOrigin: "YOUR_SELF_HOSTED_ORIGIN",
       },
