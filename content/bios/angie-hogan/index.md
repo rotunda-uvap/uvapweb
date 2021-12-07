@@ -4,7 +4,7 @@ title: Angie Hogan
 staff_name: Angie Hogan
 profile_photo: angie_2.jpg
 name_slug: angie-hogan
-job_title: Acquiring Editor, 18th-Century Studies
+job_title: Editor, Culture, Environment, and Science and Technology
 department:
   - ACQ
 email: arh2h@virginia.edu
