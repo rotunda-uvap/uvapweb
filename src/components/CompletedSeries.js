@@ -37,9 +37,9 @@ export default function CompletedSeries() {
               </svg></span></div></Link>
 
     <div className="flex flex-wrap text-gray-600 body-font">
-    {data.allMarkdownRemark.edges.map(edge => (
+    {data.allMarkdownRemark.edges.map((edge, index)=> (
         
-            <div className="px-6 py-3  w-full flex flex-col items-start">
+            <div className="px-6 py-3  w-full flex flex-col items-start" key={index}>
                       <span className="inline-block py-1 px-2 rounded bg-ceci-gray-light uppercase text-ceci-gray-dark text-xs font-medium tracking-widest">{ edge.node.frontmatter.seriestype }</span>
 
       <Link  to={`../series/${ edge.node.frontmatter.seriesID }`}><h2 className="sm:text-xl text-lg text-gray-700 tracking-wider font-thin mt-4 mb-4">{ edge.node.frontmatter.title }</h2></Link>

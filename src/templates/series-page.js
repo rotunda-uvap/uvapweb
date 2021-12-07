@@ -34,8 +34,8 @@ const SeriesTemplate = ({ data }) => {
             {seriesinfo.frontmatter.moreEditors ? <div className="text-ceci-gray-mid leading-relaxed font-serif pt-2 ml-4 cms" dangerouslySetInnerHTML={{ __html: seriesinfo.frontmatter.moreEditors }}/> : <div/> }
 
 <div>
-{related_staff && related_staff.map(staff => (
-            <div className="pt-2 text-ceci-gray-mid leading-relaxed font-serif ml-4 cms">UVA Editor: 
+{related_staff && related_staff.map((staff, index) => (
+            <div className="pt-2 text-ceci-gray-mid leading-relaxed font-serif ml-4 cms" key={`staff${index}`}>UVA Editor: 
             <Link to={'../../staff/' + staff.frontmatter.title.replace(" ", "-").toLowerCase()}> {staff.frontmatter.title} </Link>
             
             </div>
@@ -46,11 +46,11 @@ const SeriesTemplate = ({ data }) => {
                 
                 <section className="py-4">
 <SectionHeader text={'Books in this Series'}/>                    <div className="container grid grid-cols-2 md:flex md:flex-wrap gap-2 py-5">
-                        {books.edges.map(edge => (
-                  <>  
-                  <Link to={`../../title/${ edge.node.BookID }`}>
+                        {books.edges.map((edge, index) => (
+                  
+                  <Link to={`../../title/${ edge.node.BookID }`} key={`bks${index}`}>
                   <BookCard Title={edge.node.Title} Subtitle={edge.node.Subtitle} Author={edge.node.AuthorCredit} Thumb={edge.node.CoverImageMain} Bookid ={edge.node.BookID} pubdate={edge.node.PublicationDate} /></Link>
-                     </>
+                    
                     ))}
                         </div> 
                        

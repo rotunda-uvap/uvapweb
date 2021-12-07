@@ -1,7 +1,7 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 import RelatedBookList from "../components/RelatedBookList"
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
+// import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import Layout from "../components/layout"
 import Gallery from "../components/ExCarousel"
 import SeO from "../components/SeoComponent"
@@ -17,7 +17,7 @@ const exhibitPage = ({ data }) => {
     const feat_books = data.markdownRemark.frontmatter.featured_books
     const bgcolor = exhibit.frontmatter.bgcolor
     const txtcolor = exhibit.frontmatter.txtcolor
-    const image = getImage(data.Img)
+    // const image = getImage(data.Img)
 
  return (
    <Layout>
@@ -25,7 +25,7 @@ const exhibitPage = ({ data }) => {
      <div>
      <PageHeader text={data.markdownRemark.frontmatter.title}/>
 
-        <GatsbyImage image={image} alt="related image"/>
+        {/* <GatsbyImage image={image} alt="related image"/> */}
         {data.markdownRemark.frontmatter.coupon && <div className={`${bgcolor} ${txtcolor} py-5 px-5 text-2xl tracking-wide text-center`}>{data.markdownRemark.frontmatter.coupon}</div>}
         <div>
           <div className={`py-5 px-10 text-md text-ceci-gray-dark font-light tracking-wide text-center`}
@@ -51,12 +51,12 @@ const exhibitPage = ({ data }) => {
         <section className="py-8 border-b-2"> 
             <SectionHeader text="Meet our Editors"/>
             {/* <p className="text-center uppercase text-gray-500 mx-auto  font-sans py-4">Meet our Editors:</p> */}
-        {related_staff.map(staff => (
-            <>
-            <Link to={'../../staff/' + staff.frontmatter.title.replace(" ", "-").toLowerCase()}> <div className="tracking-wide text-lg font-thin text-ceci-gray-mid">{staff.frontmatter.title} <span className="text-sm">&nbsp; - &nbsp;{staff.frontmatter.job_title}</span></div></Link>
+        {related_staff.map((staff, index) => (
+           <div key={`staff${index}`}>
+             <div className="tracking-wide text-lg font-thin text-ceci-gray-mid"><Link to={'../../staff/' + staff.frontmatter.title.replace(" ", "-").toLowerCase()}>{staff.frontmatter.title} <span className="text-sm">&nbsp; - &nbsp;{staff.frontmatter.job_title}</span></Link></div>
             <div className="py-2 font-light text-ceci-gray-dark text-lg leading-relaxed"
           dangerouslySetInnerHTML={{ __html:staff.html }}/>
-            </>
+            </div>
         ))}
           </section>}
         
@@ -68,9 +68,9 @@ const exhibitPage = ({ data }) => {
              <div className="md:w-1/2">
             <p className="text-center uppercase text-ceci-gray-mid mx-auto font-sans tracking-wide py-4">Related Series</p>
             <ul className="content-center">
-            {related_series.map(series => (
+            {related_series.map((series, index) => (
             
-            <li className="py-3 text-gray-700 text-center font-display"><Link to={`../../series/${ series.jsonId }`}>{series.seriesName}</Link></li>
+            <li className="py-3 text-gray-700 text-center font-display" key={`sers${index}`}><Link to={`../../series/${ series.jsonId }`}>{series.seriesName}</Link></li>
             
         ))}</ul>
         </div>
@@ -79,8 +79,8 @@ const exhibitPage = ({ data }) => {
             <div className="md:w-1/2">
             <p className="text-center uppercase text-ceci-gray-mid mx-auto font-sans tracking-wide py-4">Related Posts</p>
             <ul className="content-center">
-            {related_posts && related_posts.map(post => (
-            post.frontmatter.title && <Link to={`../../news${ post.fields.slug }`}><li className="py-3 text-gray-700 text-center font-display" key={post.id}>{post.frontmatter.title}</li></Link> 
+            {related_posts && related_posts.map((post, index) => (
+            post.frontmatter.title && <Link to={`../../news${ post.fields.slug }`} key={`post${index}`}><li className="py-3 text-gray-700 text-center font-display" >{post.frontmatter.title}</li></Link> 
         ))}</ul>
         </div>
     
@@ -92,16 +92,16 @@ const exhibitPage = ({ data }) => {
         
             <>
             {/* <p className="text-center uppercase text-gray-500 mx-auto  font-sans tracking-wide py-4">Books</p> */}
-            {book_colls.map(coll => (
-              <div>
+            {book_colls.map((coll, index) => (
+              <div key={`coll${index}`}>
                 {/* <h6 className="py-2 font-display ">{coll.frontmatter.title}</h6> */}
                 <span className="cms font-serif py-5 pl-4" dangerouslySetInnerHTML={{__html: coll.frontmatter.description}}/>
             <div className="flex flex-row flex-wrap gap-4 p-4">
              
             {coll.frontmatter.related_book && 
-            coll.frontmatter.related_book.map(book => (
+            coll.frontmatter.related_book.map((book, index) => (
               
-              <RelatedBookList id={book.jsonId} title={book.Title}/>
+              <RelatedBookList id={book.jsonId} title={book.Title} key={`rl${index}`}/>
          
              
           ))}

@@ -11,9 +11,9 @@ export default function Articles({ data }) {
           <SeO/>
            <div className="container px-5 py-12 mx-auto">
 <PageHeader text={"All News"}/>          
-            {news.edges.map(edge => (
+            {news.edges.map((edge, index) => (
             <>
-            <div className="grid grid-cols-3">
+            <div className="grid grid-cols-3" key={`news${index}`}>
                   {edge.node.frontmatter.related_book ? <img src={'https://ik.imagekit.io/uvapress/mediums/' + edge.node.frontmatter.related_book[0].jsonId + "_M.jpg"} alt="cover" className="justify-self-center object-cover"/> : <div></div>}
                     <div className="py-6 bg-white col-span-2">
                         <div className="flex justify-between items-center"><span className="font-light text-gray-800">{edge.node.frontmatter.date}</span><span

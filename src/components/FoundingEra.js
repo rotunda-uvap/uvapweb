@@ -12,10 +12,8 @@ export default function FEList() {
                     Title
                     Subtitle
                     RotID
-                    EndYear
                     imageFilename
                     StartYear
-                    MainCollection
                     SubCollection
                   }
                 }
@@ -23,9 +21,9 @@ export default function FEList() {
         }
         `}
         render={data => (
-            data.FE.edges.map(edge => (
-              <div className="p-2 sm:w-1/2 w-full">
-                 <RotundaCard Title={edge.node.Title} Subtitle={edge.node.Subtitle} ID={edge.node.RotID} Image={edge.node.imageFilename}/>
+            data.FE.edges.map((edge, index) => (
+              <div className="p-2 sm:w-1/2 w-full" key={index}>
+                 <RotundaCard Title={edge.node.Title} Subtitle={edge.node.Subtitle} ID={edge.node.RotID} Image={edge.node.imageFilename}  />
                 </div>
             ))
         )}

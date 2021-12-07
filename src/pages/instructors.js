@@ -9,7 +9,7 @@ import SectionHeader from "../components/SectionHeader"
 export default function InstructorPage({data}) {
   const sers = data.series
   const subs = data.subjects
-  const pagedata = data.markdownRemark
+  // const pagedata = data.markdownRemark
   const book_colls = data.markdownRemark.frontmatter.related_collection
   return (
     <Layout>
@@ -41,9 +41,9 @@ export default function InstructorPage({data}) {
 
 {book_colls && 
             <>
-            {book_colls.map(coll => (
+            {book_colls.map((coll, index) => (
           
-              <div className="b-2 px-4 font-display items-center">
+              <div className="b-2 px-4 font-display items-center" key={index}>
                 <Link to={`../../collections/${coll.frontmatter.title }`}>{coll.frontmatter.title}</Link>
            
               </div>
@@ -62,12 +62,12 @@ export default function InstructorPage({data}) {
   <SectionHeader text={"Our Subjects"}/> 
   <div className="container flex flex-wrap py-10 mx-auto items-center">
        
-      {subs.edges.map(edge => (
-            <>           
-           <div className="mb-2 px-4 font-display items-center" key={edge.node.subjectid}>
+      {subs.edges.map((edge, index) => (
+                     
+           <div className="mb-2 px-4 font-display items-center" key={`subs${index}`}>
           <Link to={`../../subject/${ edge.node.subjectID }`} className="text-gray-600 hover:text-gray-800">{ edge.node.subjectName }</Link>
         </div>            
-            </>
+           
         ))}
      
     
@@ -81,50 +81,18 @@ export default function InstructorPage({data}) {
 
   <div className="container flex flex-wrap py-10 mx-auto items-center">
 
-      {sers.edges.map(edge => (
-            <>           
-           <div className="md:w-1/2 mb-2 px-2 font-display" key={edge.node.jsonId}>
+      {sers.edges.map((edge, index) => (
+                     
+           <div className="md:w-1/2 mb-2 px-2 font-display" key={`sers${index}`}>
           <Link to={`../series/${ edge.node.jsonId }`} className="text-gray-600 hover:text-gray-800">{ edge.node.seriesName }</Link>
         </div>            
-            </>
+           
         ))}
     
   </div>
   <a href={`#top`} className="uppercase text-gray-500 text-xs">Go to top</a>
 </section>
 
-{/* <section className="text-gray-700 py-4 border-b-2 border-gray-100" id="copyright">
-<SectionHeader text={'Classroom and Academic Permissions Requests'} />
-<p className="leading-relaxed text-base text-gray-700">If you are requesting permission to photocopy or scan material for classroom use or place material on e-reserves, please contact: </p>
-<ul className="leading-relaxed text-base text-gray-700 pb-5 mx-10 font-display">
-<li>Copyright Clearance Center</li>
-   <li>222 Rosewood Drive Danver, MA 01923 </li>
-   <li>Fax: (978) 646-8600 </li>
-   <li>Email: <a href="mailto:info@copyright.com">info@copyright.com</a> </li></ul>
-   
-   <p className="leading-relaxed text-base text-gray-700">If the Copyright Clearance Center cannot grant permission, you may request permission directly from our Permissions Manager. Please include:</p>
-
-<ul className="leading-relaxed text-base text-gray-700 pb-5 mx-10 list-disc">
-  <li className="font-serif">Name of the author(s)/editor(s) and title of the book in which the requested material was originally published, together with the inclusive page numbers you wish to reproduce (give the actual page numbers, e.g. pp. 24-48).</li>
-<li className="font-serif font-normal" >Name of school and faculty member requesting material, together with the course name and number.</li>
-<li className="font-serif text-base">Approximate number of copies needed; for electronic use, approximate number of students enrolled in the class.</li></ul>
-  </section>
-
-<section className="text-gray-700 py-4" id="rotunda">
-<SectionHeader className="py-4" text={"Rotunda Digital Collections"}/>
-
-  <div className="container flex flex-col  mx-auto items-center">
-    <Link to={"../collection/American%20History%20Collection"} className="mb-2 font-display text-gray-600 hover:text-gray-800">American History Collection</Link>
-    <Link to={"../collection/Literature%20and%20Culture%20Collection"} className="mb-2 font-display text-gray-600 hover:text-gray-800">Literature and Culture Collection</Link>
-    <Link to={"../collection/Architecture"} className="mb-2 font-display text-gray-600 hover:text-gray-800">Architecture</Link>
-
-  </div>
-  <a href={`#top`} className="uppercase text-gray-500 text-xs">Go to top</a>
-
-</section>
- */}
-
-        
 
     </Layout>
   )

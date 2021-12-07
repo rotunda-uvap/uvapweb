@@ -10,11 +10,11 @@ const Gallery = ({book_id_array}) => {
 
   
 
-    const imageMap = book_id_array.map((image) => {
+    const imageMap = book_id_array.map((image, index) => {
       let cover = "https://ik.imagekit.io/uvapress/mediums/" + image + "_M.jpg"
       let booklink = "../../title/" + image
         return (
-            <div className="image-slider-container items-center px-10" key={image}>
+            <div className="image-slider-container items-center px-10" key={`img${index}`}>
                 <Link to={booklink} ><img src={cover} alt={image} /></Link>
             </div>
         )

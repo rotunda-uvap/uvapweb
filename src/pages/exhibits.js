@@ -11,16 +11,16 @@ export default function AllExhibits({ data }) {
         <Layout>
           <SeO title="Current Exhibits"/>
           <div className="container px-5 py-2 mx-auto">
-<PageHeader text={"Exhibits"}/>            {exhibitList.edges.map(edge => (
-            <>
-             <div>
+<PageHeader text={"Exhibits"}/>            {exhibitList.edges.map((edge, index) => (
+           
+             <div key={`ex${index}`}>
                     <div className="px-10">
                         <div className="mt-2"><Link className="text-lg font-display text-gray-700 tracking-wider hover:underline" to={`../exhibits/${ edge.node.frontmatter.exhibit_slug }`}>{ edge.node.frontmatter.title }</Link>
                         </div>
                     </div>
             </div>
             
-            </>
+           
         ))}</div>
         </Layout>
 

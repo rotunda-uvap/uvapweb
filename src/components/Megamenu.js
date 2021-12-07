@@ -17,7 +17,7 @@ const MegaHeader = () => {
       >
         <div className="flex flex-row w-full">
           <nav className="flex">
-            <div className="block text-ceci-gray-dark w-64 py-4">
+            <div className="block text-ceci-gray-dark w-64 py-3">
               <Link to={`/`}>
                 {" "}
                 <img src="/black.png" alt="logo" />{" "}

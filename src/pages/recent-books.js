@@ -22,13 +22,13 @@ export default function RecentBooks({ data }) {
 
             <section className="py-5 flex md:flex-row items-center gap-4 md:gap-8 justify-center flex-col mx-auto border-b">
        
-            <span className="text-center font-medium pb-4 text-ceci-gray-mid tracking-wide uppercase"><Link to={'#upc'}>
+            <span className="text-center font-thin pb-4 text-ceci-gray-mid tracking-wide uppercase"><Link to={'#upc'}>
             Forthcoming Books {/* <span className="inline-flex items-center mt-4">
               <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
                 <path d="M16 17l-4 4m0 0l-4-4m4 4V3"></path>
               </svg></span> */}
               </Link></span>
-            <span className="font-medium text-center pb-4 text-ceci-gray-mid tracking-wide uppercase"><Link to={'#new'}>
+            <span className="font-thin text-center pb-4 text-ceci-gray-mid tracking-wide uppercase"><Link to={'#new'}>
             Books Published This Year {/* <span className="inline-flex items-center mt-4">
               <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
                 <path d="M5 12h14M12 5l7 7-7 7"></path>
@@ -41,12 +41,12 @@ export default function RecentBooks({ data }) {
       <section id="new">
       <SectionHeader className="py-4" text={"Recent Releases"}/>
           <div className="container flex flex-wrap gap-2 py-5">
-            {rec.edges.map(edge => (
-           <>  
-              <Link to={`../title/${ edge.node.BookID }`}>
+            {rec.edges.map((edge, index) => (
+            
+              <Link to={`../title/${ edge.node.BookID }`} key={index}>
                 <BookCard Title={edge.node.Title} Subtitle={edge.node.Subtitle} Author={edge.node.AuthorCredit} Thumb={edge.node.CoverImageMain} Bookid ={edge.node.BookID} pubdate={edge.node.PublicationDate} />
                 </Link>
-           </>
+          
         ))}
         </div>
         <Link to={`#top`} className="uppercase text-ceci-gray-mid text-xs">Go to top</Link>
@@ -54,19 +54,20 @@ export default function RecentBooks({ data }) {
 <section id="upc">
             <SectionHeader className="py-4" text={"Coming Soon"}/>
                <ul className="container flex flex-wrap gap-2 py-5">
-            {upc.edges.map(edge => (
-           <>  
+            {upc.edges.map((edge, index) => (
+           
 
-           <Link to={`../title/${ edge.node.BookID }`}>
+           <Link to={`../title/${ edge.node.BookID }`} key={index}>
                <BookCard Title={edge.node.Title} 
              Subtitle={edge.node.Subtitle} 
              Author={edge.node.AuthorCredit} 
              Thumb={edge.node.CoverImageMain} 
              Bookid ={edge.node.BookID} 
-             pubdate={edge.node.PublicationDate} />
-             
+             pubdate={edge.node.PublicationDate}/>
+
              </Link>
-        </>
+             
+           
         ))}
         </ul>
         <Link to={`#top`} className="uppercase text-ceci-gray-mid text-xs">Go to top</Link>

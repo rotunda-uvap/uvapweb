@@ -29,10 +29,10 @@ export default function StaffList({ data }) {
          
           <div className="container px-5 py-12 mx-auto">
              <div className="flex flex-wrap -m-4 text-center">
-           {opss.edges.map(edge => (
-             <>
-              <MiniBio frontmatter={edge.node.frontmatter} />                 
-             </>
+           {opss.edges.map((edge, index)=> (
+            
+              <MiniBio frontmatter={edge.node.frontmatter} key={`ops${index}`} />                 
+             
                  
              ))}
              </div>
@@ -46,10 +46,10 @@ export default function StaffList({ data }) {
          
           <div className="container px-5 py-12 mx-auto">
              <div className="flex flex-wrap -m-4 text-center">
-           {acqs.edges.map(edge => (
-             <>
-              <MiniBio frontmatter={edge.node.frontmatter} />                 
-             </>
+           {acqs.edges.map((edge, index) => (
+             
+              <MiniBio frontmatter={edge.node.frontmatter} key={`acqs${index}`} />                 
+             
                  
              ))}
              </div>
@@ -62,10 +62,10 @@ export default function StaffList({ data }) {
          
           <div className="container px-5 py-12 mx-auto">
              <div className="flex flex-wrap -m-4 text-center">
-           {edps.edges.map(edge => (
-             <>
-              <MiniBio frontmatter={edge.node.frontmatter} />                 
-             </>
+           {edps.edges.map((edge, index) => (
+            
+              <MiniBio frontmatter={edge.node.frontmatter} key={`edps${index}`}/>                 
+            
                  
              ))}
              </div>
@@ -77,10 +77,10 @@ export default function StaffList({ data }) {
          
           <div className="container px-5 py-12 mx-auto">
              <div className="flex flex-wrap -m-4 text-center">
-           {mkgs.edges.map(edge => (
-             <>
-              <MiniBio frontmatter={edge.node.frontmatter} />                 
-             </>
+           {mkgs.edges.map((edge, index) => (
+            
+              <MiniBio frontmatter={edge.node.frontmatter} key={`mkgs${index}`}/>                 
+             
                  
              ))}
              </div>
@@ -92,10 +92,10 @@ export default function StaffList({ data }) {
          
           <div className="container px-5 py-12 mx-auto">
              <div className="flex flex-wrap -m-4 text-center">
-           {pubs.edges.map(edge => (
-             <>
-              <MiniBio frontmatter={edge.node.frontmatter} />                 
-             </>
+           {pubs.edges.map((edge, index) => (
+            
+              <MiniBio frontmatter={edge.node.frontmatter} key={`pubs${index}`}/>                 
+            
                  
              ))}
              </div>
@@ -107,10 +107,10 @@ export default function StaffList({ data }) {
          
           <div className="container px-5 py-12 mx-auto">
              <div className="flex flex-wrap -m-4 text-center">
-           {rots.edges.map(edge => (
-             <>
-              <MiniBio frontmatter={edge.node.frontmatter} />                 
-             </>
+           {rots.edges.map((edge, index) => (
+             
+              <MiniBio frontmatter={edge.node.frontmatter} key={`rots${index}`}/>                 
+            
                  
              ))}
              </div>

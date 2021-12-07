@@ -23,8 +23,8 @@ export default function ACRList() {
         }
         `}
         render={data => (
-            data.ANT.edges.map(edge => (
-              <div className="p-2 sm:w-1/2 w-full">
+            data.ANT.edges.map((edge, index) => (
+              <div className="p-2 sm:w-1/2 w-full" key={index}>
                 <RotundaCard Title={edge.node.Title} ID={edge.node.RotID} Image={edge.node.imageFilename}/>
 
                 </div>

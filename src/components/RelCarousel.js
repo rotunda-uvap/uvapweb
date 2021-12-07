@@ -6,11 +6,11 @@ import "slick-carousel/slick/slick-theme.css";
 
 const Gallery = ({book_obj_array}) => {
 
-    const imageMap = book_obj_array.map((book) => {
+    const imageMap = book_obj_array.map((book, index) => {
       let cover = "https://ik.imagekit.io/uvapress/mediums/" + book.jsonId + "_M.jpg"
       let booklink = "../../title/" + book.jsonId
         return (
-            <div className="image-slider-container items-center px-10" key={book.Title}>
+            <div className="image-slider-container items-center px-10" key={`book${index}`}>
                 <Link to={booklink} ><img src={cover} alt={book.Title} /></Link>
             </div>
         )

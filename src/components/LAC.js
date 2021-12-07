@@ -23,8 +23,8 @@ export default function LACList() {
         }
         `}
         render={data => (
-            data.LAC.edges.map(edge => (
-              <div className="p-2 sm:w-1/2 w-full">
+            data.LAC.edges.map((edge, index) => (
+              <div className="p-2 sm:w-1/2 w-full" key={index}>
                  <RotundaCard Title={edge.node.Title} Subtitle={edge.node.Subtitle} ID={edge.node.RotID} Image={edge.node.imageFilename}/>
                 </div>
             ))

@@ -12,12 +12,12 @@ export default function Subjects({ data }) {
           <PageHeader text={'Book Subjects'}/>
           <div className="grid md:grid-cols-4 md:grid-4">
             
-          {subs.edges.map(edge => (
-            <>           
-           <li className="lg:w-1/3 mb-1 w-1/2" >
+          {subs.edges.map((edge, index) => (
+                   
+           <li className="lg:w-1/3 mb-1 w-1/2" key={`sub${index}`}>
           <Link to={`../subject/${ edge.node.subjectID }`} className="text-gray-600 hover:text-gray-800">{ edge.node.subjectName }</Link>
         </li>            
-            </>
+           
         ))}       
           
         </div>

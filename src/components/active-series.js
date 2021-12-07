@@ -36,9 +36,9 @@ export default function ActiveSeries() {
               </svg></span></div></Link></div>
 
     <div className="flex flex-wrap text-gray-600 body-font">
-    {data.allMarkdownRemark.edges.map(edge => (
+    {data.allMarkdownRemark.edges.map((edge, index) => (
         
-            <div className="px-6  w-full flex flex-col items-start">
+            <div className="px-6  w-full flex flex-col items-start" key={`serinfo${index}`}>
                       <span className="inline-block py-2 px-2 rounded bg-ceci-gray-light uppercase text-ceci-gray-dark text-xs font-medium tracking-wider">{ edge.node.frontmatter.seriestype }</span>
 
       <Link  to={`../series/${ edge.node.frontmatter.seriesID }`}>

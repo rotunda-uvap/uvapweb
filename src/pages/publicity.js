@@ -42,9 +42,9 @@ export default function PubPage({ data }) {
 
           <div className="grid md:grid-cols-3">
             <section className="md:col-span-2 mr-5">
-            {news.edges.map(edge => (
-            <>
-              <div className="flex flex-col md:flex-row">
+            {news.edges.map((edge, index) => (
+            
+              <div className="flex flex-col md:flex-row" key={`ns${index}`}>
                   
                     {edge.node.frontmatter.related_book ? <img src={'https://ik.imagekit.io/uvapress/mediums/' + edge.node.frontmatter.related_book[0].jsonId + "_M.jpg"} alt="cover" className="xs:hidden md:block object-contain self-center justify-self-center"/> : <div></div>}
                   
@@ -61,8 +61,8 @@ export default function PubPage({ data }) {
                     </div>
                     </div>
               </div>
-            <hr className="my-10"/>
-            </>))}
+           
+            ))}<hr className="my-10"/>
             </section>
             <div className="md:col-span-1 p-10">
             <section className="flex flex-col">

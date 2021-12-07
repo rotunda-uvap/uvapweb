@@ -37,10 +37,7 @@ export default function RotundaHome({ data }) {
   <div className="container mx-auto flex px-5 py-7 items-center justify-center flex-col">
   <GatsbyImage image={RotundaLogo} alt="Rotunda logo" className="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" />
     <div className="text-center lg:w-2/3 w-full">
-      <p className="leading-relaxed">Since 2004, our Rotunda imprint has published innovative peer-reviewed digital projects, both born-digital and from authoritative letterpress editions. Our core offering is the American History Collection of documentary editions spanning three centuries, from the work of young Ben Franklin through the presidential correspondence of Woodrow Wilson: more than 20 publications with content from over 550 letterpress and born-digital volumes, for a total of nearly 500,000 documents, diary entries, and editorial essays, all cross-searchable.
-
- </p>
-
+      <p className="leading-relaxed">Since 2004, our Rotunda imprint has published innovative peer-reviewed digital projects, both born-digital and from authoritative letterpress editions. Our core offering is the American History Collection of documentary editions spanning three centuries, from the work of young Ben Franklin through the presidential correspondence of Woodrow Wilson: more than 20 publications with content from over 550 letterpress and born-digital volumes, for a total of nearly 500,000 documents, diary entries, and editorial essays, all cross-searchable.</p>
 <p className="leading-relaxed">Our major stand-alone publications are the Presidential Recordings Digital Edition, with transcripts and audio of nearly 4000 conversations from White House recordings; People of the Founding Era, a biographical reference to over 75,000 individuals; the open-access SAH Archipedia, an authoritative encyclopedia of the American built environment, with over 25,000 entries and 5000 editorial essays. Finally, our Literature and Culture Collection features seven editions of literary work and correspondence from nineteenth-century America and Britain.</p>
     
     </div>
@@ -217,11 +214,11 @@ export default function RotundaHome({ data }) {
         <div className="flex flex-col xl:w-2/4 lg:w-3/4 mx-auto font-thin tracking-wide">
         <div className="hover:bg-gray-100 flex p-2 h-full items-center">
         <img className="flex-shrink-0 h-10 w-10  object-cover mr-5" src={"https://legacy.upress.virginia.edu/plunkett/3072.gif"} width="80px" alt="Afro-American Sources in Virginia: A Guide to Manuscripts"/>
-        <Link to={`https://legacy.upress.virginia.edu/plunkett/mfp.html`}><span className="text-lg text-ceci-gray-dark font-display uppercase">Afro-American Sources in Virginia: A Guide to Manuscripts</span></Link>
+        <a href="https://legacy.upress.virginia.edu/plunkett/mfp.html"><span className="text-lg text-ceci-gray-dark font-display uppercase">Afro-American Sources in Virginia: A Guide to Manuscripts</span></a>
    </div>
    <div className="hover:bg-gray-100 flex p-2 h-full items-center">
         <img className="flex-shrink-0 h-10 w-10  object-cover mr-5" src={"https://legacy.upress.virginia.edu/epub/pyatt/seb.jpg"} width="80px" alt="Guide to African-American Documentary Resources in North Carolina"/>
-        <Link to={`https://legacy.upress.virginia.edu/epub/pyatt/index.html`}><span className="text-lg text-ceci-gray-dark font-display uppercase">Guide to African-American Documentary Resources in North Carolina</span></Link>
+        <a href="https://legacy.upress.virginia.edu/epub/pyatt/index.html"><span className="text-lg text-ceci-gray-dark font-display uppercase">Guide to African-American Documentary Resources in North Carolina</span></a>
    </div>
         
         </div>
@@ -238,10 +235,10 @@ export default function RotundaHome({ data }) {
     </div>
 
        <div className="flex flex-wrap -m-4 text-center">
-    {staff.edges.map(edge => (
-                    <>
-                  <MiniBio frontmatter={edge.node.frontmatter} /> 
-                     </>
+    {staff.edges.map((edge, index) => (
+                 
+                  <MiniBio frontmatter={edge.node.frontmatter} key={index} /> 
+                   
                     ))}
      
      
