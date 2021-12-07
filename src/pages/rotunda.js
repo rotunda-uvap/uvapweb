@@ -190,7 +190,7 @@ export default function RotundaHome({ data }) {
         </div>
       </div>
       <div className="p-4 md:w-1/3 flex flex-col text-center items-center">
-        <div className="w-20 h-20 inline-flex items-center justify-center greige text-ceci-gray-dark mb-5 flex-shrink-0">
+        <div className="w-20 h-20 inline-flex items-center justify-center greige text-ceci-gray-dark  flex-shrink-0">
           <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" className="w-10 h-10" viewBox="0 0 24 24">
             <path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
             
@@ -207,6 +207,27 @@ export default function RotundaHome({ data }) {
   </div>
 </section>
   
+<section className="text-gray-600 body-font" id="legacy">
+      <div className="container px-5 py-12 mx-auto">
+        <div className="text-center mb-5">
+          <SectionHeader text="Legacy Projects"/>
+      {/* <h1 className="sm:text-3xl text-2xl font-medium text-center title-font text-ceci-gray-dark mb-4">Founding Era Collection</h1> */}
+      <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 text-gray-500 mx-auto">The following digital projects were published on UVA Press's website before the Rotunda imprint was established, and are no longer updated.</p>
+        </div>
+        <div className="flex flex-col xl:w-2/4 lg:w-3/4 mx-auto font-thin tracking-wide">
+        <div className="hover:bg-gray-100 flex p-2 h-full items-center">
+        <img className="flex-shrink-0 h-10 w-10  object-cover mr-5" src={"https://legacy.upress.virginia.edu/plunkett/3072.gif"} width="80px" alt="Afro-American Sources in Virginia: A Guide to Manuscripts"/>
+        <Link to={`https://legacy.upress.virginia.edu/plunkett/mfp.html`}><span className="text-lg text-ceci-gray-dark font-display uppercase">Afro-American Sources in Virginia: A Guide to Manuscripts</span></Link>
+   </div>
+   <div className="hover:bg-gray-100 flex p-2 h-full items-center">
+        <img className="flex-shrink-0 h-10 w-10  object-cover mr-5" src={"https://legacy.upress.virginia.edu/epub/pyatt/seb.jpg"} width="80px" alt="Guide to African-American Documentary Resources in North Carolina"/>
+        <Link to={`https://legacy.upress.virginia.edu/epub/pyatt/index.html`}><span className="text-lg text-ceci-gray-dark font-display uppercase">Guide to African-American Documentary Resources in North Carolina</span></Link>
+   </div>
+        
+        </div>
+       {/* <button className="flex mx-auto mt-16 text-white bg-ceci-gray-dark border-0 py-2 px-8 focus:outline-none hover:text-ceci-gray-dark hover:greige rounded text-lg">See All in the Founding Era Collection</button> */}
+      </div>
+    </section>
 
     <section className="text-gray-600 body-font">
   <div className="container px-5 py-12 mx-auto greige">
