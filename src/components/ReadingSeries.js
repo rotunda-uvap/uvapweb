@@ -16,7 +16,7 @@ export default function ReadingSeries() {
                         frontmatter {
                             
                         related_book {
-                            id
+                            jsonId
                             Title
                             }
                         }

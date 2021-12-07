@@ -16,7 +16,7 @@ export default function FeaturedColl() {
                         frontmatter {
                             
                         related_book {
-                            id
+                            jsonId
                             Title
                             }
                         }

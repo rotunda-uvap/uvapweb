@@ -7,8 +7,8 @@ bgcolor: bg-blue-900
 txtcolor: text-white
 related_series:
   - BNP
-  - CARAF
-  - CFFC
+  - CAR
+  - CFF
   - NWS
   - PBL
   - PBSH

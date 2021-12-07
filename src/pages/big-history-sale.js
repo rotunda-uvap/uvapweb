@@ -49,7 +49,7 @@ export default function HistorySalePage({data}) {
              {coll.frontmatter.related_book && 
              coll.frontmatter.related_book.map(book => (
                
-               <RelatedBookList id={book.id} title={book.Title}/>
+               <RelatedBookList id={book.jsonId} title={book.Title}/>
           
               
            ))}
@@ -89,7 +89,7 @@ export const query = graphql`
             title
             related_book {
               Title
-              id
+              jsonId
           }
           description
         }

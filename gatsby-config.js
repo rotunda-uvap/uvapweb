@@ -189,6 +189,18 @@ module.exports = {
     },
      
     {
+      resolve: `gatsby-plugin-gatsby-cloud`,
+      options: {
+        headers: {},
+        allPageHeaders: [],
+        mergeSecurityHeaders: true,
+        mergeLinkHeaders: true,
+        mergeCachingHeaders: true,
+        transformHeaders: (headers, path) => headers,
+        generateMatchPathRewrites: true,
+      },
+    },
+    {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         // The property ID; the tracking code won't be generated without it
@@ -252,8 +264,8 @@ module.exports = {
       },
     },
     
-
-    `gatsby-plugin-advanced-sitemap`,
+    `gatsby-plugin-sitemap`,
+    // `gatsby-plugin-advanced-sitemap`,
 
    /*  This plugin throws errors, check if other issues are reported later
    {
@@ -317,10 +329,10 @@ module.exports = {
     "gatsby-plugin-meta-redirect"
   ],
   mapping: {
-    "MarkdownRemark.frontmatter.related_series" : "SeriesJson",
+    "MarkdownRemark.frontmatter.related_series" : "SeriesJson.jsonId",
     "MarkdownRemark.frontmatter.related_staff" : "MarkdownRemark.frontmatter.staff_name",
-    "MarkdownRemark.frontmatter.related_book" : "BooklistJson",
-    "MarkdownRemark.frontmatter.book_clusters.related_book" : "BooklistJson",
+    "MarkdownRemark.frontmatter.related_book" : "BooklistJson.jsonId",
+    "MarkdownRemark.frontmatter.book_clusters.related_book" : "BooklistJson.jsonId",
     "MarkdownRemark.frontmatter.related_collection" : "MarkdownRemark.frontmatter.title",
     "MarkdownRemark.frontmatter.related_blog" : "MarkdownRemark.frontmatter.title",
 

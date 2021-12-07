@@ -46,7 +46,7 @@ export default function PubPage({ data }) {
             <>
               <div className="flex flex-col md:flex-row">
                   
-                    {edge.node.frontmatter.related_book ? <img src={'https://ik.imagekit.io/uvapress/mediums/' + edge.node.frontmatter.related_book[0].id + "_M.jpg"} alt="cover" className="xs:hidden md:block object-contain self-center justify-self-center"/> : <div></div>}
+                    {edge.node.frontmatter.related_book ? <img src={'https://ik.imagekit.io/uvapress/mediums/' + edge.node.frontmatter.related_book[0].jsonId + "_M.jpg"} alt="cover" className="xs:hidden md:block object-contain self-center justify-self-center"/> : <div></div>}
                   
                     <div className="py-6 px-10 ">
                         <div className="flex items-center"><span className="font-light text-ceci-gray-mid">{edge.node.frontmatter.date}</span>
@@ -96,7 +96,7 @@ export const query = graphql`
               title
               type
               related_book {
-                id
+                jsonId
                 Title
               }
               date(formatString: "YYYY-MM-DD")

@@ -50,14 +50,19 @@ exports.createSchemaCustomization = ({ actions }) => {
     createRedirect({ fromPath: '/2021/11/09/celebrating-week-keepup-grace-mitchell-tada-and-walter-hood-coeditors-black-landscapes', toPath: '/news/celebrating-up-week-keepup-with-grace-mitchell-tada-and-walter-hood-coeditors-of-black-landscapes-matter', isPermanent: true, redirectInBrowser: true })
     createRedirect({ fromPath: '/title/5501', toPath: '/furnace-and-fugue', isPermanent: true, redirectInBrowser: true })
     createRedirect({ fromPath: '/2021/11/22/federal-fixation-new-blog-post-david-j-toscano-author-fighting-political-gridlock', toPath: '/news/federal-fixation-a-new-blog-post-by-david-j-toscano-author-of-fighting-political-gridlock', isPermanent: true, redirectInBrowser: true })
+    createRedirect({ fromPath: '/content/about-press', toPath: '/about', isPermanent: true, redirectInBrowser: true })
     createRedirect({ fromPath: '/content/apsa', toPath: '/exhibits/apsa', isPermanent: true, redirectInBrowser: true })
     createRedirect({ fromPath: '/content/asa-2021', toPath: '/exhibits/asa-2021', isPermanent: true, redirectInBrowser: true })
     createRedirect({ fromPath: '/content/sha-2021', toPath: '/exhibits/sha-2021', isPermanent: true, redirectInBrowser: true })
     createRedirect({ fromPath: '/content/neasecs-2021', toPath: '/exhibits/neasecs-2021', isPermanent: true, redirectInBrowser: true })
     createRedirect({ fromPath: '/content/aswad', toPath: '/exhibits/aswad', isPermanent: true, redirectInBrowser: true })
+    createRedirect({ fromPath: '/content/current-authors', toPath: '/authors', isPermanent: true, redirectInBrowser: true })
     createRedirect({ fromPath: '/content/opportunities', toPath: '/career', isPermanent: true, redirectInBrowser: true })
+    createRedirect({ fromPath: '/content/order', toPath: '/order', isPermanent: true, redirectInBrowser: true })
+    createRedirect({ fromPath: '/content/privacy', toPath: '/privacy', isPermanent: true, redirectInBrowser: true })
     createRedirect({ fromPath: '/blog', toPath: '/publicity', isPermanent: true, redirectInBrowser: true })
     createRedirect({ fromPath: '/robb', toPath: '/title/5679', isPermanent: true, redirectInBrowser: true })
+    createRedirect({ fromPath: '/series/papers', toPath: '/books/#series', isPermanent: true, redirectInBrowser: true })
     
     
     const { createPage } = actions
@@ -167,11 +172,21 @@ exports.createSchemaCustomization = ({ actions }) => {
           }
         }
 
-        allSubjects: allBooksJson {
-          distinct(field: Subject___subjectID)
+        allSubjects: allSubjectsJson {
+          edges {
+            node {
+              id
+              subjectID
+            }
+          }
         }
-        allSeries: allBooksJson {
-          distinct(field: Series___seriesID)
+        allSeries: allSeriesJson {
+          edges {
+            node {
+              id
+              jsonId
+            }
+          }
         }
 
        rotMain: allRotundaJson{
@@ -302,24 +317,24 @@ exports.createSchemaCustomization = ({ actions }) => {
           })
         })
 
-        const subjects = result.data.allSubjects.distinct
-        subjects.forEach((subject) => {
+        const subjects = result.data.allSubjects.edges
+        subjects.forEach(({ node }) => {
           createPage({
-            path: `/subject/${subject}`,
+            path: `/subject/${node.subjectID}`,
             component: path.resolve(`./src/templates/subject-page.js`),
             context: {
-              id: subject,
+              id: node.subjectID,
             },
           })
         })
 
-        const series = result.data.allSeries.distinct
-        series.forEach((serie) => {
+        const series = result.data.allSeries.edges
+        series.forEach(({ node }) => {
           createPage({
-            path: `/series/${serie}`,
+            path: `/series/${node.jsonId}`,
             component: path.resolve(`./src/templates/series-page.js`),
             context: {
-              id: serie,
+              id: node.jsonId,
             },
           })
         })

@@ -113,7 +113,7 @@ export const query = graphql`
             date(formatString: "YYYY-MM-DD")
             
             related_book {
-              id
+              jsonId
               Title
             }
           

@@ -27,7 +27,7 @@ import Content, { HTMLContent } from "../components/Content";
                  <div className="order-last px-5 pb-7 flex md:flex-col flex-row items-center ">
                 <h6 className="hidden md:block uppercase py-2 font-thin tracking-widest font-sans">Related</h6>
                 {related_list.map(book => (
-                <RelatedBook id={book.id} title={book.Title}/>
+                <RelatedBook id={book.jsonId} title={book.Title}/>
                
     
             ))}</div></>

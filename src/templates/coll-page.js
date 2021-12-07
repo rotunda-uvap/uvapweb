@@ -36,7 +36,7 @@ const collPage = ({ data }) => {
              {data.markdownRemark.frontmatter.related_book && 
              data.markdownRemark.frontmatter.related_book.map(book => (
                
-               <RelatedBookList id={book.id} title={book.Title}/>
+               <RelatedBookList id={book.jsonId} title={book.Title}/>
           
               
            ))}
@@ -62,7 +62,7 @@ export const query = graphql`
           description
           related_book {
             Title
-            id
+            jsonId
           }
         }
     }

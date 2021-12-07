@@ -83,8 +83,8 @@ export default function InstructorPage({data}) {
 
       {sers.edges.map(edge => (
             <>           
-           <div className="md:w-1/2 mb-2 px-2 font-display" key={edge.node.id}>
-          <Link to={`../series/${ edge.node.id }`} className="text-gray-600 hover:text-gray-800">{ edge.node.seriesName }</Link>
+           <div className="md:w-1/2 mb-2 px-2 font-display" key={edge.node.jsonId}>
+          <Link to={`../series/${ edge.node.jsonId }`} className="text-gray-600 hover:text-gray-800">{ edge.node.seriesName }</Link>
         </div>            
             </>
         ))}
@@ -141,7 +141,7 @@ export const query = graphql`
             title
             related_book {
               Title
-              id
+              jsonId
           }
           description
         }
@@ -151,7 +151,7 @@ export const query = graphql`
       series: allSeriesJson(sort: {fields: seriesName}) {
       edges {
         node {
-            id
+            jsonId
             seriesName
         }
       }

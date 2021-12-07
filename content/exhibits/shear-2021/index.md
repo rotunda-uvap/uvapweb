@@ -8,7 +8,6 @@ txtcolor: text-gray-600
 related_series:
   - EAH
   - JA
-  - TASS
   - RA
   - WEA
 related_staff:

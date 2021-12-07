@@ -21,7 +21,7 @@ export default function FeatTrio() {
                       type
                       title
                       related_book {
-                        id
+                        jsonId
                         Title
                       }
                     }
@@ -55,7 +55,7 @@ export default function FeatTrio() {
                       type
                       title
                       related_book {
-                        id
+                        jsonId
                         Title
                       }
                       image {
@@ -85,7 +85,7 @@ export default function FeatTrio() {
                   <div className="tracking-widest text-ceci-gray-mid font-serif text-xs pl-1 md:pl-3   self-center">{data.news.edges[0].node.frontmatter.date}</div>
               </div>
           {/*     {data.news.edges[0].node.frontmatter.related_book ? 
-              <div className="flex flex-row"><img src={'https://ik.imagekit.io/uvapress/mediums/' + data.news.edges[0].node.frontmatter.related_book[0].id + "_M.jpg"} alt="cover" className="justify-self-center object-cover w-1/3 p-2"/> 
+              <div className="flex flex-row"><img src={'https://ik.imagekit.io/uvapress/mediums/' + data.news.edges[0].node.frontmatter.related_book[0].jsonId + "_M.jpg"} alt="cover" className="justify-self-center object-cover w-1/3 p-2"/> 
               <Link className="font-display tracking-wide uppercase py-2" to={`../${ data.news.edges[0].node.frontmatter.type }${ data.news.edges[0].node.fields.slug }`}>{data.news.edges[0].node.frontmatter.title }</Link></div>
                :<Link className="font-display font-thin tracking-wider uppercase py-2" to={`../${ data.news.edges[0].node.frontmatter.type }${ data.news.edges[0].node.fields.slug }`}>{data.news.edges[0].node.frontmatter.title }</Link> } */}
 <Link className="font-display font-thin tracking-wider uppercase py-2" to={`../${ data.news.edges[0].node.frontmatter.type }${ data.news.edges[0].node.fields.slug }`}>{data.news.edges[0].node.frontmatter.title }</Link>
@@ -106,7 +106,7 @@ export default function FeatTrio() {
                
              <div className="md:px-10 flex flex-col">
         {/*      {data.ac.edges[0].node.frontmatter.related_book ? <div className="flex flex-row">
-               <img src={'https://ik.imagekit.io/uvapress/mediums/' + data.ac.edges[0].node.frontmatter.related_book[0].id + "_M.jpg"} alt="cover" className="object-top object-scale-down w-1/2 p-2"/> <Link className="font-display tracking-wide uppercase" to={`../author-corner${ data.ac.edges[0].node.fields.slug }`}>{data.ac.edges[0].node.frontmatter.title }</Link></div>
+               <img src={'https://ik.imagekit.io/uvapress/mediums/' + data.ac.edges[0].node.frontmatter.related_book[0].jsonId + "_M.jpg"} alt="cover" className="object-top object-scale-down w-1/2 p-2"/> <Link className="font-display tracking-wide uppercase" to={`../author-corner${ data.ac.edges[0].node.fields.slug }`}>{data.ac.edges[0].node.frontmatter.title }</Link></div>
                 :<Link className="font-display tracking-wide uppercase py-2" to={`../author-corner${ data.ac.edges[0].node.fields.slug }`}>{data.ac.edges[0].node.frontmatter.title }</Link> } */}
              {/* {getImage(data.Img) && <div className="float-left px-10 pb-5"><GatsbyImage image={getImage(data.Img)} alt="related image"/></div> } */}
              <Link className="font-display tracking-wider font-thin uppercase py-2" to={`../author-corner${ data.ac.edges[0].node.fields.slug }`}>{data.ac.edges[0].node.frontmatter.title }</Link>
