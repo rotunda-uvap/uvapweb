@@ -34,6 +34,7 @@
     "gatsby-plugin-algolia": "^0.24.0",
     "gatsby-plugin-gatsby-cloud": "^4.3.0",
     "gatsby-plugin-google-analytics": "^4.3.0",
+    "gatsby-plugin-google-gtag": "^4.3.0",
     "gatsby-plugin-google-tagmanager": "^4.3.0",
     "gatsby-plugin-image": "^2.3.0",
     "gatsby-plugin-less": "^6.3.0",
