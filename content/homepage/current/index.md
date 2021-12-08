@@ -2,12 +2,12 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: The Topography of Wellness
-    banner_id: "5781"
-    banner_subtitle: How Health and Disease Shaped the American Landscape
-    banner_quote: I cannot imagine a more perfect post-pandemic book.
-    banner_author: Sara Jensen Carr
-    banner_attr: Frederick Steiner, University of Pennsylvania
+  - banner_title: "The Alchemy of Conquest "
+    banner_author: Ralph Bauer
+    banner_subtitle: Science, Religion, and the Secrets of the New World
+    banner_quote: Strikingly original and elegantly conceived.
+    banner_attr: Ruth Hill, Vanderbilt University
+    banner_id: "5132"
 related_book:
   - "5744"
   - "5617"
