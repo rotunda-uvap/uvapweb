@@ -26,7 +26,7 @@ collections:
           - {label: "Author", name: "banner_author", widget: "string"}
           - {label: "Subtitle", name: "banner_subtitle", widget: "string"}
           - {label: "Quote", name: "banner_quote", widget: "string", hint: "max 60ish characters"}
-          - {label: "Quote Attribution", name: "banner_attr", widget: "string", hint: "max 50ish characters"}
+          - {label: "Quote Attribution", name: "banner_attr", widget: "string", hint: "max 50ish characters", required:false}
           - {label: "Book ID", name: "banner_id", widget: string}
       - label: Featured Books 
         name: featured_books
