@@ -9,7 +9,7 @@ import SectionHeader from "../components/SectionHeader"
 export default function RotundaPurchasePage() {
   return (
     <Layout>
-      <SeO title text-ceci-gray-mid tracking-wide font-thin="How to Purchase ROTUNDA Publications" />
+      <SeO title="How to Purchase ROTUNDA Publications" />
       <PageHeader text={"Purchasing Rotunda Publications"} />
       <p className="font-light">
         If you are connecting via a campus Internet connection, you can expect
