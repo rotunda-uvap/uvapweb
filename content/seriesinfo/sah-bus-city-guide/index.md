@@ -1,10 +1,12 @@
 ---
 templateKey: series
-title: SAH/BUS City Guide
+status: active
 editors: "Series Editor: Karen Kingsley"
 uvaeditors: Mark Mones
-status: active
+title: SAH/BUS City Guide
 seriestype: Academic Book Series
+related_staff:
+  - Mark Mones
 seriesID: BUSG
 type: series
 ---
