@@ -22,6 +22,10 @@ const Home = ({ data }) => {
 <SeO/>
  <Banner id={top.banner_id} book_title={top.banner_title} author={top.banner_author} quote={top.banner_quote} subtitle={top.banner_subtitle} attr={top.banner_attr}/>
 
+<section className="py-4 bg-ceci-gray-dark">
+<h5 className="text-center text-white tracking-wide uppercase"><Link to={'../big-history-sale'}>Big History Sale: Use code 10HISTORY for 50% off selected books through Jan 2022!</Link></h5>
+</section>
+
 <section className="py-4 border-b-2 border-gray-100">
   <SectionHeader text="Featured Books"/>
 <div className="py-5">
