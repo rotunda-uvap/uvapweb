@@ -18,8 +18,8 @@ export default function AboutPage({ data }) {
           title="About The University of Virginia Press" />
             <section className="text-gray-600 body-font">
   <div className="container px-5 py-12 mx-auto">
-    <div className="flex flex-col text-center w-full mb-10">
-<PageHeader text={'About UVa Press'}/>      <div className="lg:w-3/3 mx-auto leading-relaxed text-base"><span className="dropCap cms" dangerouslySetInnerHTML={{__html: pagedata.html}}/></div>
+    <div className="flex flex-col  w-full mb-10">
+<PageHeader text={'About UVa Press'}/>      <div className="lg:w-3/3 mx-auto leading-relaxed text-base dropCap cms" dangerouslySetInnerHTML={{__html: pagedata.html}}/>
     </div>
     <div className="flex flex-col lg:flex-row  -m-4">
       
