@@ -313,7 +313,7 @@ const MegaHeader = () => {
       </nav>
 
       <nav
-        className="hidden md:block font-sans font-thin uppercase border-b-2 flex flex-row justify-center place-content-center z-40 tracking-wide"
+        className="hidden md:block font-sans text-ceci-gray-mid font-thin uppercase border-b-2 flex flex-row justify-center place-content-center z-40 tracking-wide"
       >
         <div className="flex flex-row justify-center place-content-center lg:text-lg">
           <nav className="flex">
