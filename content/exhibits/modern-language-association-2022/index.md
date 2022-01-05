@@ -2,7 +2,7 @@
 templateKey: exhibit
 title: Modern Language Association 2022
 exhibit_slug: mla-2022
-coupon: Use code 10MLAUVA22 for 30% below books through Jan 31!
+coupon: Use code 10MLAUVA22 for 30% off below books through Jan 31!
 txtcolor: text-black
 related_series:
   - BNP
