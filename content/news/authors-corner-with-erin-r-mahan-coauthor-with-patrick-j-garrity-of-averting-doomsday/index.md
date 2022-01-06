@@ -3,14 +3,14 @@ templateKey: news
 type: author-corner
 title: AUTHOR'S CORNER WITH ERIN R. MAHAN, COAUTHOR WITH PATRICK J. GARRITY OF
   AVERTING DOOMSDAY
-description: "Today, we are happy to bring you our conversation with Erin R.
-  Mahan, coauthor with Patrick J. Garrity of [AVERTING DOOMSDAY: Arms Control
-  during the Nixon Presidency.](https://www.upress.virginia.edu/title/5251)"
+description: ""
 image: garrityem.jpg
 related_book:
   - "5251"
 date: 2022-01-06
 ---
+Today, we are happy to bring you our conversation with Erin R. Mahan, coauthor with Patrick J. Garrity of [AVERTING DOOMSDAY: Arms Control during the Nixon Presidency.](https://www.upress.virginia.edu/title/5251)
+
 *It’s a bitter sweet book release as I continue to feel the loss of my dear friend, colleague and co-author, Pat Garrity. Our book was in many ways his idea, but our mutual fascination with the complex and often misunderstood President Richard Nixon made me eager to embark on the project with him. Pat was one of the most brilliant, humble and generous scholars with whom I’ve collaborated. I miss him. I know he’s proud of our work.*
 
 **\*\*\*\*\*\*\*\*\*\*\*\****
