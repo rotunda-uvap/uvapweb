@@ -8,6 +8,10 @@ related_series:
   - CWH
   - EAH
   - EMG
+  - JA
+  - AMS
+  - RSAH
+  - CGW
 related_blog:
   - AUTHOR'S CORNER WITH ERIN R. MAHAN, COAUTHOR WITH THE LATE PATRICK J.
     GARRITY OF AVERTING DOOMSDAY
