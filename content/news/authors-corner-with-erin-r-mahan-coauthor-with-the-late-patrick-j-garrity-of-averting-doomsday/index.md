@@ -3,13 +3,19 @@ templateKey: news
 type: author-corner
 title: AUTHOR'S CORNER WITH ERIN R. MAHAN, COAUTHOR WITH THE LATE PATRICK J.
   GARRITY OF AVERTING DOOMSDAY
-description: >-
-  Today, we are happy to bring you our conversation with Erin R. Mahan, coauthor with the late Patrick J. Garrity of [AVERTING DOOMSDAY: Arms Control during the Nixon Presidency](https://www.upress.virginia.edu/title/5251), which we published in association with the University of Virginia’s [Miller Center of Public Affairs.](https://millercenter.org/)
+description: "Today, we are happy to bring you our conversation with Erin R.
+  Mahan, coauthor with the late Patrick J. Garrity of [AVERTING DOOMSDAY: Arms
+  Control during the Nixon
+  Presidency](https://www.upress.virginia.edu/title/5251), which we published
+  in association with the University of Virginia’s [Miller Center of Public
+  Affairs.](https://millercenter.org/)"
 image: garrityem.jpg
 related_book:
   - "5251"
 date: 2022-01-06
 ---
+Today, we are happy to bring you our conversation with Erin R. Mahan, coauthor with the late Patrick J. Garrity of [AVERTING DOOMSDAY: Arms Control during the Nixon Presidency](https://www.upress.virginia.edu/title/5251), which we published in association with the University of Virginia’s [Miller Center of Public Affairs.](https://millercenter.org/)
+
 *It’s a bitter sweet book release as I continue to feel the loss of my dear friend, colleague and co-author, Pat Garrity. Our book was in many ways his idea, but our mutual fascination with the complex and often misunderstood President Richard Nixon made me eager to embark on the project with him. Pat was one of the most brilliant, humble and generous scholars with whom I’ve collaborated. I miss him. I know he’s proud of our work.*
 
 **\*\*\*\*\*\*\*\*\*\*\*\****
@@ -17,7 +23,6 @@ date: 2022-01-06
 **What inspired you to write this book?**
 
 This book was a natural outgrowth of over twelve years of collaboration with my co-author, Pat Garrity, on transcribing Nixon presidential recordings and our first co-authored project, also published by UVA Press as part of their digital imprint Rotunda, [*Nixon and Arms Control: Forging the Offensive/Defensive Link in the* SALT *Negotiations, February–May 1971*](https://prde.upress.virginia.edu/content/nixon_SALT). I had also mined the documentary record of the Nixon administration for eight years while working in the Historian’s Office at the Department of State. This book project seemed like a natural extension of our previous research pursuits, using it to pull together and analyze the vast amount of primary source materials we had been steeped in for years. *Averting Doomsday* is the culmination of our joint and individual research endeavors.
-
 
 **What did you learn and what are you hoping readers will learn from your book?**
 
