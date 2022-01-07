@@ -3,7 +3,6 @@ templateKey: collection
 title: AHA2021
 related_book:
   - "5233"
-  - "5627"
   - "5651"
   - "5655"
   - "5716"
