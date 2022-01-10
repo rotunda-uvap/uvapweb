@@ -2,6 +2,7 @@
 templateKey: exhibit
 title: American Historical Association 2022
 exhibit_slug: aha-2022
+coupon: Use code 10AHAUVA22 for 30% off books below through Jan 31!
 txtcolor: text-black
 related_series:
   - RA
