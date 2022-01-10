@@ -2,12 +2,12 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: "The Alchemy of Conquest "
-    banner_author: Ralph Bauer
-    banner_subtitle: Winner of the MLA Scaglione Prize for Comparative Literary Studies
-    banner_quote: Strikingly original and elegantly conceived.
-    banner_attr: Ruth Hill, Vanderbilt University
-    banner_id: "5132"
+  - banner_title: Letters From Filadelfia
+    banner_author: Rodrigo Lazo
+    banner_subtitle: Winner of the Early American Literature Book Prize
+    banner_quote: A superb contribution
+    banner_attr: Susan Gillman, UC-Santa Cruz
+    banner_id: "5222"
 related_book:
   - "5744"
   - "5617"
