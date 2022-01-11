@@ -24,7 +24,7 @@ export default function RotundaPurchasePage() {
       </p>
       <p className="font-light">
         View a{" "}
-        <Link to={"../rotunda-customer-list"}>list of Rotunda customers</Link>
+        <Link to={"../rotunda-customer-page"}>list of Rotunda customers</Link>
       </p>
       <p className="font-light">
         Rotunda publications are available for purchase by libraries, schools,

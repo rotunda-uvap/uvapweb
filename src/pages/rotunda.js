@@ -87,7 +87,7 @@ export default function RotundaHome({ data }) {
           </div>
           <div className="flex-grow">
             <p className="leading-relaxed text-base">Customer information and statistics for librarians or purchasers of Rotunda Publications.</p>
-            <Link to={'/rotunda-customer-list'} className="mt-3 pl-4 text-md text-ceci-gray-dark tracking-wide font-thin inline-flex items-center">See Records
+            <Link to={'/rotunda-customer-page'} className="mt-3 pl-4 text-md text-ceci-gray-dark tracking-wide font-thin inline-flex items-center">See Records
               <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
                 <path d="M5 12h14M12 5l7 7-7 7"></path>
               </svg>
