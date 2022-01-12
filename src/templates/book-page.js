@@ -60,7 +60,7 @@ const bookPage = ({ data }) => {
 
         </div>
         <div className="md:col-span-2 pr-5 md:px-10 text-ceci-gray-dark">
-          <h4 className="hidden md:block pb-3 font-thin font-sans leading-none ">{book.Title}</h4>
+          <h4 className="hidden md:block pb-3 font-thin font-sans uppercase leading-none ">{book.Title}</h4>
           <h4 className="md:hidden pb-3 font-thin leading-relaxed uppercase font-sans">{book.Title}</h4>
 
           {book.InternalSeriesVolume && (
