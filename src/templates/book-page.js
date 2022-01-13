@@ -269,7 +269,7 @@ const bookPage = ({ data }) => {
         </section>
       )}
 
-        <section className="ml-6">
+        <section className="pt-4 ml-6">
           <ShareButtons title={title} url={url} />
         </section>
      
@@ -350,14 +350,14 @@ export const query = graphql`
     newsMD: markdownRemark(
       frontmatter: {
         templateKey: { eq: "news" }
-        related_book: { elemMatch: { id: { eq: $bid } } }
+        related_book: { elemMatch: { jsonId: { eq: $bid } } }
       }
     ) {
       id
       frontmatter {
         title
         related_book {
-          id
+          jsonId
         }
         type
       }
