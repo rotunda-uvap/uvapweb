@@ -50,7 +50,7 @@ const BookHorizontalTabs = ({summary, reviews, bio, TOC, add}) => {
         {add ? add.frontmatter.attached_links.map(edge => (
             <>
               <div className="p-2">
-                    <a href={edge.link} target="_blank" rel="noreferrer">
+                    <a href={edge.link} target="_blank" rel="noreferrer" className="text-ceci-gray-dark tracking-wide font-thin pl-5">
                       {edge.name}
                     </a>
                   </div>
