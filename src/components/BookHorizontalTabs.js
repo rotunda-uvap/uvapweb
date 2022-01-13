@@ -59,7 +59,7 @@ const BookHorizontalTabs = ({summary, reviews, bio, TOC, add}) => {
               : 
               <p>Not yet available</p>
             }
-
+     <hr/>
         </TabPanel>
       </Tabs>
       )
