@@ -115,7 +115,7 @@ export default function AuthorsPage({ data }) {
     <section className="text-gray-600 body-font  border-b-2 border-gray-100">
       <div className="container p-5 mx-auto">
         <div className="text-center mb-10">
-          <SectionHeader text={'Marketing Your Book'}/>
+          <SectionHeader text={'Marketing and Promoting Your Book'}/>
       {/* <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi pug.</p> */}
         </div>
         <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
@@ -126,11 +126,14 @@ export default function AuthorsPage({ data }) {
           <div className="p-2 sm:w-1/2 w-full">
           <FileDownloadButton name="Marketing Questionnaire" file="UVA-Press-Marketing-Questionnaire.doc"/></div>
           <div className="p-2 sm:w-1/2 w-full">
-          <FileDownloadButton name="Marketing FAQ and Author Tips" file="UVAP_Marketing_FAQ_Tips.docx"/>
+          <FileDownloadButton name="Marketing FAQ and Author Tips" file="UVAP_Marketing_FAQ_Tips.docx"/></div>
+          <div className="p-2 sm:w-1/2 w-full">
+          <FileDownloadButton name="Events Guide for Authors" file="UVA_Press_Events_Guide_for_Authors.docx"/></div>
+          <div className="p-2 sm:w-1/2 w-full">
+          <FileDownloadButton name="Social Media Guide for Authors" file="UVA_Press_Social_Media_Guide.docx"/></div>
+          </div>
 </div>
 
-        </div>
-      </div>
     </section>
 
     <section className="text-gray-600 body-font  border-b-2 border-gray-100">
