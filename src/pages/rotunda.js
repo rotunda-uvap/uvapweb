@@ -148,7 +148,7 @@ export default function RotundaHome({ data }) {
 
     <section className="text-gray-600 body-font">
   <div className="container px-5 py-12 mx-auto">
-    <div className="text-center mb-10">
+    <div className="text-center mb-10" id="#collections">
       <SectionHeader text="Rotunda Collections"/>
       {/* <h1 className="sm:text-3xl text-2xl font-thin title-font tracking-wider text-ceci-gray-dark mb-4">Rotunda Collections</h1> */}
       <p className="text-base leading-relaxed xl:w-3/4 lg:w-3/4 mx-auto text-gray-500">Rotunda publications are available to both libraries and independent scholars as single titles or as collections. The American History Collection includes the sub-collections American Founding Era; Antebellum, Civil War, and Reconstruction; and the American Century.</p>
