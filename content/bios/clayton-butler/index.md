@@ -3,7 +3,7 @@ templateKey: bio
 title: Clayton Butler
 staff_name: Clayton Butler
 name_slug: clayton-butler
-job_title: Marketing Assistant
+job_title: Nau Postdoctoral Fellow in Marketing
 department:
   - MKG
 email: cjb3sm@virginia.edu

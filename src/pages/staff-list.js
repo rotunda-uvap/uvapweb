@@ -13,7 +13,7 @@ export default function StaffList({ data }) {
     const edps = data.edp
     const opss = data.ops
     const rots = data.rot
-    const pubs = data.pub
+    const dirz = data.dirs
     const mkgs = data.mkg
     
 
@@ -24,6 +24,20 @@ export default function StaffList({ data }) {
           <div className="container px-5 py-12 mx-auto">
           <PageHeader text={'Our Team'}/>
           
+          <section className="py-4 border-b-2 border-gray-100">
+            <SectionHeader text={'Director'}/>
+         
+          <div className="container px-5 py-12 mx-auto">
+             <div className="flex flex-wrap -m-4 text-center">
+           {dirz.edges.map((edge, index)=> (
+            
+              <MiniBio frontmatter={edge.node.frontmatter} key={`dir${index}`} />                 
+             
+                 
+             ))}
+             </div>
+           </div>
+         </section>
           <section className="py-4 border-b-2 border-gray-100">
             <SectionHeader text={'Operations'}/>
          
@@ -73,7 +87,7 @@ export default function StaffList({ data }) {
          </section>  
 
          <section className="py-4 border-b-2 border-gray-100">
-         <SectionHeader text={'Marketing'}/>
+         <SectionHeader text={'Sales, Marketing, and Publicity'}/>
          
           <div className="container px-5 py-12 mx-auto">
              <div className="flex flex-wrap -m-4 text-center">
@@ -87,20 +101,6 @@ export default function StaffList({ data }) {
            </div>
          </section>  
 
-         <section className="py-4 border-b-2 border-gray-100">
-         <SectionHeader text={'Publicity'}/>
-         
-          <div className="container px-5 py-12 mx-auto">
-             <div className="flex flex-wrap -m-4 text-center">
-           {pubs.edges.map((edge, index) => (
-            
-              <MiniBio frontmatter={edge.node.frontmatter} key={`pubs${index}`}/>                 
-            
-                 
-             ))}
-             </div>
-           </div>
-         </section>  
          
          <section className="py-4" >
          <SectionHeader text={'ROTUNDA Digital Imprint'}/>
@@ -168,7 +168,13 @@ export const query = graphql`
         }
       }
     }
-
+    dirs: allMarkdownRemark(filter: {frontmatter: {department: {in: "DIR"}}}) {
+      edges {
+        node {
+          ...MiniBioFragment
+        }
+      }
+    }
 
   }
 `
