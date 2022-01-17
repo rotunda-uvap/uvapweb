@@ -10,7 +10,7 @@ related_book:
   - "5693"
 date: 2022-01-16
 ---
-We are pleased to offer this original blog post for MLK Day by Emily K. Abel and Margaret K. Nelson, coauthors of [](https://www.upress.virginia.edu/title/5776)[LIMITED CHOICES: Mable Jones, a Black Children's Nurse in a Northern White Household,](https://www.upress.virginia.edu/title/5693) with a foreword by Andrea Douglas.
+We are pleased to offer this original blog post in honor of MLK Day by Emily K. Abel and Margaret K. Nelson, coauthors of [](https://www.upress.virginia.edu/title/5776)[LIMITED CHOICES: Mable Jones, a Black Children's Nurse in a Northern White Household,](https://www.upress.virginia.edu/title/5693) with a foreword by Andrea Douglas.
 
 **\*\*\*\*\*\*\*\*\*\*\*\****
 
