@@ -1,10 +1,10 @@
 ---
 templateKey: series
 type: series
-title: Carter G. Woodson Institute Series
+title: "The Carter G. Woodson Institute Series: Black Studies at Work in the World"
 status: active
 seriestype: Academic Book Series
-editors: "Series Editors: Deborah E. McDowell & Shawn Leigh Alexander"
+editors: "Series Editors: Deborah E. McDowell, Shawn Leigh Alexander, Robert T. Vinson"
 seriesID: CGW
 ---
-This series is published in association with the Carter G. Woodson Institute for African American Studies at the University of Virginia.
+Named for the famed historian Carter G. Woodson, this series seeks to publish new monographs and essay collections focused broadly on Black history, literature, and culture in multidisciplinary and diasporic perspective. The series editors are open, simultaneously, to work that captures the various articulations of Black Studies at work in the world even beyond academia.
