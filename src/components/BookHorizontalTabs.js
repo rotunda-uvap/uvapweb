@@ -43,7 +43,15 @@ const BookHorizontalTabs = ({summary, reviews, bio, TOC, add}) => {
               <div><p>No biographical information available</p></div>}
         </TabPanel>
         <TabPanel className="py-3" tabId="basic-tab-four">
-        <p>Not yet available</p> 
+        {TOC ? 
+        <ul>{TOC.map(i => (
+          <li className="text-ceci-gray-dark tracking-wide font-thin pl-5">{i}</li>
+        )
+
+        )}</ul>
+             : 
+        <p>Table of Contents not available</p>
+    }
 
         </TabPanel>
         <TabPanel className="py-3" tabId="basic-tab-five">
