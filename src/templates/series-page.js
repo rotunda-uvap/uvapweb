@@ -12,6 +12,7 @@ const SeriesTemplate = ({ data }) => {
     const books = data.allBooksJson
     const seriesinfo = data.markdownRemark
     const related_staff = data.markdownRemark.frontmatter.related_staff
+    const list_staff = related_staff.join("&")
     return (
     <div>
 
@@ -33,14 +34,69 @@ const SeriesTemplate = ({ data }) => {
             {seriesinfo.frontmatter.editors ? <div className="text-ceci-gray-mid leading-relaxed font-serif ml-4 cms" dangerouslySetInnerHTML={{ __html: seriesinfo.frontmatter.editors }}/> : <div/> }
             {seriesinfo.frontmatter.moreEditors ? <div className="text-ceci-gray-mid leading-relaxed font-serif pt-2 ml-4 cms" dangerouslySetInnerHTML={{ __html: seriesinfo.frontmatter.moreEditors }}/> : <div/> }
 
-<div>
-{related_staff && related_staff.map((staff, index) => (
-            <div className="pt-2 text-ceci-gray-mid leading-relaxed font-serif ml-4 cms" key={`staff${index}`}>UVA Editor: 
-            <Link to={'../../staff/' + staff.frontmatter.title.replace(" ", "-").toLowerCase()}> {staff.frontmatter.title} </Link>
-            
+{/* <div>
+  
+{related_staff && related_staff.length > 1 && related_staff.map((staff, index) => (
+
+<>
+<div className="pt-2 text-ceci-gray-mid leading-relaxed font-serif ml-4 cms">UVA Editors: 
+            <div>
+            <Link to={'../../staff/' + staff.frontmatter.title.replace(" ", "-").toLowerCase()} key={`staff${index}`} className="pr-4"> {staff.frontmatter.title}</Link>
             </div>
-        ))}
 </div>
+</>
+        ))}
+</div> */}
+
+
+
+<div className="pt-2 text-ceci-gray-mid leading-relaxed font-serif ml-4 cms">UVA Editor(s): 
+
+  {
+    related_staff &&  related_staff.map((staff, index) => (
+
+    
+     <Link to={'../../staff/' + staff.frontmatter.title.replace(" ", "-").toLowerCase()} key={`staff${index}`} className="pl-2"> 
+     { (index ? '& ' : '') + staff.frontmatter.title }
+     
+     </Link> )) 
+   
+    
+        
+  }
+</div>
+ {/*  {
+    related_staff && related_staff.length > 1 ? 
+    
+    <div>
+      <div className="pt-2 text-ceci-gray-mid leading-relaxed font-serif ml-4 cms">UVA Editors: 
+      {
+        related_staff.map((staff, index) => (
+
+          <>
+         <Link to={'../../staff/' + staff.frontmatter.title.replace(" ", "-").toLowerCase()} key={`staff${index}`} className="pr-4"> {staff.frontmatter.title.join("&")}</Link>
+          </>
+            )
+            )
+      }
+      </div>
+     
+</div> :
+    <div className="pt-2 text-ceci-gray-mid leading-relaxed font-serif ml-4 cms">UVA Editor: 
+      {
+      
+        related_staff.map((staff, index) => (
+
+          <>
+         <Link to={'../../staff/' + staff.frontmatter.title.replace(" ", "-").toLowerCase()} key={`staff${index}`} className="pr-4"> {staff.frontmatter.title}</Link>
+          </>
+            )
+         )
+      }
+      </div> 
+} */}
+  
+
 
                </section> 
                 
