@@ -12,7 +12,7 @@ const SeriesTemplate = ({ data }) => {
     const books = data.allBooksJson
     const seriesinfo = data.markdownRemark
     const related_staff = data.markdownRemark.frontmatter.related_staff
-    const list_staff = related_staff.join("&")
+  
     return (
     <div>
 
@@ -50,21 +50,23 @@ const SeriesTemplate = ({ data }) => {
 
 
 
-<div className="pt-2 text-ceci-gray-mid leading-relaxed font-serif ml-4 cms">UVA Editor(s): 
+
 
   {
-    related_staff &&  related_staff.map((staff, index) => (
+    related_staff && <div className="pt-2 text-ceci-gray-mid leading-relaxed font-serif ml-4 cms">UVA Editor(s): 
+    
+    { related_staff.map((staff, index) => (
 
     
-     <Link to={'../../staff/' + staff.frontmatter.title.replace(" ", "-").toLowerCase()} key={`staff${index}`} className="pl-2"> 
-     { (index ? '& ' : '') + staff.frontmatter.title }
+     <Link to={'../../staff/' + staff.frontmatter.title.replace(" ", "-").toLowerCase()} key={`staff${index}`}> 
+      { ' ' + (index ? ', ' : '') + staff.frontmatter.title }
      
      </Link> )) 
    
     
         
   }
-</div>
+</div>}
  {/*  {
     related_staff && related_staff.length > 1 ? 
     
