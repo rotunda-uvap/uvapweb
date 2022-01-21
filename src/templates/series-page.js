@@ -59,7 +59,7 @@ const SeriesTemplate = ({ data }) => {
 
     
      <Link to={'../../staff/' + staff.frontmatter.title.replace(" ", "-").toLowerCase()} key={`staff${index}`}> 
-      { ' ' + (index ? ', ' : '') + staff.frontmatter.title }
+      { ' ' + (index ? '& ' : '') + staff.frontmatter.title }
      
      </Link> )) 
    
