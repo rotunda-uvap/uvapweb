@@ -2,12 +2,12 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: Letters From Filadelfia
-    banner_author: Rodrigo Lazo
-    banner_subtitle: Winner of the Early American Literature Book Prize
-    banner_quote: A superb contribution
-    banner_attr: Susan Gillman, UC-Santa Cruz
-    banner_id: "5222"
+  - banner_title: Almost Hemingway
+    banner_author: Rex Bowman and Carlos Santos
+    banner_subtitle: The Adventures of Negley Farson, Foreign Correspondent
+    banner_id: "5722"
+    banner_quote: '"[A] fascinating and welcome biography"'
+    banner_attr: The Virginian Pilot
 related_book:
   - "5744"
   - "5617"
