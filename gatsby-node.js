@@ -64,6 +64,7 @@ exports.createSchemaCustomization = ({ actions }) => {
     createRedirect({ fromPath: '/blog', toPath: '/publicity', isPermanent: true, redirectInBrowser: true })
     createRedirect({ fromPath: '/robb', toPath: '/title/5679', isPermanent: true, redirectInBrowser: true })
     createRedirect({ fromPath: '/series/papers', toPath: '/books/#series', isPermanent: true, redirectInBrowser: true })
+    createRedirect({ fromPath: '/rotunda/purchase', toPath: '/rotunda-purchase', isPermanent: true, redirectInBrowser: true })
     
     
     const { createPage } = actions

@@ -67,37 +67,7 @@ const SeriesTemplate = ({ data }) => {
         
   }
 </div>}
- {/*  {
-    related_staff && related_staff.length > 1 ? 
-    
-    <div>
-      <div className="pt-2 text-ceci-gray-mid leading-relaxed font-serif ml-4 cms">UVA Editors: 
-      {
-        related_staff.map((staff, index) => (
 
-          <>
-         <Link to={'../../staff/' + staff.frontmatter.title.replace(" ", "-").toLowerCase()} key={`staff${index}`} className="pr-4"> {staff.frontmatter.title.join("&")}</Link>
-          </>
-            )
-            )
-      }
-      </div>
-     
-</div> :
-    <div className="pt-2 text-ceci-gray-mid leading-relaxed font-serif ml-4 cms">UVA Editor: 
-      {
-      
-        related_staff.map((staff, index) => (
-
-          <>
-         <Link to={'../../staff/' + staff.frontmatter.title.replace(" ", "-").toLowerCase()} key={`staff${index}`} className="pr-4"> {staff.frontmatter.title}</Link>
-          </>
-            )
-         )
-      }
-      </div> 
-} */}
-  
 
 
                </section> 
