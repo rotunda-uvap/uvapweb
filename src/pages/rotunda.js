@@ -290,7 +290,7 @@ export default function RotundaHome({ data }) {
       </div>
     </section>
 
-    <section className="text-gray-600 body-font">
+    <section className="text-gray-600 body-font" id="acc">
       <div className="container px-5 py-12 mx-auto">
         <div className="text-center mb-10">
         <SectionHeader text="American Century Collection"/>
