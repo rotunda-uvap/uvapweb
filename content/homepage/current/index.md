@@ -2,12 +2,12 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: Almost Hemingway
-    banner_author: Rex Bowman and Carlos Santos
-    banner_subtitle: The Adventures of Negley Farson, Foreign Correspondent
-    banner_id: "5722"
-    banner_quote: '"[A] fascinating and welcome biography"'
-    banner_attr: The Virginian Pilot
+  - banner_title: Haitian Revolutionary Fictions
+    banner_author: Marlene L. Daut, Grégory Pierrot, Marion C. Rohrleitner
+    banner_subtitle: An Anthology
+    banner_id: "5292"
+    banner_quote: '"A brilliant collection-readable, comprehensive, scholarly"'
+    banner_attr: Deborah Jenson, Duke University
 related_book:
   - "5744"
   - "5617"
