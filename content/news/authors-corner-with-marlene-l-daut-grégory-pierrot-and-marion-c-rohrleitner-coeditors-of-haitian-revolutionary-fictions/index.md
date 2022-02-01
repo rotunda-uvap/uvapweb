@@ -8,19 +8,19 @@ related_book:
   - "5292"
 date: 2022-02-01
 ---
-In celebration of the beginning of Black History Month, we are happy to bring you our conversation with Marlene L. Daut, Grégory Pierrot, and Marion C. Rohrleitner, coeditors of [HAITIAN REVOLUTIONARY FICTIONS: An Anthology.](https://www.upress.virginia.edu/title/5292)
+In celebration of the beginning of Black History Month, we are happy to bring you our conversation with Marlene L. Daut, Grégory Pierrot, and Marion C. Rohrleitner, coeditors of [HAITIAN REVOLUTIONARY FICTIONS: An Anthology.](https://www.upress.virginia.edu/title/5292) Use promo code **10FEB22** through the end of February for a 30% discount on the book.
 
 **\*\*\*\*\*\*\*\*\*\*\*\****
 
 **What inspired you to write this book?**
 
-<!--\[if gte mso 9]><xml>
+<!--\\[if gte mso 9]><xml>
  <o:OfficeDocumentSettings>
   <o:AllowPNG/>
  </o:OfficeDocumentSettings>
-</xml><!\[endif]-->
+</xml><!\\[endif]-->
 
-<!--\[if gte mso 9]><xml>
+<!--\\[if gte mso 9]><xml>
  <w:WordDocument>
   <w:View>Normal</w:View>
   <w:Zoom>0</w:Zoom>
@@ -59,9 +59,9 @@ In celebration of the beginning of Black History Month, we are happy to bring yo
    <m:intLim m:val="subSup"/>
    <m:naryLim m:val="undOvr"/>
   </m:mathPr></w:WordDocument>
-</xml><!\[endif]-->
+</xml><!\\[endif]-->
 
-<!--\[if gte mso 9]><xml>
+<!--\\[if gte mso 9]><xml>
  <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="false"
   DefSemiHidden="false" DefQFormat="false" DefPriority="99"
   LatentStyleCount="376">
@@ -640,9 +640,9 @@ In celebration of the beginning of Black History Month, we are happy to bring yo
   <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
    Name="Smart Link"/>
  </w:LatentStyles>
-</xml><!\[endif]-->
+</xml><!\\[endif]-->
 
-<!--\[if gte mso 10]>
+<!--\\[if gte mso 10]>
 <style>
  /* Style Definitions */
  table.MsoNormalTable
@@ -664,7 +664,7 @@ In celebration of the beginning of Black History Month, we are happy to bring yo
 	mso-bidi-font-family:Arial;
 	mso-bidi-theme-font:minor-bidi;}
 </style>
-<!\[endif]-->
+<!\\[endif]-->
 
 <!--StartFragment-->
 
@@ -674,13 +674,13 @@ In celebration of the beginning of Black History Month, we are happy to bring yo
 
 **What did you learn and what are you hoping readers will learn from your book?**
 
-<!--\[if gte mso 9]><xml>
+<!--\\[if gte mso 9]><xml>
  <o:OfficeDocumentSettings>
   <o:AllowPNG/>
  </o:OfficeDocumentSettings>
-</xml><!\[endif]-->
+</xml><!\\[endif]-->
 
-<!--\[if gte mso 9]><xml>
+<!--\\[if gte mso 9]><xml>
  <w:WordDocument>
   <w:View>Normal</w:View>
   <w:Zoom>0</w:Zoom>
@@ -719,9 +719,9 @@ In celebration of the beginning of Black History Month, we are happy to bring yo
    <m:intLim m:val="subSup"/>
    <m:naryLim m:val="undOvr"/>
   </m:mathPr></w:WordDocument>
-</xml><!\[endif]-->
+</xml><!\\[endif]-->
 
-<!--\[if gte mso 9]><xml>
+<!--\\[if gte mso 9]><xml>
  <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="false"
   DefSemiHidden="false" DefQFormat="false" DefPriority="99"
   LatentStyleCount="376">
@@ -1300,9 +1300,9 @@ In celebration of the beginning of Black History Month, we are happy to bring yo
   <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
    Name="Smart Link"/>
  </w:LatentStyles>
-</xml><!\[endif]-->
+</xml><!\\[endif]-->
 
-<!--\[if gte mso 10]>
+<!--\\[if gte mso 10]>
 <style>
  /* Style Definitions */
  table.MsoNormalTable
@@ -1324,17 +1324,13 @@ In celebration of the beginning of Black History Month, we are happy to bring yo
 	mso-bidi-font-family:Arial;
 	mso-bidi-theme-font:minor-bidi;}
 </style>
-<!\[endif]-->
+<!\\[endif]-->
 
 <!--StartFragment-->
 
 **MLD**: The Age of Revolutions was also an age of slavery, and the writings in this volume really underscore the efforts of fiction writers to characterize the Haitian Revolution as horribly violent— in service of preserving slavery— rather than righteously radical.
 
- 
-
 **MCR**: The insidious role creative writers can play in perpetuating anti-Haitian sentiment and promoting pro-slavery arguments via sentimental and melodramatic narratives; the way anxieties about miscegenation have shaped discourses about the Haitian Revolution; and the enormous relevance of these works for current debates about alleged violence in race-based social justice movements today
-
- 
 
 **GP:** I hope that in seeing the introduction and circulation of (generally racist) images and commonplaces across time and literatures, readers reflect on how the literary imagination helped shape the way white hostility to Black freedom expresses and excuses itself.  
 
@@ -1342,13 +1338,13 @@ In celebration of the beginning of Black History Month, we are happy to bring yo
 
 **What surprised you the most in the process of writing your book?**
 
-<!--\[if gte mso 9]><xml>
+<!--\\[if gte mso 9]><xml>
  <o:OfficeDocumentSettings>
   <o:AllowPNG/>
  </o:OfficeDocumentSettings>
-</xml><!\[endif]-->
+</xml><!\\[endif]-->
 
-<!--\[if gte mso 9]><xml>
+<!--\\[if gte mso 9]><xml>
  <w:WordDocument>
   <w:View>Normal</w:View>
   <w:Zoom>0</w:Zoom>
@@ -1387,9 +1383,9 @@ In celebration of the beginning of Black History Month, we are happy to bring yo
    <m:intLim m:val="subSup"/>
    <m:naryLim m:val="undOvr"/>
   </m:mathPr></w:WordDocument>
-</xml><!\[endif]-->
+</xml><!\\[endif]-->
 
-<!--\[if gte mso 9]><xml>
+<!--\\[if gte mso 9]><xml>
  <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="false"
   DefSemiHidden="false" DefQFormat="false" DefPriority="99"
   LatentStyleCount="376">
@@ -1968,9 +1964,9 @@ In celebration of the beginning of Black History Month, we are happy to bring yo
   <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
    Name="Smart Link"/>
  </w:LatentStyles>
-</xml><!\[endif]-->
+</xml><!\\[endif]-->
 
-<!--\[if gte mso 10]>
+<!--\\[if gte mso 10]>
 <style>
  /* Style Definitions */
  table.MsoNormalTable
@@ -1992,13 +1988,11 @@ In celebration of the beginning of Black History Month, we are happy to bring yo
 	mso-bidi-font-family:Arial;
 	mso-bidi-theme-font:minor-bidi;}
 </style>
-<!\[endif]-->
+<!\\[endif]-->
 
 <!--StartFragment-->
 
 **MCR:** The sheer number of vilifying narratives about the Haitian Revolution in German, and how popular and widespread such narratives were in German-speaking Europe throughout the 19th century. One particularly appalling example is the anonymous publication of an entirely fictional German "translation" of Jean-Jacques Dessalines' alleged autobiography, which poses as an authentic document and indulges in torture porn fantasies.
-
- 
 
 **GP:** Not a new surprise, but a continuing one: how once famous authors fall out of fashion and fame. It was a reminder that we routinely lose sense of the complexities of any given cultural moment. When it comes to the Haitian Revolution, I find the overlap of different forms of cultural erasure especially fascinating.   
 
@@ -2006,13 +2000,13 @@ In celebration of the beginning of Black History Month, we are happy to bring yo
 
 **What’s your favorite anecdote from your book?**
 
-<!--\[if gte mso 9]><xml>
+<!--\\[if gte mso 9]><xml>
  <o:OfficeDocumentSettings>
   <o:AllowPNG/>
  </o:OfficeDocumentSettings>
-</xml><!\[endif]-->
+</xml><!\\[endif]-->
 
-<!--\[if gte mso 9]><xml>
+<!--\\[if gte mso 9]><xml>
  <w:WordDocument>
   <w:View>Normal</w:View>
   <w:Zoom>0</w:Zoom>
@@ -2051,9 +2045,9 @@ In celebration of the beginning of Black History Month, we are happy to bring yo
    <m:intLim m:val="subSup"/>
    <m:naryLim m:val="undOvr"/>
   </m:mathPr></w:WordDocument>
-</xml><!\[endif]-->
+</xml><!\\[endif]-->
 
-<!--\[if gte mso 9]><xml>
+<!--\\[if gte mso 9]><xml>
  <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="false"
   DefSemiHidden="false" DefQFormat="false" DefPriority="99"
   LatentStyleCount="376">
@@ -2632,9 +2626,9 @@ In celebration of the beginning of Black History Month, we are happy to bring yo
   <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
    Name="Smart Link"/>
  </w:LatentStyles>
-</xml><!\[endif]-->
+</xml><!\\[endif]-->
 
-<!--\[if gte mso 10]>
+<!--\\[if gte mso 10]>
 <style>
  /* Style Definitions */
  table.MsoNormalTable
@@ -2656,17 +2650,13 @@ In celebration of the beginning of Black History Month, we are happy to bring yo
 	mso-bidi-font-family:Arial;
 	mso-bidi-theme-font:minor-bidi;}
 </style>
-<!\[endif]-->
+<!\\[endif]-->
 
 <!--StartFragment-->
 
 **MLD:** Henri Chauvet’s 1894 *The Kiskeyans: The Kacik’s Daughter*. I truly enjoyed reading the Créole and indigenous words sprinkled into the dialogue, and I found the comparisons made between the resistance of the first Haitians to the Spanish in the 16th century and that of Toussaint Louverture and Dessalines against the French to be resonant and imaginative.
 
- 
-
 **MCR**: Karl Spindler's 1830 novella *The Haitian Groom: A Humorous Tale,* in which two young German women first abhor, then compete for, and later return, reformed, to their disgust for the "Haitian groom" their uncle and cousin have chosen in order to punish them for their earlier reluctance to marry German men; the intertwining of sexism and racism, and the marketing of this story as a "humorous tale" are as fascinating as they are deeply disturbing.
-
- 
 
 **GP:** Finding out that the fairly common French expression “oncle d’Amérique”—a  person that miraculously gives you money when you need it most—came from a play evoking a fortune made not the United States, as I’d always thought, but Saint-Domingue! 
 
@@ -2674,13 +2664,13 @@ In celebration of the beginning of Black History Month, we are happy to bring yo
 
 **What’s next?**
 
-<!--\[if gte mso 9]><xml>
+<!--\\[if gte mso 9]><xml>
  <o:OfficeDocumentSettings>
   <o:AllowPNG/>
  </o:OfficeDocumentSettings>
-</xml><!\[endif]-->
+</xml><!\\[endif]-->
 
-<!--\[if gte mso 9]><xml>
+<!--\\[if gte mso 9]><xml>
  <w:WordDocument>
   <w:View>Normal</w:View>
   <w:Zoom>0</w:Zoom>
@@ -2719,9 +2709,9 @@ In celebration of the beginning of Black History Month, we are happy to bring yo
    <m:intLim m:val="subSup"/>
    <m:naryLim m:val="undOvr"/>
   </m:mathPr></w:WordDocument>
-</xml><!\[endif]-->
+</xml><!\\[endif]-->
 
-<!--\[if gte mso 9]><xml>
+<!--\\[if gte mso 9]><xml>
  <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="false"
   DefSemiHidden="false" DefQFormat="false" DefPriority="99"
   LatentStyleCount="376">
@@ -3300,9 +3290,9 @@ In celebration of the beginning of Black History Month, we are happy to bring yo
   <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
    Name="Smart Link"/>
  </w:LatentStyles>
-</xml><!\[endif]-->
+</xml><!\\[endif]-->
 
-<!--\[if gte mso 10]>
+<!--\\[if gte mso 10]>
 <style>
  /* Style Definitions */
  table.MsoNormalTable
@@ -3324,17 +3314,13 @@ In celebration of the beginning of Black History Month, we are happy to bring yo
 	mso-bidi-font-family:Arial;
 	mso-bidi-theme-font:minor-bidi;}
 </style>
-<!\[endif]-->
+<!\\[endif]-->
 
 <!--StartFragment-->
 
 **MLD:** I am working on two projects concurrently: an intellectual history of Haiti to be published with the University of North Carolina Press titled *Awakening the Ashes*; and a trade book about the first and last king of Haiti, Henry Christophe, under contract with Knopf/Pantheon.
 
- 
-
 **MCR**: I am finalizing a monograph entitled *Transnational Latinidades*, which explores the politics and poetics of translating, producing, marketing, and studying Latinx literatures in the European Union. My next project looks at the role of performance on the US/Mexico border as a critique of current immigration legislation and as a counterpoint to amnesia about US-foreign policy in Latin America. (58 words)
-
- 
 
 **GP:** I’m currently in the process of writing the introduction to the third volume of *Échos de Saint-Domingue*, a collection of French-language short stories about Saint-Domingue at L’Harmattan, in collaboration with Roger Little and Barbara Cooper.  
 
