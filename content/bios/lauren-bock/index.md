@@ -7,6 +7,6 @@ job_title: Acquisitions Coordinator
 department:
   - ACQ
 email: lab4yh@virginia.edu
-phone: 434-924-4725
+phone: (434) 924-4725
 ---
 Coming soon
