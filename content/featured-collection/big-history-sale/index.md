@@ -1,8 +1,8 @@
 ---
 templateKey: featured-collection
-title: BIG HISTORY SALE
-description: Use code 10HISTORY for 50% off selected books through Jan 2022!
+title: Black History Month
+description: Use code 10FEB22 for 30% off selected books through Feb 2022!
 related_collection:
-  - Big History Sale
+  - Black History Month
 ---
-Use code 10HISTORY for 50% off selected books through Jan 2022!
+Use code 10FEB22 for 30% off selected books through Feb 2022!
