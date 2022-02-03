@@ -67,7 +67,7 @@ const Home = ({ data }) => {
        <section className="py-4 border-b-2 border-gray-100">
          <SectionHeader text="Featured Collection"/>
 
-       {/* <FeatColl/> */}
+       <FeatColl/>
        </section>
 
 
