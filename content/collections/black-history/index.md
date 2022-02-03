@@ -1,6 +1,6 @@
 ---
 templateKey: collection
-title: Black History Month
+title: Black History
 related_book:
   - "5780"
   - "5292"
