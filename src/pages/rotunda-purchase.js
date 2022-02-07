@@ -24,16 +24,16 @@ export default function RotundaPurchasePage() {
       </p>
       <p className="font-light">
         View a{" "}
-        <Link to={"../rotunda-customer-page"}>list of Rotunda customers</Link>
+        <a href={"../rotunda-customer-page"}>list of Rotunda customers</a>
       </p>
       <p className="font-light">
         Rotunda publications are available for purchase by libraries, schools,
         and individuals. To order, send the{" "}
-        <Link to={"../rotunda_license.pdf"}>
+        <a href={"../../rotunda_license.doc"}>
           signed Rotunda license agreement
-        </Link>{" "}
+        </a>{" "}
         and completed{" "}
-        <Link to={"../rotunda_registration.pdf"}>registration form</Link> to
+        <a href={"../../rotunda_registration.doc"}>registration form</a> to
         Jason Coleman, University of Virginia Press, Rotunda, P.O. Box 400318,
         Charlottesville, VA 22904-4318.
       </p>
