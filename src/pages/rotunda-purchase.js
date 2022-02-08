@@ -212,7 +212,7 @@ export default function RotundaPurchasePage() {
 <tr>
               <th className="title text-ceci-gray-mid tracking-wide font-thin">
                 &emsp;
-                <a href="https://www.upress.virginia.edu/title/JNML">James Monroe Papers</a>
+                <a href="https://www.upress.virginia.edu/title/MONR">James Monroe Papers</a>
               </th>
               <td className="money text-ceci-gray-dark font-thin">$1,812</td>
               <td className="money text-ceci-gray-dark font-thin">$1,359</td>
