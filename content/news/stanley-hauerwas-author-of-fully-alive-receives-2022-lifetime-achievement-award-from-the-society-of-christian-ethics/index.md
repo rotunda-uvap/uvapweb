@@ -10,15 +10,15 @@ date: 2022-02-08
 ---
 As [Duke Divinity School ](https://divinity.duke.edu/news/stanley-hauerwas-given-lifetime-achievement-award)reports, [The Society of Christian Ethics](https://www.scethics.org/) recently announced that Stanley Hauerwas, Gilbert T. Rowe Professor Emeritus of Divinity and Law and author most recently of [FULLY ALIVE: The Apocalyptic Humanism of Karl Barth,](https://www.upress.virginia.edu/title/5773) has been awarded the 2022 Lifetime Achievement Award. 
 
-With permission, we have included his acceptance speech below. 
+With permission, we have included Professor Hauerwas's acceptance speech below. 
 
-<!--\[if gte mso 9]><xml>
+<!--\\[if gte mso 9]><xml>
  <o:OfficeDocumentSettings>
   <o:AllowPNG/>
  </o:OfficeDocumentSettings>
-</xml><!\[endif]-->
+</xml><!\\[endif]-->
 
-<!--\[if gte mso 9]><xml>
+<!--\\[if gte mso 9]><xml>
  <w:WordDocument>
   <w:View>Normal</w:View>
   <w:Zoom>0</w:Zoom>
@@ -57,9 +57,9 @@ With permission, we have included his acceptance speech below.
    <m:intLim m:val="subSup"/>
    <m:naryLim m:val="undOvr"/>
   </m:mathPr></w:WordDocument>
-</xml><!\[endif]-->
+</xml><!\\[endif]-->
 
-<!--\[if gte mso 9]><xml>
+<!--\\[if gte mso 9]><xml>
  <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="false"
   DefSemiHidden="false" DefQFormat="false" DefPriority="99"
   LatentStyleCount="376">
@@ -638,9 +638,9 @@ With permission, we have included his acceptance speech below.
   <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
    Name="Smart Link"/>
  </w:LatentStyles>
-</xml><!\[endif]-->
+</xml><!\\[endif]-->
 
-<!--\[if gte mso 10]>
+<!--\\[if gte mso 10]>
 <style>
  /* Style Definitions */
  table.MsoNormalTable
@@ -666,7 +666,7 @@ With permission, we have included his acceptance speech below.
 	mso-bidi-font-family:"Times New Roman";
 	mso-bidi-theme-font:minor-bidi;}
 </style>
-<!\[endif]-->
+<!\\[endif]-->
 
 <!--StartFragment-->
 
@@ -695,10 +695,6 @@ I recently received a lovely letter from a graduate of Duke Divinity School repo
 My correspondent continues by suggesting that, like Emily Dickinson, I think on a slant.  She then asks how can she learn to think in a similar fashion?  Are there habits or texts in order to learn not just what I do, but how I do it?  I would love to know how to answer her but I am not sure how to say what I have done or how I did it.  My best advice is to ask those who have studied with me.  They often know the what and how to do what I have done better than I do.
 
 That I am often unable to say how I came to say what I have said this way rather than that way I take not to be a bad thing.  After all it gives me and all of us that make up the SCE something to do.  And what could be a better gift as we approach death than having good but never finished work to do.  So engaged we might even become at this late date just a bit better human beings.  At the very least I know the friends that have claimed me through the SCE have made me more than I otherwise would be.  Which is why this award means a great deal—thank you for such a recognition.       
-
-                                        
-
-                   
 
 <!--EndFragment-->
 
