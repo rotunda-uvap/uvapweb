@@ -1,5 +1,4 @@
 import React from "react"
-import NewsletterMain from "../components/NewsletterMain"
 import Layout from "../components/layout"
 import "../utils/global.css"
 import SeO from "../components/SeoComponent"
