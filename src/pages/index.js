@@ -58,17 +58,18 @@ const Home = ({ data }) => {
   </section> */}
   
   <section className="py-4 border-b-2 border-gray-100">
+         <SectionHeader text="Featured Collection"/>
+
+       <FeatColl/>
+       </section>
+  <section className="py-4 border-b-2 border-gray-100">
     <SectionHeader text="Open Access"/>
           <div className="flex flex-col items-center"><a href="https://open.upress.virginia.edu/">
           <StaticImage src="../images/vo.png" width={500} alt="virginia open"/></a>
           <p className="py-4 dropCap text-md text-gray-800">V/O: Virginia Open, a collection of University of Virginia Press titles made freely available. On this imprint, you will find both open-access monographs from The University of Virginia Press, readable in your browser or via download, and links to open-access websites published under our Rotunda imprint or in collaboration with partner institutions.</p>
           </div>
        </section>
-       <section className="py-4 border-b-2 border-gray-100">
-         <SectionHeader text="Featured Collection"/>
-
-       <FeatColl/>
-       </section>
+       
 
 
        <section className="py-4 border-b-2 border-gray-100">
