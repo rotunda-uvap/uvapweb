@@ -44,8 +44,8 @@ const BookHorizontalTabs = ({summary, reviews, bio, TOC, add}) => {
         </TabPanel>
         <TabPanel className="py-3" tabId="basic-tab-four">
         {TOC ? 
-        <ul>{TOC.map(i => (
-          <li className="cms text-ceci-gray-dark font-serif text-lg pl-5">{i}</li>
+        <ul className="hanging">{TOC.map(i => (
+          <li className="cms text-ceci-gray-dark font-serif text-lg pl-5 hanging">{i}</li>
         )
 
         )}</ul>
