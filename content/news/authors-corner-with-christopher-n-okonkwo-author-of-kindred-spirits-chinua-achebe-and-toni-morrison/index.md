@@ -1,8 +1,7 @@
 ---
 templateKey: news
 type: author-corner
-title: "Author's Corner with Christopher N. Okonkwo, Author of KINDRED SPIRITS:
-  Chinua Achebe and Toni Morrison"
+title: Author's Corner with Christopher N. Okonkwo, Author of KINDRED SPIRITS
 image: okonkwo-author-photo.jpg
 related_book:
   - "5472"
