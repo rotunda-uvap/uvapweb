@@ -2,12 +2,12 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: Haitian Revolutionary Fictions
-    banner_author: Marlene L. Daut, Grégory Pierrot, Marion C. Rohrleitner
-    banner_subtitle: An Anthology
-    banner_id: "5292"
-    banner_quote: '"A brilliant collection-readable, comprehensive, scholarly"'
-    banner_attr: Deborah Jenson, Duke University
+  - banner_title: The False Cause
+    banner_author: Adam H. Domby
+    banner_subtitle: Now In Paperback
+    banner_id: "5354"
+    banner_quote: '"Fascinating, original, and highly readable"'
+    banner_attr: David Silkenat, University of Edinburgh
 related_book:
   - "5744"
   - "5617"
