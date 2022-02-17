@@ -4,6 +4,7 @@ type: author-corner
 title: Author's Corner with Kenneth S. Abraham and G. Edward White, Authors of
   Tort Law and the Construction of Change
 description: ""
+image: abraham-and-white-author-photo.jpg
 related_book:
   - "5726"
 date: 2022-02-17
