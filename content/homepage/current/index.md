@@ -19,10 +19,10 @@ related_book:
 related_collection:
   - Homepage Featured
 featured_books:
+  - "5795"
+  - "5773"
+  - "5726"
+  - "5472"
   - "5722"
-  - "5744"
-  - "5617"
-  - "5679"
-  - "5493"
-  - "5410"
+  - "5292"
 ---
