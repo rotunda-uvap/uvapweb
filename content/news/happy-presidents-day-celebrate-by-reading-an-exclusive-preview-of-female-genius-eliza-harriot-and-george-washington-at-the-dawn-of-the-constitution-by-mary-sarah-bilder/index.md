@@ -4,7 +4,7 @@ type: news
 title: "Happy Presidents' Day! Celebrate by Reading an Exclusive Preview of
   FEMALE GENIUS: Eliza Harriot and George Washington at the Dawn of the
   Constitution by Mary Sarah Bilder"
-image: washingtonfamily.jpg
+image: painting_washington_family.jpg
 related_book:
   - "5756"
 date: 2022-02-21
