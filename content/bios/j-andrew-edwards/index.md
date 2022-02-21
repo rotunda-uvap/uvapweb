@@ -6,7 +6,7 @@ name_slug: andy-edwards
 job_title: Assistant Project Editor
 department:
   - EDP
-email: qsh6uj@virginia.edu
+email: jaedwards@virginia.edu
 phone: (434) 924-3468
 ---
 Coming soon
