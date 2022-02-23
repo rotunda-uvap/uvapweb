@@ -40,7 +40,7 @@ The University of Virginia Press welcomes applications from those from underrepr
 
 *The University of Virginia, including the UVA Health System which represents the UVA Medical Center, Schools of Medicine and Nursing, UVA Physician’s Group and the Claude Moore Health Sciences Library,* *are fundamentally committed to the diversity of our faculty and staff.  We believe diversity is excellence expressing itself through every person's perspectives and lived experiences.  We are equal opportunity and affirmative action employers. All qualified applicants will receive consideration for employment without regard to age, color, disability, gender identity or expression, marital status, national or ethnic origin, political affiliation, race, religion, sex (including pregnancy), sexual orientation, veteran status, and family medical or genetic information.*
 
-##### UVaP Internship Program
+##### UVAP Internship Program
 
 The University of Virginia Press seeks volunteer interns on an ongoing basis. These unpaid internships are a wonderful chance to gain valuable job experience and an understanding of the field of scholarly publishing. Past interns have gone on to successful careers in both scholarly and trade publishing. Opportunities are available in Marketing and Publicity. Duties vary by department.
 
