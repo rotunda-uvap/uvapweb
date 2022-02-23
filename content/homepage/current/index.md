@@ -2,12 +2,12 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: The False Cause
-    banner_author: Adam H. Domby
-    banner_subtitle: Now In Paperback
-    banner_id: "5354"
-    banner_quote: '"Fascinating, original, and highly readable"'
-    banner_attr: David Silkenat, University of Edinburgh
+  - banner_title: Lifting Every Voice
+    banner_author: William B. Robertson
+    banner_subtitle: My Journey from Segregated Roanoke to the Corridors of Power
+    banner_id: "5780"
+    banner_quote: '"An inspiring, exemplary account of a life well lived."'
+    banner_attr: Kirkus, starred review
 related_book:
   - "5744"
   - "5617"
