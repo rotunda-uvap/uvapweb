@@ -10,7 +10,9 @@ import BoardMember from "../components/BoardMember"
 
 
 export default function AboutPage({ data }) {
-    const pagedata = data.markdownRemark
+    const pagedata = data.ab
+    const code = data.cc
+    const landuse = data.lu
  return (
     
         <Layout>
@@ -136,6 +138,15 @@ export default function AboutPage({ data }) {
     </div>
   </div>
 </section>
+
+<section>
+  <SectionHeader text={"Code of Conduct"}/>
+  <div className="lg:w-3/3 mx-auto leading-relaxed text-base dropCap cms" dangerouslySetInnerHTML={{__html: code.html}}/>
+</section>
+<section>
+  <SectionHeader text={"Land-use Acknowledgement"}/>
+<div className="lg:w-3/3 mx-auto leading-relaxed text-base dropCap cms" dangerouslySetInnerHTML={{__html: landuse.html}}/>
+</section>
             <section className="py-5 text-gray-700 border-b-2 border-gray-100" id="board">
   <SectionHeader text={"Current Board Members"}/>
               <div>
@@ -174,7 +185,21 @@ export default function AboutPage({ data }) {
 export const query = graphql`
   query {
    
-      markdownRemark(frontmatter: {type: {eq: "page"}, title: {eq: "About"}}) {
+      ab: markdownRemark(frontmatter: {type: {eq: "page"}, title: {eq: "About"}}) {
+        html
+        frontmatter{
+          title
+        }
+      }
+
+      cc: markdownRemark(frontmatter: {templateKey: {eq: "page"}, title: {eq: "Code of Conduct"}}) {
+        html
+        frontmatter{
+          title
+        }
+      }
+
+      lu: markdownRemark(frontmatter: {templateKey: {eq: "page"}, title: {eq: "Land-use acknowledgment"}}) {
         html
         frontmatter{
           title
