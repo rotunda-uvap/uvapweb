@@ -10,15 +10,9 @@ import BoardMember from "../components/BoardMember"
 
 
 export default function AboutPage({ data }) {
-<<<<<<< Updated upstream
     const pagedata = data.ab
     const code = data.cc
     const landuse = data.lu
-=======
-    const pagedata = data.ab.markdownRemark
-    const code = data.cc
-    const landuse = data.lu.markdownRemark
->>>>>>> Stashed changes
  return (
     
         <Layout>
@@ -198,22 +192,14 @@ export const query = graphql`
         }
       }
 
-<<<<<<< Updated upstream
       cc: markdownRemark(frontmatter: {templateKey: {eq: "page"}, title: {eq: "Code of Conduct"}}) {
-=======
-      cc: markdownRemark(frontmatter: {type: {eq: "page"}, title: {eq: "Code of Conduct"}}) {
->>>>>>> Stashed changes
         html
         frontmatter{
           title
         }
       }
 
-<<<<<<< Updated upstream
       lu: markdownRemark(frontmatter: {templateKey: {eq: "page"}, title: {eq: "Land-use acknowledgment"}}) {
-=======
-      lu: markdownRemark(frontmatter: {type: {eq: "page"}, title: {eq: "Land-use acknowledgement"}}) {
->>>>>>> Stashed changes
         html
         frontmatter{
           title
