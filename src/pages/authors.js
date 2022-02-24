@@ -128,9 +128,9 @@ export default function AuthorsPage({ data }) {
           <div className="p-2 sm:w-1/2 w-full">
           <FileDownloadButton name="Marketing FAQ and Author Tips" file="UVAP_Marketing_FAQ_Tips.docx"/></div>
           <div className="p-2 sm:w-1/2 w-full">
-          <FileDownloadButton name="Events Guide for Authors" file="UVA_Press_Events_Guide_for_Authors.docx"/></div>
+          <FileDownloadButton name="Events Guide for Authors" file="UVA_Press_Events_Guide_2022.pdf"/></div>
           <div className="p-2 sm:w-1/2 w-full">
-          <FileDownloadButton name="Social Media Guide for Authors" file="UVA_Press_Social_Media_Guide.docx"/></div>
+          <FileDownloadButton name="Social Media Guide for Authors" file="UVA_Press_Social_Media_Guide_2022.pdf"/></div>
           </div>
 </div>
 
