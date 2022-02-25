@@ -248,26 +248,29 @@ const bookPage = ({ data }) => {
         )} */}
 
 {news && (
-        <section className="py-3 ml-6 inline-flex items-center">
+        <section className="py-3 flex-col ml-6">
           <span className="text-xs uppercase pr-5 text-ceci-gray-dark tracking-wider">
             Related News:
           </span>
-
-          <article className="flex flex-wrap items-center p-5  ">
+          {news.edges.map (edge => (
+             <article className="flex flex-wrap items-center p-5  ">
           
 
             <div className="w-4/5 ml-5">
               <h3
                 className="text-lg font-thin tracking-wide text-ceci-gray-dark text-left"
-                key={news.frontmatter.title}
+                key={edge.node.frontmatter.id}
               >
-                <Link to={`../../${news.frontmatter.type}${news.fields.slug}`}>
-                  {news.frontmatter.title}
+                <Link to={`../../${edge.node.frontmatter.type}${edge.node.fields.slug}`}>
+                  {edge.node.frontmatter.title}
                 </Link>
               </h3>
             </div>
           
           </article>
+          ))}
+
+         
         </section>
       )}
 
@@ -350,23 +353,26 @@ export const query = graphql`
         attached_book
       }
     }
-    newsMD: markdownRemark(
-      frontmatter: {
-        templateKey: { eq: "news" }
-        related_book: { elemMatch: { jsonId: { eq: $bid } } }
-      }
-    ) {
-      id
-      frontmatter {
-        title
-        related_book {
-          jsonId
+    newsMD: 
+    allMarkdownRemark(filter: {frontmatter: {templateKey: {eq: "news"}, related_book: { elemMatch: { jsonId: { eq: $bid } } }}}) {
+      edges {
+        node {
+          id
+          frontmatter {
+            title
+            related_book {
+              Title
+              jsonId
+            }
+            type
+          }
+          fields {
+            slug
+          }
         }
-        type
-      }
-      fields {
-        slug
       }
     }
+
+  
   }
 `
