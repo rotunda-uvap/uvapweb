@@ -9,7 +9,7 @@ export default function FeatTrio() {
     <StaticQuery
       query={graphql`
         query  {
-            news:  allMarkdownRemark(limit:1, filter: {frontmatter: {templateKey: {eq: "news"}, type: {eq: "news"}}},sort: {fields: frontmatter___date, order: DESC}) {
+            news:  allMarkdownRemark(limit:1, filter: {frontmatter: { type: {eq: "news"}}},sort: {fields: frontmatter___date, order: DESC}) {
                 edges {
                   node {
                     id
@@ -44,7 +44,7 @@ export default function FeatTrio() {
                   }
                 }
               } 
-              ac:  allMarkdownRemark(limit:1, filter: {frontmatter: {templateKey: {eq: "news"}, type: {eq: "author-corner"}}},sort: {fields: frontmatter___date, order: DESC}) {
+              ac:  allMarkdownRemark(limit:1, filter: {frontmatter: {type: {eq: "author-corner"}}},sort: {fields: frontmatter___date, order: DESC}) {
                 edges {
                   node {
                     id
