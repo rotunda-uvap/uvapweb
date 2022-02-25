@@ -93,9 +93,9 @@ export const query = graphql`
       siteUrl
     }
   }
-      markdownRemark(frontmatter: {type: {eq: "author-corner"}},id: { eq: $id }) {
+      markdownRemark(id: { eq: $id }) {
 
-      id
+        id
         html
         frontmatter {
             title

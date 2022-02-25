@@ -8,7 +8,7 @@ import SeO from "../components/SeoComponent"
 import ShareButtons from "../components/ShareButtons"
 
 const bookPage = ({ data }) => {
-  const book = data.booksJson
+  const book = data.books
   // const imageData = getImage(data.file)
   const isbn = book.Bindings[0].ISBN
   const GoogleB = "https://books.google.com/books?vid=" + isbn
@@ -291,7 +291,7 @@ export default bookPage
 
 export const query = graphql`
   query ($id: String!, $imageid: String, $bid: String) {
-    booksJson(id: { eq: $id }) {
+    books: booksJson(id: { eq: $id }) {
       id
       BookID
       Title

@@ -7,6 +7,6 @@ job_title: Assistant Project Editor
 department:
   - EDP
 email: jaedwards@virginia.edu
-phone: (434) 924-3468
+phone: (434) 924-1373
 ---
 Coming soon

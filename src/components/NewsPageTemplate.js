@@ -24,6 +24,7 @@ import Content from "../components/Content";
       <div className="flex flex-col md:flex-row leading-relaxed font-serif ">
       {related_list && 
                 <>
+                
                  <div className="order-last px-5 pb-7 flex md:flex-col flex-row items-center ">
                 <h6 className="hidden md:block uppercase py-2 font-thin tracking-widest font-sans">Related</h6>
                 {related_list.map(book => (

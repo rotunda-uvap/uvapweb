@@ -95,10 +95,10 @@ export const query = graphql`
       siteUrl
     }
   }
-      markdownRemark(frontmatter: {templateKey: {eq: "news"}},id: { eq: $id }) {
+      markdownRemark(id: { eq: $id }) {
 
       id
-        html
+      html
         frontmatter {
             title
             type
@@ -118,7 +118,7 @@ export const query = graphql`
             }
           
           }
-        fields {
+      fields {
           slug
         }
     }

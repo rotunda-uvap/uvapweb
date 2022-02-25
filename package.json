@@ -28,7 +28,7 @@
     "algoliasearch": "^4.11.0",
     "autoprefixer": "^10.4.0",
     "babel-plugin-styled-components": "^2.0.2",
-    "gatsby": "^4.3.0",
+    "gatsby": "^4.7.0",
     "gatsby-cli": "^4.3.0",
     "gatsby-legacy-polyfills": "^2.3.0",
     "gatsby-plugin-algolia": "^0.24.0",

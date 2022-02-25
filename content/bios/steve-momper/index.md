@@ -2,6 +2,7 @@
 templateKey: bio
 title: Steve Momper
 staff_name: Steve Momper
+profile_photo: s-momper.jpg
 name_slug: steve-momper
 job_title: Director, Darden Business Publishing
 department:
