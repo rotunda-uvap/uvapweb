@@ -6,20 +6,20 @@ related_book:
   - "5344"
 date: 2022-02-28
 ---
-Today, we are happy to bring you our conversation with Jill Desimini, [author of CYCLICAL CITY: Five Stories of Urban Transformation,](https://www.upress.virginia.edu/title/5344) out this month.
+Today, we are happy to bring you our conversation with Jill Desimini, author of [CYCLICAL CITY: Five Stories of Urban Transformation,](https://www.upress.virginia.edu/title/5344) out this month.
 
 **\*\*\*\*\*\*\*\*\*\*\*\****
 
 **What inspired you to write this book?**
 
-<!--\[if gte mso 9]><xml>
+<!--\\[if gte mso 9]><xml>
  <o:OfficeDocumentSettings>
   <o:RelyOnVML/>
   <o:AllowPNG/>
  </o:OfficeDocumentSettings>
-</xml><!\[endif]-->
+</xml><!\\[endif]-->
 
-<!--\[if gte mso 9]><xml>
+<!--\\[if gte mso 9]><xml>
  <w:WordDocument>
   <w:View>Normal</w:View>
   <w:Zoom>0</w:Zoom>
@@ -59,9 +59,9 @@ Today, we are happy to bring you our conversation with Jill Desimini, [author o
    <m:intLim m:val="subSup"/>
    <m:naryLim m:val="undOvr"/>
   </m:mathPr></w:WordDocument>
-</xml><!\[endif]-->
+</xml><!\\[endif]-->
 
-<!--\[if gte mso 9]><xml>
+<!--\\[if gte mso 9]><xml>
  <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="false"
   DefSemiHidden="false" DefQFormat="false" DefPriority="99"
   LatentStyleCount="376">
@@ -640,9 +640,9 @@ Today, we are happy to bring you our conversation with Jill Desimini, [author o
   <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
    Name="Smart Link"/>
  </w:LatentStyles>
-</xml><!\[endif]-->
+</xml><!\\[endif]-->
 
-<!--\[if gte mso 10]>
+<!--\\[if gte mso 10]>
 <style>
  /* Style Definitions */
  table.MsoNormalTable
@@ -665,13 +665,11 @@ Today, we are happy to bring you our conversation with Jill Desimini, [author o
 	mso-bidi-theme-font:minor-bidi;
 	mso-fareast-language:ZH-CN;}
 </style>
-<!\[endif]-->
+<!\\[endif]-->
 
 <!--StartFragment-->
 
 As a kid growing up in Portland, Oregon, I used to walk in a place called Forest Park, a huge park that pushes into the center of the city. I loved that experience and remembered it years later when I began to visit cities where industry had departed, and wild urban woodlands sprang up on old factory landscapes. There was an idea that these landscapes heralded economic failure, but you could feel ecological potential. I guess you could say that out of those initial visceral appreciations came years of work addressing the systemic failures linked to urban abandonment, to both understand the political and economic ill will and to see these places as part of other, more positive stories.
-
- 
 
 We tend to categorize places as either experiencing economic growth or economic decline—in the case of cities as growing or shrinking—but all cities grow and shrink simultaneously.  The situation is constantly changing with time. I wanted to understand this dynamism and in so doing, question the idea of linear march of progress. Through this questioning, I found incredible social and ecological value in what has been left fallow. It is in this fallow landscape that the idea of cycles—or the cyclical city—emerges.
 
@@ -679,14 +677,14 @@ We tend to categorize places as either experiencing economic growth or economic 
 
 **What did you learn and what are you hoping readers will learn from your book?**
 
-<!--\[if gte mso 9]><xml>
+<!--\\[if gte mso 9]><xml>
  <o:OfficeDocumentSettings>
   <o:RelyOnVML/>
   <o:AllowPNG/>
  </o:OfficeDocumentSettings>
-</xml><!\[endif]-->
+</xml><!\\[endif]-->
 
-<!--\[if gte mso 9]><xml>
+<!--\\[if gte mso 9]><xml>
  <w:WordDocument>
   <w:View>Normal</w:View>
   <w:Zoom>0</w:Zoom>
@@ -726,9 +724,9 @@ We tend to categorize places as either experiencing economic growth or economic 
    <m:intLim m:val="subSup"/>
    <m:naryLim m:val="undOvr"/>
   </m:mathPr></w:WordDocument>
-</xml><!\[endif]-->
+</xml><!\\[endif]-->
 
-<!--\[if gte mso 9]><xml>
+<!--\\[if gte mso 9]><xml>
  <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="false"
   DefSemiHidden="false" DefQFormat="false" DefPriority="99"
   LatentStyleCount="376">
@@ -1307,9 +1305,9 @@ We tend to categorize places as either experiencing economic growth or economic 
   <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
    Name="Smart Link"/>
  </w:LatentStyles>
-</xml><!\[endif]-->
+</xml><!\\[endif]-->
 
-<!--\[if gte mso 10]>
+<!--\\[if gte mso 10]>
 <style>
  /* Style Definitions */
  table.MsoNormalTable
@@ -1332,7 +1330,7 @@ We tend to categorize places as either experiencing economic growth or economic 
 	mso-bidi-theme-font:minor-bidi;
 	mso-fareast-language:ZH-CN;}
 </style>
-<!\[endif]-->
+<!\\[endif]-->
 
 <!--StartFragment-->
 
@@ -1342,14 +1340,14 @@ I learned a lot about how long and intricate histories define the present condit
 
 **What surprised you the most in the process of writing your book?**
 
-<!--\[if gte mso 9]><xml>
+<!--\\[if gte mso 9]><xml>
  <o:OfficeDocumentSettings>
   <o:RelyOnVML/>
   <o:AllowPNG/>
  </o:OfficeDocumentSettings>
-</xml><!\[endif]-->
+</xml><!\\[endif]-->
 
-<!--\[if gte mso 9]><xml>
+<!--\\[if gte mso 9]><xml>
  <w:WordDocument>
   <w:View>Normal</w:View>
   <w:Zoom>0</w:Zoom>
@@ -1389,9 +1387,9 @@ I learned a lot about how long and intricate histories define the present condit
    <m:intLim m:val="subSup"/>
    <m:naryLim m:val="undOvr"/>
   </m:mathPr></w:WordDocument>
-</xml><!\[endif]-->
+</xml><!\\[endif]-->
 
-<!--\[if gte mso 9]><xml>
+<!--\\[if gte mso 9]><xml>
  <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="false"
   DefSemiHidden="false" DefQFormat="false" DefPriority="99"
   LatentStyleCount="376">
@@ -1970,9 +1968,9 @@ I learned a lot about how long and intricate histories define the present condit
   <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
    Name="Smart Link"/>
  </w:LatentStyles>
-</xml><!\[endif]-->
+</xml><!\\[endif]-->
 
-<!--\[if gte mso 10]>
+<!--\\[if gte mso 10]>
 <style>
  /* Style Definitions */
  table.MsoNormalTable
@@ -1995,7 +1993,7 @@ I learned a lot about how long and intricate histories define the present condit
 	mso-bidi-theme-font:minor-bidi;
 	mso-fareast-language:ZH-CN;}
 </style>
-<!\[endif]-->
+<!\\[endif]-->
 
 <!--StartFragment-->
 
@@ -2005,14 +2003,14 @@ How many possible book titles I could go through! I think I went through somethi
 
 **What’s your favorite anecdote from your book?**
 
-<!--\[if gte mso 9]><xml>
+<!--\\[if gte mso 9]><xml>
  <o:OfficeDocumentSettings>
   <o:RelyOnVML/>
   <o:AllowPNG/>
  </o:OfficeDocumentSettings>
-</xml><!\[endif]-->
+</xml><!\\[endif]-->
 
-<!--\[if gte mso 9]><xml>
+<!--\\[if gte mso 9]><xml>
  <w:WordDocument>
   <w:View>Normal</w:View>
   <w:Zoom>0</w:Zoom>
@@ -2052,9 +2050,9 @@ How many possible book titles I could go through! I think I went through somethi
    <m:intLim m:val="subSup"/>
    <m:naryLim m:val="undOvr"/>
   </m:mathPr></w:WordDocument>
-</xml><!\[endif]-->
+</xml><!\\[endif]-->
 
-<!--\[if gte mso 9]><xml>
+<!--\\[if gte mso 9]><xml>
  <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="false"
   DefSemiHidden="false" DefQFormat="false" DefPriority="99"
   LatentStyleCount="376">
@@ -2633,9 +2631,9 @@ How many possible book titles I could go through! I think I went through somethi
   <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
    Name="Smart Link"/>
  </w:LatentStyles>
-</xml><!\[endif]-->
+</xml><!\\[endif]-->
 
-<!--\[if gte mso 10]>
+<!--\\[if gte mso 10]>
 <style>
  /* Style Definitions */
  table.MsoNormalTable
@@ -2658,7 +2656,7 @@ How many possible book titles I could go through! I think I went through somethi
 	mso-bidi-theme-font:minor-bidi;
 	mso-fareast-language:ZH-CN;}
 </style>
-<!\[endif]-->
+<!\\[endif]-->
 
 <!--StartFragment-->
 
@@ -2668,14 +2666,14 @@ The best part of the research was getting tours of places that were once written
 
 **What’s next?**
 
-<!--\[if gte mso 9]><xml>
+<!--\\[if gte mso 9]><xml>
  <o:OfficeDocumentSettings>
   <o:RelyOnVML/>
   <o:AllowPNG/>
  </o:OfficeDocumentSettings>
-</xml><!\[endif]-->
+</xml><!\\[endif]-->
 
-<!--\[if gte mso 9]><xml>
+<!--\\[if gte mso 9]><xml>
  <w:WordDocument>
   <w:View>Normal</w:View>
   <w:Zoom>0</w:Zoom>
@@ -2715,9 +2713,9 @@ The best part of the research was getting tours of places that were once written
    <m:intLim m:val="subSup"/>
    <m:naryLim m:val="undOvr"/>
   </m:mathPr></w:WordDocument>
-</xml><!\[endif]-->
+</xml><!\\[endif]-->
 
-<!--\[if gte mso 9]><xml>
+<!--\\[if gte mso 9]><xml>
  <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="false"
   DefSemiHidden="false" DefQFormat="false" DefPriority="99"
   LatentStyleCount="376">
@@ -3296,9 +3294,9 @@ The best part of the research was getting tours of places that were once written
   <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
    Name="Smart Link"/>
  </w:LatentStyles>
-</xml><!\[endif]-->
+</xml><!\\[endif]-->
 
-<!--\[if gte mso 10]>
+<!--\\[if gte mso 10]>
 <style>
  /* Style Definitions */
  table.MsoNormalTable
@@ -3321,7 +3319,7 @@ The best part of the research was getting tours of places that were once written
 	mso-bidi-theme-font:minor-bidi;
 	mso-fareast-language:ZH-CN;}
 </style>
-<!\[endif]-->
+<!\\[endif]-->
 
 <!--StartFragment-->
 
