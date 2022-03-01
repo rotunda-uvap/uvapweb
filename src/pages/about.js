@@ -144,7 +144,7 @@ export default function AboutPage({ data }) {
   <div className="lg:w-3/3 mx-auto leading-relaxed text-base dropCap cms" dangerouslySetInnerHTML={{__html: code.html}}/>
 </section>
 <section>
-  <SectionHeader text={"Land-use Acknowledgement"}/>
+  <SectionHeader text={"Land-use Acknowledgment"}/>
 <div className="lg:w-3/3 mx-auto leading-relaxed text-base dropCap cms" dangerouslySetInnerHTML={{__html: landuse.html}}/>
 </section>
             <section className="py-5 text-gray-700 border-b-2 border-gray-100" id="board">
