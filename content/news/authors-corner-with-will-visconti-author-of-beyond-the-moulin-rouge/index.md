@@ -2,7 +2,7 @@
 templateKey: news
 type: author-corner
 title: Author's Corner with Will Visconti, Author of Beyond the Moulin Rouge
-image: la_goulue.png
+image: la_goulue_1.jpg
 related_book:
   - "5437"
 date: 2022-03-02

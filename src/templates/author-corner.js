@@ -54,7 +54,7 @@ else metaImage = null;
  <div className="md:w-4/5">
  <p className="lg-w/3/3 leading-relaxed italic py-5 text-center font-serif">Welcome back to the UVA Press Author's Corner! Here, we feature conversations with the authors of our latest releases to provide a glimpse into the writer's mind, their book's main lessons, and what’s next for them. We hope you enjoy these inside stories.</p>
  
-  {news_image && <div className="float-left px-10 pb-5"><GatsbyImage image={news_image} alt="related image"/></div> }
+  {news_image && <div className="float-left px-6 pb-5"><GatsbyImage image={news_image} alt="related image"/></div> }
   <div>
     <article className="cms"
           dangerouslySetInnerHTML={{ __html: news.html }}/>

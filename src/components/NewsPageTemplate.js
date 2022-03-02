@@ -34,7 +34,7 @@ import Content from "../components/Content";
             ))}</div></>
             }
         <div className="md:w-4/5">
-          {pic && <div className="float-left px-10 pb-5"><GatsbyImage image={pic} alt="related image"/></div> }
+          {pic && <div className="float-left "><GatsbyImage image={pic} alt="related image"/></div> }
           <PageContent className="cms" content={content} />
 
       </div>
