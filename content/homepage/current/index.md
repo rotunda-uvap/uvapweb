@@ -7,7 +7,7 @@ top_banner:
     banner_subtitle: Eliza Harriot and George Washington at the Dawn of the Constitution
     banner_id: "5756"
     banner_quote: Exceptionally lucid and enjoyable
-    banner_attr: Sarah Georgini
+    banner_attr: Sara Georgini
 related_book:
   - "5744"
   - "5617"
