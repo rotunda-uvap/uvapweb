@@ -2,12 +2,12 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: Lifting Every Voice
-    banner_author: William B. Robertson
-    banner_subtitle: My Journey from Segregated Roanoke to the Corridors of Power
-    banner_id: "5780"
-    banner_quote: '"An inspiring, exemplary account of a life well lived."'
-    banner_attr: Kirkus, starred review
+  - banner_title: Female Genius
+    banner_author: Mary Sarah Bilder
+    banner_subtitle: Eliza Harriot and George Washington at the Dawn of the Constitution
+    banner_id: "5756"
+    banner_quote: Exceptionally lucid and enjoyable
+    banner_attr: Sarah Georgini
 related_book:
   - "5744"
   - "5617"
