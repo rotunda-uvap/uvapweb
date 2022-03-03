@@ -2,14 +2,14 @@
 templateKey: news
 type: author-corner
 title: Conversation Celebrating William "Bill" Robertson's Memoir LIFTING EVERY VOICE
-image: robertson_crabtree.jpg
+image: robertsons_crabtree.jpg
 related_book:
   - "5780"
 date: 2022-02-22
 ---
 Today, we celebrate the release of William “Bill” Robertson’s poignant memoir [LIFTING EVERY VOICE: My Journey from Segregated Roanoke to the Corridors of Power.](https://www.upress.virginia.edu/title/5780)
 
-All of us at UVA Press wish that Bill Robertson—who served as the first African American aide to a Virginia governor and subsequently worked in five presidential administrations—would have lived to see his book published this month. To honor his memory, we bring you a slightly different Author’s Corner conversation, which features reflections from Bill Robertson’s wife Ruth, his daughter Victoria (pictured), and his collaborator Becky Crabtree (pictured).
+All of us at UVA Press wish that Bill Robertson—who served as the first African American aide to a Virginia governor and subsequently worked in five presidential administrations—would have lived to see his book published this month. To honor his memory, we bring you a slightly different Author’s Corner conversation, which features reflections from Bill Robertson’s wife Ruth, his daughter Victoria, and his collaborator Becky Crabtree.
 
 **\*\*\*\*\*\*\*\*\*\*\*\****
 
