@@ -2,7 +2,7 @@
 templateKey: news
 type: author-corner
 title: Conversation Celebrating William "Bill" Robertson's Memoir LIFTING EVERY VOICE
-image: robertsons_crabtree.jpg
+image: robertsons_c.jpg
 related_book:
   - "5780"
 date: 2022-02-22
