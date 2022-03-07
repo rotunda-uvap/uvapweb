@@ -6,9 +6,10 @@ import {FaArrowAltCircleRight} from "react-icons/fa"
 import GoogleCalendar from "../components/Calendar"
 import SeO from "../components/SeoComponent"
 import PageHeader from "../components/PageHeader"
+import SectionHeader from "../components/SectionHeader"
 export default function PubPage({ data }) {
     const news = data.allMarkdownRemark
-  
+    // const pagedata = data.markdownRemark
 
  return (
     
@@ -16,7 +17,7 @@ export default function PubPage({ data }) {
           <SeO title="Publicity Information: News and Events"/>
           <div className="container md:p-5 mx-auto">
             <div className="flex flex-col text-center w-full">
-            <PageHeader text={'News and Events'}/>
+            <PageHeader text={'Media, News and Events'}/>
               </div>
             </div>
         
@@ -38,7 +39,19 @@ export default function PubPage({ data }) {
                     </div>          
             </div>
             </section>
-
+ <section>
+   <SectionHeader text="Review Copy Requests"/>
+ <p className="cms leading-relaxed text-base text-left">
+ If you are a journalist or journal interested in a copy of a book for review, we can supply gratis copies of titles published within the past two years.  </p>
+ <p>Please include the following in your email:</p>
+ <ul className="pl-5 bulleted">
+   <li className="font-serif">Name of book and author</li>
+<li className="font-serif">Your media outlet</li>
+<li className="font-serif">Full contact information (name, mailing address), along with any deadlines</li>
+<li className="font-serif">Links to your outlet's website</li>
+ </ul>
+ <p className="pt-2">Review copy requests can take up to four weeks to process. Due to the volume of requests, we are unable to provide status updates. Upon publication, please send PDFs and/or links to coverage to <a href="mailto:uvapressintern@gmail.com">uvapressintern@gmail.com.</a></p>
+ </section>
 
           <div className="grid md:grid-cols-3">
             <section className="md:col-span-2 mr-5">
@@ -88,7 +101,7 @@ export default function PubPage({ data }) {
 
 export const query = graphql`
   query {
-    allMarkdownRemark(filter: {frontmatter: {templateKey: {eq: "news"}}},sort: {fields: frontmatter___date, order: DESC}) {
+  allMarkdownRemark(filter: {frontmatter: {templateKey: {eq: "news"}}},sort: {fields: frontmatter___date, order: DESC}) {
       edges {
         node {
             html
@@ -107,7 +120,7 @@ export const query = graphql`
           }
       }
     }
-
+    
     
   }
 `
