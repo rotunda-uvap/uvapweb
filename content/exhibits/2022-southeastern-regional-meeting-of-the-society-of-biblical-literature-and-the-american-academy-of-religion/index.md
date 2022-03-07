@@ -1,7 +1,7 @@
 ---
 templateKey: exhibit
-title: 2022 Southeastern Regional Meeting of the Society of Biblical Literature
-  and the American Academy of Religion
+title: Southeastern Regional Meeting of the Society of Biblical Literature and
+  the American Academy of Religion 2022
 exhibit_slug: AARSBL
 coupon: Use code 10FSU22 for 30% off books below through March 31!
 txtcolor: text-black
