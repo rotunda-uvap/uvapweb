@@ -3,12 +3,15 @@ templateKey: page
 type: page
 title: Publicity
 ---
-#### Review Copies
+### Review Copy Requests
 
-If you are requesting a review copy of a University of Virginia Press title, please submit your request via e-mail to Emily Grandstaff at [egrandstaff@virginia.edu](mailto:egrandstaff@virginia.edu). Please be sure to include the mailing address to which we should send the review copy.
+If you are a journalist or journal interested in a copy of a book for review, we can supply gratis copies of titles published within the past two years. 
 
-**Please note:**
+Please include the following in your email:
 
-* We are able to supply gratis review copies only for books published within the last two years.
-* Review copy requests may take up to 4 weeks to process. If you are working under a deadline, please provide that information.
-* Due to the high volume of requests we receive, we are often unable to provide updates on the status of review copy requests.
+* Name of book and author
+* Your media outlet
+* Full contact information (name, mailing address), along with any deadlines
+* Links to your outlet's website
+
+Review copy requests can take up to four weeks to process. Due to the volume of requests, we are unable to provide status updates. Upon publication, please send PDFs and/or links to coverage to [uvapressintern@gmail.com](mailto:uvapressintern@gmail.com "mailto\:uvapressintern@gmail.com").
