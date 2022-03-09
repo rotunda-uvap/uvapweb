@@ -7,7 +7,7 @@ related_book:
   - "5437"
 date: 2022-03-02
 ---
-Today, we are happy to bring you our conversation with Will Visconti, author of [BEYOND THE MOULIN ROUGE***:** The Life and Legacy of La Goulue,*](https://www.upress.virginia.edu/title/5437) out this month.
+Today, we are happy to bring you our conversation with Will Visconti, author of [BEYOND THE MOULIN ROUGE**:** *The Life and Legacy of La Goulue,*](https://www.upress.virginia.edu/title/5437) out this month.
 
 **\*\*\*\*\*\*\*\*\*\*\*\****
 
