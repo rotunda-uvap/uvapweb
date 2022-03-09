@@ -2,6 +2,7 @@
 templateKey: news
 type: author-corner
 title: Author's Corner with Nick Nesbitt, Author of THE PRICE OF SLAVERY
+image: nesbitt-author-photo.jpg
 related_book:
   - "5724"
 date: 2022-03-09
