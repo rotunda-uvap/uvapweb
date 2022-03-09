@@ -1,6 +1,6 @@
 ---
 templateKey: exhibit
-title: AMERICAN SOCIETY FOR EIGHTEENTH CENTURY STUDIES 2022
+title: American Society For Eighteenth Century Studies 2022
 exhibit_slug: asecs-2022
 coupon: Get 30% OFF with promo code 10ASECS22 through April 4
 txtcolor: text-black
