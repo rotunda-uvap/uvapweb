@@ -2,13 +2,12 @@
 templateKey: page
 title: Career
 ---
+
+##### **Director**
+
 The University of Virginia Press (UVaP) seeks its next director to oversee the scholarly integrity of its books, monographs, and digital imprint; public engagement on critical ideas and issues; and daily operations of a sustainable business model. The incoming director will have the opportunity to shape the direction of UVaP by both acquiring and approving all projects for publication, overseeing the financial health of the press, and pursuing opportunities that support both the mission of UVA Press, as well as the greater University.
 
-#### **University of Virginia Press**
-
-The [University of Virginia Press](https://www.upress.virginia.edu/) was founded in 1963 to advance the intellectual interests not only of the [University of Virginia](http://www.virginia.edu/), but also of institutions of higher learning throughout the state. A member of the Association of University Presses, UVaP currently publishes seventy new titles annually. New titles are approved by the board of directors after a rigorous process of peer review. The UVaP editorial program focuses primarily on the humanities and social sciences with special concentrations in American history, African American studies, southern studies, literature, ecocriticism, architecture, and regional books. While it continuously pursues new titles, UVaP also maintains a backlist of over 1,000 titles in print.
-
-#### **Key Responsibilities**
+##### **Key Responsibilities**
 
 * Develop and advance the mission of the press, and its capacity to innovate, in the highly evolving scholarly publishing landscape.
 * Oversee changing platforms for knowledge dissemination, creative and inclusive acquisition strategies, and sustainable financial models that support access, equity, and diversity.
@@ -21,11 +20,11 @@ The [University of Virginia Press](https://www.upress.virginia.edu/) was founded
 * Work directly with the editorial board and staff on final project decisions that advance the press’ mission.
 * Ensure the maintenance and enhancement of the physical plant, as well as implement the technology needed to support a scholarly press in the 21st century.
 
-#### **Candidate Profile**
+##### **Candidate Profile**
 
 We seek a dynamic candidate with a demonstrated record of creative, inspiring, and accomplished leadership in complex environments; someone with exceptional integrity who possesses the highest level of commitment to advancing organizational priorities; and whose previous experience is consistent with the University’s commitment to be both great and good. Although the University will consider a range of profiles, expressions of interest are sought from candidates possessing the following: 
 
-#### **Desired Qualifications**
+##### **Desired Qualifications**
 
 * A strong track record of leadership experience in a publishing setting
 * Ability to build relationships with faculty, scholars, peer reviewers, and authors
@@ -38,25 +37,20 @@ We seek a dynamic candidate with a demonstrated record of creative, inspiring, a
 * A track record in fundraising, both through grants and private gifts and donations
 * A track record of data-driven decision making
 
-**Apply or Nominate**\
+##### **Apply or Nominate**
 UVA Executive Search Group, an internal search firm in the Office of the President, is assisting in the recruitment of the next Director, UVA Press. 
 
-\
 Confidential inquiries and nominations should be directed to Ashley Milligan, Search Consultant, at [anm4f@virginia.edu](mailto:anm4f@virginia.edu).  
 
-\
 To apply, submit a cover letter and resume via [Workday](http://https//uva.wd1.myworkdayjobs.com/UVAJobs). The search will be carried out with full confidentiality. 
 
 MINIMUM REQUIREMENTS\
-Education: Bachelor's degree
+Education: Bachelor's degree\
+Licensure: None
 
-Licensure: None\
-\
 PHYSICAL DEMANDS\
-\
 This is primarily a sedentary job involving extensive use of desktop computers. The job does occasionally require traveling some distance to attend meetings, and programs.
 
-\
 **COVID Vaccination Requirement and Guidelines**
 
 Please visit the [UVA COVID-19 Job Requirements and Guidelines](https://hr.virginia.edu/uva-covid-19-job-requirements-and-guidelines) webpage prior to applying for current information regarding vaccination requirements and guidelines for employment at UVA.
