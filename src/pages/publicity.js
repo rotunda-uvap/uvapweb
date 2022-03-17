@@ -39,7 +39,7 @@ export default function PubPage({ data }) {
                     </div>          
             </div>
             </section>
- <section>
+ <section id="review">
    <SectionHeader text="Review Copy Requests"/>
  <p className="cms leading-relaxed text-base text-left">
  If you are a journalist or journal interested in a copy of a book for review, we can supply gratis copies of titles published within the past two years.  </p>

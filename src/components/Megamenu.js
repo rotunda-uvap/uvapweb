@@ -166,7 +166,14 @@ const MegaHeader = () => {
                       </Link>
                     </div>
 
-                    
+                    <div>
+                      <Link
+                        to={`/publicity#review`}
+                        className="uppercase block text-lg hover:text-gray-300"
+                      >
+                        Review Copy Requests
+                      </Link>
+                    </div>
                     
                     <div>
                       <Link
@@ -500,7 +507,14 @@ const MegaHeader = () => {
                         Our Book Subjects
                       </Link>
                     </div>
-
+                    <div>
+                      <Link
+                        to={`/publicity#review`}
+                        className="uppercase block text-lg hover:text-gray-300"
+                      >
+                        Review Copy Requests
+                      </Link>
+                    </div>
                     
                     <div>
                       <Link
