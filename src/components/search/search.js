@@ -18,8 +18,8 @@ const Hit = ( {hit}) => <div className="py-4 border-b-2 border-gray-100"><Link t
 
 const Search = () => (
     <InstantSearch searchClient={searchClient} indexName={process.env.GATSBY_ALGOLIA_INDEX_NAME} routing={true}  >
-      {/* <SearchBox className="p-2 m-1" translations={{ placeholder:'Search for a book'}} searchAsYouType={false} /> */}
-      <SearchBox className="p-2 m-1 w-full" translations={{ placeholder:'Search for a book'}}/>
+      <SearchBox className="p-2 m-1" translations={{ placeholder:'Search for a book'}} searchAsYouType={false} />
+      {/* <SearchBox className="p-2 m-1 w-full" translations={{ placeholder:'Search for a book'}}/> */}
 
       <div className="flex flex-col md:flex-row gap-8">
      

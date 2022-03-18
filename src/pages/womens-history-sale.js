@@ -3,7 +3,6 @@ import {graphql } from "gatsby"
 import Layout from "../components/layout"
 import SeO from "../components/SeoComponent"
 import PageHeader from "../components/PageHeader"
-import SectionHeader from "../components/SectionHeader"
 import RelatedBookList from "../components/RelatedBookList"
 
 
