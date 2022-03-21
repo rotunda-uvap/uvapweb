@@ -2,12 +2,12 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: Female Genius
-    banner_author: Mary Sarah Bilder
-    banner_subtitle: Eliza Harriot and George Washington at the Dawn of the Constitution
-    banner_id: "5756"
-    banner_quote: Exceptionally lucid and enjoyable
-    banner_attr: Sara Georgini
+  - banner_title: Masters of Tonewood
+    banner_author: Jeffrey Greene
+    banner_subtitle: The Hidden Art of Fine Stringed-Instrument Making
+    banner_id: "5264"
+    banner_quote: A beautifully told tale than rings both loud and true
+    banner_attr: Ketch Secor, Old Crow Medicine Show
 related_book:
   - "5744"
   - "5617"
