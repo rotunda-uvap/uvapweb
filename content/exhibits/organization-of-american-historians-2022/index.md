@@ -1,7 +1,8 @@
 ---
 templateKey: exhibit
 title: Organization of American Historians 2022
-exhibit_slug: Get 30% OFF with promo code 10OAH22 through May 2
+exhibit_slug: oah2022
+coupon: Get 30% OFF with promo code 10OAH22 through May 2
 txtcolor: text-black
 related_series:
   - CWH
