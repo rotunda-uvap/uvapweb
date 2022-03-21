@@ -6,7 +6,7 @@ top_banner:
     banner_author: Jeffrey Greene
     banner_subtitle: The Hidden Art of Fine Stringed-Instrument Making
     banner_id: "5264"
-    banner_quote: A beautifully told tale than rings both loud and true
+    banner_quote: A beautifully told tale that rings both loud and true
     banner_attr: Ketch Secor, Old Crow Medicine Show
 related_book:
   - "5744"
