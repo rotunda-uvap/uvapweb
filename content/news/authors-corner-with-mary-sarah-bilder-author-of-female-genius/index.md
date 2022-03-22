@@ -1,7 +1,7 @@
 ---
 templateKey: news
 type: author-corner
-title: "Author's Corner with Mary Sarah Bilder, Author of FEMALE GENIUS: "
+title: Author's Corner with Mary Sarah Bilder, Author of FEMALE GENIUS
 image: bilder-image-for-author-s-corner.jpg
 related_book:
   - "5756"
