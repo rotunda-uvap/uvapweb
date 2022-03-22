@@ -3,6 +3,7 @@ import { graphql, Link } from "gatsby"
 import Layout from "../components/layout"
 import "../utils/global.css"
 import ActiveSeries from "../components/active-series"
+import CompletedSeries from "../components/CompletedSeries"
 import AcqStaff from "../components/AcqStaff"
 import SeO from "../components/SeoComponent"
 import PageHeader from "../components/PageHeader"
@@ -93,6 +94,7 @@ export default function ProspectiveAuthorsPage({ data }) {
          
          
          <ActiveSeries/>
+         <CompletedSeries/>
            
         </Layout>
 

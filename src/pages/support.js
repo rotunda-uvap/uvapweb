@@ -37,7 +37,7 @@ export default function SupportPage({ data }) {
          <h2 className="text-gray-900 text-lg font-medium title-font mb-5">Make a Gift</h2>
           <p>Gifts can be made online through the UVA Giving at the button below or by mail:</p>
 
-<ul className="ml-4 tracking-wide"><li>University of Virginia Press Unrestricted Gift Fund</li>
+<ul className="ml-4 font-bold font-serif"><li>University of Virginia Press Unrestricted Gift Fund</li>
 <li>Attention: Samantha Anderson-Jackson</li>
 <li>Bemiss House</li>
 <li>210 Sprigg Lane</li>

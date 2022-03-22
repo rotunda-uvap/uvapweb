@@ -129,7 +129,7 @@ const bookPage = ({ data }) => {
             >
               <div className="font-thin uppercase text-ceci-gray-dark tracking-wide">Exam Copy </div>
               <div className="text-sm font-display ">
-                For Instructors or Reviewers
+                Review for Course Use
               </div>
             </a>
           </div>
@@ -157,7 +157,7 @@ const bookPage = ({ data }) => {
                 <div className="font-thin tracking-wide text-ceci-gray-dark uppercase ">
                   Desk Copy{" "}
                 </div>
-                <div className="text-sm font-display ">For Instructors</div>
+                <div className="text-sm font-display ">For Instructors who have already adopted this in their course </div>
               </a>
             </div>
             

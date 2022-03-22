@@ -93,7 +93,6 @@ export default function Books({ data }) {
      
     
   </div>
-  <Link to={`#top`} className="uppercase text-ceci-gray-mid text-xs">Go to top</Link>
 
 
 </section> 
@@ -112,9 +111,9 @@ export default function Books({ data }) {
         </div>            
             
         ))}
-    
+    <Link to={`#top`} className="uppercase text-ceci-gray-mid text-xs p-2 ">Go to top</Link>
   </div>
-  <Link to={`#top`} className="uppercase text-ceci-gray-mid text-xs">Go to top</Link>
+  
 
 </section>
 
@@ -131,15 +130,15 @@ export default function Books({ data }) {
                 <BookCard Title={edge.node.Title} Subtitle={edge.node.Subtitle} Author={edge.node.AuthorCredit} Thumb={edge.node.CoverImageMain} Bookid ={edge.node.BookID} pubdate={edge.node.PublicationDate} />
                 </Link>
           
-        ))}
+        ))} <Link to={`#top`} className="uppercase text-ceci-gray-mid text-xs p-2 ">Go to top</Link>
         </div>
-        <Link to={`#top`} className="uppercase text-ceci-gray-mid text-xs">Go to top</Link>
+       
 
    </section>
 
 <section id="awardwinners">
   <AwardWinners/>
-  <Link to={`#top`} className="uppercase text-ceci-gray-mid text-xs">Go to top</Link>
+  <Link to={`#top`} className="uppercase text-ceci-gray-mid text-xs p-2 ">Go to top</Link>
 </section>
 
    <section id="AZ" className="py-5 text-gray-700 border-b-2 border-gray-100">
@@ -152,9 +151,9 @@ export default function Books({ data }) {
                 {/* <BookCard Title={edge.node.Title} Subtitle={edge.node.Subtitle} Author={edge.node.AuthorCredit} Thumb={edge.node.CoverImageMain} Bookid ={edge.node.BookID} pubdate={edge.node.PublicationDate} /> */}
                 </Link>
            
-        ))}
+        ))}<Link to={`#top`} className="uppercase text-ceci-gray-mid text-xs p-2 ">Go to top</Link>
         </div>
-        <Link to={`#top`} className="uppercase text-ceci-gray-mid text-xs">Go to top</Link>
+        
 
    </section>
 

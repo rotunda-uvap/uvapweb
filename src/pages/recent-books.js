@@ -47,9 +47,9 @@ export default function RecentBooks({ data }) {
                 <BookCard Title={edge.node.Title} Subtitle={edge.node.Subtitle} Author={edge.node.AuthorCredit} Thumb={edge.node.CoverImageMain} Bookid ={edge.node.BookID} pubdate={edge.node.PublicationDate} />
                 </Link>
           
-        ))}
+        ))}<Link to={`#top`} className="uppercase text-ceci-gray-mid text-xs p-2 ">Go to top</Link>
         </div>
-        <Link to={`#top`} className="uppercase text-ceci-gray-mid text-xs">Go to top</Link>
+        
 </section>
 <section id="upc">
             <SectionHeader className="py-4" text={"Coming Soon"}/>
@@ -70,7 +70,7 @@ export default function RecentBooks({ data }) {
            
         ))}
         </ul>
-        <Link to={`#top`} className="uppercase text-ceci-gray-mid text-xs">Go to top</Link>
+        <Link to={`#top`} className="uppercase text-ceci-gray-mid text-xs p-2 ">Go to top</Link>
             </section>
         </div>
         </Layout>
