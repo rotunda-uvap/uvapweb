@@ -79,7 +79,7 @@
     "react-social-icons": "^5.6.1",
     "react-web-tabs": "^1.0.1",
     "slick-carousel": "^1.8.1",
-    "tailwindcss": "^3.0.23",
+    "tailwindcss": "^2.2.19",
     "timelinejs-react": "^1.1.1"
   },
   "devDependencies": {
