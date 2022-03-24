@@ -3977,6 +3977,6 @@ All I want to reveal at this stage is that my next book will also be about South
 
 <!--StartFragment-->
 
-**\*Caption for photo:** Jochen Arndt in the Jagger Reading Room of the University of Cape Town Special Collection Libraries in 2013. (The reading room was destroyed by fire in 2021).*
+**\*Caption:** Jochen Arndt in the Jagger Reading Room of the University of Cape Town Special Collection Libraries in 2013. (The reading room was destroyed by fire in 2021).*
 
 <!--EndFragment-->
