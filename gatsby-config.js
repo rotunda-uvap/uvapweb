@@ -267,7 +267,7 @@ module.exports = {
       develop: true,
       tailwind: true,
       purgeCSSOptions: {
-      safelist: [/^slick/, /^calendar/, /^day/, /^event/, /^innerDay/],
+      safelist: [/^slick/, /^calendar/, /^day/, /^event/, /^innerDay/, /^ais/],
       },
     },
   },
