@@ -25,10 +25,10 @@ export default function PubPage({ data }) {
             <div className="container items-center flex flex-col md:flex-row py-12">
               
               <div className="flex flex-col text-center items-center md:w-2/4 ">
-              <Link to={'../staff/emily-grandstaff'}><h5 className="title-font font-medium text-md text-ceci-gray-mid">Emily Grandstaff</h5></Link>
-       <p className="text-ceci-gray-mid font-light">Publicity and Social Media Director</p>
-       <p className="text-base leading-relaxed text-ceci-gray-dark">(434) 982-2932</p>
-         <a className="text-ceci-gray-mid text-base inline-flex items-center" href="mailto:egrandstaff@virginia.edu">Email Emily
+              <Link to={'../staff/jason-coleman'}><h5 className="title-font font-medium text-md text-ceci-gray-mid">Jason Coleman</h5></Link>
+       <span className="text-ceci-gray-mid font-light font-serif">Marketing Director</span>
+       <span className="text-base leading-relaxed text-ceci-gray-dark">(434) 982-1450</span>
+         <a className="text-ceci-gray-mid text-base inline-flex items-center" href="mailto:jcoleman@virginia.edu">Email Jason
            <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
              <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
            </svg>

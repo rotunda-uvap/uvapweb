@@ -263,9 +263,12 @@ module.exports = {
   {
     resolve: `gatsby-plugin-purgecss`,
     options: {
-      printRejected: false,
-      develop: false,
+      printRejected: true,
+      develop: true,
       tailwind: true,
+      purgeCSSOptions: {
+      safelist: [/^slick/, /^calendar/, /^day/, /^event/, /^innerDay/],
+      },
     },
   },
   {
