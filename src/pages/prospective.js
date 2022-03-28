@@ -44,7 +44,7 @@ export default function ProspectiveAuthorsPage({ data }) {
         <div className="text-center mb-10">
           <SectionHeader text={'Prospective Author Questionnaire'}/>
       {/* <h1 className="sm:text-3xl text-2xl font-medium text-center title-font text-gray-900 mb-4">Prospective Author Questionnaire</h1> */}
-      {/* <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi pug.</p> */}
+      <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">Submit this questionnaire to the acquisitions department only after your manuscript has been invited for consideration by an acquisitions editor. The questionnaire should accompany any manuscript invited for consideration.</p>
         </div>
         <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
         
@@ -64,7 +64,6 @@ export default function ProspectiveAuthorsPage({ data }) {
         <div className="text-center mb-10">
           <SectionHeader text={'Outline for a Book Proposal'}/>
       {/* <h1 className="sm:text-3xl text-2xl font-medium text-center title-font text-gray-900 mb-4">Outline for a Book Proposal</h1> */}
-      <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">Submit this questionnaire to the acquisitions department only after your manuscript has been invited for consideration by an acquisitions editor. The questionnaire should accompany any manuscript invited for consideration.</p>
         </div>
         <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
         

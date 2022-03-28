@@ -63,7 +63,7 @@ export default function AuthorsPage({ data }) {
         <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
         
         <div className="p-2 sm:w-1/2 w-full">
-        <FileDownloadButton name="Guide to Manuscript Prepration" file="UVaP_MS_Prep_Guide.doc"/></div>
+        <FileDownloadButton name="Guide to Manuscript Preparation" file="UVaP_MS_Prep_Guide.doc"/></div>
           <div className="p-2 sm:w-1/2 w-full">
          <FileDownloadButton name="Final Manuscript Basics" file="UVaP_Final_MS_Basics.docx"/></div>
           <div className="p-2 sm:w-1/2 w-full">
