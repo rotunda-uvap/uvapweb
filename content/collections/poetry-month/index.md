@@ -1,6 +1,6 @@
 ---
 templateKey: collection
-title: National Poetry Month
+title: Poetry Month
 related_book:
   - "5630"
   - "5059"
