@@ -13,6 +13,8 @@ We invite submissions for the Walker Cowen Memorial Prize. The prize is awarded 
 
 **Previous Winners**
 
+Rebekah Mitsein *[African Impressions: How African Worldviews Shaped the British Geographical Imagination across the Early Enlightenment](https://www.upress.virginia.edu/title/5704)*
+
 Thomas Salem Manganaro *[Against Better Judgment: Irrational Action and Literary Invention in the Long Eighteenth Century](https://www.upress.virginia.edu/title/5757)*
 
 Scott M. Sanders *[Voices from Beyond: Physiology, Sentience, and the Uncanny in Eighteenth-Century French Literature](https://www.upress.virginia.edu/title/5641)*
