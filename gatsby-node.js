@@ -1,8 +1,6 @@
 const path = require(`path`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
 const { slash } = require(`gatsby-core-utils`)
-const _ = require("lodash")
-
 
 
 exports.createSchemaCustomization = ({ actions }) => {
@@ -177,14 +175,20 @@ exports.createSchemaCustomization = ({ actions }) => {
           }
         }
 
-        allSubjects: allBooksJson {
-          group(field: Subject___name) {
-            fieldValue
+        allSubjects: allSubjectsJson {
+          edges {
+            node {
+              id
+              subjectID
+            }
           }
         }
-        allSeries: allBooksJson {
-          group(field: Series___seriesID) {
-            fieldValue
+        allSeries: allSeriesJson {
+          edges {
+            node {
+              id
+              jsonId
+            }
           }
         }
 
@@ -316,24 +320,24 @@ exports.createSchemaCustomization = ({ actions }) => {
           })
         })
 
-        const subjects = result.data.allSubjects.group
-        subjects.forEach(( sub ) => {
+        const subjects = result.data.allSubjects.edges
+        subjects.forEach(({ node }) => {
           createPage({
-            path: `/subject/${_.kebabCase(sub.fieldValue)}`,
+            path: `/subject/${node.subjectID}`,
             component: path.resolve(`./src/templates/subject-page.js`),
             context: {
-              id: sub.fieldValue,
+              id: node.subjectID,
             },
           })
         })
 
-        const series = result.data.allSeries.group
-        series.forEach(( s ) => {
+        const series = result.data.allSeries.edges
+        series.forEach(({ node }) => {
           createPage({
-            path: `/series/${s.fieldValue}`,
+            path: `/series/${node.jsonId}`,
             component: path.resolve(`./src/templates/series-page.js`),
             context: {
-              id: s.fieldValue,
+              id: node.jsonId,
             },
           })
         })

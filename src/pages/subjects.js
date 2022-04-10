@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 import SeO from "../components/SeoComponent"
 import PageHeader from "../components/PageHeader"
 export default function Subjects({ data }) {
-  
+  const subs = data.allSubjectsJson
  return (
     
         <Layout>
@@ -12,10 +12,10 @@ export default function Subjects({ data }) {
           <PageHeader text={'Book Subjects'}/>
           <div className="grid md:grid-cols-4 md:grid-4">
             
-          {data.allBooksJson.group.map((g, index) => (
+          {subs.edges.map((edge, index) => (
                    
            <li className="lg:w-1/3 mb-1 w-1/2" key={`sub${index}`}>
-          <Link to={`../subject/${ g.distinct }`} className="text-gray-600 hover:text-gray-800">{ g.fieldValue } ({g.totalCount})</Link>
+          <Link to={`../subject/${ edge.node.subjectID }`} className="text-gray-600 hover:text-gray-800">{ edge.node.subjectName }</Link>
         </li>            
            
         ))}       
@@ -30,11 +30,13 @@ export default function Subjects({ data }) {
 
 export const query = graphql`
   query {
-    allBooksJson {
-      group(field: Subject___name) {
-        distinct(field: Subject___subjectID)
-        totalCount
-        fieldValue
+    allSubjectsJson {
+      edges {
+        node {
+            subjectID
+            subjectName
+          
+        }
       }
     }
   }

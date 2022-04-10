@@ -6,10 +6,11 @@ import AwardWinners from "../components/AwardWinners"
 import SeO from "../components/SeoComponent"
 import SectionHeader from "../components/SectionHeader"
 import PageHeader from "../components/PageHeader"
-import kebabCase from "lodash/kebabCase"
 
 export default function Books({ data }) {
   const rec = data.recent
+  const sers = data.series
+  const subs = data.subjects
   const all = data.allbooks
  return (
     
@@ -81,11 +82,11 @@ export default function Books({ data }) {
   <SectionHeader text={"Our Subjects"}/> 
   <div className="container md:flex md:flex-wrap py-10 mx-auto items-center">
        
-      {data.subjects.group.map((g, index) => (
+      {subs.edges.map((edge, index) => (
                    
           <div className="mb-2 px-2 font-display items-center"  key={`subs${index}`}> 
 
-          <Link to={`../../subject/${kebabCase(g.fieldValue) }`} className="text-ceci-gray-dark hover:text-gray-800">{ g.fieldValue } ({g.totalCount})</Link>
+          <Link to={`../../subject/${ edge.node.subjectID }`} className="text-ceci-gray-dark hover:text-gray-800">{ edge.node.subjectName }</Link>
         </div>            
            
         ))}
@@ -103,10 +104,10 @@ export default function Books({ data }) {
               </svg></span></div></Link>
   <div className="container flex flex-wrap py-10 mx-auto items-center">
 
-      {data.series.group.map((g, index) => (
+      {sers.edges.map((edge, index) => (
                    
            <div className="md:w-1/2 mb-2 px-2 font-display" key={`sers${index}`}>
-          <Link to={`../series/${ g.fieldValue }`} className="text-ceci-gray-dark hover:text-gray-800">{ g.distinct } ({g.totalCount})</Link>
+          <Link to={`../series/${ edge.node.jsonId }`} className="text-ceci-gray-dark hover:text-gray-800">{ edge.node.seriesName }</Link>
         </div>            
             
         ))}
@@ -165,20 +166,23 @@ export default function Books({ data }) {
 
 export const query = graphql`
   query {
-    series: allBooksJson {
-      group(field: Series___seriesID) {
-        distinct(field: Series___name)
-        totalCount
-        fieldValue
+    series: allSeriesJson(sort: {order: ASC, fields: seriesName}) {
+      edges {
+        node {
+            jsonId
+            seriesName
+        }
       }
     }
-
-    subjects: allBooksJson {
-      group(field: Subject___name) {
-        totalCount
-        fieldValue
+  subjects: allSubjectsJson(sort: {fields: subjectName, order: ASC}) {
+    edges {
+      node {
+          subjectID
+          subjectName
+        
       }
     }
+  }
 
 
     recent: allBooksJson(filter: {DaysSincePublication: {gt: 0, lt: 365}}, sort: {fields: DaysSincePublication}) {
