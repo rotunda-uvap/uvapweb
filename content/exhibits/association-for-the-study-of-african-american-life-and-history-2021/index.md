@@ -2,9 +2,9 @@
 templateKey: exhibit
 title: Association for the Study of African American Life and History 2021
 exhibit_slug: asalh
-coupon: Use promo code 10ASALH21 to get 30% OFF + FREE SHIPPING through November 1.
-bgcolor: bg-black
-txtcolor: text-white
+coupon: ""
+bgcolor: ""
+txtcolor: ""
 exhibit_logo: asalh_21_topbar_0.jpg
 related_series:
   - CGW
