@@ -5,6 +5,7 @@ title: Southeastern Regional Meeting of the Society of Biblical Literature and
 exhibit_slug: AARSBL
 coupon: Use code 10FSU22 for 30% off books below through March 31!
 txtcolor: text-black
+bgcolor: bg-white
 related_series:
   - AMSP
   - RMLS

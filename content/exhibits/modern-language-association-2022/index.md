@@ -4,6 +4,7 @@ title: Modern Language Association 2022
 exhibit_slug: mla-2022
 coupon: Use code 10MLAUVA22 for 30% off books below through Jan 31!
 txtcolor: text-black
+bgcolor: bg-white
 related_series:
   - BNP
   - CAR
