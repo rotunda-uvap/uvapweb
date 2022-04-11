@@ -2,12 +2,12 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: Masters of Tonewood
-    banner_author: Jeffrey Greene
-    banner_subtitle: The Hidden Art of Fine Stringed-Instrument Making
-    banner_id: "5264"
-    banner_quote: A beautifully told tale that rings both loud and true
-    banner_attr: Ketch Secor, Old Crow Medicine Show
+  - banner_title: Kindred Spirits
+    banner_author: Christopher N. Okonkwo
+    banner_subtitle: Winner of the 2022 College Language Association Book Award
+    banner_id: "5472"
+    banner_quote: A timely and original, well-researched study
+    banner_attr: Chielozona Eze
 related_book:
   - "5744"
   - "5617"
