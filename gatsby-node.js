@@ -61,6 +61,7 @@ exports.createSchemaCustomization = ({ actions }) => {
     createRedirect({ fromPath: '/content/opportunities', toPath: '/career', isPermanent: true, redirectInBrowser: true })
     createRedirect({ fromPath: '/content/order', toPath: '/order', isPermanent: true, redirectInBrowser: true })
     createRedirect({ fromPath: '/content/privacy', toPath: '/privacy', isPermanent: true, redirectInBrowser: true })
+    createRedirect({ fromPath: '/content/rotunda-customers-page', toPath: '/rotunda-customer-page', isPermanent: true, redirectInBrowser: true })
     createRedirect({ fromPath: '/blog', toPath: '/publicity', isPermanent: true, redirectInBrowser: true })
     createRedirect({ fromPath: '/robb', toPath: '/title/5679', isPermanent: true, redirectInBrowser: true })
     createRedirect({ fromPath: '/robertson', toPath: '/title/5780', isPermanent: true, redirectInBrowser: true })
