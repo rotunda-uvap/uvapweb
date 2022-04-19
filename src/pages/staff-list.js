@@ -72,7 +72,7 @@ export default function StaffList({ data }) {
 
 
               <section className="py-4 border-b-2 border-gray-100">
-              <SectionHeader text={'Editorial, Design and Production'}/>
+              <SectionHeader text={'Editorial, Design, and Production'}/>
          
           <div className="container px-5 py-12 mx-auto">
              <div className="flex flex-wrap -m-4 text-center">
