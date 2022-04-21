@@ -2,6 +2,7 @@
 templateKey: news
 type: author-corner
 title: Author's Corner with Maximilian Miguel Scholz, author of STRANGE BRETHREN
+image: scholz-fsu-pic-3.jpg
 related_book:
   - "5508"
 date: 2022-04-21
