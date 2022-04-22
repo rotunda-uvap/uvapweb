@@ -1,1 +1,104 @@
-[{"id":"GWB","seriesName":"George Washington BookShelf"},{"id":"VLCS","seriesName":"Victorian Literature and Culture Series"},{"id":"AMSP","seriesName":"American Spirituality"},{"id":"CAR","seriesName":"CARAF Books: Caribbean and African Literature Translated from French"},{"id":"CWH","seriesName":"A Nation Divided: Studies in the Civil War Era"},{"id":"NWS","seriesName":"New World Studies"},{"id":"CAP","seriesName":"Center Books"},{"id":"TJFS","seriesName":"Thomas Jefferson Foundation Distinguished Lecture Series"},{"id":"RSAH","seriesName":"Reconsiderations in Southern African History"},{"id":"EMG","seriesName":"Studies in Early Modern German History"},{"id":"USN","seriesName":"Under the Sign of Nature: Explorations in Ecocriticism"},{"id":"TVB","seriesName":"The Virginia Bookshelf"},{"id":"JA","seriesName":"Jeffersonian America"},{"id":"CD","seriesName":"Constitutionalism and Democracy"},{"id":"CFF","seriesName":"Cultural Frames, Framing Culture"},{"id":"BNP","seriesName":"Best New Poets"},{"id":"PGW","seriesName":"Papers of George Washington"},{"id":"PJM","seriesName":"Papers of James Madison"},{"id":"JAY","seriesName":"Selected Papers of John Jay"},{"id":"EAH","seriesName":"Early American Histories"},{"id":"PBL","seriesName":"Page-Barbour Lectures"},{"id":"SRC","seriesName":"Studies in Religion and Culture"},{"id":"RA","seriesName":"The Revolutionary Age"},{"id":"AMS","seriesName":"The American South Series"},{"id":"BUS","seriesName":"Buildings of the United States"},{"id":"CGW","seriesName":"Carter G. Woodson Institute Series: Black Studies at Work in the World"},{"id":"REP","seriesName":"Race, Ethnicity, and Politics"},{"id":"FI","seriesName":"Feminist Issues: Practice, Politics, Theory"},{"id":"KDB","seriesName":"Knowledge: Disciplinarity and Beyond"},{"id":"MIDC","seriesName":"Midcentury: Architecture, Landscape, Urbanism, and Design"},{"id":"USCHS","seriesName":"United States Capitol Historical Society"},{"id":"JER","seriesName":"Jamestown Essays on Representation"},{"id":"CSM","seriesName":"Colonial Society of Massachusetts"},{"id":"GGL","seriesName":"Gay Hart Gaines Distinguished Lectures"},{"id":"KL","seriesName":"Kapnick Lectures"},{"id":"MCSP","seriesName":"Miller Center Studies on the Presidency"},{"id":"SPS","seriesName":"Studies in Pure Sociology"},{"id":"RL","seriesName":"Richard Lectures"},{"id":"DBS","seriesName":"Darden Business Series"},{"id":"WEA","seriesName":"Writing the Early Americas"},{"id":"LAAB","seriesName":"Louisiana Artists Biography Series"},{"id":"STS","seriesName":"Southern Texts Society"},{"id":"PBSH","seriesName":"Peculiar Bodies: Stories and Histories"},{"id":"RMLS","seriesName":"Richard E. Myers Lectures: Presented by University Baptist Church, Charlottesville"},{"id":"PBK","seriesName":"The Malcolm Lester Phi Beta Kappa Lectures on the Liberal Arts and Public Life"},{"id":"BUSG","seriesName":"SAH\/BUS City Guide"},{"id":"ERP","seriesName":"Eleanor Roosevelt Papers"},{"id":"PAL","seriesName":"The Papers of Abraham Lincoln"},{"id":"TTTB","seriesName":"Traditions and Transformations in Tibetan Buddhism"},{"id":"MNS","seriesName":"Minds of the New South"}]
+ [
+    { "id": "GWB", "seriesName": "George Washington BookShelf" },
+    {
+      "id": "VLCS",
+      "seriesName": "Victorian Literature and Culture Series"
+    },
+    { "id": "AMSP", "seriesName": "American Spirituality" },
+    {
+      "id": "CAR",
+      "seriesName": "CARAF Books: Caribbean and African Literature Translated from French"
+    },
+    {
+      "id": "CWH",
+      "seriesName": "A Nation Divided: Studies in the Civil War Era"
+    },
+    { "id": "NWS", "seriesName": "New World Studies" },
+    { "id": "CAP", "seriesName": "Center Books" },
+    {
+      "id": "TJFS",
+      "seriesName": "Thomas Jefferson Foundation Distinguished Lecture Series"
+    },
+    {
+      "id": "RSAH",
+      "seriesName": "Reconsiderations in Southern African History"
+    },
+    {
+      "id": "EMG",
+      "seriesName": "Studies in Early Modern German History"
+    },
+    {
+      "id": "USN",
+      "seriesName": "Under the Sign of Nature: Explorations in Ecocriticism"
+    },
+    { "id": "TVB", "seriesName": "The Virginia Bookshelf" },
+    { "id": "JA", "seriesName": "Jeffersonian America" },
+    { "id": "CD", "seriesName": "Constitutionalism and Democracy" },
+    { "id": "CFF", "seriesName": "Cultural Frames, Framing Culture" },
+    { "id": "BNP", "seriesName": "Best New Poets" },
+    { "id": "PGW", "seriesName": "Papers of George Washington" },
+    { "id": "PJM", "seriesName": "Papers of James Madison" },
+    { "id": "EAH", "seriesName": "Early American Histories" },
+    { "id": "JAY", "seriesName": "Selected Papers of John Jay" },
+    { "id": "PBL", "seriesName": "Page-Barbour Lectures" },
+    { "id": "SRC", "seriesName": "Studies in Religion and Culture" },
+    { "id": "RA", "seriesName": "The Revolutionary Age" },
+    { "id": "AMS", "seriesName": "The American South Series" },
+    { "id": "BUS", "seriesName": "Buildings of the United States" },
+    {
+      "id": "CGW",
+      "seriesName": "Carter G. Woodson Institute Series: Black Studies at Work in the World"
+    },
+    { "id": "REP", "seriesName": "Race, Ethnicity, and Politics" },
+    {
+      "id": "FI",
+      "seriesName": "Feminist Issues: Practice, Politics, Theory"
+    },
+    { "id": "KDB", "seriesName": "Knowledge: Disciplinarity and Beyond" },
+    {
+      "id": "MIDC",
+      "seriesName": "Midcentury: Architecture, Landscape, Urbanism, and Design"
+    },
+    {
+      "id": "USCHS",
+      "seriesName": "United States Capitol Historical Society"
+    },
+    { "id": "JER", "seriesName": "Jamestown Essays on Representation" },
+    { "id": "CSM", "seriesName": "Colonial Society of Massachusetts" },
+    {
+      "id": "GGL",
+      "seriesName": "Gay Hart Gaines Distinguished Lectures"
+    },
+    { "id": "KL", "seriesName": "Kapnick Lectures" },
+    {
+      "id": "MCSP",
+      "seriesName": "Miller Center Studies on the Presidency"
+    },
+    { "id": "SPS", "seriesName": "Studies in Pure Sociology" },
+    { "id": "RL", "seriesName": "Richard Lectures" },
+    { "id": "DBS", "seriesName": "Darden Business Series" },
+    { "id": "WEA", "seriesName": "Writing the Early Americas" },
+    { "id": "LAAB", "seriesName": "Louisiana Artists Biography Series" },
+    { "id": "STS", "seriesName": "Southern Texts Society" },
+    {
+      "id": "PBSH",
+      "seriesName": "Peculiar Bodies: Stories and Histories"
+    },
+    {
+      "id": "RMLS",
+      "seriesName": "Richard E. Myers Lectures: Presented by University Baptist Church, Charlottesville"
+    },
+    {
+      "id": "PBK",
+      "seriesName": "The Malcolm Lester Phi Beta Kappa Lectures on the Liberal Arts and Public Life"
+    },
+    { "id": "BUSG", "seriesName": "SAH/BUS City Guide" },
+    { "id": "ERP", "seriesName": "Eleanor Roosevelt Papers" },
+    { "id": "PAL", "seriesName": "The Papers of Abraham Lincoln" },
+    {
+      "id": "TTTB",
+      "seriesName": "Traditions and Transformations in Tibetan Buddhism"
+    },
+    { "id": "MNS", "seriesName": "Minds of the New South" }
+  ]
+
