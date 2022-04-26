@@ -481,5 +481,21 @@
         "Prizes":null,
         "Reviews":[],
         "imageFilename":"monroe.jpg"
+    },
+    {
+        "Title":"The Papers Frederick Law Olmsted",
+        "Subtitle":"",
+        "RotID":"OLMS",
+        "MainCollection":"American History Collection",
+        "SubCollection":"Antebellum, Civil War and Reconstruction",
+        "StartYear": 1840,
+        "EndYear": 1895,
+        "MainDescription":{"html":"<p> <\/p>"},
+        "Facts":[],
+        "URL":"http://rotunda.upress.virginia.edu/founders/OLMS.html",
+        "EditorCredit":"Charles E. Beveridge, Series Editor",
+        "Prizes":null,
+        "Reviews":[],
+        "imageFilename":"OLMS.jpg"
     }
 ]

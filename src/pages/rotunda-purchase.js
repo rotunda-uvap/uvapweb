@@ -341,6 +341,20 @@ export default function RotundaPurchasePage() {
             <tr>
               <th className="title text-ceci-gray-mid tracking-wide font-thin">
                 &emsp;
+                <a href="https://www.upress.virginia.edu/title/OLMS">
+                  Frederick Law Olmsted Papers
+                </a>
+              </th>
+              <td className="money text-ceci-gray-dark font-thin">$1,577</td>
+              <td className="money text-ceci-gray-dark font-thin">$1,183</td>
+              <td className="money text-ceci-gray-dark font-thin">$820</td>
+              <td className="money text-ceci-gray-dark font-thin">$489</td>
+              <td className="money text-ceci-gray-dark font-thin">$315</td>
+              <td className="money text-ceci-gray-dark font-thin">$158</td>
+            </tr>
+            <tr>
+              <th className="title text-ceci-gray-mid tracking-wide font-thin">
+                &emsp;
                 <a href="https://www.upress.virginia.edu/title/POLK">
                   Correspondence of James K. Polk
                 </a>
