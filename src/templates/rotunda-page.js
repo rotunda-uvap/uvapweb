@@ -12,7 +12,7 @@ const rotundaPage = ({ data }) => {
     const imageData = getImage(data.file)
  return (
    <Layout>
-     <SeO title={item.Title} description="UVA Press's Rotunda imprint publishes innovative peer-reviewed digital projects, both born-digital and from authoritative letterpress editions. "/>
+     <SeO title={item.Title} description="UVA Press's Rotunda imprint publishes innovative peer-reviewed digital projects, both born-digital and from authoritative letterpress editions. Rotunda publications are available to both libraries and independent scholars as single titles or as collections. The American History Collection includes the sub-collections American Founding Era; Antebellum, Civil War, and Reconstruction; and the American Century. "/>
      <div className="container">
 <PageHeader text={item.Title}/>       
         <div className="py-4 flex flex-1 flex-col md:flex-row  items-center">
