@@ -12,7 +12,7 @@ const rotundaPage = ({ data }) => {
     const imageData = getImage(data.file)
  return (
    <Layout>
-     <SeO title={item.Title} description="SAH Archipedia is an authoritative online encyclopedia of the built world published by the Society of Architectural Historians and the University of Virginia Press."/>
+     <SeO title={item.Title} description="UVA Press's Rotunda imprint publishes innovative peer-reviewed digital projects, both born-digital and from authoritative letterpress editions. "/>
      <div className="container">
 <PageHeader text={item.Title}/>       
         <div className="py-4 flex flex-1 flex-col md:flex-row  items-center">
