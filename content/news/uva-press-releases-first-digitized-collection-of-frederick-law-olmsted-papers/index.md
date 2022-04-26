@@ -1,7 +1,7 @@
 ---
 templateKey: news
 type: news
-title: UVA Press Releases First Digitized Collection of Frederick Law Olmsted Papers
+title: ROTUNDA Releases First Digitized Collection of Frederick Law Olmsted Papers
 image: rotunda-web-250px.jpg
 date: 2022-04-26
 ---
