@@ -7,7 +7,7 @@ related_book:
   - "5792"
 date: 2022-04-28
 ---
-Today, we are happy to bring you our conversation with Jane Turner Censer, author of *THE PRINCESS OF ALBEMARLE: AMÉLIE RIVES, AUTHOR AND CELEBRITY AT THE FIN DE SIÈCLE*
+Today, we are happy to bring you our conversation with Jane Turner Censer, author of *THE PRINCESS OF ALBEMARLE: Amélie Rives, Author and Celebrity at the Fin de Siècle*
 
 *What inspired you to write this book?* 
 
