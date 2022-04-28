@@ -2,12 +2,12 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: Kindred Spirits
-    banner_author: Christopher N. Okonkwo
-    banner_subtitle: Winner of the 2022 College Language Association Book Award
-    banner_id: "5472"
-    banner_quote: A timely and original, well-researched study
-    banner_attr: Chielozona Eze
+  - banner_title: The Princess of Albemarle
+    banner_author: Jane Turner Censer
+    banner_subtitle: Amélie Rives, Author and Celebrity at the Fin de Siècle
+    banner_id: "5792"
+    banner_quote: An elegant and engaging multifaceted portrait
+    banner_attr: W. Fitzhugh Brundage
 related_book:
   - "5744"
   - "5617"
