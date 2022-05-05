@@ -3,6 +3,7 @@ templateKey: news
 type: author-corner
 title: Authors' Corner with Douglas Bradburn and Christopher R. Pearl, editors
   of FROM INDEPENDENCE TO THE U.S. CONSTITUTION
+description: lorem ipsum
 image: screen-shot-2022-05-05-at-11.11.07-am.png
 related_book:
   - "5655"
@@ -30,4 +31,4 @@ Just how much the topic of this book related to some of the crises we experience
 
 *What’s next?* 
 
-Chris has recently finished a manuscript, which explores the struggle for independence between squatters, speculators, and Native Americans during the Revolution in the Northern Susquehanna River Valley.  Doug is continuing to manage Mount Vernon, working to redesign the educational exhibit on George Washington and prepare the historic estate for the 250th anniversary of American independence!
+Chris has recently finished a manuscript, which explores the struggle for independence between squatters, speculators, and Native Americans during the Revolution in the Northern Susquehanna River Valley.  Doug is continuing to manage Mount Vernon, working to redesign the educational exhibit on George Washington and prepare the historic estate for the 250th anniversary of American independence.
