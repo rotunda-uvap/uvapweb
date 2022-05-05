@@ -78,7 +78,6 @@ exports.createSchemaCustomization = ({ actions }) => {
                 node {
                   id
                   BookID
-                  CoverImageThumb
                 }
               }
           }
