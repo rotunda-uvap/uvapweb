@@ -3,7 +3,6 @@ templateKey: news
 type: author-corner
 title: Authors' Corner with Douglas Bradburn and Christopher R. Pearl, editors
   of FROM INDEPENDENCE TO THE U.S. CONSTITUTION
-description: lorem ipsum
 image: screen-shot-2022-05-05-at-11.11.07-am.png
 related_book:
   - "5655"
