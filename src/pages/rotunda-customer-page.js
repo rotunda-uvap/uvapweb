@@ -65,13 +65,13 @@ export default function RotundaCustomerList({data}) {
     <li className="tracking-wide"><b>Antebellum, Civil War, and Reconstruction</b></li>
     <li>
         <ul  className="py-5 font-serif">
-        <li><a href="https://rotunda.upress.virginia.edu/MARC/34-olmsted.mrc">Papers of Frederick Law Olmsted Digital
-                    Edition</a></li>
             <li><a href="https://rotunda.upress.virginia.edu/MARC/27-grant.mrc">Papers of Ulysses S. Grant Digital
                     Edition</a></li>
             <li><a href="https://rotunda.upress.virginia.edu/MARC/20-jackson.mrc">Papers of Andrew Jackson Digital
                     Edition</a></li>
             <li><a href="https://rotunda.upress.virginia.edu/MARC/29-johnson.mrc">Papers of Andrew Johnson Digital
+                    Edition</a></li>
+           <li><a href="https://rotunda.upress.virginia.edu/MARC/34-olmsted.mrc">Papers of Frederick Law Olmsted Digital
                     Edition</a></li>
             <li><a href="https://rotunda.upress.virginia.edu/MARC/30-webster.mrc">Papers of Daniel Webster Digital
                     Edition</a></li>
