@@ -6,6 +6,7 @@ import "../utils/global.css"
 import BookHorizontalTabs from "../components/BookHorizontalTabs"
 import SeO from "../components/SeoComponent"
 import ShareButtons from "../components/ShareButtons"
+import kebabCase from "lodash/kebabCase"
 
 const bookPage = ({ data }) => {
   const book = data.books
@@ -180,7 +181,7 @@ const bookPage = ({ data }) => {
                         subject:
                       </span>
                       <button className="bg-greige hover:bg-white font-thin text-sm rounded-md text-ceci-gray-mid p-2 tracking-wide">
-                        <Link to={`../../subject/${book.Subject.subjectID}`} className="tracking-wide uppercase">
+                        <Link to={`../../subject/${kebabCase(book.Subject.name)}`} className="tracking-wide uppercase">
                           {book.Subject.name}
                         </Link>
                       </button>
