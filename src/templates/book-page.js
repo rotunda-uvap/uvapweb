@@ -247,7 +247,7 @@ const bookPage = ({ data }) => {
           </section>
         )} */}
 
-{news && (
+{news.edges[0] && (
         <section className="py-3 flex-col ml-6">
           <span className="text-xs uppercase pr-5 text-ceci-gray-dark tracking-wider">
             Related News:
