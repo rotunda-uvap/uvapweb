@@ -1,9 +1,9 @@
 ---
 templateKey: bio
-title: Morgan Myers
-staff_name: Morgan Myers
+title: Wren Morgan Myers
+staff_name: Wren Morgan Myers
 profile_photo: ""
-name_slug: morgan-myers
+name_slug: wren-morgan-myers
 job_title: Senior Project Editor
 department:
   - EDP
