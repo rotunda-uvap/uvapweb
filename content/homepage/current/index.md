@@ -2,12 +2,12 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: The Princess of Albemarle
-    banner_author: Jane Turner Censer
-    banner_subtitle: Amélie Rives, Author and Celebrity at the Fin de Siècle
-    banner_id: "5792"
-    banner_quote: An elegant and engaging multifaceted portrait
-    banner_attr: W. Fitzhugh Brundage
+  - banner_title: SUSTAINABILITY AND PRIVILEGE
+    banner_author: Gabriel Arboleda
+    banner_subtitle: A Critique of Social Design Practice
+    banner_id: "5692"
+    banner_quote: Achieves a degree of interdisciplinary complexity rarely found
+    banner_attr: Arturo Escobar
 related_book:
   - "5744"
   - "5617"
