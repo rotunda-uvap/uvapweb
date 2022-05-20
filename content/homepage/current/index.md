@@ -2,12 +2,12 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: SUSTAINABILITY AND PRIVILEGE
-    banner_author: Gabriel Arboleda
-    banner_subtitle: A Critique of Social Design Practice
-    banner_id: "5692"
-    banner_quote: Achieves a degree of interdisciplinary complexity rarely found
-    banner_attr: Arturo Escobar
+  - banner_title: AGAINST BETTER JUDGMENT
+    banner_author: Thomas Salem Manganaro
+    banner_subtitle: Irrational Action and Literary Invention in the Long Eighteenth Century
+    banner_id: "5757"
+    banner_quote: An elegant, deftly argued, thoughtful, and original work of criticism.
+    banner_attr: Sarah Tindal Kareem
 related_book:
   - "5744"
   - "5617"
