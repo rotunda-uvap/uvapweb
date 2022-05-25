@@ -2,12 +2,12 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: AGAINST BETTER JUDGMENT
-    banner_author: Thomas Salem Manganaro
-    banner_subtitle: Irrational Action and Literary Invention in the Long Eighteenth Century
-    banner_id: "5757"
-    banner_quote: An elegant, deftly argued, thoughtful, and original work of criticism.
-    banner_attr: Sarah Tindal Kareem
+  - banner_title: WALK THE BARRIO
+    banner_author: Cristina Rodriguez
+    banner_subtitle: The Streets of Twenty-First-Century Transnational Latinx Literature
+    banner_id: "5711"
+    banner_quote: Wonderfully engaging and unique
+    banner_attr: Elena Machado Sáez, Bucknell University
 related_book:
   - "5744"
   - "5617"
