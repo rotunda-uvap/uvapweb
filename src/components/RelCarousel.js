@@ -11,7 +11,7 @@ const Gallery = ({book_obj_array}) => {
       let booklink = "../../title/" + book.jsonId
         return (
             <div className="image-slider-container items-center px-10" key={`book${index}`}>
-                <Link to={booklink} ><img src={cover} width={120} height={67} alt={book.Title} /></Link>
+                <Link to={booklink} ><img src={cover} width={120} height={67} alt={book.Title} loading="lazy"/></Link>
             </div>
         )
     })

@@ -6,7 +6,7 @@ const FeaturedBooks = ({id}) => {
    const booklink = "../../title/" + id
 
     return (
-            <Link to={booklink} ><img src={cover} alt={cover}/></Link>
+            <Link to={booklink} ><img src={cover} width={150} height={84} alt={cover} loading="lazy"/></Link>
   
       )
   }

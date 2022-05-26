@@ -1,5 +1,5 @@
 import React from "react"
-import { Link, StaticQuery, graphql } from "gatsby"
+import { StaticQuery, graphql } from "gatsby"
 import Gallery from "../components/RelCarousel"
 export default function FeaturedColl() { 
   return (
