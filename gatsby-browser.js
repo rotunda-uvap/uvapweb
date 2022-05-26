@@ -13,7 +13,7 @@ import "@fontsource/crimson-text/600.css"
 import "@fontsource/crimson-text/700.css"
 import "@fontsource/crimson-text/400-italic.css"
 
-function initGTM() {
+export default function initGTM() {
     if (window.isGTMLoaded) {
       return false;
     }
