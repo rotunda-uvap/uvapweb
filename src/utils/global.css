@@ -124,3 +124,9 @@ ul.hanging {
 li.hanging {
   text-indent: -.75em;
 }
+
+.homepageimage img {
+  width: 100%;
+  height: auto;
+}
+

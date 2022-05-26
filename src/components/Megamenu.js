@@ -5,10 +5,25 @@ import {
   FaTwitterSquare,
   FaInstagramSquare,
 } from "react-icons/fa"
-import { Link } from "gatsby"
+import { Link, useStaticQuery, graphql } from "gatsby"
 import "./megamenu.css"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 const MegaHeader = () => {
+  const data = useStaticQuery(graphql`
+  query {
+    uvaplogo: file(relativePath: { eq: "black.png" }) {
+      childImageSharp {
+        gatsbyImageData(
+          placeholder: BLURRED
+          formats: [AUTO, WEBP, AVIF]
+        )
+      }
+    }
+    
+  }
+`)
+const uvap = getImage(data.uvaplogo)
   return (
     <>
       <nav
@@ -20,7 +35,7 @@ const MegaHeader = () => {
             <div className="block text-ceci-gray-dark w-64 py-3">
               <Link to={`/`}>
                 {" "}
-                <img src="/black.png" alt="logo" />{" "}
+                <GatsbyImage image={uvap} alt="uva press logo" />{" "}
               </Link>
             </div>
             <div className="toggleable">
@@ -328,7 +343,7 @@ const MegaHeader = () => {
               <div className="block">
                 <Link to={`/`}>
                   {" "}
-                  <img src="/black.png" alt="logo" />{" "}
+                  <GatsbyImage image={uvap} alt="uva press logo" />{" "}
                 </Link>
               </div>
             </div>

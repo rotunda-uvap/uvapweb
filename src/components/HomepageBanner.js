@@ -3,6 +3,7 @@ import { Link} from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
 
+
 const Banner = ({id, author, quote, subtitle, book_title, attr}) => {
   const cover = "https://ik.imagekit.io/uvapress/" + id + ".jpg"
   const booklink = "../../title/" + id
@@ -19,7 +20,7 @@ const Banner = ({id, author, quote, subtitle, book_title, attr}) => {
         </Link> </div>
          
         <div id="3" className="col-span-1 flex flex-col justify-center items-center"><div className="self-center">
-        <Link to={booklink}> <img width={200} src={cover} alt="feat book" className="drop-shadow-img" /></Link></div>
+        <Link to={booklink}> <img width={200} height={112} src={cover} alt="feat book" className="drop-shadow-img homepageimage" /></Link></div>
           </div>
         
           <div id="4" className="hidden lg:block lg:col-span-1 py-3 font-serif font-light text-2xl quoted self-center text-left">

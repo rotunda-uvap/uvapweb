@@ -125,7 +125,7 @@ const bookPage = ({ data }) => {
               />
             </svg>
             <a
-              href={`../../examination_Copy_Form_2021.pdf`}
+              href={`https://forms.gle/H8J1NbtN4BBZZwgy7`}
               className="block group  p-2 ml-4 border-b"
             >
               <div className="font-thin uppercase text-ceci-gray-dark tracking-wide">Exam Copy </div>
