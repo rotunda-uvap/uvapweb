@@ -12,6 +12,7 @@ const Banner = ({id, author, quote, subtitle, book_title, attr}) => {
       childImageSharp {
         gatsbyImageData(
           placeholder: BLURRED
+          quality:100
           formats: [AUTO, WEBP, AVIF]
         )
       }
