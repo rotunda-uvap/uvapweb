@@ -1,18 +1,31 @@
 import React from 'react'
-import { Link} from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
-
+import { Link, useStaticQuery, graphql} from "gatsby"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 
 const Banner = ({id, author, quote, subtitle, book_title, attr}) => {
   const cover = "https://ik.imagekit.io/uvapress/" + id + ".jpg"
   const booklink = "../../title/" + id
+  const data = useStaticQuery(graphql`
+  query {
+    uvalogofull: file(relativePath: { eq: "uvap_logo_full.png" }) {
+      childImageSharp {
+        gatsbyImageData(
+          placeholder: BLURRED
+          formats: [AUTO, WEBP, AVIF]
+        )
+      }
+    }
+    
+  }
+`)
+const uvafullimage = getImage(data.uvalogofull)
 
    return (
     <section className=" w-full md:w-3/4 lg:w-2/3 mx-auto py-5  text-ceci-gray-dark">
    
        <div className="mx-auto grid gap-4 grid-cols-2 lg:grid-cols-3  place-content-center justify-center content-center  ">
-       <div id="1" className="col-span-2 lg:col-span-3 w-full py-5 place-content-center"><div className=" text-center pb-5"><StaticImage src="../../static/uvap_logo_full.png" alt="uvap logo" placeholder="TRACED_SVG" quality="100"/></div></div> 
+       <div id="1" className="col-span-2 lg:col-span-3 w-full py-5 place-content-center"><div className=" text-center pb-5"><GatsbyImage image={uvafullimage} alt="uva logo"width={500} height={119} className="homepageimage" /></div></div> 
        <div id="2" className="col-span-1  flex flex-col justify-center"><Link to={booklink}>
          <div className=" font-sans font-light text-xs md:text-lg tracking-wide text-ceci-gray-mid text-right uppercase">{author}</div>
          <div className=" font-display text-xl md:text-3xl font-light text-right tracking-wide uppercase">{book_title}</div>
