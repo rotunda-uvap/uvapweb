@@ -1,9 +1,41 @@
 import React from "react"
-import {Link } from "gatsby"
+import {Link, useStaticQuery, graphql} from "gatsby"
 import { FaPhone, FaMapMarkedAlt, FaEnvelope, FaFacebookSquare, FaTwitterSquare, FaInstagramSquare } from "react-icons/fa";
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 const Footer = () => {
-   
+  const data = useStaticQuery(graphql`
+  query {
+    uvalogo: file(relativePath: { eq: "rev_uva_logo_color.png" }) {
+      childImageSharp {
+        gatsbyImageData(
+          placeholder: BLURRED
+          formats: [AUTO, WEBP, AVIF]
+        )
+      }
+    }
+    auplogo: file(relativePath: { eq: "aup_member.jpg" }) {
+      childImageSharp {
+        gatsbyImageData(
+          placeholder: BLURRED
+          formats: [AUTO, WEBP, AVIF]
+        )
+      }
+    }
+    bstack: file(relativePath: { eq: "book-stack.png" }) {
+      childImageSharp {
+        gatsbyImageData(
+          width: 75
+          placeholder: BLURRED
+          formats: [AUTO, WEBP, AVIF]
+        )
+      }
+    }
+  }
+`)
+const uvaimage = getImage(data.uvalogo)
+const aupimage  = getImage(data.auplogo)
+const bookstack  = getImage(data.bstack)
     return (
       <footer>
          <div className="border-t-2 border-b-2 text-ceci-gray-mid text-md  grid grid-cols-1 md:grid md:grid-cols-4 items-center">
@@ -69,14 +101,15 @@ const Footer = () => {
               </section> 
            </div>
            <div className="flex flex-col px-5"><Link to={`/support`} className="hover:text-gray-300">
-             <img src="/book-stack.png" alt="support uva press" width="75px"/>
+           <GatsbyImage image={bookstack} alt="support uva press" />
              <div className="uppercase font-thin py-2 tracking-wide text-xl">Be a part of<br/> the future<br/> of publishing</div><div className="uppercase text-2xl font-bold">          
            
 Support UVA Press</div></Link></div>
            <div id="affiliates" className="py-4  col-span-1 px-4 md:py-0"><h6 className="hidden">Affiliates</h6>
            <ul>
-             <li><a href="http://www.virginia.edu/"> <img src="/rev_uva_logo_color.png" alt="uva"/> </a></li>
-             <li><a href="http://www.aupresses.org"> <img src="/aup_member.jpg" alt="aup"/> </a></li>
+
+             <li><a href="http://www.virginia.edu/"> <GatsbyImage image={uvaimage} alt="uva logo" /> </a></li>
+             <li><a href="http://www.aupresses.org"> <GatsbyImage image={aupimage} alt="aup member" /> </a></li>
              </ul></div>
         </div>
         <div className="text-center uppercase text-ceci-gray-mid text-md font-thin tracking-wider py-2">© 2021 UNIVERSITY OF VIRGINIA PRESS</div>
