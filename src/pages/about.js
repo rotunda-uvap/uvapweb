@@ -154,14 +154,13 @@ export default function AboutPage({ data }) {
               <BoardMember name={"Derrick Aldridge"} title={"Professor and Program Coordinator, Social Foundations of Education, University of Virginia"}/>
               <BoardMember name={"Asher Biemann"} title={"Professor of Religious Studies, University of Virginia"}/>
               <BoardMember name={"Amy Clark"} title={"Professor of English and Chair of Communications Studies, University of Virginia at Wise"}/>
-              <BoardMember name={"Felipe Correa"} title={"Vincent + Eleanor Shea Professor and Chair, Department of Architecture, University of Virginia"}/>
                 <BoardMember name={"David Getsy"} title={"Eleanor Shea Professor of Art History, Department of Art, University of Virginia"}/>
                 <BoardMember name={"Claudrena Harold"} title={"Professor of African American and African Studies and History and Department Chair, Corcoran Department of History, University of Virginia"}/>
                 <BoardMember name={"Cassandra Newby-Alexander"} title={"Dean, College of Liberal Studies, Professor of History, and Director, Joseph Jenkins Roberts Center for African Diaspora, Norfolk State University"}/>
                 <BoardMember name={"Jenny Roe"} title={"Mary Irene DeShong Professor of Design and Health, Urban + Environmental Planning and Director, Center for Design and Health, School of Architecture, University of Virginia"}/>
                 <BoardMember name={"Sandhya Shukla"} title={"Associate Professor of English and American Studies and Director of Graduate Admissions, University of Virginia"}/>
                 <p className="py-4 px-5 italic">Ex Officio</p>
-                <BoardMember name={"M. Elizabeth Magill"} title={"Executive Vice President and Provost, University of Virginia"}/>
+                <BoardMember name={"Brie Gertler"} title={"Vice Provost for Academic Affairs and Commonwealth Professor in the Corcoran Department of Philosoph"}/>
                 <BoardMember name={"Jonathan D. Bowen"} title={"Assistant to the President and Writer, University of Virginia"}/>
                 <BoardMember name={"Suzanne Morse Moomaw"} title={"Director, University of Virginia Press"}/>
 
