@@ -1,13 +1,28 @@
 import React from "react"
-import { Link} from "gatsby"
+import { graphql, useStaticQuery, Link} from "gatsby"
 import {FaArrowAltCircleRight} from "react-icons/fa"
-import { StaticImage } from "gatsby-plugin-image"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 export default function RotundaNews() { 
+  const data = useStaticQuery(graphql`
+  query {
+    image: file(relativePath: { eq: "OLMS_home.png" }) {
+      childImageSharp {
+        gatsbyImageData(
+          placeholder: BLURRED
+          quality: 70
+          width: 300
+          formats: [AUTO, WEBP, AVIF]
+        )
+      }
+    }
+  }
+    `)
+    const rotimage = getImage(data.image)
   return (
     
         <section className="md:flex md:flex-row justify-center place-content-center md:space-x-8">
-            <StaticImage  width={300} src="../images/OLMS_home.png" alt="Papers of Frederick Law Olmsted Digital Edition" />
+          <GatsbyImage image={rotimage} alt="Papers of Frederick Law Olmsted Digital Edition" />
            <article className="flex flex-1 flex-col flex-wrap px-2 py-5 md:p-5">
            
             <>

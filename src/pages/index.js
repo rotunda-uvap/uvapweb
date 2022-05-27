@@ -1,6 +1,5 @@
 import React from "react"
 import { graphql, Link} from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
 import Layout from "../components/layout"
 import FeatColl from "../components/FeaturedCollection"
 import FeatTrio from "../components/NewsEventEx"
