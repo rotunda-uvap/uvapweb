@@ -15,7 +15,7 @@ const Gallery = ({book_id_array}) => {
       let booklink = "../../title/" + image
         return (
             <div className="image-slider-container items-center px-10" key={`img${index}`}>
-                <Link to={booklink} ><img src={cover} alt={image} width={150} height={84} loading="lazy"/></Link>
+                <Link to={booklink} ><img src={cover} alt={image} width={150} height={224} loading="lazy"/></Link>
             </div>
         )
     })

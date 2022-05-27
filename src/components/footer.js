@@ -81,7 +81,7 @@ const bookstack  = getImage(data.bstack)
               <ul className=" flex flex-col md:pl-3">
                 <li>P.O. Box 400318 (Postal)</li>
                 <li>210 Sprigg Lane (Courier)</li>
-                <li>Charlottesville, VA 22904-4318</li>
+                <li>Charlottesville, VA 22903-2417</li>
               </ul>
               </section> 
               <section className="flex flex-row  py-2">

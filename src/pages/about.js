@@ -110,7 +110,7 @@ export default function AboutPage({ data }) {
       <div className="bg-white relative flex flex-wrap py-6 rounded shadow-md">
         <div className="lg:w-1/2 px-6">
           <h2 className="title-font font-semibold text-ceci-gray-dark tracking-widest text-xs">ADDRESS</h2>
-          <p className="mt-1">210 Sprigg Lane, Charlottesville, VA 22904-4318</p>
+          <p className="mt-1">210 Sprigg Lane, Charlottesville, VA 22903-2417</p>
         </div>
         <div className="lg:w-1/2 px-6 mt-4 lg:mt-0">
           <h2 className="title-font font-semibold text-ceci-gray-dark tracking-widest text-xs">EMAIL</h2>
@@ -132,7 +132,7 @@ export default function AboutPage({ data }) {
      <div className="leading-relaxed mb-5 text-gray-600 flex flex-col98">
              <div>University of Virginia Press</div>
              <div>210 Sprigg Lane</div>
-             <div>Charlottesville, VA 22903</div>
+             <div>Charlottesville, VA 22903-2417</div>
      </div>
       <p className="text-xs text-gray-500 mt-3">If you are driving, we usually have parking space available in the driveway just past Bemiss House on the left; we do not have visitor permits for the Alumni Hall parking lot.</p>
     </div>
