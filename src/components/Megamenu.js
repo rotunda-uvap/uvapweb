@@ -16,6 +16,7 @@ const MegaHeader = () => {
       childImageSharp {
         gatsbyImageData(
           placeholder: BLURRED
+          quality:100
           formats: [AUTO, WEBP, AVIF]
         )
       }

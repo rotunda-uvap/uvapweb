@@ -10,6 +10,7 @@ import RotundaNews from "../components/RotundaNews"
 // import GoogleCalendar from "../components/Calendar"
 import Gallery from "../components/ExCarousel.js"
 // import { ReactEmbeddedGoogleCalendar } from 'react-embedded-google-calendar';
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 import SeO from "../components/SeoComponent"
 import SectionHeader from "../components/SectionHeader"
@@ -17,6 +18,8 @@ import SectionHeader from "../components/SectionHeader"
 const Home = ({ data }) => {
   const featured_slider = data.markdownRemark.frontmatter.featured_books
   const top = data.markdownRemark.frontmatter.top_banner[0]
+  const vologo = getImage(data.vaopenlogo)
+  const catalog  = getImage(data.catalogimage)  
   return (
     <Layout>
 <SeO/>
@@ -65,7 +68,8 @@ const Home = ({ data }) => {
   <section className="py-4 border-b-2 border-gray-100">
     <SectionHeader text="Open Access"/>
           <div className="flex flex-col items-center"><a href="https://open.upress.virginia.edu/">
-          <StaticImage src="../images/vo.png" width={500} alt="virginia open"/></a>
+          
+          <GatsbyImage image={vologo} alt="virginia open logo"  /></a>
           <p className="py-4 dropCap text-md text-gray-800">V/O: Virginia Open, a collection of University of Virginia Press titles made freely available. On this imprint, you will find both open-access monographs from The University of Virginia Press, readable in your browser or via download, and links to open-access websites published under our Rotunda imprint or in collaboration with partner institutions.</p>
           </div>
        </section>
@@ -77,7 +81,7 @@ const Home = ({ data }) => {
 
     {/* <div className="grid grid-cols-1 md:grid-cols-2 "> */}
     <div className="flex flex-col items-center">
-       <div className="md:pb-0 pb-4"><Link to={'../catalog'}> <StaticImage  width={300} src="../images/spring22.jpg" alt="current catalog cover" /></Link></div>
+       <div className="md:pb-0 pb-4"><Link to={'../catalog'}> <GatsbyImage image={catalog} alt="current catalog cover" width={300} /></Link></div>
        {/* <GoogleCalendar/> */}
       {/*  <button className="text-gray-600">
        <div className="flex flex-col">
@@ -118,6 +122,25 @@ export const query = graphql`
         }
         featured_books
         title
+      }
+    }
+    vaopenlogo: file(relativePath: { eq: "vo.png" }) {
+      childImageSharp {
+        gatsbyImageData(
+          placeholder: BLURRED
+          quality:100
+          width:500
+          formats: [AUTO, WEBP, AVIF]
+        )
+      }
+    }
+    catalogimage: file(relativePath: { eq: "spring22.jpg" }) {
+      childImageSharp {
+        gatsbyImageData(
+          placeholder: BLURRED
+          quality:100
+          formats: [AUTO, WEBP, AVIF]
+        )
       }
     }
   }`

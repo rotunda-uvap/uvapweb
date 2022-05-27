@@ -23,6 +23,7 @@ const ImgGallery = ({filename_array}) => {
         lazyLoad:true,
         swipeToSlide: true,
         speed: 500,
+        useTransform:false,
         slidesToShow: 4,
         slidesToScroll: 1,
         className:'slider',
