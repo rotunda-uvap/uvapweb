@@ -1,12 +1,17 @@
 import React from "react"
 import Footer from "./footer" 
 import MegaHeader from "./Megamenu"
-
+import { Helmet } from "react-helmet"
 
 const Layout = ({ children }) => {
  
   return (
-    
+    <>
+    <Helmet
+  htmlAttributes={{
+    lang: 'en',
+  }}
+/>
     <div className="max-w-full mx-auto px-5 py-5">
     
       <MegaHeader/>
@@ -18,6 +23,7 @@ const Layout = ({ children }) => {
       </div>
       
     </div>
+    </>
   )
 }
 export default Layout

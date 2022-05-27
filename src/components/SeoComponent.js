@@ -30,9 +30,7 @@ const SeO = ({ title, description, image, article, cover, book, author, isbn}) =
 
   return (
     <Helmet title={seo.title} titleTemplate={titleTemplate}>
-      htmlAttributes={{
-    lang: 'en',
-  }}
+    
       <meta name="description" content={seo.description} />
       <meta name="image" content={seo.image} />
       {seo.url && <meta property="og:url" content={seo.url} />}
