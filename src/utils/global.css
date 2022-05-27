@@ -130,6 +130,9 @@ li.hanging {
   height: auto;
 }
 
+.slick-slide[aria-hidden=true] {
+  visibility: hidden;
+}
 div[aria-hidden=true] a[href],
 div[aria-hidden=true] area[href], 
 div[aria-hidden=true] input:not([disabled]), 
