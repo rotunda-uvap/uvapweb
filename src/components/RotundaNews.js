@@ -35,7 +35,7 @@ export default function RotundaNews() {
               <div className="md:px-10 flex flex-col">
               <Link className="font-display tracking-wide uppercase py-2" to={`../title/OLMS`}>ROTUNDA Launches the Papers of Frederick Law Olmsted Digital Edition</Link>
             <div><p className="font-serif text-md text-ceci-gray-dark leading-relaxed dropCap">The latest title in ROTUNDA's American History Collection is a fully searchable online edition of the Papers of Frederick Law Olmsted. This digital archive is open access through May 15, 2022 .</p> </div>  
-            <div className="font-display uppercase text-xs tracking-widest"><Link className="font-display tracking-wide uppercase py-2" to={`../title/OLMS`}><FaArrowAltCircleRight className="inline mx-4"/> Read more</Link> </div></div>
+            <div className="font-display uppercase text-xs tracking-widest"><Link className="font-display tracking-wide uppercase py-2" to={`../title/OLMS`}><FaArrowAltCircleRight className="inline mx-4"/> Continue Reading</Link> </div></div>
          
             
             </>
