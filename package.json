@@ -14,7 +14,6 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
-    "@builder.io/partytown": "^0.6.0",
     "@ericz1803/react-google-calendar": "^4.2.1",
     "@fontsource/antonio": "^4.5.7",
     "@fontsource/crimson-text": "^4.5.2",
@@ -34,7 +33,6 @@
     "gatsby-legacy-polyfills": "^2.13.0",
     "gatsby-plugin-algolia": "^0.26.0",
     "gatsby-plugin-gatsby-cloud": "^4.13.0",
-    "gatsby-plugin-google-analytics": "^4.13.0",
     "gatsby-plugin-google-gtag": "^4.15.0",
     "gatsby-plugin-image": "^2.13.0",
     "gatsby-plugin-less": "^6.13.0",

@@ -10,9 +10,9 @@ const Gallery = ({book_obj_array}) => {
       let cover = "https://ik.imagekit.io/uvapress/mediums/" + book.jsonId + "_M.jpg"
       let booklink = "../../title/" + book.jsonId
         return (
-            <div className="image-slider-container items-center px-10" key={`book${index}`}>
-                <Link to={booklink} ><img src={cover} width={120} height={180} alt={book.Title} loading="lazy"/></Link>
-            </div>
+            <Link to={booklink} ><div className="image-slider-container items-center px-10" key={`book${index}`}>
+                <img src={cover} width={120} height={180} alt={book.Title} loading="lazy"/>
+            </div></Link>
         )
     })
 
