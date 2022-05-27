@@ -4,7 +4,7 @@ title: Mark Mones
 staff_name: Mark Mones
 profile_photo: mm-photo.jpg
 name_slug: mark-mones
-job_title: Acquisitions Editor, Architecture, Urban Design, and Regional Books
+job_title: Editor, Architecture, Urban Design, and Regional Books
 department:
   - ACQ
 email: emm4t@virginia.edu
