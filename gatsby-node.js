@@ -2,10 +2,7 @@ const path = require(`path`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
 const { slash } = require(`gatsby-core-utils`)
 const _ = require("lodash")
-const { copyLibFiles } = require('@builder.io/partytown/utils');
-exports.onPreBuild = async () => {
-  await copyLibFiles(path.join(__dirname, 'static', '~partytown'));
-}; 
+
 
 
 exports.createSchemaCustomization = ({ actions }) => {

@@ -130,7 +130,7 @@ li.hanging {
   height: auto;
 }
 
-.slick-slide[aria-hidden=true] {
+.slick-slide[aria-hidden=true] > a[href] {
   visibility: hidden;
 }
 div[aria-hidden=true] a[href],
