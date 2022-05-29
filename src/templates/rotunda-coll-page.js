@@ -1,6 +1,6 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
-import RotundaCard from "../components/RotundaCard"
+import RotCard from "../components/RotundaListFragment"
 import Layout from "../components/layout"
 import SeO from "../components/SeoComponent"
 import PageHeader from "../components/PageHeader"
@@ -19,7 +19,7 @@ const RotundaCollTemplate = ({ data }) => {
                     <div className="container px-5 py-5 grid md:grid-cols-3 md:gap-4">
                         {items.edges.map(edge => (
                   <>  
-                   <RotundaCard Title={edge.node.Title} Subtitle={edge.node.Subtitle} ID={edge.node.RotID} Image={edge.node.imageFilename}/>
+                     <RotCard fields={edge.node}/>
 
                      </>
                     ))}
@@ -47,12 +47,9 @@ export const query = graphql`
         allRotundaJson(filter: {MainCollection: { eq: $coll }}) {
             edges {
                 node {
-                  Title
-                  Subtitle
-                  RotID
+                  ...RotFieldFragment
                   MainCollection
-                  SubCollection
-                  imageFilename
+                  
                 }
             }
         } 

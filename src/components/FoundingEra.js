@@ -1,6 +1,6 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
-import RotundaCard from "./RotundaCard"
+import RotCard from "./RotundaListFragment"
 export default function FEList() {
   return (
     <StaticQuery
@@ -9,10 +9,7 @@ export default function FEList() {
             FE: allRotundaJson(filter: {SubCollection: {eq: "Founding Era Collection"}}, sort: {fields: StartYear, order: ASC}) {
                 edges {
                   node {
-                    Title
-                    Subtitle
-                    RotID
-                    imageFilename
+                    ...RotFieldFragment
                     StartYear
                     SubCollection
                   }
@@ -23,8 +20,8 @@ export default function FEList() {
         render={data => (
             data.FE.edges.map((edge, index) => (
               <div className="p-2 sm:w-1/2 w-full" key={index}>
-                 <RotundaCard Title={edge.node.Title} Subtitle={edge.node.Subtitle} ID={edge.node.RotID} Image={edge.node.imageFilename}  />
-                </div>
+                <RotCard fields={edge.node}/> 
+              </div>
             ))
         )}
       />

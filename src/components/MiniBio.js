@@ -27,7 +27,6 @@ export const query = graphql`
   fragment MiniBioFragment on MarkdownRemark {
     frontmatter {
         title
-        templateKey
         job_title
         name_slug
         phone
