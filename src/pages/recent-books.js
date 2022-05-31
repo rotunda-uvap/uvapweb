@@ -23,16 +23,10 @@ export default function RecentBooks({ data }) {
             <section className="py-5 flex md:flex-row items-center gap-4 md:gap-8 justify-center flex-col mx-auto border-b">
        
             <span className="text-center font-thin pb-4 text-ceci-gray-mid tracking-wide uppercase"><Link to={'#upc'}>
-            Forthcoming Books {/* <span className="inline-flex items-center mt-4">
-              <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                <path d="M16 17l-4 4m0 0l-4-4m4 4V3"></path>
-              </svg></span> */}
+            Forthcoming Books 
               </Link></span>
             <span className="font-thin text-center pb-4 text-ceci-gray-mid tracking-wide uppercase"><Link to={'#new'}>
-            Books Published This Year {/* <span className="inline-flex items-center mt-4">
-              <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                <path d="M5 12h14M12 5l7 7-7 7"></path>
-              </svg></span> */}
+            Books Published This Year 
               </Link></span>
             </section>
             
@@ -42,10 +36,8 @@ export default function RecentBooks({ data }) {
       <SectionHeader className="py-4" text={"Recent Releases"}/>
           <div className="container flex flex-wrap gap-2 py-5">
             {rec.edges.map((edge, index) => (
-            
-              <Link to={`../title/${ edge.node.BookID }`} key={index}>
-                <BookCard Title={edge.node.Title} Subtitle={edge.node.Subtitle} Author={edge.node.AuthorCredit} Thumb={edge.node.CoverImageMain} Bookid ={edge.node.BookID} pubdate={edge.node.PublicationDate} />
-                </Link>
+           
+              <BookCard fields={edge.node} key={index}/>
           
         ))}<Link to={`#top`} className="uppercase text-ceci-gray-mid text-xs p-2 ">Go to top</Link>
         </div>
@@ -57,15 +49,7 @@ export default function RecentBooks({ data }) {
             {upc.edges.map((edge, index) => (
            
 
-           <Link to={`../title/${ edge.node.BookID }`} key={index}>
-               <BookCard Title={edge.node.Title} 
-             Subtitle={edge.node.Subtitle} 
-             Author={edge.node.AuthorCredit} 
-             Thumb={edge.node.CoverImageMain} 
-             Bookid ={edge.node.BookID} 
-             pubdate={edge.node.PublicationDate}/>
-
-             </Link>
+          <BookCard fields={edge.node} key={index}/>
              
            
         ))}
@@ -85,24 +69,16 @@ export const query = graphql`
     upcoming: allBooksJson(filter: {DaysSincePublication: {lt: 1}}, sort: {fields: DaysSincePublication}) {
         edges {
           node {
-            BookID
-            Title
-            Subtitle
+            ...BookQFragment
             PublicationDate
-            AuthorCredit
-            CoverImageMain
           }
         }
       }
       recent: allBooksJson(filter: {DaysSincePublication: {gt: 0, lt: 365}}, sort: {fields: DaysSincePublication}) {
         edges {
           node {
-            BookID
-            Title
-            Subtitle
+            ...BookQFragment
             PublicationDate
-            AuthorCredit
-            CoverImageMain
           }
         }
       }

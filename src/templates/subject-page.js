@@ -1,5 +1,5 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import BookCard from "../components/BookCard"
 import SeO from "../components/SeoComponent"
@@ -27,9 +27,9 @@ const SubjectTemplate = ({ pageContext, data }) => {
                     <div className="container grid grid-cols-2 md:flex md:flex-wrap gap-2 py-5">
                         {books.edges.map(edge => (
                   <>  
-                  <Link key={`l${edge.node.BookID}`} to={`../../title/${ edge.node.BookID }`}>
-                    <BookCard key={`b${edge.node.BookID}`} Title={edge.node.Title} Subtitle={edge.node.Subtitle} Author={edge.node.AuthorCredit} Thumb={edge.node.CoverImageMain} Bookid ={edge.node.BookID} pubdate={edge.node.PublicationDate}/>
-                    </Link>
+                 
+                    <BookCard fields={edge.node}/>
+                   
                      </>
                     ))}
                         </div> 
@@ -49,17 +49,13 @@ export const query = graphql`
       allBooksJson(filter: {Subject: {name: { in: [$id] }}}, sort: {fields: DaysSincePublication}) {
         edges {
                 node {
-                  Title
-                  Subtitle
-                  BookID
+                  ...BookQFragment
                   Subject {
                     subjectID
                     name
                   }
-                  AuthorCredit
-                  PublicationDate
                   DaysSincePublication
-                  CoverImageMain
+                  
                 }
             }
         }   

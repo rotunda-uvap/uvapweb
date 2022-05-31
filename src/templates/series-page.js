@@ -34,19 +34,6 @@ const SeriesTemplate = ({ data }) => {
             {seriesinfo.frontmatter.editors ? <div className="text-ceci-gray-mid leading-relaxed font-serif ml-4 cms" dangerouslySetInnerHTML={{ __html: seriesinfo.frontmatter.editors }}/> : <div/> }
             {seriesinfo.frontmatter.moreEditors ? <div className="text-ceci-gray-mid leading-relaxed font-serif pt-2 ml-4 cms" dangerouslySetInnerHTML={{ __html: seriesinfo.frontmatter.moreEditors }}/> : <div/> }
 
-{/* <div>
-  
-{related_staff && related_staff.length > 1 && related_staff.map((staff, index) => (
-
-<>
-<div className="pt-2 text-ceci-gray-mid leading-relaxed font-serif ml-4 cms">UVA Editors: 
-            <div>
-            <Link to={'../../staff/' + staff.frontmatter.title.replace(" ", "-").toLowerCase()} key={`staff${index}`} className="pr-4"> {staff.frontmatter.title}</Link>
-            </div>
-</div>
-</>
-        ))}
-</div> */}
 
 
 
@@ -76,8 +63,7 @@ const SeriesTemplate = ({ data }) => {
 <SectionHeader text={'Books in this Series'}/>                    <div className="container grid grid-cols-2 md:flex md:flex-wrap gap-2 py-5">
                         {books.edges.map((edge, index) => (
                   
-                  <Link to={`../../title/${ edge.node.BookID }`} key={`bks${index}`}>
-                  <BookCard Title={edge.node.Title} Subtitle={edge.node.Subtitle} Author={edge.node.AuthorCredit} Thumb={edge.node.CoverImageMain} Bookid ={edge.node.BookID} pubdate={edge.node.PublicationDate} /></Link>
+                  <BookCard fields={edge.node} key={index} />
                     
                     ))}
                         </div> 
@@ -101,17 +87,13 @@ export const query = graphql`
         allBooksJson(filter: {Series: {seriesID: { eq: $id }}}, sort: {fields: DaysSincePublication}) {
             edges {
                 node {
-                  Title
-                  Subtitle
-                  BookID
+                  ...BookQFragment
                   Series {
                     name
                     seriesID
                   }
-                  AuthorCredit
-                  PublicationDate
                   DaysSincePublication
-                  CoverImageMain
+                  
                 }
             }
         }  

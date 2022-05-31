@@ -1,5 +1,5 @@
 import React from "react"
-import { StaticQuery, graphql, Link } from "gatsby"
+import { StaticQuery, graphql} from "gatsby"
 import BookCard from "./BookCard"
 import SectionHeader from "./SectionHeader"
 
@@ -11,12 +11,9 @@ export default function AwardWinners() {
         allBooksJson(filter: {Prizes: {regex: "/.[A-Z]/"}}) {
           edges {
             node {
-              Title
-              Subtitle
-              BookID
-              Prizes
+              ...BookQFragment
               PublicationDate
-              CoverImageMain
+              
             }
           }
         }
@@ -29,8 +26,7 @@ export default function AwardWinners() {
         <div className="container px-5 py-5 flex flex-wrap">
           {data.allBooksJson.edges.map((edge, index) => (
          
-          <Link to={`../title/${ edge.node.BookID }`} key={index}>
-          <BookCard Title={edge.node.Title} Subtitle={edge.node.Subtitle} Author={edge.node.AuthorCredit} Thumb={edge.node.CoverImageMain} Bookid ={edge.node.BookID}  /></Link>
+          <BookCard fields={edge.node} key={index} />
       
       ))}
       </div>

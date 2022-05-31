@@ -1,5 +1,5 @@
 import React from "react"
-import { StaticQuery, graphql, Link } from "gatsby"
+import { StaticQuery, graphql} from "gatsby"
 import BookCard from "./BookCard"
 
 
@@ -12,12 +12,9 @@ export default function CurrentList() {
         allBooksJson(filter: {List: {eq: "Spring 2022"}}) {
           edges {
             node {
-              Title
-              Subtitle
-              BookID
-              AuthorCredit
+              ...BookQFragment
               PublicationDate
-              CoverImageMain
+              
             }
           }
         }
@@ -30,9 +27,8 @@ export default function CurrentList() {
 
       <div className="container px-5 py-5 flex flex-wrap ">
           {data.allBooksJson.edges.map((edge, index) => (
-            
-              <Link to={`../title/${ edge.node.BookID }`} key={`curr${index}`}>
-                <BookCard Title={edge.node.Title} Subtitle={edge.node.Subtitle} Author={edge.node.AuthorCredit} Thumb={edge.node.CoverImageMain} Bookid ={edge.node.BookID}  /></Link>
+          
+                <BookCard fields={edge.node} key={index}/>
            
         ))}
       </div>

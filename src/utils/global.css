@@ -94,7 +94,7 @@ div[aria-expanded="false"]{
   position:relative;
   bottom:1rem;
   content: "\201E";
-  left:80%;
+  left:65%;
   color:#808080;
   font-family: "Crimson Text";
 }

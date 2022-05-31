@@ -65,18 +65,6 @@ export default function Books({ data }) {
       </div>
   </section>
 
-{/* <section className="flex flex-col md:flex-row gap-4 md:gap-8 items-center justify-center py-8 md:py-10 border-b-2 border-gray-100" id="top">
-<div className="uppercase text-ceci-gray-mid text-md font-thin tracking-wider font-sans"><Link to={`#AZ`}>A - Z</Link></div>
-<div className="uppercase text-ceci-gray-mid text-md font-thin tracking-wider font-sans"><Link to={`#recent`}>Recently Published</Link></div>
-<div className="uppercase text-ceci-gray-mid text-md font-thin tracking-wider font-sans"><Link to={`#subjects`}>Browse by Subject</Link></div>
-<div className="uppercase text-ceci-gray-mid text-md font-thin tracking-wider font-sans"><Link to={`#series`}>Browse by Series</Link></div>
-<div className="uppercase text-ceci-gray-mid text-md font-thin tracking-wider font-sans"><Link to={`#awardwinners`}>Award Winners</Link></div>
-
-</section> */}
- 
-
-
-{/* <div className="p-4 text-center uppercase text-ceci-gray-dark text-sm font-thin tracking-wide mx-auto font-sans"><Link to={'../series'}>See all Active Series</Link></div> */}
 
 <section className="py-5 text-ceci-gray-dark border-b-2 border-gray-100" id="subjects">
   <SectionHeader text={"Our Subjects"}/> 
@@ -125,14 +113,14 @@ export default function Books({ data }) {
   <SectionHeader text={"Recent Releases"}/>
           <div className="container grid grid-cols-2 md:flex md:flex-wrap gap-2 py-5">
             {rec.edges.map((edge, index) => (
-          
-              <Link  to={`../title/${ edge.node.BookID }`} key={`rec${index}`}>
-                <BookCard Title={edge.node.Title} Subtitle={edge.node.Subtitle} Author={edge.node.AuthorCredit} Thumb={edge.node.CoverImageMain} Bookid ={edge.node.BookID} pubdate={edge.node.PublicationDate} />
-                </Link>
+          <BookCard fields={edge.node} key={index}/>
+        
           
         ))} <Link to={`#top`} className="uppercase text-ceci-gray-mid text-xs p-2 ">Go to top</Link>
         </div>
        
+
+
 
    </section>
 
@@ -148,7 +136,6 @@ export default function Books({ data }) {
            
               <Link to={`../title/${ edge.node.BookID }`} key={`all${index}`}>
                 <p className="text-md py-2 font-display">{edge.node.Title} - <span className="text-sm">{edge.node.AuthorCredit}</span></p>
-                {/* <BookCard Title={edge.node.Title} Subtitle={edge.node.Subtitle} Author={edge.node.AuthorCredit} Thumb={edge.node.CoverImageMain} Bookid ={edge.node.BookID} pubdate={edge.node.PublicationDate} /> */}
                 </Link>
            
         ))}<Link to={`#top`} className="uppercase text-ceci-gray-mid text-xs p-2 ">Go to top</Link>
@@ -181,20 +168,16 @@ export const query = graphql`
       }
     }
 
-
+  
     recent: allBooksJson(filter: {DaysSincePublication: {gt: 0, lt: 365}}, sort: {fields: DaysSincePublication}) {
       edges {
         node {
-          BookID
-          Title
+          ...BookQFragment
           Series {
             seriesID
             name
           }
-          Subtitle
           PublicationDate
-          AuthorCredit
-          CoverImageMain
         }
       }
     }
@@ -204,9 +187,7 @@ export const query = graphql`
         node {
           BookID
           Title
-          Subtitle
           AuthorCredit
-          CoverImageMain
         }
       }
     }

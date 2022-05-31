@@ -2,6 +2,7 @@ import React from "react"
 import {Link, useStaticQuery, graphql} from "gatsby"
 import { FaPhone, FaMapMarkedAlt, FaEnvelope, FaFacebookSquare, FaTwitterSquare, FaInstagramSquare } from "react-icons/fa";
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import FooterLink from "./FooterLink";
 
 const Footer = () => {
   const data = useStaticQuery(graphql`
@@ -41,31 +42,16 @@ const bookstack  = getImage(data.bstack)
          <div className="border-t-2 border-b-2 text-ceci-gray-mid text-md  grid grid-cols-1 md:grid md:grid-cols-4 items-center">
             <div id="links col-span-1">
               <h6 className="hidden">QuickLinks</h6>
-            <div className="px-5 py-4">
-            
-          <Link to={`/book-search`} className="uppercase  block mt-2   hover:text-gray-300">
-            Find a Book
-          </Link>
-          <Link to={`/authors`} className="uppercase block mt-2    hover:text-gray-300 mr-4">
-            For Our Authors
-          </Link>
-          <Link to={`/permissions/`} href="#responsive-header" className="uppercase  block mt-2   hover:text-gray-300 mr-4">
-            Rights and Permissions</Link>
-          <Link to={`/rotunda`} className="uppercase block mt-2   hover:text-gray-300">
-            ROTUNDA DIGITAL IMPRINT
-          </Link>
-          <Link to={`/support`} className="uppercase block mt-2  hover:text-gray-300">
-            Support UVa Press
-          </Link>
-          <Link to={`/career`} className="uppercase block mt-2  hover:text-gray-300">
-            Career Opportunities
-          </Link>
-          <Link to={`/walker-cowen-award`} className="uppercase block mt-2   hover:text-gray-300">
-            Walker Cowen Memorial Prize
-          </Link>
-          <Link to={`/privacy`} className="uppercase block mt-2   hover:text-gray-300">
-            Privacy Policy
-          </Link>
+            <div className="px-5 py-4 flex flex-col gap-2 ">
+          <FooterLink dest={"book-search"} text="Find a Book"/>
+          <FooterLink dest={"authors"} text={"For Our Authors"}/>
+          <FooterLink dest={"permissions"} text={"Rights and Permissions"}/>
+          <FooterLink dest={"rotunda"} text={"Rotunda Digital Imprint"}/> 
+          <FooterLink dest={"support"} text={"Support UVA Press"}/>
+          <FooterLink dest={"career"} text={"Career Opportunities"}/>
+          <FooterLink dest={"walker-cowen-award"} text={"Walker Cowen Memorial Prize"}/>
+          <FooterLink dest={"privacy"} text={"Privacy Policy"}/>
+         
           <div className="flex flex-row py-2">
             <a href="https://www.facebook.com/uvapress" aria-label="facebook" className="pr-2"><FaFacebookSquare  className="text-3xl"/></a>
           <a href="https://twitter.com/uvapress" aria-label="twitter" className="pr-2"><FaTwitterSquare className="text-3xl"/></a>
@@ -87,8 +73,8 @@ const bookstack  = getImage(data.bstack)
               <section className="flex flex-row  py-2">
               <FaEnvelope className="hidden md:block self-center justify-self-center text-2xl" aria-label="email"/>
                 <ul className="flex flex-col md:pl-3">
-                  <li><a href="mailto:vapress@virginia.edu">General Inquiries</a></li>
-                  <li><Link to={'/staff-list'}>Staff Directory</Link></li>
+                  <li className="p-2 md:p-0"><a href="mailto:vapress@virginia.edu">General Inquiries</a></li>
+                  <li className="p-2 md:p-0"><Link to={'/staff-list'}>Staff Directory</Link></li>
                 </ul>
               </section> 
               <section className="flex flex-row py-2">
