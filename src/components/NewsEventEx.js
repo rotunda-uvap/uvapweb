@@ -68,7 +68,7 @@ export default function FeatTrio() {
              
               {data.news.edges.map((edge, index) => (
                 <>
-                   <Link className="p-2" to={`../author-corner${ edge.node.fields.slug }`}>
+                   <Link className="p-2" to={`../news${ edge.node.fields.slug }`}>
                   <div className="font-thin uppercase tracking-wide font-display md:py-1">{edge.node.frontmatter.title }</div>
               <div className="font-serif text-left text-sm  leading-relaxed text-ceci-gray-dark dropCap" dangerouslySetInnerHTML={{ __html: edge.node.html.split(' ').splice(0, 30).join(' ') + '...' }}/> 
               <div className="font-display uppercase text-xs tracking-widest py-2"><FaArrowAltCircleRight className="inline mx-4"/> Continue Reading</div>
