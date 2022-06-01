@@ -28,7 +28,7 @@ else metaImage = null;
   article={true}
 />
 <section className="text-gray-600 body-font">
-  <div className="container px-5 py-12 mx-auto">
+  <div className="container py-12 mx-auto">
   <div className="flex flex-row px-5 inline-flex items-center w-full leading-normal">
      <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
   <path fillRule="evenodd" d="M7.707 14.707a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l2.293 2.293a1 1 0 010 1.414z" clipRule="evenodd" />
@@ -52,9 +52,9 @@ else metaImage = null;
         ))}</div></>
         }
  <div className="md:w-4/5">
- <p className="lg-w/3/3 leading-relaxed italic py-5 text-center font-serif">Welcome back to the UVA Press Author's Corner! Here, we feature conversations with the authors of our latest releases to provide a glimpse into the writer's mind, their book's main lessons, and what’s next for them. We hope you enjoy these inside stories.</p>
+ <p className="lg-w-3/3 leading-relaxed italic py-5 text-center font-serif">Welcome back to the UVA Press Author's Corner! Here, we feature conversations with the authors of our latest releases to provide a glimpse into the writer's mind, their book's main lessons, and what’s next for them. We hope you enjoy these inside stories.</p>
  
-  {news_image && <div className="float-left px-6 pb-5"><GatsbyImage image={news_image} alt="related image"/></div> }
+  {news_image && <div className="md:float-left px-6 pb-5"><GatsbyImage image={news_image} alt="related image"/></div> }
   <div>
     <article className="cms"
           dangerouslySetInnerHTML={{ __html: news.html }}/>

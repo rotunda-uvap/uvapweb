@@ -61,7 +61,7 @@ export default function FeatTrio() {
         <section className="flex md:flex-row flex-col gap-2 m-2">
 
            <article className="flex flex-col border-b-2 md:border-b-0 pb-2  md:basis-1/3">
-              <Link className="flex flex-row sm:flex-wrap p-2" >
+              <Link className="flex flex-row sm:flex-wrap p-2" to={`../publicity`} >
                   <div className="border-r-2 pr-2 font-serif uppercase tracking-wider text-sm self-center">Recent Posts</div>
                   <div className="pl-2 font-serif text-sm self-center text-ceci-gray-mid">{data.news.edges[0].node.frontmatter.date}</div>
               </Link>
@@ -80,7 +80,7 @@ export default function FeatTrio() {
 
 
           <article className="flex flex-col border-b-2 md:border-b-0 pb-2 md:basis-1/3 ">
-              <Link className="flex flex-row sm:flex-wrap p-2" >
+              <Link className="flex flex-row sm:flex-wrap p-2" to={`../authors-corner`} >
                   <div className="border-r-2 pr-2 font-serif uppercase tracking-wider text-sm self-center">Authors' Corner</div>
                   <div className="pl-2 font-serif text-sm self-center text-ceci-gray-mid">{data.ac.edges[0].node.frontmatter.date}</div>
               </Link>
@@ -106,7 +106,7 @@ export default function FeatTrio() {
              <Link className="font-display tracking-wide uppercase p-2 text-sm" to={`../exhibits/${ data.exhibit.edges[1].node.frontmatter.exhibit_slug }`}>{data.exhibit.edges[1].node.frontmatter.title }</Link>
              <Link className="font-display tracking-wide uppercase p-2 text-sm" to={`../exhibits/${ data.exhibit.edges[2].node.frontmatter.exhibit_slug }`}>{data.exhibit.edges[2].node.frontmatter.title }</Link>
              <Link className="font-display tracking-wide uppercase p-2 text-sm" to={`../exhibits/${ data.exhibit.edges[3].node.frontmatter.exhibit_slug }`}>{data.exhibit.edges[3].node.frontmatter.title }</Link>
-             <Link  to={`../exhibits`} className="font-display uppercase text-xs tracking-widest p-2"><FaArrowAltCircleRight className="inline mr-4"/> see more exhibits</Link>
+             <Link  to={`../exhibits`} className="font-display uppercase text-xs tracking-widest px-2 py-4"><FaArrowAltCircleRight className="inline mr-4"/> see more exhibits</Link>
            </>
            </article>
           

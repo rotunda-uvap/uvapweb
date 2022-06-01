@@ -143,3 +143,12 @@ div[aria-hidden=true] [tabindex]:not([disabled]),
 div[aria-hidden=true] [contenteditable=true]:not([disabled]){
     visibility: hidden;
 }
+
+@media only screen and (max-width: 600px) {
+  .slick-prev {left:-10px !important; padding: 48px;}
+.slick-next {right:0 !important; padding: 48px;}
+.slick-prev:before,
+.slick-next:before {
+    color:#727272 !important; 
+}
+}
