@@ -53,31 +53,36 @@ export default function PubPage({ data }) {
  <p className="pt-2">Review copy requests can take up to four weeks to process. Due to the volume of requests, we are unable to provide status updates. Upon publication, please send PDFs and/or links to coverage to <a href="mailto:uvapressintern@gmail.com">uvapressintern@gmail.com.</a></p>
  </section>
 
-          <div className="grid md:grid-cols-3">
-            <section className="md:col-span-2 mr-5">
-            {news.edges.map((edge, index) => (
-            
-              <div className="flex flex-col md:flex-row" key={`ns${index}`}>
-                  
-                    {edge.node.frontmatter.related_book ? <img src={'https://ik.imagekit.io/uvapress/mediums/' + edge.node.frontmatter.related_book[0].jsonId + "_M.jpg"} alt="cover" className="xs:hidden md:block object-contain self-center justify-self-center"/> : <div></div>}
-                  
-                    <div className="py-6 px-10 ">
-                        <div className="flex items-center"><span className="font-light text-ceci-gray-mid">{edge.node.frontmatter.date}</span>
-                        </div>
-                        <div className="mt-2"><Link className="text-xl text-ceci-gray-dark font-thin tracking-wide hover:underline hover:text-ceci-gray-dark" to={`../${ edge.node.frontmatter.type }${ edge.node.fields.slug }`}>{ edge.node.frontmatter.title }</Link>
-                          {edge.node.html &&  <div className="mt-2 text-ceci-gray-dark font-light" dangerouslySetInnerHTML={{ __html: edge.node.html.split(' ').splice(0, 50).join(' ') + '...' }}></div>}
-                        </div>
-                        <div className="flex justify-between items-center mt-4 text-ceci-gray-mid"><Link  to={`../${ edge.node.frontmatter.type }${ edge.node.fields.slug }`}><FaArrowAltCircleRight className="inline mx-4"/> Read more</Link>
-                                
-                            
-                    </div>
-                    </div>
-              </div>
+          <div className="flex flex-col md:grid md:grid-cols-3">
            
-            ))}<hr className="my-10"/>
-            </section>
-            <div className="md:col-span-1 p-10">
-            <section className="flex flex-col">
+             <section className="md:col-span-2 mr-5 flex flex-col">
+            {news.edges.map((edge, index) => (
+           
+            <Link to={`../${ edge.node.frontmatter.type }${ edge.node.fields.slug }`} key={index} className="flex flex-col border-b-2 last:border-b-0 py-2">
+             <div className="flex flex-col py-2">
+              <div className="text-xs font-serif font-thin text-ceci-gray-mid">{edge.node.frontmatter.date}</div>
+              <div className="font-thin uppercase tracking-wide font-display">{ edge.node.frontmatter.title }</div>
+              </div>
+              
+              <div className="flex flex-row">
+               
+                  {edge.node.frontmatter.related_book ? <div className="base-1/4 shrink-0 pr-2"><img src={'https://ik.imagekit.io/uvapress/mediums/' + edge.node.frontmatter.related_book[0].jsonId + "_M.jpg"} alt="cover" className="p-2"/></div> : <div></div>}
+                  {edge.node.html ?  <div className="mt-2 text-ceci-gray-dark font-light dropCap px-2 md:px-1" dangerouslySetInnerHTML={{ __html: edge.node.html.split(' ').splice(0, 50).join(' ') + '...' }}></div> : <div></div>}
+                  
+            </div>
+            <div className="font-display uppercase text-xs tracking-widest py-3 md:py-2"><FaArrowAltCircleRight className="inline mx-4"/> Continue Reading</div>
+
+            </Link>
+            ))}
+             </section>
+          
+           
+
+
+
+
+          
+            <section className="md:col-span-1 p-10 flex flex-col">
             <h5 className="py-2 text-ceci-gray-mid">UVAP on Facebook</h5>
             <Helmet>
             
@@ -88,7 +93,7 @@ export default function PubPage({ data }) {
            
             </section>
             </div>
-            </div>
+          
             
         
         </Layout>

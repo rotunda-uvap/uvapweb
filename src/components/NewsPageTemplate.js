@@ -35,7 +35,7 @@ import Content from "../components/Content";
             }
         <div className="md:w-4/5">
           {pic && <div className="float-left pb-4 pt-2 px-4 "><GatsbyImage image={pic} alt="related image"/></div> }
-          <PageContent className="cms" content={content} />
+          <PageContent className="cms dropCap" content={content} />
 
       </div>
       
