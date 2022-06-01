@@ -47,7 +47,7 @@ const bookPage = ({ data }) => {
       <div className="flex flex-col md:grid md:grid-cols-3 md:gap-10 py-3 ml-6 text-ceci-gray-dark ">
         <div className="col-span-1">
           {/* <GatsbyImage image={imageData} alt="book cover" /> */}
-          { book.CoverImageFull ? <img className="pt-12 hidden md:block" src={imglink} alt="cover" /> : <img className="hidden md:block" src={noimg_big} alt="cover" />}
+          { book.CoverImageFull ? <img className="pt-6 hidden md:block" src={imglink} alt="cover" /> : <img className="hidden md:block" src={noimg_big} alt="cover" />}
            { book.CoverImageFull ? <img
             className="md:hidden text-center w-1/2 mx-auto"
             src={imglink_sm}
@@ -76,9 +76,9 @@ const bookPage = ({ data }) => {
             {book.AuthorCredit}
           </h6>
 
-          {book.Bindings.map(binding => (
+          {book.Bindings.map((binding, index) => (
             <>
-              <div className=" flex flex-row inline-flex items-center w-full leading-normal">
+              <div className=" flex flex-row inline-flex items-center w-full leading-normal" key={`binding${index}`}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-6 w-6 text-ceci-gray-mid"
@@ -253,8 +253,8 @@ const bookPage = ({ data }) => {
           <span className="text-xs uppercase  text-ceci-gray-mid tracking-wider">
             Related News:
           </span>
-          {news.edges.map (edge => (
-             <article className="flex flex-wrap items-center py-2  ">
+          {news.edges.map ((edge, index) => (
+             <article className="flex flex-wrap items-center py-2  " key={`art${index}`}>
                 <Link to={`../../${edge.node.frontmatter.type}${edge.node.fields.slug}`} className="text-lg font-thin tracking-wide text-ceci-gray-dark"
                 key={edge.node.frontmatter.id}>
                   {edge.node.frontmatter.title}

@@ -21,9 +21,9 @@ const BookHorizontalTabs = ({summary, reviews, bio, TOC, add}) => {
         <TabPanel className="py-3 " tabId="basic-tab-two">
         {reviews ?
     <div className="py-3">
-       {reviews[0] ? reviews.map(review => (
+       {reviews[0] ? reviews.map((review, index) => (
             <>
-            <blockquote className="pt-3 cms text-lg text-ceci-gray-dark" dangerouslySetInnerHTML={{ __html: review.html }}/>
+            <blockquote key={`review${index}`} className="pt-3 cms text-lg text-ceci-gray-dark" dangerouslySetInnerHTML={{ __html: review.html }}/>
              <h6 className="pl-10 pb-5  font-display text-sm italic text-ceci-gray-mid"> - {review.attribution}</h6>
             <hr/>
             </>
@@ -44,8 +44,8 @@ const BookHorizontalTabs = ({summary, reviews, bio, TOC, add}) => {
         </TabPanel>
         <TabPanel className="py-3" tabId="basic-tab-four">
         {TOC ? 
-        <ul className="hanging">{TOC.map(i => (
-          <li className="cms text-ceci-gray-dark font-serif text-lg pl-5 hanging">{i}</li>
+        <ul className="hanging">{TOC.map((i, index) => (
+          <li className="cms text-ceci-gray-dark font-serif text-lg pl-5 hanging" key={index}>{i}</li>
         )
 
         )}</ul>

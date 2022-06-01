@@ -63,7 +63,7 @@ const uvap = getImage(data.uvaplogo)
               </div>
 
               <div
-                role="toggle"
+                role="button"
                 className="p-3 mega-menu mb-16 sm:mb-0 shadow-xl bg-ceci-gray-dark"
               >
                 <div className="w-full flex flex-wrap justify-between mx-2 text-gray-400  font-sans font-thin uppercase">
@@ -405,7 +405,7 @@ const uvap = getImage(data.uvaplogo)
               </div>
 
               <div
-                role="toggle"
+                role="button"
                 className="p-6 mega-menu mb-16 sm:mb-0 shadow-xl bg-ceci-gray-dark"
               >
                 <div className="container mx-auto w-full flex flex-wrap justify-between mx-2">
