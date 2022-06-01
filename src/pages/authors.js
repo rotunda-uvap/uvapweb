@@ -18,10 +18,10 @@ export default function AuthorsPage({ data }) {
 <section className="text-gray-600 body-font border-b-2 border-gray-100">
   <div className="container p-5 mx-auto">
   <div className="flex flex-col  w-full">
-<PageHeader text={"For Current Authors"} />    <span className="text-center font-medium title-font pb-4 text-gray-500"><Link to={'/prospective'}>
+<PageHeader text={"For Current Authors"} />    <span className="text-right uppercase font-thin pb-4 text-gray-500"><Link to={'/prospective'}>
             Prospective Authors <span className="inline-flex items-center mt-4">
               <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                <path d="M5 12h14M12 5l7 7-7 7"></path>
+                <path d="M13 5l7 7-7 7M5 5l7 7-7 7"></path>
               </svg></span>
               </Link></span>
       <p className="lg:w-3/3 mx-auto text-left leading-relaxed text-base">

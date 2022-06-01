@@ -25,14 +25,14 @@ export default function Books({ data }) {
       
       <div className="p-4 lg:w-1/5">
         <div className="flex h-full greige p-3 flex-col place-content-center items-center">
-            <Link to={`#AZ`}><h2 className="text-ceci-gray-dark text-lg uppercase font-thin">A-Z</h2></Link>
+            <Link to={`#AZ`}><h2 className="text-ceci-gray-dark tracking-wide text-lg uppercase font-thin">A-Z</h2></Link>
         </div>
       </div>
       <div className="p-4 lg:w-1/5">
         <div className="flex  h-full greige p-3 flex-col place-content-center items-center">
         
             
-            <Link to={`#recent`}><h2 className="text-ceci-gray-dark text-lg uppercase font-thin">Recently Published</h2></Link>
+            <Link to={`#recent`}><h2 className="text-ceci-gray-dark text-lg tracking-wide uppercase font-thin">Recently Published</h2></Link>
           
         </div>
       </div>
@@ -42,7 +42,7 @@ export default function Books({ data }) {
             
             
            
-            <Link to={`#subjects`}><h2 className="text-ceci-gray-dark text-lg uppercase font-thin">By Subject</h2></Link>
+            <Link to={`#subjects`}><h2 className="text-ceci-gray-dark text-lg tracking-wide uppercase font-thin">By Subject</h2></Link>
           
         </div>
       </div>
@@ -50,7 +50,7 @@ export default function Books({ data }) {
         <div className="flex h-full greige p-3 flex-col place-content-center items-center">
           
             
-            <Link to={`#series`}><h2 className="text-ceci-gray-dark text-lg uppercase font-thin">By Series</h2></Link>
+            <Link to={`#series`}><h2 className="text-ceci-gray-dark text-lg tracking-wide uppercase font-thin">By Series</h2></Link>
           
         </div>
       </div>
@@ -58,7 +58,7 @@ export default function Books({ data }) {
       <div className="p-4 lg:w-1/5">
         <div className="flex h-full greige p-3 flex-col place-content-center items-center">
           
-            <Link to={`#awardwinners`}><h2 className="text-ceci-gray-dark uppercae text-lg uppercase font-thin">Award Winners</h2></Link>
+            <Link to={`#awardwinners`}><h2 className="text-ceci-gray-dark uppercae tracking-wide text-lg uppercase font-thin">Award Winners</h2></Link>
           
         </div>
       </div>
@@ -86,10 +86,13 @@ export default function Books({ data }) {
 </section> 
 
 <section className="text-ceci-gray-dark pb-4 py-6 border-b-2 border-gray-100" id="series">
-<SectionHeader className="py-4" text={"Our Series"}/><Link to={'../series'}><div className="text-sm text-center text-ceci-gray-mid">See all Active Series <span className="inline-flex items-center mt-4">
+<SectionHeader className="py-4" text={"Our Series"}/><Link to={'../series'}><div className="text-sm text-right uppercase font-thin text-ceci-gray-mid">All Active Series <span className="inline-flex items-center mt-4">
               <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                <path d="M5 12h14M12 5l7 7-7 7"></path>
+                <path d="M13 5l7 7-7 7M5 5l7 7-7 7"></path>
               </svg></span></div></Link>
+             
+
+              
   <div className="container flex flex-wrap py-10 mx-auto items-center">
 
       {sers.edges.map((edge, index) => (
@@ -99,7 +102,9 @@ export default function Books({ data }) {
         </div>            
             
         ))}
-    <Link to={`#top`} className="uppercase text-ceci-gray-mid text-xs p-2 ">Go to top</Link>
+    <Link to={`#top`} className="uppercase font-thin text-ceci-gray-mid text-xs py-4 inline-flex "><span className="pl-2">Go to top </span><svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                <path d="M5 11l7-7 7 7M5 19l7-7 7 7"></path>
+              </svg></Link>
   </div>
   
 
@@ -116,7 +121,9 @@ export default function Books({ data }) {
           <BookCard fields={edge.node} key={index}/>
         
           
-        ))} <Link to={`#top`} className="uppercase text-ceci-gray-mid text-xs p-2 ">Go to top</Link>
+        ))}  <Link to={`#top`} className="uppercase font-thin text-ceci-gray-mid text-xs py-4 inline-flex "><span className="pl-2">Go to top </span><svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
+        <path d="M5 11l7-7 7 7M5 19l7-7 7 7"></path>
+      </svg></Link>
         </div>
        
 
@@ -126,7 +133,9 @@ export default function Books({ data }) {
 
 <section id="awardwinners">
   <AwardWinners/>
-  <Link to={`#top`} className="uppercase text-ceci-gray-mid text-xs p-2 ">Go to top</Link>
+  <Link to={`#top`} className="uppercase font-thin text-ceci-gray-mid text-xs py-4 inline-flex "><span className="pl-2">Go to top </span><svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                <path d="M5 11l7-7 7 7M5 19l7-7 7 7"></path>
+              </svg></Link>
 </section>
 
    <section id="AZ" className="py-5 text-gray-700 border-b-2 border-gray-100">
@@ -135,10 +144,12 @@ export default function Books({ data }) {
             {all.edges.map((edge, index) => (
            
               <Link to={`../title/${ edge.node.BookID }`} key={`all${index}`}>
-                <p className="text-md py-2 font-display">{edge.node.Title} - <span className="text-sm">{edge.node.AuthorCredit}</span></p>
+                <p className="text-lg py-2 font-serif tracking-wide">{edge.node.Title} - <span className="text-sm">{edge.node.AuthorCredit}</span></p>
                 </Link>
            
-        ))}<Link to={`#top`} className="uppercase text-ceci-gray-mid text-xs p-2 ">Go to top</Link>
+        ))} <Link to={`#top`} className="uppercase font-thin text-ceci-gray-mid text-xs py-4 inline-flex "><span className="pl-2">Go to top </span><svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
+        <path d="M5 11l7-7 7 7M5 19l7-7 7 7"></path>
+      </svg></Link>
         </div>
         
 

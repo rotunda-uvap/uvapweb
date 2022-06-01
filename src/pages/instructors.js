@@ -4,6 +4,7 @@ import Layout from "../components/layout"
 import SeO from "../components/SeoComponent"
 import PageHeader from "../components/PageHeader"
 import SectionHeader from "../components/SectionHeader"
+import GoToTop from "../components/GoToTop"
 
 
 export default function InstructorPage({data}) {
@@ -20,11 +21,7 @@ export default function InstructorPage({data}) {
     </div>
 
 
-    {/* <div className="container w-2/3 flex flex-row border-b-2 border-gray-100 pt-5 pb-7 mx-auto text-gray-700 font-thin space-x-5 place-content-center items-center">
-  
-    <span><a href={`#copyinfo`}>Desk and Exam Copies</a></span>
-      </div> */}
-
+   
 <section className="py-4 border-b-2 border-gray-100" id="copyinfo">
    <SectionHeader text={'Desk and Exam Copies'} />
  <p className="leading-relaxed text-base text-gray-700"><span className="font-bold">Complimentary desk copies</span> are provided to professors who have already adopted a title for course use and an order with a university or local bookstore has been placed or will be forthcoming. Please indicate the name of this bookstore in your request. To receive a desk copy, <a href="https://docs.google.com/forms/d/e/1FAIpQLSdM83xFI63YLUWkuv7zEko9cMBD-9csrbizC_VH7U7Mmmr5sg/viewform">please fill out this form.</a>  </p>
@@ -51,9 +48,9 @@ export default function InstructorPage({data}) {
         ))}
             </>
         } 
-        </div>
+        </div><GoToTop/>
 </section>
-<a href={`#top`} className="uppercase text-gray-500 text-xs">Go to top</a>
+
 
 
         
@@ -72,14 +69,17 @@ export default function InstructorPage({data}) {
      
     
   </div>
-  <a href={`#top`} className="uppercase text-gray-500 text-xs">Go to top</a>
+ <GoToTop/> 
 
 </section>  
 <section className="text-gray-700 py-4" id="series">
 <SectionHeader className="py-4" text={"Our Series"}/>
-<div className="p-4 text-center uppercase text-gray-700 text-xs font-thin tracking-widest mx-auto font-sans"><Link to={'../series'}>See all Active Series</Link></div>
+<Link to={'../series'}><div className="text-sm text-right uppercase font-thin text-ceci-gray-mid">All Active Series <span className="inline-flex items-center mt-4">
+              <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                <path d="M13 5l7 7-7 7M5 5l7 7-7 7"></path>
+              </svg></span></div></Link>
 
-  <div className="container flex flex-wrap py-10 mx-auto items-center">
+  <div className="md:flex md:flex-wrap py-6 mx-auto">
 
       {sers.edges.map((edge, index) => (
                      
@@ -88,9 +88,9 @@ export default function InstructorPage({data}) {
         </div>            
            
         ))}
-    
+   
   </div>
-  <a href={`#top`} className="uppercase text-gray-500 text-xs">Go to top</a>
+  <GoToTop/> 
 </section>
 
 

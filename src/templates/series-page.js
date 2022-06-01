@@ -50,17 +50,13 @@ const SeriesTemplate = ({ data }) => {
      
      </Link> )) 
    
-    
-        
   }
 </div>}
-
-
-
                </section> 
                 
                 <section className="py-4">
-<SectionHeader text={'Books in this Series'}/>                    <div className="container grid grid-cols-2 md:flex md:flex-wrap gap-2 py-5">
+<SectionHeader text={'Books in this Series'}/> 
+   <div className="container grid grid-cols-2 md:flex md:flex-wrap gap-2 py-5">
                         {books.edges.map((edge, index) => (
                   
                   <BookCard fields={edge.node} key={index} />

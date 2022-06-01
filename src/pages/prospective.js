@@ -20,10 +20,10 @@ export default function ProspectiveAuthorsPage({ data }) {
   <div className="container p-5 mx-auto">
   
             <div className="flex flex-col text-center w-full">
-<PageHeader text={"For Prospective Authors"}/>      <span className="font-medium title-font text-gray-500 pb-4"><Link to={'/authors'}>
+<PageHeader text={"For Prospective Authors"}/>      <span className="font-thin uppercase text-right text-gray-500 pb-4"><Link to={'/authors'}>
             Current Authors <span className="inline-flex items-center mt-4">
               <svg fill="none" stroke="currentColor" strokeLinecap="round" stroke-linejoin="round" strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                <path d="M5 12h14M12 5l7 7-7 7"></path>
+                <path d="M13 5l7 7-7 7M5 5l7 7-7 7"></path>
               </svg>
               </span>
               </Link></span>

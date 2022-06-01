@@ -27,34 +27,27 @@ export default function CompletedSeries() {
         
         <section className="overflow-hidden">
   
-  <div className="container px-5 py-12 mx-auto">
-            <div className="flex flex-col text-center w-full" id="completed">
-            <SectionHeader text={'Completed Series'}/> 
-         </div>
-         <Link to={`#active`}><div className="text-sm text-center tracking-wide text-ceci-gray-dark">Active Series <span className="inline-flex items-center mt-4">
+        <div className="container px-5 py-12 mx-auto">
+                  <div className="flex flex-col text-center w-full pb-4" id="completed">
+      <SectionHeader text={'Completed Series'}/>        
+      <Link to={`#active`}><div className="text-sm text-right font-thin tracking-wide text-ceci-gray-mid uppercase">Active Series <span className="inline-flex items-center mt-4">
               <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                <path d="M5 12h14M12 5l7 7-7 7"></path>
-              </svg></span></div></Link>
-
-    <div className="flex flex-wrap text-gray-600 body-font">
-    {data.allMarkdownRemark.edges.map((edge, index)=> (
-        
-            <div className="px-6 py-3  w-full flex flex-col items-start" key={index}>
-                      <span className="inline-block py-1 px-2 rounded bg-ceci-gray-light uppercase text-ceci-gray-dark text-xs font-medium tracking-widest">{ edge.node.frontmatter.seriestype }</span>
-
-      <Link  to={`../series/${ edge.node.frontmatter.seriesID }`}><h2 className="sm:text-xl text-lg text-gray-700 tracking-wide font-thin mt-4 mb-4">{ edge.node.frontmatter.title }</h2></Link>
-        <article className="cms leading-relaxed" dangerouslySetInnerHTML={{ __html: edge.node.html}}/>
-        <div className="flex items-center flex-wrap pb-4 mb-4 border-b-2 border-gray-100 mt-auto w-full">
-          <span className="text-gray-500 inline-flex items-center">{edge.node.frontmatter.editors}
-            
-          </span>
-          
+                <path d="M5 11l7-7 7 7M5 19l7-7 7 7"></path>
+              </svg></span></div></Link></div>
+           
+          <div className="flex flex-wrap text-gray-600">
+          {data.allMarkdownRemark.edges.map((edge, index) => (
+              
+                  <div className="w-full flex flex-col py-4" key={`serinfo${index}`}>
+                            <span className="inline-block py-2 uppercase text-ceci-gray-mid text-xs font-medium tracking-wider">{ edge.node.frontmatter.seriestype }</span>
+      
+            <Link  to={`../series/${ edge.node.frontmatter.seriesID }`} className="sm:text-xl font-serif text-lg text-gray-700 tracking-wide ">
+              { edge.node.frontmatter.title }</Link>
+              </div>
+            ))}
+          </div>
         </div>
-        </div>
-      ))}
-    </div>
-  </div>
-</section>
+      </section>
         
       )}
     />
