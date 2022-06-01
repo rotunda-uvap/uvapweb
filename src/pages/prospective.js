@@ -16,7 +16,6 @@ export default function ProspectiveAuthorsPage({ data }) {
     
         <Layout>
           <SeO title="Prospective Authors"/>
-            {/* <h2 className="py-10 px-3 font-light">For Prospective Authors</h2> */}
             <section className="border-b-2 border-gray-100 text-gray-600 body-font">
   <div className="container p-5 mx-auto">
   

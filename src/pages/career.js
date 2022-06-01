@@ -26,7 +26,6 @@ export default function CareerPage({ data }) {
 
 export const query = graphql`
   query {
-   
       markdownRemark(frontmatter: {templateKey: {eq: "page"}, title: {eq: "Career"}}) {
         html
       }

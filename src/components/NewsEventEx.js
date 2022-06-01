@@ -6,29 +6,24 @@ export default function FeatTrio() {
 
   return (
     <StaticQuery
+    
       query={graphql`
         query  {
             news:  allMarkdownRemark(limit:1, filter: {frontmatter: { type: {eq: "news"}}},sort: {fields: frontmatter___date, order: DESC}) {
-                edges {
-                  node {
-                    id
+              edges {
+                node {
                     html
                     frontmatter {
-                      description
-                      date(formatString: "YYYY-MM-DD")
-                      templateKey
-                      type
-                      title
-                      related_book {
-                        jsonId
-                        Title
-                      }
+                        title
+                        type
+                        date(formatString: "YYYY-MM-DD")
                     }
                     fields {
-                      slug
+                        slug
                     }
-                  }
                 }
+            }
+               
               } 
               exhibit: allMarkdownRemark(limit:4, filter: {frontmatter: {templateKey: {eq: "exhibit"}}},sort: {fields: frontmatter___date, order: DESC}) {
                 edges {
@@ -46,88 +41,74 @@ export default function FeatTrio() {
               ac:  allMarkdownRemark(limit:1, filter: {frontmatter: {type: {eq: "author-corner"}}},sort: {fields: frontmatter___date, order: DESC}) {
                 edges {
                   node {
-                    id
-                    html
-                    frontmatter {
-                      date(formatString: "YYYY-MM-DD")
-                      templateKey
-                      type
-                      title
-                      related_book {
-                        jsonId
-                        Title
+                      html
+                      frontmatter {
+                          title
+                          type
+                          date(formatString: "YYYY-MM-DD")
                       }
-                      image {
-                        childrenImageSharp {
-                        gatsbyImageData(placeholder: BLURRED
-                          formats: [AUTO, WEBP, AVIF])
-                        }
+                      fields {
+                          slug
                       }
-                    }
-                    fields {
-                      slug
-                    }
                   }
-                }
-              }    
+              }
+            }    
 
         }
       `}
       render={data => (
         
-        <section className="flex md:flex-row flex-col justify-center place-content-center">
-           <article className="flex flex-col md:flex-1 flex-wrap p-5">
-           
-            <>
-              <div >
-                  <Link to={`/publicity`} className="flex flex-row mb-2">
-                  <div className="border-r-2 border-gray-600 uppercase tracking-wider text-ceci-gray-dark font-serif  text-sm md:text-md pr-2 md:pr-2">Recent Posts</div>
-                  <div className="tracking-widest text-ceci-gray-mid font-serif text-xs pl-1 md:pl-3   self-center">{data.news.edges[0].node.frontmatter.date}</div>
-                  </Link>
-              </div>
-         
-<Link className="font-display font-thin tracking-wider uppercase p-2" to={`../${ data.news.edges[0].node.frontmatter.type }${ data.news.edges[0].node.fields.slug }`}>{data.news.edges[0].node.frontmatter.title }</Link>
-           
-            {data.news.edges[0].node.html &&  <div className=" font-serif text-md leading-relaxed text-gray-800 dropCap" dangerouslySetInnerHTML={{ __html: data.news.edges[0].node.html.split(' ').splice(0, 20).join(' ') + '...' }}/>}
-            <div className="font-display uppercase text-xs tracking-widest"><Link  to={`../${ data.news.edges[0].node.frontmatter.type }${ data.news.edges[0].node.fields.slug }`}><FaArrowAltCircleRight className="inline mx-4"/> Continue Reading</Link> 
-              </div>
-            </>
-            </article>
-            <article className="flex flex-col md:flex-1 flex-wrap px-2 py-5 md:p-5">
-           
+        <section className="flex md:flex-row flex-col gap-2 m-2">
+
+           <article className="flex flex-col border-b-2 md:border-b-0 pb-2  md:basis-1/3">
+              <Link className="flex flex-row sm:flex-wrap p-2" >
+                  <div className="border-r-2 pr-2 font-serif uppercase tracking-wider text-sm self-center">Recent Posts</div>
+                  <div className="pl-2 font-serif text-sm self-center text-ceci-gray-mid">{data.news.edges[0].node.frontmatter.date}</div>
+              </Link>
+             
+              {data.news.edges.map((edge, index) => (
+                <>
+                   <Link className="p-2" to={`../author-corner${ edge.node.fields.slug }`}>
+                  <div className="font-thin uppercase tracking-wide font-display md:py-1">{edge.node.frontmatter.title }</div>
+              <div className="font-serif text-left text-sm  leading-relaxed text-ceci-gray-dark dropCap" dangerouslySetInnerHTML={{ __html: edge.node.html.split(' ').splice(0, 30).join(' ') + '...' }}/> 
+              <div className="font-display uppercase text-xs tracking-widest py-2"><FaArrowAltCircleRight className="inline mx-4"/> Continue Reading</div>
+              </Link> 
+               </>
+               ))}
+             
+          </article>
+
+
+          <article className="flex flex-col border-b-2 md:border-b-0 pb-2 md:basis-1/3 ">
+              <Link className="flex flex-row sm:flex-wrap p-2" >
+                  <div className="border-r-2 pr-2 font-serif uppercase tracking-wider text-sm self-center">Authors' Corner</div>
+                  <div className="pl-2 font-serif text-sm self-center text-ceci-gray-mid">{data.ac.edges[0].node.frontmatter.date}</div>
+              </Link>
+             
+              {data.ac.edges.map((edge, index) => (
+                <>
+                   <Link className="p-2" to={`../author-corner${ edge.node.fields.slug }`}>
+                  <div className="font-thin uppercase tracking-wide font-display md:py-1">{edge.node.frontmatter.title }</div>
+              <div className="font-serif text-left text-sm p-0 leading-relaxed text-ceci-gray-dark dropCap" dangerouslySetInnerHTML={{ __html: edge.node.html.split(' ').splice(0, 25).join(' ') + '...' }}/> 
+              <div className="font-display uppercase text-xs tracking-widest py-2"><FaArrowAltCircleRight className="inline mx-4"/> Continue Reading</div>
+              </Link> 
+               </>
+               ))}
+             
+          </article>
+
+
+            <article className="flex flex-col border-b-2 md:border-b-0 pb-2 md:shrink-0 md:basis-1/3">
            <>
-             <div > 
-              <Link to={`/authors-corner`}className="flex flex-row md:px-10 "><div className="border-r-2 border-gray-600 uppercase tracking-wider text-ceci-gray-dark font-serif  text-sm md:text-md pr-1 md:pr-3">Author's Corner</div>
-                 <div className="tracking-widest text-ceci-gray-mid font-serif text-xs pl-2 md:pl-3 self-center">{data.ac.edges[0].node.frontmatter.date}</div></Link>
-             </div>
-               
-             <div className="md:px-10 flex flex-col">
-        
-             <Link className="font-display tracking-wider font-thin uppercase py-2" to={`../author-corner${ data.ac.edges[0].node.fields.slug }`}>{data.ac.edges[0].node.frontmatter.title }</Link>
-              <div className="font-serif text-left text-md leading-relaxed text-ceci-gray-dark dropCap" dangerouslySetInnerHTML={{ __html: data.ac.edges[0].node.html.split(' ').splice(0, 20).join(' ') + '...' }}/> 
-              <div className="font-display uppercase text-xs tracking-widest"><Link  to={`../${ data.news.edges[0].node.frontmatter.type }${ data.ac.edges[0].node.fields.slug }`}><FaArrowAltCircleRight className="inline mx-4"/> Continue Reading</Link> 
-              </div>
-           </div>
-           </>
-           </article>
-            <article className="flex md:flex-1 flex-col flex-wrap p-5">
-           
-           <>
-             <div className="flex flex-row">
-                <Link to={`/exhibits`}> <div className="border-r-2 border-gray-600 uppercase tracking-wider text-ceci-gray-dark font-serif text-sm md:text-md pr-3">exhibits</div></Link>
-             </div>
+             <Link to={`../exhibits`} className=" font-serif uppercase tracking-wider text-sm p-2 ">exhibits</Link>
             
-             <Link className="font-display tracking-wide uppercase p-2" to={`../exhibits/${ data.exhibit.edges[0].node.frontmatter.exhibit_slug }`}>{data.exhibit.edges[0].node.frontmatter.title }</Link>
-             <Link className="font-display tracking-wide uppercase p-2" to={`../exhibits/${ data.exhibit.edges[1].node.frontmatter.exhibit_slug }`}>{data.exhibit.edges[1].node.frontmatter.title }</Link>
-             <Link className="font-display tracking-wide uppercase p-2" to={`../exhibits/${ data.exhibit.edges[2].node.frontmatter.exhibit_slug }`}>{data.exhibit.edges[2].node.frontmatter.title }</Link>
-             <Link className="font-display tracking-wide uppercase p-2" to={`../exhibits/${ data.exhibit.edges[3].node.frontmatter.exhibit_slug }`}>{data.exhibit.edges[3].node.frontmatter.title }</Link>
-           <Link  to={`../exhibits`}><div className="font-display uppercase text-xs tracking-wide py-2"><FaArrowAltCircleRight className="inline mr-4"/> see more exhibits 
-             </div></Link>
+             <Link className="font-display tracking-wide uppercase p-2 text-sm " to={`../exhibits/${ data.exhibit.edges[0].node.frontmatter.exhibit_slug }`}>{data.exhibit.edges[0].node.frontmatter.title }</Link>
+             <Link className="font-display tracking-wide uppercase p-2 text-sm" to={`../exhibits/${ data.exhibit.edges[1].node.frontmatter.exhibit_slug }`}>{data.exhibit.edges[1].node.frontmatter.title }</Link>
+             <Link className="font-display tracking-wide uppercase p-2 text-sm" to={`../exhibits/${ data.exhibit.edges[2].node.frontmatter.exhibit_slug }`}>{data.exhibit.edges[2].node.frontmatter.title }</Link>
+             <Link className="font-display tracking-wide uppercase p-2 text-sm" to={`../exhibits/${ data.exhibit.edges[3].node.frontmatter.exhibit_slug }`}>{data.exhibit.edges[3].node.frontmatter.title }</Link>
+             <Link  to={`../exhibits`} className="font-display uppercase text-xs tracking-widest p-2"><FaArrowAltCircleRight className="inline mr-4"/> see more exhibits</Link>
            </>
            </article>
-          
-         
-           
           
         </section>
        

@@ -176,7 +176,6 @@ export default function AuthorsPage({ data }) {
 export const query = graphql`
   query {
    
-     
       markdownRemark(frontmatter: {type: {eq: "page"}, title: {eq: "Current Authors"}}) {
         html
       }

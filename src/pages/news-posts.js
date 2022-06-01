@@ -39,7 +39,7 @@ export default function Articles({ data }) {
 
 export const query = graphql`
   query {
-    allMarkdownRemark(filter: {frontmatter: {templateKey: {eq: "news"}}},sort: {fields: frontmatter___date, order: DESC}) {
+    allMarkdownRemark(filter: {frontmatter: {type: {eq: "news"}}},sort: {fields: frontmatter___date, order: DESC}) {
       edges {
           node {
             html
@@ -47,8 +47,8 @@ export const query = graphql`
               title
               type
               related_book {
-              jsonId
-              Title
+                jsonId
+                Title
             }
               description
               date(formatString: "YYYY-MM-DD")

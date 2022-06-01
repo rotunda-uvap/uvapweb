@@ -62,13 +62,13 @@ export default function InstructorPage({data}) {
   <SectionHeader text={"Our Subjects"}/> 
   <div className="container flex flex-wrap py-10 mx-auto items-center">
        
-      {subs.edges.map((edge, index) => (
-                     
-           <div className="mb-2 px-4 font-display items-center" key={`subs${index}`}>
-          <Link to={`../../subject/${ edge.node.subjectID }`} className="text-gray-600 hover:text-gray-800">{ edge.node.subjectName }</Link>
+  {subs.group.map((g, index) => (
+                   
+                   <div className="md:w-1/2 mb-2 px-2 font-display" key={`sub${index}`}>
+                   <Link to={`../subject/${ g.distinct }`} className="text-gray-600 hover:text-gray-800">{ g.fieldValue } ({g.totalCount})</Link>
         </div>            
            
-        ))}
+        ))} 
      
     
   </div>
@@ -124,13 +124,11 @@ export const query = graphql`
         }
       }
     }
-  subjects: allSubjectsJson(sort: {fields: subjectName}) {
-    edges {
-      node {
-          subjectID
-          subjectName
-        
-      }
+  subjects: allBooksJson {
+    group(field: Subject___name) {
+      distinct(field: Subject___subjectID)
+      totalCount
+      fieldValue
     }
   }
   }`

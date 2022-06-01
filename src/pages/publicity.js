@@ -63,7 +63,6 @@ export default function PubPage({ data }) {
                   
                     <div className="py-6 px-10 ">
                         <div className="flex items-center"><span className="font-light text-ceci-gray-mid">{edge.node.frontmatter.date}</span>
-                        {/* <span className="px-2 py-1 bg-gray-600 text-gray-100 font-bold rounded hover:bg-gray-500">{edge.node.frontmatter.type}</span> */}
                         </div>
                         <div className="mt-2"><Link className="text-xl text-ceci-gray-dark font-thin tracking-wide hover:underline hover:text-ceci-gray-dark" to={`../${ edge.node.frontmatter.type }${ edge.node.fields.slug }`}>{ edge.node.frontmatter.title }</Link>
                           {edge.node.html &&  <div className="mt-2 text-ceci-gray-dark font-light" dangerouslySetInnerHTML={{ __html: edge.node.html.split(' ').splice(0, 50).join(' ') + '...' }}></div>}
@@ -101,7 +100,7 @@ export default function PubPage({ data }) {
 
 export const query = graphql`
   query {
-  allMarkdownRemark(filter: {frontmatter: {templateKey: {eq: "news"}}},sort: {fields: frontmatter___date, order: DESC}) {
+  allMarkdownRemark(filter: {frontmatter: {type: {eq: "news"}}},sort: {fields: frontmatter___date, order: DESC}) {
       edges {
         node {
             html

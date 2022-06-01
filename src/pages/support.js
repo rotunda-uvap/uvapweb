@@ -6,7 +6,6 @@ import SeO from "../components/SeoComponent"
 import PageHeader from "../components/PageHeader"
 
 export default function SupportPage({ data }) {
-    // const pagedata = data.markdownRemark
  return (
     
         <Layout>
