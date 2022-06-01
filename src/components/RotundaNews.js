@@ -28,14 +28,14 @@ export default function RotundaNews() {
             <>
               <div className="flex flex-row md:px-10 "> 
               
-                  <div className="border-r-2 border-gray-600 uppercase tracking-wider text-ceci-gray-dark font-serif text-md pr-3">rotunda news</div>
-                  <div className="tracking-widest text-ceci-gray-mid font-serif text-xs pl-3 pt-1">April 26, 2022</div>
+                  <div className="border-r-2 font-serif uppercase tracking-wider text-sm self-center text-ceci-gray-dark font-serif text-md pr-3">rotunda news</div>
+                  <div className=" text-ceci-gray-mid font-serif text-sm pl-3 pt-1">2022-04-26</div>
               </div>
                 
               <div className="md:px-10 flex flex-col">
-              <Link className="font-display tracking-wide uppercase py-2" to={`../title/OLMS`}>ROTUNDA Launches the Papers of Frederick Law Olmsted Digital Edition</Link>
-            <div><p className="font-serif text-md text-ceci-gray-dark leading-relaxed dropCap">The latest title in ROTUNDA's American History Collection is a fully searchable online edition of the Papers of Frederick Law Olmsted. This digital archive is open access through May 15, 2022 .</p> </div>  
-            <div className="font-display uppercase text-xs tracking-widest"><Link className="font-display tracking-wide uppercase py-2" to={`../title/OLMS`}><FaArrowAltCircleRight className="inline mx-4"/> Continue Reading</Link> </div></div>
+              <Link className="font-display tracking-wide uppercase py-2 font-thin"  to={`../title/OLMS`}>ROTUNDA Launches the Papers of Frederick Law Olmsted Digital Edition</Link>
+            <div><p className="font-serif text-sm text-ceci-gray-dark leading-relaxed dropCap">The latest title in ROTUNDA's American History Collection is a fully searchable online edition of the Papers of Frederick Law Olmsted. This digital archive is available through institutional subscription. </p> </div>  
+            <div className="font-display uppercase text-xs tracking-widest"><Link className="font-display tracking-wide uppercase py-2" to={`../title/OLMS`}><FaArrowAltCircleRight className="inline mx-4"/>More information and free trial</Link> </div></div>
          
             
             </>

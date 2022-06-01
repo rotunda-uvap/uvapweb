@@ -144,9 +144,10 @@ div[aria-hidden=true] [contenteditable=true]:not([disabled]){
     visibility: hidden;
 }
 
-@media only screen and (max-width: 600px) {
-  .slick-prev {left:-10px !important; padding: 48px;}
-.slick-next {right:0 !important; padding: 48px;}
+@media only screen and (max-width: 720px) {
+  .slick-slider button {height:48px; width:48px; padding:8px;}
+  .slick-prev {left:-10px !important; }
+.slick-next {right:0 !important;  }
 .slick-prev:before,
 .slick-next:before {
     color:#727272 !important; 

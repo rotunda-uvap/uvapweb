@@ -31,7 +31,7 @@ const uvap = getImage(data.uvaplogo)
         id="mobile menu"
         className="md:hidden border-b-2 flex flex-row  z-40 tracking-wide"
       >
-        <div className="flex flex-row w-full">
+        <div className="flex flex-row w-screen">
           <nav className="flex">
             <div className="block text-ceci-gray-dark w-64 py-3">
               <Link to={`/`}>
@@ -47,7 +47,7 @@ const uvap = getImage(data.uvaplogo)
                 className="toggle-input"
               />
 
-              <div className="pl-10 py-4 justify-self-end">
+              <div className="py-6 absolute right-4">
                 <label htmlFor="toggle-one">
                   <span className="text-gray-400">
                     <svg

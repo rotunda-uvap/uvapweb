@@ -36,7 +36,7 @@ export default function FeaturedColl() {
 
           <div className="flex flex-col ">
 
-           <p className="text-xl font-sans text-ceci-gray-dark py-2 tracking-wide self-center font-thin">{data.rseries.edges[0].node.frontmatter.title} </p>
+           <p className="text-lg uppercase tracking-wide text-ceci-gray-dark py-2 font-display self-center font-thin">{data.rseries.edges[0].node.frontmatter.title} </p>
           <div className="font-serif text-center" dangerouslySetInnerHTML={{ __html: data.rseries.edges[0].node.html }}></div>
         </div>
 

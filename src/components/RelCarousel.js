@@ -11,7 +11,7 @@ const Gallery = ({book_obj_array}) => {
       let booklink = "../../title/" + book.jsonId
         return (
             <Link to={booklink} ><div className="image-slider-container items-center px-10" key={`book${index}`}>
-                <img src={cover} width={120} height={180} alt={book.Title} loading="lazy"/>
+                <img src={cover} width={150} height={224} alt={book.Title} loading="lazy"/>
             </div></Link>
         )
     })
@@ -41,8 +41,8 @@ const Gallery = ({book_obj_array}) => {
               breakpoint: 600,
               settings: {
                 slidesToShow: 2,
-                slidesToScroll: 2,
-                initialSlide: 2
+                slidesToScroll: 1,
+                initialSlide: 4
               }
             },
             {

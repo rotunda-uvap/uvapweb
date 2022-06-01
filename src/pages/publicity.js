@@ -3,7 +3,7 @@ import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import { Helmet } from 'react-helmet'
 import {FaArrowAltCircleRight} from "react-icons/fa"
-import GoogleCalendar from "../components/Calendar"
+// import GoogleCalendar from "../components/Calendar"
 import SeO from "../components/SeoComponent"
 import PageHeader from "../components/PageHeader"
 import SectionHeader from "../components/SectionHeader"
@@ -22,21 +22,21 @@ export default function PubPage({ data }) {
             </div>
         
           <section>
-            <div className="container items-center flex flex-col md:flex-row py-12">
+            <div className="container items-center flex flex-col md:flex-row py-4">
               
               <div className="flex flex-col text-center items-center md:w-2/4 ">
               <Link to={'../staff/jason-coleman'}><h5 className="title-font font-medium text-md text-ceci-gray-mid">Jason Coleman</h5></Link>
        <span className="text-ceci-gray-mid font-light font-serif">Marketing Director</span>
-       <span className="text-base leading-relaxed text-ceci-gray-dark">(434) 982-1450</span>
+       <span className="text-base leading-relaxed text-ceci-gray-dark py-2">(434) 982-1450</span>
          <a className="text-ceci-gray-mid text-base inline-flex items-center" href="mailto:jcoleman@virginia.edu">Email Jason
            <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
              <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
            </svg>
          </a>
                 </div>
-                 <div className="md:w-2/4 pt-5 md:pt-0">
+                 {/* <div className="md:w-2/4 pt-5 md:pt-0">
                     <GoogleCalendar/>
-                    </div>          
+                    </div>  */}         
             </div>
             </section>
  <section id="review">
