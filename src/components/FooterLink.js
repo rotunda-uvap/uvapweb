@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 const FooterLink = ({dest, text}) => {
      
         return (
-            <Link to={`/${dest}`} className="uppercase block mt-2 hover:text-gray-300">
+            <Link to={`/${dest}`} className="uppercase text-sm py-2 md:py-1 font-thin tracking-wide hover:text-gray-300">
             {text}
           </Link>
         )}
