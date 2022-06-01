@@ -6,7 +6,7 @@ export default function BookCard( {fields: {Title, Subtitle, AuthorCredit, Cover
 
 const booksrc = "https://ik.imagekit.io/uvapress/mediums/"  
     return (
-      <Link to={`https://upress.virginia.edu/title/${ BookID }`}  >
+      <Link to={`/title/${ BookID }`}  >
         <div className="flip-card">
   <div className="flip-card-inner">
   

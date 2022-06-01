@@ -44,7 +44,7 @@ const bookPage = ({ data }) => {
         book={true}
       />
 
-      <div className="grid md:grid-cols-3 md:gap-10 py-3 ml-6 text-ceci-gray-dark ">
+      <div className="flex flex-col md:grid md:grid-cols-3 md:gap-10 py-3 ml-6 text-ceci-gray-dark ">
         <div className="col-span-1">
           {/* <GatsbyImage image={imageData} alt="book cover" /> */}
           { book.CoverImageFull ? <img className="hidden md:block" src={imglink} alt="cover" /> : <img className="hidden md:block" src={noimg_big} alt="cover" />}
@@ -60,19 +60,19 @@ const bookPage = ({ data }) => {
           />  }
 
         </div>
-        <div className="md:col-span-2 pr-5 md:px-10 text-ceci-gray-dark">
-          <h4 className="hidden md:block pb-3 font-thin font-sans uppercase tracking-booped leading-none ">{book.Title}</h4>
-          <h4 className="md:hidden pb-3 font-thin leading-relaxed uppercase tracking-booped font-sans">{book.Title}</h4>
+        <div className="py-6 md:col-span-2 md:pr-5 md:px-10 text-ceci-gray-dark">
+          <h4 className="hidden md:block  pb-3 font-thin font-sans uppercase tracking-booped leading-none ">{book.Title}</h4>
+          <div className="md:hidden text-2xl text-center font-thin uppercase tracking-booped font-sans">{book.Title}</div>
 
           {book.InternalSeriesVolume && (
             <h6 className="py-3">{book.InternalSeriesVolume}</h6>
           )}
 
           {book.Subtitle && (
-            <h6 className="italic font-thin text-ceci-gray-mid tracking-booped">{book.Subtitle}</h6>
+            <h6 className="text-center md:text-left italic py-2 md:py-0 font-thin text-ceci-gray-mid tracking-booped">{book.Subtitle}</h6>
           )}
 
-          <h6 className="py-2 font-display">
+          <h6 className="py-2 font-display text-center md:text-left">
             {book.AuthorCredit}
           </h6>
 

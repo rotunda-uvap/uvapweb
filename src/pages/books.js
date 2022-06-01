@@ -116,7 +116,7 @@ export default function Books({ data }) {
  
 <section id="recent" className="py-5 text-gray-700 border-b-2 border-gray-100">
   <SectionHeader text={"Recent Releases"}/>
-          <div className="container grid grid-cols-2 md:flex md:flex-wrap gap-2 py-5">
+          <div className="flex flex-wrap gap-2 py-5">
             {rec.edges.map((edge, index) => (
           <BookCard fields={edge.node} key={index}/>
         

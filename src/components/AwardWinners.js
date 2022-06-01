@@ -23,7 +23,7 @@ export default function AwardWinners() {
       render={data => (
         <section>
 <SectionHeader text={'Award Winners'}/>
-        <div className="container px-5 py-5 flex flex-wrap">
+        <div className=" mx-auto py-5 flex flex-wrap">
           {data.allBooksJson.edges.map((edge, index) => (
          
           <BookCard fields={edge.node} key={index} />

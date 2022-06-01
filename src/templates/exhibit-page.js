@@ -26,7 +26,7 @@ const exhibitPage = ({ data }) => {
      <PageHeader text={data.markdownRemark.frontmatter.title}/>
 
         {/* <GatsbyImage image={image} alt="related image"/> */}
-        {data.markdownRemark.frontmatter.coupon && <div className={`${bgcolor} ${txtcolor} py-5 px-5 text-2xl tracking-wide text-center`}>{data.markdownRemark.frontmatter.coupon}</div>}
+        {data.markdownRemark.frontmatter.coupon && <div className={`${bgcolor} ${txtcolor} py-5 px-5 text-2xl font-thin tracking-wide text-center`}>{data.markdownRemark.frontmatter.coupon}</div>}
         <div>
           <div className={`py-5 px-10 text-md text-ceci-gray-dark font-light tracking-wide text-center`}
           dangerouslySetInnerHTML={{ __html:exhibit.html }}/>
@@ -36,9 +36,10 @@ const exhibitPage = ({ data }) => {
         {feat_books &&
          
         <section className="py-8 border-b-2">
-          <SectionHeader text="Featured Books" className="pb-4"/>
+          <SectionHeader text="Featured Books"/>
         {/* <p className="text-center uppercase text-gray-500 mx-auto  font-sans tracking-wide py-4">Featured Books:</p> */}
-          <Gallery book_id_array={feat_books}/>
+        <div className="pt-6"> <Gallery book_id_array={feat_books} /></div>
+         
         </section>
         
         }
@@ -54,7 +55,7 @@ const exhibitPage = ({ data }) => {
         {related_staff.map((staff, index) => (
            <div key={`staff${index}`}>
              <div className="tracking-wide text-lg font-thin text-ceci-gray-mid"><Link to={'../../staff/' + staff.frontmatter.title.replace(" ", "-").toLowerCase()}>{staff.frontmatter.title} <span className="text-sm">&nbsp; - &nbsp;{staff.frontmatter.job_title}</span></Link></div>
-            <div className="py-2 font-light text-ceci-gray-dark text-lg leading-relaxed"
+            <div className="py-2 font-light text-ceci-gray-dark text-lg leading-relaxed dropCap"
           dangerouslySetInnerHTML={{ __html:staff.html }}/>
             </div>
         ))}

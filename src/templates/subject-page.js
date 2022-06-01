@@ -24,7 +24,7 @@ const SubjectTemplate = ({ pageContext, data }) => {
               className="block p-2  text-xs font-thin tracking-wide uppercase "
             >All Subjects</a>
     </div>
-                    <div className="container grid grid-cols-2 md:flex md:flex-wrap gap-2 py-5">
+                    <div className="flex flex-wrap gap-2 py-5">
                         {books.edges.map(edge => (
                   <>  
                  

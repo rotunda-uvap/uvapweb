@@ -125,12 +125,12 @@ li.hanging {
   text-indent: -.75em;
 }
 
-@media only screen and (max-width: 720px) {
-.homepageimage img {
+
+/* .homepageimage img {
   width: 100%;
   height: auto;
-}
-}
+} */
+
 
 .slick-slide[aria-hidden=true] > a[href] {
   visibility: hidden;
