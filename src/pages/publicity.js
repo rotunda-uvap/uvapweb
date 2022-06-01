@@ -56,6 +56,7 @@ export default function PubPage({ data }) {
           <div className="flex flex-col md:grid md:grid-cols-3">
            
              <section className="md:col-span-2 mr-5 flex flex-col">
+               <SectionHeader text="All News Posts"/>
             {news.edges.map((edge, index) => (
            
             <Link to={`../${ edge.node.frontmatter.type }${ edge.node.fields.slug }`} key={index} className="flex flex-col border-b-2 last:border-b-0 py-2">
