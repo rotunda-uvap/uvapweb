@@ -47,7 +47,7 @@ const bookPage = ({ data }) => {
       <div className="flex flex-col md:grid md:grid-cols-3 md:gap-10 py-3 ml-6 text-ceci-gray-dark ">
         <div className="col-span-1">
           {/* <GatsbyImage image={imageData} alt="book cover" /> */}
-          { book.CoverImageFull ? <img className="hidden md:block" src={imglink} alt="cover" /> : <img className="hidden md:block" src={noimg_big} alt="cover" />}
+          { book.CoverImageFull ? <img className="pt-12 hidden md:block" src={imglink} alt="cover" /> : <img className="hidden md:block" src={noimg_big} alt="cover" />}
            { book.CoverImageFull ? <img
             className="md:hidden text-center w-1/2 mx-auto"
             src={imglink_sm}
