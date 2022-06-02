@@ -6,6 +6,7 @@ import Layout from "../components/layout"
 import SeO from "../components/SeoComponent"
 import ShareButtons from "../components/ShareButtons"
 import PageHeader from "../components/PageHeader"
+import sanitizeHtml from 'sanitize-html'
 
 
 const mediaPage = ({ data }) => {
@@ -39,7 +40,7 @@ const mediaPage = ({ data }) => {
         ))}</div></>
         } 
     <article className="cms"
-          dangerouslySetInnerHTML={{ __html: media.html }}/>
+          dangerouslySetInnerHTML={{ __html: sanitizeHtml(media.html) }}/>
           </p>
           <div className="px-10">
           <ShareButtons title={media.frontmatter.title} url={url}/>

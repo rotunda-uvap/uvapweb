@@ -4,6 +4,7 @@ import Layout from "../components/layout"
 import "../utils/global.css"
 import SeO from "../components/SeoComponent"
 import PageHeader from "../components/PageHeader"
+import sanitizeHtml from 'sanitize-html'
 
 export default function RightsandPermissionsPage({ data }) {
     const pagedata = data.markdownRemark
@@ -11,10 +12,10 @@ export default function RightsandPermissionsPage({ data }) {
     
         <Layout>
           <SeO title="Rights and Permissions"/>
-          <div className="container px-5 py-12 mx-auto">
+          <div className="mx-auto">
           <PageHeader text={'Rights and Permissions'}/>
 
-         <div className="cms" dangerouslySetInnerHTML={{__html: pagedata.html}}/></div>
+         <div className="cms" dangerouslySetInnerHTML={{__html: sanitizeHtml(pagedata.html)}}/></div>
         </Layout>
 
  )

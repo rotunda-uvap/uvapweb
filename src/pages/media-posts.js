@@ -1,6 +1,7 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
+import sanitizeHtml from 'sanitize-html'
 import SeO from "../components/SeoComponent"
 
 
@@ -21,7 +22,7 @@ export default function MediaArticles({ data }) {
                                 className="px-2 py-1 bg-gray-600 text-gray-100 font-bold rounded hover:bg-gray-500">{edge.node.frontmatter.type}</span>
                         </div>
                         <div className="mt-2"><Link className="text-2xl text-gray-700 font-bold hover:underline" to={`../${ edge.node.frontmatter.type }${ edge.node.fields.slug }`}>{ edge.node.frontmatter.title }</Link>
-                            <div className="mt-2 text-gray-600" dangerouslySetInnerHTML={{ __html: edge.node.frontmatter.description.split(' ').splice(0, 50).join(' ') + '...' }}></div>
+                            <div className="mt-2 text-gray-600" dangerouslySetInnerHTML={{ __html: sanitizeHtml(edge.node.frontmatter.description.split(' ').splice(0, 50).join(' ') + '...' )}}></div>
                         </div>
                         <div className="flex justify-between items-center mt-4"><Link  to={`../${ edge.node.frontmatter.type }${ edge.node.fields.slug }`}>Read more</Link>
                                 

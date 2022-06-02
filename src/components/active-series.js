@@ -1,6 +1,7 @@
 import React from "react"
 import { StaticQuery, graphql, Link } from "gatsby"
 import SectionHeader from "./SectionHeader"
+import sanitizeHtml from 'sanitize-html';
 
 export default function ActiveSeries() {
   return (
@@ -45,7 +46,7 @@ export default function ActiveSeries() {
 
       <Link  to={`../series/${ edge.node.frontmatter.seriesID }`}>
         <div className="sm:text-xl text-lg text-gray-700 tracking-wide font-serif ">{ edge.node.frontmatter.title }</div></Link>
-        <article className="cms leading-relaxed py-2" dangerouslySetInnerHTML={{ __html: edge.node.html}}/>
+        <article className="cms leading-relaxed py-2" dangerouslySetInnerHTML={{ __html: sanitizeHtml(edge.node.html)}}/>
         <div className="flex items-center flex-wrap pb-4 my-2 border-b-2 border-gray-100  mt-auto w-full">
           <span className="text-gray-600 leading-relaxed font-serif ml-4 cms">{edge.node.frontmatter.editors}
             

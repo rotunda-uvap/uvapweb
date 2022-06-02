@@ -3,6 +3,7 @@ import { InstantSearch, SearchBox, Hits, Stats, RefinementList, Pagination, Sort
 import "./search.css"
 import React from 'react'
 import { Link } from "gatsby"
+import sanitizeHtml from 'sanitize-html';
 
 
 
@@ -13,7 +14,7 @@ const Hit = ( {hit}) => <div className="py-4 border-b-2 border-gray-100"><Link t
 {hit.Subtitle ? <h6 className="text-sm tracking-wide text-ceci-gray-mid italic font-thin py-2 ">{hit.Subtitle}</h6> : ""}
 <h6 className="text-xs tracking-widest font-display uppercase pt-2">{hit.AuthorCredit}</h6>
 
-<div className="pt-3" dangerouslySetInnerHTML={{ __html: hit.MainDescription.html.split(' ').splice(0, 30).join(' ') + '...' }}/>
+<div className="pt-3" dangerouslySetInnerHTML={{ __html: sanitizeHtml(hit.MainDescription.html.split(' ').splice(0, 30).join(' ') + '...' )}}/>
 <h6 className="text-xs uppercase tracking-wider text-ceci-gray-mid font-thin pb-5">Published: {hit.PublicationDate}</h6></Link></div>
 
 const Search = () => (

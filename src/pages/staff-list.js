@@ -21,13 +21,13 @@ export default function StaffList({ data }) {
     
         <Layout>
           <SeO title="Staff Directory"/>
-          <div className="container px-5 py-12 mx-auto">
+          <div className=" mx-auto">
           <PageHeader text={'Our Team'}/>
           
           <section className="py-4 border-b-2 border-gray-100">
             <SectionHeader text={'Director'}/>
          
-          <div className="container px-5 py-12 mx-auto">
+          <div className="py-2 mx-auto">
              <div className="flex flex-wrap -m-4 text-center">
            {dirz.edges.map((edge, index)=> (
             
@@ -41,7 +41,7 @@ export default function StaffList({ data }) {
           <section className="py-4 border-b-2 border-gray-100">
             <SectionHeader text={'Operations'}/>
          
-          <div className="container px-5 py-12 mx-auto">
+          <div className="py-2 mx-auto">
              <div className="flex flex-wrap -m-4 text-center">
            {opss.edges.map((edge, index)=> (
             
@@ -58,7 +58,7 @@ export default function StaffList({ data }) {
             <section className="py-4 border-b-2 border-gray-100">
             <SectionHeader text={'Acquisitions'}/>
          
-          <div className="container px-5 py-12 mx-auto">
+          <div className="py-2 mx-auto">
              <div className="flex flex-wrap -m-4 text-center">
            {acqs.edges.map((edge, index) => (
              
@@ -74,7 +74,7 @@ export default function StaffList({ data }) {
               <section className="py-4 border-b-2 border-gray-100">
               <SectionHeader text={'Editorial, Design, and Production'}/>
          
-          <div className="container px-5 py-12 mx-auto">
+          <div className="py-2 mx-auto">
              <div className="flex flex-wrap -m-4 text-center">
            {edps.edges.map((edge, index) => (
             
@@ -89,7 +89,7 @@ export default function StaffList({ data }) {
          <section className="py-4 border-b-2 border-gray-100">
          <SectionHeader text={'Sales, Marketing, and Publicity'}/>
          
-          <div className="container px-5 py-12 mx-auto">
+          <div className="py-2 mx-auto">
              <div className="flex flex-wrap -m-4 text-center">
            {mkgs.edges.map((edge, index) => (
             
@@ -105,7 +105,7 @@ export default function StaffList({ data }) {
          <section className="py-4" >
          <SectionHeader text={'ROTUNDA Digital Imprint'}/>
          
-          <div className="container px-5 py-12 mx-auto">
+          <div className="py-2 mx-auto">
              <div className="flex flex-wrap -m-4 text-center">
            {rots.edges.map((edge, index) => (
              

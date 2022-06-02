@@ -3,10 +3,11 @@ import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import { Helmet } from 'react-helmet'
 import {FaArrowAltCircleRight} from "react-icons/fa"
-import GoogleCalendar from "../components/Calendar"
 import SeO from "../components/SeoComponent"
 import PageHeader from "../components/PageHeader"
 import SectionHeader from "../components/SectionHeader"
+import sanitizeHtml from 'sanitize-html'
+
 export default function PubPage({ data }) {
     const news = data.allMarkdownRemark
     // const pagedata = data.markdownRemark
@@ -22,9 +23,8 @@ export default function PubPage({ data }) {
             </div>
         
           <section>
-            <div className="container items-center flex flex-col md:flex-row py-4">
-              
-              <div className="flex flex-col text-center items-center md:w-2/4 ">
+            
+              <div className="flex flex-col text-center items-center border-b-2 pb-4">
               <Link to={'../staff/jason-coleman'}><h5 className="title-font font-medium text-md py-1 text-ceci-gray-mid">Jason Coleman</h5></Link>
        <span className="text-ceci-gray-mid font-light font-serif">Marketing Director</span>
        <span className="font-serif text-ceci-gray-mid">(434) 982-1450</span>
@@ -33,10 +33,8 @@ export default function PubPage({ data }) {
              <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
            </svg>
          </a>
-                </div>
-                 <div className="md:w-2/4 pt-5 md:pt-0">
-                    <GoogleCalendar/>
-                    </div>          
+                
+                      
             </div>
             </section>
  <section id="review">
@@ -59,16 +57,16 @@ export default function PubPage({ data }) {
                <SectionHeader text="All News Posts"/>
             {news.edges.map((edge, index) => (
            
-            <Link to={`../${ edge.node.frontmatter.type }${ edge.node.fields.slug }`} key={index} className="flex flex-col border-b-2 last:border-b-0 py-2">
+            <Link to={`../${ edge.node.frontmatter.type }${ edge.node.fields.slug }`} key={`news${index}`} className="flex flex-col border-b-2 last:border-b-0 py-2">
              <div className="flex flex-col py-2">
               <div className="text-xs font-serif font-thin text-ceci-gray-mid">{edge.node.frontmatter.date}</div>
               <div className="font-thin uppercase tracking-wide font-display">{ edge.node.frontmatter.title }</div>
               </div>
               
-              <div className="flex flex-row">
+              <div className="md:flex md:flex-row md:flex-col ">
                
-                  {edge.node.frontmatter.related_book ? <div className="base-1/4 shrink-0 pr-2"><img src={'https://ik.imagekit.io/uvapress/mediums/' + edge.node.frontmatter.related_book[0].jsonId + "_M.jpg"} alt="cover" className="p-2"/></div> : <div></div>}
-                  {edge.node.html ?  <div className="mt-2 text-ceci-gray-dark font-light dropCap px-2 md:px-1" dangerouslySetInnerHTML={{ __html: edge.node.html.split(' ').splice(0, 50).join(' ') + '...' }}></div> : <div></div>}
+                  {edge.node.frontmatter.related_book ? <div className="float-left md:base-1/5 md:shrink-0 pr-2"><img src={'https://ik.imagekit.io/uvapress/mediums/' + edge.node.frontmatter.related_book[0].jsonId + "_M.jpg"} alt="cover" className="p-2"/></div> : <div></div>}
+                  {edge.node.html ?  <div className="mt-2  text-ceci-gray-dark font-light dropCap px-2 md:px-1" dangerouslySetInnerHTML={{ __html: sanitizeHtml(edge.node.html.split(' ').splice(0, 50).join(' ') + '...' )}}></div> : <div></div>}
                   
             </div>
             <div className="font-display uppercase text-xs tracking-widest py-3 md:py-2"><FaArrowAltCircleRight className="inline mx-4"/> Continue Reading</div>

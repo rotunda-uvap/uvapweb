@@ -6,6 +6,7 @@ import SeO from "../components/SeoComponent"
 import PageHeader from "../components/PageHeader"
 import SectionHeader from "../components/SectionHeader"
 import BoardMember from "../components/BoardMember"
+import sanitizeHtml from 'sanitize-html';
 
 
 
@@ -19,9 +20,9 @@ export default function AboutPage({ data }) {
           <SeO
           title="About The University of Virginia Press" />
             <section className="text-gray-600 body-font">
-  <div className="container px-5 py-12 mx-auto">
+  <div className=" px-2 py-6 mx-auto">
     <div className="flex flex-col  w-full mb-10">
-<PageHeader text={'About UVa Press'}/>      <div className="lg:w-3/3 mx-auto leading-relaxed text-base dropCap cms" dangerouslySetInnerHTML={{__html: pagedata.html}}/>
+<PageHeader text={'About UVa Press'}/>      <div className="lg:w-3/3 mx-auto leading-relaxed text-base dropCap cms" dangerouslySetInnerHTML={{__html: sanitizeHtml(pagedata.html)}}/>
     </div>
     <div className="flex flex-col lg:flex-row  -m-4">
       
@@ -141,11 +142,11 @@ export default function AboutPage({ data }) {
 
 <section>
   <SectionHeader text={"Code of Conduct"}/>
-  <div className="lg:w-3/3 mx-auto leading-relaxed text-base dropCap cms" dangerouslySetInnerHTML={{__html: code.html}}/>
+  <div className="lg:w-3/3 mx-auto leading-relaxed text-base dropCap cms" InnerHTML={{__html: sanitizeHtml(code.html)}}/>
 </section>
 <section>
   <SectionHeader text={"Land-use Acknowledgment"}/>
-<div className="lg:w-3/3 mx-auto leading-relaxed text-base dropCap cms" dangerouslySetInnerHTML={{__html: landuse.html}}/>
+<div className="lg:w-3/3 mx-auto leading-relaxed text-base dropCap cms" dangerouslySetInnerHTML={{__html: sanitizeHtml(landuse.html)}}/>
 </section>
             <section className="py-5 text-gray-700 border-b-2 border-gray-100" id="board">
   <SectionHeader text={"Current Board Members"}/>

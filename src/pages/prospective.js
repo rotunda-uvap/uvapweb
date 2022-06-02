@@ -9,6 +9,7 @@ import SeO from "../components/SeoComponent"
 import PageHeader from "../components/PageHeader"
 import SectionHeader from "../components/SectionHeader"
 import FileDownloadButton from "../components/FileDownloadButton"
+import sanitizeHtml from 'sanitize-html'
 
 export default function ProspectiveAuthorsPage({ data }) {
     const pagedata = data.markdownRemark
@@ -17,18 +18,19 @@ export default function ProspectiveAuthorsPage({ data }) {
         <Layout>
           <SeO title="Prospective Authors"/>
             <section className="border-b-2 border-gray-100 text-gray-600 body-font">
-  <div className="container p-5 mx-auto">
+  <div className=" mx-auto">
   
             <div className="flex flex-col text-center w-full">
-<PageHeader text={"For Prospective Authors"}/>      <span className="font-thin uppercase text-right text-gray-500 pb-4"><Link to={'/authors'}>
-            Current Authors <span className="inline-flex items-center mt-4">
-              <svg fill="none" stroke="currentColor" strokeLinecap="round" stroke-linejoin="round" strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
+<PageHeader text={"For Prospective Authors"}/>     
+ <span className="text-xs md:text-sm font-thin uppercase text-right text-gray-500 pb-4"><Link to={'/authors'}>
+            Current Authors <span className="inline-flex py-2">
+              <svg fill="none" stroke="currentColor" strokeLinecap="round" stroke-linejoin="round" strokeWidth="2" className="w-3 h-3 md:w-4 md:h-4 ml-1 md:ml-2" viewBox="0 0 24 24">
                 <path d="M13 5l7 7-7 7M5 5l7 7-7 7"></path>
               </svg>
               </span>
               </Link></span>
       <p className="lg:w-3/3 leading-relaxed text-base text-left">
-         <div className="cms dropCap" dangerouslySetInnerHTML={{__html: pagedata.html}}/></p>
+         <div className="cms dropCap" dangerouslySetInnerHTML={{__html: sanitizeHtml(pagedata.html)}}/></p>
          
     </div>
         

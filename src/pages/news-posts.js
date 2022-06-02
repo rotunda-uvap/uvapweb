@@ -3,6 +3,7 @@ import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import SeO from "../components/SeoComponent"
 import PageHeader from "../components/PageHeader"
+import sanitizeHtml from 'sanitize-html';
 export default function Articles({ data }) {
     const news = data.allMarkdownRemark
  return (
@@ -20,7 +21,7 @@ export default function Articles({ data }) {
                                 className="px-2 py-1 bg-gray-600 text-gray-100 font-bold rounded hover:bg-gray-500">{edge.node.frontmatter.type}</span>
                         </div>
                         <div className="mt-2"><Link className="text-2xl text-gray-700 font-bold hover:underline" to={`../${ edge.node.frontmatter.type }${ edge.node.fields.slug }`}>{ edge.node.frontmatter.title }</Link>
-                          {edge.node.frontmatter.description &&  <article className="mt-2 text-gray-600 font-light leading-relaxed text-base cms" dangerouslySetInnerHTML={{ __html: edge.node.frontmatter.description.split(' ').splice(0, 50).join(' ') + '...' }}></article>}
+                          {edge.node.frontmatter.description &&  <article className="mt-2 text-gray-600 font-light leading-relaxed text-base cms" dangerouslySetInnerHTML={{ __html: sanitizeHtml(edge.node.frontmatter.description.split(' ').splice(0, 50).join(' ') + '...' )}}></article>}
                         </div>
                         <div className="flex justify-between items-center mt-4"><Link  to={`../${ edge.node.frontmatter.type }${ edge.node.fields.slug }`}>Read more</Link>
                                 

@@ -1,6 +1,8 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 import Gallery from "../components/RelCarousel"
+import sanitizeHtml from 'sanitize-html'
+
 export default function ReadingSeries() { 
   return (
     <StaticQuery
@@ -38,7 +40,7 @@ export default function ReadingSeries() {
           <div className="flex flex-col ">
 
             <p className="text-3xl font-sans text-gray-600">{data.rseries.edges[0].node.frontmatter.title} </p>
-          <div className="font-serif dropCap" dangerouslySetInnerHTML={{ __html: data.rseries.edges[0].node.frontmatter.description }}></div>
+          <div className="font-serif dropCap" dangerouslySetInnerHTML={{ __html: sanitizeHtml(data.rseries.edges[0].node.frontmatter.description )}}></div>
         </div>
 
         

@@ -7,6 +7,7 @@ import Gallery from "../components/ExCarousel"
 import SeO from "../components/SeoComponent"
 import PageHeader from "../components/PageHeader"
 import SectionHeader from "../components/SectionHeader"
+import sanitizeHtml from 'sanitize-html'
 
 const exhibitPage = ({ data }) => {
     const exhibit = data.markdownRemark
@@ -29,7 +30,7 @@ const exhibitPage = ({ data }) => {
         {data.markdownRemark.frontmatter.coupon && <div className={`${bgcolor} ${txtcolor} p-2 text-xl font-thin tracking-wide text-center`}>{data.markdownRemark.frontmatter.coupon}</div>}
         <div>
           <div className={` px-10 text-md text-ceci-gray-dark font-light tracking-wide text-center`}
-          dangerouslySetInnerHTML={{ __html:exhibit.html }}/>
+          dangerouslySetInnerHTML={{ __html: sanitizeHtml(exhibit.html) }}/>
 
         
        
@@ -55,7 +56,7 @@ const exhibitPage = ({ data }) => {
            <div key={`staff${index}`}>
              <div className="tracking-wide text-lg font-thin text-ceci-gray-mid"><Link to={'../../staff/' + staff.frontmatter.title.replace(" ", "-").toLowerCase()}>{staff.frontmatter.title} <span className="font-thin text-sm">&nbsp; - &nbsp;{staff.frontmatter.job_title}</span></Link></div>
             <div className="py-2 font-light text-ceci-gray-dark text-lg leading-relaxed dropCap"
-          dangerouslySetInnerHTML={{ __html:staff.html }}/>
+          dangerouslySetInnerHTML={{ __html: sanitizeHtml(staff.html) }}/>
             </div>
         ))}
           </section>}
