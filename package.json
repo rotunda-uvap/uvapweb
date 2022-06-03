@@ -14,7 +14,6 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
-    "@ericz1803/react-google-calendar": "^4.2.1",
     "@fontsource/antonio": "^4.5.7",
     "@fontsource/crimson-text": "^4.5.2",
     "@fontsource/quicksand": "^4.5.9",
