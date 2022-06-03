@@ -29,7 +29,7 @@ const bookQuery = `{
   }
 }`
 
-const RotundaQuery = `{
+/* const RotundaQuery = `{
   rotundas: AllRotundaJson {
     edges {
       node {
@@ -45,9 +45,9 @@ const RotundaQuery = `{
         
     }
   }
-}`
+}` */
 
-const PageQuery = `{
+/* const PageQuery = `{
   pages: AllMarkdownRemark {
     edges {
       node {
@@ -58,9 +58,9 @@ const PageQuery = `{
       }  
     }
   }
-}`
+}` */
 
-function RotundaToAlgoliaRecord({ node: { id, RotID, Title, Subtitle, MainDescription, MainCollection, SubCollection, EditorCredit } }) {
+/* function RotundaToAlgoliaRecord({ node: { id, RotID, Title, Subtitle, MainDescription, MainCollection, SubCollection, EditorCredit } }) {
   return {
     objectID: id,
     RotID,
@@ -79,7 +79,7 @@ function PageToAlgoliaRecord({ node: { id, html, fields } }) {
     html,
     fields
   }
-}
+} */
 function bookToAlgoliaRecord({ node: { id, BookID, Title, Subtitle, MainDescription, AuthorCredit, Subject, Series, List, DaysSincePublication, PublicationDate, ISBNs} }) {
   return {
     objectID: id,
@@ -103,7 +103,7 @@ const queries = [
     transformer: ({ data }) => data.books.edges.map(bookToAlgoliaRecord),
     indexName,
     settings: { attributesToSnippet: [`MainDescription:20`], searchableAttributes: ['Title', 'Subtitle', 'MainDescription', 'AuthorCredit', 'ISBNs'], attributesForFaceting: ['Series.name', 'Subject.name', 'List'], typoTolerance: 'min', minWordSizefor1Typo:5 },
-  },
+  }/* ,
   {
     query: RotundaQuery,
     transformer: ({ data }) => data.rotundas.edges.map(RotundaToAlgoliaRecord),
@@ -115,7 +115,7 @@ const queries = [
     transformer: ({ data }) => data.pages.edges.map(PageToAlgoliaRecord),
     indexName,
     settings: { attributesToSnippet: [`html:20`], searchableAttributes: ['Title', 'html'], attributesForFaceting: ['Series.name', 'Subject.name', 'List'], typoTolerance: 'min', minWordSizefor1Typo:5 },
-  },
+  }, */
 ]
 
 module.exports = queries
