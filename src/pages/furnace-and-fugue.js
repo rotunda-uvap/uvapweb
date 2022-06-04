@@ -4,7 +4,7 @@ import "../utils/global.css"
 import SeO from "../components/SeoComponent"
 import ShareButtons from "../components/ShareButtons"
 import ImgGallery from "../components/ImgCarousel"
-import { Tabs, Tab, TabPanel, TabList } from 'react-web-tabs';
+import { Tabs, Tab, TabPanel, TabList } from 'react-tabs';
 export default function FFPage() {
     const screenshots= ['fandf_cover.png', 'fandf_screen1.png', 'fandf_screen2.png', 'fandf_screen3.png', 'fandf_screen4.png']
  return (

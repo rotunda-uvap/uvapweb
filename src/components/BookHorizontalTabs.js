@@ -1,7 +1,7 @@
 import React from "react"
 // @ts-ignore
-import { Tabs, Tab, TabPanel, TabList } from 'react-web-tabs';
-
+// import { Tabs, Tab, TabPanel, TabList } from 'react-web-tabs';
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 
 const BookHorizontalTabs = ({summary, reviews, bio, TOC, add}) => {
    
