@@ -282,15 +282,7 @@ module.exports = {
       enableIdentityWidget:false
     },
   },
-  {
-    resolve: `gatsby-plugin-algolia`,
-    options: {
-      appId: process.env.GATSBY_ALGOLIA_APP_ID,
-      apiKey: process.env.ALGOLIA_ADMIN_KEY,
-      indexName: process.env.GATSBY_ALGOLIA_INDEX_NAME,
-      queries: require("./src/utils/algolia-queries")
-    },
-  },
+  
    
     {
       resolve: 'gatsby-plugin-mailchimp',
@@ -307,7 +299,15 @@ module.exports = {
         policy: [{ userAgent: '*', allow: '/' }]
       }
     },
-    
+    {
+      resolve: `gatsby-plugin-algolia`,
+      options: {
+        appId: process.env.GATSBY_ALGOLIA_APP_ID,
+        apiKey: process.env.ALGOLIA_API_KEY,
+        indexName: process.env.GATSBY_ALGOLIA_INDEX_NAME,
+        queries: require("./src/utils/algolia-queries")
+      },
+    },
     "gatsby-plugin-meta-redirect"
   ],
   mapping: {
