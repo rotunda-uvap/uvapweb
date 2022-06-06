@@ -4,6 +4,7 @@ import Layout from "../components/layout"
 import "../utils/global.css"
 import SeO from "../components/SeoComponent"
 import PageHeader from "../components/PageHeader"
+import sanitizeHtml from 'sanitize-html'
 export default function PrivacyPage({ data }) {
     const pagedata = data.markdownRemark
  return (
@@ -13,7 +14,7 @@ export default function PrivacyPage({ data }) {
            <div className="container px-5 py-12 mx-auto">
            <PageHeader text={'Privacy Policy'}/>
 
-         <div className="cms" dangerouslySetInnerHTML={{__html: pagedata.html}}/>
+         <div className="cms" dangerouslySetInnerHTML={{__html: sanitizeHtml(pagedata.html)}}/>
 
          
            </div>

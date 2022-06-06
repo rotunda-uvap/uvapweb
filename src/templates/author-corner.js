@@ -6,6 +6,7 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import SeO from "../components/SeoComponent"
 import ShareButtons from "../components/ShareButtons"
 import PageHeader from "../components/PageHeader"
+import sanitizeHtml from 'sanitize-html'
 
 const newsPage = ({ data }) => {
     const news = data.markdownRemark
@@ -56,8 +57,8 @@ else metaImage = null;
  
   {news_image && <div className="md:float-left px-6 pb-5"><GatsbyImage image={news_image} alt="related image"/></div> }
   <div>
-    <article className="cms"
-          dangerouslySetInnerHTML={{ __html: news.html }}/>
+  <article className="cms"
+          dangerouslySetInnerHTML={{ __html: sanitizeHtml(news.html) }}/>
 
             {related_series && related_series.map(series => (
             <> 

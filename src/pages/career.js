@@ -4,6 +4,7 @@ import Layout from "../components/layout"
 import "../utils/global.css"
 import SeO from "../components/SeoComponent"
 import PageHeader from "../components/PageHeader"
+import sanitizeHtml from 'sanitize-html';
 
 export default function CareerPage({ data }) {
     const pagedata = data.markdownRemark
@@ -11,9 +12,9 @@ export default function CareerPage({ data }) {
    
         <Layout> 
           <SeO title="Career Opportunties at UVA Press"/>
-           <div className="container px-5 py-12 mx-auto">
+           <div className="mx-auto">
 <PageHeader text={"Career Opportunties"}/>
-         <div className="cms" dangerouslySetInnerHTML={{__html: pagedata.html}}/>
+         <div className="cms" dangerouslySetInnerHTML={{__html: sanitizeHtml(pagedata.html)}}/>
 
          
            </div>

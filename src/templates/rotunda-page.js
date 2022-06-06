@@ -4,6 +4,7 @@ import Layout from "../components/layout"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import SeO from "../components/SeoComponent"
 import PageHeader from "../components/PageHeader"
+import sanitizeHtml from 'sanitize-html'
 
 const rotundaPage = ({ data }) => {
     const item = data.rotundaJson
@@ -34,7 +35,7 @@ const rotundaPage = ({ data }) => {
        
         <section className="py-5">
           <hr className="pt-4"/>
-        <article className="text-lg leading-8 dropCap cms text-ceci-gray-dark" dangerouslySetInnerHTML={{ __html:summary.html }}/>
+        <article className="text-lg leading-8 dropCap cms text-ceci-gray-dark" dangerouslySetInnerHTML={{ __html: sanitizeHtml(summary.html) }}/>
 
         </section>
       {/*   <section>

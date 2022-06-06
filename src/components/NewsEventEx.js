@@ -1,6 +1,7 @@
 import React from "react"
 import { Link, StaticQuery, graphql } from "gatsby"
 import {FaArrowAltCircleRight} from "react-icons/fa"
+import sanitizeHtml from 'sanitize-html';
 
 export default function FeatTrio() { 
 
@@ -70,7 +71,7 @@ export default function FeatTrio() {
                 <>
                    <Link className="p-2" to={`../news${ edge.node.fields.slug }`}>
                   <div className="font-thin uppercase tracking-wide font-display md:py-1">{edge.node.frontmatter.title }</div>
-              <div className="font-serif text-left text-sm  leading-relaxed text-ceci-gray-dark dropCap" dangerouslySetInnerHTML={{ __html: edge.node.html.split(' ').splice(0, 30).join(' ') + '...' }}/> 
+              <div className="font-serif text-left text-sm  leading-relaxed text-ceci-gray-dark dropCap" dangerouslySetInnerHTML={{ __html: sanitizeHtml(edge.node.html.split(' ').splice(0, 30).join(' ') + '...' )}}/> 
               <div className="font-display uppercase text-xs tracking-widest py-2"><FaArrowAltCircleRight className="inline mx-4"/> Continue Reading</div>
               </Link> 
                </>
@@ -89,7 +90,7 @@ export default function FeatTrio() {
                 <>
                    <Link className="p-2" to={`../author-corner${ edge.node.fields.slug }`}>
                   <div className="font-thin uppercase tracking-wide font-display md:py-1">{edge.node.frontmatter.title }</div>
-              <div className="font-serif text-left text-sm p-0 leading-relaxed text-ceci-gray-dark dropCap" dangerouslySetInnerHTML={{ __html: edge.node.html.split(' ').splice(0, 25).join(' ') + '...' }}/> 
+              <div className="font-serif text-left text-sm p-0 leading-relaxed text-ceci-gray-dark dropCap" dangerouslySetInnerHTML={{ __html: sanitizeHtml(edge.node.html.split(' ').splice(0, 25).join(' ') + '...' )}}/> 
               <div className="font-display uppercase text-xs tracking-widest py-2"><FaArrowAltCircleRight className="inline mx-4"/> Continue Reading</div>
               </Link> 
                </>

@@ -3,15 +3,17 @@ import { Link } from "gatsby"
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import sanitizeHtml from 'sanitize-html';
 
 const Gallery = ({book_obj_array}) => {
 
     const imageMap = book_obj_array.map((book, index) => {
       let cover = "https://ik.imagekit.io/uvapress/mediums/" + book.jsonId + "_M.jpg"
+      let cleanCover = sanitizeHtml(cover)
       let booklink = "../../title/" + book.jsonId
         return (
             <Link to={booklink} ><div className="image-slider-container items-center px-10" key={`book${index}`}>
-                <img src={cover} width={150} height={224} alt={book.Title} loading="lazy"/>
+                <img src={cleanCover} width={150} height={224} alt={book.Title} loading="lazy"/>
             </div></Link>
         )
     })

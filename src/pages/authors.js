@@ -7,6 +7,7 @@ import FileDownloadButton from "../components/FileDownloadButton"
 import SeO from "../components/SeoComponent"
 import PageHeader from "../components/PageHeader"
 import SectionHeader from "../components/SectionHeader"
+import sanitizeHtml from 'sanitize-html';
 
 export default function AuthorsPage({ data }) {
     
@@ -16,16 +17,16 @@ export default function AuthorsPage({ data }) {
         <Layout>
 <SeO title="Information for Current Authors"/>
 <section className="text-gray-600 body-font border-b-2 border-gray-100">
-  <div className="container p-5 mx-auto">
+  <div className=" mx-auto">
   <div className="flex flex-col  w-full">
-<PageHeader text={"For Current Authors"} />    <span className="text-right uppercase font-thin pb-4 text-gray-500"><Link to={'/prospective'}>
-            Prospective Authors <span className="inline-flex items-center mt-4">
-              <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
+<PageHeader text={"For Current Authors"} />    <span className="text-xs md:text-sm text-right uppercase font-thin pb-4 text-gray-500"><Link to={'/prospective'}>
+            Prospective Authors <span className="inline-flex py-2">
+            <svg fill="none" stroke="currentColor" strokeLinecap="round" stroke-linejoin="round" strokeWidth="2" className="w-3 h-3 md:w-4 md:h-4 ml-1 md:ml-2" viewBox="0 0 24 24">
                 <path d="M13 5l7 7-7 7M5 5l7 7-7 7"></path>
               </svg></span>
               </Link></span>
       <p className="lg:w-3/3 mx-auto text-left leading-relaxed text-base">
-         <div className="dropCap cms" dangerouslySetInnerHTML={{__html: pagedata.html}}/></p>
+         <div className="dropCap cms" dangerouslySetInnerHTML={{__html: sanitizeHtml(pagedata.html)}}/></p>
     </div>
    
     </div>

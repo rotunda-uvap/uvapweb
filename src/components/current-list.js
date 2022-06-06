@@ -25,7 +25,7 @@ export default function CurrentList() {
         <section>
        
 
-      <div className="container px-5 py-5 flex flex-wrap ">
+      <div className="flex flex-wrap ">
           {data.allBooksJson.edges.map((edge, index) => (
           
                 <BookCard fields={edge.node} key={index}/>
