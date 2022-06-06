@@ -1,10 +1,10 @@
 import React from 'react'
 import { Link, useStaticQuery, graphql} from "gatsby"
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import { GatsbyImage, getImage} from "gatsby-plugin-image"
 
 
 const Banner = ({id, author, quote, subtitle, book_title, attr}) => {
-  const cover = "https://ik.imagekit.io/uvapress/mediums/" + id + "_M.jpg"
+  const cover = "https://ik.imagekit.io/uvapress/" + id + ".jpg"
   const booklink = "../../title/" + id
   const data = useStaticQuery(graphql`
   query {
@@ -34,7 +34,7 @@ const uvafullimage = getImage(data.uvalogofull)
         </Link> </div>
          
         <div id="3" className="col-span-1 flex flex-col justify-center items-center"><div className="self-center">
-        <Link to={booklink}> <img width={150} height={224} src={cover} alt="feat book" className="drop-shadow-img homepageimage" loading="eager" /></Link></div>
+        <Link to={booklink}> <img width={250} src={cover} alt="feat book" className="drop-shadow-img homepageimage" loading="eager" /></Link></div>
           </div>
         
           <div id="4" className="hidden lg:block lg:col-span-1 py-3 font-serif font-light text-2xl quoted self-center text-left">
