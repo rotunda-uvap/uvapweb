@@ -2,12 +2,12 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: BLACK SUFFRAGE
-    banner_author: Paul D. Escott
-    banner_subtitle: Lincoln’s Last Goal
-    banner_id: "5793"
-    banner_quote: A fine contribution to the literature
-    banner_attr: David Goldfield
+  - banner_title: THE EPIC OF CUBA LIBRE
+    banner_author: Éric Morales-Franceschini
+    banner_subtitle: The Mambí, Mythopoetics, and Liberation
+    banner_id: "5737"
+    banner_quote: A beautifully written, highly original, and exciting study
+    banner_attr: Anne Garland Mahler
 related_book:
   - "5744"
   - "5617"
