@@ -34,7 +34,7 @@ const uvafullimage = getImage(data.uvalogofull)
         </Link> </div>
          
         <div id="3" className="col-span-1 flex flex-col justify-center items-center"><div className="self-center">
-        <Link to={booklink}> <img src={cover} alt="feat book" className="aspect-[5/8] drop-shadow-img homepageimage" loading="eager" /></Link></div>
+        <Link to={booklink}> <img src={cover} alt="feat book" width={200} className="aspect-[17/25] drop-shadow-img homepageimage" loading="eager" /></Link></div>
           </div>
         
           <div id="4" className="hidden lg:block lg:col-span-1 py-3 font-serif font-light text-2xl quoted self-center text-left md:pl-2">
