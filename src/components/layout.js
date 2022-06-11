@@ -2,7 +2,7 @@ import React from "react"
 import Footer from "./footer" 
 import MegaHeader from "./Megamenu"
 import { Helmet } from "react-helmet"
-import { Script } from "gatsby"
+// import { Script } from "gatsby"
 
 
 const Layout = ({ children }) => {
@@ -13,7 +13,7 @@ const Layout = ({ children }) => {
   htmlAttributes={{
     lang: 'en',
   }}/>
-  <Script
+ {/*  <Script
   src={`https://www.googletagmanager.com/gtag/js?id=${process.env.GTM}`}
   strategy="off-main-thread"
   forward={[`gtag`]}
@@ -25,7 +25,7 @@ const Layout = ({ children }) => {
     gtag('js', new Date())
     gtag('config', ${process.env.GTM}, { send_page_view: false })
   `}
-</Script>
+</Script> */}
    
 
   
