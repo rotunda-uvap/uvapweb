@@ -2,12 +2,12 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: THE EPIC OF CUBA LIBRE
-    banner_author: Éric Morales-Franceschini
-    banner_subtitle: The Mambí, Mythopoetics, and Liberation
-    banner_id: "5737"
-    banner_quote: A beautifully written, highly original, and exciting study
-    banner_attr: Anne Garland Mahler
+  - banner_title: DIGITIZING FAULKNER
+    banner_author: Theresa M. Towner
+    banner_subtitle: " Yoknapatawpha in the Twenty-First Century"
+    banner_id: "5471"
+    banner_quote: Fulfilling the promise of digital humanities
+    banner_attr: Wes Hamrick
 related_book:
   - "5744"
   - "5617"
