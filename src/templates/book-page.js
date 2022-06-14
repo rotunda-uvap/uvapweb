@@ -18,7 +18,7 @@ const bookPage = ({ data }) => {
   const news = data.newsMD
   const imageKitURL = "https://ik.imagekit.io/uvapress/"
   const imageKitBookPath = book.BookID + ".jpg"
-  const noimg_big = "https://ik.imagekit.io/uvapress/noimg_lg.png"
+/*   const noimg_big = "https://ik.imagekit.io/uvapress/noimg_lg.png"
   const noimg_sm = "https://ik.imagekit.io/uvapress/noimg.png"
   const imglink =
     imageKitURL +
@@ -27,7 +27,7 @@ const bookPage = ({ data }) => {
   const imglink_sm =
     "https://ik.imagekit.io/uvapress/mediums/" +
     book.BookID +
-    "_M.jpg"
+    "_M.jpg" */
   const defaultImage = "/static/uvap_sm.png"
   return (
     <Layout>
@@ -121,7 +121,7 @@ const bookPage = ({ data }) => {
 
         </div>
         <div className="py-6 md:col-span-2 text-ceci-gray-dark">
-          <h4 className="hidden md:block  pb-3 font-thin font-sans uppercase tracking-booped leading-none ">{book.Title}</h4>
+          <h4 className="hidden md:block  pb-3 font-thin font-sans uppercase tracking-booped leading-snug ">{book.Title}</h4>
           <div className="md:hidden text-2xl text-center font-thin uppercase tracking-booped font-sans">{book.Title}</div>
 
           {book.InternalSeriesVolume && (

@@ -14,7 +14,7 @@ const Gallery = ({book_obj_array}) => {
         return (
             <Link to={booklink} key={`book${index}`} aria-label={`featured book #${index}`}><div className="image-slider-container items-center px-10 aspect-[2/3]" >
                <IKContext urlEndpoint="https://ik.imagekit.io/uvapress/" >
-            <IKImage className="aspect-[2/3]" path={imageKitPath}
+            <IKImage width="150" height="224" path={imageKitPath}
             transformation={[{
               "height": "224",
               "width": "150",
