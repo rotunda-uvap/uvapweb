@@ -15,7 +15,7 @@ const Gallery = ({book_obj_array}) => {
             <Link to={booklink} key={`book${index}`}><div className="image-slider-container items-center px-10 aspect-[75/112]" >
                <IKContext urlEndpoint="https://ik.imagekit.io/uvapress/tr:w-0.4/" >
             <IKImage path={imageKitPath}
-            lqip={{ active: true }} loading="lazy"/>
+            lqip={{ active: true }} />
            
           </IKContext>
               

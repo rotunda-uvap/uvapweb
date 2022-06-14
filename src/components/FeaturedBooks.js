@@ -15,8 +15,7 @@ const FeaturedBooks = ({id}) => {
                 height: auto,
                 width: 150
                 }]}
-            lqip={{ active: true }}
-            loading="lazy"/>
+            lqip={{ active: true }}/>
           </IKContext>
                 </Link>
   
