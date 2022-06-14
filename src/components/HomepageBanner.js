@@ -27,7 +27,7 @@ const uvafullimage = getImage(data.uvalogofull)
 
    return (
     <section className=" max-w-sm md:max-w-4xl  mx-auto py-5  text-ceci-gray-dark">
-   
+    <link rel="preload" as="image" href={`https://ik.imagekit.io/uvapress/${imageKitPath}`} type="image/jpg"/>
        <div className="mx-auto grid gap-3 md:gap-4 grid-cols-2 lg:grid-cols-3   ">
        <div id="1" className="col-span-2 lg:col-span-3 md:w-full py-5 place-content-center"><div className="px-4 md:px-auto text-center pb-5"><GatsbyImage image={uvafullimage} alt="uva logo" width={400} height={119} className="homepageimage" loading="eager"/></div></div> 
        <div id="2" className="col-span-1 flex flex-col justify-center place-content-center pr-2"><Link to={booklink} aria-label={`click to featured book:${book_title}`}>
@@ -44,6 +44,7 @@ const uvafullimage = getImage(data.uvalogofull)
       "width": "250",
       crop: "at_max"
     }]}
+    loading="eager"
     lqip={{ active: true }}
             />
           </IKContext>

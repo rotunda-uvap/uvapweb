@@ -18,7 +18,7 @@ module.exports = {
         transparent: 'transparent',
         current: 'currentColor',
         'ceci-gray-light': '#cecfce',
-        'ceci-gray-mid': '#808080',
+        'ceci-gray-mid': '#757575',
         'ceci-gray-dark' : '#414042',
         'greige': '#f7f7f7;'
       },
