@@ -45,7 +45,6 @@ const uvafullimage = getImage(data.uvalogofull)
       crop: "at_max"
     }]}
     loading="eager"
-    lqip={{ active: true }}
             />
           </IKContext>
            {/* <img src={cover} alt="feat book" width={200} className="aspect-[67/100] drop-shadow-img homepageimage" loading="eager" /> */}
