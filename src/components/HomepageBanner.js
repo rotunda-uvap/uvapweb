@@ -38,8 +38,14 @@ const uvafullimage = getImage(data.uvalogofull)
          
         <div id="3" className="col-span-1 flex flex-col justify-center items-center"><div className="self-center">
         <Link to={booklink}>
-          <IKContext urlEndpoint="https://ik.imagekit.io/uvapress/tr:w-250/" className="aspect-[67/100]">
-            <IKImage path={imageKitPath} lqip={{ active: true }}/>
+          <IKContext urlEndpoint="https://ik.imagekit.io/uvapress/">
+            <IKImage path={imageKitPath} transformation={[{
+      "height": "375",
+      "width": "250",
+      crop: "at_max"
+    }]}
+    lqip={{ active: true }}
+            />
           </IKContext>
            {/* <img src={cover} alt="feat book" width={200} className="aspect-[67/100] drop-shadow-img homepageimage" loading="eager" /> */}
            </Link></div>

@@ -8,8 +8,8 @@ const FeaturedBooks = ({id}) => {
    const booklink = "../../title/" + id
 
     return (
-            <Link to={booklink} className="aspect-[75/112]">
-                  <IKContext urlEndpoint="https://ik.imagekit.io/uvapress/">
+            <Link to={booklink} >
+                  <IKContext urlEndpoint="https://ik.imagekit.io/uvapress/" >
             <IKImage path={imageKitPath}
              transformation={[{
                 height: auto,

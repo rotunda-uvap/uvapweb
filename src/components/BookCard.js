@@ -12,8 +12,12 @@ export default function BookCard( {fields: {Title, Subtitle, AuthorCredit, Cover
     {CoverImageMain ? <div className="flip-card-front">
        {/* <img src={booksrc} className="mx-auto my-auto self-center" alt="cover"/> */}
         <div className="mx-auto my-auto self-center aspect-[75/112]">
-          <IKContext  urlEndpoint="https://ik.imagekit.io/uvapress/mediums/tr:w-150/">
-            <IKImage path={CoverImageMain}  lqip={{ active: true }}/>
+          <IKContext  urlEndpoint="https://ik.imagekit.io/uvapress/mediums/">
+            <IKImage path={CoverImageMain} transformation={[{
+              "height": "224",
+              "width": "150",
+              crop: "at_max"
+            }]} lqip={{ active: true }}/>
           </IKContext>
           </div>
         </div>:  
