@@ -2,6 +2,7 @@ import React from 'react'
 import { Link, useStaticQuery, graphql} from "gatsby"
 import { GatsbyImage, getImage} from "gatsby-plugin-image"
 import { IKImage, IKContext } from 'imagekitio-react'
+import { Helmet } from 'react-helmet'
 
 
 
@@ -26,6 +27,10 @@ const Banner = ({id, author, quote, subtitle, book_title, attr}) => {
 const uvafullimage = getImage(data.uvalogofull)
 
    return (
+     <>
+     <Helmet>
+      <link rel="preload" as="image" href={`https://ik.imagekit.io/uvapress/${imageKitPath}`}/>
+    </Helmet>
     <section className=" max-w-sm md:max-w-4xl  mx-auto py-5  text-ceci-gray-dark">
  
        <div className="mx-auto grid gap-3 md:gap-4 grid-cols-2 lg:grid-cols-3   ">
@@ -56,7 +61,7 @@ const uvafullimage = getImage(data.uvalogofull)
         
       </div>
     </section>
- 
+ </>
      )
  }
  
