@@ -11,7 +11,7 @@ const Gallery = ({book_id_array}) => {
       const imageKitPath = image + ".jpg"
       let booklink = "../../title/" + image
         return (
-            <Link to={booklink} ><div className="image-slider-container items-center px-10" key={`book${index}`}>
+            <Link to={booklink} key={`book${index}`}><div className="image-slider-container items-center px-10 aspect-[75/112]" >
                <IKContext urlEndpoint="https://ik.imagekit.io/uvapress/tr:w-0.4/" >
             <IKImage path={imageKitPath}
             lqip={{ active: true }}

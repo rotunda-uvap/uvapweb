@@ -84,7 +84,7 @@ const bookPage = ({ data }) => {
             alt="mobile cover"
           /> */
            : 
-           <div className="md:hidden text-center w-1/2 mx-auto">
+           <div className="md:hidden text-center w-1/2 mx-auto ">
            <IKContext urlEndpoint="https://ik.imagekit.io/your_imagekit_id">
               <IKImage
              path="noimg_lg.png"
