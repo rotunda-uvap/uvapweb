@@ -1,14 +1,14 @@
 import React from 'react'
 import { Link, useStaticQuery, graphql} from "gatsby"
-import { GatsbyImage, getImage} from "gatsby-plugin-image"
-import { IKImage, IKContext } from 'imagekitio-react'
-import { Helmet } from 'react-helmet'
+import { GatsbyImage, getImage, StaticImage} from "gatsby-plugin-image"
+/* import { IKImage, IKContext } from 'imagekitio-react'
+ */
 
 
 
 const Banner = ({id, author, quote, subtitle, book_title, attr}) => {
-  // const cover = "https://ik.imagekit.io/uvapress/" + id + ".jpg"
-  const imageKitPath = id + ".jpg"
+   const cover = "https://ik.imagekit.io/uvapress/" + id + ".jpg"
+  // const imageKitPath = id + ".jpg"
   const booklink = "../../title/" + id
   const data = useStaticQuery(graphql`
   query {
@@ -27,10 +27,8 @@ const Banner = ({id, author, quote, subtitle, book_title, attr}) => {
 const uvafullimage = getImage(data.uvalogofull)
 
    return (
-     <>
-     <Helmet>
-      <link rel="preload" as="image" href={`https://ik.imagekit.io/uvapress/${imageKitPath}`}/>
-    </Helmet>
+    
+  
     <section className=" max-w-sm md:max-w-4xl  mx-auto py-5  text-ceci-gray-dark">
  
        <div className="mx-auto grid gap-3 md:gap-4 grid-cols-2 lg:grid-cols-3   ">
@@ -43,16 +41,8 @@ const uvafullimage = getImage(data.uvalogofull)
          
         <div id="3" className="col-span-1 flex flex-col justify-center items-center"><div className="self-center">
         <Link to={booklink} aria-label={`click to featured book:${book_title}`}>
-          <IKContext urlEndpoint="https://ik.imagekit.io/uvapress/">
-            <IKImage width="250" height="375" path={imageKitPath} transformation={[{
-      "height": "375",
-      "width": "250",
-      crop: "at_max"
-    }]}
-    loading="eager"
-            />
-          </IKContext>
-           {/* <img src={cover} alt="feat book" width={200} className="aspect-[67/100] drop-shadow-img homepageimage" loading="eager" /> */}
+         
+           {<img src={cover} alt="feat book" width={200} height={375} className="aspect-[67/100] drop-shadow-img homepageimage" loading="eager" /> }
            </Link></div>
           </div>
         
@@ -61,7 +51,7 @@ const uvafullimage = getImage(data.uvalogofull)
         
       </div>
     </section>
- </>
+
      )
  }
  
