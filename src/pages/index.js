@@ -21,7 +21,6 @@ const Home = ({ data }) => {
   const catalog  = getImage(data.catalogimage)  
   return (
     <Layout>
-        <link rel="preload" as="image" href={`https://ik.imagekit.io/uvapress/5471.jpg`} type="image/jpg"/>
 
 <SeO/>
  <Banner id={top.banner_id} book_title={top.banner_title} author={top.banner_author} quote={top.banner_quote} subtitle={top.banner_subtitle} attr={top.banner_attr}/>
