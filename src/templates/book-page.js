@@ -45,14 +45,14 @@ const bookPage = ({ data }) => {
         book={true}
       />
 
-      <div className="flex flex-col md:grid md:grid-cols-3 md:gap-10 py-3 ml-6 text-ceci-gray-dark">
+      <div className="flex flex-col md:grid md:grid-cols-3 md:gap-10 py-3 ml-6 text-ceci-gray-dark max-w-6xl">
         <div className="col-span-1">
          
           { book.CoverImageFull ? 
           // <img className="pt-12 hidden md:block" src={imglink} alt="cover" /> 
-          <div className="pt-12 hidden md:block aspect-[2/3">
+          <div className="pt-12 hidden md:block">
             <IKContext urlEndpoint="https://ik.imagekit.io/uvapress/">
-              <IKImage
+              <IKImage className="aspect-[2/3]"
              path={imageKitBookPath}
              transformation={[{
               "height": "450",
@@ -64,10 +64,15 @@ const bookPage = ({ data }) => {
             </IKContext>
           </div>
           :
-          <div className="hidden md:block aspect-[2/3" >
+          <div className="hidden md:block" >
                <IKContext urlEndpoint={imageKitURL}>
-              <IKImage
+              <IKImage className="aspect-[2/3]"
              path="noimg_lg.png"
+             transformation={[{
+              "height": "450",
+              "width": "300",
+              crop: "at_max"
+            }]}
              lqip={{ active: true }}
              />
             </IKContext>
@@ -75,9 +80,9 @@ const bookPage = ({ data }) => {
           //  <img className="hidden md:block" src={noimg_big} alt="cover" />
           }
            { book.CoverImageFull ? 
-           <div className="md:hidden text-center py-4 w-1/2 mx-auto aspect-[2/3]">
+           <div className="md:hidden text-center py-4 w-1/2 mx-auto">
               <IKContext urlEndpoint="https://ik.imagekit.io/uvapress/">
-              <IKImage
+              <IKImage className="aspect-[2/3]"
              path={imageKitBookPath}
              transformation={[{
               "height": "300",
@@ -94,10 +99,15 @@ const bookPage = ({ data }) => {
             alt="mobile cover"
           /> */
            : 
-           <div className="md:hidden text-center w-1/2 mx-auto aspect-[2/3] ">
+           <div className="md:hidden text-center w-1/2 mx-auto ">
            <IKContext urlEndpoint="https://ik.imagekit.io/your_imagekit_id">
-              <IKImage
+              <IKImage className="aspect-[2/3]"
              path="noimg_sm.png"
+             transformation={[{
+              "height": "300",
+              "width": "200",
+              crop: "at_max"
+            }]}
              lqip={{ active: true }}
              />
             </IKContext>
@@ -110,7 +120,7 @@ const bookPage = ({ data }) => {
           }
 
         </div>
-        <div className="py-6 md:col-span-2 md:pr-5 md:px-10 text-ceci-gray-dark">
+        <div className="py-6 md:col-span-2 text-ceci-gray-dark">
           <h4 className="hidden md:block  pb-3 font-thin font-sans uppercase tracking-booped leading-none ">{book.Title}</h4>
           <div className="md:hidden text-2xl text-center font-thin uppercase tracking-booped font-sans">{book.Title}</div>
 

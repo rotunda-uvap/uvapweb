@@ -8,7 +8,7 @@ const BookHorizontalTabs = ({summary, reviews, bio, TOC, add}) => {
    
     return (
     
-        <Tabs defaultTab="basic-tab-one" className="flex flex-col justify-center ">
+        <Tabs defaultTab="basic-tab-one" className="flex flex-col justify-center max-w-7xl ">
         <TabList className="flex flex-col md:flex-row self-center text-ceci-gray-dark">
     <Tab className=" uppercase py-2 font-thin tracking-widest  px-3 sm:px-6 text-sm md:text-lg border-b-4 border-white hover:border-black" tabfor="basic-tab-one">Summary</Tab>
           <Tab className="uppercase font-thin tracking-widest py-2 px-3 sm:px-6 text-sm md:text-lg border-b-4 border-white hover:border-black" tabfor="basic-tab-two">Reviews</Tab>

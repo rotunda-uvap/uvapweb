@@ -12,9 +12,9 @@ const Gallery = ({book_obj_array}) => {
       const imageKitPath = book.jsonId + ".jpg"
       let booklink = "../../title/" + book.jsonId
         return (
-            <Link to={booklink} key={`book${index}`}><div className="image-slider-container items-center px-10 aspect-[2/3]" >
+            <Link to={booklink} key={`book${index}`} aria-label={`featured book #${index}`}><div className="image-slider-container items-center px-10 aspect-[2/3]" >
                <IKContext urlEndpoint="https://ik.imagekit.io/uvapress/" >
-            <IKImage path={imageKitPath}
+            <IKImage className="aspect-[2/3]" path={imageKitPath}
             transformation={[{
               "height": "224",
               "width": "150",
