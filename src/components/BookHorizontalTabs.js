@@ -10,11 +10,11 @@ const BookHorizontalTabs = ({summary, reviews, bio, TOC, add}) => {
     
         <Tabs defaultTab="basic-tab-one" className="flex flex-col justify-center ">
         <TabList className="flex flex-col md:flex-row self-center text-ceci-gray-dark">
-    <Tab className=" uppercase py-2 font-thin tracking-widest  px-3 sm:px-6 text-sm md:text-lg border-b-4 border-white hover:border-black" tabFor="basic-tab-one">Summary</Tab>
-          <Tab className="uppercase font-thin tracking-widest py-2 px-3 sm:px-6 text-sm md:text-lg border-b-4 border-white hover:border-black" tabFor="basic-tab-two">Reviews</Tab>
-          <Tab className="uppercase font-thin tracking-widest py-2 px-3 sm:px-6 text-sm md:text-lg border-b-4 border-white hover:border-black" tabFor="basic-tab-three">Author Bio(s)</Tab>
-          { TOC ? <Tab className="uppercase font-thin tracking-widest py-2 px-3 sm:px-6 text-sm md:text-lg border-b-4 border-white hover:border-black" tabFor="basic-tab-four">Table of Contents</Tab> : ""} 
-          { add ? <Tab className="uppercase font-thin tracking-widest py-2 px-3 sm:px-6 text-sm md:text-lg border-b-4 border-white hover:border-black" tabFor="basic-tab-five">Additional Resources</Tab> : ""} 
+    <Tab className=" uppercase py-2 font-thin tracking-widest  px-3 sm:px-6 text-sm md:text-lg border-b-4 border-white hover:border-black" tabfor="basic-tab-one">Summary</Tab>
+          <Tab className="uppercase font-thin tracking-widest py-2 px-3 sm:px-6 text-sm md:text-lg border-b-4 border-white hover:border-black" tabfor="basic-tab-two">Reviews</Tab>
+          <Tab className="uppercase font-thin tracking-widest py-2 px-3 sm:px-6 text-sm md:text-lg border-b-4 border-white hover:border-black" tabfor="basic-tab-three">Author Bio(s)</Tab>
+          { TOC ? <Tab className="uppercase font-thin tracking-widest py-2 px-3 sm:px-6 text-sm md:text-lg border-b-4 border-white hover:border-black" tabfor="basic-tab-four">Table of Contents</Tab> : ""} 
+          { add ? <Tab className="uppercase font-thin tracking-widest py-2 px-3 sm:px-6 text-sm md:text-lg border-b-4 border-white hover:border-black" tabfor="basic-tab-five">Additional Resources</Tab> : ""} 
         </TabList>
         <TabPanel className="py-3" tabId="basic-tab-one">
         <div dangerouslySetInnerHTML={{ __html: sanitizeHtml(summary) }} className="text-ceci-gray-dark dropCap cms text-lg"/>
@@ -58,6 +58,7 @@ const BookHorizontalTabs = ({summary, reviews, bio, TOC, add}) => {
         <TabPanel className="py-3" tabId="basic-tab-five">
         {add ? add.frontmatter.attached_links.map(edge => (
             <>
+            
               <div className="p-2">
                     <a href={edge.link} target="_blank" rel="noreferrer" className="text-ceci-gray-dark tracking-wide font-thin pl-5">
                       {edge.name}

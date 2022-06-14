@@ -36,7 +36,7 @@ const uvafullimage = getImage(data.uvalogofull)
 <div className="font-serif py-2 text-lg text-xl max-w-sm text-right text-ceci-gray-mid">{subtitle}</div>
         </Link> </div>
          
-        <div id="3" className="col-span-1 flex flex-col justify-center items-center"><div className="self-center">
+        <div id="3" className="col-span-1 flex flex-col justify-center items-center"><div className="self-center aspect-[2/3]">
         <Link to={booklink}>
           <IKContext urlEndpoint="https://ik.imagekit.io/uvapress/">
             <IKImage path={imageKitPath} transformation={[{
