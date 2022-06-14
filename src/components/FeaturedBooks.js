@@ -1,12 +1,24 @@
 import React from "react"
 import { Link } from "gatsby"
+import { IKImage, IKContext } from 'imagekitio-react'
 
 const FeaturedBooks = ({id}) => {
-   const cover = "https://ik.imagekit.io/uvapress/mediums/" + id + ".jpg"
+
+   const imageKitPath = id + ".jpg"
    const booklink = "../../title/" + id
 
     return (
-            <Link to={booklink} ><img src={cover} width={150} height={84} alt={cover} loading="lazy"/></Link>
+            <Link to={booklink} >
+                  <IKContext urlEndpoint="https://ik.imagekit.io/uvapress/" >
+            <IKImage path={imageKitPath}
+             transformation={[{
+                height: auto,
+                width: 150
+                }]}
+            lqip={{ active: true }}
+            loading="lazy"/>
+          </IKContext>
+                </Link>
   
       )
   }

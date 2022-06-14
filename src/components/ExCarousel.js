@@ -3,20 +3,21 @@ import { Link } from "gatsby"
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import sanitizeHtml from 'sanitize-html';
+import { IKImage, IKContext } from 'imagekitio-react'
 
 
 const Gallery = ({book_id_array}) => {
-
-  
-
     const imageMap = book_id_array.map((image, index) => {
-      let cover = "https://ik.imagekit.io/uvapress/mediums/" + image + "_M.jpg"
-      let cleanCover = sanitizeHtml(cover)
+      const imageKitPath = image + ".jpg"
       let booklink = "../../title/" + image
         return (
-            <Link to={booklink} ><div className="image-slider-container items-center px-10" key={`img${index}`}>
-                <img src={cleanCover} alt={image} width={150} height={224} loading="lazy"/>
+            <Link to={booklink} ><div className="image-slider-container items-center px-10" key={`book${index}`}>
+               <IKContext urlEndpoint="https://ik.imagekit.io/uvapress/tr:w-0.4/" >
+            <IKImage path={imageKitPath}
+            lqip={{ active: true }}
+            loading="lazy"/>
+          </IKContext>
+              
             </div></Link>
         )
     })

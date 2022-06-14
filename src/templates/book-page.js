@@ -2,7 +2,7 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import "../utils/global.css"
-// import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import { IKImage, IKContext } from 'imagekitio-react'
 import BookHorizontalTabs from "../components/BookHorizontalTabs"
 import SeO from "../components/SeoComponent"
 import ShareButtons from "../components/ShareButtons"
@@ -10,17 +10,18 @@ import kebabCase from "lodash/kebabCase"
 
 const bookPage = ({ data }) => {
   const book = data.books
-  // const imageData = getImage(data.file)
   const isbn = book.Bindings[0].ISBN
   const GoogleB = "https://books.google.com/books?vid=" + isbn
   const resources = data.markdownRemark
   const title = book.Title
   const url = "https://www.upress.virginia.edu/title/" + book.BookID
   const news = data.newsMD
+  const imageKitURL = "https://ik.imagekit.io/uvapress/"
+  const imageKitBookPath = book.BookID + ".jpg"
   const noimg_big = "https://ik.imagekit.io/uvapress/noimg_lg.png"
   const noimg_sm = "https://ik.imagekit.io/uvapress/noimg.png"
   const imglink =
-    "https://ik.imagekit.io/uvapress/" +
+    imageKitURL +
     book.BookID +
     ".jpg"
   const imglink_sm =
@@ -46,18 +47,57 @@ const bookPage = ({ data }) => {
 
       <div className="flex flex-col md:grid md:grid-cols-3 md:gap-10 py-3 ml-6 text-ceci-gray-dark ">
         <div className="col-span-1">
-          {/* <GatsbyImage image={imageData} alt="book cover" /> */}
-          { book.CoverImageFull ? <img className="pt-12 hidden md:block" src={imglink} alt="cover" /> : <img className="hidden md:block" src={noimg_big} alt="cover" />}
-           { book.CoverImageFull ? <img
+         
+          { book.CoverImageFull ? 
+          // <img className="pt-12 hidden md:block" src={imglink} alt="cover" /> 
+          <div className="pt-12 hidden md:block">
+            <IKContext urlEndpoint="https://ik.imagekit.io/uvapress/tr:w-300/">
+              <IKImage
+             path={imageKitBookPath}
+             lqip={{ active: true }}
+             />
+            </IKContext>
+          </div>
+          :
+          <div className="hidden md:block" >
+               <IKContext urlEndpoint={imageKitURL}>
+              <IKImage
+             path="noimg_lg.png"
+             lqip={{ active: true }}
+             />
+            </IKContext>
+          </div>
+          //  <img className="hidden md:block" src={noimg_big} alt="cover" />
+          }
+           { book.CoverImageFull ? 
+           <div className="md:hidden text-center w-1/2 mx-auto">
+              <IKContext urlEndpoint="https://ik.imagekit.io/uvapress/tr:w-0.4/">
+              <IKImage
+             path={imageKitBookPath}
+             lqip={{ active: true }}
+             />
+            </IKContext>
+           </div>
+          /*  <img
             className="md:hidden text-center w-1/2 mx-auto"
             src={imglink_sm}
             alt="mobile cover"
-          /> : 
-          <img
+          /> */
+           : 
+           <div className="md:hidden text-center w-1/2 mx-auto">
+           <IKContext urlEndpoint="https://ik.imagekit.io/your_imagekit_id">
+              <IKImage
+             path="noimg_lg.png"
+             lqip={{ active: true }}
+             />
+            </IKContext>
+            </div>
+          /* <img
             className="md:hidden text-center w-1/2 mx-auto"
             src={noimg_sm}
             alt="mobile cover"
-          />  }
+          /> */ 
+          }
 
         </div>
         <div className="py-6 md:col-span-2 md:pr-5 md:px-10 text-ceci-gray-dark">

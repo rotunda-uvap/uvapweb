@@ -1,10 +1,13 @@
 import React from 'react'
 import { Link, useStaticQuery, graphql} from "gatsby"
 import { GatsbyImage, getImage} from "gatsby-plugin-image"
+import { IKImage, IKContext } from 'imagekitio-react'
+
 
 
 const Banner = ({id, author, quote, subtitle, book_title, attr}) => {
-  const cover = "https://ik.imagekit.io/uvapress/" + id + ".jpg"
+  // const cover = "https://ik.imagekit.io/uvapress/" + id + ".jpg"
+  const imageKitPath = id + ".jpg"
   const booklink = "../../title/" + id
   const data = useStaticQuery(graphql`
   query {
@@ -34,7 +37,12 @@ const uvafullimage = getImage(data.uvalogofull)
         </Link> </div>
          
         <div id="3" className="col-span-1 flex flex-col justify-center items-center"><div className="self-center">
-        <Link to={booklink}> <img src={cover} alt="feat book" width={200} className="aspect-[67/100] drop-shadow-img homepageimage" loading="eager" /></Link></div>
+        <Link to={booklink}>
+          <IKContext urlEndpoint="https://ik.imagekit.io/uvapress/" >
+            <IKImage path={imageKitPath} lqip={{ active: true }}/>
+          </IKContext>
+           {/* <img src={cover} alt="feat book" width={200} className="aspect-[67/100] drop-shadow-img homepageimage" loading="eager" /> */}
+           </Link></div>
           </div>
         
           <div id="4" className="hidden lg:block lg:col-span-1 py-3 font-serif font-light text-2xl quoted self-center text-left md:pl-2">
