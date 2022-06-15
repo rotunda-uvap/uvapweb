@@ -19,7 +19,7 @@ const Gallery = ({book_id_array}) => {
               "width": "150",
               crop: "at_max"
             }]}
-            lqip={{ active: true }}/>
+            lqip={{ active: true }} alt="Cover of Book"/>
           </IKContext>
               
             </div></Link>

@@ -17,7 +17,7 @@ export default function BookCard( {fields: {Title, Subtitle, AuthorCredit, Cover
               "height": "224",
               "width": "150",
               crop: "at_max"
-            }]} lqip={{ active: true }}/>
+            }]} lqip={{ active: true }} alt={Title}/>
           </IKContext>
           </div>
         </div>:  
