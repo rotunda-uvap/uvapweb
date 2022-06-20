@@ -1,0 +1,24 @@
+---
+templateKey: news
+type: news
+title: "Before Juneteenth: Celebrating Emancipation at Smithfield Plantation"
+description: ""
+related_book:
+  - "5070"
+  - "5805"
+date: 2022-06-20
+---
+Juneteenth is our newest national holiday, and today it is celebrated by people of all races throughout the United States. This is the way it should be. Juneteenth should not be seen as a Black holiday; it is a national commemoration of the end of slavery in the United States. The institution of slavery had been deeply entrenched throughout the nation at its founding, and eliminating slavery took the bloodiest war in American history. As traumatic as that process was, however, the abolition of slavery in the United States was one of the great steps forward in our long effort to realize the ideals on which this nation was founded, and Juneteenth provides a national commemoration of that fact. It is a long-delayed and welcome addition to our national calendar. 
+
+Until recently, though, June 19 was just one of several dates on which African Americans celebrated the end of slavery. And it wasn’t even the most well-known or the most widespread of those dates. Juneteenth grew out of the unique circumstances surrounding emancipation in Texas, and for many years it was confined almost exclusively to the African American community in that state. At Smithfield plantation (the site where Virginia Tech is located now), slavery ended very differently than it did in Texas, so freedpeople there and their descendants marked its end very differently. 
+
+Smithfield lay in southwestern Virginia, and the end of slavery there was not suddenly announced one day as it was in Texas. Men and women enslaved at Smithfield had known from the start what the Civil War was about. On a neighboring plantation, one of the enslaved men often talked about the prospect of freedom the war offered: “he gloried in the hope of the yankees gaining the day that he might be free.” During the war, word of the Emancipation Proclamation spread quickly on and around Smithfield, and Union troops passed by twice, bringing with them a chance for enslaved individuals to escape and make real the freedom promised by President Lincoln. 
+
+When the war finally ended and slavery collapsed entirely at Smithfield, the families that had been enslaved there moved quickly to take advantage of their freedom. They reunited with spouses, children, and other kin separated by sale or the division of an owner’s estate, and working with their neighbors they established Black churches, Black schools, Black mutual aid societies, and other components of a distinctive African American community. And through the close of the nineteenth century they held their “day of jubilee” on January 1, the date on which the Emancipation Proclamation had been signed.  
+
+As early as 1869, freedpeople around Smithfield celebrated their emancipation on January 1. They often gathered at churches because they were the most common spaces controlled by African Americans and provided places where they could assemble and speak openly with less chance of White interference. Their celebrations were not just religious events, though. Certainly, they often involved prayers and hymns, but the Emancipation Proclamation was read, there were sometimes fireworks or ice-cream, and there was always “general rejoicing.” Into the twentieth century Emancipation Day was the most noteworthy coming together of African Americans in Virginia.
+The early twentieth century, however, was a time of increasing difficulty for African Americans in Virginia. A new state constitution denied them virtually any role in political or legal life; Jim Crow legislation subjected them to increasingly restrictive racial segregation; and they were frequently excluded from new, more rewarding economic opportunities. As a result, many of the children and grandchildren of those who had been enslaved at Smithfield left Virginia to start new lives in Maryland, Pennsylvania, Ohio, Iowa, Montana, and California. In doing so, they often left behind some of the traditions they had known in Virginia. And as the African American community from which they emigrated grew smaller, some of those traditions faded there, too—including Emancipation Day. 
+
+For the descendants of those who were enslaved at Smithfield, Juneteenth provides a renewed occasion to remember the struggles and the victories of their ancestors. More broadly, it gives the rest of us a similar opportunity to mourn the damage slavery did to this nation, to celebrate the benefits that emancipation brought to all of us, and to recognize the necessity for further progress toward realizing our national ideals.
+
+\-Daniel B. Thorp
