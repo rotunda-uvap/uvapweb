@@ -2,12 +2,12 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: DIGITIZING FAULKNER
-    banner_author: Theresa M. Towner
-    banner_subtitle: " Yoknapatawpha in the Twenty-First Century"
-    banner_id: "5471"
-    banner_quote: Fulfilling the promise of digital humanities
-    banner_attr: Wes Hamrick
+  - banner_title: THE PERMANENT RESIDENT
+    banner_author: Philip Levy
+    banner_subtitle: Excavations and Explorations of George Washington's Life
+    banner_id: "5491"
+    banner_quote: This book is quietly breathtaking in its scope
+    banner_attr: Julia A. King
 related_book:
   - "5744"
   - "5617"
