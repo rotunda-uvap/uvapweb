@@ -2,12 +2,12 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: THE PERMANENT RESIDENT
-    banner_author: Philip Levy
-    banner_subtitle: Excavations and Explorations of George Washington's Life
-    banner_id: "5491"
-    banner_quote: This book is quietly breathtaking in its scope
-    banner_attr: Julia A. King
+  - banner_title: WOMEN IN GEORGE WASHINGTON'S WORLD
+    banner_author: Charlene M. Boyer Lewis and George W. Boudreau
+    banner_subtitle: Now available
+    banner_id: "5720"
+    banner_quote: A substantial contribution to the field.
+    banner_attr: Barbara Oberg
 related_book:
   - "5744"
   - "5617"
