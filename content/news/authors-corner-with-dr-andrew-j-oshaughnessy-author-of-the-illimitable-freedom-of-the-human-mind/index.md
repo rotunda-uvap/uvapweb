@@ -3,6 +3,7 @@ templateKey: news
 type: author-corner
 title: Author's Corner with Dr. Andrew J. O'Shaughnessy, author of THE
   ILLIMITABLE FREEDOM OF THE HUMAN MIND
+description: "*"
 image: oshaughnessy_for_authors_corner.jpg
 related_book:
   - "4994"
@@ -27,7 +28,7 @@ In my capacity as the research director at Monticello, I am frequently asked wha
 
 **What’s your favorite anecdote from your book?**
 
-I begin each chapter with an extended anecdote that aims to open up the theme of the chapter and engage the general readers. While some may be familiar, others will be very novel, even to fellow scholars.  My favorite is probably the description by students of dining at Monticello. Jefferson was alive for the first year of the operation of the university, during which he invited groups of students to dinner every Sunday.  They were what his granddaughter called a “feast of reason.”  He was apparently slightly death and would push back his chair, in order not to discourage students from talking among one another. With his daughter Martha presiding and sometimes teasing him, he wanted to introduce students to the art of conversation and intellectual exchanges that recreated his own student life at the College of William and Mary.
+I begin each chapter with an extended anecdote that aims to open up the theme of the chapter and engage the general readers. While some may be familiar, others will be very novel, even to fellow scholars.  My favorite is probably the description by students of dining at Monticello. Jefferson was alive for the first year of the operation of the university, during which he invited groups of students to dinner every Sunday.  They were what his granddaughter called a “feast of reason.”  He was apparently slightly deaf and would push back his chair, in order not to discourage students from talking among one another. With his daughter Martha presiding and sometimes teasing him, he wanted to introduce students to the art of conversation and intellectual exchanges that recreated his own student life at the College of William and Mary.
 
 **What’s next?**
 
