@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link, useStaticQuery, graphql} from "gatsby"
-import { GatsbyImage, getImage, StaticImage} from "gatsby-plugin-image"
+import { GatsbyImage, getImage} from "gatsby-plugin-image"
 /* import { IKImage, IKContext } from 'imagekitio-react'
  */
 
