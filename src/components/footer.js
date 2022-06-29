@@ -87,6 +87,7 @@ const Footer = () => {
             />
             <div className="font-thin tracking-wide flex flex-col md:pl-3">
               <div>P.O. Box 400318 (Postal)</div>
+              <div>Charlottesville, VA 22904-4318</div>
               <div>210 Sprigg Lane (Courier)</div>
               <div>Charlottesville, VA 22903-2417</div>
             </div>
