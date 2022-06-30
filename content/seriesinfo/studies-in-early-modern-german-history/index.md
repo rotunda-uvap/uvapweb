@@ -1,7 +1,7 @@
 ---
 templateKey: series
 title: Studies in Early Modern German History
-editors: "Series Editor: H. C. Erik Midelfort"
+editors: "Series Editors: Joel F. Harrington, H. C. Erik Midelfort, and Tara Nummedal"
 uvaeditors: Nadine Zimmerli
 status: active
 seriestype: Academic Book Series
