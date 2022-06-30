@@ -16,11 +16,10 @@ const rotundaPage = ({ data }) => {
      <SeO title={item.Title} description="UVA Press's Rotunda imprint publishes innovative peer-reviewed digital projects, both born-digital and from authoritative letterpress editions. Rotunda publications are available to both libraries and independent scholars as single titles or as collections. The American History Collection includes the sub-collections American Founding Era; Antebellum, Civil War, and Reconstruction; and the American Century. "/>
      <div className="container">
 <PageHeader text={item.Title}/>       
-        <div className="py-4 flex flex-1 flex-col md:flex-row  items-center">
-          <div className="pl-6"><GatsbyImage image={imageData} alt="publication image"/></div>
-          
-          <div className="py-4 md:py-0 pl-4 text-3xl md:text-8xl text-ceci-gray-light font-black tracking-widest">{item.StartYear} - {item.EndYear}</div>
-            
+        <div className="py-4 flex flex-row place-content-center ">
+          {/* <div className="flex flex-col justify-center self-end text-3xl md:text-7xl text-stone-200 font-black tracking-widest">{item.StartYear}</div> */}
+          <div className="pl-6"><GatsbyImage image={imageData} alt="publication image" className="drop-shadow-img"/></div>
+                  {/* <div className="py-4 md:py-0 pl-4 text-3xl md:text-8xl text-ceci-gray-light font-black tracking-widest">{item.StartYear} - {item.EndYear}</div> */}
         </div>
           <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1">
         
