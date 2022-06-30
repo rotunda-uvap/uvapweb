@@ -4,7 +4,7 @@ title: Eric Brandt
 staff_name: Eric Brandt
 profile_photo: brandt_big.jpg
 name_slug: eric-brandt
-job_title: Editor in Chief and Humanities Editor
+job_title: Assistant Director, Editor in Chief and Humanities Editor
 department:
   - ACQ
 email: eab7fb@virginia.edu
