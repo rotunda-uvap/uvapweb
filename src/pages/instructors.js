@@ -5,6 +5,7 @@ import SeO from "../components/SeoComponent"
 import PageHeader from "../components/PageHeader"
 import SectionHeader from "../components/SectionHeader"
 import GoToTop from "../components/GoToTop"
+import kebabCase from "lodash/kebabCase"
 
 
 export default function InstructorPage({data}) {
@@ -62,7 +63,7 @@ export default function InstructorPage({data}) {
   {subs.group.map((g, index) => (
                    
                    <div className="md:w-1/2 mb-2 px-2 font-display" key={`sub${index}`}>
-                   <Link to={`../subject/${ g.distinct }`} className="text-gray-600 hover:text-gray-800">{ g.fieldValue } ({g.totalCount})</Link>
+<Link to={`../../subject/${kebabCase(g.fieldValue) }`} className="text-ceci-gray-dark hover:text-gray-800">{ g.fieldValue } ({g.totalCount})</Link>
         </div>            
            
         ))} 
@@ -124,11 +125,10 @@ export const query = graphql`
         }
       }
     }
-  subjects: allBooksJson {
-    group(field: Subject___name) {
-      distinct(field: Subject___subjectID)
-      totalCount
-      fieldValue
+    subjects: allBooksJson {
+      group(field: Subject___name) {
+        totalCount
+        fieldValue
+      }
     }
-  }
   }`
