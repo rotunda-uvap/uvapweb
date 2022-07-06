@@ -161,7 +161,7 @@ export default function AboutPage({ data }) {
                 <BoardMember name={"Jenny Roe"} title={"Mary Irene DeShong Professor of Design and Health, Urban + Environmental Planning and Director, Center for Design and Health, School of Architecture, University of Virginia"}/>
                 <BoardMember name={"Sandhya Shukla"} title={"Associate Professor of English and American Studies and Director of Graduate Admissions, University of Virginia"}/>
                 <p className="py-4 px-5 italic">Ex Officio</p>
-                <BoardMember name={"Brie Gertler"} title={"Vice Provost for Academic Affairs and Commonwealth Professor in the Corcoran Department of Philosoph"}/>
+                <BoardMember name={"Brie Gertler"} title={"Vice Provost for Academic Affairs and Commonwealth Professor in the Corcoran Department of Philosophy"}/>
                 <BoardMember name={"Jonathan D. Bowen"} title={"Assistant to the President and Writer, University of Virginia"}/>
                 <BoardMember name={"Suzanne Morse Moomaw"} title={"Director, University of Virginia Press"}/>
 
