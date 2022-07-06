@@ -2,12 +2,12 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: WOMEN IN GEORGE WASHINGTON'S WORLD
-    banner_author: Charlene M. Boyer Lewis and George W. Boudreau
-    banner_subtitle: Now available
-    banner_id: "5720"
-    banner_quote: A substantial contribution to the field.
-    banner_attr: Barbara Oberg
+  - banner_title: BOTANICAL ENTANGLEMENTS
+    banner_author: Anna K. Sagal
+    banner_subtitle: Women, Natural Science, and the Arts in Eighteenth-Century England
+    banner_id: "5380"
+    banner_quote: The argument is clever and controversial
+    banner_attr: Beth Fowkes Tobin
 related_book:
   - "5744"
   - "5617"
