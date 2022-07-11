@@ -2,12 +2,12 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: BOTANICAL ENTANGLEMENTS
-    banner_author: Anna K. Sagal
-    banner_subtitle: Women, Natural Science, and the Arts in Eighteenth-Century England
-    banner_id: "5380"
-    banner_quote: The argument is clever and controversial
-    banner_attr: Beth Fowkes Tobin
+  - banner_title: INSTITUTIONAL CHARACTER
+    banner_author: Robert Higney
+    banner_subtitle: Collectivity, Individuality, and the Modernist Novel
+    banner_id: "5668"
+    banner_quote: Highly readable and subtle in its interpretations
+    banner_attr: Allan Hepburn
 related_book:
   - "5744"
   - "5617"
