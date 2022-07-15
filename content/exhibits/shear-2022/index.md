@@ -36,5 +36,7 @@ featured_books:
   - "5655"
   - "5756"
   - "5473"
+related_collection:
+  - SHEAR 2022
 date: 2022-07-15
 ---
