@@ -81,7 +81,7 @@ const Home = ({ data }) => {
 
     {/* <div className="grid grid-cols-1 md:grid-cols-2 "> */}
     <div className="flex flex-col items-center">
-       <div className="md:pb-0 pb-4"><Link to={'../catalog'}> <GatsbyImage image={catalog} alt="current catalog cover" width={300} /></Link></div>
+       <div className="md:pb-0 pb-4"><Link to={'../catalog'}> <GatsbyImage image={catalog} alt="current catalog cover"  /></Link></div>
        {/* <GoogleCalendar/> */}
       {/*  <button className="text-gray-600">
        <div className="flex flex-col">
@@ -134,11 +134,12 @@ export const query = graphql`
         )
       }
     }
-    catalogimage: file(relativePath: { eq: "spring22.jpg" }) {
+    catalogimage: file(relativePath: { eq: "fall22.jpg" }) {
       childImageSharp {
         gatsbyImageData(
           placeholder: BLURRED
           quality:100
+          width:300
           formats: [AUTO, WEBP, AVIF]
         )
       }
