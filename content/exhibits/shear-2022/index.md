@@ -11,6 +11,8 @@ related_series:
   - WEA
   - PGW
   - PJM
+  - JAY
+  - CSM
 related_blog:
   - Capture the Flag
   - Authors' Corner with Charlene M. Boyer Lewis and George W. Boudreau, editors
