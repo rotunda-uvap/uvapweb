@@ -2,12 +2,12 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: INSTITUTIONAL CHARACTER
-    banner_author: Robert Higney
-    banner_subtitle: Collectivity, Individuality, and the Modernist Novel
-    banner_id: "5668"
-    banner_quote: Highly readable and subtle in its interpretations
-    banner_attr: Allan Hepburn
+  - banner_title: MELVILLE’S OTHER LIVES
+    banner_author: Christopher Sten
+    banner_subtitle: Bodies on Trial in The Piazza Tales
+    banner_id: "5825"
+    banner_quote: A critical gem
+    banner_attr: Wyn Kelley
 related_book:
   - "5744"
   - "5617"
