@@ -10,7 +10,7 @@ type: series
 ---
 Building on the extraordinary scholarly reputation and archival resources of the University of Virginia, this series seeks to publish the most innovative scholarship on the cultural, intellectual, and social life of Tibetan Buddhism.
 
-This series will investigate both the stability of Tibetan religious culture from its historical beginnings in the sixth century through the modern era, as well as how the religious tradition has changed in reaction to historical relaties, technological transformation, and social unrest. To facilitate an interdisciplinary approach, the Traditions and Transformations in Tibetan Buddhism series acquires projects on four interconnected themes:
+This series will investigate both the stability of Tibetan religious culture from its historical beginnings in the sixth century through the modern era, as well as how the religious tradition has changed in reaction to historical realities, technological transformation, and social unrest. To facilitate an interdisciplinary approach, the Traditions and Transformations in Tibetan Buddhism series acquires projects on four interconnected themes:
 
 * **Ritual Traditions and Textual Transformations:**
 
