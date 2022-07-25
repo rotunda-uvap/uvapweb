@@ -3,53 +3,69 @@ templateKey: page
 title: Career
 ---
 
-##### **Director**
+##### **Publicist**
 
-The University of Virginia Press (UVaP) seeks its next director to oversee the scholarly integrity of its books, monographs, and digital imprint; public engagement on critical ideas and issues; and daily operations of a sustainable business model. The incoming director will have the opportunity to shape the direction of UVaP by both acquiring and approving all projects for publication, overseeing the financial health of the press, and pursuing opportunities that support both the mission of UVA Press, as well as the greater University.
+The University of Virginia Press, publishers of scholarly and trade books in the humanities, seeks a Publicist to contribute to all areas of the sales and marketing of UVA Press publications, both print books and digital content, to the academic and consumer markets. The Publicist will report to and collaborate with the Marketing & Sales Director but will also manage publicity and social media on his/her own and will be the key interface with authors as books approach publication.
 
 ###### **Key Responsibilities**
 
-* Develop and advance the mission of the press, and its capacity to innovate, in the highly evolving scholarly publishing landscape.
-* Oversee changing platforms for knowledge dissemination, creative and inclusive acquisition strategies, and sustainable financial models that support access, equity, and diversity.
-* Manage all UVA Press operations, including acquisitions, staff hiring, sales and marketing, editorial, digital imprint, and strategic budgeting and operations to ensure the scholarly integrity, public engagement, and financial health and sustainability of the press.
-* Enhance the public profile of the press through the initiation and development of partnerships, collaborations, and social and print media.
-* Represent the University in all matters pertaining to UVA Press both internally and externally as the publisher.
-* Cultivate relationships and new partnerships with UVA faculty and staff, and enhance the profile of the press at UVA.
-* Pursue collaborative opportunities with external partners, including regional and national organizations.
-* Oversee acquisitions policy and functions, including final recommendations of all proposed titles sent to the editorial board for review.
-* Work directly with the editorial board and staff on final project decisions that advance the press’ mission.
-* Ensure the maintenance and enhancement of the physical plant, as well as implement the technology needed to support a scholarly press in the 21st century.
-
-###### **Candidate Profile**
-
-We seek a dynamic candidate with a demonstrated record of creative, inspiring, and accomplished leadership in complex environments; someone with exceptional integrity who possesses the highest level of commitment to advancing organizational priorities; and whose previous experience is consistent with the University’s commitment to be both great and good. Although the University will consider a range of profiles, expressions of interest are sought from candidates possessing the following: 
+* A strong track record of leadership experience in a publishing setting
+* Develop publicity plans up to a year out for authors’ tours, first serials, excerpts, op-eds, media (print and social), and overall strategy.
+* Share publicity plan with author, acquiring editor, and rest of sales and marketing team.
+* Communicate consistently with authors up to a year in advance and 6 months after publication.
+* Responsible for updates to authors on publicity/marketing progress via “roundup letters.”
+* Maintain contact with backlist authors regarding review copy requests, reviews, events, and interview opportunities.
+* Establish and maintain communication with trade media and academic review contacts.
+* Maintain regular social media content and feeds via the Press website for front and backlist books.
+* Pitch op-eds, excerpts, and first serials to local, regional, national, and international media.
+* Write press materials, including jacket copy (including procuring promotional blurbs), galley copy, press releases, talking points.
+* Pitch author interviews and review coverage to media.
+* Create review-copy mailing lists for galleys and finished books and process review copy requests.
+* Follow up with relevant contacts for each book.
+* Maintain and update master database lists of active review and broadcast media, as well as academic journals. Initiate and coordinate virtual and in-person events and book tours, including invitations, participant recruitment, event promotion, and book-sales coverage.
+* Work with the Press Director and Marketing & Sales Director to increase awareness of the Press’s portfolio in Charlottesville and the university community and to develop a national and international platform for Press books.
+* Create and disseminate e-newsletters through email platform.
+* Maintain a robust and frequent approach to all appropriate social media platforms.
+* Maintain frequent contact with university and regional press outlets including newspapers, periodicals blogs, radio, television.
+* Collaborate, communicate, and interact regularly with other departments at the Press to create innovative publicity plans, events, and social media for all UVA Press books and monographs.
+* Participate in inter-departmental meetings evaluating prospective projects for editorial board.
+* Recruit and manage a seasonal intern.
 
 ###### **Desired Qualifications**
 
-* A strong track record of leadership experience in a publishing setting
-* Ability to build relationships with faculty, scholars, peer reviewers, and authors
-* Commitment to and passion for advancing knowledge, and an understanding of the distinctive role of university presses in knowledge production
-* Deep knowledge of both the scholarly publishing landscape and the trade publishing landscape
-* Ability to foster a diverse and inclusive working environment
-* Experience building partnerships, both internally and externally
-* Experience leading digital publishing initiatives
-* Extensive budget management, forecasting, and strategic planning experience
-* A track record in fundraising, both through grants and private gifts and donations
-* A track record of data-driven decision making
+* Excellent writing skills
+* Excellent interpersonal skills
+* Event planning experience
+* Strong organizational skills and awareness of schedules
+* Substantive expertise with social media platforms and strategies
+* Ability to work independently
+* Commitment to mission of scholarly publishing
 
-###### **Apply or Nominate**
-UVA Executive Search Group, an internal search firm in the Office of the President, is assisting in the recruitment of the next Director, UVA Press. 
+###### **Software Competencies Required**
 
-Confidential inquiries and nominations should be directed to Ashley Milligan, Search Consultant, at [anm4f@virginia.edu](mailto:anm4f@virginia.edu).  
+* Microsoft Office, Email platforms such as MailChimp or HubSpot
 
-To apply, submit a cover letter and resume via [Workday](http://https//uva.wd1.myworkdayjobs.com/UVAJobs). The search will be carried out with full confidentiality. 
+###### **Additional Competencies Preferred (not essential)**
 
-MINIMUM REQUIREMENTS\
-Education: Bachelor's degree\
-Licensure: None
+* Experience with FileMaker or similar database
+* Experience managing staff or interns
 
-PHYSICAL DEMANDS\
+###### **More Information**
+Anticipated Hiring Range: $54,000-$60,000
+
 This is primarily a sedentary job involving extensive use of desktop computers. The job does occasionally require traveling some distance to attend meetings, and programs.
+
+Review of applications will begin on August 2, 2022, but the position will remain open until filled. The University will perform background checks on all new hires prior to employment.
+
+###### **Apply**
+
+Please apply through [Workday](http://https//uva.wd1.myworkdayjobs.com/UVAJobs), and search for R0037236. Internal applicants must apply through their UVA Workday profile by searching ‘Find Jobs.’ Complete an application online with the following documents:
+* CV
+* Cover Letter
+
+Upload all materials into the resume submission field, multiple documents can be submitted into this one field. Alternatively, merge all documents into one PDF for submission. Applications that do not contain all required documents will not receive full consideration.
+
+References will be completed via UVA’s standardized process Skill Survey. A total of five references will be requested via SkillSurvey during the final phase of the interview process.
 
 **COVID Vaccination Requirement and Guidelines**
 
