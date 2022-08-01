@@ -2,12 +2,12 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: MELVILLE’S OTHER LIVES
-    banner_author: Christopher Sten
-    banner_subtitle: Bodies on Trial in The Piazza Tales
-    banner_id: "5825"
-    banner_quote: A critical gem
-    banner_attr: Wyn Kelley
+  - banner_title: PRECARIOUS BALANCE
+    banner_author: Bardwell L. Smith
+    banner_subtitle: Sinhala Buddhism and the Forces of Pluralism
+    banner_id: "5174"
+    banner_quote: Draws together important writings formative for several fields
+    banner_attr: Anne M. Blackburn
 related_book:
   - "5744"
   - "5617"
