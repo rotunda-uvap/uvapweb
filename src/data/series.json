@@ -1,5 +1,5 @@
-
-[ { "id": "GWB", "seriesName": "George Washington BookShelf" },
+[
+    { "id": "GWB", "seriesName": "George Washington BookShelf" },
     {
       "id": "VLCS",
       "seriesName": "Victorian Literature and Culture Series"
@@ -44,7 +44,6 @@
     { "id": "SRC", "seriesName": "Studies in Religion and Culture" },
     { "id": "RA", "seriesName": "The Revolutionary Age" },
     { "id": "AMS", "seriesName": "The American South Series" },
-    { "id": "BUS", "seriesName": "Buildings of the United States" },
     {
       "id": "CGW",
       "seriesName": "Carter G. Woodson Institute Series: Black Studies at Work in the World"
@@ -70,6 +69,7 @@
       "seriesName": "Gay Hart Gaines Distinguished Lectures"
     },
     { "id": "KL", "seriesName": "Kapnick Lectures" },
+    { "id": "BUS", "seriesName": "Buildings of the United States" },
     {
       "id": "MCSP",
       "seriesName": "Miller Center Studies on the Presidency"
