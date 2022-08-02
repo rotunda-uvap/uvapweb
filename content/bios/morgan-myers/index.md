@@ -7,7 +7,7 @@ name_slug: wren-morgan-myers
 job_title: Senior Project Editor
 department:
   - EDP
-email: morganmyers@virginia.edu
+email: wrenmorganmyers@virginia.edu
 phone: (434) 924-6067
 ---
 Bio Not Yet Available
