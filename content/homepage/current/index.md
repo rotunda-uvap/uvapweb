@@ -2,12 +2,12 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: PRECARIOUS BALANCE
-    banner_author: Bardwell L. Smith
-    banner_subtitle: Sinhala Buddhism and the Forces of Pluralism
-    banner_id: "5174"
-    banner_quote: Draws together important writings formative for several fields
-    banner_attr: Anne M. Blackburn
+  - banner_title: WOMEN WAGING WAR IN THE AMERICAN REVOLUTION
+    banner_author: Holly A. Mayer
+    banner_subtitle: Order now
+    banner_id: "5729"
+    banner_quote: All the essays break new ground in one way or another
+    banner_attr: Mary Beth Norton
 related_book:
   - "5744"
   - "5617"
