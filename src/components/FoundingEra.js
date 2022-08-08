@@ -19,7 +19,7 @@ export default function FEList() {
         `}
         render={data => (
             data.FE.edges.map((edge, index) => (
-              <div className="p-2 sm:w-1/2 w-full" key={index}>
+              <div className="p-2 sm:w-1/2 w-full" key={`fe${index}`}>
                 <RotCard fields={edge.node}/> 
               </div>
             ))

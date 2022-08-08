@@ -60,7 +60,7 @@ const SeriesTemplate = ({ data }) => {
    <div className="flex flex-wrap gap-2 py-5">
                         {books.edges.map((edge, index) => (
                   
-                  <BookCard fields={edge.node} key={index} />
+                  <BookCard fields={edge.node} key={`ser${index}`} />
                     
                     ))}
                         </div> 

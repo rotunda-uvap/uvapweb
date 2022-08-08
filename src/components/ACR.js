@@ -19,7 +19,7 @@ export default function ACRList() {
         `}
         render={data => (
             data.ANT.edges.map((edge, index) => (
-              <div className="p-2 sm:w-1/2 w-full" key={index}>
+              <div className="p-2 sm:w-1/2 w-full" key={`acr${index}`}>
                   <RotCard fields={edge.node}/>
                 </div>
               

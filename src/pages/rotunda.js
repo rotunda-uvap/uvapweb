@@ -225,7 +225,7 @@ export default function RotundaHome({ data }) {
        <div className="flex flex-wrap -m-4 text-center">
     {staff.edges.map((edge, index) => (
                  
-                  <MiniBio frontmatter={edge.node.frontmatter} key={index} /> 
+                  <MiniBio frontmatter={edge.node.frontmatter} key={`staff${index}`} /> 
                    
                     ))}
      

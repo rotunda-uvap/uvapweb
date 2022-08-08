@@ -41,7 +41,7 @@ export default function InstructorPage({data}) {
             <>
             {book_colls.map((coll, index) => (
           
-              <div className="b-2 px-4 font-display items-center" key={index}>
+              <div className="b-2 px-4 font-display items-center" key={`cor${index}`}>
                 <Link to={`../../collections/${coll.frontmatter.title }`}>{coll.frontmatter.title}</Link>
            
               </div>

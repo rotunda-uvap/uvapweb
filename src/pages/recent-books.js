@@ -37,7 +37,7 @@ export default function RecentBooks({ data }) {
           <div className="container flex flex-wrap gap-2 py-5">
             {rec.edges.map((edge, index) => (
            
-              <BookCard fields={edge.node} key={index}/>
+              <BookCard fields={edge.node} key={`rec${index}`}/>
           
         ))}<Link to={`#top`} className="uppercase text-ceci-gray-mid text-xs p-2 ">Go to top</Link>
         </div>
@@ -49,7 +49,7 @@ export default function RecentBooks({ data }) {
             {upc.edges.map((edge, index) => (
            
 
-          <BookCard fields={edge.node} key={index}/>
+          <BookCard fields={edge.node} key={`cs${index}`}/>
              
            
         ))}

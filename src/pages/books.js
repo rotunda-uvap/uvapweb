@@ -118,7 +118,7 @@ export default function Books({ data }) {
   <SectionHeader text={"Recent Releases"}/>
           <div className="flex flex-wrap gap-2 py-5">
             {rec.edges.map((edge, index) => (
-          <BookCard fields={edge.node} key={index}/>
+          <BookCard fields={edge.node} key={`rr${index}`}/>
         
           
         ))}  <Link to={`#top`} className="uppercase font-thin text-ceci-gray-mid text-xs py-4 inline-flex "><span className="pl-2">Go to top </span><svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">

@@ -28,7 +28,7 @@ export default function CurrentList() {
       <div className="flex flex-wrap ">
           {data.allBooksJson.edges.map((edge, index) => (
           
-                <BookCard fields={edge.node} key={index}/>
+                <BookCard fields={edge.node} key={`cl${index}`}/>
            
         ))}
       </div>

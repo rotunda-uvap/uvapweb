@@ -19,7 +19,7 @@ export default function LACList() {
         `}
         render={data => (
             data.LAC.edges.map((edge, index) => (
-              <div className="p-2 sm:w-1/2 w-full" key={index}>
+              <div className="p-2 sm:w-1/2 w-full" key={`lac${index}`}>
                     <RotCard fields={edge.node}/>     
                 </div>
             ))
