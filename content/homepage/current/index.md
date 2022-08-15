@@ -2,12 +2,12 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: WOMEN WAGING WAR IN THE AMERICAN REVOLUTION
-    banner_author: Holly A. Mayer
-    banner_subtitle: Order now
-    banner_id: "5729"
-    banner_quote: All the essays break new ground in one way or another
-    banner_attr: Mary Beth Norton
+  - banner_title: THE ARCHITECTURE OF SUSPENSE
+    banner_author: Christine Madrid French
+    banner_subtitle: The Built World in the Films of Alfred Hitchcock
+    banner_id: "5231"
+    banner_quote: French’s enthusiasm is contagious, informative, and eye-opening.
+    banner_attr: Sidney Gottlieb
 related_book:
   - "5744"
   - "5617"
