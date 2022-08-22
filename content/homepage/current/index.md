@@ -2,12 +2,12 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: THE ARCHITECTURE OF SUSPENSE
-    banner_author: Christine Madrid French
-    banner_subtitle: The Built World in the Films of Alfred Hitchcock
-    banner_id: "5231"
-    banner_quote: French’s enthusiasm is contagious, informative, and eye-opening.
-    banner_attr: Sidney Gottlieb
+  - banner_title: LEWIS CARROLL
+    banner_author: Charlie Lovett
+    banner_subtitle: Formed by Faith
+    banner_id: "5524"
+    banner_quote: This astonishing work will stand the test of time
+    banner_attr: Edward Guiliano
 related_book:
   - "5744"
   - "5617"
