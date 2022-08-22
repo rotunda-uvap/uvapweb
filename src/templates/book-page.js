@@ -223,8 +223,8 @@ const bookPage = ({ data }) => {
             </div>
             
                   {book.Series && (
-                    <div className="py-2">
-                      <span className="text-sm text-ceci-gray-mid uppercase pr-5 font-thin tracking-wide">
+                    <div className="py-2 flex flex-col md:flex-row place-items-center">
+                      <span className="xs:py-4 sm:py-4 md:py-0 text-sm text-ceci-gray-mid uppercase pr-5 font-thin tracking-wide">
                         Series:
                       </span>
                       <button className="text-ceci-gray-mid font-thin text-sm hover:bg-white bg-greige rounded-md p-2 tracking-wide">
@@ -235,16 +235,23 @@ const bookPage = ({ data }) => {
                     </div>
                   )}
           
-                  {book.Subject && (
-                    <div>
-                      <span className="text-sm font-thin uppercase pr-5 text-ceci-gray-mid tracking-wide">
-                        subject:
-                      </span>
-                      <button className="bg-greige hover:bg-white font-thin text-sm rounded-md text-ceci-gray-mid p-2 tracking-wide">
-                        <Link to={`../../subject/${kebabCase(book.Subject.name)}`} className="tracking-wide uppercase">
-                          {book.Subject.name}
+                  {book.Subjects && (
+                    <div className="flex flex-col md:flex-row place-items-center">
+                      <span className="text-sm xs:py-4 sm:py-4 md:py-0 font-thin uppercase pr-5 text-ceci-gray-mid tracking-wide">
+                        subjects:
+                      </span> 
+                      <ul className="flex flex-col md:flex-row md:flex-wrap gap-4">
+                       {book.Subjects.map(subj => (
+                       
+                        <button className="bg-greige hover:bg-white font-thin text-sm rounded-md text-ceci-gray-mid p-2 tracking-wide">
+                        <Link to={`../../subject/${kebabCase(subj.name)}`} className="tracking-wide uppercase">
+                          {subj.name}
                         </Link>
                       </button>
+                       )
+
+                       )}</ul>
+                      
                     </div>
                   )}
                  <section>
@@ -379,7 +386,7 @@ export const query = graphql`
         seriesID
         name
       }
-      Subject {
+      Subjects {
         subjectID
         name
       }

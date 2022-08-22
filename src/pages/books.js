@@ -173,7 +173,7 @@ export const query = graphql`
       }
     }
     subjects: allBooksJson {
-      group(field: Subject___name) {
+      group(field: Subjects___name) {
         totalCount
         fieldValue
       }

@@ -46,11 +46,11 @@ export default SubjectTemplate;
 
 export const query = graphql`
     query($id: String!){
-      allBooksJson(filter: {Subject: {name: { in: [$id] }}}, sort: {fields: DaysSincePublication}) {
+      allBooksJson(filter: {Subjects: {elemMatch: {name: { in: [$id] }}}}, sort: {fields: DaysSincePublication}) {
         edges {
                 node {
                   ...BookQFragment
-                  Subject {
+                  Subjects {
                     subjectID
                     name
                   }

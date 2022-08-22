@@ -39,6 +39,13 @@ exports.createSchemaCustomization = ({ actions }) => {
       type Fields {
         slug: String
       }
+
+      type Subjects {
+        name: String
+        subjectID: String
+      }
+
+     
     `
     createTypes(typeDefs)
   }
@@ -177,7 +184,7 @@ exports.createSchemaCustomization = ({ actions }) => {
         }
 
         allSubjects: allBooksJson {
-          group(field: Subject___name) {
+          group(field: Subjects___name) {
             fieldValue
           }
         }

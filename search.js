@@ -48,7 +48,7 @@ const Search = () => (
       <RefinementList attribute="List"/></div>
         <div><h3 className="text-lg uppercase text-ceci-gray-mid font-thin tracking-widest">Filter by Subject</h3>
       
-      <RefinementList attribute="Subject.name"/></div>
+      <RefinementList attribute="Subjects.name"/></div>
       <div className="py-5"><h3 className="text-lg uppercase text-ceci-gray-mid font-thin tracking-widest">Filter by Series</h3>
       <RefinementList attribute="Series.name"/></div></section>
       </div>
