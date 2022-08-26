@@ -53,8 +53,6 @@ export default function RotundaCustomerList({data}) {
                     and Harriott Pinckney Horry Digital Edition</a></li>
             <li><a href="https://rotunda.upress.virginia.edu/MARC/24-pinckneystatesmen.mrc">The Revolutionary Era
                     Pinckney Statesmen of South Carolina</a></li>
-            <li><a href="https://rotunda.upress.virginia.edu/MARC/14-presrecord.mrc">Presidential Recordings Digital
-                    Edition</a></li>
             <li><a href="https://rotunda.upress.virginia.edu/MARC/7-george.mrc">Papers of George Washington Digital
                     Edition</a></li>
             <li><a href="https://rotunda.upress.virginia.edu/MARC/23-people.mrc">People of the
