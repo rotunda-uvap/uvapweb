@@ -2,12 +2,12 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: LEWIS CARROLL
-    banner_author: Charlie Lovett
-    banner_subtitle: Formed by Faith
-    banner_id: "5524"
-    banner_quote: This astonishing work will stand the test of time
-    banner_attr: Edward Guiliano
+  - banner_title: WORDS MADE FLESH
+    banner_author: Sean Dempsey
+    banner_subtitle: Formations of the Postsecular in British Romanticism
+    banner_id: "5666"
+    banner_quote: Potent, incisive, and quite moving
+    banner_attr: Joel Faflak
 related_book:
   - "5744"
   - "5617"
