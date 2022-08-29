@@ -3,11 +3,11 @@ templateKey: homepage
 title: Current
 top_banner:
   - banner_title: " IN SEARCH OF JUSTICE IN THAILAND’S DEEP SOUTH"
-    banner_author: John Clifford Holt, ed.
+    banner_author: Edited by John Clifford Holt
     banner_subtitle: Malay Muslim and Thai Buddhist Women’s Narratives
     banner_id: "5848"
     banner_quote: Gripping and memorable
-    banner_attr: Katherine Bowie
+    banner_attr: Katherine Bowie, University of Wisconsin–Madison
 related_book:
   - "5744"
   - "5617"
