@@ -2,12 +2,12 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: WORDS MADE FLESH
-    banner_author: Sean Dempsey
-    banner_subtitle: Formations of the Postsecular in British Romanticism
-    banner_id: "5666"
-    banner_quote: Potent, incisive, and quite moving
-    banner_attr: Joel Faflak
+  - banner_title: " IN SEARCH OF JUSTICE IN THAILAND’S DEEP SOUTH"
+    banner_author: John Clifford Holt, ed.
+    banner_subtitle: Malay Muslim and Thai Buddhist Women’s Narratives
+    banner_id: "5848"
+    banner_quote: Gripping and memorable
+    banner_attr: Katherine Bowie
 related_book:
   - "5744"
   - "5617"
