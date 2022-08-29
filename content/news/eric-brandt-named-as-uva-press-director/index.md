@@ -1,0 +1,14 @@
+---
+templateKey: news
+type: news
+title: Eric Brandt named as UVA Press Director
+image: eric-portrait.jpg
+date: 2022-08-29
+---
+The University of Virginia Press is proud to announce the appointment of Eric Brandt as its new Director. Eric is a widely respected publishing professional with a long and versatile career in both scholarly and trade publishing. He began his career managing publicity at Columbia University Press after receiving his PhD from Columbia, then moved on to a productive period with several trade houses, including Basic Books and HarperCollins, where he had a highly successful tenure directing marketing and publicity. Eric shifted to acquisitions, acquiring New York Times best-selling titles for Harper, before rejoining the university press world—first at Yale, where he was Senior Editor for Humanities, and then as Executive Editor in History at Stanford, where he led the creation of the Redwood Press imprint and was instrumental in the launch of the press’s digital humanities publishing program. In 2015, Eric joined UVA Press as Assistant Director and Editor in Chief. He has been an innovative, inspiring leader at UVA, stressing a new level of departmental collaboration, developing a list that seeks the highest engagement with its end users, and spearheading UVA’s open-access initiatives.
+
+Brie Gertler, Vice Provost for Academic Affairs at UVA, said, “Our search for a UVA Press Director yielded a strong pool of applicants from across the U.S. Even within this impressive group, Eric stood out for his extensive and varied experience in the industry and for his passionate commitment to scholarly publishing. I have every confidence that Eric will sustain and build on the Press’s record of excellence.” Eric is eager to take on his new role, saying, “University presses are the laboratories of the humanities, and I firmly believe that the ideas and arguments they publish can and do change the world. I’m humbled and thrilled to support the university in amplifying the research of our remarkable authors. I’m grateful for the faith
+
+the Vice Provost, her search committee, UVA’s faculty, and the press staff have placed in me. It is a tremendous privilege and honor.”
+
+Eric takes over from former Director Suzanne Moomaw. Suzanne is returning full-time to her role as a faculty member at UVA’s School of Architecture, where she chairs the Department of Urban and Environmental Planning. Suzanne’s many accomplishments during her tenure include establishing the new regional-trade imprint Rivanna and conceiving soon-to-be-launched series on three pressing issues of our times—democracy, race relations, and sustainability.
