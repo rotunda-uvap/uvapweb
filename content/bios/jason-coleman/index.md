@@ -6,7 +6,6 @@ profile_photo: ""
 name_slug: jason-coleman
 job_title: Marketing and Sales Director
 department:
-  - DIR
   - MKG
   - ROT
 email: jcoleman​@​virginia.edu​
