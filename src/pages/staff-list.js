@@ -25,7 +25,7 @@ export default function StaffList({ data }) {
           <PageHeader text={'Our Team'}/>
           
           <section className="py-4 border-b-2 border-gray-100">
-            <SectionHeader text={'Interim Director'}/>
+            <SectionHeader text={'Director'}/>
          
           <div className="py-2 mx-auto">
              <div className="flex flex-wrap -m-4 text-center">
