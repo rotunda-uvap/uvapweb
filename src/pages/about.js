@@ -142,7 +142,7 @@ export default function AboutPage({ data }) {
 
 <section>
   <SectionHeader text={"Code of Conduct"}/>
-  <div className="lg:w-3/3 mx-auto leading-relaxed text-base dropCap cms" InnerHTML={{__html: sanitizeHtml(code.html)}}/>
+  <div className="lg:w-3/3 mx-auto leading-relaxed text-base dropCap cms" dangerouslySetInnerHTML={{__html: sanitizeHtml(code.html)}}/>
 </section>
 <section>
   <SectionHeader text={"Land-use Acknowledgment"}/>
