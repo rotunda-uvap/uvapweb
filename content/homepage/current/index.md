@@ -6,8 +6,8 @@ top_banner:
     banner_author: Christine Madrid French
     banner_subtitle: The Built World in the Films of Alfred Hitchcock
     banner_id: "5231"
-    banner_quote: Her enthusiasm is contagious, informative, and eye-opening.
-    banner_attr: Sidney Gottlieb
+    banner_quote: French’s enthusiasm is contagious, informative, and eye-opening.
+    banner_attr: Sidney Gottlieb, editor of Hitchcock on Hitchcock
 related_book:
   - "5744"
   - "5617"
