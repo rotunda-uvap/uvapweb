@@ -12,4 +12,5 @@ import "@fontsource/crimson-text/400.css"
 import "@fontsource/crimson-text/600.css"
 import "@fontsource/crimson-text/700.css"
 import "@fontsource/crimson-text/400-italic.css"
+import "./src/components/search/search.css"
 
