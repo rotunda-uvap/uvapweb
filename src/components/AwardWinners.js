@@ -1,37 +1,34 @@
 import React from "react"
-import { StaticQuery, graphql} from "gatsby"
+import { useStaticQuery, graphql} from "gatsby"
 import BookCard from "./BookCard"
 import SectionHeader from "./SectionHeader"
 
-export default function AwardWinners() {
-  return (
-    <StaticQuery
-      query={graphql`
-      query  {
-        allBooksJson(filter: {Prizes: {regex: "/.[A-Z]/"}}) {
-          edges {
-            node {
-              ...BookQFragment
-              PublicationDate
-              
-            }
-          }
+const AwardWinners = () => {
+  const data = useStaticQuery(graphql`
+  query  {
+    allBooksJson(filter: {Prizes: {regex: "/.[A-Z]/"}}) {
+      edges {
+        node {
+          ...BookQFragment
+          PublicationDate
+          
         }
       }
-      
-      `}
-      render={data => (
-        <section>
-<SectionHeader text={'Award Winners'}/>
-        <div className=" mx-auto py-5 flex flex-wrap">
-          {data.allBooksJson.edges.map((edge, index) => (
-         
-          <BookCard fields={edge.node} key={`aw${index}`} />
-      
-      ))}
-      </div>
-      </section>
-      )}
-    />
-  )
+    }
+  }
+  
+  `);
+  return  <section>
+  <SectionHeader text={'Award Winners'}/>
+          <div className=" mx-auto py-5 flex flex-wrap">
+            {data.allBooksJson.edges.map((edge, index) => (
+           
+            <BookCard fields={edge.node} key={`aw${index}`} />
+        
+        ))}
+        </div>
+        </section>;
 }
+
+export default AwardWinners
+

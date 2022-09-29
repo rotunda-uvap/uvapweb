@@ -1,31 +1,28 @@
 import React from "react"
-import { StaticQuery, graphql, Link } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 import SectionHeader from "./SectionHeader"
 import sanitizeHtml from 'sanitize-html';
-export default function ActiveSeries() {
-  return (
-    <StaticQuery
-      query={graphql`
-      query  {
-        allMarkdownRemark(filter: {frontmatter: {type: {eq: "series"}, status: {eq: "active"}}}, sort: {fields: frontmatter___title }) {
-            edges {
-              node {
-                frontmatter {
-                  title
-                  editors
-                  seriesID
-                  seriestype
-                }
-                html
-              } 
+
+const ActiveSeries = () => {
+  const data = useStaticQuery(graphql`
+  query  {
+    allMarkdownRemark(filter: {frontmatter: {type: {eq: "series"}, status: {eq: "active"}}}, sort: {fields: frontmatter___title }) {
+        edges {
+          node {
+            frontmatter {
+              title
+              editors
+              seriesID
+              seriestype
             }
-          }
+            html
+          } 
+        }
       }
-      
-      `}
-      render={data => (
-        
-        <section className="overflow-hidden">
+  }
+  
+  `);
+  return  <section className="overflow-hidden">
   
   <div className="container px-5 py-12 mx-auto">
             <div className="flex flex-col text-center w-full pb-4" id="active">
@@ -55,9 +52,8 @@ export default function ActiveSeries() {
       ))}
     </div>
   </div>
-</section>
-        
-      )}
-    />
-  )
+</section>;
 }
+
+export default ActiveSeries
+
