@@ -30,6 +30,6 @@ featured_books:
   - "5042"
   - "4734"
 related_collection:
-  - SCWH 2022
+  - Universities Studying Slavery 22
 date: 2022-05-25
 ---
