@@ -144,7 +144,7 @@ const Footer = () => {
       </div>
 
       <div className="text-center w-full uppercase text-ceci-gray-mid text-md font-thin tracking-wider py-2">
-        © 2022 UNIVERSITY OF VIRGINIA PRESS
+        © {new Date().getFullYear()} UNIVERSITY OF VIRGINIA PRESS
       </div>
   </>
   )
