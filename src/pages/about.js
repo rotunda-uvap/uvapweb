@@ -151,19 +151,22 @@ export default function AboutPage({ data }) {
             <section className="py-5 text-gray-700 border-b-2 border-gray-100" id="board">
   <SectionHeader text={"Current Board Members"}/>
               <div>
-              <BoardMember name={"Matthew Hedstrom, chair"} title={"Associate Professor, Department of Religious Studies, University of Virginia"}/>
+              <BoardMember name={"Sandhya Shukla, chair"} title={"Associate Professor of English and American Studies and Director of Graduate Admissions, University of Virginia"}/>
               <BoardMember name={"Derrick Aldridge"} title={"Professor and Program Coordinator, Social Foundations of Education, University of Virginia"}/>
               <BoardMember name={"Asher Biemann"} title={"Professor of Religious Studies, University of Virginia"}/>
               <BoardMember name={"Amy Clark"} title={"Professor of English and Chair of Communications Studies, University of Virginia at Wise"}/>
+                
+                <BoardMember name={"John Comazzi"} title={"Associate Professor, School of Architecture (w/ appointment in Education & Human Development), University of Virginia"}/>
                 <BoardMember name={"David Getsy"} title={"Eleanor Shea Professor of Art History, Department of Art, University of Virginia"}/>
                 <BoardMember name={"Claudrena Harold"} title={"Professor of African American and African Studies and History and Department Chair, Corcoran Department of History, University of Virginia"}/>
+                <BoardMember name={"Nana Last"} title={"Professor of Architecture, School of Architecture, University of Virginia"}/>
                 <BoardMember name={"Cassandra Newby-Alexander"} title={"Dean, College of Liberal Studies, Professor of History, and Director, Joseph Jenkins Roberts Center for African Diaspora, Norfolk State University"}/>
-                <BoardMember name={"Jenny Roe"} title={"Mary Irene DeShong Professor of Design and Health, Urban + Environmental Planning and Director, Center for Design and Health, School of Architecture, University of Virginia"}/>
-                <BoardMember name={"Sandhya Shukla"} title={"Associate Professor of English and American Studies and Director of Graduate Admissions, University of Virginia"}/>
+                <BoardMember name={"Penny Von Eschen"} title={"Chair of American Studies, Professof History and William R. Kenan, Jr. Professor of American Studies, University of Virginia"}/>
+               
                 <p className="py-4 px-5 italic">Ex Officio</p>
-                <BoardMember name={"Brie Gertler"} title={"Vice Provost for Academic Affairs and Commonwealth Professor in the Corcoran Department of Philosophy"}/>
+                <BoardMember name={"Brie Gertler"} title={"Vice Provost for Academic Affairs"}/>
                 <BoardMember name={"Jonathan D. Bowen"} title={"Assistant to the President and Writer, University of Virginia"}/>
-                <BoardMember name={"Suzanne Morse Moomaw"} title={"Director, University of Virginia Press"}/>
+                <BoardMember name={"Eric Brandt"} title={"Director, University of Virginia Press"}/>
 
               </div>
             </section>
