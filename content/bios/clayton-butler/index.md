@@ -8,6 +8,6 @@ job_title: Marketing and Sales Associate
 department:
   - MKG
 email: cjb3sm@virginia.edu
-phone: (434) 924-3468
+phone: (434) 924-6070
 ---
 UVA History PhD, 2020.
