@@ -23,7 +23,7 @@ export default function StaffList({ data }) {
           <SeO title="Staff Directory"/>
           <div className=" mx-auto">
           <PageHeader text={'Our Team'}/>
-          <div className="w-full flex items-center"><StaticImage src="../images/staff.jpg" alt="photo of UVA Press Staff as of Oct 2022"  className="mx-auto"/></div>
+          <div className="w-full flex items-center"><StaticImage src="../images/staff.jpg" alt="photo of UVA Press Staff as of Oct 2022" quality="100" placeholder="blurred" className="mx-auto"/></div>
           
           <section className="py-4 border-b-2 border-gray-100">
             <SectionHeader text={'Director'}/>
