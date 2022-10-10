@@ -31,10 +31,10 @@ const Gallery = ({book_id_array}) => {
         dots: false,
         arrows:true,
         autoplay: false,
-        infinite: true,
+        infinite: false,
         swipeToSlide: true,
         speed: 500,
-        slidesToShow: 6,
+        slidesToShow: 5,
         slidesToScroll: 1,
         className:'slider',
         responsive: [
