@@ -8,7 +8,6 @@
   path: `.env.${process.env.NODE_ENV}`,
 })
 const path = require(`path`)
-//const siteURL = 'https://www.upress.virginia.edu'
 module.exports = {
   flags: { PARALLEL_SOURCING: true, FAST_DEV: true , DEV_SSR: false},
   siteMetadata: {
