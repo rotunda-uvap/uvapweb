@@ -33,7 +33,7 @@ Courtney Weiss Smith *[Empiricist Devotions: Science, Religion, and Poetry in E
 
 Christopher Tozzi *[Nationalizing France's Army: Foreign, Black, and Jewish Troops in the French Military, 1715-1831](https://www.upress.virginia.edu/title/4921)* 
 
-Jacob Sider Jost *[Prose Immortality, 17711-1819](https://www.upress.virginia.edu/title/4797)* 
+Jacob Sider Jost *[Prose Immortality, 1711-1819](https://www.upress.virginia.edu/title/4797)* 
 
 Denver Brunsman *[The Evil Necessity: British Naval Impressment in the Eighteenth-Century Atlantic World](https://www.upress.virginia.edu/title/3575)* 
 
