@@ -9,12 +9,11 @@ related_series:
   - CAR
 date: 2022-10-14
 ---
-Today, we are happy to bring you our conversation with Holly A. Mayer, translator of *I AM ALIVE*
+Today, we are happy to bring you our conversation with Nathan H. Dize, translator of *I AM ALIVE*
 
 *What inspired you to translate* *this book?*
 
 Not everything in my life can be said to be poetic, but what inspired me to translate *I Am Alive* is. The book is about a series of returns – children returning home from elsewhere, returning to a moment in the past for further reflection, and so on. So, I happened to buy and read the book for the first time as I was preparing to move back home to the United States after a year living in France.
-
 
 I don’t remember exactly where I was while reading it, but I was struck by the tale of Alexandre’s return home after spending more than four decades in a mental institution. I thought it was such a poignant story of a Haitian family living in the aftermath of the 2010 earthquake – not only had an earthquake occurred outside their home, but there was another, more intimate seismic event, taking place inside their family hearth.
 
