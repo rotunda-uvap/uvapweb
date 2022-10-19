@@ -8,7 +8,7 @@ title: Career
 
 - - -
 
-##### <a name="publicist"></a> **Publicist**
+##### <a name="acq"></a> **Acquisitions Editor - Africana Studies**
 
 The University of Virginia Press (UVAP) seeks an innovative, productive, and experienced editor to acquire and develop 18-23 new book projects each year in the areas of African, African American, and African Diaspora Studies. This full-time staff position reports to the Press Director.
 
