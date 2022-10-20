@@ -102,8 +102,8 @@ padding:1em;
     <RotundaHeader/>
     <RotSection>
     <Heading2>About Rotunda</Heading2>
-    <Para>Since 2004, our Rotunda imprint has published innovative peer-reviewed digital projects, both born-digital and from authoritative letterpress editions. Our core offering is the <a href="#ahc">American History Collection</a> of documentary editions spanning three centuries, from the work of young Ben Franklin through the presidential correspondence of Woodrow Wilson: more than 20 publications with content from over 550 letterpress and born-digital volumes, for a total of nearly 500,000 documents, diary entries, and editorial essays, all cross-searchable.</Para>
-<Para>Our major stand-alone publications are the Presidential Recordings Digital Edition, with transcripts and audio of nearly 4000 conversations from White House recordings; People of the Founding Era, a biographical reference to over 75,000 individuals; the open-access <a href="https://sah-archipedia.org">SAH Archipedia</a>, an authoritative encyclopedia of the American built environment, with over 25,000 entries and 5000 editorial essays. Finally, our <a href="#lit">Literature and Culture Collection</a> features seven editions of literary work and correspondence from nineteenth-century America and Britain.</Para>
+    <Para>Since 2004, our Rotunda imprint has published innovative peer-reviewed digital projects, both born-digital and from authoritative letterpress editions. Our core offering is the <a href="#ahc">American History Collection</a> of documentary editions spanning three centuries, from the earliest surviving writings of George Washington through the presidential correspondence of Woodrow Wilson: more than 20 publications with content from over 550 letterpress and born-digital volumes, for a total of nearly 300,000 documents, diary entries, and editorial essays, all cross-searchable.</Para>
+<Para>Our major stand-alone publications are the <a href="https://prde.upress.virginia.edu/">Presidential Recordings Digital Edition</a>, with transcripts and audio of nearly 4000 conversations from White House recordings; <a href="https://pfe.rotunda.upress.virginia.edu/">People of the Founding Era</a>, a biographical reference to over 75,000 individuals; the open-access <a href="https://sah-archipedia.org">SAH Archipedia</a>, an authoritative encyclopedia of the American built environment, with over 25,000 entries and 5000 editorial essays. Finally, our <a href="#lit">Literature and Culture Collection</a> features seven editions of literary work and correspondence from nineteenth-century America and Britain.</Para>
    </RotSection>
 
   
@@ -129,7 +129,7 @@ padding:1em;
      
     </Article>
     <Article>
-    <Link to={'/rotunda-customer-page'}><Heading4 className="underline">Purchase</Heading4></Link>
+    <Link to={'/rotunda-purchase'}><Heading4 className="underline">Purchase</Heading4></Link>
       <Para>Information about institutional or individual purchase of Rotunda publications.</Para>
       
     </Article>
@@ -195,7 +195,7 @@ padding:1em;
    </RotSection>
    <RotSection>
       <Heading3>legacy projects</Heading3>
-      <Para>The following digital projects were published on UVA Press's website before the Rotunda imprint was established, and are no longer updated.</Para>
+      <Para>These two guides to resources in African American history, dating from the 1990s, were the very first online publications under the imprint of the University of Virginia Press.</Para>
       <ul>
         <li className="hover:bg-gray-100 flex p-2 h-full items-center">
         <img className="flex-shrink-0 h-10 w-10  object-cover mr-5" src={"https://legacy.upress.virginia.edu/plunkett/3072.gif"} width="80px" alt="Afro-American Sources in Virginia: A Guide to Manuscripts"/>

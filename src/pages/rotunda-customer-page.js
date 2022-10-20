@@ -48,7 +48,7 @@ font-size: var(--fs-300);`
 
 const Para = styled("p")`
 font-family: 'Assistant', sans;
-padding: 1em;
+padding: .5em 1em;
 font-size: var(--fs-200);
 
 `
@@ -156,7 +156,7 @@ export default function RotundaCustomerList({data}) {
 
     <section className="px-5">
     <Heading3>Current Rotunda Customers</Heading3>
-      <ul className="leading-relaxed xl:w-3/4 lg:w-3/4">
+      <ul className="leading-relaxed md:grid md:grid-cols-2" id="customas">
       {custs.edges.map(edge => (
             <>
            <li className="font-assistant" key={edge.node.id}>{edge.node.name }</li>

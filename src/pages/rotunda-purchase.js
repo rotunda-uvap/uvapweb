@@ -73,7 +73,7 @@ export default function RotundaPurchasePage() {
       </Para>
       <Para className="font-light">
         View a{" "}
-        <a href={"../rotunda-customer-page"}>list of Rotunda customers</a>
+        <a href={"../rotunda-customer-page/#customas"}>list of Rotunda customers</a>
       </Para>
       <Para className="font-light">
         Rotunda publications are available for purchase by libraries, schools,
