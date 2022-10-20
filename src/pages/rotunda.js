@@ -195,6 +195,7 @@ padding:1em;
    </RotSection>
    <RotSection>
       <Heading3>legacy projects</Heading3>
+      <Para>The following digital projects were published on UVA Press's website before the Rotunda imprint was established, and are no longer updated.</Para>
       <ul>
         <li className="hover:bg-gray-100 flex p-2 h-full items-center">
         <img className="flex-shrink-0 h-10 w-10  object-cover mr-5" src={"https://legacy.upress.virginia.edu/plunkett/3072.gif"} width="80px" alt="Afro-American Sources in Virginia: A Guide to Manuscripts"/>

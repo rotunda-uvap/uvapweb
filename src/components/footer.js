@@ -41,7 +41,7 @@ const Footer = () => {
   return (
   <>
       <div className="flex flex-col md:flex-row border-t-2 border-b-2 text-ceci-gray-mid p-4 gap-2">
-        <section className="flex flex-col gap-2 md:gap-0 basis-1/4 border-b-2 md:border-b-0">
+        <section className="text-sm flex flex-col gap-2 md:gap-0 basis-1/4 border-b-2 md:border-b-0">
           <h6 className="hidden">QuickLinks</h6>
           <FooterLink dest={"book-search"} text="Find a Book" />
           <FooterLink dest={"authors"} text={"For Our Authors"} />
@@ -85,33 +85,33 @@ const Footer = () => {
               className="hidden md:block self-center justify-self-center text-2xl"
               aria-label="physical address"
             />
-            <div className="font-thin tracking-wide flex flex-col md:pl-3">
-              <div>P.O. Box 400318 (Postal)</div>
-              <div>Charlottesville, VA 22904-4318</div>
-              <div>210 Sprigg Lane (Courier)</div>
-              <div>Charlottesville, VA 22903-2417</div>
-            </div>
+            <ul className="text-sm font-thin tracking-wide flex flex-col md:pl-3">
+              <li>P.O. Box 400318 (Postal)</li>
+              <li>Charlottesville, VA 22904-4318</li>
+              <li>210 Sprigg Lane (Courier)</li>
+              <li>Charlottesville, VA 22903-2417</li>
+            </ul>
           </div>
           <div id="phone" className="flex flex-row py-2">
             <FaPhone
               className="hidden md:block self-center justify-self-center text-2xl"
               aria-label="phone and fax numbers"
             />
-            <div className="md:pl-3 flex flex-col font-thin tracking-wide">
-              <div>434 924-3468 (main)</div>
-              <div>1-800-831-3406 (toll-free)</div>
-              <div>434 982-2655 (fax)</div>
-            </div>
+            <ul className="text-sm md:pl-3 flex flex-col font-thin tracking-wide">
+              <li>434 924-3468 (main)</li>
+              <li>1-800-831-3406 (toll-free)</li>
+              <li>434 982-2655 (fax)</li>
+            </ul>
           </div>
           <div id="email" className="flex flex-row py-2 font-thin">
             <FaEnvelope
               className="hidden md:block self-center justify-self-center text-2xl"
               aria-label="email"
             />
-            <div className="flex flex-col font-thin tracking-wide md:pl-3">
-                <a href="mailto:vapress@virginia.edu" className="py-2 md:py-1">General Inquiries</a>
-                <Link to={"/staff-list"} className="py-2 md:py-1">Staff Directory</Link>
-            </div>
+            <ul className="text-sm flex flex-col font-thin tracking-wide md:pl-3">
+                <li><a href="mailto:vapress@virginia.edu" className="py-2 md:py-1">General Inquiries</a></li>
+                <li><Link to={"/staff-list"} className="py-2 md:py-1">Staff Directory</Link></li>
+            </ul>
           </div>
         </section>
         <section className="basis-1/4 border-b-2 md:border-b-0">
@@ -123,7 +123,7 @@ const Footer = () => {
                 <br /> the future
                 <br /> of publishing
               </div>
-              <div className="uppercase text-xl  font-bold py-4">
+              <div className="uppercase text-xl tracking-wide font-bold py-4">
                 {" "}
                 Support UVA Press
               </div>
