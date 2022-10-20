@@ -1,5 +1,6 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
+import Layout from "../components/layout"
 import SeO from "../components/SeoComponent"
 import RotSection from "../components/rotunda/RotundaSection"
 import RotundaMiniBio from "../components/rotunda/RotundaMiniBio"
@@ -75,6 +76,7 @@ export default function RotundaHome({ data }) {
     font-size: var(--fs-200);
 
     `
+
     const RotSectionZinc = styled('section')`
 display:flex;
 flex-direction:column;
@@ -93,7 +95,7 @@ padding:1em;
     const LIT = data.LITlist
     const ARC = data.ARClist
  return (
-   <>
+   <Layout>
      <SeO title="ROTUNDA: Digital Imprint of the University of Virginia Press"
      description="Since 2004, Rotunda has published innovative peer-reviewed digital projects, both born-digital and from authoritative letterpress editions."/>
      <Main>
@@ -205,7 +207,7 @@ padding:1em;
         </ul>      
     </RotSection>
     </Main>
-   </>
+   </Layout>
     
  )
 }

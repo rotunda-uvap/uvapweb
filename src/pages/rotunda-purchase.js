@@ -3,15 +3,64 @@ import React from "react"
 import Layout from "../components/layout"
 import "../utils/global.css"
 import SeO from "../components/SeoComponent"
-import PageHeader from "../components/PageHeader"
-import SectionHeader from "../components/SectionHeader"
+import RotundaHeader from "../components/rotunda/RotundaHeader"
+import styled from "@emotion/styled"
+
+const Main = styled("main")`
+--fs-100: clamp(0.84rem, calc(0.94rem + -0.13vw), 0.91rem);
+--fs-200: clamp(1.09rem, calc(1.08rem + 0.06vw), 1.13rem);
+--fs-300: clamp(1.31rem, calc(1.24rem + 0.37vw), 1.5rem);
+--fs-400: clamp(1.58rem, calc(1.41rem + 0.83vw), 2rem);
+--fs-500: clamp(1.89rem, calc(1.59rem + 1.51vw), 2.67rem);
+--fs-600: clamp(2.27rem, calc(1.77rem + 2.51vw), 3.55rem);
+--fs-700: clamp(2.72rem, calc(1.94rem + 3.93vw), 4.74rem);
+--fs-800: clamp(3.27rem, calc(2.08rem + 5.95vw), 6.31rem);
+width: min(calc(100% - 2rem), 60rem);
+margin:0 auto;
+color:#414042; 
+font-family: 'Assistant', sans;
+letter-spacing:.05em;
+padding:1em;
+font-size: var(--fs-200);
+`
+
+const Heading2 = styled("h2")`
+font-family: 'Playfair Display SC', serif;
+letter-spacing:.3em;
+font-weight:200;
+color:#757575;
+text-transform:uppercase;
+text-align:center;
+padding:1em 0;
+font-size: var(--fs-400);
+`
+
+
+const Heading4 = styled("H4")` 
+font-family: 'Playfair Display SC', serif;
+letter-spacing:.3em;
+font-weight:200;
+color:#757575;
+text-transform:uppercase;
+text-align:center;
+padding:.2em 0;
+font-size: var(--fs-200);`
+
+const Para = styled("p")`
+font-family: 'Assistant', sans;
+padding: 1em;
+font-size: var(--fs-200);
+
+`
 
 export default function RotundaPurchasePage() {
   return (
     <Layout>
       <SeO title="How to Purchase ROTUNDA Publications" />
-      <PageHeader text={"Purchasing Rotunda Publications"} />
-      <p className="font-light">
+      <Main>
+        <RotundaHeader/>
+         <Heading2>Purchasing Rotunda Publications</Heading2>
+      <Para className="font-light">
         If you are connecting via a campus Internet connection, you can expect
         to gain access to any Rotunda publication purchased by your institution.
         If your institution has not purchased a particular Rotunda publication,
@@ -21,12 +70,12 @@ export default function RotundaPurchasePage() {
           free trial
         </a>{" "}
         to evaluate Rotunda before making a purchase decision.
-      </p>
-      <p className="font-light">
+      </Para>
+      <Para className="font-light">
         View a{" "}
         <a href={"../rotunda-customer-page"}>list of Rotunda customers</a>
-      </p>
-      <p className="font-light">
+      </Para>
+      <Para className="font-light">
         Rotunda publications are available for purchase by libraries, schools,
         and individuals. To order, send the{" "}
         <a href={"../../rotunda_license.doc"}>
@@ -36,36 +85,36 @@ export default function RotundaPurchasePage() {
         <a href={"../../rotunda_registration.doc"}>registration form</a> to
         Jason Coleman, University of Virginia Press, Rotunda, P.O. Box 400318,
         Charlottesville, VA 22904-4318.
-      </p>
-      <p className="font-light">
+      </Para>
+      <Para className="font-light">
         Access will begin upon receipt of payment, in addition to a completed
         license agreement and the specific IP address access information. We
         accept payment by purchase order, check, VISA, or MasterCard.
-      </p>
+      </Para>
       
-      <p className="font-light">
+      <Para className="font-light">
         (Please <a href="mailto:jcoleman@virginia.edu">contact us</a> for
         information on pricing for consortia and public libraries, details on
         annual maintenance fees, or any other questions about purchasing.)
-      </p>
+      </Para>
 
       <section>
-        <SectionHeader text={"Architecture"}/>
+        <Heading4>Architecture</Heading4>
         <table id="ARCH" className="mb-1 w-full">
           
           <tbody>
             <tr>
               <td className="italic text-center">
-                <p>Beginning July 2019, <a href="https://sah-archipedia.org">SAH Archipedia</a> is now open access</p>
+                <Para>Beginning July 2019, <a href="https://sah-archipedia.org">SAH Archipedia</a> is now open access</Para>
               </td>
             </tr>
           </tbody>
         </table>
-        <p>
+        <Para>
           (See <a href="#TIERS">below</a> for explanation of pricing tiers)
-        </p>
-
-        <SectionHeader text={"American History Collection"}/>
+        </Para>
+         
+         <Heading4>American History Collection</Heading4>
         <table className="pricing w-full" id="FGEA">
           
           <tbody>
@@ -257,10 +306,10 @@ export default function RotundaPurchasePage() {
                 </a>
               </th>
               <td className="money text-ceci-gray-dark font-thin py-2" colspan="6">
-                <p><i>
+                <Para><i>
                   Included with purchase of the Pinckney Statesmen Papers
                   (below)
-                </i></p>
+                </i></Para>
               </td>
             </tr>
             <tr>
@@ -276,6 +325,20 @@ export default function RotundaPurchasePage() {
               <td className="money text-ceci-gray-dark font-thin">$403</td>
               <td className="money text-ceci-gray-dark font-thin">$260</td>
               <td className="money text-ceci-gray-dark font-thin">$130</td>
+            </tr>
+            <tr>
+              <th className="title text-ceci-gray-mid tracking-wide font-thin">
+                &emsp;
+                <a href="https://www.upress.virginia.edu/title/RUSH">
+                  Rush Letters
+                </a>
+              </th>
+              <td className="money text-ceci-gray-dark font-thin">$450</td>
+              <td className="money text-ceci-gray-dark font-thin">$338</td>
+              <td className="money text-ceci-gray-dark font-thin">$235</td>
+              <td className="money text-ceci-gray-dark font-thin">$140</td>
+              <td className="money text-ceci-gray-dark font-thin">$90</td>
+              <td className="money text-ceci-gray-dark font-thin">$50</td>
             </tr>
             <tr>
               <th className="title text-ceci-gray-mid tracking-wide font-thin">
@@ -431,34 +494,35 @@ export default function RotundaPurchasePage() {
         </table>
       </section>
       <section>
-        <p className="py-7 w-full" id="TIERS">
+        <Para className="py-7 w-full" id="TIERS">
           Pricing tiers for the American History
           Collection are based on Carnegie classifications:
-        </p>
+        </Para>
 
-        <table className="tiers text-ceci-gray-dark font-serif">
+       
+        <table className="font-assistant text-ceci-gray-dark table-auto mx-4">
           <tbody>
-            <tr>
-              <td>
+            <tr className="bg-zinc-50">
+              <td className="pr-4">
                 <strong>Tier&nbsp;6:</strong>
               </td>
-              <td>Research Universities (very high research activity)</td>
+              <td className="py-4">Research Universities (very high research activity)</td>
             </tr>
             <tr>
               <td>
                 <strong>Tier&nbsp;5:</strong>
               </td>
-              <td>
+              <td  className="py-2">
                 Research Universities (high research activity);
                 Doctoral/Research Universities; Master&rsquo;s L institutions
                 (large programs)
               </td>
             </tr>
-            <tr>
+            <tr className="bg-zinc-50">
               <td>
                 <strong>Tier&nbsp;4:</strong>
               </td>
-              <td>
+              <td  className="py-2">
                 Master&rsquo;s M and Master&rsquo;s S universities and colleges
                 (medium and small programs); Special Focus institutions &ndash;
                 Schools of Law; Baccalaureate &ndash; Arts &amp; Sciences
@@ -469,23 +533,23 @@ export default function RotundaPurchasePage() {
               <td>
                 <strong>Tier&nbsp;3:</strong>
               </td>
-              <td>
+              <td  className="py-2">
                 Baccalaureate General colleges; Baccalaureate/Associates
                 institutions; Research institutions with 50 or more FTE
                 (full-time employees)
               </td>
             </tr>
-            <tr>
+            <tr  className="bg-zinc-50">
               <td>
                 <strong>Tier&nbsp;2:</strong>
               </td>
-              <td>Associates institutions; Special Focus institutions</td>
+              <td  className="py-2">Associates institutions; Special Focus institutions</td>
             </tr>
             <tr>
               <td>
                 <strong>Tier&nbsp;1:</strong>
               </td>
-              <td>
+              <td  className="py-2">
                 High schools; unaffiliated individuals; Research institutions
                 &lt; 50 FTE
               </td>
@@ -493,17 +557,18 @@ export default function RotundaPurchasePage() {
           </tbody>
         </table>
 
-        <p className="py-5">
+        <Para className="py-5">
           <strong>Discounts:</strong> Customers acquiring two or more titles in
           the American Founding Era collection will receive a discount of 10
           percent on total purchase price. Customers acquiring the{" "}
           <strong>complete collection</strong> will receive a discount of 20
           percent. Additional discounts are available for customers who have
           purchased the print edition corresponding to a title.
-        </p>
+        </Para>
         </section>
+
         <section>
-          <SectionHeader text={"Literature and Culture Collection"} id="NCE"/>
+          <Heading4>Literature and Culture Collection</Heading4>
         <table className="pricing w-full" id="NHCY">
           
           <tbody>
@@ -581,18 +646,18 @@ export default function RotundaPurchasePage() {
                   Journal of Emily Shore
                 </a>
               </th>
-              <td className="money text-ceci-gray-dark font-thin item-center"><p className="italic">Open Access</p></td>
+              <td className="money text-ceci-gray-dark font-thin item-center"><Para className="italic">Open Access</Para></td>
             </tr>
             <tr>
               <td colspan="4" className="border-t-1 border-black py-2">
-                <p className="fn py-2">* $347 for institutions, $138
+                <Para className="fn py-2">* $347 for institutions, $138
                 for individual (password-access) <em>Digital Temple</em>{" "}
-                purchasers</p>
+                purchasers</Para>
               </td>
             </tr>
           </tbody>
         </table>
-      </section>
+      </section></Main>
     </Layout>
   )
 }

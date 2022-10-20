@@ -3,9 +3,55 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import "../utils/global.css"
 import SeO from "../components/SeoComponent"
-import PageHeader from "../components/PageHeader"
-import SectionHeader from "../components/SectionHeader"
+import RotundaHeader from "../components/rotunda/RotundaHeader"
+import styled from "@emotion/styled"
 
+const Main = styled("main")`
+--fs-100: clamp(0.84rem, calc(0.94rem + -0.13vw), 0.91rem);
+--fs-200: clamp(1.09rem, calc(1.08rem + 0.06vw), 1.13rem);
+--fs-300: clamp(1.31rem, calc(1.24rem + 0.37vw), 1.5rem);
+--fs-400: clamp(1.58rem, calc(1.41rem + 0.83vw), 2rem);
+--fs-500: clamp(1.89rem, calc(1.59rem + 1.51vw), 2.67rem);
+--fs-600: clamp(2.27rem, calc(1.77rem + 2.51vw), 3.55rem);
+--fs-700: clamp(2.72rem, calc(1.94rem + 3.93vw), 4.74rem);
+--fs-800: clamp(3.27rem, calc(2.08rem + 5.95vw), 6.31rem);
+width: min(calc(100% - 2rem), 60rem);
+margin:0 auto;
+color:#414042; 
+font-family: 'Assistant', sans;
+letter-spacing:.05em;
+padding:1em;
+font-size: var(--fs-200);
+`
+
+const Heading2 = styled("h2")`
+font-family: 'Playfair Display SC', serif;
+letter-spacing:.3em;
+font-weight:200;
+color:#757575;
+text-transform:uppercase;
+text-align:center;
+padding:1em 0;
+font-size: var(--fs-400);
+`
+const Heading3 = styled("h3")`
+font-family: 'Playfair Display SC', serif;
+letter-spacing:.3em;
+font-weight:200;
+color:#757575;
+text-transform:uppercase;
+text-align:center;
+padding:1em 0;
+font-size: var(--fs-300);`
+
+
+
+const Para = styled("p")`
+font-family: 'Assistant', sans;
+padding: 1em;
+font-size: var(--fs-200);
+
+`
 
 export default function RotundaCustomerList({data}) {
     const custs = data.allCustomersJson
@@ -13,22 +59,19 @@ export default function RotundaCustomerList({data}) {
        
            <Layout>
                    <SeO title="A list of our current customers"/>
-                     <section className="text-gray-600 body-font">
-  <div className="container px-5 py-7 mx-auto">
-    <div>
-            
-    </div>
-  <div>
-  <PageHeader text={'Customer Information'}/>
-      
-      <p className="text-center">Current institutional users (IP-authenticated accounts): <a href="https://rotunda.upress.virginia.edu/UsageStats/?tab=home&amp;job=dates">view statistics for your usage of <span className="rotunda">Rotunda</span> publications</a>.</p>
-<p className="text-center">Note that your usage stats may show access to publications which you have not purchased, as your users will be able to navigate to contents pages within them, and those page views are logged.</p>
-      
-<SectionHeader text="MARC Records are available for the following Rotunda Publications:"/>
-<ul className="py-2 px-5">
-    <li className="tracking-wider"><b>American Founding Era</b></li>
+                   <Main><RotundaHeader/>
+                   <Heading2>Customer Information</Heading2>
+                     <section>
+      <Para>Current institutional users (IP-authenticated accounts): <a href="https://rotunda.upress.virginia.edu/UsageStats/?tab=home&amp;job=dates">view statistics for your usage of <span className="rotunda">Rotunda</span> publications</a>.</Para>
+<Para>Note that your usage stats may show access to publications which you have not purchased, as your users will be able to navigate to contents pages within them, and those page views are logged.</Para>
+      </section>
+      <section className="px-5">
+        <Heading3>MARC Records</Heading3>
+
+<ul>
+    <li className="tracking-wider font-playfair"><b>American Founding Era</b></li>
     <li>
-        <ul className="py-5 font-serif">
+        <ul className="py-5 font-assistant">
             <li><a href="https://rotunda.upress.virginia.edu/MARC/10-adams.mrc">Adams Papers Digital Edition</a></li>
             <li><a href="https://rotunda.upress.virginia.edu/MARC/12-docu.mrc">Documentary History of the Ratification of
                     the Constitution</a></li>
@@ -60,9 +103,9 @@ export default function RotundaCustomerList({data}) {
                     
         </ul>
     </li>
-    <li className="tracking-wide"><b>Antebellum, Civil War, and Reconstruction</b></li>
+    <li className="tracking-wider font-playfair"><b>Antebellum, Civil War, and Reconstruction</b></li>
     <li>
-        <ul  className="py-5 font-serif">
+        <ul  className="py-5 font-assistant">
             <li><a href="https://rotunda.upress.virginia.edu/MARC/27-grant.mrc">Papers of Ulysses S. Grant Digital
                     Edition</a></li>
             <li><a href="https://rotunda.upress.virginia.edu/MARC/20-jackson.mrc">Papers of Andrew Jackson Digital
@@ -75,9 +118,9 @@ export default function RotundaCustomerList({data}) {
                     Edition</a></li>
         </ul>
     </li>
-    <li className="tracking-wide"><b>American Century</b></li>
+    <li className="tracking-wider font-playfair"><b>American Century</b></li>
     <li>
-        <ul className="py-5 font-serif">
+        <ul className="py-5 font-assistant">
             <li><a href="https://rotunda.upress.virginia.edu/MARC/14-presrecord.mrc">Presidential Recordings Digital
                     Edition</a></li>
             <li><a href="https://rotunda.upress.virginia.edu/MARC/25-woodrowwilson.mrc">Papers of Woodrow Wilson Digital
@@ -86,8 +129,8 @@ export default function RotundaCustomerList({data}) {
                     Edition</a></li>
         </ul>
       </li>
-      <li className="tracking-wide"><b>Literature and Culture Collection</b></li>
-        <li><ul className="py-5 font-serif">
+      <li className="tracking-wider font-playfair"><b>Literature and Culture Collection</b></li>
+        <li><ul className="py-5 font-assistant">
             <li><a href="https://rotunda.upress.virginia.edu/MARC/5-arnold.mrc">The Letters of Matthew Arnold</a></li>
             <li><a href="https://rotunda.upress.virginia.edu/MARC/6-clotel.mrc"><i>Clotel</i> by William Wells Brown</a>
             </li>
@@ -102,34 +145,31 @@ export default function RotundaCustomerList({data}) {
             <li><a href="https://rotunda.upress.virginia.edu/MARC/3-shore.mrc">Journal of Emily Shore</a></li>
         </ul>
     </li>
-    <li className="tracking-wide"><b>Architecture</b></li>
-        <li><ul className="py-5 font-serif">
+    <li className="tracking-wider font-playfair"><b>Architecture</b></li>
+        <li><ul className="py-5 font-assistant">
             <li><a href="https://rotunda.upress.virginia.edu/MARC/18-sah-archipedia.mrc">SAH Archipedia</a></li>
     </ul>
     </li>
     </ul>
-    </div>
-    </div>
     </section>
+ 
 
-    <section className="text-gray-600">
-  <div className="container px-5 mx-auto">
-  <div>
-          <SectionHeader text="Current Rotunda Customers"/>
-      <ul className="text-base leading-relaxed xl:w-3/4 lg:w-3/4 text-gray-500s">
+    <section className="px-5">
+    <Heading3>Current Rotunda Customers</Heading3>
+      <ul className="leading-relaxed xl:w-3/4 lg:w-3/4">
       {custs.edges.map(edge => (
             <>
-           <li className="font-serif" key={edge.node.id}>{edge.node.name }</li>
+           <li className="font-assistant" key={edge.node.id}>{edge.node.name }</li>
             
             </>
         ))}
 </ul>
-    </div>
-    </div>
+   
+  
     </section>
                
            
-
+</Main>
          
 </Layout>
 
