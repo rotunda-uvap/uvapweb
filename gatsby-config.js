@@ -311,7 +311,8 @@ module.exports = {
         queries: require("./src/utils/algolia-queries")
       },
     },
-    "gatsby-plugin-meta-redirect"
+    "gatsby-plugin-meta-redirect",
+    `gatsby-plugin-emotion`
   ],
   mapping: {
     "MarkdownRemark.frontmatter.related_series" : "SeriesJson.jsonId",

@@ -497,5 +497,21 @@
         "Prizes":null,
         "Reviews":[],
         "imageFilename":"OLMS.jpg"
+    },
+    {
+        "Title":"The Letters of Benjamin Rush",
+        "Subtitle":"",
+        "RotID":"RUSH",
+        "MainCollection":"American History Collection",
+        "SubCollection":"Founding Era Collection",
+        "StartYear": 1761,
+        "EndYear": 1813,
+        "MainDescription":{"html":"<p> A member of the Continental Congress, signer of the Declaration of Independence, surgeon general of the Continental Army, treasurer of the U.S. Mint—as well as an abolitionist and a proponent of wider access to education and the rights of women—Benjamin Rush had perhaps the most varied career of any American founder. His papers offer insights into a diverse range of issues and dramatic moments of the Revolutionary era and early republic.<\/p>"},
+        "Facts":[],
+        "URL":"http://rotunda.upress.virginia.edu/founders/RUSH.html",
+        "EditorCredit":"Edited by Lyman H Butterfield, with a new introduction by Stephen Fried",
+        "Prizes":null,
+        "Reviews":[],
+        "imageFilename":"rush.jpg"
     }
 ]

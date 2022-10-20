@@ -1,6 +1,6 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
-import RotCard from "../components/RotundaListFragment"
+import RotCard from "../components/rotunda/RotundaListFragment"
 import Layout from "../components/layout"
 import SeO from "../components/SeoComponent"
 import PageHeader from "../components/PageHeader"

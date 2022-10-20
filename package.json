@@ -14,8 +14,13 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
+    "@emotion/css": "^11.10.0",
+    "@emotion/react": "^11.10.4",
+    "@emotion/styled": "^11.10.4",
     "@fontsource/antonio": "^4.5.7",
+    "@fontsource/assistant": "^4.5.11",
     "@fontsource/crimson-text": "^4.5.2",
+    "@fontsource/playfair-display-sc": "^4.5.11",
     "@fontsource/quicksand": "^4.5.9",
     "@knight-lab/timelinejs": "^3.8.21",
     "@loadable/component": "^5.15.2",
@@ -31,6 +36,7 @@
     "gatsby-cli": "^4.13.0",
     "gatsby-legacy-polyfills": "^2.13.0",
     "gatsby-plugin-algolia": "^0.26.0",
+    "gatsby-plugin-emotion": "^7.24.0",
     "gatsby-plugin-gatsby-cloud": "^4.13.0",
     "gatsby-plugin-google-gtag": "^4.15.0",
     "gatsby-plugin-image": "^2.13.0",
