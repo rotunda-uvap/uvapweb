@@ -66,7 +66,7 @@ const FeatTrio = () => {
        <>
           <Link className="p-2" to={`../news${ edge.node.fields.slug }`} key={`news${index}`}>
          <div className="font-thin uppercase tracking-wide font-display md:py-1">{edge.node.frontmatter.title }</div>
-     <div className="font-serif text-left text-sm  leading-relaxed text-ceci-gray-dark dropCap" dangerouslySetInnerHTML={{ __html: sanitizeHtml(edge.node.html.split(' ').splice(0, 30).join(' ') + '...' )}}/> 
+     <div className="font-serif text-left leading-relaxed text-ceci-gray-dark dropCap" dangerouslySetInnerHTML={{ __html: sanitizeHtml(edge.node.html.split(' ').splice(0, 30).join(' ') + '...' )}}/> 
      <div className="font-display uppercase text-xs tracking-widest py-2"><FaArrowAltCircleRight className="inline mx-4"/> Continue Reading</div>
      </Link> 
       </>
@@ -77,7 +77,7 @@ const FeatTrio = () => {
 
  <article className="flex flex-col border-b-2 md:border-b-0 pb-2 md:basis-1/3 ">
      <Link className="flex flex-row sm:flex-wrap p-2" to={`../authors-corner`} >
-         <div className="border-r-2 pr-2 font-serif uppercase tracking-wider text-sm self-center">Authors' Corner</div>
+         <div className="border-r-2 pr-2 font-serif uppercase tracking-wider self-center">Authors' Corner</div>
          <div className="pl-2 font-serif text-sm self-center text-ceci-gray-mid">{data.ac.edges[0].node.frontmatter.date}</div>
      </Link>
     
@@ -85,7 +85,7 @@ const FeatTrio = () => {
        <>
           <Link className="p-2" to={`../author-corner${ edge.node.fields.slug }`} key={`ac${index}`}>
          <div className="font-thin uppercase tracking-wide font-display md:py-1">{edge.node.frontmatter.title }</div>
-     <div className="font-serif text-left text-sm p-0 leading-relaxed text-ceci-gray-dark dropCap" dangerouslySetInnerHTML={{ __html: sanitizeHtml(edge.node.html.split(' ').splice(0, 25).join(' ') + '...' )}}/> 
+     <div className="font-serif text-left  p-0 leading-relaxed text-ceci-gray-dark dropCap" dangerouslySetInnerHTML={{ __html: sanitizeHtml(edge.node.html.split(' ').splice(0, 25).join(' ') + '...' )}}/> 
      <div className="font-display uppercase text-xs tracking-widest py-2"><FaArrowAltCircleRight className="inline mx-4"/> Continue Reading</div>
      </Link> 
       </>
@@ -96,7 +96,7 @@ const FeatTrio = () => {
 
    <article className="flex flex-col border-b-2 md:border-b-0 pb-2 md:shrink-0 md:basis-1/3">
   <>
-    <Link to={`../exhibits`} className=" font-serif uppercase tracking-wider text-sm p-2 ">exhibits</Link>
+    <Link to={`../exhibits`} className=" font-serif uppercase tracking-wider  p-2 ">exhibits</Link>
    
     <Link className="font-display tracking-wide uppercase p-2 text-sm " to={`../exhibits/${ data.exhibit.edges[0].node.frontmatter.exhibit_slug }`}>{data.exhibit.edges[0].node.frontmatter.title }</Link>
     <Link className="font-display tracking-wide uppercase p-2 text-sm" to={`../exhibits/${ data.exhibit.edges[1].node.frontmatter.exhibit_slug }`}>{data.exhibit.edges[1].node.frontmatter.title }</Link>
