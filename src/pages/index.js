@@ -25,9 +25,6 @@ const Home = ({ data }) => {
 <SeO/>
  <Banner id={top.banner_id} book_title={top.banner_title} author={top.banner_author} quote={top.banner_quote} subtitle={top.banner_subtitle} attr={top.banner_attr}/>
 
-{/* <section className="mt-8 py-4 bg-ceci-gray-mid">
-<h5 className="text-center text-white tracking-wide uppercase"><Link to={'../womens-history-sale'}>Celebrate Women's History Month: Use code 10MARCH22 for 30% off selected books through Mar 2022!</Link></h5>
-</section> */}
 
 <section className="py-4 border-b-2 border-gray-100">
   <SectionHeader text="Featured Books"/>
@@ -46,19 +43,7 @@ const Home = ({ data }) => {
 </section>
        
 
-   
-   {/*   <section className="py-4 border-b-2 border-gray-100">
-     <FeatPromo/>
-     
-       </section>  */}  
-   
-{/* <section className="xs:flex xs:flex-col md:grid md:grid-cols-3 border-b-2 py-10 gap-3">
-  <div className="md:col-span-1">
-  <p className="text-center uppercase text-gray-500 text-md font-thin tracking-widest mx-auto  font-sans tracking-wide">Events:</p>
-<GoogleCalendar/>
-  </div>  
-  <FeatPromo/>
-  </section> */}
+
   
   <section className="py-4 border-b-2 border-gray-100">
          <SectionHeader text="Featured Collection"/>
@@ -83,12 +68,7 @@ const Home = ({ data }) => {
     <div className="flex flex-col items-center">
        <div className="md:pb-0 pb-4"><Link to={'../catalog'}> <GatsbyImage image={catalog} alt="current catalog cover"  /></Link></div>
        {/* <GoogleCalendar/> */}
-      {/*  <button className="text-gray-600">
-       <div className="flex flex-col">
-         <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-8 h-8 self-center" viewBox="0 0 24 24">
-              <path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-            </svg> 
-<Link to={'recent-books'} className="text-2xl font-light">All New Releases</Link></div></button> */}
+     
 </div>
        </section>
   <div className="py-4 greige">
