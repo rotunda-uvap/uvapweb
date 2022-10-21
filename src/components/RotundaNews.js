@@ -34,7 +34,7 @@ export default function RotundaNews() {
                 
               <div className="md:px-10 flex flex-col">
               <Link className="font-display tracking-wide uppercase py-2 font-thin"  to={`../title/RUSH`}>ROTUNDA Launches the digital edition of the Letters of Benjamin Rush</Link>
-            <div><p className="font-serif text-sm text-ceci-gray-dark leading-relaxed dropCap">The latest title in ROTUNDA's American History Collection is a fully searchable online edition of the Letters of Benjamin Rush. This digital archive is available through institutional subscription. </p> </div>  
+            <div><p className="font-serif text-ceci-gray-dark leading-relaxed dropCap">The latest title in ROTUNDA's American History Collection is a fully searchable online edition of the Letters of Benjamin Rush. This digital archive is available through institutional subscription. </p> </div>  
             <div className="font-display uppercase text-xs tracking-widest"><Link className="font-display tracking-wide uppercase py-2" to={`../title/RUSH`}><FaArrowAltCircleRight className="inline mx-4"/>More information and free trial</Link> </div></div>
          
             

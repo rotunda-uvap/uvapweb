@@ -74,7 +74,7 @@ const uvap = getImage(data.uvaplogo)
                     <div>
                       <Link
                         to={`/about`}
-                        className="uppercase block text-lg hover:text-gray-300"
+                        className="uppercase block text-lg  hover:text-gray-300"
                       >
                         About UVA Press
                       </Link>
@@ -160,7 +160,7 @@ const uvap = getImage(data.uvaplogo)
                     <div>
                       <Link
                         to={`/exhibits`}
-                        className="uppercase block text-lg  hover:text-gray-300"
+                        className="uppercase block text-lg hover:text-gray-300"
                       >
                         Conference Exhibits
                       </Link>
