@@ -21,7 +21,7 @@ University of Virginia Press\
 P.O. Box 400318\
 Charlottesville, VA 22904-4318 
 
-**Email:** [](mailto:hc7kb@virginia.edu)[](mailto:leahstearns@virginia.edu)[leahstearns@virginia.edu](mailto:leahstearns@virginia.edu)\
+**Email:** (mailto:leahstearns@virginia.edu)[leahstearns@virginia.edu](mailto:leahstearns@virginia.edu)\
 **Fax:** (434) 982-2655
 
 **Please include:**
@@ -43,7 +43,7 @@ Check the book to make sure the image or figure you wish to reproduce has not be
 
 If you are interested in acquiring foreign, translation, book club, audio, digital/e-book, dramatic, or paperback/hardcover reprint rights to a University of Virginia Press book, please contact:
 
-**Leah Sterns**\
+**Leah Stearns**\
 University of Virginia Press\
 P.O. Box 400318 Charlottesville, VA 22904-4318\
 [leahstearns@virginia.edu](mailto:leahstearns@virginia.edu)\
