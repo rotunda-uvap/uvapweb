@@ -25,8 +25,10 @@ featured_books:
   - "5818"
   - "5665"
   - "5808"
+  - "5756"
   - "5491"
   - "5720"
+  - "5473"
 related_collection:
   - Omohundro Institute 22
 date: 2022-10-24
