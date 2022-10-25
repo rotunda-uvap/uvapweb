@@ -657,6 +657,9 @@ export default function RotundaPurchasePage() {
             </tr>
           </tbody>
         </table>
+        <Para className="py-7 w-full" id="TIERS">
+          Pricing tiers:
+        </Para>
         <table className="font-assistant text-ceci-gray-dark table-auto mx-4">
           <tbody>
             <tr className="bg-zinc-100">
