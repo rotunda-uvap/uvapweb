@@ -657,6 +657,34 @@ export default function RotundaPurchasePage() {
             </tr>
           </tbody>
         </table>
+        <table className="font-assistant text-ceci-gray-dark table-auto mx-4">
+          <tbody>
+            <tr className="bg-zinc-100">
+              <td className="pr-4">
+                <strong>Tier&nbsp;3:</strong>
+              </td>
+              <td className="py-4">Doctoral research institutions, ARL-member public libraries</td>
+            </tr>
+            <tr>
+              <td>
+                <strong>Tier&nbsp;2:</strong>
+              </td>
+              <td  className="py-2">Master’s I and II institutions, Baccalaureate, and Bac/Assoc institutions
+              </td>
+            </tr>
+            <tr className="bg-zinc-100">
+              <td>
+                <strong>Tier&nbsp;1:</strong>
+              </td>
+              <td  className="py-2">Associates institutions, high schools, individuals
+              </td>
+            </tr>
+          
+           
+            
+          </tbody>
+        </table>
+      
       </section></Main>
     </Layout>
   )
