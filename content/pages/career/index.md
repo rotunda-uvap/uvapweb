@@ -2,11 +2,6 @@
 templateKey: page
 title: Career
 ---
-###### **[Acquisitions Editor](#acq)**
-
-###### **[Business Manager](#business-manager)**
-
-- - -
 
 ##### <a name="acq"></a> **Acquisitions Editor - Africana Studies**
 
