@@ -83,7 +83,7 @@ export default function RotundaCustomerList({data}) {
                     Edition</a></li>
             <li><a href="https://rotunda.upress.virginia.edu/MARC/11-jeff.mrc">Papers of Thomas Jefferson Digital
                     Edition</a></li>
-            <li><a href="https://rotunda.upress.virginia.edu/MARC/1-dmde.mrc">The Dolley Madison Digital Edition</a></li>
+            <li><a href="https://rotunda.upress.virginia.edu/MARC/1-dmde.mrc">Dolley Madison Digital Edition</a></li>
             <li><a href="https://rotunda.upress.virginia.edu/MARC/13-madison.mrc">Papers of James Madison Digital
                     Edition</a></li>
             <li><a href="https://rotunda.upress.virginia.edu/MARC/21-Marshall.mrc">Papers of John Marshall Digital
@@ -96,6 +96,7 @@ export default function RotundaCustomerList({data}) {
                     and Harriott Pinckney Horry Digital Edition</a></li>
             <li><a href="https://rotunda.upress.virginia.edu/MARC/24-pinckneystatesmen.mrc">The Revolutionary Era
                     Pinckney Statesmen of South Carolina</a></li>
+                    <li><a href=" https://rotunda.upress.virginia.edu/MARC/35-rush.mrc">Letters of Benjamin Rush Digital Edition</a></li>
             <li><a href="https://rotunda.upress.virginia.edu/MARC/7-george.mrc">Papers of George Washington Digital
                     Edition</a></li>
             <li><a href="https://rotunda.upress.virginia.edu/MARC/23-people.mrc">People of the
@@ -131,7 +132,7 @@ export default function RotundaCustomerList({data}) {
       </li>
       <li className="tracking-wider font-playfair"><b>Literature and Culture Collection</b></li>
         <li><ul className="py-5 font-assistant">
-            <li><a href="https://rotunda.upress.virginia.edu/MARC/5-arnold.mrc">The Letters of Matthew Arnold</a></li>
+            <li><a href="https://rotunda.upress.virginia.edu/MARC/5-arnold.mrc">Letters of Matthew Arnold</a></li>
             <li><a href="https://rotunda.upress.virginia.edu/MARC/6-clotel.mrc"><i>Clotel</i> by William Wells Brown</a>
             </li>
             <li><a href="https://rotunda.upress.virginia.edu/MARC/8-emily.mrc">Emily Dickinson&rsquo;s
@@ -140,7 +141,7 @@ export default function RotundaCustomerList({data}) {
                     Edition of George Herbert&rsquo;s English Verse</a></li>
             <li><a href="https://rotunda.upress.virginia.edu/MARC/4-melville.mrc">Herman Melville&rsquo;s
                     <i>Typee</i></a></li>
-            <li><a href="https://rotunda.upress.virginia.edu/MARC/2-rossetti.mrc">The Letters of Christina Rossetti</a>
+            <li><a href="https://rotunda.upress.virginia.edu/MARC/2-rossetti.mrc">Letters of Christina Rossetti</a>
             </li>
             <li><a href="https://rotunda.upress.virginia.edu/MARC/3-shore.mrc">Journal of Emily Shore</a></li>
         </ul>
