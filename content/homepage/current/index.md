@@ -2,12 +2,12 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: " THE PEACEFUL TRANSFER OF POWER"
-    banner_author: David Marchick
-    banner_subtitle: An Oral History of America’s Presidential Transitions
-    banner_id: "5816"
-    banner_quote: Captures much needed insights, storylines and lessons learned
-    banner_attr: Yamiche Alcindor, Moderator, Washington Week on PBS
+  - banner_title: SOUL MATES OF THE LOST GENERATION
+    banner_author: Lewis M. Dabney
+    banner_subtitle: The Letters of John Dos Passos and Crystal Ross
+    banner_id: "5827"
+    banner_quote: The letters contain poignant observations of expat life and are laced joy
+    banner_attr: James McGrath Morris
 related_book:
   - "5744"
   - "5617"
