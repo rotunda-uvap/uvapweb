@@ -6,7 +6,8 @@ top_banner:
     banner_author: Lewis M. Dabney
     banner_subtitle: The Letters of John Dos Passos and Crystal Ross
     banner_id: "5827"
-    banner_quote: The letters contain poignant observations of expat life and are laced joy
+    banner_quote: The letters contain poignant observations of expat life and are
+      laced with joy
     banner_attr: James McGrath Morris
 related_book:
   - "5744"
