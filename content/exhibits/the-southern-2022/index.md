@@ -16,7 +16,13 @@ related_blog:
 related_staff:
   - Nadine Zimmerli
   - Clayton Butler
-featured_books: []
+featured_books:
+  - "5818"
+  - "5665"
+  - "5196"
+  - "5678"
+  - "5720"
+  - "5792"
 related_collection:
   - SHA 22
 date: 2022-10-31
