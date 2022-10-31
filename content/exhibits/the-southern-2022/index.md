@@ -12,7 +12,6 @@ related_blog:
   - Author's Corner with Patrick Luck, author of REPLANTING A SLAVE SOCIETY
   - Authors' Corner with Charlene M. Boyer Lewis and George W. Boudreau, editors
     of WOMEN IN GEORGE WASHINGTON'S WORLD
-  - Author's Corner with Theresa M. Towner, Editor of DIGITIZING FAULKNER
 related_staff:
   - Nadine Zimmerli
   - Clayton Butler
