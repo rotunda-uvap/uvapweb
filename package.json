@@ -100,7 +100,6 @@
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
   "resolutions": {
-    "webpack": "5.52.1",
     "source-map": "^0.8.0-beta.0"
   }
 }
