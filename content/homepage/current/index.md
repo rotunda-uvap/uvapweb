@@ -19,9 +19,14 @@ related_book:
 related_collection:
   - Homepage Featured
 featured_books:
-  - "5488"
+  - "5231"
+  - "5816"
+  - "5688"
   - "5264"
   - "5174"
+  - "5488"
   - "5292"
   - "5491"
+  - "5057"
+  - "5818"
 ---
