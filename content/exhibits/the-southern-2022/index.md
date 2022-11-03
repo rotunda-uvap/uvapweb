@@ -2,7 +2,7 @@
 templateKey: exhibit
 title: The Southern 2022
 exhibit_slug: southern22
-coupon: Get 30% OFF with promo code 10SOUTHERN through the end of the year!
+coupon: Get 30% OFF with promo code 10SHA22 through the end of the year!
 txtcolor: text-black
 related_series:
   - AMS
