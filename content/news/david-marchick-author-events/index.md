@@ -25,6 +25,8 @@ October 11: Partnership for Public Service
 
 November 10: [The Miller Center, University of Virginia](https://millercenter.org/news-events/events/americas-tradition-peaceful-transfer-power)
 
+January 19: White House Historical Association – An in-person “History Happy Hour” event 
+
 **Online**\
 [Inside HIgher Education](https://www.insidehighered.com/views/2022/07/22/fall-books-university-presses-news—and-dylan): *The Peaceful Transfer of Power* included among the top new releses by university presses
 
@@ -34,6 +36,8 @@ November 10: [The Miller Center, University of Virginia](https://millercenter.or
 
 [History News Network](https://historynewsnetwork.org/article/184187): A short history of presidential transitions by Marchick and Valerie Smith Boyd of the Partnership for Public Service
 
+[Democracy Paradox](https://democracyparadox.com/2022/10/24/why-presidential-transitions-matter/): op-ed on why presidentual transitions matter
+
 **Broadcast appearances**\
 [For the Ages, A History Podcast](https://podcast.nyhistory.org)
 
@@ -42,3 +46,19 @@ November 10: [The Miller Center, University of Virginia](https://millercenter.or
 [The Nicole Sandler Show: Peaceful Transfers of Power?](https://nicolesandler.com/10-14-22/)
 
 [The Lawfare Podcast: Peaceful Transistions with David Marchick](https://www.lawfareblog.com/lawfare-podcast-presidential-transitions-david-marchick)
+
+[The Curious Man Podcast](https://podcasts.apple.com/us/podcast/david-marchick-interview/id1369458829?i=1000584492262)
+
+Can We Please Talk? podcast (11/11)
+
+Tell Me Everything with John Fugelsang / Sirius XM (11/14)
+
+Global Connections Television interview (11/18)
+
+Civics & Coffee podcast (11/21)
+
+Converging DIalogues podcast (11/22)
+
+Axelbank Reports History and Today podcast (1/24)
+
+The Axe Files with David Axelrod
