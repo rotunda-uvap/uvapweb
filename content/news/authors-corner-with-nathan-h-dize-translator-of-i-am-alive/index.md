@@ -3,8 +3,6 @@ templateKey: news
 type: author-corner
 title: Author's Corner with Nathan H. Dize, Translator of I AM ALIVE
 image: nathan_dize-trosenjones.jpg
-related_book:
-  - "5488"
 related_series:
   - CAR
 date: 2022-10-14
