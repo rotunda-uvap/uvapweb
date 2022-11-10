@@ -5,6 +5,8 @@ editors:
 uvaeditors: Angie Hogan
 status: active
 seriestype: Academic Book Series
+related_staff:
+  - Angie Hogan
 seriesID: USN
 type: series
 ---
