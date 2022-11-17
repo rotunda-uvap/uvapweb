@@ -2,12 +2,12 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: SOUL MATES OF THE LOST GENERATION
-    banner_author: Lewis M. Dabney
-    banner_subtitle: The Letters of John Dos Passos and Crystal Ross
-    banner_id: "5827"
-    banner_quote: The letters are poignant, astute, and laced with joy
-    banner_attr: James McGrath Morris
+  - banner_title: BEFORE AMERICAN HISTORY
+    banner_author: Christen Mucher
+    banner_subtitle: Nationalist Mythmaking and Indigenous Dispossession
+    banner_id: "5619"
+    banner_quote: Deeply researched and intricately constructed
+    banner_attr: Lisa Brooks, Amherst College
 related_book:
   - "5744"
   - "5617"
