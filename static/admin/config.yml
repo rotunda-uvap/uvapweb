@@ -2,6 +2,7 @@ backend:
   name: github
   repo: rotunda-uvap/uvapweb
   branch: production
+  base_url: https://upress-virginia-cms-oauth.netlify.app
 # publish_mode: editorial_workflow
 media_folder: static/assets
 public_folder: /assets
