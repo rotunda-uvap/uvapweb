@@ -2,7 +2,7 @@
 templateKey: news
 type: news
 title: Vernon Burton receives lifetime achievement award from Southern
-  Historical Associationw
+  Historical Association
 image: 4e45e5128a14a506609623d74b5cdff6_400x400.jpeg
 related_book:
   - "4382"
@@ -11,7 +11,7 @@ related_series:
   - CWH
 date: 2022-11-17
 ---
-UVA Press is proud to celebrate Vernon Burton, co-editor - with Elizabeth R. Varon - of our series [The American South Series](https://www.upress.virginia.edu/series/AMS) and [A Nation Divided: Studies in the Civil War Era](https://www.upress.virginia.edu/series/CWH), has been awarded the 2022 John Hope Franklin Award for Lifetime Achievement in Southern History by the Southern Historical Association (SHA).
+UVA Press is proud to celebrate Vernon Burton, co-editor - with Elizabeth R. Varon - of our series [The American South Series](https://www.upress.virginia.edu/series/AMS) and [A Nation Divided: Studies in the Civil War Era](https://www.upress.virginia.edu/series/CWH), who has been awarded the 2022 John Hope Franklin Award for Lifetime Achievement in Southern History by the Southern Historical Association (SHA).
 
 The SHA released the following statement:
 “The John Hope Franklin Award is made every five years in recognition of an individual who has not only made outstanding contributions to scholarship on the American South but also exhibited the qualities of citizenship embodied by the award’s namesake.
