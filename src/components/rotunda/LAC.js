@@ -5,7 +5,7 @@ import RotCard from "./RotundaListFragment"
 const LACList = () => {
   const data = useStaticQuery(graphql`
   query LCCQuery {
-      LAC: allRotundaJson(filter: {SubCollection: {eq: "Literature"}}, sort: {fields: StartYear, order: ASC}) {
+      LAC: allRotundaJson(filter: {SubCollection: {eq: "Literature"}}, sort: {StartYear: ASC })  {
           edges {
             node {
               ...RotFieldFragment

@@ -164,7 +164,7 @@ export default function Books({ data }) {
 
 export const query = graphql`
   query {
-    series: allSeriesJson(sort: {order: ASC, fields: seriesName}) {
+    series: allSeriesJson(sort: { seriesName:ASC}) {
       edges {
         node {
             jsonId
@@ -173,14 +173,14 @@ export const query = graphql`
       }
     }
     subjects: allBooksJson {
-      group(field: Subjects___name) {
+      group(field: {Subjects: {name: SELECT}}) {
         totalCount
         fieldValue
       }
     }
 
   
-    recent: allBooksJson(filter: {DaysSincePublication: {gt: 0, lt: 365}}, sort: {fields: DaysSincePublication}) {
+    recent: allBooksJson(filter: {DaysSincePublication: {gt: 0, lt: 365}}, sort: {DaysSincePublication:ASC}) {
       edges {
         node {
           ...BookQFragment
@@ -193,7 +193,7 @@ export const query = graphql`
       }
     }
 
-    allbooks: allBooksJson(sort: {fields: Title}) {
+    allbooks: allBooksJson(sort: {Title:ASC}) {
       edges {
         node {
           BookID

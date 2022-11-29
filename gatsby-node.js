@@ -184,7 +184,7 @@ exports.createSchemaCustomization = ({ actions }) => {
         }
 
         allSubjects: allBooksJson {
-          group(field: Subjects___name) {
+          group(field: {Subjects: {name: SELECT}}) {
             fieldValue
           }
         }
@@ -199,11 +199,11 @@ exports.createSchemaCustomization = ({ actions }) => {
         }
 
        rotMain: allRotundaJson{
-         distinct(field: MainCollection)
+        distinct(field: {MainCollection: SELECT})
        }
 
        rotSub: allRotundaJson{
-        distinct(field: SubCollection)
+        distinct(field: {SubCollection: SELECT})
       }
         
         

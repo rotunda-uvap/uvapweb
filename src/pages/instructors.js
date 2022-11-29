@@ -117,7 +117,7 @@ export const query = graphql`
       }
     }
       }
-      series: allSeriesJson(sort: {fields: seriesName}) {
+      series: allSeriesJson(sort: {seriesName:ASC}) {
       edges {
         node {
             jsonId
@@ -126,7 +126,7 @@ export const query = graphql`
       }
     }
     subjects: allBooksJson {
-      group(field: Subjects___name) {
+      group(field: {Subjects: {name: SELECT}}) {
         totalCount
         fieldValue
       }

@@ -6,7 +6,7 @@ import MiniBio from "../components/MiniBio"
 const AcqStaff = () => {
   const data = useStaticQuery(graphql`
   query  {
-    acq: allMarkdownRemark(filter: {frontmatter: {department: {in: "ACQ"}}},sort: {fields: frontmatter___title}) {
+    acq: allMarkdownRemark(filter: {frontmatter: {department: {in: "ACQ"}}},sort: {frontmatter: {title: ASC}}) {
       edges {
         node {
           ...MiniBioFragment

@@ -81,7 +81,7 @@ export default SeriesTemplate;
 
 export const query = graphql`
     query($id: String!){
-        allBooksJson(filter: {Series: {seriesID: { eq: $id }}}, sort: {fields: DaysSincePublication}) {
+        allBooksJson(filter: {Series: {seriesID: { eq: $id }}}, sort: {DaysSincePublication:ASC}) {
             edges {
                 node {
                   ...BookQFragment

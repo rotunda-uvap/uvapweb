@@ -30,7 +30,7 @@ export default function AllExhibits({ data }) {
 
 export const query = graphql`
   query {
-    allMarkdownRemark(filter: {frontmatter: {templateKey: {eq: "exhibit"}}},sort: {fields: frontmatter___date, order: DESC}) {
+    allMarkdownRemark(filter: {frontmatter: {templateKey: {eq: "exhibit"}}},sort: { frontmatter: {date: DESC }})  {
         edges {
           node {
             frontmatter {

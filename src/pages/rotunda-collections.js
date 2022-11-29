@@ -35,7 +35,7 @@ export default function Colls({ data }) {
 export const query = graphql`
   query {
     allRotundaJson {
-        distinct(field: MainCollection)
+      distinct(field: {MainCollection: SELECT})
       }
   }
 `
