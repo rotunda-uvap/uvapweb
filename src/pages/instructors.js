@@ -16,8 +16,8 @@ export default function InstructorPage({data}) {
   return (
     <Layout>
         <SeO title="For Instructors"/>
-<div className="flex flex-col text-center w-full">
-  <PageHeader text={"For Instructors"} id="top"/>
+<div className="flex flex-col text-center w-full" id="top">
+  <PageHeader text={"For Instructors"} />
       {/* <div className="lg:w-2/3 mx-auto leading-relaxed text-base"><span className="dropCap cms" dangerouslySetInnerHTML={{__html: pagedata.html}}/></div> */}
     </div>
 
