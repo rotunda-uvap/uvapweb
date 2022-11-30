@@ -25,7 +25,7 @@ export default function PubPage({ data }) {
           <section>
             
               <div className="flex flex-col text-center items-center border-b-2 pb-4">
-              <Link to={'../staff/jason-coleman'}><h5 className="title-font font-medium text-md py-1 text-ceci-gray-mid">Mary Kate Maco</h5></Link>
+              <Link to={'../staff/MK-Maco'}><h5 className="title-font font-medium text-md py-1 text-ceci-gray-mid">Mary Kate Maco</h5></Link>
        <span className="text-ceci-gray-mid font-light font-serif">Publicist</span>
        <span className="font-serif text-ceci-gray-mid">(434) 982-2932</span>
          <a className="text-ceci-gray-mid text-md font-serif inline-flex items-center" href="mailto:faa6je@virginia.edu">Email Mary Kate
