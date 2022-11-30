@@ -30,8 +30,8 @@ export default function Subjects({ data }) {
 export const query = graphql`
   query {
   allBooksJson {
-    group(field: Subjects___name) {
-      distinct(field: Subjects___subjectID)
+    group(field: {Subjects: {name: SELECT}}) {
+      distinct(field: {Subjects: {subjectID: SELECT}})
       totalCount
       fieldValue
     }

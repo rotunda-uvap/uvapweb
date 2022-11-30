@@ -6,7 +6,7 @@ import RotCard from "./RotundaListFragment"
 const ACRList = () => {
   const data = useStaticQuery(graphql`
   query ACRQuery {
-      ANT: allRotundaJson(filter: {SubCollection: {eq: "Antebellum, Civil War and Reconstruction"}}, sort: {fields: StartYear, order: ASC}) {
+      ANT: allRotundaJson(filter: {SubCollection: {eq: "Antebellum, Civil War and Reconstruction"}}, sort: {StartYear: DESC})  {
           edges {
             node {
               ...RotFieldFragment

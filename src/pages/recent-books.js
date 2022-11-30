@@ -66,7 +66,7 @@ export default function RecentBooks({ data }) {
 
 export const query = graphql`
   query {
-    upcoming: allBooksJson(filter: {DaysSincePublication: {lt: 1}}, sort: {fields: DaysSincePublication}) {
+    upcoming: allBooksJson(filter: {DaysSincePublication: {lt: 1}}, sort: { DaysSincePublication:ASC}) {
         edges {
           node {
             ...BookQFragment
@@ -74,7 +74,7 @@ export const query = graphql`
           }
         }
       }
-      recent: allBooksJson(filter: {DaysSincePublication: {gt: 0, lt: 365}}, sort: {fields: DaysSincePublication}) {
+      recent: allBooksJson(filter: {DaysSincePublication: {gt: 0, lt: 365}}, sort: {DaysSincePublication:ASC}) {
         edges {
           node {
             ...BookQFragment

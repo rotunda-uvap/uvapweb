@@ -5,7 +5,7 @@ import SectionHeader from "./SectionHeader"
 const CompletedSeries = () => {
   const data = useStaticQuery(graphql`
   query  {
-    allMarkdownRemark(filter: {frontmatter: {type: {eq: "series"}, status: {eq: "completed"}}}, sort: {fields: frontmatter___title }) {
+    allMarkdownRemark(filter: {frontmatter: {type: {eq: "series"}, status: {eq: "completed"}}}, sort: { frontmatter: {title: ASC }}) {
         edges {
           node {
             frontmatter {

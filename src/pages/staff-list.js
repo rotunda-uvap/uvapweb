@@ -127,14 +127,14 @@ export default function StaffList({ data }) {
 
 export const query = graphql`
   query {
-    acq: allMarkdownRemark(filter: {frontmatter: {department: {in: "ACQ"}}},sort: {fields: frontmatter___title}) {
+    acq: allMarkdownRemark(filter: {frontmatter: {department: {in: "ACQ"}}},sort: {frontmatter: {title:ASC}}) {
       edges {
         node {
           ...MiniBioFragment
         }
       }
     }
-    edp: allMarkdownRemark(filter: {frontmatter: {department: {in: "EDP"}}},sort: {fields: frontmatter___title}) {
+    edp: allMarkdownRemark(filter: {frontmatter: {department: {in: "EDP"}}},sort: {frontmatter: {title:ASC}}) {
       edges {
         node {
           ...MiniBioFragment
@@ -155,7 +155,7 @@ export const query = graphql`
         }
       }
     }
-    rot: allMarkdownRemark(filter: {frontmatter: {department: {in: "ROT"}}},sort: {fields: frontmatter___title}) {
+    rot: allMarkdownRemark(filter: {frontmatter: {department: {in: "ROT"}}},sort: {frontmatter: {title:ASC}}) {
       edges {
         node {
           ...MiniBioFragment

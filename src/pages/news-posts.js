@@ -40,7 +40,7 @@ export default function Articles({ data }) {
 
 export const query = graphql`
   query {
-    allMarkdownRemark(filter: {frontmatter: {type: {eq: "news"}}},sort: {fields: frontmatter___date, order: DESC}) {
+    allMarkdownRemark(filter: {frontmatter: {type: {eq: "news"}}},sort: { frontmatter: {date: DESC }})  {
       edges {
           node {
             html

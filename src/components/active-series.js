@@ -6,7 +6,7 @@ import sanitizeHtml from 'sanitize-html';
 const ActiveSeries = () => {
   const data = useStaticQuery(graphql`
   query  {
-    allMarkdownRemark(filter: {frontmatter: {type: {eq: "series"}, status: {eq: "active"}}}, sort: {fields: frontmatter___title }) {
+    allMarkdownRemark(filter: {frontmatter: {type: {eq: "series"}, status: {eq: "active"}}}, sort: { frontmatter: {title: ASC }}) {
         edges {
           node {
             frontmatter {

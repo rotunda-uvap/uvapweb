@@ -7,7 +7,7 @@ import sanitizeHtml from 'sanitize-html';
 const FeatTrio = () => {
   const data = useStaticQuery(graphql`
   query  {
-      news:  allMarkdownRemark(limit:1, filter: {frontmatter: { type: {eq: "news"}}},sort: {fields: frontmatter___date, order: DESC}) {
+      news:  allMarkdownRemark(limit:1, filter: {frontmatter: { type: {eq: "news"}}},sort: { frontmatter: {date: DESC }}) {
         edges {
           node {
               html
@@ -23,7 +23,7 @@ const FeatTrio = () => {
       }
          
         } 
-        exhibit: allMarkdownRemark(limit:4, filter: {frontmatter: {templateKey: {eq: "exhibit"}}},sort: {fields: frontmatter___date, order: DESC}) {
+        exhibit: allMarkdownRemark(limit:4, filter: {frontmatter: {templateKey: {eq: "exhibit"}}},sort: { frontmatter: {date: DESC }})  {
           edges {
             node {
               frontmatter {
@@ -36,7 +36,7 @@ const FeatTrio = () => {
             }
           }
         } 
-        ac:  allMarkdownRemark(limit:1, filter: {frontmatter: {type: {eq: "author-corner"}}},sort: {fields: frontmatter___date, order: DESC}) {
+        ac:  allMarkdownRemark(limit:1, filter: {frontmatter: {type: {eq: "author-corner"}}},sort: { frontmatter: {date: DESC }})  {
           edges {
             node {
                 html

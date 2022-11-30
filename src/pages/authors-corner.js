@@ -36,7 +36,7 @@ export default function Articles({ data }) {
 
 export const query = graphql`
   query {
-    allMarkdownRemark(filter: {frontmatter: {type: {eq: "author-corner"}}},sort: {fields: frontmatter___date, order: DESC}) {
+    allMarkdownRemark(filter: {frontmatter: {type: {eq: "author-corner"}}},sort: { frontmatter: {date: DESC }})  {
       edges {
           node {
             frontmatter {

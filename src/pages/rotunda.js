@@ -215,15 +215,15 @@ padding:1em;
 
 export const query = graphql`
   query {
-      staffs: allMarkdownRemark(filter: {frontmatter: {department: {in: "ROT"}}},sort: {fields: frontmatter___title}) {
+      staffs: allMarkdownRemark(filter: {frontmatter: {department: {in: "ROT"}}},sort: {frontmatter: {title:ASC}}) {
         edges {
           node {
             ...MiniBioFragment
           }
         }
       }
-      AHClist: allRotundaJson(filter: {MainCollection: {eq: "American History Collection"}}, sort: {fields: MainCollection}) {
-        group(field: SubCollection) {
+      AHClist: allRotundaJson(filter: {MainCollection: {eq: "American History Collection"}}, sort: {MainCollection:ASC}) {
+        group(field: {SubCollection: SELECT}) {
           nodes {
             SubCollection
             Title
@@ -232,8 +232,8 @@ export const query = graphql`
           }
         }
       }
-      LITlist: allRotundaJson(filter: {MainCollection: {eq: "Literature and Culture Collection"}}, sort: {fields: MainCollection}) {
-        group(field: SubCollection) {
+      LITlist: allRotundaJson(filter: {MainCollection: {eq: "Literature and Culture Collection"}}, sort: { MainCollection: ASC}) {
+        group(field: {SubCollection: SELECT}) {
           nodes {
             SubCollection
             Title

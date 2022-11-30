@@ -5,7 +5,7 @@ import RotCard from "./RotundaListFragment"
 const FEList = () => {
   const data = useStaticQuery(graphql`
   query FEQuery {
-      FE: allRotundaJson(filter: {SubCollection: {eq: "Founding Era Collection"}}, sort: {fields: StartYear, order: ASC}) {
+      FE: allRotundaJson(filter: {SubCollection: {eq: "Founding Era Collection"}}, sort: {StartYear: ASC })  {
           edges {
             node {
               ...RotFieldFragment
