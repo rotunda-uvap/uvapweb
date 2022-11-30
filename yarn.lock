@@ -9518,7 +9518,7 @@ gatsby-parcel-config@^1.2.0:
     "@parcel/transformer-js" "2.6.2"
     "@parcel/transformer-json" "2.6.2"
 
-gatsby-plugin-algolia@^1.0.1:
+gatsby-plugin-algolia@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-algolia/-/gatsby-plugin-algolia-1.0.1.tgz#12148b8e6137331a0001431689969552a7abf7de"
   integrity sha512-+NmLfFGpf+utM9mLzwAKJRuootXnQGvZxpL1qmevU2figfZny2avZf9z/TL6z8/O3eYfULeHiBcTRVEx6qeIew==
