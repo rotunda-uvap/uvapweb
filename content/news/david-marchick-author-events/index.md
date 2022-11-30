@@ -19,7 +19,7 @@ In the wake of the Congressional hearings on the January 6 attack on the Capitol
 
 **Author events**
 
-October 10: Politics & Prose
+October 10: [Politics & Prose](https://www.youtube.com/watch?v=Fx3m1GYkV9A)
 
 October 11: Partnership for Public Service
 
@@ -49,7 +49,7 @@ January 19: White House Historical Association – An in-person “History Happy
 
 [The Curious Man Podcast](https://podcasts.apple.com/us/podcast/david-marchick-interview/id1369458829?i=1000584492262)
 
-Can We Please Talk? podcast (11/11)
+[Can We Please Talk? podcast](https://shows.acast.com/can-we-please-talk/episodes/if-this-is-america-first-well-then-america-is-fked) (11/11)
 
 Tell Me Everything with John Fugelsang / Sirius XM (11/14)
 
