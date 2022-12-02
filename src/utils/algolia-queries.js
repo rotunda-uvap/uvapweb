@@ -17,6 +17,9 @@ const bookQuery = `{
         Subjects {
           name
         }
+        internal {
+          contentDigest
+        }
         List
         PublicationDate
         DaysSincePublication
@@ -38,6 +41,7 @@ function bookToAlgoliaRecord({ node: { id, BookID, Title, Subtitle, MainDescript
     MainDescription,
     AuthorCredit,
     Subjects,
+    internal,
     Series,
     List,
     ISBNs,
@@ -51,7 +55,7 @@ const queries = [
     query: bookQuery,
     transformer: ({ data }) => data.books.edges.map(bookToAlgoliaRecord),
     indexName,
-    settings: { attributesToSnippet: [`MainDescription:20`], searchableAttributes: ['Title', 'Subtitle', 'MainDescription', 'AuthorCredit', 'ISBNs'], attributesForFaceting: ['Series.name', 'Subjects.name', 'List'], typoTolerance: 'min', minWordSizefor1Typo:5 },
+    settings: { attributesToSnippet: [`MainDescription:20`], searchableAttributes: ['Title', 'Subtitle', 'MainDescription', 'AuthorCredit', 'ISBNs', 'internal.contentDigest'], attributesForFaceting: ['Series.name', 'Subjects.name', 'List'], typoTolerance: 'min', minWordSizefor1Typo:5 },
   },
 ]
 
