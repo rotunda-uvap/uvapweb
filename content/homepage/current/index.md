@@ -2,12 +2,12 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: BEFORE AMERICAN HISTORY
-    banner_author: Christen Mucher
-    banner_subtitle: Nationalist Mythmaking and Indigenous Dispossession
-    banner_id: "5619"
-    banner_quote: Deeply researched and intricately constructed
-    banner_attr: Lisa Brooks, Amherst College
+  - banner_title: STORY REVOLUTIONS
+    banner_author: Helga Lenart-Cheng
+    banner_subtitle: Collective Narratives from the Enlightenment to the Digital Age
+    banner_id: "5758"
+    banner_quote: An important phenomenon that has not received sufficient attention
+    banner_attr: John D. Zuern, University of Hawai‘i at Mānoa
 related_book:
   - "5744"
   - "5617"
