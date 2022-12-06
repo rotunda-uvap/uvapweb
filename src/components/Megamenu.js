@@ -196,7 +196,7 @@ const uvap = getImage(data.uvaplogo)
                         to={`/order`}
                         className="uppercase block text-lg hover:text-gray-300"
                       >
-                        Vendor Ordering
+                        Order Books
                       </Link>
                     </div>
                     <div>
@@ -537,7 +537,7 @@ const uvap = getImage(data.uvaplogo)
                         to={`/order`}
                         className="uppercase block text-lg hover:text-gray-300"
                       >
-                        Vendor Ordering
+                        Order Books
                       </Link>
                     </div>
                     <div>
