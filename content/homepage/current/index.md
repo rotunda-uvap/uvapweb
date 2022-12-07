@@ -2,12 +2,12 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: STORY REVOLUTIONS
-    banner_author: Helga Lenart-Cheng
-    banner_subtitle: Collective Narratives from the Enlightenment to the Digital Age
-    banner_id: "5758"
-    banner_quote: An important phenomenon that has not received sufficient attention
-    banner_attr: John D. Zuern, University of Hawai‘i at Mānoa
+  - banner_title: BASURA
+    banner_author: Samuel Amago
+    banner_subtitle: Winner of the MLA Kovacs Prize
+    banner_id: "5459"
+    banner_quote: Cultural archeology at its best
+    banner_attr: Maite Zubiaurre, UCLA
 related_book:
   - "5744"
   - "5617"
