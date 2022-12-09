@@ -20,9 +20,9 @@ The University of Virginia Press appreciates the support of individuals, organiz
 Gifts can be made through the [UVA Giving](https://securelb.imodules.com/s/1535/16-uva/giving.aspx?sid=1535&gid=16&pgid=684&cid=1509&appealcode=21UVAQ14WG&bledit=1&dids=4515&sort=1) or:
 
 University of Virginia Press Unrestricted Gift Fund\
-Attention: Samantha Anderson-Jackson\
+Attention: Jeff Shifflett\
 Bemiss House\
 210 Sprigg Lane\
 Charlottesville, VA 22903
 
-Please direct questions to Suzanne Morse Moomaw, Director of the University of Virginia Press, [swm2x@virginia.edu](mailto:swm2x@virginia.edu) or 434-924-6064 (office)/434-981-7845 (cell).
+Please direct questions to Eric Brandt, Director of the University of Virginia Press, [eab7fb@virginia.edu](mailto:eab7fb@virginia.edu) or 434-924-6064.
