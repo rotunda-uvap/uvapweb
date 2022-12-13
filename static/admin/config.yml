@@ -2,7 +2,7 @@ backend:
   name: github
   repo: rotunda-uvap/uvapweb
   branch: development
-  base_url: https://uvapweb.vercel.app/
+  base_url: https://uvapweb.vercel.app
   auth_endpoint: api/auth
  # base_url: https://upress-virginia-cms-oauth.netlify.app
 # publish_mode: editorial_workflow
