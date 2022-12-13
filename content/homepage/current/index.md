@@ -2,12 +2,12 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: BASURA
-    banner_author: Samuel Amago
-    banner_subtitle: Winner of the MLA Kovacs Prize
-    banner_id: "5459"
-    banner_quote: Cultural archeology at its best
-    banner_attr: Maite Zubiaurre, UCLA
+  - banner_title: YULETIDE IN DIXIE
+    banner_author: Robert E. May
+    banner_subtitle: Slavery, Christmas, and Southern Memory
+    banner_id: "5317"
+    banner_quote: Historical scholarship at its best
+    banner_attr: Charles Dew, Williams College
 related_book:
   - "5744"
   - "5617"
