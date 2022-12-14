@@ -20,9 +20,7 @@ module.exports = {
     twitterUsername: "@uvapress"
 
   },
- /*  partytownProxiedURLs: [
-    `https://www.googletagmanager.com/gtag/js?id=${process.env.GTM}`
-  ], */
+
   plugins: [
     `gatsby-transformer-json`,
     {
@@ -205,7 +203,7 @@ module.exports = {
         generateMatchPathRewrites: true,
       },
     },
-    {
+/*     {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
         // You can add multiple tracking ids and a pageview event will be fired for all of them.
@@ -230,7 +228,7 @@ module.exports = {
           exclude: ["/preview/**", "/do-not-track/me/too/"],
         },
       },
-    },
+    }, */
     
     
     `gatsby-plugin-sitemap`,
@@ -314,6 +312,7 @@ module.exports = {
     "gatsby-plugin-meta-redirect",
     `gatsby-plugin-emotion`
   ],
+  partytownProxiedURLs: [`https://www.googletagmanager.com/gtag/js?id=${process.env.GATSBY_GA_MEASUREMENT_ID}`],
   mapping: {
     "MarkdownRemark.frontmatter.related_series" : "SeriesJson.jsonId",
     "MarkdownRemark.frontmatter.related_staff" : "MarkdownRemark.frontmatter.staff_name",
