@@ -132,7 +132,7 @@ export default function RotundaPurchasePage() {
                 American Founding Era
               </th>
             </tr>
-            <tr>
+            <tr id="adms">
               <th className="title text-ceci-gray-dark tracking-wide font-light">
                 &emsp;
                 <a href="https://www.upress.virginia.edu/title/ADMS">
@@ -146,7 +146,7 @@ export default function RotundaPurchasePage() {
               <td className="money text-ceci-gray-dark font-thin">$700</td>
               <td className="money text-ceci-gray-dark font-thin">$350</td>
             </tr>
-            <tr>
+            <tr id="rncn">
               <th className="title text-ceci-gray-dark tracking-wide font-light">
                 &emsp;
                 <a href="https://www.upress.virginia.edu/title/RNCN">
@@ -174,7 +174,7 @@ export default function RotundaPurchasePage() {
               <td className="money text-ceci-gray-dark font-thin">$940</td>
               <td className="money text-ceci-gray-dark font-thin">$475</td>
             </tr>
-            <tr>
+            <tr id="arhn">
               <th className="title text-ceci-gray-dark tracking-wide font-light">
                 &emsp;
                 <a href="https://www.upress.virginia.edu/title/ARHN">
@@ -188,7 +188,7 @@ export default function RotundaPurchasePage() {
               <td className="money text-ceci-gray-dark font-thin">$906</td>
               <td className="money text-ceci-gray-dark font-thin">$453</td>
             </tr>
-            <tr>
+            <tr id="jnjy">
               <th className="title text-ceci-gray-dark tracking-wide font-light">
                 &emsp;
                 <a href="https://www.upress.virginia.edu/title/JNJY">
@@ -202,7 +202,7 @@ export default function RotundaPurchasePage() {
               <td className="money text-ceci-gray-dark font-thin">$173</td>
               <td className="money text-ceci-gray-dark font-thin">$87</td>
             </tr>
-            <tr>
+            <tr id="tsjn">
               <th className="title text-ceci-gray-dark tracking-wide font-light">
                 &emsp;
                 <a href="https://www.upress.virginia.edu/title/TSJN">
@@ -216,7 +216,7 @@ export default function RotundaPurchasePage() {
               <td className="money text-ceci-gray-dark font-thin">$1,363</td>
               <td className="money text-ceci-gray-dark font-thin">$682</td>
             </tr>
-            <tr>
+            <tr id="dmde">
               <th className="title text-ceci-gray-dark tracking-wide font-light">
                 &emsp;
                 <a href="https://www.upress.virginia.edu/title/DMDE">
@@ -230,7 +230,7 @@ export default function RotundaPurchasePage() {
               <td className="money text-ceci-gray-dark font-thin">$295</td>
               <td className="money text-ceci-gray-dark font-thin">$195</td>
             </tr>
-            <tr>
+            <tr id="jmde">
               <th className="title text-ceci-gray-dark tracking-wide font-light">
                 &emsp;
                 <a href="https://www.upress.virginia.edu/title/JMDE">
@@ -244,7 +244,7 @@ export default function RotundaPurchasePage() {
               <td className="money text-ceci-gray-dark font-thin">$910</td>
               <td className="money text-ceci-gray-dark font-thin">$455</td>
             </tr>
-            <tr>
+            <tr id="jnml">
               <th className="title text-ceci-gray-dark tracking-wide font-light">
                 &emsp;
                 <a href="https://www.upress.virginia.edu/title/JNML">
@@ -258,7 +258,7 @@ export default function RotundaPurchasePage() {
               <td className="money text-ceci-gray-dark font-thin">$315</td>
               <td className="money text-ceci-gray-dark font-thin">$158</td>
             </tr>
-<tr>
+<tr id="monr">
               <th className="title text-ceci-gray-dark tracking-wide font-light">
                 &emsp;
                 <a href="https://www.upress.virginia.edu/title/MONR">James Monroe Papers</a>
@@ -270,7 +270,7 @@ export default function RotundaPurchasePage() {
               <td className="money text-ceci-gray-dark font-thin">$362</td>
               <td className="money text-ceci-gray-dark font-thin">$180</td>
             </tr>
-            <tr>
+            <tr id="grms">
               <th className="title text-ceci-gray-dark tracking-wide font-light">
                 &emsp;
                 <a href="https://www.upress.virginia.edu/title/GRMS">
@@ -284,7 +284,7 @@ export default function RotundaPurchasePage() {
               <td className="money text-ceci-gray-dark font-thin">$136</td>
               <td className="money text-ceci-gray-dark font-thin">$68</td>
             </tr>
-            <tr>
+            <tr id="pfe">
               <th className="title text-ceci-gray-dark tracking-wide font-light">
                 &emsp;
                 <a href="https://www.upress.virginia.edu/title/PFE">
@@ -298,7 +298,7 @@ export default function RotundaPurchasePage() {
               <td className="money text-ceci-gray-dark font-thin">$620</td>
               <td className="money text-ceci-gray-dark font-thin">$310</td>
             </tr>
-            <tr>
+            <tr id="pknyw">
               <th className="title text-ceci-gray-dark tracking-wide font-light">
                 &emsp;
                 <a href="https://www.upress.virginia.edu/title/PKNYW">
@@ -312,7 +312,7 @@ export default function RotundaPurchasePage() {
                 </i></Para>
               </td>
             </tr>
-            <tr>
+            <tr id="pkny">
               <th className="title text-ceci-gray-dark tracking-wide font-light">
                 &emsp;
                 <a href="https://www.upress.virginia.edu/title/PKNY">
@@ -326,7 +326,7 @@ export default function RotundaPurchasePage() {
               <td className="money text-ceci-gray-dark font-thin">$260</td>
               <td className="money text-ceci-gray-dark font-thin">$130</td>
             </tr>
-            <tr>
+            <tr id="rush">
               <th className="title text-ceci-gray-dark tracking-wide font-light">
                 &emsp;
                 <a href="https://www.upress.virginia.edu/title/RUSH">
@@ -340,7 +340,7 @@ export default function RotundaPurchasePage() {
               <td className="money text-ceci-gray-dark font-thin">$90</td>
               <td className="money text-ceci-gray-dark font-thin">$50</td>
             </tr>
-            <tr>
+            <tr id="gewn">
               <th className="title text-ceci-gray-dark tracking-wide font-light">
                 &emsp;
                 <a href="https://www.upress.virginia.edu/title/GEWN">
@@ -359,7 +359,7 @@ export default function RotundaPurchasePage() {
                 Antebellum, Civil War, and Reconstruction
               </th>
             </tr>
-            <tr>
+            <tr id="grnt">
               <th className="title text-ceci-gray-dark tracking-wide font-light">
                 &emsp;
                 <a href="https://www.upress.virginia.edu/title/GRNT">
@@ -373,7 +373,7 @@ export default function RotundaPurchasePage() {
               <td className="money text-ceci-gray-dark font-thin">$840</td>
               <td className="money text-ceci-gray-dark font-thin">$420</td>
             </tr>
-            <tr>
+            <tr id="jksn">
               <th className="title text-ceci-gray-dark tracking-wide font-light">
                 &emsp;
                 <a href="https://www.upress.virginia.edu/title/JKSN">
@@ -387,7 +387,7 @@ export default function RotundaPurchasePage() {
               <td className="money text-ceci-gray-dark font-thin">$266</td>
               <td className="money text-ceci-gray-dark font-thin">$133</td>
             </tr>
-            <tr>
+            <tr id="ajhn">
               <th className="title text-ceci-gray-dark tracking-wide font-light">
                 &emsp;
                 <a href="https://www.upress.virginia.edu/title/AJHN">
@@ -401,7 +401,7 @@ export default function RotundaPurchasePage() {
               <td className="money text-ceci-gray-dark font-thin">$573</td>
               <td className="money text-ceci-gray-dark font-thin">$286</td>
             </tr>
-            <tr>
+            <tr id="olms">
               <th className="title text-ceci-gray-dark tracking-wide font-light">
                 &emsp;
                 <a href="https://www.upress.virginia.edu/title/OLMS">
@@ -415,7 +415,7 @@ export default function RotundaPurchasePage() {
               <td className="money text-ceci-gray-dark font-thin">$315</td>
               <td className="money text-ceci-gray-dark font-thin">$158</td>
             </tr>
-            <tr>
+            <tr id="polk">
               <th className="title text-ceci-gray-dark tracking-wide font-light">
                 &emsp;
                 <a href="https://www.upress.virginia.edu/title/POLK">
@@ -429,11 +429,11 @@ export default function RotundaPurchasePage() {
               <td className="money text-ceci-gray-dark font-thin">$460</td>
               <td className="money text-ceci-gray-dark font-thin">$230</td>
             </tr>
-            <tr>
+            <tr id="webster">
               <th className="title text-ceci-gray-dark tracking-wide font-light">
                 &emsp;
                 <a href="https://www.upress.virginia.edu/title/DWDE">
-                  Webster Papers
+                 Daniel Webster Papers
                 </a>
               </th>
               <td className="money text-ceci-gray-dark font-thin">$2,460</td>
@@ -448,7 +448,7 @@ export default function RotundaPurchasePage() {
                 American Century
               </th>
             </tr>
-            <tr>
+            <tr id="prde">
               <th className="title text-ceci-gray-dark tracking-wide font-light">
                 &emsp;
                 <a href="http://prde.upress.virginia.edu/">
@@ -462,7 +462,7 @@ export default function RotundaPurchasePage() {
               <td className="money text-ceci-gray-dark font-thin">$739</td>
               <td className="money text-ceci-gray-dark font-thin">$370</td>
             </tr>
-            <tr>
+            <tr id="btwn">
               <th className="title text-ceci-gray-dark tracking-wide font-light">
                 &emsp;
                 <a href="https://www.upress.virginia.edu/title/BTWN">
