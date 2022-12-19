@@ -1,7 +1,9 @@
-import React from "react"
+import React, {Fragment} from "react"
 import Footer from "./footer" 
 import MegaHeader from "./Megamenu"
+import { Script } from "gatsby"
 import { Helmet } from "react-helmet"
+
 
 export const onRouteUpdate = ({ location }) => {
   if (process.env.NODE_ENV !== 'production') {
