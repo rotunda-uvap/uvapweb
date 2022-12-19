@@ -16,7 +16,7 @@ const RootElement = ({ children }) => {
           __html: `window.dataLayer = window.dataLayer || [];
           window.gtag = function gtag(){ window.dataLayer.push(arguments);}
           gtag('js', new Date()); 
-          gtag('config', '${process.env.GATSBY_GA_MEASUREMENT_ID}', { send_page_view: false })`
+          gtag('config', '${process.env.GATSBY_GA_MEASUREMENT_ID}', { send_page_view: true })`
         }}
       />
       <div>{children}</div>
