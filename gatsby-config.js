@@ -203,7 +203,7 @@ module.exports = {
         generateMatchPathRewrites: true,
       },
     },
-  /*   {
+    {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
         // You can add multiple tracking ids and a pageview event will be fired for all of them.
@@ -228,7 +228,7 @@ module.exports = {
           exclude: ["/preview/**", "/do-not-track/me/too/"],
         },
       },
-    }, */
+    },
     
     
     `gatsby-plugin-sitemap`,
@@ -261,7 +261,17 @@ module.exports = {
       postCssPlugins: [require("tailwindcss"), require("autoprefixer")]
     }
   },
- 
+  {
+    resolve: `gatsby-plugin-purgecss`,
+    options: {
+      printRejected: false,
+      develop: false,
+      tailwind: true,
+      purgeCSSOptions: {
+      safelist: [/^slick/, /^calendar/, /^day/, /^event/, /^innerDay/, /^ais/],
+      },
+    },
+  },
   {
   resolve: `gatsby-plugin-netlify-cms`,
     options: {
@@ -299,21 +309,10 @@ module.exports = {
         queries: require("./src/utils/algolia-queries")
       },
     },
-    {
-      resolve: `gatsby-plugin-purgecss`,
-      options: {
-        printRejected: false,
-        develop: false,
-        tailwind: true,
-        purgeCSSOptions: {
-        safelist: [/^slick/, /^calendar/, /^day/, /^event/, /^innerDay/, /^ais/],
-        },
-      },
-    },
     "gatsby-plugin-meta-redirect",
     `gatsby-plugin-emotion`
   ],
-  partytownProxiedURLs: [`https://www.googletagmanager.com/gtag/js?id=G-CEYXF25KC3`],
+  // partytownProxiedURLs: [`https://www.googletagmanager.com/gtag/js?id=G-CEYXF25KC3`],
   mapping: {
     "MarkdownRemark.frontmatter.related_series" : "SeriesJson.jsonId",
     "MarkdownRemark.frontmatter.related_staff" : "MarkdownRemark.frontmatter.staff_name",
