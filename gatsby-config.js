@@ -312,7 +312,7 @@ module.exports = {
     "gatsby-plugin-meta-redirect",
     `gatsby-plugin-emotion`
   ],
-  partytownProxiedURLs: [`https://www.googletagmanager.com/gtag/js?id=${process.env.GATSBY_GA_MEASUREMENT_ID}`],
+  partytownProxiedURLs: [`https://www.googletagmanager.com/gtag/js?id=G-CEYXF25KC3`],
   mapping: {
     "MarkdownRemark.frontmatter.related_series" : "SeriesJson.jsonId",
     "MarkdownRemark.frontmatter.related_staff" : "MarkdownRemark.frontmatter.staff_name",
