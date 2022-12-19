@@ -59,6 +59,7 @@ const bookPage = ({ data }) => {
               "width": "300",
               crop: "at_max"
             }]}
+            loading="lazy"
              lqip={{ active: true }} alt={`Cover for ${book.Title}`}
              />
             </IKContext>
@@ -73,6 +74,7 @@ const bookPage = ({ data }) => {
               "width": "300",
               crop: "at_max"
             }]}
+            loading="lazy"
              lqip={{ active: true }}
              />
             </IKContext>
@@ -89,6 +91,7 @@ const bookPage = ({ data }) => {
               "width": "200",
               crop: "at_max"
             }]}
+            loading="lazy"
              lqip={{ active: true }} alt={`Cover for ${book.Title}`}
              />
             </IKContext>
@@ -107,7 +110,7 @@ const bookPage = ({ data }) => {
               "height": "300",
               "width": "200",
               crop: "at_max"
-            }]}
+            }]}loading="lazy"
              lqip={{ active: true }} alt="Placeholder Cover"
              />
             </IKContext>

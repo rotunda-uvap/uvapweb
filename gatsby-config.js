@@ -261,17 +261,7 @@ module.exports = {
       postCssPlugins: [require("tailwindcss"), require("autoprefixer")]
     }
   },
-  {
-    resolve: `gatsby-plugin-purgecss`,
-    options: {
-      printRejected: false,
-      develop: false,
-      tailwind: true,
-      purgeCSSOptions: {
-      safelist: [/^slick/, /^calendar/, /^day/, /^event/, /^innerDay/, /^ais/],
-      },
-    },
-  },
+ 
   {
   resolve: `gatsby-plugin-netlify-cms`,
     options: {
@@ -307,6 +297,17 @@ module.exports = {
         apiKey: process.env.ALGOLIA_ADMIN_KEY,
         indexName: process.env.GATSBY_ALGOLIA_INDEX_NAME,
         queries: require("./src/utils/algolia-queries")
+      },
+    },
+    {
+      resolve: `gatsby-plugin-purgecss`,
+      options: {
+        printRejected: false,
+        develop: false,
+        tailwind: true,
+        purgeCSSOptions: {
+        safelist: [/^slick/, /^calendar/, /^day/, /^event/, /^innerDay/, /^ais/],
+        },
       },
     },
     "gatsby-plugin-meta-redirect",

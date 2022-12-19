@@ -5,7 +5,7 @@ import { Script } from "gatsby"
 import { Helmet } from "react-helmet"
 
 
-export const onRouteUpdate = ({ location }) => {
+/* export const onRouteUpdate = ({ location }) => {
   if (process.env.NODE_ENV !== 'production') {
     return null;
   }
@@ -17,13 +17,13 @@ export const onRouteUpdate = ({ location }) => {
     }
   }, 100);
   return true;
- };
+ }; */
 
 const Layout = ({ children }) => {
  
   return (
     <>
-    <Fragment>
+   {/*  <Fragment>
     <Script
       src={`https://www.googletagmanager.com/gtag/js?id=G-CEYXF25KC3`}
       strategy="off-main-thread"
@@ -40,7 +40,7 @@ const Layout = ({ children }) => {
       }}
     />
     <div>{children}</div>
-  </Fragment>
+  </Fragment> */}
     <Helmet
   htmlAttributes={{
     lang: 'en',
