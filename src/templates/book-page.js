@@ -246,11 +246,11 @@ const bookPage = ({ data }) => {
                       <ul className="flex flex-col md:flex-row md:flex-wrap gap-4">
                        {book.Subjects.map(subj => (
                        
-                        <button className="bg-greige hover:bg-white font-thin text-sm rounded-md text-ceci-gray-mid p-2 tracking-wide">
+                        <li><button className="bg-greige hover:bg-white font-thin text-sm rounded-md text-ceci-gray-mid p-2 tracking-wide">
                         <Link to={`../../subject/${kebabCase(subj.name)}`} className="tracking-wide uppercase">
                           {subj.name}
                         </Link>
-                      </button>
+                      </button></li>
                        )
 
                        )}</ul>
