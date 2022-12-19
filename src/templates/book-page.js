@@ -139,9 +139,9 @@ const bookPage = ({ data }) => {
             {book.AuthorCredit}
           </h6>
 
-          {book.Bindings.map(binding => (
+          {book.Bindings.map((binding, index) => (
             <>
-              <div className=" flex flex-row inline-flex items-center w-full leading-normal">
+              <div className=" flex flex-row inline-flex items-center w-full leading-normal"  key={`binding${index}`}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-6 w-6 text-ceci-gray-mid"
@@ -244,9 +244,9 @@ const bookPage = ({ data }) => {
                         subjects:
                       </span> 
                       <ul className="flex flex-col md:flex-row md:flex-wrap gap-4">
-                       {book.Subjects.map(subj => (
+                       {book.Subjects.map( (subj, index) => (
                        
-                        <li><button className="bg-greige hover:bg-white font-thin text-sm rounded-md text-ceci-gray-mid p-2 tracking-wide">
+                        <li  key={`sub${index}`}><button className="bg-greige hover:bg-white font-thin text-sm rounded-md text-ceci-gray-mid p-2 tracking-wide">
                         <Link to={`../../subject/${kebabCase(subj.name)}`} className="tracking-wide uppercase">
                           {subj.name}
                         </Link>

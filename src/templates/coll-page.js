@@ -34,9 +34,9 @@ const collPage = ({ data }) => {
 <div className="flex flex-row flex-wrap gap-4">
              
              {data.markdownRemark.frontmatter.related_book && 
-             data.markdownRemark.frontmatter.related_book.map(book => (
+             data.markdownRemark.frontmatter.related_book.map((book, index)=> (
                
-               <RelatedBookList id={book.jsonId} title={book.Title}/>
+               <RelatedBookList id={book.jsonId} title={book.Title}  key={`related${index}`}/>
           
               
            ))}
