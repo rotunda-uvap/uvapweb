@@ -269,7 +269,7 @@ const bookPage = ({ data }) => {
         </section>
         <section className="py-4 flex flex-row inline-flex space-x-6 items-center ">
           <div><a href={GoogleB}>
-            <img src="/gbs_preview_sticker1.png" alt="view on google books" />
+            <img src="/gbs_preview_sticker1.png" alt="view on google books" height="23" width="69" />
           </a></div>
           {/* <div className="pl-6">
           <ShareButtons title={title} url={url} /></div> */}
