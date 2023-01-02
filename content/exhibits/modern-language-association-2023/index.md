@@ -29,6 +29,12 @@ related_blog:
 related_staff:
   - Angie Hogan
   - Eric Brandt
+featured_books:
+  - "5827"
+  - "5711"
+  - "5688"
+  - "5459"
+  - "5524"
 related_collection:
   - MLA 23
 date: 2023-01-02
