@@ -29,6 +29,12 @@ related_blog:
     of WOMEN IN GEORGE WASHINGTON'S WORLD
 related_staff:
   - Nadine Zimmerli
+featured_books:
+  - "5816"
+  - "5818"
+  - "5716"
+  - "5808"
+  - "5866"
 related_collection:
   - AHA 2023
 date: 2023-01-02
