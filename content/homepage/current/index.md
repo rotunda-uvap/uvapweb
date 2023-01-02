@@ -2,12 +2,13 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: YULETIDE IN DIXIE
-    banner_author: Robert E. May
-    banner_subtitle: Slavery, Christmas, and Southern Memory
-    banner_id: "5317"
-    banner_quote: Historical scholarship at its best
-    banner_attr: Charles Dew, Williams College
+  - banner_title: African Impressions
+    banner_author: Rebekah Mitsein
+    banner_subtitle: How African Worldviews Shaped the British Geographical
+      Imagination across the Early Enlightenment
+    banner_id: "5704"
+    banner_quote: There is no other book that does what this one does
+    banner_attr: Roxann Wheeler, The Ohio State University
 related_book:
   - "5744"
   - "5617"
