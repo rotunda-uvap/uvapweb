@@ -1,10 +1,9 @@
 backend:
   name: github
   repo: rotunda-uvap/uvapweb
-  branch: development
+  branch: testing
   base_url: https://uvapwebtesting.gatsbyjs.io/
   auth_endpoint: api/auth
- # base_url: https://upress-virginia-cms-oauth.netlify.app
 # publish_mode: editorial_workflow
 media_folder: static/assets
 public_folder: /assets
