@@ -1,1 +1,0 @@
-export { auth as default } from 'rotunda-netlify-cms-gcloud'

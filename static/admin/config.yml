@@ -3,7 +3,7 @@ backend:
   repo: rotunda-uvap/uvapweb
   branch: testing
   base_url: https://uvapwebtesting.gatsbyjs.io/
-  auth_endpoint: api/auth
+  auth_endpoint: api/login
 # publish_mode: editorial_workflow
 media_folder: static/assets
 public_folder: /assets
