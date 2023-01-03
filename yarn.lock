@@ -2333,13 +2333,13 @@
     mkdirp "^1.0.4"
     rimraf "^3.0.2"
 
-"@openlab/vercel-netlify-cms-github@^1.1.1":
+"@openlab/vercel-netlify-cms-github@git+https://github.com/rotunda-uvap/gatsbycloud-netlify-cms-github.git":
   version "1.1.1"
-  resolved "https://registry.yarnpkg.com/@openlab/vercel-netlify-cms-github/-/vercel-netlify-cms-github-1.1.1.tgz#25af6df020d67e5ea01a1fe5b37e741d954efbde"
-  integrity sha512-vtClCioTFEu1PVmJXdbRKgLKAQuQo7Ojm5ynJWxf/wMXPEv5F5mJiqRp8a8q7dq/XG6dm9ANVmpFpxxV34Q/Hw==
+  resolved "git+https://github.com/rotunda-uvap/gatsbycloud-netlify-cms-github.git#e818f9c7e72517266cec20bebf90eab07b0776d0"
   dependencies:
     dedent "^0.7.0"
     dotenv "^8.2.0"
+    gatsby "^5.3.3"
     simple-oauth2 "^4.2.0"
 
 "@parcel/bundler-default@2.6.2":
@@ -19156,15 +19156,6 @@ rollup@^1.31.1:
     "@types/estree" "*"
     "@types/node" "*"
     acorn "^7.1.0"
-
-"rotunda-netlify-cms-gcloud@git+https://github.com/rotunda-uvap/rotunda-netlify-cms-gcloud.git":
-  version "0.1.1-alpha"
-  resolved "git+https://github.com/rotunda-uvap/rotunda-netlify-cms-gcloud.git#48f7a011f02b42adec6e8d78230d2749986c869c"
-  dependencies:
-    dedent "^0.7.0"
-    dotenv "^8.2.0"
-    gatsby "^5.3.3"
-    simple-oauth2 "^4.2.0"
 
 rsvp@^4.8.4:
   version "4.8.5"
