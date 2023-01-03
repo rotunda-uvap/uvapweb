@@ -19159,7 +19159,7 @@ rollup@^1.31.1:
 
 "rotunda-netlify-cms-gcloud@git+https://github.com/rotunda-uvap/rotunda-netlify-cms-gcloud.git":
   version "0.1.1-alpha"
-  resolved "git+https://github.com/rotunda-uvap/rotunda-netlify-cms-gcloud.git#9e7321085bcc3cc3eda419fd779885d87ed74a81"
+  resolved "git+https://github.com/rotunda-uvap/rotunda-netlify-cms-gcloud.git#48f7a011f02b42adec6e8d78230d2749986c869c"
   dependencies:
     dedent "^0.7.0"
     dotenv "^8.2.0"
