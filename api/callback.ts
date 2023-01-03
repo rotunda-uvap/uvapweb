@@ -1,0 +1,1 @@
+export { callback as default } from 'gatsbycloud-netlify-cms-github'

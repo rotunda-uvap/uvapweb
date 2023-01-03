@@ -1,0 +1,1 @@
+export { auth as default } from 'gatsbycloud-netlify-cms-github'

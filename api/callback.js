@@ -1,1 +1,0 @@
-export { callback as default } from './login'
