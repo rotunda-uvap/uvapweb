@@ -108,9 +108,9 @@ const Footer = () => {
               className="hidden md:block self-center justify-self-center text-2xl"
               aria-label="email"
             />
-            <ul className="text-sm flex flex-col font-thin tracking-wide md:pl-3">
-                <li><a href="mailto:vapress@virginia.edu" className="py-2 md:py-1">General Inquiries</a></li>
-                <li><Link to={"/staff-list"} className="py-2 md:py-1">Staff Directory</Link></li>
+            <ul className="text-sm flex flex-col font-thin tracking-wide md:pl-3 gap-2 md:gap-0">
+                <li><a href="mailto:vapress@virginia.edu" className="py-4 md:py-1">General Inquiries</a></li>
+                <li><Link to={"/staff-list"} className="py-4 md:py-3">Staff Directory</Link></li>
             </ul>
           </div>
         </section>

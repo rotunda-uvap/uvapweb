@@ -58,9 +58,9 @@ const rotundaPage = ({ data }) => {
           <section className="pl-5 text-ceci-gray-mid">
             <h6 className="py-5 font-thin">Others in <span className="font-bold font-thin">{item.SubCollection}</span>:</h6>
             
-            {related.edges.map(edge => (
+            {related.edges.map((edge, index) => (
                 <>
-                <Link to={`../${ edge.node.RotID }`} className="p-3 hover:font-bold font-thin tracking-wider text-lg font-display uppercase">&#8226;&ensp; {edge.node.Title}&ensp;</Link>
+                <Link to={`../${ edge.node.RotID }`} className="p-3 hover:font-bold font-thin tracking-wider text-lg font-display uppercase"  key={`rel${index}`}>&#8226;&ensp; {edge.node.Title}&ensp;</Link>
                
                 </>
           ))}

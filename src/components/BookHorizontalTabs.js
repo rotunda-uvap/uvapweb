@@ -16,10 +16,10 @@ const BookHorizontalTabs = ({summary, reviews, bio, TOC, add}) => {
           { TOC ? <Tab className="uppercase font-thin tracking-widest py-2 px-3 sm:px-6 text-sm md:text-lg border-b-4 border-white hover:border-black" tabfor="basic-tab-four">Table of Contents</Tab> : ""} 
           { add ? <Tab className="uppercase font-thin tracking-widest py-2 px-3 sm:px-6 text-sm md:text-lg border-b-4 border-white hover:border-black" tabfor="basic-tab-five">Additional Resources</Tab> : ""} 
         </TabList>
-        <TabPanel className="py-3" tabId="basic-tab-one">
+        <TabPanel className="py-3" tabid="basic-tab-one">
         <div dangerouslySetInnerHTML={{ __html: sanitizeHtml(summary) }} className="text-ceci-gray-dark dropCap cms text-lg"/>
         </TabPanel>
-        <TabPanel className="py-3 " tabId="basic-tab-two">
+        <TabPanel className="py-3 " tabid="basic-tab-two">
         {reviews ?
     <div className="py-3">
     {reviews[0] ? reviews.map((review, index) => (
@@ -36,17 +36,17 @@ const BookHorizontalTabs = ({summary, reviews, bio, TOC, add}) => {
     <div className="py-2"><p>No review available</p></div>
     }
         </TabPanel>
-        <TabPanel className="py-3" tabId="basic-tab-three">
+        <TabPanel className="py-3" tabid="basic-tab-three">
         {bio !== "EMPTY: BioNote" ? 
           <div dangerouslySetInnerHTML={{ __html: bio }} className="cms dropCap text-lg text-ceci-gray-dark">
             </div> 
           :
               <div><p>No biographical information available</p></div>}
         </TabPanel>
-        <TabPanel className="py-3" tabId="basic-tab-four">
+        <TabPanel className="py-3" tabid="basic-tab-four">
         {TOC ? 
-        <ul className="hanging">{TOC.map(i => (
-          <li className="cms text-ceci-gray-dark font-serif text-lg pl-5 hanging">{i}</li>
+        <ul className="hanging">{TOC.map((i, index)=> (
+          <li className="cms text-ceci-gray-dark font-serif text-lg pl-5 hanging"  key={`toc${index}`}>{i}</li>
         )
 
         )}</ul>
@@ -55,11 +55,11 @@ const BookHorizontalTabs = ({summary, reviews, bio, TOC, add}) => {
     }
 
         </TabPanel>
-        <TabPanel className="py-3" tabId="basic-tab-five">
-        {add ? add.frontmatter.attached_links.map(edge => (
+        <TabPanel className="py-3" tabid="basic-tab-five">
+        {add ? add.frontmatter.attached_links.map((edge, index) => (
             <>
             
-              <div className="p-2">
+              <div className="p-2"  key={`ref${index}`}>
                     <a href={edge.link} target="_blank" rel="noreferrer" className="text-ceci-gray-dark tracking-wide font-thin pl-5">
                       {edge.name}
                     </a>

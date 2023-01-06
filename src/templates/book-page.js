@@ -59,6 +59,7 @@ const bookPage = ({ data }) => {
               "width": "300",
               crop: "at_max"
             }]}
+            loading="eager"
              lqip={{ active: true }} alt={`Cover for ${book.Title}`}
              />
             </IKContext>
@@ -73,6 +74,7 @@ const bookPage = ({ data }) => {
               "width": "300",
               crop: "at_max"
             }]}
+            loading="eager"
              lqip={{ active: true }}
              />
             </IKContext>
@@ -89,6 +91,7 @@ const bookPage = ({ data }) => {
               "width": "200",
               crop: "at_max"
             }]}
+            loading="eager"
              lqip={{ active: true }} alt={`Cover for ${book.Title}`}
              />
             </IKContext>
@@ -107,7 +110,7 @@ const bookPage = ({ data }) => {
               "height": "300",
               "width": "200",
               crop: "at_max"
-            }]}
+            }]}loading="eager"
              lqip={{ active: true }} alt="Placeholder Cover"
              />
             </IKContext>
@@ -136,9 +139,9 @@ const bookPage = ({ data }) => {
             {book.AuthorCredit}
           </h6>
 
-          {book.Bindings.map(binding => (
+          {book.Bindings.map((binding, index) => (
             <>
-              <div className=" flex flex-row inline-flex items-center w-full leading-normal">
+              <div className=" flex flex-row inline-flex items-center w-full leading-normal"  key={`binding${index}`}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-6 w-6 text-ceci-gray-mid"
@@ -241,13 +244,13 @@ const bookPage = ({ data }) => {
                         subjects:
                       </span> 
                       <ul className="flex flex-col md:flex-row md:flex-wrap gap-4">
-                       {book.Subjects.map(subj => (
+                       {book.Subjects.map( (subj, index) => (
                        
-                        <button className="bg-greige hover:bg-white font-thin text-sm rounded-md text-ceci-gray-mid p-2 tracking-wide">
+                        <li  key={`sub${index}`}><button className="bg-greige hover:bg-white font-thin text-sm rounded-md text-ceci-gray-mid p-2 tracking-wide">
                         <Link to={`../../subject/${kebabCase(subj.name)}`} className="tracking-wide uppercase">
                           {subj.name}
                         </Link>
-                      </button>
+                      </button></li>
                        )
 
                        )}</ul>
@@ -266,7 +269,7 @@ const bookPage = ({ data }) => {
         </section>
         <section className="py-4 flex flex-row inline-flex space-x-6 items-center ">
           <div><a href={GoogleB}>
-            <img src="/gbs_preview_sticker1.png" alt="view on google books" />
+            <img src="/gbs_preview_sticker1.png" alt="view on google books" height="23" width="69" />
           </a></div>
           {/* <div className="pl-6">
           <ShareButtons title={title} url={url} /></div> */}

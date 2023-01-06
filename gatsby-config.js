@@ -20,9 +20,7 @@ module.exports = {
     twitterUsername: "@uvapress"
 
   },
- /*  partytownProxiedURLs: [
-    `https://www.googletagmanager.com/gtag/js?id=${process.env.GTM}`
-  ], */
+
   plugins: [
     `gatsby-transformer-json`,
     {
@@ -314,6 +312,7 @@ module.exports = {
     "gatsby-plugin-meta-redirect",
     `gatsby-plugin-emotion`
   ],
+  // partytownProxiedURLs: [`https://www.googletagmanager.com/gtag/js?id=G-CEYXF25KC3`],
   mapping: {
     "MarkdownRemark.frontmatter.related_series" : "SeriesJson.jsonId",
     "MarkdownRemark.frontmatter.related_staff" : "MarkdownRemark.frontmatter.staff_name",

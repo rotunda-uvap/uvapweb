@@ -17,9 +17,9 @@ const RotundaCollTemplate = ({ data }) => {
                 
                 <section>
                     <div className="container px-5 py-5 grid md:grid-cols-3 md:gap-4">
-                        {items.edges.map(edge => (
+                        {items.edges.map((edge, index) => (
                   <>  
-                     <RotCard fields={edge.node}/>
+                     <RotCard fields={edge.node} key={`card${index}`}/>
 
                      </>
                     ))}

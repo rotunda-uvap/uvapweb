@@ -2,12 +2,13 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: BASURA
-    banner_author: Samuel Amago
-    banner_subtitle: Winner of the MLA Kovacs Prize
-    banner_id: "5459"
-    banner_quote: Cultural archeology at its best
-    banner_attr: Maite Zubiaurre, UCLA
+  - banner_title: African Impressions
+    banner_author: Rebekah Mitsein
+    banner_subtitle: How African Worldviews Shaped the British Geographical
+      Imagination across the Early Enlightenment
+    banner_id: "5704"
+    banner_quote: There is no other book that does what this one does
+    banner_attr: Roxann Wheeler, The Ohio State University
 related_book:
   - "5744"
   - "5617"
