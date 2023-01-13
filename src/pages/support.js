@@ -37,12 +37,12 @@ export default function SupportPage({ data }) {
           <p>Gifts can be made online through the UVA Giving at the button below or by mail:</p>
 
 <ul className="ml-4 font-bold font-serif"><li>University of Virginia Press Unrestricted Gift Fund</li>
-<li>Attention: Samantha Anderson-Jackson</li>
+<li>Attention: Jeff Shifflett</li>
 <li>Bemiss House</li>
 <li>210 Sprigg Lane</li>
 <li>Charlottesville, VA 22903</li></ul>
 
-<p className="mt-4">Please direct questions to Suzanne Morse Moomaw, Director of the University of Virginia Press, swm2x@virginia.edu or 434-924-6064.</p>
+<p>Please direct questions to Eric Brandt, Director of the University of Virginia Press, [eab7fb@virginia.edu](mailto:eab7fb@virginia.edu) or 434-924-6064.</p>
       
          <a href="https://www.givecampus.com/xypyf3"><button className="w-full text-white bg-ceci-gray-dark border-0 py-2 px-8 focus:outline-none hover:bg-ceci-gray-mid rounded text-lg">Make a Gift Online</button></a>
     </div>
