@@ -9,6 +9,7 @@
 })
 const path = require(`path`)
 module.exports = {
+  trailingSlash: `always`,
   flags: { PARALLEL_SOURCING: true, FAST_DEV: true , DEV_SSR: false},
   siteMetadata: {
     title: `University of Virginia Press`,
