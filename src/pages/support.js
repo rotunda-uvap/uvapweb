@@ -42,7 +42,7 @@ export default function SupportPage({ data }) {
 <li>210 Sprigg Lane</li>
 <li>Charlottesville, VA 22903</li></ul>
 
-<p>Please direct questions to Eric Brandt, Director of the University of Virginia Press, [eab7fb@virginia.edu](mailto:eab7fb@virginia.edu) or 434-924-6064.</p>
+<p className="pt-2">Please direct questions to <a href="(mailto:eab7fb@virginia.edu">Eric Brandt</a>, Director of the University of Virginia Press, or 434-924-6064.</p>
       
          <a href="https://www.givecampus.com/xypyf3"><button className="w-full text-white bg-ceci-gray-dark border-0 py-2 px-8 focus:outline-none hover:bg-ceci-gray-mid rounded text-lg">Make a Gift Online</button></a>
     </div>
