@@ -2,6 +2,7 @@
 templateKey: news
 type: author-corner
 title: Author's Corner with Nicolette L. Cagle, author of SAVING SNAKES
+description: "*"
 image: 13oct2022-durham-nc-nicki-cagle-with-pine-snake-author-photo.jpg
 related_book:
   - "5880"
