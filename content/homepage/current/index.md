@@ -2,12 +2,12 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: Saving Snakes
-    banner_author: Nicolette L. Cagle
-    banner_subtitle: Snakes and the Evolution of a Field Naturalist
-    banner_id: "5880"
-    banner_quote: This book could do for snakes what "Silent Spring" did for birds.
-    banner_attr: David A. Steen
+  - banner_title: Solastalgia
+    banner_author: Paul Bogard
+    banner_subtitle: An Anthology of Emotion in a Disappearing World
+    banner_id: "5833"
+    banner_quote: A striking, resonant collection
+    banner_attr: Scott Slovic, University of Idaho
 related_book:
   - "5744"
   - "5617"
