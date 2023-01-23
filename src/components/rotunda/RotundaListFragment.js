@@ -18,5 +18,8 @@ export const query = graphql`
         Title
         RotID
         imageFilename
+        MainDescription {
+          html
+        }
   }
 `

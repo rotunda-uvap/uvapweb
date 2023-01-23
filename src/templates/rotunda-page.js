@@ -6,6 +6,7 @@ import SeO from "../components/SeoComponent"
 import PageHeader from "../components/PageHeader"
 import sanitizeHtml from 'sanitize-html'
 
+
 const rotundaPage = ({ data }) => {
     const item = data.rotundaJson
     const summary = data.markdownRemark

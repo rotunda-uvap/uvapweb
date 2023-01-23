@@ -2,13 +2,12 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: African Impressions
-    banner_author: Rebekah Mitsein
-    banner_subtitle: How African Worldviews Shaped the British Geographical
-      Imagination across the Early Enlightenment
-    banner_id: "5704"
-    banner_quote: There is no other book that does what this one does
-    banner_attr: Roxann Wheeler, The Ohio State University
+  - banner_title: Saving Snakes
+    banner_author: Nicolette L. Cagle
+    banner_subtitle: Snakes and the Evolution of a Field Naturalist
+    banner_id: "5880"
+    banner_quote: This book could do for snakes what "Silent Spring" did for birds.
+    banner_attr: David A. Steen
 related_book:
   - "5744"
   - "5617"
