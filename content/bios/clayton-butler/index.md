@@ -10,4 +10,4 @@ department:
 email: cjb3sm@virginia.edu
 phone: (434) 924-6070
 ---
-UVA History PhD, 2020.
+Clayton earned his PhD in History from the University of Virginia in 2020. As part of a postdoctoral fellowship, he began work as an intern at UVa Press that fall under the supervision of Acquisitions Editor Nadine Zimmerli before moving into a full-time position in the Marketing and Sales Department under Jason Coleman in the spring of 2022.
