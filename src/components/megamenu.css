@@ -53,7 +53,7 @@
 
   .toggle-input:checked + label {
     color: rgb(43, 42, 42);
-    background: #f7f7f7;; 
+    background: #f7f7f7;
   }
 
   .toggle-input:checked ~ label:after {
