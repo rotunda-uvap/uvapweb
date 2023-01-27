@@ -10,4 +10,4 @@ department:
 email: bwf​@​virginia.edu
 phone: (434) 924-3469
 ---
-Bio Not Yet Available
+Brenda joined the press in 1983 in the business and fulfillment office. Over the past four decades, publishing operations have evolved to encompass the numerous changes that have taken place in the publishing world. During Brenda’s tenure with the press, she has held various roles overseeing the fulfillment operations while acting as the Press’ liaison with our contracted fulfillment services ensuring the press developed new processes and procedures to maintain the highest level of customer satisfaction.
