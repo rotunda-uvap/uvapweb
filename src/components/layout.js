@@ -13,7 +13,7 @@ const Layout = ({ children }) => {
   }}/>
 
   
-    <div className="max-w-full mx-auto px-5 py-5">
+    <div className="max-w-full mx-auto px-12 py-5">
     
       <MegaHeader/>
       <div className="max-w-full md:max-w-8xl mx-auto pb-5">

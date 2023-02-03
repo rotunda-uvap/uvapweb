@@ -16,7 +16,7 @@ export default function PubPage({ data }) {
     
         <Layout>
           <SeO title="Publicity Information: News and Events"/>
-          <div className="container md:p-5 mx-auto">
+          <div className="container md:p-5 px-5 mx-auto">
             <div className="flex flex-col text-center w-full">
             <PageHeader text={'Media, News and Events'}/>
               </div>
