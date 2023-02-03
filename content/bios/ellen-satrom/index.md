@@ -10,4 +10,4 @@ department:
 email: esatrom​@​virginia.edu
 phone: (434) 924-6065
 ---
-Bio Not Yet Available
+Ellen has served as managing editor at UVA Press since 1998, taking on the added role of EDP manager in 2017. Before coming to UVA, she worked as a project editor in the trade reference department at Oxford University Press and as an assistant editor at Ohio State University Press.

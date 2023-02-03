@@ -2,12 +2,12 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: Solastalgia
-    banner_author: Paul Bogard
-    banner_subtitle: An Anthology of Emotion in a Disappearing World
-    banner_id: "5833"
-    banner_quote: A striking, resonant collection
-    banner_attr: Scott Slovic, University of Idaho
+  - banner_title: Do Not Separate Her From Her Garden
+    banner_author: Carlyn Ena Ferrari
+    banner_subtitle: Anne Spencer's Ecopoetics
+    banner_id: "5819"
+    banner_quote: Pushes the level of scholarship to new heights
+    banner_attr: Aldon Lynn Nielsen
 related_book:
   - "5744"
   - "5617"
