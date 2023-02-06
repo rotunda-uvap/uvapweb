@@ -235,7 +235,7 @@ exports.createSchemaCustomization = ({ actions }) => {
         rotundas.forEach(({ node }) => {
           createPage({
             path: `/title/${node.RotID}`,
-            component: path.resolve(`./src/templates/new-rotunda.js`),
+            component: path.resolve(`./src/templates/rotunda-page.js`),
             context: {
               id: node.RotID,
               imageid: node.imageFilename,

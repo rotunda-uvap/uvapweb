@@ -35,7 +35,7 @@ const mediaPage = ({ data }) => {
              <div className="float-right px-5 pb-5">
             <h6 className="uppercase px-7 py-2">Related</h6>
             {related_books.map((book, index) => (
-            <RelatedBook id={book.jsonId} title={book.Title}  key={`book${index}`}/>
+            <RelatedBook id={book.BookID} title={book.Title}  key={`book${index}`}/>
            
         ))}</div></>
         } 
@@ -75,7 +75,7 @@ export const query = graphql`
             type
             title
             related_book {
-              jsonId
+              BookID
               Title
             }
       }

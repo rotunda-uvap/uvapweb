@@ -15,7 +15,7 @@ export default function Articles({ data }) {
             {news.edges.map(edge => (
             <>
             <Link to={`../${ edge.node.frontmatter.type }${ edge.node.fields.slug }`} className="grid grid-cols-3">
-                  {edge.node.frontmatter.related_book ? <img src={'https://ik.imagekit.io/uvapress/' + edge.node.frontmatter.related_book[0].jsonId + "_M.jpg"} alt="cover" className="justify-self-center object-cover"/> : <div></div>}
+                  {edge.node.frontmatter.related_book ? <img src={'https://ik.imagekit.io/uvapress/' + edge.node.frontmatter.related_book[0].BookID + "_M.jpg"} alt="cover" className="justify-self-center object-cover"/> : <div></div>}
                     <div className="py-6 bg-white col-span-2">
                         <div className="flex justify-between items-center"><span className="font-light text-gray-800">{edge.node.frontmatter.date}</span>
                         </div>
@@ -43,7 +43,7 @@ export const query = graphql`
               title
               type
               related_book {
-              jsonId
+              BookID
               Title
             }
               description

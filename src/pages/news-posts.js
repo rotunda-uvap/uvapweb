@@ -15,7 +15,7 @@ export default function Articles({ data }) {
             {news.edges.map((edge, index) => (
             <>
             <div className="grid grid-cols-3" key={`news${index}`}>
-                  {edge.node.frontmatter.related_book ? <img src={'https://ik.imagekit.io/uvapress/mediums/' + edge.node.frontmatter.related_book[0].jsonId + "_M.jpg"} alt="cover" className="justify-self-center object-cover"/> : <div></div>}
+                  {edge.node.frontmatter.related_book ? <img src={'https://ik.imagekit.io/uvapress/mediums/' + edge.node.frontmatter.related_book[0].BookID + "_M.jpg"} alt="cover" className="justify-self-center object-cover"/> : <div></div>}
                     <div className="py-6 bg-white col-span-2">
                         <div className="flex justify-between items-center"><span className="font-light text-gray-800">{edge.node.frontmatter.date}</span><span
                                 className="px-2 py-1 bg-gray-600 text-gray-100 font-bold rounded hover:bg-gray-500">{edge.node.frontmatter.type}</span>
@@ -48,7 +48,7 @@ export const query = graphql`
               title
               type
               related_book {
-                jsonId
+                BookID
                 Title
             }
               description

@@ -102,7 +102,7 @@ const exhibitPage = ({ data }) => {
             {coll.frontmatter.related_book && 
             coll.frontmatter.related_book.map((book, index) => (
               
-              <RelatedBookList id={book.jsonId} title={book.Title} key={`rl${index}`}/>
+              <RelatedBookList id={book.BookID} title={book.Title} key={`rl${index}`}/>
          
              
           ))}
@@ -147,7 +147,7 @@ export const query = graphql`
                 exhibit_slug
                 related_book {
                   Title
-                  jsonId
+                  BookID
               }
             description
             }

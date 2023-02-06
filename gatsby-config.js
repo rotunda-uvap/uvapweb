@@ -317,8 +317,8 @@ module.exports = {
   mapping: {
     "MarkdownRemark.frontmatter.related_series" : "SeriesJson.seriesID",
     "MarkdownRemark.frontmatter.related_staff" : "MarkdownRemark.frontmatter.staff_name",
-    "MarkdownRemark.frontmatter.related_book" : "BooklistJson.jsonId",
-    "MarkdownRemark.frontmatter.book_clusters.related_book" : "BooklistJson.jsonId",
+    "MarkdownRemark.frontmatter.related_book" : "BooklistJson.BookID",
+    "MarkdownRemark.frontmatter.book_clusters.related_book" : "BooklistJson.BookID",
     "MarkdownRemark.frontmatter.related_collection" : "MarkdownRemark.frontmatter.title",
     "MarkdownRemark.frontmatter.related_blog" : "MarkdownRemark.frontmatter.title",
 

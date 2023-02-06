@@ -110,7 +110,7 @@ export const query = graphql`
             title
             related_book {
               Title
-              jsonId
+              BookID
           }
           description
         }

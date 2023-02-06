@@ -9,8 +9,8 @@ import { IKImage, IKContext } from 'imagekitio-react'
 const Gallery = ({book_obj_array}) => {
 
     const imageMap = book_obj_array.map((book, index) => {
-      const imageKitPath = book.jsonId + ".jpg"
-      let booklink = "../../title/" + book.jsonId
+      const imageKitPath = book.BookID + ".jpg"
+      let booklink = "../../title/" + book.BookID
         return (
             <Link to={booklink} key={`book${index}`} aria-label={`featured book #${index}`}><div className="image-slider-container items-center px-10 aspect-[2/3]" >
                <IKContext urlEndpoint="https://ik.imagekit.io/uvapress/" >

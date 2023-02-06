@@ -65,7 +65,7 @@ export default function PubPage({ data }) {
               
               <div className="md:flex md:flex-row md:flex-col ">
                
-                  {edge.node.frontmatter.related_book ? <div className="float-left md:base-1/5 md:shrink-0 pr-2"><img src={'https://ik.imagekit.io/uvapress/' + edge.node.frontmatter.related_book[0].jsonId + "_M.jpg"} alt="cover" className="p-2"/></div> : <div></div>}
+                  {edge.node.frontmatter.related_book ? <div className="float-left md:base-1/5 md:shrink-0 pr-2"><img src={'https://ik.imagekit.io/uvapress/' + edge.node.frontmatter.related_book[0].BookID + "_M.jpg"} alt="cover" className="p-2"/></div> : <div></div>}
                   {edge.node.html ?  <div className="mt-2  text-ceci-gray-dark font-light dropCap px-2 md:px-1" dangerouslySetInnerHTML={{ __html: sanitizeHtml(edge.node.html.split(' ').splice(0, 50).join(' ') + '...' )}}></div> : <div></div>}
                   
             </div>
@@ -112,7 +112,7 @@ export const query = graphql`
               title
               type
               related_book {
-                jsonId
+                BookID
                 Title
               }
               date(formatString: "YYYY-MM-DD")

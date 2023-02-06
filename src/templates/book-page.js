@@ -419,7 +419,7 @@ export const query = graphql`
       }
     }
     newsMD: 
-    allMarkdownRemark(filter: {frontmatter: {templateKey: {eq: "news"}, related_book: { elemMatch: { jsonId: { eq: $bid } } }}}) {
+    allMarkdownRemark(filter: {frontmatter: {templateKey: {eq: "news"}, related_book: { elemMatch: { BookID: { eq: $bid } } }}}) {
       edges {
         node {
           id
@@ -427,7 +427,7 @@ export const query = graphql`
             title
             related_book {
               Title
-              jsonId
+              BookID
             }
             type
           }
