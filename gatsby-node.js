@@ -193,7 +193,7 @@ exports.createSchemaCustomization = ({ actions }) => {
           edges {
             node {
               id
-              jsonId
+              seriesID
             }
           }
         }
@@ -340,10 +340,10 @@ exports.createSchemaCustomization = ({ actions }) => {
         const series = result.data.allSeries.edges
         series.forEach(({ node }) => {
           createPage({
-            path: `/series/${node.jsonId}`,
+            path: `/series/${node.seriesID}`,
             component: path.resolve(`./src/templates/series-page.js`),
             context: {
-              id: node.jsonId,
+              id: node.seriesID,
             },
           })
         })
