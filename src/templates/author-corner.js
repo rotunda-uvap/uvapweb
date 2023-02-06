@@ -47,7 +47,7 @@ else metaImage = null;
              <div className="order-last px-5 pb-7 flex md:flex-col flex-row items-center ">
             <h6 className="hidden md:block uppercase py-2 font-thin tracking-widest font-sans">Related</h6>
             {related_books.map((book, index)=> (
-            <RelatedBook id={book.jsonId} title={book.Title}  key={`book${index}`}/>
+            <RelatedBook id={book.BookID} title={book.Title}  key={`book${index}`}/>
            
 
         ))}</div></>
@@ -63,7 +63,7 @@ else metaImage = null;
             {related_series && related_series.map((series, index) => (
             <> 
             <div className="float-right px-7 pb-5"  key={`series${index}`}>
-            <h6 className="uppercase py-2">Related Series: <Link to={`../../series/${ series.jsonId }`} className="pl-2">{series.seriesName}</Link></h6>
+            <h6 className="uppercase py-2">Related Series: <Link to={`../../series/${ series.seriesID }`} className="pl-2">{series.seriesName}</Link></h6>
             </div></>
         ))} 
          </div>
@@ -112,11 +112,11 @@ export const query = graphql`
             date(formatString: "YYYY-MM-DD")
             
             related_book {
-              jsonId
+              BookID
               Title
             }
             related_series {
-              jsonId
+              seriesID
               seriesName
             }
           }

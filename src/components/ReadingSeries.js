@@ -16,7 +16,7 @@ const ReadingSeries = () => {
                   frontmatter {
                       
                   related_book {
-                      jsonId
+                      BookID
                       Title
                       }
                   }

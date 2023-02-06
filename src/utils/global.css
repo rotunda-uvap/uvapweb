@@ -157,3 +157,15 @@ div[aria-hidden=true] [contenteditable=true]:not([disabled]){
     color:#727272 !important; 
 }
 }
+
+.rotCard {
+  background: hsla(0, 0%, 100%, 0.55); backdrop-filter: blur(30px)
+}
+
+.hide-scroll-bar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.hide-scroll-bar::-webkit-scrollbar {
+  display: none;
+}

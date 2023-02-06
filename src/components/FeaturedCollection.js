@@ -16,7 +16,7 @@ const FeaturedColl = () => {
                   frontmatter {
                       
                   related_book {
-                      jsonId
+                      BookID
                       Title
                       }
                   }

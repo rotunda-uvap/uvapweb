@@ -71,7 +71,7 @@ const exhibitPage = ({ data }) => {
             <ul className="content-center">
             {related_series.map((series, index) => (
             
-            <li className="py-3 text-gray-700 text-center font-display" key={`sers${index}`}><Link to={`../../series/${ series.jsonId }`}>{series.seriesName}</Link></li>
+            <li className="py-3 text-gray-700 text-center font-display" key={`sers${index}`}><Link to={`../../series/${ series.seriesID }`}>{series.seriesName}</Link></li>
             
         ))}</ul>
         </div>
@@ -102,7 +102,7 @@ const exhibitPage = ({ data }) => {
             {coll.frontmatter.related_book && 
             coll.frontmatter.related_book.map((book, index) => (
               
-              <RelatedBookList id={book.jsonId} title={book.Title} key={`rl${index}`}/>
+              <RelatedBookList id={book.BookID} title={book.Title} key={`rl${index}`}/>
          
              
           ))}
@@ -147,7 +147,7 @@ export const query = graphql`
                 exhibit_slug
                 related_book {
                   Title
-                  jsonId
+                  BookID
               }
             description
             }
@@ -158,7 +158,7 @@ export const query = graphql`
             txtcolor
             related_series {
               seriesName
-              jsonId
+              seriesID
             }
             related_staff {
               frontmatter {
