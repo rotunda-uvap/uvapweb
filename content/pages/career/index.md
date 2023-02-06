@@ -64,7 +64,7 @@ Upload all materials into the resume submission field, multiple documents can be
 
 References will be completed via UVA’s standardized process Skill Survey. A total of five references will be requested via SkillSurvey during the final phase of the interview process. 
 
- For questions about the application process, please contact Jon Freeman, Recruiting Specialist, at jf2sw@virginia.edu  
+For questions about the application process, please contact Jon Freeman, Recruiting Specialist, at jf2sw@virginia.edu  
 
 For more information about UVA and the Charlottesville community please see *<http://www.virginia.edu/life/charlottesville>* and *[https://embarkcva.com/.](https://embarkcva.com/)* 
 
