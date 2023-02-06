@@ -39,7 +39,7 @@ The assistant or associate editor should have a good knowledge of the field and 
 
 We are currently following a hybrid work schedule requiring attendance two days per week in the Charlottesville office. 
 
-This position will remain open until filled.  Review of applications will begin on October 24th with a start date of November 2022. This is an Exempt level, benefited position. For more information on the benefits at UVA, visit www.hr.virginia.edu/benefits. Salary is commensurate with education and experience.  Relocation funds are available. The University will perform background checks on all new hires prior to employment.    
+This position will remain open till filled. Review of applications will begin on March 15, 2023 with a start date of on, or before, June 15, 2023. This is an Exempt level, benefited position. Salary is commensurate with education and experience.  Relocation funds are available. The University will perform background checks on all new hires prior to employment.  For questions about the position or the application process, please contact Jonathan Freeman, Academic Recruiter at *[jf2sw@virginia.edu](mailto:jf2sw@virginia.edu)*.   
 
 For questions about the position or the application process, please contact Jon Freeman, Academic Recruiter at [jf2sw@virginia.edu](mailto:jf2sw@virginia.edu).  
 
