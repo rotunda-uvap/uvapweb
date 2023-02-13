@@ -2,12 +2,12 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: Spirit Deep
-    banner_author: Tisha M. Brooks
-    banner_subtitle: Recovering the Sacred in Black Women’s Travel
-    banner_id: "5412"
-    banner_quote: A timely intervention
-    banner_attr: Jami Carlacio, Yale University
+  - banner_title: Danger Sound Klaxon!
+    banner_author: Matthew F. Jordan
+    banner_subtitle: The Horn That Changed History
+    banner_id: "5866"
+    banner_quote: A highly original study
+    banner_attr: Rudy J. Koshar, University of Wisconsin
 related_book:
   - "5744"
   - "5617"
