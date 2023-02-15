@@ -2,7 +2,7 @@
 templateKey: news
 type: author-corner
 title: Author's Corner with Matthew F. Jordan, author of DANGER SOUND KLAXON
-image: jordan.matthew.jpg
+image: ""
 related_book:
   - "5866"
 date: 2023-02-15
