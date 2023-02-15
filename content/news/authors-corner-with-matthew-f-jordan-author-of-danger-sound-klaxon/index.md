@@ -2,9 +2,8 @@
 templateKey: news
 type: author-corner
 title: Author's Corner with Matthew F. Jordan, author of DANGER SOUND KLAXON
-image: ""
 related_book:
-  - ""
+  - "5866"
 date: 2023-02-15
 ---
 Today, we are happy to bring you our conversation with Matthew F. Jordan, author of *DANGER SOUND KLAXON! The Horn That Changed History*.
