@@ -7,7 +7,7 @@ related_book:
   - "5866"
 date: 2023-02-15
 ---
-Today, we are happy to bring you our conversation with Matthew F. Jordan, author of *DANGER SOUND KLAXON! The Horn That Changed History*.
+Today, we are happy to bring you our conversation with Matthew F. Jordan, author of *DANGER SOUND KLAXON! The Horn That Changed History*. 
 
 *What inspired you to write this book?* 
 
@@ -25,6 +25,6 @@ I was surprised at the global scale of the story. Despite the many efforts by di
 
  There are so many great anecdotes that it’s hard to narrow it down to one, but several drawn from the experiences of soldiers in the trenches that echo one another help give a sense of how the association of the klaxon sound with war trauma quickly changed how people heard it. Tales of the dank dark nights spent with trained ears listening for the tell-tale sounds of gas attack and the descriptions of successive waves of hand cranked klaxons cascading hundreds of miles from trench to trench to warn of the approach of killer clouds of gas really help to activate a reader’s historical imagination. 
 
-*What’s next?* 
+*What is next?* 
 
 I hope to get back to finishing the book on quietness technology that *[Danger Sound Klaxon](https://www.upress.virginia.edu/title/5866/)* emerged from but am currently directing Penn State’s News Literacy Initiative, a multiprong initiative with a mission to educate the public about the misinformation and disinformation posing as news imperiling our democracy.  Forty percent of Americans avoid the news, often for good reason, and we’re hoping to train them to listen for the news often drowned out by the noise. As part of his, I am hosting a podcast called “News Over Noise” that will be available wherever people get their podcasts and will be broadcast as a ½ hour show on public radio stations across the Commonwealth.
