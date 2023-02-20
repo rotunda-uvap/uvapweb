@@ -2,12 +2,12 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: Danger Sound Klaxon!
-    banner_author: Matthew F. Jordan
-    banner_subtitle: The Horn That Changed History
-    banner_id: "5866"
-    banner_quote: A highly original study
-    banner_attr: Rudy J. Koshar, University of Wisconsin
+  - banner_title: Mourning the Presidents
+    banner_author: Lindsay M. Chervinsky and Matthew R. Costello, eds.
+    banner_subtitle: Loss and Legacy in American Culture
+    banner_id: "5740"
+    banner_quote: A searching exploration of memory and history
+    banner_attr: Nicole Hemmer
 related_book:
   - "5744"
   - "5617"
