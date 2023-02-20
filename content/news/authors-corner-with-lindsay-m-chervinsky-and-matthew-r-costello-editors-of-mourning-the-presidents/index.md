@@ -5,7 +5,7 @@ title: Authors' Corner with Lindsay M. Chervinsky and Matthew R. Costello,
   editors of MOURNING THE PRESIDENTS
 image: screen-shot-2023-02-17-at-12.54.35-pm.jpg
 related_book:
-  - ""
+  - "5740"
 related_series:
   - MCSP
 date: 2023-02-20
