@@ -62,7 +62,7 @@ collections:
         widget: relation
         collection: files
         multiple: true
-        value_field: "book.*.id"
+        value_field: "book.*.BookID"
         search_fields: ['book.*.Title'] 
         display_fields: ['book.*.Title']
         target_field: book
@@ -138,7 +138,7 @@ collections:
         hint: "Manual list of UVaP books that may be similar"
         collection: files
         multiple: true
-        value_field: "book.*.id"
+        value_field: "book.*.BookID"
         search_fields: ['book.*.Title'] 
         display_fields: ['book.*.Title']
         file: booklist_cms
@@ -246,7 +246,7 @@ collections:
         widget: relation
         collection: files
         multiple: true
-        value_field: "book.*.id"
+        value_field: "book.*.BookID"
         search_fields: ['book.*.Title'] 
         display_fields: ['book.*.Title']
         file: booklist_cms
@@ -303,7 +303,7 @@ collections:
         widget: relation
         collection: files
         multiple: true
-        value_field: "book.*.id"
+        value_field: "book.*.BookID"
         search_fields: ['book.*.Title'] 
         display_fields: ['book.*.Title']
         file: booklist_cms
@@ -330,7 +330,7 @@ collections:
         widget: relation
         collection: files
         multiple: true
-        value_field: "book.*.id"
+        value_field: "book.*.BookID"
         search_fields: ['book.*.Title'] 
         display_fields: ['book.*.Title']
         file: booklist_cms
@@ -408,7 +408,7 @@ collections:
             name: 'book'
             widget: 'list'
             fields:
-              - {label: "id", name: "id", widget: "string"}
+              - {label: "id", name: "BookID", widget: "string"}
               - {label: "Title", name: "Title", widget: "string"}
       - label: 'SeriesList'
         name: 'series_cms'
