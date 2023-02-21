@@ -9,7 +9,7 @@ related_series:
   - AMS
 date: 2023-02-21
 ---
-Today, we are happy to bring you our conversation with David A. Davis, author of *DRIVEN TO THE FIELD: Sharecropping and Southern Literature.*.
+Today, we are happy to bring you our conversation with David A. Davis, author of *DRIVEN TO THE FIELD: Sharecropping and Southern Literature.*
 
 *What inspired you to write this book?* 
 
