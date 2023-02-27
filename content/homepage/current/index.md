@@ -2,12 +2,12 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: Mourning the Presidents
-    banner_author: Lindsay M. Chervinsky and Matthew R. Costello, eds.
-    banner_subtitle: Loss and Legacy in American Culture
-    banner_id: "5740"
-    banner_quote: A searching exploration of memory and history
-    banner_attr: Nicole Hemmer
+  - banner_title: Drawing Liberalism
+    banner_author: Simon Appleford
+    banner_subtitle: Herblock’s Political Cartoons in Postwar America
+    banner_id: "5814"
+    banner_quote: A must-read book
+    banner_attr: Blake Scott Ball
 related_book:
   - "5744"
   - "5617"
