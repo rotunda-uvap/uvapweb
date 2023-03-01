@@ -2,12 +2,12 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: Drawing Liberalism
-    banner_author: Simon Appleford
-    banner_subtitle: Herblock’s Political Cartoons in Postwar America
-    banner_id: "5814"
-    banner_quote: A must-read book
-    banner_attr: Blake Scott Ball
+  - banner_title: Crossing the River Styx
+    banner_author: Russ Ford with Charles Peppers and Todd C. Peppers
+    banner_subtitle: The Memoir of a Death Row Chaplain
+    banner_id: "5811"
+    banner_quote: Ford’s journey is soul-stirring
+    banner_attr: Mike Farrell
 related_book:
   - "5744"
   - "5617"
