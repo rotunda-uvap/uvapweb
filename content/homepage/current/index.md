@@ -2,12 +2,12 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: Crossing the River Styx
-    banner_author: Russ Ford with Charles Peppers and Todd C. Peppers
-    banner_subtitle: The Memoir of a Death Row Chaplain
-    banner_id: "5811"
-    banner_quote: Ford’s journey is soul-stirring
-    banner_attr: Mike Farrell
+  - banner_title: Rethinking Frank Lloyd Wright
+    banner_author: Edited by Neil Levine and Richard Longstreth
+    banner_subtitle: History, Reception, Preservation
+    banner_id: "5624"
+    banner_quote: Generates fresh interpretations of Wright’s work
+    banner_attr: Dale Allen Gyure
 related_book:
   - "5744"
   - "5617"
