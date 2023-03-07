@@ -3,7 +3,7 @@ templateKey: news
 type: author-corner
 title: Author's Corner with Christopher Alan Graham, author of FAITH, RACE, AND
   THE LOST CAUSE
-image: full_res_20230217_portrait_chris_graham_richmond_va_232707.jpg
+image: chris_graham.jpg
 related_book:
   - "5909"
 date: 2023-03-07
