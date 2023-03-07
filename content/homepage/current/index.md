@@ -2,12 +2,12 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: Rethinking Frank Lloyd Wright
-    banner_author: Edited by Neil Levine and Richard Longstreth
-    banner_subtitle: History, Reception, Preservation
-    banner_id: "5624"
-    banner_quote: Generates fresh interpretations of Wright’s work
-    banner_attr: Dale Allen Gyure
+  - banner_title: Faith, Race, and the Lost Cause
+    banner_author: Christopher Alan Graham
+    banner_subtitle: Confessions of a Southern Church
+    banner_id: "5909"
+    banner_quote: A model of what local history should be
+    banner_attr: Peter Eisenstadt
 related_book:
   - "5744"
   - "5617"
