@@ -16,9 +16,10 @@ related_staff:
 featured_books:
   - "5704"
   - "5800"
-  - "5057"
+  - "5867"
+  - "5627"
   - "5809"
-  - "5647"
+  - "5057"
 related_collection:
   - ASECS 2023
 date: 2023-03-08
