@@ -2,7 +2,7 @@
 templateKey: exhibit
 title: American Society For Eighteenth Century Studies 2023
 exhibit_slug: asecs-2023
-coupon: Get 30% OFF with promo code 10ASECS22 through May 1
+coupon: Get 30% OFF with promo code 10ASECS23 through May 1
 txtcolor: text-black
 related_series:
   - EAH
@@ -13,7 +13,8 @@ related_series:
   - WEA
 related_staff:
   - Angie Hogan
-featured_books: []
+featured_books:
+  - ""
 related_collection:
   - ASECS 2023
 date: 2023-03-08
