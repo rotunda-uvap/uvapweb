@@ -14,7 +14,11 @@ related_series:
 related_staff:
   - Angie Hogan
 featured_books:
-  - ""
+  - "5704"
+  - "5800"
+  - "5057"
+  - "5809"
+  - "5647"
 related_collection:
   - ASECS 2023
 date: 2023-03-08
