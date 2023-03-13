@@ -59,7 +59,7 @@ Marston Book Services\
 Unit 160 Eastern Avenue\
 Milton Park\
 Abingdon\
-Oxfordshire OX14 4SB\
+Oxfordshire OX14 4SB
 
 Trade/Account Customers:\
 Tel: +44 (0)1235 465576\
@@ -78,12 +78,12 @@ Fax: 1.800.221.9985
 
 ###### Order in Hawaii, Asia, Australia, New Zealand, and the Pacific Islands
 
-Customer Services
+Customer Services/
 Marston Book Services\
 Unit 160 Eastern Avenue\
 Milton Park\
 Abingdon\
-Oxfordshire OX14 4SB\
+Oxfordshire OX14 4SB
 
 Trade/Account Customers:\
 Tel: +44 (0)1235 465576\
