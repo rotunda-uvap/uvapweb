@@ -54,20 +54,19 @@ Chambersburg, PA 17202\
 
 For your convenience, you are encouraged to place your order with our European distributor:
 
-[Eurospan](http://www.eurospanbookstore.com/)\
-Customer Services
-Marston Book Services
-Unit 160 Eastern Avenue
-Milton Park
-Abingdon
-Oxfordshire OX14 4SB
+Customer Services\
+Marston Book Services\
+Unit 160 Eastern Avenue\
+Milton Park\
+Abingdon\
+Oxfordshire OX14 4SB\
 
-Trade/Account Customers:
-Tel: +44 (0)1235 465576
+Trade/Account Customers:\
+Tel: +44 (0)1235 465576\
 Email: [trade.orders@marston.co.uk](trade.orders@marston.co.uk)
  
-Individual Customers:
-Tel: +44 (0)1235 465577
+Individual Customers:\
+Tel: +44 (0)1235 465577\
 Email: [direct.orders@marston.co.uk](direct.orders@marston.co.uk)
 
 ###### Order in Canada
@@ -80,18 +79,18 @@ Fax: 1.800.221.9985
 ###### Order in Hawaii, Asia, Australia, New Zealand, and the Pacific Islands
 
 Customer Services
-Marston Book Services
-Unit 160 Eastern Avenue
-Milton Park
-Abingdon
-Oxfordshire OX14 4SB
+Marston Book Services\
+Unit 160 Eastern Avenue\
+Milton Park\
+Abingdon\
+Oxfordshire OX14 4SB\
 
-Trade/Account Customers:
-Tel: +44 (0)1235 465576
+Trade/Account Customers:\
+Tel: +44 (0)1235 465576\
 Email: [trade.orders@marston.co.uk](trade.orders@marston.co.uk)
  
-Individual Customers:
-Tel: +44 (0)1235 465577
+Individual Customers:\
+Tel: +44 (0)1235 465577\
 Email: [direct.orders@marston.co.uk](direct.orders@marston.co.uk)
 
 ###### Order a Desk Copy or Examination Copy
