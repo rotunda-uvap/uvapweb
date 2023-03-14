@@ -2,9 +2,9 @@
 templateKey: exhibit
 title: Organization of American Historians 2023
 exhibit_slug: oah2023
-coupon: Get 30% OFF with promo code 10OAH22 through May 2
-txtcolor: text-black
+coupon: Get 30% OFF with promo code 10OAH23 through May 1
 bgcolor: bg-white
+txtcolor: text-black
 related_series:
   - CWH
   - CGW
@@ -16,21 +16,22 @@ related_series:
   - RA
 related_blog:
   - UVA Press Announces New Series "The Black Soldier in War and Society"
+  - Lucia McMahon on Women's History Month
+  - Vernon Burton receives lifetime achievement award from Southern Historical
+    Association
+  - Capture the Flag
 related_staff:
   - Nadine Zimmerli
 featured_books:
   - "5756"
-  - "5196"
-  - "5251"
-  - "5720"
-  - "5805"
-  - "5726"
-  - "5718"
-  - "5655"
-  - "5716"
-  - "5793"
   - "5651"
-  - "5768"
+  - "5729"
+  - "5933"
+  - "5843"
+  - "5909"
+  - "5916"
+  - "5508"
+  - "5707"
 related_collection:
   - OAH 2023
 date: ""
