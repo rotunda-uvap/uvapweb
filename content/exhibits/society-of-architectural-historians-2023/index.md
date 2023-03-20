@@ -19,11 +19,11 @@ related_staff:
 featured_books:
   - "5231"
   - "5717"
-  - "5664"
-  - "4713"
   - "5375"
   - "5273"
   - "5992"
+  - "5664"
+  - "4713"
 related_collection:
   - SAH 2023
 date: 2023-03-20
