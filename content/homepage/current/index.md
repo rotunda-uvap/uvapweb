@@ -4,7 +4,7 @@ title: Current
 top_banner:
   - banner_title: Racism in American Public Life
     banner_author: Johnnetta Betsch Cole
-    banner_subtitle: A Call to Action
+    banner_subtitle: Winner of the National Humanities Medal
     banner_id: "5628"
     banner_quote: Measured and nuanced yet urgent.
     banner_attr: Kirkus Reviews
