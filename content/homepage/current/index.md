@@ -2,12 +2,12 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: Faith, Race, and the Lost Cause
-    banner_author: Christopher Alan Graham
-    banner_subtitle: Confessions of a Southern Church
-    banner_id: "5909"
-    banner_quote: A model of what local history should be
-    banner_attr: Peter Eisenstadt
+  - banner_title: Racism in American Public Life
+    banner_author: Johnnetta Betsch Cole
+    banner_subtitle: A Call to Action
+    banner_id: "5628"
+    banner_quote: Measured and nuanced yet urgent
+    banner_attr: Kirkus Reviews
 related_book:
   - "5744"
   - "5617"
