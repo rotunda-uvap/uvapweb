@@ -6,7 +6,7 @@ top_banner:
     banner_author: Johnnetta Betsch Cole
     banner_subtitle: A Call to Action
     banner_id: "5628"
-    banner_quote: Measured and nuanced yet urgent
+    banner_quote: Measured and nuanced yet urgent.
     banner_attr: Kirkus Reviews
 related_book:
   - "5744"
