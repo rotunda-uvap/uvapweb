@@ -20,6 +20,7 @@ margin:0 auto;
 color:#414042; 
 font-family: 'Assistant', sans;
 letter-spacing:.05em;
+padding:1em;
 font-size: var(--fs-200);
 `
 

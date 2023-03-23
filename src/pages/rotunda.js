@@ -32,11 +32,12 @@ export default function RotundaHome({ data }) {
     --fs-600: clamp(2.27rem, calc(1.77rem + 2.51vw), 3.55rem);
     --fs-700: clamp(2.72rem, calc(1.94rem + 3.93vw), 4.74rem);
     --fs-800: clamp(3.27rem, calc(2.08rem + 5.95vw), 6.31rem);
-    width: min(calc(100% - 1rem), 60rem);
+    width: min(calc(100% - 2rem), 60rem);
     margin:0 auto;
     color:#414042; 
     font-family: 'Assistant', sans;
     letter-spacing:.05em;
+    padding:1em;
     font-size: var(--fs-200);
    `
   
