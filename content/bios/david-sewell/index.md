@@ -4,7 +4,7 @@ title: David Sewell
 staff_name: David Sewell
 profile_photo: sewell.jpg
 name_slug: david-sewell
-job_title: Co-Manager of the Rotunda Imprint, Pro Tem
+job_title: Manager of the Rotunda Imprint, Pro Tem
 department:
   - ROT
 email: dsewell​@​virginia.edu
