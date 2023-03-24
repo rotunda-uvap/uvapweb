@@ -23,15 +23,16 @@ related_blog:
 related_staff:
   - Nadine Zimmerli
 featured_books:
-  - "5756"
-  - "5651"
-  - "5729"
   - "5933"
-  - "5843"
   - "5909"
-  - "5916"
-  - "5508"
+  - "5843"
   - "5707"
+  - "5740"
+  - "5916"
+  - "5651"
+  - "5508"
+  - "5756"
+  - "5729"
 related_collection:
   - OAH 2023
 date: ""
