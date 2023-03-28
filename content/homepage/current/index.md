@@ -6,7 +6,7 @@ top_banner:
     banner_author: John B. Boles
     banner_subtitle: The Men Who Shaped Our Republic
     banner_id: "5898"
-    banner_quote: A fitting capstone to a fine historian’s career
+    banner_quote: A fitting capstone to a fine historian’s distinguished career
     banner_attr: Peter S. Onuf
 related_book:
   - "5744"
