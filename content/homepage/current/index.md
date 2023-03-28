@@ -2,12 +2,12 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: Racism in American Public Life
-    banner_author: Johnnetta Betsch Cole
-    banner_subtitle: Winner of the National Humanities Medal
-    banner_id: "5628"
-    banner_quote: Measured and nuanced yet urgent.
-    banner_attr: Kirkus Reviews
+  - banner_title: Seven Virginians
+    banner_author: John B. Boles
+    banner_subtitle: The Men Who Shaped Our Republic
+    banner_id: "5898"
+    banner_quote: A fitting capstone to a fine historian’s distinguished career
+    banner_attr: Peter S. Onuf
 related_book:
   - "5744"
   - "5617"
