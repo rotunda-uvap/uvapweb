@@ -42,13 +42,12 @@ Our ebooks are available to libraries through:
 
 ###### Returns Service at Longleaf (effective October 1, 2016)
 
-Longleaf Services – Returns\
-c/o Ingram Publisher Services\
-1250 Ingram Drive\
-Chambersburg, PA 17202\
-(SAN# 631-8681)
+Longleaf Services, Inc\
+c/o IPS Distribution Solutions Returns\
+1550 Heil Quaker Blvd, Ste 200\
+LaVergne, TN   37086
 
-*(Longleaf will receive and credit returns previously purchased from UVa Press, provided appropriate documentation of purchase is included with return, for a limited time. Please visit Longleaf Service site for their returns policy, <https://longleafservices.org/returns/>)*
+*(Please visit Longleaf Service site for their returns policy, <https://longleafservices.org/returns/>)*
 
 ###### Order in Europe, UK, Africa, or the Middle East
 
