@@ -87,6 +87,7 @@ collections:
         time_format: "false" 
         format: "YYYY-MM-DD"
         required: true
+  
   - name: 'pages'
     identifier_field: '{{title}}'
     label: 'Pages'
