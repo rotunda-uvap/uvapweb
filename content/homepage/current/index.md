@@ -2,12 +2,12 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: Seven Virginians
-    banner_author: John B. Boles
-    banner_subtitle: The Men Who Shaped Our Republic
-    banner_id: "5898"
-    banner_quote: A fitting capstone to a fine historian’s distinguished career
-    banner_attr: Peter S. Onuf
+  - banner_title: The Civil War Political Tradition
+    banner_author: Paul D. Escott
+    banner_subtitle: Ten Portraits of Those Who Formed It
+    banner_id: "5843"
+    banner_quote: Offers cogent analysis and the clear, concise pen of a practiced master
+    banner_attr: Barton A. Myers
 related_book:
   - "5744"
   - "5617"
