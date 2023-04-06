@@ -2,7 +2,8 @@
 templateKey: exhibit
 title: Society of Architectural Historians 2023
 exhibit_slug: sah23
-coupon: Get 30% OFF with promo code 10SAH23 through May 31
+coupon: Get 30% OFF with promo code 10SAH23 through May 31. Canadian readers use
+  code VA23.
 txtcolor: text-black
 related_series:
   - BUS
