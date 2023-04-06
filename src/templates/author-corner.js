@@ -127,7 +127,7 @@ export const query = graphql`
     Img: file(extension: {regex: "/(jpeg|jpg|gif|png)/"}, relativeDirectory: {eq: $relDir}) {
       publicURL
             childImageSharp {
-        gatsbyImageData(width:300, layout: CONSTRAINED, placeholder: TRACED_SVG, formats: [AUTO, WEBP, AVIF])
+        gatsbyImageData(width:300, layout: CONSTRAINED, placeholder: DOMINANT_COLOR, formats: [AUTO, WEBP, AVIF])
         
       }
     }
