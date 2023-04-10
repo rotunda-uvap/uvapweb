@@ -2,12 +2,12 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: The Civil War Political Tradition
-    banner_author: Paul D. Escott
-    banner_subtitle: Ten Portraits of Those Who Formed It
-    banner_id: "5843"
-    banner_quote: Offers cogent analysis and the clear, concise pen of a practiced master
-    banner_attr: Barton A. Myers
+  - banner_title: Writing Early America
+    banner_author: Trevor Burnard
+    banner_subtitle: From Empire to Revolution
+    banner_id: "5933"
+    banner_quote: I learned something on every page. A remarkable achievement.
+    banner_attr: Paul Mapp, William & Mary
 related_book:
   - "5744"
   - "5617"
