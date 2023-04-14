@@ -10,7 +10,7 @@ const appId = process.env.GATSBY_ALGOLIA_APP_ID;
 const searchKey = process.env.GATSBY_ALGOLIA_SEARCH_KEY;
 const searchClient = algoliasearch(appId, searchKey);
 
-const Hit = ( {hit}) => <div className="py-4 border-b-2 border-gray-100"><a href={`../title/${ hit.BookID }`} onClick="window.open(this.href,'_blank');return false;" className="hover:text-ceci-gray-mid"><h6 className="font-thin text-md text-ceci-gray-dark tracking-wide uppercase">{hit.Title}</h6>
+const Hit = ( {hit}) => <div className="py-4 border-b-2 border-gray-100"><a href={`../title/${ hit.BookID }`} target="_blank" className="hover:text-ceci-gray-mid"><h6 className="font-thin text-md text-ceci-gray-dark tracking-wide uppercase">{hit.Title}</h6>
 {hit.Subtitle ? <h6 className="text-sm tracking-wide text-ceci-gray-mid italic font-thin py-2 ">{hit.Subtitle}</h6> : ""}
 <h6 className="text-xs tracking-widest font-display uppercase pt-2">{hit.AuthorCredit}</h6>
 
