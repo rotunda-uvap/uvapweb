@@ -2,12 +2,12 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: Writing Early America
-    banner_author: Trevor Burnard
-    banner_subtitle: From Empire to Revolution
-    banner_id: "5933"
-    banner_quote: I learned something on every page. A remarkable achievement.
-    banner_attr: Paul Mapp, William & Mary
+  - banner_title: Yard Birds
+    banner_author: Philip Levy
+    banner_subtitle: The Lives and Times of America’s Urban Chickens
+    banner_id: "5315"
+    banner_quote: Erudite, sophisticated, witty, and accessible.
+    banner_attr: Garry Marvin, author of Wolf
 related_book:
   - "5744"
   - "5617"
@@ -19,7 +19,7 @@ related_book:
 related_collection:
   - Homepage Featured
 featured_books:
-  - "5315"
+  - "5881"
   - "5909"
   - "5833"
   - "5898"
