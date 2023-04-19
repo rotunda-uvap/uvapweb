@@ -11,8 +11,6 @@ Today, we are happy to bring you our conversation with Philip Levy, author of *Y
 
 *What inspired you to write this book?* 
 
-What inspired you to write this book? (125 words maximum)
-
 I had been part of small effort in my city to change the laws to allow for backyard chickens. We have not been successful. But that experience got me interested in the laws around chickens, what they were, how they came into being, and what were the forces that were changing them. I had written some blog posts about this, and mentioned it in my various web spaces. Then, I served as a reviewer for a UVa Press book and the editor at the time—Boyd Zenner—read of my chicken interest and asked me if I wanted to write a book about all of that. Of course I did, and so I set off to create this book.
 
 *What did you learn and what are you hoping readers will learn from your book?* 
