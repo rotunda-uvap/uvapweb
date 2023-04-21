@@ -5,11 +5,14 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { IKImage, IKContext } from 'imagekitio-react'
 
-
+// Gallery component takes an array of book ids and displays the book covers in a slider
 const Gallery = ({book_id_array}) => {
+  // Map through book id array and generate an image element for each id
     const imageMap = book_id_array.map((image, index) => {
+         // Construct path for image using book id
       const imageKitPath = image + ".jpg"
       let booklink = "../../title/" + image
+       // Return an image element wrapped in a Link component
         return (
             <Link to={booklink} key={`book${index}`} aria-label={`featured book #${index}`}><div className="image-slider-container items-center px-10" >
                <IKContext urlEndpoint="https://ik.imagekit.io/uvapress/" >
@@ -27,23 +30,24 @@ const Gallery = ({book_id_array}) => {
     })
 
 
-    const settings = {
-        dots: false,
-        arrows:true,
-        autoplay: false,
-        infinite: false,
-        swipeToSlide: true,
-        speed: 500,
-        slidesToShow: 5,
-        slidesToScroll: 1,
-        className:'slider',
-        responsive: [
-            {
-              breakpoint: 1024,
-              settings: {
-                slidesToShow: 3,
-                slidesToScroll: 3,
-                infinite: true,
+   // Settings for the slider component
+const settings = {
+  dots: false, // Show dot indicators for each slide
+  arrows: true, // Show left/right arrow buttons for navigation
+  autoplay: false, // Autoplay slides
+  infinite: false, // Whether to cycle from the last slide to the first and vice versa
+  swipeToSlide: true, // Swipe to navigate between slides
+  speed: 500, // Transition speed in milliseconds
+  slidesToShow: 5, // Number of slides to show at a time
+  slidesToScroll: 1, // Number of slides to scroll when navigating
+  className: 'slider', // Custom class name for the slider container
+  responsive: [ // Responsive settings for different device screen widths
+      {
+          breakpoint: 1024, // Screen width breakpoint in pixels
+          settings: {
+              slidesToShow: 3, // Number of slides to show at this breakpoint
+              slidesToScroll: 3, // Number of slides to scroll when navigating at this breakpoint
+              infinite: true, // Whether to cycle through slides indefinitely
               }
             },
             {
@@ -65,7 +69,7 @@ const Gallery = ({book_id_array}) => {
        
       };
 
-
+// Return the Slider component with the mapped image elements as children and the settings passed as props
     return (
         <Slider {...settings}>
                     {imageMap} 
