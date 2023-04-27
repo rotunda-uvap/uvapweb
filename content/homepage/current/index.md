@@ -2,12 +2,12 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: Yard Birds
-    banner_author: Philip Levy
-    banner_subtitle: The Lives and Times of America’s Urban Chickens
-    banner_id: "5315"
-    banner_quote: Erudite, sophisticated, witty, and accessible.
-    banner_attr: Garry Marvin, author of Wolf
+  - banner_title: Regenerating Romanticism
+    banner_author: Melissa Bailes
+    banner_subtitle: Botany, Sensibility, and Originality in British Literature, 1750–1830
+    banner_id: "5915"
+    banner_quote: An important contribution to Romantic-era literary history
+    banner_attr: Elizabeth A. Bohls, University of Oregon
 related_book:
   - "5744"
   - "5617"
@@ -19,6 +19,7 @@ related_book:
 related_collection:
   - Homepage Featured
 featured_books:
+  - "5315"
   - "5881"
   - "5909"
   - "5833"
