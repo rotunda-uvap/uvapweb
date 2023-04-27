@@ -9,6 +9,7 @@ related_series:
   - BUS
   - BUSG
 related_blog:
+  - Author's Corner with Avigail Sachs, author of THE GARDEN IN THE MACHINE
   - Authors' Corner with Elisa Dainese and Aleksandar Staničić, Editors of WAR
     DIARIES
   - Author's Corner with Jill Desimini, Author of CYCLICAL CITY
