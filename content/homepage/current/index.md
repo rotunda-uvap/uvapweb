@@ -2,12 +2,12 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: Regenerating Romanticism
-    banner_author: Melissa Bailes
-    banner_subtitle: Botany, Sensibility, and Originality in British Literature, 1750–1830
-    banner_id: "5915"
-    banner_quote: An important contribution to Romantic-era literary history
-    banner_attr: Elizabeth A. Bohls, University of Oregon
+  - banner_title: Poplar Forest
+    banner_author: Travis C. McDonald
+    banner_subtitle: Thomas Jefferson's Villa Retreat
+    banner_id: "5273"
+    banner_quote: A definitive study.
+    banner_attr: Andrew J. O'Shaughnessy
 related_book:
   - "5744"
   - "5617"
