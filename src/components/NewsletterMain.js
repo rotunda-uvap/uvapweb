@@ -46,12 +46,12 @@ export default class IndexPage extends React.Component {
                 <form onSubmit={this._handleSubmit} className="flex lg:w-2/3 w-full sm:flex-row flex-col mx-auto px-8 sm:px-0 items-end">
                 <div className="relative sm:mr-4 mb-4 sm:mb-0 flex-grow w-full">
                     {/* <label htmlFor="full-name" className="leading-7 text-sm ">Full Name</label> */}
-                    <label for="full-name" class="sr-only">full name</label>
+                    <label htmlFor="name" class="sr-only">full name</label>
                     <input type="text" onChange={this._handleChange} placeholder="name" name="name" height="60" className="w-full bg-gray-100 rounded border border-gray-300   outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"/>
                 </div>
                 <div className="relative sm:mr-4 mb-4 sm:mb-0 flex-grow w-full">
                     {/* <label htmlFor="email" className="leading-7 text-sm ">Email</label> */}
-                    <label for="email" class="sr-only">email</label>
+                    <label htmlFor="email" class="sr-only">email</label>
                     <input type="email"
                                         onChange={this._handleChange}
                                         placeholder="email"

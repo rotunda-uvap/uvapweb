@@ -44,11 +44,12 @@ const uvap = getImage(data.uvaplogo)
                 type="checkbox"
                 value="selected"
                 id="toggle-one"
+                aria-labelledby="small-menu close-small-menu"
                 className="toggle-input"
               />
 
               <div className="py-6 absolute right-4">
-                <label htmlFor="toggle-one">
+                <label id="small-menu" htmlFor="toggle-one">
                   <span className="text-gray-400">
                     <svg
                       className="fill-current h-6 w-6"
@@ -325,7 +326,7 @@ const uvap = getImage(data.uvaplogo)
                     </div>
                   </ul>
                 </div>
-                <label htmlFor="toggle-one">
+                <label id="close-small-menu" htmlFor="toggle-one">
                   <span className="uppercase block text-xs text-gray-300 float-right">Close X</span>
                 </label>
               </div>
@@ -353,24 +354,24 @@ const uvap = getImage(data.uvaplogo)
                 type="checkbox"
                 value="selected"
                 id="toggle-big"
+                aria-labelledby="bigmenu close-menu"
                 className="toggle-input"
               />
 
               <div className="space-x-7 flex text-ceci-gray-mid font-thin tracking-wide items-center justify-center place-content-center py-3">
                 {/* <a className="hover:text-ceci-gray-dark md:ml-5" href="/">Home</a> */}
-                <label htmlFor="toggle-big">
+                <label id="bigmenu" htmlFor="toggle-big" className="flex flex-row gap-4">
                   <span className="hover:text-ceci-gray-dark md:ml-5">About</span>
-                </label>
-                <label htmlFor="toggle-big">
+                
+        
                   <span className="hover:text-ceci-gray-dark">Books</span>
-                </label>
-                <label htmlFor="toggle-big">
+               
+               
                   <span className="hover:text-ceci-gray-dark">For Authors</span>
-                </label>
-                <label htmlFor="toggle-big">
+             
                   <span className="hover:text-ceci-gray-dark">For Instructors</span>
-                </label>
-                <label htmlFor="toggle-big">
+              
+               
                   <span className="hover:text-ceci-gray-dark">Rotunda Digital</span>
                 </label>
                 <a className="hover:text-ceci-gray-dark md:ml-5" href="/support">
@@ -667,9 +668,9 @@ const uvap = getImage(data.uvaplogo)
                     </div>
                   </ul>
                 </div>
-                <label htmlFor="toggle-big">
+                <label id="close-menu" htmlFor="toggle-big">
                   <span className="uppercase block text-xs text-gray-400 hover:text-gray-300 float-right">Close X</span>
-                </label>
+               </label>
               </div>
             </div>
           </nav>

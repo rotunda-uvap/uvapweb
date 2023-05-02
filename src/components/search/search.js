@@ -19,7 +19,7 @@ const Hit = ( {hit}) => <div className="py-4 border-b-2 border-gray-100"><a href
 
 const Search = () => (
     <InstantSearch searchClient={searchClient} indexName={process.env.GATSBY_ALGOLIA_INDEX_NAME} routing={true}  >
-     <label for="siteSearch" className="sr-only">Search</label>
+     <label htmlFor="search" className="sr-only">Search</label>
       <SearchBox className="p-2 m-1" translations={{ placeholder:'Search for a book'}} searchAsYouType={false} />
       {/* <SearchBox className="p-2 m-1 w-full" translations={{ placeholder:'Search for a book'}}/> */}
 
