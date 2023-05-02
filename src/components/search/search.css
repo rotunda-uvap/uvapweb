@@ -4,7 +4,7 @@
 .ais-Pagination-item {display: inline; padding:0 1em;}
 .ais-RefinementList-item {padding-bottom:.15em;}
 .ais-RefinementList-labelText {padding-left:1em; font-size:.9rem; font-weight:100; font-family:Quicksand; }
-.ais-RefinementList-count {margin-left:.3em; padding:0 .5rem; color:#cecfce; font-size:.75rem;}
+.ais-RefinementList-count {margin-left:.3em; padding:.2rem .5rem; color:#4B5563; border-radius:5px; font-size:.75rem; background:#f7f7f7;}
 .ais-Stats {padding-bottom:.8rem;}
 .ais-SearchBox-submitIcon {width:20px; height: 20px; margin-left:5px;}
 .ais-SearchBox-reset {margin-left:1em;}

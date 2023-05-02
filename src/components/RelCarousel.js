@@ -10,6 +10,7 @@ const Gallery = ({book_obj_array}) => {
 
     const imageMap = book_obj_array.map((book, index) => {
       const imageKitPath = book.BookID + ".jpg"
+      const title = book.Title
       let booklink = "../../title/" + book.BookID
         return (
             <Link to={booklink} key={`book${index}`} aria-label={`featured book #${index}`}><div className="image-slider-container items-center px-10 aspect-[2/3]" >
@@ -20,7 +21,7 @@ const Gallery = ({book_obj_array}) => {
               "width": "150",
               crop: "at_max"
             }]}
-            lqip={{ active: true }} alt="Book Cover" />
+            lqip={{ active: true }} alt={`cover of ${title}`} />
            
           </IKContext>
               

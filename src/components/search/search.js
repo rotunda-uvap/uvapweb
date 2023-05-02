@@ -19,6 +19,7 @@ const Hit = ( {hit}) => <div className="py-4 border-b-2 border-gray-100"><a href
 
 const Search = () => (
     <InstantSearch searchClient={searchClient} indexName={process.env.GATSBY_ALGOLIA_INDEX_NAME} routing={true}  >
+     <label for="siteSearch" className="sr-only">Search</label>
       <SearchBox className="p-2 m-1" translations={{ placeholder:'Search for a book'}} searchAsYouType={false} />
       {/* <SearchBox className="p-2 m-1 w-full" translations={{ placeholder:'Search for a book'}}/> */}
 
@@ -42,7 +43,7 @@ const Search = () => (
       <Hits className="pt-5" hitComponent={Hit} />
       </section>
       <section className="py-5 md:order-first" id="filter">
-      <a href="#results" className="md:hidden py-8 text-sm tracking-wide font-thin">Jump up to Results</a>
+      <a href="#results" className="md:hidden py-8 text-sm tracking-wide font-thin">Back to Results</a>
 
       <div className="pb-5"><h3 className="text-lg uppercase text-ceci-gray-mid font-thin tracking-widest">Filter by List</h3>
       
