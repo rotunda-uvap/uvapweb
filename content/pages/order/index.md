@@ -42,30 +42,31 @@ Our ebooks are available to libraries through:
 
 ###### Returns Service at Longleaf (effective October 1, 2016)
 
-Longleaf Services – Returns\
-c/o Ingram Publisher Services\
-1250 Ingram Drive\
-Chambersburg, PA 17202\
-(SAN# 631-8681)
+Longleaf Services, Inc\
+c/o IPS Distribution Solutions Returns\
+1550 Heil Quaker Blvd, Ste 200\
+LaVergne, TN   37086
 
-*(Longleaf will receive and credit returns previously purchased from UVa Press, provided appropriate documentation of purchase is included with return, for a limited time. Please visit Longleaf Service site for their returns policy, <https://longleafservices.org/returns/>)*
+*(Please visit Longleaf Service site for their returns policy, <https://longleafservices.org/returns/>)*
 
 ###### Order in Europe, UK, Africa, or the Middle East
 
 For your convenience, you are encouraged to place your order with our European distributor:
 
-[Eurospan](http://www.eurospanbookstore.com/)\
-Gray's Inn House\
-127 Clerkenwell Road\
-London EC1R 5DB\
-United Kingdom\
-+44 (0)20 7240 0856 \
-Fax +44 (0)20 7379 3313 \
-[info@eurospan.co.uk](mailto:info@eurospan.co.uk)
+Customer Services\
+Marston Book Services\
+Unit 160 Eastern Avenue\
+Milton Park\
+Abingdon\
+Oxfordshire OX14 4SB
 
-Customer Services: Tel: +44(0)1767 604972 Fax:  +44 (0) 1767 601640 Email: [eurospan@turpin-distribution.com](mailto:eurospan@turpin-distribution.com)\
-Further Information: Tel +44(0)20 7240 0856 Fax: +44(0)20 7379 0609 Email: [info@eurospan.co.uk](mailto:info@eurospan.co.uk)\
-**Eurospan's UVA Press storefront:** [www.eurospanbookstore.com/virginiapress](http://www.eurospanbookstore.com/virginiapress)
+Trade/Account Customers:\
+Tel: +44 (0)1235 465576\
+Email: [trade.orders@marston.co.uk](trade.orders@marston.co.uk)
+ 
+Individual Customers:\
+Tel: +44 (0)1235 465577\
+Email: [direct.orders@marston.co.uk](direct.orders@marston.co.uk)
 
 ###### Order in Canada
 
@@ -76,14 +77,20 @@ Fax: 1.800.221.9985
 
 ###### Order in Hawaii, Asia, Australia, New Zealand, and the Pacific Islands
 
-[Eurospan](http://www.eurospanbookstore.com/)\
-Gray's Inn House\
-127 Clerkenwell Road\
-London EC1R 5DB\
-United Kingdom\
-+44 (0)20 7240 0856 \
-Fax +44 (0)20 7379 3313 \
-[info@eurospan.co.uk](mailto:info@eurospan.co.uk)
+Customer Services/
+Marston Book Services\
+Unit 160 Eastern Avenue\
+Milton Park\
+Abingdon\
+Oxfordshire OX14 4SB
+
+Trade/Account Customers:\
+Tel: +44 (0)1235 465576\
+Email: [trade.orders@marston.co.uk](trade.orders@marston.co.uk)
+ 
+Individual Customers:\
+Tel: +44 (0)1235 465577\
+Email: [direct.orders@marston.co.uk](direct.orders@marston.co.uk)
 
 ###### Order a Desk Copy or Examination Copy
 

@@ -4,7 +4,7 @@ title: Patricia Searl
 staff_name: Patricia Searl
 profile_photo: searl.jpg
 name_slug: patricia-searl
-job_title: Assistant Manager, Rotunda Imprint
+job_title: Acting Manager of the Rotunda Imprint
 department:
   - ROT
 email: pls4e​@​virginia.edu

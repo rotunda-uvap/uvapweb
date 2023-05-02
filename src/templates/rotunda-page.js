@@ -94,7 +94,7 @@ export const query = graphql`
     }
     file(relativePath: {eq: $imageid}) {
       childImageSharp {
-        gatsbyImageData(layout: CONSTRAINED, placeholder: TRACED_SVG)
+        gatsbyImageData(layout: CONSTRAINED, placeholder: DOMINANT_COLOR)
       }
     }
     markdownRemark(frontmatter: {templateKey: {eq: "rotunda"}, rid: { eq: $id }}) {

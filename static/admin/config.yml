@@ -36,7 +36,7 @@ collections:
         hint: "Slider of featured books. Choose at least 5"
         collection: files
         multiple: true
-        value_field: "book.*.id"
+        value_field:  "book.*.BookID"
         search_fields: ['book.*.Title'] 
         display_fields: ['book.*.Title']
         file: booklist_cms
@@ -87,6 +87,7 @@ collections:
         time_format: "false" 
         format: "YYYY-MM-DD"
         required: true
+  
   - name: 'pages'
     identifier_field: '{{title}}'
     label: 'Pages'
@@ -127,7 +128,7 @@ collections:
         widget: relation
         hint: "ID of book to which these resources attach. Required to connect!"
         collection: files
-        value_field: "book.*.id"
+        value_field:  "book.*.BookID"
         search_fields: ['book.*.Title'] 
         display_fields: ['book.*.Title']
         file: booklist_cms
@@ -205,7 +206,7 @@ collections:
         widget: relation
         collection: files
         multiple: true
-        value_field: "book.*.id"
+        value_field: "book.*.BookID"
         search_fields: ['book.*.Title'] 
         display_fields: ['book.*.Title']
         file: booklist_cms

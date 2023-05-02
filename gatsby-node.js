@@ -127,6 +127,7 @@ exports.createSchemaCustomization = ({ actions }) => {
             }
           }
         }
+    
         allMedia: allMarkdownRemark(filter: {frontmatter: {type: {eq: "media"}}})  {
           edges {
             node {
@@ -285,6 +286,8 @@ exports.createSchemaCustomization = ({ actions }) => {
             },
           })
         })
+
+       
 
         const media = result.data.allMedia.edges
        

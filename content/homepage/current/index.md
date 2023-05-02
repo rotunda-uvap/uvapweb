@@ -2,12 +2,12 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: Drawing Liberalism
-    banner_author: Simon Appleford
-    banner_subtitle: Herblock’s Political Cartoons in Postwar America
-    banner_id: "5814"
-    banner_quote: A must-read book
-    banner_attr: Blake Scott Ball
+  - banner_title: Poplar Forest
+    banner_author: Travis C. McDonald
+    banner_subtitle: Thomas Jefferson's Villa Retreat
+    banner_id: "5273"
+    banner_quote: A definitive study.
+    banner_attr: Andrew J. O'Shaughnessy
 related_book:
   - "5744"
   - "5617"
@@ -19,14 +19,17 @@ related_book:
 related_collection:
   - Homepage Featured
 featured_books:
-  - "5231"
-  - "5816"
-  - "5688"
-  - "5264"
-  - "5174"
-  - "5488"
+  - "5315"
+  - "5881"
+  - "5909"
+  - "5833"
+  - "5898"
+  - "5880"
+  - "5811"
+  - "5273"
+  - "5375"
+  - "5740"
   - "5292"
-  - "5491"
-  - "5057"
-  - "5818"
+  - "5779"
+  - "5866"
 ---
