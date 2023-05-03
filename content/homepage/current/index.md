@@ -2,12 +2,12 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: Poplar Forest
-    banner_author: Travis C. McDonald
-    banner_subtitle: Thomas Jefferson's Villa Retreat
-    banner_id: "5273"
-    banner_quote: A definitive study.
-    banner_attr: Andrew J. O'Shaughnessy
+  - banner_title: They Run With Surprising Swiftness
+    banner_author: Peter Radford
+    banner_subtitle: The Women Athletes of Early Modern Britain
+    banner_id: "5707"
+    banner_quote: A pioneering book.
+    banner_attr: Neil Carter, De Montfort University, Leicester
 related_book:
   - "5744"
   - "5617"
