@@ -10,12 +10,12 @@ const appId = process.env.GATSBY_ALGOLIA_APP_ID;
 const searchKey = process.env.GATSBY_ALGOLIA_SEARCH_KEY;
 const searchClient = algoliasearch(appId, searchKey);
 
-const Hit = ( {hit}) => <div className="py-4 border-b-2 border-gray-100"><a href={`../title/${ hit.BookID }`} target="_blank" className="hover:text-ceci-gray-mid"><h6 className="font-thin text-md text-ceci-gray-dark tracking-wide uppercase">{hit.Title}</h6>
-{hit.Subtitle ? <h6 className="text-sm tracking-wide text-ceci-gray-mid italic font-thin py-2 ">{hit.Subtitle}</h6> : ""}
-<h6 className="text-xs tracking-widest font-display uppercase pt-2">{hit.AuthorCredit}</h6>
+const Hit = ( {hit}) => <div className="py-2 border-b-2 border-gray-200"><a href={`../title/${ hit.BookID }`} target="_blank" className="hover:text-ceci-gray-mid"><h6 className="font-thin text-md py-0 text-ceci-gray-dark tracking-wide uppercase">{hit.Title}</h6>
+{hit.Subtitle ? <h6 className="text-sm tracking-wide text-ceci-gray-mid font-thin py-1 ">{hit.Subtitle}</h6> : ""}
+<h6 className="text-xs tracking-widest font-display uppercase">{hit.AuthorCredit}</h6>
 
 <div className="pt-3" dangerouslySetInnerHTML={{ __html: hit.MainDescription.html.split(' ').splice(0, 30).join(' ') + '...' }}/>
-<h6 className="text-xs uppercase tracking-wider text-ceci-gray-mid font-thin pb-5">Published: {hit.PublicationDate}</h6></a></div>
+<h6 className="text-xs uppercase tracking-wide text-ceci-gray-mid font-thin pb-5">Published: {hit.PublicationDate}</h6></a></div>
 
 const Search = () => (
     <InstantSearch searchClient={searchClient} indexName={process.env.GATSBY_ALGOLIA_INDEX_NAME} routing={true}  >

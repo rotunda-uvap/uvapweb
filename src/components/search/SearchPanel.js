@@ -11,7 +11,7 @@ const searchKey = process.env.GATSBY_ALGOLIA_SEARCH_KEY;
 const searchClient = algoliasearch(appId, searchKey);
 const Hit = ( {hit}) => <span><Link to={`../title/${ hit.BookID }`}><h6 className="text-gray-900 uppercase tracking-widest">{hit.Title}</h6></Link>
 <h6 className="text-sm italic uppercase text-gray-500 py-2 tracking-widest">{hit.Subtitle}</h6>
-<h6 className="text-xs uppercase pt-2 tracking-widest">{hit.AuthorCredit}</h6>
+<h6 className="text-xs uppercase tracking-widest">{hit.AuthorCredit}</h6>
 
 <p className="pt-3" dangerouslySetInnerHTML={{ __html: hit.MainDescription.html.split(' ').splice(0, 15).join(' ') + '...' }}/>
 <h6 className="text-xs uppercase pb-5">Published: {hit.PublicationDate}</h6>
