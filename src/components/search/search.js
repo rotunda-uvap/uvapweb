@@ -10,7 +10,7 @@ const appId = process.env.GATSBY_ALGOLIA_APP_ID;
 const searchKey = process.env.GATSBY_ALGOLIA_SEARCH_KEY;
 const searchClient = algoliasearch(appId, searchKey);
 
-const Hit = ( {hit}) => <div className="py-2 border-b-2 border-gray-200"><a href={`../title/${ hit.BookID }`} target="_blank" className="hover:text-ceci-gray-mid"><h6 className="font-thin text-md py-0 text-ceci-gray-dark tracking-wide uppercase">{hit.Title}</h6>
+const Hit = ( {hit}) => <div className="py-2 border-b-2 border-gray-300"><a href={`../title/${ hit.BookID }`} target="_blank" className="hover:text-ceci-gray-mid"><h6 className="font-thin text-md py-0 text-ceci-gray-dark tracking-wide uppercase">{hit.Title}</h6>
 {hit.Subtitle ? <h6 className="text-sm tracking-wide text-ceci-gray-mid font-thin py-1 ">{hit.Subtitle}</h6> : ""}
 <h6 className="text-xs tracking-widest font-display uppercase">{hit.AuthorCredit}</h6>
 
@@ -45,13 +45,13 @@ const Search = () => (
       <section className="py-5 md:order-first" id="filter">
       <a href="#results" className="md:hidden py-8 text-sm tracking-wide font-thin">Back to Results</a>
 
-      <div className="pb-5"><h3 className="text-lg uppercase text-ceci-gray-mid font-thin tracking-widest">Filter by List</h3>
+      <div className="pb-5"><h3 className="text-lg border-b border-gray-400uppercase pb-2 text-ceci-gray-mid font-thin tracking-wider">Filter by List</h3>
       
       <RefinementList attribute="List"/></div>
-        <div><h3 className="text-lg uppercase text-ceci-gray-mid font-thin tracking-widest">Filter by Subject</h3>
+        <div><h3 className="text-lg uppercase border-b border-gray-400 text-ceci-gray-mid pb-2 font-thin tracking-wider">Filter by Subject</h3>
       
       <RefinementList attribute="Subjects.name"/></div>
-      <div className="py-5"><h3 className="text-lg uppercase text-ceci-gray-mid font-thin tracking-widest">Filter by Series</h3>
+      <div className="py-5"><h3 className="text-lg  border-b border-gray-400uppercase pb-2 text-ceci-gray-mid font-thin tracking-wider">Filter by Series</h3>
       <RefinementList attribute="Series.name"/></div></section>
       </div>
       
