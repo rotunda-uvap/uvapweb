@@ -37,7 +37,7 @@ const ActiveSeries = () => {
     <div className="flex flex-wrap text-gray-600">
     {data.allMarkdownRemark.edges.map((edge, index) => (
         
-            <div className="w-full flex flex-col" key={`serinfo${index}`}>
+            <div className="w-full flex flex-col hover:bg-greige hover:text-ceci-gray-dark" key={`serinfo${index}`}>
                       <span className="inline-block py-2 uppercase text-ceci-gray-mid text-xs font-medium tracking-wider">{ edge.node.frontmatter.seriestype }</span>
 
       <Link  to={`../series/${ edge.node.frontmatter.seriesID }`}>
