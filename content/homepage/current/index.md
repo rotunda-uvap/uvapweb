@@ -2,12 +2,12 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: They Run With Surprising Swiftness
-    banner_author: Peter Radford
-    banner_subtitle: The Women Athletes of Early Modern Britain
-    banner_id: "5707"
-    banner_quote: A pioneering book.
-    banner_attr: Neil Carter, De Montfort University, Leicester
+  - banner_title: Rumors of Revolution
+    banner_author: Jennifer Tsien
+    banner_subtitle: Song, Sentiment, and Sedition in Colonial Louisiana
+    banner_id: "5891"
+    banner_quote: There has not been a book like this published for fifty years.
+    banner_attr: Gordon Sayre, University of Oregon
 related_book:
   - "5744"
   - "5617"
