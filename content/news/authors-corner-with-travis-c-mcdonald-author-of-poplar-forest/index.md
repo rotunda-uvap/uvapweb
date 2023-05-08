@@ -37,9 +37,9 @@ If the general history of Jefferson’s retreat is still relatively unknown, the
 
 My retirement project starting in 2023 is to begin writing a second book which will document the rich story of the restoration: how we knew what to restore, what that told us about Jefferson the architect and builder, how we found the right craftsmen and -women and the appropriate materials, and the exciting process that culminated in the house that visitors see today. By using Jefferson-era materials and tools, and by restoring the house in the same historical sequence that Jefferson built it, we have learned so much about Jefferson the builder. That journey is full of exciting stories of discovery that need to be told. I know of no other books that document an entire restoration process of this magnitude and significance, especially one completed in the late twentieth/early twenty-first century.
 
-Social media profiles/handles:
-Facebook: @Thomas Jefferson’s Poplar Forest
-Instagram: @poplarforest
-TikTok: @tjpoplarforest
-Twitter: @poplarforest
+Social media profiles/handles:\
+Facebook: @Thomas Jefferson’s Poplar Forest\
+Instagram: @poplarforest\
+TikTok: @tjpoplarforest\
+Twitter: @poplarforest\
 Restoration Instagram: @poplarforest_restoration
