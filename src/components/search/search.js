@@ -49,7 +49,7 @@ const Search = () => (
       <Hits className="pt-5" hitComponent={Hit} />
       </section>
       <section className="py-5 md:order-first" id="filter">
-      <a href="#results" className="md:hidden py-8 text-sm tracking-wide font-thin">Back to Results</a>
+      <a href="#results" className="md:hidden py-8 text-sm tracking-wide font-thin">Up to Results</a>
 
       <div className="pb-5"><h3 className="text-lg border-b border-gray-400 uppercase pb-2 text-ceci-gray-mid font-thin tracking-wider">Filter by List</h3>
       
