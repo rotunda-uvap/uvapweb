@@ -43,7 +43,7 @@ export default function Catalog({data}) {
 </section>
 <SectionHeader text={"Previous Seasons"}/>
     <section className="flex flex-row basis-0 gap-2 py-4 border-b-2 border-gray-100">
-    <a href={'../spring23.pdf'} className="h-full" title="Spring 23"><StaticImage src="../images/spring21.jpg" alt="spring 23 catalog cover" className="object-cover"></StaticImage></a>
+    <a href={'../spring23.pdf'} className="h-full" title="Spring 23"><StaticImage src="../images/spring23.jpg" alt="spring 23 catalog cover" className="object-cover"></StaticImage></a>
     <a href={'../fall22.pdf'} className="h-full"><StaticImage src="../images/fall22.jpg" alt="fall 22 catalog cover" className="object-cover"></StaticImage></a>
     <a href={'../spring22.pdf'} className="h-full"><StaticImage src="../images/spring22.jpg" alt="Spring 22 catalog cover" className="object-cover"></StaticImage></a>
     <a href={'../fall21.pdf'} className="h-full" title="Fall 2021"><StaticImage src="../images/fall21.jpg" alt="fall 21 catalog cover" className="object-cover"></StaticImage></a>
