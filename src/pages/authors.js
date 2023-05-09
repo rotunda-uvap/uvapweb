@@ -50,6 +50,9 @@ export default function AuthorsPage({ data }) {
           <div className="p-2 sm:w-1/2 w-full">
          <FileDownloadButton name="Cover Design Questionnaire" file="UVAP_Author-Cover-Q_0.docx"/>
 </div>
+<div className="p-2 sm:w-1/2 w-full">
+         <FileDownloadButton name="Alt Text Guidelines" file="UVAP_Alt_Text_Guidelines.docx"/>
+</div>
 
         </div>
       </div>
