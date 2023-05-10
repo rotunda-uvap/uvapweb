@@ -13,7 +13,7 @@ export default function RotundaEntrance() {
 
             <PageHeader text={'Rotunda Entrance'}/>
 
-            <img src="../../images/rotunda_logo.png"/>
+            <img src="../../images/rotunda_logo.png" alt="rotunda logo"/>
         
 
          

@@ -2,7 +2,7 @@ import algoliasearch from "algoliasearch/lite"
 import { InstantSearch, SearchBox, Hits, Stats, RefinementList, Pagination, SortBy, PoweredBy} from "react-instantsearch-dom"
 import "./search.css"
 import React from 'react'
-import { Link } from "gatsby"
+//import { Link } from "gatsby"
 
 
 
