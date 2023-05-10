@@ -2,12 +2,12 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: Rumors of Revolution
-    banner_author: Jennifer Tsien
-    banner_subtitle: Song, Sentiment, and Sedition in Colonial Louisiana
-    banner_id: "5891"
-    banner_quote: There has not been a book like this published for fifty years.
-    banner_attr: Gordon Sayre, University of Oregon
+  - banner_title: Drone Enlightenment
+    banner_author: Peter DeGabriele
+    banner_subtitle: The Colonial Roots of Remote Warfare
+    banner_id: "5809"
+    banner_quote: Breathes fresh life into an often asthmatic area of scholarship.
+    banner_attr: Tony C. Brown, University of Minnesota
 related_book:
   - "5744"
   - "5617"
