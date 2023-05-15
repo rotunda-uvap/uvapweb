@@ -2,12 +2,12 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: Drone Enlightenment
-    banner_author: Peter DeGabriele
-    banner_subtitle: The Colonial Roots of Remote Warfare
-    banner_id: "5809"
-    banner_quote: Breathes fresh life into an often asthmatic area of scholarship.
-    banner_attr: Tony C. Brown, University of Minnesota
+  - banner_title: Skimpy Coverage
+    banner_author: Bonnie M. Hagerman
+    banner_subtitle: Sports Illustrated and the Shaping of the Female Athlete
+    banner_id: "5881"
+    banner_quote: Gracefully written, brilliantly argued
+    banner_attr: Derek Catsam
 related_book:
   - "5744"
   - "5617"
@@ -20,7 +20,7 @@ related_collection:
   - Homepage Featured
 featured_books:
   - "5315"
-  - "5881"
+  - "5809"
   - "5909"
   - "5833"
   - "5898"
