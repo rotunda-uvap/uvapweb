@@ -6,7 +6,7 @@ top_banner:
     banner_author: Bonnie M. Hagerman
     banner_subtitle: Sports Illustrated and the Shaping of the Female Athlete
     banner_id: "5881"
-    banner_quote: Gracefully written, brilliantly argued
+    banner_quote: Gracefully written, brilliantly argued.
     banner_attr: Derek Catsam
 related_book:
   - "5744"
