@@ -75,8 +75,8 @@ exports.createSchemaCustomization = ({ actions }) => {
     createRedirect({ fromPath: '/robertson/', toPath: '/title/5780/', isPermanent: true, redirectInBrowser: true })
     createRedirect({ fromPath: '/series/papers/', toPath: '/books/#series/', isPermanent: true, redirectInBrowser: true })
     createRedirect({ fromPath: '/rotunda/purchase/', toPath: '/rotunda-purchase/', isPermanent: true, redirectInBrowser: true })
-    createRedirect({ fromPath: 'https://www.upress.virginia.edu/plunkett/mfp.html', toPath: 'https://legacy.upress.virginia.edu/plunkett/mfp.html', isPermanent: true, redirectInBrowser: true })
-    createRedirect({ fromPath: 'https://www.upress.virginia.edu/epub/pyatt/nchome.html', toPath: 'https://legacy.upress.virginia.edu/epub/pyatt/index.html', isPermanent: true, redirectInBrowser: true })
+    createRedirect({ fromPath: '/plunkett/mfp.html', toPath: 'https://legacy.upress.virginia.edu/plunkett/mfp.html', isPermanent: true, redirectInBrowser: true })
+    createRedirect({ fromPath: '/epub/pyatt/nchome.html', toPath: 'https://legacy.upress.virginia.edu/epub/pyatt/index.html', isPermanent: true, redirectInBrowser: true })
 
 
     
