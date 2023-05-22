@@ -2,12 +2,12 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: Skimpy Coverage
-    banner_author: Bonnie M. Hagerman
-    banner_subtitle: Sports Illustrated and the Shaping of the Female Athlete
-    banner_id: "5881"
-    banner_quote: Gracefully written, brilliantly argued.
-    banner_attr: Derek Catsam
+  - banner_title: "Making #Charlottesville"
+    banner_author: Aniko Bodroghkozy
+    banner_subtitle: Media from Civil Rights to Unite the Right
+    banner_id: "5779"
+    banner_quote: A valuable resource for anyone who wants to understand the power of media.
+    banner_attr: Ibram X. Kendi
 related_book:
   - "5744"
   - "5617"
@@ -20,7 +20,7 @@ related_collection:
   - Homepage Featured
 featured_books:
   - "5315"
-  - "5809"
+  - "5881"
   - "5909"
   - "5833"
   - "5898"
