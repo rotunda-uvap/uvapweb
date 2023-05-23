@@ -15,7 +15,12 @@ related_blog:
   - Lucia McMahon on Women's History Month
 related_staff:
   - Angie Hogan
-featured_books: []
+featured_books:
+  - "5802"
+  - "4986"
+  - "5075"
+  - "5627"
+  - "5808"
 related_collection:
   - BWW23
 date: 2023-05-23
