@@ -24,11 +24,11 @@ const rotundaPage = ({ data }) => {
         </div>
           <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1">
         
-        <div className="flex flex-row pl-6 inline-flex items-center text-ceci-gray-mid"> <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+        <div className="flex flex-row pl-6 inline-flex items-center text-ceci-gray-mid"> <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 shrink-0" viewBox="0 0 20 20" fill="currentColor">
   <path fillRule="evenodd" d="M6.672 1.911a1 1 0 10-1.932.518l.259.966a1 1 0 001.932-.518l-.26-.966zM2.429 4.74a1 1 0 10-.517 1.932l.966.259a1 1 0 00.517-1.932l-.966-.26zm8.814-.569a1 1 0 00-1.415-1.414l-.707.707a1 1 0 101.415 1.415l.707-.708zm-7.071 7.072l.707-.707A1 1 0 003.465 9.12l-.708.707a1 1 0 001.415 1.415zm3.2-5.171a1 1 0 00-1.3 1.3l4 10a1 1 0 001.823.075l1.38-2.759 3.018 3.02a1 1 0 001.414-1.415l-3.019-3.02 2.76-1.379a1 1 0 00-.076-1.822l-10-4z" clipRule="evenodd" />
 </svg> <a href={item.URL} className="py-7 font-thin pl-5">Go to Publication </a></div>
 
-        <div className="flex flex-row pl-6 inline-flex items-center text-ceci-gray-mid "><svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+        <div className="flex flex-row pl-6 inline-flex items-center text-ceci-gray-mid "><svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 shrink-0" viewBox="0 0 20 20" fill="currentColor">
   <path fillRule="evenodd" d="M3.707 2.293a1 1 0 00-1.414 1.414l14 14a1 1 0 001.414-1.414l-1.473-1.473A10.014 10.014 0 0019.542 10C18.268 5.943 14.478 3 10 3a9.958 9.958 0 00-4.512 1.074l-1.78-1.781zm4.261 4.26l1.514 1.515a2.003 2.003 0 012.45 2.45l1.514 1.514a4 4 0 00-5.478-5.478z" clipRule="evenodd" />
   <path d="M12.454 16.697L9.75 13.992a4 4 0 01-3.742-3.741L2.335 6.578A9.98 9.98 0 00.458 10c1.274 4.057 5.065 7 9.542 7 .847 0 1.669-.105 2.454-.303z" />
 </svg>  <span className="pl-5 font-thin">No Access?  Click <a href="https://rotunda.upress.virginia.edu/register/default.xqy" className="underline"> here for a free trial</a>, or <a href={`../../rot_rec_form.pdf`} className="underline">here</a> to tell your librarian that you'd like it</span></div>
@@ -51,7 +51,7 @@ const rotundaPage = ({ data }) => {
         </ul>
         </section> */}
        
-        {item.Prizes && <section className="items-center inline-flex px-5 pb-5 text-ceci-gray-mid"><svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+        {item.Prizes && <section className="items-center inline-flex px-5 pb-5 text-ceci-gray-mid"><svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 shrink-0" viewBox="0 0 20 20" fill="currentColor">
   <path d="M2 10.5a1.5 1.5 0 113 0v6a1.5 1.5 0 01-3 0v-6zM6 10.333v5.43a2 2 0 001.106 1.79l.05.025A4 4 0 008.943 18h5.416a2 2 0 001.962-1.608l1.2-6A2 2 0 0015.56 8H12V4a2 2 0 00-2-2 1 1 0 00-1 1v.667a4 4 0 01-.8 2.4L6.8 7.933a4 4 0 00-.8 2.4z" />
 </svg> <span className="pl-5 font-thin tracking-wide text-ceci-gray-mid">{item.Prizes}</span></section>}
         
