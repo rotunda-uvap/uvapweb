@@ -130,7 +130,7 @@ padding:1em;
     </Article>
     <Article>
     <Link to={'/rotunda-purchase'}><Heading4 className="underline">Purchase</Heading4></Link>
-      <Para>Information about institutional or individual purchase of Rotunda publications. </Para>
+      <Para>Information about institutional or individual purchase of Rotunda publications.</Para>
       
     </Article>
     <Article>
