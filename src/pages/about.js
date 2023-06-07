@@ -151,7 +151,7 @@ export default function AboutPage({ data }) {
             <section className="py-5 text-gray-700 border-b-2 border-gray-100" id="board">
   <SectionHeader text={"Current Board Members"}/>
               <div>
-              <BoardMember name={"Sandhya Shukla, chair"} title={"Associate Professor of English and American Studies and Director of Graduate Admissions, University of Virginia"}/>
+              <BoardMember name={"Sandhya Shukla, chair"} title={"Associate Professor of English and American Studies, University of Virginia"}/>
               <BoardMember name={"Derrick Aldridge"} title={"Professor and Program Coordinator, Social Foundations of Education, University of Virginia"}/>
               <BoardMember name={"Asher Biemann"} title={"Professor of Religious Studies, University of Virginia"}/>
               <BoardMember name={"Amy Clark"} title={"Professor of English and Chair of Communications Studies, University of Virginia at Wise"}/>
