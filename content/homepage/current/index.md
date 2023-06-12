@@ -2,13 +2,12 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: Uncommon Sense
-    banner_author: Carrie D. Shanafelt
-    banner_subtitle: Jeremy Bentham, Queer Aesthetics, and the Politics of Taste
-    banner_id: "5744"
-    banner_quote: A lively and committed introduction to Bentham’s writings on
-      sexuality and their central place in his oeuvre.
-    banner_attr: Eighteenth-Century Studies
+  - banner_title: Sapphic Crossings
+    banner_author: Ula Lukszo Klein
+    banner_subtitle: Cross-Dressing Women in Eighteenth-Century British Literature
+    banner_id: "5438"
+    banner_quote: An original and engaging contribution.
+    banner_attr: Lisa L. Moore, University of Texas
 related_book:
   - "5744"
   - "5617"
