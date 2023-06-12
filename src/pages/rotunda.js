@@ -6,6 +6,7 @@ import RotSection from "../components/rotunda/RotundaSection"
 import RotundaMiniBio from "../components/rotunda/RotundaMiniBio"
 import RotundaHeader from "../components/rotunda/RotundaHeader"
 import styled from "@emotion/styled"
+import RotBoardMember from "../components/rotunda/RotBoardMember"
 
 /* import { Timeline } from "@knight-lab/timelinejs"
 import events from "../../static/timeline-data.json" */
@@ -104,6 +105,7 @@ padding:1em;
     <Heading2>About Rotunda</Heading2>
     <Para>Since 2004, our Rotunda imprint has published innovative peer-reviewed digital projects, both born-digital and from authoritative letterpress editions. Our core offering is the <a href="#ahc">American History Collection</a> of documentary editions spanning three centuries, from the earliest surviving writings of George Washington through the presidential correspondence of Woodrow Wilson: more than 20 publications with content from over 550 letterpress and born-digital volumes, for a total of nearly 300,000 documents, diary entries, and editorial essays, all cross-searchable.</Para>
 <Para>Our major stand-alone publications are the <a href="https://prde.upress.virginia.edu/">Presidential Recordings Digital Edition</a>, with transcripts and audio of nearly 4000 conversations from White House recordings; <a href="https://pfe.rotunda.upress.virginia.edu/">People of the Founding Era</a>, a biographical reference to over 75,000 individuals; the open-access <a href="https://sah-archipedia.org">SAH Archipedia</a>, an authoritative encyclopedia of the American built environment, with over 25,000 entries and 5000 editorial essays. Finally, our <a href="#lit">Literature and Culture Collection</a> features seven editions of literary work and correspondence from nineteenth-century America and Britain.</Para>
+ 
    </RotSection>
 
   
@@ -149,6 +151,7 @@ padding:1em;
                   
                    ))}
                    </div>
+                   <Para>As of 2023, Rotunda has engaged an <a href="#committee">advisory committee</a> of respected colleagues at various institutions and organizations.</Para>
     </RotSectionZinc>
     <RotSection>
       <Heading3>rotunda collections</Heading3>
@@ -196,7 +199,7 @@ padding:1em;
    <RotSection>
       <Heading3>legacy projects</Heading3>
       <Para>These two guides to resources in African American history, dating from the 1990s, were the very first online publications under the imprint of the University of Virginia Press.</Para>
-      <ul>
+      <ul className="border-b border-ceci-gray-light pb-2">
         <li className="hover:bg-gray-100 flex p-2 h-full items-center">
         <img className="flex-shrink-0 h-10 w-10  object-cover mr-5" src={"https://legacy.upress.virginia.edu/plunkett/3072.gif"} width="80px" alt="Afro-American Sources in Virginia: A Guide to Manuscripts"/>
         <a href="https://legacy.upress.virginia.edu/plunkett/mfp.html" className=" text-ceci-gray-dark font-assistant font-thin uppercase">Afro-American Sources in Virginia: A Guide to Manuscripts</a>
@@ -206,6 +209,23 @@ padding:1em;
         <a href="https://legacy.upress.virginia.edu/epub/pyatt/index.html" className=" text-ceci-gray-dark font-assistant font-thin uppercase">Guide to African-American Documentary Resources in North Carolina</a>
    </li>
         </ul>      
+    </RotSection>
+    <RotSection>
+  <Heading3 id="committee">Advisory Committee Members</Heading3>
+        <div>
+              <RotBoardMember name={"Nicole Aljoe"} title={"Professor of English and Africana Studies, Northeastern University"}/>
+              <RotBoardMember name={"Max Edelson"} title={"Professor of History, Co-Director, MapScholar & Early American Seminar University of Virginia"}/>
+              <RotBoardMember name={"Julia Flanders"} title={"Professor of the Practice in English; Director, Digital Scholarship Group"}/>
+              <RotBoardMember name={"Brenda Gunn"} title={"Assoc University Librarian, Special Collections and Preservation, University of Virginia "}/>
+              <RotBoardMember name={"Alex Humphreys"} title={"Vice President, ITHAKA Ventures and JSTOR Labs"}/>
+              <RotBoardMember name={"Nick Laiacona"} title={"President, Performant Software"}/>
+              <RotBoardMember name={"Sharon Leon"} title={"Chief Operating Officer, Digital Scholar"}/>
+              <RotBoardMember name={"Allison Levy"} title={"Director, Brown University Digital Publications"}/>
+              <RotBoardMember name={"Laura Mandell"} title={"Director, Center of Digital Humanities Research, Texas A&M"}/>
+              <RotBoardMember name={"Andrea Roberts"} title={"Associate Professor, Urban and Environmental Planning"}/>
+              <RotBoardMember name={"Jennifer Stertzer"} title={"Director of the Center for Digital Editing and Senior Editor at the Washington Papers, University of Virginia"}/>
+              <RotBoardMember name={"John Unsworth"} title={"Dean of Libraries and University Librarian, University of Virginia"}/>
+           </div> 
     </RotSection>
     </Main>
    </Layout>
