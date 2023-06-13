@@ -31,7 +31,7 @@ export default function RotundaHeader() {
             <RotNavLink href="https://www.upress.virginia.edu/rotunda" alt="About Rotunda">about</RotNavLink>
             <RotNavLink href="https://www.upress.virginia.edu/rotunda-purchase" alt="Get a license">purchase</RotNavLink>
             <RotNavLink href="https://rotunda.upress.virginia.edu/entrance.xqy" alt="View all publications">entrance</RotNavLink>
-            <RotNavLink href="https://www.upress.virginia.edu/rotunda/#contact" alt="Contact">contact</RotNavLink>
+           
         </RotNav></header>
      
   )
