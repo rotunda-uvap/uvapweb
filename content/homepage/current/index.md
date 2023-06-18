@@ -2,12 +2,12 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: Sapphic Crossings
-    banner_author: Ula Lukszo Klein
-    banner_subtitle: Cross-Dressing Women in Eighteenth-Century British Literature
-    banner_id: "5438"
-    banner_quote: An original and engaging contribution.
-    banner_attr: Lisa L. Moore, University of Texas
+  - banner_title: In the True Blue's Wake
+    banner_author: Daniel B. Thorp
+    banner_subtitle: Slavery and Freedom among the Families of Smithfield Plantation
+    banner_id: "5805"
+    banner_quote: An ambitious undertaking, stunningly achieved.
+    banner_attr: William C. Davis
 related_book:
   - "5744"
   - "5617"
