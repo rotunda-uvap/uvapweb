@@ -30,9 +30,7 @@ By the 21st century, Juneteenth was an institutional black holiday around the na
 
 Let this Juneteenth be one where a fuller story of its meaning resonates with black Americans to the point where they can celebrate it with whites in the spirit of reconciliation. Juneteenth represents the long legacy of black patriotic celebratory activism. It shows that black people desired to participate in the American experiment despite centuries of mistreatment. It shows that white Americans have also tried to make amends for past sins. This is a history that everyone can and should get behind.
 
-
-
-Marvin T. Chiles, PhD
-Assistant Professor of African American History
-Old Dominion University
+**Marvin T. Chiles, PhD**\
+Assistant Professor of African American History\
+Old Dominion University\
 Author of *[The Struggle to Change: Race and the Politics of Reconciliation in Modern Richmond](https://www.upress.virginia.edu/title/5876/)*
