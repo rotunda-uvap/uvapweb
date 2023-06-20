@@ -14,6 +14,7 @@ export default function AboutPage({ data }) {
     const pagedata = data.ab
     const code = data.cc
     const landuse = data.lu
+    const mission = data.ms
  return (
     
         <Layout>
@@ -139,6 +140,10 @@ export default function AboutPage({ data }) {
     </div>
   </div>
 </section>
+<section>
+  <SectionHeader text={"Press Mission"}/>
+  <div className="lg:w-3/3 mx-auto leading-relaxed text-base dropCap cms" dangerouslySetInnerHTML={{__html: sanitizeHtml(mission.html)}}/>
+</section>
 
 <section>
   <SectionHeader text={"Code of Conduct"}/>
@@ -196,6 +201,12 @@ export const query = graphql`
       }
 
       cc: markdownRemark(frontmatter: {templateKey: {eq: "page"}, title: {eq: "Code of Conduct"}}) {
+        html
+        frontmatter{
+          title
+        }
+      }
+      ms: markdownRemark(frontmatter: {templateKey: {eq: "page"}, title: {eq: "Mission"}}) {
         html
         frontmatter{
           title
