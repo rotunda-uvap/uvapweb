@@ -2,12 +2,12 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: In the True Blue's Wake
-    banner_author: Daniel B. Thorp
-    banner_subtitle: Slavery and Freedom among the Families of Smithfield Plantation
-    banner_id: "5805"
-    banner_quote: An ambitious undertaking, stunningly achieved.
-    banner_attr: William C. Davis
+  - banner_title: Cotton's Queer Relations
+    banner_author: Michael P. Bibler
+    banner_subtitle: Same-Sex Intimacy and the Literature of the Southern Plantation, 1936-1968
+    banner_id: "1427"
+    banner_quote: Opens a new door in southern studies.
+    banner_attr: Will Brantley
 related_book:
   - "5744"
   - "5617"
