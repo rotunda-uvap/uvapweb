@@ -2,12 +2,12 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: Cotton's Queer Relations
-    banner_author: Michael P. Bibler
-    banner_subtitle: Same-Sex Intimacy and the Literature of the Southern Plantation, 1936-1968
-    banner_id: "1427"
-    banner_quote: Opens a new door in southern studies.
-    banner_attr: Will Brantley
+  - banner_title: Solastalgia
+    banner_author: Paul Bogard
+    banner_subtitle: An Anthology of Emotion in a Disappearing World
+    banner_id: "5833"
+    banner_quote: A striking, resonant collection.
+    banner_attr: Scott Slovic, University of Idaho
 related_book:
   - "5744"
   - "5617"
