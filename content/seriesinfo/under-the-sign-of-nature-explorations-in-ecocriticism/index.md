@@ -1,6 +1,6 @@
 ---
 templateKey: series
-editors: Alison Glassie and Sarah Dimick
+editors: "Series editors: Alison Glassie and Sarah Dimick"
 uvaeditors: Angie Hogan
 title: "Under the Sign of Nature: Explorations in Environmental Humanities"
 status: active
