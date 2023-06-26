@@ -2,12 +2,12 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: Solastalgia
-    banner_author: Paul Bogard
-    banner_subtitle: An Anthology of Emotion in a Disappearing World
-    banner_id: "5833"
-    banner_quote: A striking, resonant collection.
-    banner_attr: Scott Slovic, University of Idaho
+  - banner_title: Dueling Cultures, Damnable Legacies
+    banner_author: James Hill "Trae" Welborn III
+    banner_subtitle: Southern Violence and White Supremacy in the Civil War Era
+    banner_id: "5200"
+    banner_quote: A compelling and gracefully written study.
+    banner_attr: Lisa Tendrich Frank
 related_book:
   - "5744"
   - "5617"
