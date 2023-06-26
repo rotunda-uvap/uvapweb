@@ -13,7 +13,8 @@
         "EditorCredit":"Edited by Robert Whalen and Christopher Hodgkins",
         "Prizes":"Named an Outstanding Academic Title 2013 by the American Library Association’s Choice magazine",
         "Reviews":[],
-        "imageFilename":"gh.jpg"
+        "imageFilename":"gh.jpg",
+        "access":"sub"
     },{
         "Title":"People of the Founding Era",
         "Subtitle":"",
@@ -28,7 +29,8 @@
         "EditorCredit":"Holly C. Shulman and Susan Holbrook Perdue",
         "Prizes":null,
         "Reviews":[],
-        "imageFilename":"pfe1.jpg"
+        "imageFilename":"pfe1.jpg",
+        "access":"sub"
     },{
         "Title":"Emily Dickinson's Correspondences",
         "Subtitle":"A Born-Digital Textual Inquiry",
@@ -43,7 +45,8 @@
         "EditorCredit":"Edited by Martha Nell Smith and Lara Vetter, with Ellen Louise Hart as consulting editor",
         "Prizes":null,
         "Reviews":[{"html":"<p>[E]xciting.... meticulously detailed.... [T]his digital enterprise is a significant twenty-first century contribution to Dickinson scholarship.<\/p>"}],
-        "imageFilename":"ed.jpg"
+        "imageFilename":"ed.jpg",
+        "access":"sub"
     },
     {
         "Title":"Presidential Recordings Digital Edition",
@@ -59,7 +62,8 @@
         "EditorCredit":"Marc J. Selverstone, General Editor",
         "Prizes":null,
         "Reviews":[],
-        "imageFilename":"prde.jpg"
+        "imageFilename":"prde.jpg",
+        "access":"sub"
     },
     {
         "Title":"The Papers of Eliza Lucas Pinckney & Harriott Pinckney Horry Digital Edition",
@@ -75,7 +79,8 @@
         "EditorCredit":"Constance Shultz, editor",
         "Prizes":"Named a Choice Outstanding Academic Title for 2013",
         "Reviews":[],
-        "imageFilename":"pknyw.jpg"
+        "imageFilename":"pknyw.jpg",
+        "access":"sub"
     },
     {
         "Title":"The Letters of Matthew Arnold",
@@ -91,7 +96,8 @@
         "EditorCredit":"Cecil Y. Lang, Editor",
         "Prizes":null,
         "Reviews":[],
-        "imageFilename":"ma.jpg"
+        "imageFilename":"ma.jpg",
+        "access":"sub"
     },
     {
         "Title":"The Papers of George Washington Digital Edition",
@@ -107,7 +113,8 @@
         "EditorCredit":"Theodore J. Crackel, Digital Edition Founding Editor",
         "Prizes":null,
         "Reviews":[],
-        "imageFilename":"gw.jpg"
+        "imageFilename":"gw.jpg",
+        "access":"sub"
     },
     {
         "Title":"Clotel by William Wells Brown",
@@ -123,7 +130,8 @@
         "EditorCredit":"Edited by Christopher Mulvey",
         "Prizes":null,
         "Reviews":[],
-        "imageFilename":"clotel.jpg"
+        "imageFilename":"clotel.jpg",
+        "access":"sub"
     },
     {
         "Title":"Herman Melville's 'Typee'",
@@ -139,7 +147,8 @@
         "EditorCredit":"John Bryant, Editor",
         "Prizes":null,
         "Reviews":[],
-        "imageFilename":"melville.jpg"
+        "imageFilename":"melville.jpg",
+        "access":"sub"
     },
     {
         "Title":"The Letters of Christina Rossetti",
@@ -155,7 +164,8 @@
         "EditorCredit":"Antony H. Harrison, Editor",
         "Prizes":null,
         "Reviews":[],
-        "imageFilename":"cr.jpg"
+        "imageFilename":"cr.jpg",
+        "access":"sub"
     },
     {
         "Title":"The Papers of James Madison Digital Edition",
@@ -171,7 +181,8 @@
         "EditorCredit":"J. C. A. Stagg, editor",
         "Prizes":null,
         "Reviews":[],
-        "imageFilename":"jmadison.jpg"
+        "imageFilename":"jmadison.jpg",
+        "access":"sub"
     },{
         "Title":"The Adams Papers Digital Edition",
         "Subtitle":"",
@@ -186,7 +197,8 @@
         "EditorCredit":"C. James Taylor, Editor in Chief",
         "Prizes":"Choice Outstanding Academic Title, American Library Association (2009)",
         "Reviews":[],
-        "imageFilename":"ja.png"
+        "imageFilename":"ja.png",
+        "access":"sub"
     },{
         "Title":"The Documentary History of the First Federal Congress of the United States of America",
         "Subtitle":"",
@@ -201,7 +213,9 @@
         "EditorCredit":"Edited by Charlene Bangs Bickford, Kenneth R. Bowling, William C. diGiacomantonio, and Helen E. Veit",
         "Prizes":null,
         "Reviews":[],
-        "imageFilename":"ffcp.jpg"
+        "imageFilename":"ffcp.jpg",
+        "access":"sub"
+
     },{
         "Title":"The Papers of Woodrow Wilson Digital Edition",
         "Subtitle":"",
@@ -216,7 +230,8 @@
         "EditorCredit":"Arthur S. Link, Editor",
         "Prizes":null,
         "Reviews":[],
-        "imageFilename":"wilson.png"
+        "imageFilename":"wilson.png",
+        "access":"sub"
     },{
         "Title":"The Papers of Thomas Jefferson Digital Edition",
         "Subtitle":"",
@@ -231,7 +246,8 @@
         "EditorCredit":"Edited by Barbara B. Oberg and J. Jefferson Looney",
         "Prizes":null,
         "Reviews":[],
-        "imageFilename":"tj.jpg"
+        "imageFilename":"tj.jpg",
+        "access":"sub"
     },{
         "Title":"Journal of Emily Shore",
         "Subtitle":"Revised and Expanded",
@@ -246,7 +262,8 @@
         "EditorCredit":"Barbara Timm Gates, Editor",
         "Prizes":null,
         "Reviews":[],
-        "imageFilename":"es.jpg"
+        "imageFilename":"es.jpg",
+        "access":"open"
     },{
         "Title":"The Selected Papers of John Jay Digital Edition",
         "Subtitle":"",
@@ -276,7 +293,8 @@
         "EditorCredit":"Melanie Randolph Miller, Editor, Hendrina Krol, Associate Editor",
         "Prizes":null,
         "Reviews":[],
-        "imageFilename":"gmorris.jpg"
+        "imageFilename":"gmorris.jpg",
+        "access":"sub"
     },
     {
         "Title":"The Papers of Ulysses S. Grant",
@@ -292,7 +310,8 @@
         "EditorCredit":"John Y. Simon and John F. Marszalek, Editors",
         "Prizes":null,
         "Reviews":[],
-        "imageFilename":"grant.png"
+        "imageFilename":"grant.png",
+        "access":"sub"
     },
     {
         "Title":"The Papers of Alexander Hamilton Digital Edition",
@@ -308,7 +327,8 @@
         "EditorCredit":"Harold C. Syrett, editor, Mary-Jo Kline; consulting editor for the Digital Edition",
         "Prizes":null,
         "Reviews":[],
-        "imageFilename":"ah.jpg"
+        "imageFilename":"ah.jpg",
+        "access":"sub"
     },
     {
         "Title":"The Papers of Andrew Johnson",
@@ -324,7 +344,8 @@
         "EditorCredit":"LeRoy P. Graf, Ralph W. Haskins and Paul H. Bergeron",
         "Prizes":null,
         "Reviews":[],
-        "imageFilename":"johnson_a.png"
+        "imageFilename":"johnson_a.png",
+        "access":"sub"
     },{
         "Title":"The Papers of Revolutionary Era Pinckney Statesmen",
         "Subtitle":"",
@@ -339,7 +360,8 @@
         "EditorCredit":"Edited by Constance Schultz",
         "Prizes":null,
         "Reviews":[],
-        "imageFilename":"pnkymen.jpg"
+        "imageFilename":"pnkymen.jpg",
+        "access":"sub"
     },{
         "Title":"The Papers of Daniel Webster",
         "Subtitle":"",
@@ -354,7 +376,8 @@
         "EditorCredit":"Charles M. Wiltse, Editor; Harold D. Moser, Associate Editor",
         "Prizes":null,
         "Reviews":[],
-        "imageFilename":"dw.jpg"
+        "imageFilename":"dw.jpg",
+        "access":"sub"
     },
     {
         "Title":"The Papers of John Marshall Digital Edition",
@@ -370,7 +393,8 @@
         "EditorCredit":"Charles F. Hobson, Editor",
         "Prizes":null,
         "Reviews":[],
-        "imageFilename":"jmarshall.jpg"
+        "imageFilename":"jmarshall.jpg",
+        "access":"sub"
     },
     {
         "Title":"The Papers of Andrew Jackson",
@@ -386,7 +410,8 @@
         "EditorCredit":"Daniel Feller, Editor in Chief",
         "Prizes":null,
         "Reviews":[],
-        "imageFilename":"ajackson.jpg"
+        "imageFilename":"ajackson.jpg",
+        "access":"sub"
     },
     {
         "Title":"The Dolley Madison Digital Edition",
@@ -402,7 +427,8 @@
         "EditorCredit":"Holly C. Shulman, editor",
         "Prizes":null,
         "Reviews":[],
-        "imageFilename":"dolley.jpg"
+        "imageFilename":"dolley.jpg",
+        "access":"sub"
     },
     {
         "Title":"SAH Archipedia",
@@ -418,7 +444,8 @@
         "EditorCredit":"Edited by Gabrielle Esperdy and Karen Kingsley",
         "Prizes":null,
         "Reviews":[],
-        "imageFilename":"archipedia.png"
+        "imageFilename":"archipedia.png",
+        "access":"open"
     },{
         "Title":"The Documentary History of the Ratification of the Constitution",
         "Subtitle":"",
@@ -433,7 +460,8 @@
         "EditorCredit":"John P. Kaminski, Gaspare J. Saladino, Richard Leffler, Charles H. Schoenleber and Margaret A. Hogan, editors",
         "Prizes":null,
         "Reviews":[],
-        "imageFilename":"dhrc.jpg"
+        "imageFilename":"dhrc.jpg",
+        "access":"sub"
     },{
         "Title":"The Booker T. Washington Papers Digital Edition",
         "Subtitle":"",
@@ -448,7 +476,8 @@
         "EditorCredit":"Louis R. Harlon and Raymond W. Smock",
         "Prizes":"",
         "Reviews":[],
-        "imageFilename":"btwn.jpg"
+        "imageFilename":"btwn.jpg",
+        "access":"sub"
     },
     {
         "Title":"The Correspondence of James K. Polk ",
@@ -464,7 +493,8 @@
         "EditorCredit":"Michael David Cohen et al.",
         "Prizes":"",
         "Reviews":[],
-        "imageFilename":"polk.jpg"
+        "imageFilename":"polk.jpg",
+        "access":"sub"
     },
     {
         "Title":"The Papers of James Monroe Digital Edition",
@@ -480,7 +510,8 @@
         "EditorCredit":"Daniel Preston, Editor, Marlena C. DeLong, Assistant Editor",
         "Prizes":null,
         "Reviews":[],
-        "imageFilename":"monroe.jpg"
+        "imageFilename":"monroe.jpg",
+        "access":"sub"
     },
     {
         "Title":"The Papers of Frederick Law Olmsted",
@@ -496,7 +527,8 @@
         "EditorCredit":"Charles E. Beveridge, Series Editor",
         "Prizes":null,
         "Reviews":[],
-        "imageFilename":"OLMS.jpg"
+        "imageFilename":"OLMS.jpg",
+        "access":"open"
     },
     {
         "Title":"The Letters of Benjamin Rush",
@@ -512,6 +544,7 @@
         "EditorCredit":"Edited by Lyman H Butterfield, with a new introduction by Stephen Fried",
         "Prizes":null,
         "Reviews":[],
-        "imageFilename":"rush.jpg"
+        "imageFilename":"rush.jpg",
+        "access":"sub"
     }
 ]
