@@ -2,12 +2,12 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: Dueling Cultures, Damnable Legacies
-    banner_author: James Hill "Trae" Welborn III
-    banner_subtitle: Southern Violence and White Supremacy in the Civil War Era
-    banner_id: "5200"
-    banner_quote: A compelling and gracefully written study.
-    banner_attr: Lisa Tendrich Frank
+  - banner_title: Climate Change and Original Sin
+    banner_author: Katherine Cox
+    banner_subtitle: The Moral Ecology of John Milton's Poetry
+    banner_id: "5899"
+    banner_quote: Thorough, creative, and compelling.
+    banner_attr: Christopher Kendrick, Loyola University Chicago
 related_book:
   - "5744"
   - "5617"
