@@ -2,12 +2,12 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: Climate Change and Original Sin
-    banner_author: Katherine Cox
-    banner_subtitle: The Moral Ecology of John Milton's Poetry
-    banner_id: "5899"
-    banner_quote: Thorough, creative, and compelling.
-    banner_attr: Christopher Kendrick, Loyola University Chicago
+  - banner_title: Seven Virginians
+    banner_author: John B. Boles
+    banner_subtitle: The Men Who Shaped Our Republic
+    banner_id: "5898"
+    banner_quote: A fitting capstone to a fine historian’s distinguished career.
+    banner_attr: Peter S. Onuf
 related_book:
   - "5744"
   - "5617"
