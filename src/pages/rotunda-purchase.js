@@ -120,8 +120,6 @@ export default function RotundaPurchasePage() {
           <tbody>
             <tr className="heading">
               <th className="text-ceci-gray-dark font-thin">&nbsp;</th>
-              <th className="text-ceci-gray-dark font-thin">TIER 6</th>
-              <th className="text-ceci-gray-dark font-thin">TIER 5</th>
               <th className="text-ceci-gray-dark font-thin">TIER 4</th>
               <th className="text-ceci-gray-dark font-thin">TIER 3</th>
               <th className="text-ceci-gray-dark font-thin">TIER 2</th>
@@ -142,9 +140,7 @@ export default function RotundaPurchasePage() {
               <td className="money text-ceci-gray-dark font-thin">$3,498</td>
               <td className="money text-ceci-gray-dark font-thin">$2,624</td>
               <td className="money text-ceci-gray-dark font-thin">$1,819</td>
-              <td className="money text-ceci-gray-dark font-thin">$1,084</td>
               <td className="money text-ceci-gray-dark font-thin">$700</td>
-              <td className="money text-ceci-gray-dark font-thin">$350</td>
             </tr>
             <tr id="rncn">
               <th className="title text-ceci-gray-dark tracking-wide font-light">
@@ -156,9 +152,7 @@ export default function RotundaPurchasePage() {
               <td className="money text-ceci-gray-dark font-thin">$3,002</td>
               <td className="money text-ceci-gray-dark font-thin">$2,251</td>
               <td className="money text-ceci-gray-dark font-thin">$1,561</td>
-              <td className="money text-ceci-gray-dark font-thin">$931</td>
               <td className="money text-ceci-gray-dark font-thin">$600</td>
-              <td className="money text-ceci-gray-dark font-thin">$300</td>
             </tr>
             <tr>
               <th className="title text-ceci-gray-dark tracking-wide font-light">
@@ -170,9 +164,7 @@ export default function RotundaPurchasePage() {
               <td className="money text-ceci-gray-dark font-thin">$4,745</td>
               <td className="money text-ceci-gray-dark font-thin">$3,558</td>
               <td className="money text-ceci-gray-dark font-thin">$2,467</td>
-              <td className="money text-ceci-gray-dark font-thin">$1,470</td>
               <td className="money text-ceci-gray-dark font-thin">$940</td>
-              <td className="money text-ceci-gray-dark font-thin">$475</td>
             </tr>
             <tr id="arhn">
               <th className="title text-ceci-gray-dark tracking-wide font-light">
@@ -184,9 +176,7 @@ export default function RotundaPurchasePage() {
               <td className="money text-ceci-gray-dark font-thin">$4,528</td>
               <td className="money text-ceci-gray-dark font-thin">$3,396</td>
               <td className="money text-ceci-gray-dark font-thin">$2,354</td>
-              <td className="money text-ceci-gray-dark font-thin">$1,404</td>
               <td className="money text-ceci-gray-dark font-thin">$906</td>
-              <td className="money text-ceci-gray-dark font-thin">$453</td>
             </tr>
             <tr id="jnjy">
               <th className="title text-ceci-gray-dark tracking-wide font-light">
@@ -198,9 +188,7 @@ export default function RotundaPurchasePage() {
               <td className="money text-ceci-gray-dark font-thin">$867</td>
               <td className="money text-ceci-gray-dark font-thin">$650</td>
               <td className="money text-ceci-gray-dark font-thin">$450</td>
-              <td className="money text-ceci-gray-dark font-thin">$269</td>
               <td className="money text-ceci-gray-dark font-thin">$173</td>
-              <td className="money text-ceci-gray-dark font-thin">$87</td>
             </tr>
             <tr id="tsjn">
               <th className="title text-ceci-gray-dark tracking-wide font-light">
@@ -226,9 +214,7 @@ export default function RotundaPurchasePage() {
               <td className="money text-ceci-gray-dark font-thin">$895</td>
               <td className="money text-ceci-gray-dark font-thin">$670</td>
               <td className="money text-ceci-gray-dark font-thin">$395</td>
-              <td className="money text-ceci-gray-dark font-thin">$345</td>
               <td className="money text-ceci-gray-dark font-thin">$295</td>
-              <td className="money text-ceci-gray-dark font-thin">$195</td>
             </tr>
             <tr id="jmde">
               <th className="title text-ceci-gray-dark tracking-wide font-light">
@@ -240,9 +226,7 @@ export default function RotundaPurchasePage() {
               <td className="money text-ceci-gray-dark font-thin">$4,552</td>
               <td className="money text-ceci-gray-dark font-thin">$3,414</td>
               <td className="money text-ceci-gray-dark font-thin">$2,367</td>
-              <td className="money text-ceci-gray-dark font-thin">$1,411</td>
               <td className="money text-ceci-gray-dark font-thin">$910</td>
-              <td className="money text-ceci-gray-dark font-thin">$455</td>
             </tr>
             <tr id="jnml">
               <th className="title text-ceci-gray-dark tracking-wide font-light">
@@ -254,9 +238,7 @@ export default function RotundaPurchasePage() {
               <td className="money text-ceci-gray-dark font-thin">$1,577</td>
               <td className="money text-ceci-gray-dark font-thin">$1,183</td>
               <td className="money text-ceci-gray-dark font-thin">$820</td>
-              <td className="money text-ceci-gray-dark font-thin">$489</td>
               <td className="money text-ceci-gray-dark font-thin">$315</td>
-              <td className="money text-ceci-gray-dark font-thin">$158</td>
             </tr>
 <tr id="monr">
               <th className="title text-ceci-gray-dark tracking-wide font-light">
@@ -266,9 +248,7 @@ export default function RotundaPurchasePage() {
               <td className="money text-ceci-gray-dark font-thin">$1,812</td>
               <td className="money text-ceci-gray-dark font-thin">$1,359</td>
               <td className="money text-ceci-gray-dark font-thin">$942</td>
-              <td className="money text-ceci-gray-dark font-thin">$562</td>
               <td className="money text-ceci-gray-dark font-thin">$362</td>
-              <td className="money text-ceci-gray-dark font-thin">$180</td>
             </tr>
             <tr id="grms">
               <th className="title text-ceci-gray-dark tracking-wide font-light">
@@ -280,9 +260,7 @@ export default function RotundaPurchasePage() {
               <td className="money text-ceci-gray-dark font-thin">$679</td>
               <td className="money text-ceci-gray-dark font-thin">$510</td>
               <td className="money text-ceci-gray-dark font-thin">$353</td>
-              <td className="money text-ceci-gray-dark font-thin">$210</td>
               <td className="money text-ceci-gray-dark font-thin">$136</td>
-              <td className="money text-ceci-gray-dark font-thin">$68</td>
             </tr>
             <tr id="pfe">
               <th className="title text-ceci-gray-dark tracking-wide font-light">
@@ -294,9 +272,7 @@ export default function RotundaPurchasePage() {
               <td className="money text-ceci-gray-dark font-thin">$3,100</td>
               <td className="money text-ceci-gray-dark font-thin">$2,325</td>
               <td className="money text-ceci-gray-dark font-thin">$1,612</td>
-              <td className="money text-ceci-gray-dark font-thin">$961</td>
               <td className="money text-ceci-gray-dark font-thin">$620</td>
-              <td className="money text-ceci-gray-dark font-thin">$310</td>
             </tr>
             <tr id="pknyw">
               <th className="title text-ceci-gray-dark tracking-wide font-light">
@@ -322,9 +298,7 @@ export default function RotundaPurchasePage() {
               <td className="money text-ceci-gray-dark font-thin">$1,300</td>
               <td className="money text-ceci-gray-dark font-thin">$975</td>
               <td className="money text-ceci-gray-dark font-thin">$676</td>
-              <td className="money text-ceci-gray-dark font-thin">$403</td>
               <td className="money text-ceci-gray-dark font-thin">$260</td>
-              <td className="money text-ceci-gray-dark font-thin">$130</td>
             </tr>
             <tr id="rush">
               <th className="title text-ceci-gray-dark tracking-wide font-light">
@@ -336,9 +310,7 @@ export default function RotundaPurchasePage() {
               <td className="money text-ceci-gray-dark font-thin">$450</td>
               <td className="money text-ceci-gray-dark font-thin">$338</td>
               <td className="money text-ceci-gray-dark font-thin">$235</td>
-              <td className="money text-ceci-gray-dark font-thin">$140</td>
               <td className="money text-ceci-gray-dark font-thin">$90</td>
-              <td className="money text-ceci-gray-dark font-thin">$50</td>
             </tr>
             <tr id="gewn">
               <th className="title text-ceci-gray-dark tracking-wide font-light">
@@ -350,9 +322,7 @@ export default function RotundaPurchasePage() {
               <td className="money text-ceci-gray-dark font-thin">$8,301</td>
               <td className="money text-ceci-gray-dark font-thin">$6,226</td>
               <td className="money text-ceci-gray-dark font-thin">$4,316</td>
-              <td className="money text-ceci-gray-dark font-thin">$2,573</td>
               <td className="money text-ceci-gray-dark font-thin">$1,660</td>
-              <td className="money text-ceci-gray-dark font-thin">$830</td>
             </tr>
             <tr>
               <th colspan="7" className="border-t-3 border-gray-400 py-4 font-thin text-ceci-gray-dark tracking-wide">
@@ -369,9 +339,7 @@ export default function RotundaPurchasePage() {
               <td className="money text-ceci-gray-dark font-thin">$4,200</td>
               <td className="money text-ceci-gray-dark font-thin">$3,150</td>
               <td className="money text-ceci-gray-dark font-thin">$2,184</td>
-              <td className="money text-ceci-gray-dark font-thin">$1,302</td>
               <td className="money text-ceci-gray-dark font-thin">$840</td>
-              <td className="money text-ceci-gray-dark font-thin">$420</td>
             </tr>
             <tr id="jksn">
               <th className="title text-ceci-gray-dark tracking-wide font-light">
@@ -380,12 +348,10 @@ export default function RotundaPurchasePage() {
                   Andrew Jackson Papers
                 </a>
               </th>
-              <td className="money text-ceci-gray-dark font-thin">$1,329</td>
-              <td className="money text-ceci-gray-dark font-thin">$997</td>
-              <td className="money text-ceci-gray-dark font-thin">$691</td>
-              <td className="money text-ceci-gray-dark font-thin">$412</td>
-              <td className="money text-ceci-gray-dark font-thin">$266</td>
-              <td className="money text-ceci-gray-dark font-thin">$133</td>
+              <td className="money text-ceci-gray-dark font-thin">$2,866</td>
+              <td className="money text-ceci-gray-dark font-thin">$2,150</td>
+              <td className="money text-ceci-gray-dark font-thin">$1,490</td>
+              <td className="money text-ceci-gray-dark font-thin">$573</td>
             </tr>
             <tr id="ajhn">
               <th className="title text-ceci-gray-dark tracking-wide font-light">
@@ -397,9 +363,7 @@ export default function RotundaPurchasePage() {
               <td className="money text-ceci-gray-dark font-thin">$2,866</td>
               <td className="money text-ceci-gray-dark font-thin">$2,150</td>
               <td className="money text-ceci-gray-dark font-thin">$1,490</td>
-              <td className="money text-ceci-gray-dark font-thin">$889</td>
               <td className="money text-ceci-gray-dark font-thin">$573</td>
-              <td className="money text-ceci-gray-dark font-thin">$286</td>
             </tr>
             <tr id="olms">
               <th className="title text-ceci-gray-dark tracking-wide font-light">
@@ -408,12 +372,7 @@ export default function RotundaPurchasePage() {
                   Frederick Law Olmsted Papers
                 </a>
               </th>
-              <td className="money text-ceci-gray-dark font-thin">$1,577</td>
-              <td className="money text-ceci-gray-dark font-thin">$1,183</td>
-              <td className="money text-ceci-gray-dark font-thin">$820</td>
-              <td className="money text-ceci-gray-dark font-thin">$489</td>
-              <td className="money text-ceci-gray-dark font-thin">$315</td>
-              <td className="money text-ceci-gray-dark font-thin">$158</td>
+              <td className="money text-ceci-gray-dark font-thin">Open Access</td>
             </tr>
             <tr id="polk">
               <th className="title text-ceci-gray-dark tracking-wide font-light">
@@ -425,9 +384,7 @@ export default function RotundaPurchasePage() {
               <td className="money text-ceci-gray-dark font-thin">$2,304</td>
               <td className="money text-ceci-gray-dark font-thin">$1,728</td>
               <td className="money text-ceci-gray-dark font-thin">$1,198</td>
-              <td className="money text-ceci-gray-dark font-thin">$715</td>
               <td className="money text-ceci-gray-dark font-thin">$460</td>
-              <td className="money text-ceci-gray-dark font-thin">$230</td>
             </tr>
             <tr id="webster">
               <th className="title text-ceci-gray-dark tracking-wide font-light">
@@ -439,9 +396,7 @@ export default function RotundaPurchasePage() {
               <td className="money text-ceci-gray-dark font-thin">$2,460</td>
               <td className="money text-ceci-gray-dark font-thin">$1,845</td>
               <td className="money text-ceci-gray-dark font-thin">$1,280</td>
-              <td className="money text-ceci-gray-dark font-thin">$762</td>
               <td className="money text-ceci-gray-dark font-thin">$492</td>
-              <td className="money text-ceci-gray-dark font-thin">$260</td>
             </tr>
             <tr>
               <th colspan="7" className="border-t-3 border-gray-400 py-4 font-thin text-ceci-gray-dark tracking-wide">
@@ -458,9 +413,7 @@ export default function RotundaPurchasePage() {
               <td className="money text-ceci-gray-dark font-thin">$3,697</td>
               <td className="money text-ceci-gray-dark font-thin">$2,773</td>
               <td className="money text-ceci-gray-dark font-thin">$1,922</td>
-              <td className="money text-ceci-gray-dark font-thin">$1,146</td>
               <td className="money text-ceci-gray-dark font-thin">$739</td>
-              <td className="money text-ceci-gray-dark font-thin">$370</td>
             </tr>
             <tr id="btwn">
               <th className="title text-ceci-gray-dark tracking-wide font-light">
@@ -472,9 +425,7 @@ export default function RotundaPurchasePage() {
               <td className="money text-ceci-gray-dark font-thin">$2,146</td>
               <td className="money text-ceci-gray-dark font-thin">$1,609</td>
               <td className="money text-ceci-gray-dark font-thin">$1,115</td>
-              <td className="money text-ceci-gray-dark font-thin">$665</td>
               <td className="money text-ceci-gray-dark font-thin">$429</td>
-              <td className="money text-ceci-gray-dark font-thin">$215</td>
             </tr>
             <tr>
               <th className="title text-ceci-gray-dark tracking-wide font-light">
@@ -486,9 +437,7 @@ export default function RotundaPurchasePage() {
               <td className="money text-ceci-gray-dark font-thin">$10,500</td>
               <td className="money text-ceci-gray-dark font-thin">$7,875</td>
               <td className="money text-ceci-gray-dark font-thin">$5,460</td>
-              <td className="money text-ceci-gray-dark font-thin">$3,255</td>
               <td className="money text-ceci-gray-dark font-thin">$2,100</td>
-              <td className="money text-ceci-gray-dark font-thin">$1,050</td>
             </tr>
           </tbody>
         </table>
@@ -504,13 +453,13 @@ export default function RotundaPurchasePage() {
           <tbody>
             <tr className="bg-zinc-100">
               <td className="pr-4">
-                <strong>Tier&nbsp;6:</strong>
+                <strong>Tier&nbsp;4:</strong>
               </td>
               <td className="py-4">Research Universities (very high research activity)</td>
             </tr>
             <tr>
               <td>
-                <strong>Tier&nbsp;5:</strong>
+                <strong>Tier&nbsp;3:</strong>
               </td>
               <td  className="py-2">
                 Research Universities (high research activity);
@@ -520,7 +469,7 @@ export default function RotundaPurchasePage() {
             </tr>
             <tr className="bg-zinc-100">
               <td>
-                <strong>Tier&nbsp;4:</strong>
+                <strong>Tier&nbsp;2:</strong>
               </td>
               <td  className="py-2">
                 Master&rsquo;s M and Master&rsquo;s S universities and colleges
@@ -533,25 +482,10 @@ export default function RotundaPurchasePage() {
               <td>
                 <strong>Tier&nbsp;3:</strong>
               </td>
-              <td  className="py-2">
+              <td  className="py-1">
                 Baccalaureate General colleges; Baccalaureate/Associates
                 institutions; Research institutions with 50 or more FTE
                 (full-time employees)
-              </td>
-            </tr>
-            <tr  className="bg-zinc-100">
-              <td>
-                <strong>Tier&nbsp;2:</strong>
-              </td>
-              <td  className="py-2">Associates institutions; Special Focus institutions</td>
-            </tr>
-            <tr>
-              <td>
-                <strong>Tier&nbsp;1:</strong>
-              </td>
-              <td  className="py-2">
-                High schools; unaffiliated individuals; Research institutions
-                &lt; 50 FTE
               </td>
             </tr>
           </tbody>
