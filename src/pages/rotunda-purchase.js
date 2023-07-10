@@ -478,7 +478,7 @@ export default function RotundaPurchasePage() {
             </tr>
             <tr>
               <td>
-                <strong>Tier&nbsp;3:</strong>
+                <strong>Tier&nbsp;1:</strong>
               </td>
               <td  className="py-1">
                 Baccalaureate General colleges; Baccalaureate/Associates
