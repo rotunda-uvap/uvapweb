@@ -346,10 +346,10 @@ export default function RotundaPurchasePage() {
                   Andrew Jackson Papers
                 </a>
               </th>
-              <td className="money text-ceci-gray-dark font-thin">$2,866</td>
-              <td className="money text-ceci-gray-dark font-thin">$2,150</td>
-              <td className="money text-ceci-gray-dark font-thin">$1,490</td>
-              <td className="money text-ceci-gray-dark font-thin">$573</td>
+              <td className="money text-ceci-gray-dark font-thin">$1,329</td>
+              <td className="money text-ceci-gray-dark font-thin">$997</td>
+              <td className="money text-ceci-gray-dark font-thin">$691</td>
+              <td className="money text-ceci-gray-dark font-thin">$266</td>
             </tr>
             <tr id="ajhn">
               <th className="title text-ceci-gray-dark tracking-wide font-light">
