@@ -200,9 +200,7 @@ export default function RotundaPurchasePage() {
               <td className="money text-ceci-gray-dark font-thin">$6,816</td>
               <td className="money text-ceci-gray-dark font-thin">$5,112</td>
               <td className="money text-ceci-gray-dark font-thin">$3,544</td>
-              <td className="money text-ceci-gray-dark font-thin">$2,113</td>
               <td className="money text-ceci-gray-dark font-thin">$1,363</td>
-              <td className="money text-ceci-gray-dark font-thin">$682</td>
             </tr>
             <tr id="dmde">
               <th className="title text-ceci-gray-dark tracking-wide font-light">
