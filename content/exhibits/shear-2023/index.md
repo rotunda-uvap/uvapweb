@@ -11,8 +11,6 @@ related_series:
 related_blog:
   - Author's Corner with Trevor Burnard, author of WRITING EARLY AMERICA
   - Author's Corner with Jennifer Tsien, author of RUMORS OF REVOLUTION
-  - Author's Corner with James Hill "Trae" Welborn III, author of  DUELING
-    CULTURES, DAMNABLE LEGACIES
 related_staff:
   - Nadine Zimmerli
 featured_books:
