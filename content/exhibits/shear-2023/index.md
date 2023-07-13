@@ -14,9 +14,9 @@ related_blog:
 related_staff:
   - Nadine Zimmerli
 featured_books:
-  - "5978"
-  - "5933"
   - "5979"
+  - "5933"
+  - "5978"
   - "5846"
   - "6017"
   - "6019"
