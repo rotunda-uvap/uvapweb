@@ -2,12 +2,12 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: Seven Virginians
-    banner_author: John B. Boles
-    banner_subtitle: The Men Who Shaped Our Republic
-    banner_id: "5898"
-    banner_quote: A fitting capstone to a fine historian’s distinguished career.
-    banner_attr: Peter S. Onuf
+  - banner_title: Rumors of Revolution
+    banner_author: Jennifer Tsien
+    banner_subtitle: Song, Sentiment, and Sedition in Colonial Louisiana
+    banner_id: "5891"
+    banner_quote: There has not been a book like this for more than fifty years.
+    banner_attr: Gordon Sayre, University of Oregon
 related_book:
   - "5744"
   - "5617"
