@@ -6,7 +6,7 @@ top_banner:
     banner_author: Jennifer Tsien
     banner_subtitle: Song, Sentiment, and Sedition in Colonial Louisiana
     banner_id: "5891"
-    banner_quote: There has not been a book like this for more than fifty years.
+    banner_quote: There has not been a book like this published for more than fifty years.
     banner_attr: Gordon Sayre, University of Oregon
 related_book:
   - "5744"
