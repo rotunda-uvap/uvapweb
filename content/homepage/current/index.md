@@ -2,12 +2,12 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: Rumors of Revolution
-    banner_author: Jennifer Tsien
-    banner_subtitle: Song, Sentiment, and Sedition in Colonial Louisiana
-    banner_id: "5891"
-    banner_quote: There has not been a book like this published for more than fifty years.
-    banner_attr: Gordon Sayre, University of Oregon
+  - banner_title: The Civil War Political Tradition
+    banner_author: Paul D. Escott
+    banner_subtitle: Ten Portraits of Those Who Formed It
+    banner_id: "5843"
+    banner_quote: Offers cogent analysis and the clear, concise pen of a practiced master.
+    banner_attr: Barton A. Myers, Washington and Lee University
 related_book:
   - "5744"
   - "5617"
