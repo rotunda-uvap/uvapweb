@@ -51,9 +51,9 @@ export default function PubPage({ data }) {
  <p className="pt-2">Review copy requests can take up to four weeks to process. Due to the volume of requests, we are unable to provide status updates. Upon publication, please send PDFs and/or links to coverage to <a href="mailto:uvapressintern@gmail.com">uvapressintern@gmail.com.</a></p>
  </section>
 
-          <div className="flex flex-col md:grid md:grid-cols-3">
+          <div className="mx-auto px-4">
            
-             <section className="md:col-span-2 mr-5 flex flex-col">
+             <section className="flex  md:flex-col">
                <SectionHeader text="All News Posts"/>
             {news.edges.map((edge, index) => (
            
@@ -63,13 +63,14 @@ export default function PubPage({ data }) {
               <div className="font-thin uppercase tracking-wide font-display">{ edge.node.frontmatter.title }</div>
               </div>
               
-              <div className="md:flex md:flex-row md:flex-col ">
+              <div className="flex flex-row gap-2 ">
                
-                  {edge.node.frontmatter.related_book ? <div className="float-left md:base-1/5 md:shrink-0 pr-2"><img src={'https://ik.imagekit.io/uvapress/' + edge.node.frontmatter.related_book[0].BookID + "_M.jpg"} alt="cover" className="p-2"/></div> : <div></div>}
-                  {edge.node.html ?  <div className="mt-2  text-ceci-gray-dark font-light dropCap px-2 md:px-1" dangerouslySetInnerHTML={{ __html: sanitizeHtml(edge.node.html.split(' ').splice(0, 50).join(' ') + '...' )}}></div> : <div></div>}
+                  {edge.node.frontmatter.related_book ? <div className="md:base-1/5 md:shrink-0 pr-2"><img src={'https://ik.imagekit.io/uvapress/' + edge.node.frontmatter.related_book[0].BookID + "_M.jpg"} alt="cover"/></div> : <div></div>}
+                 
+                  {edge.node.html ?  <div><div className=" text-ceci-gray-dark font-light dropCap px-2 md:px-1" dangerouslySetInnerHTML={{ __html: sanitizeHtml(edge.node.html.split(' ').splice(0, 100).join(' ') + '...' )}}></div>            <div className="font-display uppercase text-xs tracking-widest py-3 md:py-2"><FaArrowAltCircleRight className="inline mx-4"/> Continue Reading</div>
+</div> : <div></div>}
                   
             </div>
-            <div className="font-display uppercase text-xs tracking-widest py-3 md:py-2"><FaArrowAltCircleRight className="inline mx-4"/> Continue Reading</div>
 
             </Link>
             ))}
@@ -81,16 +82,18 @@ export default function PubPage({ data }) {
 
 
           
-            <section className="md:col-span-1 p-10 flex flex-col">
+        {/*     <section className="md:col-span-1 p-10 flex flex-col">
             <h5 className="py-2 text-ceci-gray-mid">UVAP on Facebook</h5>
             <Helmet>
             
             <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v9.0&appId=10916153062&autoLogAppEvents=1" nonce="Jr34ozA7"></script></Helmet>
             
             <div className="fb-page" data-href="https://www.facebook.com/uvapress" data-tabs="timeline" data-width="" data-height="800" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/uvapress" className="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/uvapress">University of Virginia Press</a></blockquote></div>
-            <div className="py-5"><h5 className="py-2 text-ceci-gray-mid">UVAP on Twitter</h5><a className="twitter-timeline" data-chrome="noheader"  data-widget-id="702210505897807872" data-height="800" data-width="340" href="https://twitter.com/uvapress">Tweets by @uvapress</a></div>
-           
-            </section>
+            <div className="py-5"><h5 className="py-2 text-ceci-gray-mid">UVAP on Twitter</h5>
+            <p>Twitter's embedded timeline service is currently down</p>
+            <a className="twitter-timeline" d  data-height="800" data-width="340" href="https://twitter.com/uvapress">Tweets by @uvapress</a></div>
+             <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </section> */}
             </div>
           
             
