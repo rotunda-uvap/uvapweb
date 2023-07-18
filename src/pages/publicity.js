@@ -53,7 +53,7 @@ export default function PubPage({ data }) {
 
           <div className="mx-auto px-4">
            
-             <section className="flex  md:flex-col">
+             <section className="flex flex-col">
                <SectionHeader text="All News Posts"/>
             {news.edges.map((edge, index) => (
            
@@ -63,9 +63,9 @@ export default function PubPage({ data }) {
               <div className="font-thin uppercase tracking-wide font-display">{ edge.node.frontmatter.title }</div>
               </div>
               
-              <div className="flex flex-row gap-2 ">
+              <div className="flex md:flex-row gap-2  ">
                
-                  {edge.node.frontmatter.related_book ? <div className="md:base-1/5 md:shrink-0 pr-2"><img src={'https://ik.imagekit.io/uvapress/' + edge.node.frontmatter.related_book[0].BookID + "_M.jpg"} alt="cover"/></div> : <div></div>}
+                  {edge.node.frontmatter.related_book ? <div className="md:base-1/5 shrink-0 pr-2"><img src={'https://ik.imagekit.io/uvapress/' + edge.node.frontmatter.related_book[0].BookID + "_M.jpg"} alt="cover"/></div> : <div></div>}
                  
                   {edge.node.html ?  <div><div className=" text-ceci-gray-dark font-light dropCap px-2 md:px-1" dangerouslySetInnerHTML={{ __html: sanitizeHtml(edge.node.html.split(' ').splice(0, 100).join(' ') + '...' )}}></div>            <div className="font-display uppercase text-xs tracking-widest py-3 md:py-2"><FaArrowAltCircleRight className="inline mx-4"/> Continue Reading</div>
 </div> : <div></div>}
