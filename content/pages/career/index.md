@@ -2,13 +2,11 @@
 templateKey: page
 title: Career
 ---
-D﻿irector of Digital Publishing
+[Director of Digital Publishing](#dp)
 
-P﻿roduction Manger
+[Production Manger](#pm)
 
-
-
-### D﻿irector of Digital Publishing
+##### <a name="dp"></a>Director of Digital Publishing
 
 The University of Virginia Press (UVAP) seeks a technologically skilled, innovative, and visionary publishing professional to lead its digital publishing program. This full-time staff position reports to the Press Director.
 
@@ -48,7 +46,7 @@ Since 2010, UVA Press has partnered with the National Historical Publications an
 * Take any bug reports submitted to Founders Online email. For technical bugs, delegate bug fixing within the MarkLogic software environment. For content errors, coordinate with project editorial staff to correct text as agreed upon
 * Serve as primary correspondent for email addressed to the general Founders Online contact address, answering and/or forwarding queries as appropriate
 
-E﻿mployee and Vendor Supervision
+Employee and Vendor Supervision
 
 * Manage/supervise the work of the assistant Digital Initiatives and Rotunda Manager
 * Manage any temporary employees / contractors hired for e.g., metadata entry and checking, proofreading, graphics design
@@ -106,9 +104,7 @@ References will be completed via UVA’s standardized process Skill Survey. A to
 
 For more information about UVA and the Charlottesville community please see <http://www.virginia.edu/life/charlottesville> and [https://embarkcva.com/.](https://embarkcva.com/)
 
-
-
-### P﻿roduction Manager
+##### <a name="pm"></a>Production Manager
 
 **Job Profile:** ACD_101035 / Multimedia Creative Professional 2-MMC57 
 
@@ -124,8 +120,6 @@ The University of Virginia Press seeks a Production Manager to oversee the produ
 * Prepares title cost projections for pricing and budgeting; provides additional figures required for annual departmental budgeting; works with procurement services in establishing contracts as needed. 
 * Attends departmental meetings and other meetings as appropriate. Assists with ebook conversion and distribution process, as appropriate. Keeps abreast of current production and manufacturing technologies and trends; keeps abreast of current digital technologies; as applicable, keeps abreast of current work in book design and graphics technology. 
 
-  
-
 **Qualifications:** 
 
 * Bachelor’s degree. 
@@ -134,9 +128,7 @@ The University of Virginia Press seeks a Production Manager to oversee the produ
 * Strong command of print book production (offset and digital); knowledge of typography and layout. 
 * Excellent communication skills and organizational and time management skills, with the ability to strategize and demonstrate agility under tight deadlines. 
 * Ability to prepare and manage budgets and to project individual title costs for pricing and budgeting. 
-* Facility with MS Word, Excel, title management databases, PC and Macintosh environments; understanding of Adobe Creative Suite and XML/ePubs. 
-
-  
+* Facility with MS Word, Excel, title management databases, PC and Macintosh environments; understanding of Adobe Creative Suite and XML/ePubs.
 
 **ABOUT THE PRESS:** *[The University of Virginia Press](https://www.upress.virginia.edu/)* was founded in 1963 to advance the intellectual interests not only of the *[University of Virginia](http://www.virginia.edu/)* but of institutions of higher learning throughout the state. A member of the *[Association of University Presses](http://aaupnet.org/)*, UVAP currently publishes sixty to seventy new titles annually and operates a successful digital imprint, *[Rotunda](https://www.upress.virginia.edu/rotunda)*. UVAP is located in beautiful Charlottesville, Virginia, a historic and diverse intellectual and entrepreneurial community near the Blue Ridge Mountains with exceptional music, arts, food, sports, and other cultural resources. 
 
