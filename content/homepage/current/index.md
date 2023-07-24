@@ -2,12 +2,13 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: Dueling Cultures, Damnable Legacies
-    banner_author: James Hill "Trae" Welborn III
-    banner_subtitle: Southern Violence and White Supremacy in the Civil War Era
-    banner_id: "5200"
-    banner_quote: A compelling and gracefully written study.
-    banner_attr: Lisa Tendrich Frank
+  - banner_title: The New Dominion
+    banner_author: John G. Milliken and Mark J. Rozell
+    banner_subtitle: The Twentieth-Century Elections That Shaped Modern Virginia
+    banner_id: "5812"
+    banner_quote: If you love Virginia politics, this is a book you will not be able
+      to put down.
+    banner_attr: Bill Bolling, former Lieutenant Governor of Virginia
 related_book:
   - "5744"
   - "5617"
