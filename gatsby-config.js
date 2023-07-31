@@ -265,7 +265,7 @@ module.exports = {
   {
     resolve: `gatsby-plugin-purgecss`,
     options: {
-      printRejected: true,
+      printRejected: false,
       develop: false,
       tailwind: true,
       ignore: ['@algolia/'],
