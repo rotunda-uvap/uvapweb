@@ -2,13 +2,12 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: The New Dominion
-    banner_author: John G. Milliken and Mark J. Rozell
-    banner_subtitle: The Twentieth-Century Elections That Shaped Modern Virginia
-    banner_id: "5812"
-    banner_quote: If you love Virginia politics, this is a book you will not be able
-      to put down.
-    banner_attr: Bill Bolling, former Lieutenant Governor of Virginia
+  - banner_title: Break and Flow
+    banner_author: Charlie D. Hankin
+    banner_subtitle: Hip Hop Poetics in the Americas
+    banner_id: "5908"
+    banner_quote: The product of great learning and greater passion.
+    banner_attr: Adam Bradley, UCLA
 related_book:
   - "5744"
   - "5617"
