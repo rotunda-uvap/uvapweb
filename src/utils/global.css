@@ -169,3 +169,5 @@ div[aria-hidden=true] [contenteditable=true]:not([disabled]){
 .hide-scroll-bar::-webkit-scrollbar {
   display: none;
 }
+
+.auc-Recommend-title {display:none;}

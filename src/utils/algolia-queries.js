@@ -32,7 +32,7 @@ const bookQuery = `{
   }
 }`
 
-function bookToAlgoliaRecord({ node: { id, BookID, Title, Subtitle, MainDescription, internal, AuthorCredit, Subjects, Series, List, DaysSincePublication, PublicationDate, ISBNs} }) {
+function bookToAlgoliaRecord({ node: { id, BookID, Title, Subtitle, MainDescription, internal, AuthorCredit, Subjects, Series, List, DaysSincePublication, PublicationDate, ISBNs, CoverImageMain} }) {
   return {
     objectID: id,
     BookID,
@@ -46,7 +46,8 @@ function bookToAlgoliaRecord({ node: { id, BookID, Title, Subtitle, MainDescript
     List,
     ISBNs,
     DaysSincePublication,
-    PublicationDate
+    PublicationDate,
+    CoverImageMain
   }
 }
 

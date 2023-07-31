@@ -7,6 +7,8 @@ import BookHorizontalTabs from "../components/BookHorizontalTabs"
 import SeO from "../components/SeoComponent"
 import ShareButtons from "../components/ShareButtons"
 import kebabCase from "lodash/kebabCase"
+import Related from "../components/search/Related"
+
 
 const bookPage = ({ data }) => {
   const book = data.books
@@ -141,7 +143,7 @@ const bookPage = ({ data }) => {
 
           {book.Bindings.map((binding, index) => (
             <>
-              <div className=" flex flex-row inline-flex items-center w-full leading-normal"  key={`binding${index}`}>
+              <div className="flex-row inline-flex items-center w-full leading-normal"  key={`binding${index}`}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-6 w-6 text-ceci-gray-mid"
@@ -172,7 +174,7 @@ const bookPage = ({ data }) => {
             </>
           ))}
 
-          <div className="flex flex-row inline-flex items-center w-full leading-normal">
+          <div className=" flex-row inline-flex items-center w-full leading-normal">
           <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-6 w-6 text-ceci-gray-mid"
@@ -199,7 +201,7 @@ const bookPage = ({ data }) => {
           </div>
         
 
-          <div className="flex flex-row inline-flex items-center w-full leading-normal">
+          <div className="flex-row inline-flex items-center w-full leading-normal">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-6 w-6 text-ceci-gray-mid"
@@ -259,7 +261,7 @@ const bookPage = ({ data }) => {
                   )}
                  <section>
           {book.Prizes && (
-            <div className="py-2 flex flex-row inline-flex items-center w-full leading-normal text-gray-700">
+            <div className="py-2 flex-row inline-flex items-center w-full leading-normal text-gray-700">
               <span className="text-sm uppercase pr-5 tracking-wider font-thin text-ceci-gray-mid">
                 awards:
               </span>
@@ -267,7 +269,7 @@ const bookPage = ({ data }) => {
             </div>
           )}
         </section>
-        <section className="py-4 flex flex-row inline-flex space-x-6 items-center ">
+        <section className="py-4 flex-row inline-flex space-x-6 items-center ">
           <div><a href={GoogleB}>
             <img src="/gbs_preview_sticker1.png" alt="view on google books" height="23" width="69" />
           </a></div>
@@ -343,6 +345,12 @@ const bookPage = ({ data }) => {
           <ShareButtons title={title} url={url} />
         </section>
      
+     <section className="pt-4 ml-6" id="relatedProducts">
+     <span className="text-xs uppercase  text-ceci-gray-mid tracking-wider">
+            Related Books:
+          </span>
+     <Related productObjectID={book.id}/>
+     </section>
 
      
 
@@ -354,6 +362,8 @@ const bookPage = ({ data }) => {
 
 export default bookPage
 
+
+
 export const query = graphql`
   query ($id: String!, $imageid: String, $bid: String) {
     books: booksJson(id: { eq: $id }) {
@@ -361,6 +371,7 @@ export const query = graphql`
       BookID
       Title
       Subtitle
+      CoverImageMain
       CoverImageFull
       TableOfContents
       Prizes
