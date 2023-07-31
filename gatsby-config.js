@@ -265,11 +265,12 @@ module.exports = {
   {
     resolve: `gatsby-plugin-purgecss`,
     options: {
-      printRejected: false,
+      printRejected: true,
       develop: false,
       tailwind: true,
+      ignore: ['@algolia/'],
       purgeCSSOptions: {
-      safelist: [/^slick/, /^calendar/, /^day/, /^event/, /^innerDay/, /^ais/],
+      safelist: [/^slick/, /^calendar/, /^day/, /^event/, /^innerDay/, /^ais/, /^uic-/, /^auc-/],
       },
     },
   },
@@ -304,9 +305,9 @@ module.exports = {
     {
       resolve: `gatsby-plugin-algolia`,
       options: {
-        appId: 'H62E0I37SN',
-        apiKey: 'e434857be3fe7ac2d365652ce719762e',
-        indexName: 'Books',
+        appId: process.env.GATSBY_ALGOLIA_APP_ID,
+        apiKey: process.env.ALGOLIA_ADMIN_KEY,
+        indexName: process.env.GATSBY_ALGOLIA_INDEX_NAME, 
         queries: require("./src/utils/algolia-queries")
       },
     },
