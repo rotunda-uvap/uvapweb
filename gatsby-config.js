@@ -268,6 +268,7 @@ module.exports = {
       printRejected: false,
       develop: false,
       tailwind: true,
+      ignore: ['@algolia/'],
       purgeCSSOptions: {
       safelist: [/^slick/, /^calendar/, /^day/, /^event/, /^innerDay/, /^ais/, /^uic-/, /^auc-/],
       },
