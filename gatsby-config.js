@@ -305,9 +305,12 @@ module.exports = {
     {
       resolve: `gatsby-plugin-algolia`,
       options: {
-        appId: process.env.GATSBY_ALGOLIA_APP_ID,
+        appId: 'H62E0I37SN',
+        apiKey: 'e434857be3fe7ac2d365652ce719762e',
+        indexName: 'Books',
+       /*  appId: process.env.GATSBY_ALGOLIA_APP_ID,
         apiKey: process.env.ALGOLIA_ADMIN_KEY,
-        indexName: process.env.GATSBY_ALGOLIA_INDEX_NAME,
+        indexName: process.env.GATSBY_ALGOLIA_INDEX_NAME, */
         queries: require("./src/utils/algolia-queries")
       },
     },

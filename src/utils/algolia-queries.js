@@ -23,6 +23,7 @@ const bookQuery = `{
         List
         PublicationDate
         DaysSincePublication
+        CoverImageMain
         MainDescription {
             html
         }

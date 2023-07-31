@@ -16,6 +16,7 @@ function RelatedItem({ item }) {
     return (
         <>
       <BookCard fields={item} /> 
+    
         </>
       /* <pre>
         <code>{JSON.stringify(item)}</code>
