@@ -301,7 +301,9 @@ module.exports = {
         host: 'https://www.upress.virginia.edu',
         policy: [{ userAgent: '*', allow: '/' }]
       }
-    },
+    }, 
+    "gatsby-plugin-meta-redirect",
+    `gatsby-plugin-emotion`,
     {
       resolve: `gatsby-plugin-algolia`,
       options: {
@@ -311,8 +313,7 @@ module.exports = {
         queries: require("./src/utils/algolia-queries")
       },
     },
-    "gatsby-plugin-meta-redirect",
-    `gatsby-plugin-emotion`
+   
   ],
   // partytownProxiedURLs: [`https://www.googletagmanager.com/gtag/js?id=G-CEYXF25KC3`],
   mapping: {
