@@ -11,6 +11,7 @@ const bookQuery = `{
         Title
         ISBNs
         Subtitle
+        CoverImageMain
         Series {
           name
         }
@@ -23,7 +24,6 @@ const bookQuery = `{
         List
         PublicationDate
         DaysSincePublication
-        CoverImageMain
         MainDescription {
             html
         }

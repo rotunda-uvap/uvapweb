@@ -345,9 +345,9 @@ const bookPage = ({ data }) => {
           <ShareButtons title={title} url={url} />
         </section>
      
-     <section className="pt-4 ml-6" id="relatedProducts">
+     <section className="pt-4" id="relatedProducts">
      <span className="text-xs uppercase  text-ceci-gray-mid tracking-wider">
-            Related Books:
+           You May Also Like:
           </span>
      <Related productObjectID={book.id}/>
      </section>
