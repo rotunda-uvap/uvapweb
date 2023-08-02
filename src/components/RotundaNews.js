@@ -6,7 +6,7 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image"
 export default function RotundaNews() { 
   const data = useStaticQuery(graphql`
   query {
-    image: file(relativePath: { eq: "franklin.jpg" }) {
+    image: file(relativePath: { eq: "arch_sm.png" }) {
       childImageSharp {
         gatsbyImageData(
           placeholder: BLURRED
@@ -22,7 +22,7 @@ export default function RotundaNews() {
   return (
     
         <section className="md:flex md:flex-row justify-center place-content-center md:space-x-8">
-          <GatsbyImage image={rotimage} alt="Founders Online" />
+          <GatsbyImage image={rotimage} alt="SAH Archipedia" />
            <article className="flex flex-1 flex-col flex-wrap px-2 py-5 md:p-5">
            
             <>
@@ -33,9 +33,9 @@ export default function RotundaNews() {
               </div>
                 
               <div className="md:px-10 flex flex-col">
-              <Link className="font-display tracking-wide uppercase py-2 font-thin"  to={`https://founders.archives.gov/`}>ROTUNDA celebrates 10th Anniversary of Founders Online</Link>
-            <div><p className="font-serif text-ceci-gray-dark leading-relaxed dropCap">Ten years ago, UVA Press, through a cooperative agreement with the National Archives and the National Historial Publications and Records Commission, launched the website for Founders Online, an open access version of much of ROTUNDA's Founding Era content. Through this website, you can read and search through thousands of records from George Washington, Benjamin Franklin, Alexander Hamilton, John Jay, John Adams, Thomas Jefferson, and James Madison and see firsthand the growth of democracy and the birth of the Republic. </p> </div>  
-            <div className="font-display uppercase text-xs tracking-widest"><Link className="font-display tracking-wide uppercase py-2" to={`https://founders.archives.gov/`}><FaArrowAltCircleRight className="inline mx-4"/>visit Founders Online</Link> </div></div>
+              <Link className="font-display tracking-wide uppercase py-2 font-thin"  to={`https://www.sah.org/about-sah/news/news-detail/2023/07/24/celebrating-10-years-of-sah-archipedia`}>SAH Archipedia Turns Ten!</Link>
+            <div><p className="font-serif text-ceci-gray-dark leading-relaxed dropCap">A decade ago, the Society of Architectural Historians and University of Virginia Press first published <a href="https://sah-archipedia.org/">SAH Archipedia</a>, the authoritative online architectural encyclopedia of the U.S. built environment. Since then, over a million visitors have enjoyed the essays, entries, and images of sites all over the country—from prehistoric to contemporary, vernacular to high style, landscapes to urban settings.</p> </div>  
+            <div className="font-display uppercase text-xs tracking-widest"><Link className="font-display tracking-wide uppercase py-2" to={`https://www.sah.org/about-sah/news/news-detail/2023/07/24/celebrating-10-years-of-sah-archipedia`}><FaArrowAltCircleRight className="inline mx-4"/>read full article at SAH.org</Link> </div></div>
          
             
             </>
