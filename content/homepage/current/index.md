@@ -2,12 +2,12 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: Break and Flow
-    banner_author: Charlie D. Hankin
-    banner_subtitle: Hip Hop Poetics in the Americas
-    banner_id: "5908"
-    banner_quote: The product of great learning and greater passion.
-    banner_attr: Adam Bradley, UCLA
+  - banner_title: The Peaceful Transfer of Power
+    banner_author: David Marchick. Alexander Tippett. A. J. Wilson
+    banner_subtitle: An Oral History of America’s Presidential Transitions
+    banner_id: "5816"
+    banner_quote: A must read for people of all political stripes
+    banner_attr: Penny Pritzker, former U.S. Secretary of Commerce
 related_book:
   - "5744"
   - "5617"
