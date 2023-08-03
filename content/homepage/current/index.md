@@ -6,7 +6,7 @@ top_banner:
     banner_author: David Marchick. Alexander Tippett. A. J. Wilson
     banner_subtitle: An Oral History of America’s Presidential Transitions
     banner_id: "5816"
-    banner_quote: A must read for people of all political stripes
+    banner_quote: A must read for people of all political stripes.
     banner_attr: Penny Pritzker, former U.S. Secretary of Commerce
 related_book:
   - "5744"
