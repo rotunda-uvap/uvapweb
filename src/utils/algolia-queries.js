@@ -1,6 +1,6 @@
 
 
-const indexName = `Books`
+const indexName = `Books_new`
 
 const bookQuery = `{
   books: allBooksJson {
