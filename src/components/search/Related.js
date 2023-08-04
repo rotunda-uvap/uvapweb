@@ -28,7 +28,7 @@ const Related = ({ productObjectID }) => {
     return (
       <RelatedProducts
         recommendClient={recommendClient}
-        indexName="Books_new"
+        indexName="Books"
         objectIDs={[productObjectID]}
         itemComponent={RelatedItem}
         maxRecommendations={6}
