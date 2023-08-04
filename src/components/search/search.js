@@ -38,9 +38,9 @@ const Search = () => (
 
        <div className="border-b border-gray-400 pb-3">
         <SortBy className="text-xs text-gray-600"
-          defaultRefinement="Books"
+          defaultRefinement="Books_new"
           items={[
-            {value: "Books", label:"Most Relevant"},
+            {value: "Book_new", label:"Most Relevant"},
             {value: "books_date_asc", label:"Most Recent Books First"}
             ]}/>
 
