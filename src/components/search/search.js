@@ -41,7 +41,7 @@ const Search = () => (
           defaultRefinement="Books_new"
           items={[
             {value: "Book_new", label:"Most Relevant"},
-            {value: "books_date_asc", label:"Most Recent Books First"}
+            {value: "newest", label:"Most Recent Books First"}
             ]}/>
 
       <Stats className="text-xs text-gray-600"/>
