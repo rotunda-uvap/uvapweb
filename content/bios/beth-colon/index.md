@@ -2,7 +2,7 @@
 templateKey: bio
 title: Beth Colón
 staff_name: Beth Colón
-profile_photo: ""
+profile_photo: BCP.jpeg
 name_slug: beth-colon
 job_title: Associate Editor for Africana Studies
 department:
