@@ -2,12 +2,13 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: The Peaceful Transfer of Power
-    banner_author: David Marchick. Alexander Tippett. A. J. Wilson
-    banner_subtitle: An Oral History of America’s Presidential Transitions
-    banner_id: "5816"
-    banner_quote: A must read for people of all political stripes.
-    banner_attr: Penny Pritzker, former U.S. Secretary of Commerce
+  - banner_title: The New Dominion
+    banner_author: John G. Milliken and Mark J. Rozell, eds.
+    banner_subtitle: The Twentieth-Century Elections That Shaped Modern Virginia
+    banner_id: "5812"
+    banner_quote: If you love Virginia politics, this is a book you will not be able
+      to put down.
+    banner_attr: Bill Bolling, former Lieutenant Governor of Virginia
 related_book:
   - "5744"
   - "5617"
