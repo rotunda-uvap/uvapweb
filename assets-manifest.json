@@ -359,6 +359,8 @@
   "node_modules_objectFitPolyfill_dist_objectFitPolyfill_min_js.js.map": "node_modules_objectFitPolyfill_dist_objectFitPolyfill_min_js.js.map",
   "node_modules_tw-elements_dist_js_chart_es_js.js": "node_modules_tw-elements_dist_js_chart_es_js.js",
   "node_modules_tw-elements_dist_js_chartjs-plugin-datalabels_es_js.js": "node_modules_tw-elements_dist_js_chartjs-plugin-datalabels_es_js.js",
+  "node_modules_web-vitals_base_js.js": "node_modules_web-vitals_base_js.js",
+  "node_modules_web-vitals_base_js.js.map": "node_modules_web-vitals_base_js.js.map",
   "react-dom.production.min.js": "react-dom.production.min.js",
   "react.production.min.js": "react.production.min.js",
   "static/antonio-all-100-normal.woff": "static/antonio-all-100-normal-5b3ce393b54153f73175e89c123008c7.woff",
