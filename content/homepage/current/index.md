@@ -2,13 +2,12 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: The New Dominion
-    banner_author: John G. Milliken and Mark J. Rozell, eds.
-    banner_subtitle: The Twentieth-Century Elections That Shaped Modern Virginia
-    banner_id: "5812"
-    banner_quote: If you love Virginia politics, this is a book you will not be able
-      to put down.
-    banner_attr: Bill Bolling, former Lieutenant Governor of Virginia
+  - banner_title: Plain Paths and Dividing Lines
+    banner_author: Jessica Lauren Taylor
+    banner_subtitle: Navigating Native Land and Water in the Seventeenth-Century Chesapeake
+    banner_id: "5806"
+    banner_quote: "An exceptionally rich and well-researched book. "
+    banner_attr: Paul Musselwhite, Dartmouth College
 related_book:
   - "5744"
   - "5617"
