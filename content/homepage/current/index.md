@@ -2,14 +2,12 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: Thoreau's Botany
-    banner_author: James Perrin Warren
-    banner_subtitle: Thinking and Writing with Plants
-    banner_id: "5912"
-    banner_quote: Warren tracks Thoreau’s experimental journey into a dynamic
-      natural world that is thinking all the time, where plants become words
-      spoken by the soil.
-    banner_attr: Laura Dassow Walls, University of Notre Dame
+  - banner_title: For the People, For the Country
+    banner_author: John A. Ragosta
+    banner_subtitle: Patrick Henry’s Final Political Battle
+    banner_id: "5846"
+    banner_quote: This is a story that Americans today should know about and take to heart.
+    banner_attr: Annette Gordon-Reed
 related_book:
   - "5744"
   - "5617"
