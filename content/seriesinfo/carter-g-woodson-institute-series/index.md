@@ -5,7 +5,7 @@ status: active
 seriestype: Academic Book Series
 editors: "Series Editors: Deborah E. McDowell, Shawn Leigh Alexander, Robert T. Vinson"
 related_staff:
-  - Eric Brandt
+  - Beth Colón
   - Nadine Zimmerli
 seriesID: CGW
 type: series
