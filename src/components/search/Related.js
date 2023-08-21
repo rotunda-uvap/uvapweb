@@ -31,7 +31,7 @@ const Related = ({ productObjectID }) => {
         indexName="Books_new"
         objectIDs={[productObjectID]}
         itemComponent={RelatedItem}
-        maxRecommendations={6}
+        maxRecommendations={5}
         view={HorizontalSlider}
       />
     );
