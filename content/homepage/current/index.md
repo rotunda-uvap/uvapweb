@@ -2,12 +2,14 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: For the People, For the Country
-    banner_author: John A. Ragosta
-    banner_subtitle: Patrick Henry’s Final Political Battle
-    banner_id: "5846"
-    banner_quote: This is a story that Americans today should know about and take to heart.
-    banner_attr: Annette Gordon-Reed
+  - banner_title: Reconstruction Beyond 150
+    banner_author: Orville Vernon Burton and J. Brent Morris, eds.
+    banner_subtitle: Reassessing the New Birth of Freedom
+    banner_id: "5392"
+    banner_quote: These essays elegantly capture much of what historians have to
+      offer a nation that is in many ways still locked in its post-Civil War
+      struggles.
+    banner_attr: Stephen Kantrowitz, University of Wisconsin-Madison
 related_book:
   - "5744"
   - "5617"
@@ -22,14 +24,9 @@ featured_books:
   - "5315"
   - "5881"
   - "5909"
-  - "5779"
   - "5833"
   - "5898"
   - "5880"
   - "5811"
-  - "5273"
-  - "5375"
-  - "5740"
-  - "5292"
-  - "5866"
+  - "5846"
 ---
