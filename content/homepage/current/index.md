@@ -2,14 +2,14 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: Reconstruction Beyond 150
-    banner_author: Orville Vernon Burton and J. Brent Morris, eds.
-    banner_subtitle: Reassessing the New Birth of Freedom
-    banner_id: "5392"
-    banner_quote: These essays elegantly capture much of what historians have to
-      offer a nation that is in many ways still locked in its post-Civil War
-      struggles.
-    banner_attr: Stephen Kantrowitz, University of Wisconsin-Madison
+  - banner_title: The Literatures of Spanish America and Brazil
+    banner_author: Earl E. Fitz
+    banner_subtitle: " From Their Origins through the Nineteenth Century"
+    banner_id: "5935"
+    banner_quote: a major work from an inter-Americanist pioneer who has served as
+      the single greatest custodian of Literature of the Americas in print and
+      in the classroom.
+    banner_attr: Antonio Barrenechea, University of Mary Washington
 related_book:
   - "5744"
   - "5617"
