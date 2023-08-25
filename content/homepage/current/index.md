@@ -6,7 +6,7 @@ top_banner:
     banner_author: Earl E. Fitz
     banner_subtitle: " From Their Origins through the Nineteenth Century"
     banner_id: "5935"
-    banner_quote: a major work from an inter-Americanist pioneer who has served as
+    banner_quote: A major work from an inter-Americanist pioneer who has served as
       the single greatest custodian of Literature of the Americas in print and
       in the classroom.
     banner_attr: Antonio Barrenechea, University of Mary Washington
