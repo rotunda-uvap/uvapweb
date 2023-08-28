@@ -2,14 +2,13 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: The Literatures of Spanish America and Brazil
-    banner_author: Earl E. Fitz
-    banner_subtitle: " From Their Origins through the Nineteenth Century"
-    banner_id: "5935"
-    banner_quote: A major work from an inter-Americanist pioneer who has served as
-      the single greatest custodian of Literature of the Americas in print and
-      in the classroom.
-    banner_attr: Antonio Barrenechea, University of Mary Washington
+  - banner_title: European Friends of the American Revolution
+    banner_author: Andrew J. O’Shaughnessy, John A. Ragosta, and Marie-Jeanne Rossignol, eds.
+    banner_subtitle: Now Available!
+    banner_id: "5407"
+    banner_quote: A compelling reminder that we must consider the birth of the
+      United States in its proper context.
+    banner_attr: Patrick Griffin, University of Notre Dame
 related_book:
   - "5744"
   - "5617"
