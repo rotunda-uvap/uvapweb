@@ -4,7 +4,7 @@ title: Current
 top_banner:
   - banner_title: European Friends of the American Revolution
     banner_author: Andrew J. O’Shaughnessy, John A. Ragosta, and Marie-Jeanne Rossignol, eds.
-    banner_subtitle: Now Available!
+    banner_subtitle: Now Available
     banner_id: "5407"
     banner_quote: A compelling reminder that we must consider the birth of the
       United States in its proper context.
