@@ -41,6 +41,8 @@ strong {font-weight: bolder; font-weight: 600;}
   padding: 1em 0;
   letter-spacing: .0235em;}
 
+.cms pre code {font-family: "Crimson Text";}
+
 .dropCap > p {padding:.5rem 0;}
 .dropCap p:first-child:first-letter {
   color: rgb(29, 28, 28);
