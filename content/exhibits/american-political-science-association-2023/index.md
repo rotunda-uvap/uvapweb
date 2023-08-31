@@ -1,6 +1,6 @@
 ---
 templateKey: exhibit
-title: American Political Science Association 2023
+title: APSA 2023
 exhibit_slug: apsa23
 txtcolor: text-black
 related_series:
