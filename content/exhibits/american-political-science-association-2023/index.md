@@ -20,8 +20,9 @@ featured_books:
   - "5694"
   - "5816"
   - "5985"
-  - "5468"
   - "5812"
+  - "5877"
+  - "5468"
 related_collection:
   - APSA 23
 date: 2023-08-31
