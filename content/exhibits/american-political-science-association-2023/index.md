@@ -7,6 +7,11 @@ related_series:
   - MCSP
   - CD
   - REP
+related_blog:
+  - Authors' Corner with John G. Milliken and Mark J. Rozell, editors of THE NEW
+    DOMINION
+  - Authors' Corner with Lindsay M. Chervinsky and Matthew R. Costello, editors
+    of MOURNING THE PRESIDENTS
 related_staff:
   - Nadine Zimmerli
 featured_books:
