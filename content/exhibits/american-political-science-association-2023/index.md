@@ -2,7 +2,8 @@
 templateKey: exhibit
 title: APSA 2023
 exhibit_slug: apsa23
-txtcolor: text-black
+coupon: Get 30% OFF with promo code 10APSA23 through September 15
+txtcolor: ""
 related_series:
   - MCSP
   - CD
