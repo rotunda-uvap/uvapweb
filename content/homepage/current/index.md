@@ -2,13 +2,13 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: European Friends of the American Revolution
-    banner_author: Andrew J. O’Shaughnessy, John A. Ragosta, and Marie-Jeanne Rossignol, eds.
-    banner_subtitle: Now Available
-    banner_id: "5407"
-    banner_quote: A compelling reminder that we must consider the birth of the
-      United States in its proper context.
-    banner_attr: Patrick Griffin, University of Notre Dame
+  - banner_title: The Tory's Wife
+    banner_author: Cynthia A. Kierner
+    banner_subtitle: A Woman and Her Family in Revolutionary America
+    banner_id: "5979"
+    banner_quote: Reveals the untiring efforts of the indomitable Jane to claim her
+      rights as a citizen of the new republic.
+    banner_attr: Mary Beth Norton, Cornell University
 related_book:
   - "5744"
   - "5617"
