@@ -2,13 +2,13 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: The Tory's Wife
-    banner_author: Cynthia A. Kierner
-    banner_subtitle: A Woman and Her Family in Revolutionary America
-    banner_id: "5979"
-    banner_quote: Reveals the untiring efforts of the indomitable Jane to claim her
-      rights as a citizen of the new republic.
-    banner_attr: Mary Beth Norton, Cornell University
+  - banner_title: Some Unfinished Chaos
+    banner_author: Arthur Krystal
+    banner_subtitle: " The Lives of F. Scott Fitzgerald"
+    banner_id: "5945"
+    banner_quote: It’s wonderful to see a critic with Mr. Krystal’s gifts tackling a
+      writer as elusive as Fitzgerald.
+    banner_attr: James L. W. West III, Pennsylvania State University
 related_book:
   - "5744"
   - "5617"
@@ -20,12 +20,12 @@ related_book:
 related_collection:
   - Homepage Featured
 featured_books:
+  - "5846"
+  - "5833"
   - "5315"
   - "5881"
   - "5909"
-  - "5833"
-  - "5898"
   - "5880"
+  - "5979"
   - "5811"
-  - "5846"
 ---
