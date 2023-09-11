@@ -6,9 +6,9 @@ top_banner:
     banner_author: Arthur Krystal
     banner_subtitle: " The Lives of F. Scott Fitzgerald"
     banner_id: "5945"
-    banner_quote: It’s wonderful to see a critic with Mr. Krystal’s gifts tackling a
-      writer as elusive as Fitzgerald.
-    banner_attr: James L. W. West III, Pennsylvania State University
+    banner_quote: The writing is crisp, pointed and well-considered . . . Mr.
+      Krystal is acute in his understanding.
+    banner_attr: Wall Street Journal
 related_book:
   - "5744"
   - "5617"
