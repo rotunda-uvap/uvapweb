@@ -158,14 +158,14 @@ export default function AboutPage({ data }) {
               <div>
               <BoardMember name={"Sandhya Shukla, chair"} title={"Associate Professor of English and American Studies, University of Virginia"}/>
               <BoardMember name={"Derrick Aldridge"} title={"Professor and Program Coordinator, Social Foundations of Education, University of Virginia"}/>
-              <BoardMember name={"Asher Biemann"} title={"Professor of Religious Studies, University of Virginia"}/>
+              <BoardMember name={"Gustavo Pellón"} title={"Professor Emeritus of Spanish, University of Virginia"}/>
               <BoardMember name={"Amy Clark"} title={"Professor of English and Chair of Communications Studies, University of Virginia at Wise"}/>
                 
                 <BoardMember name={"John Comazzi"} title={"Associate Professor, School of Architecture (w/ appointment in Education & Human Development), University of Virginia"}/>
+               <BoardMember name={"Kevin K. Gaines"} title={"Julian Bond Professor of Civil Rights and Social Justice & Professor of African American History, University of Virginia"}/>
                 <BoardMember name={"David Getsy"} title={"Eleanor Shea Professor of Art History, Department of Art, University of Virginia"}/>
-                <BoardMember name={"Claudrena Harold"} title={"Professor of African American and African Studies and History and Department Chair, Corcoran Department of History, University of Virginia"}/>
+                <BoardMember name={"Justene Hill Edwards"} title={"Associate Professor of History, University of Virginia"}/>
                 <BoardMember name={"Nana Last"} title={"Professor of Architecture, School of Architecture, University of Virginia"}/>
-                <BoardMember name={"Cassandra Newby-Alexander"} title={"Dean, College of Liberal Studies, Professor of History, and Director, Joseph Jenkins Roberts Center for African Diaspora, Norfolk State University"}/>
                 <BoardMember name={"Penny Von Eschen"} title={"Chair of American Studies, Professof History and William R. Kenan, Jr. Professor of American Studies, University of Virginia"}/>
                
                 <p className="py-4 px-5 italic">Ex Officio</p>
