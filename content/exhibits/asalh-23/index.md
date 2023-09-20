@@ -28,3 +28,4 @@ related_collection:
   - ASALH 23
 date: 2023-09-20
 ---
+A﻿nnouncing a new series: [The Black Soldier in War and Society: New Narratives and Critical Perspectives](https://www.upress.virginia.edu/static/a40f822ffbf55518944ab475208c9022/eb984/BlackSoldiersSeries.avif)
