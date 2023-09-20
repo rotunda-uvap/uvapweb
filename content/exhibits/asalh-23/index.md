@@ -1,8 +1,8 @@
 ---
 templateKey: exhibit
-title: ASALH 23
+title: Association for the Study of African American Life and History Conference 2023
 exhibit_slug: asalh23
-coupon: Get 30% OFF with promo code 10SHEAR23 through October 1
+coupon: Get 30% OFF with promo code 10ASALH23 through October 1
 txtcolor: text-black
 related_series:
   - CGW
