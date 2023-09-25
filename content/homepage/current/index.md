@@ -2,12 +2,13 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: Difficult Reading
-    banner_author: Jason R. Marley
-    banner_subtitle: Frustration and Form in Anglophone Caribbean Fiction
-    banner_id: "5764"
-    banner_quote: Enriches critical Caribbean studies with nuanced, original readings.
-    banner_attr: Njelle Hamilton, University of Virginia
+  - banner_title: When Dissents Matter
+    banner_author: Pamela C. Corley, Amy Steigerwalt, and Artemus Ward
+    banner_subtitle: Judicial Dialogue through US Supreme Court Opinions
+    banner_id: "5980"
+    banner_quote: The most comprehensive scholarly examination of Supreme Court
+      dissensus to date.
+    banner_attr: Christina Boyd, University of Georgia
 related_book:
   - "5744"
   - "5617"
