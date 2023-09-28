@@ -2,13 +2,12 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: When Dissents Matter
-    banner_author: Pamela C. Corley, Amy Steigerwalt, and Artemus Ward
-    banner_subtitle: Judicial Dialogue through US Supreme Court Opinions
-    banner_id: "5980"
-    banner_quote: The most comprehensive scholarly examination of Supreme Court
-      dissensus to date.
-    banner_attr: Christina Boyd, University of Georgia
+  - banner_title: The American Liberty Pole
+    banner_author: Shira Lurie
+    banner_subtitle: Popular Politics and the Struggle for Democracy in the Early Republic
+    banner_id: "5978"
+    banner_quote: At the heart of the debate over the nature of republican government.
+    banner_attr: Eric A. Hinderaker, University of Utah
 related_book:
   - "5744"
   - "5617"
