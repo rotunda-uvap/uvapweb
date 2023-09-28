@@ -6,7 +6,8 @@ top_banner:
     banner_author: Shira Lurie
     banner_subtitle: Popular Politics and the Struggle for Democracy in the Early Republic
     banner_id: "5978"
-    banner_quote: At the heart of the debate over the nature of republican government.
+    banner_quote: Situated at the heart of the debate over the nature of republican
+      government.
     banner_attr: Eric A. Hinderaker, University of Utah
 related_book:
   - "5744"
