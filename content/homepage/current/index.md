@@ -2,13 +2,13 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: The American Liberty Pole
-    banner_author: Shira Lurie
-    banner_subtitle: Popular Politics and the Struggle for Democracy in the Early Republic
-    banner_id: "5978"
-    banner_quote: Situated at the heart of the debate over the nature of republican
-      government.
-    banner_attr: Eric A. Hinderaker, University of Utah
+  - banner_title: Bedazzled Saints
+    banner_author: Noria K. Litaker
+    banner_subtitle: Catacomb Relics in Early Modern Bavaria
+    banner_id: "5952"
+    banner_quote: An invaluable contribution to our understanding of baroque piety
+      and of the evolution of post-Reformation Catholic identity.
+    banner_attr: Bridget Heal, University of St. Andrews
 related_book:
   - "5744"
   - "5617"
