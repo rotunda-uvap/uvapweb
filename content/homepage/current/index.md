@@ -2,13 +2,14 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: Bedazzled Saints
-    banner_author: Noria K. Litaker
-    banner_subtitle: Catacomb Relics in Early Modern Bavaria
-    banner_id: "5952"
-    banner_quote: An invaluable contribution to our understanding of baroque piety
-      and of the evolution of post-Reformation Catholic identity.
-    banner_attr: Bridget Heal, University of St. Andrews
+  - banner_title: The Presidency and the American State
+    banner_author: Stephen J. Rockwell
+    banner_subtitle: Leadership and Decision Making in the Adams, Grant, and Taft
+      Administrations
+    banner_id: "5877"
+    banner_quote: A dynamic, innovative, and truly satisfying revisitation of
+      American history itself.
+    banner_attr: Saladin Ambar, Rutgers University
 related_book:
   - "5744"
   - "5617"
