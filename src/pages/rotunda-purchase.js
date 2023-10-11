@@ -483,7 +483,7 @@ export default function RotundaPurchasePage() {
               <td  className="py-1">
                 Baccalaureate General colleges; Baccalaureate/Associates
                 institutions; Research institutions with 50 or more FTE
-                (full-time employees)
+                (full-time employees). Also includes individual subscriptions.
               </td>
             </tr>
           </tbody>

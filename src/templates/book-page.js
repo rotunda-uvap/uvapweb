@@ -286,7 +286,7 @@ const bookPage = ({ data }) => {
             reviews={book.Reviews}
             bio={book.BioNote.html}
             add={resources}
-            TOC={book.TableOfContents}
+            TOC={book.TableOfContents.html}
           />
         </section>
 
@@ -296,7 +296,7 @@ const bookPage = ({ data }) => {
             reviews={book.Reviews}
             bio={book.BioNote.html}
             add={resources}
-            TOC={book.TableOfContents}
+            TOC={book.TableOfContents.html}
           />
         </section>
 
@@ -370,7 +370,9 @@ export const query = graphql`
       Subtitle
       CoverImageMain
       CoverImageFull
-      TableOfContents
+      TableOfContents {
+        html
+      }
       Prizes
       InternalSeriesVolume
       Bindings {

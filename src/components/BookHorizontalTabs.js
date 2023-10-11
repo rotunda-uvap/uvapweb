@@ -43,15 +43,12 @@ const BookHorizontalTabs = ({summary, reviews, bio, TOC, add}) => {
           :
               <div><p>No biographical information available</p></div>}
         </TabPanel>
+
         <TabPanel className="py-3" tabid="basic-tab-four">
         {TOC ? 
-        <ul className="hanging">{TOC.map((i, index)=> (
-          <li className="cms text-ceci-gray-dark font-serif text-lg pl-5 hanging"  key={`toc${index}`}>{i}</li>
-        )
-
-        )}</ul>
+        <div dangerouslySetInnerHTML={{__html: TOC}} className="cms text-lg font-serif tracking-wide text-ceci-gray-dark"></div>
              : 
-        <p>Table of Contents not available</p>
+        <div><p>Table of Contents not available</p></div>
     }
 
         </TabPanel>

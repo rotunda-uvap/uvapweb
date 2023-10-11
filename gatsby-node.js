@@ -11,7 +11,6 @@ exports.createSchemaCustomization = ({ actions }) => {
         BookID: String!  
         DaysSincePublication: Int!
         Authors: [String]
-        TableOfContents: [String]
       }  
       
       type RotundaJson implements Node {
