@@ -286,7 +286,7 @@ const bookPage = ({ data }) => {
             reviews={book.Reviews}
             bio={book.BioNote.html}
             add={resources}
-            TOC={book.TableOfContents}
+            TOC={book.TableOfContents.html}
           />
         </section>
 
@@ -296,7 +296,7 @@ const bookPage = ({ data }) => {
             reviews={book.Reviews}
             bio={book.BioNote.html}
             add={resources}
-            TOC={book.TableOfContents}
+            TOC={book.TableOfContents.html}
           />
         </section>
 
@@ -320,8 +320,12 @@ const bookPage = ({ data }) => {
           </section>
         )} */}
 
-{news.edges[0] && (
-        <section>
+  <section className="pb-4">
+          <ShareButtons title={title} url={url} />
+   </section>
+        
+   {news.edges[0] && (
+        <section className="py-4">
           <span className="text-xs uppercase  text-ceci-gray-mid tracking-wider">
             Related News:
           </span>
@@ -331,23 +335,16 @@ const bookPage = ({ data }) => {
                 key={edge.node.frontmatter.id}>
                   {edge.node.frontmatter.title}
                 </Link>
-            
-           
           
           </article>
           ))}
-
-         
         </section>
       )}
 
-        <section className="pt-4 ml-6">
-          <ShareButtons title={title} url={url} />
-        </section>
-     
-     <section className="pt-4 ml-6" id="relatedProducts">
+ 
+  <section className="pt-4 border-t-2" id="relatedProducts">
      <span className="text-xs uppercase  text-ceci-gray-mid tracking-wider">
-            Related Books:
+           You May Also Like:
           </span>
      <Related productObjectID={book.id}/>
      </section>
@@ -373,7 +370,9 @@ export const query = graphql`
       Subtitle
       CoverImageMain
       CoverImageFull
-      TableOfContents
+      TableOfContents {
+        html
+      }
       Prizes
       InternalSeriesVolume
       Bindings {

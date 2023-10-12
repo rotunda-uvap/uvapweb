@@ -63,7 +63,7 @@ else metaImage = null;
             {related_series && related_series.map((series, index) => (
             <> 
             <div className="float-right px-7 pb-5"  key={`series${index}`}>
-            <h6 className="uppercase py-2">Related Series: <Link to={`../../series/${ series.seriesID }`} className="pl-2">{series.seriesName}</Link></h6>
+            <h6 className="uppercase py-2"><span className="font-semibold">Related Series: </span><Link to={`../../series/${ series.seriesID }`} className="pl-2">{series.seriesName}</Link></h6>
             </div></>
         ))} 
          </div>

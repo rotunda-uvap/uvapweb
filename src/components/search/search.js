@@ -2,6 +2,7 @@ import algoliasearch from "algoliasearch/lite"
 import { InstantSearch, SearchBox, Hits, Stats, RefinementList, Pagination, SortBy, PoweredBy} from "react-instantsearch-dom"
 import "./search.css"
 import React from 'react'
+import { IKImage, IKContext } from 'imagekitio-react'
 //import { Link } from "gatsby"
 
 
@@ -10,12 +11,23 @@ const appId = process.env.GATSBY_ALGOLIA_APP_ID;
 const searchKey = process.env.GATSBY_ALGOLIA_SEARCH_KEY;
 const searchClient = algoliasearch(appId, searchKey);
 
-const Hit = ( {hit}) => <div className="py-2 border-b-2 border-gray-300"><a href={`../title/${ hit.BookID }`} target="_blank" className="hover:bg-greige hover:text-ceci-gray-dark"><h6 className="font-thin text-md py-0 text-ceci-gray-dark tracking-wide uppercase">{hit.Title}</h6>
+const Hit = ( {hit}) => <div className="py-2 border-b-2 border-gray-300">
+   
+  <a href={`../title/${ hit.BookID }`} target="_blank" className="flex flex-col md:flex-row md:gap-4">
+   
+     {hit.CoverImageMain ?  <IKContext urlEndpoint="https://ik.imagekit.io/uvapress/">
+            <IKImage width="150" height="224" path={hit.CoverImageMain} transformation={[{
+              "height": "225",
+              "width": "150",
+              crop: "at_max"
+            }]} lqip={{ active: true }} alt={hit.Title}/>
+          </IKContext> : <div/>}
+   <div> <h6 className="font-thin text-md py-0 hover:bg-greige hover:text-ceci-gray-dark text-ceci-gray-dark tracking-wide uppercase">{hit.Title}</h6>
 {hit.Subtitle ? <h6 className="text-sm tracking-booped text-ceci-gray-mid font-thin pb-1 ">{hit.Subtitle}</h6> : ""}
 <h6 className="text-xs tracking-widest font-display uppercase">{hit.AuthorCredit}</h6>
 
 <div className="pt-3" dangerouslySetInnerHTML={{ __html: hit.MainDescription.html.split(' ').splice(0, 30).join(' ') + '...' }}/>
-<h6 className="text-xs uppercase tracking-wide text-ceci-gray-mid font-thin pb-5">Published: {hit.PublicationDate}</h6></a></div>
+<h6 className="text-xs uppercase tracking-wide text-ceci-gray-mid font-thin pb-5">Published: {hit.PublicationDate}</h6></div></a></div>
 
 const Search = () => (
     <InstantSearch searchClient={searchClient} indexName={process.env.GATSBY_ALGOLIA_INDEX_NAME} routing={true} insights={true}  >
@@ -38,10 +50,10 @@ const Search = () => (
 
        <div className="border-b border-gray-400 pb-3">
         <SortBy className="text-xs text-gray-600"
-          defaultRefinement="Books"
+          defaultRefinement="Books_new"
           items={[
-            {value: "Books", label:"Most Relevant"},
-            {value: "books_date_asc", label:"Most Recent Books First"}
+            {value: "Book_new", label:"Most Relevant"},
+            {value: "newest", label:"Most Recent Books First"}
             ]}/>
 
       <Stats className="text-xs text-gray-600"/>

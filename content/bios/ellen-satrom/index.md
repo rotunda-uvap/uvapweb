@@ -4,7 +4,7 @@ title: Ellen Satrom
 staff_name: Ellen Satrom
 profile_photo: ""
 name_slug: ellen-satrom
-job_title: Managing Editor and Editorial, Design, and Production Manager
+job_title: Editorial, Design, and Production Director
 department:
   - EDP
 email: esatrom​@​virginia.edu

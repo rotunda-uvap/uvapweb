@@ -11,7 +11,6 @@ exports.createSchemaCustomization = ({ actions }) => {
         BookID: String!  
         DaysSincePublication: Int!
         Authors: [String]
-        TableOfContents: [String]
       }  
       
       type RotundaJson implements Node {
@@ -77,6 +76,7 @@ exports.createSchemaCustomization = ({ actions }) => {
     createRedirect({ fromPath: '/rotunda/purchase/', toPath: '/rotunda-purchase/', isPermanent: true, redirectInBrowser: true })
     createRedirect({ fromPath: '/plunkett/mfp.html', toPath: 'https://legacy.upress.virginia.edu/plunkett/mfp.html', isPermanent: true, redirectInBrowser: true, statusCode: 200 })
     createRedirect({ fromPath: '/epub/pyatt/nchome.html', toPath: 'https://legacy.upress.virginia.edu/epub/pyatt/index.html', isPermanent: true, redirectInBrowser: true, statusCode: 200 })
+    createRedirect({ fromPath: '/images/blacksolidersseries.avif', toPath: '/static/a40f822ffbf55518944ab475208c9022/78c30/BlackSoldiersSeries.avif', isPermanent: true, redirectInBrowser: true, statusCode: 200 })
 
 
     

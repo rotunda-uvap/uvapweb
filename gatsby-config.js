@@ -204,7 +204,7 @@ module.exports = {
         generateMatchPathRewrites: true,
       },
     },
-    {
+   /*  {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
         // You can add multiple tracking ids and a pageview event will be fired for all of them.
@@ -229,8 +229,39 @@ module.exports = {
           exclude: ["/preview/**", "/do-not-track/me/too/"],
         },
       },
+    }, */
+    {
+      resolve: "gatsby-plugin-google-tagmanager",
+      options: {
+        id: "GTM-MRC4NJR",
+  
+        // Include GTM in development.
+        //
+        // Defaults to false meaning GTM will only be loaded in production.
+        includeInDevelopment: false,
+  
+        // datalayer to be set before GTM is loaded
+        // should be an object or a function that is executed in the browser
+        //
+        // Defaults to null
+        defaultDataLayer: { platform: "gatsby" },
+  
+        // Specify optional GTM environment details.
+      /*   gtmAuth: "YOUR_GOOGLE_TAGMANAGER_ENVIRONMENT_AUTH_STRING",
+        gtmPreview: "YOUR_GOOGLE_TAGMANAGER_ENVIRONMENT_PREVIEW_NAME",
+        dataLayerName: "YOUR_DATA_LAYER_NAME", */
+  
+        // Name of the event that is triggered
+        // on every Gatsby route change.
+        //
+        // Defaults to gatsby-route-change
+        //routeChangeEventName:" "YOUR_ROUTE_CHANGE_EVENT_NAME,
+        // Defaults to false
+        enableWebVitalsTracking: false,
+        // Defaults to https://www.googletagmanager.com
+       // selfHostedOrigin: "YOUR_SELF_HOSTED_ORIGIN",
+      },
     },
-    
     
     `gatsby-plugin-sitemap`,
     // `gatsby-plugin-advanced-sitemap`,
@@ -301,18 +332,23 @@ module.exports = {
         host: 'https://www.upress.virginia.edu',
         policy: [{ userAgent: '*', allow: '/' }]
       }
-    },
+    }, 
+    "gatsby-plugin-meta-redirect",
+    `gatsby-plugin-emotion`,
     {
       resolve: `gatsby-plugin-algolia`,
       options: {
+<<<<<<< HEAD
         appId: process.env.GATSBY_ALGOLIA_APP_ID,
+=======
+      appId: process.env.GATSBY_ALGOLIA_APP_ID,
+>>>>>>> production
         apiKey: process.env.ALGOLIA_ADMIN_KEY,
         indexName: process.env.GATSBY_ALGOLIA_INDEX_NAME, 
         queries: require("./src/utils/algolia-queries")
       },
     },
-    "gatsby-plugin-meta-redirect",
-    `gatsby-plugin-emotion`
+   
   ],
   // partytownProxiedURLs: [`https://www.googletagmanager.com/gtag/js?id=G-CEYXF25KC3`],
   mapping: {

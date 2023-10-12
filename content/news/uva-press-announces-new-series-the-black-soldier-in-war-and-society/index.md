@@ -8,6 +8,7 @@ description: "The University of Virginia Press is pleased to announce “The Bla
   series for innovative scholarship on the Black military experience to
   highlight the diverse and complex experiences of African-descended people and
   to explore the implications of their participation in war."
+image: BlackSoldiersSeries.jpg
 date: 2021-02-26
 ---
 **February 2021; Charlottesville, VA:** The University of Virginia Press is pleased to announce “The Black Soldier in War and Society: New Narratives and Critical Perspectives,” a new series for innovative scholarship on the Black military experience to highlight the diverse and complex experiences of African-descended people and to explore the implications of their participation in war.

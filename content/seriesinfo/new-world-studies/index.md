@@ -1,10 +1,12 @@
 ---
 templateKey: series
-title: New World Studies
 status: active
-seriestype: Academic Book Series
 editors: "Series Editor: Marlene Daut"
 uvaeditors: "UVAP Editor: Eric Brandt"
+title: New World Studies
+seriestype: Academic Book Series
+related_staff:
+  - Beth Colón
 seriesID: NWS
 type: series
 ---

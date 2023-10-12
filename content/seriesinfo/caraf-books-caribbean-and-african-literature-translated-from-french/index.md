@@ -5,7 +5,7 @@ status: active
 seriestype: Academic Book Series
 editors: "Series Editors: Renée Larrier and Mildred Mortimer"
 related_staff:
-  - Eric Brandt
+  - Beth Colón
 seriesID: CAR
 type: series
 ---

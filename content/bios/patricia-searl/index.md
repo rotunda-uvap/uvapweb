@@ -2,9 +2,9 @@
 templateKey: bio
 title: Patricia Searl
 staff_name: Patricia Searl
-profile_photo: searl.jpg
+profile_photo: searl_web.jpg
 name_slug: patricia-searl
-job_title: Acting Manager of the Rotunda Imprint
+job_title: Director of Digital Publishing
 department:
   - ROT
 email: pls4e​@​virginia.edu

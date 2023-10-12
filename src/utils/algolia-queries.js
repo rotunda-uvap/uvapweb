@@ -1,6 +1,6 @@
 
 
-const indexName = `Books`
+const indexName = `Books_new`
 
 const bookQuery = `{
   books: allBooksJson {
@@ -11,6 +11,7 @@ const bookQuery = `{
         Title
         ISBNs
         Subtitle
+        CoverImageMain
         Series {
           name
         }
@@ -56,7 +57,7 @@ const queries = [
     query: bookQuery,
     transformer: ({ data }) => data.books.edges.map(bookToAlgoliaRecord),
     indexName,
-    settings: { attributesToSnippet: [`MainDescription:20`], searchableAttributes: ['Title', 'Subtitle', 'MainDescription', 'AuthorCredit', 'ISBNs', 'internal.contentDigest'], attributesForFaceting: ['Series.name', 'Subjects.name', 'List'], typoTolerance: 'min', minWordSizefor1Typo:5 },
+    settings: { attributesToSnippet: [`MainDescription:20`], searchableAttributes: ['Title', 'Subtitle', 'MainDescription', 'AuthorCredit', 'ISBNs', 'internal.contentDigest', 'CoverImageMain'], attributesForFaceting: ['Series.name', 'Subjects.name', 'List'], typoTolerance: 'min', minWordSizefor1Typo:5 },
   },
 ]
 
