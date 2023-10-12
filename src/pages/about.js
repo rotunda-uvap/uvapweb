@@ -157,7 +157,7 @@ export default function AboutPage({ data }) {
   <SectionHeader text={"Current Board Members"}/>
               <div>
               <BoardMember name={"Sandhya Shukla, chair"} title={"Associate Professor of English and American Studies, University of Virginia"}/>
-              <BoardMember name={"Derrick Aldridge"} title={"Professor and Program Coordinator, Social Foundations of Education, University of Virginia"}/>
+              <BoardMember name={"Derrick Alridge"} title={"Professor and Program Coordinator, Social Foundations of Education, University of Virginia"}/>
               <BoardMember name={"Gustavo Pellón"} title={"Professor Emeritus of Spanish, University of Virginia"}/>
               <BoardMember name={"Amy Clark"} title={"Professor of English and Chair of Communications Studies, University of Virginia at Wise"}/>
                 
