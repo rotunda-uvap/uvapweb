@@ -2,14 +2,12 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: The Presidency and the American State
-    banner_author: Stephen J. Rockwell
-    banner_subtitle: Leadership and Decision Making in the Adams, Grant, and Taft
-      Administrations
-    banner_id: "5877"
-    banner_quote: A dynamic, innovative, and truly satisfying revisitation of
-      American history itself.
-    banner_attr: Saladin Ambar, Rutgers University
+  - banner_title: Cli-Fi and Class
+    banner_author: Debra J. Rosenthal and Jason de Lara Molesky, eds.
+    banner_subtitle: " Socioeconomic Justice in Contemporary American Climate Fiction"
+    banner_id: "5632"
+    banner_quote: A timely, original, and valuable contribution.
+    banner_attr: Ben De Bruyn, UCLouvain
 related_book:
   - "5744"
   - "5617"
