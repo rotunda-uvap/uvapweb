@@ -2,12 +2,13 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: Cli-Fi and Class
-    banner_author: Debra J. Rosenthal and Jason de Lara Molesky, eds.
-    banner_subtitle: " Socioeconomic Justice in Contemporary American Climate Fiction"
-    banner_id: "5632"
-    banner_quote: A timely, original, and valuable contribution.
-    banner_attr: Ben De Bruyn, UCLouvain
+  - banner_title: Army Spouses
+    banner_author: Morten G. Ender
+    banner_subtitle: Military Families during the Global War on Terror
+    banner_id: "5923"
+    banner_quote: Theoretically-driven but rooted in the experiences and narratives
+      of military families.
+    banner_attr: David G. Smith, Johns Hopkins
 related_book:
   - "5744"
   - "5617"
