@@ -2,14 +2,13 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: The Presidency and the American State
-    banner_author: Stephen J. Rockwell
-    banner_subtitle: Leadership and Decision Making in the Adams, Grant, and Taft
-      Administrations
-    banner_id: "5877"
-    banner_quote: A dynamic, innovative, and truly satisfying revisitation of
-      American history itself.
-    banner_attr: Saladin Ambar, Rutgers University
+  - banner_title: Army Spouses
+    banner_author: Morten G. Ender
+    banner_subtitle: Military Families during the Global War on Terror
+    banner_id: "5923"
+    banner_quote: Theoretically-driven but rooted in the experiences and narratives
+      of military families.
+    banner_attr: David G. Smith, Johns Hopkins
 related_book:
   - "5744"
   - "5617"
