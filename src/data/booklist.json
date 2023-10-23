@@ -1304,6 +1304,10 @@
     "Title": "The Papers of George Washington"
   },
   {
+    "BookID": "2688",
+    "Title": "The Bill of Rights"
+  },
+  {
     "BookID": "2878",
     "Title": "The Papers of James Madison"
   },
@@ -5332,6 +5336,10 @@
     "Title": "Economy Hall"
   },
   {
+    "BookID": "1288",
+    "Title": "Business of May Next"
+  },
+  {
     "BookID": "4482",
     "Title": "The Madman and the Medusa"
   },
@@ -6376,10 +6384,6 @@
     "Title": "The Papers of George Washington"
   },
   {
-    "BookID": "2690",
-    "Title": "The Bill of Rights"
-  },
-  {
     "BookID": "2860",
     "Title": "The Papers of George Washington"
   },
@@ -6838,10 +6842,6 @@
   {
     "BookID": "4582",
     "Title": "Be It Ever So Humble"
-  },
-  {
-    "BookID": "2695",
-    "Title": "The Business of May Next"
   },
   {
     "BookID": "4583",
