@@ -2,13 +2,12 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: Army Spouses
-    banner_author: Morten G. Ender
-    banner_subtitle: Military Families during the Global War on Terror
-    banner_id: "5923"
-    banner_quote: Theoretically-driven but rooted in the experiences and narratives
-      of military families.
-    banner_attr: David G. Smith, Johns Hopkins
+  - banner_title: Constitutional Powers and Politics
+    banner_author: Eileen Braman
+    banner_subtitle: How Citizens Think about Authority and Institutional Change
+    banner_id: "5985"
+    banner_quote: A one-of-a-kind book in the field of political science.
+    banner_attr: Paul M. Collins Jr., UMass Amherst
 related_book:
   - "5744"
   - "5617"
