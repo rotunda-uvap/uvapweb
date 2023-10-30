@@ -2,12 +2,13 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: Constitutional Powers and Politics
-    banner_author: Eileen Braman
-    banner_subtitle: How Citizens Think about Authority and Institutional Change
-    banner_id: "5985"
-    banner_quote: A one-of-a-kind book in the field of political science.
-    banner_attr: Paul M. Collins Jr., UMass Amherst
+  - banner_title: The Turn of Rhythm
+    banner_author: Ewan Jones
+    banner_subtitle: How Victorian Poetry Shaped a New Concept
+    banner_id: "5888"
+    banner_quote: A learned book of wide-ranging research, curious and provocative
+      couplings of figures and sources, and penetrating analysis.
+    banner_attr: Jason David Hall, University of Exeter
 related_book:
   - "5744"
   - "5617"
