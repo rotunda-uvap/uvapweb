@@ -2,13 +2,12 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: The Turn of Rhythm
-    banner_author: Ewan Jones
-    banner_subtitle: How Victorian Poetry Shaped a New Concept
-    banner_id: "5888"
-    banner_quote: A learned book of wide-ranging research, curious and provocative
-      couplings of figures and sources, and penetrating analysis.
-    banner_attr: Jason David Hall, University of Exeter
+  - banner_title: On the Perpetual Strangeness of the Bible
+    banner_author: Michael Edwards
+    banner_subtitle: Richard E. Myers Lectures
+    banner_id: "5953"
+    banner_quote: A wonderful and welcome meditation.
+    banner_attr: Rowan Williams, 104th Archbishop of Canterbury
 related_book:
   - "5744"
   - "5617"
