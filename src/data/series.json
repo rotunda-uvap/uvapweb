@@ -28,6 +28,10 @@
     "seriesName": "Center Books"
   },
   {
+    "seriesID": "AMS",
+    "seriesName": "The American South Series"
+  },
+  {
     "seriesID": "TJFS",
     "seriesName": "Thomas Jefferson Foundation Distinguished Lecture Series"
   },
@@ -92,10 +96,6 @@
     "seriesName": "Carter G. Woodson Institute Series: Black Studies at Work in the World"
   },
   {
-    "seriesID": "AMS",
-    "seriesName": "The American South Series"
-  },
-  {
     "seriesID": "SRC",
     "seriesName": "Studies in Religion and Culture"
   },
@@ -122,6 +122,10 @@
   {
     "seriesID": "USCHS",
     "seriesName": "United States Capitol Historical Society"
+  },
+  {
+    "seriesID": "TTTB",
+    "seriesName": "Traditions and Transformations in Tibetan Buddhism"
   },
   {
     "seriesID": "JER",
@@ -190,10 +194,6 @@
   {
     "seriesID": "PAL",
     "seriesName": "The Papers of Abraham Lincoln"
-  },
-  {
-    "seriesID": "TTTB",
-    "seriesName": "Traditions and Transformations in Tibetan Buddhism"
   },
   {
     "seriesID": "MNS",
