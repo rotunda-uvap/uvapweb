@@ -173,3 +173,5 @@ div[aria-hidden=true] [contenteditable=true]:not([disabled]){
 }
 
 .auc-Recommend-title {display:none;}
+
+b {font-weight:600;}
