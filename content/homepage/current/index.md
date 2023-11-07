@@ -2,12 +2,13 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: On the Perpetual Strangeness of the Bible
-    banner_author: Michael Edwards
-    banner_subtitle: Richard E. Myers Lectures
-    banner_id: "5953"
-    banner_quote: A wonderful and welcome meditation.
-    banner_attr: Rowan Williams, 104th Archbishop of Canterbury
+  - banner_title: To Organize the Sovereign People
+    banner_author: David W. Houpt
+    banner_subtitle: Political Mobilization in Revolutionary Pennsylvania
+    banner_id: "6017"
+    banner_quote: Convincingly reconceptualizes the larger story of the rise of
+      democratic politics.
+    banner_attr: Rosemarie Zagarri, George Mason University
 related_book:
   - "5744"
   - "5617"
