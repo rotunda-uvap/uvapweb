@@ -16,6 +16,9 @@ related_staff:
   - Nadine Zimmerli
   - Clayton Butler
 featured_books:
+  - "5979"
+  - "5909"
+  - "5392"
   - "5917"
   - "5845"
   - "5925"
