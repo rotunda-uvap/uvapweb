@@ -2,13 +2,12 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: To Organize the Sovereign People
-    banner_author: David W. Houpt
-    banner_subtitle: Political Mobilization in Revolutionary Pennsylvania
-    banner_id: "6017"
-    banner_quote: Convincingly reconceptualizes the larger story of the rise of
-      democratic politics.
-    banner_attr: Rosemarie Zagarri, George Mason University
+  - banner_title: Laboring Mothers
+    banner_author: Ellen Malenas Ledoux
+    banner_subtitle: Reproducing Women and Work in the Eighteenth Century
+    banner_id: "5949"
+    banner_quote: There is no single book that encompasses what Professor Ledoux does here.
+    banner_attr: Marilyn Francus, West Virginia University
 related_book:
   - "5744"
   - "5617"
