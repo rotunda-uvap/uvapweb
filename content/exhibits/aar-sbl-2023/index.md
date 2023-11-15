@@ -2,11 +2,12 @@
 templateKey: exhibit
 title: AAR & SBL 2023
 exhibit_slug: aar23
-coupon: Get 30% OFF with promo code 10AAR23 through the end of the month!
+coupon: Get 30% OFF with conference discount code 10AAR23 through the end of the month!
 txtcolor: text-black
 related_series:
   - TTTB
   - SRC
+  - RMLS
 related_blog:
   - Author's Corner with Sir Michael Edwards, author of ON THE PERPETUAL
     STRANGENESS OF THE BIBLE
