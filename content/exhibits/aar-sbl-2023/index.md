@@ -8,6 +8,7 @@ related_series:
   - TTTB
   - SRC
   - RMLS
+  - AMSP
 related_blog:
   - Author's Corner with Sir Michael Edwards, author of ON THE PERPETUAL
     STRANGENESS OF THE BIBLE
