@@ -54,7 +54,7 @@ const exhibitPage = ({ data }) => {
             <SectionHeader text="Meet our Editors"/>
         {related_staff.map((staff, index) => (
            <div key={`staff${index}`}>
-             <div className="tracking-wide text-lg font-thin text-ceci-gray-mid"><Link to={'../../staff/' + staff.frontmatter.title.replace(" ", "-").toLowerCase()}>{staff.frontmatter.title} <span className="font-thin text-sm">&nbsp; - &nbsp;{staff.frontmatter.job_title}</span></Link></div>
+             <div className="tracking-wide text-lg font-thin text-ceci-gray-mid"><Link to={'../../staff/' + staff.frontmatter.name_slug}>{staff.frontmatter.title} <span className="font-thin text-sm">&nbsp; - &nbsp;{staff.frontmatter.job_title}</span></Link></div>
             <div className="py-2 font-light text-ceci-gray-dark text-lg leading-relaxed dropCap"
           dangerouslySetInnerHTML={{ __html: sanitizeHtml(staff.html) }}/>
             </div>
@@ -164,7 +164,7 @@ export const query = graphql`
               frontmatter {
                 title
                 job_title
-
+                name_slug
               }
               html
             }

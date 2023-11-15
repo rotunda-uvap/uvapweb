@@ -13,8 +13,6 @@ related_blog:
   - Author's Corner with Tisha M. Brooks, author of SPIRIT DEEP
   - Author's Corner with Christopher Alan Graham, author of FAITH, RACE, AND THE
     LOST CAUSE
-related_staff:
-  - J. Andrew Edwards
 featured_books:
   - "5953"
   - "6003"
