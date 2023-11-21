@@ -2,12 +2,12 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: Laboring Mothers
-    banner_author: Ellen Malenas Ledoux
-    banner_subtitle: Reproducing Women and Work in the Eighteenth Century
-    banner_id: "5949"
-    banner_quote: There is no single book that encompasses what Professor Ledoux does here.
-    banner_attr: Marilyn Francus, West Virginia University
+  - banner_title: The Architecture of Influence
+    banner_author: Amanda Reeser Lawrence
+    banner_subtitle: The Myth of Originality in the Twentieth Century
+    banner_id: "5895"
+    banner_quote: Helps us see mostly familiar projects in an entirely new way.
+    banner_attr: Gabrielle Esperdy, New Jersey Institute of Technology
 related_book:
   - "5744"
   - "5617"
