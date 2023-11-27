@@ -2,12 +2,12 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: The Architecture of Influence
-    banner_author: Amanda Reeser Lawrence
-    banner_subtitle: The Myth of Originality in the Twentieth Century
-    banner_id: "5895"
-    banner_quote: Helps us see mostly familiar projects in an entirely new way.
-    banner_attr: Gabrielle Esperdy, New Jersey Institute of Technology
+  - banner_title: African Musicians in the Atlantic World
+    banner_author: Mary Caton Lingold
+    banner_subtitle: Legacies of Sound and Slavery
+    banner_id: "5826"
+    banner_quote: This is real folks’ history, richly told.
+    banner_attr: Corey Harris, Award-winning Musician
 related_book:
   - "5744"
   - "5617"
