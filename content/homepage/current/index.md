@@ -2,12 +2,12 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: African Musicians in the Atlantic World
-    banner_author: Mary Caton Lingold
-    banner_subtitle: Legacies of Sound and Slavery
-    banner_id: "5826"
-    banner_quote: This is real folks’ history, richly told.
-    banner_attr: Corey Harris, Award-winning Musician
+  - banner_title: Joseph Addison
+    banner_author: Dan Poston
+    banner_subtitle: An Intellectual Biography
+    banner_id: "5464"
+    banner_quote: This book does work that other studies of Addison simply do not.
+    banner_attr: Jason Shaffer, US Naval Academy
 related_book:
   - "5744"
   - "5617"
