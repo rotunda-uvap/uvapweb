@@ -7,6 +7,7 @@ title: "A Nation Divided: Studies in the Civil War Era"
 seriestype: Academic Book Series
 related_staff:
   - Nadine Zimmerli
+  - Clayton Butler
 seriesID: CWH
 type: series
 ---
