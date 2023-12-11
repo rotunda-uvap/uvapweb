@@ -2,12 +2,12 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: Joseph Addison
-    banner_author: Dan Poston
-    banner_subtitle: An Intellectual Biography
-    banner_id: "5464"
-    banner_quote: This book does work that other studies of Addison simply do not.
-    banner_attr: Jason Shaffer, US Naval Academy
+  - banner_title: Yuletide in Dixie
+    banner_author: Robert E. May
+    banner_subtitle: Slavery, Christmas, and Southern Memory
+    banner_id: "5317"
+    banner_quote: Historical scholarship at its best.
+    banner_attr: Charles Dew, Williams College
 related_book:
   - "5744"
   - "5617"
