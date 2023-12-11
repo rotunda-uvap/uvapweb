@@ -3468,6 +3468,10 @@
     "Title": "In Good Keeping"
   },
   {
+    "BookID": "10008",
+    "Title": "Huntland"
+  },
+  {
     "BookID": "3682",
     "Title": "Latino Politics"
   },
@@ -4528,6 +4532,10 @@
     "Title": "Visions of the Land"
   },
   {
+    "BookID": "10005",
+    "Title": "The Papers of George Washington"
+  },
+  {
     "BookID": "3857",
     "Title": "Studies in Bibliography"
   },
@@ -4881,7 +4889,7 @@
   },
   {
     "BookID": "2037",
-    "Title": "Louisa S McCord"
+    "Title": "Louisa S. McCord"
   },
   {
     "BookID": "5760",
@@ -6320,6 +6328,10 @@
     "Title": "Faith, Race, and the Lost Cause"
   },
   {
+    "BookID": "1986",
+    "Title": "Lee's Young Artillerist"
+  },
+  {
     "BookID": "5538",
     "Title": "Charting Louisiana"
   },
@@ -6686,10 +6698,6 @@
   {
     "BookID": "4627",
     "Title": "The Papers of Francis Bernard"
-  },
-  {
-    "BookID": "1987",
-    "Title": "Lee's Young Artillerist"
   },
   {
     "BookID": "2901",
