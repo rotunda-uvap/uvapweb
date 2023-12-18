@@ -2,12 +2,12 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: Yuletide in Dixie
-    banner_author: Robert E. May
-    banner_subtitle: Slavery, Christmas, and Southern Memory
-    banner_id: "5317"
-    banner_quote: Historical scholarship at its best.
-    banner_attr: Charles Dew, Williams College
+  - banner_title: The Epic of Cuba Libre
+    banner_author: Éric Morales-Franceschini
+    banner_subtitle: Winner of the MLA Katherine Singer Kovacs Prize
+    banner_id: "5737"
+    banner_quote: A beautifully written, highly original, and exciting study.
+    banner_attr: Anne Garland Mahler, University of Virginia
 related_book:
   - "5744"
   - "5617"
