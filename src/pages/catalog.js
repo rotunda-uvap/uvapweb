@@ -28,7 +28,7 @@ export default function Catalog({data}) {
                 <path d="M5 12h14M12 5l7 7-7 7"></path>
               </svg></span>
               </a></span> }
-              <span className="font-thin text-lg ml-4 tracking-wide text-ceci-gray-mid"><a href="https://www.edelweiss.plus/#catalogID=4869465&page=1">
+              <span className="font-thin text-lg ml-4 tracking-wide text-ceci-gray-mid"><a href="https://www.edelweiss.plus/#catalogID=4939230&page=1">
             View on Edelweiss<span className="inline-flex items-center mt-4">
               <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
                 <path d="M5 12h14M12 5l7 7-7 7"></path>
