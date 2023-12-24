@@ -2,12 +2,12 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: The Epic of Cuba Libre
-    banner_author: Éric Morales-Franceschini
-    banner_subtitle: Winner of the MLA Katherine Singer Kovacs Prize
-    banner_id: "5737"
-    banner_quote: A beautifully written, highly original, and exciting study.
-    banner_attr: Anne Garland Mahler, University of Virginia
+  - banner_title: The Struggle for Change
+    banner_author: Marvin T. Chiles
+    banner_subtitle: Race and the Politics of Reconciliation in Modern Richmond
+    banner_id: "5876"
+    banner_quote: A rich, humane, and powerful story.
+    banner_attr: Edward L. Ayers, recipient of the National Humanities Medal
 related_book:
   - "5744"
   - "5617"
