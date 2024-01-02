@@ -18,6 +18,7 @@ related_blog:
   - Author's Corner with Mary Caton Lingold, author of AFRICAN MUSICIANS IN THE
     ATLANTIC WORLD
   - Author's Corner with Ewan Jones, author of THE TURN OF RHYTHM
+  - Author's Corner with Jason R. Marley, author of DIFFICULT READING
 related_staff:
   - Angie Hogan
   - Beth Colón
