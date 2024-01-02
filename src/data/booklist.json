@@ -2768,6 +2768,10 @@
     "Title": "Fashioning the New England Family"
   },
   {
+    "BookID": "2407",
+    "Title": "Revolution in Virginia, with a new Foreword"
+  },
+  {
     "BookID": "4062",
     "Title": "Remaking Custom"
   },
@@ -3877,7 +3881,7 @@
   },
   {
     "BookID": "5353",
-    "Title": "Boredom and the Architectural Imagination: Rudofsky, Venturi, Scott Brown, and Steinberg"
+    "Title": "Boredom and the Architectural Imagination"
   },
   {
     "BookID": "3722",
@@ -4762,6 +4766,10 @@
   {
     "BookID": "3842",
     "Title": "Pilgrimage to Vallombrosa"
+  },
+  {
+    "BookID": "10004",
+    "Title": "Buildings of Missouri"
   },
   {
     "BookID": "1099",
@@ -6830,10 +6838,6 @@
   {
     "BookID": "1997",
     "Title": "\"Let a Common Interest Bind Us Together\""
-  },
-  {
-    "BookID": "3819",
-    "Title": "Revolution in Virginia, with a new Foreword"
   },
   {
     "BookID": "4810",
