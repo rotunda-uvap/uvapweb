@@ -2,6 +2,7 @@
 templateKey: news
 type: news
 title: What We Enjoy Reading - Staff Picks
+image: staff_2023.jpeg
 related_book:
   - "2482"
   - "5876"
@@ -44,7 +45,6 @@ Here at UVA Press, we have a lovely holiday tradition. Every year, staff members
 
 * “As a relatively new part of the team, I was very excited by the chance to get my hands on more of our books. So excited, in fact, that I picked Carl Rollyson’s two-volume biography. I’m a big fan of literary biographies and I couldn’t resist how beautiful these books are. Cecilia Sorochin (UVA Press’s art Director) knocked these out of the park.”—**Joel Coggins, Production Manager**
 
-\
-Just for fun—the first sentences of each of these books (with the help of a few connecting phrases) tell a story all their own. Or they read like a game of editorial telephone... You decide:
+**Just for fun**—the first sentences of each of these books (with the help of a few connecting phrases) tell a story all their own. Or they read like a game of editorial telephone... You decide:
 
 *At its heart, this book is a hometown kid's inquiry into the city that reared him. That place is Richmond, Virginia. Every film begins with a blank page and a story to tell. And each building arises from empty land as the structural fulfillment of a dream. Thomas Jefferson passionately embraced what awaited him in retirement at Monticello in 1809: a greatly expanded family of grandchildren, his completed “essay” in architecture, his maturing gardens, his beloved library, and the company of old friends. One evening, eight days before Shrovetide, Chonrad Stoeckhlin and Jacob Walch were sitting together. Both of them were herdsmen, the horse wrangler and oxherd for the town of Oberstdorf in the mountains of Allgäu, and they were drinking, which was reckoned a 'manly' pleasure.* (William Faulkner thought so too) *Because William Faulkner’s characters are obsessed with the past, the same has been said of their author.* (When) *I got my first and favorite chicken from a friend about a decade ago.* (I told the hen) *“I do not separate you from your garden, your elegant verse and your sure philosophy.”*
