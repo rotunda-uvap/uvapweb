@@ -62,8 +62,10 @@ export default function RotundaCustomerList({data}) {
                    <Main><RotundaHeader/>
                    <Heading2>Customer Information</Heading2>
                      <section>
-      <Para>Current institutional users (IP-authenticated accounts): <a href="https://rotunda.upress.virginia.edu/UsageStats/?tab=home&amp;job=dates">view statistics for your usage of <span className="rotunda">Rotunda</span> publications</a>.</Para>
-<Para>Note that your usage stats may show access to publications which you have not purchased, as your users will be able to navigate to contents pages within them, and those page views are logged.</Para>
+                        <Para>As of Jan 1, 2024, we are using Liblynx to provide COUNTER5-compliant stats. Rotunda's COUNTER page can be found here: <a href=" https://registry.projectcounter.org/platform/0aa2f3da-f784-465f-b9cf-e4f315eb33cb"> https://registry.projectcounter.org/platform/0aa2f3da-f784-465f-b9cf-e4f315eb33cb</a> </Para>
+                        <Para>For SUSHI statistics, please <a href="https://www.upress.virginia.edu/rotunda/#contacts">contact us</a> directly and we can set up your institution to recieve those directly. </Para>
+{/*       <Para>Current institutional users (IP-authenticated accounts): <a href="https://rotunda.upress.virginia.edu/UsageStats/?tab=home&amp;job=dates">view statistics for your usage of <span className="rotunda">Rotunda</span> publications</a>.</Para>
+<Para>Note that your usage stats may show access to publications which you have not purchased, as your users will be able to navigate to contents pages within them, and those page views are logged.</Para> */}
       </section>
       <section className="px-5">
         <Heading3>MARC Records</Heading3>
