@@ -2,7 +2,7 @@
 templateKey: bio
 title: Fernando Campos
 staff_name: Fernando Campos
-profile_photo: ""
+profile_photo: fernando.jpg
 name_slug: fernando-campos
 job_title: Acquisitions Coordinator
 department:

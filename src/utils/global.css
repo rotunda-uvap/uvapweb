@@ -29,7 +29,7 @@ p > a {text-decoration: underline;}
 .title {text-align:left;}
 table.tiers td {padding-left:1rem; padding-bottom:1rem;}
 p {padding:0 1rem 1rem 1rem; font-family: "Crimson Text"; line-height: 1.6rem; font-weight: 300;}
-.cms ul {margin-left:2em; padding:1em; list-style:circle;}
+.cms ul {margin-left:2em; padding:1em; list-style:circle; list-style-position:inside;}
 .cms ul li:first-child {padding-top:0;}
 .cms ul li {padding-top:.5em; font-family: "Crimson Text";}
 .cms strong {font-weight: bolder; font-weight: 600;}
@@ -173,3 +173,5 @@ div[aria-hidden=true] [contenteditable=true]:not([disabled]){
 }
 
 .auc-Recommend-title {display:none;}
+
+b {font-weight:600;}

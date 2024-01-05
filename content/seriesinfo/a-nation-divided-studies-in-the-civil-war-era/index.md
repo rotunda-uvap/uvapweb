@@ -1,12 +1,13 @@
 ---
 templateKey: series
 status: active
-editors: "Series Editors: Orville Vernon Burton and Elizabeth R. Varon"
+editors: "Series Editors: Orville Vernon Burton, Adam H. Domby, and Elizabeth R. Varon"
 uvaeditors: nadine
 title: "A Nation Divided: Studies in the Civil War Era"
 seriestype: Academic Book Series
 related_staff:
   - Nadine Zimmerli
+  - Clayton Butler
 seriesID: CWH
 type: series
 ---

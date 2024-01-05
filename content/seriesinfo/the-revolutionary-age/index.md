@@ -1,7 +1,7 @@
 ---
 templateKey: series
 status: active
-editors: Francis D. Cogliano and Patrick Griffin
+editors: Francis D. Cogliano, Christa Breault Dierksheide, Eliga H. Gould, and Patrick Griffin
 uvaeditors: Nadine Zimmerli
 title: The Revolutionary Age
 seriestype: Academic Book Series

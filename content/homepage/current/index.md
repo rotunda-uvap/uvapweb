@@ -2,13 +2,12 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: Army Spouses
-    banner_author: Morten G. Ender
-    banner_subtitle: Military Families during the Global War on Terror
-    banner_id: "5923"
-    banner_quote: Theoretically-driven but rooted in the experiences and narratives
-      of military families.
-    banner_attr: David G. Smith, Johns Hopkins
+  - banner_title: The Struggle for Change
+    banner_author: Marvin T. Chiles
+    banner_subtitle: Race and the Politics of Reconciliation in Modern Richmond
+    banner_id: "5876"
+    banner_quote: A rich, humane, and powerful story.
+    banner_attr: Edward L. Ayers, recipient of the National Humanities Medal
 related_book:
   - "5744"
   - "5617"
@@ -20,13 +19,15 @@ related_book:
 related_collection:
   - Homepage Featured
 featured_books:
-  - "5846"
-  - "5833"
-  - "5945"
-  - "5315"
+  - "6035"
+  - "5852"
+  - "6036"
+  - "5943"
   - "5881"
-  - "5909"
-  - "5880"
+  - "5945"
+  - "5923"
+  - "5833"
+  - "5315"
   - "5979"
-  - "5811"
+  - "5392"
 ---

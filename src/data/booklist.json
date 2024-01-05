@@ -40,6 +40,10 @@
     "Title": "Earth Repair"
   },
   {
+    "BookID": "5917",
+    "Title": "Justice for Ourselves"
+  },
+  {
     "BookID": "1595",
     "Title": "Exile in Richmond"
   },
@@ -336,6 +340,10 @@
     "Title": "Young America"
   },
   {
+    "BookID": "5889",
+    "Title": "We, Us, and Them"
+  },
+  {
     "BookID": "5645",
     "Title": "Navigating Neutrality"
   },
@@ -460,16 +468,16 @@
     "Title": "Postelection Conflict Management in Nigeria"
   },
   {
+    "BookID": "5296",
+    "Title": "The Transatlantic Design Network"
+  },
+  {
     "BookID": "4188",
     "Title": "Beastly Natures"
   },
   {
     "BookID": "4836",
     "Title": "Spectacular Suffering"
-  },
-  {
-    "BookID": "1796",
-    "Title": "His Soul Goes Marching On"
   },
   {
     "BookID": "1966",
@@ -796,6 +804,10 @@
     "Title": "Launching the \"Extended Republic\""
   },
   {
+    "BookID": "5653",
+    "Title": "Longing to Awaken"
+  },
+  {
     "BookID": "1435",
     "Title": "Creating Constitutional Change"
   },
@@ -854,6 +866,10 @@
   {
     "BookID": "2868",
     "Title": "The Papers of James Madison"
+  },
+  {
+    "BookID": "5875",
+    "Title": "Singer of the Land of Snows"
   },
   {
     "BookID": "2897",
@@ -956,8 +972,16 @@
     "Title": "National Park Roads"
   },
   {
+    "BookID": "3182",
+    "Title": "With the Hammer of Truth"
+  },
+  {
     "BookID": "4835",
     "Title": "Market Aesthetics"
+  },
+  {
+    "BookID": "1795",
+    "Title": "His Soul Goes Marching On"
   },
   {
     "BookID": "5281",
@@ -1052,6 +1076,10 @@
     "Title": "Regenerating Romanticism"
   },
   {
+    "BookID": "5901",
+    "Title": "Reading Character after Calvin"
+  },
+  {
     "BookID": "4438",
     "Title": "Crime and Culture in Early Modern Germany"
   },
@@ -1126,6 +1154,10 @@
   {
     "BookID": "1593",
     "Title": "Exhibiting Religion"
+  },
+  {
+    "BookID": "5093",
+    "Title": "The Dangerous First Year"
   },
   {
     "BookID": "2924",
@@ -1302,6 +1334,10 @@
   {
     "BookID": "2850",
     "Title": "The Papers of George Washington"
+  },
+  {
+    "BookID": "2688",
+    "Title": "The Bill of Rights"
   },
   {
     "BookID": "2878",
@@ -1490,6 +1526,10 @@
   {
     "BookID": "5284",
     "Title": "American Abolitionism"
+  },
+  {
+    "BookID": "5509",
+    "Title": "Design Before Disaster"
   },
   {
     "BookID": "4617",
@@ -1844,6 +1884,10 @@
     "Title": "Institutional Character"
   },
   {
+    "BookID": "3219",
+    "Title": "Race Man"
+  },
+  {
     "BookID": "4576",
     "Title": "Journeys of the Slave Narrative in the Early Americas"
   },
@@ -1976,6 +2020,10 @@
     "Title": "Pontius Pilate"
   },
   {
+    "BookID": "6003",
+    "Title": "The Cosmos, the Person, and the Sa¯dhana"
+  },
+  {
     "BookID": "1022",
     "Title": "Text as Process"
   },
@@ -2074,6 +2122,10 @@
   {
     "BookID": "3322",
     "Title": "Clio's Consort"
+  },
+  {
+    "BookID": "5974",
+    "Title": "Popa Singer"
   },
   {
     "BookID": "5960",
@@ -2288,6 +2340,10 @@
     "Title": "The Papers of George Washington"
   },
   {
+    "BookID": "5182",
+    "Title": "Broken Government"
+  },
+  {
     "BookID": "3281",
     "Title": "Selections"
   },
@@ -2310,6 +2366,10 @@
   {
     "BookID": "4289",
     "Title": "Looking Beyond the Icons"
+  },
+  {
+    "BookID": "5183",
+    "Title": "American Dreams"
   },
   {
     "BookID": "2834",
@@ -2552,10 +2612,6 @@
     "Title": "Thomas Jefferson American Humanist"
   },
   {
-    "BookID": "1252",
-    "Title": "Blacks in Eden"
-  },
-  {
     "BookID": "3323",
     "Title": "Entrepreneurs"
   },
@@ -2712,6 +2768,10 @@
     "Title": "Fashioning the New England Family"
   },
   {
+    "BookID": "2407",
+    "Title": "Revolution in Virginia, with a new Foreword"
+  },
+  {
     "BookID": "4062",
     "Title": "Remaking Custom"
   },
@@ -2824,8 +2884,16 @@
     "Title": "The Papers of George Washington"
   },
   {
+    "BookID": "5181",
+    "Title": "Communication"
+  },
+  {
     "BookID": "3297",
     "Title": "Murder at Morija"
+  },
+  {
+    "BookID": "5180",
+    "Title": "Immigration"
   },
   {
     "BookID": "2837",
@@ -3016,6 +3084,10 @@
     "Title": "The Significance of Territory"
   },
   {
+    "BookID": "1251",
+    "Title": "Blacks in Eden"
+  },
+  {
     "BookID": "1245",
     "Title": "Bitter Fruits of Bondage"
   },
@@ -3126,6 +3198,10 @@
   {
     "BookID": "3873",
     "Title": "A Storm over This Court"
+  },
+  {
+    "BookID": "1916",
+    "Title": "The Domestic Life of Thomas Jefferson"
   },
   {
     "BookID": "1137",
@@ -3396,6 +3472,10 @@
     "Title": "In Good Keeping"
   },
   {
+    "BookID": "10008",
+    "Title": "Huntland"
+  },
+  {
     "BookID": "3682",
     "Title": "Latino Politics"
   },
@@ -3508,10 +3588,6 @@
     "Title": "The Value of Solitude"
   },
   {
-    "BookID": "5959",
-    "Title": "Historic Sites in Virginia’s Northern Neck and Essex County, A Guide"
-  },
-  {
     "BookID": "5781",
     "Title": "The Topography of Wellness"
   },
@@ -3558,6 +3634,10 @@
   {
     "BookID": "4110",
     "Title": "Florence"
+  },
+  {
+    "BookID": "6061",
+    "Title": "The Witch of Pungo"
   },
   {
     "BookID": "57",
@@ -3614,6 +3694,10 @@
   {
     "BookID": "3051",
     "Title": "Unheard Voices"
+  },
+  {
+    "BookID": "1652",
+    "Title": "Flowerdew Hundred"
   },
   {
     "BookID": "5352",
@@ -3712,6 +3796,10 @@
     "Title": "The Complete Pamphlets of Lewis Carroll"
   },
   {
+    "BookID": "5810",
+    "Title": "Lynching in Virginia"
+  },
+  {
     "BookID": "5192",
     "Title": "Preserving the White Man's Republic"
   },
@@ -3738,6 +3826,10 @@
   {
     "BookID": "4273",
     "Title": "From Jamestown to Jefferson"
+  },
+  {
+    "BookID": "4515",
+    "Title": "Historic Sites in Virginia’s Northern Neck and Essex County, A Guide"
   },
   {
     "BookID": "4501",
@@ -3788,8 +3880,8 @@
     "Title": "Brothers Born of One Mother"
   },
   {
-    "BookID": "1653",
-    "Title": "Flowerdew Hundred"
+    "BookID": "5353",
+    "Title": "Boredom and the Architectural Imagination"
   },
   {
     "BookID": "3722",
@@ -4348,6 +4440,10 @@
     "Title": "Dog Days"
   },
   {
+    "BookID": "5983",
+    "Title": "Haunting Ecologies"
+  },
+  {
     "BookID": "4445",
     "Title": "Best New Poets 2011"
   },
@@ -4438,6 +4534,10 @@
   {
     "BookID": "3116",
     "Title": "Visions of the Land"
+  },
+  {
+    "BookID": "10005",
+    "Title": "The Papers of George Washington"
   },
   {
     "BookID": "3857",
@@ -4668,6 +4768,10 @@
     "Title": "Pilgrimage to Vallombrosa"
   },
   {
+    "BookID": "10004",
+    "Title": "Buildings of Missouri"
+  },
+  {
     "BookID": "1099",
     "Title": "Almost a Girl"
   },
@@ -4732,6 +4836,10 @@
     "Title": "The Making and Unmaking of a Revolutionary Family"
   },
   {
+    "BookID": "5943",
+    "Title": "A Place Called Ilda"
+  },
+  {
     "BookID": "3301",
     "Title": "Answering the Call of the Court"
   },
@@ -4789,7 +4897,7 @@
   },
   {
     "BookID": "2037",
-    "Title": "Louisa S McCord"
+    "Title": "Louisa S. McCord"
   },
   {
     "BookID": "5760",
@@ -5268,6 +5376,10 @@
     "Title": "Disciplining Old Age"
   },
   {
+    "BookID": "5761",
+    "Title": "All the Devils Are Here"
+  },
+  {
     "BookID": "5007",
     "Title": "Drawn to Landscape"
   },
@@ -5300,10 +5412,6 @@
     "Title": "Postmodernism and the Revolution in Religious Theory"
   },
   {
-    "BookID": "2742",
-    "Title": "The Domestic Life of Thomas Jefferson"
-  },
-  {
     "BookID": "4327",
     "Title": "The Early Christian Doctrine of God"
   },
@@ -5330,6 +5438,10 @@
   {
     "BookID": "5788",
     "Title": "Economy Hall"
+  },
+  {
+    "BookID": "1288",
+    "Title": "Business of May Next"
   },
   {
     "BookID": "4482",
@@ -5362,6 +5474,10 @@
   {
     "BookID": "4680",
     "Title": "Sons of the Father"
+  },
+  {
+    "BookID": "10003",
+    "Title": "Does Privilege Prevail?"
   },
   {
     "BookID": "4079",
@@ -5588,6 +5704,10 @@
     "Title": "Inventing American Modernism"
   },
   {
+    "BookID": "5372",
+    "Title": "Balzac on the Barricades"
+  },
+  {
     "BookID": "5366",
     "Title": "Peacebuilding through Dialogue"
   },
@@ -5748,6 +5868,10 @@
     "Title": "Beauty"
   },
   {
+    "BookID": "5936",
+    "Title": "Sacred Capital"
+  },
+  {
     "BookID": "1588",
     "Title": "The Hand and the Soul"
   },
@@ -5902,10 +6026,6 @@
   {
     "BookID": "5665",
     "Title": "Replanting a Slave Society"
-  },
-  {
-    "BookID": "1403",
-    "Title": "Common Wealth"
   },
   {
     "BookID": "1365",
@@ -6216,6 +6336,10 @@
     "Title": "Faith, Race, and the Lost Cause"
   },
   {
+    "BookID": "1986",
+    "Title": "Lee's Young Artillerist"
+  },
+  {
     "BookID": "5538",
     "Title": "Charting Louisiana"
   },
@@ -6234,6 +6358,10 @@
   {
     "BookID": "5262",
     "Title": "The Papers of Robert Treat Paine"
+  },
+  {
+    "BookID": "3613",
+    "Title": "Building Charleston"
   },
   {
     "BookID": "6019",
@@ -6364,6 +6492,10 @@
     "Title": "Words Made Flesh"
   },
   {
+    "BookID": "5855",
+    "Title": "Faulkner's Hollywood Novels"
+  },
+  {
     "BookID": "4593",
     "Title": "The Papers of James Madison"
   },
@@ -6374,10 +6506,6 @@
   {
     "BookID": "2848",
     "Title": "The Papers of George Washington"
-  },
-  {
-    "BookID": "2690",
-    "Title": "The Bill of Rights"
   },
   {
     "BookID": "2860",
@@ -6434,6 +6562,10 @@
   {
     "BookID": "4545",
     "Title": "Chiefs, Priests, and Praise-Singers"
+  },
+  {
+    "BookID": "5897",
+    "Title": "Black Reason, White Feeling"
   },
   {
     "BookID": "3558",
@@ -6576,10 +6708,6 @@
     "Title": "The Papers of Francis Bernard"
   },
   {
-    "BookID": "1987",
-    "Title": "Lee's Young Artillerist"
-  },
-  {
     "BookID": "2901",
     "Title": "The Religious Life of Thomas Jefferson"
   },
@@ -6712,10 +6840,6 @@
     "Title": "\"Let a Common Interest Bind Us Together\""
   },
   {
-    "BookID": "3819",
-    "Title": "Revolution in Virginia, with a new Foreword"
-  },
-  {
     "BookID": "4810",
     "Title": "Citizens of a Common Intellectual Homeland"
   },
@@ -6746,6 +6870,10 @@
   {
     "BookID": "4019",
     "Title": "Is Killing Wrong?"
+  },
+  {
+    "BookID": "5307",
+    "Title": "Trump's First Year"
   },
   {
     "BookID": "3010",
@@ -6840,8 +6968,12 @@
     "Title": "Be It Ever So Humble"
   },
   {
-    "BookID": "2695",
-    "Title": "The Business of May Next"
+    "BookID": "5844",
+    "Title": "Changed Men"
+  },
+  {
+    "BookID": "5845",
+    "Title": "Empire of Commerce"
   },
   {
     "BookID": "4583",
@@ -7048,6 +7180,10 @@
     "Title": "Leading the Race"
   },
   {
+    "BookID": "6035",
+    "Title": "Year Zero"
+  },
+  {
     "BookID": "2535",
     "Title": "Sovereign States in an Age of Uncertainty"
   },
@@ -7078,6 +7214,10 @@
   {
     "BookID": "2092",
     "Title": "Miles to Go"
+  },
+  {
+    "BookID": "5925",
+    "Title": "After Emancipation"
   },
   {
     "BookID": "2904",
@@ -7482,6 +7622,10 @@
   {
     "BookID": "4621",
     "Title": "Eric Williams and the Anticolonial Tradition"
+  },
+  {
+    "BookID": "6036",
+    "Title": "Diplomats at War"
   },
   {
     "BookID": "5265",

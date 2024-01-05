@@ -1,7 +1,7 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
-import { Helmet } from 'react-helmet'
+//import { Helmet } from 'react-helmet'
 import {FaArrowAltCircleRight} from "react-icons/fa"
 import SeO from "../components/SeoComponent"
 import PageHeader from "../components/PageHeader"
