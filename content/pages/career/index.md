@@ -113,8 +113,6 @@ This position will remain open until filled.  Review of applications will begin 
 
 This is an exempt level, benefited position. Anticipated Hiring Range: $50,000-$55,000 commensurate with education and experience.  
 
-This position will not sponsor applicants for work visas. 
-
 The University will perform background checks on all new hires prior to employment. For additional information about the position, please contact Eric Brandt, Editor in Chief at eab7fb@virginia.edu. 
 
 To Apply:  
