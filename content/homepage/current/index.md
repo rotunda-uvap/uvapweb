@@ -2,12 +2,13 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: Year Zero
-    banner_author: Chris Liddell
-    banner_subtitle: The Five-Year Presidency
-    banner_id: "6035"
-    banner_quote: If you care about reinvigorating trust in our democracy, read this book!
-    banner_attr: Mack McLarty, former White House chief of staff for Bill Clinton
+  - banner_title: A Place Called Ilda
+    banner_author: Tom Shoop
+    banner_subtitle: "\t Race and Resilience at a Northern Virginia Crossroads"
+    banner_id: "5943"
+    banner_quote: Shoop finds the resonance of national historical forces in an
+      overlooked corner of today’s nondescript suburbs.
+    banner_attr: Ryan K. Smith, VCU
 related_book:
   - "5744"
   - "5617"
@@ -22,7 +23,6 @@ featured_books:
   - "6035"
   - "5852"
   - "6036"
-  - "5943"
   - "5881"
   - "5945"
   - "5923"
