@@ -40,14 +40,7 @@ Our ebooks are available to libraries through:
 
 **Print & Ebook Bundling** If you've purchased a print copy of a UVA Press book, a discounted ebook may be bundled for a discounted price via [Shelfie](http://www.shelfie.com/) or Amazon's [Matchbook](https://www.amazon.com/gp/digital/ep-landing-page?ie=UTF8&*Version*=1&*entries*=0) program.
 
-###### Returns Service at Longleaf (until January 31, 2024)
-
-Longleaf Services, Inc\
-c/o IPS Distribution Solutions Returns\
-1550 Heil Quaker Blvd, Ste 200\
-LaVergne, TN   37086
-
-(effective February 1, 2024)
+###### Returns Service at Longleaf 
 
 UVA Press Returns\
 C/O   Distribution Solutions\
