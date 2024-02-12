@@ -2,13 +2,12 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: A Place Called Ilda
-    banner_author: Tom Shoop
-    banner_subtitle: "\t Race and Resilience at a Northern Virginia Crossroads"
-    banner_id: "5943"
-    banner_quote: Shoop finds the resonance of national historical forces in an
-      overlooked corner of today’s nondescript suburbs.
-    banner_attr: Ryan K. Smith, VCU
+  - banner_title: Diplomats at War
+    banner_author: Charles Trueheart
+    banner_subtitle: Friendship and Betrayal on the Brink of the Vietnam Conflict
+    banner_id: "6036"
+    banner_quote: An engaging narrative, an evocative memoir, and an important contribution.
+    banner_attr: Anthony Lake, American diplomat and former National Security Advisor
 related_book:
   - "5744"
   - "5617"
@@ -21,13 +20,12 @@ related_collection:
   - Homepage Featured
 featured_books:
   - "6035"
-  - "5852"
-  - "6036"
-  - "5881"
-  - "5945"
-  - "5923"
-  - "5833"
   - "5315"
-  - "5979"
-  - "5392"
+  - "5852"
+  - "5943"
+  - "5881"
+  - "5880"
+  - "5846"
+  - "5833"
+  - "5779"
 ---
