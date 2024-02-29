@@ -11,7 +11,7 @@ Today, we are happy to bring you our conversation with Gerald P. McCarthy, autho
 
 *What inspired you to write this book?* 
 
-What inspired you to write this book? The inspiration for this book can be traced to a need to document the modern environmental history of Virginia, a so far unwritten and positive story. Another reason was that, in my conversations with the next generation of environmental leaders, many were not aware of the people and progress made in recent decades, and not as hopeful as I believe the data and actions justify. Finally, I wanted to celebrate the remarkable people who have really done the hard work of protecting water quality and conserving the landscape. The book is mostly about their stories. 
+The inspiration for this book can be traced to a need to document the modern environmental history of Virginia, a so far unwritten and positive story. Another reason was that, in my conversations with the next generation of environmental leaders, many were not aware of the people and progress made in recent decades, and not as hopeful as I believe the data and actions justify. Finally, I wanted to celebrate the remarkable people who have really done the hard work of protecting water quality and conserving the landscape. The book is mostly about their stories. 
 
 *What did you learn and what are you hoping readers will learn from your book?* 
 
