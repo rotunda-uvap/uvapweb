@@ -17,6 +17,8 @@ related_blog:
   - Author's Corner with Peter Radford, author of THEY RUN WITH SURPRISING
     SWIFTNESS
   - Author's Corner with Jennifer Tsien, author of RUMORS OF REVOLUTION
+  - Author's Corner with Mary Caton Lingold, author of AFRICAN MUSICIANS IN THE
+    ATLANTIC WORLD
 related_staff:
   - Angie Hogan
 featured_books:
