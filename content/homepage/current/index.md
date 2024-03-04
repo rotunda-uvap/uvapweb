@@ -2,12 +2,12 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: Blueprint for Going Green
-    banner_author: Gerald P. McCarthy
-    banner_subtitle: How a Small Foundation Changed the Model for Environmental Conservation
-    banner_id: "5852"
-    banner_quote: Essential to an understanding of environmental history at the state level.
-    banner_attr: William Kovarik, Radford University
+  - banner_title: After Emancipation
+    banner_author: Edited by Kirt von Daacke and Andrea Douglas
+    banner_subtitle: Racism and Resistance at the University of Virginia
+    banner_id: "5925"
+    banner_quote: A model of effective truth-telling about complex public history.
+    banner_attr: Rhondda Robinson Thomas, Clemson University
 related_book:
   - "5744"
   - "5617"
@@ -20,6 +20,7 @@ related_collection:
   - Homepage Featured
 featured_books:
   - "6035"
+  - "5852"
   - "5315"
   - "6036"
   - "5943"
