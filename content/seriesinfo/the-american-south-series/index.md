@@ -3,7 +3,7 @@ templateKey: series
 title: The American South Series
 status: active
 seriestype: Academic Book Series
-editors: "Series Editors: Elizabeth R. Varon & Orville Vernon Burton"
+editors: "Series Editors: Elizabeth R. Varon, Orville Vernon Burton, and Warren E. Milteer, Jr."
 related_staff:
   - Nadine Zimmerli
   - Clayton Butler
