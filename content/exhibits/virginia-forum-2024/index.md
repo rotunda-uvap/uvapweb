@@ -10,6 +10,13 @@ related_series:
   - JA
   - RA
   - AMS
+related_blog:
+  - Author's Corner with Gerald P. McCarthy, author of BLUEPRINT FOR GOING GREEN
+  - Author's Corner with Marvin T. Chiles, author of THE STRUGGLE FOR CHANGE
+  - Author's Corner with John A. Ragosta, author of FOR THE PEOPLE, FOR THE
+    COUNTRY
+  - Author's Corner with Jessica Lauren Taylor, author of PLAIN PATHS AND
+    DIVIDING LINES
 related_staff:
   - Nadine Zimmerli
   - Mark Mones
