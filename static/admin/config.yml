@@ -368,6 +368,32 @@ collections:
         multiple: true
         required: true
        
+  - name: 'imprint_info'
+    identifier_field: '{{title}}'
+    label: 'Imprint Info'
+    folder: 'content/imprintinfo'
+    preview_path: '{{title}}/index'
+    create: true
+    slug: 'index'
+    media_folder: ''
+    public_folder: ''
+    path: '{{title}}/index'
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "imprint"}
+      - { name: title, label: Title }
+      - { label: 'Imprint Editors', name: 'editors', widget: 'string', required: false }
+      - { label: 'Addtional Editors', name: 'moreEditors', widget: 'string', required: false }
+      - { label: 'Imprint ID', name: 'imprintID', widget: 'string' }
+      - label: "UVaP Editor"
+        name: "related_staff"
+        widget: "relation"
+        collection: "bios"
+        search_fields: ['title']
+        value_field: "{{title}}"
+        multiple: true
+        required: false
+      - { name: body, label: Body, widget: markdown , required: false}
+     
   - name: 'series_info'
     identifier_field: '{{title}}'
     label: 'Series Info'
@@ -395,7 +421,7 @@ collections:
         required: false
       - { name: body, label: Body, widget: markdown , required: false}
       - { label: 'Series ID', name: 'seriesID', widget: 'string' }
-  
+
   - name: files
     label: Files
     label_singular: 'File'

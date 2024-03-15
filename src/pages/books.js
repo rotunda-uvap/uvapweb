@@ -64,7 +64,24 @@ export default function Books({ data }) {
       </div>
       </div>
   </section>
+  <section className="py-5 text-ceci-gray-dark border-b-2 border-gray-100" id="imprints">
+  <SectionHeader text={"Our imprints"}/> 
+  <div className="container md:flex md:flex-wrap py-10 mx-auto items-center">
+       
+  {data.imprints.group.map((g, index) => (
+                   
+          <div className="mb-2 px-2 font-display items-center"  key={`imps${index}`}> 
 
+<Link to={`../../imprints/${kebabCase(g.fieldValue) }`} className="text-ceci-gray-dark hover:text-gray-800">{ g.fieldValue } ({g.totalCount})</Link>
+        </div>            
+           
+        ))}
+     
+    
+  </div>
+
+
+</section> 
 
 <section className="py-5 text-ceci-gray-dark border-b-2 border-gray-100" id="subjects">
   <SectionHeader text={"Our Subjects"}/> 
@@ -172,13 +189,20 @@ export const query = graphql`
         }
       }
     }
+    imprints: allBooksJson {
+      group(field: {Imprint: {imprintName: SELECT}}) {
+        totalCount
+        fieldValue
+      }
+    }
+  
     subjects: allBooksJson {
       group(field: {Subjects: {name: SELECT}}) {
         totalCount
         fieldValue
       }
     }
-
+    
   
     recent: allBooksJson(filter: {DaysSincePublication: {gt: 0, lt: 365}}, sort: {DaysSincePublication:ASC}) {
       edges {
