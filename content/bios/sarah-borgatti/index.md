@@ -7,6 +7,7 @@ job_title: Marketing and Sales Assistant
 profile_photo: sarahb.jpg
 department:
   - MKG
-email: sb2bb@virginia.edu
+email: sborgatti@virginia.edu
+phone: (434) 924-6951
 ---
 Sarah joined UVA Press in February 2024. Prior to that, she worked in arts administration with organizations including the Virginia Theatre Festival, Ecce Ensemble, New England Philharmonic, and Guerilla Opera. She holds a BA in Music and Anthropology from Tulane University and a MA in Musicology from Tufts University.

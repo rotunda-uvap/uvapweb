@@ -1,10 +1,10 @@
 [
-    { 
+  {
     "imprintID": 5,
-    "imprintName": "Darden Business Publishing" 
-    },
-    { 
-    "imprintID": 7, 
-    "imprintName": "Rivanna" 
-    }
+    "imprintName": "Darden Business Publishing"
+  },
+  {
+    "imprintID": 7,
+    "imprintName": "Rivanna"
+  }
 ]

@@ -6,6 +6,7 @@ import SeO from "../components/SeoComponent"
 import PageHeader from "../components/PageHeader"
 import SectionHeader from "../components/SectionHeader"
 import sanitizeHtml from 'sanitize-html'
+import { StaticImage } from "gatsby-plugin-image"
 
 
 
@@ -13,7 +14,7 @@ const ImprintTemplate = ({ data }) => {
     const books = data.allBooksJson
     const imprintinfo = data.markdownRemark
     const related_staff = data.markdownRemark.frontmatter.related_staff
-  
+
     return (
     <div>
 
@@ -21,6 +22,9 @@ const ImprintTemplate = ({ data }) => {
             <SeO title={imprintinfo.frontmatter.title}/>
             <PageHeader text={imprintinfo.frontmatter.title}/>
             
+            <section>
+              { imprintinfo.frontmatter.title==="Rivanna" && <StaticImage src="../images/rivanna.jpg" alt="logo for rivanna imprint" />
+ }</section>
             <section className="py-4 border-b-2 border-gray-100">
             {imprintinfo.html ? <div className="pt-5 cms dropCap text-lg text-ceci-gray-dark leading-relaxed" dangerouslySetInnerHTML={{ __html: sanitizeHtml(imprintinfo.html)}}/> :<div/> }
             {imprintinfo.frontmatter.editors ? <div className="text-ceci-gray-mid leading-relaxed font-serif ml-4 cms" dangerouslySetInnerHTML={{ __html: sanitizeHtml(imprintinfo.frontmatter.editors) }}/> : <div/> }
@@ -97,6 +101,7 @@ export const query = graphql`
                 html
             
             
-          } 
+        }
+       
     }
 `
