@@ -2,12 +2,14 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: After Emancipation
-    banner_author: Edited by Kirt von Daacke and Andrea Douglas
-    banner_subtitle: Racism and Resistance at the University of Virginia
-    banner_id: "5925"
-    banner_quote: A model of effective truth-telling about complex public history.
-    banner_attr: Rhondda Robinson Thomas, Clemson University
+  - banner_title: We, Us, and Them
+    banner_author: Douglas Dowland
+    banner_subtitle: " Affect and American Nonfiction from Vietnam to Trump"
+    banner_id: "5889"
+    banner_quote: Examines the rhetorical tropes that structure and impoverish
+      nationalist discourse, often to the detriment of democratic culture and
+      politics.
+    banner_attr: Russ Castronovo, University of Wisconsin-Madison
 related_book:
   - "5744"
   - "5617"
