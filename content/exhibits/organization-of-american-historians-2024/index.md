@@ -21,6 +21,8 @@ related_blog:
   - Author's Corner with Eileen Braman, author of CONSTITUTIONAL POWERS AND
     POLITICS
   - Author's Corner with Morten G. Ender, author of ARMY SPOUSES
+  - Author's Corner with Stephen J. Rockwell, author of THE PRESIDENCY AND THE
+    AMERICAN STATE
 related_staff:
   - Nadine Zimmerli
 featured_books:
