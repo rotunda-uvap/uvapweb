@@ -2,12 +2,14 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: Reading Character after Calvin
-    banner_author: David Mark Diamond
-    banner_subtitle: Secularization, Empire, and the Eighteenth-Century Novel
-    banner_id: "5901"
-    banner_quote: There is no other book like it.
-    banner_attr: Dwight Codr, University of Connecticut
+  - banner_title: All the Devils Are Here
+    banner_author: David Greven
+    banner_subtitle: American Romanticism and Literary Influence
+    banner_id: "5761"
+    banner_quote: Greven offers new styles of connection and navigates critical
+      questions deftly and in ways that illuminate the work with tremendous
+      lucidity and élan.
+    banner_attr: Wyn Kelley, MIT School of Humanities, Arts, and Social Sciences
 related_book:
   - "5744"
   - "5617"
