@@ -2,14 +2,14 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: All the Devils Are Here
-    banner_author: David Greven
-    banner_subtitle: American Romanticism and Literary Influence
-    banner_id: "5761"
-    banner_quote: Greven offers new styles of connection and navigates critical
-      questions deftly and in ways that illuminate the work with tremendous
-      lucidity and élan.
-    banner_attr: Wyn Kelley, MIT School of Humanities, Arts, and Social Sciences
+  - banner_title: I, Tituba, Black Witch of Salem
+    banner_author: Maryse Condé
+    banner_subtitle: Winner of the Grand Prix Litteraire de la Femme
+    banner_id: "3840"
+    banner_quote: It is impossible to read her novels and not come away from them
+      with both a sadder and more exhilarating understanding of the human heart,
+      in all its secret intricacies, its contradictions and marvels.
+    banner_attr: New York Times
 related_book:
   - "5744"
   - "5617"
