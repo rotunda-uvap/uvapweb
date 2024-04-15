@@ -132,6 +132,10 @@
     "Title": "Kodak and the Lens of Nostalgia"
   },
   {
+    "BookID": "10044",
+    "Title": "Ghosts and Their Hosts"
+  },
+  {
     "BookID": "3816",
     "Title": "Best New Poets 2007"
   },
@@ -496,6 +500,10 @@
     "Title": "Landon Carter"
   },
   {
+    "BookID": "10051",
+    "Title": "Comforting Myths"
+  },
+  {
     "BookID": "2248",
     "Title": "Pleasures and Pains"
   },
@@ -706,6 +714,10 @@
   {
     "BookID": "1964",
     "Title": "Kingsmill Plantation, 1619-1800"
+  },
+  {
+    "BookID": "10047",
+    "Title": "Watchdogs"
   },
   {
     "BookID": "3801",
@@ -1014,6 +1026,10 @@
   {
     "BookID": "3800",
     "Title": "Take Care of the Living"
+  },
+  {
+    "BookID": "10046",
+    "Title": "Matoaka, Pocahontas, Rebecca"
   },
   {
     "BookID": "5530",
@@ -2021,7 +2037,7 @@
   },
   {
     "BookID": "6003",
-    "Title": "The Cosmos, the Person, and the Sa¯dhana"
+    "Title": "The Cosmos, the Person, and the Sadhana"
   },
   {
     "BookID": "1022",
@@ -2210,6 +2226,10 @@
   {
     "BookID": "4883",
     "Title": "Unnatural Frenchmen"
+  },
+  {
+    "BookID": "10033",
+    "Title": "White Tongue, Brown Skin"
   },
   {
     "BookID": "3861",
@@ -2500,6 +2520,14 @@
     "Title": "Jefferson and the Ordeal of Liberty"
   },
   {
+    "BookID": "10026",
+    "Title": "Is Reality beyond Good and Evil?"
+  },
+  {
+    "BookID": "10032",
+    "Title": "The Scientist Turned Spy"
+  },
+  {
     "BookID": "4869",
     "Title": "American Road Narratives"
   },
@@ -2756,6 +2784,10 @@
     "Title": "Natural Virginia"
   },
   {
+    "BookID": "10018",
+    "Title": "The Grand Collaboration"
+  },
+  {
     "BookID": "3692",
     "Title": "Alexis de Tocqueville and Gustave de Beaumont in America"
   },
@@ -3006,6 +3038,10 @@
   {
     "BookID": "4856",
     "Title": "Bridges to Memory"
+  },
+  {
+    "BookID": "10019",
+    "Title": "Love, Etc."
   },
   {
     "BookID": "4842",
@@ -3470,6 +3506,10 @@
   {
     "BookID": "3872",
     "Title": "In Good Keeping"
+  },
+  {
+    "BookID": "10020",
+    "Title": "American Koan"
   },
   {
     "BookID": "10008",
@@ -4552,6 +4592,10 @@
     "Title": "Studies in Bibliography"
   },
   {
+    "BookID": "10011",
+    "Title": "The Farmer, the Gastronome, and the Chef"
+  },
+  {
     "BookID": "4692",
     "Title": "Failed Frontiersmen"
   },
@@ -4774,6 +4818,10 @@
   {
     "BookID": "3842",
     "Title": "Pilgrimage to Vallombrosa"
+  },
+  {
+    "BookID": "10010",
+    "Title": "Three Talks"
   },
   {
     "BookID": "10004",
@@ -5016,8 +5064,16 @@
     "Title": "Between Sovereignty and Anarchy"
   },
   {
+    "BookID": "10000",
+    "Title": "The Ecological Plot"
+  },
+  {
     "BookID": "4697",
     "Title": "Prophetic Remembrance"
+  },
+  {
+    "BookID": "10014",
+    "Title": "Virginia Cider"
   },
   {
     "BookID": "1937",
@@ -5268,6 +5324,14 @@
     "Title": "Wandering Memory"
   },
   {
+    "BookID": "10015",
+    "Title": "Race, Politics, and Reconstruction"
+  },
+  {
+    "BookID": "10001",
+    "Title": "Design through Time"
+  },
+  {
     "BookID": "4866",
     "Title": "Settler Jamaica in the 1750s"
   },
@@ -5478,6 +5542,10 @@
   {
     "BookID": "4694",
     "Title": "Freud and Augustine in Dialogue"
+  },
+  {
+    "BookID": "10017",
+    "Title": "The Great Elector's Table"
   },
   {
     "BookID": "4680",
@@ -5730,6 +5798,10 @@
   {
     "BookID": "3850",
     "Title": "Romantic Writing and the Empire of Signs"
+  },
+  {
+    "BookID": "10016",
+    "Title": "Declarations of Independence"
   },
   {
     "BookID": "4695",
@@ -6454,6 +6526,10 @@
   {
     "BookID": "4791",
     "Title": "Architecture in Play"
+  },
+  {
+    "BookID": "9780813951621",
+    "Title": "Plowswords"
   },
   {
     "BookID": "3954",
@@ -7602,6 +7678,10 @@
   {
     "BookID": "4806",
     "Title": "The Papers of George Washington"
+  },
+  {
+    "BookID": "10049",
+    "Title": "The Correspondence of Thomas Hutchinson"
   },
   {
     "BookID": "4812",

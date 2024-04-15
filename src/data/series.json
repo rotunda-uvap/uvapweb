@@ -64,6 +64,10 @@
     "seriesName": "Cultural Frames, Framing Culture"
   },
   {
+    "seriesID": "WEA",
+    "seriesName": "Writing the Early Americas"
+  },
+  {
     "seriesID": "BNP",
     "seriesName": "Best New Poets"
   },
@@ -116,12 +120,12 @@
     "seriesName": "Knowledge: Disciplinarity and Beyond"
   },
   {
-    "seriesID": "MIDC",
-    "seriesName": "Midcentury: Architecture, Landscape, Urbanism, and Design"
+    "seriesID": "KL",
+    "seriesName": "Kapnick Foundation Distinguished Writer-in-Residence Lectures"
   },
   {
-    "seriesID": "USCHS",
-    "seriesName": "United States Capitol Historical Society"
+    "seriesID": "MIDC",
+    "seriesName": "Midcentury: Architecture, Landscape, Urbanism, and Design"
   },
   {
     "seriesID": "TTTB",
@@ -132,16 +136,8 @@
     "seriesName": "Jamestown Essays on Representation"
   },
   {
-    "seriesID": "CSM",
-    "seriesName": "Colonial Society of Massachusetts"
-  },
-  {
     "seriesID": "GGL",
     "seriesName": "Gay Hart Gaines Distinguished Lectures"
-  },
-  {
-    "seriesID": "KL",
-    "seriesName": "Kapnick Foundation Distinguished Writer-in-Residence Lectures"
   },
   {
     "seriesID": "BUS",
@@ -154,10 +150,6 @@
   {
     "seriesID": "RL",
     "seriesName": "Richard Lectures"
-  },
-  {
-    "seriesID": "WEA",
-    "seriesName": "Writing the Early Americas"
   },
   {
     "seriesID": "WSC",
@@ -176,6 +168,10 @@
     "seriesName": "Jefferson and His Time"
   },
   {
+    "seriesID": "RFPD",
+    "seriesName": "Religious Freedom and Public Dialogue: A Robert Nusbaum Center Series: A Robert Nusbaum Center Series"
+  },
+  {
     "seriesID": "PBSH",
     "seriesName": "Peculiar Bodies: Stories and Histories"
   },
@@ -192,8 +188,16 @@
     "seriesName": "SAH/BUS City Guide"
   },
   {
+    "seriesID": "ASHS",
+    "seriesName": "Age Studies in Humanities and Science"
+  },
+  {
     "seriesID": "ERP",
     "seriesName": "Eleanor Roosevelt Papers"
+  },
+  {
+    "seriesID": "BSWS",
+    "seriesName": "The Black Soldier in War and Society: New Narratives and Critical Perspectives"
   },
   {
     "seriesID": "PAL",
