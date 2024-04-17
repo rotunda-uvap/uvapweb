@@ -2,14 +2,13 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: I, Tituba, Black Witch of Salem
-    banner_author: Maryse Condé
-    banner_subtitle: Winner of the Grand Prix Litteraire de la Femme
-    banner_id: "3840"
-    banner_quote: It is impossible to read her novels and not come away from them
-      with both a sadder and more exhilarating understanding of the human heart,
-      in all its secret intricacies, its contradictions and marvels.
-    banner_attr: New York Times
+  - banner_title: Does Privilege Prevail?
+    banner_author: Stacia L. Haynie, Kirk A. Randazzo, and Reginald S. Sheehan
+    banner_subtitle: Litigation in High Courts across the Globe
+    banner_id: "10003"
+    banner_quote: A much-needed book that makes a strong contribution to the study
+      of law and courts and of political science.
+    banner_attr: Jennifer Barnes Bowie, University of Richmond
 related_book:
   - "5744"
   - "5617"
