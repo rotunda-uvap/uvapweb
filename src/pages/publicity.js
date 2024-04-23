@@ -48,7 +48,7 @@ export default function PubPage({ data }) {
 <li className="font-serif">Full contact information (name, mailing address), along with any deadlines</li>
 <li className="font-serif">Links to your outlet's website</li>
  </ul>
- <p className="pt-2">Review copy requests can take up to four weeks to process. Due to the volume of requests, we are unable to provide status updates. Upon publication, please send PDFs and/or links to coverage to <a href="mailto:uvapressintern@gmail.com">uvapressintern@gmail.com.</a></p>
+ <p className="pt-2">Review copy requests can take up to four weeks to process. Due to the volume of requests, we are unable to provide status updates. Upon publication, please send PDFs and/or links to coverage to <a href="mailto:sborgatti@virginia.edu">sborgatti@virginia.edu.</a></p>
  </section>
 
           <div className="mx-auto px-4">
