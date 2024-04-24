@@ -2,13 +2,13 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: Does Privilege Prevail?
-    banner_author: Stacia L. Haynie, Kirk A. Randazzo, and Reginald S. Sheehan
-    banner_subtitle: Litigation in High Courts across the Globe
-    banner_id: "10003"
-    banner_quote: A much-needed book that makes a strong contribution to the study
-      of law and courts and of political science.
-    banner_attr: Jennifer Barnes Bowie, University of Richmond
+  - banner_title: Popa Singer
+    banner_author: René Depestre. Translated by Kaiama L. Glover
+    banner_subtitle: A Novel
+    banner_id: "5974"
+    banner_quote: Glover faithfully preserves Depestre’s quintessentially quirky
+      writing, and his radical nature comes through in word, style, and form.
+    banner_attr: Régine Michelle Jean-Charles, Northeastern University
 related_book:
   - "5744"
   - "5617"
