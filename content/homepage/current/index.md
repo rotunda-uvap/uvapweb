@@ -3,8 +3,8 @@ templateKey: homepage
 title: Current
 top_banner:
   - banner_title: Popa Singer
-    banner_author: René Depestre. Translated by Kaiama L. Glover
-    banner_subtitle: A Novel
+    banner_author: René Depestre
+    banner_subtitle: Translated by Kaiama L. Glover
     banner_id: "5974"
     banner_quote: Glover faithfully preserves Depestre’s quintessentially quirky
       writing, and his radical nature comes through in word, style, and form.
