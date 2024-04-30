@@ -70,7 +70,7 @@ export default function RotundaCustomerList({data}) {
       <section className="px-5">
         <Heading3>MARC Records</Heading3>
 
-<p>For a zip archive of all of the below records, click here: <a href="https://rotunda.upress.virginia.edu/MARC/all_rotunda_marc_records.zip">All records</a></p>
+<p className="font-assistant">For a zip archive of all of the below records, click here: <a href="https://rotunda.upress.virginia.edu/MARC/all_rotunda_marc_records.zip">All records</a></p>
 <ul>
         
     <li className="tracking-wider font-playfair"><b>American Founding Era</b></li>
