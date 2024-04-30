@@ -184,7 +184,7 @@
     "seriesName": "The Malcolm Lester Phi Beta Kappa Lectures on the Liberal Arts and Public Life"
   },
   {
-    "seriesID": "BUSG",
+    "seriesID": "SAHCG",
     "seriesName": "SAH/BUS City Guide"
   },
   {
@@ -200,11 +200,11 @@
     "seriesName": "The Black Soldier in War and Society: New Narratives and Critical Perspectives"
   },
   {
-    "seriesID": "PAL",
-    "seriesName": "The Papers of Abraham Lincoln"
-  },
-  {
     "seriesID": "MNS",
     "seriesName": "Minds of the New South"
+  },
+  {
+    "seriesID": "PAL",
+    "seriesName": "The Papers of Abraham Lincoln"
   }
 ]

@@ -7,7 +7,7 @@ txtcolor: text-black
 related_series:
   - MIDC
   - BUS
-  - BUSG
+  - SAHCG
 related_blog:
   - Author's Corner with Avigail Sachs, author of THE GARDEN IN THE MACHINE
   - Authors' Corner with Elisa Dainese and Aleksandar Staničić, Editors of WAR

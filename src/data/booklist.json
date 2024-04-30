@@ -2240,6 +2240,10 @@
     "Title": "The Papers of George Washington"
   },
   {
+    "BookID": "10027",
+    "Title": "Milieus of Minutiae"
+  },
+  {
     "BookID": "4854",
     "Title": "Monticello in Mind"
   },
@@ -3234,6 +3238,10 @@
   {
     "BookID": "3873",
     "Title": "A Storm over This Court"
+  },
+  {
+    "BookID": "10021",
+    "Title": "Désirée Congo"
   },
   {
     "BookID": "1916",
@@ -6888,10 +6896,6 @@
     "Title": "A World of Disorderly Notions"
   },
   {
-    "BookID": "3616",
-    "Title": "The Papers of Abraham Lincoln"
-  },
-  {
     "BookID": "4179",
     "Title": "Ralph Ellison and Kenneth Burke"
   },
@@ -7666,6 +7670,10 @@
   {
     "BookID": "5477",
     "Title": "The Life of William Faulkner"
+  },
+  {
+    "BookID": "10061",
+    "Title": "The Papers of Abraham Lincoln (Set)"
   },
   {
     "BookID": "1956",
