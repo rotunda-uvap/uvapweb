@@ -69,7 +69,7 @@ const uvap = getImage(data.uvaplogo)
               >
                 <div className="w-full flex flex-wrap justify-between mx-2 text-gray-400  font-sans font-thin uppercase">
                   <div className="px-4 w-full sm:w-1/2 lg:w-1/5 border-gray-600 border-b sm:border-r lg:border-b-0 pb-6 pt-6 lg:pt-3">
-                    <h3 className="font-bold text-xl text-white text-bold mb-2">
+                    <h3 className="text-xl text-white text-bold mb-2">
                       About
                     </h3>
                     <div>
@@ -281,7 +281,7 @@ const uvap = getImage(data.uvaplogo)
                     </div>
                   </ul>
                   <ul className="px-4 w-full sm:w-1/2 lg:w-1/5 border-gray-600 pb-6 pt-6 lg:pt-3">
-                    <h3 className="font-bold text-xl text-white text-bold mb-2">
+                    <h3 className="text-xl text-white text-bold mb-2">
                       Rotunda Digital
                     </h3>
                     <div>
@@ -411,7 +411,7 @@ const uvap = getImage(data.uvaplogo)
               >
                 <div className="container mx-auto w-full flex flex-wrap justify-between mx-2">
                   <div className="px-4 w-full sm:w-1/2 lg:w-1/5 border-gray-600 border-b sm:border-r lg:border-b-0 pb-6 pt-6 lg:pt-3">
-                    <h3 className="font-bold text-xl text-white text-bold mb-2">
+                    <h3 className="text-xl text-white text-bold mb-2">
                       About
                     </h3>
                     <div>
@@ -623,7 +623,7 @@ const uvap = getImage(data.uvaplogo)
                     </div>
                   </ul>
                   <ul className="px-4 w-full sm:w-1/2 lg:w-1/5 border-gray-600 pb-6 pt-6 lg:pt-3">
-                    <h3 className="font-bold text-xl text-white text-bold mb-2">
+                    <h3 className="text-xl text-white text-bold mb-2">
                       Rotunda Digital
                     </h3>
                     <div>
