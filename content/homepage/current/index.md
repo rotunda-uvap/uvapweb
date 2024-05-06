@@ -2,13 +2,14 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: Popa Singer
-    banner_author: René Depestre
-    banner_subtitle: Translated by Kaiama L. Glover
-    banner_id: "5974"
-    banner_quote: Glover faithfully preserves Depestre’s quintessentially quirky
-      writing, and his radical nature comes through in word, style, and form.
-    banner_attr: Régine Michelle Jean-Charles, Northeastern University
+  - banner_title: Black Reason, White Feeling
+    banner_author: Hannah Spahn
+    banner_subtitle: " The Jeffersonian Enlightenment in the African American Tradition"
+    banner_id: "5897"
+    banner_quote: A substantial contribution to the scholarship on Jefferson, the
+      early American republic, and African American intellectual and literary
+      history.
+    banner_attr: Annette Gordon-Reed, Harvard University
 related_book:
   - "5744"
   - "5617"
