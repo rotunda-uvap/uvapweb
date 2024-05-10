@@ -2,14 +2,12 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: Black Reason, White Feeling
-    banner_author: Hannah Spahn
-    banner_subtitle: " The Jeffersonian Enlightenment in the African American Tradition"
-    banner_id: "5897"
-    banner_quote: A substantial contribution to the scholarship on Jefferson, the
-      early American republic, and African American intellectual and literary
-      history.
-    banner_attr: Annette Gordon-Reed, Harvard University
+  - banner_title: "Making #Charlottesville"
+    banner_author: Aniko Bodroghkozy
+    banner_subtitle: Winner of the American Journalism Historians Association Book Award
+    banner_id: "5779"
+    banner_quote: a valuable resource for anyone who wants to understand the power of media.
+    banner_attr: Ibram X. Kendi
 related_book:
   - "5744"
   - "5617"
@@ -21,13 +19,12 @@ related_book:
 related_collection:
   - Homepage Featured
 featured_books:
-  - "6035"
-  - "5852"
-  - "5925"
-  - "5881"
+  - "6061"
   - "5943"
-  - "6036"
+  - "5852"
+  - "5881"
   - "5833"
   - "5315"
-  - "5779"
+  - "5925"
+  - "6036"
 ---
