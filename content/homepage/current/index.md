@@ -2,12 +2,13 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: "Making #Charlottesville"
-    banner_author: Aniko Bodroghkozy
-    banner_subtitle: Winner of the American Journalism Historians Association Book Award
-    banner_id: "5779"
-    banner_quote: A valuable resource for anyone who wants to understand the power of media.
-    banner_attr: Ibram X. Kendi
+  - banner_title: Black Reason, White Feeling
+    banner_author: Hannah Spahn
+    banner_subtitle: The Jeffersonian Enlightenment in the African American Tradition
+    banner_id: "5897"
+    banner_quote: Spahn gives us that truly wide canvass of dual Enlightenment
+      cultures that we so desperately need.
+    banner_attr: Richard S. Newman, Rochester Institute of Technology
 related_book:
   - "5744"
   - "5617"
