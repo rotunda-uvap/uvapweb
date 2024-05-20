@@ -2,6 +2,7 @@
 templateKey: collection
 title: SCWH 24
 related_book:
+  - "5909"
   - "3892"
   - "4007"
   - "1245"
