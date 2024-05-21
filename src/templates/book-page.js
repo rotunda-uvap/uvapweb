@@ -129,12 +129,15 @@ const bookPage = ({ data }) => {
           <h4 className="hidden md:block  pb-3 font-thin font-sans uppercase tracking-booped leading-snug ">{book.Title}</h4>
           <div className="md:hidden text-2xl text-center font-thin uppercase tracking-booped font-sans">{book.Title}</div>
 
-          {book.InternalSeriesVolume && (
+       {/*    {book.InternalSeriesVolume && (
             <h6 className="py-3">{book.InternalSeriesVolume}</h6>
-          )}
+          )} */}
 
           {book.Subtitle && (
-            <h6 className="text-center md:text-left italic py-2 md:py-0 font-thin text-ceci-gray-mid tracking-booped">{book.Subtitle}</h6>
+            <h6 className="text-center md:text-left italic py-2 md:py-0 font-thin text-ceci-gray-mid tracking-booped">{book.Subtitle} 
+            {book.InternalSeriesVolume && (
+              <span>— {book.InternalSeriesVolume}</span>
+            )}</h6>
           )}
 
           <h6 className="py-2 font-display text-center md:text-left">
