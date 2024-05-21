@@ -2,13 +2,13 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: Black Reason, White Feeling
-    banner_author: Hannah Spahn
-    banner_subtitle: The Jeffersonian Enlightenment in the African American Tradition
-    banner_id: "5897"
-    banner_quote: Spahn gives us that truly wide canvass of dual Enlightenment
-      cultures that we so desperately need.
-    banner_attr: Richard S. Newman, Rochester Institute of Technology
+  - banner_title: The Witch of Pungo
+    banner_author: Scott O. Moore
+    banner_subtitle: Grace Sherwood in Virginia History and Legend
+    banner_id: "6061"
+    banner_quote: A haunting and resonant history that expands our understanding of
+      early America and the ways in which women have historically been vilified.
+    banner_attr: Kristen Green, author of The Devil’s Half Acre
 related_book:
   - "5744"
   - "5617"
@@ -20,7 +20,7 @@ related_book:
 related_collection:
   - Homepage Featured
 featured_books:
-  - "6061"
+  - "5897"
   - "5943"
   - "10014"
   - "5852"
