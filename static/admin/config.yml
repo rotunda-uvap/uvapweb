@@ -56,7 +56,7 @@ collections:
       - { name: title, label: Title }
       - { label: 'Summary', name: 'description', widget: 'markdown', modes: ['rich_text', 'raw'], required: false, hint: 'Text for homepage and previews'}
       - { name: body, label: Body, widget: markdown }
-      - {label: Image, name: image, widget: image, required: false}
+      - {label: Image, name: image, widget: image, required: false, hint:'PLEASE CHECK SIZE! Should not be over 1mb file.'}
       - label: Related Book(s)
         name: related_book
         widget: relation

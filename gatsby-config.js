@@ -337,7 +337,16 @@ module.exports = {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
         host: 'https://www.upress.virginia.edu',
-        policy: [{ userAgent: '*', allow: '/' }]
+        policy: [{ userAgent: '*', allow: '/' },
+        { userAgent: 'AhrefsBot', disallow: '/' },
+        { userAgent: 'MJ12bot', disallow: '/' },
+        { userAgent: 'SemrushBot', disallow: '/' },
+        { userAgent: 'DotBot', disallow: '/' },
+        { userAgent: 'Baiduspider', disallow: '/' },
+        { userAgent: 'YandexBot', disallow: '/' },
+        { userAgent: 'Sogou Spider', disallow: '/' },
+        { userAgent: 'Exabot', disallow: '/' }
+        ]
       }
     }, 
     "gatsby-plugin-meta-redirect",
