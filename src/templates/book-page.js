@@ -7,7 +7,7 @@ import BookHorizontalTabs from "../components/BookHorizontalTabs"
 import SeO from "../components/SeoComponent"
 import ShareButtons from "../components/ShareButtons"
 import kebabCase from "lodash/kebabCase"
-import Related from "../components/search/Related"
+// import Related from "../components/search/Related"
 
 
 const bookPage = ({ data }) => {
@@ -344,14 +344,14 @@ const bookPage = ({ data }) => {
         </section>
       )}
 
- 
+ {/* Algolia Related: removed 5/28/2024
   <section className="pt-4 border-t-2" id="relatedProducts">
      <span className="text-xs uppercase  text-ceci-gray-mid tracking-wider">
            You May Also Like:
           </span>
      <Related productObjectID={book.id}/>
      </section>
-
+ */}
      
 
     </div>
