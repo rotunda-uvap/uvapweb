@@ -2,13 +2,14 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: Army Spouses
-    banner_author: Morten G. Ender
-    banner_subtitle: Military Families during the Global War on Terror
-    banner_id: "5923"
-    banner_quote: In the end, it is a story of strength and resilience in the face
-      of adversity.
-    banner_attr: Armed Forces & Society
+  - banner_title: Empire of Commerce
+    banner_author: Susan Gaunt Stearns
+    banner_subtitle: The Closing of the Mississippi and the Opening of Atlantic Trade
+    banner_id: "5845"
+    banner_quote: Stearns has brilliantly defied some conventional myths of American
+      history, especially about how our Constitution took form . . . adds some
+      long-needed context to our most basic document.
+    banner_attr: Carl Bernstein, journalist and co-author of All the President’s Men
 related_book:
   - "5744"
   - "5617"
