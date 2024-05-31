@@ -12035,17 +12035,17 @@ image-size@~0.5.0:
   resolved "https://registry.yarnpkg.com/image-size/-/image-size-0.5.5.tgz#09dfd4ab9d20e29eb1c3e80b8990378df9e3cb9c"
   integrity sha512-6TDAlDPZxUFCv+fuOkIoXT/V/f3Qbq8e37p+YOiYrUv3v9cc3/6x78VdfPgFVaB9dZYeLUfKgHRebpkm/oP2VQ==
 
-imagekit-javascript@^1.5.4:
-  version "1.5.5"
-  resolved "https://registry.yarnpkg.com/imagekit-javascript/-/imagekit-javascript-1.5.5.tgz#2b31994111eb94426ba1abf527774af11e0decb4"
-  integrity sha512-WnEq7zIiYx+bN1fUzLEqSD33xOCEhHpDmlo3SxQkXPiLBnnnLGhBZi583wNhBXP3RB/yQQEKOBeOelnZ7WVgPA==
+imagekit-javascript@^3.0.0:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/imagekit-javascript/-/imagekit-javascript-3.0.1.tgz#b974e2c3c1d3e4f772594cc8c88fdafcd5c40241"
+  integrity sha512-//pvycASq98lfa68y04Q0/P6lRS5HTa015fFHi91c4mOgruqssrJIrAC1W2/8fBjS8eiJtehZruDtXJVtrmT+A==
 
-imagekitio-react@2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/imagekitio-react/-/imagekitio-react-2.0.0.tgz#36361612e6455f0a36a696b1b39d40f5b17f703c"
-  integrity sha512-CBZ8Y43RgzHenqRj3nRA9MZVQbmUATxwFoyfrDXNRomT9i6EabG0582e7zl/cmODAfcSfW0dA8Oyz19HyfP+EA==
+imagekitio-react@^4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/imagekitio-react/-/imagekitio-react-4.1.0.tgz#11d551930c746ae10b0ccc7702fbd2a5fbcdea70"
+  integrity sha512-Vyb0s+2vbBwiexeWds69tMOn2evAGPRK7mYezMoBWr9CZCuINYlOGGhfn1Yt8yYncOBaXqyKTuUfnqhbsBlKMw==
   dependencies:
-    imagekit-javascript "^1.5.4"
+    imagekit-javascript "^3.0.0"
     prop-types "^15.7.2"
 
 immediate@~3.0.5:
