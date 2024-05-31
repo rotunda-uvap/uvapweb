@@ -61,9 +61,27 @@ export default function RotundaCustomerList({data}) {
                    <SeO title="A list of our current customers"/>
                    <Main><RotundaHeader/>
                    <Heading2>Customer Information</Heading2>
+                   <section><Heading3>Proxy Access</Heading3>
+                   <Para>For those using EZ Proxy, you can use this stanza to access our collections: 
+                   <ul className="pt-1"><li>Title University of Virginia Press - Rotunda</li>
+                   <li>URL https://rotunda.upress.virginia.edu</li>
+                   <li>HJ http://rotunda.upress.virginia.edu</li>
+                   <li>HJ https://digitaltemple.rotunda.upress.virginia.edu</li>
+                   <li>HJ http://digitaltemple.rotunda.upress.virginia.edu</li>
+                   <li>HJ https://digitaltemple.upress.virginia.edu</li>
+                   <li>HJ http://digitaltemple.upress.virginia.edu</li>
+                   <li>HJ https://pfe.rotunda.upress.virginia.edu</li>
+                   <li>HJ http://pfe.rotunda.upress.virginia.edu</li>
+                   <li>HJ https://pfe.upress.virginia.edu</li>
+                   <li>HJ http://pfe.upress.virginia.edu</li>
+                   <li>H https://prde.upress.virginia.edu</li>
+                   <li>H http://prde.upress.virginia.edu</li>
+                   <li>DJ upress.virginia.edu</li>
+</ul></Para></section>
                      <section>
+                        <Heading3>Usage Statistics</Heading3>
                         <Para>As of Jan 1, 2024, we are using Liblynx to provide COUNTER5-compliant stats. Rotunda's COUNTER page can be found here: <a href=" https://registry.projectcounter.org/platform/0aa2f3da-f784-465f-b9cf-e4f315eb33cb"> https://registry.projectcounter.org/platform/0aa2f3da-f784-465f-b9cf-e4f315eb33cb</a> </Para>
-                        <Para>For SUSHI statistics, please <a href="https://www.upress.virginia.edu/rotunda/#contacts">contact us</a> with an email address we can use to set up your institution to recieve those directly.</Para>
+                        <Para>For a COUNTER portal account or SUSHI statistics, please <a href="https://www.upress.virginia.edu/rotunda/#contacts">contact us</a> along with the email address you would like to use to set up your institution's access. </Para>
 {/*       <Para>Current institutional users (IP-authenticated accounts): <a href="https://rotunda.upress.virginia.edu/UsageStats/?tab=home&amp;job=dates">view statistics for your usage of <span className="rotunda">Rotunda</span> publications</a>.</Para>
 <Para>Note that your usage stats may show access to publications which you have not purchased, as your users will be able to navigate to contents pages within them, and those page views are logged.</Para> */}
       </section>
