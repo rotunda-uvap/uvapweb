@@ -2,14 +2,13 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: Empire of Commerce
-    banner_author: Susan Gaunt Stearns
-    banner_subtitle: The Closing of the Mississippi and the Opening of Atlantic Trade
-    banner_id: "5845"
-    banner_quote: Stearns has brilliantly defied some conventional myths of American
-      history, especially about how our Constitution took form . . . adds some
-      long-needed context to our most basic document.
-    banner_attr: Carl Bernstein, journalist and co-author of All the President’s Men
+  - banner_title: The Last of the African Kings
+    banner_author: Maryse Condé
+    banner_subtitle: A Novel
+    banner_id: "10002"
+    banner_quote: A vision of the black diaspora that challenges stereotypes by
+      celebrating individual differences.
+    banner_attr: New York Times
 related_book:
   - "5744"
   - "5617"
