@@ -20,5 +20,7 @@ featured_books:
   - "5509"
   - "10001"
   - "5080"
+related_collection:
+  - VAF24
 date: 2024-06-05
 ---
