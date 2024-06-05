@@ -7,6 +7,12 @@ txtcolor: text-black
 related_series:
   - CWH
   - AMS
+  - BSWS
+related_blog:
+  - Author's Corner with James Hill "Trae" Welborn III, author of  DUELING
+    CULTURES, DAMNABLE LEGACIES
+  - Author's Corner with Paul D. Escott, author of THE CIVIL WAR POLITICAL
+    TRADITION
 related_staff:
   - Clayton Butler
   - Nadine Zimmerli
