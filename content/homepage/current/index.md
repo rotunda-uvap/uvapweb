@@ -2,13 +2,12 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: The Last of the African Kings
-    banner_author: Maryse Condé
-    banner_subtitle: A Novel
-    banner_id: "10002"
-    banner_quote: A vision of the black diaspora that challenges stereotypes by
-      celebrating individual differences.
-    banner_attr: New York Times
+  - banner_title: The Row House in Washington, DC
+    banner_author: Alison K. Hoagland
+    banner_subtitle: A History
+    banner_id: "5375"
+    banner_quote: An innovative, engaging, and insightful study.
+    banner_attr: Richard Longstreth, George Washington University
 related_book:
   - "5744"
   - "5617"
