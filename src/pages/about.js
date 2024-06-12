@@ -160,18 +160,19 @@ export default function AboutPage({ data }) {
             <section className="py-5 text-gray-700 border-b-2 border-gray-100" id="board">
   <SectionHeader text={"Current Board Members"}/>
               <div>
-              <BoardMember name={"Sandhya Shukla, chair"} title={"Associate Professor of English and American Studies, University of Virginia"}/>
-              <BoardMember name={"Derrick Alridge"} title={"Professor and Program Coordinator, Social Foundations of Education, University of Virginia"}/>
-              <BoardMember name={"Gustavo Pellón"} title={"Professor Emeritus of Spanish, University of Virginia"}/>
-              <BoardMember name={"Amy Clark"} title={"Professor of English and Chair of Communications Studies, University of Virginia at Wise"}/>
-                
+              <BoardMember name={"Gustavo Pellón, chair"} title={"Professor Emeritus of Spanish, University of Virginia"}/>
+              <BoardMember name={"Jessica Andruss"} title={"Assistant Professor of Religious Studies, University of Virginia"}/>
+
                 <BoardMember name={"John Comazzi"} title={"Associate Professor, School of Architecture (w/ appointment in Education & Human Development), University of Virginia"}/>
+                <BoardMember name={"Kirt Von Daacke"} title={"Associate Professor of History, University of Virginia"}/>
+
                <BoardMember name={"Kevin K. Gaines"} title={"Julian Bond Professor of Civil Rights and Social Justice & Professor of African American History, University of Virginia"}/>
-                <BoardMember name={"David Getsy"} title={"Eleanor Shea Professor of Art History, Department of Art, University of Virginia"}/>
                 <BoardMember name={"Justene Hill Edwards"} title={"Associate Professor of History, University of Virginia"}/>
                 <BoardMember name={"Nana Last"} title={"Professor of Architecture, School of Architecture, University of Virginia"}/>
                 <BoardMember name={"Penny Von Eschen"} title={"Chair of American Studies, Professof History and William R. Kenan, Jr. Professor of American Studies, University of Virginia"}/>
-               
+                <BoardMember name={"Julian Maxwell Hayter"} title={"Associate Professor of Leadership Studies, University of Richmond"}/>
+                <BoardMember name={"Katrina Powell"} title={"Director of the Center for Refugee, Migrant, and Displacement Studies, Virginia Tech "}/>
+
                 <p className="py-4 px-5 italic">Ex Officio</p>
                 <BoardMember name={"Brie Gertler"} title={"Vice Provost for Academic Affairs"}/>
                 <BoardMember name={"Jonathan D. Bowen"} title={"Assistant to the President and Writer, University of Virginia"}/>
