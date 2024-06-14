@@ -2,12 +2,14 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: The Row House in Washington, DC
-    banner_author: Alison K. Hoagland
-    banner_subtitle: A History
-    banner_id: "5375"
-    banner_quote: An innovative, engaging, and insightful study.
-    banner_attr: Richard Longstreth, George Washington University
+  - banner_title: We, Us, and Them
+    banner_author: Douglas Dowland
+    banner_subtitle: Affect and American Nonfiction from Vietnam to Trump
+    banner_id: "5889"
+    banner_quote: A way not only to understand the political moment of the present
+      but also to trace some of the ways this present has developed and come
+      into being.
+    banner_attr: Sean Austin Grattan, University of Kent
 related_book:
   - "5744"
   - "5617"
