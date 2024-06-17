@@ -2,14 +2,13 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: We, Us, and Them
-    banner_author: Douglas Dowland
-    banner_subtitle: Affect and American Nonfiction from Vietnam to Trump
-    banner_id: "5889"
-    banner_quote: A way not only to understand the political moment of the present
-      but also to trace some of the ways this present has developed and come
-      into being.
-    banner_attr: Sean Austin Grattan, University of Kent
+  - banner_title: Haunting Ecologies
+    banner_author: Ursula Kluwick
+    banner_subtitle: Victorian Conceptions of Water
+    banner_id: "5983"
+    banner_quote: An unusually comprehensive and wide-ranging book, full of fresh
+      insights about Victorian literature and culture.
+    banner_attr: Pamela Gilbert, University of Florida
 related_book:
   - "5744"
   - "5617"
