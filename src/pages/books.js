@@ -8,6 +8,14 @@ import SectionHeader from "../components/SectionHeader"
 import PageHeader from "../components/PageHeader"
 import kebabCase from "lodash/kebabCase"
 
+
+// Helper function to convert text to title case
+const toTitleCase = (str) => {
+  return str.split(' ').map(word => 
+    word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()
+  ).join(' ');
+}
+
 export default function Books({ data }) {
   const rec = data.recent
   const sers = data.series
@@ -91,7 +99,7 @@ export default function Books({ data }) {
                    
           <div className="mb-2 px-2 font-display items-center"  key={`subs${index}`}> 
 
-<Link to={`../../subject/${kebabCase(g.fieldValue) }`} className="text-ceci-gray-dark hover:text-gray-800">{ g.fieldValue } ({g.totalCount})</Link>
+<Link to={`../../subject/${kebabCase(g.fieldValue) }`} className="text-ceci-gray-dark hover:text-gray-800"> { toTitleCase(g.fieldValue)  } ({g.totalCount})</Link>
         </div>            
            
         ))}
