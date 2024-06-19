@@ -2,13 +2,13 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: Haunting Ecologies
-    banner_author: Ursula Kluwick
-    banner_subtitle: Victorian Conceptions of Water
-    banner_id: "5983"
-    banner_quote: An unusually comprehensive and wide-ranging book, full of fresh
-      insights about Victorian literature and culture.
-    banner_attr: Pamela Gilbert, University of Florida
+  - banner_title: Justice for Ourselves
+    banner_author: John G. Deal, Marianne E. Julienne, and Brent Tarter
+    banner_subtitle: Black Virginians Claim Their Freedom after Slavery
+    banner_id: "5917"
+    banner_quote: Challenges conventional wisdom by providing a clearer
+      understanding of how these men and women navigated their worlds.
+    banner_attr: Christy S. Coleman
 related_book:
   - "5744"
   - "5617"
