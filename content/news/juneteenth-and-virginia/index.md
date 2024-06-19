@@ -21,4 +21,4 @@ Seeking to establish a "National Thanksgiving Day for Freedom," Richmond African
 
 Across the country, modern public and private Juneteenth commemorations range from small church affairs to grand celebrations that include readings of the Emancipation Proclamation, speeches, parades, music, prayer services, and street fairs. Large and small, they serve as public celebrations of a transformed society. The Black Virginians of *[Justice for Ourselves](https://upress.virginia.edu/title/5917/)* and the institutions they created led the way in transforming the African American experience at the dawn of emancipation.
 
-—John G. Deal, Marianne E. Julienne, and Brent Tarter
+—John G. Deal, Marianne E. Julienne, and Brent Tarter, Library of Virginia
