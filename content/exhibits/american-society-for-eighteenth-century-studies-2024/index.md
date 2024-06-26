@@ -4,6 +4,7 @@ title: AMERICAN SOCIETY FOR EIGHTEENTH CENTURY STUDIES 2024
 exhibit_slug: asecs24
 coupon: Get 40% OFF with promo code 10ASECS24 through May 1
 txtcolor: text-black
+bgcolor: bg-white
 related_series:
   - EAH
   - JA

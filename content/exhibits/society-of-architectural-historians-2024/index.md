@@ -4,6 +4,7 @@ title: Society of Architectural Historians 2024
 exhibit_slug: SAH24
 coupon: Use code 10SAH24 for 40% off books below through May 1!
 txtcolor: text-black
+bgcolor: bg-white
 related_series:
   - BUS
   - MIDC

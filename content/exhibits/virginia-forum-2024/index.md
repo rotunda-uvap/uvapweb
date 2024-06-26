@@ -3,6 +3,7 @@ templateKey: exhibit
 title: Virginia Forum 2024
 exhibit_slug: VAForum24
 coupon: Use code 10FORUM24 for 40% off books below through May 1!
+bgcolor: bg-white
 txtcolor: text-black
 related_series:
   - CWH

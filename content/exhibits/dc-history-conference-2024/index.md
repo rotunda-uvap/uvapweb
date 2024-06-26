@@ -4,6 +4,7 @@ title: DC History Conference 2024
 exhibit_slug: dchist24
 coupon: Use code 10DCHIST24 for 40% off books below through May 1!
 txtcolor: text-black
+bgcolor: bg-white
 related_blog: []
 related_staff:
   - Mark Mones

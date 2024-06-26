@@ -4,6 +4,7 @@ title: African American Intellectual History Society 2024
 exhibit_slug: AAIHS24
 coupon: Get 40% OFF with promo code 10AAIHS24 through April 1
 txtcolor: text-black
+bgcolor: bg-white
 related_series:
   - CGW
   - NWS

@@ -4,6 +4,7 @@ title: MODERN LANGUAGE ASSOCIATION 2024
 exhibit_slug: mla24
 coupon: Use code 10MLA24 for 40% off books below through Jan 31!
 txtcolor: text-black
+bgcolor: bg-white
 related_series:
   - CFF
   - NWS

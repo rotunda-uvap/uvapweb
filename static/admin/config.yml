@@ -170,7 +170,7 @@ collections:
       - { name: title, label: Title, hint: "This will be the title of the page and the link from the main exhibits page"}
       - { name: exhibit_slug, label: URL shortcut, hint: "will appear after /exhibits/", required: true}
       - { name: coupon, label: Coupon Promo, widget: text, required: false}
-      - { name: bgcolor, label: Coupon Area Background Color, widget: "string", hint: 'Go to https://tailwindcss.com/docs/customizing-colors#overview and choose color, example: bg-blue-400', required: false }
+      - { name: bgcolor, label: Coupon Area Background Color, widget: "string", hint: 'Go to https://tailwindcss.com/docs/customizing-colors#overview and choose color, example: bg-blue-400', default: bg-white, required: false }
       - { name: txtcolor, label: Coupon Text Color, widget: "string", hint: 'Go to https://tailwindcss.com/docs/customizing-colors#overview and choose color, example: bg-blue-400 or text-white',  default: text-black, required: false}
       - { label: Exhibit Logo, name: exhibit_logo, widget: image, required: false}
       - { name: body, label: Body, widget: markdown, required: false }

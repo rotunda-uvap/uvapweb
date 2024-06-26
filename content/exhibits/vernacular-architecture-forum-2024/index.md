@@ -3,9 +3,10 @@ templateKey: exhibit
 title: Vernacular Architecture Forum 2024
 exhibit_slug: VAF24
 coupon: |-
-  
+
   Use code 10VAF24 for 40% off books below through July 1!
 txtcolor: text-black
+bgcolor: bg-white
 related_series:
   - BUS
   - MIDC

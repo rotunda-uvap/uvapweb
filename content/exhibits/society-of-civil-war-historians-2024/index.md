@@ -4,6 +4,7 @@ title: Society of Civil War Historians 2024
 exhibit_slug: SCWH24
 coupon: Use code 10SCWH24 for 40% off books below through July 1!
 txtcolor: text-black
+bgcolor: bg-white
 related_series:
   - CWH
   - AMS
