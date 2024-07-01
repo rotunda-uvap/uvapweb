@@ -8,7 +8,8 @@ top_banner:
     banner_id: "5898"
     banner_quote: Boles pours a lifetime of scholarly insight and clarity into this
       stellar history.
-    banner_attr: Douglas Bradburn
+    banner_attr: "Douglas Bradburn, author of The Citizenship Revolution: Politics
+      and the Creation of the American Union, 1774–1804"
 related_book:
   - "5744"
   - "5617"
