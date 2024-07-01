@@ -2,13 +2,13 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: Justice for Ourselves
-    banner_author: John G. Deal, Marianne E. Julienne, and Brent Tarter
-    banner_subtitle: Black Virginians Claim Their Freedom after Slavery
-    banner_id: "5917"
-    banner_quote: Challenges conventional wisdom by providing a clearer
-      understanding of how these men and women navigated their worlds.
-    banner_attr: Christy S. Coleman
+  - banner_title: Seven Virginians
+    banner_author: John B. Boles
+    banner_subtitle: The Men Who Shaped Our Republic
+    banner_id: "5898"
+    banner_quote: Boles pours a lifetime of scholarly insight and clarity into this
+      stellar history.
+    banner_attr: Douglas Bradburn
 related_book:
   - "5744"
   - "5617"
