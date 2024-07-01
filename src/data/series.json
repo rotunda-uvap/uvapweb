@@ -108,6 +108,10 @@
     "seriesName": "The Revolutionary Age"
   },
   {
+    "seriesID": "BUS",
+    "seriesName": "Buildings of the United States"
+  },
+  {
     "seriesID": "REP",
     "seriesName": "Race, Ethnicity, and Politics"
   },
@@ -138,10 +142,6 @@
   {
     "seriesID": "GGL",
     "seriesName": "Gay Hart Gaines Distinguished Lectures"
-  },
-  {
-    "seriesID": "BUS",
-    "seriesName": "Buildings of the United States"
   },
   {
     "seriesID": "SPS",
