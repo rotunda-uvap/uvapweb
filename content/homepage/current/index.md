@@ -2,13 +2,13 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: Seven Virginians
-    banner_author: John B. Boles
-    banner_subtitle: The Men Who Shaped Our Republic
-    banner_id: "5898"
-    banner_quote: Boles pours a lifetime of scholarly insight and clarity into this
-      stellar history.
-    banner_attr: Douglas Bradburn, author of The Citizenship Revolution
+  - banner_title: Black Reason, White Feeling
+    banner_author: Hannah Spahn
+    banner_subtitle: The Jeffersonian Enlightenment in the African American Tradition
+    banner_id: "5897"
+    banner_quote: Gives us that truly wide canvass of dual Enlightenment cultures
+      that we so desperately need.
+    banner_attr: Richard S. Newman, Rochester Institute of Technology
 related_book:
   - "5744"
   - "5617"
@@ -20,14 +20,12 @@ related_book:
 related_collection:
   - Homepage Featured
 featured_books:
-  - "5897"
+  - "5917"
   - "5943"
   - "10014"
   - "6061"
   - "5852"
-  - "5881"
-  - "5833"
-  - "5315"
+  - "10011"
   - "5925"
   - "6036"
 ---
