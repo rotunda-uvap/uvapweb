@@ -11,8 +11,8 @@ related_series:
   - JA
   - WEA
 related_blog:
+  - UVA Press Partners with SHEAR on Dissertation Prize
   - Author's Corner with Susan Gaunt Stearns, author of EMPIRE OF COMMERCE
-  - Author's Corner with Scott O. Moore, author of THE WITCH OF PUNGO
   - Author's Corner with Hannah Spahn, author of BLACK REASON, WHITE FEELING
 related_staff:
   - Nadine Zimmerli
@@ -22,7 +22,6 @@ featured_books:
   - "5897"
   - "10018"
   - "10016"
-  - "6061"
   - "5979"
   - "5978"
 related_collection:
