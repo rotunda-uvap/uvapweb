@@ -2,13 +2,13 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: Black Reason, White Feeling
-    banner_author: Hannah Spahn
-    banner_subtitle: The Jeffersonian Enlightenment in the African American Tradition
-    banner_id: "5897"
-    banner_quote: Gives us that truly wide canvass of dual Enlightenment cultures
-      that we so desperately need.
-    banner_attr: Richard S. Newman, Rochester Institute of Technology
+  - banner_title: Sacred Capital
+    banner_author: Hunter Price
+    banner_subtitle: Methodism and Settler Colonialism in the Empire of Liberty
+    banner_id: "5936"
+    banner_quote: Essential reading for historians of American religion and of the
+      early republic.
+    banner_attr: Randolph Scully, George Mason University
 related_book:
   - "5744"
   - "5617"
@@ -28,4 +28,5 @@ featured_books:
   - "10011"
   - "5925"
   - "6036"
+  - "5897"
 ---
