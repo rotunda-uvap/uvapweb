@@ -60,6 +60,10 @@
     "seriesName": "Constitutionalism and Democracy"
   },
   {
+    "seriesID": "CGW",
+    "seriesName": "Carter G. Woodson Institute Series: Black Studies at Work in the World"
+  },
+  {
     "seriesID": "CFF",
     "seriesName": "Cultural Frames, Framing Culture"
   },
@@ -94,10 +98,6 @@
   {
     "seriesID": "PBL",
     "seriesName": "Page-Barbour Lectures"
-  },
-  {
-    "seriesID": "CGW",
-    "seriesName": "Carter G. Woodson Institute Series: Black Studies at Work in the World"
   },
   {
     "seriesID": "SRC",
