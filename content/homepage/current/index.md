@@ -2,13 +2,14 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: Sacred Capital
-    banner_author: Hunter Price
-    banner_subtitle: Methodism and Settler Colonialism in the Empire of Liberty
-    banner_id: "5936"
-    banner_quote: Essential reading for historians of American religion and of the
-      early republic.
-    banner_attr: Randolph Scully, George Mason University
+  - banner_title: We, Us, and Them
+    banner_author: Douglas Dowland
+    banner_subtitle: Affect and American Nonfiction from Vietnam to Trump
+    banner_id: "5889"
+    banner_quote: A way not only to understand the political moment of the present
+      but also to trace some of the ways this present has developed and come
+      into being.
+    banner_attr: Sean Austin Grattan, University of Kent
 related_book:
   - "5744"
   - "5617"
