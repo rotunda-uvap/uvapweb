@@ -1260,6 +1260,10 @@
     "Title": "Grief and Meter"
   },
   {
+    "BookID": "10042",
+    "Title": "Those Who Stayed"
+  },
+  {
     "BookID": "5454",
     "Title": "The Papers of George Washington"
   },
@@ -1521,7 +1525,7 @@
   },
   {
     "BookID": "10057",
-    "Title": "Sustaining the Chesapeake"
+    "Title": "Saving the Chesapeake"
   },
   {
     "BookID": "4818",
@@ -6336,6 +6340,10 @@
     "Title": "The Papers of Francis Bernard"
   },
   {
+    "BookID": "10064",
+    "Title": "Students to Soldiers"
+  },
+  {
     "BookID": "4181",
     "Title": "Unnatural Rebellion"
   },
@@ -7486,6 +7494,10 @@
   {
     "BookID": "4146",
     "Title": "Almanac of Virginia Politics 2008"
+  },
+  {
+    "BookID": "10048",
+    "Title": "The Poisoning of the American Mind"
   },
   {
     "BookID": "4807",
