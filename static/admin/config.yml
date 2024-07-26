@@ -2,8 +2,6 @@ backend:
   name: github
   repo: rotunda-uvap/uvapweb
   branch: production
-  auth_scope: public_repo
-  app_id: Ov23liWDonhaIbArdWZc
  # auth_endpoint: api/auth
   #base_url: https://www.upress.virginia.edu/
 # publish_mode: editorial_workflow

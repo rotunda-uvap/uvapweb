@@ -183,14 +183,6 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-netlify-cms-paths`,
-      options: {
-        // Path to your Netlify CMS config file
-        cmsConfig: `/static/admin/config.yml`,
-        // stylesPath: `${__dirname}/src/utils/global.css`
-      }
-    },
-    {
       resolve: 'gatsby-plugin-static-folders',
       options: {
         folders: [
