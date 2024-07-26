@@ -313,7 +313,7 @@ module.exports = {
     },
   },
   {
-  resolve: `gatsby-plugin-decap-cms`,
+  resolve: `gatsby-plugin-netlify-cms`,
     options: {
       /**
        * One convention is to place your Netlify CMS customization code in a
