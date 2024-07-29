@@ -3,10 +3,10 @@ backend:
   repo: rotunda-uvap/uvapweb
   branch: production
   auth_type: implicit
-  app_id: Ov23liWDonhaIbArdWZc
+
   #base_url: https://www.upress.virginia.edu  # Ensure this matches your GitHub OAuth application
   #auth_endpoint: /admin/callback
- # auth_endpoint: api/auth
+  #auth_endpoint: api/auth
   #base_url: https://www.upress.virginia.edu/
 # publish_mode: editorial_workflow
 media_folder: static/assets
