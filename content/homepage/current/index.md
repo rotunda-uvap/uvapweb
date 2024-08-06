@@ -2,12 +2,13 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: The Architecture of Influence
-    banner_author: Amanda Reeser Lawrence
-    banner_subtitle: Architectural Book of the Year 2024, Booklaunch
-    banner_id: "5895"
-    banner_quote: Lawrence helps us see mostly familiar projects in an entirely new way.
-    banner_attr: Gabrielle Esperdy, New Jersey Institute of Technology
+  - banner_title: They Run With Surprising Swiftness
+    banner_author: Peter Radford
+    banner_subtitle: The Women Athletes of Early Modern Britain
+    banner_id: "5707"
+    banner_quote: An astonishing dimension of the long eighteenth century that even
+      most lifetime scholars of the period have probably never glimpsed.
+    banner_attr: "Yvonne Noble "
 related_book:
   - "5744"
   - "5617"
@@ -19,13 +20,12 @@ related_book:
 related_collection:
   - Homepage Featured
 featured_books:
-  - "5917"
-  - "5943"
-  - "10014"
-  - "6061"
-  - "5852"
   - "10011"
-  - "5925"
-  - "6036"
   - "5897"
+  - "10014"
+  - "5943"
+  - "5925"
+  - "5895"
+  - "5852"
+  - "6061"
 ---
