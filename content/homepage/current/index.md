@@ -2,13 +2,12 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: Balzac on the Barricades
-    banner_author: Rebecca Terese Powers
-    banner_subtitle: The Literary Origins of an Economic Revolution
-    banner_id: "5372"
-    banner_quote: Convincingly connects discourses from the July Monarchy with the
-      contemporary period through movements like Occupy and Nuit Debout.
-    banner_attr: Anne O’Neil-Henry, Georgetown University
+  - banner_title: The Farmer, the Gastronome, and the Chef
+    banner_author: Daniel J. Philippon
+    banner_subtitle: In Pursuit of the Ideal Meal
+    banner_id: "10011"
+    banner_quote: A book to be savored by the woodstove, a glass of local beer in hand!
+    banner_attr: Bill McKibben
 related_book:
   - "5744"
   - "5617"
@@ -20,13 +19,14 @@ related_book:
 related_collection:
   - Homepage Featured
 featured_books:
-  - "10011"
   - "5897"
+  - "10047"
   - "10014"
+  - "10032"
+  - "5917"
+  - "10019"
   - "5943"
   - "5925"
-  - "5895"
-  - "5917"
   - "5852"
-  - "6061"
+  - "5895"
 ---
