@@ -8,7 +8,7 @@ related_book:
   - "10011"
 date: 2024-08-16
 ---
-Today, we are happy to bring you our conversation with Daniel J. Philippon, author of The Farmer, the Gastronome, and the Chef*:* In Pursuit of the Ideal Meal
+Today, we are happy to bring you our conversation with Daniel J. Philippon, author of The Farmer, the Gastronome, and the Chef: In Pursuit of the Ideal Meal
 
 *What inspired you to write this book?* 
 
