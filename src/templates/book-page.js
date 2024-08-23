@@ -262,6 +262,27 @@ const bookPage = ({ data }) => {
                       
                     </div>
                   )}
+
+                  {book.Imprint && (
+                    <div className="flex flex-col md:flex-row place-items-center">
+                      <span className="text-sm xs:py-4 sm:py-4 md:py-0 font-thin uppercase pr-5 text-ceci-gray-mid tracking-wide">
+                        imprint:
+                      </span> 
+                      <ul className="flex flex-col md:flex-row md:flex-wrap gap-4">
+                       {book.Imprint.map( (imp, index) => (
+                        <li  key={`imp${index}`}><button className="bg-greige hover:bg-white font-thin text-sm rounded-md text-ceci-gray-mid p-2 tracking-wide">
+                        <Link to={`../../imprints/${kebabCase(imp.imprintName)}`} className="tracking-wide uppercase">
+                          {imp.imprintName}
+                        </Link>
+                      </button></li>
+                       )
+
+                       )}</ul>
+                      
+                    </div>
+                  )}
+
+                  
                  <section>
           {book.Prizes && (
             <div className="py-2 flex-row inline-flex items-center w-full leading-normal text-gray-700">
@@ -405,6 +426,10 @@ export const query = graphql`
       Subjects {
         subjectID
         name
+      }
+      Imprint {
+        imprintID
+        imprintName
       }
     }
     file(relativePath: { eq: $imageid }) {
