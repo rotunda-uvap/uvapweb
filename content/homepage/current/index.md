@@ -21,8 +21,8 @@ related_collection:
   - Homepage Featured
 featured_books:
   - "5897"
-  - "10014"
   - "10019"
+  - "10014"
   - "5852"
   - "5895"
   - "10032"
