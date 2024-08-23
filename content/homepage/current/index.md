@@ -2,14 +2,13 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: The Cacophony of Politics
-    banner_author: J. Matthew Gallman
-    banner_subtitle: Northern Democrats and the American Civil War
-    banner_id: "5774"
-    banner_quote: Not only explores the limits of dissent in a divided America, but
-      the boundaries of party loyalty, a subject of relevance and urgency in our
-      own time as well as Lincoln’s.
-    banner_attr: Harold Holzer
+  - banner_title: Watchdogs
+    banner_author: Glenn A. Fine
+    banner_subtitle: Inspectors General and the Battle for Honest and Accountable Government
+    banner_id: "10047"
+    banner_quote: Inspectors general are the spine of serious government oversight,
+      and Glenn Fine was the master.
+    banner_attr: Bob Woodward
 related_book:
   - "5744"
   - "5617"
@@ -22,7 +21,6 @@ related_collection:
   - Homepage Featured
 featured_books:
   - "5897"
-  - "10047"
   - "10014"
   - "10019"
   - "5852"
