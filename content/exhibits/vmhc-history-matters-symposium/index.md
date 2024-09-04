@@ -20,5 +20,10 @@ related_staff:
 featured_books:
   - "5826"
   - "4298"
+  - "10032"
+  - "5917"
+  - "10018"
+related_collection:
+  - VMHC Symposium
 date: 2024-09-04
 ---
