@@ -9,6 +9,7 @@ related_series:
   - CWH
   - JA
   - CGW
+  - AMS
 related_blog:
   - Author's Corner with Gianluca De Fazio, editor of LYNCHING IN VIRGINIA
   - Authors' Corner with John G. Deal, Marianne E. Julienne, and Brent Tarter,
