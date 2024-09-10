@@ -29,4 +29,4 @@ The *New York Times* reported her speech as by a “mulatress” and misidentifi
 
 On September 10, 2024, 155 years after Rollin and 237 years after O’Connor, Harris will speak as a reminder of the many women who have come before her. And, in turn, she will serve as an example for others who, irrespective of sex, will insist on their right to full political participation.
 
-Mary Sarah Bilder, Founders Professor, Boston College Law School, Bancroft award winning historian, author of *[Female Genius: Eliza Harriot and George Washington at the Dawn of the Constitution](https://upress.virginia.edu/title/5756/)* (2022).
+—**Mary Sarah Bilder**, Founders Professor, Boston College Law School, Bancroft award winning historian, author of *[Female Genius: Eliza Harriot and George Washington at the Dawn of the Constitution](https://upress.virginia.edu/title/5756/)* (2022).
