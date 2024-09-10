@@ -1,0 +1,32 @@
+---
+templateKey: news
+type: news
+title: Mary Sarah Bilder on Kamala Harris and the Gender Neutral Language of the
+  Constitution
+related_book:
+  - "5756"
+date: 2024-09-10
+---
+When Vice President Kamala Harris takes the stage for the presidential debate at the National Constitution Center in Philadelphia, she will fulfill a prediction made in 1787 that American women would desert the drawing room for “the forum and the college.” That summer, the first woman public speaker in the United States lectured to George Washington, Constitutional Convention delegates, and many women. And the Constitution was drafted to allow a woman to become President. Behind Harris are generations of women whose example of public speaking demanded full political participation. 
+
+On May 4, 1787, just before the Constitutional Convention began, George Washington went to hear Eliza Harriot O’Connor lecture in University Hall in Philadelphia. O’Connor was an ambitious female educator, born in Lisbon to British parents. Her uncles were governors of New York and New Jersey; her father held political offices in Massachusetts and South Carolina. Married to an Irish lawyer, she moved across the Atlantic. In 1787, she became the first woman lecturer in the United States.  
+
+O’Connor represented the idea of *female genius*–that women possessed the same intellectual capacities as men. Their absence from politics was due to unjust exclusion from education–not inherent incapacity. Female genius was everywhere in the 1770s and 1780s. Phyllis Wheatley, the famous Black poet, was named a female genius. The English women known as the Bluestockings wrote constitutional history, translated the classics, authored novels and plays. Female debating clubs in London considered “Ought the women of Great Britain to have a voice in the election of Representatives, and to be eligible to sit in Parliament as well as the men?” 
+
+At the dawn of the Convention, O’Connor stood where men had spoken at University Hall. She delivered the great Athenian orator Demosthenes’s speech urging the gods to “infuse a better spirit into these men.” She included work by famous French woman writer and educator, Stéphanie Félicité, Comtesse de Genlis. No one could overlook “Course of Lectures in the University by a Lady.” As the delegates worked on the Constitution, newspapers nearly every day included O’Connor’s advertisements. Washington’s attendance led papers across the United States to publish accounts of the lady lecturing on the power of public speaking. 
+
+O’Connor’s example and her image of female genius may have even influenced the drafting of the Constitution. The idea of a written constitution was not yet settled. Who should be able to participate in politics was not yet embedded in written constitutions. Some state constitutions limited participation to white men by using the word “male.” But others were ambiguous because the eighteenth century used “he” and “man” as gender neutral references. Indeed, in New Jersey women and people of color would vote until they were excluded in 1807. 
+
+The Convention delegates abandoned initial gender specific language. “Persons” became a word that included people of every sex. We know this fact from two examples. First, there was one explicit “she” in the drafts. The proposal for the fugitive slave clause originally referenced “He or She” escaping to a free state. That now invisible “she” serves as a tragic reminder of Black women’s agency in escaping from enslavement. Second, the interstate rendition clause that governs anyone charged with a crime uses “person” and “he” as gender neutral references. Indeed, this person/he description is one of the most consistent stylistic choices in the Constitution. Never once does the word “male” appear.  Political participation included theoretically inhabitants of every sex. 
+
+Of course, white men holding power soon recognized that the new invention of the written constitution was particularly effective at political exclusion. Beginning in 1792, federal laws and state constitutions began to create explicit exclusions using language like “free male citizen” or “white male citizen.” Indeed, as new states joined the United States, suffrage was characterized by constitutional exclusion. More white men could participate but at the cost of excluding women and people of color. The Fifteenth and Nineteenth amendments eventually barred the states from disenfranchising people on the basis of race, color, and sex. 
+
+In 1787, O’Connor knew that she alone would not change customs that excluded women from political participation. But she believed in the power of the example. She wrote that a woman’s efforts were “an example to be imitated and improved on” by “future candidates for literary fame.” Each woman speaking would be an example that another would imitate and improve on. 
+
+Since O’Connor many women have spoken in public demanding the right to fully participate in politics. Of particular note was Charlotte Rollin. Rollin was a Black woman, born in Charleston, educated in Boston and Philadelphia, and a teacher in Freedmen’s Bureau Schools. Rollin accepted the invitation of the South Carolina legislature in 1869 to “argue the claims of female suffrage.” Rollin spoke for women, in particular Black women like herself. She argued that until women had “the right of representation, her rights are held by an insecure tenure.” 
+
+The *New York Times* reported her speech as by a “mulatress” and misidentified her name as Louisa Rawlins. It condescendingly described how the state House of Representatives had gathered to hear her “argument (so called)” as a “speech from a woman.” It ended by adding: “Nothing further was done, and the woman-rights agitation ceased there.”
+
+On September 10, 2024, 155 years after Rollin and 237 years after O’Connor, Harris will speak as a reminder of the many women who have come before her. And, in turn, she will serve as an example for others who, irrespective of sex, will insist on their right to full political participation.
+
+Mary Sarah Bilder, Founders Professor, Boston College Law School, Bancroft award winning historian, author of *[Female Genius: Eliza Harriot and George Washington at the Dawn of the Constitution](https://upress.virginia.edu/title/5756/)* (2022).
