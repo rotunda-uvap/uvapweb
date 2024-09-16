@@ -1,6 +1,6 @@
 ---
 templateKey: exhibit
-title: ASSOCIATION FOR THE STUDY OF AFRICAN AMERICAN LIFE AND HISTORY 2024
+title: Association for the Study of African American Life and History 2024
 exhibit_slug: ASALH24
 coupon: Use code 10ASALH24 for 40% off books below through October 15!
 bgcolor: bg-white
