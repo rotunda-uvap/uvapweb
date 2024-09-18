@@ -2,12 +2,12 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: Design through Time
-    banner_author: Mark H. Hough
-    banner_subtitle: Evolving Landscapes, from Alcatraz to Prospect Park
-    banner_id: "10001"
-    banner_quote: The only work of its kind.
-    banner_attr: Lake Douglas, LSU College of Art and Design
+  - banner_title: The Scientist Turned Spy
+    banner_author: Patrick Spero
+    banner_subtitle: André Michaux, Thomas Jefferson, and the Conspiracy of 1793
+    banner_id: "10032"
+    banner_quote: A true story that reads like a suspense thriller.
+    banner_attr: Rogers M. Smith, University of Pennsylvania
 related_book:
   - "5744"
   - "5617"
