@@ -2,12 +2,13 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: The Scientist Turned Spy
-    banner_author: Patrick Spero
-    banner_subtitle: André Michaux, Thomas Jefferson, and the Conspiracy of 1793
-    banner_id: "10032"
-    banner_quote: A true story that reads like a suspense thriller.
-    banner_attr: Rogers M. Smith, University of Pennsylvania
+  - banner_title: Three Talks
+    banner_author: Brenda Hillman
+    banner_subtitle: " Metaphor and Metonymy, Meaning and Mystery, Magic and Morality"
+    banner_id: "10010"
+    banner_quote: A full, lucid, and accessible articulation of a complex, sui
+      generis poetic practice.
+    banner_attr: From the foreword by Brian Teare
 related_book:
   - "5744"
   - "5617"
@@ -22,11 +23,9 @@ featured_books:
   - "5897"
   - "10019"
   - "10014"
-  - "10047"
-  - "5852"
-  - "5895"
   - "10032"
-  - "5917"
-  - "5943"
+  - "10051"
+  - "5895"
+  - "5852"
   - "5925"
 ---
