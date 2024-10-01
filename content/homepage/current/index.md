@@ -2,13 +2,13 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: Three Talks
-    banner_author: Brenda Hillman
-    banner_subtitle: " Metaphor and Metonymy, Meaning and Mystery, Magic and Morality"
-    banner_id: "10010"
-    banner_quote: A full, lucid, and accessible articulation of a complex, sui
-      generis poetic practice.
-    banner_attr: From the foreword by Brian Teare
+  - banner_title: The Grand Collaboration
+    banner_author: Steven K. Green
+    banner_subtitle: Thomas Jefferson, James Madison, and the Invention of American
+      Religious Freedom
+    banner_id: "10018"
+    banner_quote: An urgent must-read for our time.
+    banner_attr: R. Marie Griffith, Washington University in St. Louis
 related_book:
   - "5744"
   - "5617"
@@ -28,4 +28,5 @@ featured_books:
   - "5895"
   - "5852"
   - "5925"
+  - "10010"
 ---
