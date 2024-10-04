@@ -3,7 +3,7 @@ templateKey: series
 title: Buildings of the United States
 status: active
 seriestype: Academic Book Series
-editors: "Series Editor: Karen Kingsley"
+editors: "Series Editor: Gabrielle Esperdy"
 uvaeditors: Mark Mones
 related_staff:
   - Mark Mones

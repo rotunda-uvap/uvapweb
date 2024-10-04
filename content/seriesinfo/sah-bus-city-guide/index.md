@@ -1,7 +1,7 @@
 ---
 templateKey: series
 status: active
-editors: "Series Editor: Karen Kingsley"
+editors: "Series Editor: Gabrielle Esperdy"
 uvaeditors: Mark Mones
 title: SAH/BUS City Guide
 seriestype: Academic Book Series
