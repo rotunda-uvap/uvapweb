@@ -81,7 +81,7 @@ export default function RotundaCustomerList({data}) {
                      <section>
                         <Heading3>Usage Statistics</Heading3>
                         <Para>As of Jan 1, 2024, we are using Liblynx to provide COUNTER5-compliant stats. Rotunda's COUNTER page can be found here: <a href=" https://registry.projectcounter.org/platform/0aa2f3da-f784-465f-b9cf-e4f315eb33cb"> https://registry.projectcounter.org/platform/0aa2f3da-f784-465f-b9cf-e4f315eb33cb</a> </Para>
-                        <Para>For a COUNTER portal account or SUSHI statistics, please <a href="https://www.upress.virginia.edu/rotunda/#contacts">contact us</a> along with the email address you would like to use to set up your institution's access. </Para>
+                        <Para>For a COUNTER portal account or SUSHI statistics, please <a href="https://www.upress.virginia.edu/rotunda/#contacts">contact us</a> along with the email address you would like to use to set up your institution's access. For historical non-COUNTER statistics, you can still access them via this URL: <a href="https://rotunda.upress.virginia.edu/UsageStats/default.xqy">https://rotunda.upress.virginia.edu/UsageStats/default.xqy</a>. </Para>
 {/*       <Para>Current institutional users (IP-authenticated accounts): <a href="https://rotunda.upress.virginia.edu/UsageStats/?tab=home&amp;job=dates">view statistics for your usage of <span className="rotunda">Rotunda</span> publications</a>.</Para>
 <Para>Note that your usage stats may show access to publications which you have not purchased, as your users will be able to navigate to contents pages within them, and those page views are logged.</Para> */}
       </section>
