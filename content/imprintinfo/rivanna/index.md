@@ -1,6 +1,6 @@
 ---
 templateKey: imprint
-editors: "Advisory Board: Wayne Adkins, Paul Aron, LaNitra Berger, Amy Clark, John Deal, Dana Hand Evans, Yahusef Medina, Marc Wagner"
+editors: "Advisory Board: Wayne Adkins, Paul Aron, LaNitra Berger, Amy Clark, John Deal, Yahusef Medina, Marc Wagner"
 uvaeditors: mark mones
 title: Rivanna
 imprintID: 7
