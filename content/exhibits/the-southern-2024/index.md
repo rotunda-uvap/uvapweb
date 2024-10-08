@@ -23,6 +23,8 @@ related_blog:
     authors of JUSTICE FOR OURSELVES
   - Author's Corner with Hannah Spahn, author of BLACK REASON, WHITE FEELING
   - Author's Corner with Susan Gaunt Stearns, author of EMPIRE OF COMMERCE
+  - Author's Corner with Mary Caton Lingold, author of AFRICAN MUSICIANS IN THE
+    ATLANTIC WORLD
 related_staff:
   - Nadine Zimmerli
   - Clayton Butler
