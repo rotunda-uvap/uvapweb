@@ -2,13 +2,12 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: The Grand Collaboration
-    banner_author: Steven K. Green
-    banner_subtitle: Thomas Jefferson, James Madison, and the Invention of American
-      Religious Freedom
-    banner_id: "10018"
-    banner_quote: An urgent must-read for our time.
-    banner_attr: R. Marie Griffith, Washington University in St. Louis
+  - banner_title: Declarations of Independence
+    banner_author: Christopher R. Pearl
+    banner_subtitle: Winner of the Walker Cowen Prize
+    banner_id: "10016"
+    banner_quote: An excellent, superbly written book.
+    banner_attr: Robert Parkinson, Binghamton University
 related_book:
   - "5744"
   - "5617"
