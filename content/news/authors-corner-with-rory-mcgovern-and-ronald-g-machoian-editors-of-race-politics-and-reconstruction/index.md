@@ -30,4 +30,4 @@ One of the best anecdotes appears in Jonathan Bratten’s essay on the U.S. Army
 
 *What’s next?* 
 
-We are continuing other projects associated with the era, researching topics aligned with our interests in the evolving U.S. military profession as a cultural expression of the times and, in many ways, as a reflection of the broader historical narratives that carry and define American society. We hope Race, Politics, and Reconstruction offers a useful model and a valuable resource for historical research and teaching in the field, and we look forward to seeing what follows.
+We are continuing other projects associated with the era, researching topics aligned with our interests in the evolving U.S. military profession as a cultural expression of the times and, in many ways, as a reflection of the broader historical narratives that carry and define American society. We hope *Race, Politics, and Reconstruction* offers a useful model and a valuable resource for historical research and teaching in the field, and we look forward to seeing what follows.
