@@ -2,6 +2,7 @@
 templateKey: news
 type: author-corner
 title: Author's Corner with Rita Felski and Camilla Schwartz, editors of LOVE, ETC.
+image: screen-shot-2024-10-18-at-8.57.34-am.png
 related_book:
   - "10019"
 date: 2024-10-17
