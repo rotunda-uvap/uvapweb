@@ -60,6 +60,7 @@ export default function StaffList({ data }) {
             <SectionHeader text={'Acquisitions'}/>
          
           <div className="py-2 mx-auto">
+          <p className="text-center font-display">Please submit proposals to Acquisitions Coordinator Fernando Campos at <a href="mailto:pzg5qu@virginia.edu">pzg5qu@virginia.edu</a></p>
              <div className="flex flex-wrap -m-4 text-center">
            {acqs.edges.map((edge, index) => (
              

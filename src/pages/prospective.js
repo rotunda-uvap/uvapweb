@@ -86,6 +86,8 @@ export default function ProspectiveAuthorsPage({ data }) {
             <div className="flex flex-col text-center w-full">
               <SectionHeader text={'Our Acquisitions Team'}/>
         </div>
+        <p className="text-center font-display">Please submit proposals to Acquisitions Coordinator Fernando Campos at <a href="mailto:pzg5qu@virginia.edu">pzg5qu@virginia.edu</a></p>
+
 
                 <AcqStaff/>
 
