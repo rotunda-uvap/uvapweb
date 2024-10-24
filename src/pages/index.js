@@ -48,9 +48,9 @@ const Home = ({ data }) => {
   
   <section className="py-4 border-b-2 border-gray-100">
          <SectionHeader text="IN THE NEWS"/>
-
        <FeatColl/>
        </section>
+
   <section className="py-4 border-b-2 border-gray-100">
     <SectionHeader text="Open Access"/>
           <div className="flex flex-col items-center"><a href="https://open.upress.virginia.edu/">

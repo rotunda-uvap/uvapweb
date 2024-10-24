@@ -38,15 +38,15 @@ const FeaturedColl = () => {
 </div>
 
 
-<div className="py-6">
+<div className="py-2">
 
   {data.rseries.edges[0].node.frontmatter.related_collection.map(coll => (
       
   <Gallery book_obj_array={coll.frontmatter.related_book}/>
 
 ))}
-
 </div>
+
 
   </div>;
 }
