@@ -38,7 +38,8 @@ const Home = ({ data }) => {
 
 </section>
 
-<section className="py-4 border-b-2 border-gray-100">
+<section className="py-4 border-b-2 border-gray-100 greige w100">
+<SectionHeader text="ROTUNDA DIGITAL IMPRINT"/>
 <RotundaNews/>
 </section>
        
@@ -46,7 +47,7 @@ const Home = ({ data }) => {
 
   
   <section className="py-4 border-b-2 border-gray-100">
-         <SectionHeader text="Featured Collection"/>
+         <SectionHeader text="GENERAL INTEREST"/>
 
        <FeatColl/>
        </section>

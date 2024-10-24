@@ -6,7 +6,7 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image"
 export default function RotundaNews() { 
   const data = useStaticQuery(graphql`
   query {
-    image: file(relativePath: { eq: "OLMS.jpg" }) {
+    image: file(relativePath: { eq: "rotunda_logo.png" }) {
       childImageSharp {
         gatsbyImageData(
           placeholder: BLURRED
@@ -21,28 +21,71 @@ export default function RotundaNews() {
     const rotimage = getImage(data.image)
   return (
     
-        <section className="md:flex md:flex-row justify-center place-content-center md:space-x-8">
-          <GatsbyImage image={rotimage} alt="SAH Archipedia" />
-           <article className="flex flex-1 flex-col flex-wrap px-2 py-5 md:p-5">
-           
-            <>
-              <div className="flex flex-row md:px-10 "> 
-              
-                  <div className="border-r-2 font-serif uppercase tracking-wider text-sm self-center text-ceci-gray-dark font-serif text-md pr-3">rotunda news</div>
-                  <div className=" text-ceci-gray-mid font-serif text-sm pl-3 pt-1">2023-08-13</div>
-              </div>
-                
-              <div className="md:px-10 flex flex-col">
-              <Link className="font-display tracking-wide uppercase py-2 font-thin"  to={`https://olmsted.org/open-access-the-papers-of-frederick-law-olmsted/`}>The Papers of Frederick Law Olmsted Go Open Access</Link>
-            <div><p className="font-serif text-ceci-gray-dark leading-relaxed dropCap">Thanks to generous subvention from the Olmsted Network, the <a href="https://rotunda.upress.virginia.edu/founders/OLMS.html">Papers of Frederick Law Olmsted</a> are now freely available to all!</p> </div>  
-            <div className="font-display uppercase text-xs tracking-widest"><Link className="font-display tracking-wide uppercase py-2" to={`https://olmsted.org/open-access-the-papers-of-frederick-law-olmsted/`}><FaArrowAltCircleRight className="inline mx-4"/>read full press release at the Olmsted Network</Link> </div></div>
-         
-            
-            </>
-            </article>
-          
-          
-        </section>
+    <section className="md:flex justify-center mx-auto md:space-x-8 md:ml-5">
+    <GatsbyImage className="p-5" image={rotimage} alt="ROTUNDA Digital Imprint" />
+    <article className="flex flex-col flex-1 px-2 py-5 md:p-5">
+      <>
+        <div className="flex items-center md:px-10 space-x-3 font-serif uppercase tracking-wider text-sm text-ceci-gray-dark">
+          <div className="border-r-2 pr-2 font-serif uppercase tracking-wider self-center">rotunda news</div>
+          <div className="text-ceci-gray-mid text-sm pt-1">2024-10</div>
+        </div>
+  
+        <div className="md:px-10 flex flex-col">
+          <Link
+            className="font-display tracking-wide uppercase py-2 font-thin"
+            to={`https://olmsted.org/open-access-the-papers-of-frederick-law-olmsted/`}
+          >
+            Content Additions
+          </Link>
+          <div className="font-serif text-ceci-gray-dark leading-relaxed">
+            <p>The following volumes were added to our <Link to={'https://www.upress.virginia.edu/rotunda/#ahc'}>American History Collection</Link> in 2024:</p><p>
+              <Link to={'https://www.upress.virginia.edu/title/ADMS/'}>
+                Papers of John Adams, Volume 21
+              </Link>
+              <br />
+              <Link to={'https://www.upress.virginia.edu/title/TSJN/'}>
+                Papers of Thomas Jefferson, Volume 46
+              </Link>
+              <br />
+              <Link to={'https://www.upress.virginia.edu/title/TSJN/'}>
+                Papers of Thomas Jefferson, Retirement Series, Volume 19
+              </Link>
+              <br />
+              <Link to={'https://www.upress.virginia.edu/title/JMDE/'}>
+                Papers of James Madison, Secretary of State, Volume 13
+              </Link>
+              <br />
+              <Link to={'https://www.upress.virginia.edu/title/RNCN/'}>
+                Documentary History of the Ratification of the Constitution,
+                Ratification of the Bill of Rights, Volume 2
+              </Link>
+              <br />
+              <Link to={'https://prde.upress.virginia.edu/content/johnson'}>
+                Presidential Recordings Digital Edition, Johnson Telephone Tapes,
+                Volume 2
+              </Link>
+              <br />
+              <Link to={'https://prde.upress.virginia.edu/content/reagan'}>
+                Presidential Recordings Digital Edition, The Presidential
+                Recordings of Ronald Reagan
+              </Link>
+            </p>
+          </div>
+  
+          <div className="font-display uppercase text-xs tracking-widest">
+            <Link
+              className="inline mx-4"
+              to={`https://rotunda.upress.virginia.edu/entrance.xqy/`}
+            >
+              <FaArrowAltCircleRight className="inline mx-4" />
+              See our ROTUNDA Collections
+            </Link>
+          </div>
+        </div>
+      </>
+    </article>
+  </section>
+    
      
   )
 }
