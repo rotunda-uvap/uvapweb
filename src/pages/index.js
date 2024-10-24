@@ -47,7 +47,7 @@ const Home = ({ data }) => {
 
   
   <section className="py-4 border-b-2 border-gray-100">
-         <SectionHeader text="GENERAL INTEREST"/>
+         <SectionHeader text="IN THE NEWS"/>
 
        <FeatColl/>
        </section>
