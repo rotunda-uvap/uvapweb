@@ -2,7 +2,7 @@
 templateKey: news
 type: author-corner
 title: Author's Corner with M. A. Salvodon, translator of DÉSIRÉE CONGO
-image: salvodon.jpg
+image: ""
 related_book:
   - "10021"
 related_series:
