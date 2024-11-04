@@ -84,6 +84,10 @@
     "Title": "Upon Provincialism"
   },
   {
+    "BookID": "10087",
+    "Title": "Archival Communities"
+  },
+  {
     "BookID": "2513",
     "Title": "Social Death and Resurrection"
   },
@@ -206,6 +210,10 @@
   {
     "BookID": "3023",
     "Title": "Trauma and Survival in Contemporary Fiction"
+  },
+  {
+    "BookID": "10130",
+    "Title": "The Diaries of Gouverneur Morris"
   },
   {
     "BookID": "5485",
@@ -426,6 +434,10 @@
   {
     "BookID": "4942",
     "Title": "Empiricist Devotions"
+  },
+  {
+    "BookID": "10131",
+    "Title": "The Papers of James Madison"
   },
   {
     "BookID": "1806",
@@ -674,6 +686,10 @@
   {
     "BookID": "26",
     "Title": "The Big House after Slavery"
+  },
+  {
+    "BookID": "10090",
+    "Title": "A Soldier's Life"
   },
   {
     "BookID": "4613",
@@ -952,6 +968,10 @@
     "Title": "Boston Furniture, 1700-1900"
   },
   {
+    "BookID": "10132",
+    "Title": "The Papers of George Washington"
+  },
+  {
     "BookID": "3035",
     "Title": "Turning To Earth"
   },
@@ -1080,6 +1100,10 @@
     "Title": "Political Development and the New Realism in Sub-Saharan Africa"
   },
   {
+    "BookID": "10091",
+    "Title": "Confessing the Flesh"
+  },
+  {
     "BookID": "4174",
     "Title": "Parallel Worlds"
   },
@@ -1094,6 +1118,10 @@
   {
     "BookID": "2277",
     "Title": "Postslavery Literatures in the Americas"
+  },
+  {
+    "BookID": "10085",
+    "Title": "The Importance of Being Different"
   },
   {
     "BookID": "5097",
@@ -1220,6 +1248,10 @@
     "Title": "Visuality for Architects"
   },
   {
+    "BookID": "10081",
+    "Title": "Revolutionary Diplomacy"
+  },
+  {
     "BookID": "2273",
     "Title": "Possession, Ecstasy, and Law in Ewe Voodoo"
   },
@@ -1326,6 +1358,10 @@
   {
     "BookID": "5483",
     "Title": "We Are Kings"
+  },
+  {
+    "BookID": "10136",
+    "Title": "The Papers of James Madison"
   },
   {
     "BookID": "4979",
@@ -1768,6 +1804,10 @@
     "Title": "The Bourgeois Interior"
   },
   {
+    "BookID": "10082",
+    "Title": "Before Manifest Destiny"
+  },
+  {
     "BookID": "1792",
     "Title": "Hidden Lives"
   },
@@ -1786,6 +1826,10 @@
   {
     "BookID": "3191",
     "Title": "Women and Laughter"
+  },
+  {
+    "BookID": "10055",
+    "Title": "The Evolution of a Rural Free Black Community"
   },
   {
     "BookID": "3807",
@@ -1850,6 +1894,10 @@
   {
     "BookID": "4952",
     "Title": "Finding Justice"
+  },
+  {
+    "BookID": "10135",
+    "Title": "Hiking the AT in the Virginias"
   },
   {
     "BookID": "1427",
@@ -1974,6 +2022,10 @@
   {
     "BookID": "3966",
     "Title": "Buildings of Hawaii"
+  },
+  {
+    "BookID": "10134",
+    "Title": "Creative Regionalism"
   },
   {
     "BookID": "3972",
@@ -2824,6 +2876,10 @@
     "Title": "Living Diversity"
   },
   {
+    "BookID": "10024",
+    "Title": "Histories of Science"
+  },
+  {
     "BookID": "1907",
     "Title": "Jefferson at Monticello"
   },
@@ -3364,6 +3420,10 @@
     "Title": "Evangelical Gothic"
   },
   {
+    "BookID": "10141",
+    "Title": "The Papers of James Madison"
+  },
+  {
     "BookID": "3244",
     "Title": "Socrates and the Irrational"
   },
@@ -3772,10 +3832,6 @@
     "Title": "John Henry Ingram's Poe Collection at the University of Virginia"
   },
   {
-    "BookID": "10036",
-    "Title": "The Papers of James Madison"
-  },
-  {
     "BookID": "4879",
     "Title": "Reading Trauma Narratives"
   },
@@ -3925,7 +3981,7 @@
   },
   {
     "BookID": "1486",
-    "Title": "DeTocqueville and the French Translated by Beth G Raps"
+    "Title": "DeTocqueville and the French"
   },
   {
     "BookID": "2831",
@@ -4010,10 +4066,6 @@
   {
     "BookID": "3050",
     "Title": "Understanding the American Revolution"
-  },
-  {
-    "BookID": "10037",
-    "Title": "The Papers of James Madison"
   },
   {
     "BookID": "1914",
@@ -6848,6 +6900,10 @@
     "Title": "Utopian Geographies and the Early English Novel"
   },
   {
+    "BookID": "10073",
+    "Title": "No Exit"
+  },
+  {
     "BookID": "4828",
     "Title": "Blood from the Sky"
   },
@@ -7778,6 +7834,10 @@
   {
     "BookID": "10061",
     "Title": "The Papers of Abraham Lincoln (Set)"
+  },
+  {
+    "BookID": "10075",
+    "Title": "From Dakota to Dixie"
   },
   {
     "BookID": "1956",

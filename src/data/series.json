@@ -124,6 +124,10 @@
     "seriesName": "Kapnick Foundation Distinguished Writer-in-Residence Lectures"
   },
   {
+    "seriesID": "BSWS",
+    "seriesName": "The Black Soldier in War and Society: New Narratives and Critical Perspectives"
+  },
+  {
     "seriesID": "MIDC",
     "seriesName": "Midcentury: Architecture, Landscape, Urbanism, and Design"
   },
@@ -138,6 +142,10 @@
   {
     "seriesID": "GGL",
     "seriesName": "Gay Hart Gaines Distinguished Lectures"
+  },
+  {
+    "seriesID": "PBSH",
+    "seriesName": "Peculiar Bodies: Stories and Histories"
   },
   {
     "seriesID": "SPS",
@@ -168,10 +176,6 @@
     "seriesName": "Religious Freedom and Public Dialogue: A Robert Nusbaum Center Series: A Robert Nusbaum Center Series"
   },
   {
-    "seriesID": "PBSH",
-    "seriesName": "Peculiar Bodies: Stories and Histories"
-  },
-  {
     "seriesID": "RMLS",
     "seriesName": "Richard E. Myers Lectures: Presented by University Baptist Church, Charlottesville"
   },
@@ -190,10 +194,6 @@
   {
     "seriesID": "ERP",
     "seriesName": "Eleanor Roosevelt Papers"
-  },
-  {
-    "seriesID": "BSWS",
-    "seriesName": "The Black Soldier in War and Society: New Narratives and Critical Perspectives"
   },
   {
     "seriesID": "MNS",
