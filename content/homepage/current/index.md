@@ -2,13 +2,13 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: The Witch of Pungo
-    banner_author: Scott O. Moore
-    banner_subtitle: Grace Sherwood in Virginia History and Legend
-    banner_id: "6061"
-    banner_quote: A haunting and resonant history that expands our understanding of
-      early America and the ways in which women have historically been vilified.
-    banner_attr: Kristen Green, author of The Devil’s Half Acre
+  - banner_title: The Peaceful Transfer of Power
+    banner_author: David Marchick and Alexander Tippett with A. J. Wilson
+    banner_subtitle: An Oral History of America’s Presidential Transitions
+    banner_id: "5816"
+    banner_quote: A deeply patriotic book, with a much-needed hopeful message about
+      Americans and their commitment to democratic institutions.
+    banner_attr: Wall Street Journal
 related_book:
   - "5744"
   - "5617"
