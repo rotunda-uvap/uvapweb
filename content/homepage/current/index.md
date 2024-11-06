@@ -2,13 +2,13 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: The Peaceful Transfer of Power
-    banner_author: David Marchick and Alexander Tippett with A. J. Wilson
-    banner_subtitle: An Oral History of America’s Presidential Transitions
-    banner_id: "5816"
-    banner_quote: A deeply patriotic book, with a much-needed hopeful message about
-      Americans and their commitment to democratic institutions.
-    banner_attr: Wall Street Journal
+  - banner_title: Watchdogs
+    banner_author: Glenn A. Fine
+    banner_subtitle: Inspectors General and the Battle for Honest and Accountable Government
+    banner_id: "10047"
+    banner_quote: Inspectors general are the spine of serious government oversight,
+      and Glenn Fine was the master.
+    banner_attr: Bob Woodward
 related_book:
   - "5744"
   - "5617"
