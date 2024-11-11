@@ -2,13 +2,12 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: Watchdogs
-    banner_author: Glenn A. Fine
-    banner_subtitle: Inspectors General and the Battle for Honest and Accountable Government
-    banner_id: "10047"
-    banner_quote: Inspectors general are the spine of serious government oversight,
-      and Glenn Fine was the master.
-    banner_attr: Bob Woodward
+  - banner_title: Character and Mourning
+    banner_author: Erin Penner
+    banner_subtitle: Woolf, Faulkner, and the Novel Elegy of the First World War
+    banner_id: "5153"
+    banner_quote: Intelligent, perceptive, and elegantly written.
+    banner_attr: Michael Gorra, Smith College
 related_book:
   - "5744"
   - "5617"
