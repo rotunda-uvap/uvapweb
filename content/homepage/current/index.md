@@ -2,12 +2,12 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: Character and Mourning
-    banner_author: Erin Penner
-    banner_subtitle: Woolf, Faulkner, and the Novel Elegy of the First World War
-    banner_id: "5153"
-    banner_quote: Intelligent, perceptive, and elegantly written.
-    banner_attr: Michael Gorra, Smith College
+  - banner_title: White Tongue, Brown Skin
+    banner_author: Maya Boutaghou
+    banner_subtitle: The Colonized Woman and Language
+    banner_id: "10033"
+    banner_quote: A substantial and highly original book.
+    banner_attr: Alison Rice, University of Notre Dame
 related_book:
   - "5744"
   - "5617"
