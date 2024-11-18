@@ -19,7 +19,7 @@ related_blog:
   - Author's Corner with Rachel H. Pang, author of SINGER OF THE LAND OF SNOWS
 related_staff:
   - Eric Brandt
-  - J. Andrew Edwards
+  - Andy Edwards
 featured_books:
   - "6003"
   - "5901"

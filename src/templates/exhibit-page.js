@@ -164,6 +164,7 @@ export const query = graphql`
               frontmatter {
                 title
                 job_title
+                staff_name
                 name_slug
               }
               html
