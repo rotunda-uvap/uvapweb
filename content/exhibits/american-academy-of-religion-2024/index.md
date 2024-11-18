@@ -18,8 +18,8 @@ related_blog:
   - Author's Corner with Hannah Spahn, author of BLACK REASON, WHITE FEELING
   - Author's Corner with Rachel H. Pang, author of SINGER OF THE LAND OF SNOWS
 related_staff:
-  - J. Andrew Edwards
   - Eric Brandt
+  - J. Andrew Edwards
 featured_books:
   - "6003"
   - "5901"
