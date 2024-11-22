@@ -2,12 +2,12 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: White Tongue, Brown Skin
-    banner_author: Maya Boutaghou
-    banner_subtitle: The Colonized Woman and Language
-    banner_id: "10033"
-    banner_quote: A substantial and highly original book.
-    banner_attr: Alison Rice, University of Notre Dame
+  - banner_title: Declarations of Independence
+    banner_author: Christopher R. Pearl
+    banner_subtitle: Indigenous Resilience, Colonial Rivalries, and the Cost of Revolution
+    banner_id: "10016"
+    banner_quote: Sheds new light on the American Revolution and Native American history.
+    banner_attr: Patrick Spero, Executive Officer of the American Philosophical Society
 related_book:
   - "5744"
   - "5617"
