@@ -24,7 +24,7 @@ A list of books compiled for the American Association of University Presses
 * *[Fighting Political Gridlock: How States Shape Our Nation and Our Lives](https://upress.virginia.edu/title/5776/)* by David J. Toscano
 * *[The Elections of 2020](https://upress.virginia.edu/title/5621/)* edited by Michael Nelson
 * Forthcoming: *[The Elections of 2024](https://upress.virginia.edu/title/10079/)* edited by Michael Nelson
-* *[The Poisoning of the American Mind](https://upress.virginia.edu/title/10048/)* edited by Lawrence M. Eppard, Jacob L. Mackey, and Lee Jussim
+* *[The Poisoning of the American Mind](https://upress.virginia.edu/title/10048/)* edited by Lawrence M. Eppard, Jacob L. Mackey, and Lee Jussim (Distributed for George Mason University Press)
 
 Be sure also to check out two of our series that relate directly to these issues:
 
