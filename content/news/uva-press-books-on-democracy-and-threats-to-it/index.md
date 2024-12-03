@@ -11,6 +11,7 @@ related_book:
   - "5621"
 related_series:
   - MCSP
+  - CD
 date: 2024-12-03
 ---
 A list of books compiled for the American Association of University Presses
@@ -22,3 +23,13 @@ A list of books compiled for the American Association of University Presses
 * *[Fighting Political Gridlock: How States Shape Our Nation and Our Lives](https://upress.virginia.edu/title/5776/)* by David J. Toscano
 * *[The Elections of 2020](https://upress.virginia.edu/title/5621/)* edited by Michael Nelson
 * Forthcoming: *[The Elections of 2024](https://upress.virginia.edu/title/10079/)* edited by Michael Nelson
+
+Be sure also to check out two of our series that relate directly to these issues:
+
+**[Miller Center Studies on the Presidency](https://upress.virginia.edu/series/MCSP/)**
+
+Advancing innovative scholarship on the American presidency, this series seeks to ask timeless and novel questions about the institution and its role in a constitutional democracy, to re-invigorate its study across disciplines, and to publish its findings through novel vehicles and formats. Through a capacious approach to the field, it seeks to highlight the relevance of historical developments to current affairs and to explore the evolution of the office over time.
+
+**[Constitutionalism and Democracy ](https://upress.virginia.edu/series/CD/)**
+
+This series publishes outstanding titles on constitutional politics, legal culture, and the historical relationship between democratic government and the social and economic forces that shape it. The editors seek manuscripts on constitutional development and legal history as well as both qualitative and quantitative analyses of judicial politics. At the same time, they aim to encompass a broader set of topics, including comparative law and courts, new institutionalism, and the theory of democratic principles and legal institutions.
