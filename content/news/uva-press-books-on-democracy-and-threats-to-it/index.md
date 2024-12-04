@@ -15,7 +15,7 @@ related_series:
   - CD
 date: 2024-12-03
 ---
-A list of books compiled for the American Association of University Presses
+A list of books compiled for the Association of University Presses
 
 * *[The Peaceful Transfer of Power: An Oral History of America’s Presidential Transitions](https://upress.virginia.edu/title/5816/)* by David Marchick and Alexander Tippett with A. J. Wilson
 * *[Watchdogs: Inspectors General and the Battle for Honest and Accountable Government](https://upress.virginia.edu/title/10047/)* by Glenn A. Fine
