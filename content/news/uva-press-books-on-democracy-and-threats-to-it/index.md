@@ -10,6 +10,8 @@ related_book:
   - "5776"
   - "5621"
   - "10048"
+  - "5631"
+  - "5838"
 related_series:
   - MCSP
   - CD
@@ -25,6 +27,8 @@ A list of books compiled for the Association of University Presses
 * *[The Elections of 2020](https://upress.virginia.edu/title/5621/)* edited by Michael Nelson
 * Forthcoming: *[The Elections of 2024](https://upress.virginia.edu/title/10079/)* edited by Michael Nelson
 * *[The Poisoning of the American Mind](https://upress.virginia.edu/title/10048/)* edited by Lawrence M. Eppard, Jacob L. Mackey, and Lee Jussim (Distributed for George Mason University Press)
+* *[The Silent Prologue: How Judicial Philosophies Shape Our Constitutional Rights](https://www.upress.virginia.edu/title/5631/)* by Ofer Raban (Distributed for George Mason University Press)
+* *[The Trials of Rasmea Odeh: How a Palestinian Guerrilla Gained and Lost U.S. Citizenship](https://www.upress.virginia.edu/title/5838/)* by Steven Lubet (Distributed for George Mason University Press)
 
 Be sure also to check out two of our series that relate directly to these issues:
 
