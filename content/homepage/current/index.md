@@ -2,13 +2,12 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: Virginia Cider
-    banner_author: Gregory J. Hansard
-    banner_subtitle: A Guide from Colonial Days to Craft's Golden Age
-    banner_id: "10014"
-    banner_quote: An essential purchase for any cider enthusiast.
-    banner_attr: "Diane Flynt, author of Wild, Tamed, Lost, Revived: The Surprising
-      Story of Apples in the South"
+  - banner_title: Matoaka, Pocahontas, Rebecca
+    banner_author: Kathryn N. Gray and Amy M. E. Morris, eds.
+    banner_subtitle: Her Atlantic Identities and Afterlives
+    banner_id: "10046"
+    banner_quote: This book moves us forward in important ways.
+    banner_attr: Coll Thrush, University of British Columbia
 related_book:
   - "5744"
   - "5617"
@@ -22,13 +21,12 @@ related_collection:
 featured_books:
   - "5925"
   - "10019"
-  - "10033"
+  - "10014"
+  - "5897"
   - "10051"
-  - "5895"
-  - "10032"
   - "10021"
   - "5852"
-  - "5897"
-  - "10010"
+  - "5895"
+  - "10032"
   - "10016"
 ---
