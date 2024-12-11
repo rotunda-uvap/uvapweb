@@ -2,12 +2,12 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: Matoaka, Pocahontas, Rebecca
-    banner_author: Kathryn N. Gray and Amy M. E. Morris, eds.
-    banner_subtitle: Her Atlantic Identities and Afterlives
-    banner_id: "10046"
-    banner_quote: This book moves us forward in important ways.
-    banner_attr: Coll Thrush, University of British Columbia
+  - banner_title: Break and Flow
+    banner_author: Charlie D. Hankin
+    banner_subtitle: Winner of the MLA Scaglione Prize for Comparative Literary Studies
+    banner_id: "5908"
+    banner_quote: The product of great learning and greater passion.
+    banner_attr: Adam Bradley, UCLA
 related_book:
   - "5744"
   - "5617"
