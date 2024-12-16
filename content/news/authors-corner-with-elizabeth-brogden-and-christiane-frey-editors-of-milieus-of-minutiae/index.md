@@ -3,6 +3,7 @@ templateKey: news
 type: author-corner
 title: Author's Corner with Elizabeth Brogden and Christiane Frey, editors of
   MILIEUS OF MINUTIAE
+image: screenshot-2024-12-16-at-2.59.55 pm.png
 related_book:
   - "10027"
 date: 2024-12-16
