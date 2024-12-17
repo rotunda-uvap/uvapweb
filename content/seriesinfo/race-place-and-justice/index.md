@@ -1,7 +1,7 @@
 ---
 templateKey: series
 status: active
-editors: "Series Editors: Louis P. Nelson, senior editor; Mable O. Wilson and Charles L. Davis II, consulting editors"
+editors: "Series Editors: Louis P. Nelson, senior editor; Irene Cheng, Charles L. Davis II, and  Mable O. Wilson consulting editors"
 uvaeditors: Mark Mones
 title: Race, Place and Justice
 seriestype: Academic Book Series
