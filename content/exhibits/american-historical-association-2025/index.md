@@ -43,5 +43,5 @@ featured_books:
   - "5845"
 related_collection:
   - AHA 25
-date: ""
+date: 2024-12-18
 ---
