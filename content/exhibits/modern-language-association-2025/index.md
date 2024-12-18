@@ -42,5 +42,5 @@ featured_books:
   - "10020"
 related_collection:
   - MLA 25
-date: ""
+date: 2024-12-18
 ---
