@@ -22,7 +22,7 @@ export default function Catalog({data}) {
                 <h1 className="ml-4 text-3xl  font-medium tracking-wide text-ceci-gray-mid md:text-4xl">Current Catalog</h1>
                 <div className="py-2 ml-4 font-serif text-center md:text-left text-ceci-gray-mid">View the selection of books from our Spring 2025 list.</div>
                 <div className="ml-4 flex flex-row py-5">
-               {<span className="font-thin text-lg tracking-wide text-ceci-gray-mid"><a href={'../../spring24.pdf'}>
+               {<span className="font-thin text-lg tracking-wide text-ceci-gray-mid"><a href={'../../spring25.pdf'}>
             Download Catalog<span className="inline-flex items-center mt-4">
               <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
                 <path d="M5 12h14M12 5l7 7-7 7"></path>
