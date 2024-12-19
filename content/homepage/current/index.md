@@ -2,12 +2,12 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: Break and Flow
-    banner_author: Charlie D. Hankin
-    banner_subtitle: Winner of the MLA Scaglione Prize for Comparative Literary Studies
-    banner_id: "5908"
-    banner_quote: The product of great learning and greater passion.
-    banner_attr: Adam Bradley, UCLA
+  - banner_title: Milieus of Minutiae
+    banner_author: Elizabeth Brogden and Christiane Frey, eds.
+    banner_subtitle: Contextualizing the Small in Literature, Philosophy, and Science
+    banner_id: "10027"
+    banner_quote: The science reflects on the aesthetics in surprising and illuminating ways.
+    banner_attr: Elisa Tamarkin, University of California, Berkeley
 related_book:
   - "5744"
   - "5617"
