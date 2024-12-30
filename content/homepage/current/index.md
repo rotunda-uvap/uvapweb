@@ -2,12 +2,13 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: Milieus of Minutiae
-    banner_author: Elizabeth Brogden and Christiane Frey, eds.
-    banner_subtitle: Contextualizing the Small in Literature, Philosophy, and Science
-    banner_id: "10027"
-    banner_quote: The science reflects on the aesthetics in surprising and illuminating ways.
-    banner_attr: Elisa Tamarkin, University of California, Berkeley
+  - banner_title: Mourning the Presidents
+    banner_author: Lindsay M. Chervinsky and Matthew R. Costello, eds.
+    banner_subtitle: Loss and Legacy in American Culture
+    banner_id: "5740"
+    banner_quote: A searching exploration of memory, history, and the complicated
+      process of creating a presidential legacy.
+    banner_attr: Nicole Hemmer, Vanderbilt University
 related_book:
   - "5744"
   - "5617"
