@@ -4,9 +4,10 @@ import {
   FacebookShareButton,
   FacebookIcon,
   TwitterShareButton,
-  TwitterIcon,
   RedditShareButton,
-  RedditIcon
+  RedditIcon,
+  XIcon,
+
 } from 'react-share'
  
 const ShareButtons = ({title, url, quote, tags}) => {
@@ -18,7 +19,7 @@ const ShareButtons = ({title, url, quote, tags}) => {
          </FacebookShareButton>
 
           <TwitterShareButton url={url} title={title}>
-                <TwitterIcon  size={40} round={true} />
+                <XIcon  size={40} round={true} />
           </TwitterShareButton>
 
           <RedditShareButton url={url} title={title} >

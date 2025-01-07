@@ -1,10 +1,10 @@
 import React from "react"
 import {
-  FaSearch,
-  FaFacebookSquare,
-  FaTwitterSquare,
-  FaInstagramSquare,
-} from "react-icons/fa"
+  FaMagnifyingGlass,
+  FaFacebook,
+  FaXTwitter,
+  FaInstagram,
+} from "react-icons/fa6"
 import { Link, useStaticQuery, graphql } from "gatsby"
 import "./megamenu.css"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
@@ -379,26 +379,26 @@ const uvap = getImage(data.uvaplogo)
                 </a>
 
                 <a href="https://www.facebook.com/uvapress">
-                  <FaFacebookSquare
+                  <FaFacebook
                     aria-label="facebook button"
                     className="hover:text-ceci-gray-dark text-ceci-gray-mid"
                   />
                 </a>
                 <a href="https://twitter.com/uvapress">
-                  <FaTwitterSquare
+                  <FaXTwitter
                     aria-label="twitter button"
                     className="hover:text-ceci-gray-dark text-ceci-gray-mid"
                   />
                 </a>
                 <a href="https://www.instagram.com/uvapress">
-                  <FaInstagramSquare
+                  <FaInstagram
                     aria-label="insta button"
                     className="hover:text-ceci-gray-dark text-ceci-gray-mid"
                   />
                 </a>
                 <Link to={`/book-search`}>
                   {" "}
-                  <FaSearch
+                  <FaMagnifyingGlass
                     aria-label="search button"
                     className="hover:text-ceci-gray-dark text-ceci-gray-mid"
                   />
