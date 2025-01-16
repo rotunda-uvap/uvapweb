@@ -2,13 +2,12 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: Mourning the Presidents
-    banner_author: Lindsay M. Chervinsky and Matthew R. Costello, eds.
-    banner_subtitle: Loss and Legacy in American Culture
-    banner_id: "5740"
-    banner_quote: A searching exploration of memory, history, and the complicated
-      process of creating a presidential legacy.
-    banner_attr: Nicole Hemmer, Vanderbilt University
+  - banner_title: Roses in December
+    banner_author: Jody Lynn Allen
+    banner_subtitle: Black Life in Hanover County from Civil War to Civil Rights
+    banner_id: "10050"
+    banner_quote: A beautifully written and thoroughly researched portrait.
+    banner_attr: Craig Steven Wilder, MIT
 related_book:
   - "5744"
   - "5617"
