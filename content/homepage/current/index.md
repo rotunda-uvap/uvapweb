@@ -2,12 +2,12 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: Roses in December
-    banner_author: Jody Lynn Allen
-    banner_subtitle: Black Life in Hanover County from Civil War to Civil Rights
-    banner_id: "10050"
-    banner_quote: A beautifully written and thoroughly researched portrait.
-    banner_attr: Craig Steven Wilder, MIT
+  - banner_title: The Peaceful Transfer of Power
+    banner_author: David Marchick and Alexander Tippett with A. J. Wilson
+    banner_subtitle: An Oral History of America’s Presidential Transitions
+    banner_id: "5816"
+    banner_quote: A deeply patriotic book, with a much-needed hopeful message.
+    banner_attr: Wall Street Journal
 related_book:
   - "5744"
   - "5617"
