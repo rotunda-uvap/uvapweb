@@ -2,12 +2,13 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: The Peaceful Transfer of Power
-    banner_author: David Marchick and Alexander Tippett with A. J. Wilson
-    banner_subtitle: An Oral History of America’s Presidential Transitions
-    banner_id: "5816"
-    banner_quote: A deeply patriotic book, with a much-needed hopeful message.
-    banner_attr: Wall Street Journal
+  - banner_title: Crucible
+    banner_author: Michael Nelson, Jeffrey L. Chidester, and Stefanie Georgakis Abbott, eds.
+    banner_subtitle: The President's First Year
+    banner_id: "5227"
+    banner_quote: No other organization can put the presidency and presidential
+      history into context like the Miller Center.
+    banner_attr: John Dickerson, CBS News
 related_book:
   - "5744"
   - "5617"
