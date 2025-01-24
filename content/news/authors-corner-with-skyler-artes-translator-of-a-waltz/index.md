@@ -2,6 +2,7 @@
 templateKey: news
 type: author-corner
 title: Author's Corner with Skyler Artes, translator of A WALTZ
+image: headshot.jpg
 related_book:
   - "10054"
 related_series:
