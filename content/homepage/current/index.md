@@ -2,13 +2,13 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: Crucible
-    banner_author: Michael Nelson, Jeffrey L. Chidester, and Stefanie Georgakis Abbott, eds.
-    banner_subtitle: The President's First Year
-    banner_id: "5227"
-    banner_quote: No other organization can put the presidency and presidential
-      history into context like the Miller Center.
-    banner_attr: John Dickerson, CBS News
+  - banner_title: Watchdogs
+    banner_author: Glenn A. Fine
+    banner_subtitle: Inspectors General and the Battle for Honest and Accountable Government
+    banner_id: "10047"
+    banner_quote: Inspectors general are the spine of serious government oversight,
+      and Glenn Fine was the master.
+    banner_attr: Bob Woodward, reporter and author
 related_book:
   - "5744"
   - "5617"
