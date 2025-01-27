@@ -25,7 +25,7 @@ I grew up thinking that ghosts are something that people with bad taste believe 
 
 *What’s your favorite anecdote from your book?*
 
-Many really funny tales that I read in Puritan texts. For example, a story about “a noble person” who was seen while going in and out of “an empresses’ chamber” at night is explained to not have been there, only a “daemon in his shape.” This was at a time when Puritans where promoting the idea that bodies could be possessed by the devil and made to do certain things. It is, perhaps, not a surprise that many of those “certain” things were sexual. Unfortunately, they also cower stories of abuse, so this part was not so much fun anymore. But it does demonstrate nicely how important it is to attend to our ghosts. 
+Many really funny tales that I read in Puritan texts. For example, a story about “a noble person” who was seen while going in and out of “an empresses’ chamber” at night is explained to not have been there, only a “daemon in his shape.” This was at a time when Puritans where promoting the idea that bodies could be possessed by the devil and made to do certain things. It is, perhaps, not a surprise that many of those “certain” things were sexual. Unfortunately, they also cover stories of abuse, so this part was not so much fun anymore. But it does demonstrate nicely how important it is to attend to our ghosts. 
 
 *What’s next?* 
 
