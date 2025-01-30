@@ -2,13 +2,12 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: Watchdogs
-    banner_author: Glenn A. Fine
-    banner_subtitle: Inspectors General and the Battle for Honest and Accountable Government
-    banner_id: "10047"
-    banner_quote: Inspectors general are the spine of serious government oversight,
-      and Glenn Fine was the master.
-    banner_attr: Bob Woodward, reporter and author
+  - banner_title: A Waltz
+    banner_author: "Lynda Chouiten. Translated by Skyler Artes. "
+    banner_subtitle: A prize-winning novel from one of Algeria’s rising literary stars
+    banner_id: "10054"
+    banner_quote: A sparkling, haunting novel.
+    banner_attr: Edwige Tamalet Talbayev, Tulane University
 related_book:
   - "5744"
   - "5617"
