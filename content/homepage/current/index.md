@@ -2,12 +2,13 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: A Waltz
-    banner_author: "Lynda Chouiten. Translated by Skyler Artes. "
-    banner_subtitle: A prize-winning novel from one of Algeria’s rising literary stars
-    banner_id: "10054"
-    banner_quote: A sparkling, haunting novel.
-    banner_attr: Edwige Tamalet Talbayev, Tulane University
+  - banner_title: Searching for Jimmie Strother
+    banner_author: Gregg D. Kimball
+    banner_subtitle: " A Tale of Music, Murder, and Memory"
+    banner_id: "10039"
+    banner_quote: Takes the reader back to the real Old Dominion and the mighty
+      musicianers who plied its highways and byways.
+    banner_attr: Corey Harris, award-winning musician
 related_book:
   - "5744"
   - "5617"
@@ -23,6 +24,7 @@ featured_books:
   - "10019"
   - "10014"
   - "5897"
+  - "10047"
   - "10051"
   - "10021"
   - "5852"
