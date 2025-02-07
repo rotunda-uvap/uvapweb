@@ -7,6 +7,7 @@ import {
   FaFacebook,
   FaXTwitter,
   FaInstagram,
+  FaBluesky,
 } from "react-icons/fa6"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import FooterLink from "./FooterLink"
@@ -61,6 +62,13 @@ const Footer = () => {
               className="pr-2"
             >
               <FaFacebook className="text-3xl" />
+            </a>
+            <a
+              href="https://bsky.app/profile/uvapress.bsky.social"
+              aria-label="bluesky"
+              className="pr-2"
+            >
+              <FaBluesky className="text-3xl" />
             </a>
             <a
               href="https://twitter.com/uvapress"

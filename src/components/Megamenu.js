@@ -4,6 +4,7 @@ import {
   FaFacebook,
   FaXTwitter,
   FaInstagram,
+  FaBluesky,
 } from "react-icons/fa6"
 import { Link, useStaticQuery, graphql } from "gatsby"
 import "./megamenu.css"
@@ -384,6 +385,14 @@ const uvap = getImage(data.uvaplogo)
                     className="hover:text-ceci-gray-dark text-ceci-gray-mid"
                   />
                 </a>
+                <a
+              href="https://bsky.app/profile/uvapress.bsky.social"
+              aria-label="bluesky"
+              className="pr-2"
+            >
+              <FaBluesky aria-label="bluesky button"
+                    className="hover:text-ceci-gray-dark text-ceci-gray-mid" />
+            </a>
                 <a href="https://twitter.com/uvapress">
                   <FaXTwitter
                     aria-label="twitter button"
