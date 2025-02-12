@@ -2,13 +2,13 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: Searching for Jimmie Strother
-    banner_author: Gregg D. Kimball
-    banner_subtitle: " A Tale of Music, Murder, and Memory"
-    banner_id: "10039"
-    banner_quote: Takes the reader back to the real Old Dominion and the mighty
-      musicianers who plied its highways and byways.
-    banner_attr: Corey Harris, award-winning musician
+  - banner_title: Love, Etc.
+    banner_author: Rita Felski and Camilla Schwartz, eds.
+    banner_subtitle: Essays on Contemporary Literature and Culture
+    banner_id: "10019"
+    banner_quote: An outstanding volume – well written, timely, and intelligent –
+      embracing pop culture, philosophy, poetry, and the novel.
+    banner_attr: Erik Gray, Columbia University
 related_book:
   - "5744"
   - "5617"
@@ -20,15 +20,14 @@ related_book:
 related_collection:
   - Homepage Featured
 featured_books:
-  - "5925"
-  - "10019"
-  - "10014"
-  - "5897"
   - "10047"
+  - "10054"
+  - "10014"
   - "10051"
-  - "10021"
-  - "5852"
-  - "5895"
+  - "10057"
   - "10032"
-  - "10016"
+  - "10015"
+  - "10011"
+  - "10039"
+  - "10076"
 ---
