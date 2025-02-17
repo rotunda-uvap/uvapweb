@@ -6,7 +6,7 @@ top_banner:
     banner_author: Andrew S. Ramey
     banner_subtitle: The History of a Movement
     banner_id: "10057"
-    banner_quote: a deep and hopeful look at fifty years of restoring Chesapeake
+    banner_quote: A deep and hopeful look at fifty years of restoring Chesapeake
       Bay, one of the biggest and most complex such efforts ever undertaken.
     banner_attr: Tom Horton, former environmental columnist for The Baltimore Sun
 related_book:
