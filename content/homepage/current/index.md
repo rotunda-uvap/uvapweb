@@ -2,13 +2,13 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: Love, Etc.
-    banner_author: Rita Felski and Camilla Schwartz, eds.
-    banner_subtitle: Essays on Contemporary Literature and Culture
-    banner_id: "10019"
-    banner_quote: An outstanding volume – well written, timely, and intelligent –
-      embracing pop culture, philosophy, poetry, and the novel.
-    banner_attr: Erik Gray, Columbia University
+  - banner_title: " Saving the Chesapeake"
+    banner_author: Andrew S. Ramey
+    banner_subtitle: The History of a Movement
+    banner_id: "10057"
+    banner_quote: a deep and hopeful look at fifty years of restoring Chesapeake
+      Bay, one of the biggest and most complex such efforts ever undertaken.
+    banner_attr: Tom Horton, former environmental columnist for The Baltimore Sun
 related_book:
   - "5744"
   - "5617"
@@ -24,7 +24,7 @@ featured_books:
   - "10054"
   - "10014"
   - "10051"
-  - "10057"
+  - "10019"
   - "10032"
   - "10015"
   - "10011"
