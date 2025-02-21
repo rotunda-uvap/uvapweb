@@ -2,13 +2,12 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: " Saving the Chesapeake"
-    banner_author: Andrew S. Ramey
-    banner_subtitle: The History of a Movement
-    banner_id: "10057"
-    banner_quote: A deep and hopeful look at fifty years of restoring Chesapeake
-      Bay, one of the biggest and most complex such efforts ever undertaken.
-    banner_attr: Tom Horton, former environmental columnist for The Baltimore Sun
+  - banner_title: Dézafi
+    banner_author: Frankétienne
+    banner_subtitle: A Novel
+    banner_id: "5164"
+    banner_quote: A literary and linguistic treasure.
+    banner_attr: Cécile Accilien
 related_book:
   - "5744"
   - "5617"
@@ -24,6 +23,7 @@ featured_books:
   - "10054"
   - "10014"
   - "10051"
+  - "10057"
   - "10019"
   - "10032"
   - "10015"
