@@ -7,7 +7,7 @@ top_banner:
     banner_subtitle: A Novel
     banner_id: "5164"
     banner_quote: A literary and linguistic treasure.
-    banner_attr: Cécile Accilien
+    banner_attr: Cécile Accilien, former president of the Haitian Studies Association
 related_book:
   - "5744"
   - "5617"
