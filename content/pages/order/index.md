@@ -43,7 +43,7 @@ Our ebooks are available to libraries through:
 ###### Returns Service at Longleaf 
 
 UVA Press Returns\
-C/O   Distribution Solutions\
+C/O Distribution Solutions\
 1250 Ingram Drive\
 Chambersburg, PA 17202
 
@@ -53,20 +53,12 @@ Chambersburg, PA 17202
 
 For your convenience, you are encouraged to place your order with our European distributor:
 
-Customer Services\
-Marston Book Services\
-Unit 160 Eastern Avenue\
-Milton Park\
-Abingdon\
-Oxfordshire OX14 4SB
+Mare Nostrum Group\
+39 East Parade, Harrowgate\
+North Yorkshire HG1 5LQ
 
-Trade/Account Customers:\
-Tel: +44 (0)1235 465576\
-Email: [trade.orders@marston.co.uk](trade.orders@marston.co.uk)
- 
-Individual Customers:\
-Tel: +44 (0)1235 465577\
-Email: [direct.orders@marston.co.uk](direct.orders@marston.co.uk)
+Tel: +44 (0)1423 562232\
+Email: [info@mare-nostrum.co.uk](info@mare-nostrum.co.uk)
 
 ###### Order in Canada
 
@@ -77,20 +69,12 @@ Fax: 1.800.221.9985
 
 ###### Order in Hawaii, Asia, Australia, New Zealand, and the Pacific Islands
 
-Customer Services/
-Marston Book Services\
-Unit 160 Eastern Avenue\
-Milton Park\
-Abingdon\
-Oxfordshire OX14 4SB
+Mare Nostrum Group\
+39 East Parade, Harrowgate\
+North Yorkshire HG1 5LQ
 
-Trade/Account Customers:\
-Tel: +44 (0)1235 465576\
-Email: [trade.orders@marston.co.uk](trade.orders@marston.co.uk)
- 
-Individual Customers:\
-Tel: +44 (0)1235 465577\
-Email: [direct.orders@marston.co.uk](direct.orders@marston.co.uk)
+Tel: +44 (0)1423 562232\
+Email: [info@mare-nostrum.co.uk](info@mare-nostrum.co.uk)
 
 ###### Order a Desk Copy or Examination Copy
 
