@@ -4,8 +4,16 @@ import React from "react"
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import sanitizeHtml from 'sanitize-html';
 
+const wrapInParagraph = (htmlString) => {
+  // Check if the content already contains a <p> tag
+  if (/<p[\s>]/.test(htmlString)) {
+    return htmlString; // Return as is if <p> is found
+  }
+  return `<p>${htmlString}</p>`; // Otherwise, wrap in <p>
+};
+
+
 const BookHorizontalTabs = ({summary, reviews, bio, TOC, add}) => {
-   
     return (
     
         <Tabs defaultTab="basic-tab-one" className="flex flex-col justify-center max-w-7xl ">
@@ -17,7 +25,12 @@ const BookHorizontalTabs = ({summary, reviews, bio, TOC, add}) => {
           { add ? <Tab className="uppercase font-thin tracking-widest py-2 px-3 sm:px-6 text-sm md:text-lg border-b-4 border-white hover:border-black" tabfor="basic-tab-five">Additional Resources</Tab> : ""} 
         </TabList>
         <TabPanel className="py-3" tabid="basic-tab-one">
-        <div dangerouslySetInnerHTML={{ __html: sanitizeHtml(summary) }} className="text-ceci-gray-dark dropCap font-serif cms text-lg"/>
+        <div
+  dangerouslySetInnerHTML={{
+    __html: sanitizeHtml(wrapInParagraph(summary))
+  }}
+  className="text-ceci-gray-dark dropCap font-serif cms text-lg"
+/>
         </TabPanel>
         <TabPanel className="py-3 " tabid="basic-tab-two">
         {reviews ?
