@@ -23,7 +23,7 @@ export default function StaffList({ data }) {
           <SeO title="Staff Directory"/>
           <div className=" mx-auto">
           <PageHeader text={'Our Team'}/>
-          <div className="w-full flex place-items-center"><StaticImage src="../images/staff_2023.jpg" alt="photo of UVA Press Staff as of Sept 2023" quality="100" placeholder="blurred" className="mx-auto"/></div>
+          <div className="w-full flex place-items-center"><StaticImage src="../images/staff_24.jpg" alt="photo of UVA Press Staff as of Sept 2023" quality="100" placeholder="blurred" className="mx-auto"/></div>
           
           <section className="py-4 border-b-2 border-gray-100">
             <SectionHeader text={'Director'}/>
@@ -40,7 +40,7 @@ export default function StaffList({ data }) {
            </div>
          </section>
           <section className="py-4 border-b-2 border-gray-100">
-            <SectionHeader text={'Operations'}/>
+            <SectionHeader text={'Finance and Operations'}/>
          
           <div className="py-2 mx-auto">
              <div className="flex flex-wrap -m-4 text-center">
@@ -60,6 +60,7 @@ export default function StaffList({ data }) {
             <SectionHeader text={'Acquisitions'}/>
          
           <div className="py-2 mx-auto">
+          <p className="text-center font-display">Please submit proposals to Acquisitions Coordinator Fernando Campos at <a href="mailto:pzg5qu@virginia.edu">pzg5qu@virginia.edu</a></p>
              <div className="flex flex-wrap -m-4 text-center">
            {acqs.edges.map((edge, index) => (
              

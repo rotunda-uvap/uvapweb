@@ -26,7 +26,7 @@ const Hit = ( {hit}) => <div className="py-2 border-b-2 border-gray-300">
 {hit.Subtitle ? <h6 className="text-sm tracking-booped text-ceci-gray-mid font-thin pb-1 ">{hit.Subtitle}</h6> : ""}
 <h6 className="text-xs tracking-widest font-display uppercase">{hit.AuthorCredit}</h6>
 
-<div className="pt-3" dangerouslySetInnerHTML={{ __html: hit.MainDescription.html.split(' ').splice(0, 30).join(' ') + '...' }}/>
+<div className="pt-3 text-ceci-gray-dark dropCap font-serif cms text-lg" dangerouslySetInnerHTML={{ __html: hit.MainDescription.html.split(' ').splice(0, 30).join(' ') + '...' }}/>
 <h6 className="text-xs uppercase tracking-wide text-ceci-gray-mid font-thin pb-5">Published: {hit.PublicationDate}</h6></div></a></div>
 
 const Search = () => (

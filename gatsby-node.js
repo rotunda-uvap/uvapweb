@@ -7,10 +7,17 @@ const _ = require("lodash")
 exports.createSchemaCustomization = ({ actions }) => {
     const { createTypes } = actions
     const typeDefs = `
+     type ImprintJson @dontInfer {
+      imprintID: Int
+      imprintName: String
+      }
+
       type BooksJson implements Node  {
         BookID: String!  
         DaysSincePublication: Int!
         Authors: [String]
+        Imprint: [ImprintJson]
+       
       }  
       
       type RotundaJson implements Node {
@@ -23,6 +30,12 @@ exports.createSchemaCustomization = ({ actions }) => {
         fields: Fields
       }
   
+      type ImprintsJson implements Node {
+       imprintID: Int
+       imprintName: String
+      } 
+
+    
       type Frontmatter {
         title: String
         description: String
@@ -38,6 +51,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       type Fields {
         slug: String
       }
+
 
       type Subjects {
         name: String
@@ -192,7 +206,7 @@ exports.createSchemaCustomization = ({ actions }) => {
             fieldValue
           }
         }
-
+       
         allSeries: allSeriesJson {
           edges {
             node {
@@ -201,6 +215,16 @@ exports.createSchemaCustomization = ({ actions }) => {
             }
           }
         }
+       
+        allImprints: allImprintsJson {
+          edges {
+            node {
+              imprintID
+              imprintName
+            }
+          }
+        }
+
 
        rotMain: allRotundaJson{
         distinct(field: {MainCollection: SELECT})
@@ -217,8 +241,6 @@ exports.createSchemaCustomization = ({ actions }) => {
       if (result.errors) {
         throw result.errors
       }
-      
-
       const books = result.data.allBooksJson.edges
 
         books.forEach(({ node }) => {
@@ -354,6 +376,20 @@ exports.createSchemaCustomization = ({ actions }) => {
           })
         })
 
+
+        const imprints = result.data.allImprints.edges
+        imprints.forEach(({ node }) => {
+          createPage({
+            path: `/imprints/${_.kebabCase(node.imprintName)}`,
+            component: path.resolve(`./src/templates/imprint-page.js`),
+            context: {
+              id: node.imprintID,
+              name: node.imprintName
+            },
+          })
+        })
+  
+        
         const RotSeries = result.data.rotMain.distinct
         RotSeries.forEach((rot) => {
           createPage({
@@ -365,14 +401,11 @@ exports.createSchemaCustomization = ({ actions }) => {
           })
         })
 
-       
-        
 
       })
       
     }
 
- 
 
     exports.onCreateWebpackConfig = ({ actions, stage, loaders, plugins }) => {
       actions.setWebpackConfig({

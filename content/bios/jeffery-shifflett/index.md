@@ -4,7 +4,7 @@ title: Jeffrey Shifflett
 staff_name: Jeff Shifflett
 profile_photo: ""
 name_slug: jeffrey-shifflett
-job_title: Business Manager
+job_title: Director of Finance and Operations
 department:
   - OPS
 email: jgs7u​@​virginia.edu

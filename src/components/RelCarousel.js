@@ -13,7 +13,7 @@ const Gallery = ({book_obj_array}) => {
       const title = book.Title
       let booklink = "../../title/" + book.BookID
         return (
-            <Link to={booklink} key={`book${index}`} aria-label={`featured book #${index}`}><div className="image-slider-container items-center px-10 aspect-[2/3]" >
+            <Link to={booklink} key={`book${index}`} aria-label={`featured book #${index}`}><div className="image-slider-container items-center px-10 " >
                <IKContext urlEndpoint="https://ik.imagekit.io/uvapress/" >
             <IKImage width="150" height="224" path={imageKitPath}
             transformation={[{

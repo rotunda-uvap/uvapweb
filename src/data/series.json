@@ -24,10 +24,6 @@
     "seriesName": "New World Studies"
   },
   {
-    "seriesID": "CAP",
-    "seriesName": "Center Books"
-  },
-  {
     "seriesID": "AMS",
     "seriesName": "The American South Series"
   },
@@ -60,8 +56,16 @@
     "seriesName": "Constitutionalism and Democracy"
   },
   {
+    "seriesID": "CGW",
+    "seriesName": "Carter G. Woodson Institute Series: Black Studies at Work in the World"
+  },
+  {
     "seriesID": "CFF",
     "seriesName": "Cultural Frames, Framing Culture"
+  },
+  {
+    "seriesID": "WEA",
+    "seriesName": "Writing the Early Americas"
   },
   {
     "seriesID": "BNP",
@@ -92,16 +96,16 @@
     "seriesName": "Page-Barbour Lectures"
   },
   {
-    "seriesID": "CGW",
-    "seriesName": "Carter G. Woodson Institute Series: Black Studies at Work in the World"
-  },
-  {
     "seriesID": "SRC",
     "seriesName": "Studies in Religion and Culture"
   },
   {
     "seriesID": "RA",
     "seriesName": "The Revolutionary Age"
+  },
+  {
+    "seriesID": "BUS",
+    "seriesName": "Buildings of the United States"
   },
   {
     "seriesID": "REP",
@@ -116,12 +120,20 @@
     "seriesName": "Knowledge: Disciplinarity and Beyond"
   },
   {
-    "seriesID": "MIDC",
-    "seriesName": "Midcentury: Architecture, Landscape, Urbanism, and Design"
+    "seriesID": "KL",
+    "seriesName": "Kapnick Foundation Distinguished Writer-in-Residence Lectures"
   },
   {
-    "seriesID": "USCHS",
-    "seriesName": "United States Capitol Historical Society"
+    "seriesID": "RPJ",
+    "seriesName": "Race, Place, and Justice"
+  },
+  {
+    "seriesID": "BSWS",
+    "seriesName": "The Black Soldier in War and Society: New Narratives and Critical Perspectives"
+  },
+  {
+    "seriesID": "MIDC",
+    "seriesName": "Midcentury: Architecture, Landscape, Urbanism, and Design"
   },
   {
     "seriesID": "TTTB",
@@ -132,20 +144,12 @@
     "seriesName": "Jamestown Essays on Representation"
   },
   {
-    "seriesID": "CSM",
-    "seriesName": "Colonial Society of Massachusetts"
-  },
-  {
     "seriesID": "GGL",
     "seriesName": "Gay Hart Gaines Distinguished Lectures"
   },
   {
-    "seriesID": "KL",
-    "seriesName": "Kapnick Lectures"
-  },
-  {
-    "seriesID": "BUS",
-    "seriesName": "Buildings of the United States"
+    "seriesID": "PBSH",
+    "seriesName": "Peculiar Bodies: Stories and Histories"
   },
   {
     "seriesID": "SPS",
@@ -154,10 +158,6 @@
   {
     "seriesID": "RL",
     "seriesName": "Richard Lectures"
-  },
-  {
-    "seriesID": "WEA",
-    "seriesName": "Writing the Early Americas"
   },
   {
     "seriesID": "WSC",
@@ -176,8 +176,8 @@
     "seriesName": "Jefferson and His Time"
   },
   {
-    "seriesID": "PBSH",
-    "seriesName": "Peculiar Bodies: Stories and Histories"
+    "seriesID": "RFPD",
+    "seriesName": "Religious Freedom and Public Dialogue: A Robert Nusbaum Center Series: A Robert Nusbaum Center Series"
   },
   {
     "seriesID": "RMLS",
@@ -188,19 +188,23 @@
     "seriesName": "The Malcolm Lester Phi Beta Kappa Lectures on the Liberal Arts and Public Life"
   },
   {
-    "seriesID": "BUSG",
+    "seriesID": "SAHCG",
     "seriesName": "SAH/BUS City Guide"
+  },
+  {
+    "seriesID": "ASHS",
+    "seriesName": "Age Studies in Humanities and Science"
   },
   {
     "seriesID": "ERP",
     "seriesName": "Eleanor Roosevelt Papers"
   },
   {
-    "seriesID": "PAL",
-    "seriesName": "The Papers of Abraham Lincoln"
-  },
-  {
     "seriesID": "MNS",
     "seriesName": "Minds of the New South"
+  },
+  {
+    "seriesID": "PAL",
+    "seriesName": "The Papers of Abraham Lincoln"
   }
 ]

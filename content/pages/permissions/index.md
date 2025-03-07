@@ -4,7 +4,7 @@ type: page
 ---
 ###### Classroom and Academic Permissions Requests
 
-If you are requesting permission to photocopy or scan material for classroom use or place material on e-reserves, please contact: [Copyright Clearance Center](http://www.copyright.com/) 222 Rosewood Drive Danver, MA 01923 Fax: (978) 646-8600 Email: [info@copyright.com](mailto:info@copyright.com) If the Copyright Clearance Center cannot grant permission, you may request permission directly from our Intellectual Property Manager (use contact information listed below). **Please include:**
+If you are requesting permission to photocopy or scan material for classroom use or place material on e-reserves, please contact: [https://marketplace.copyright.com ](https://marketplace.copyright.com) 222 Rosewood Drive Danver, MA 01923 Fax: (978) 646-8600 Email: [info@copyright.com](mailto:info@copyright.com) If the Copyright Clearance Center cannot grant permission, you may request permission directly from our Intellectual Property Manager (use contact information listed below). **Please include:**
 
 * Name of the author(s)/editor(s) and title of the book in which the requested material was originally published, together with the inclusive page numbers you wish to reproduce (give the actual page numbers, e.g. pp. 24-48).
 * Name of school and faculty member requesting material, together with the course name and number.

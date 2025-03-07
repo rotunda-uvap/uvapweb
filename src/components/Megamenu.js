@@ -1,10 +1,11 @@
 import React from "react"
 import {
-  FaSearch,
-  FaFacebookSquare,
-  FaTwitterSquare,
-  FaInstagramSquare,
-} from "react-icons/fa"
+  FaMagnifyingGlass,
+  FaFacebook,
+  FaXTwitter,
+  FaInstagram,
+  FaBluesky,
+} from "react-icons/fa6"
 import { Link, useStaticQuery, graphql } from "gatsby"
 import "./megamenu.css"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
@@ -69,7 +70,7 @@ const uvap = getImage(data.uvaplogo)
               >
                 <div className="w-full flex flex-wrap justify-between mx-2 text-gray-400  font-sans font-thin uppercase">
                   <div className="px-4 w-full sm:w-1/2 lg:w-1/5 border-gray-600 border-b sm:border-r lg:border-b-0 pb-6 pt-6 lg:pt-3">
-                    <h3 className="font-bold text-xl text-white text-bold mb-2">
+                    <h3 className="text-xl text-white text-bold mb-2">
                       About
                     </h3>
                     <div>
@@ -281,7 +282,7 @@ const uvap = getImage(data.uvaplogo)
                     </div>
                   </ul>
                   <ul className="px-4 w-full sm:w-1/2 lg:w-1/5 border-gray-600 pb-6 pt-6 lg:pt-3">
-                    <h3 className="font-bold text-xl text-white text-bold mb-2">
+                    <h3 className="text-xl text-white text-bold mb-2">
                       Rotunda Digital
                     </h3>
                     <div>
@@ -379,26 +380,34 @@ const uvap = getImage(data.uvaplogo)
                 </a>
 
                 <a href="https://www.facebook.com/uvapress">
-                  <FaFacebookSquare
+                  <FaFacebook
                     aria-label="facebook button"
                     className="hover:text-ceci-gray-dark text-ceci-gray-mid"
                   />
                 </a>
+                <a
+              href="https://bsky.app/profile/uvapress.bsky.social"
+              aria-label="bluesky"
+              className="pr-2"
+            >
+              <FaBluesky aria-label="bluesky button"
+                    className="hover:text-ceci-gray-dark text-ceci-gray-mid" />
+            </a>
                 <a href="https://twitter.com/uvapress">
-                  <FaTwitterSquare
+                  <FaXTwitter
                     aria-label="twitter button"
                     className="hover:text-ceci-gray-dark text-ceci-gray-mid"
                   />
                 </a>
                 <a href="https://www.instagram.com/uvapress">
-                  <FaInstagramSquare
+                  <FaInstagram
                     aria-label="insta button"
                     className="hover:text-ceci-gray-dark text-ceci-gray-mid"
                   />
                 </a>
                 <Link to={`/book-search`}>
                   {" "}
-                  <FaSearch
+                  <FaMagnifyingGlass
                     aria-label="search button"
                     className="hover:text-ceci-gray-dark text-ceci-gray-mid"
                   />
@@ -411,7 +420,7 @@ const uvap = getImage(data.uvaplogo)
               >
                 <div className="container mx-auto w-full flex flex-wrap justify-between mx-2">
                   <div className="px-4 w-full sm:w-1/2 lg:w-1/5 border-gray-600 border-b sm:border-r lg:border-b-0 pb-6 pt-6 lg:pt-3">
-                    <h3 className="font-bold text-xl text-white text-bold mb-2">
+                    <h3 className="text-xl text-white text-bold mb-2">
                       About
                     </h3>
                     <div>
@@ -623,7 +632,7 @@ const uvap = getImage(data.uvaplogo)
                     </div>
                   </ul>
                   <ul className="px-4 w-full sm:w-1/2 lg:w-1/5 border-gray-600 pb-6 pt-6 lg:pt-3">
-                    <h3 className="font-bold text-xl text-white text-bold mb-2">
+                    <h3 className="text-xl text-white text-bold mb-2">
                       Rotunda Digital
                     </h3>
                     <div>

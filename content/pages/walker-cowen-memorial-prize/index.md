@@ -3,15 +3,17 @@ type: page
 templateKey: page
 title: Walker Cowen Memorial Prize
 ---
-##### 2024 Walker Cowen Manuscript Prize Competition in Eighteenth-Century Studies
+##### 2025 Walker Cowen Manuscript Prize Competition in Eighteenth-Century Studies
 
 We invite submissions for the Walker Cowen Memorial Prize. The prize is awarded to the author of a scholarly book-length manuscript in eighteenth-century studies, including the Americas and the Atlantic world. Submissions may be in history (including history of science), literature, philosophy, or the arts. The competition is held annually. The winner of the Cowen Prize will receive a $5,000 award and will be offered an advance publishing contract by the University of Virginia Press. The prize honors the late Walker Cowen, second Director of the Press from 1969 until his death in 1987. [Click here for an official application form](https://www.upress.virginia.edu/walker-cowen-application.pdf). 
 
 **Request an application form or send queries to:** Angie Hogan The University of Virginia Press PO Box 400318 Charlottesville, VA 22904-4318 [arh2h@virginia.edu](mailto:arh2h@virginia.edu) 
 
-**Application deadline** To be considered for the 2024 award, manuscripts should be submitted no later than November 1, 2023. Manuscripts will not be returned. Foreign-language works first published in Europe will also be considered for the prize and for translation into English. Announcement of the winning manuscript will be made in April 2024. 
+**Application deadline** To be considered for the 2025 award, manuscripts should be submitted no later than November 1, 2024. Manuscripts will not be returned. Foreign-language works first published in Europe will also be considered for the prize and for translation into English. Announcement of the winning manuscript will be made in April 2025. 
 
 **Previous Winners**
+
+Christopher R. Pearl *[Declarations of Independence: Indigenous Resilience, Colonial Rivalries, and the Cost of Revolution](https://www.upress.virginia.edu/title/10016/)*
 
 Rebekah Mitsein *[African Impressions: How African Worldviews Shaped the British Geographical Imagination across the Early Enlightenment](https://www.upress.virginia.edu/title/5704)*
 

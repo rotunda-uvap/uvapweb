@@ -2,12 +2,13 @@ import React from "react"
 import { Link, useStaticQuery, graphql } from "gatsby"
 import {
   FaPhone,
-  FaMapMarkedAlt,
+  FaMapLocation,
   FaEnvelope,
-  FaFacebookSquare,
-  FaTwitterSquare,
-  FaInstagramSquare,
-} from "react-icons/fa"
+  FaFacebook,
+  FaXTwitter,
+  FaInstagram,
+  FaBluesky,
+} from "react-icons/fa6"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import FooterLink from "./FooterLink"
 
@@ -60,28 +61,35 @@ const Footer = () => {
               aria-label="facebook"
               className="pr-2"
             >
-              <FaFacebookSquare className="text-3xl" />
+              <FaFacebook className="text-3xl" />
+            </a>
+            <a
+              href="https://bsky.app/profile/uvapress.bsky.social"
+              aria-label="bluesky"
+              className="pr-2"
+            >
+              <FaBluesky className="text-3xl" />
             </a>
             <a
               href="https://twitter.com/uvapress"
               aria-label="twitter"
               className="pr-2"
             >
-              <FaTwitterSquare className="text-3xl" />
+              <FaXTwitter className="text-3xl" />
             </a>
             <a
               href="https://www.instagram.com/uvapress"
               aria-label="instagram"
               className="pr-2"
             >
-              <FaInstagramSquare className="text-3xl" />
+              <FaInstagram className="text-3xl" />
             </a>
           </div>
         </section>
         <section className="flex flex-col basis-1/4 border-b-2 md:border-b-0">
           <h6 className="hidden">Contact Us</h6>
           <div id="address" className="flex flex-row py-2">
-            <FaMapMarkedAlt
+            <FaMapLocation
               className="hidden md:block self-center justify-self-center text-2xl"
               aria-label="physical address"
             />

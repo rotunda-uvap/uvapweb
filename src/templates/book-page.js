@@ -7,7 +7,7 @@ import BookHorizontalTabs from "../components/BookHorizontalTabs"
 import SeO from "../components/SeoComponent"
 import ShareButtons from "../components/ShareButtons"
 import kebabCase from "lodash/kebabCase"
-import Related from "../components/search/Related"
+// import Related from "../components/search/Related"
 
 
 const bookPage = ({ data }) => {
@@ -129,12 +129,15 @@ const bookPage = ({ data }) => {
           <h4 className="hidden md:block  pb-3 font-thin font-sans uppercase tracking-booped leading-snug ">{book.Title}</h4>
           <div className="md:hidden text-2xl text-center font-thin uppercase tracking-booped font-sans">{book.Title}</div>
 
-          {book.InternalSeriesVolume && (
+       {/*    {book.InternalSeriesVolume && (
             <h6 className="py-3">{book.InternalSeriesVolume}</h6>
-          )}
+          )} */}
 
           {book.Subtitle && (
-            <h6 className="text-center md:text-left italic py-2 md:py-0 font-thin text-ceci-gray-mid tracking-booped">{book.Subtitle}</h6>
+            <h6 className="text-center md:text-left italic py-2 md:py-0 font-thin text-ceci-gray-mid tracking-booped">{book.Subtitle} 
+            {book.InternalSeriesVolume && (
+              <span>— {book.InternalSeriesVolume}</span>
+            )}</h6>
           )}
 
           <h6 className="py-2 font-display text-center md:text-left">
@@ -259,6 +262,27 @@ const bookPage = ({ data }) => {
                       
                     </div>
                   )}
+
+                  {book.Imprint && (
+                    <div className="flex flex-col md:flex-row place-items-center">
+                      <span className="text-sm xs:py-4 sm:py-4 md:py-0 font-thin uppercase pr-5 text-ceci-gray-mid tracking-wide">
+                        imprint:
+                      </span> 
+                      <ul className="flex flex-col md:flex-row md:flex-wrap gap-4">
+                       {book.Imprint.map( (imp, index) => (
+                        <li  key={`imp${index}`}><button className="bg-greige hover:bg-white font-thin text-sm rounded-md text-ceci-gray-mid p-2 tracking-wide">
+                        <Link to={`../../imprints/${kebabCase(imp.imprintName)}`} className="tracking-wide uppercase">
+                          {imp.imprintName}
+                        </Link>
+                      </button></li>
+                       )
+
+                       )}</ul>
+                      
+                    </div>
+                  )}
+
+                  
                  <section>
           {book.Prizes && (
             <div className="py-2 flex-row inline-flex items-center w-full leading-normal text-gray-700">
@@ -341,14 +365,14 @@ const bookPage = ({ data }) => {
         </section>
       )}
 
- 
+ {/* Algolia Related: removed 5/28/2024
   <section className="pt-4 border-t-2" id="relatedProducts">
      <span className="text-xs uppercase  text-ceci-gray-mid tracking-wider">
            You May Also Like:
           </span>
      <Related productObjectID={book.id}/>
      </section>
-
+ */}
      
 
     </div>
@@ -402,6 +426,10 @@ export const query = graphql`
       Subjects {
         subjectID
         name
+      }
+      Imprint {
+        imprintID
+        imprintName
       }
     }
     file(relativePath: { eq: $imageid }) {

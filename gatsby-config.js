@@ -68,6 +68,13 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        path: `${__dirname}/content/imprintinfo`,
+        name: `imprintinfo`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
         path: `${__dirname}/content/homepage`,
         name: `homepage`,
       },
@@ -154,7 +161,7 @@ module.exports = {
             }
           },
           "gatsby-remark-responsive-iframe",
-          {
+         /*  {
             resolve: `gatsby-remark-relative-images`,
             options: {
               // [Optional] The root of "media_folder" in your config.yml
@@ -167,7 +174,7 @@ module.exports = {
               // No fields are excluded by default
               exclude: ['featured.skip'],
             },
-          },
+          }, */
           {
             resolve: `gatsby-remark-images`,
             options: { maxWidth: 300 },
@@ -330,7 +337,16 @@ module.exports = {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
         host: 'https://www.upress.virginia.edu',
-        policy: [{ userAgent: '*', allow: '/' }]
+        policy: [{ userAgent: '*', allow: '/' },
+        { userAgent: 'AhrefsBot', disallow: '/' },
+        { userAgent: 'MJ12bot', disallow: '/' },
+        { userAgent: 'SemrushBot', disallow: '/' },
+        { userAgent: 'DotBot', disallow: '/' },
+        { userAgent: 'Baiduspider', disallow: '/' },
+        { userAgent: 'YandexBot', disallow: '/' },
+        { userAgent: 'Sogou Spider', disallow: '/' },
+        { userAgent: 'Exabot', disallow: '/' }
+        ]
       }
     }, 
     "gatsby-plugin-meta-redirect",

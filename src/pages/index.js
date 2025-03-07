@@ -38,7 +38,8 @@ const Home = ({ data }) => {
 
 </section>
 
-<section className="py-4 border-b-2 border-gray-100">
+<section className="py-4 border-b-2 border-gray-100 greige w100">
+<SectionHeader text="ROTUNDA DIGITAL IMPRINT"/>
 <RotundaNews/>
 </section>
        
@@ -46,10 +47,10 @@ const Home = ({ data }) => {
 
   
   <section className="py-4 border-b-2 border-gray-100">
-         <SectionHeader text="Featured Collection"/>
-
+         <SectionHeader text="IN THE NEWS"/>
        <FeatColl/>
        </section>
+
   <section className="py-4 border-b-2 border-gray-100">
     <SectionHeader text="Open Access"/>
           <div className="flex flex-col items-center"><a href="https://open.upress.virginia.edu/">
@@ -114,7 +115,7 @@ export const query = graphql`
         )
       }
     }
-    catalogimage: file(relativePath: { eq: "spring24.jpg" }) {
+    catalogimage: file(relativePath: { eq: "spring25.jpg" }) {
       childImageSharp {
         gatsbyImageData(
           placeholder: BLURRED

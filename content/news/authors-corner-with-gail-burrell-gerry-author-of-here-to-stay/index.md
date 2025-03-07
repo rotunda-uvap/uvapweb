@@ -1,0 +1,32 @@
+---
+templateKey: news
+type: author-corner
+title: Author's Corner with Gail Burrell Gerry, author of HERE TO STAY
+image: gailbgerry1.jpeg
+related_book:
+  - "10076"
+date: 2025-03-07
+---
+Today, we are happy to bring you our conversation with Gail Burrell Gerry, author of *Here to Stay: The Story of the Class of Women Who Coeducated the University of Virginia*
+
+*What inspired you to write this book?* 
+
+I was increasingly troubled by the language and actions against women during the run-up to the 2016 election. The GOP candidate called his opponent, one of the first women candidates for the presidency, derogatory names, criticized her appearance, and interrogated her very public marriage. His rhetoric gave rise to a flood of anti-female postings on-line, and to increased hostility and aggression towards women. After he was elected, my daughter attended a northern Virginia NOW meeting and told me that a woman in attendance self-identified as having been a member of the first class of women at UVA, and with tears in her eyes, said the election brought back memories of UVA. This made me wonder if some of my memories also triggered my emotions around the election. I began to look for things that had been written about our class, the first cadre to enter as first-years, and was surprised that there were no books and very few studies or articles written about us. In fact, very little had been written about UVA’s coeducational journey period. Because of that, there is more history included in the book than I originally intended, but the focus is still the human side of institutional transformation.
+
+*What did you learn and what are you hoping readers will learn from your book?* 
+
+Oh, my goodness! There were so many simple facts circulating that simply weren’t true. Things as basic as the number of women who enrolled. Part of the issue, I now know, is there is limited documentation and the only way to access historical information is to dig through files in the archives. When I finally found the official document the Admissions Director, Ernie Ern, sent to the state, I was able to confirm that 367 women attended as first years in 1970 and 301 transfers enrolled. Other myths include the story that coeducation would have happened without a lawsuit. UVA would have eventually admitted women but not on an equal basis as men. The administration’s plan was to preserve the “maleness” of the student body by limiting the number of women. The fact that UVA was the last public university to go coed says a lot about the University’s culture. It is also quite clear that the key administrators that then-President Shannon appointed to lead coeducation committees slow-walked their efforts, believing, erroneously, that if there was a lawsuit (and UVA officials were warned several times that one was eminent) it wouldn’t be successful. The most important lesson, I think, is that you can hold memories of challenges and difficulties and memories of opportunities, fun, and joy. Both of those things can exist together—and they did! Overwhelmingly, the women I talked to look back at their UVA years with great fondness.
+
+*What surprised you the most in the process of writing your book?* 
+
+How difficult it was to find information about our class of women. The last half of my career I was a researcher and worked on large evaluation and research projects and I was floored that so little data was collected on the women in our class. We now know how many entered but we don’t know how many of the original 367 returned our second year. Nor how many graduated. We don’t know with any certainty how many were African American, Hispanic, or Asian and what the academic journey was like for them. The UVA departments that I would have thought would have this information said it wasn’t until the early 1980s that everything was computerized. I am hopeful when some of the key players from our era donate their papers to the archives, we might have more information. I really had to dig to find the information I did find, and some of it, including information from the committees President Shannon appointed to study, and then ultimately implement, coeducation was quite surprising. It was not always smooth going.
+
+*What’s your favorite anecdote from your book?*
+
+That is a tough one. There were so many wonderful stories that I heard. One that I thought was interesting was that several women told me that they have clear memories of The Moody Blues song, “Nights in White Satin” being played “from a dorm up the hill” every night at 11 PM. They said that today when they hear that song, they are transported to 1970! Many talked about the music from those years still being their favorite. I did longer profiles of five classmates as well as Virginia Scott, who entered the year before we did, and I really like those because I was able to tell a little bit of their journeys beyond UVA to becoming the women they are today. And, of course, the memories of our first week on Grounds are still so vivid for so many of us. Some of us didn’t know the backstory to coeducation (a personal example of this is that I had applied prior to the lawsuit ruling in 1969, not realizing UVA was all male), and the energy and excitement—and sometimes chaos—of our first week is something most of us will never forget.
+
+*What’s next?* 
+
+I am excited to connect with classmates and others after they read the book. We had a pre-launch event last May at our 50th reunion and there was laughter, tears, singing and dancing….and many, many stories. But there was not enough time for us to really go deep into them. I’m hoping this book serves as a launchpad for others to tell their stories. The years between the ages of 18 to 22 are a transformational part of everyone’s origin story, so I am hoping this book resonates with readers far beyond my classmates, whether they’re members of the class of 1974, UVA grads, or other folks who have had different life experiences. 
+
+On a personal level, I am polishing a novel that I have been working on since, in the words of Paul Simon, “I wore a younger \[wo]man’s clothes.” FLYING BLIND is the story of a middle-aged “reset,” and it’s about second chances. Even in later middle age, I find it hopeful, and my sincere wish is that when it is published, readers will as well.

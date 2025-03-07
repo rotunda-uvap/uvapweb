@@ -80,8 +80,16 @@
     "Title": "City of Trees"
   },
   {
+    "BookID": "10093",
+    "Title": "Queer Virginia"
+  },
+  {
     "BookID": "4610",
     "Title": "Upon Provincialism"
+  },
+  {
+    "BookID": "10087",
+    "Title": "Archival Communities"
   },
   {
     "BookID": "2513",
@@ -128,8 +136,16 @@
     "Title": "Garbage In, Garbage Out"
   },
   {
+    "BookID": "10050",
+    "Title": "Roses in December"
+  },
+  {
     "BookID": "1967",
     "Title": "Kodak and the Lens of Nostalgia"
+  },
+  {
+    "BookID": "10044",
+    "Title": "Ghosts and Their Hosts"
   },
   {
     "BookID": "3816",
@@ -181,7 +197,7 @@
   },
   {
     "BookID": "3037",
-    "Title": "Twenty Cases Suggestive of Reincarnation, 2d"
+    "Title": "Twenty Cases Suggestive of Reincarnation"
   },
   {
     "BookID": "1620",
@@ -464,6 +480,10 @@
     "Title": "Women in Exile"
   },
   {
+    "BookID": "10079",
+    "Title": "The Elections of 2024"
+  },
+  {
     "BookID": "4822",
     "Title": "Postelection Conflict Management in Nigeria"
   },
@@ -480,6 +500,10 @@
     "Title": "Spectacular Suffering"
   },
   {
+    "BookID": "10045",
+    "Title": "Charles Lutwidge Dodgson (Lewis Carroll)"
+  },
+  {
     "BookID": "1966",
     "Title": "Knowledges"
   },
@@ -494,6 +518,10 @@
   {
     "BookID": "1972",
     "Title": "Landon Carter"
+  },
+  {
+    "BookID": "10051",
+    "Title": "Comforting Myths"
   },
   {
     "BookID": "2248",
@@ -648,6 +676,10 @@
     "Title": "Exile: According to Julia"
   },
   {
+    "BookID": "10084",
+    "Title": "Architectures of Slavery"
+  },
+  {
     "BookID": "3168",
     "Title": "William and Henry James"
   },
@@ -658,6 +690,10 @@
   {
     "BookID": "26",
     "Title": "The Big House after Slavery"
+  },
+  {
+    "BookID": "10090",
+    "Title": "A Soldier's Life"
   },
   {
     "BookID": "4613",
@@ -706,6 +742,14 @@
   {
     "BookID": "1964",
     "Title": "Kingsmill Plantation, 1619-1800"
+  },
+  {
+    "BookID": "10047",
+    "Title": "Watchdogs"
+  },
+  {
+    "BookID": "10053",
+    "Title": "Lewis Carroll"
   },
   {
     "BookID": "3801",
@@ -829,7 +873,7 @@
   },
   {
     "BookID": "3236",
-    "Title": "\"The Most Segregated City in America\""
+    "Title": "The \"Most Segregated City in America\""
   },
   {
     "BookID": "5647",
@@ -1008,12 +1052,20 @@
     "Title": "Lake Fishing in Virginia"
   },
   {
+    "BookID": "10052",
+    "Title": "Victorian Nightshades"
+  },
+  {
     "BookID": "4809",
     "Title": "Best New Poets 2013"
   },
   {
     "BookID": "3800",
     "Title": "Take Care of the Living"
+  },
+  {
+    "BookID": "10046",
+    "Title": "Matoaka, Pocahontas, Rebecca"
   },
   {
     "BookID": "5530",
@@ -1048,6 +1100,10 @@
     "Title": "Political Development and the New Realism in Sub-Saharan Africa"
   },
   {
+    "BookID": "10091",
+    "Title": "Confessing the Flesh"
+  },
+  {
     "BookID": "4174",
     "Title": "Parallel Worlds"
   },
@@ -1062,6 +1118,10 @@
   {
     "BookID": "2277",
     "Title": "Postslavery Literatures in the Americas"
+  },
+  {
+    "BookID": "10085",
+    "Title": "The Importance of Being Different"
   },
   {
     "BookID": "5097",
@@ -1188,6 +1248,10 @@
     "Title": "Visuality for Architects"
   },
   {
+    "BookID": "10081",
+    "Title": "Revolutionary Diplomacy"
+  },
+  {
     "BookID": "2273",
     "Title": "Possession, Ecstasy, and Law in Ewe Voodoo"
   },
@@ -1234,6 +1298,14 @@
   {
     "BookID": "4819",
     "Title": "Grief and Meter"
+  },
+  {
+    "BookID": "10042",
+    "Title": "Those Who Stayed"
+  },
+  {
+    "BookID": "10056",
+    "Title": "Landscape Fieldwork"
   },
   {
     "BookID": "5454",
@@ -1286,6 +1358,10 @@
   {
     "BookID": "5483",
     "Title": "We Are Kings"
+  },
+  {
+    "BookID": "10136",
+    "Title": "The Papers of James Madison"
   },
   {
     "BookID": "4979",
@@ -1496,6 +1572,10 @@
     "Title": "Landscape and Images"
   },
   {
+    "BookID": "10057",
+    "Title": "Saving the Chesapeake"
+  },
+  {
     "BookID": "4818",
     "Title": "The Correspondence of Thomas Hutchinson"
   },
@@ -1538,6 +1618,10 @@
   {
     "BookID": "36",
     "Title": "Professing Sincerity"
+  },
+  {
+    "BookID": "10080",
+    "Title": "How College Presidents Succeed"
   },
   {
     "BookID": "2514",
@@ -1724,8 +1808,16 @@
     "Title": "The Bourgeois Interior"
   },
   {
+    "BookID": "10082",
+    "Title": "Before Manifest Destiny"
+  },
+  {
     "BookID": "1792",
     "Title": "Hidden Lives"
+  },
+  {
+    "BookID": "10069",
+    "Title": "Portrait of a Patriot"
   },
   {
     "BookID": "5292",
@@ -1738,6 +1830,10 @@
   {
     "BookID": "3191",
     "Title": "Women and Laughter"
+  },
+  {
+    "BookID": "10055",
+    "Title": "The Evolution of a Rural Free Black Community"
   },
   {
     "BookID": "3807",
@@ -1802,6 +1898,10 @@
   {
     "BookID": "4952",
     "Title": "Finding Justice"
+  },
+  {
+    "BookID": "10135",
+    "Title": "Hiking the AT in the Virginias"
   },
   {
     "BookID": "1427",
@@ -1928,6 +2028,10 @@
     "Title": "Buildings of Hawaii"
   },
   {
+    "BookID": "10134",
+    "Title": "Creative Regionalism"
+  },
+  {
     "BookID": "3972",
     "Title": "The Selected Papers of John Jay"
   },
@@ -1992,12 +2096,24 @@
     "Title": "Fatal Politics"
   },
   {
+    "BookID": "10040",
+    "Title": "The Papers of George Washington"
+  },
+  {
+    "BookID": "10054",
+    "Title": "A Waltz"
+  },
+  {
     "BookID": "3806",
     "Title": "American Iconographic"
   },
   {
     "BookID": "4827",
     "Title": "Democracy's Muse"
+  },
+  {
+    "BookID": "10068",
+    "Title": "Plowswords"
   },
   {
     "BookID": "5293",
@@ -2012,6 +2128,10 @@
     "Title": "To Organize the Sovereign People"
   },
   {
+    "BookID": "10083",
+    "Title": "The Belgian Friendship Building"
+  },
+  {
     "BookID": "4600",
     "Title": "Schooling Jim Crow"
   },
@@ -2021,7 +2141,7 @@
   },
   {
     "BookID": "6003",
-    "Title": "The Cosmos, the Person, and the Sa¯dhana"
+    "Title": "The Cosmos, the Person, and the Sadhana"
   },
   {
     "BookID": "1022",
@@ -2212,12 +2332,20 @@
     "Title": "Unnatural Frenchmen"
   },
   {
+    "BookID": "10033",
+    "Title": "White Tongue, Brown Skin"
+  },
+  {
     "BookID": "3861",
     "Title": "The Papers of George Washington"
   },
   {
     "BookID": "3875",
     "Title": "The Papers of George Washington"
+  },
+  {
+    "BookID": "10027",
+    "Title": "Milieus of Minutiae"
   },
   {
     "BookID": "4854",
@@ -2500,6 +2628,14 @@
     "Title": "Jefferson and the Ordeal of Liberty"
   },
   {
+    "BookID": "10026",
+    "Title": "Is Reality beyond Good and Evil?"
+  },
+  {
+    "BookID": "10032",
+    "Title": "The Scientist Turned Spy"
+  },
+  {
     "BookID": "4869",
     "Title": "American Road Narratives"
   },
@@ -2700,6 +2836,10 @@
     "Title": "Buildings of Michigan"
   },
   {
+    "BookID": "3679",
+    "Title": "Scandal at Bizarre"
+  },
+  {
     "BookID": "4670",
     "Title": "The Natural, Moral, and Political History of Jamaica, and the Territories thereon Depending"
   },
@@ -2740,6 +2880,10 @@
     "Title": "Living Diversity"
   },
   {
+    "BookID": "10024",
+    "Title": "Histories of Science"
+  },
+  {
     "BookID": "1907",
     "Title": "Jefferson at Monticello"
   },
@@ -2754,6 +2898,10 @@
   {
     "BookID": "4843",
     "Title": "Natural Virginia"
+  },
+  {
+    "BookID": "10018",
+    "Title": "The Grand Collaboration"
   },
   {
     "BookID": "3692",
@@ -3008,6 +3156,10 @@
     "Title": "Bridges to Memory"
   },
   {
+    "BookID": "10019",
+    "Title": "Love, Etc."
+  },
+  {
     "BookID": "4842",
     "Title": "Imagining a Nation"
   },
@@ -3200,6 +3352,10 @@
     "Title": "A Storm over This Court"
   },
   {
+    "BookID": "10021",
+    "Title": "Désirée Congo"
+  },
+  {
     "BookID": "1916",
     "Title": "The Domestic Life of Thomas Jefferson"
   },
@@ -3253,7 +3409,7 @@
   },
   {
     "BookID": "1692",
-    "Title": "From Morning To Night"
+    "Title": "From Morning to Night"
   },
   {
     "BookID": "4932",
@@ -3266,6 +3422,10 @@
   {
     "BookID": "5386",
     "Title": "Evangelical Gothic"
+  },
+  {
+    "BookID": "10141",
+    "Title": "The Papers of James Madison"
   },
   {
     "BookID": "3244",
@@ -3464,12 +3624,20 @@
     "Title": "Religion and Violence in a Secular World"
   },
   {
+    "BookID": "10034",
+    "Title": "Edgar Allan Poe"
+  },
+  {
     "BookID": "1917",
     "Title": "Jefferson's Empire"
   },
   {
     "BookID": "3872",
     "Title": "In Good Keeping"
+  },
+  {
+    "BookID": "10020",
+    "Title": "American Koan"
   },
   {
     "BookID": "10008",
@@ -3532,8 +3700,12 @@
     "Title": "Mourning the Presidents"
   },
   {
+    "BookID": "5026",
+    "Title": "The War Bells Have Rung"
+  },
+  {
     "BookID": "2991",
-    "Title": "Thomas Jefferson's Flower Garden at Monticello, 3rd ed"
+    "Title": "Thomas Jefferson's Flower Garden at Monticello"
   },
   {
     "BookID": "5756",
@@ -3813,7 +3985,7 @@
   },
   {
     "BookID": "1486",
-    "Title": "DeTocqueville and the French Translated by Beth G Raps"
+    "Title": "DeTocqueville and the French"
   },
   {
     "BookID": "2831",
@@ -3840,6 +4012,10 @@
     "Title": "The Papers of George Washington"
   },
   {
+    "BookID": "5179",
+    "Title": "Race"
+  },
+  {
     "BookID": "5637",
     "Title": "Looking for Other Worlds"
   },
@@ -3850,6 +4026,10 @@
   {
     "BookID": "5145",
     "Title": "We Face the Dawn"
+  },
+  {
+    "BookID": "10157",
+    "Title": "Maxims and the Mind"
   },
   {
     "BookID": "3905",
@@ -3977,7 +4157,7 @@
   },
   {
     "BookID": "5958",
-    "Title": "The Minutes of the Dartmouth, Massachusetts, Monthly Meeting of Friends, 1619-1785"
+    "Title": "The Minutes of the Dartmouth, Massachusetts, Monthly Meeting of Friends, 1699-1785"
   },
   {
     "BookID": "1294",
@@ -4098,6 +4278,10 @@
   {
     "BookID": "5202",
     "Title": "Four Fools in the Age of Reason"
+  },
+  {
+    "BookID": "10012",
+    "Title": "The Papers of George Washington"
   },
   {
     "BookID": "4691",
@@ -4376,6 +4560,10 @@
     "Title": "Enlightenment Underground"
   },
   {
+    "BookID": "10013",
+    "Title": "The Papers of George Washington"
+  },
+  {
     "BookID": "5203",
     "Title": "The Cowboy Capitalist"
   },
@@ -4544,8 +4732,16 @@
     "Title": "Studies in Bibliography"
   },
   {
+    "BookID": "10011",
+    "Title": "The Farmer, the Gastronome, and the Chef"
+  },
+  {
     "BookID": "4692",
     "Title": "Failed Frontiersmen"
+  },
+  {
+    "BookID": "10039",
+    "Title": "Searching for Jimmie Strother"
   },
   {
     "BookID": "4876",
@@ -4768,6 +4964,10 @@
     "Title": "Pilgrimage to Vallombrosa"
   },
   {
+    "BookID": "10010",
+    "Title": "Three Talks"
+  },
+  {
     "BookID": "10004",
     "Title": "Buildings of Missouri"
   },
@@ -4829,7 +5029,7 @@
   },
   {
     "BookID": "5957",
-    "Title": "The Minutes of the Dartmouth, Massachusetts, Monthly Meeting of Friends, 1619-1785"
+    "Title": "The Minutes of the Dartmouth, Massachusetts, Monthly Meeting of Friends, 1699-1785"
   },
   {
     "BookID": "2792",
@@ -5008,8 +5208,16 @@
     "Title": "Between Sovereignty and Anarchy"
   },
   {
+    "BookID": "10000",
+    "Title": "The Ecological Plot"
+  },
+  {
     "BookID": "4697",
     "Title": "Prophetic Remembrance"
+  },
+  {
+    "BookID": "10014",
+    "Title": "Virginia Cider"
   },
   {
     "BookID": "1937",
@@ -5260,6 +5468,14 @@
     "Title": "Wandering Memory"
   },
   {
+    "BookID": "10015",
+    "Title": "Race, Politics, and Reconstruction"
+  },
+  {
+    "BookID": "10001",
+    "Title": "Design through Time"
+  },
+  {
     "BookID": "4866",
     "Title": "Settler Jamaica in the 1750s"
   },
@@ -5470,6 +5686,10 @@
   {
     "BookID": "4694",
     "Title": "Freud and Augustine in Dialogue"
+  },
+  {
+    "BookID": "10017",
+    "Title": "The Great Elector's Table"
   },
   {
     "BookID": "4680",
@@ -5712,12 +5932,20 @@
     "Title": "Founding Friendship"
   },
   {
+    "BookID": "10002",
+    "Title": "The Last of the African Kings"
+  },
+  {
     "BookID": "4859",
     "Title": "Dream House"
   },
   {
     "BookID": "3850",
     "Title": "Romantic Writing and the Empire of Signs"
+  },
+  {
+    "BookID": "10016",
+    "Title": "Declarations of Independence"
   },
   {
     "BookID": "4695",
@@ -5934,6 +6162,10 @@
   {
     "BookID": "3189",
     "Title": "Women and British Aestheticism"
+  },
+  {
+    "BookID": "10065",
+    "Title": "The Tennessee Williams Annual Review"
   },
   {
     "BookID": "1946",
@@ -6192,6 +6424,10 @@
     "Title": "The Papers of Francis Bernard"
   },
   {
+    "BookID": "10064",
+    "Title": "Students to Soldiers"
+  },
+  {
     "BookID": "4181",
     "Title": "Unnatural Rebellion"
   },
@@ -6360,6 +6596,10 @@
     "Title": "Building Charleston"
   },
   {
+    "BookID": "10099",
+    "Title": "Best New Poets 2024"
+  },
+  {
     "BookID": "6019",
     "Title": "Dishonored Americans"
   },
@@ -6380,6 +6620,10 @@
     "Title": "Framing the World"
   },
   {
+    "BookID": "10066",
+    "Title": "Spectacle Earth"
+  },
+  {
     "BookID": "1951",
     "Title": "Juries and Judges versus the Law"
   },
@@ -6390,6 +6634,10 @@
   {
     "BookID": "2280",
     "Title": "Power and the Praise Poem"
+  },
+  {
+    "BookID": "10072",
+    "Title": "The Shenandoah Valley's Interstates"
   },
   {
     "BookID": "1979",
@@ -6660,6 +6908,10 @@
     "Title": "Utopian Geographies and the Early English Novel"
   },
   {
+    "BookID": "10073",
+    "Title": "No Exit"
+  },
+  {
     "BookID": "4828",
     "Title": "Blood from the Sky"
   },
@@ -6798,10 +7050,6 @@
   {
     "BookID": "5267",
     "Title": "A World of Disorderly Notions"
-  },
-  {
-    "BookID": "3616",
-    "Title": "The Papers of Abraham Lincoln"
   },
   {
     "BookID": "4179",
@@ -7136,6 +7384,10 @@
     "Title": "Swift to Wrath"
   },
   {
+    "BookID": "10076",
+    "Title": "Here to Stay"
+  },
+  {
     "BookID": "2284",
     "Title": "Pocahontas, Powhatan, Opechancanough"
   },
@@ -7340,6 +7592,10 @@
     "Title": "Almanac of Virginia Politics 2008"
   },
   {
+    "BookID": "10048",
+    "Title": "The Poisoning of the American Mind"
+  },
+  {
     "BookID": "4807",
     "Title": "Diversity Matters"
   },
@@ -7350,6 +7606,10 @@
   {
     "BookID": "2286",
     "Title": "Praise of the Secular"
+  },
+  {
+    "BookID": "10074",
+    "Title": "Slavery's Medicine"
   },
   {
     "BookID": "4191",
@@ -7398,6 +7658,10 @@
   {
     "BookID": "1823",
     "Title": "Hot Potato"
+  },
+  {
+    "BookID": "10100",
+    "Title": "Call Me Larry"
   },
   {
     "BookID": "4783",
@@ -7580,6 +7844,14 @@
     "Title": "The Life of William Faulkner"
   },
   {
+    "BookID": "10061",
+    "Title": "The Papers of Abraham Lincoln (Set)"
+  },
+  {
+    "BookID": "10075",
+    "Title": "From Dakota to Dixie"
+  },
+  {
     "BookID": "1956",
     "Title": "Katherine Anne Porter"
   },
@@ -7590,6 +7862,10 @@
   {
     "BookID": "4806",
     "Title": "The Papers of George Washington"
+  },
+  {
+    "BookID": "10049",
+    "Title": "The Correspondence of Thomas Hutchinson"
   },
   {
     "BookID": "4812",

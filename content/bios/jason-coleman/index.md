@@ -2,7 +2,7 @@
 templateKey: bio
 title: Jason Coleman
 staff_name: Jason Coleman
-profile_photo: ""
+profile_photo: JC.jpeg
 name_slug: jason-coleman
 job_title: Marketing and Sales Director
 department:
