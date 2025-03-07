@@ -140567,8 +140567,7 @@
       {
       "seriesID": "ROT",
       "name": "ROTUNDA Digital Editions"
-    }
-     ,
+    },
     "MainDescription": {
       "html": "<div><p>A landmark in historical scholarship, The Papers of George Washington Digital Edition encompasses five separate series and the complete diaries. This digital edition offers the full content of 77 letterpress volumes in a single online publication. You may search on full text and by date, author, or recipient across all volumes and series. The exceptional indexing of the individual print volumes is combined here into a single master index, and all internal document cross-references are linked.</p> <p>Forthcoming volumes in the Revolutionary War and Presidential series will continue to be added following their completion by the Papers of George Washington editorial project.</p></div>"
     },
@@ -140597,6 +140596,903 @@
     "CoverImageMain": "gw.jpg", 
     "URL": "https://rotunda.upress.virginia.edu/founders/GEWN.html"
     
+  },
+  {
+    "BookID": "TSJN",
+    "Title": "The Papers of Thomas Jefferson Digital Edition",
+    "Subtitle": "",
+    "PublicationDate": "2009-01-01",
+    "DaysSincePublication": 5909,
+    "EditorCredit": "James P. McClure and J. Jefferson Looney",
+    "Series": {
+      "seriesID": "ROT",
+      "name": "ROTUNDA Digital Editions"
+    },
+    "MainDescription": {
+      "html": "<div><p>Crucial to our nation’s history as author of the Declaration of Independence and third president, Thomas Jefferson was also a major figure in the Enlightenment, representing for Europeans the embodiment of the early nineteenth-century American mind. Since 1950, his writings have been compiled in two ongoing projects, The Papers of Thomas Jefferson at Princeton University, and The Papers of Thomas Jefferson: Retirement Series sponsored by the Thomas Jefferson Foundation, which documents the time between Jefferson’s return to private life and his death in 1826. Rotunda’s digital edition brings together the content of the published volumes into one searchable online resource. This XML-based edition includes all the illustrations and bibliographical content of the print edition, with the added convenience of linked cross-references and indexes.></p></div>"
+    },
+    "Reviews": null,
+    "Prizes": null,
+    "BioNote": null,
+    "Editors": [
+      "McClure, James, P", "Looney, J. Jefferson"
+    ],
+    "Subjects": [
+      {
+         "subjectID": "EarlyRepublic",
+         "name": "Early Republic"
+      },
+      {
+        "subjectID": "MemoirBiographyAutobiography",
+        "name": "Memoir, Biography, & Autobiography"
+      }
+    ],
+    "isUVAP": true,
+    "isDelaware": false,
+    "Rotunda": true,
+    "ISBNs": [
+      "9780813927114"
+    ],
+    "CoverImageMain": "tj.jpg",
+    "URL":"https://rotunda.upress.virginia.edu/founders/TSJN.html"
+    
+  },
+  {
+    "BookID": "JMDE",
+    "Title": "The Papers of James Madison Digital Edition",
+    "Subtitle": "",
+    "PublicationDate": "2010-01-01",
+    "DaysSincePublication": 5544,
+    "EditorCredit": "J.C.A. Stagg",
+    "Series": {
+      "seriesID": "ROT",
+      "name": "ROTUNDA Digital Editions"
+    },
+    "MainDescription": {
+      "html": "<div><p>The Papers of James Madison documents the life and work of one of the most important political and constitutional thinkers in our nation’s history. A vital project that continues to add new volumes, this publication has been consulted for decades by scholars and students for primary-source material by and about the fourth president. Rotunda now makes this invaluable resource available in a new online edition</p></div>"
+    },
+    "Reviews": null,
+    "Prizes": null,
+    "BioNote": null,
+    "Editors": [
+      "Stagg, J.C.A."
+    ],
+    "Subjects": [
+      {
+         "subjectID": "EarlyRepublic",
+         "name": "Early Republic"
+      },
+      {
+        "subjectID": "MemoirBiographyAutobiography",
+        "name": "Memoir, Biography, & Autobiography"
+      }
+    ],
+    "isUVAP": true,
+    "isDelaware": false,
+    "Rotunda": true,
+    "ISBNs": [
+      "97808813929286"
+    ],
+    "CoverImageMain": "jmadison.jpg",
+    "URL":"https://rotunda.upress.virginia.edu/founders/JSMN.html"
+    
+  },
+  {
+    "BookID": "ADMS",
+    "Title": "The Papers of John Adams Digital Edition",
+    "Subtitle": "",
+    "PublicationDate": "2008-01-01",
+    "DaysSincePublication": 6275,
+    "EditorCredit": "Sara Martin",
+    "Series": {
+      "seriesID": "ROT",
+      "name": "ROTUNDA Digital Editions"
+    },
+    "MainDescription": {
+      "html": "<div><p>One of the outstanding documentary editions in American scholarship, The Adams Papers collects the correspondence and other significant papers of our nation's first great political family. At the center, of course, is John Adams. Beginning with his early diaries and three volumes selected from his legal papers--documenting, among other cases, the Boston Massacre trials--this edition covers Adams’s ascent from young Boston lawyer to passionate advocate for American independence, including his time in the Continental Congress and his drafting of the Massachusetts state constitution (the oldest of the world’s active constitutions). As one of the great diplomats of the era, Adams spent eight years in Europe, called upon by his young country to negotiate treaties with France, the Netherlands, Great Britain, Prussia, and the Barbary States.</p></div>"
+    },
+    "Reviews": null,
+    "Prizes": null,
+    "BioNote": null,
+    "Editors": [
+      "Martin, Sara"
+    ],
+    "Subjects": [
+      {
+         "subjectID": "EarlyRepublic",
+         "name": "Early Republic"
+      },
+      {
+        "subjectID": "MemoirBiographyAutobiography",
+        "name": "Memoir, Biography, & Autobiography"
+      }
+    ],
+    "isUVAP": true,
+    "isDelaware": false,
+    "Rotunda": true,
+    "ISBNs": [
+      "9780813927008"
+    ],
+    "CoverImageMain": "ja.png",
+    "URL":"https://rotunda.upress.virginia.edu/founders/ADMS.html"
+    
+  },
+  {
+    "BookID": "GRMS",
+    "Title": "The Papers of Gouverneur Morris Digital Edition",
+    "Subtitle": "",
+    "PublicationDate": "2015-01-01",
+    "DaysSincePublication": 3718,
+    "EditorCredit": "Melanie Randolph Miller and Hendrina Krol",
+    "Series": {
+      "seriesID": "ROT",
+      "name": "ROTUNDA Digital Editions"
+    },
+    "MainDescription": {
+      "html": "<div><p>Gouverneur Morris played an important role in the American Revolution, made profound contributions to the Constitution (including writing its Preamble), and was the American minister to France during the height of the French Revolution. He began keeping a diary after arriving in France in 1789 and continued until his death in 1816. This Rotunda version of his diaries includes both the new UVA Press edition of his European diaries covering 1794–98 and his New York diaries from 1799 through 1816, and a corrected version of the two-volume 1939 edition of his Paris diaries from 1789–1793.</p></div>"
+    },
+    "Reviews": null,
+    "Prizes": null,
+    "BioNote": null,
+    "Editors": [
+      "Miller,Melanie Randolph", "Krol, Hendrina"
+    ],
+    "Subjects": [
+      {
+         "subjectID": "EarlyRepublic",
+         "name": "Early Republic"
+      },
+      {
+        "subjectID": "MemoirBiographyAutobiography",
+        "name": "Memoir, Biography, & Autobiography"
+      }
+    ],
+    "isUVAP": true,
+    "isDelaware": false,
+    "Rotunda": true,
+    "ISBNs": [
+      "9780813938356"
+    ],
+    "CoverImageMain": "gmorris.jpg",
+    "URL":"https://rotunda.upress.virginia.edu/founders/GRMS.html"
+    
+  },
+  {
+    "BookID": "DMDE",
+    "Title": "The Dolley Madison Digital Edition",
+    "Subtitle": null,
+    "PublicationDate": "2004-01-01",
+    "DaysSincePublication": 7736,
+    "EditorCredit": "Holly C. Shulman",
+    "Series": {
+      "seriesID": "ROT",
+      "name": "ROTUNDA Digital Editions"
+    },
+    "MainDescription": {
+      "html": "<div><p>Containing over 2,400 letters, with another thousand letters to follow in periodic updates, this XML-based archive allows users to perform simple or advanced searches by period, correspondent, or topic. The letters may also be accessed directly through a sortable list or read in chronological order. Proper names link to a glossary that identifies over 2,500 people and places, providing a unique biographical view on the elites of the early Republic.</p></div>"
+    },
+    "Reviews": null,
+    "Prizes": null,
+    "BioNote": null,
+    "Editors": [
+      "Schulman, Holly C."
+    ],
+    "Subjects": [
+      {
+         "subjectID": "EarlyRepublic",
+         "name": "Early Republic"
+      },
+      {
+        "subjectID": "MemoirBiographyAutobiography",
+        "name": "Memoir, Biography, & Autobiography"
+      }
+    ],
+    "isUVAP": true,
+    "isDelaware": false,
+    "Rotunda": true,
+    "ISBNs": [
+      "9780813922911"
+    ],
+    "CoverImageMain": "dolley.jpg",
+    "URL":"https://rotunda.upress.virginia.edu/founders/DMDE.html"
+    
+  },
+  {
+    "BookID": "MONR",
+    "Title": "The Papers of James Monroe Digital Edition",
+    "Subtitle": "",
+    "PublicationDate": "2021-01-01",
+    "DaysSincePublication": 1526,
+    "EditorCredit": "Daniel Preston",
+    "Series": {
+      "seriesID": "ROT",
+      "name": "ROTUNDA Digital Editions"
+    },
+    "MainDescription": {
+      "html": "<div><p>In a long and varied career in government, politics, diplomacy, and war culminating in two terms as president, James Monroe played critical roles in seminal events in the American experience of revolution, independence, and nation‑building. The Papers of James Monroe provides easy access to a wide selection of original material, inviting a fresh assessment of this important figure and his legacy.</p></div>"
+    },
+    "Reviews": null,
+    "Prizes": null,
+    "BioNote": null,
+    "Editors": [
+      "Preston, Daniel"
+    ],
+    "Subjects": [
+      {
+         "subjectID": "EarlyRepublic",
+         "name": "Early Republic"
+      },
+      {
+        "subjectID": "MemoirBiographyAutobiography",
+        "name": "Memoir, Biography, & Autobiography"
+      }
+    ],
+    "isUVAP": true,
+    "isDelaware": false,
+    "Rotunda": true,
+    "ISBNs": [
+      "9780813947532"
+    ],
+    "CoverImageMain": "monroe.jpg",
+    "URL":"https://rotunda.upress.virginia.edu/founders/MONR.html"
+    
+  },
+  {
+    "BookID": "PKNYW",
+    "Title": "The Papers of Eliza Lucas Pinckney and Harriott Pinckney Digital Edition",
+    "Subtitle": "",
+    "PublicationDate": "2012-01-01",
+    "DaysSincePublication": 4814,
+    "EditorCredit": "Constance Schulz",
+    "Series": {
+      "seriesID": "ROT",
+      "name": "ROTUNDA Digital Editions"
+    },
+    "MainDescription": {
+      "html": "<div><p>The papers of Eliza Lucas Pinckney (1722–1793) and her daughter Harriott Pinckney Horry (1748–1830) document the lives of two observant and articulate founding-era women who were members of one of South Carolina’s leading families, as well as distinguished people in their own right. Their letters, diaries, and other documents span nearly a century (1739–1830) and provide a window on politics, social events, and people of the late colonial and early national periods, as well as the daily life of managing a household and plantation. In particular, Pinckney’s correspondence illustrates the importance of transatlantic friendships and social connections for women of her class. Horry’s correspondence documents the strength of personal ties between women that linked the elite families of the North and the South to each other even as connections were threatened by disputes over slavery, commercial differences, and political and constitutional conflict.</p></div>"
+    },
+    "Reviews": null,
+    "Prizes": null,
+    "BioNote": null,
+    "Editors": [
+      "Schulz, Constance"
+    ],
+    "Subjects": [
+      {
+         "subjectID": "EarlyRepublic",
+         "name": "Early Republic"
+      },
+      {
+        "subjectID": "MemoirBiographyAutobiography",
+        "name": "Memoir, Biography, & Autobiography"
+      }
+    ],
+    "isUVAP": true,
+    "isDelaware": false,
+    "Rotunda": true,
+    "ISBNs": [
+      "9780813932514"
+    ],
+    "CoverImageMain": "pknyw.jpg",
+    "URL":"https://rotunda.upress.virginia.edu/PinckneyHorry.html"
+    
+  },
+  {
+    "BookID": "PNKY",
+    "Title": "The Papers of Revolutionary Era Pinkney Statesmen",
+    "Subtitle": "",
+    "PublicationDate": "2015-01-01",
+    "DaysSincePublication": 3718,
+    "EditorCredit": "Constance Schulz",
+    "Series": {
+      "seriesID": "ROT",
+      "name": "ROTUNDA Digital Editions"
+    },
+    "MainDescription": {
+      "html": "<div><p>One of the leading families of colonial South Carolina and the early republic, the Pinckneys of Charleston were witnesses to—and often active participants in—many of the defining customs and transforming events of the early national South. This digital resource collects, for the first time, the papers of three of the most notable Pinckneys: brothers Charles Cotesworth Pinckney (1746–1825) and Thomas Pinckney (1750–1828) and their cousin Charles Pinckney (1757–1824). They served variously as young officers during the Americana Revolution, governors of the state of South Carolina, delegates to the Constitutional Convention, leading lawyers and businessmen in Charleston, and diplomats to England, France, and Spain.</p></div>"
+    },
+    "Reviews": null,
+    "Prizes": null,
+    "BioNote": null,
+    "Editors": [
+      "Schulz, Constance"
+    ],
+    "Subjects": [
+      {
+         "subjectID": "EarlyRepublic",
+         "name": "Early Republic"
+      },
+      {
+        "subjectID": "MemoirBiographyAutobiography",
+        "name": "Memoir, Biography, & Autobiography"
+      }
+    ],
+    "isUVAP": true,
+    "isDelaware": false,
+    "Rotunda": true,
+    "ISBNs": [
+      "9780813938929"
+    ],
+    "CoverImageMain": "pnkymen.jpg",
+    "URL":"https://rotunda.upress.virginia.edu/founders/PNKY.html"
+    
+  },
+  {
+    "BookID": "FFC",
+    "Title": "The Documentary History of the First Federal Congress",
+    "Subtitle": "",
+    "PublicationDate": "2020-01-01",
+    "DaysSincePublication": 1892,
+    "EditorCredit": null,
+    "Series": {
+      "seriesID": "ROT",
+      "name": "ROTUNDA Digital Editions"
+    },
+    "MainDescription": {
+      "html": "<div><p>Convening first in New York and later in Philadelphia from March 1789 to March 1791, these earliest iterations of the Senate and the House of Representatives worked with a new president to establish a government subject to the vision of a constitution less than a year in existence. Containing all of the contents of the celebrated twenty-two-volume letterpress edition from Johns Hopkins University Press, this digital edition is fully searchable and interoperable with other titles in Rotunda’s American Founding Era Collection.</p></div>"
+    },
+    "Reviews": null,
+    "Prizes": null,
+    "BioNote": null,
+    "Editors": null,
+    "Subjects": [
+      {
+         "subjectID": "EarlyRepublic",
+         "name": "Early Republic"
+      },
+      {
+        "subjectID": "PoliticalScience",
+        "name": "Political Science"
+      }
+    ],
+    "isUVAP": true,
+    "isDelaware": false,
+    "Rotunda": true,
+    "ISBNs": [
+      "9780813942889"
+    ],
+    "CoverImageMain": "ffcp.jpg",
+    "URL":"https://rotunda.upress.virginia.edu/founders/FFCP.html"
+    
+  },
+  {
+    "BookID": "JNJY",
+    "Title": "The Papers of John Jay Digital Edition",
+    "Subtitle": "",
+    "PublicationDate": "2014-01-01",
+    "DaysSincePublication": 4083,
+    "EditorCredit": "",
+    "Series": {
+      "seriesID": "ROT",
+      "name": "ROTUNDA Digital Editions"
+    },
+    "MainDescription": {
+      "html": "<div><p>The careers of few figures in American history have encompassed as much as did John Jay’s. His accomplishments span pre- and post-Revolutionary history and extend into all three branches of government. Best known as the first chief justice of the Supreme Court, Jay entered public service as a representative in the Continental Congress, where this Anglican member of the New York elite gradually became an ardent supporter of independence. Jay played a central role in the 1783 peace treaty with Great Britain, ending the American Revolution. Dissatisfied with the Articles of Confederation, Jay argued for the ratification of the new Constitution in pseudonymously authored articles in the Federalist Papers. When President Washington appointed Jay chief justice, the Supreme Court was a blank slate, and his papers provide a fascinating look at the creation of court procedure, much of which survives to this day. Jay’s most important act during his years as chief justice was not judicial but diplomatic--namely his negotiating the ultimately controversial 1794 Jay Treaty with Great Britain. After leaving the court, Jay continued to exercise his influence, serving two terms as governor of New York and advocating on a number of issues, including the abolition of slavery</p></div>"
+    },
+    "Reviews": null,
+    "Prizes": null,
+    "BioNote": null,
+    "Editors": [
+      "Nuxoll, Elizabeth M."
+    ],
+    "Subjects": [
+      {
+         "subjectID": "EarlyRepublic",
+         "name": "Early Republic"
+      },
+      {
+        "subjectID": "MemoirBiographyAutobiography",
+        "name": "Memoir, Biography, & Autobiography"
+      }
+    ],
+    "isUVAP": true,
+    "isDelaware": false,
+    "Rotunda": true,
+    "ISBNs": [
+      "9780813936772"
+    ],
+    "CoverImageMain": "jjay.jpg",
+    "URL":"https://rotunda.upress.virginia.edu/founders/JNJY.html"
+    
+  },
+  {
+    "BookID": "ARHN",
+    "Title": "The Papers of Alexander Hamilton Digital Edition",
+    "Subtitle": "",
+    "PublicationDate": "2011-01-01",
+    "DaysSincePublication": 5179,
+    "EditorCredit": "Harold C. Syrett",
+    "Series": {
+      "seriesID": "ROT",
+      "name": "ROTUNDA Digital Editions"
+    },
+    "MainDescription": {
+      "html": "<div><p>Remembered above all as the nation’s first great fiscal voice, Alexander Hamilton is known for the range of his accomplishments, extending into the arenas of diplomacy, warfare, political strategy, and (via Hamilton’s primary authorship of The Federalist Papers) constitutional law.</p><p>This digital edition of The Papers of Alexander Hamilton contains all twenty-seven volumes of the print edition—all the writings by and to Hamilton known to exist, some 12,500 documents—including all editorial annotations.</p></div>"
+    },
+    "Reviews": null,
+    "Prizes": null,
+    "BioNote": null,
+    "Editors": [
+      "Syrett, Harold C."
+    ],
+    "Subjects": [
+      {
+         "subjectID": "EarlyRepublic",
+         "name": "Early Republic"
+      },
+      {
+        "subjectID": "MemoirBiographyAutobiography",
+        "name": "Memoir, Biography, & Autobiography"
+      }
+    ],
+    "isUVAP": true,
+    "isDelaware": false,
+    "Rotunda": true,
+    "ISBNs": [
+      "9780813930671"
+    ],
+    "CoverImageMain": "ah.jpg",
+    "URL":"https://rotunda.upress.virginia.edu/founders/ARHN.html"
+    
+  },
+  {
+    "BookID": "JNML",
+    "Title": "The Papers of John Marshall Digital Edition",
+    "Subtitle": "",
+    "PublicationDate": "2014-01-01",
+    "DaysSincePublication": 4083,
+    "EditorCredit": "Charles F. Hobson",
+    "Series": {
+      "seriesID": "ROT",
+      "name": "ROTUNDA Digital Editions"
+    },
+    "MainDescription": {
+      "html": "<div><p>John Marshall was the longest-serving chief justice on the U.S. Supreme Court and arguably the most influential. Under his direction, the judicial branch achieved equality with the other branches of government and constitutionality was established as the crucial element in court decisions. This digital edition of Marshall’s papers includes the complete contents of the print edition and presents them in a fully searchable online environment. For students and scholars of law and history, this is the most powerful and accessible way to study the legacy of the “Great Chief Justice.”</p></div>"
+    },
+    "Reviews": null,
+    "Prizes": null,
+    "BioNote": null,
+    "Editors": [
+      "Hobson, Charles F."
+    ],
+    "Subjects": [
+      {
+         "subjectID": "EarlyRepublic",
+         "name": "Early Republic"
+      },
+      {
+        "subjectID": "MemoirBiographyAutobiography",
+        "name": "Memoir, Biography, & Autobiography"
+      }
+    ],
+    "isUVAP": true,
+    "isDelaware": false,
+    "Rotunda": true,
+    "ISBNs": [
+      "9780813936017"
+    ],
+    "CoverImageMain": "jmarshall.jpg",
+    "URL":"https://rotunda.upress.virginia.edu/founders/JNML.html"
+    
+  },
+  {
+    "BookID": "RNCN",
+    "Title": "The Documentary History of the Ratification of the Constitution",
+    "Subtitle": "",
+    "PublicationDate": "2009-01-01",
+    "DaysSincePublication": 5909,
+    "EditorCredit": null,
+    "Series": {
+      "seriesID": "ROT",
+      "name": "ROTUNDA Digital Editions"
+    },
+    "MainDescription": {
+      "html": "<div><p>This landmark work in historical and legal scholarship draws upon thousands of sources to trace the Constitution’s progress through each of the thirteen states’ conventions. The digital edition allows users to search the complete contents by date, title, author, recipient, or state affiliation and preserves the copious annotations of the print edition.</p></div>"
+    },
+    "Reviews": null,
+    "Prizes": null,
+    "BioNote": null,
+    "Editors": null,
+    "Subjects": [
+      {
+         "subjectID": "EarlyRepublic",
+         "name": "Early Republic"
+      },
+      {
+        "subjectID": "PoliticalScience",
+        "name": "Political Science"
+      }
+    ],
+    "isUVAP": true,
+    "isDelaware": false,
+    "Rotunda": true,
+    "ISBNs": [
+      "9780813927497"
+    ],
+    "CoverImageMain": "dhrc.jpg",
+    "URL":"https://rotunda.upress.virginia.edu/founders/RNCN.html"
+    
+  },
+  {
+    "BookID": "RUSH",
+    "Title": "The Letters of Benjamin Rush Digital Edition",
+    "Subtitle": "",
+    "PublicationDate": "2022-01-01",
+    "DaysSincePublication": 1161,
+    "EditorCredit": "Lyman H. Butterfield",
+    "Series": {
+      "seriesID": "ROT",
+      "name": "ROTUNDA Digital Editions"
+    },
+    "MainDescription": {
+      "html": "<div><p>A member of the Continental Congress, signer of the Declaration of Independence, surgeon general of the Continental Army, treasurer of the U.S. Mint—as well as an abolitionist and a proponent of wider access to education and the rights of women—Benjamin Rush had perhaps the most varied career of any American founder. His papers offer insights into a diverse range of issues and dramatic moments of the Revolutionary era and early republic.</p></div>"
+    },
+    "Reviews": null,
+    "Prizes": null,
+    "BioNote": null,
+    "Editors": [
+      "Butterfield, Lyman H."
+    ],
+    "Subjects": [
+      {
+         "subjectID": "EarlyRepublic",
+         "name": "Early Republic"
+      },
+      {
+        "subjectID": "MemoirBiographyAutobiography",
+        "name": "Memoir, Biography, & Autobiography"
+      }
+    ],
+    "isUVAP": true,
+    "isDelaware": false,
+    "Rotunda": true,
+    "ISBNs": [
+      "9780813948973"
+    ],
+    "CoverImageMain": "rush.jpg",
+    "URL":"https://rotunda.upress.virginia.edu/founders/RUSH.html"
+    
+  },
+  {
+    "BookID": "GRNT",
+    "Title": "The Papers of Ulysses S. Grant Digital Edition",
+    "Subtitle": "",
+    "PublicationDate": "2018-01-01",
+    "DaysSincePublication": 2622,
+    "EditorCredit": "John Y Simon and John F. Marszalek",
+    "Series": {
+      "seriesID": "ROT",
+      "name": "ROTUNDA Digital Editions"
+    },
+    "MainDescription": {
+      "html": "<div><p>Ulysses S. Grant never intended to make a career in the military, much less go into politics, but he ended up commanding the U.S. forces in perhaps the most important war America ever fought and then serving as its eighteenth president during a period of profound change. Following a brief and frustrating period of civilian life after he fought in the Mexican American War (a war he personally did not approve of), Grant reentered military life at the outbreak of the Civil War. While Abraham Lincoln cycled through a succession of generals, none of whom could defeat the Confederate forces, Grant scored major strategic victories at Shiloh and Vicksburg and in the Chattanooga Campaign. He eventually won the job of Commanding General of the Union Army, and within roughly a year accepted Robert E. Lee’s surrender at Appomattox.</p></div>"
+    },
+    "Reviews": null,
+    "Prizes": null,
+    "BioNote": null,
+    "Editors": null,
+    "Subjects": [
+      {
+        "subjectID": "CivilWarReconstruction",
+        "name": "Civil War & Reconstruction"
+      },
+      {
+        "subjectID": "MemoirBiographyAutobiography",
+        "name": "Memoir, Biography, & Autobiography"
+      }
+    ],
+    "isUVAP": true,
+    "isDelaware": false,
+    "Rotunda": true,
+    "ISBNs": [
+      "9780813941509"
+    ],
+    "CoverImageMain": "grant.jpg",
+    "URL":"https://rotunda.upress.virginia.edu/founders/GRNT.html"
+    
+  },
+  {
+    "BookID": "DWDE",
+    "Title": "The Papers of Daniel Webster Digital Edition",
+    "Subtitle": "",
+    "PublicationDate": "2018-01-01",
+    "DaysSincePublication": 2622,
+    "EditorCredit": "Charles M. Wiltse",
+    "Series": {
+      "seriesID": "ROT",
+      "name": "ROTUNDA Digital Editions"
+    },
+    "MainDescription": {
+      "html": "<div><p>Born in the final days of the American Revolution, Daniel Webster would leave his mark on the following century, of which he was one of its mightiest statesmen. His remarkable life and career illustrate like few others the central issues of that century, especially the growing rift that would undermine the union and set the stage for America’s greatest crisis.As a young attorney, Webster participated in McCulloch v. Maryland, which established implied powers and limited the power of the states to impede constitutionally valid actions taken by the federal government. As a senator, he opposed nullification by southern states, as he expressed in his legendary “Reply to Hayne” speech, and provided critical support for the Compromise of 1850. As secretary of state in 1842—the first of three separate tenures in that position, under three different presidents—Webster established the U.S.-Canada border that exists to this day. Webster served in Congress for two states (New Hampshire and Massachusetts), and, in the waning days of his Whig Party, ran for president three times. There are few roles in government he did not play, few defining issues of the mid-nineteenth century of which he did not find himself at the center.Rotunda’s digital edition of The Papers of Daniel Webster includes the complete contents of the classic fourteen-volume print edition and adds to this the power to search its documents and those of other titles in the American History platform. This powerful resource will be indispensable to students and scholars of the nineteenth century, politics, and legal history.</p></div>"
+    },
+    "Reviews": null,
+    "Prizes": null,
+    "BioNote": null,
+    "Editors": null,
+    "Subjects": [
+      {
+        "subjectID": "CivilWarReconstruction",
+        "name": "Civil War & Reconstruction"
+      },
+      {
+        "subjectID": "MemoirBiographyAutobiography",
+        "name": "Memoir, Biography, & Autobiography"
+      }
+    ],
+    "isUVAP": true,
+    "isDelaware": false,
+    "Rotunda": true,
+    "ISBNs": [
+      "9780813942032"
+    ],
+    "CoverImageMain": "dw.jpg",
+    "URL":"https://rotunda.upress.virginia.edu/founders/WBST.html"
+    
+  },
+  {
+    "BookID": "POLK",
+    "Title": "The Correspondence of James K. Polk Digital Edition",
+    "Subtitle": "",
+    "PublicationDate": "2021-01-01",
+    "DaysSincePublication": 1526,
+    "EditorCredit": "Michael David Cohen",
+    "Series": {
+      "seriesID": "ROT",
+      "name": "ROTUNDA Digital Editions"
+    },
+    "MainDescription": {
+      "html": "<div><p>Governor of Tennessee, Speaker of the House of Representatives, and eleventh president of the United States, James K. Polk was a fierce Jacksonian who expanded the nation’s boundaries more than anyone since Thomas Jefferson. He is remembered today as one of the strongest presidents of the nineteenth century. Like Andrew Jackson before him, Polk increased the power of the presidency in ways that extend to this day. When complete, this digital edition of Polk’s correspondence will include the complete contents of the print edition’s fourteen volumes. It is fully searchable, and is interoperable with other titles in the Antebellum, Civil War, and Reconstruction collection.</p></div>"
+    },
+    "Reviews": null,
+    "Prizes": null,
+    "BioNote": null,
+    "Editors": null,
+    "Subjects": [
+      {
+        "subjectID": "CivilWarReconstruction",
+        "name": "Civil War & Reconstruction"
+      },
+      {
+        "subjectID": "MemoirBiographyAutobiography",
+        "name": "Memoir, Biography, & Autobiography"
+      }
+    ],
+    "isUVAP": true,
+    "isDelaware": false,
+    "Rotunda": true,
+    "ISBNs": [
+      "9780813947518"
+    ],
+    "CoverImageMain": "polk.jpg",
+    "URL":"https://rotunda.upress.virginia.edu/founders/POLK.html"
+    
+  },
+  {
+    "BookID": "AJHN",
+    "Title": "The Papers of Andrew Johnson Digital Edition",
+    "Subtitle": "",
+    "PublicationDate": "2020-01-01",
+    "DaysSincePublication": 1892,
+    "EditorCredit": "",
+    "Series": {
+      "seriesID": "ROT",
+      "name": "ROTUNDA Digital Editions"
+    },
+    "MainDescription": {
+      "html": "<div><p>Andrew Johnson's career is notable for more than his impeachment, with much to tell us about Civil War-era politics and the complexity of Reconstruction, through a trajectory that is one of the most compelling, and strange, in presidential history. This digital edition of Johnson’s papers collects the complete contents of the print edition’s sixteen volumes, is fully searchable, and is interoperable with other titles in the Antebellum, Civil War, and Reconstruction collection.</p></div>"
+    },
+    "Reviews": null,
+    "Prizes": null,
+    "BioNote": null,
+    "Editors": null,
+    "Subjects": [
+      {
+        "subjectID": "CivilWarReconstruction",
+        "name": "Civil War & Reconstruction"
+      },
+      {
+        "subjectID": "MemoirBiographyAutobiography",
+        "name": "Memoir, Biography, & Autobiography"
+      }
+    ],
+    "isUVAP": true,
+    "isDelaware": false,
+    "Rotunda": true,
+    "ISBNs": [
+      "9780813944968"
+    ],
+    "CoverImageMain": "johnson_a.png",
+    "URL":"https://rotunda.upress.virginia.edu/founders/AWJN.html"
+    
+  },
+  {
+    "BookID": "JKSN",
+    "Title": "The Papers of Andrew Jackson Digital Edition",
+    "Subtitle": "",
+    "PublicationDate": "2015-01-01",
+    "DaysSincePublication": 3718,
+    "EditorCredit": "",
+    "Series": {
+      "seriesID": "ROT",
+      "name": "ROTUNDA Digital Editions"
+    },
+    "MainDescription": {
+      "html": "<div><p>Following a brilliant military career that brought him to national attention and set in motion the “Old Hickory” legend, Andrew Jackson was elected president in 1828. From the beginning, he stamped the highest office with his wildly individualistic character, feuding bitterly not only with enemies but his own cabinet, calling for sweeping reforms in government, and committing to a strong union while at the same time effectively terminating the Bank of the United States. A champion of the common man who nonetheless remains a contentious figure in human rights, Jackson encompasses America’s contradictions unlike anyone else, and left the presidency forever changed.</p></div>"
+    },
+    "Reviews": null,
+    "Prizes": null,
+    "BioNote": null,
+    "Editors": null,
+    "Subjects": [
+      {
+        "subjectID": "CivilWarReconstruction",
+        "name": "Civil War & Reconstruction"
+      },
+      {
+        "subjectID": "MemoirBiographyAutobiography",
+        "name": "Memoir, Biography, & Autobiography"
+      }
+    ],
+    "isUVAP": true,
+    "isDelaware": false,
+    "Rotunda": true,
+    "ISBNs": [
+      "9780813937250"
+    ],
+    "CoverImageMain": "ajackson.jpg",
+    "URL":"https://rotunda.upress.virginia.edu/founders/JKSN.html"
+    
+  },
+  {
+    "BookID": "OLMS",
+    "Title": "The Papers of Frederick Law Olmsted Digital Edition",
+    "Subtitle": "",
+    "PublicationDate": "2022-01-01",
+    "DaysSincePublication": 1161,
+    "EditorCredit": "Charles E. Beveridge",
+    "Series": {
+      "seriesID": "ROT",
+      "name": "ROTUNDA Digital Editions"
+    },
+    "MainDescription": {
+      "html": "<div><p></p></div>"
+    },
+    "Reviews": null,
+    "Prizes": null,
+    "BioNote": null,
+    "Editors": null,
+    "Subjects": [
+      {
+        "subjectID": "Architecture",
+        "name": "Architecture"
+      },
+      {
+        "subjectID": "MemoirBiographyAutobiography",
+        "name": "Memoir, Biography, & Autobiography"
+      }
+    ],
+    "isUVAP": true,
+    "isDelaware": false,
+    "Rotunda": true,
+    "ISBNs": [
+      "9780813947648"
+    ],
+    "CoverImageMain": "OLMS.jpg",
+    "URL":"https://rotunda.upress.virginia.edu/founders/OLMS.html"
+    
+  },
+  {
+    "BookID": "WILS",
+    "Title": "The Papers of Woodrow Wilson Digital Edition",
+    "Subtitle": "",
+    "PublicationDate": "2017-01-01",
+    "DaysSincePublication": 2987,
+    "EditorCredit": "Arthur S. Link",
+    "Series": {
+      "seriesID": "ROT",
+      "name": "ROTUNDA Digital Editions"
+    },
+    "MainDescription": {
+      "html": "<div><p>Taking office with a Democrat-held House and Senate, Woodrow Wilson embarked on one of the most important chapters in the Progressive movement, approving the Federal Reserve Act, establishing the Fair Trade Commission, and strongly endorsing the Nineteenth Amendment and women’s right to vote. Wilson also presided over America’s involvement in the first World War, after which he helped create the League of Nations (for which he won 1919 Nobel Peace Prize) and envisioned a policy of global democracy that came to be called “Wilsonian.” Rotunda’s digital edition of Wilson’s papers includes the complete contents of the landmark letterpress edition of the papers, with nearly 40,000 documents covering personal correspondence, academic work, and speeches, spread across 69 volumes, including a five-part index.</p></div>"
+    },
+    "Reviews": null,
+    "Prizes": null,
+    "BioNote": null,
+    "Editors": null,
+    "Subjects": [
+      {
+        "subjectID": "MemoirBiographyAutobiography",
+        "name": "Memoir, Biography, & Autobiography"
+      },
+      { 
+        "subjectID": "PoliticalScience",
+        "name": "Political Science"
+    }
+    ],
+    "isUVAP": true,
+    "isDelaware": false,
+    "Rotunda": true,
+    "ISBNs": [
+      "9780813940885"
+    ],
+    "CoverImageMain": "wilson.png",
+    "URL":"https://rotunda.upress.virginia.edu/founders/WILS.html"
+    
+  },
+  {
+    "BookID": "BTWN",
+    "Title": "The Booker T. Washington Papers Digital Edition",
+    "Subtitle": "",
+    "PublicationDate": "2021-01-01",
+    "DaysSincePublication": 1526,
+    "EditorCredit": "Louis R. Harlan and Raymond W. Smock",
+    "Series": {
+      "seriesID": "ROT",
+      "name": "ROTUNDA Digital Editions"
+    },
+    "MainDescription": {
+      "html": "<div><p>Born into slavery, Booker T. Washington became the leading voice for Black Americans at the turn of the twentieth century. Author, pioneer in higher education, adviser to presidents and business leaders, and a pillar in the emerging Black elite and middle class, Washington helped conceive a future for an educated, prosperous Black society in the wake of emancipation and Reconstruction.</p><p>The son of an enslaved Virginia woman, Washington identified education as the pathway out of poverty, a necessity for his voracious intellect, and the focus of his professional life. He served as the first president of what is now Tuskegee University, to this day one of the premier historically Black universities in America. As president he forged relationships with the most powerful philanthropists of the day, including Carnegie and Rockefeller, establishing a network of donors that reflected a belief in and talent for working with the white establishment. Washington’s landmark Atlanta Exposition Speech in 1895 called for an African American investment in industrial education and accumulation of wealth as a way of integrating Blacks into society at large. This position was not uncontroversial—passionate activists such as NAACP cofounder W. E. B. Du Bois criticized it as being too conservative—and the surrounding debates are foundational to the most vital discussions in Black discourse: how can Black Americans best advance themselves, and can true equality and equity be achieved in the face of white oppression and the legacies of segregationist public policy?</p></div>"
+    },
+    "Reviews": null,
+    "Prizes": null,
+    "BioNote": null,
+    "Editors": null,
+    "Subjects": [
+      {
+        "subjectID": "MemoirBiographyAutobiography",
+        "name": "Memoir, Biography, & Autobiography"
+      },
+      { 
+        "subjectID": "AfricanAmericanStudies",
+        "name": "African American Studies"
+    }
+    ],
+    "isUVAP": true,
+    "isDelaware": false,
+    "Rotunda": true,
+    "ISBNs": [
+      "9780813947525"
+    ],
+    "CoverImageMain": "btwn.jpg",
+    "URL":"https://rotunda.upress.virginia.edu/founders/BTWN.html"
+    
+  },
+  {
+    "BookID": "PRDE",
+    "Title": "Presidential Recordings Digital Edition",
+    "Subtitle": "",
+    "PublicationDate": "2017-01-01",
+    "DaysSincePublication": 2987,
+    "EditorCredit": "Marc J. Selverstone",
+    "Series": {
+      "seriesID": "ROT",
+      "name": "ROTUNDA Digital Editions"
+    },
+    "MainDescription": {
+      "html": "<div><p>A rich and engaging resource featuring annotated transcripts and audio recordings of the Kennedy, Johnson, Nixon, Reagan and Roosevelt White House Tapes.</p></div>"
+    },
+    "Reviews": null,
+    "Prizes": null,
+    "BioNote": null,
+    "Editors": null,
+    "Subjects": [
+      {
+        "subjectID": "ModernAmericanHistory",
+        "name": "Modern American History"
+      },
+      { 
+        "subjectID": "PoliticalScience",
+        "name": "Political Science"
+    }
+    ],
+    "isUVAP": true,
+    "isDelaware": false,
+    "Rotunda": true,
+    "ISBNs": [
+      "9780813937175"
+    ],
+    "CoverImageMain": "prde.jpg",
+    "URL":"https://prde.upress.virginia.edu"
+    
   }
-
 ]
