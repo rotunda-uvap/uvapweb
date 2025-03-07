@@ -140555,5 +140555,48 @@
     "TableOfContents": {
       "html": ""
     }
+  },
+  {
+    "BookID": "GEWN",
+    "Title": "The Papers of George Washington Digital Edition",
+    "Subtitle": null,
+    "PublicationDate": "2008-01-01",
+    "DaysSincePublication": 6275,
+    "EditorCredit": "Theodore J. Crackel, Digital Edition Founding Editor",
+    "Series": 
+      {
+      "seriesID": "ROT",
+      "name": "ROTUNDA Digital Editions"
+    }
+     ,
+    "MainDescription": {
+      "html": "<div><p>A landmark in historical scholarship, The Papers of George Washington Digital Edition encompasses five separate series and the complete diaries. This digital edition offers the full content of 77 letterpress volumes in a single online publication. You may search on full text and by date, author, or recipient across all volumes and series. The exceptional indexing of the individual print volumes is combined here into a single master index, and all internal document cross-references are linked.</p> <p>Forthcoming volumes in the Revolutionary War and Presidential series will continue to be added following their completion by the Papers of George Washington editorial project.</p></div>"
+    },
+    "Reviews": null,
+    "Prizes": null,
+    "BioNote": null,
+    "Editors": [
+      "Crackel, Theodore J."
+    ],
+    "Subjects": [
+      {
+        "subjectID": "EarlyRepublic",
+        "name": "Early Republic"
+     },
+     {
+       "subjectID": "MemoirBiographyAutobiography",
+       "name": "Memoir, Biography, & Autobiography"
+     }
+    ],
+    "isUVAP": true,
+    "isDelaware": false,
+    "Rotunda": true,
+    "ISBNs": [
+      "9780813926070"
+    ],
+    "CoverImageMain": "gw.jpg", 
+    "URL": "https://rotunda.upress.virginia.edu/founders/GEWN.html"
+    
   }
+
 ]

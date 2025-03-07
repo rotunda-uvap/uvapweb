@@ -98,7 +98,7 @@ exports.createSchemaCustomization = ({ actions }) => {
 
     return graphql(`
       {
-        allBooksJson {
+        allBooksJson(filter: {Rotunda: {eq: false}}) {
             edges {
                 node {
                   id
@@ -201,7 +201,7 @@ exports.createSchemaCustomization = ({ actions }) => {
           }
         }
 
-        allSubjects: allBooksJson {
+        allSubjects: allBooksJson(filter: {Rotunda: {eq: false}}) {
           group(field: {Subjects: {name: SELECT}}) {
             fieldValue
           }
