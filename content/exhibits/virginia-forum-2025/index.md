@@ -34,5 +34,7 @@ featured_books:
   - "6036"
   - "5846"
   - "10014"
+related_collection:
+  - VA FORUM 25
 date: 2025-03-13
 ---
