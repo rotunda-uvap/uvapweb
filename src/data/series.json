@@ -132,6 +132,10 @@
     "seriesName": "The Black Soldier in War and Society: New Narratives and Critical Perspectives"
   },
   {
+    "seriesID": "PBSH",
+    "seriesName": "Peculiar Bodies: Stories and Histories"
+  },
+  {
     "seriesID": "MIDC",
     "seriesName": "Midcentury: Architecture, Landscape, Urbanism, and Design"
   },
@@ -146,10 +150,6 @@
   {
     "seriesID": "GGL",
     "seriesName": "Gay Hart Gaines Distinguished Lectures"
-  },
-  {
-    "seriesID": "PBSH",
-    "seriesName": "Peculiar Bodies: Stories and Histories"
   },
   {
     "seriesID": "SPS",
