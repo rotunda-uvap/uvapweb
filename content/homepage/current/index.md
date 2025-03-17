@@ -2,12 +2,13 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: Here to Stay
-    banner_author: Gail Burrell Gerry
-    banner_subtitle: The Story of the Class of Women Who Coeducated the University of Virginia
-    banner_id: "10076"
-    banner_quote: An excellent, culturally revealing book.
-    banner_attr: Wyatt Andrews, UVA Class of ’74, former national correspondent for CBS News
+  - banner_title: Ireland and America
+    banner_author: Patrick Griffin and Francis D. Cogliano, eds.
+    banner_subtitle: Empire, Revolution, and Sovereignty
+    banner_id: "5481"
+    banner_quote: An important contribution to the ongoing reevaluation of
+      revolution and independence.
+    banner_attr: The Journal of American History
 related_book:
   - "5744"
   - "5617"
