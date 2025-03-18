@@ -2,13 +2,12 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: Ireland and America
-    banner_author: Patrick Griffin and Francis D. Cogliano, eds.
-    banner_subtitle: Empire, Revolution, and Sovereignty
-    banner_id: "5481"
-    banner_quote: An important contribution to the ongoing reevaluation of
-      revolution and independence.
-    banner_attr: The Journal of American History
+  - banner_title: Edgar Allan Poe
+    banner_author: Richard Kopley
+    banner_subtitle: A Life
+    banner_id: "10034"
+    banner_quote: A magisterial critical biography.
+    banner_attr: Publishers Weekly (starred review)
 related_book:
   - "5744"
   - "5617"
@@ -22,16 +21,14 @@ related_collection:
 featured_books:
   - "10047"
   - "10014"
-  - "10034"
-  - "10051"
   - "10057"
+  - "10039"
+  - "10051"
+  - "10015"
   - "10019"
   - "10054"
   - "10011"
-  - "10032"
   - "10020"
-  - "10015"
-  - "10039"
   - "5925"
   - "10016"
 ---
