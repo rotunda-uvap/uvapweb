@@ -16,19 +16,19 @@ font-size: var(--fs-200);`
 
 
 export default function MiniBio({ frontmatter }) {
-  const { title, job_title, name_slug, email, phone } = frontmatter;
+  const { title, job_title, name_slug, email, phone, contact_for} = frontmatter;
   const slink = `../staff/${name_slug}`;
   const clean_email = email.replace(/[^\x00-\x7F]/g, "");
   
   return (
-    <div className="p-4 md:w-1/3 sm:w-1/2 w-full rotunda">
-      <ul className="flex flex-col items-center">
+    <div className="p-4 rotunda">
+      <ul className="flex flex-col items-center ">
         <Link to={slink}>
           <Heading4>{title}</Heading4>
         </Link>
         <li className="text-sm font-assistant ">{job_title}</li>
         <li className="text-sm">{phone}</li>
-        <li className="text-sm font-light">
+        <li className="text-sm font-light pb-2">
           <a
             href={`mailto:${clean_email}`}
             className="text-ceci-gray-dark inline-flex items-center"
@@ -47,6 +47,7 @@ export default function MiniBio({ frontmatter }) {
             </svg>
           </a>
         </li>
+        {contact_for && (<li className="text-xs text-ceci-gray-dark overline decoration-gray-200 decoration-dotted">{contact_for}</li>)}
       </ul>
     </div>
   );
@@ -61,6 +62,7 @@ export const query = graphql`
       phone
       email
       department
+      contact_for
     }
   }
 `;

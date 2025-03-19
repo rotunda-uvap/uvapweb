@@ -12,12 +12,13 @@ export const MiniBioFragment = graphql`
         phone
         email
         department
+        contact_for
     }
   }
 `;
 
 
-export default function MiniBio({ frontmatter: { title, job_title, name_slug, email, phone}  }) {
+export default function MiniBio({ frontmatter: { title, job_title, name_slug, email, phone, contact_for}  }) {
     const slink = `../staff/${name_slug}`;
     const clean_email = email.replace(/[^\x00-\x7F]/g, "");
      return (
@@ -32,6 +33,8 @@ export default function MiniBio({ frontmatter: { title, job_title, name_slug, em
            </svg>
            
          </a>
+
+         {/* {contact_for && (<span><h6 className="text-xs text-ceci-gray-dark font-display tracking-wide">{contact_for}</h6></span>)} */}
        </div>
          </div>
   );

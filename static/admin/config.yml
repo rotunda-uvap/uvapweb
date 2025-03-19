@@ -278,6 +278,7 @@ collections:
       - { name: body, label: bio, widget: markdown }
       - { label: 'Email', name: 'email', widget: 'string', required: true}
       - { label: 'Phone', name: 'phone', widget: 'string', required: true, hint: "Format (XXX) XXX-XXXX"}
+      - { label: 'Contact For', name: 'contact_for', widget: 'string', required: false}
       - label: Related Series
         name: related_series
         widget: relation

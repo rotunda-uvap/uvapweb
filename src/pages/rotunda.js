@@ -197,7 +197,7 @@ padding:1em;
     </RotSection>
     <RotSectionZinc className="bg-zinc-50 border-b border-ceci-gray-light pb-2">
       <Heading3>rotunda contacts</Heading3>
-      <div className="flex flex-wrap -m-4 text-center" id="contacts">
+      <div className="flex flex-wrap gap-4 text-center" id="contacts">
       {staff.edges.map((edge, index) => (
                  
                  <RotundaMiniBio frontmatter={edge.node.frontmatter} key={`staff${index}`} /> 
