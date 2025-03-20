@@ -47,7 +47,7 @@ export default function MiniBio({ frontmatter }) {
             </svg>
           </a>
         </li>
-        {contact_for && (<li className="text-xs text-ceci-gray-dark border-t pt-2">{contact_for}</li>)}
+        {contact_for && (<li className="text-sm text-ceci-gray-dark border-t pt-2">{contact_for}</li>)}
       </ul>
     </div>
   );

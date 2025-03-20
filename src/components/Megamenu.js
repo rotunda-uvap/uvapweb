@@ -137,10 +137,10 @@ const uvap = getImage(data.uvaplogo)
                     </div>
                     <div>
                       <Link
-                        to={`/books`}
+                        to={`/books/#AZ`}
                         className="uppercase block text-lg text-gray-400 hover:text-gray-300"
                       >
-                        Browse All
+                        Browse A-Z
                       </Link>
                     </div>
                     <div>
@@ -149,6 +149,22 @@ const uvap = getImage(data.uvaplogo)
                         className="uppercase block text-lg text-gray-400 hover:text-gray-300"
                       >
                         New Releases
+                      </Link>
+                    </div>
+                    <div>
+                      <Link
+                        to={`/books/#series`}
+                        className="uppercase block text-lg text-gray-400 hover:text-gray-300"
+                      >
+                        Books by Series
+                      </Link>
+                    </div>
+                    <div>
+                      <Link
+                        to={`/books/#subjects`}
+                        className="uppercase block text-lg text-gray-400 hover:text-gray-300"
+                      >
+                        Books by Subject
                       </Link>
                     </div>
                     <div>
@@ -165,22 +181,6 @@ const uvap = getImage(data.uvaplogo)
                         className="uppercase block text-lg text-gray-400 hover:text-gray-300"
                       >
                         Conference Exhibits
-                      </Link>
-                    </div>
-                    <div>
-                      <Link
-                        to={`/books/#series`}
-                        className="uppercase block text-lg text-gray-400 hover:text-gray-300"
-                      >
-                        Our Book Series
-                      </Link>
-                    </div>
-                    <div>
-                      <Link
-                        to={`/books/#subjects`}
-                        className="uppercase block text-lg text-gray-400 hover:text-gray-300"
-                      >
-                        Our Book Subjects
                       </Link>
                     </div>
 
@@ -253,7 +253,7 @@ const uvap = getImage(data.uvaplogo)
                         to={`/books/#series`}
                         className="uppercase block text-lg text-gray-400 hover:text-gray-300"
                       >
-                        Our Book Series
+                        Books by Series
                       </Link>
                     </div>
                     <div>
@@ -261,7 +261,7 @@ const uvap = getImage(data.uvaplogo)
                         to={`/books/#subjects`}
                         className="uppercase block text-lg text-gray-400 hover:text-gray-300"
                       >
-                        Our Book Subjects
+                        Book by Subject
                       </Link>
                     </div>
                     <div>
@@ -487,10 +487,10 @@ const uvap = getImage(data.uvaplogo)
                     </div>
                     <div>
                       <Link
-                        to={`/books`}
+                        to={`/books/#AZ`}
                         className="uppercase block text-lg text-gray-400 hover:text-gray-300"
                       >
-                        Browse All
+                        Browse A-Z
                       </Link>
                     </div>
                     <div>
@@ -499,6 +499,31 @@ const uvap = getImage(data.uvaplogo)
                         className="uppercase block text-lg text-gray-400 hover:text-gray-300"
                       >
                         New Releases
+                      </Link>
+                    </div>
+                    
+                    <div>
+                      <Link
+                        to={`/books/#series`}
+                        className="uppercase block text-lg text-gray-400 hover:text-gray-300"
+                      >
+                        Books by Series
+                      </Link>
+                    </div>
+                    <div>
+                      <Link
+                        to={`/books/#subjects`}
+                        className="uppercase block text-lg text-gray-400 hover:text-gray-300"
+                      >
+                        Books by Subject
+                      </Link>
+                    </div>
+                    <div>
+                      <Link
+                        to={`/books/#awardwinners`}
+                        className="uppercase block text-lg text-gray-400 hover:text-gray-300"
+                      >
+                        Award Winners
                       </Link>
                     </div>
                     <div>
@@ -515,22 +540,6 @@ const uvap = getImage(data.uvaplogo)
                         className="uppercase block text-lg  text-gray-400 hover:text-gray-300"
                       >
                         Conference Exhibits
-                      </Link>
-                    </div>
-                    <div>
-                      <Link
-                        to={`/books/#series`}
-                        className="uppercase block text-lg text-gray-400 hover:text-gray-300"
-                      >
-                        Our Book Series
-                      </Link>
-                    </div>
-                    <div>
-                      <Link
-                        to={`/books/#subjects`}
-                        className="uppercase block text-lg text-gray-400 hover:text-gray-300"
-                      >
-                        Our Book Subjects
                       </Link>
                     </div>
                     <div>
@@ -603,7 +612,7 @@ const uvap = getImage(data.uvaplogo)
                         to={`/books/#series`}
                         className="uppercase block text-lg text-gray-400 hover:text-gray-300"
                       >
-                        Our Book Series
+                        Books by Series
                       </Link>
                     </div>
                     <div>
@@ -611,7 +620,7 @@ const uvap = getImage(data.uvaplogo)
                         to={`/books/#subjects`}
                         className="uppercase block text-lg text-gray-400 hover:text-gray-300"
                       >
-                        Our Book Subjects
+                        Books by Subject
                       </Link>
                     </div>
                     <div>
