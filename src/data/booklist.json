@@ -3568,6 +3568,10 @@
     "Title": "Vernon Lee"
   },
   {
+    "BookID": "10168",
+    "Title": "Tennessee Williams Annual Review 2021"
+  },
+  {
     "BookID": "1678",
     "Title": "Freedom Summer"
   },
@@ -4504,12 +4508,20 @@
     "Title": "Buildings of Pennsylvania"
   },
   {
+    "BookID": "10173",
+    "Title": "Studies in Bibliography"
+  },
+  {
     "BookID": "1850",
     "Title": "In and Out of the West"
   },
   {
     "BookID": "1688",
     "Title": "Friends for Life, Friends for Death"
+  },
+  {
+    "BookID": "10167",
+    "Title": "Tennessee Williams Annual Review 2019"
   },
   {
     "BookID": "3706",
@@ -4782,6 +4794,10 @@
   {
     "BookID": "5407",
     "Title": "European Friends of the American Revolution"
+  },
+  {
+    "BookID": "10171",
+    "Title": "A British Eyewitness at the Battle of New Orleans"
   },
   {
     "BookID": "3089",
@@ -6169,7 +6185,7 @@
   },
   {
     "BookID": "10065",
-    "Title": "The Tennessee Williams Annual Review"
+    "Title": "The Tennessee Williams Annual Review 2024"
   },
   {
     "BookID": "1946",
