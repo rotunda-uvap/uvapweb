@@ -2,7 +2,6 @@
 templateKey: collection
 title: AWP 25
 related_book:
-  - "10099"
   - "10051"
   - "10021"
   - "10034"
@@ -19,4 +18,5 @@ related_book:
   - "10054"
   - "10033"
   - "5315"
+  - "10099"
 ---
