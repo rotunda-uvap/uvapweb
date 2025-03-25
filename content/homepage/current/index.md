@@ -22,8 +22,8 @@ related_collection:
   - Homepage Featured
 featured_books:
   - "10047"
-  - "10014"
   - "10057"
+  - "10014"
   - "10034"
   - "10019"
   - "10051"
