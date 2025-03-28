@@ -1,6 +1,6 @@
 ---
 templateKey: exhibit
-title: MODERN LANGUAGE ASSOCIATION 2025
+title: Modern Language Association 2025
 exhibit_slug: mla25
 coupon: Use code 10MLA25 for 40% off books below through February 1!
 bgcolor: bg-white
