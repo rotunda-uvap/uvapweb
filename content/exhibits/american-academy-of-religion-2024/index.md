@@ -1,6 +1,6 @@
 ---
 templateKey: exhibit
-title: AMERICAN ACADEMY OF RELIGION 2024
+title: American Academy of Religion 2024
 exhibit_slug: AAR24
 coupon: Use code 10AAR24 for 40% off books below through December 15!
 bgcolor: bg-white
