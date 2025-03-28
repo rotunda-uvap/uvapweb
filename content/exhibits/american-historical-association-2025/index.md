@@ -1,6 +1,6 @@
 ---
 templateKey: exhibit
-title: AMERICAN HISTORICAL ASSOCIATION 2025
+title: American Historical Association 2025
 exhibit_slug: AHA25
 coupon: Use code 10AHA25 for 40% off books below through February 1!
 bgcolor: bg-white
