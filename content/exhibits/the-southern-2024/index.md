@@ -1,6 +1,6 @@
 ---
 templateKey: exhibit
-title: THE SOUTHERN 2024
+title: The Southern 2024
 exhibit_slug: sha24
 coupon: Use code 10SHA24 for 40% off books below through November 15!
 bgcolor: bg-white
