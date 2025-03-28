@@ -1,6 +1,6 @@
 ---
 templateKey: exhibit
-title: AWP CONFERENCE & BOOKFAIR 2025
+title: AWP Conference & Bookfair 2025
 exhibit_slug: AWP25
 coupon: Use code 10AWP25 for 40% off books below through April 15!
 bgcolor: bg-white
