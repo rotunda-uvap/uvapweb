@@ -1,6 +1,6 @@
 ---
 templateKey: exhibit
-title: VIRGINIA FORUM 2025
+title: Virginia Forum 2025
 exhibit_slug: VAFORUM25
 coupon: Use code 10VAFORUM25 for 40% off books below through April 1!
 bgcolor: bg-white
