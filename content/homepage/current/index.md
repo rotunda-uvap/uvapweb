@@ -2,14 +2,13 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: Victorian Nightshades
-    banner_author: Elizabeth A. Campbell
-    banner_subtitle: How the Solanaceae Shaped the Modern World
-    banner_id: "10052"
-    banner_quote: This book shows how plants—here, tobacco, potatoes, petunias,
-      belladonna as medicine—gave birth to many of the features of the modern
-      moment.
-    banner_attr: Amy King, St. John's University
+  - banner_title: Those Who Stayed
+    banner_author: Claudia Krich
+    banner_subtitle: A Vietnam Diary
+    banner_id: "10042"
+    banner_quote: This is a must-read.
+    banner_attr: Le Ly Hayslip, humanitarian and author of When Heaven and Earth
+      Changed Places
 related_book:
   - "5744"
   - "5617"
