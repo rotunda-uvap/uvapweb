@@ -1272,6 +1272,10 @@
     "Title": "Almost Home"
   },
   {
+    "BookID": "10095",
+    "Title": "After the Fire"
+  },
+  {
     "BookID": "5508",
     "Title": "Strange Brethren"
   },
@@ -1496,6 +1500,10 @@
     "Title": "Slavery in the City"
   },
   {
+    "BookID": "10137",
+    "Title": "Napoleon in America"
+  },
+  {
     "BookID": "1814",
     "Title": "The Horse in Virginia"
   },
@@ -1614,6 +1622,10 @@
   {
     "BookID": "5509",
     "Title": "Design Before Disaster"
+  },
+  {
+    "BookID": "10094",
+    "Title": "The Literatures of Spanish America and Brazil"
   },
   {
     "BookID": "4617",
@@ -1792,6 +1804,10 @@
     "Title": "Marketing Analytics"
   },
   {
+    "BookID": "10096",
+    "Title": "The Strange Career of Cornbread Nationalism"
+  },
+  {
     "BookID": "2502",
     "Title": "Slave in A Box"
   },
@@ -1846,6 +1862,10 @@
   {
     "BookID": "1962",
     "Title": "Kierkegaard"
+  },
+  {
+    "BookID": "10041",
+    "Title": "The Papers of George Washington"
   },
   {
     "BookID": "4985",
@@ -2144,6 +2164,10 @@
     "Title": "Pontius Pilate"
   },
   {
+    "BookID": "10097",
+    "Title": "Seeking the High Ground"
+  },
+  {
     "BookID": "6003",
     "Title": "The Cosmos, the Person, and the Sadhana"
   },
@@ -2400,8 +2424,16 @@
     "Title": "Indians in Seventeenth-Century Virginia"
   },
   {
+    "BookID": "10147",
+    "Title": "What We Mourn"
+  },
+  {
     "BookID": "3901",
     "Title": "\"A God of Justice?\""
+  },
+  {
+    "BookID": "10153",
+    "Title": "Poetic Drive"
   },
   {
     "BookID": "1870",
@@ -2590,6 +2622,10 @@
   {
     "BookID": "5381",
     "Title": "Nervous Fictions"
+  },
+  {
+    "BookID": "10146",
+    "Title": "Legal Education at the University of Virginia"
   },
   {
     "BookID": "5356",
@@ -2956,6 +2992,14 @@
     "Title": "The Life and Undeath of Autonomy in American Literature"
   },
   {
+    "BookID": "10150",
+    "Title": "Vignettes of Colonial Virginia"
+  },
+  {
+    "BookID": "10144",
+    "Title": "The Gendered Republic"
+  },
+  {
     "BookID": "3080",
     "Title": "Vanishing Lives"
   },
@@ -3126,6 +3170,14 @@
   {
     "BookID": "3917",
     "Title": "Contesting Slavery"
+  },
+  {
+    "BookID": "10145",
+    "Title": "Unleashing Black Power"
+  },
+  {
+    "BookID": "10151",
+    "Title": "The Course of Human Events"
   },
   {
     "BookID": "5341",
@@ -3910,6 +3962,10 @@
   {
     "BookID": "3910",
     "Title": "Something Understood"
+  },
+  {
+    "BookID": "10156",
+    "Title": "Barbary Entanglements"
   },
   {
     "BookID": "3521",
@@ -4808,6 +4864,10 @@
     "Title": "Barbaric Culture and Black Critique"
   },
   {
+    "BookID": "10159",
+    "Title": "George Washington"
+  },
+  {
     "BookID": "4902",
     "Title": "Oh, Shenandoah"
   },
@@ -4910,6 +4970,10 @@
   {
     "BookID": "4903",
     "Title": "After the Deluge"
+  },
+  {
+    "BookID": "10158",
+    "Title": "Creating an Informed Citizenry"
   },
   {
     "BookID": "4917",
@@ -5292,6 +5356,10 @@
     "Title": "Thomas Jefferson's Lives"
   },
   {
+    "BookID": "10148",
+    "Title": "The Star-Spangled Republic"
+  },
+  {
     "BookID": "1857",
     "Title": "In the Flicker of an Eyelid"
   },
@@ -5446,6 +5514,10 @@
   {
     "BookID": "4912",
     "Title": "Gun Culture in Early Modern England"
+  },
+  {
+    "BookID": "10149",
+    "Title": "Grievous Entanglement"
   },
   {
     "BookID": "4721",
@@ -6392,6 +6464,10 @@
     "Title": "The Last Launch"
   },
   {
+    "BookID": "10138",
+    "Title": "Devout and Defiant"
+  },
+  {
     "BookID": "4793",
     "Title": "Bodies and Bones"
   },
@@ -7080,6 +7156,10 @@
     "Title": "Poplar Forest"
   },
   {
+    "BookID": "10088",
+    "Title": "Nuremberg's Citizen Prosecutor"
+  },
+  {
     "BookID": "4623",
     "Title": "Race, Romance, and Rebellion"
   },
@@ -7162,6 +7242,10 @@
   {
     "BookID": "1834",
     "Title": "\"I, Too, Am America\""
+  },
+  {
+    "BookID": "10103",
+    "Title": "Trusted Source"
   },
   {
     "BookID": "4780",
@@ -7458,6 +7542,10 @@
   {
     "BookID": "5272",
     "Title": "The Papers of George Washington"
+  },
+  {
+    "BookID": "10089",
+    "Title": "Purge and Bleed"
   },
   {
     "BookID": "3165",
@@ -7818,6 +7906,10 @@
   {
     "BookID": "4782",
     "Title": "The Arresting Eye"
+  },
+  {
+    "BookID": "10101",
+    "Title": "Seeking Justice"
   },
   {
     "BookID": "3953",
