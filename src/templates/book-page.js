@@ -350,7 +350,7 @@ const bookPage = ({ data }) => {
         
    {news.edges[0] && (
         <section className="py-4">
-          <span className="text-xs uppercase  text-ceci-gray-mid tracking-wider">
+          <span className="text-sm uppercase  text-ceci-gray-mid tracking-wider">
             Related News:
           </span>
           {news.edges.map (edge => (
@@ -367,7 +367,7 @@ const bookPage = ({ data }) => {
 
  {/* Algolia Related: removed 5/28/2024
   <section className="pt-4 border-t-2" id="relatedProducts">
-     <span className="text-xs uppercase  text-ceci-gray-mid tracking-wider">
+     <span className="text-sm uppercase  text-ceci-gray-mid tracking-wider">
            You May Also Like:
           </span>
      <Related productObjectID={book.id}/>

@@ -35,7 +35,7 @@ const CompletedSeries = () => {
     {data.allMarkdownRemark.edges.map((edge, index) => (
         
             <div className="w-full flex flex-col py-4" key={`serinfo${index}`}>
-                      <span className="inline-block py-2 uppercase text-ceci-gray-mid text-xs font-medium tracking-wider">{ edge.node.frontmatter.seriestype }</span>
+                      <span className="inline-block py-2 uppercase text-ceci-gray-mid text-sm font-medium tracking-wider">{ edge.node.frontmatter.seriestype }</span>
 
       <Link  to={`../series/${ edge.node.frontmatter.seriesID }`} className="sm:text-xl font-serif text-lg text-gray-700 tracking-wide ">
         { edge.node.frontmatter.title }</Link>

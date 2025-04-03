@@ -56,7 +56,7 @@ const Home = ({ data }) => {
           <div className="flex flex-col items-center"><a href="https://open.upress.virginia.edu/">
           
           <GatsbyImage image={vologo} alt="virginia open logo"  /></a>
-          <p className="py-4 dropCap text-md text-gray-800">V/O: Virginia Open, a collection of University of Virginia Press titles made freely available. On this imprint, you will find both open-access monographs from The University of Virginia Press, readable in your browser or via download, and links to open-access websites published under our Rotunda imprint or in collaboration with partner institutions.</p>
+          <p className="py-4 dropCap text-base text-gray-800">V/O: Virginia Open, a collection of University of Virginia Press titles made freely available. On this imprint, you will find both open-access monographs from The University of Virginia Press, readable in your browser or via download, and links to open-access websites published under our Rotunda imprint or in collaboration with partner institutions.</p>
           </div>
        </section>
        

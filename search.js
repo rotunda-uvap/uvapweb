@@ -9,12 +9,12 @@ import { Link } from "gatsby"
 const appId = process.env.GATSBY_ALGOLIA_APP_ID;
 const searchKey = process.env.GATSBY_ALGOLIA_SEARCH_KEY;
 const searchClient = algoliasearch(appId, searchKey);
-const Hit = ( {hit}) => <div className="py-4 border-b-2 border-gray-100"><Link to={`../title/${ hit.BookID }`} className="hover:text-ceci-gray-mid"><h6 className="font-thin text-md text-ceci-gray-dark tracking-wide uppercase">{hit.Title}</h6>
+const Hit = ( {hit}) => <div className="py-4 border-b-2 border-gray-100"><Link to={`../title/${ hit.BookID }`} className="hover:text-ceci-gray-mid"><h6 className="font-thin text-base text-ceci-gray-dark tracking-wide uppercase">{hit.Title}</h6>
 {hit.Subtitle ? <h6 className="text-sm tracking-wide text-ceci-gray-mid italic font-thin py-2 ">{hit.Subtitle}</h6> : ""}
-<h6 className="text-xs tracking-widest font-display uppercase pt-2">{hit.AuthorCredit}</h6>
+<h6 className="text-sm tracking-widest font-display uppercase pt-2">{hit.AuthorCredit}</h6>
 
 <div className="pt-3" dangerouslySetInnerHTML={{ __html: hit.MainDescription.html.split(' ').splice(0, 30).join(' ') + '...' }}/>
-<h6 className="text-xs uppercase tracking-wider text-ceci-gray-mid font-thin pb-5">Published: {hit.PublicationDate}</h6></Link></div>
+<h6 className="text-sm uppercase tracking-wider text-ceci-gray-mid font-thin pb-5">Published: {hit.PublicationDate}</h6></Link></div>
 
 const Search = () => (
     <InstantSearch searchClient={searchClient} indexName={process.env.GATSBY_ALGOLIA_INDEX_NAME} routing={true}  >
@@ -29,14 +29,14 @@ const Search = () => (
 </h3>
 
        <div className="border-b border-gray-400 pb-3">
-        <SortBy className="text-xs text-gray-600"
+        <SortBy className="text-sm text-gray-600"
           defaultRefinement="Books"
           items={[
             {value: "Books", label:"Most Relevant"},
             {value: "books_date_asc", label:"Most Recent Books First"}
             ]}/>
 
-      <Stats className="text-xs text-gray-600"/>
+      <Stats className="text-sm text-gray-600"/>
       </div>
       <Hits className="pt-5" hitComponent={Hit} />
       </section>

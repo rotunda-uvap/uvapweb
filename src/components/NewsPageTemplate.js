@@ -15,7 +15,7 @@ import Content from "../components/Content";
          <BackArrow/>
                 <a
                   href={`../../publicity`}
-                  className="block p-2  text-xs font-thin uppercase "
+                  className="block p-2  text-sm font-thin uppercase "
                 >All News</a>
         </div>
      <PageHeader text={title}/>
@@ -35,7 +35,7 @@ import Content from "../components/Content";
             }
         <div className="md:w-4/5">
           {pic && <div className="float-left pb-4 pt-2 px-4 m-1 "><GatsbyImage image={pic} alt="related image"/></div> }
-          <PageContent className="cms dropCap" content={content} />
+          <PageContent className="cms text-base dropCap" content={content} />
 
       </div>
       

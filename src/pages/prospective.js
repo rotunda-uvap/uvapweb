@@ -22,7 +22,7 @@ export default function ProspectiveAuthorsPage({ data }) {
   
             <div className="flex flex-col text-center w-full">
 <PageHeader text={"For Prospective Authors"}/>     
- <span className="text-xs md:text-sm font-thin uppercase text-right text-gray-500 pb-4"><Link to={'/authors'}>
+ <span className="text-sm md:text-sm font-thin uppercase text-right text-gray-500 pb-4"><Link to={'/authors'}>
             Current Authors <span className="inline-flex py-2">
               <svg fill="none" stroke="currentColor" strokeLinecap="round" stroke-linejoin="round" strokeWidth="2" className="w-3 h-3 md:w-4 md:h-4 ml-1 md:ml-2" viewBox="0 0 24 24">
                 <path d="M13 5l7 7-7 7M5 5l7 7-7 7"></path>

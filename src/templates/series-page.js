@@ -26,7 +26,7 @@ const SeriesTemplate = ({ data }) => {
     </svg>
             <a
               href={`../../books#series`}
-              className="block p-2  text-xs font-thin tracking-wide uppercase "
+              className="block p-2  text-sm font-thin tracking-wide uppercase "
             >All Series</a>
     </div>
             <section className="py-4 border-b-2 border-gray-100">

@@ -26,15 +26,15 @@ export default function MiniBio({ frontmatter: { title, job_title, name_slug, em
 <div className="flex flex-col items-center">
        <Link to={slink}><h5 className="text-lg font-thin tracking-wide text-ceci-gray-dark">{title}</h5></Link>
        <span className="text-ceci-gray-mid py-1 font-thin font-display text-lg">{job_title}</span>
-       { phone && <span className="text-md text-ceci-gray-dark font-display tracking-wide">{phone}</span>}
-         <a className="text-ceci-gray-mid text-md py-1 inline-flex font-display items-center " href={`mailto:${clean_email}`}>{clean_email}
+       { phone && <span className="text-base text-ceci-gray-dark font-display tracking-wide">{phone}</span>}
+         <a className="text-ceci-gray-mid text-base py-1 inline-flex font-display items-center " href={`mailto:${clean_email}`}>{clean_email}
            <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
              <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
            </svg>
            
          </a>
 
-         {/* {contact_for && (<span><h6 className="text-xs text-ceci-gray-dark font-display tracking-wide">{contact_for}</h6></span>)} */}
+         {/* {contact_for && (<span><h6 className="text-sm text-ceci-gray-dark font-display tracking-wide">{contact_for}</h6></span>)} */}
        </div>
          </div>
   );

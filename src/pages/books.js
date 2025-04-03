@@ -127,7 +127,7 @@ export default function Books({ data }) {
         </div>            
             
         ))}
-    <Link to={`#top`} className="uppercase font-thin text-ceci-gray-mid text-xs py-4 inline-flex "><span className="pl-2">Go to top </span><svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
+    <Link to={`#top`} className="uppercase font-thin text-ceci-gray-mid text-sm py-4 inline-flex "><span className="pl-2">Go to top </span><svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
                 <path d="M5 11l7-7 7 7M5 19l7-7 7 7"></path>
               </svg></Link>
   </div>
@@ -146,7 +146,7 @@ export default function Books({ data }) {
           <BookCard fields={edge.node} key={`rr${index}`}/>
         
           
-        ))}  <Link to={`#top`} className="uppercase font-thin text-ceci-gray-mid text-xs py-4 inline-flex "><span className="pl-2">Go to top </span><svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
+        ))}  <Link to={`#top`} className="uppercase font-thin text-ceci-gray-mid text-sm py-4 inline-flex "><span className="pl-2">Go to top </span><svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
         <path d="M5 11l7-7 7 7M5 19l7-7 7 7"></path>
       </svg></Link>
         </div>
@@ -158,7 +158,7 @@ export default function Books({ data }) {
 
 <section id="awardwinners">
   <AwardWinners/>
-  <Link to={`#top`} className="uppercase font-thin text-ceci-gray-mid text-xs py-4 inline-flex "><span className="pl-2">Go to top </span><svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
+  <Link to={`#top`} className="uppercase font-thin text-ceci-gray-mid text-sm py-4 inline-flex "><span className="pl-2">Go to top </span><svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
                 <path d="M5 11l7-7 7 7M5 19l7-7 7 7"></path>
               </svg></Link>
 </section>
@@ -172,7 +172,7 @@ export default function Books({ data }) {
                 <p className="text-lg py-2 font-serif tracking-wide">{edge.node.Title} - <span className="text-sm">{edge.node.AuthorCredit}</span></p>
                 </Link>
            
-        ))} <Link to={`#top`} className="uppercase font-thin text-ceci-gray-mid text-xs py-4 inline-flex "><span className="pl-2">Go to top </span><svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
+        ))} <Link to={`#top`} className="uppercase font-thin text-ceci-gray-mid text-sm py-4 inline-flex "><span className="pl-2">Go to top </span><svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
         <path d="M5 11l7-7 7 7M5 19l7-7 7 7"></path>
       </svg></Link>
         </div>

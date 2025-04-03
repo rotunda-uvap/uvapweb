@@ -39,7 +39,7 @@ export default function RecentBooks({ data }) {
            
               <BookCard fields={edge.node} key={`rec${index}`}/>
           
-        ))}<Link to={`#top`} className="uppercase text-ceci-gray-mid text-xs p-2 ">Go to top</Link>
+        ))}<Link to={`#top`} className="uppercase text-ceci-gray-mid text-sm p-2 ">Go to top</Link>
         </div>
         
 </section>
@@ -54,7 +54,7 @@ export default function RecentBooks({ data }) {
            
         ))}
         </ul>
-        <Link to={`#top`} className="uppercase text-ceci-gray-mid text-xs p-2 ">Go to top</Link>
+        <Link to={`#top`} className="uppercase text-ceci-gray-mid text-sm p-2 ">Go to top</Link>
             </section>
         </div>
         </Layout>

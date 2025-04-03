@@ -25,10 +25,10 @@ export default function PubPage({ data }) {
           <section>
             
               <div className="flex flex-col text-center items-center border-b-2 pb-4">
-              <Link to={'../staff/MK-Maco'}><h5 className="title-font font-medium text-md py-1 text-ceci-gray-mid">Mary Kate Maco</h5></Link>
+              <Link to={'../staff/MK-Maco'}><h5 className="title-font font-medium text-base py-1 text-ceci-gray-mid">Mary Kate Maco</h5></Link>
        <span className="text-ceci-gray-mid font-light font-serif">Publicist</span>
        <span className="font-serif text-ceci-gray-mid">(434) 982-2932</span>
-         <a className="text-ceci-gray-mid text-md font-serif inline-flex items-center" href="mailto:faa6je@virginia.edu">Email Mary Kate
+         <a className="text-ceci-gray-mid text-base font-serif inline-flex items-center" href="mailto:faa6je@virginia.edu">Email Mary Kate
            <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
              <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
            </svg>
@@ -59,7 +59,7 @@ export default function PubPage({ data }) {
            
             <Link to={`../${ edge.node.frontmatter.type }${ edge.node.fields.slug }`} key={`news${index}`} className="flex flex-col border-b-2 last:border-b-0 py-2">
              <div className="flex flex-col py-2">
-              <div className="text-xs font-serif font-thin text-ceci-gray-mid">{edge.node.frontmatter.date}</div>
+              <div className="text-sm font-serif font-thin text-ceci-gray-mid">{edge.node.frontmatter.date}</div>
               <div className="font-thin uppercase tracking-wide font-display">{ edge.node.frontmatter.title }</div>
               </div>
               
@@ -67,7 +67,7 @@ export default function PubPage({ data }) {
                
                   {edge.node.frontmatter.related_book ? <div className="md:base-1/5 shrink-0 pr-2"><img src={'https://ik.imagekit.io/uvapress/' + edge.node.frontmatter.related_book[0].BookID + "_M.jpg"} alt="cover"/></div> : <div></div>}
                  
-                  {edge.node.html ?  <div><div className=" text-ceci-gray-dark font-light dropCap px-2 md:px-1" dangerouslySetInnerHTML={{ __html: sanitizeHtml(edge.node.html.split(' ').splice(0, 100).join(' ') + '...' )}}></div>            <div className="font-display uppercase text-xs tracking-widest py-3 md:py-2"><FaArrowAltCircleRight className="inline mx-4"/> Continue Reading</div>
+                  {edge.node.html ?  <div><div className=" text-ceci-gray-dark font-light dropCap px-2 md:px-1" dangerouslySetInnerHTML={{ __html: sanitizeHtml(edge.node.html.split(' ').splice(0, 100).join(' ') + '...' )}}></div>            <div className="font-display uppercase text-sm tracking-widest py-3 md:py-2"><FaArrowAltCircleRight className="inline mx-4"/> Continue Reading</div>
 </div> : <div></div>}
                   
             </div>

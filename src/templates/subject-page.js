@@ -21,7 +21,7 @@ const SubjectTemplate = ({ pageContext, data }) => {
     </svg>
             <a
               href={`../../books/#subjects`}
-              className="block p-2  text-xs font-thin tracking-wide uppercase "
+              className="block p-2  text-sm font-thin tracking-wide uppercase "
             >All Subjects</a>
     </div>
                     <div className="flex flex-wrap gap-2 py-5">

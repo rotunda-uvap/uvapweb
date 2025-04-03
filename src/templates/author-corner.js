@@ -36,7 +36,7 @@ else metaImage = null;
     </svg>
             <a
               href={`../../publicity`}
-              className="block p-2  text-xs font-thin uppercase "
+              className="block p-2  text-sm font-thin uppercase "
             >All News</a>
     </div>
 

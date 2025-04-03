@@ -60,7 +60,7 @@ export default function StaffList({ data }) {
             <SectionHeader text={'Acquisitions'}/>
          
           <div className="py-2 mx-auto">
-          <p className="text-center text-md font-display">Please submit proposals to Acquisitions Coordinator Fernando Campos at <a href="mailto:pzg5qu@virginia.edu">pzg5qu@virginia.edu</a></p>
+          <p className="text-center text-base font-display">Please submit proposals to Acquisitions Coordinator Fernando Campos at <a href="mailto:pzg5qu@virginia.edu">pzg5qu@virginia.edu</a></p>
              <div className="flex flex-wrap -m-4 text-center">
            {acqs.edges.map((edge, index) => (
              
@@ -77,7 +77,7 @@ export default function StaffList({ data }) {
               <SectionHeader text={'Editorial, Design, and Production'}/>
          
           <div className="py-2 mx-auto">
-          <p className="text-center text-md font-display"> Freelance copyeditors and indexers, please send inquiries to <a href="mailto:wrenmorganmyers@virginia.edu">Wren Morgan Myers</a>.</p>
+          <p className="text-center text-base font-display"> Freelance copyeditors and indexers, please send inquiries to <a href="mailto:wrenmorganmyers@virginia.edu">Wren Morgan Myers</a>.</p>
              <div className="flex flex-wrap -m-4 text-center">
            {edps.edges.map((edge, index) => (
             

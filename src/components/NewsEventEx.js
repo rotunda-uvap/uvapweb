@@ -66,8 +66,8 @@ const FeatTrio = () => {
        <>
           <Link className="p-2" to={`../news${ edge.node.fields.slug }`} key={`news${index}`}>
          <div className="font-thin uppercase tracking-wide font-display md:py-1">{edge.node.frontmatter.title }</div>
-     <div className="font-serif text-left leading-relaxed text-ceci-gray-dark dropCap" dangerouslySetInnerHTML={{ __html: sanitizeHtml(edge.node.html.split(' ').splice(0, 30).join(' ') + '...' )}}/> 
-     <div className="font-display uppercase text-xs tracking-widest py-2"><FaArrowAltCircleRight className="inline mx-4"/> Continue Reading</div>
+     <div className="font-serif text-left text-base leading-relaxed text-ceci-gray-dark dropCap" dangerouslySetInnerHTML={{ __html: sanitizeHtml(edge.node.html.split(' ').splice(0, 30).join(' ') + '...' )}}/> 
+     <div className="font-display uppercase text-sm tracking-widest py-2"><FaArrowAltCircleRight className="inline mx-4"/> Continue Reading</div>
      </Link> 
       </>
       ))}
@@ -85,8 +85,8 @@ const FeatTrio = () => {
        <>
           <Link className="p-2" to={`../author-corner${ edge.node.fields.slug }`} key={`ac${index}`}>
          <div className="font-thin uppercase tracking-wide font-display md:py-1">{edge.node.frontmatter.title }</div>
-     <div className="font-serif text-left  p-0 leading-relaxed text-ceci-gray-dark dropCap" dangerouslySetInnerHTML={{ __html: sanitizeHtml(edge.node.html.split(' ').splice(0, 25).join(' ') + '...' )}}/> 
-     <div className="font-display uppercase text-xs tracking-widest py-2"><FaArrowAltCircleRight className="inline mx-4"/> Continue Reading</div>
+     <div className="font-serif text-left text-base  p-0 leading-relaxed text-ceci-gray-dark dropCap" dangerouslySetInnerHTML={{ __html: sanitizeHtml(edge.node.html.split(' ').splice(0, 25).join(' ') + '...' )}}/> 
+     <div className="font-display uppercase text-sm tracking-widest py-2"><FaArrowAltCircleRight className="inline mx-4"/> Continue Reading</div>
      </Link> 
       </>
       ))}
@@ -102,7 +102,7 @@ const FeatTrio = () => {
     <Link className="font-display tracking-wide uppercase p-2 text-sm" to={`../exhibits/${ data.exhibit.edges[1].node.frontmatter.exhibit_slug }`}>{data.exhibit.edges[1].node.frontmatter.title }</Link>
     <Link className="font-display tracking-wide uppercase p-2 text-sm" to={`../exhibits/${ data.exhibit.edges[2].node.frontmatter.exhibit_slug }`}>{data.exhibit.edges[2].node.frontmatter.title }</Link>
     <Link className="font-display tracking-wide uppercase p-2 text-sm" to={`../exhibits/${ data.exhibit.edges[3].node.frontmatter.exhibit_slug }`}>{data.exhibit.edges[3].node.frontmatter.title }</Link>
-    <Link  to={`../exhibits`} className="font-display uppercase text-xs tracking-widest px-2 py-4"><FaArrowAltCircleRight className="inline mr-4"/> see more exhibits</Link>
+    <Link  to={`../exhibits`} className="font-display uppercase text-sm tracking-widest px-2 py-4"><FaArrowAltCircleRight className="inline mr-4"/> see more exhibits</Link>
   </>
   </article>
  

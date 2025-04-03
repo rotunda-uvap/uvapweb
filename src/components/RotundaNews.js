@@ -37,7 +37,7 @@ export default function RotundaNews() {
           >
             Content Additions
           </Link>
-          <div className="font-serif text-ceci-gray-dark leading-relaxed">
+          <div className="font-serif text-ceci-gray-dark text-base leading-relaxed">
             <p>The following volumes were added to our <Link to={'https://www.upress.virginia.edu/rotunda/#ahc'}>American History Collection</Link> in 2024:</p><p>
               <Link to={'https://www.upress.virginia.edu/title/ADMS/'}>
                 Papers of John Adams, Volume 21
@@ -72,7 +72,7 @@ export default function RotundaNews() {
             </p>
           </div>
   
-          <div className="font-display uppercase text-xs tracking-widest">
+          <div className="font-display uppercase text-sm tracking-widest">
             <Link
               className="inline mx-4"
               to={`https://rotunda.upress.virginia.edu/entrance.xqy/`}

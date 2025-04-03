@@ -115,13 +115,13 @@ export default function AboutPage({ data }) {
       <iframe width="100%" height="100%" className="absolute inset-0" frameborder="0" title="map" marginheight="0" marginwidth="0" scrolling="no" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25142.53534541059!2d-78.51017630392049!3d38.02804744531566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b3864fd48486e7%3A0x8fa6c3eae630f15!2sBemiss%20House%20(University%20Press)%2C%20210%20Sprigg%20Ln%2C%20Charlottesville%2C%20VA%2022903!5e0!3m2!1sen!2sus!4v1619475440081!5m2!1sen!2sus;output=embed"></iframe>
       <div className="bg-white relative flex flex-wrap py-6 rounded shadow-md">
         <div className="lg:w-1/2 px-6">
-          <h2 className="title-font font-semibold text-ceci-gray-dark tracking-widest text-xs">ADDRESS</h2>
+          <h2 className="title-font font-semibold text-ceci-gray-dark tracking-widest text-sm">ADDRESS</h2>
           <p className="mt-1">210 Sprigg Lane, Charlottesville, VA 22903-2417</p>
         </div>
         <div className="lg:w-1/2 px-6 mt-4 lg:mt-0">
-          <h2 className="title-font font-semibold text-ceci-gray-dark tracking-widest text-xs">EMAIL</h2>
+          <h2 className="title-font font-semibold text-ceci-gray-dark tracking-widest text-sm">EMAIL</h2>
           <a href="mailto:vapress​@​virginia.edu" className="className="text-gray-500 leading-relaxed>vapress​@​virginia.edu</a>
-          <h2 className="title-font font-semibold text-ceci-gray-dark tracking-widest text-xs mt-4">PHONE</h2>
+          <h2 className="title-font font-semibold text-ceci-gray-dark tracking-widest text-sm mt-4">PHONE</h2>
           <p className="leading-relaxed">434 924-3468</p>
         </div>
       </div>
@@ -140,7 +140,7 @@ export default function AboutPage({ data }) {
              <div>210 Sprigg Lane</div>
              <div>Charlottesville, VA 22903-2417</div>
      </div>
-      <p className="text-xs text-gray-500 mt-3">If you are driving, we usually have parking space available in the driveway just past Bemiss House on the left; we do not have visitor permits for the Alumni Hall parking lot.</p>
+      <p className="text-sm text-gray-500 mt-3">If you are driving, we usually have parking space available in the driveway just past Bemiss House on the left; we do not have visitor permits for the Alumni Hall parking lot.</p>
     </div>
   </div>
 </section>

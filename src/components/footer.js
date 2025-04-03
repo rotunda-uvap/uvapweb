@@ -116,8 +116,8 @@ const Footer = () => {
               className="hidden md:block self-center justify-self-center text-2xl"
               aria-label="email"
             />
-            <ul className="text-sm flex flex-col font-thin tracking-wide md:pl-3 gap-2 md:gap-0">
-                <li><a href="mailto:vapress@virginia.edu" className="py-4 md:py-1">General Inquiries</a></li>
+            <ul className="text-sm flex flex-col font-thin tracking-wide md:pl-3 gap-4 md:gap-0">
+                <li><a href="mailto:vapress@virginia.edu" className="py-8 md:py-1">General Inquiries</a></li>
                 <li><Link to={"/staff-list"} className="py-4 md:py-3">Staff Directory</Link></li>
             </ul>
           </div>
@@ -151,7 +151,7 @@ const Footer = () => {
         </section>
       </div>
 
-      <div className="text-center w-full uppercase text-ceci-gray-mid text-md font-thin tracking-wider py-2">
+      <div className="text-center w-full uppercase text-ceci-gray-mid text-base font-thin tracking-wider py-2">
         © {new Date().getFullYear()} UNIVERSITY OF VIRGINIA PRESS
       </div>
   </>

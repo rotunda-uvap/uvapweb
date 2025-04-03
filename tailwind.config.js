@@ -27,8 +27,8 @@ module.exports = {
         '250': '250px',
       },
       fontSize :{
-        sm: '.9rem',
-        base: '1.15em'
+        sm: '1rem',
+        base: '1.2em'
       },
       fontFamily: {
         serif: ["Crimson Text", ...defaultTheme.fontFamily.serif],

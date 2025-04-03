@@ -22,12 +22,12 @@ const Hit = ( {hit}) => <div className="py-2 border-b-2 border-gray-300">
               crop: "at_max"
             }]} lqip={{ active: true }} alt={hit.Title}/>
           </IKContext> : <div/>}
-   <div> <h6 className="font-thin text-md py-0 hover:bg-greige hover:text-ceci-gray-dark text-ceci-gray-dark tracking-wide uppercase">{hit.Title}</h6>
+   <div> <h6 className="font-thin text-base py-0 hover:bg-greige hover:text-ceci-gray-dark text-ceci-gray-dark tracking-wide uppercase">{hit.Title}</h6>
 {hit.Subtitle ? <h6 className="text-sm tracking-booped text-ceci-gray-mid font-thin pb-1 ">{hit.Subtitle}</h6> : ""}
-<h6 className="text-xs tracking-widest font-display uppercase">{hit.AuthorCredit}</h6>
+<h6 className="text-sm tracking-widest font-display uppercase">{hit.AuthorCredit}</h6>
 
 <div className="pt-3 text-ceci-gray-dark dropCap font-serif cms text-lg" dangerouslySetInnerHTML={{ __html: hit.MainDescription.html.split(' ').splice(0, 30).join(' ') + '...' }}/>
-<h6 className="text-xs uppercase tracking-wide text-ceci-gray-mid font-thin pb-5">Published: {hit.PublicationDate}</h6></div></a></div>
+<h6 className="text-sm uppercase tracking-wide text-ceci-gray-mid font-thin pb-5">Published: {hit.PublicationDate}</h6></div></a></div>
 
 const Search = () => (
     <InstantSearch searchClient={searchClient} indexName={process.env.GATSBY_ALGOLIA_INDEX_NAME} routing={true} insights={true}  >
@@ -49,14 +49,14 @@ const Search = () => (
 </h3>
 
        <div className="border-b border-gray-400 pb-3">
-        <SortBy className="text-xs text-gray-600"
+        <SortBy className="text-sm text-gray-600"
           defaultRefinement="Books_new"
           items={[
             {value: "Book_new", label:"Most Relevant"},
             {value: "newest", label:"Most Recent Books First"}
             ]}/>
 
-      <Stats className="text-xs text-gray-600"/>
+      <Stats className="text-sm text-gray-600"/>
       </div>
       <Hits className="pt-5" hitComponent={Hit} />
       </section>

@@ -328,7 +328,7 @@ const uvap = getImage(data.uvaplogo)
                   </ul>
                 </div>
                 <label id="close-small-menu" htmlFor="toggle-one">
-                  <span className="uppercase block text-xs text-gray-300 float-right">Close X</span>
+                  <span className="uppercase block text-sm text-gray-300 float-right">Close X</span>
                 </label>
               </div>
               
@@ -687,7 +687,7 @@ const uvap = getImage(data.uvaplogo)
                   </ul>
                 </div>
                 <label id="close-menu" htmlFor="toggle-big">
-                  <span className="uppercase block text-xs text-gray-400 hover:text-gray-300 float-right">Close X</span>
+                  <span className="uppercase block text-sm text-gray-400 hover:text-gray-300 float-right">Close X</span>
                </label>
               </div>
             </div>

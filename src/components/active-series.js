@@ -38,11 +38,11 @@ const ActiveSeries = () => {
     {data.allMarkdownRemark.edges.map((edge, index) => (
         
             <div className="w-full flex flex-col hover:bg-greige hover:text-ceci-gray-dark" key={`serinfo${index}`}>
-                      <span className="inline-block py-2 uppercase text-ceci-gray-mid text-xs font-medium tracking-wider">{ edge.node.frontmatter.seriestype }</span>
+                      <span className="inline-block py-2 uppercase text-ceci-gray-mid text-sm font-medium tracking-wider">{ edge.node.frontmatter.seriestype }</span>
 
       <Link  to={`../series/${ edge.node.frontmatter.seriesID }`}>
         <div className="sm:text-xl text-lg text-gray-700 tracking-wide font-serif ">{ edge.node.frontmatter.title }</div></Link>
-        <article className="cms leading-relaxed py-2" dangerouslySetInnerHTML={{ __html: sanitizeHtml(edge.node.html)}}/>        <div className="flex items-center flex-wrap pb-4 my-2 border-b-2 border-gray-100  mt-auto w-full">
+        <article className="cms text-base leading-relaxed py-2" dangerouslySetInnerHTML={{ __html: sanitizeHtml(edge.node.html)}}/>        <div className="flex items-center flex-wrap pb-4 my-2 border-b-2 border-gray-100  mt-auto w-full">
           <span className="text-gray-600 leading-relaxed font-serif ml-4 cms">{edge.node.frontmatter.editors}
             
           </span>

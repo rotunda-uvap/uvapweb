@@ -29,7 +29,7 @@ const exhibitPage = ({ data }) => {
         {/* <GatsbyImage image={image} alt="related image"/> */}
         {data.markdownRemark.frontmatter.coupon && <div className={`${bgcolor} ${txtcolor} p-2 text-xl font-thin tracking-wide text-center`}>{data.markdownRemark.frontmatter.coupon}</div>}
         <div>
-          <div className={` px-10 text-md text-ceci-gray-dark font-light tracking-wide text-center`}
+          <div className={` px-10 text-base text-ceci-gray-dark font-light tracking-wide text-center`}
           dangerouslySetInnerHTML={{ __html: sanitizeHtml(exhibit.html) }}/>
 
         
