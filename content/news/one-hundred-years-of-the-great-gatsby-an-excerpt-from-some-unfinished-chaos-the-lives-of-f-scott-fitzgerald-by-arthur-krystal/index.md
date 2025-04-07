@@ -1,7 +1,7 @@
 ---
 templateKey: news
 type: news
-title: "One Hundred Years of the Great Gatsby: An Excerpt from Some Unfinished
+title: "One Hundred Years of The Great Gatsby: An Excerpt from Some Unfinished
   Chaos: The Lives of F. Scott Fitzgerald by Arthur Krystal "
 related_book:
   - "5945"
