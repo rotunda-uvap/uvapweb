@@ -2,13 +2,12 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: Those Who Stayed
-    banner_author: Claudia Krich
-    banner_subtitle: A Vietnam Diary
-    banner_id: "10042"
-    banner_quote: This is a must-read.
-    banner_attr: Le Ly Hayslip, humanitarian and author of When Heaven and Earth
-      Changed Places
+  - banner_title: From Dakota to Dixie
+    banner_author: Jonathan W. White and Reagan Connelly, eds.
+    banner_subtitle: George Buswell's Civil War
+    banner_id: "10075"
+    banner_quote: An essential resource.
+    banner_attr: Cecily N. Zander, Texas Woman's University
 related_book:
   - "5744"
   - "5617"
@@ -21,16 +20,16 @@ related_collection:
   - Homepage Featured
 featured_books:
   - "10047"
-  - "10057"
-  - "10014"
-  - "10019"
-  - "10034"
-  - "10051"
   - "10054"
+  - "10014"
+  - "10057"
+  - "10042"
+  - "10034"
+  - "10019"
+  - "10051"
   - "10039"
   - "10015"
-  - "10011"
   - "10020"
-  - "5925"
+  - "10011"
   - "10016"
 ---
