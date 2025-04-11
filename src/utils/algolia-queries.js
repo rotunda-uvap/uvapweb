@@ -24,6 +24,7 @@ const bookQuery = `{
         internal {
           contentDigest
         }
+        keywords
         List
         PublicationDate
         DaysSincePublication
