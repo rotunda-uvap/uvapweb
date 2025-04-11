@@ -36,7 +36,7 @@ const bookQuery = `{
   }
 }`
 
-function bookToAlgoliaRecord({ node: { id, BookID, Title, Subtitle, MainDescription, internal, AuthorCredit, Subjects, TableOfContents, Series, List, DaysSincePublication, PublicationDate, ISBNs, CoverImageMain} }) {
+function bookToAlgoliaRecord({ node: { id, BookID, Title, Subtitle, MainDescription, internal, AuthorCredit, Subjects, TableOfContents, Series, List, DaysSincePublication, PublicationDate, ISBNs, CoverImageMain, keywords} }) {
   return {
     objectID: id,
     BookID,
@@ -52,7 +52,8 @@ function bookToAlgoliaRecord({ node: { id, BookID, Title, Subtitle, MainDescript
     ISBNs,
     DaysSincePublication,
     PublicationDate,
-    CoverImageMain
+    CoverImageMain,
+    keywords
   }
 }
 
@@ -61,7 +62,7 @@ const queries = [
     query: bookQuery,
     transformer: ({ data }) => data.books.edges.map(bookToAlgoliaRecord),
     indexName,
-    settings: { attributesToSnippet: [`MainDescription:20`], searchableAttributes: ['Title', 'Subtitle', 'MainDescription', 'AuthorCredit', 'ISBNs', 'TableOfContents', 'internal.contentDigest', 'CoverImageMain'], attributesForFaceting: ['Series.name', 'Subjects.name', 'List'], typoTolerance: 'min', minWordSizefor1Typo:5 },
+    settings: { attributesToSnippet: [`MainDescription:20`], searchableAttributes: ['Title', 'Subtitle', 'MainDescription', 'AuthorCredit', 'ISBNs', 'TableOfContents', 'internal.contentDigest', 'CoverImageMain', 'keywords'], attributesForFaceting: ['Series.name', 'Subjects.name', 'List'], typoTolerance: 'min', minWordSizefor1Typo:5 },
   },
 ]
 
