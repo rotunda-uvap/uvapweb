@@ -54,7 +54,11 @@ function bookToAlgoliaRecord({ node: { id, BookID, Title, Subtitle, MainDescript
     DaysSincePublication,
     PublicationDate,
     CoverImageMain,
-    keywords
+    keywords: Array.isArray(node.keywords)
+      ? node.keywords
+      : node.keywords
+        ? [String(node.keywords)]
+        : []
   }
 }
 
