@@ -1,5 +1,3 @@
-
-
 const indexName = `Books_new`
 
 const bookQuery = `{
@@ -37,29 +35,29 @@ const bookQuery = `{
   }
 }`
 
-function bookToAlgoliaRecord({ node: { id, BookID, Title, Subtitle, MainDescription, internal, AuthorCredit, Subjects, TableOfContents, Series, List, DaysSincePublication, PublicationDate, ISBNs, CoverImageMain, keywords} }) {
+function bookToAlgoliaRecord({ node }) {
   return {
-    objectID: id,
-    BookID,
-    Title,
-    Subtitle,
-    MainDescription,
-    AuthorCredit,
-    Subjects,
-    TableOfContents,
-    internal,
-    Series,
-    List,
-    ISBNs,
-    DaysSincePublication,
-    PublicationDate,
-    CoverImageMain,
+    objectID: node.id,
+    BookID: node.BookID,
+    Title: node.Title,
+    Subtitle: node.Subtitle,
+    MainDescription: node.MainDescription,
+    AuthorCredit: node.AuthorCredit,
+    Subjects: node.Subjects,
+    TableOfContents: node.TableOfContents,
+    internal: node.internal,
+    Series: node.Series,
+    List: node.List,
+    ISBNs: node.ISBNs,
+    DaysSincePublication: node.DaysSincePublication,
+    PublicationDate: node.PublicationDate,
+    CoverImageMain: node.CoverImageMain,
     keywords: Array.isArray(node.keywords)
       ? node.keywords
       : node.keywords
         ? [String(node.keywords)]
         : []
-  }
+  };
 }
 
 const queries = [
