@@ -86,6 +86,11 @@ export default function RotundaCustomerList({data}) {
 <Para>Note that your usage stats may show access to publications which you have not purchased, as your users will be able to navigate to contents pages within them, and those page views are logged.</Para> */}
       </section>
       <section className="px-5">
+        <Heading3>Accessibility</Heading3>
+        <Para>In 2024, Rotunda passed its 20th anniversary. While the platform has maintained all its core features over this long stretch of time, it has not continued to meet modern standards for assistive web technologies. In 2025, we have begun a complete modernization of the entire Rotunda platform, which will include an WCAG compliant redesign of our publication websites. This redesign will begin with our American History Collection, and is expected to be completed in 2027.</Para>
+        <Para>Understanding this, <a href="../../VPAT2.5508_RotundaAHC.pdf">click here</a> for our VPAT for the current American History Collection. </Para>
+      </section>
+      <section className="px-5">
         <Heading3>MARC Records</Heading3>
 
 <p className="font-assistant">For a zip archive of all of the below records, click here: <a href="https://rotunda.upress.virginia.edu/MARC/all_rotunda_marc_records.zip">All records</a></p>

@@ -121,8 +121,8 @@ padding:1em;
     </Article>
 
     <Article>
-      <Link to={'/rotunda-customer-page'}><Heading4 className="underline">MARC Records and Access Statistics</Heading4></Link>
-      <Para>Customer information and statistics for librarians or purchasers of Rotunda Publications.</Para>
+      <Link to={'/rotunda-customer-page'}><Heading4 className="underline">MARC Records, Access Statistics and Accessibility</Heading4></Link>
+      <Para>Customer information for librarians or purchasers of Rotunda Publications.</Para>
       
      
     </Article>
