@@ -184,7 +184,7 @@ export default function RotundaCustomerList({data}) {
 
     <section className="px-5">
     <Heading3>Current Rotunda Customers</Heading3>
-      <ul className="leading-relaxed md:grid md:grid-cols-2" id="customas">
+      <ul className="leading-relaxed md:grid md:grid-cols-2" id="customers">
       {custs.edges.map((edge, index)=> (
             <>
            <li className="font-assistant"  key={`custom${index}`}>{edge.node.name }</li>
