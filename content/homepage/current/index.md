@@ -2,12 +2,13 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: From Dakota to Dixie
-    banner_author: Jonathan W. White and Reagan Connelly, eds.
-    banner_subtitle: George Buswell's Civil War
-    banner_id: "10075"
-    banner_quote: An essential resource.
-    banner_attr: Cecily N. Zander, Texas Woman's University
+  - banner_title: Spectacle Earth
+    banner_author: Andrew Kalaidjian
+    banner_subtitle: Media for Planetary Change
+    banner_id: "10066"
+    banner_quote: Articulates the relationship between media spectacle and
+      anthropogenic climate change.
+    banner_attr: Lisa Swanstrom, University of Utah
 related_book:
   - "5744"
   - "5617"
@@ -24,6 +25,7 @@ featured_books:
   - "10014"
   - "10057"
   - "10042"
+  - "10075"
   - "10034"
   - "10019"
   - "10051"
