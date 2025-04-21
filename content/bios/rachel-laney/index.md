@@ -2,7 +2,7 @@
 templateKey: bio
 title: Rachel Laney
 staff_name: Rachel Laney
-profile_photo: ""
+profile_photo: rachel.jpg
 name_slug: rachel-laney
 job_title: Editorial, Design, and Production Coordinator
 department:
