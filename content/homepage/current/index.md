@@ -2,13 +2,13 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: Spectacle Earth
-    banner_author: Andrew Kalaidjian
-    banner_subtitle: Media for Planetary Change
-    banner_id: "10066"
-    banner_quote: Articulates the relationship between media spectacle and
-      anthropogenic climate change.
-    banner_attr: Lisa Swanstrom, University of Utah
+  - banner_title: Landscape Fieldwork
+    banner_author: Gareth Doherty
+    banner_subtitle: How Engaging the World Can Change Design
+    banner_id: "10056"
+    banner_quote: A highly original and significant contribution to the field of
+      landscape architecture.
+    banner_attr: Frederick Steiner, University of Pennsylvania
 related_book:
   - "5744"
   - "5617"
