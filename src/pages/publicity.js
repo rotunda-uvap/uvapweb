@@ -39,16 +39,16 @@ export default function PubPage({ data }) {
             </section>
  <section id="review">
    <SectionHeader text="Review Copy Requests"/>
- <p className="cms leading-relaxed text-small text-left">
+ <p className="cms leading-relaxed text-base text-left">
  If you are a journalist or journal interested in a copy of a book for review, we can supply gratis copies of titles published within the past two years.  </p>
- <p className="cms text-small">Please include the following in your email:</p>
+ <p className="cms text-base">Please include the following in your email:</p>
  <ul className="pl-8 list-disc">
-   <li className="font-serif">Name of book and author</li>
-<li className="font-serif">Your media outlet</li>
-<li className="font-serif">Full contact information (name, mailing address), along with any deadlines</li>
-<li className="font-serif">Links to your outlet's website</li>
+   <li className="font-serif text-base">Name of book and author</li>
+<li className="font-serif text-base">Your media outlet</li>
+<li className="font-serif text-base">Full contact information (name, mailing address), along with any deadlines</li>
+<li className="font-serif text-base">Links to your outlet's website</li>
  </ul>
- <p className="pt-2">Review copy requests can take up to four weeks to process. Due to the volume of requests, we are unable to provide status updates. Upon publication, please send PDFs and/or links to coverage to <a href="mailto:sborgatti@virginia.edu">sborgatti@virginia.edu.</a></p>
+ <p className="pt-2 text-base">Review copy requests can take up to four weeks to process. Due to the volume of requests, we are unable to provide status updates. Upon publication, please send PDFs and/or links to coverage to <a href="mailto:sborgatti@virginia.edu">sborgatti@virginia.edu.</a></p>
  </section>
 
           <div className="mx-auto px-4">
@@ -67,7 +67,7 @@ export default function PubPage({ data }) {
                
                   {edge.node.frontmatter.related_book ? <div className="md:base-1/5 shrink-0 pr-2"><img src={'https://ik.imagekit.io/uvapress/' + edge.node.frontmatter.related_book[0].BookID + "_M.jpg"} alt="cover"/></div> : <div></div>}
                  
-                  {edge.node.html ?  <div><div className=" text-ceci-gray-dark font-light dropCap px-2 md:px-1" dangerouslySetInnerHTML={{ __html: sanitizeHtml(edge.node.html.split(' ').splice(0, 100).join(' ') + '...' )}}></div>            <div className="font-display uppercase text-sm tracking-widest py-3 md:py-2"><FaArrowAltCircleRight className="inline mx-4"/> Continue Reading</div>
+                  {edge.node.html ?  <div><div className=" text-ceci-gray-dark text-base font-light dropCap px-2 md:px-1" dangerouslySetInnerHTML={{ __html: sanitizeHtml(edge.node.html.split(' ').splice(0, 100).join(' ') + '...' )}}></div>            <div className="font-display uppercase text-sm tracking-widest py-3 md:py-2"><FaArrowAltCircleRight className="inline mx-4"/> Continue Reading</div>
 </div> : <div></div>}
                   
             </div>
