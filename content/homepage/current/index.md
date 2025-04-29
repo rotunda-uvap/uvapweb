@@ -2,13 +2,13 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: Landscape Fieldwork
-    banner_author: Gareth Doherty
-    banner_subtitle: How Engaging the World Can Change Design
-    banner_id: "10056"
-    banner_quote: A highly original and significant contribution to the field of
-      landscape architecture.
-    banner_attr: Frederick Steiner, University of Pennsylvania
+  - banner_title: Students to Soldiers
+    banner_author: John F. Morris
+    banner_subtitle: Secret Military Education at Elite Schools, 1815–1945
+    banner_id: "10064"
+    banner_quote: The international, comparative aspect of this study is unusual and
+      invaluable.
+    banner_attr: David Silbey, Cornell University
 related_book:
   - "5744"
   - "5617"
