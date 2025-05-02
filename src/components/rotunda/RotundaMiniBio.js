@@ -21,13 +21,12 @@ export default function MiniBio({ frontmatter }) {
   const clean_email = email.replace(/[^\x00-\x7F]/g, "");
   
   return (
-    <div className="p-4 rotunda">
+    <div className="p-3 rotunda">
       <ul className="flex flex-col items-center ">
         <Link to={slink}>
           <Heading4>{title}</Heading4>
         </Link>
         <li className="text-sm font-assistant ">{job_title}</li>
-        <li className="text-sm">{phone}</li>
         <li className="text-sm font-light pb-2">
           <a
             href={`mailto:${clean_email}`}
