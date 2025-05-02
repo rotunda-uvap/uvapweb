@@ -2,13 +2,12 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: Students to Soldiers
-    banner_author: John F. Morris
-    banner_subtitle: Secret Military Education at Elite Schools, 1815–1945
-    banner_id: "10064"
-    banner_quote: The international, comparative aspect of this study is unusual and
-      invaluable.
-    banner_attr: David Silbey, Cornell University
+  - banner_title: A Soldier's Life
+    banner_author: Edna W. Cummings
+    banner_subtitle: A Black Woman's Rise from Army Brat to Six Triple Eight Champion
+    banner_id: "10090"
+    banner_quote: A guidebook on how to face adversity with grace and grit.
+    banner_attr: Norah O'Donnell, CBS News Anchor
 related_book:
   - "5744"
   - "5617"
