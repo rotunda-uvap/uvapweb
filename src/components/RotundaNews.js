@@ -6,7 +6,7 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image"
 export default function RotundaNews() { 
   const data = useStaticQuery(graphql`
   query {
-    image: file(relativePath: { eq: "rotunda_logo.png" }) {
+    image: file(relativePath: { eq: "FDR.jpg" }) {
       childImageSharp {
         gatsbyImageData(
           placeholder: BLURRED
@@ -27,49 +27,19 @@ export default function RotundaNews() {
       <>
         <div className="flex items-center md:px-10 space-x-3 font-serif uppercase tracking-wider text-sm text-ceci-gray-dark">
           <div className="border-r-2 pr-2 font-serif uppercase tracking-wider self-center">rotunda news</div>
-          <div className="text-ceci-gray-mid text-sm pt-1">2024-10</div>
+          <div className="text-ceci-gray-mid text-sm pt-1">2025-05</div>
         </div>
   
         <div className="md:px-10 flex flex-col">
           <Link
             className="font-display tracking-wide uppercase py-2 font-thin"
-            to={`https://olmsted.org/open-access-the-papers-of-frederick-law-olmsted/`}
+            to={`https://prde.upress.virginia.edu/`}
           >
-            Content Additions
+            FDR Audio Comes to the Presidential Recordings Digital Edition
           </Link>
           <div className="font-serif text-ceci-gray-dark text-base leading-relaxed">
-            <p>The following volumes were added to our <Link to={'https://www.upress.virginia.edu/rotunda/#ahc'}>American History Collection</Link> in 2024:</p><p>
-              <Link to={'https://www.upress.virginia.edu/title/ADMS/'}>
-                Papers of John Adams, Volume 21
-              </Link>
-              <br />
-              <Link to={'https://www.upress.virginia.edu/title/TSJN/'}>
-                Papers of Thomas Jefferson, Volume 46
-              </Link>
-              <br />
-              <Link to={'https://www.upress.virginia.edu/title/TSJN/'}>
-                Papers of Thomas Jefferson, Retirement Series, Volume 19
-              </Link>
-              <br />
-              <Link to={'https://www.upress.virginia.edu/title/JMDE/'}>
-                Papers of James Madison, Secretary of State, Volume 13
-              </Link>
-              <br />
-              <Link to={'https://www.upress.virginia.edu/title/RNCN/'}>
-                Documentary History of the Ratification of the Constitution,
-                Ratification of the Bill of Rights, Volume 2
-              </Link>
-              <br />
-              <Link to={'https://prde.upress.virginia.edu/content/johnson'}>
-                Presidential Recordings Digital Edition, Johnson Telephone Tapes,
-                Volume 2
-              </Link>
-              <br />
-              <Link to={'https://prde.upress.virginia.edu/content/reagan'}>
-                Presidential Recordings Digital Edition, The Presidential
-                Recordings of Ronald Reagan
-              </Link>
-            </p>
+           <p>This collection of 22 transcripts comprises approximately 6 hours of material recorded by President Franklin D. Roosevelt Sr. from 23 August 1940 through 8 November 1940. It includes the proceedings of 14 news conferences, the private exchanges that immediately preceded and followed those events, and various other conversations with Cabinet members, legislators, White House staffers, foreign officials, and private individuals. Each of these conversations took place in the Oval Office, which Roosevelt outfitted with a recording device in the summer of 1940. </p>
+          <p>This content is the latest addition to the <Link to={"https://prde.upress.virginia.edu/"}>Presidential Recordings Digital Edition (PRDE)</Link>, the online portal for annotated transcripts of the White House tapes. Created by a team of scholars and researchers at the <Link to={"https://millercenter.org/"}>University of Virginia’s Miller Center</Link>, and published via our <Link to={"https://www.upress.virginia.edu/rotunda/"}>Rotunda Digital Imprint</Link>, these transcripts are presented in PRDE alongside the corresponding audio, enabling users to read and listen to these conversations simultaneously. PRDE is available via institutional subscription. </p>
           </div>
   
           <div className="font-display uppercase text-sm tracking-widest">
@@ -78,7 +48,7 @@ export default function RotundaNews() {
               to={`https://rotunda.upress.virginia.edu/entrance.xqy/`}
             >
               <FaArrowAltCircleRight className="inline mx-4" />
-              See our ROTUNDA Collections
+              See all ROTUNDA Collections
             </Link>
           </div>
         </div>
