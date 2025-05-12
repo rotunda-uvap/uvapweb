@@ -28,6 +28,7 @@ featured_books:
   - "5296"
   - "5943"
   - "5273"
+  - "10093"
 related_collection:
   - VAF 25
 date: 2025-05-08
