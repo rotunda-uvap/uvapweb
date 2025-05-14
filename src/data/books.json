@@ -36104,120 +36104,7 @@
       "html": "<div>Foreword<br/>Introduction<br/>1. Resource Allocation<br/>2. Cluster Analysis<br/>3. Conjoint Analysis<br/>4. Linear Regression<br/>5. Customer Lifetime Value<br/>6. Marketing Experiments<br/>7. Paid Search Advertising<br/>8. Text Analytics<br/>9. Logistic Regression<br/>10. Recommendation Systems<br/>11. Automation of Marketing Models<br/>12. Implementing Marketing Analytics<br/>Acknowledgments<br/>Notes<br/>Further Resources<br/>Index</div>"
     }
   },
-  {
-    "BookID": "10096",
-    "Title": "The Strange Career of Cornbread Nationalism",
-    "Subtitle": "Foodways and the Fantasy South",
-    "PublicationDate": "2025-09-17",
-    "DaysSincePublication": -128,
-    "AuthorCredit": "Jon Smith and Scott Romine",
-    "Series": null,
-    "InternalSeriesVolume": null,
-    "MainDescription": {
-      "html": "<b>Debunking the mythologized South of the food writing world</b><br/><br/> Pick up a contemporary cookbook or food magazine from the American South and you may notice that much of the writing isn’t really about the food at all. In the late twentieth century, Southern boosters began elevating particular foods and drinks into what they lovingly called “foodways.” Their aim, however, was less to celebrate the food than to rebrand the Southern culture such foodways were now said to express—replacing the troubled history of the Confederacy with a folksy, authentic, and beneficent cornbread nation. This “timeless” way of life, they claimed, not only unified a hundred million Southerners, it also distinguished them from the rest of the country and the world.<br/><br/> Scholars who study the region today—historians, sociologists, literary critics—have rarely taken these claims seriously enough to respond to them. But as <i>The Strange Career of Cornbread Nationalism</i> shows, foodways fantasies and the feelings they strive to work up carry an ugly, antidemocratic legacy that warrants closer examination.<br/><br/> Blunt, authoritative, and surprisingly funny, this book questions a seemingly harmless image so widely disseminated it has been taken for granted as the truth, even as history paints a very different picture."
-    },
-    "Bindings": [
-      {
-        "type": "Cloth",
-        "price": "95.00",
-        "pages": "186",
-        "ISBN": "9780813953380",
-        "date": "Sep 2025",
-        "buylink": "https://uvp.secure.longleafservices.org/cart?isbn=9780813953380"
-      },
-      {
-        "type": "Paper",
-        "price": "24.95",
-        "pages": "186",
-        "ISBN": "9780813953397",
-        "date": "Sep 2025",
-        "buylink": "https://uvp.secure.longleafservices.org/cart?isbn=9780813953397"
-      },
-      {
-        "type": "Ebook",
-        "price": "24.95",
-        "pages": "186",
-        "ISBN": "9780813953403",
-        "date": "Sep 2025",
-        "buylink": "https://uvp.secure.longleafservices.org/cart?isbn=9780813953403"
-      }
-    ],
-    "Reviews": [
-      {
-        "html": "An original and substantial contribution to the conversations about southern food. The authors show how southern foodways progenitors have created a fantastical, desirable, pastoral South that never existed—at least not as it is portrayed by them—and how, with this language, they have revived tropes that have supported white supremacy. I look forward to assigning it in my own classes.",
-        "attribution": "Mark A. Johnson, University of Tennessee, Chattanooga, author of An Irresistible History of Alabama Barbecue: From Wood Pit to White Sauce and American Bacon: The Cultural History of a Food Phenomenon"
-      }
-    ],
-    "Prizes": null,
-    "BioNote": {
-      "html": "<b>Jon Smith</b> is Professor of English at Simon Fraser University and author of <i>Finding Purple America</i>. <b>Scott Romine</b> is Professor of English at UNC Greensboro and author of <i>The Zombie Memes of Dixie</i>."
-    },
-    "Authors": [
-      "Smith, Jon",
-      "Romine, Scott"
-    ],
-    "Subjects": [
-      {
-        "subjectID": "FoodCooking",
-        "name": "Food & Cooking"
-      },
-      {
-        "subjectID": "CulturalStudies",
-        "name": "Cultural Studies"
-      },
-      {
-        "subjectID": "ModernAmericanHistory",
-        "name": "Modern American History"
-      }
-    ],
-    "keywords": [
-      "popular southern food writing",
-      "American studies",
-      "Southern studies",
-      "Southern Foodways Alliance",
-      "American South",
-      "Southern identity",
-      "John Egerton",
-      "John T. Edge",
-      "racecraft",
-      "Southern nationalism",
-      "Cornbread Nation",
-      "Center for the Study of Southern Culture",
-      "Bitter Southerner",
-      "Oxford American",
-      "Garden & Gun",
-      "Jim Crown south",
-      "regional identification",
-      "food scholars",
-      "Southern history",
-      "folkways",
-      "Nashville Agrarians",
-      "history of slavery",
-      "foodways",
-      "SFA",
-      "19th-century Germany"
-    ],
-    "isUVAP": true,
-    "isDelaware": false,
-    "Rotunda": false,
-    "List": "Fall 2025",
-    "ISBNs": [
-      "0813953383",
-      "9780813953380",
-      "09780813953380",
-      "0813953391",
-      "9780813953397",
-      "09780813953397",
-      "0813953405",
-      "9780813953403",
-      "09780813953403"
-    ],
-    "CoverImageMain": null,
-    "CoverImageFull": null,
-    "TableOfContents": {
-      "html": ""
-    }
-  },
+  
   {
     "BookID": "2502",
     "Title": "Slave in A Box",
@@ -59756,8 +59643,8 @@
       "9780813953748",
       "09780813953748"
     ],
-    "CoverImageMain": null,
-    "CoverImageFull": null,
+    "CoverImageMain": "10144_M.jpg",
+    "CoverImageFull": "10144.jpg",
     "TableOfContents": {
       "html": ""
     }
@@ -71550,8 +71437,8 @@
       "9780813954073",
       "09780813954073"
     ],
-    "CoverImageMain": null,
-    "CoverImageFull": null,
+    "CoverImageMain": "10154_M.jpg",
+    "CoverImageFull": "10154.jpg",
     "TableOfContents": {
       "html": ""
     }
