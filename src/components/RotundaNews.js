@@ -45,7 +45,7 @@ export default function RotundaNews() {
           <div className="font-display uppercase text-sm tracking-widest">
             <Link
               className="inline mx-4"
-              to={`https://rotunda.upress.virginia.edu/entrance.xqy/`}
+              to={`/rotunda`}
             >
               <FaArrowAltCircleRight className="inline mx-4" />
               See all ROTUNDA Collections
