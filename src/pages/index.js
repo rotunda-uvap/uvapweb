@@ -115,7 +115,7 @@ export const query = graphql`
         )
       }
     }
-    catalogimage: file(relativePath: { eq: "spring25.jpg" }) {
+    catalogimage: file(relativePath: { eq: "fall25.jpg" }) {
       childImageSharp {
         gatsbyImageData(
           placeholder: BLURRED
