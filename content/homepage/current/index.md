@@ -2,12 +2,12 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: Before Manifest Destiny
-    banner_author: Nicholas G. DiPucchio
-    banner_subtitle: The Contested Expansion of the Early United States
-    banner_id: "10082"
-    banner_quote: Will change the way you think about US expansion.
-    banner_attr: Rachel St. John, University of California, Davis
+  - banner_title: Archival Communities
+    banner_author: Derek Kane O'Leary
+    banner_subtitle: Constructing the Past in the Early United States
+    banner_id: "10087"
+    banner_quote: An outstanding, much needed work.
+    banner_attr: Barbara Oberg, Princeton University
 related_book:
   - "5744"
   - "5617"
