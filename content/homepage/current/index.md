@@ -2,12 +2,12 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: Archival Communities
-    banner_author: Derek Kane O'Leary
-    banner_subtitle: Constructing the Past in the Early United States
-    banner_id: "10087"
-    banner_quote: An outstanding, much needed work.
-    banner_attr: Barbara Oberg, Princeton University
+  - banner_title: Lafayette
+    banner_author: Marc Leepson
+    banner_subtitle: Lessons in Leadership from the Idealist General
+    banner_id: "10170"
+    banner_quote: An affectionate and engrossing portrait.
+    banner_attr: Publishers Weekly
 related_book:
   - "5744"
   - "5617"
