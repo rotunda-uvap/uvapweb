@@ -12,7 +12,6 @@ related_series:
 related_blog:
   - Author's Corner with Derek Kane O'Leary, author of ARCHIVAL COMMUNITIES
   - Author's Corner with Nicholas G. DiPucchio, author of BEFORE MANIFEST DESTINY
-  - Author's Corner with Thomas E. Chávez, author of REVOLUTIONARY DIPLOMACY
 related_staff:
   - Clayton Butler
 featured_books:
