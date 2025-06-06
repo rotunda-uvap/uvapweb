@@ -2,12 +2,13 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: Lafayette
-    banner_author: Marc Leepson
-    banner_subtitle: Lessons in Leadership from the Idealist General
-    banner_id: "10170"
-    banner_quote: An affectionate and engrossing portrait.
-    banner_attr: Publishers Weekly
+  - banner_title: Queer Virginia
+    banner_author: Charles H. Ford and Jeffrey L. Littlejohn, eds.
+    banner_subtitle: New Stories in the Old Dominion
+    banner_id: "10093"
+    banner_quote: An indispensable assemblage of diverse queer histories and
+      cultures from across the Commonwealth.
+    banner_attr: Melissa Ooten, University of Richmond
 related_book:
   - "5744"
   - "5617"
