@@ -181,6 +181,11 @@ padding:1em;
    </Link></li>
     ))}  </ul>
    </RotSection>
+{/*    <RotSection>
+    <Heading3>Rotunda Innovations</Heading3>
+    <Para>While not created in-house, these digital projects created by our partners are officially  </Para>
+
+   </RotSection> */}
    <RotSection>
       <Heading3>legacy projects</Heading3>
       <Para>These two guides to resources in African American history, dating from the 1990s, were the very first online publications under the imprint of the University of Virginia Press.</Para>
