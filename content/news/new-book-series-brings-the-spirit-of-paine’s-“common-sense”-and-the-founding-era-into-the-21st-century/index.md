@@ -1,0 +1,34 @@
+---
+templateKey: news
+type: news
+title: New Book Series Brings the Spirit of Paine’s “Common Sense” and the
+  Founding Era into the 21st Century
+image: screenshot-2025-06-11-at-1.58.11 pm.png
+related_series: []
+date: 2025-06-11
+---
+The University of Virginia Press is pleased to announce “From Pamphlets to Podcasts: An Institute for Thomas Paine Studies Series,” a new series that takes its cue from Thomas Paine, who wrote that “America … replenished the world with more useful knowledge and sounder maxims of civil government” than any other society. Books in this series will advance a new and innovative approach to scholarship on the contests over knowledge making and the pursuit of informed, democratic citizenship in Thomas Paine’s time, and about these processes’ relevance to our own. 
+
+Drs. Nora Slonimsky and Mark Boonshoft will oversee this new publishing venture, which—in collaboration with the [Institute for Thomas Paine Studies](https://www.iona.edu/academics/schools-institutes/institute-thomas-paine-studies) (ITPS) at [Iona University](https://www.iona.edu/) and generous support made possible by the Lapidus Initiative for Early American Inquiry—will provide space for emerging and established scholars alike to produce books that historicize concepts of expertise, propaganda, and information politics in democratic societies, and as such provide a much needed historical grounding for readers to understand our contemporary world of digital communication, misinformation, and heightened political polarization.
+
+“I am thrilled at the unique opportunity presented by this wonderful partnership between the ITPS and the University of Virginia Press, a joint effort that marks the first university press series supported by Iona. ‘From Pamphlets to Podcasts’ will contribute not only the timely and important study of history of knowledge production and communication past and present, but will also facilitate the creation of new knowledge, related to countless interdisciplinary fields and audiences, inside and outside academia,” said Tricia Mulligan, Provost and Senior Vice President for Academic Affairs at Iona University.
+
+Added Sid Lapidus: “‘From Pamphlets to Podcasts: An Institute for Thomas Paine Studies Series’ is an important cornerstone of our efforts with Dr. Slonimsky, Dr. Mulligan, Mr. Grant, and Iona University leadership to support and expand the ITPS, and to foster scholarship and learning about Paine and the ideas he himself studied and valued. I’m delighted by this collaboration between the University of Virginia Press and the Institute for Thomas Paine Studies, and look forward to the exciting new publications it will produce.”
+
+The editors seek books that interrogate both the medium and the message when they consider the broader relationship between an informed citizenry and its multiple—at times contradictory—meanings to the functioning of a republican government and society.
+
+As Mark Boonshoft put it, “‘From Pamphlets to Podcasts’ will offer a venue for scholars to explore the changing meanings of and contests over informed citizenship in American history. As the title suggests, innovations in media technology and methods of communication have long conditioned democratic citizenship. We look forward to working with scholars from a range of disciplines working on these timely issues.” 
+
+Nora Slonimsky concurred and added, “For some time, the ITPS has considered how best to take Thomas Paine’s principles, amongst which included accessible communication, thoughtful connections between the past present, and the importance of learning and knowledge to everyone, regardless of their background, and put them into practice. Thanks to this opportunity with UVA Press, Dr. Zimmerli, and Dr. Boonshoft along with the sponsorship of Sid Lapidus, we have the chance to consider these ideas in real time, supporting tremendous scholars from multiple disciplinary and methodological vantages that help us to more fully understand the relationship between American civic life and institutions, mediums, and modes of expression.”
+
+This new series’ first title will be Derek Kane O’Leary’s *[Archival Communities: Constructing the Past in the Early United States](https://upress.virginia.edu/title/10087/)*, followed by George Oberle’s *[Creating an Informed Citizenry: Knowledge and Democracy in the Early American Republic](https://upress.virginia.edu/title/10158/)* (to be published in December 2025).
+
+Per Eric Brandt, director of UVA Press, “Thomas Paine’s writings such as ‘The American Crisis’ inspired a revolution grounded in the highest democratic ideals. Now, more than ever, we need to be reminded of those ideals. The press of the university founded by Thomas Jefferson, another architect of American democracy, is proud to be the publishing home for this exciting new series from Iona’s Institute for Thomas Paine Studies.”
+
+**About the Series Editors:** 
+
+**Mark Boonshoft** is Associate Professor and Conrad M. Hall ’65 Chair in American Constitutional History at Virginia Military Institute. After receiving his Ph.D. from Ohio State University (2015), he was a post-doctoral fellow in the New York Public Library’s manuscripts division, where he worked on the Early American Manuscripts Project, a large-scale digitization and DH project. Dr. Boonshoft taught at a number of universities before arriving at VMI, and was formerly the first full-time Executive Director of the American Society for Eighteenth-Century Studies. His first book, *Aristocratic Education and the Making of the American Republic*, was published by the University of North Carolina Press in fall 2020 and was a finalist for the 2021 George Washington Book Prize.
+
+**Nora Slonimsky** is Associate Professor and Chair of the Department of History at Iona University, where she is also the Director of the Institute for Thomas Paine Studies (ITPS). She holds service positions with the Society for the History of the Early American Republic (SHEAR), the Organization of American Historians (OAH), and the Society for the History of Authorship, Reading, and Publishing (SHARP). She is the author of the forthcoming *The Engine of Free Expression: Copyrighting the State in Early America*, winner of the SHEAR best manuscript prize and to be published by the University of Pennsylvania Press, and co-editor of American Revolutions in the Digital Age. For more about her work, please see her personal website, [www.hamiltonsolo.com](https://www.hamiltonsolo.com/).
+
+At UVA Press, Editor in Chief **Nadine Zimmerli** will work with Drs. Slonimsky and Boonshoft on bringing into print the best scholarship on the ways in which the role of an informed citizenry in democratic governance has been envisioned and has evolved since Thomas Paine published his pamphlet “Common Sense” in 1776.
