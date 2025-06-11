@@ -10,8 +10,9 @@ related_series:
   - JA
   - RA
 related_blog:
+  - New Book Series Brings the Spirit of Paine’s “Common Sense” and the Founding
+    Era into the 21st Century
   - Author's Corner with Derek Kane O'Leary, author of ARCHIVAL COMMUNITIES
-  - Author's Corner with Nicholas G. DiPucchio, author of BEFORE MANIFEST DESTINY
 related_staff:
   - Clayton Butler
 featured_books:
