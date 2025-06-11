@@ -3,7 +3,10 @@ templateKey: news
 type: news
 title: New Book Series Brings the Spirit of Paine’s “Common Sense” and the
   Founding Era into the 21st Century
-image: screenshot-2025-06-11-at-1.58.11 pm.png
+image: itps-podcast-1.jpg
+related_book:
+  - "10087"
+  - "10158"
 related_series: []
 date: 2025-06-11
 ---
