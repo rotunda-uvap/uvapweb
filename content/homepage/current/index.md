@@ -2,13 +2,12 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: Queer Virginia
-    banner_author: Charles H. Ford and Jeffrey L. Littlejohn, eds.
-    banner_subtitle: New Stories in the Old Dominion
-    banner_id: "10093"
-    banner_quote: An indispensable assemblage of diverse queer histories and
-      cultures from across the Commonwealth.
-    banner_attr: Melissa Ooten, University of Richmond
+  - banner_title: Justice for Ourselves
+    banner_author: John G. Deal, Marianne E. Julienne, and Brent Tarter
+    banner_subtitle: Black Virginians Claim Their Freedom after Slavery
+    banner_id: "5917"
+    banner_quote: Deeply researched and smartly written.
+    banner_attr: Emerging Civil War
 related_book:
   - "5744"
   - "5617"
@@ -24,6 +23,7 @@ featured_books:
   - "10090"
   - "10014"
   - "10057"
+  - "10093"
   - "10042"
   - "10075"
   - "10034"
