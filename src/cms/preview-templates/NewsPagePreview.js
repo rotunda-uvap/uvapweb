@@ -1,19 +1,21 @@
-
-import React from 'react'
-import NewsPageTemplate from "../../components/NewsPageTemplate"
+import React from 'react';
+import NewsPageTemplate from '../../components/NewsPageTemplate';
 
 const NewsPagePreview = ({ entry, widgetFor, getAsset }) => {
-    
-  //  const books = entry.getIn(['data', 'related_book', 'Files'])
-   // const rbooks = books && books.toJS() 
+  const title = entry?.getIn(['data', 'title']) || 'Preview Title';
+  const body = widgetFor ? widgetFor('body') : 'Preview content loading...';
+  const imagePath = entry?.getIn(['data', 'image']);
+  const pic = imagePath ? getAsset(imagePath) : null;
 
-    return (
- <NewsPageTemplate
-    title={entry.getIn(['data', 'title'])}
-    content={widgetFor('body')}
-    pic={getAsset(entry.getIn(['data', 'image']))}
-    //related_list={rbooks}
-  />
-)
-}
-export default NewsPagePreview
+  return (
+    <div>
+      <NewsPageTemplate
+        title={title}
+        content={body}
+        pic={pic}
+      />
+    </div>
+  );
+};
+
+export default NewsPagePreview;

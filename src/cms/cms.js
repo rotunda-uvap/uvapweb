@@ -1,4 +1,4 @@
-import CMS from 'netlify-cms-app';
+import CMS from 'decap-cms-app';
 // Import Decap CMS
 //import CMS from 'decap-cms';
 import NewsPagePreview from './preview-templates/NewsPagePreview'
