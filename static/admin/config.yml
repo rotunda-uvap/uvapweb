@@ -21,7 +21,7 @@ collections:
     slug: "index"
     path: "{{title}}/index"
     fields:
-      - {label: Template Key", name: "templateKey", widget: "hidden", default: "homepage"}
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "homepage"}
       - {label: "version", name: "title", default: "Current"}
       - label: "Top Banner"
         name: "top_banner"
@@ -33,16 +33,16 @@ collections:
           - {label: "Subtitle", name: "banner_subtitle", widget: "string"}
           - {label: "Quote", name: "banner_quote", widget: "string", hint: "max 60ish characters"}
           - {label: "Quote Attribution", name: "banner_attr", widget: "string", hint: "max 50ish characters", required:false}
-          - {label: "Book ID", name: "banner_id", widget: string}
-      - label: Featured Books 
+      - {label: "Book ID", name: "banner_id", widget: "string"}
+      - label: Featured Books
         name: featured_books
         widget: relation
         hint: "Slider of featured books. Choose at least 5"
         collection: files
         multiple: true
-        max:1000
-        value_field:  "book.*.BookID"
-        search_fields: ['book.*.Title'] 
+        max: 1000
+        value_field: "book.*.BookID"
+        search_fields: ['book.*.Title']
         display_fields: ['book.*.Title']
         file: booklist_cms
   - name: 'news'
@@ -57,17 +57,17 @@ collections:
     path: '{{title}}/index'
     fields:
       - { label: "Template Key", name: "templateKey", widget: "hidden", default: "news"}
-      - { label: 'Type', name: 'type', widget: 'select', options: ['news', 'media', 'author-corner'], required: true}  
-      - { name: title, label: Title }
-      - { label: 'Summary', name: 'description', widget: 'markdown', modes: ['rich_text', 'raw'], required: false, hint: 'Text for homepage and previews'}
-      - { name: body, label: Body, widget: markdown }
-      - {label: Image, name: image, widget: image, required: false, hint:'PLEASE CHECK SIZE! Should not be over 1mb file.'}
+      - { label: "Type", name: "type", widget: "select", options: ["news", "media", "author-corner"], required: true}
+      - { name: "title", label: "Title" }
+      - { label: "Summary", name: "description", widget: "markdown", modes: ["rich_text", "raw"], required: false, hint: "Text for homepage and previews"}
+      - { name: "body", label: "Body", widget: "markdown" }
+      - {label: "Image", name: "image", widget: "image", required: false, hint: "PLEASE CHECK SIZE! Should not be over 1mb file."}
       - label: Related Book(s)
         name: related_book
         widget: relation
         collection: files
         multiple: true
-        max:1000
+        max: 1000
         value_field: "book.*.BookID"
         search_fields: ['book.*.Title'] 
         display_fields: ['book.*.Title']
@@ -106,8 +106,8 @@ collections:
     path: '{{title}}/index'
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "page"}
-      - { name: title, label: Title }
-      - { name: body, label: Body, widget: markdown }
+      - { name: "title", label: "Title" }
+      - { name: "body", label: "Body", widget: "markdown" }
       - label: "Related Book Collection(s)"
         name: "related_collection"
         widget: "relation"
@@ -128,7 +128,7 @@ collections:
     path: '{{title}}/index'
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "resource"}
-      - { name: title, label: Title, hint: "Title of book attached to these resources. (For CMS label)", required: true }
+      - { name: "title", label: "Title", hint: "Title of book attached to these resources. (For CMS label)", required: true }
       - label: Attached Book
         name: attached_book
         widget: relation
@@ -145,7 +145,7 @@ collections:
         hint: "Manual list of UVaP books that may be similar"
         collection: files
         multiple: true
-        max:1000
+        max: 1000
         value_field: "book.*.BookID"
         search_fields: ['book.*.Title'] 
         display_fields: ['book.*.Title']
@@ -159,8 +159,8 @@ collections:
         required: false
         summary: '{{fields.name}}'
         fields:
-         - {label: Name, name: name, widget: string, hint: "Text to display for the link"}
-         - {label: Link, name: link, widget: string, hint: "Hyperlink to resource"}
+         - {label: "Name", name: "name", widget: "string", hint: "Text to display for the link"}
+         - {label: "Link", name: "link", widget: "string", hint: "Hyperlink to resource"}
          
   - name: 'exhibits'
     label: 'Exhibits'
@@ -174,19 +174,19 @@ collections:
     path: '{{title}}/index'      
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "exhibit"}
-      - { name: title, label: Title, hint: "This will be the title of the page and the link from the main exhibits page"}
-      - { name: exhibit_slug, label: URL shortcut, hint: "will appear after /exhibits/", required: true}
-      - { name: coupon, label: Coupon Promo, widget: text, required: false}
-      - { name: bgcolor, label: Coupon Area Background Color, widget: "string", hint: 'Go to https://tailwindcss.com/docs/customizing-colors#overview and choose color, example: bg-blue-400', default: bg-white, required: false }
-      - { name: txtcolor, label: Coupon Text Color, widget: "string", hint: 'Go to https://tailwindcss.com/docs/customizing-colors#overview and choose color, example: bg-blue-400 or text-white',  default: text-black, required: false}
-      - { label: Exhibit Logo, name: exhibit_logo, widget: image, required: false}
-      - { name: body, label: Body, widget: markdown, required: false }
+      - { name: "title", label: "Title", hint: "This will be the title of the page and the link from the main exhibits page"}
+      - { name: "exhibit_slug", label: "URL shortcut", hint: "will appear after /exhibits/", required: true}
+      - { name: "coupon", label: "Coupon Promo", widget: "text", required: false}
+      - { name: "bgcolor", label: "Coupon Area Background Color", widget: "string", hint: "Go to https://tailwindcss.com/docs/customizing-colors#overview and choose color, example: bg-blue-400", default: "bg-white", required: false }
+      - { name: "txtcolor", label: "Coupon Text Color", widget: "string", hint: "Go to https://tailwindcss.com/docs/customizing-colors#overview and choose color, example: bg-blue-400 or text-white",  default: "text-black", required: false}
+      - { label: "Exhibit Logo", name: "exhibit_logo", widget: "image", required: false}
+      - { name: "body", label: "Body", widget: "markdown", required: false }
       - label: Related Series
         name: related_series
         widget: relation
         collection: files
         multiple: true
-        max:1000
+        max: 1000
         value_field: "series.*.seriesID"
         search_fields: ['series.*.seriesName'] 
         display_fields: ['series.*.seriesName']
@@ -226,7 +226,7 @@ collections:
         search_fields: ['title']
         value_field: "{{title}}"
         multiple: true
-        max:1000
+        max: 1000
         required: false
       - label: "date"
         name: "date"
@@ -249,14 +249,14 @@ collections:
     path: '{{title}}/index'      
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "collection"}
-      - { name: title, label: Title, required: true }
-      - { name: description, label: description, widget: markdown, required: false }
+      - { name: "title", label: "Title", required: true }
+      - { name: "description", label: "description", widget: "markdown", required: false }
       - label: Related Book(s)
         name: related_book
         widget: relation
         collection: files
         multiple: true
-        max:1000
+        max: 1000
         value_field: "book.*.BookID"
         search_fields: ['book.*.Title'] 
         display_fields: ['book.*.Title']
@@ -275,16 +275,16 @@ collections:
     path: '{{title}}/index'      
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "bio"}
-      - { name: title, label: Title }
-      - { name: staff_name, label: Staff Name}
-      - { label: Profile Photo, name: profile_photo, widget: image, required: false}
-      - { label: 'Name Slug', name: 'name_slug', widget: 'string', required: true}
-      - { label: 'Job Title', name: 'job_title', widget: 'string', required: true}
-      - { label: 'Department', name: 'department', widget: 'select', options: ['OPS', 'ACQ','EDP', 'MKG', 'PUB', 'ROT'], multiple: true, required: true}  
-      - { name: body, label: bio, widget: markdown }
-      - { label: 'Email', name: 'email', widget: 'string', required: true}
-      - { label: 'Phone', name: 'phone', widget: 'string', required: true, hint: "Format (XXX) XXX-XXXX"}
-      - { label: 'Contact For', name: 'contact_for', widget: 'string', required: false}
+      - { name: "title", label: "Title" }
+      - { name: "staff_name", label: "Staff Name"}
+      - { label: "Profile Photo", name: "profile_photo", widget: "image", required: false}
+      - { label: "Name Slug", name: "name_slug", widget: "string", required: true}
+      - { label: "Job Title", name: "job_title", widget: "string", required: true}
+      - { label: "Department", name: "department", widget: "select", options: ["OPS", "ACQ","EDP", "MKG", "PUB", "ROT"], multiple: true, required: true}
+      - { name: "body", label: "bio", widget: "markdown" }
+      - { label: "Email", name: "email", widget: "string", required: true}
+      - { label: "Phone", name: "phone", widget: "string", required: true, hint: "Format (XXX) XXX-XXXX"}
+      - { label: "Contact For", name: "contact_for", widget: "string", required: false}
       - label: Related Series
         name: related_series
         widget: relation
@@ -307,15 +307,15 @@ collections:
     path: '{{rid}}/index'      
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "rotunda"}
-      - { name: title, label: Title }
-      - { name: rid, label: Rotunda Internal ID}
-      - { name: body, label: Marketing Summary, widget: markdown }
+      - { name: "title", label: "Title" }
+      - { name: "rid", label: "Rotunda Internal ID"}
+      - { name: "body", label: "Marketing Summary", widget: "markdown" }
       - label: Related Book(s)
         name: related_book
         widget: relation
         collection: files
         multiple: true
-        max:1000
+        max:  1000
         value_field: "book.*.BookID"
         search_fields: ['book.*.Title'] 
         display_fields: ['book.*.Title']
@@ -334,16 +334,16 @@ collections:
     path: '{{title}}/index'      
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "promo"}
-      - { name: title, label: Title }
-      - { name: body, label: Body, widget: markdown }
-      - { label: 'Summary', name: 'description', widget: 'string', required: false, hint: 'Text for homepage and previews'}
-      - {label: Image, name: image, widget: image, required: false}
+      - { name: "title", label: "Title" }
+      - { name: "body", label: "Body", widget: "markdown" }
+      - { label: "Summary", name: "description", widget: "string", required: false, hint: "Text for homepage and previews"}
+      - {label: "Image", name: "image", widget: "image", required: false}
       - label: Promotion Books
         name: related_book
         widget: relation
         collection: files
         multiple: true
-        max:1000
+        max: 1000
         value_field: "book.*.BookID"
         search_fields: ['book.*.Title'] 
         display_fields: ['book.*.Title']
@@ -369,9 +369,9 @@ collections:
     path: '{{title}}/index'      
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "featured-collection"}
-      - { name: title, label: Title }
-      - { name: body, label: Body, widget: markdown }
-      - { label: 'Summary', name: 'description', widget: 'string', required: false, hint: 'Text for homepage and previews'}
+      - { name: "title", label: "Title" }
+      - { name: "body", label: "Body", widget: "markdown" }
+      - { label: "Summary", name: "description", widget: "string", required: false, hint: "Text for homepage and previews"}
       - label: "Related Book Collection(s)"
         name: "related_collection"
         widget: "relation"
@@ -393,10 +393,10 @@ collections:
     path: '{{title}}/index'
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "imprint"}
-      - { name: title, label: Title }
-      - { label: 'Imprint Editors', name: 'editors', widget: 'string', required: false }
-      - { label: 'Addtional Editors', name: 'moreEditors', widget: 'string', required: false }
-      - { label: 'Imprint ID', name: 'imprintID', widget: 'string' }
+      - { name: "title", label: "Title" }
+      - { label: "Imprint Editors", name: "editors", widget: "string", required: false }
+      - { label: "Addtional Editors", name: "moreEditors", widget: "string", required: false }
+      - { label: "Imprint ID", name: "imprintID", widget: "string" }
       - label: "UVaP Editor"
         name: "related_staff"
         widget: "relation"
@@ -405,7 +405,7 @@ collections:
         value_field: "{{title}}"
         multiple: true
         required: false
-      - { name: body, label: Body, widget: markdown , required: false}
+      - { name: "body", label: "Body", widget: "markdown", required: false}
      
   - name: 'series_info'
     identifier_field: '{{title}}'
@@ -419,11 +419,11 @@ collections:
     path: '{{title}}/index'
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "series"}
-      - { name: title, label: Title }
-      - { label: 'Series Status', name: 'status', widget: 'select', options: ['active', 'completed'], required: true} 
-      - { label: 'Series Type', name: 'seriestype', widget: 'select', options: ['Academic Book Series', 'Documentary Editions','Lecture Series', 'Distributed Series'], required: true}  
-      - { label: 'Series Editors', name: 'editors', widget: 'string', required: false }
-      - { label: 'Addtional Editors', name: 'moreEditors', widget: 'string', required: false }
+      - { name: "title", label: "Title" }
+      - { label: "Series Status", name: "status", widget: "select", options: ["active", "completed"], required: true}
+      - { label: "Series Type", name: "seriestype", widget: "select", options: ["Academic Book Series", "Documentary Editions", "Lecture Series", "Distributed Series"], required: true}
+      - { label: "Series Editors", name: "editors", widget: "string", required: false }
+      - { label: "Addtional Editors", name: "moreEditors", widget: "string", required: false }
       - label: "UVaP Editor"
         name: "related_staff"
         widget: "relation"
@@ -432,8 +432,8 @@ collections:
         value_field: "{{title}}"
         multiple: true
         required: false
-      - { name: body, label: Body, widget: markdown , required: false}
-      - { label: 'Series ID', name: 'seriesID', widget: 'string' }
+      - { name: "body", label: "Body", widget: "markdown", required: false}
+      - { label: "Series ID", name: "seriesID", widget: "string" }
 
   - name: files
     label: Files
