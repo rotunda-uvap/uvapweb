@@ -34,15 +34,15 @@ collections:
           - {label: "Quote", name: "banner_quote", widget: "string", hint: "max 60ish characters"}
           - {label: "Quote Attribution", name: "banner_attr", widget: "string", hint: "max 50ish characters", required:false}
       - {label: "Book ID", name: "banner_id", widget: "string"}
-      - label: Featured Books
+      - label: Featured Books 
         name: featured_books
         widget: relation
         hint: "Slider of featured books. Choose at least 5"
         collection: files
         multiple: true
-        max: 1000
-        value_field: "book.*.BookID"
-        search_fields: ['book.*.Title']
+        max:  1000
+        value_field:  "book.*.BookID"
+        search_fields: ['book.*.Title'] 
         display_fields: ['book.*.Title']
         file: booklist_cms
   - name: 'news'
@@ -67,7 +67,7 @@ collections:
         widget: relation
         collection: files
         multiple: true
-        max: 1000
+        max:  1000
         value_field: "book.*.BookID"
         search_fields: ['book.*.Title'] 
         display_fields: ['book.*.Title']
@@ -145,7 +145,8 @@ collections:
         hint: "Manual list of UVaP books that may be similar"
         collection: files
         multiple: true
-        max: 1000
+        max:  1000
+        options_length: 1000   
         value_field: "book.*.BookID"
         search_fields: ['book.*.Title'] 
         display_fields: ['book.*.Title']
@@ -186,7 +187,7 @@ collections:
         widget: relation
         collection: files
         multiple: true
-        max: 1000
+        max:  1000
         value_field: "series.*.seriesID"
         search_fields: ['series.*.seriesName'] 
         display_fields: ['series.*.seriesName']
@@ -226,7 +227,8 @@ collections:
         search_fields: ['title']
         value_field: "{{title}}"
         multiple: true
-        max: 1000
+        max:  1000
+        options_length: 1000   
         required: false
       - label: "date"
         name: "date"
@@ -256,7 +258,8 @@ collections:
         widget: relation
         collection: files
         multiple: true
-        max: 1000
+        max:  1000
+        options_length: 1000   
         value_field: "book.*.BookID"
         search_fields: ['book.*.Title'] 
         display_fields: ['book.*.Title']
@@ -316,6 +319,7 @@ collections:
         collection: files
         multiple: true
         max:  1000
+        options_length: 1000   
         value_field: "book.*.BookID"
         search_fields: ['book.*.Title'] 
         display_fields: ['book.*.Title']
@@ -343,7 +347,8 @@ collections:
         widget: relation
         collection: files
         multiple: true
-        max: 1000
+        max:  1000
+        options_length: 1000   
         value_field: "book.*.BookID"
         search_fields: ['book.*.Title'] 
         display_fields: ['book.*.Title']
