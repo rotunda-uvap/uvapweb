@@ -40,6 +40,7 @@ collections:
         hint: "Slider of featured books. Choose at least 5"
         collection: files
         multiple: true
+        max:1000
         value_field:  "book.*.BookID"
         search_fields: ['book.*.Title'] 
         display_fields: ['book.*.Title']
@@ -66,6 +67,7 @@ collections:
         widget: relation
         collection: files
         multiple: true
+        max:1000
         value_field: "book.*.BookID"
         search_fields: ['book.*.Title'] 
         display_fields: ['book.*.Title']
@@ -143,6 +145,7 @@ collections:
         hint: "Manual list of UVaP books that may be similar"
         collection: files
         multiple: true
+        max:1000
         value_field: "book.*.BookID"
         search_fields: ['book.*.Title'] 
         display_fields: ['book.*.Title']
@@ -183,6 +186,7 @@ collections:
         widget: relation
         collection: files
         multiple: true
+        max:1000
         value_field: "series.*.seriesID"
         search_fields: ['series.*.seriesName'] 
         display_fields: ['series.*.seriesName']
@@ -222,6 +226,7 @@ collections:
         search_fields: ['title']
         value_field: "{{title}}"
         multiple: true
+        max:1000
         required: false
       - label: "date"
         name: "date"
@@ -251,6 +256,7 @@ collections:
         widget: relation
         collection: files
         multiple: true
+        max:1000
         value_field: "book.*.BookID"
         search_fields: ['book.*.Title'] 
         display_fields: ['book.*.Title']
@@ -309,6 +315,7 @@ collections:
         widget: relation
         collection: files
         multiple: true
+        max:1000
         value_field: "book.*.BookID"
         search_fields: ['book.*.Title'] 
         display_fields: ['book.*.Title']
@@ -336,6 +343,7 @@ collections:
         widget: relation
         collection: files
         multiple: true
+        max:1000
         value_field: "book.*.BookID"
         search_fields: ['book.*.Title'] 
         display_fields: ['book.*.Title']
