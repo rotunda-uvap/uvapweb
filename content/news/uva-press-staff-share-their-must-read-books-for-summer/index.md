@@ -20,7 +20,7 @@ related_book:
 related_series: []
 date: 2025-06-26
 ---
-We asked UVA Press staff what they're reading this summer. Check out the list below, and take 40% off any of the chosen books using promo code **<10SUMMER25> until September 22!**
+We asked UVA Press staff what they're reading this summer. Check out the list below, and take 40% off any of the chosen books using promo code **<10SUMMER25>** until September 22!
 
 **[Beth Colón](https://upress.virginia.edu/staff/beth-colon/)**:
 
@@ -28,13 +28,9 @@ We asked UVA Press staff what they're reading this summer. Check out the list be
 
 And here's one non-UVA book I recently read and enjoyed that I think is perfect for summer: *The Amalfi Curse* (2025) by Sarah Penner. I love historical fiction told in two timelines, which Sarah is so great at doing; I loved her first book, *The Lost Apothecary* (2021). This one is set in Positano and involves an Italian sea witch coven, piracy and treasures, deep-sea diving in shipwrecks, parent loss and grief, some magical realism, and some romance, of course. Thrilling beach read!
 
-
-
 **[Eric Brandt](https://upress.virginia.edu/staff/eric-brandt/)**:
 
 *[Some Unfinished Chaos: The Lives of F. Scott Fitzgerald](https://upress.virginia.edu/title/5945/)* by Arthur Krystal (in honor of the 100th anniversary of the publication of the Great Gatsby).
-
-
 
 **[Mark Mones](https://upress.virginia.edu/staff/mark-mones/)**:
 
@@ -46,8 +42,6 @@ Written by one of the formative figures in Virginia archaeology, this lively bio
 
 A compelling edition of Henry James’s collected correspondence with Hendrik Anderson, a twenty-seven-year-old expatriate Norwegian-American sculptor living in Italy with whom the fifty-six-year-old novelist shared a sixteen-year epistolary friendship, replete with musings about art and life in uncommonly vunerable and personal terms.  As *The Bloomsbury Review* noted, “These letters provide yet another fascinating facet of one of America's most significant and enigmatic writers. This edition is the most complete of James' letters to Andersen, and both the notes and the introduction are excellent without being intrusive.”
 
-
-
 **[Fernando Campos](https://upress.virginia.edu/staff/fernando-campos/)**:
 
 *[Monticello in Mind: Fifty Contemporary Poems on Jefferson](https://upress.virginia.edu/title/4854/)*
@@ -58,15 +52,11 @@ This collection of poems that engage with Thomas Jefferson and Monticello showca
 
 I'm generally fond of questioning the reach of empiricism, so this study on how Robert Frost's poetic practice accomplishes that is a welcome read. Poets are not often known for being scientific, though poetry has much to say beyond science.
 
-
-
 **[Ellen Satrom](https://upress.virginia.edu/staff/ellen-satrom/)**:
 
 I'm catching up on books that I hadn't yet read in our [CARAF series](https://upress.virginia.edu/series/CAR/) (Caribbean and African Literature Translated from French). Two recent favorites are *[Humus](https://upress.virginia.edu/title/5405/)* by Fabienne Kanor (beautiful, tightly rendered narratives from the perspectives of fourteen enslaved women who in 1774 leaped together from a ship's deck into the sea rather than endure slavery) and *[Crusoe's Footprint](https://upress.virginia.edu/title/5688/)* by Patrick Chamoiseau (a brilliant revisioning of the Robinson Crusoe story). Up next are *[Popa Singer](https://upress.virginia.edu/title/5974/)* (René Depestre's semiautobiographical work set in the time of Papa Doc Duvalier), *[Désirée Congo](https://upress.virginia.edu/title/10021/)* by Évelyne Trouillot (set in the final years of the Haitian Revolution), and *[Last of the African Kings](https://upress.virginia.edu/title/10002/)* by Maryse Conde (author of an all-time favorite from that series, *[I, Tituba, Black Witch of Salem](https://upress.virginia.edu/title/3840/)*).
 
 Beyond our own list: Having recently read and loved the Hmong writer Kao Kalia Yang's lyrical family memoir *The Latehomecomer*, I'm looking forward to the recently published *Where Rivers Part*, which focuses on her mother's life. And I have a fat biography waiting of Dietrich Bonhoeffer by Eric Metaxas that my mother just reread and handed my way. Oh, and Daniel Mendelsohn's new translation of *The Odyssey*!
-
-
 
 **[Andy Edwards](https://upress.virginia.edu/staff/andy-edwards/)**:
 
@@ -78,8 +68,6 @@ I love a good jazz biography, particularly one that demands frequent breaks to l
 
 Summers always rekindle my passion for outdoor treks, whether backpacking, canoeing, or flyfishing. In the coming weeks, then, I look forward to reading this classic from UVAP's backlist. While this New York Times bestselling author has since gone on to write popular hits like *Chesapeake Requiem* (which followed his 2007 UVAP publication on the same subject, *[The Tangierman's Lament](https://upress.virginia.edu/title/3566/)*), his first foray in book publishing chronicled his voyage along the James River from its source on a Highland County farm all the way to the Chesapeake. To be sure, outdoor literature reads differently than most of our publications, but the back cover boasts such a litany of adulatory blurbs that I know I’ll enjoy the ride!
 
-
-
 **[Nadine Zimmerli:](https://upress.virginia.edu/staff/nadine-zimmerli/)**
 
 *[Saving Snakes: Snakes and the Evolution of a Field Naturalist](https://upress.virginia.edu/title/5880/)* by Nicolette Cagle
@@ -89,8 +77,6 @@ I've encountered a snake or two along the [Virginia Capital Trail](https://www.v
 *12 000 år med norsk historie: arven fra jegere, krigere og vikinger* by Wolfgang Wee and Sturla Ellingvåg
 
 I am very slowly making my way through this fascinating book, practicing my Norwegian. I love both its premise and its format. The premise is that testing of ancient DNA paired with insights gleaned from archaeology now makes possible reconstructing population movements thousands, even tens of thousands of years ago. In addition, this book is a podcast in print form. The Q&A between Wee and Ellingvåg on the page means that I can digest one or two paragraphs at a time and don't have to try to comprehend pages upon pages in a language I'm still learning. Plus, here at UVA Press, we also published a book based on a podcast in David Marchick's *[The Peaceful Transfer of Power: An Oral History of America’s Presidential Transitions](https://upress.virginia.edu/title/5816/)*, and I was curious to see how another press tackled this conversion, to think through whether we could do more in this format.
-
-
 
 **[Jason Coleman](https://upress.virginia.edu/staff/jason-coleman/)**:
 
