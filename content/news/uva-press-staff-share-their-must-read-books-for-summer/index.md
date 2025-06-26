@@ -22,8 +22,6 @@ date: 2025-06-26
 ---
 We asked UVA Press staff what they're reading this summer. Check out the list below, and take 40% off any of the chosen books using promo code **<10SUMMER25> until September 22!**
 
-
-
 **[Beth Colón](https://upress.virginia.edu/staff/beth-colon/)**:
 
 *[I Die By This Country](https://upress.virginia.edu/title/5082/)* by Fawzia Zouari, translated by Skyler Artes (CARAF Books, 2018). I've been going through the CARAF backlist since I started the job in 2023. I'm looking forward to reading this novel because it's based on a true story, but it also deals with a lot of the central themes that recur throughout the books in the series: colonialism and post-colonialism, immigration and exile, racism and sexism, power and resistance, nationalism and identity. I've learned so much and have expanded my own understanding of being a colonial subject through reading CARAF Books. 
