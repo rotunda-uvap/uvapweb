@@ -2,12 +2,12 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: Justice for Ourselves
-    banner_author: John G. Deal, Marianne E. Julienne, and Brent Tarter
-    banner_subtitle: Black Virginians Claim Their Freedom after Slavery
+  - banner_title: Histories of Science
+    banner_author: David Alff and Danielle Spratt, eds.
+    banner_subtitle: Natural Philosophy in the Eighteenth-Century Atlantic World
     banner_id: "5917"
-    banner_quote: Deeply researched and smartly written.
-    banner_attr: Emerging Civil War
+    banner_quote: Traces an important new path in literature and science studies.
+    banner_attr: Rosalind Powell, University of Amsterdam
 related_book:
   - "5744"
   - "5617"
@@ -18,6 +18,7 @@ related_book:
   - "5410"
 related_collection:
   - Homepage Featured
+banner_id: "10024"
 featured_books:
   - "10047"
   - "10090"
