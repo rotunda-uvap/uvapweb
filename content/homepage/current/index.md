@@ -5,7 +5,7 @@ top_banner:
   - banner_title: Histories of Science
     banner_author: David Alff and Danielle Spratt, eds.
     banner_subtitle: Natural Philosophy in the Eighteenth-Century Atlantic World
-    banner_id: "5917"
+    banner_id: "10024"
     banner_quote: Traces an important new path in literature and science studies.
     banner_attr: Rosalind Powell, University of Amsterdam
 related_book:
