@@ -2,12 +2,12 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: Histories of Science
-    banner_author: David Alff and Danielle Spratt, eds.
-    banner_subtitle: Natural Philosophy in the Eighteenth-Century Atlantic World
+  - banner_title: The Importance of Being Different
+    banner_author: Chris Foss
+    banner_subtitle: Disability in Oscar Wilde's Fairy Tales
     banner_id: "10024"
-    banner_quote: Traces an important new path in literature and science studies.
-    banner_attr: Rosalind Powell, University of Amsterdam
+    banner_quote: Assiduously researched and written in an exuberant and memorable style.
+    banner_attr: Martha Stoddard Holmes, California State University, San Marcos
 related_book:
   - "5744"
   - "5617"
@@ -18,22 +18,17 @@ related_book:
   - "5410"
 related_collection:
   - Homepage Featured
-banner_id: "10024"
+banner_id: "10085"
 featured_books:
-  - "10047"
   - "10090"
+  - "10076"
   - "10014"
-  - "10057"
-  - "10093"
-  - "10042"
+  - "10050"
+  - "10024"
   - "10075"
-  - "10034"
-  - "10019"
-  - "10051"
-  - "10039"
+  - "10093"
   - "10054"
-  - "10015"
+  - "10073"
   - "10020"
-  - "10011"
-  - "10016"
+  - "10084"
 ---
