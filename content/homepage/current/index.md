@@ -5,7 +5,7 @@ top_banner:
   - banner_title: The Importance of Being Different
     banner_author: Chris Foss
     banner_subtitle: Disability in Oscar Wilde's Fairy Tales
-    banner_id: "10024"
+    banner_id: "10085"
     banner_quote: Assiduously researched and written in an exuberant and memorable style.
     banner_attr: Martha Stoddard Holmes, California State University, San Marcos
 related_book:
