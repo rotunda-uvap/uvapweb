@@ -2,12 +2,13 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: The Importance of Being Different
-    banner_author: Chris Foss
-    banner_subtitle: Disability in Oscar Wilde's Fairy Tales
-    banner_id: "10085"
-    banner_quote: Assiduously researched and written in an exuberant and memorable style.
-    banner_attr: Martha Stoddard Holmes, California State University, San Marcos
+  - banner_title: Architectures of Slavery
+    banner_author: Nathaniel Robert Walker and Rachel Ama Asaa Engmann, eds.
+    banner_subtitle: Ruins and Reconstructions
+    banner_id: "10084"
+    banner_quote: Pushes forward the awareness of architecture as a determining
+      force in human relationships.
+    banner_attr: Clifton Ellis, Texas Tech University
 related_book:
   - "5744"
   - "5617"
