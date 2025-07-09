@@ -27,6 +27,8 @@ featured_books:
   - "5983"
   - "5852"
   - "5632"
+  - "5718"
+  - "10011"
 related_collection:
   - ASLE 25
 date: 2025-06-30
