@@ -2,13 +2,13 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: Architectures of Slavery
-    banner_author: Nathaniel Robert Walker and Rachel Ama Asaa Engmann, eds.
-    banner_subtitle: Ruins and Reconstructions
-    banner_id: "10084"
-    banner_quote: Pushes forward the awareness of architecture as a determining
-      force in human relationships.
-    banner_attr: Clifton Ellis, Texas Tech University
+  - banner_title: The Belgian Friendship Building
+    banner_author: Kathleen James-Chakraborty, Katherine M. Kuenzli, and Bryan Clark Green
+    banner_subtitle: From the New York World's Fair to a Virginia HBCU
+    banner_id: "10083"
+    banner_quote: Interweaves exploration of architecture and art with politics and
+      race in a fresh and engrossing way.
+    banner_attr: Richard Longstreth, George Washington University
 related_book:
   - "5744"
   - "5617"
