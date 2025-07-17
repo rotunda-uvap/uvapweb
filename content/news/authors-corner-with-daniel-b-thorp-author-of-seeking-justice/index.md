@@ -5,8 +5,6 @@ title: Author's Corner with Daniel B. Thorp, author of SEEKING JUSTICE
 image: thorp-pic.jpg
 related_book:
   - "10101"
-  - "5070"
-  - "5805"
 related_series:
   - AMS
 date: 2025-07-17
