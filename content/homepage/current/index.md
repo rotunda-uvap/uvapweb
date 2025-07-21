@@ -2,13 +2,13 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: The Belgian Friendship Building
-    banner_author: Kathleen James-Chakraborty, Katherine M. Kuenzli, and Bryan Clark Green
-    banner_subtitle: From the New York World's Fair to a Virginia HBCU
-    banner_id: "10083"
-    banner_quote: Interweaves exploration of architecture and art with politics and
-      race in a fresh and engrossing way.
-    banner_attr: Richard Longstreth, George Washington University
+  - banner_title: Saving the Chesapeake
+    banner_author: Andrew S. Ramey
+    banner_subtitle: The History of a Movement
+    banner_id: "10057"
+    banner_quote: A deep and hopeful look at fifty years of restoring Chesapeake
+      Bay, one of the biggest and most complex such efforts ever undertaken.
+    banner_attr: Tom Horton, former environmental columnist for The Baltimore Sun
 related_book:
   - "5744"
   - "5617"
