@@ -2,12 +2,12 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: Virginia's Wild Side
-    banner_author: Curtis J. Badger
-    banner_subtitle: 50 Outdoor Adventures from the Mountains to the Ocean
-    banner_id: "3114"
-    banner_quote: Badger has a gift for taking the reader along on a vicarious trip.
-    banner_attr: Richmond Times-Dispatch
+  - banner_title: Ultimate Questions
+    banner_author: Andrew C. Wicks. With Alexander S. Bleiberg and John K. Nolan
+    banner_subtitle: A Stakeholder Guide to the Business of Your Life
+    banner_id: "10165"
+    banner_quote: A unique synthesis of philosophy, psychology, management theory, and more.
+    banner_attr: Jason Brennan, Georgetown University
 related_book:
   - "5744"
   - "5617"
