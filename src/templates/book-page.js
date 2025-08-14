@@ -54,31 +54,33 @@ const bookPage = ({ data }) => {
           // <img className="pt-12 hidden md:block" src={imglink} alt="cover" /> 
           <div className="pt-12 hidden md:block">
             <IKContext urlEndpoint="https://ik.imagekit.io/uvapress/">
-              <IKImage className="aspect-[2/3]"
-             path={imageKitBookPath}
-             transformation={[{
-              "height": "450",
-              "width": "300",
-              crop: "at_max"
-            }]}
-            loading="eager"
-             lqip={{ active: true }} alt={`Cover for ${book.Title}`}
-             />
+              <IKImage
+                path={imageKitBookPath}
+                transformation={[{ "width": "300", crop: "at_max" }]}
+                srcSet={[
+                  { "width": "300", "crop": "at_max" },
+                  { "width": "450", "crop": "at_max" }
+                ]}
+                loading="eager"
+                lqip={{ active: true }}
+                alt={`Cover for ${book.Title}`}
+              />
             </IKContext>
           </div>
           :
           <div className="hidden md:block" >
-               <IKContext urlEndpoint={imageKitURL}>
-              <IKImage className="aspect-[2/3]"
-             path="noimg_lg.png"
-             transformation={[{
-              "height": "450",
-              "width": "300",
-              crop: "at_max"
-            }]}
-            loading="eager"
-             lqip={{ active: true }}
-             />
+            <IKContext urlEndpoint={imageKitURL}>
+              <IKImage
+                path="noimg_lg.png"
+                transformation={[{ "width": "300", crop: "at_max" }]}
+                srcSet={[
+                  { "width": "300", "crop": "at_max" },
+                  { "width": "450", "crop": "at_max" }
+                ]}
+                loading="eager"
+                lqip={{ active: true }}
+                alt="Placeholder Cover"
+              />
             </IKContext>
           </div>
           //  <img className="hidden md:block" src={noimg_big} alt="cover" />
@@ -86,17 +88,18 @@ const bookPage = ({ data }) => {
            { book.CoverImageFull ? 
            <div className="md:hidden text-center py-4 w-1/2 mx-auto">
               <IKContext urlEndpoint="https://ik.imagekit.io/uvapress/">
-              <IKImage className="aspect-[2/3]"
-             path={imageKitBookPath}
-             transformation={[{
-              "height": "300",
-              "width": "200",
-              crop: "at_max"
-            }]}
-            loading="eager"
-             lqip={{ active: true }} alt={`Cover for ${book.Title}`}
-             />
-            </IKContext>
+                <IKImage
+                  path={imageKitBookPath}
+                  transformation={[{ "width": "200", crop: "at_max" }]}
+                  srcSet={[
+                    { "width": "200", "crop": "at_max" },
+                    { "width": "300", "crop": "at_max" }
+                  ]}
+                  loading="eager"
+                  lqip={{ active: true }}
+                  alt={`Cover for ${book.Title}`}
+                />
+              </IKContext>
            </div>
           /*  <img
             className="md:hidden text-center w-1/2 mx-auto"
@@ -105,18 +108,20 @@ const bookPage = ({ data }) => {
           /> */
            : 
            <div className="md:hidden text-center w-1/2 mx-auto ">
-           <IKContext urlEndpoint="https://ik.imagekit.io/your_imagekit_id">
-              <IKImage className="aspect-[2/3]"
-             path="noimg_sm.png"
-             transformation={[{
-              "height": "300",
-              "width": "200",
-              crop: "at_max"
-            }]}loading="eager"
-             lqip={{ active: true }} alt="Placeholder Cover"
-             />
-            </IKContext>
-            </div>
+             <IKContext urlEndpoint="https://ik.imagekit.io/your_imagekit_id">
+               <IKImage
+                 path="noimg_sm.png"
+                 transformation={[{ "width": "200", crop: "at_max" }]}
+                 srcSet={[
+                   { "width": "200", "crop": "at_max" },
+                   { "width": "300", "crop": "at_max" }
+                 ]}
+                 loading="eager"
+                 lqip={{ active: true }}
+                 alt="Placeholder Cover"
+               />
+             </IKContext>
+           </div>
           /* <img
             className="md:hidden text-center w-1/2 mx-auto"
             src={noimg_sm}
