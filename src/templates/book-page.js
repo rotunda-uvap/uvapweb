@@ -306,7 +306,7 @@ const bookPage = ({ data }) => {
           <ShareButtons title={title} url={url} /></div> */}
         </section>
       </div></div>
-       <div className="container py-4 max-w-5xl">
+       <div className="container py-4 md:max-w-5xl">
        
 
         <section id="lg_horiz_tabs" className="hidden md:block">
