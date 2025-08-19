@@ -2,6 +2,7 @@
 templateKey: news
 type: author-corner
 title: Author's Corner with David M. Poole, author of TRUSTED SOURCE
+image: david_poole_photo.jpg
 related_book:
   - "10103"
 date: 2025-08-19
@@ -18,7 +19,7 @@ My hope is the book works on a couple of different levels. I think political jun
 
 *What surprised you the most in the process of writing your book?* 
 
-As I note in the book’s introduction, writing *Trusted Source* was an education in the shape-shifting nature of memory. In documenting a quarter century of my life, I learned how the mind can play games with us to fit our notions of self. The biggest surprise the difficulty in trying to remember what my motivations at various points in time. Mostly I was running scared. I had escaped the newspaper industry just before it imploded. Professionally, there was no turning back. I was determined to be the last guy standing. I didn’t intend to make a big fuss out of accuracy and fair play; that was just something I had been trained to do. But after technology and political divisions combined to erode faith in our institutions, the trust piece clicked into place.
+As I note in the book’s introduction, writing *[Trusted Source](https://upress.virginia.edu/title/10103/)* was an education in the shape-shifting nature of memory. In documenting a quarter century of my life, I learned how the mind can play games with us to fit our notions of self. The biggest surprise the difficulty in trying to remember what my motivations at various points in time. Mostly I was running scared. I had escaped the newspaper industry just before it imploded. Professionally, there was no turning back. I was determined to be the last guy standing. I didn’t intend to make a big fuss out of accuracy and fair play; that was just something I had been trained to do. But after technology and political divisions combined to erode faith in our institutions, the trust piece clicked into place.
 
 *What’s your favorite anecdote from your book?*
 
