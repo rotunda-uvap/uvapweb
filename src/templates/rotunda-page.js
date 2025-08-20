@@ -17,7 +17,7 @@ const rotundaPage = ({ data }) => {
      <SeO title={item.Title} description="UVA Press's Rotunda imprint publishes innovative peer-reviewed digital projects, both born-digital and from authoritative letterpress editions. Rotunda publications are available to both libraries and independent scholars as single titles or as collections. The American History Collection includes the sub-collections American Founding Era; Antebellum, Civil War, and Reconstruction; and the American Century. "/>
      <div className="container">
 <PageHeader text={item.Title}/>       
-        <div className="py-4 flex flex-row place-content-center ">
+        <div className="py-4 flex flex-row ">
           {/* <div className="flex flex-col justify-center self-end text-3xl md:text-7xl text-stone-200 font-black tracking-widest">{item.StartYear}</div> */}
           <div className="pl-6"><GatsbyImage image={imageData} alt="publication image" className="drop-shadow-img"/></div>
                   {/* <div className="py-4 md:py-0 pl-4 text-3xl md:text-8xl text-ceci-gray-light font-black tracking-widest">{item.StartYear} - {item.EndYear}</div> */}
@@ -35,7 +35,7 @@ const rotundaPage = ({ data }) => {
   <path d="M12.454 16.697L9.75 13.992a4 4 0 01-3.742-3.741L2.335 6.578A9.98 9.98 0 00.458 10c1.274 4.057 5.065 7 9.542 7 .847 0 1.669-.105 2.454-.303z" />
 </svg>  <span className="pl-5 font-thin">No Access?  Click <a href="https://rotunda.upress.virginia.edu/register/default.xqy" className="underline"> here for a free trial</a>, or <a href={`../../rot_rec_form.pdf`} className="underline">here</a> to tell your librarian that you'd like it</span></div>
     )}   
-        <section className="py-5">
+        <section className="py-5 md:max-w-6xl">
           <hr className="pt-4"/>
         <article className="text-lg leading-8 dropCap cms text-ceci-gray-dark" dangerouslySetInnerHTML={{ __html: sanitizeHtml(summary.html) }}/>
 
@@ -60,7 +60,7 @@ const rotundaPage = ({ data }) => {
 </svg> <span className="pl-5 font-thin tracking-wide text-ceci-gray-mid">{item.Prizes}</span></section>}
         
           </div>
-          <section className="pl-5 text-ceci-gray-mid">
+          <section className="pl-5 text-ceci-gray-mid md:max-w-6xl">
             <h6 className="py-5 font-thin">Others in <span className="font-bold font-thin">{item.SubCollection}</span>:</h6>
             
             {related.edges.map((edge, index) => (
@@ -70,7 +70,7 @@ const rotundaPage = ({ data }) => {
                 </>
           ))}
           </section>
-          <section className="py-5 pl-5 text-smaller text-ceci-gray-mid inline-flex items-center">
+          <section className="py-5 pl-5 text-smaller text-ceci-gray-mid inline-flex items-center md:max-w-6xl">
           <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
   <path fillRule="evenodd" d="M7.707 14.707a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l2.293 2.293a1 1 0 010 1.414z" clipRule="evenodd" />
 </svg><Link to={'../../rotunda'}><h6 className="pl-5 font-thin">Back to all Rotunda</h6></Link>

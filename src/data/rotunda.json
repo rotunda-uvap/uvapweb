@@ -278,7 +278,8 @@
         "EditorCredit":"Elizabeth M. Nuxoll, editor",
         "Prizes":null,
         "Reviews":[],
-        "imageFilename":"jjay.jpg"
+        "imageFilename":"jjay.jpg",
+        "access":"sub"
     },{
         "Title":"The Diaries of Gouverneur Morris Digital Edition",
         "Subtitle":"",
