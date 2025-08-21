@@ -60,7 +60,7 @@ const rotundaPage = ({ data }) => {
 </svg> <span className="pl-5 font-thin tracking-wide text-ceci-gray-mid">{item.Prizes}</span></section>}
         
           </div>
-          <section className="pl-5 text-ceci-gray-mid md:max-w-6xl">
+          <section className="pl-5 text-ceci-gray-mid max-w-6xl">
             <h6 className="py-5 font-thin">Others in <span className="font-bold font-thin">{item.SubCollection}</span>:</h6>
             
             {related.edges.map((edge, index) => (
