@@ -35,7 +35,7 @@ const rotundaPage = ({ data }) => {
   <path d="M12.454 16.697L9.75 13.992a4 4 0 01-3.742-3.741L2.335 6.578A9.98 9.98 0 00.458 10c1.274 4.057 5.065 7 9.542 7 .847 0 1.669-.105 2.454-.303z" />
 </svg>  <span className="pl-5 font-thin">No Access?  Click <a href="https://rotunda.upress.virginia.edu/register/default.xqy" className="underline"> here for a free trial</a>, or <a href={`../../rot_rec_form.pdf`} className="underline">here</a> to tell your librarian that you'd like it</span></div>
     )}   
-        <section className="py-5 md:max-w-6xl">
+        <section className="py-5 max-w-6xl">
           <hr className="pt-4"/>
         <article className="text-lg leading-8 dropCap cms text-ceci-gray-dark" dangerouslySetInnerHTML={{ __html: sanitizeHtml(summary.html) }}/>
 
@@ -70,7 +70,7 @@ const rotundaPage = ({ data }) => {
                 </>
           ))}
           </section>
-          <section className="py-5 pl-5 text-smaller text-ceci-gray-mid inline-flex items-center md:max-w-6xl">
+          <section className="py-5 pl-5 text-smaller text-ceci-gray-mid inline-flex items-center max-w-6xl">
           <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
   <path fillRule="evenodd" d="M7.707 14.707a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l2.293 2.293a1 1 0 010 1.414z" clipRule="evenodd" />
 </svg><Link to={'../../rotunda'}><h6 className="pl-5 font-thin">Back to all Rotunda</h6></Link>
