@@ -2,12 +2,14 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: Ultimate Questions
-    banner_author: Andrew C. Wicks. With Alexander S. Bleiberg and John K. Nolan
-    banner_subtitle: A Stakeholder Guide to the Business of Your Life
-    banner_id: "10165"
-    banner_quote: A unique synthesis of philosophy, psychology, management theory, and more.
-    banner_attr: Jason Brennan, Georgetown University
+  - banner_title: Trusted Source
+    banner_author: David M. Poole
+    banner_subtitle: How a Virginia Nonprofit Gained Bipartisan Support in an Era of
+      Political Polarization
+    banner_id: "10103"
+    banner_quote: A really good read about a really good deed.
+    banner_attr: "Frank B. Atkinson, author of Virginia in the Vanguard and The
+      Lion's Den: A Story of American Renewal"
 related_book:
   - "5744"
   - "5617"
@@ -23,12 +25,10 @@ featured_books:
   - "10090"
   - "10076"
   - "10014"
-  - "10050"
-  - "10024"
+  - "10165"
   - "10075"
+  - "10024"
+  - "10055"
   - "10093"
-  - "10054"
-  - "10073"
   - "10020"
-  - "10084"
 ---
