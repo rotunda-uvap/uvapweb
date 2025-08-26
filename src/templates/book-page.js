@@ -14,6 +14,8 @@ const bookPage = ({ data }) => {
   const book = data.books
   const isbn = book.Bindings[0].ISBN
   const GoogleB = "https://books.google.com/books?vid=" + isbn
+  const RightsLinkA = "https://marketplace.copyright.com/rs-ui-web/mp/search/journal/"
+  const RightsLink = RightsLinkA + isbn
   const resources = data.markdownRemark
   const title = book.Title
   const url = "https://www.upress.virginia.edu/title/" + book.BookID
@@ -298,21 +300,20 @@ const bookPage = ({ data }) => {
             </div>
           )}
         </section>
-        <section className="py-4 flex-row inline-flex space-x-6 items-center ">
+       {/*  <section className="py-4 flex-row inline-flex space-x-6 items-center ">
           <div><a href={GoogleB}>
             <img src="/gbs_preview_sticker1.png" alt="view on google books" height="23" width="69" />
           </a></div>
-          {/* <div className="pl-6">
-          <ShareButtons title={title} url={url} /></div> */}
-        </section>
+        
+        </section> */}
       </div></div>
-       <div className="container py-4 md:max-w-5xl">
+       <div className="container py-2 md:max-w-5xl">
        
 
         <section id="lg_horiz_tabs" className="hidden md:block">
           <BookHorizontalTabs
             summary={book.MainDescription.html}
-            reviews={book.Reviews}
+            reviews={book.Reviews}ß
             bio={book.BioNote.html}
             add={resources}
             TOC={book.TableOfContents.html}
@@ -348,9 +349,13 @@ const bookPage = ({ data }) => {
             )}
           </section>
         )} */}
-
-  <section className="pb-4">
+<section> </section>
+  <section className="pb-4 flex flex-col md:flex-row">
           <ShareButtons title={title} url={url} />
+          <div className="py-2 md:py-0 md:pl-6"><a target="_blank" href={RightsLink}><img alt="Get Permission" src ="/RightsLink-Button_ReprintsPermissions.png" /></a></div>
+          <div className="py-2 md:py-0 md:pl-6"><a href={GoogleB}>
+            <img src="/gbs_preview_sticker1.png" alt="view on google books" height="23" width="69" />
+          </a></div>
    </section>
         
    {news.edges[0] && (

@@ -4,7 +4,17 @@ type: page
 ---
 ###### Classroom and Academic Permissions Requests
 
-If you are requesting permission to photocopy or scan material for classroom use or place material on e-reserves, please contact: [https://marketplace.copyright.com ](https://marketplace.copyright.com) 222 Rosewood Drive Danver, MA 01923 Fax: (978) 646-8600 Email: [info@copyright.com](mailto:info@copyright.com) If the Copyright Clearance Center cannot grant permission, you may request permission directly from our Intellectual Property Manager (use contact information listed below). **Please include:**
+To request copyright permission to republish or share portions of our works, please visit Copyright Clearance Center’s (CCC) Marketplace website at [https://marketplace.copyright.com ](https://marketplace.copyright.com). You can learn more about Marketplace [here](/https://www.copyright.com/mbrc/).
+
+Simply follow these steps to get started:
+* Click the ‘Get Permissions’ button on our website OR visit [marketplace.copyright.com](https://marketplace.copyright.com) and enter the title, ISBN, or ISSN number of the publication you’d like to reuse and click the magnifying glass icon.
+* Once you find the content you are looking for in the search results, click “Request Permission” and then “Next.”
+* Choose the radio button that best describes how you will use this content.
+* Use the drop-down to choose who you represent in this permissions request and click “Next.”
+* Select your “Type of Use” from the drop-down and enter any additional request details.
+* Once you have added all the permissions details, you will be presented with a price. You can then proceed with the next steps to complete the purchase.
+
+If the Copyright Clearance Center cannot grant permission, you may request permission directly from our Intellectual Property Manager (use contact information listed below). **Please include:**
 
 * Name of the author(s)/editor(s) and title of the book in which the requested material was originally published, together with the inclusive page numbers you wish to reproduce (give the actual page numbers, e.g. pp. 24-48).
 * Name of school and faculty member requesting material, together with the course name and number.
@@ -22,7 +32,6 @@ P.O. Box 400318\
 Charlottesville, VA 22904-4318 
 
 **Email:** [leahstearns@virginia.edu](mailto:leahstearns@virginia.edu)\
-**Fax:** (434) 982-2655
 
 **Please include:**
 

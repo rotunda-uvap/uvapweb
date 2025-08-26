@@ -25,6 +25,7 @@ const ShareButtons = ({title, url, quote, tags}) => {
           <RedditShareButton url={url} title={title} >
             <RedditIcon  size={40} round={true} />
           </RedditShareButton>
+          
         </div>
       )
 
