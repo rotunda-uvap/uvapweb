@@ -14,7 +14,7 @@ const bookPage = ({ data }) => {
   const book = data.books
   const isbn = book.Bindings[0].ISBN
   const GoogleB = "https://books.google.com/books?vid=" + isbn
-  const RightsLinkA = "https://marketplace.copyright.com/rs-ui-web/mp/search/journal/"
+  const RightsLinkA = "https://marketplace.copyright.com/rs-ui-web/mp/search/all/"
   const RightsLink = RightsLinkA + isbn
   const resources = data.markdownRemark
   const title = book.Title
