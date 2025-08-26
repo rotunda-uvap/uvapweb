@@ -1,6 +1,4 @@
-import "tailwindcss/base.css"
-import "tailwindcss/components.css"
-import "tailwindcss/utilities.css"
+import "./src/utils/global.css"
 import "@fontsource/antonio"
 import "@fontsource/antonio/100.css"
 import "@fontsource/antonio/200.css"

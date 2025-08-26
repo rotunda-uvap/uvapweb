@@ -308,7 +308,11 @@ module.exports = {
       tailwind: true,
       ignore: ['@algolia/'],
       purgeCSSOptions: {
-      safelist: [/^slick/, /^calendar/, /^day/, /^event/, /^innerDay/, /^ais/, /^uic-/, /^auc-/],
+        safelist: [
+          /^slick/, /^calendar/, /^day/, /^event/, /^innerDay/, /^ais/, /^uic-/, /^auc-/,
+          /^md:/, /^lg:/, /^xl:/, /^2xl:/, /^sm:/, /^hover:/, /^focus:/, /^active:/, /^group-hover:/,
+          /^first:/, /^last:/, /^odd:/, /^even:/, /^disabled:/, /^checked:/, /^required:/, /^valid:/, /^invalid:/
+        ],
       },
     },
   },

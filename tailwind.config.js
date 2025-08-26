@@ -1,7 +1,11 @@
 const defaultTheme = require("tailwindcss/defaultTheme")
 
 module.exports = {
-  content: ['./src/**/*.{js,jsx,ts,tsx}','node_modules/@algolia/*' ],
+  content: [
+    './src/**/*.{js,jsx,ts,tsx}',
+    './content/**/*.{js,jsx,ts,tsx,md,mdx}',
+    'node_modules/@algolia/*'
+  ],
   theme: {
     letterSpacing: {
       tightest: '-.075em',
