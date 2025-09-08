@@ -27,7 +27,7 @@ export default function SupportPage({ data }) {
 <p>
 <span className="font-medium">Cowan Society—</span>Gifts of $2,500-$4,999 fund scholarship from international scholars and writers from the Caribbean, Africa, and the Global South
 </p><p>
-<span className="font-medium">Kaserlian Society—</span>Gifts of $1,000-$2,499 fund new venues and opportunities for interdisciplinary scholarly dialogue and symposia that address global challenges
+<span className="font-medium">Kaiserlian Society—</span>Gifts of $1,000-$2,499 fund new venues and opportunities for interdisciplinary scholarly dialogue and symposia that address global challenges
 </p>
 <p>
 <span className="font-medium">Saunders Society—</span>Gifts of any amount support access to scholarship for students, faculty, scholars, and community members through open-access books, the digital imprint, and book series that advance new approaches to fields of study.</p>
