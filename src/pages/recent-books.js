@@ -66,7 +66,7 @@ export default function RecentBooks({ data }) {
 
 export const query = graphql`
   query {
-    upcoming: allBooksJson(filter: {DaysSincePublication: {lt: 1}}, sort: { DaysSincePublication:ASC}) {
+    upcoming: allBooksJson(filter: {DaysSincePublication: {lt: 1}}, sort: { DaysSincePublication:DESC}) {
         edges {
           node {
             ...BookQFragment
