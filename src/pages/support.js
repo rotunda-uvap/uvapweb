@@ -17,21 +17,22 @@ export default function SupportPage({ data }) {
             <div className="lg:w-3/5 md:w-1/2 md:pr-16 lg:pr-0 pr-0">
              <div className="dropCap">
              <p className="font-serif mt-4">Founded in 1963, UVA Press has published almost 2,000 books in history, the humanities, architecture and design, culture, and on ideas and places important to Virginians. Our ground-breaking digital imprint, Rotunda, extends the reach of scholarship across the world through primary sources available to students, faculty, and scholars. UVA Press seeks new voices, illuminates new perspectives, and fuels aspirations for our shared world. Through our mission as a scholarly press, we strive to provoke new and inclusive thinking that improves the human condition.</p>
-         </div> <p className="leading-relaxed">The University of Virginia Press appreciates the support of individuals, organizations, and foundations. Please join us in this important work.
-
-<p className="mt-4"><span className="font-medium">Martin Society—</span>Gifts of $10,000 and above advance ideas through print and digital content that “ring the bell” on the systemic issues that tear at our shared humanity.
+         
+         <p className="leading-relaxed">The University of Virginia Press appreciates the support of individuals, organizations, and foundations. Please join us in this important work with a tax-deductible gift of any amount.</p>
+</div> 
+<p className="mt-4"><span className="font-medium">Martin Society—</span>Gifts of $10,000 and above. Beloved by generations of students, faculty, and alumni, Henry Martin worked at the University of Virginia from 1847 to 1910, most famously in the Rotunda as head bell ringer, marking the class periods and the beginning and ending of each day. 
 </p>
 <p>
-<span className="font-medium">Bemiss Society—</span>Gifts of $5,000 to $9,999 fund new scholarship from scholars and writers whose voices have not historically been heard or valued.
+<span className="font-medium">Bemiss Society—</span>Gifts of $5,000 to $9,999. Samuel M. Bemiss was the founder of the University of Virginia Press in 1963 and for whom the Press office building is named.
 </p>
 <p>
-<span className="font-medium">Cowan Society—</span>Gifts of $2,500-$4,999 fund scholarship from international scholars and writers from the Caribbean, Africa, and the Global South
+<span className="font-medium">Cowan Society—</span>Gifts of $2,500-$4,999 From 1969-1987, Walker Cowen served as the longest running director of UVA Press and for whom is named the Press’s prize in 18th Century Studies.
 </p><p>
-<span className="font-medium">Kaiserlian Society—</span>Gifts of $1,000-$2,499 fund new venues and opportunities for interdisciplinary scholarly dialogue and symposia that address global challenges
+<span className="font-medium">Kaiserlian Society—</span>Gifts of $1,000-$2,499 Penny Kaiserlian served as the Press Director for 11 years, overseeing the launching of its cutting-edge Rotunda Digital platform and its open access Founders Online.
 </p>
 <p>
-<span className="font-medium">Saunders Society—</span>Gifts of any amount support access to scholarship for students, faculty, scholars, and community members through open-access books, the digital imprint, and book series that advance new approaches to fields of study.</p>
-   </p>         </div>
+<span className="font-medium">Saunders Society—</span> Gifts of any amount support access to scholarship for students, faculty, scholars, and community members. A published novelist, Mark Saunders was the Press’s 5th director and played a central in putting the Press at the forefront of innovation in digital scholarship. </p> 
+ </div>
           <div className="lg:w-2/6 md:w-1/2 greige rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0">
          <h2 className="text-gray-900 text-lg font-medium title-font mb-5">Make a Gift</h2>
           <p>Gifts can be made online through the UVA Giving at the button below or by mail:</p>
@@ -42,7 +43,7 @@ export default function SupportPage({ data }) {
 <li>210 Sprigg Lane</li>
 <li>Charlottesville, VA 22903</li></ul>
 
-<p className="pt-2">Please direct questions to <a href="(mailto:eab7fb@virginia.edu">Eric Brandt</a>, Director of the University of Virginia Press, or 434-924-6064.</p>
+<p className="pt-2">Please direct questions to <a href="mailto:eab7fb@virginia.edu">Eric Brandt</a>, Director of the University of Virginia Press, or 434-924-6064.</p>
       
          <a href="https://www.givecampus.com/xypyf3"><button className="w-full text-white bg-ceci-gray-dark border-0 py-2 px-8 focus:outline-none hover:bg-ceci-gray-mid rounded text-lg">Make a Gift Online</button></a>
     </div>
