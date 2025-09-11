@@ -29,7 +29,7 @@ export default function ProspectiveAuthorsPage({ data }) {
               </svg>
               </span>
               </Link></span>
-      <p className="lg:w-3/3 leading-relaxed text-base text-left">
+      <p className="lg:w-3/3 leading-relaxed text-left">
          <div className="cms dropCap" dangerouslySetInnerHTML={{__html: sanitizeHtml(pagedata.html)}}/></p>
          
     </div>
@@ -40,31 +40,15 @@ export default function ProspectiveAuthorsPage({ data }) {
 
      
 
-      <section className="border-b-2 border-gray-100 text-gray-600 body-font">
-      <div className="container p-5 mx-auto">
-        <div className="text-center mb-10">
-          <SectionHeader text={'Prospective Author Questionnaire'}/>
-      {/* <h1 className="sm:text-3xl text-2xl font-medium text-center title-font text-gray-900 mb-4">Prospective Author Questionnaire</h1> */}
-      <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">Submit this questionnaire to the acquisitions department only after your manuscript has been invited for consideration by an acquisitions editor. The questionnaire should accompany any manuscript invited for consideration.</p>
-        </div>
-        <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
-        
-       
-          
-          <div className="p-2 sm:w-1/2 w-full">
-         
-             <FileDownloadButton name="Author Questionnaire" file={'UVaP_Author_Questionnaire.doc'}/>
-</div>
-
-        </div>
-      </div>
-    </section>
+    
 
       <section className="py-4 border-b-2 border-gray-100 text-gray-600 body-font">
       <div className="container p-5 mx-auto">
         <div className="text-center mb-10">
           <SectionHeader text={'Outline for a Book Proposal'}/>
       {/* <h1 className="sm:text-3xl text-2xl font-medium text-center title-font text-gray-900 mb-4">Outline for a Book Proposal</h1> */}
+      <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">When preparing your book prospectus for submission, you may follow this outline or you may submit a differently formatted proposal. We ask that you submit a CV along with your overview materials. Please do not attach the full manuscript at this stage.  </p>
+
         </div>
         <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
         
@@ -79,7 +63,25 @@ export default function ProspectiveAuthorsPage({ data }) {
       </div>
     </section>
 
+    <section className="border-b-2 border-gray-100 text-gray-600 body-font">
+      <div className="container p-5 mx-auto">
+        <div className="text-center mb-10">
+          <SectionHeader text={'Prospective Author Questionnaire'}/>
+      {/* <h1 className="sm:text-3xl text-2xl font-medium text-center title-font text-gray-900 mb-4">Prospective Author Questionnaire</h1> */}
+      <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">Once your proposal or manuscript has been invited for peer review, please submit this questionnaire to your acquisitions editor.</p>
+        </div>
+        <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
+        
        
+          
+          <div className="p-2 sm:w-1/2 w-full">
+         
+             <FileDownloadButton name="Author Questionnaire" file={'UVaP_Author_Questionnaire.doc'}/>
+</div>
+
+        </div>
+      </div>
+    </section>
          
          <section className="border-b-2 border-gray-100">
          <div className="container p-5 mx-auto">
@@ -93,6 +95,8 @@ export default function ProspectiveAuthorsPage({ data }) {
 
                 </div>
             </section>
+
+
          
          
          <ActiveSeries/>
