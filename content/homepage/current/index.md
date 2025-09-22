@@ -2,12 +2,12 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: After the Fire
-    banner_author: Nelson D. Lankford
-    banner_subtitle: Richmond in Defeat
-    banner_id: "10095"
-    banner_quote: A triumph. Lankford introduces an almost Shakespearian cast of characters.
-    banner_attr: Randall M. Miller, Saint Joseph's University
+  - banner_title: George Washington
+    banner_author: Peter R. Henriques
+    banner_subtitle: His Quest for Honor and Fame
+    banner_id: "10159"
+    banner_quote: An interpretative key to understanding this guarded, complex figure.
+    banner_attr: National Review
 related_book:
   - "5744"
   - "5617"
@@ -23,10 +23,11 @@ featured_books:
   - "10090"
   - "10165"
   - "10014"
-  - "10076"
-  - "10103"
-  - "10089"
+  - "10095"
   - "10145"
+  - "10103"
+  - "10076"
+  - "10089"
   - "10024"
   - "10075"
 ---
