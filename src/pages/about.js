@@ -190,7 +190,7 @@ export default function AboutPage({ data }) {
               <BoardMember name={"Edward L. Ayers,"} title={"President Emeritus of the University of Richmond"}/>
               <BoardMember name={"L. J. Bourgeois III"} title={"Emeritus Professor of Business Administration, University of Virginia Darden School of Business"}/>
               <BoardMember name={"Samuel M. Bemiss III"} title={"Executive Vice President at Rampart Communications, Inc."}/>
-              <BoardMember name={"Johnetta Betsch Cole"} title={"President Emerita of Spelman College & Bennett College for Women,  Director Emerita of the Smithsonian National Museum of African Art"}/>
+              <BoardMember name={"Johnnetta Betsch Cole"} title={"President Emerita of Spelman College & Bennett College for Women,  Director Emerita of the Smithsonian National Museum of African Art"}/>
               <BoardMember name={"Charles Cowen"} title={"Owner at Le Forge de Montolieu"}/>
               <BoardMember name={"David Marchick"} title={"Dean of the Kogod School of Business at American University"}/>
               <BoardMember name={"Lynn Pasquerella"} title={"President of the American Association of Colleges and Universities"}/>

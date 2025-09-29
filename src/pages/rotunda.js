@@ -192,7 +192,7 @@ padding:1em;
       <ul className="border-b border-ceci-gray-light pb-2">
         <li className="hover:bg-gray-100 flex p-2 h-full items-center">
         <img className="flex-shrink-0 h-10 w-10  object-cover mr-5" src={"https://legacy.upress.virginia.edu/plunkett/3072.gif"} width="80px" alt="Afro-American Sources in Virginia: A Guide to Manuscripts"/>
-        <a href="https://legacy.upress.virginia.edu/plunkett/mfp.html" className=" text-ceci-gray-dark font-assistant font-thin uppercase">Afro-American Sources in Virginia: A Guide to Manuscripts</a>
+        <a href="https://legacy.upress.virginia.edu/plunkett/nc-toc.html" className=" text-ceci-gray-dark font-assistant font-thin uppercase">Afro-American Sources in Virginia: A Guide to Manuscripts</a>
    </li>
         <li className="hover:bg-gray-100 flex p-2 h-full items-center">
         <img className="flex-shrink-0 h-10 w-10  object-cover mr-5" src={"https://legacy.upress.virginia.edu/epub/pyatt/seb.jpg"} width="80px" alt="Guide to African-American Documentary Resources in North Carolina"/>
