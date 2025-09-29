@@ -158,23 +158,25 @@ export default function AboutPage({ data }) {
 <div className="lg:w-3/3 mx-auto leading-relaxed text-base dropCap cms" dangerouslySetInnerHTML={{__html: sanitizeHtml(landuse.html)}}/>
 </section>
             <section className="py-5 text-gray-700 border-b-2 border-gray-100" id="board">
-  <SectionHeader text={"Current Board Members"}/>
+  <SectionHeader text={"Current Editorial Board Members"}/>
               <div>
               <BoardMember name={"Gustavo Pellón, chair"} title={"Professor Emeritus of Spanish, University of Virginia"}/>
               <BoardMember name={"Jessica Andruss"} title={"Assistant Professor of Religious Studies, University of Virginia"}/>
 
-                <BoardMember name={"John Comazzi"} title={"Associate Professor, School of Architecture (w/ appointment in Education & Human Development), University of Virginia"}/>
+              
                 <BoardMember name={"Kirt Von Daacke"} title={"Associate Professor of History, University of Virginia"}/>
+                <BoardMember name={"Laurent Dubois"} title={"John L. Nau III Professor of the History & Principles of Democracy, University of Virginia"}/>
 
                <BoardMember name={"Kevin K. Gaines"} title={"Julian Bond Professor of Civil Rights and Social Justice & Professor of African American History, University of Virginia"}/>
                 <BoardMember name={"Justene Hill Edwards"} title={"Associate Professor of History, University of Virginia"}/>
-                <BoardMember name={"Nana Last"} title={"Professor of Architecture, School of Architecture, University of Virginia"}/>
-                <BoardMember name={"Penny Von Eschen"} title={"Chair of American Studies, Professof History and William R. Kenan, Jr. Professor of American Studies, University of Virginia"}/>
+                
                 <BoardMember name={"Julian Maxwell Hayter"} title={"Associate Professor of Leadership Studies, University of Richmond"}/>
+                <BoardMember name={"Angel Adams Parham"} title={"Associate Professor of Sociology, University of Virginia"}/>
                 <BoardMember name={"Katrina Powell"} title={"Director of the Center for Refugee, Migrant, and Displacement Studies, Virginia Tech "}/>
+                <BoardMember name={"Charlotte Rogers"} title={"Associate Professor of Spanish, University of Virginia"}/>
 
                 <p className="py-4 px-5 italic">Ex Officio</p>
-                <BoardMember name={"Brie Gertler"} title={"Vice Provost for Academic Affairs"}/>
+                <BoardMember name={"Brie Gertler"} title={"Interim Provost for Academic Affairs"}/>
                 <BoardMember name={"Jonathan D. Bowen"} title={"Assistant to the President and Writer, University of Virginia"}/>
                 <BoardMember name={"Eric Brandt"} title={"Director, University of Virginia Press"}/>
 
@@ -182,8 +184,27 @@ export default function AboutPage({ data }) {
             </section>
         
 
-         
+            <section className="py-5 text-gray-700 border-b-2 border-gray-100" id="board">
+            <SectionHeader text={"Current Advancement Council Members"}/>
+              <div>
+              <BoardMember name={"Edward L. Ayers,"} title={"President Emeritus of the University of Richmond"}/>
+              <BoardMember name={"L. J. Bourgeois III"} title={"Emeritus Professor of Business Administration, University of Virginia Darden School of Business"}/>
+              <BoardMember name={"Samuel M. Bemiss III"} title={"Executive Vice President at Rampart Communications, Inc."}/>
+              <BoardMember name={"Johnetta Betsch Cole"} title={"President Emerita of Spelman College & Bennett College for Women,  Director Emerita of the Smithsonian National Museum of African Art"}/>
+              <BoardMember name={"Charles Cowen"} title={"Owner at Le Forge de Montolieu"}/>
+              <BoardMember name={"David Marchick"} title={"Dean of the Kogod School of Business at American University"}/>
+              <BoardMember name={"Lynn Pasquerella"} title={"President of the American Association of Colleges and Universities"}/>
+              <BoardMember name={"Matthew Tennant"} title={"Senior Minister of the University Baptist Church, Charlottesville"}/>
+            
 
+                <p className="py-4 px-5 italic">Ex Officio</p>
+                <BoardMember name={"Brie Gertler"} title={"Interim Provost for Academic Affairs"}/>
+                <BoardMember name={"Kathryn Jarvis"} title={"Associate Vice President, Principal Gifts, University of Virginia"}/>
+                <BoardMember name={"Eric Brandt"} title={"Director, University of Virginia Press"}/>
+                <BoardMember name={"Jeff Shifflett"} title={"Director of Finance, University of Virginia Press"}/>
+
+              </div>
+            </section>
 
           
 
