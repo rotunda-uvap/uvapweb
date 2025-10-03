@@ -2,12 +2,14 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: George Washington
-    banner_author: Peter R. Henriques
-    banner_subtitle: His Quest for Honor and Fame
-    banner_id: "10159"
-    banner_quote: An interpretative key to understanding this guarded, complex figure.
-    banner_attr: National Review
+  - banner_title: Vignettes of Colonial Virginia
+    banner_author: Brent Tarter
+    banner_subtitle: Remarkable Stories from the Founding of America
+    banner_id: "10150"
+    banner_quote: Tarter writes in a way that, for many stories we know, feels like
+      we’re seeing friends in a new light, and for stories we don’t, has us on
+      the edge of our seats.
+    banner_attr: Kate Egner, American Battlefield Trust
 related_book:
   - "5744"
   - "5617"
