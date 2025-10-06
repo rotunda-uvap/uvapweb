@@ -6,10 +6,9 @@ top_banner:
     banner_author: Brent Tarter
     banner_subtitle: Remarkable Stories from the Founding of America
     banner_id: "10150"
-    banner_quote: Tarter writes in a way that, for many stories we know, feels like
-      we’re seeing friends in a new light, and for stories we don’t, has us on
-      the edge of our seats.
-    banner_attr: Kate Egner, American Battlefield Trust
+    banner_quote: The premier historian of Virginia history from its beginning to
+      the present.
+    banner_attr: Warren M. Billings, University of New Orleans
 related_book:
   - "5744"
   - "5617"
