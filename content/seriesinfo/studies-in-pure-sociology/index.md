@@ -2,8 +2,8 @@
 templateKey: series
 type: series
 title: Studies in Pure Sociology
-status: active
+status: completed
 seriestype: Academic Book Series
 seriesID: SPS
 ---
-Description not yet available. 
+This series is no longer accepting new submissions. 
