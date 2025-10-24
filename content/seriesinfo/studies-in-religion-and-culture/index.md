@@ -4,7 +4,7 @@ title: Studies in Religion and Culture
 status: active
 seriestype: Academic Book Series
 editors: "Series Editors: John D. Barbour and Gary L. Ebersole"
-uvaeditors: Eric Brandt
+uvaeditors: Angie Hogan
 seriesID: SRC
 type: series
 ---
