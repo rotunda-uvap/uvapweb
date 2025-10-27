@@ -6,7 +6,9 @@ top_banner:
     banner_author: Richard Kopley
     banner_subtitle: A Life
     banner_id: "10034"
-    banner_quote: A magisterial critical biography.
+    banner_quote: Blending rich literary analysis with new insights into Poe's
+      character, this proves there's still plenty left to say about the master
+      of the macabre.
     banner_attr: Publishers Weekly (starred review)
 related_book:
   - "5744"
