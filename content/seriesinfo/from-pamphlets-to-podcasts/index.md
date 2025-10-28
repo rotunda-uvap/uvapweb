@@ -8,4 +8,4 @@ uvaeditors: Nadine Zimmerli
 seriestype: Academic Book Series
 seriesID: ITPSS
 ---
-Books in this series will advance a new and innovative approach to scholarship on the contests over knowledge making and the pursuit of informed, democratic citizenship in Thomas Paine’s time, and about these processes’ relevance to our own.
+This series brings into print the best scholarship on the ways in which the role of an informed citizerny in democratic governance has been envisioned and has evolved since Thomas Paine published his pamphlet "Common Sense" in 1776. 
