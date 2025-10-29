@@ -8,7 +8,7 @@ related_book:
   - "10087"
   - "10158"
 related_series: []
-date: 2025-06-11
+date: 2025-10-29
 ---
 The University of Virginia Press is pleased to announce “From Pamphlets to Podcasts: An Institute for Thomas Paine Studies Series,” a new series that takes its cue from Thomas Paine, who wrote that “America … replenished the world with more useful knowledge and sounder maxims of civil government” than any other society. Books in this series will advance a new and innovative approach to scholarship on the contests over knowledge making and the pursuit of informed, democratic citizenship in Thomas Paine’s time, and about these processes’ relevance to our own. 
 
