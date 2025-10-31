@@ -375,7 +375,7 @@ const uvap = getImage(data.uvaplogo)
                
                   <span className="hover:text-ceci-gray-dark">Rotunda Digital</span>
                 </label>
-                <a className="hover:text-ceci-gray-dark md:ml-5" href="/support">
+                <a className="font-semibold text-orange-500 hover:text-orange-600 md:ml-5" href="/support">
                   Give
                 </a>
 
