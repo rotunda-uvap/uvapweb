@@ -6,7 +6,7 @@ import BookCard from "./BookCard"
 const CurrentList = () => {
   const data = useStaticQuery(graphql`
   query  {
-    allBooksJson(filter: {List: {eq: "Fall 2025"}}) {
+    allBooksJson(filter: {List: {eq: "Spring 2026"}}) {
       edges {
         node {
           ...BookQFragment

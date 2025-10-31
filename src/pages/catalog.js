@@ -14,15 +14,15 @@ export default function Catalog({data}) {
 <section className="py-4 border-b-2 border-gray-100">
 <div className="container flex flex-col px-6 py-4 mx-auto space-y-6 md:h-128  md:flex-row md:items-center md:space-x-6">
         <div className="flex  w-full md:w-1/3">
-        <StaticImage  src="../images/fall25.jpg" alt="current catalog cover" />
+        <StaticImage  src="../images/spring26.jpg" alt="current catalog cover" />
         </div>
        
         <div className="flex flex-col items-center w-full md:flex-row md:w-1/2">
             <div className="max-w-lg md:mx-12 md:order-2">
                 <h1 className="ml-4 text-3xl  font-medium tracking-wide text-ceci-gray-mid md:text-4xl">Current Catalog</h1>
-                <div className="py-2 ml-4 font-serif text-center md:text-left text-ceci-gray-mid">View the selection of books from our Spring 2025 list.</div>
+                <div className="py-2 ml-4 font-serif text-center md:text-left text-ceci-gray-mid">View the selection of books from our Spring 2026 list.</div>
                 <div className="ml-4 flex flex-row py-5">
-               {<span className="font-thin text-lg tracking-wide text-ceci-gray-mid"><a href={'../../fall25.pdf'}>
+               {<span className="font-thin text-lg tracking-wide text-ceci-gray-mid"><a href={'../../spring26.pdf'}>
             Download Catalog<span className="inline-flex items-center mt-4">
               <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
                 <path d="M5 12h14M12 5l7 7-7 7"></path>
@@ -43,10 +43,11 @@ export default function Catalog({data}) {
 </section>
 <SectionHeader text={"Previous Seasons"}/>
     <section className="flex flex-row basis-0 gap-2 py-4 border-b-2 border-gray-100">
+    <a href={'../fall25.pdf'} className="h-full" title="Fall 25"><StaticImage src="../images/fall25.jpg" alt="fall 25 catalog cover" className="object-cover"></StaticImage></a>
     <a href={'../spring25.pdf'} className="h-full" title="Spring 25"><StaticImage src="../images/spring25.jpg" alt="spring 25 catalog cover" className="object-cover"></StaticImage></a>
     <a href={'../fall24.pdf'} className="h-full"><StaticImage src="../images/fall24.jpg" alt="fall 24 catalog cover" className="object-cover"></StaticImage></a>
     <a href={'../spring24.pdf'} className="h-full"><StaticImage src="../images/spring24.jpg" alt="Spring 24 catalog cover" className="object-cover"></StaticImage></a>
-    <a href={'../fall23.pdf'} className="h-full" title="Fall 23"><StaticImage src="../images/fall23.jpg" alt="fall 23 catalog cover" className="object-cover"></StaticImage></a>
+    
  
     
 
