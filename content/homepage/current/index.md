@@ -2,14 +2,13 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: Edgar Allan Poe
-    banner_author: Richard Kopley
-    banner_subtitle: A Life
-    banner_id: "10034"
-    banner_quote: Blending rich literary analysis with new insights into Poe's
-      character, this proves there's still plenty left to say about the master
-      of the macabre.
-    banner_attr: Publishers Weekly (starred review)
+  - banner_title: Nuremberg's Citizen Prosecutor
+    banner_author: Gregory S. Gordon
+    banner_subtitle: Benjamin Ferencz and the Birth of International Justice
+    banner_id: "10088"
+    banner_quote: A thoroughly researched and riveting book, worthy of its one-of-a
+      kind human being, Benjamin Ferencz.
+    banner_attr: Martha Minow, former dean of Harvard Law School
 related_book:
   - "5744"
   - "5617"
