@@ -1,6 +1,6 @@
 ---
 templateKey: exhibit
-title: History of Science Society 2024
+title: History of Science Society 2025
 exhibit_slug: hss25
 coupon: Use code 10HSS25 for 40% off books below through December 1!
 bgcolor: bg-white
