@@ -10,21 +10,17 @@ related_series:
   - RFPD
   - SRC
 related_blog:
- - Author's Corner with Kilian Harrer, author of DEVOUT AND DEFIANT
- - Author's Corner with Lesley Higgins, author of CONFESSING THE FLESH
- - Author's Corner with Ben Van Overmeire, author of AMERICAN KOAN
+  - Author's Corner with Kilian Harrer, author of DEVOUT AND DEFIANT
+  - Author's Corner with Lesley Higgins, author of CONFESSING THE FLESH
+  - Author's Corner with Ben Van Overmeire, author of AMERICAN KOAN
+related_staff: []
 featured_books:
-  - "6003"
-  - "5901"
-  - "10026"
+  - "10138"
   - "5952"
-  - "5875"
-  - "5936"
+  - "10091"
   - "10020"
-  - "5897"
+  - "10018"
 related_collection:
   - AAR 25
 date: 2025-11-18
-related_staff:
-  - Andy Edwards
 ---
