@@ -2,7 +2,7 @@
 templateKey: exhibit
 title: American Academy of Religion 2025
 exhibit_slug: AAR25
-coupon: Use code 10AAR25 for 40% off books below through December 15!
+coupon: Use code 10AAR25 for 40% off books below through December 1!
 bgcolor: bg-white
 txtcolor: text-black
 related_series:
