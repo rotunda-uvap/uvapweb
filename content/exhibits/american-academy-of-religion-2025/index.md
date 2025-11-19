@@ -13,8 +13,8 @@ related_blog:
   - Author's Corner with Kilian Harrer, author of DEVOUT AND DEFIANT
   - Author's Corner with Lesley Higgins, author of CONFESSING THE FLESH
   - Author's Corner with Ben Van Overmeire, author of AMERICAN KOAN
-related_staff: 
-  - Andy Edwards
+related_staff:
+  - J. Andrew Edwards
 featured_books:
   - "10138"
   - "5952"
