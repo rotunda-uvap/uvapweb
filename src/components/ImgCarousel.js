@@ -52,7 +52,7 @@ const ImgGallery = ({filename_array}) => {
       let src = "https://ik.imagekit.io/uvapress/" + name
         return (
            <Link to={src} > <div className="image-slider-container items-center sm:px-5 md:px-10" key={name}>
-                <img src={src} alt={name} width={150} height={224} loading="lazy" />
+                <img src={src} alt={name} loading="lazy" />
             </div></Link>
         )
     })
