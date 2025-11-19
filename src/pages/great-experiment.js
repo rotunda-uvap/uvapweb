@@ -13,7 +13,7 @@ export default function FFPage() {
         title="The Great Experiment: Redebating the Electoral College in Virtual Reality"
         description="A peer-reviewed educational virtual reality experience set at the 1787 Constitutional Convention."
         pathname="https://www.upress.virginia.edu/furnace-and-fugue"
-        author="created by Warren Hofstra (Shenandoah University), Mohammad Obeid (Shenandoah Center for Immersive Learning), J.J. Ruscella (AccessVR), and Kevin Hardwick"
+        author="Created by Warren R. Hofstra and Mohammad F. Obeid, with Kevin R. Hardwick and J.J. Ruscella"
          cover={
           "https://ik.imagekit.io/uvapress/tge.png"
          }
@@ -23,7 +23,7 @@ export default function FFPage() {
            <h4 className="hidden md:block pb-3 font-light text-ceci-gray-dark font-sans leading-none">The Great Experiment</h4>
           <h4 className="md:hidden pb-3 font-light text-ceci-gray-dark leading-relaxed font-sans">The Great Experiment</h4>
           <h6 className="italic font-thin text-ceci-gray-mid tracking-booped">A peer-reviewed educational virtual reality experience set at the 1787 Constitutional Convention.</h6>
-          <h6 className="py-2 font-display text-ceci-gray-mid">created by Warren Hofstra (Shenandoah University), Mohammad Obeid (Shenandoah Center for Immersive Learning), J.J. Ruscella (AccessVR), and Kevin Hardwick (James Madison University)</h6>
+          <h6 className="py-2 font-display text-ceci-gray-mid">Created by Warren R. Hofstra and Mohammad F. Obeid, with Kevin R. Hardwick and J.J. Ruscella</h6>
           <section className="py-4">
               <ImgGallery filename_array={screenshots}/>
           </section>
