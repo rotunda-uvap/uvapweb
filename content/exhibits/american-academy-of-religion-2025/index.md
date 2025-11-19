@@ -14,7 +14,7 @@ related_blog:
   - Author's Corner with Lesley Higgins, author of CONFESSING THE FLESH
   - Author's Corner with Ben Van Overmeire, author of AMERICAN KOAN
 related_staff:
-  - J. Andrew Edwards
+  - Andy Edwards
 featured_books:
   - "10138"
   - "5952"

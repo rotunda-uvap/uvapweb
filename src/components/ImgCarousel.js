@@ -51,9 +51,16 @@ const ImgGallery = ({filename_array}) => {
     const imageMap = filename_array.map((name) => {
       let src = "https://ik.imagekit.io/uvapress/" + name
         return (
-           <Link to={src} > <div className="image-slider-container items-center sm:px-5 md:px-10" key={name}>
-                <img src={src} alt={name} loading="lazy" />
-            </div></Link>
+          <Link to={src} key={name}>
+          <div className="image-slider-container flex justify-center items-center px-4">
+            <img
+              src={src}
+              alt={name}
+              loading="lazy"
+              className="h-48 w-auto object-contain"
+            />
+          </div>
+        </Link>
         )
     })
 
