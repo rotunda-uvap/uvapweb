@@ -5,7 +5,7 @@ import SeO from "../components/SeoComponent"
 import ShareButtons from "../components/ShareButtons"
 import ImgGallery from "../components/ImgCarousel"
 export default function FFPage() {
-    const screenshots= ['great_experiment_user.jpg', 'franklin_vr.png', 'ind_hall2.jpg']
+    const screenshots= ['great_experiment_user.jpg', 'franklin_vr.png', 'ind_hall2.jpg', 'ge_gameplay.jpg']
  return (
    
         <Layout> 
