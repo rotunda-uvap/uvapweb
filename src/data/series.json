@@ -214,5 +214,8 @@
   {
     "seriesID": "PAL",
     "seriesName": "The Papers of Abraham Lincoln"
+  }, {
+    "seriesID": "SED",
+    "seriesName": "Scholarly Editing"
   }
 ]
