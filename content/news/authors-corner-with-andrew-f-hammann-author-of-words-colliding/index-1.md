@@ -1,7 +1,7 @@
 ---
 templateKey: news
 type: author-corner
-title: Author's Corner with Andrew F. Hammann, author of WORDS COLLIDING
+title: Author's Corner with Lydia Murdoch, author of WHAT WE MOURN
 image: lydia-murdoch_kr_0030_72.jpg
 related_book:
   - "10147"
@@ -9,7 +9,7 @@ related_series:
   - VLCS
 date: 2025-12-08
 ---
-Today, we are happy to bring you our conversation with Andrew F. Hammann, author of *Words Colliding: The Debate over Slavery and Black Exclusion in Nineteenth-Century America*
+Today, we are happy to bring you our conversation with Lydia Murdoch, author of *What We Mourn: Child Death and the Politics of Grief in Nineteenth-Century Britain*
 
 *What inspired you to write this book?* 
 
