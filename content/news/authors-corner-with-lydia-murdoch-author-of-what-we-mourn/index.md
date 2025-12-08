@@ -7,7 +7,7 @@ related_book:
   - "10147"
 related_series:
   - VLCS
-date: 2025-12-08
+date: 2025-12-03
 ---
 Today, we are happy to bring you our conversation with Lydia Murdoch, author of *What We Mourn: Child Death and the Politics of Grief in Nineteenth-Century Britain*
 

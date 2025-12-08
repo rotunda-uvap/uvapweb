@@ -7,7 +7,7 @@ related_book:
   - "10143"
 related_series:
   - CWH
-date: 2025-12-03
+date: 2025-12-08
 ---
 Today, we are happy to bring you our conversation with Andrew F. Hammann, author of *Words Colliding: The Debate over Slavery and Black Exclusion in Nineteenth-Century America*
 
