@@ -19,12 +19,9 @@ related_series:
 related_blog:
   - Author's Corner with Andrew F. Hammann, author of WORDS COLLIDING
   - Author's Corner with John F. Morris, author of STUDENTS TO SOLDIERS
-  - Author's Corner with John “Garick” Chamberlin, author of BARBARY
-    ENTANGLEMENTS
   - Author's Corner with Steve Sarson, author of THE COURSE OF HUMAN EVENTS
   - Author's Corner with Matthew Mason, author of SEEKING THE HIGH GROUND
   - Author's Corner with Kilian Harrer, author of DEVOUT AND DEFIANT
-  - Author's Corner with Mark F. Ehlers, author of NAPOLEON IN AMERICA
   - Author's Corner with Peter D. Blackmer, author of UNLEASHING BLACK POWER
   - Author's Corner with Nelson D. Lankford, author of AFTER THE FIRE
   - Author's Corner with David M. Poole, author of TRUSTED SOURCE
