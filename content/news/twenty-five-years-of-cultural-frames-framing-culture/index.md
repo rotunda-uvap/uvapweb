@@ -4,14 +4,9 @@ type: news
 title: Twenty-Five Years of Cultural Frames, Framing Culture
 related_book:
   - "2758"
-  - "1967"
-  - "3211"
-  - "5046"
-  - "10066"
-  - "3806"
   - "5711"
-  - "3117"
   - "5245"
+  - "10153"
 related_series:
   - CFF
 date: 2025-12-12
