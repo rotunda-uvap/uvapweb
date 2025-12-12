@@ -14,12 +14,11 @@ related_series:
   - USN
   - NWS
 related_blog:
+  - Twenty-Five Years of Cultural Frames, Framing Culture
   - Author's Corner with Lydia Murdoch, author of WHAT WE MOURN
   - Author's Corner with Kelly Swartz, author of MAXIMS AND THE MIND
   - Author's Corner with Erin Pearson, author of GRIEVOUS ENTANGLEMENT
   - Author's Corner with Paul William Child, author of THE DEAN DISORDERED
-  - Author's Corner with David Alff and Danielle Spratt, editors of HISTORIES OF
-    SCIENCE
   - Author's Corner with Lesley Higgins, author of CONFESSING THE FLESH
   - Author's Corner with Andrew Kalaidjian, author of SPECTACLE EARTH
 related_staff:
