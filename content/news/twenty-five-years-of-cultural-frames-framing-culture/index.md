@@ -2,11 +2,21 @@
 templateKey: news
 type: news
 title: Twenty-Five Years of Cultural Frames, Framing Culture
+related_book:
+  - "2758"
+  - "1967"
+  - "3211"
+  - "5046"
+  - "10066"
+  - "3806"
+  - "5711"
+  - "3117"
+  - "5245"
 related_series:
   - CFF
 date: 2025-12-12
 ---
-The Cultural Frames, Framing Culture series happily celebrates its twenty-fifth year of publication with the University of Virginia Press. Begun in 2000, the series has covered a wide range of cultural issues from historical, literary, philosophical, and communications perspectives. Focused on how culture frames our narratives and, conversely, how our narratives produce the culture that frames them, the series has attempted to bridge the gap between previously disparate disciplines while insisting on bringing practical applications to bear on theoretical conceptions.
+The [Cultural Frames, Framing Culture series](https://www.upress.virginia.edu/series/CFF/) happily celebrates its twenty-fifth year of publication with the University of Virginia Press. Begun in 2000, the series has covered a wide range of cultural issues from historical, literary, philosophical, and communications perspectives. Focused on how culture frames our narratives and, conversely, how our narratives produce the culture that frames them, the series has attempted to bridge the gap between previously disparate disciplines while insisting on bringing practical applications to bear on theoretical conceptions.
 
 The series was launched with three books. *[The Golden Avant-Garde](https://www.upress.virginia.edu/title/2758/)* by Raphael Sassower and Louis Cicotello is a collaboration between a philosopher and an artist that examines both the complicity and the defiance of twentieth-century avant-garde art movements confronted with prevailing forces of government, technology, and commerce. Nancy West’s *[Kodak and the Lens of Nostalgia](https://www.upress.virginia.edu/title/1967/)* delves into how Kodak marketing in the late nineteenth and early twentieth centuries instructed amateur photographers through the lens of nostalgia to convey their lives in ways that erased unwanted memories. Finally, Margot Norris’s *[Writing War in the Twentieth Century](https://www.upress.virginia.edu/title/3211/)* explores the dialogue between two seemingly incommensurable hallmarks of the twentieth century: modern mass warfare and innovative art. All three books established foundational directions for the series in probing the complex interactions between culture and the art forms that both shape it and are shaped by it.
 
