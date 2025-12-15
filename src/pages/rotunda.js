@@ -102,8 +102,7 @@ padding:1em;
      <Main>
     <RotundaHeader/>
     <RotSection>
-    <Para>Since 2004, our Rotunda imprint has published innovative peer-reviewed digital projects, both born-digital and from authoritative letterpress editions. Our core offering is the <a href="#ahc">American History Collection</a> of documentary editions spanning three centuries, from the earliest surviving writings of George Washington through the presidential correspondence of Woodrow Wilson: more than 20 publications with content from over 550 letterpress and born-digital volumes, for a total of nearly 300,000 documents, diary entries, and editorial essays, all cross-searchable.</Para>
-<Para>Our major stand-alone publications are the <a href="https://prde.upress.virginia.edu/">Presidential Recordings Digital Edition</a>, with transcripts and audio of nearly 4000 conversations from White House recordings; <a href="https://pfe.rotunda.upress.virginia.edu/">People of the Founding Era</a>, a biographical reference to over 75,000 individuals; the open-access <a href="https://sah-archipedia.org">SAH Archipedia</a>, an authoritative encyclopedia of the American built environment, with over 25,000 entries and 5000 editorial essays. Finally, our <a href="#lit">Literature and Culture Collection</a> features seven editions of literary work and correspondence from nineteenth-century America and Britain.</Para>
+    <Para>Since 2004, our Rotunda imprint has published innovative peer-reviewed digital projects, both born-digital and from authoritative letterpress editions. Our core offering is the <a href="#ahc">American History Collection</a> of documentary editions spanning three centuries, from the earliest surviving writings of George Washington through the presidential correspondence of Woodrow Wilson: more than 20 publications with content from over 550 letterpress and born-digital volumes, for a total of nearly 300,000 documents, diary entries, and editorial essays, all cross-searchable. Our major stand-alone publications are the <a href="https://prde.upress.virginia.edu/">Presidential Recordings Digital Edition</a>, with transcripts and audio of nearly 4000 conversations from White House recordings; <a href="https://pfe.rotunda.upress.virginia.edu/">People of the Founding Era</a>, a biographical reference to over 75,000 individuals; the open-access <a href="https://sah-archipedia.org">SAH Archipedia</a>, an authoritative encyclopedia of the American built environment, with over 25,000 entries and 5000 editorial essays. Finally, our <a href="#lit">Literature and Culture Collection</a> features seven editions of literary work and correspondence from nineteenth-century America and Britain.</Para>
  
    </RotSection>
 
@@ -114,7 +113,7 @@ padding:1em;
    
 
    <RotSection>
-    <Heading3 id="ahc">American History Collection</Heading3>
+    <Heading3 id="ahc" className="border-b border-ceci-gray-light pb-2">American History Collection</Heading3>
      {AHC.group.map((edge, index) => (
       <div className="border-b border-ceci-gray-light pb-2">
         <Heading4>{edge.nodes[index].SubCollection}</Heading4>
@@ -142,7 +141,7 @@ padding:1em;
    </RotSection>
    <RotSection>
     <Heading3 id="Arch">Architecture</Heading3>
-      <ul className="md:grid md:grid-cols-2 border-b border-ceci-gray-light pb-2">
+      <ul className="md:grid md:grid-cols-2  border-b border-ceci-gray-light pb-2">
         {ARC.nodes.map((n, index) => (
           <li className="md:col-span-1 "><Link to={`../title/${ n.RotID }`} className="hover:bg-gray-100 flex p-2 h-full items-center" >
         <img className="flex-shrink-0 h-20 w-20  object-cover mr-5" src={"https://ik.imagekit.io/uvapress/rotunda/" + n.imageFilename} width="50" alt={n.Title}/>
@@ -171,7 +170,7 @@ padding:1em;
       
     </RotSectionZinc> 
     
-   <RotSectionZinc className="bg-zinc-50 py-4">
+   <RotSectionZinc className="bg-zinc-50 py-4 bg-zinc-50 border-b border-ceci-gray-light">
      <Article>
     <a href="https://rotunda.upress.virginia.edu/entrance.xqy"><Heading4 className="underline">Collection Entrance</Heading4></a>
       <Para>Access the Rotunda titles provided by your institution (must be on campus network or VPN), or log in with individual account.</Para>
@@ -202,7 +201,7 @@ padding:1em;
 
    </RotSection> */}
   
-    <RotSectionZinc className="bg-zinc-50 border-b border-ceci-gray-light pb-2">
+    <RotSectionZinc className="bg-zinc-50 border-b border-ceci-gray-light pb-8">
       <Heading3>rotunda contacts</Heading3>
       <div className="flex flex-wrap gap-4 text-center" id="contacts">
       {staff.edges.map((edge, index) => (
@@ -211,11 +210,12 @@ padding:1em;
                   
                    ))}
                    </div>
-                   <Para>As of 2023, Rotunda has engaged an <a href="#committee">advisory committee</a> of respected colleagues at various institutions and organizations.</Para>
+                  
     </RotSectionZinc>
    
     <RotSection>
   <Heading3 id="committee">Advisory Committee Members</Heading3>
+  <Para>As of 2023, Rotunda has engaged an <a href="#committee">advisory committee</a> of respected colleagues at various institutions and organizations.</Para>
         <div>
               <RotBoardMember name={"Nicole Aljoe"} title={"Professor of English and Africana Studies, Northeastern University"}/>
               <RotBoardMember name={"Max Edelson"} title={"Professor of History, Co-Director, MapScholar & Early American Seminar University of Virginia"}/>
