@@ -6,7 +6,7 @@ image: img_2059.jpg
 related_book: []
 related_series:
   - CFF
-date: 2025-12-12
+date: 2025-12-16
 ---
 The [Cultural Frames, Framing Culture series](https://www.upress.virginia.edu/series/CFF/) happily celebrates its twenty-fifth year of publication with the University of Virginia Press. Begun in 2000, the series has covered a wide range of cultural issues from historical, literary, philosophical, and communications perspectives. Focused on how culture frames our narratives and, conversely, how our narratives produce the culture that frames them, the series has attempted to bridge the gap between previously disparate disciplines while insisting on bringing practical applications to bear on theoretical conceptions.
 
