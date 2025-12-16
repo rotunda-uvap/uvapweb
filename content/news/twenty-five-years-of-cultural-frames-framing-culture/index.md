@@ -2,6 +2,7 @@
 templateKey: news
 type: news
 title: Twenty-Five Years of Cultural Frames, Framing Culture
+image: img_2059.jpg
 related_book:
   - "2758"
   - "5711"
