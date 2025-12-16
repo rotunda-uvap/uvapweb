@@ -3,7 +3,6 @@ templateKey: news
 type: news
 title: Twenty-Five Years of Cultural Frames, Framing Culture
 image: img_2059.jpg
-related_book: []
 related_series:
   - CFF
 date: 2025-12-16
