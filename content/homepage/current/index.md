@@ -6,9 +6,9 @@ top_banner:
     banner_author: Scott C. Beardsley
     banner_subtitle: The Rise of Nontraditional Leaders in Academia
     banner_id: "5171"
-    banner_quote: Opens the conversation about the need for new and different
-      leadership in American higher education.
-    banner_attr: VoegelinView
+    banner_quote: Beardsley’s book is that rare work in academia that strikes the
+      perfect balance between personal, scholarly, and accessible.
+    banner_attr: Michael Sorrell, President, Paul Quinn College
 related_book:
   - "5744"
   - "5617"
