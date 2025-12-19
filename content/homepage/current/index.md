@@ -2,13 +2,13 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: " Nuremberg's Citizen Prosecutor"
-    banner_author: Gregory S. Gordon
-    banner_subtitle: Benjamin Ferencz and the Birth of International Justice
-    banner_id: "10088"
-    banner_quote: A thoroughly researched and riveting book, worthy of its one-of-a
-      kind human being.
-    banner_attr: Martha Minow, former dean of Harvard Law School
+  - banner_title: Higher Calling
+    banner_author: Scott C. Beardsley
+    banner_subtitle: The Rise of Nontraditional Leaders in Academia
+    banner_id: "5171"
+    banner_quote: Opens the conversation about the need for new and different
+      leadership in American higher education.
+    banner_attr: VoegelinView
 related_book:
   - "5744"
   - "5617"
@@ -25,6 +25,7 @@ featured_books:
   - "10150"
   - "10014"
   - "10095"
+  - "10088"
   - "10027"
   - "10021"
   - "10103"
