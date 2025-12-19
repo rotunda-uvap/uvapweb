@@ -2,6 +2,7 @@
 templateKey: news
 type: author-corner
 title: Author's Corner with Trishula Rachna Patel, author of BECOMING ZIMBABWEAN
+image: acs_0170.jpeg
 related_book:
   - "10169"
 related_series:
