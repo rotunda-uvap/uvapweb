@@ -76,7 +76,7 @@ export default function ProspectiveAuthorsPage({ data }) {
           
           <div className="p-2 sm:w-1/2 w-full">
          
-             <FileDownloadButton name="Author Questionnaire" file={'UVaP_Author_Questionnaire.docx'}/>
+             <FileDownloadButton name="Author Questionnaire" file={'UVaP_Author_Questionnaire.doc'}/>
 </div>
 
         </div>

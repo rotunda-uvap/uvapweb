@@ -102,19 +102,76 @@ padding:1em;
      <Main>
     <RotundaHeader/>
     <RotSection>
-    <Heading2>About Rotunda</Heading2>
-    <Para>Since 2004, our Rotunda imprint has published innovative peer-reviewed digital projects, both born-digital and from authoritative letterpress editions. Our core offering is the <a href="#ahc">American History Collection</a> of documentary editions spanning three centuries, from the earliest surviving writings of George Washington through the presidential correspondence of Woodrow Wilson: more than 20 publications with content from over 550 letterpress and born-digital volumes, for a total of nearly 300,000 documents, diary entries, and editorial essays, all cross-searchable.</Para>
-<Para>Our major stand-alone publications are the <a href="https://prde.upress.virginia.edu/">Presidential Recordings Digital Edition</a>, with transcripts and audio of nearly 4000 conversations from White House recordings; <a href="https://pfe.rotunda.upress.virginia.edu/">People of the Founding Era</a>, a biographical reference to over 75,000 individuals; the open-access <a href="https://sah-archipedia.org">SAH Archipedia</a>, an authoritative encyclopedia of the American built environment, with over 25,000 entries and 5000 editorial essays. Finally, our <a href="#lit">Literature and Culture Collection</a> features seven editions of literary work and correspondence from nineteenth-century America and Britain.</Para>
+      <Para><span className="font-bold">Rotunda</span> is the digital imprint of the University of Virginia Press. It was conceived as an experiment in the feasibility of electronic academic publishing at the dawn of the Internet age, launching its first Founding Era publication in 2004, The Dolley Madison Digital Edition. Today, Rotunda continues to legitimize and preserve digital scholarly editions by integrating them with an established university press. Rotunda’s flagship offering is its <a href="#ahc">American History Collection</a>, containing over 300,000 materials, spanning George Washington’s earliest surveying journals to audio recordings of Ronald Reagan’s Oval Office phone conversations. These editions, primarily derived from the authoritative printed book series, are used by over 200 subscribing universities and libraries around the world, and are of particular value to authors, researchers, and students, who appreciate knowing they can experience all the content contained in the printed volumes with the added benefit of keyword and metadata search.</Para>
+   {/*  <Para>Since 2004, our Rotunda imprint has published innovative peer-reviewed digital projects, both born-digital and from authoritative letterpress editions. Our core offering is the <a href="#ahc">American History Collection</a> of documentary editions spanning three centuries, from the earliest surviving writings of George Washington through the presidential correspondence of Woodrow Wilson: more than 20 publications with content from over 550 letterpress and born-digital volumes, for a total of nearly 300,000 documents, diary entries, and editorial essays, all cross-searchable. Additionally, we have the open-access <a href="https://sah-archipedia.org">SAH Archipedia</a>, an authoritative encyclopedia of the American built environment, with over 25,000 entries and 5000 editorial essays. Finally, our <a href="#lit">Literature and Culture Collection</a> features seven editions of literary work and correspondence from nineteenth-century America and Britain.</Para> */}
  
    </RotSection>
-    <RotSectionZinc>
+
+   <RotSection>
+      <Heading2>rotunda collections</Heading2>
+      <Para>Rotunda publications are available to both libraries and independent scholars as single titles or as collections. The American History Collection includes the sub-collections American Founding Era; Antebellum, Civil War, and Reconstruction; and the American Century.</Para>
+    </RotSection>
+   
+
+   <RotSection>
+    <Heading3 id="ahc" className="border-b border-ceci-gray-light pb-2">American History Collection</Heading3>
+     {AHC.group.map((edge, index) => (
+      <div className="border-b border-ceci-gray-light pb-2">
+        <Heading4>{edge.nodes[index].SubCollection}</Heading4>
+       <ul className="md:grid md:grid-cols-2">
+        {edge.nodes.map((n, index)=> (
+          <li className=" md:col-span-1"><Link to={`../title/${ n.RotID }`} className="hover:bg-gray-100 flex p-2 h-full items-center" >
+          
+        <img className="flex-shrink-0 h-20 w-20  object-cover mr-5" src={"https://ik.imagekit.io/uvapress/rotunda/" + n.imageFilename} width="50" alt={n.Title}/>
+        <span className="text-lg text-ceci-gray-dark font-assistant font-thin uppercase">{n.Title}</span>
+   </Link></li>
+       
+        ))}</ul>
+      </div>
+    ))} 
+   </RotSection>
+   <RotSection >
+    <Heading3 id="lit">Literature and Culture Collection</Heading3>
+      <ul className="md:grid md:grid-cols-2 border-b border-ceci-gray-light pb-2">
+        {LIT.group[0].nodes.map((n, index) => (
+          <li className=" md:col-span-1"><Link to={`../../title/${ n.RotID }`} className="hover:bg-gray-100 flex p-2 h-full items-center" >
+        <img className="flex-shrink-0 h-20 w-20  object-cover mr-5" src={"https://ik.imagekit.io/uvapress/rotunda/" + n.imageFilename} width="50" alt={n.Title}/>
+        <span className="text-lg text-ceci-gray-dark font-assistant font-thin uppercase">{n.Title}</span>
+   </Link></li>
+    ))}  </ul>
+   </RotSection>
+   <RotSection>
+    <Heading3 id="Arch">Architecture</Heading3>
+      <ul className="md:grid md:grid-cols-2  border-b border-ceci-gray-light pb-2">
+        {ARC.nodes.map((n, index) => (
+          <li className="md:col-span-1 "><Link to={`../title/${ n.RotID }`} className="hover:bg-gray-100 flex p-2 h-full items-center" >
+        <img className="flex-shrink-0 h-20 w-20  object-cover mr-5" src={"https://ik.imagekit.io/uvapress/rotunda/" + n.imageFilename} width="50" alt={n.Title}/>
+        <span className="text-lg text-ceci-gray-dark font-assistant font-thin uppercase">{n.Title}</span>
+   </Link></li>
+    ))}  </ul>
+   </RotSection>
+   <RotSection>
+      <Heading3>legacy projects</Heading3>
+      <Para>These two guides to resources in African American history, dating from the 1990s, were the very first online publications under the imprint of the University of Virginia Press.</Para>
+      <ul className="border-b border-ceci-gray-light pb-2">
+        <li className="hover:bg-gray-100 flex p-2 h-full items-center">
+        <img className="flex-shrink-0 h-10 w-10  object-cover mr-5" src={"https://legacy.upress.virginia.edu/plunkett/3072.gif"} width="80px" alt="Afro-American Sources in Virginia: A Guide to Manuscripts"/>
+        <a href="https://legacy.upress.virginia.edu/plunkett/nc-toc.html" className=" text-ceci-gray-dark font-assistant font-thin uppercase">Afro-American Sources in Virginia: A Guide to Manuscripts</a>
+   </li>
+        <li className="hover:bg-gray-100 flex p-2 h-full items-center">
+        <img className="flex-shrink-0 h-10 w-10  object-cover mr-5" src={"https://legacy.upress.virginia.edu/epub/pyatt/seb.jpg"} width="80px" alt="Guide to African-American Documentary Resources in North Carolina"/>
+        <a href="https://legacy.upress.virginia.edu/epub/pyatt/index.html" className=" text-ceci-gray-dark font-assistant font-thin uppercase">Guide to African-American Documentary Resources in North Carolina</a>
+   </li>
+        </ul>      
+    </RotSection>
+    <RotSectionZinc className="bg-zinc-50 py-4">
      
       <Heading3>Accessing Rotunda Publications</Heading3>
       <Para>If you are connecting via a campus Internet connection, you can expect to gain access to any Rotunda publication purchased by your institution. If your institution has not purchased a particular Rotunda publication, contact your institution’s library about ordering. You may also sign up for an individual free trial to evaluate Rotunda before making a purchase decision.</Para>
       
     </RotSectionZinc> 
     
-   <RotSectionZinc className="bg-zinc-50 py-4">
+   <RotSectionZinc className="bg-zinc-50 py-4 bg-zinc-50 border-b border-ceci-gray-light">
      <Article>
     <a href="https://rotunda.upress.virginia.edu/entrance.xqy"><Heading4 className="underline">Collection Entrance</Heading4></a>
       <Para>Access the Rotunda titles provided by your institution (must be on campus network or VPN), or log in with individual account.</Para>
@@ -138,69 +195,14 @@ padding:1em;
     </Article>
    
     </RotSectionZinc> 
-    <RotSection>
-      <Heading3>rotunda collections</Heading3>
-      <Para>Rotunda publications are available to both libraries and independent scholars as single titles or as collections. The American History Collection includes the sub-collections American Founding Era; Antebellum, Civil War, and Reconstruction; and the American Century.</Para>
-    </RotSection>
    
-
-   <RotSection>
-    <Heading3 id="ahc">American History Collection</Heading3>
-     {AHC.group.map((edge, index) => (
-      <div className="border-b border-ceci-gray-light pb-2">
-        <Heading4>{edge.nodes[index].SubCollection}</Heading4>
-       <ul className="md:grid md:grid-cols-2">
-        {edge.nodes.map((n, index)=> (
-          <li className=" md:col-span-1"><Link to={`../title/${ n.RotID }`} className="hover:bg-gray-100 flex p-2 h-full items-center" >
-          
-        <img className="flex-shrink-0 h-10 w-10  object-cover mr-5" src={"https://ik.imagekit.io/uvapress/rotunda/" + n.imageFilename} width="50" alt={n.Title}/>
-        <span className="text-lg text-ceci-gray-dark font-assistant font-thin uppercase">{n.Title}</span>
-   </Link></li>
-       
-        ))}</ul>
-      </div>
-    ))} 
-   </RotSection>
-   <RotSection >
-    <Heading3 id="lit">Literature and Culture Collection</Heading3>
-      <ul className="md:grid md:grid-cols-2 border-b border-ceci-gray-light pb-2">
-        {LIT.group[0].nodes.map((n, index) => (
-          <li className=" md:col-span-1"><Link to={`../../title/${ n.RotID }`} className="hover:bg-gray-100 flex p-2 h-full items-center" >
-        <img className="flex-shrink-0 h-10 w-10  object-cover mr-5" src={"https://ik.imagekit.io/uvapress/rotunda/" + n.imageFilename} width="50" alt={n.Title}/>
-        <span className="text-lg text-ceci-gray-dark font-assistant font-thin uppercase">{n.Title}</span>
-   </Link></li>
-    ))}  </ul>
-   </RotSection>
-   <RotSection>
-    <Heading3 id="Arch">Architecture</Heading3>
-      <ul className="md:grid md:grid-cols-2 border-b border-ceci-gray-light pb-2">
-        {ARC.nodes.map((n, index) => (
-          <li className="md:col-span-1 "><Link to={`../title/${ n.RotID }`} className="hover:bg-gray-100 flex p-2 h-full items-center" >
-        <img className="flex-shrink-0 h-10 w-10  object-cover mr-5" src={"https://ik.imagekit.io/uvapress/rotunda/" + n.imageFilename} width="50" alt={n.Title}/>
-        <span className="text-lg text-ceci-gray-dark font-assistant font-thin uppercase">{n.Title}</span>
-   </Link></li>
-    ))}  </ul>
-   </RotSection>
 {/*    <RotSection>
     <Heading3>Rotunda Innovations</Heading3>
     <Para>While not created in-house, these digital projects created by our partners are officially  </Para>
 
    </RotSection> */}
-   <RotSection>
-      <Heading3>legacy projects</Heading3>
-      <Para>These two guides to resources in African American history, dating from the 1990s, were the very first online publications under the imprint of the University of Virginia Press.</Para>
-      <ul className="border-b border-ceci-gray-light pb-2">
-        <li className="hover:bg-gray-100 flex p-2 h-full items-center">
-        <img className="flex-shrink-0 h-10 w-10  object-cover mr-5" src={"https://legacy.upress.virginia.edu/plunkett/3072.gif"} width="80px" alt="Afro-American Sources in Virginia: A Guide to Manuscripts"/>
-        <a href="https://legacy.upress.virginia.edu/plunkett/nc-toc.html" className=" text-ceci-gray-dark font-assistant font-thin uppercase">Afro-American Sources in Virginia: A Guide to Manuscripts</a>
-   </li>
-        <li className="hover:bg-gray-100 flex p-2 h-full items-center">
-        <img className="flex-shrink-0 h-10 w-10  object-cover mr-5" src={"https://legacy.upress.virginia.edu/epub/pyatt/seb.jpg"} width="80px" alt="Guide to African-American Documentary Resources in North Carolina"/>
-        <a href="https://legacy.upress.virginia.edu/epub/pyatt/index.html" className=" text-ceci-gray-dark font-assistant font-thin uppercase">Guide to African-American Documentary Resources in North Carolina</a>
-   </li>
-        </ul>      
-    </RotSection>
-    <RotSectionZinc className="bg-zinc-50 border-b border-ceci-gray-light pb-2">
+  
+    <RotSectionZinc className="bg-zinc-50 border-b border-ceci-gray-light pb-8">
       <Heading3>rotunda contacts</Heading3>
       <div className="flex flex-wrap gap-4 text-center" id="contacts">
       {staff.edges.map((edge, index) => (
@@ -209,11 +211,12 @@ padding:1em;
                   
                    ))}
                    </div>
-                   <Para>As of 2023, Rotunda has engaged an <a href="#committee">advisory committee</a> of respected colleagues at various institutions and organizations.</Para>
+                  
     </RotSectionZinc>
    
     <RotSection>
   <Heading3 id="committee">Advisory Committee Members</Heading3>
+  <Para>As of 2023, Rotunda has engaged an <a href="#committee">advisory committee</a> of respected colleagues at various institutions and organizations.</Para>
         <div>
               <RotBoardMember name={"Nicole Aljoe"} title={"Professor of English and Africana Studies, Northeastern University"}/>
               <RotBoardMember name={"Max Edelson"} title={"Professor of History, Co-Director, MapScholar & Early American Seminar University of Virginia"}/>

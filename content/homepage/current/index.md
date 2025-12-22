@@ -2,12 +2,13 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: Words Colliding
-    banner_author: Andrew F. Hammann
-    banner_subtitle: The Debate over Slavery and Black Exclusion in Nineteenth-Century America
-    banner_id: "10143"
-    banner_quote: Meticulously researched, rigorously argued, and absolutely original.
-    banner_attr: James T. Campbell, Stanford University
+  - banner_title: Higher Calling
+    banner_author: Scott C. Beardsley
+    banner_subtitle: The Rise of Nontraditional Leaders in Academia
+    banner_id: "5171"
+    banner_quote: Beardsley’s book is that rare work in academia that strikes the
+      perfect balance between personal, scholarly, and accessible.
+    banner_attr: Michael Sorrell, President, Paul Quinn College
 related_book:
   - "5744"
   - "5617"
@@ -20,17 +21,18 @@ related_collection:
   - Homepage Featured
 banner_id: "10085"
 featured_books:
-  - "10088"
+  - "10145"
   - "10150"
   - "10014"
   - "10095"
+  - "10088"
+  - "10027"
+  - "10021"
   - "10103"
   - "10165"
-  - "10075"
-  - "10157"
+  - "5509"
+  - "10057"
+  - "10143"
+  - "10020"
   - "10076"
-  - "10161"
-  - "10145"
-  - "10138"
-  - "43"
 ---
