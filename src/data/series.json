@@ -152,6 +152,10 @@
     "seriesName": "Jamestown Essays on Representation"
   },
   {
+    "seriesID": "ACC",
+    "seriesName": "American Century Collection"
+  },
+  {
     "seriesID": "GGL",
     "seriesName": "Gay Hart Gaines Distinguished Lectures"
   },
@@ -214,8 +218,5 @@
   {
     "seriesID": "PAL",
     "seriesName": "The Papers of Abraham Lincoln"
-  }, {
-    "seriesID": "SED",
-    "seriesName": "Scholarly Editing"
   }
 ]

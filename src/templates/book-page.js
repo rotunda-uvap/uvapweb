@@ -13,6 +13,11 @@ import kebabCase from "lodash/kebabCase"
 const bookPage = ({ data }) => {
   const book = data.books
   const isbn = book.Bindings[0].ISBN
+  const hasDigitalEdition = Array.isArray(book.Bindings)
+    ? book.Bindings.some(b => b && b.type === "Online Digital Edition")
+    : false
+  // TODO: replace with the real Free Trial link for digital editions
+  const freeTrialUrl = "https://example.com/free-trial"
   const GoogleB = "https://books.google.com/books?vid=" + isbn
   const RightsLinkA = "https://marketplace.copyright.com/rs-ui-web/mp/search/all/"
   const RightsLink = RightsLinkA + isbn
@@ -151,7 +156,7 @@ const bookPage = ({ data }) => {
             {book.AuthorCredit}
           </h6>
 
-          {book.Bindings.map((binding, index) => (
+      {book.Bindings.map((binding, index) => (
             <>
               <div className="flex-row inline-flex items-center w-full leading-normal"  key={`binding${index}`}>
                 <svg
@@ -172,46 +177,47 @@ const bookPage = ({ data }) => {
                   href={binding.buylink}
                   className="block group p-2 ml-4 border-b"
                 >
-                  <div className="font-thin uppercase text-ceci-gray-dark buyme ">
-                    <span className="tracking-wide ">{binding.type}{" "}</span>
-                    <span className="pl-2 font-thin">${binding.price}</span>{" "}
-                  </div>
-                  <div className="font-display text-sm">
-                    {binding.date && binding.date} {binding.pages && <span>{binding.pages} pages</span> } {binding.ISBN && <span>ISBN: {binding.ISBN} </span>}
-                  </div>
+                  {(() => {
+                    const isOABinding =
+                      typeof binding.type === "string" &&
+                      binding.type.toLowerCase().includes("open access")
+
+                    const isDigitalBinding =
+                      !isOABinding &&
+                      (binding.type === "Online Digital Edition" ||
+                        (!binding.ISBN && !binding.pages && !binding.date && (binding.price == null || binding.price === "")))
+
+                    return (
+                      <>
+                        <div className="font-thin uppercase text-ceci-gray-dark buyme ">
+                          <span className="tracking-wide ">{binding.type}{" "}</span>
+                          {binding.price != null && binding.price !== "" && (
+                            <span className="pl-2 font-thin">${binding.price}</span>
+                          )}
+                        </div>
+
+                        <div className="font-display text-sm">
+                          {binding.date && binding.date}{" "}
+                          {binding.pages && <span>{binding.pages} pages</span>}{" "}
+                          {binding.ISBN && <span>ISBN: {binding.ISBN} </span>}
+                        </div>
+
+                        {/* digital access information (EC only; avoid OA duplication) */}
+                        {isDigitalBinding && binding.specs && (
+                          <div className="font-display text-sm">
+                            {binding.specs}
+                          </div>
+                        )}
+                      </>
+                    )
+                  })()}
                 </a>
               </div>
             </>
           ))}
 
-          <div className=" flex-row inline-flex items-center w-full leading-normal">
-          <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6 text-ceci-gray-mid"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"
-                />
-              </svg>
-            <a
-              href={`https://forms.gle/H8J1NbtN4BBZZwgy7`}
-              className="block group  p-2 ml-4 border-b"
-            >
-              <div className="font-thin uppercase text-ceci-gray-dark tracking-wide">Exam Copy </div>
-              <div className="text-sm font-display ">
-                Review for Course Use
-              </div>
-            </a>
-          </div>
-        
-
-          <div className="flex-row inline-flex items-center w-full leading-normal">
+          {hasDigitalEdition ? (
+            <div className="flex-row inline-flex items-center w-full leading-normal">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-6 w-6 text-ceci-gray-mid"
@@ -227,15 +233,69 @@ const bookPage = ({ data }) => {
                 />
               </svg>
               <a
-                href="https://forms.gle/H8J1NbtN4BBZZwgy7"
-                className="block group  p-2 mb-4 ml-4 border-b"
+                href={"https://rotunda.upress.virginia.edu/register/default.xqy"}
+                className="block group p-2 mb-4 ml-4 border-b"
               >
-                <div className="font-thin tracking-wide text-ceci-gray-dark uppercase ">
-                  Desk Copy{" "}
+                <div className="font-thin uppercase text-ceci-gray-dark tracking-wide">Free Trial</div>
+                <div className="text-sm font-display ">
+                  Request trial access to this digital edition
                 </div>
-                <div className="text-sm font-display ">For Instructors who have already adopted this in their course </div>
               </a>
             </div>
+          ) : (
+            <>
+              <div className=" flex-row inline-flex items-center w-full leading-normal">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-6 w-6 text-ceci-gray-mid"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"
+                  />
+                </svg>
+                <a
+                  href={`https://forms.gle/H8J1NbtN4BBZZwgy7`}
+                  className="block group  p-2 ml-4 border-b"
+                >
+                  <div className="font-thin uppercase text-ceci-gray-dark tracking-wide">Exam Copy </div>
+                  <div className="text-sm font-display ">
+                    Review for Course Use
+                  </div>
+                </a>
+              </div>
+              <div className="flex-row inline-flex items-center w-full leading-normal">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-6 w-6 text-ceci-gray-mid"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"
+                  />
+                </svg>
+                <a
+                  href="https://forms.gle/H8J1NbtN4BBZZwgy7"
+                  className="block group  p-2 mb-4 ml-4 border-b"
+                >
+                  <div className="font-thin tracking-wide text-ceci-gray-dark uppercase ">
+                    Desk Copy{" "}
+                  </div>
+                  <div className="text-sm font-display ">For Instructors who have already adopted this in their course </div>
+                </a>
+              </div>
+            </>
+          )}
             
                   {book.Series && (
                     <div className="py-2 flex flex-col md:flex-row place-items-center">
@@ -416,6 +476,7 @@ export const query = graphql`
         pages
         date
         buylink
+        specs
       }
       AuthorCredit
       Reviews {
