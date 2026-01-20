@@ -6,7 +6,7 @@ top_banner:
     banner_author: Katherine Ridgway, Christina Keyser Vida, and Elizabeth Moore, eds.
     banner_subtitle: Unearthing Hidden History in the Lee Monument Cornerstone
     banner_id: "10161"
-    banner_quote: An ingenious book
+    banner_quote: An ingenious book.
     banner_attr: Ed Ayers, president emeritus of the University of Richmond
 related_book:
   - "5744"
