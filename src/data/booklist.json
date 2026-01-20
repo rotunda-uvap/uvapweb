@@ -216,6 +216,18 @@
     "Title": "Trauma and Survival in Contemporary Fiction"
   },
   {
+    "BookID": "10124",
+    "Title": "The Letters of Benjamin Rush : Digital Edition"
+  },
+  {
+    "BookID": "10130",
+    "Title": "The Diaries of Gouverneur Morris : Digital Edition"
+  },
+  {
+    "BookID": "10118",
+    "Title": "The Papers of Frederick Law Olmsted : Digital Edition"
+  },
+  {
     "BookID": "5485",
     "Title": "Henry Adams in Washington"
   },
@@ -436,8 +448,16 @@
     "Title": "Empiricist Devotions"
   },
   {
+    "BookID": "10119",
+    "Title": "The Papers of the Revolutionary Era Pinckney Statesmen : Digital Edition"
+  },
+  {
     "BookID": "1806",
     "Title": "Historic Preservation"
+  },
+  {
+    "BookID": "10125",
+    "Title": "Herman Melville's 'Typee': A Fluid Text Edition"
   },
   {
     "BookID": "5453",
@@ -824,6 +844,10 @@
     "Title": "Patriots, Prostitutes, and Spies"
   },
   {
+    "BookID": "10127",
+    "Title": "The Papers of Daniel Webster : Digital Edition"
+  },
+  {
     "BookID": "3785",
     "Title": "Best New Poets 2006"
   },
@@ -978,6 +1002,10 @@
   {
     "BookID": "4969",
     "Title": "Boston Furniture, 1700-1900"
+  },
+  {
+    "BookID": "10132",
+    "Title": "The Papers of George Washington : Digital Edition"
   },
   {
     "BookID": "3035",
@@ -1508,6 +1536,10 @@
     "Title": "Slavery in the City"
   },
   {
+    "BookID": "10123",
+    "Title": "The Documentary History of the Ratification of the Constitution : Digital Edition"
+  },
+  {
     "BookID": "10137",
     "Title": "Napoleon in America"
   },
@@ -1924,8 +1956,16 @@
     "Title": "Back from the Far Field"
   },
   {
+    "BookID": "10109",
+    "Title": "The Documentary History of the First Federal Congress of the United States of America : Digital Edition"
+  },
+  {
     "BookID": "4952",
     "Title": "Finding Justice"
+  },
+  {
+    "BookID": "10121",
+    "Title": "Correspondence of James K. Polk : Digital Edition"
   },
   {
     "BookID": "10135",
@@ -2060,6 +2100,10 @@
     "Title": "Creative Regionalism"
   },
   {
+    "BookID": "10120",
+    "Title": "The Papers of Eliza Lucas Pinckney and Harriott Pinckney Horry : Digital Edition"
+  },
+  {
     "BookID": "3972",
     "Title": "The Selected Papers of John Jay"
   },
@@ -2070,6 +2114,10 @@
   {
     "BookID": "6",
     "Title": "Daybooks of Discovery"
+  },
+  {
+    "BookID": "10108",
+    "Title": "SAH Archipedia"
   },
   {
     "BookID": "5481",
@@ -2662,6 +2710,10 @@
   {
     "BookID": "3733",
     "Title": "At Home with Apartheid"
+  },
+  {
+    "BookID": "10191",
+    "Title": "Scholarly Editing: Volume 40"
   },
   {
     "BookID": "4712",
@@ -3444,6 +3496,10 @@
     "Title": "Tree of Liberty"
   },
   {
+    "BookID": "10009",
+    "Title": "The Dolley Madison Digital Edition"
+  },
+  {
     "BookID": "1094",
     "Title": "Aging and Gender in Literature"
   },
@@ -4038,6 +4094,10 @@
   {
     "BookID": "3910",
     "Title": "Something Understood"
+  },
+  {
+    "BookID": "10142",
+    "Title": "The Papers of James Madison : Digital Edition"
   },
   {
     "BookID": "10156",
@@ -4886,6 +4946,10 @@
   {
     "BookID": "10207",
     "Title": "Perceived in Print"
+  },
+  {
+    "BookID": "10213",
+    "Title": "Scholarly Editing: Volume 42"
   },
   {
     "BookID": "2787",
@@ -6000,6 +6064,10 @@
     "Title": "Design with Culture"
   },
   {
+    "BookID": "10177",
+    "Title": "Scholarly Editing: Volume 41"
+  },
+  {
     "BookID": "3272",
     "Title": "Tigers and Sails and ABC Tales"
   },
@@ -6468,12 +6536,20 @@
     "Title": "Bringing Race Back In"
   },
   {
+    "BookID": "10105",
+    "Title": "Emily Dickinson's Correspondences: A Born-Digital Textual Inquiry"
+  },
+  {
     "BookID": "5498",
     "Title": "Saul Steinberg's Literary Journeys"
   },
   {
     "BookID": "4792",
     "Title": "The Poetics of Poesis"
+  },
+  {
+    "BookID": "10111",
+    "Title": "The Papers of Andrew Jackson : Digital Edition"
   },
   {
     "BookID": "2485",
@@ -6640,12 +6716,20 @@
     "Title": "Devout and Defiant"
   },
   {
+    "BookID": "10110",
+    "Title": "The Papers of Ulysses S. Grant : Digital Edition"
+  },
+  {
     "BookID": "4793",
     "Title": "Bodies and Bones"
   },
   {
     "BookID": "5499",
     "Title": "Collateral Damage"
+  },
+  {
+    "BookID": "10104",
+    "Title": "Clotel, or the President's Daughter : Digital Edition"
   },
   {
     "BookID": "5472",
@@ -6698,6 +6782,10 @@
   {
     "BookID": "4181",
     "Title": "Unnatural Rebellion"
+  },
+  {
+    "BookID": "10070",
+    "Title": "Furnace and Fugue"
   },
   {
     "BookID": "2282",
@@ -6956,6 +7044,14 @@
     "Title": "Architecture in Play"
   },
   {
+    "BookID": "10112",
+    "Title": "The Selected Papers of John Jay : Digital Edition"
+  },
+  {
+    "BookID": "10106",
+    "Title": "The Digital Temple: A Documentary Edition of George Herbert's English Verse"
+  },
+  {
     "BookID": "3954",
     "Title": "Spectacular Blackness"
   },
@@ -7092,6 +7188,10 @@
     "Title": "Rule Britannia!"
   },
   {
+    "BookID": "10107",
+    "Title": "The Adams Papers : Digital Edition"
+  },
+  {
     "BookID": "4784",
     "Title": "Cartooning the Landscape"
   },
@@ -7106,6 +7206,10 @@
   {
     "BookID": "4948",
     "Title": "Hope without Optimism"
+  },
+  {
+    "BookID": "10113",
+    "Title": "The Papers of Thomas Jefferson : Digital Edition"
   },
   {
     "BookID": "3014",
@@ -7404,6 +7508,10 @@
     "Title": "Sally Hemings and Thomas Jefferson"
   },
   {
+    "BookID": "10117",
+    "Title": "The Papers of James Monroe : Digital Edition"
+  },
+  {
     "BookID": "4794",
     "Title": "Giant's Causeway"
   },
@@ -7580,6 +7688,10 @@
     "Title": "Loyal Protestants and Dangerous Papists"
   },
   {
+    "BookID": "10102",
+    "Title": "The Papers of Alexander Hamilton : Digital Edition"
+  },
+  {
     "BookID": "1821",
     "Title": "Homeplace"
   },
@@ -7590,6 +7702,10 @@
   {
     "BookID": "4795",
     "Title": "Locating the Destitute"
+  },
+  {
+    "BookID": "10116",
+    "Title": "The Letters of Matthew Arnold : Digital Edition"
   },
   {
     "BookID": "3944",
@@ -7956,6 +8072,10 @@
     "Title": "Sex, Lies, and Autobiography"
   },
   {
+    "BookID": "10114",
+    "Title": "The Papers of Andrew Johnson : Digital Edition"
+  },
+  {
     "BookID": "4797",
     "Title": "Prose Immortality, 1711-1819"
   },
@@ -8072,6 +8192,10 @@
     "Title": "I Am Alive"
   },
   {
+    "BookID": "10115",
+    "Title": "The Papers of John Marshall : Digital Edition"
+  },
+  {
     "BookID": "4782",
     "Title": "The Arresting Eye"
   },
@@ -8086,6 +8210,10 @@
   {
     "BookID": "4972",
     "Title": "The Battle for the Court"
+  },
+  {
+    "BookID": "10129",
+    "Title": "The Letters of Christina Rossetti : Digital Edition"
   },
   {
     "BookID": "4966",

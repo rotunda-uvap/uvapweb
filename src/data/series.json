@@ -84,6 +84,14 @@
     "seriesName": "Papers of James Madison"
   },
   {
+    "seriesID": "AFE",
+    "seriesName": "American Founding Era"
+  },
+  {
+    "seriesID": "ACR",
+    "seriesName": "Antebellum, Civil War, and Reconstruction Collection"
+  },
+  {
     "seriesID": "EAH",
     "seriesName": "Early American Histories"
   },
@@ -110,6 +118,10 @@
   {
     "seriesID": "BUS",
     "seriesName": "Buildings of the United States"
+  },
+  {
+    "seriesID": "LCC",
+    "seriesName": "Literature and Culture Collction"
   },
   {
     "seriesID": "REP",
@@ -168,6 +180,10 @@
     "seriesName": "Richard Lectures"
   },
   {
+    "seriesID": "Arch",
+    "seriesName": "Architecture"
+  },
+  {
     "seriesID": "WSC",
     "seriesName": "Colonial Williamsburg Studies in Chesapeake History and Culture"
   },
@@ -178,6 +194,10 @@
   {
     "seriesID": "STS",
     "seriesName": "Southern Texts Society"
+  },
+  {
+    "seriesID": "SE",
+    "seriesName": "Scholarly Editing: The Annual of the Association for Documentary Editing"
   },
   {
     "seriesID": "JAHT",
