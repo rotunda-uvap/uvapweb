@@ -236,9 +236,9 @@ const bookPage = ({ data }) => {
                 href={"https://rotunda.upress.virginia.edu/register/default.xqy"}
                 className="block group p-2 mb-4 ml-4 border-b"
               >
-                <div className="font-thin uppercase text-ceci-gray-dark tracking-wide">Free Trial</div>
+                <div className="font-thin uppercase text-ceci-gray-dark tracking-wide">Rotunda Free Trial</div>
                 <div className="text-sm font-display ">
-                  Request trial access to this digital edition
+                  Request trial access to Rotunda collections
                 </div>
               </a>
             </div>

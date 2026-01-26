@@ -124,7 +124,7 @@ const uvap = getImage(data.uvaplogo)
                   </div>
                   <ul className="px-4 w-full sm:w-1/2 lg:w-1/5 border-gray-600 border-b sm:border-r-0 lg:border-r lg:border-b-0 pb-6 pt-6 lg:pt-3">
                     <h3 className=" text-xl text-white font-sans mb-2">
-                      Books
+                      All Products
                     </h3>
                    
                     <div>
@@ -132,7 +132,7 @@ const uvap = getImage(data.uvaplogo)
                         to={`/book-search`}
                         className="uppercase block text-lg text-gray-400 hover:text-gray-300"
                       >
-                        Search Books
+                        Search
                       </Link>
                     </div>
                     <div>
@@ -156,7 +156,7 @@ const uvap = getImage(data.uvaplogo)
                         to={`/books/#series`}
                         className="uppercase block text-lg text-gray-400 hover:text-gray-300"
                       >
-                        Books by Series
+                        Browse by Series
                       </Link>
                     </div>
                     <div>
@@ -164,7 +164,7 @@ const uvap = getImage(data.uvaplogo)
                         to={`/books/#subjects`}
                         className="uppercase block text-lg text-gray-400 hover:text-gray-300"
                       >
-                        Books by Subject
+                        Browse by Subject
                       </Link>
                     </div>
                     <div>
@@ -298,7 +298,7 @@ const uvap = getImage(data.uvaplogo)
                         href={`https://rotunda.upress.virginia.edu/entrance.xqy`}
                         className="uppercase block text-lg text-gray-400 hover:text-gray-300"
                       >
-                        Collection Entrance
+                        Customer Entrance
                       </a>
                     </div>
                     <div>
@@ -466,7 +466,7 @@ const uvap = getImage(data.uvaplogo)
                   </div>
                   <ul className="px-4 w-full sm:w-1/2 lg:w-1/5 border-gray-600 border-b sm:border-r-0 lg:border-r lg:border-b-0 pb-6 pt-6 lg:pt-3">
                     <h3 className=" text-xl text-white font-sans mb-2">
-                      Books
+                      All Products
                     </h3>
                   
                     <div>
@@ -474,7 +474,7 @@ const uvap = getImage(data.uvaplogo)
                         to={`/book-search`}
                         className="uppercase block text-lg text-gray-400 hover:text-gray-300"
                       >
-                        Search Books
+                        Search
                       </Link>
                     </div>
                     <div>
@@ -499,7 +499,7 @@ const uvap = getImage(data.uvaplogo)
                         to={`/books/#series`}
                         className="uppercase block text-lg text-gray-400 hover:text-gray-300"
                       >
-                        Books by Series
+                        Browse by Series
                       </Link>
                     </div>
                     <div>
@@ -507,7 +507,7 @@ const uvap = getImage(data.uvaplogo)
                         to={`/books/#subjects`}
                         className="uppercase block text-lg text-gray-400 hover:text-gray-300"
                       >
-                        Books by Subject
+                        Browse by Subject
                       </Link>
                     </div>
                     <div>
@@ -649,7 +649,7 @@ const uvap = getImage(data.uvaplogo)
                         href={`https://rotunda.upress.virginia.edu/entrance.xqy`}
                         className="uppercase block text-lg text-gray-400 hover:text-gray-300"
                       >
-                        Collection Entrance
+                        Customer Entrance
                       </a>
                     </div>
                     <div>
