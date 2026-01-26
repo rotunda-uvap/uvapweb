@@ -604,7 +604,7 @@ const uvap = getImage(data.uvaplogo)
                         to={`/books/#series`}
                         className="uppercase block text-lg text-gray-400 hover:text-gray-300"
                       >
-                        Books by Series
+                        Browse by Series
                       </Link>
                     </div>
                     <div>
@@ -612,7 +612,7 @@ const uvap = getImage(data.uvaplogo)
                         to={`/books/#subjects`}
                         className="uppercase block text-lg text-gray-400 hover:text-gray-300"
                       >
-                        Books by Subject
+                        Browse by Subject
                       </Link>
                     </div>
                     <div>

@@ -238,7 +238,7 @@ const bookPage = ({ data }) => {
               >
                 <div className="font-thin uppercase text-ceci-gray-dark tracking-wide">Rotunda Free Trial</div>
                 <div className="text-sm font-display ">
-                  Request trial access to Rotunda collections
+                  Request trial access to all Rotunda Collections
                 </div>
               </a>
             </div>
