@@ -119,14 +119,22 @@ padding:1em;
       <div className="border-b border-ceci-gray-light pb-2">
         <Heading4>{edge.nodes[index].SubCollection}</Heading4>
        <ul className="md:grid md:grid-cols-2">
-        {edge.nodes.map((n, index)=> (
-          <li className=" md:col-span-1"><Link to={`../title/${ n.RotID }`} className="hover:bg-gray-100 flex p-2 h-full items-center" >
-          
-        <img className="flex-shrink-0 h-20 w-20  object-cover mr-5" src={"https://ik.imagekit.io/uvapress/rotunda/" + n.imageFilename} width="50" alt={n.Title}/>
-        <span className="text-lg text-ceci-gray-dark font-assistant font-thin uppercase">{n.Title}</span>
-   </Link></li>
-       
-        ))}</ul>
+        {edge.nodes.map((n, index) => {
+            // Match the original behavior: use uvapID only when it's truthy; otherwise fall back to RotID.
+            const id = n.uvapID ? n.uvapID : n.RotID
+
+            // If neither id exists, skip rendering this item to avoid broken links.
+            if (!id) return null
+            return (
+              <li className=" md:col-span-1">
+                <Link to={`../title/${id}`} className="hover:bg-gray-100 flex p-2 h-full items-center" >
+                  <img className="flex-shrink-0 h-20 w-20  object-cover mr-5" src={"https://ik.imagekit.io/uvapress/rotunda/" + n.imageFilename} width="50" alt={n.Title}/>
+                  <span className="text-lg text-ceci-gray-dark font-assistant font-thin uppercase">{n.Title}</span>
+                </Link>
+              </li>
+            )
+        })}
+        </ul>
       </div>
     ))} 
    </RotSection>
@@ -134,7 +142,7 @@ padding:1em;
     <Heading3 id="lit">Literature and Culture Collection</Heading3>
       <ul className="md:grid md:grid-cols-2 border-b border-ceci-gray-light pb-2">
         {LIT.group[0].nodes.map((n, index) => (
-          <li className=" md:col-span-1"><Link to={`../../title/${ n.RotID }`} className="hover:bg-gray-100 flex p-2 h-full items-center" >
+          <li className=" md:col-span-1"><Link to={`../../title/${n.uvapID }`} className="hover:bg-gray-100 flex p-2 h-full items-center" >
         <img className="flex-shrink-0 h-20 w-20  object-cover mr-5" src={"https://ik.imagekit.io/uvapress/rotunda/" + n.imageFilename} width="50" alt={n.Title}/>
         <span className="text-lg text-ceci-gray-dark font-assistant font-thin uppercase">{n.Title}</span>
    </Link></li>
@@ -144,7 +152,7 @@ padding:1em;
     <Heading3 id="Arch">Architecture</Heading3>
       <ul className="md:grid md:grid-cols-2  border-b border-ceci-gray-light pb-2">
         {ARC.nodes.map((n, index) => (
-          <li className="md:col-span-1 "><Link to={`../title/${ n.RotID }`} className="hover:bg-gray-100 flex p-2 h-full items-center" >
+          <li className="md:col-span-1 "><Link to={`../title/${n.uvapID }`} className="hover:bg-gray-100 flex p-2 h-full items-center" >
         <img className="flex-shrink-0 h-20 w-20  object-cover mr-5" src={"https://ik.imagekit.io/uvapress/rotunda/" + n.imageFilename} width="50" alt={n.Title}/>
         <span className="text-lg text-ceci-gray-dark font-assistant font-thin uppercase">{n.Title}</span>
    </Link></li>
@@ -214,7 +222,7 @@ padding:1em;
                   
     </RotSectionZinc>
    
-    <RotSection>
+    {/* <RotSection>
   <Heading3 id="committee">Advisory Committee Members</Heading3>
   <Para>As of 2023, Rotunda has engaged an <a href="#committee">advisory committee</a> of respected colleagues at various institutions and organizations.</Para>
         <div>
@@ -231,7 +239,7 @@ padding:1em;
               <RotBoardMember name={"Jennifer Stertzer"} title={"Director of the Center for Digital Editing and Senior Editor at the Washington Papers, University of Virginia"}/>
               <RotBoardMember name={"John Unsworth"} title={"Dean of Libraries and University Librarian, University of Virginia"}/>
            </div> 
-    </RotSection>
+    </RotSection> */}
     </Main>
    </Layout>
     
@@ -253,6 +261,7 @@ export const query = graphql`
             SubCollection
             Title
             RotID
+            uvapID
             imageFilename
           }
         }
@@ -263,6 +272,7 @@ export const query = graphql`
             SubCollection
             Title
             RotID
+            uvapID
             imageFilename
           }
         }
@@ -272,6 +282,7 @@ export const query = graphql`
             SubCollection
             Title
             RotID
+            uvapID
             imageFilename
           }
       }

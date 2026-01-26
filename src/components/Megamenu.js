@@ -303,26 +303,18 @@ const uvap = getImage(data.uvaplogo)
                     </div>
                     <div>
                       <Link
-                        to={`/collection/American%20History%20Collection`}
+                        to={`/series/ADHC/`}
                         className="uppercase block text-lg text-gray-400 hover:text-gray-300"
                       >
-                        American History Collection
+                        American Documentary History Collection
                       </Link>
                     </div>
                     <div>
                       <Link
-                        to={`/collection/Literature%20and%20Culture%20Collection`}
+                        to={`/series/LCC`}
                         className="uppercase block text-lg text-gray-400 hover:text-gray-300"
                       >
                         Literature & Culture Collection
-                      </Link>
-                    </div>
-                    <div>
-                      <Link
-                        to={`/collection/Architecture`}
-                        className="uppercase block text-lg text-gray-400 hover:text-gray-300"
-                      >
-                        Architecture
                       </Link>
                     </div>
                   </ul>
@@ -662,28 +654,21 @@ const uvap = getImage(data.uvaplogo)
                     </div>
                     <div>
                       <Link
-                        to={`/collection/American%20History%20Collection`}
+                        to={`/series/ADHC`}
                         className="uppercase block text-lg text-gray-400 hover:text-gray-300"
                       >
-                        American History Collection
+                        American Documentary History Collection
                       </Link>
                     </div>
                     <div>
                       <Link
-                        to={`/collection/Literature%20and%20Culture%20Collection`}
+                        to={`/series/LCC/`}
                         className="uppercase block text-lg text-gray-400 hover:text-gray-300"
                       >
                         Literature & Culture Collection
                       </Link>
                     </div>
-                    <div>
-                      <Link
-                        to={`/collection/Architecture`}
-                        className="uppercase block text-lg text-gray-400 hover:text-gray-300"
-                      >
-                        Architecture
-                      </Link>
-                    </div>
+                  
                   </ul>
                 </div>
                 <label id="close-menu" htmlFor="toggle-big">
