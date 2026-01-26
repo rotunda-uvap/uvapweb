@@ -2,13 +2,12 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: Higher Calling
-    banner_author: Scott C. Beardsley
-    banner_subtitle: The Rise of Nontraditional Leaders in Academia
-    banner_id: "5171"
-    banner_quote: Beardsley’s book is that rare work in academia that strikes the
-      perfect balance between personal, scholarly, and accessible.
-    banner_attr: Michael Sorrell, President, Paul Quinn College
+  - banner_title: The Buried Cause
+    banner_author: Katherine Ridgway, Christina Keyser Vida, and Elizabeth Moore, eds.
+    banner_subtitle: Unearthing Hidden History in the Lee Monument Cornerstone
+    banner_id: "10161"
+    banner_quote: An ingenious book.
+    banner_attr: Ed Ayers, president emeritus of the University of Richmond
 related_book:
   - "5744"
   - "5617"
