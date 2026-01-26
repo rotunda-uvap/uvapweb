@@ -12,7 +12,6 @@ import sanitizeHtml from 'sanitize-html'
 const SeriesTemplate = ({ data }) => {
     const books = data.allBooksJson
     const seriesinfo = data.markdownRemark
-    const related_staff = data.markdownRemark.frontmatter.related_staff
   
     return (
     <div>
@@ -41,9 +40,9 @@ const SeriesTemplate = ({ data }) => {
 
 
   {
-    related_staff && <div className="pt-2 text-ceci-gray-mid leading-relaxed font-serif ml-4 cms">UVA Editor(s): 
+    seriesinfo.frontmatter.related_staff && <div className="pt-2 text-ceci-gray-mid leading-relaxed font-serif ml-4 cms">UVA Editor(s): 
     
-    { related_staff.map((staff, index) => (
+    { seriesinfo.frontmatter.related_staff.map((staff, index) => (
 
     
      <Link to={'../../staff/' + staff.frontmatter.title.replace(" ", "-").toLowerCase()} key={`staff${index}`}> 

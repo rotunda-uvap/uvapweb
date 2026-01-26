@@ -1,6 +1,6 @@
 ---
 templateKey: collection
-title: " JWIL 25"
+title: "JWIL 25"
 related_book:
   - "4998"
   - "5336"

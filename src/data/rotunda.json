@@ -14,7 +14,8 @@
         "Prizes":"Named an Outstanding Academic Title 2013 by the American Library Association’s Choice magazine",
         "Reviews":[],
         "imageFilename":"gh.jpg",
-        "access":"sub"
+        "access":"sub",
+        "uvapID":"10106"
     },{
         "Title":"People of the Founding Era",
         "Subtitle":"",
@@ -30,7 +31,8 @@
         "Prizes":null,
         "Reviews":[],
         "imageFilename":"pfe1.jpg",
-        "access":"sub"
+        "access":"sub",
+         "uvapID":""
     },{
         "Title":"Emily Dickinson's Correspondences",
         "Subtitle":"A Born-Digital Textual Inquiry",
@@ -46,7 +48,8 @@
         "Prizes":null,
         "Reviews":[{"html":"<p>[E]xciting.... meticulously detailed.... [T]his digital enterprise is a significant twenty-first century contribution to Dickinson scholarship.<\/p>"}],
         "imageFilename":"ed.jpg",
-        "access":"sub"
+        "access":"sub",
+         "uvapID":"10105"
     },
     {
         "Title":"Presidential Recordings Digital Edition",
@@ -63,7 +66,8 @@
         "Prizes":null,
         "Reviews":[],
         "imageFilename":"prde.jpg",
-        "access":"sub"
+        "access":"sub",
+         "uvapID":"10122"
     },
     {
         "Title":"The Papers of Eliza Lucas Pinckney & Harriott Pinckney Horry Digital Edition",
@@ -80,7 +84,8 @@
         "Prizes":"Named a Choice Outstanding Academic Title for 2013",
         "Reviews":[],
         "imageFilename":"pknyw.jpg",
-        "access":"sub"
+        "access":"sub",
+         "uvapID":"10120"
     },
     {
         "Title":"The Letters of Matthew Arnold",
@@ -97,7 +102,8 @@
         "Prizes":null,
         "Reviews":[],
         "imageFilename":"ma.jpg",
-        "access":"sub"
+        "access":"sub",
+         "uvapID":"10116"
     },
     {
         "Title":"The Papers of George Washington Digital Edition",
@@ -114,7 +120,8 @@
         "Prizes":null,
         "Reviews":[],
         "imageFilename":"gw.jpg",
-        "access":"sub"
+        "access":"sub",
+         "uvapID":"10132"
     },
     {
         "Title":"Clotel by William Wells Brown",
@@ -131,7 +138,8 @@
         "Prizes":null,
         "Reviews":[],
         "imageFilename":"clotel.jpg",
-        "access":"sub"
+        "access":"sub",
+         "uvapID":"10104"
     },
     {
         "Title":"Herman Melville's 'Typee'",
@@ -148,7 +156,8 @@
         "Prizes":null,
         "Reviews":[],
         "imageFilename":"melville.jpg",
-        "access":"sub"
+        "access":"sub",
+         "uvapID":"10125"
     },
     {
         "Title":"The Letters of Christina Rossetti",
@@ -165,7 +174,8 @@
         "Prizes":null,
         "Reviews":[],
         "imageFilename":"cr.jpg",
-        "access":"sub"
+        "access":"sub",
+         "uvapID":"10129"
     },
     {
         "Title":"The Papers of James Madison Digital Edition",
@@ -182,7 +192,8 @@
         "Prizes":null,
         "Reviews":[],
         "imageFilename":"jmadison.jpg",
-        "access":"sub"
+        "access":"sub",
+         "uvapID":"10142"
     },{
         "Title":"The Adams Papers Digital Edition",
         "Subtitle":"",
@@ -198,7 +209,8 @@
         "Prizes":"Choice Outstanding Academic Title, American Library Association (2009)",
         "Reviews":[],
         "imageFilename":"ja.png",
-        "access":"sub"
+        "access":"sub",
+         "uvapID":"10107"
     },{
         "Title":"The Documentary History of the First Federal Congress of the United States of America",
         "Subtitle":"",
@@ -214,7 +226,8 @@
         "Prizes":null,
         "Reviews":[],
         "imageFilename":"ffcp.jpg",
-        "access":"sub"
+        "access":"sub",
+         "uvapID":"10109"
 
     },{
         "Title":"The Papers of Woodrow Wilson Digital Edition",
@@ -231,7 +244,8 @@
         "Prizes":null,
         "Reviews":[],
         "imageFilename":"wilson.png",
-        "access":"sub"
+        "access":"sub",
+         "uvapID":"10128"
     },{
         "Title":"The Papers of Thomas Jefferson Digital Edition",
         "Subtitle":"",
@@ -247,7 +261,8 @@
         "Prizes":null,
         "Reviews":[],
         "imageFilename":"tj.jpg",
-        "access":"sub"
+        "access":"sub",
+         "uvapID":"10113"
     },{
         "Title":"Journal of Emily Shore",
         "Subtitle":"Revised and Expanded",
@@ -279,7 +294,8 @@
         "Prizes":null,
         "Reviews":[],
         "imageFilename":"jjay.jpg",
-        "access":"sub"
+        "access":"sub",
+         "uvapID":"10112"
     },{
         "Title":"The Diaries of Gouverneur Morris Digital Edition",
         "Subtitle":"",
@@ -295,7 +311,8 @@
         "Prizes":null,
         "Reviews":[],
         "imageFilename":"gmorris.jpg",
-        "access":"sub"
+        "access":"sub",
+         "uvapID":"10130"
     },
     {
         "Title":"The Papers of Ulysses S. Grant",
@@ -312,7 +329,8 @@
         "Prizes":null,
         "Reviews":[],
         "imageFilename":"grant.png",
-        "access":"sub"
+        "access":"sub",
+         "uvapID":"10110"
     },
     {
         "Title":"The Papers of Alexander Hamilton Digital Edition",
@@ -329,7 +347,8 @@
         "Prizes":null,
         "Reviews":[],
         "imageFilename":"ah.jpg",
-        "access":"sub"
+        "access":"sub",
+         "uvapID":"10102"
     },
     {
         "Title":"The Papers of Andrew Johnson",
@@ -346,7 +365,8 @@
         "Prizes":null,
         "Reviews":[],
         "imageFilename":"johnson_a.png",
-        "access":"sub"
+        "access":"sub",
+         "uvapID":"10114"
     },{
         "Title":"The Papers of Revolutionary Era Pinckney Statesmen",
         "Subtitle":"",
@@ -362,7 +382,8 @@
         "Prizes":null,
         "Reviews":[],
         "imageFilename":"pnkymen.jpg",
-        "access":"sub"
+        "access":"sub",
+         "uvapID":"10119"
     },{
         "Title":"The Papers of Daniel Webster",
         "Subtitle":"",
@@ -378,7 +399,8 @@
         "Prizes":null,
         "Reviews":[],
         "imageFilename":"dw.jpg",
-        "access":"sub"
+        "access":"sub",
+         "uvapID":"10127"
     },
     {
         "Title":"The Papers of John Marshall Digital Edition",
@@ -395,7 +417,8 @@
         "Prizes":null,
         "Reviews":[],
         "imageFilename":"jmarshall.jpg",
-        "access":"sub"
+        "access":"sub",
+         "uvapID":"10115"
     },
     {
         "Title":"The Papers of Andrew Jackson",
@@ -412,7 +435,8 @@
         "Prizes":null,
         "Reviews":[],
         "imageFilename":"ajackson.jpg",
-        "access":"sub"
+        "access":"sub",
+         "uvapID":"10111"
     },
     {
         "Title":"The Dolley Madison Digital Edition",
@@ -429,7 +453,8 @@
         "Prizes":null,
         "Reviews":[],
         "imageFilename":"dolley.jpg",
-        "access":"sub"
+        "access":"sub",
+         "uvapID":"10009"
     },
     {
         "Title":"SAH Archipedia",
@@ -446,7 +471,8 @@
         "Prizes":null,
         "Reviews":[],
         "imageFilename":"archipedia.png",
-        "access":"open"
+        "access":"open",
+         "uvapID":"10108"
     },{
         "Title":"The Documentary History of the Ratification of the Constitution",
         "Subtitle":"",
@@ -462,7 +488,8 @@
         "Prizes":null,
         "Reviews":[],
         "imageFilename":"dhrc.jpg",
-        "access":"sub"
+        "access":"sub",
+         "uvapID":"10123"
     },{
         "Title":"The Booker T. Washington Papers Digital Edition",
         "Subtitle":"",
@@ -478,7 +505,8 @@
         "Prizes":"",
         "Reviews":[],
         "imageFilename":"btwn.jpg",
-        "access":"sub"
+        "access":"sub",
+         "uvapID":"10126"
     },
     {
         "Title":"The Correspondence of James K. Polk ",
@@ -495,7 +523,8 @@
         "Prizes":"",
         "Reviews":[],
         "imageFilename":"polk.jpg",
-        "access":"sub"
+        "access":"sub",
+         "uvapID":"10121"
     },
     {
         "Title":"The Papers of James Monroe Digital Edition",
@@ -512,7 +541,8 @@
         "Prizes":null,
         "Reviews":[],
         "imageFilename":"monroe.jpg",
-        "access":"sub"
+        "access":"sub",
+         "uvapID":"10117"
     },
     {
         "Title":"The Papers of Frederick Law Olmsted",
@@ -529,7 +559,8 @@
         "Prizes":null,
         "Reviews":[],
         "imageFilename":"OLMS.jpg",
-        "access":"open"
+        "access":"open",
+         "uvapID":"10118"
     },
     {
         "Title":"The Letters of Benjamin Rush",
@@ -546,6 +577,7 @@
         "Prizes":null,
         "Reviews":[],
         "imageFilename":"rush.jpg",
-        "access":"sub"
+        "access":"sub",
+         "uvapID":"10124"
     }
 ]

@@ -84,12 +84,8 @@
     "seriesName": "Papers of James Madison"
   },
   {
-    "seriesID": "AFE",
-    "seriesName": "American Founding Era"
-  },
-  {
-    "seriesID": "ACR",
-    "seriesName": "Antebellum, Civil War, and Reconstruction Collection"
+    "seriesID": "ADHC",
+    "seriesName": "American Documentary History Collection"
   },
   {
     "seriesID": "EAH",
@@ -164,10 +160,6 @@
     "seriesName": "Jamestown Essays on Representation"
   },
   {
-    "seriesID": "ACC",
-    "seriesName": "American Century Collection"
-  },
-  {
     "seriesID": "GGL",
     "seriesName": "Gay Hart Gaines Distinguished Lectures"
   },
@@ -178,10 +170,6 @@
   {
     "seriesID": "RL",
     "seriesName": "Richard Lectures"
-  },
-  {
-    "seriesID": "Arch",
-    "seriesName": "Architecture"
   },
   {
     "seriesID": "WSC",
@@ -196,7 +184,7 @@
     "seriesName": "Southern Texts Society"
   },
   {
-    "seriesID": "SE",
+    "seriesID": "SEJ",
     "seriesName": "Scholarly Editing: The Annual of the Association for Documentary Editing"
   },
   {
