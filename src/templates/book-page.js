@@ -13,11 +13,9 @@ import kebabCase from "lodash/kebabCase"
 const bookPage = ({ data }) => {
   const book = data.books
   const isbn = book.Bindings[0].ISBN
-  const hasDigitalEdition = Array.isArray(book.Bindings)
-    ? book.Bindings.some(b => b && b.type === "Online Digital Edition")
-    : false
-  // TODO: replace with the real Free Trial link for digital editions
-  const freeTrialUrl = "https://example.com/free-trial"
+  const hasDigitalEdition = !book.isDigitalOA && Array.isArray(book.Bindings)
+  ? book.Bindings.some(b => b && b.type === "Online Digital Edition")
+  : false
   const GoogleB = "https://books.google.com/books?vid=" + isbn
   const RightsLinkA = "https://marketplace.copyright.com/rs-ui-web/mp/search/all/"
   const RightsLink = RightsLinkA + isbn
@@ -155,205 +153,121 @@ const bookPage = ({ data }) => {
           <h6 className="py-2 font-display text-center md:text-left">
             {book.AuthorCredit}
           </h6>
+          {book.Bindings.map((binding, index) => {
+            // Check if it is an Open Access binding
+            const isOABinding =
+              (typeof binding.type === "string" && binding.type.toLowerCase().includes("open access")) ||
+              book.isDigitalOA
 
-      {book.Bindings.map((binding, index) => (
-        <>
-          <div className="flex-row inline-flex items-center w-full leading-normal" key={`binding${index}`}>
-            {(() => {
-              const isOABinding =
-                typeof binding.type === "string" &&
-                binding.type.toLowerCase().includes("open access")
+            // Check if it is a standard Online Digital Edition (non-purchase link)
+            const isOnlineDigital = binding.type === "Online Digital Edition"
 
-              const isDigitalBinding =
-                !isOABinding &&
-                (binding.type === "Online Digital Edition" ||
-                  (!binding.ISBN && !binding.pages && !binding.date && (binding.price == null || binding.price === "")))
+            // Show LINK icon if it's Open Access OR a direct Online Digital Edition link
+            // Show CART icon for everything else (physical books, paid downloads)
+            const showLinkIcon = isOABinding || isOnlineDigital
 
-              return (
-                <>
-                  {isDigitalBinding ? (
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-6 w-6 text-ceci-gray-mid"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"
-                      />
-                    </svg>
+            return (
+              <div className="flex-row inline-flex items-center w-full leading-normal" key={`binding${index}`}>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-6 w-6 text-ceci-gray-mid"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  {showLinkIcon ? (
+                    /* LINK ICON */
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
                   ) : (
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-6 w-6 text-ceci-gray-mid"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
-                      />
-                    </svg>
+                    /* SHOPPING CART ICON */
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
                   )}
-                </>
-              )
-            })()}
-            <a
-              href={binding.buylink}
-              className="block group p-2 ml-4 border-b"
-            >
-              {(() => {
-                const isOABinding =
-                  typeof binding.type === "string" &&
-                  binding.type.toLowerCase().includes("open access")
-
-                const isDigitalBinding =
-                  !isOABinding &&
-                  (binding.type === "Online Digital Edition" ||
-                    (!binding.ISBN && !binding.pages && !binding.date && (binding.price == null || binding.price === "")))
-
-                return (
-                  <>
-                    <div className="font-thin uppercase text-ceci-gray-dark buyme ">
-                      <span className="tracking-wide ">{binding.type}{" "}</span>
-                      {binding.price != null && binding.price !== "" && (
-                        <span className="pl-2 font-thin">${binding.price}</span>
-                      )}
-                    </div>
-
-                    <div className="font-display text-sm">
-                      {binding.date && binding.date}{" "}
-                      {binding.pages && <span>{binding.pages} pages</span>}{" "}
-                      {binding.ISBN && <span>ISBN: {binding.ISBN} </span>}
-                    </div>
-
-                    {/* digital access information (EC only; avoid OA duplication) */}
-                    {isDigitalBinding && binding.specs && (
-                      <div className="font-display text-sm">
-                        {binding.specs}
-                      </div>
-                    )}
-                  </>
-                )
-              })()}
-            </a>
-          </div>
-        </>
-      ))}
-
-          {hasDigitalEdition ? (
-            <div>
-            <div className="flex-row inline-flex items-center w-full leading-normal">
-            <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6 text-ceci-gray-mid"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
-                  />
                 </svg>
-              <a
-                href={"https://rotunda.upress.virginia.edu/register/default.xqy"}
-                className="block group p-2 mb-4 ml-4 border-b"
-              >
-                <div className="font-thin uppercase text-ceci-gray-dark tracking-wide">Purchase</div>
-                <div className="text-sm font-display ">
-                See pricing for access to this digital publication
+                <a href={binding.buylink} className="block group p-2 ml-4 border-b">
+                  {(() => {
+                    // Identify digital items for formatting purposes
+                    const isDigitalBinding =
+                      !isOABinding &&
+                      (binding.type === "Online Digital Edition" ||
+                        (!binding.ISBN && !binding.pages && !binding.date && (binding.price == null || binding.price === "")))
+
+                    return (
+                      <>
+                        <div className="font-thin uppercase text-ceci-gray-dark buyme ">
+                          <span className="tracking-wide ">{binding.type}{" "}</span>
+                          {binding.price != null && binding.price !== "" && (
+                            <span className="pl-2 font-thin">${binding.price}</span>
+                          )}
+                        </div>
+
+                        <div className="font-display text-sm">
+                          {binding.date && binding.date}{" "}
+                          {binding.pages && <span>{binding.pages} pages</span>}{" "}
+                          {binding.ISBN && <span>ISBN: {binding.ISBN} </span>}
+                        </div>
+
+                        {/* Display 'Go to publication' text for BOTH standard Digital AND Open Access bindings */}
+                        {(isDigitalBinding || isOABinding) && binding.specs && (
+                          <div className="font-display text-sm">
+                            {binding.specs}
+                          </div>
+                        )}
+                      </>
+                    )
+                  })()}
+                </a>
+              </div>
+            )
+          })}
+     
+     {!book.isDigitalOA && (
+            hasDigitalEdition ? (
+              <div>
+                <div className="flex-row inline-flex items-center w-full leading-normal">
+                  {/* ... Rotunda Purchase Link - Uses SHOPPING CART ... */}
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-ceci-gray-mid" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                  </svg>
+                  <a href={"https://www.upress.virginia.edu/rotunda-purchase/"} className="block group p-2 mb-4 ml-4 border-b">
+                    <div className="font-thin uppercase text-ceci-gray-dark tracking-wide">Purchase</div>
+                    <div className="text-sm font-display ">See pricing for access to this digital publication</div>
+                  </a>
                 </div>
-              </a>
-            </div>
-               <div className="flex-row inline-flex items-center w-full leading-normal">
-               <svg
-                 xmlns="http://www.w3.org/2000/svg"
-                 className="h-6 w-6 text-ceci-gray-mid"
-                 fill="none"
-                 viewBox="0 0 24 24"
-                 stroke="currentColor"
-               >
-                 <path
-                   strokeLinecap="round"
-                   strokeLinejoin="round"
-                   strokeWidth="2"
-                   d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"
-                 />
-               </svg>
-               <a
-                 href={"https://rotunda.upress.virginia.edu/register/default.xqy"}
-                 className="block group p-2 mb-4 ml-4 border-b"
-               >
-                 <div className="font-thin uppercase text-ceci-gray-dark tracking-wide">Rotunda Free Trial</div>
-                 <div className="text-sm font-display ">
-                   Request trial access to all Rotunda Collections
-                 </div>
-               </a>
-             </div>
-             </div>
-          ) : (
-            <>
-              <div className=" flex-row inline-flex items-center w-full leading-normal">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6 text-ceci-gray-mid"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
-                  />
-                </svg>
-                <a
-                  href={`https://forms.gle/H8J1NbtN4BBZZwgy7`}
-                  className="block group  p-2 ml-4 border-b"
-                >
-                  <div className="font-thin uppercase text-ceci-gray-dark tracking-wide">Exam Copy </div>
-                  <div className="text-sm font-display ">
-                    Review for Course Use
-                  </div>
-                </a>
+                <div className="flex-row inline-flex items-center w-full leading-normal">
+                  {/* ... Rotunda Trial Link - Uses LINK ICON ... */}
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-ceci-gray-mid" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
+                  </svg>
+                  <a href={"https://rotunda.upress.virginia.edu/register/default.xqy"} className="block group p-2 mb-4 ml-4 border-b">
+                    <div className="font-thin uppercase text-ceci-gray-dark tracking-wide">Rotunda Free Trial</div>
+                    <div className="text-sm font-display ">Request trial access to all Rotunda Collections</div>
+                  </a>
+                </div>
               </div>
-              <div className="flex-row inline-flex items-center w-full leading-normal">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6 text-ceci-gray-mid"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"
-                  />
-                </svg>
-                <a
-                  href="https://forms.gle/H8J1NbtN4BBZZwgy7"
-                  className="block group  p-2 mb-4 ml-4 border-b"
-                >
-                  <div className="font-thin tracking-wide text-ceci-gray-dark uppercase ">
-                    Desk Copy{" "}
-                  </div>
-                  <div className="text-sm font-display ">For Instructors who have already adopted this in their course </div>
-                </a>
-              </div>
-            </>
+            ) : (
+              <>
+                <div className="flex-row inline-flex items-center w-full leading-normal">
+                  {/* ... Exam Copy - Uses LINK ICON ... */}
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-ceci-gray-mid" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
+                  </svg>
+                  <a href={`https://forms.gle/H8J1NbtN4BBZZwgy7`} className="block group p-2 ml-4 border-b">
+                    <div className="font-thin uppercase text-ceci-gray-dark tracking-wide">Exam Copy </div>
+                    <div className="text-sm font-display ">Review for Course Use</div>
+                  </a>
+                </div>
+                <div className="flex-row inline-flex items-center w-full leading-normal">
+                  {/* ... Desk Copy - Uses LINK ICON ... */}
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-ceci-gray-mid" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
+                  </svg>
+                  <a href="https://forms.gle/H8J1NbtN4BBZZwgy7" className="block group p-2 mb-4 ml-4 border-b">
+                    <div className="font-thin tracking-wide text-ceci-gray-dark uppercase ">Desk Copy </div>
+                    <div className="text-sm font-display ">For Instructors who have already adopted this in their course </div>
+                  </a>
+                </div>
+              </>
+            )
           )}
             
                   {book.Series && (
@@ -528,6 +442,7 @@ export const query = graphql`
       }
       Prizes
       InternalSeriesVolume
+      isDigitalOA
       Bindings {
         type
         ISBN
