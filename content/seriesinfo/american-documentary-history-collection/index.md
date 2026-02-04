@@ -8,4 +8,4 @@ related_staff:
   - Patricia Searl
 seriesID: ADHC
 ---
-Description coming soon
+Rotunda’s American History Collection is a comprehensive archive of America's documentary legacy, spanning from George Washington’s earliest surveying journals to Ronald Reagan’s Oval Office recordings. Comprising over 300,000 primary source materials, these authoritative editions, trusted by over 200 universities worldwide, bridge the gap between the meticulous scholarship of printed volumes and the ever-increasing potential of digital discovery. As the collection expands, it will look to increase its coverage of presidential correspondence, as well as introduce new, vital voices that enrich our understanding of the American experience. 
