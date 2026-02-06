@@ -55,7 +55,7 @@ const SeriesTemplate = ({ data }) => {
                </section> 
                 
                 <section className="py-4">
-<SectionHeader text={'In this Series'}/> 
+<SectionHeader text={'Titles in this Series'}/> 
    <div className="flex flex-wrap gap-2 py-5">
                         {books.edges.map((edge, index) => (
                   

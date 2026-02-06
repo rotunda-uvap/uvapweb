@@ -253,7 +253,7 @@ const uvap = getImage(data.uvaplogo)
                         to={`/books/#series`}
                         className="uppercase block text-lg text-gray-400 hover:text-gray-300"
                       >
-                        Books by Series
+                        Titles by Series
                       </Link>
                     </div>
                     <div>
@@ -261,7 +261,7 @@ const uvap = getImage(data.uvaplogo)
                         to={`/books/#subjects`}
                         className="uppercase block text-lg text-gray-400 hover:text-gray-300"
                       >
-                        Book by Subject
+                        Title by Subject
                       </Link>
                     </div>
                     <div>
@@ -357,7 +357,7 @@ const uvap = getImage(data.uvaplogo)
                   <span className="hover:text-ceci-gray-dark md:ml-5">About</span>
                 
         
-                  <span className="hover:text-ceci-gray-dark">Books</span>
+                  <span className="hover:text-ceci-gray-dark">Titles</span>
                
                
                   <span className="hover:text-ceci-gray-dark">For Authors</span>

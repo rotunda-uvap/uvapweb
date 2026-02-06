@@ -46,7 +46,7 @@ const ImprintTemplate = ({ data }) => {
                </section> 
                 
                 <section className="py-4">
-<SectionHeader text={'Books in this Imprint'}/> 
+<SectionHeader text={'Titles in this Imprint'}/> 
    <div className="flex flex-wrap gap-2 py-5">
                         {books.edges.map((edge, index) => (
                   

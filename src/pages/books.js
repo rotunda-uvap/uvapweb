@@ -24,9 +24,9 @@ export default function Books({ data }) {
     
         <Layout>
          <SeO 
-         title="Browse all publications"/>
+         title="Browse all titles"/>
                  
-<PageHeader text={"Browse our Publications"}/>
+<PageHeader text={"Browse our Titles"}/>
 
 <section>
 <div className="flex flex-col lg:flex-row w-10/12 mx-auto -m-4 border-b-2 border-gray-100 pb-4" id="top">
