@@ -45,9 +45,8 @@ const bookPage = ({ data }) => {
         author={book.AuthorCredit}
         isbn={isbn}
         cover={
-          book.CoverImageFull 
-            ? `https://ik.imagekit.io/uvapress/${book.CoverImageFull}?tr=w-600,h-900,cm-pad_resize,bg-FFFFFF` 
-            : defaultImage
+          "https://ik.imagekit.io/uvapress/" +
+            book.CoverImageFull || defaultImage
         }
         article={false}
         book={true}
@@ -76,18 +75,17 @@ const bookPage = ({ data }) => {
           :
           <div className="hidden md:block" >
             <IKContext urlEndpoint={imageKitURL}>
-            <IKImage
-  path={imageKitBookPath}
-  transformation={[{ "width": "300", crop: "at_max" }]}
-  srcSet={[
-    { "width": "300" },
-    { "width": "400" }, // 2x density
-    { "width": "600" }  // 3x density/Native max
-  ]}
-  loading="eager"
-  lqip={{ active: true }}
-  alt={`Cover for ${book.Title}`}
-/>
+              <IKImage
+                path="noimg_lg.png"
+                transformation={[{ "width": "300", crop: "at_max" }]}
+                srcSet={[
+                  { "width": "300", "crop": "at_max" },
+                  { "width": "450", "crop": "at_max" }
+                ]}
+                loading="eager"
+                lqip={{ active: true }}
+                alt="Placeholder Cover"
+              />
             </IKContext>
           </div>
           //  <img className="hidden md:block" src={noimg_big} alt="cover" />
@@ -115,7 +113,7 @@ const bookPage = ({ data }) => {
           /> */
            : 
            <div className="md:hidden text-center w-1/2 mx-auto ">
-             <IKContext urlEndpoint="https://ik.imagekit.io/your_imagekit_id">
+         <IKContext urlEndpoint="https://ik.imagekit.io/">
                <IKImage
                  path="noimg_sm.png"
                  transformation={[{ "width": "200", crop: "at_max" }]}
