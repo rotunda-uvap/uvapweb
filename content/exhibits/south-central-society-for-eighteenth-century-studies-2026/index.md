@@ -14,9 +14,8 @@ related_blog:
   - Author's Corner with Peter Radford, author of THEY RUN WITH SURPRISING
     SWIFTNESS
   - Author's Corner with Derek Kane O'Leary, author of ARCHIVAL COMMUNITIES
-  - Author's Corner with Hannah Spahn, author of BLACK REASON, WHITE FEELING
   - Author's Corner with Erin Pearson, author of GRIEVOUS ENTANGLEMENT
-  - Author's Corner with Steve Sarson, author of THE COURSE OF HUMAN EVENTS
+  - Author's Corner with Paul William Child, author of THE DEAN DISORDERED
 related_staff:
   - Angie Hogan
 featured_books:
