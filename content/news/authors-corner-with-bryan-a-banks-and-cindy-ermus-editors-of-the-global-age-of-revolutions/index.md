@@ -10,7 +10,7 @@ related_series:
   - RA
 date: 2026-02-11
 ---
-Today, we are happy to bring you our conversation with Bryan A. Banks and Cindy Ermus, editors of *The Global Age of Revolutions: A History from 1650 to Today*
+oday, we are happy to bring you our conversation with Bryan A. Banks and Cindy Ermus, editors of *The Global Age of Revolutions: A History from 1650 to Today*
 
 *What inspired you to write this book?* 
 
@@ -32,8 +32,4 @@ BB&CE: We don’t have a favorite necessarily, but we will say that we had a ***
 
 BB & CE: AgeofRevoutions.com lives on! The space will continue to publish research related to revolutions. Interested parties can send submissions through the portal on the site. The editorial board will continue to promote authors and help them bring their research to wider audiences. We imagine that the site will also provide space for scholars to reflect on the themes of the book. From that new discourse, we may need to pursue another volume (or perhaps a second edition!). 
 
-Also, both Cindy and Bryan are working on new projects. Cindy is co-authoring a book with Claire Edington (UCSD) tentatively titled Epidemics: A Global History (University of California Press) and is researching her next book project on disease and public health in the Age of Revolutions. Bryan is developing a digital humanities project for a book on what he is calling the Great Pigeon Massacre of 1789. This project aims to examine eco-feudal power struggles in Old Regime France through the Revolution. 
-
-```
-
-```
+Also, both Cindy and Bryan are working on new projects. Cindy is co-authoring a book with Claire Edington (UCSD) tentatively titled Epidemics: A Global History (University of California Press) and is researching her next book project on disease and public health in the Age of Revolutions. Bryan is developing a digital humanities project for a book on what he is calling the Great Pigeon Massacre of 1789. This project aims to examine eco-feudal power struggles in Old Regime France through the Revolution.
