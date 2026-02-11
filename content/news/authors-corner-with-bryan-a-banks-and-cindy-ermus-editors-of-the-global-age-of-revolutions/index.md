@@ -3,7 +3,7 @@ templateKey: news
 type: author-corner
 title: Author's Corner with Bryan A. Banks and Cindy Ermus, editors of THE
   GLOBAL AGE OF REVOLUTIONS
-image: screenshot-2026-02-11-at-1.47.38 pm.png
+image: screenshot-2026-02-11-at-1.56.35 pm.png
 related_book:
   - "10176"
 related_series:
