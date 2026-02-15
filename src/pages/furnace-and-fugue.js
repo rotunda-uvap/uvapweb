@@ -20,10 +20,9 @@ export default function FFPage() {
         article={false}
       />
            <div className="container px-5 py-12 mx-auto">
-           <h4 className="hidden md:block pb-3 font-light text-ceci-gray-dark font-sans leading-none ">Furnace and Fugue</h4>
-          <h4 className="md:hidden pb-3 font-light text-ceci-gray-dark leading-relaxed font-sans">Furnace and Fugue</h4>
-          <h6 className="italic font-thin text-ceci-gray-mid tracking-booped">A Digital Edition of Michael Maier's "Atalanta fugiens" (1618) with Scholarly Commentary</h6>
-          <h6 className="py-2 font-display text-ceci-gray-mid">Edited by Tara Nummedal and Donna Bilak</h6>
+           <h1 className="pb-3 font-light text-ceci-gray-dark font-sans leading-none text-2xl md:text-3xl">Furnace and Fugue</h1>
+          <p className="italic font-thin font-sans text-ceci-gray-mid tracking-booped">A Digital Edition of Michael Maier's "Atalanta fugiens" (1618) with Scholarly Commentary</p>
+          <p className="py-2 font-display text-ceci-gray-mid">Edited by Tara Nummedal and Donna Bilak</p>
           <section className="py-4">
               <ImgGallery filename_array={screenshots}/>
           </section>

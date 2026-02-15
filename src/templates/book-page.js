@@ -136,23 +136,22 @@ const bookPage = ({ data }) => {
 
         </div>
         <div className="py-6 md:col-span-2 text-ceci-gray-dark">
-          <h4 className="hidden md:block  pb-3 font-thin font-sans uppercase tracking-booped leading-snug ">{book.Title}</h4>
-          <div className="md:hidden text-2xl text-center font-thin uppercase tracking-booped font-sans">{book.Title}</div>
+          <h1 className="pb-3 font-thin font-sans uppercase tracking-booped leading-snug text-2xl text-center md:text-left">{book.Title}</h1>
 
        {/*    {book.InternalSeriesVolume && (
             <h6 className="py-3">{book.InternalSeriesVolume}</h6>
           )} */}
 
           {book.Subtitle && (
-            <h6 className="text-center md:text-left italic py-2 md:py-0 font-thin text-ceci-gray-mid tracking-booped">{book.Subtitle} 
+            <p className="text-center md:text-left italic py-2 md:py-0 font-thin font-sans text-ceci-gray-mid tracking-booped">{book.Subtitle}
             {book.InternalSeriesVolume && (
               <span>— {book.InternalSeriesVolume}</span>
-            )}</h6>
+            )}</p>
           )}
 
-          <h6 className="py-2 font-display text-center md:text-left">
+          <p className="py-2 font-display text-center md:text-left">
             {book.AuthorCredit}
-          </h6>
+          </p>
           {book.Bindings.map((binding, index) => {
             // Check if it is an Open Access binding
             const isOABinding =
@@ -385,7 +384,7 @@ const bookPage = ({ data }) => {
 <section> </section>
   <section className="pb-4 flex flex-col md:flex-row">
           <ShareButtons title={title} url={url} />
-          <div className="py-2 md:py-0 md:pl-6"><a target="_blank" href={RightsLink}><img alt="Get Permission" src ="/RightsLink-Button_ReprintsPermissions.png" /></a></div>
+          <div className="py-2 md:py-0 md:pl-6"><a target="_blank" rel="noopener noreferrer" href={RightsLink}><img alt="Get Permission" src ="/RightsLink-Button_ReprintsPermissions.png" /></a></div>
           <div className="py-2 md:py-0 md:pl-6"><a href={GoogleB}>
             <img src="/gbs_preview_sticker1.png" alt="view on google books" height="23" width="69" />
           </a></div>

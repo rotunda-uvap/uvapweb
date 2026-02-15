@@ -12,9 +12,9 @@ const searchKey = process.env.GATSBY_ALGOLIA_SEARCH_KEY;
 const searchClient = algoliasearch(appId, searchKey);
 
 const Hit = ( {hit}) => <div className="py-2 border-b-2 border-gray-300">
-   
-  <a href={`../title/${ hit.BookID }`} target="_blank" className="flex flex-col md:flex-row md:gap-4">
-   
+
+  <a href={`../title/${ hit.BookID }`} rel="noopener noreferrer" className="flex flex-col md:flex-row md:gap-4">
+
      {hit.CoverImageMain ?  <IKContext urlEndpoint="https://ik.imagekit.io/uvapress/">
             <IKImage width="150" height="224" path={hit.CoverImageMain} transformation={[{
               "height": "225",
@@ -22,12 +22,12 @@ const Hit = ( {hit}) => <div className="py-2 border-b-2 border-gray-300">
               crop: "at_max"
             }]} lqip={{ active: true }} alt={hit.Title}/>
           </IKContext> : <div/>}
-   <div> <h6 className="font-thin text-base py-0 hover:bg-greige hover:text-ceci-gray-dark text-ceci-gray-dark tracking-wide uppercase">{hit.Title}</h6>
-{hit.Subtitle ? <h6 className="text-sm tracking-booped text-ceci-gray-mid font-thin pb-1 ">{hit.Subtitle}</h6> : ""}
-<h6 className="text-sm tracking-widest font-display uppercase">{hit.AuthorCredit}</h6>
+   <div> <h3 className="font-thin font-sans text-base py-0 hover:bg-greige hover:text-ceci-gray-dark text-ceci-gray-dark tracking-wide uppercase">{hit.Title}</h3>
+{hit.Subtitle ? <p className="text-sm tracking-booped text-ceci-gray-mid font-thin font-sans pb-1 ">{hit.Subtitle}</p> : ""}
+<p className="text-sm tracking-widest font-display uppercase">{hit.AuthorCredit}</p>
 
 <div className="pt-3 text-ceci-gray-dark dropCap font-serif cms text-lg" dangerouslySetInnerHTML={{ __html: hit.MainDescription.html.split(' ').splice(0, 30).join(' ') + '...' }}/>
-<h6 className="text-sm uppercase tracking-wide text-ceci-gray-mid font-thin pb-5">Published: {hit.PublicationDate}</h6></div></a></div>
+<p className="text-sm uppercase tracking-wide text-ceci-gray-mid font-thin font-sans pb-5">Published: {hit.PublicationDate}</p></div></a></div>
 
 const Search = () => (
     <InstantSearch searchClient={searchClient} indexName={process.env.GATSBY_ALGOLIA_INDEX_NAME} routing={true} insights={true}  >
@@ -37,11 +37,11 @@ const Search = () => (
 
       <div className="flex flex-col md:flex-row gap-8">
      
-      <section className="col-span-2" id="results">
+      <section className="col-span-2" id="results" aria-live="polite">
         
      <div className="md:hidden"> <a href="#filter" className="md:hidden flex flex-row gap-2 py-8 text-sm tracking-wide font-thin">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-6 h-6">
-  <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6h9.75M10.5 6a1.5 1.5 0 11-3 0m3 0a1.5 1.5 0 10-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-9.75 0h9.75" />
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6" aria-hidden="true">
+  <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 6h9.75M10.5 6a1.5 1.5 0 11-3 0m3 0a1.5 1.5 0 10-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-9.75 0h9.75" />
 </svg><span>Filter Results</span>
       </a></div>
       

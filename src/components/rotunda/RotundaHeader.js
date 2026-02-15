@@ -27,10 +27,10 @@ export default function RotundaHeader() {
       placeholder="blurred"
       width={150}
     />
-        <RotNav role="navigation" aria-label="secondary naviation" className='rotunda'>
-            <RotNavLink href="https://www.upress.virginia.edu/rotunda" alt="About Rotunda">about</RotNavLink>
-            <RotNavLink href="https://www.upress.virginia.edu/rotunda-purchase" alt="Get a license">purchase</RotNavLink>
-            <RotNavLink href="https://rotunda.upress.virginia.edu/entrance.xqy" alt="View all publications">entrance</RotNavLink>
+        <RotNav aria-label="Rotunda secondary navigation" className='rotunda'>
+            <RotNavLink href="https://www.upress.virginia.edu/rotunda">about</RotNavLink>
+            <RotNavLink href="https://www.upress.virginia.edu/rotunda-purchase">purchase</RotNavLink>
+            <RotNavLink href="https://rotunda.upress.virginia.edu/entrance.xqy">entrance</RotNavLink>
            
         </RotNav></header>
      
