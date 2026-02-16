@@ -20,10 +20,9 @@ export default function FFPage() {
         article={false}
       />
            <div className="container px-5 py-12 mx-auto">
-           <h4 className="hidden md:block pb-3 font-light text-ceci-gray-dark font-sans leading-none">The Great Experiment</h4>
-          <h4 className="md:hidden pb-3 font-light text-ceci-gray-dark leading-relaxed font-sans">The Great Experiment</h4>
-          <h6 className="italic font-thin text-ceci-gray-mid tracking-booped">A peer-reviewed educational virtual reality experience set at the 1787 Constitutional Convention.</h6>
-          <h6 className="py-2 font-display text-ceci-gray-mid">Created by Warren R. Hofstra and Mohammad F. Obeid, with Kevin R. Hardwick and J.J. Ruscella</h6>
+           <h1 className="pb-3 font-light text-ceci-gray-dark font-sans leading-none text-2xl md:text-3xl">The Great Experiment</h1>
+          <p className="italic font-thin font-sans text-ceci-gray-mid tracking-booped">A peer-reviewed educational virtual reality experience set at the 1787 Constitutional Convention.</p>
+          <p className="py-2 font-display text-ceci-gray-mid">Created by Warren R. Hofstra and Mohammad F. Obeid, with Kevin R. Hardwick and J.J. Ruscella</p>
           <section className="py-4">
               <ImgGallery filename_array={screenshots}/>
           </section>

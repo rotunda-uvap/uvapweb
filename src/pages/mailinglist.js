@@ -53,18 +53,22 @@ export default class MailingListPage extends React.Component {
             
                 <form onSubmit={this._handleSubmit} className="flex lg:w-2/3 w-full sm:flex-row flex-col mx-auto px-8 sm:px-0 items-end">
                 <div className="relative sm:mr-4 mb-4 sm:mb-0 flex-grow w-full">
-                    {/* <label htmlFor="full-name" className="leading-7 text-sm ">Full Name</label> */}
-                    <input type="text" onChange={this._handleChange} placeholder="name" name="name" height="60" className="w-full bg-gray-100 rounded border border-gray-300 focus:border-teal-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"/>
+                    <label htmlFor="full-name" className="sr-only">Full Name</label>
+                    <input type="text" id="full-name" onChange={this._handleChange} placeholder="Full Name" name="name" autoComplete="name" className="w-full bg-gray-100 rounded border border-gray-300 focus:border-teal-500 text-base text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"/>
                 </div>
                 <div className="relative sm:mr-4 mb-4 sm:mb-0 flex-grow w-full">
-                    {/* <label htmlFor="email" className="leading-7 text-sm ">Email</label> */}
+                    <label htmlFor="email" className="sr-only">Email</label>
                     <input type="email"
+                                        id="email"
                                         onChange={this._handleChange}
-                                        placeholder="email"
+                                        placeholder="Email"
                                         name="email"
-                                        height="60" className="w-full bg-gray-100 rounded border border-gray-300 focus:border-teal-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"/>
+                                        autoComplete="email"
+                                        required
+                                        aria-required="true"
+                                        className="w-full bg-gray-100 rounded border border-gray-300 focus:border-teal-500 text-base text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"/>
                 </div>
-                <input type="submit" text="Submit" className=" w-full bg-ceci-gray-light text-gray-700 uppercase font-sans border-0 py-2 px-8 focus:outline-none  rounded text-lg  "></input>
+                <input type="submit" value="Submit" className="w-full bg-ceci-gray-light text-gray-700 uppercase font-sans border-0 py-2 px-8 rounded text-lg cursor-pointer"></input>
                 </form>
             </div>
  

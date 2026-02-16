@@ -72,9 +72,11 @@ const Gallery = ({book_obj_array}) => {
 
 
     return (
+        <div role="region" aria-label="Related books carousel" aria-roledescription="carousel">
         <Slider {...settings}>
-                    {imageMap} 
+                    {imageMap}
         </Slider>
+        </div>
     )
 }
 

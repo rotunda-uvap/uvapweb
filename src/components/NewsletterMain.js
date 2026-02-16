@@ -25,7 +25,7 @@ export default class IndexPage extends React.Component {
                                 name="FNAME"
                                 id="mce-FNAME"
                                 placeholder="First Name"
-                                className="w-full bg-gray-100 rounded border border-gray-300 outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                                className="w-full bg-gray-100 rounded border border-gray-300 text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                             />
                         </div>
 
@@ -36,7 +36,8 @@ export default class IndexPage extends React.Component {
                                 name="EMAIL"
                                 id="mce-EMAIL"
                                 placeholder="Email Address"
-                                className="w-full bg-gray-100 rounded border border-gray-300 focus:border-teal-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                                className="w-full bg-gray-100 rounded border border-gray-300 focus:border-teal-500 text-base text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                                aria-required="true"
                                 required
                             />
                         </div>
@@ -54,7 +55,7 @@ export default class IndexPage extends React.Component {
                             type="submit"
                             name="subscribe"
                             id="mc-embedded-subscribe"
-                            className="w-full bg-ceci-gray-light text-gray-700 uppercase tracking-wide font-thin font-sans border-0 py-2 px-8 focus:outline-none rounded text-lg"
+                            className="w-full bg-ceci-gray-light text-gray-700 uppercase tracking-wide font-thin font-sans border-0 py-2 px-8 rounded text-lg cursor-pointer"
                             value="Subscribe"
                         />
                     </form>

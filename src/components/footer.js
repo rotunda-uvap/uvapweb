@@ -43,7 +43,7 @@ const Footer = () => {
   <>
       <div className="flex flex-col md:flex-row border-t-2 border-b-2 text-ceci-gray-mid p-4 gap-2">
         <section className="text-sm flex flex-col gap-2 md:gap-0 basis-1/4 border-b-2 md:border-b-0">
-          <h6 className="hidden">QuickLinks</h6>
+          <h2 className="sr-only">Quick Links</h2>
           <FooterLink dest={"book-search"} text="Find a Book" />
           <FooterLink dest={"authors"} text={"For Our Authors"} />
           <FooterLink dest={"permissions"} text={"Rights and Permissions"} />
@@ -58,28 +58,28 @@ const Footer = () => {
           <div className="flex flex-row py-2">
             <a
               href="https://www.facebook.com/uvapress"
-              aria-label="facebook"
+              aria-label="Facebook"
               className="pr-2"
             >
               <FaFacebook className="text-3xl" />
             </a>
             <a
               href="https://bsky.app/profile/uvapress.bsky.social"
-              aria-label="bluesky"
+              aria-label="Bluesky"
               className="pr-2"
             >
               <FaBluesky className="text-3xl" />
             </a>
             <a
               href="https://twitter.com/uvapress"
-              aria-label="twitter"
+              aria-label="X (formerly Twitter)"
               className="pr-2"
             >
               <FaXTwitter className="text-3xl" />
             </a>
             <a
               href="https://www.instagram.com/uvapress"
-              aria-label="instagram"
+              aria-label="Instagram"
               className="pr-2"
             >
               <FaInstagram className="text-3xl" />
@@ -87,11 +87,11 @@ const Footer = () => {
           </div>
         </section>
         <section className="flex flex-col basis-1/4 border-b-2 md:border-b-0">
-          <h6 className="hidden">Contact Us</h6>
+          <h2 className="sr-only">Contact Us</h2>
           <div id="address" className="flex flex-row py-2">
             <FaMapLocation
               className="hidden md:block self-center justify-self-center text-2xl"
-              aria-label="physical address"
+              aria-hidden="true"
             />
             <ul className="text-sm font-thin tracking-wide flex flex-col md:pl-3">
               <li>P.O. Box 400318 (Postal)</li>
@@ -103,7 +103,7 @@ const Footer = () => {
           <div id="phone" className="flex flex-row py-2">
             <FaPhone
               className="hidden md:block self-center justify-self-center text-2xl"
-              aria-label="phone and fax numbers"
+              aria-hidden="true"
             />
             <ul className="text-sm md:pl-3 flex flex-col font-thin tracking-wide">
               <li>434 924-3468 (main)</li>
@@ -114,7 +114,7 @@ const Footer = () => {
           <div id="email" className="flex flex-row py-2 font-thin">
             <FaEnvelope
               className="hidden md:block self-center justify-self-center text-2xl"
-              aria-label="email"
+              aria-hidden="true"
             />
             <ul className="text-sm flex flex-col font-thin tracking-wide md:pl-3 gap-4 md:gap-0">
                 <li><a href="mailto:vapress@virginia.edu" className="py-8 md:py-1">General Inquiries</a></li>
@@ -125,7 +125,7 @@ const Footer = () => {
         <section className="basis-1/4 border-b-2 md:border-b-0">
           <Link to={`/support`} className="hover:text-gray-300">
             <div className="flex flex-col md:place-items-center">
-              <div><GatsbyImage image={bookstack} alt="support uva press" width={50} /></div>
+              <div><GatsbyImage image={bookstack} alt="" width={50} /></div>
               <div className="uppercase font-thin py-2 tracking-wide text-xl">
                 Be a part of
                 <br /> the future
@@ -139,14 +139,14 @@ const Footer = () => {
           </Link>
         </section>
         <section className="flex flex-col basis-1/4 gap-4 grow-0">
-          <h6 className="hidden">Affiliates</h6>
+          <h2 className="sr-only">Affiliates</h2>
           <a href="http://www.virginia.edu/" >
             {" "}
-            <GatsbyImage image={uvaimage} alt="uva logo" />{" "}
+            <GatsbyImage image={uvaimage} alt="University of Virginia" />{" "}
           </a>
           <a href="http://www.aupresses.org">
             {" "}
-            <GatsbyImage image={aupimage} alt="aup member"/>{" "}
+            <GatsbyImage image={aupimage} alt="Association of University Presses member"/>{" "}
           </a>
         </section>
       </div>

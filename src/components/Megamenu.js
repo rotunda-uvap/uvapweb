@@ -29,15 +29,16 @@ const uvap = getImage(data.uvaplogo)
   return (
     <>
       <nav
-        id="mobile menu"
+        id="mobile-menu"
+        aria-label="Mobile navigation"
         className="md:hidden border-b-2 flex flex-row  z-40 tracking-wide"
       >
         <div className="flex flex-row w-screen">
-          <nav className="flex">
+          <div className="flex">
             <div className="block text-ceci-gray-dark w-64 py-3">
               <Link to={`/`}>
                 {" "}
-                <GatsbyImage image={uvap} alt="uva press logo" />{" "}
+                <GatsbyImage image={uvap} alt="University of Virginia Press - Home" />{" "}
               </Link>
             </div>
             <div className="toggleable">
@@ -65,7 +66,6 @@ const uvap = getImage(data.uvaplogo)
               </div>
 
               <div
-                role="button"
                 className="p-3 mega-menu mb-16 sm:mb-0 shadow-xl bg-ceci-gray-dark"
               >
                 <div className="w-full flex flex-wrap justify-between mx-2 text-gray-400  font-sans font-thin uppercase">
@@ -122,7 +122,7 @@ const uvap = getImage(data.uvaplogo)
                       </Link>
                     </div>
                   </div>
-                  <ul className="px-4 w-full sm:w-1/2 lg:w-1/5 border-gray-600 border-b sm:border-r-0 lg:border-r lg:border-b-0 pb-6 pt-6 lg:pt-3">
+                  <div className="px-4 w-full sm:w-1/2 lg:w-1/5 border-gray-600 border-b sm:border-r-0 lg:border-r lg:border-b-0 pb-6 pt-6 lg:pt-3">
                     <h3 className=" text-xl text-white font-sans mb-2">
                       All Products
                     </h3>
@@ -209,8 +209,8 @@ const uvap = getImage(data.uvaplogo)
                         Open Access
                       </a>
                     </div>
-                  </ul>
-                  <ul className="px-4 w-full sm:w-1/2 lg:w-1/5 border-gray-600 border-b sm:border-b-0 sm:border-r md:border-b-0 pb-6 pt-6 lg:pt-3">
+                  </div>
+                  <div className="px-4 w-full sm:w-1/2 lg:w-1/5 border-gray-600 border-b sm:border-b-0 sm:border-r md:border-b-0 pb-6 pt-6 lg:pt-3">
                     <h3 className="font-sans text-xl text-white ">
                       For Authors
                     </h3>
@@ -230,8 +230,8 @@ const uvap = getImage(data.uvaplogo)
                         Current Authors
                       </Link>
                     </div>
-                  </ul>
-                  <ul className="px-4 w-full sm:w-1/2 lg:w-1/5 border-gray-600 border-b sm:border-b-0 sm:border-r md:border-b-0 pb-6 pt-6 lg:pt-3">
+                  </div>
+                  <div className="px-4 w-full sm:w-1/2 lg:w-1/5 border-gray-600 border-b sm:border-b-0 sm:border-r md:border-b-0 pb-6 pt-6 lg:pt-3">
                     <h3 className="font-sans text-xl text-white ">
                       For Instructors
                     </h3>
@@ -280,8 +280,8 @@ const uvap = getImage(data.uvaplogo)
                         Open Access Resources
                       </a>
                     </div>
-                  </ul>
-                  <ul className="px-4 w-full sm:w-1/2 lg:w-1/5 border-gray-600 pb-6 pt-6 lg:pt-3">
+                  </div>
+                  <div className="px-4 w-full sm:w-1/2 lg:w-1/5 border-gray-600 pb-6 pt-6 lg:pt-3">
                     <h3 className="text-xl text-white text-bold mb-2">
                       Rotunda Digital
                     </h3>
@@ -317,7 +317,7 @@ const uvap = getImage(data.uvaplogo)
                         Literature & Culture Collection
                       </Link>
                     </div>
-                  </ul>
+                  </div>
                 </div>
                 <label id="close-small-menu" htmlFor="toggle-one">
                   <span className="uppercase block text-sm text-gray-300 float-right">Close X</span>
@@ -325,20 +325,21 @@ const uvap = getImage(data.uvaplogo)
               </div>
               
             </div>
-          </nav>
+          </div>
         </div>
       </nav>
 
       <nav
+        aria-label="Main navigation"
         className="hidden md:block font-sans text-ceci-gray-mid font-thin uppercase border-b-2 flex flex-row justify-center place-content-center z-40 tracking-wide"
       >
         <div className="flex flex-row justify-center place-content-center lg:text-lg">
-          <nav className="flex">
+          <div className="flex">
             <div className="flex items-center  mb-4 md:mb-0">
               <div className="block">
                 <Link to={`/`}>
                   {" "}
-                  <GatsbyImage image={uvap} alt="uva press logo" />{" "}
+                  <GatsbyImage image={uvap} alt="University of Virginia Press - Home" />{" "}
                 </Link>
               </div>
             </div>
@@ -371,43 +372,42 @@ const uvap = getImage(data.uvaplogo)
                   Give
                 </a>
 
-                <a href="https://www.facebook.com/uvapress">
+                <a href="https://www.facebook.com/uvapress" aria-label="Facebook">
                   <FaFacebook
-                    aria-label="facebook button"
+                    aria-hidden="true"
                     className="hover:text-ceci-gray-dark text-ceci-gray-mid"
                   />
                 </a>
                 <a
               href="https://bsky.app/profile/uvapress.bsky.social"
-              aria-label="bluesky"
+              aria-label="Bluesky"
               className="pr-2"
             >
-              <FaBluesky aria-label="bluesky button"
+              <FaBluesky aria-hidden="true"
                     className="hover:text-ceci-gray-dark text-ceci-gray-mid" />
             </a>
-                <a href="https://twitter.com/uvapress">
+                <a href="https://twitter.com/uvapress" aria-label="X (formerly Twitter)">
                   <FaXTwitter
-                    aria-label="twitter button"
+                    aria-hidden="true"
                     className="hover:text-ceci-gray-dark text-ceci-gray-mid"
                   />
                 </a>
-                <a href="https://www.instagram.com/uvapress">
+                <a href="https://www.instagram.com/uvapress" aria-label="Instagram">
                   <FaInstagram
-                    aria-label="insta button"
+                    aria-hidden="true"
                     className="hover:text-ceci-gray-dark text-ceci-gray-mid"
                   />
                 </a>
-                <Link to={`/book-search`}>
+                <Link to={`/book-search`} aria-label="Search">
                   {" "}
                   <FaMagnifyingGlass
-                    aria-label="search button"
+                    aria-hidden="true"
                     className="hover:text-ceci-gray-dark text-ceci-gray-mid"
                   />
                 </Link>
               </div>
 
               <div
-                role="button"
                 className="p-6 mega-menu mb-16 sm:mb-0 shadow-xl bg-ceci-gray-dark"
               >
                 <div className="container mx-auto w-full flex flex-wrap justify-between mx-2">
@@ -464,7 +464,7 @@ const uvap = getImage(data.uvaplogo)
                       </Link>
                     </div>
                   </div>
-                  <ul className="px-4 w-full sm:w-1/2 lg:w-1/5 border-gray-600 border-b sm:border-r-0 lg:border-r lg:border-b-0 pb-6 pt-6 lg:pt-3">
+                  <div className="px-4 w-full sm:w-1/2 lg:w-1/5 border-gray-600 border-b sm:border-r-0 lg:border-r lg:border-b-0 pb-6 pt-6 lg:pt-3">
                     <h3 className=" text-xl text-white font-sans mb-2">
                       All Products
                     </h3>
@@ -559,8 +559,8 @@ const uvap = getImage(data.uvaplogo)
                         Open Access
                       </a>
                     </div>
-                  </ul>
-                  <ul className="px-4 w-full sm:w-1/2 lg:w-1/5 border-gray-600 border-b sm:border-b-0 sm:border-r md:border-b-0 pb-6 pt-6 lg:pt-3">
+                  </div>
+                  <div className="px-4 w-full sm:w-1/2 lg:w-1/5 border-gray-600 border-b sm:border-b-0 sm:border-r md:border-b-0 pb-6 pt-6 lg:pt-3">
                     <h3 className="font-sans text-xl text-white ">
                       For Authors
                     </h3>
@@ -580,8 +580,8 @@ const uvap = getImage(data.uvaplogo)
                         Current Authors
                       </Link>
                     </div>
-                  </ul>
-                  <ul className="px-4 w-full sm:w-1/2 lg:w-1/5 border-gray-600 border-b sm:border-b-0 sm:border-r md:border-b-0 pb-6 pt-6 lg:pt-3">
+                  </div>
+                  <div className="px-4 w-full sm:w-1/2 lg:w-1/5 border-gray-600 border-b sm:border-b-0 sm:border-r md:border-b-0 pb-6 pt-6 lg:pt-3">
                     <h3 className="font-sans text-xl text-white ">
                       For Instructors
                     </h3>
@@ -631,8 +631,8 @@ const uvap = getImage(data.uvaplogo)
                         Open Access Resources
                       </a>
                     </div>
-                  </ul>
-                  <ul className="px-4 w-full sm:w-1/2 lg:w-1/5 border-gray-600 pb-6 pt-6 lg:pt-3">
+                  </div>
+                  <div className="px-4 w-full sm:w-1/2 lg:w-1/5 border-gray-600 pb-6 pt-6 lg:pt-3">
                     <h3 className="text-xl text-white text-bold mb-2">
                       Rotunda Digital
                     </h3>
@@ -669,14 +669,14 @@ const uvap = getImage(data.uvaplogo)
                       </Link>
                     </div>
                   
-                  </ul>
+                  </div>
                 </div>
                 <label id="close-menu" htmlFor="toggle-big">
                   <span className="uppercase block text-sm text-gray-400 hover:text-gray-300 float-right">Close X</span>
                </label>
               </div>
             </div>
-          </nav>
+          </div>
         </div>
       </nav>
     </>

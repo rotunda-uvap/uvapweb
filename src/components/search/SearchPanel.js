@@ -9,13 +9,13 @@ import { Link } from "gatsby"
 const appId = process.env.GATSBY_ALGOLIA_APP_ID;
 const searchKey = process.env.GATSBY_ALGOLIA_SEARCH_KEY;
 const searchClient = algoliasearch(appId, searchKey);
-const Hit = ( {hit}) => <span><Link to={`../title/${ hit.BookID }`}><h6 className="text-gray-900 uppercase tracking-widest">{hit.Title}</h6></Link>
-<h6 className="text-sm italic uppercase text-gray-500 py-2 tracking-widest">{hit.Subtitle}</h6>
-<h6 className="text-sm uppercase tracking-widest">{hit.AuthorCredit}</h6>
+const Hit = ( {hit}) => <span><Link to={`../title/${ hit.BookID }`}><h3 className="text-lg text-gray-900 uppercase tracking-widest font-sans">{hit.Title}</h3></Link>
+<p className="text-sm italic uppercase text-gray-500 py-2 tracking-widest font-sans">{hit.Subtitle}</p>
+<p className="text-sm uppercase tracking-widest font-sans">{hit.AuthorCredit}</p>
 
 <p className="pt-3" dangerouslySetInnerHTML={{ __html: hit.MainDescription.html.split(' ').splice(0, 15).join(' ') + '...' }}/>
-<h6 className="text-sm uppercase pb-5">Published: {hit.PublicationDate}</h6>
-<h6 className="text-sm uppercase pb-5">ISBN: {hit.ISBNs}</h6>
+<p className="text-sm uppercase pb-5 font-sans">Published: {hit.PublicationDate}</p>
+<p className="text-sm uppercase pb-5 font-sans">ISBN: {hit.ISBNs}</p>
 </span>
 
 

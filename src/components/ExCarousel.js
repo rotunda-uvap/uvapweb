@@ -71,9 +71,11 @@ const settings = {
 
 // Return the Slider component with the mapped image elements as children and the settings passed as props
     return (
+        <div role="region" aria-label="Book carousel" aria-roledescription="carousel">
         <Slider {...settings}>
-                    {imageMap} 
+                    {imageMap}
         </Slider>
+        </div>
     )
 }
 

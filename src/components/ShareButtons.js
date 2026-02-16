@@ -14,15 +14,15 @@ const ShareButtons = ({title, url, quote, tags}) => {
 
     return(
         <div>
-          <FacebookShareButton url={url} title={title} quote={quote}>
+          <FacebookShareButton url={url} title={title} quote={quote} aria-label="Share on Facebook">
                 <FacebookIcon  size={40} round={true}/>
          </FacebookShareButton>
 
-          <TwitterShareButton url={url} title={title}>
+          <TwitterShareButton url={url} title={title} aria-label="Share on X (formerly Twitter)">
                 <XIcon  size={40} round={true} />
           </TwitterShareButton>
 
-          <RedditShareButton url={url} title={title} >
+          <RedditShareButton url={url} title={title} aria-label="Share on Reddit">
             <RedditIcon  size={40} round={true} />
           </RedditShareButton>
           

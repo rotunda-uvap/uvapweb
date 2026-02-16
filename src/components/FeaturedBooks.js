@@ -11,6 +11,7 @@ const FeaturedBooks = ({id}) => {
             <Link to={booklink} >
                   <IKContext urlEndpoint="https://ik.imagekit.io/uvapress/" >
             <IKImage path={imageKitPath}
+             alt=""
              transformation={[{
                 height: auto,
                 width: 150

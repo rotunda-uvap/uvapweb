@@ -67,9 +67,11 @@ const ImgGallery = ({filename_array}) => {
     
 
     return (
+        <div role="region" aria-label="Image gallery" aria-roledescription="carousel">
         <Slider {...settings}>
-                    {imageMap} 
+                    {imageMap}
         </Slider>
+        </div>
     )
 }
 
