@@ -176,6 +176,10 @@
     "seriesName": "Colonial Williamsburg Studies in Chesapeake History and Culture"
   },
   {
+    "seriesID": "PBK",
+    "seriesName": "The Malcolm Lester Phi Beta Kappa Lectures on the Liberal Arts and Public Life"
+  },
+  {
     "seriesID": "LAAB",
     "seriesName": "Louisiana Artists Biography Series"
   },
@@ -198,10 +202,6 @@
   {
     "seriesID": "RMLS",
     "seriesName": "Richard E. Myers Lectures: Presented by University Baptist Church, Charlottesville"
-  },
-  {
-    "seriesID": "PBK",
-    "seriesName": "The Malcolm Lester Phi Beta Kappa Lectures on the Liberal Arts and Public Life"
   },
   {
     "seriesID": "SAHCG",
