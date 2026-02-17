@@ -2,12 +2,12 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: The Buried Cause
-    banner_author: Katherine Ridgway, Christina Keyser Vida, and Elizabeth Moore, eds.
-    banner_subtitle: Unearthing Hidden History in the Lee Monument Cornerstone
-    banner_id: "10161"
-    banner_quote: An ingenious book.
-    banner_attr: Ed Ayers, president emeritus of the University of Richmond
+  - banner_title: The Global Age of Revolutions
+    banner_author: Bryan A. Banks and Cindy Ermus, eds.
+    banner_subtitle: A History from 1650 to Today
+    banner_id: "10176"
+    banner_quote: A whiff of fresh air in an age of pollution by trumped-up news.
+    banner_attr: Robert Darnton, Harvard University
 related_book:
   - "5744"
   - "5617"
@@ -23,10 +23,11 @@ featured_books:
   - "10145"
   - "10150"
   - "10014"
-  - "10095"
+  - "10161"
   - "10088"
   - "10027"
   - "10021"
+  - "10095"
   - "10103"
   - "10165"
   - "5509"
