@@ -10,7 +10,7 @@ related_series:
   - RA
 date: 2026-02-11
 ---
-oday, we are happy to bring you our conversation with Bryan A. Banks and Cindy Ermus, editors of *The Global Age of Revolutions: A History from 1650 to Today*
+Today, we are happy to bring you our conversation with Bryan A. Banks and Cindy Ermus, editors of *The Global Age of Revolutions: A History from 1650 to Today*
 
 *What inspired you to write this book?* 
 
