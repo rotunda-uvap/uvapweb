@@ -25,9 +25,10 @@ const MegaHeader = () => {
     
   }
 `)
-const uvap = getImage(data.uvaplogo)
+  const uvap = getImage(data.uvaplogo)
   return (
     <>
+      <h1 className="sr-only">University of Virginia Press</h1>
       <nav
         id="mobile-menu"
         aria-label="Mobile navigation"
@@ -126,7 +127,7 @@ const uvap = getImage(data.uvaplogo)
                     <h3 className=" text-xl text-white font-sans mb-2">
                       All Products
                     </h3>
-                   
+
                     <div>
                       <Link
                         to={`/book-search`}
@@ -192,7 +193,7 @@ const uvap = getImage(data.uvaplogo)
                         Review Copy Requests
                       </Link>
                     </div>
-                    
+
                     <div>
                       <Link
                         to={`/order`}
@@ -323,7 +324,7 @@ const uvap = getImage(data.uvaplogo)
                   <span className="uppercase block text-sm text-gray-300 float-right">Close X</span>
                 </label>
               </div>
-              
+
             </div>
           </div>
         </div>
@@ -356,19 +357,19 @@ const uvap = getImage(data.uvaplogo)
                 {/* <a className="hover:text-ceci-gray-dark md:ml-5" href="/">Home</a> */}
                 <label id="bigmenu" htmlFor="toggle-big" className="flex flex-row gap-4">
                   <span className="hover:text-ceci-gray-dark md:ml-5">About</span>
-                
-        
+
+
                   <span className="hover:text-ceci-gray-dark">Titles</span>
-               
-               
+
+
                   <span className="hover:text-ceci-gray-dark">For Authors</span>
-             
+
                   <span className="hover:text-ceci-gray-dark">For Instructors</span>
-              
-               
+
+
                   <span className="hover:text-ceci-gray-dark">Rotunda Digital</span>
                 </label>
-                <a className="font-semibold text-orange-500 hover:text-orange-600 md:ml-5" href="/support">
+                <a className="font-semibold text-orange-700 hover:text-orange-700 md:ml-5" href="/support">
                   Give
                 </a>
 
@@ -379,13 +380,13 @@ const uvap = getImage(data.uvaplogo)
                   />
                 </a>
                 <a
-              href="https://bsky.app/profile/uvapress.bsky.social"
-              aria-label="Bluesky"
-              className="pr-2"
-            >
-              <FaBluesky aria-hidden="true"
+                  href="https://bsky.app/profile/uvapress.bsky.social"
+                  aria-label="Bluesky"
+                  className="pr-2"
+                >
+                  <FaBluesky aria-hidden="true"
                     className="hover:text-ceci-gray-dark text-ceci-gray-mid" />
-            </a>
+                </a>
                 <a href="https://twitter.com/uvapress" aria-label="X (formerly Twitter)">
                   <FaXTwitter
                     aria-hidden="true"
@@ -468,7 +469,7 @@ const uvap = getImage(data.uvaplogo)
                     <h3 className=" text-xl text-white font-sans mb-2">
                       All Products
                     </h3>
-                  
+
                     <div>
                       <Link
                         to={`/book-search`}
@@ -493,7 +494,7 @@ const uvap = getImage(data.uvaplogo)
                         New Releases
                       </Link>
                     </div>
-                    
+
                     <div>
                       <Link
                         to={`/books/#series`}
@@ -542,7 +543,7 @@ const uvap = getImage(data.uvaplogo)
                         Review Copy Requests
                       </Link>
                     </div>
-                    
+
                     <div>
                       <Link
                         to={`/order`}
@@ -668,12 +669,12 @@ const uvap = getImage(data.uvaplogo)
                         Literature & Culture Collection
                       </Link>
                     </div>
-                  
+
                   </div>
                 </div>
                 <label id="close-menu" htmlFor="toggle-big">
                   <span className="uppercase block text-sm text-gray-400 hover:text-gray-300 float-right">Close X</span>
-               </label>
+                </label>
               </div>
             </div>
           </div>
