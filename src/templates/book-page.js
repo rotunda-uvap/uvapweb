@@ -14,8 +14,8 @@ const bookPage = ({ data }) => {
   const book = data.books
   const isbn = book.Bindings[0].ISBN
   const hasDigitalEdition = !book.isDigitalOA && Array.isArray(book.Bindings)
-  ? book.Bindings.some(b => b && b.type === "Online Digital Edition")
-  : false
+    ? book.Bindings.some(b => b && b.type === "Online Digital Edition")
+    : false
   const GoogleB = "https://books.google.com/books?vid=" + isbn
   const RightsLinkA = "https://marketplace.copyright.com/rs-ui-web/mp/search/all/"
   const RightsLink = RightsLinkA + isbn
@@ -25,16 +25,16 @@ const bookPage = ({ data }) => {
   const news = data.newsMD
   const imageKitURL = "https://ik.imagekit.io/uvapress/"
   const imageKitBookPath = book.BookID + ".jpg"
-/*   const noimg_big = "https://ik.imagekit.io/uvapress/noimg_lg.png"
-  const noimg_sm = "https://ik.imagekit.io/uvapress/noimg.png"
-  const imglink =
-    imageKitURL +
-    book.BookID +
-    ".jpg"
-  const imglink_sm =
-    "https://ik.imagekit.io/uvapress/mediums/" +
-    book.BookID +
-    "_M.jpg" */
+  /*   const noimg_big = "https://ik.imagekit.io/uvapress/noimg_lg.png"
+    const noimg_sm = "https://ik.imagekit.io/uvapress/noimg.png"
+    const imglink =
+      imageKitURL +
+      book.BookID +
+      ".jpg"
+    const imglink_sm =
+      "https://ik.imagekit.io/uvapress/mediums/" +
+      book.BookID +
+      "_M.jpg" */
   const defaultImage = "/static/uvap_sm.png"
   return (
     <Layout>
@@ -46,7 +46,7 @@ const bookPage = ({ data }) => {
         isbn={isbn}
         cover={
           "https://ik.imagekit.io/uvapress/" +
-            book.CoverImageFull || defaultImage
+          book.CoverImageFull || defaultImage
         }
         article={false}
         book={true}
@@ -54,44 +54,44 @@ const bookPage = ({ data }) => {
 
       <div className="flex flex-col md:grid md:grid-cols-3 md:gap-10 py-3 ml-6 text-ceci-gray-dark max-w-6xl">
         <div className="col-span-1">
-         
-          { book.CoverImageFull ? 
-          // <img className="pt-12 hidden md:block" src={imglink} alt="cover" /> 
-          <div className="pt-12 hidden md:block">
-            <IKContext urlEndpoint="https://ik.imagekit.io/uvapress/">
-              <IKImage
-                path={imageKitBookPath}
-                transformation={[{ "width": "500", crop: "at_max" }]}
-                srcSet={[
-                  { "width": "400", "crop": "at_max" },
-                  { "width": "500", "crop": "at_max" }
-                ]}
-                loading="eager"
-                lqip={{ active: true }}
-                alt={`Cover for ${book.Title}`}
-              />
-            </IKContext>
-          </div>
-          :
-          <div className="hidden md:block" >
-            <IKContext urlEndpoint={imageKitURL}>
-              <IKImage
-                path="noimg_lg.png"
-                transformation={[{ "width": "300", crop: "at_max" }]}
-                srcSet={[
-                  { "width": "300", "crop": "at_max" },
-                  { "width": "450", "crop": "at_max" }
-                ]}
-                loading="eager"
-                lqip={{ active: true }}
-                alt="Placeholder Cover"
-              />
-            </IKContext>
-          </div>
-          //  <img className="hidden md:block" src={noimg_big} alt="cover" />
+
+          {book.CoverImageFull ?
+            // <img className="pt-12 hidden md:block" src={imglink} alt="cover" /> 
+            <div className="pt-12 hidden md:block">
+              <IKContext urlEndpoint="https://ik.imagekit.io/uvapress/">
+                <IKImage
+                  path={imageKitBookPath}
+                  transformation={[{ "width": "500", crop: "at_max" }]}
+                  srcSet={[
+                    { "width": "400", "crop": "at_max" },
+                    { "width": "500", "crop": "at_max" }
+                  ]}
+                  loading="eager"
+                  lqip={{ active: true }}
+                  alt={`Cover for ${book.Title}`}
+                />
+              </IKContext>
+            </div>
+            :
+            <div className="hidden md:block" >
+              <IKContext urlEndpoint={imageKitURL}>
+                <IKImage
+                  path="noimg_lg.png"
+                  transformation={[{ "width": "300", crop: "at_max" }]}
+                  srcSet={[
+                    { "width": "300", "crop": "at_max" },
+                    { "width": "450", "crop": "at_max" }
+                  ]}
+                  loading="eager"
+                  lqip={{ active: true }}
+                  alt="Placeholder Cover"
+                />
+              </IKContext>
+            </div>
+            //  <img className="hidden md:block" src={noimg_big} alt="cover" />
           }
-           { book.CoverImageFull ? 
-           <div className="md:hidden text-center py-4 w-1/2 mx-auto">
+          {book.CoverImageFull ?
+            <div className="md:hidden text-center py-4 w-1/2 mx-auto">
               <IKContext urlEndpoint="https://ik.imagekit.io/uvapress/">
                 <IKImage
                   path={imageKitBookPath}
@@ -105,48 +105,48 @@ const bookPage = ({ data }) => {
                   alt={`Cover for ${book.Title}`}
                 />
               </IKContext>
-           </div>
-          /*  <img
-            className="md:hidden text-center w-1/2 mx-auto"
-            src={imglink_sm}
-            alt="mobile cover"
-          /> */
-           : 
-           <div className="md:hidden text-center w-1/2 mx-auto ">
-         <IKContext urlEndpoint="https://ik.imagekit.io/">
-               <IKImage
-                 path="noimg_sm.png"
-                 transformation={[{ "width": "200", crop: "at_max" }]}
-                 srcSet={[
-                   { "width": "200", "crop": "at_max" },
-                   { "width": "300", "crop": "at_max" }
-                 ]}
-                 loading="eager"
-                 lqip={{ active: true }}
-                 alt="Placeholder Cover"
-               />
-             </IKContext>
-           </div>
-          /* <img
-            className="md:hidden text-center w-1/2 mx-auto"
-            src={noimg_sm}
-            alt="mobile cover"
-          /> */ 
+            </div>
+            /*  <img
+              className="md:hidden text-center w-1/2 mx-auto"
+              src={imglink_sm}
+              alt="mobile cover"
+            /> */
+            :
+            <div className="md:hidden text-center w-1/2 mx-auto ">
+              <IKContext urlEndpoint="https://ik.imagekit.io/">
+                <IKImage
+                  path="noimg_sm.png"
+                  transformation={[{ "width": "200", crop: "at_max" }]}
+                  srcSet={[
+                    { "width": "200", "crop": "at_max" },
+                    { "width": "300", "crop": "at_max" }
+                  ]}
+                  loading="eager"
+                  lqip={{ active: true }}
+                  alt="Placeholder Cover"
+                />
+              </IKContext>
+            </div>
+            /* <img
+              className="md:hidden text-center w-1/2 mx-auto"
+              src={noimg_sm}
+              alt="mobile cover"
+            /> */
           }
 
         </div>
         <div className="py-6 md:col-span-2 text-ceci-gray-dark">
           <h1 className="pb-3 font-thin font-sans uppercase tracking-booped leading-snug text-2xl text-center md:text-left">{book.Title}</h1>
 
-       {/*    {book.InternalSeriesVolume && (
+          {/*    {book.InternalSeriesVolume && (
             <h6 className="py-3">{book.InternalSeriesVolume}</h6>
           )} */}
 
           {book.Subtitle && (
             <p className="text-center md:text-left italic py-2 md:py-0 font-thin font-sans text-ceci-gray-mid tracking-booped">{book.Subtitle}
-            {book.InternalSeriesVolume && (
-              <span>— {book.InternalSeriesVolume}</span>
-            )}</p>
+              {book.InternalSeriesVolume && (
+                <span>— {book.InternalSeriesVolume}</span>
+              )}</p>
           )}
 
           <p className="py-2 font-display text-center md:text-left">
@@ -218,8 +218,8 @@ const bookPage = ({ data }) => {
               </div>
             )
           })}
-     
-     {!book.isDigitalOA && (
+
+          {!book.isDigitalOA && (
             hasDigitalEdition ? (
               <div>
                 <div className="flex-row inline-flex items-center w-full leading-normal">
@@ -268,84 +268,84 @@ const bookPage = ({ data }) => {
               </>
             )
           )}
-            
-                  {book.Series && (
-                    <div className="py-2 flex flex-col md:flex-row place-items-center">
-                      <span className="xs:py-4 sm:py-4 md:py-0 text-sm text-ceci-gray-mid uppercase pr-5 font-thin tracking-wide">
-                        Series:
-                      </span>
-                      <button className="text-ceci-gray-mid font-thin text-sm hover:bg-white bg-greige rounded-md p-2 tracking-wide">
-                        <Link to={`../../series/${book.Series.seriesID}`} className="tracking-wide uppercase">
-                          {book.Series.name}
-                        </Link>
-                      </button>
-                    </div>
-                  )}
-          
-                  {book.Subjects && (
-                    <div className="flex flex-col md:flex-row place-items-center">
-                      <span className="text-sm xs:py-4 sm:py-4 md:py-0 font-thin uppercase pr-5 text-ceci-gray-mid tracking-wide">
-                        subjects:
-                      </span> 
-                      <ul className="flex flex-col md:flex-row md:flex-wrap gap-4">
-                       {book.Subjects.map( (subj, index) => (
-                       
-                        <li  key={`sub${index}`}><button className="bg-greige hover:bg-white font-thin text-sm rounded-md text-ceci-gray-mid p-2 tracking-wide">
-                        <Link to={`../../subject/${kebabCase(subj.name)}`} className="tracking-wide uppercase">
-                          {subj.name}
-                        </Link>
-                      </button></li>
-                       )
 
-                       )}</ul>
-                      
-                    </div>
-                  )}
-
-                  {book.Imprint && (
-                    <div className="flex flex-col md:flex-row place-items-center">
-                      <span className="text-sm xs:py-4 sm:py-4 md:py-0 font-thin uppercase pr-5 text-ceci-gray-mid tracking-wide">
-                        imprint:
-                      </span> 
-                      <ul className="flex flex-col md:flex-row md:flex-wrap gap-4">
-                       {book.Imprint.map( (imp, index) => (
-                        <li  key={`imp${index}`}><button className="bg-greige hover:bg-white font-thin text-sm rounded-md text-ceci-gray-mid p-2 tracking-wide">
-                        <Link to={`../../imprints/${kebabCase(imp.imprintName)}`} className="tracking-wide uppercase">
-                          {imp.imprintName}
-                        </Link>
-                      </button></li>
-                       )
-
-                       )}</ul>
-                      
-                    </div>
-                  )}
-
-                  
-                 <section>
-          {book.Prizes && (
-            <div className="py-2 flex-row inline-flex items-center w-full leading-normal text-gray-700">
-              <span className="text-sm uppercase pr-5 tracking-wider font-thin text-ceci-gray-mid">
-                awards:
+          {book.Series && (
+            <div className="py-2 flex flex-col md:flex-row place-items-center">
+              <span className="xs:py-4 sm:py-4 md:py-0 text-sm text-ceci-gray-mid uppercase pr-5 font-thin tracking-wide">
+                Series:
               </span>
-              <p className="text-ceci-gray-mid tracking-wide font-thin text-sm p-2">{book.Prizes}</p>
+
+              <Link to={`../../series/${book.Series.seriesID}`} className="text-ceci-gray-mid font-thin text-sm hover:bg-white bg-greige rounded-md p-2 tracking-wide uppercase">
+                {book.Series.name}
+              </Link>
+
             </div>
           )}
-        </section>
-       {/*  <section className="py-4 flex-row inline-flex space-x-6 items-center ">
+
+          {book.Subjects && (
+            <div className="flex flex-col md:flex-row place-items-center">
+              <span className="text-sm xs:py-4 sm:py-4 md:py-0 font-thin uppercase pr-5 text-ceci-gray-mid tracking-wide">
+                subjects:
+              </span>
+              <ul className="flex flex-col md:flex-row md:flex-wrap gap-4">
+                {book.Subjects.map((subj, index) => (
+
+                  <li key={`sub${index}`}>
+                    <Link to={`../../subject/${kebabCase(subj.name)}`} className="bg-greige hover:bg-white font-thin text-sm rounded-md text-ceci-gray-mid p-2 tracking-wide uppercase">
+                      {subj.name}
+                    </Link>
+                  </li>
+                )
+
+                )}</ul>
+
+            </div>
+          )}
+
+          {book.Imprint && (
+            <div className="flex flex-col md:flex-row place-items-center">
+              <span className="text-sm xs:py-4 sm:py-4 md:py-0 font-thin uppercase pr-5 text-ceci-gray-mid tracking-wide">
+                imprint:
+              </span>
+              <ul className="flex flex-col md:flex-row md:flex-wrap gap-4">
+                {book.Imprint.map((imp, index) => (
+                  <li key={`imp${index}`}>
+                    <Link to={`../../imprints/${kebabCase(imp.imprintName)}`} className="bg-greige hover:bg-white font-thin text-sm rounded-md text-ceci-gray-mid p-2 tracking-wide uppercase">
+                      {imp.imprintName}
+                    </Link>
+                  </li>
+                )
+
+                )}</ul>
+
+            </div>
+          )}
+
+
+          <section>
+            {book.Prizes && (
+              <div className="py-2 flex-row inline-flex items-center w-full leading-normal text-gray-700">
+                <span className="text-sm uppercase pr-5 tracking-wider font-thin text-ceci-gray-mid">
+                  awards:
+                </span>
+                <p className="text-ceci-gray-mid tracking-wide font-thin text-sm p-2">{book.Prizes}</p>
+              </div>
+            )}
+          </section>
+          {/*  <section className="py-4 flex-row inline-flex space-x-6 items-center ">
           <div><a href={GoogleB}>
             <img src="/gbs_preview_sticker1.png" alt="view on google books" height="23" width="69" />
           </a></div>
         
         </section> */}
-      </div></div>
-       <div className="container py-2 md:max-w-5xl">
-       
+        </div></div>
+      <div className="container py-2 md:max-w-5xl">
+
 
         <section id="lg_horiz_tabs" className="hidden md:block">
           <BookHorizontalTabs
             summary={book.MainDescription.html}
-            reviews={book.Reviews}ß
+            reviews={book.Reviews} ß
             bio={book.BioNote.html}
             add={resources}
             TOC={book.TableOfContents.html}
@@ -381,33 +381,33 @@ const bookPage = ({ data }) => {
             )}
           </section>
         )} */}
-<section> </section>
-  <section className="pb-4 flex flex-col md:flex-row">
+        <section> </section>
+        <section className="pb-4 flex flex-col md:flex-row">
           <ShareButtons title={title} url={url} />
-          <div className="py-2 md:py-0 md:pl-6"><a target="_blank" rel="noopener noreferrer" href={RightsLink}><img alt="Get Permission" src ="/RightsLink-Button_ReprintsPermissions.png" /></a></div>
+          <div className="py-2 md:py-0 md:pl-6"><a target="_blank" rel="noopener noreferrer" href={RightsLink}><img alt="Get Permission" src="/RightsLink-Button_ReprintsPermissions.png" /></a></div>
           <div className="py-2 md:py-0 md:pl-6"><a href={GoogleB}>
             <img src="/gbs_preview_sticker1.png" alt="view on google books" height="23" width="69" />
           </a></div>
-   </section>
-        
-   {news.edges[0] && (
-        <section className="py-4">
-          <span className="text-sm uppercase  text-ceci-gray-mid tracking-wider">
-            Related News:
-          </span>
-          {news.edges.map (edge => (
-             <article className="flex flex-wrap items-center py-2  ">
+        </section>
+
+        {news.edges[0] && (
+          <section className="py-4">
+            <span className="text-sm uppercase  text-ceci-gray-mid tracking-wider">
+              Related News:
+            </span>
+            {news.edges.map(edge => (
+              <article className="flex flex-wrap items-center py-2  ">
                 <Link to={`../../${edge.node.frontmatter.type}${edge.node.fields.slug}`} className="text-lg font-thin tracking-wide text-ceci-gray-dark"
-                key={edge.node.frontmatter.id}>
+                  key={edge.node.frontmatter.id}>
                   {edge.node.frontmatter.title}
                 </Link>
-          
-          </article>
-          ))}
-        </section>
-      )}
 
- {/* Algolia Related: removed 5/28/2024
+              </article>
+            ))}
+          </section>
+        )}
+
+        {/* Algolia Related: removed 5/28/2024
   <section className="pt-4 border-t-2" id="relatedProducts">
      <span className="text-sm uppercase  text-ceci-gray-mid tracking-wider">
            You May Also Like:
@@ -415,10 +415,10 @@ const bookPage = ({ data }) => {
      <Related productObjectID={book.id}/>
      </section>
  */}
-     
 
-    </div>
-   
+
+      </div>
+
     </Layout>
   )
 }
