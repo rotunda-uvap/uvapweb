@@ -2,7 +2,7 @@
 templateKey: bio
 title: J. Andrew Edwards
 staff_name: Andy Edwards
-name_slug: andy-edwards
+name_slug: andrew-edwards
 job_title: Project Editor
 department:
   - EDP

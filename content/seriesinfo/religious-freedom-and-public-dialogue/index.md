@@ -5,7 +5,7 @@ status: active
 seriestype: Academic Book Series
 editors: "Series Editors: Eric Michael Mazur and Kathleen M. Moore"
 related_staff:
-  - J. Andrew Edwards
+  - Andy Edwards
 seriesID: RFPD
 type: series
 ---
