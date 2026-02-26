@@ -1,10 +1,12 @@
 ---
 templateKey: series
-title: Ecologia
 status: active
-seriestype: Academic Book Series
 editors: "Series Editors: Paul Bogard, Nicolette Cagle, and Jennifer Westerman"
 uvaeditors: Angie Hogan
+title: Ecologia
+seriestype: Academic Book Series
+related_staff:
+  - Angie Hogan
 seriesID: ECO
 type: series
 ---
