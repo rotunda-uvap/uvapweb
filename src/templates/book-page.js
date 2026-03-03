@@ -304,7 +304,7 @@ const bookPage = ({ data }) => {
 
           {book.Imprint && (
             <div className="flex flex-col md:flex-row place-items-center">
-              <span className="text-sm xs:py-4 sm:py-4 md:py-0 font-thin uppercase pr-5 text-ceci-gray-mid tracking-wide">
+              <span className="text-sm xs:py-4 sm:py-4 md:py-4 font-thin uppercase pr-5 text-ceci-gray-mid tracking-wide">
                 imprint:
               </span>
               <ul className="flex flex-col md:flex-row md:flex-wrap gap-4">
