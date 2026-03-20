@@ -1,9 +1,9 @@
 ---
 templateKey: series
 title: Age Studies in Humanities and Science
-status: active
+status: inactive
 seriestype: Academic Book Series
-uvaeditors: Angie Hogan
+uvaeditors: 
 related_staff:
 
 seriesID: ASHS
