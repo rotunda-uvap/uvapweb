@@ -2,12 +2,13 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: The Global Age of Revolutions
-    banner_author: Bryan A. Banks and Cindy Ermus, eds.
-    banner_subtitle: A History from 1650 to Today
-    banner_id: "10176"
-    banner_quote: A whiff of fresh air in an age of pollution by trumped-up news.
-    banner_attr: Robert Darnton, Harvard University
+  - banner_title: The American Revolution on Trial
+    banner_author: T. H. Breen
+    banner_subtitle: A New Nation Confronts the Burden of Independence
+    banner_id: "10198"
+    banner_quote: One of the most interesting stories of the American Revolution
+      appears to have been hiding in plain sight.
+    banner_attr: Walter Woodward, Connecticut State Historian emeritus
 related_book:
   - "5744"
   - "5617"
