@@ -23,5 +23,7 @@ featured_books:
   - "10230"
   - "10075"
   - "10143"
+related_collection:
+  - SCWH 26
 date: 2026-03-25
 ---
