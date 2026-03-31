@@ -2,13 +2,13 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: The American Revolution on Trial
-    banner_author: T. H. Breen
-    banner_subtitle: A New Nation Confronts the Burden of Independence
-    banner_id: "10198"
-    banner_quote: One of the most interesting stories of the American Revolution
-      appears to have been hiding in plain sight.
-    banner_attr: Walter Woodward, Connecticut State Historian emeritus
+  - banner_title: Out of Virginia
+    banner_author: Joseph P. Stinnett
+    banner_subtitle: Black Americans' Search for Freedom in Nineteenth-Century Liberia
+    banner_id: "10187"
+    banner_quote: I'm adding this to my collection of 'things they didn't teach us
+      in school.'
+    banner_attr: Dwayne Yancey, founding editor, Cardinal News
 related_book:
   - "5744"
   - "5617"
