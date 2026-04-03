@@ -2,13 +2,13 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: Out of Virginia
-    banner_author: Joseph P. Stinnett
-    banner_subtitle: Black Americans' Search for Freedom in Nineteenth-Century Liberia
-    banner_id: "10187"
-    banner_quote: I'm adding this to my collection of 'things they didn't teach us
-      in school.'
-    banner_attr: Dwayne Yancey, founding editor, Cardinal News
+  - banner_title: The American Revolution at 250
+    banner_author: Francis D. Cogliano, ed.
+    banner_subtitle: Twenty-Four Historians Reflect on the Founding
+    banner_id: "10183"
+    banner_quote: An all-star lineup of our finest historians of America delivers
+      essays at once profound and personal.
+    banner_attr: Jon Meacham, Pulitzer Prize-winning author
 related_book:
   - "5744"
   - "5617"
