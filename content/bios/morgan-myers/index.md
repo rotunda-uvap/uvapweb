@@ -4,7 +4,7 @@ title: Wren Morgan Myers
 staff_name: Wren Morgan Myers
 profile_photo: ""
 name_slug: wren-morgan-myers
-job_title: Senior Project Editor & Press Diversity, Equity, and Inclusion Officer
+job_title: Senior Project Editor
 department:
   - EDP
 email: wrenmorganmyers@virginia.edu

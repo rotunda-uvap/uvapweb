@@ -4,7 +4,6 @@ type: news
 title: What We Enjoy Reading - Staff Picks
 image: staff_2023.jpeg
 related_book:
-  - "2482"
   - "5876"
   - "5819"
   - "5231"
