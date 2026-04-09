@@ -1,0 +1,45 @@
+---
+templateKey: news
+type: author-corner
+title: Author's Corner with Peter Eisenstadt, author of INTEGRATION AT SECOND BASE
+related_book:
+  - "10200"
+related_series:
+  - CGW
+date: 2026-04-09
+---
+Today, we are happy to bring you our conversation with Peter Eisenstadt, author of *Integration at Second Base: Jackie Robinson and the Quest for Black Citizenship*
+
+*What inspired you to write this book?* 
+
+I have written extensively on African American and urban history, including *Rochdale Village: Robert Moses, 6,000 Families, and New York City’s Great Experiment in Integrated Housing* (2010), a study of integration’s successes and failures in a housing cooperative (where I grew up) in Queens, and [Against the Hounds of Hell: A Life of Howard Thurman](https://www.upress.virginia.edu/title/5390/) (2021, published by UVA), one of the most important African American religious thinkers of the 20th century, a champion of integration. Thurman was mentor to many leaders of the civil rights era, most prominently Martin Luther King Jr.  He was also an influence on Methodist minister Karl E. Downs, who, when he was a minister in Pasadena, California, was mentor to a teenaged and fatherless and somewhat directionless Jackie Robinson. I have long wanted to write a book about integration, but found the subject too sprawling, and with Downs as my entry point, I thought that a book about integration that has Jackie Robinson (and Karl Downs) as its main subjects would give it an inherent biographical structure that the project lacked. The book is about the meaning of integration as viewed through the life of Jackie Robinson. I have also written extensively on the history of New York City and New York State, and the book is also about the constellation of political forces that led Branch Rickey, president of the Brooklyn Dodgers to sign Robinson in 1945. Although I am a lifelong baseball fan, Yankees persuasion, this is not really a baseball book. Only one chapter is devoted to Robinson’s Dodgers years. And I certainly hope that a book about the meaning of integration, with Jackie Robinson on the cover and in the title, will attract a wider readership than a scholarly book simply about the meaning of integration.  
+
+*What did you learn and what are you hoping readers will learn from your book?* 
+
+I want readers to come away with a more complex understanding of the idea of integration. It never was just about entering white institutions or organizations.  It was the demand, as the book’s subtitle intimates, about Black citizenship. Integration meant ending white domination of Black lives. Segregation was less about separation of whites and Blacks, but about white control, drastically limiting Black life choices. Integration enhanced Black life possibilities. It meant the right of non-exclusion from white institutions. It did not mean abandoning Black institutions, and often meant strengthening them. The demand for integration was an expression, an explosion, of Black pride. This is what Jackie Robinson learned from Karl Downs and from his own life experiences.
+
+Robinson was both a symbol of integration and an example of its complexities. As a civil rights activist, he often found the Black liberals too moderate and accommodating, and the Black radicals too uncompromising and quixotic.  His favored way of working towards integration was strengthening Black organizations and businesses. Robinson’s understanding of integration was not premised not on white good will, but on Black militancy. At times he worked with conservative anti-Communists. He also worked with liberal civil rights activists, such as Hubert Humphrey. At times he had more than a passing admiration for the tactics of Black radicals. He sought what he felt was the fastest and most direct path to achieve full citizenship, by any means available. He said on numerous occasions that his least favorite word was “patience,” so often urged on Black Americans.  He was a hero not because he always made the right political choices, but because he was always true to himself. This is all we should or can ask of our heroes.  
+
+*What surprised you the most in the process of writing your book?* 
+
+How my life became entangled with the history of Jackie Robinson. When Jackie Robinson joined the Brooklyn Dodgers in 1947, the question of whether African Americans could stay in big downtown hotels in northern cities like New York, Boston, or Chicago was still unresolved; sometimes Blacks could stay in these hotels, sometimes they couldn’t. 
+
+I had known that when Robinson joined the Dodgers and were playing the Phillies in Philadelphia, he had not been allowed to stay at the Benjamin Franklin Hotel, and the Dodgers sought other accommodations. An interesting story, but it just of the many incidents of racism that Robinson faced during his Dodgers years. 
+
+And then, at the end of 2024, my wife Jane and I moved from South Carolina to Philadelphia, where I finished writing this book.  We moved to the Franklin Residences in Center City.  The building, converted to residential apartments, was, until it closed in the 1980s, the Benjamin Franklin Hotel.  It is, I should state, a lovely place to live, multi-cultural in every way.  But every night I lay me down to sleep in a building that never allowed Jackie Robinson to stay there.  An odd feeling. I don’t think that many residents in the building know this history. It is so easy to forget, or to take for granted the fraught progress we have made towards a more integrated society. It is why we need historians to remind us of where, as a nation, we have been and how far we still have to travel.  
+
+*What’s your favorite anecdote from your book?*
+
+In March 1945 New York State passed what was known as the Ives-Quinn Law, banning discrimination in employment. It was the first state to pass a law of this sort. The law would play an important role in Branch Rickey’s decision that fall to sign Robinson.  The law was very controversial.  New York City Mayor Fiorello La Guardia was in favor of the bill. I love what he said. Opponents of the bill, he said, would declare that they are “in favor of equal protection and opposed to discrimination but. And it is the ‘but’ that hinders necessary reform.” He was correct. Almost every opponent of the bill stated their opposition to discrimination before adding their “but.” Like the editorial page of the *New York Times*. It stated that racial discrimination was “evil” and “un-American” before adding that the new law would lead to “nuisance suits and other racketeering” by civil rights groups, while employers “would feel compelled to employ, or retain in their employment, obviously insufficient workers.”  
+
+When I read this I thought how true this still is, that opponents of equality still piously claim that they are opposed to discrimination before adding their big “but,” and claim that equality would make America less equal. 
+
+If anything, the situation is worse in 2026 than in 1945, when those denying rights to racial minorities and immigrations no longer feel any need to hide their racism with hypocritical professions about believing in equality. Jackie Robinson always knew the fight for full citizenship was like peeling an onion, peeling away with layer, after layer, after layer, while fighting off your tears.   
+
+*What’s next?* 
+
+I’ve wanted to write this book about integration for twenty years. Part of me wants to rest on my laurels, retired, with over twenty books to my name written, co-written, edited, or co-edited.  Part of me thinks that I have said all that I have to say, and it’s time to just relax, and it’s far easier to do in Philadelphia, with all of its urban attractions, than elsewhere. (W.C. Fields was incorrect.)  But that’s my lazy part, lounging supinely in my mental hammock.  But the rest of me knows that I will always be a writer, and a righter, or a would-be righter, and would-be understander, of the world’s many ills.  That is my duty as a historian.  
+
+But I don’t want my voice to be redundant. There’s always the choice between whether to continue to mine the vein you have been working for many years, in my case, urban history, African American history, and New York City history (all of which are part of the Jackie Robinson book.) Or whether now is the time, as the Pythons say, “for something completely different,” a change of subject.  I have contemplated different projects, all of which are mainly are still in the “just thinking about” stage in both categories.  I want to thank the University of Virginia Press for again putting my words into print.   
+
+Jackie Robinson titled his autobiography *I Never Had it Made* because he did not want his fame, his celebrity, his many accomplishments, to numb him to the suffering around him, to the many tasks at hand. Needless to say, I have none of his fame or celebrity, but I am proud of what I have achieved as a person and historian.  But the tasks remain. In so many ways, Jackie Robinson is a good person, and good model, to emulate.
