@@ -2,6 +2,7 @@
 templateKey: news
 type: author-corner
 title: Author's Corner with Peter Eisenstadt, author of INTEGRATION AT SECOND BASE
+image: eisenstadt_picture-768x1024.jpg
 related_book:
   - "10200"
 related_series:
