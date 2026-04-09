@@ -295,6 +295,14 @@ const MegaHeader = () => {
                       </Link>
                     </div>
                     <div>
+                      <Link
+                        to={`/rotunda/#contacts`}
+                        className="uppercase block text-lg text-gray-400 hover:text-gray-300"
+                      >
+                        Rotunda Contacts
+                      </Link>
+                    </div>
+                    <div>
                       <a
                         href={`https://rotunda.upress.virginia.edu/entrance.xqy`}
                         className="uppercase block text-lg text-gray-400 hover:text-gray-300"
@@ -645,6 +653,12 @@ const MegaHeader = () => {
                         About Rotunda
                       </Link>
                     </div>
+                    <Link
+                        to={`/rotunda/#contacts`}
+                        className="uppercase block text-lg text-gray-400 hover:text-gray-300"
+                      >
+                        Rotunda Contacts
+                      </Link>
                     <div>
                       <a
                         href={`https://rotunda.upress.virginia.edu/entrance.xqy`}
