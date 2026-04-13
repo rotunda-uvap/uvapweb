@@ -5,14 +5,14 @@ import SeO from "../components/SeoComponent"
 import ShareButtons from "../components/ShareButtons"
 import ImgGallery from "../components/ImgCarousel"
 export default function FFPage() {
-    const screenshots= ['tge.png', 'great_experiment_user.jpg', 'ind_hall2.jpg', 'ge_gameplay.jpg']
+    const screenshots= ['franklin_vr.png','great_experiment_user.jpg', 'ind_hall2.jpg', 'ge_gameplay.jpg', 'eld_gerry.jpg']
  return (
    
         <Layout> 
            <SeO
         title="The Great Experiment: Redebating the Electoral College in Virtual Reality"
         description="A peer-reviewed educational virtual reality experience set at the 1787 Constitutional Convention."
-        pathname="https://www.upress.virginia.edu/furnace-and-fugue"
+        pathname="https://www.upress.virginia.edu/great-experiment"
         author="Created by Warren R. Hofstra and Mohammad F. Obeid, with Kevin R. Hardwick and J.J. Ruscella"
          cover={
           "https://ik.imagekit.io/uvapress/tge.png"
