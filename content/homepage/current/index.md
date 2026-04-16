@@ -2,13 +2,13 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: The American Revolution at 250
-    banner_author: Francis D. Cogliano, ed.
-    banner_subtitle: Twenty-Four Historians Reflect on the Founding
-    banner_id: "10183"
-    banner_quote: An all-star lineup of our finest historians of America delivers
-      essays at once profound and personal.
-    banner_attr: Jon Meacham, Pulitzer Prize-winning author
+  - banner_title: Integration at Second Base
+    banner_author: Peter Eisenstadt
+    banner_subtitle: Jackie Robinson and the Quest for Black Citizenship
+    banner_id: "10200"
+    banner_quote: Propels sports beyond the field of play and into the realm of
+      socio-politics.
+    banner_attr: Marvin T. Chiles, Old Dominion University
 related_book:
   - "5744"
   - "5617"
