@@ -1,0 +1,39 @@
+---
+templateKey: news
+type: author-corner
+title: Author's Corner with Holly N. S. White, author of CONSTRUCTING AMERICAN
+  CHILDHOOD
+image: headshot.png
+related_book:
+  - "10196"
+date: 2026-04-23
+---
+Today, we are happy to bring you our conversation with Holly N. S. White, author of *Constructing American Childhood: Age-Based Laws and the Illusion of Protection in the Early United States*
+
+*What inspired you to write this book?* 
+
+When I first started researching for my doctoral dissertation, I planned to explore American youth cultures in the late 18th, early 19th centuries. I came across a letter early on in my research regarding a friendship between two girls in their late teens/early twenties. They were both active in the youth culture of early 1800s Williamsburg, Virginia. One of the girls, Jane, explained to her friend, Sarah, that another girl, Maria Moody, was moving to Richmond and Jane thought Maria was going to be really unhappy once she moved because in Richmond, “girls her age \[were] considered as children.” This led me to realize that early Americans knew that age was a significant form of identity and that the significance of one’s chronological age could change within a relatively short distance. Jane had also noted that Maria had “had to real lovers already”—whether this meant a love interest or something more was unclear. What was clear was that Maria was considered an active member of Williamsburg’s youth culture and wouldn’t be in Richmond because of her age. It turned out, Maria was ten years old. At 10, if Maria could be involved in courtship and youth culture, I wondered what else she could do at the time. From there I started to research the legal side of age—what age-based laws existed in the early nineteenth century and where did they come from? How did they decide on these ages? So, it was really a series of rabbit holes and questions I sought the answers to that led to the book’s creation. 
+
+*What did you learn and what are you hoping readers will learn from your book?* 
+
+What I learned from researching and writing this book was that so many of the age-based laws we have today came from the founding era (really earlier than that). I realized we use the same chronological ages and same definitions of ability that early Americans used despite advancements in scientific understandings of human development. I think a lot of people, myself included initially, assume that the age-based laws we have today existed to protect children—and in some ways they do but in many ways they don’t and that’s because the law that we are currently using to protect children began as laws to better control them. In short, I hope readers will investigate what age-based laws exist today in their own communities and reflect (and maybe engage with their community) on whether they need to be updated to align with modern society.
+
+The other thing that I hope readers will learn is that children were/are legitimate historical actors worthy of research and inclusion in historical scholarship. To do so, we first have to reevaluate the labels we’ve given people in the past. Rather than assume a historical actor was an adult because of the circumstances of their life, I hope readers will question what age that person was and consider how that might change our understanding of that moment in time if we recognize they were in fact a child. 
+
+*What surprised you the most in the process of writing your book?* 
+
+First, I will say this book took me 10 years to write. I think what surprised me the most about the process of writing my book was how much having children helped and hurt that process. On one hand, my children caused the lost days- whether that meant being home with them while they were sick or being so exhausted that even when they weren’t around me, I couldn’t focus to write. On the other hand, they provided such a motivation to see this project through. I write about children’s agency and their clear ability to advocate for themselves in the early nineteenth century. Being able to observe just how strong-willed and intentional children could be in real time gave me a different insight into the abilities and motivations of those I wrote about. Also, while I did not see it this way at the time, the fact that there were months where I didn’t touch my writing meant that I came back to it each time with a fresh perspective, one that had enough distance to see things I’d miss the first time and could revise as I went to make the book better in the end. Although I’m so glad to be done with it, I wouldn’t do it differently and I dedicated the book to my children.
+
+*What’s your favorite anecdote from your book?*
+
+My favorite story from the book would be that of an argument that takes place between 15-year-old Juliana Ruffin and her legal guardian, her brother Edmund. She writes him a letter to tell him: “I’m going to get married (to a much older man with children) and I’d like your permission; but if you don’t agree, I’ll claim my rights as ward and choose another guardian that will”. In the end, she does exactly that and what I love about the story is that it shows how legally aware Juliana was of her rights as a ward and she asserted them to get what she wanted, which was the ability to marry underage. What is even more interesting about the case, though, is that Juliana was referencing a legal right—for a ward to choose their own guardian at fourteen-- that had existed in England but not Virginia. The chapter following Juliana’s story goes on to explain how inheritance used to increase the power children held in society regardless of their age but as the nineteenth century progress, American legislators passed more age-based laws to reel in the rights that wards once held to better control all children. 
+
+I also really love the interactions between Reverand Nicholas Collin (who married people at a church in Philadelphia in the late 18th Century) and underage brides and grooms who attempt to marry without their parents’ consent. It shows the age-old struggle between authority figures and young people—Collin is frustrated because he feels like these children are being rebellious and making bad choices for themselves while the underage youth are feeling like their being too controlled and should have a right to make their own choices especially regarding who they will marry. Some are even like the Revolution gave me this right to choose for myself and you’re getting in the way of that. I think that story shows how marriage age laws initially were about control and how some youth resisted those new forms of control because they hadn’t existed so rigidly prior to the Revolution.  
+
+*What’s next?* 
+
+I have a few different projects I’m working on that intersect with one another. First, I’ve launched my Instagram site “The Childish Professor”. It’s a collaborative public history space that shares the history of childhood and children’s history in fun, interactive ways using social media. 
+
+I am also beginning to research and write my next book: REVOLUTIONARY GIRLHOODS. The goal of this book is to use the lens of girlhood to elevate and provide new perspectives, experiences, and, in turn, histories of the American Revolution and early National period. 
+
+Finally, I’ve been working on something I’m calling the “Children of the American Revolution” Project. Using archival research and academic scholarship, the CARP generates updated and better contextualized American history content to be used by K-8 teachers as well as children and families interested in engaging with the 250th anniversary of America. One resource the CARP creates is a free children’s history video/podcast series called “Revolutionary Kids.” Each episode focuses on one child and shares what their life was like during the American Revolution. We currently have two episodes finished and will be releasing them to the public this summer.
