@@ -1,61 +1,62 @@
 import React from "react"
-import { graphql, useStaticQuery, Link} from "gatsby"
-import {FaArrowAltCircleRight} from "react-icons/fa"
+import { graphql, useStaticQuery, Link } from "gatsby"
+import { FaArrowAltCircleRight } from "react-icons/fa"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
-export default function RotundaNews() { 
+export default function RotundaNews() {
   const data = useStaticQuery(graphql`
-  query {
-    image: file(relativePath: { eq: "hollydm.jpg" }) {
-      childImageSharp {
-        gatsbyImageData(
-          placeholder: BLURRED
-          quality: 100
-          width: 250
-          formats: [AUTO, WEBP, AVIF]
-        )
+    query {
+      image: file(relativePath: { eq: "tge_big.jpg" }) {
+        childImageSharp {
+          gatsbyImageData(
+            placeholder: BLURRED
+            quality: 85
+            width: 500
+            formats: [AUTO, WEBP, AVIF]
+          )
+        }
       }
     }
-  }
-    `)
-    const rotimage = getImage(data.image)
+  `)
+  const rotimage = getImage(data.image)
+
   return (
-    
     <section className="md:flex justify-center mx-auto md:space-x-8 md:ml-5">
-    <GatsbyImage className="p-5" image={rotimage} alt="ROTUNDA Digital Imprint" />
-    <article className="flex flex-col flex-1 px-2 py-5 md:p-5">
-      <>
+      <GatsbyImage
+        className="p-5 mx-auto md:self-start md:shrink-0"
+        image={rotimage}
+        alt="ROTUNDA Digital Imprint"
+      />
+      <article className="flex flex-col flex-1 px-2 py-5 md:p-5">
         <div className="flex items-center md:px-10 space-x-3 font-serif uppercase tracking-wider text-sm text-ceci-gray-dark">
           <div className="border-r-2 pr-2 font-serif uppercase tracking-wider self-center">rotunda news</div>
-          <div className="text-ceci-gray-mid text-sm pt-1">2025-12</div>
+          <div className="text-ceci-gray-mid text-sm pt-1">2026-04</div>
         </div>
-  
+
         <div className="md:px-10 flex flex-col">
-          <Link
-            className="font-display tracking-wide uppercase py-2 font-thin"
-            to={`https://www.eastwingmagazine.com/p/holly-shulman-named-2025-gould-award`}
-          >
-            Dr. Holly Schulman wins Award for Career, Work on The Dolley Madison Digital Edition
-          </Link>
-          <div className="font-serif text-ceci-gray-dark text-base leading-relaxed">
-           <p>We're delighted to report that the <Link to={"https://www.upress.virginia.edu/title/2913/"}>UVAP author</Link> and historian repsonsible for Rotunda's first publication, the <Link to={"https://rotunda.upress.virginia.edu/dmde/"}>Dolley Madison Digital Edition</Link>, Dr. Holly Schulman, has won the 2025 GOULD award from the First Ladies Association for Research and Education for her achievements and trailblazing approach to digital scholarship. Dr. Schulman's vision for an authoritative online resource of Dolley's correspondence was instrumental in shaping the first decade of digital scholarly publishing and Rotunda's brand in the field of documentary editing. </p>
-          <p><Link to={"https://www.eastwingmagazine.com/p/holly-shulman-named-2025-gould-award"}>Read more here</Link> from coverage in East Wing Magazine, or request that your institution to acquire the <Link to={"https://rotunda.upress.virginia.edu/dmde/"}>Dolley Madison Digital Edition</Link> which in 2024 celebrated its 20th year online!</p>
-          </div>
-  
-          <div className="font-display uppercase text-sm tracking-widest">
-            <Link
-              className="inline mx-4"
-              to={`/rotunda`}
+          <h5 className="font-display tracking-wide uppercase py-2 font-thin">
+            <a
+              href="https://upress.virginia.edu/great-experiment"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              <FaArrowAltCircleRight className="inline mx-4" />
+              Experience the Constitutional Convention in Virtual Reality
+            </a>
+          </h5>
+          <div className="font-serif text-ceci-gray-dark text-base leading-relaxed">
+            <p>An innovative new resource resulting from half a decade of development, The Great Experiment places users within a virtual Independence Hall in Philadelphia during the Constitutional Convention of 1787. Through a series of progressively immersive and interactive stages, participants join the country’s founders as they discuss and debate how to select the chief executive of the new republic.</p>
+            <p>The Great Experiment is being offered as a virtual reality app to primary and secondary schools and universities, museums and historical sites, researchers and scholars, and any individual wanting to learn more about the Constitution, the Constitutional Convention, and the origins of the Electoral College. State-of-the-art spatial computing and immersive content combine to bring to life some of the most iconic personages in American history, from George Washington and Ben Franklin to James Madison and Gouverneur Morris. Like the Constitutional Convention itself, The Great Experiment is vital, visionary, and something wholly new.</p>
+            <p><a href="https://upress.virginia.edu/great-experiment" target="_blank" rel="noopener noreferrer">Read more here</a> or visit the <a href="https://www.su.edu/scil/projects/the-great-experiment/" target="_blank" rel="noopener noreferrer">project homepage</a> at Shenandoah University</p>
+          </div>
+
+          <div className="font-display uppercase text-sm tracking-widest">
+            <Link className="flex items-center gap-2 mx-4" to="/rotunda">
+              <FaArrowAltCircleRight aria-hidden="true" focusable="false" />
               See all ROTUNDA Collections
             </Link>
           </div>
         </div>
-      </>
-    </article>
-  </section>
-    
-     
+      </article>
+    </section>
   )
 }
