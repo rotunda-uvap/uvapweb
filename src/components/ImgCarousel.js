@@ -21,7 +21,7 @@ const settings = {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 5,
           slidesToScroll: 2,
           infinite: true,
         }
@@ -52,12 +52,11 @@ const ImgGallery = ({filename_array}) => {
       let src = "https://ik.imagekit.io/uvapress/" + name
         return (
           <Link to={src} key={name}>
-          <div className="image-slider-container flex justify-center items-center px-4">
+          <div className="image-slider-container flex justify-center items-center px-2">
             <img
               src={src}
               alt={name}
-              loading="lazy"
-              className="h-48 w-auto object-contain"
+              className="h-64 w-auto object-contain"
             />
           </div>
         </Link>

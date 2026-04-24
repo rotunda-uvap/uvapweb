@@ -159,6 +159,15 @@ padding:1em;
     ))}  </ul>
    </RotSection>
    <RotSection>
+    <Heading3 id="Inno">Innovations</Heading3>
+      <ul className="md:grid md:grid-cols-2  border-b border-ceci-gray-light pb-2">
+          <li className="md:col-span-1 "><Link to={`/great-experiment`} className="hover:bg-gray-100 flex p-2 h-full items-center" >
+        <img className="flex-shrink-0 h-20 w-20  object-cover mr-5" src={"https://ik.imagekit.io/uvapress/rotunda/tge.jpg"} width="50" alt={'The Great Experiment'}/>
+        <span className="text-lg text-ceci-gray-dark font-assistant font-thin uppercase">The Great Experiment: The Constitutional Convention in VR</span>
+   </Link></li>
+   </ul>
+   </RotSection>
+   <RotSection>
       <Heading3>legacy projects</Heading3>
       <Para>These two guides to resources in African American history, dating from the 1990s, were the very first online publications under the imprint of the University of Virginia Press.</Para>
       <ul className="border-b border-ceci-gray-light pb-2">
