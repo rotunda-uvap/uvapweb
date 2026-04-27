@@ -6,7 +6,7 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image"
 export default function RotundaNews() {
   const data = useStaticQuery(graphql`
     query {
-      image: file(relativePath: { eq: "tge_big.jpg" }) {
+      image: file(relativePath: { eq: "tge_hall.jpg" }) {
         childImageSharp {
           gatsbyImageData(
             placeholder: BLURRED
@@ -23,7 +23,7 @@ export default function RotundaNews() {
   return (
     <section className="md:flex justify-center mx-auto md:space-x-8 md:ml-5">
       <GatsbyImage
-        className="p-5 mx-auto md:self-start md:shrink-0"
+        className="px-5 pb-5 pt-5 md:block mx-auto md:self-start md:shrink-0 md:max-w-xs lg:max-w-none"
         image={rotimage}
         alt="ROTUNDA Digital Imprint"
       />
