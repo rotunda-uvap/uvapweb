@@ -2,6 +2,7 @@
 templateKey: news
 type: author-corner
 title: Author's Corner with Hadley Suter, author of BECOMING STENDHAL
+image: barnardsite.jpg.jpeg
 related_book:
   - "10205"
 date: 2026-05-18
