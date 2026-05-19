@@ -35,7 +35,7 @@ That was the seedling of an idea that led me to wonder if the same thing was goi
 
 So I turned to economic historians of the Bourse, to a French scholar named Paul Lagneau-Ymonet in particular, to learn about the regulatory tides of the Restoration and July Monarchy.
 
-The short answer is yes: For much of the time that Stendhal is producing his greatest novels, there is a similar twinning tendency of deregulation. My fourth chapter is called From Specie to Fiat, and it maps the parallel shifts in the realms of the economy and of the self, from fixed entities of inherent value to representational currencies operating within a new system based on speculation and risk. 
+The short answer is yes: For much of the time that Stendhal is producing his greatest novels, there is a similar twinning tendency of deregulation. My fourth chapter is called "From Specie to Fiat," and it maps the parallel shifts in the realms of the economy and of the self, from fixed entities of inherent value to representational currencies operating within a new system based on speculation and risk. 
 
 *What’s your favorite anecdote from your book?*
 
