@@ -8,6 +8,9 @@ bgcolor: bg-white
 txtcolor: text-black
 related_series:
   - CGW
+related_blog:
+  - Author's Corner with James D. Parker, author of VANISHED WATER
+  - Author's Corner with Peter Eisenstadt, author of INTEGRATION AT SECOND BASE
 related_staff:
   - Beth Colón
 featured_books:
