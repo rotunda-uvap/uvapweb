@@ -2,13 +2,13 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: Integration at Second Base
-    banner_author: Peter Eisenstadt
-    banner_subtitle: Jackie Robinson and the Quest for Black Citizenship
-    banner_id: "10200"
-    banner_quote: Propels sports beyond the field of play and into the realm of
-      socio-politics.
-    banner_attr: Marvin T. Chiles, Old Dominion University
+  - banner_title: Out of Virginia
+    banner_author: Joseph P. Stinnett
+    banner_subtitle: Black Americans' Search for Freedom in Nineteenth-Century Liberia
+    banner_id: "10187"
+    banner_quote: I'm adding this to my collection of 'things they didn't teach us
+      in school.'
+    banner_attr: Dwayne Yancey, founding editor, Cardinal News
 related_book:
   - "5744"
   - "5617"
@@ -21,7 +21,7 @@ related_collection:
   - Homepage Featured
 banner_id: "10085"
 featured_books:
-  - "10157"
+  - "10200"
   - "10145"
   - "10208"
   - "10095"
