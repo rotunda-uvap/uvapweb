@@ -22,6 +22,7 @@ featured_books:
   - "10093"
   - "5375"
   - "5103"
+  - "10224"
 related_collection:
   - VAF 26
 date: 2026-05-21
