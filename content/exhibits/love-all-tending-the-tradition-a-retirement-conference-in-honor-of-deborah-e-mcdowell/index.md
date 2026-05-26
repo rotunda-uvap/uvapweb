@@ -3,7 +3,7 @@ templateKey: exhibit
 title: '"Love, All": Tending the Tradition - A Retirement Conference in Honor of
   Deborah E. McDowell 2026'
 exhibit_slug: MCDOWELL26
-coupon: Use code 10MCDOWELL26 for 40% off books below through June 1st!
+coupon: Use code 10MCDOWELL26 for 40% off books below through July 1st!
 bgcolor: bg-white
 txtcolor: text-black
 related_series:
