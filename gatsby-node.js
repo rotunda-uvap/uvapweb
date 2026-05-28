@@ -71,6 +71,7 @@ exports.createSchemaCustomization = ({ actions }) => {
     createRedirect({ fromPath: '/2021/11/01/authors-corner-jonathan-w-white-and-lydia-j-davis-editors-my-work-among-freedmen/', toPath: '/author-corner/authors-corner-with-jonathan-w-white-and-lydia-j-davis-editors-of-my-work-among-the-freedmen/', isPermanent: true, redirectInBrowser: true })
     createRedirect({ fromPath: '/2021/11/09/celebrating-week-keepup-grace-mitchell-tada-and-walter-hood-coeditors-black-landscapes/', toPath: '/news/celebrating-up-week-keepup-with-grace-mitchell-tada-and-walter-hood-coeditors-of-black-landscapes-matter/', isPermanent: true, redirectInBrowser: true })
     createRedirect({ fromPath: '/title/5501/', toPath: '/furnace-and-fugue/', isPermanent: true, redirectInBrowser: true })
+    createRedirect({ fromPath: 'title/10289/', toPath: '/great-experiment/', isPermanent: true, redirectInBrowser: true})
     createRedirect({ fromPath: '/2021/11/22/federal-fixation-new-blog-post-david-j-toscano-author-fighting-political-gridlock/', toPath: '/news/federal-fixation-a-new-blog-post-by-david-j-toscano-author-of-fighting-political-gridlock/', isPermanent: true, redirectInBrowser: true })
     createRedirect({ fromPath: '/content/about-press/', toPath: '/about/', isPermanent: true, redirectInBrowser: true })
     createRedirect({ fromPath: '/content/apsa/', toPath: '/exhibits/apsa/', isPermanent: true, redirectInBrowser: true })

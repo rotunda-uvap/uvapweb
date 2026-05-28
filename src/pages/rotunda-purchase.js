@@ -137,10 +137,10 @@ export default function RotundaPurchasePage() {
                   Adams Papers
                 </a>
               </th>
-              <td className="money text-ceci-gray-dark font-thin">$3,498</td>
-              <td className="money text-ceci-gray-dark font-thin">$2,624</td>
-              <td className="money text-ceci-gray-dark font-thin">$1,819</td>
-              <td className="money text-ceci-gray-dark font-thin">$700</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$3,498</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$2,624</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$1,819</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$700</td>
             </tr>
             <tr id="rncn">
               <th className="title text-ceci-gray-dark tracking-wide font-light">
@@ -149,10 +149,10 @@ export default function RotundaPurchasePage() {
                   Documentary History of the Ratification of the Constitution
                 </a>
               </th>
-              <td className="money text-ceci-gray-dark font-thin">$3,002</td>
-              <td className="money text-ceci-gray-dark font-thin">$2,251</td>
-              <td className="money text-ceci-gray-dark font-thin">$1,561</td>
-              <td className="money text-ceci-gray-dark font-thin">$600</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$3,002</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$2,251</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$1,561</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$600</td>
             </tr>
             <tr>
               <th className="title text-ceci-gray-dark tracking-wide font-light">
@@ -161,10 +161,10 @@ export default function RotundaPurchasePage() {
                   Documentary History of the First Federal Congress
                 </a>
               </th>
-              <td className="money text-ceci-gray-dark font-thin">$4,745</td>
-              <td className="money text-ceci-gray-dark font-thin">$3,558</td>
-              <td className="money text-ceci-gray-dark font-thin">$2,467</td>
-              <td className="money text-ceci-gray-dark font-thin">$940</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$4,745</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$3,558</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$2,467</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$940</td>
             </tr>
             <tr id="arhn">
               <th className="title text-ceci-gray-dark tracking-wide font-light">
@@ -173,10 +173,10 @@ export default function RotundaPurchasePage() {
                   Hamilton Papers
                 </a>
               </th>
-              <td className="money text-ceci-gray-dark font-thin">$4,528</td>
-              <td className="money text-ceci-gray-dark font-thin">$3,396</td>
-              <td className="money text-ceci-gray-dark font-thin">$2,354</td>
-              <td className="money text-ceci-gray-dark font-thin">$906</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$4,528</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$3,396</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$2,354</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$906</td>
             </tr>
             <tr id="jnjy">
               <th className="title text-ceci-gray-dark tracking-wide font-light">
@@ -185,10 +185,10 @@ export default function RotundaPurchasePage() {
                   Jay Papers
                 </a>
               </th>
-              <td className="money text-ceci-gray-dark font-thin">$867</td>
-              <td className="money text-ceci-gray-dark font-thin">$650</td>
-              <td className="money text-ceci-gray-dark font-thin">$450</td>
-              <td className="money text-ceci-gray-dark font-thin">$173</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$867</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$650</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$450</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$173</td>
             </tr>
             <tr id="tsjn">
               <th className="title text-ceci-gray-dark tracking-wide font-light">
@@ -197,10 +197,10 @@ export default function RotundaPurchasePage() {
                   Jefferson Papers
                 </a>
               </th>
-              <td className="money text-ceci-gray-dark font-thin">$6,816</td>
-              <td className="money text-ceci-gray-dark font-thin">$5,112</td>
-              <td className="money text-ceci-gray-dark font-thin">$3,544</td>
-              <td className="money text-ceci-gray-dark font-thin">$1,363</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$6,816</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$5,112</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$3,544</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$1,363</td>
             </tr>
             <tr id="dmde">
               <th className="title text-ceci-gray-dark tracking-wide font-light">
@@ -209,10 +209,10 @@ export default function RotundaPurchasePage() {
                   Dolley Madison Digital Edition
                 </a>
               </th>
-              <td className="money text-ceci-gray-dark font-thin">$895</td>
-              <td className="money text-ceci-gray-dark font-thin">$670</td>
-              <td className="money text-ceci-gray-dark font-thin">$395</td>
-              <td className="money text-ceci-gray-dark font-thin">$295</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$895</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$670</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$395</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$295</td>
             </tr>
             <tr id="jmde">
               <th className="title text-ceci-gray-dark tracking-wide font-light">
@@ -221,10 +221,10 @@ export default function RotundaPurchasePage() {
                   James Madison Papers
                 </a>
               </th>
-              <td className="money text-ceci-gray-dark font-thin">$4,552</td>
-              <td className="money text-ceci-gray-dark font-thin">$3,414</td>
-              <td className="money text-ceci-gray-dark font-thin">$2,367</td>
-              <td className="money text-ceci-gray-dark font-thin">$910</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$4,552</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$3,414</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$2,367</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$910</td>
             </tr>
             <tr id="jnml">
               <th className="title text-ceci-gray-dark tracking-wide font-light">
@@ -233,20 +233,20 @@ export default function RotundaPurchasePage() {
                   John Marshall Papers
                 </a>
               </th>
-              <td className="money text-ceci-gray-dark font-thin">$1,577</td>
-              <td className="money text-ceci-gray-dark font-thin">$1,183</td>
-              <td className="money text-ceci-gray-dark font-thin">$820</td>
-              <td className="money text-ceci-gray-dark font-thin">$315</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$1,577</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$1,183</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$820</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$315</td>
             </tr>
 <tr id="monr">
               <th className="title text-ceci-gray-dark tracking-wide font-light">
                 &emsp;
                 <a href="https://www.upress.virginia.edu/title/MONR">James Monroe Papers</a>
               </th>
-              <td className="money text-ceci-gray-dark font-thin">$1,812</td>
-              <td className="money text-ceci-gray-dark font-thin">$1,359</td>
-              <td className="money text-ceci-gray-dark font-thin">$942</td>
-              <td className="money text-ceci-gray-dark font-thin">$362</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$1,812</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$1,359</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$942</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$362</td>
             </tr>
             <tr id="grms">
               <th className="title text-ceci-gray-dark tracking-wide font-light">
@@ -255,10 +255,10 @@ export default function RotundaPurchasePage() {
                   Gouverneur Morris Diaries
                 </a>
               </th>
-              <td className="money text-ceci-gray-dark font-thin">$679</td>
-              <td className="money text-ceci-gray-dark font-thin">$510</td>
-              <td className="money text-ceci-gray-dark font-thin">$353</td>
-              <td className="money text-ceci-gray-dark font-thin">$136</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$679</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$510</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$353</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$136</td>
             </tr>
             <tr id="pfe">
               <th className="title text-ceci-gray-dark tracking-wide font-light">
@@ -267,10 +267,10 @@ export default function RotundaPurchasePage() {
                   People of the Founding Era
                 </a>
               </th>
-              <td className="money text-ceci-gray-dark font-thin">$3,100</td>
-              <td className="money text-ceci-gray-dark font-thin">$2,325</td>
-              <td className="money text-ceci-gray-dark font-thin">$1,612</td>
-              <td className="money text-ceci-gray-dark font-thin">$620</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$3,100</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$2,325</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$1,612</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$620</td>
             </tr>
             <tr id="pknyw">
               <th className="title text-ceci-gray-dark tracking-wide font-light">
@@ -279,7 +279,7 @@ export default function RotundaPurchasePage() {
                   Pinckney&ndash;Horry Papers
                 </a>
               </th>
-              <td className="money text-ceci-gray-dark font-thin py-2" colspan="6">
+              <td className="money text-ceci-gray-dark font-thin p-2 py-2" colspan="6">
                 <Para><i>
                   Included with purchase of the Pinckney Statesmen Papers
                   (below)
@@ -293,10 +293,10 @@ export default function RotundaPurchasePage() {
                   Pinckney Statesmen Papers
                 </a>
               </th>
-              <td className="money text-ceci-gray-dark font-thin">$1,300</td>
-              <td className="money text-ceci-gray-dark font-thin">$975</td>
-              <td className="money text-ceci-gray-dark font-thin">$676</td>
-              <td className="money text-ceci-gray-dark font-thin">$260</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$1,300</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$975</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$676</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$260</td>
             </tr>
             <tr id="rush">
               <th className="title text-ceci-gray-dark tracking-wide font-light">
@@ -305,10 +305,10 @@ export default function RotundaPurchasePage() {
                   Rush Letters
                 </a>
               </th>
-              <td className="money text-ceci-gray-dark font-thin">$450</td>
-              <td className="money text-ceci-gray-dark font-thin">$338</td>
-              <td className="money text-ceci-gray-dark font-thin">$235</td>
-              <td className="money text-ceci-gray-dark font-thin">$90</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$450</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$338</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$235</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$90</td>
             </tr>
             <tr id="gewn">
               <th className="title text-ceci-gray-dark tracking-wide font-light">
@@ -317,10 +317,23 @@ export default function RotundaPurchasePage() {
                   Washington Papers
                 </a>
               </th>
-              <td className="money text-ceci-gray-dark font-thin">$8,301</td>
-              <td className="money text-ceci-gray-dark font-thin">$6,226</td>
-              <td className="money text-ceci-gray-dark font-thin">$4,316</td>
-              <td className="money text-ceci-gray-dark font-thin">$1,660</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$8,301</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$6,226</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$4,316</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$1,660</td>
+            </tr>
+            <tr id="bnfn">
+              <th className="title text-ceci-gray-dark tracking-wide font-light">
+                &emsp;
+                <a href="https://www.upress.virginia.edu/title/BNFN">
+                  Franklin Papers
+                </a>
+              </th>
+              <td>Forthcoming, contact Jason Coleman at <a href="mailto:jgc3h@virginia.edu">jgc3h@virginia.edu</a></td>
+             {/*  <td className="money text-ceci-gray-dark font-thin p-2">$6,816</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$5,112</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$3,544</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$1,363</td> */}
             </tr>
             <tr>
               <th colspan="7" className="border-t-3 border-gray-400 py-4 font-thin text-ceci-gray-dark tracking-wide">
@@ -334,10 +347,10 @@ export default function RotundaPurchasePage() {
                   Grant Papers
                 </a>
               </th>
-              <td className="money text-ceci-gray-dark font-thin">$4,200</td>
-              <td className="money text-ceci-gray-dark font-thin">$3,150</td>
-              <td className="money text-ceci-gray-dark font-thin">$2,184</td>
-              <td className="money text-ceci-gray-dark font-thin">$840</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$4,200</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$3,150</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$2,184</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$840</td>
             </tr>
             <tr id="jksn">
               <th className="title text-ceci-gray-dark tracking-wide font-light">
@@ -346,10 +359,10 @@ export default function RotundaPurchasePage() {
                   Andrew Jackson Papers
                 </a>
               </th>
-              <td className="money text-ceci-gray-dark font-thin">$1,329</td>
-              <td className="money text-ceci-gray-dark font-thin">$997</td>
-              <td className="money text-ceci-gray-dark font-thin">$691</td>
-              <td className="money text-ceci-gray-dark font-thin">$266</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$1,329</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$997</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$691</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$266</td>
             </tr>
             <tr id="ajhn">
               <th className="title text-ceci-gray-dark tracking-wide font-light">
@@ -358,10 +371,10 @@ export default function RotundaPurchasePage() {
                   Andrew Johnson Papers
                 </a>
               </th>
-              <td className="money text-ceci-gray-dark font-thin">$2,866</td>
-              <td className="money text-ceci-gray-dark font-thin">$2,150</td>
-              <td className="money text-ceci-gray-dark font-thin">$1,490</td>
-              <td className="money text-ceci-gray-dark font-thin">$573</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$2,866</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$2,150</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$1,490</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$573</td>
             </tr>
             <tr id="olms">
               <th className="title text-ceci-gray-dark tracking-wide font-light">
@@ -370,7 +383,7 @@ export default function RotundaPurchasePage() {
                   Frederick Law Olmsted Papers
                 </a>
               </th>
-              <td className="money text-ceci-gray-dark font-thin">Open Access</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">Open Access</td>
             </tr>
             <tr id="polk">
               <th className="title text-ceci-gray-dark tracking-wide font-light">
@@ -379,10 +392,10 @@ export default function RotundaPurchasePage() {
                   Correspondence of James K. Polk
                 </a>
               </th>
-              <td className="money text-ceci-gray-dark font-thin">$2,304</td>
-              <td className="money text-ceci-gray-dark font-thin">$1,728</td>
-              <td className="money text-ceci-gray-dark font-thin">$1,198</td>
-              <td className="money text-ceci-gray-dark font-thin">$460</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$2,304</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$1,728</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$1,198</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$460</td>
             </tr>
             <tr id="webster">
               <th className="title text-ceci-gray-dark tracking-wide font-light">
@@ -391,10 +404,10 @@ export default function RotundaPurchasePage() {
                  Daniel Webster Papers
                 </a>
               </th>
-              <td className="money text-ceci-gray-dark font-thin">$2,460</td>
-              <td className="money text-ceci-gray-dark font-thin">$1,845</td>
-              <td className="money text-ceci-gray-dark font-thin">$1,280</td>
-              <td className="money text-ceci-gray-dark font-thin">$492</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$2,460</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$1,845</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$1,280</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$492</td>
             </tr>
             <tr>
               <th colspan="7" className="border-t-3 border-gray-400 py-4 font-thin text-ceci-gray-dark tracking-wide">
@@ -408,10 +421,10 @@ export default function RotundaPurchasePage() {
                   Presidential Recordings Digital Edition
                 </a>
               </th>
-              <td className="money text-ceci-gray-dark font-thin">$3,697</td>
-              <td className="money text-ceci-gray-dark font-thin">$2,773</td>
-              <td className="money text-ceci-gray-dark font-thin">$1,922</td>
-              <td className="money text-ceci-gray-dark font-thin">$739</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$3,697</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$2,773</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$1,922</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$739</td>
             </tr>
             <tr id="btwn">
               <th className="title text-ceci-gray-dark tracking-wide font-light">
@@ -420,10 +433,10 @@ export default function RotundaPurchasePage() {
                   Booker T. Washington Papers
                 </a>
               </th>
-              <td className="money text-ceci-gray-dark font-thin">$2,146</td>
-              <td className="money text-ceci-gray-dark font-thin">$1,609</td>
-              <td className="money text-ceci-gray-dark font-thin">$1,115</td>
-              <td className="money text-ceci-gray-dark font-thin">$429</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$2,146</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$1,609</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$1,115</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$429</td>
             </tr>
             <tr>
               <th className="title text-ceci-gray-dark tracking-wide font-light">
@@ -432,10 +445,10 @@ export default function RotundaPurchasePage() {
                   Woodrow Wilson Papers
                 </a>
               </th>
-              <td className="money text-ceci-gray-dark font-thin">$10,500</td>
-              <td className="money text-ceci-gray-dark font-thin">$7,875</td>
-              <td className="money text-ceci-gray-dark font-thin">$5,460</td>
-              <td className="money text-ceci-gray-dark font-thin">$2,100</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$10,500</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$7,875</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$5,460</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$2,100</td>
             </tr>
           </tbody>
         </table>
@@ -516,9 +529,9 @@ export default function RotundaPurchasePage() {
                   The Letters of Matthew Arnold
                 </a>
               </th>
-              <td className="money text-ceci-gray-dark font-thin">$840</td>
-              <td className="money text-ceci-gray-dark font-thin">$520</td>
-              <td className="money text-ceci-gray-dark font-thin">$420</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$840</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$520</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$420</td>
             </tr>
             <tr>
               <th className="title text-ceci-gray-dark tracking-wide font-light">
@@ -526,9 +539,9 @@ export default function RotundaPurchasePage() {
                   <em>Clotel,</em> by William Wells Brown
                 </a>
               </th>
-              <td className="money text-ceci-gray-dark font-thin">$545</td>
-              <td className="money text-ceci-gray-dark font-thin">$375</td>
-              <td className="money text-ceci-gray-dark font-thin">$275</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$545</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$375</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$275</td>
             </tr>
             <tr>
               <th className="title text-ceci-gray-dark tracking-wide font-light">
@@ -536,9 +549,9 @@ export default function RotundaPurchasePage() {
                   Emily Dickinson&rsquo;s Correspondences
                 </a>
               </th>
-              <td className="money text-ceci-gray-dark font-thin">$295</td>
-              <td className="money text-ceci-gray-dark font-thin">$221</td>
-              <td className="money text-ceci-gray-dark font-thin">$148</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$295</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$221</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$148</td>
             </tr>
             <tr>
               <th className="title text-ceci-gray-dark tracking-wide font-light">
@@ -546,9 +559,9 @@ export default function RotundaPurchasePage() {
                   <em>The Digital Temple:</em> George Herbert&rsquo;s Verse
                 </a>
               </th>
-              <td className="money text-ceci-gray-dark font-thin">$695</td>
-              <td className="money text-ceci-gray-dark font-thin">$430</td>
-              <td className="money text-ceci-gray-dark font-thin">
+              <td className="money text-ceci-gray-dark font-thin p-2">$695</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$430</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">
                 $347&thinsp;/&thinsp;138<span className="fn">*</span>
               </td>
             </tr>
@@ -558,9 +571,9 @@ export default function RotundaPurchasePage() {
                   Herman Melville&rsquo;s <em>Typee</em>
                 </a>
               </th>
-              <td className="money text-ceci-gray-dark font-thin">$545</td>
-              <td className="money text-ceci-gray-dark font-thin">$375</td>
-              <td className="money text-ceci-gray-dark font-thin">$275</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$545</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$375</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$275</td>
             </tr>
             <tr>
               <th className="title text-ceci-gray-dark tracking-wide font-light">
@@ -568,9 +581,9 @@ export default function RotundaPurchasePage() {
                   The Letters of Christina Rossetti
                 </a>
               </th>
-              <td className="money text-ceci-gray-dark font-thin">$560</td>
-              <td className="money text-ceci-gray-dark font-thin">$325</td>
-              <td className="money text-ceci-gray-dark font-thin">$270</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$560</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$325</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$270</td>
             </tr>
             <tr>
               <th className="title text-ceci-gray-dark tracking-wide font-light">
@@ -578,7 +591,7 @@ export default function RotundaPurchasePage() {
                   Journal of Emily Shore
                 </a>
               </th>
-              <td className="money text-ceci-gray-dark font-thin item-center"><Para className="italic">Open Access</Para></td>
+              <td className="money text-ceci-gray-dark font-thin p-2 item-center"><Para className="italic">Open Access</Para></td>
             </tr>
             <tr>
               <td colspan="4" className="border-t-1 border-black py-2">
