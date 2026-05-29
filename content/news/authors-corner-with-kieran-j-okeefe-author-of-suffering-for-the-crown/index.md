@@ -1,0 +1,32 @@
+---
+templateKey: news
+type: author-corner
+title: Author's Corner with Kieran J. O'Keefe, author of SUFFERING FOR THE CROWN
+image: headshot.jpeg
+related_book:
+  - "10202"
+related_series:
+  - RA
+date: 2026-05-29
+---
+Today, we are happy to bring you our conversation with Kieran J. O'Keefe, author of *Suffering for the Crown: The Hudson Valley Loyalists and the Violence of Revolution*
+
+*What inspired you to write this book?* 
+
+The origins of this book are personal. I grew up in the Hudson Valley and took an interest in the region's past, especially the local Revolutionary War history. I recall visiting nearby museums with my parents and on school field trips. Starting in high school, I worked at a Revolutionary War living history site where I usually dressed up as a Continental Army soldier from Massachusetts. Given how central the Revolutionary War was to the region, I wanted to learn more about how the conflict shaped local communities rather than just focusing on prominent leaders and armies. My M.A. thesis was a case study of Loyalists in one town in the region. I realized that studying the Loyalists offered many rich themes of analysis, including violence, forced migration, race, class, gender, and political ideology. The Loyalists, through their post-war exile, also help us see the Revolutionary War from a broader Atlantic perspective. For my Ph.D., I decided to focus on the Hudson Valley Loyalists and violence specifically. The Hudson Valley was one of the most contested regions of the war, situated between British Canada to the north, British-occupied New York City to the south, and Indigenous peoples allied with the British to the west. As such, it was the scene of significant violence from conventional armies and low-level conflict between Patriots and Loyalists. Since completing my doctorate, this project has become my book. 
+
+*What did you learn and what are you hoping readers will learn from your book?* 
+
+I hope that my book will help readers understand the Revolutionary War better as a civil war. Thinking about the Revolution as a civil war has been emphasized more in recent scholarship, but my book fleshes this framing out to a greater degree, and especially what that civil war meant to Loyalists who endured it. The violence of the war was the definitive part of their lives and the suffering they experienced became central to their identity. I also hope that my book illuminates the long-lasting effects of the Revolutionary War and violence on Loyalists. Historians have often used 1783 as something of a dividing line in studying Loyalists. Some historians (usually Americans) have looked at the Loyalist experience up to 1783 while others (usually Canadians) have started their examination in 1783 and focused more on their lives in exile. My book bridges these sub-fields of Loyalist studies and argues that the two should be understood together because the experiences of a violent civil war fundamentally shaped how Loyalists navigated the post-war world and their lives.
+
+*What surprised you the most in the process of writing your book?* 
+
+My research on Loyalist reintegration after the Revolutionary War, which is the subject of chapter 4, most surprised me. I wondered how successful Loyalist reintegration was, given the violence of the war in the Hudson Valley. What I found was fascinating. More than anything, Loyalist behavior during the war shaped their reintegration process. Revolutionaries clearly distinguished between those Loyalists whom they felt had behaved honorably versus those who had been dishonorable (often by taking up arms). There were popular attacks on the latter group in the immediate aftermath of the war, usually with the aim of driving them out of the country. Over the years, though, those attacks ceased, and bit by bit, Loyalists gained citizenship in the new republic. The state legislature had passed many anti-Loyalist laws during and right after the war, but those were repealed in the late 1780s and early 1790s. Loyalists helped facilitate their successful reintegration by stressing that had not been violent during the war and refashioned their image as well-intentioned, honorable opponents of the Revolution who had made a mistake. This framing countered the caricature Patriots had created of Loyalists which depicted them as innately violent barbarians. In the long run, Loyalists were remarkably successful in rejoining society and gaining citizenship. Unlike many other civil wars, the Revolutionary War saw a relatively speedy and peaceful reconciliation process.  
+
+*What’s your favorite anecdote from your book?*
+
+There are many great anecdotes in the book, but I particularly like the story of William Griffis. He lived in Saratoga when the war began and served a few tours of duty in the local militia. For reasons that are unclear, he deserted to the British in 1782. He remained in New York for a few years following the war but was among the many “Late Loyalists” who moved to Upper Canada in the 1790s, with most of these settlers attracted by the prospect of cheap land. Because of his loyalty during the war, Griffis’ name was placed on the United Empire Loyalists list and his son received land. In the United States, Congress expanded eligibility for pensions in 1832 to include men who served in the militia. So, Griffis crossed back into New York and applied for a pension on account of his revolutionary militia service, which he eventually received. Although there were many cases of people switching sides in the Revolution, perhaps no one I came across highlights the contingency of allegiance better than Griffis.  
+
+*What’s next?* 
+
+I’m taking a break from Loyalists, for the time being at least, and am currently finishing up a biography of General Horatio Gates. I’ve always wanted to write a biography, and I felt that Gates needed a fresh perspective because it’s been many years since anyone has written about him. He is one of the most controversial figures of the Revolutionary War in large part because of his acrimonious relationship with George Washington. Much as with the Loyalist project, my interest in Gates dates to my teenage years when I was a tour guide at a historic home that once served as his headquarters. His life additionally sheds light on a variety of important themes during the broader Revolutionary Era, such as what drove some Britons to support the American Revolution, the influence of the Revolution on slavery, and how the Revolutionary War was won.
