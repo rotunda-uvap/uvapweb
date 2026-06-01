@@ -579,5 +579,22 @@
         "imageFilename":"rush.jpg",
         "access":"sub",
          "uvapID":"10124"
+    },{
+        "Title":"The Papers of Benjamin Franklin Digital Edition",
+        "Subtitle":"",
+        "RotID":"BNFN",
+        "MainCollection":"American History Collection",
+        "SubCollection":"Founding Era Collection",
+        "StartYear": 1706,
+        "EndYear": 1785,
+        "MainDescription":{"html":"<p>Benjamin Franklin looms so large as a global figure in the Enlightenment that his status as a Founding Father is but one of the many roles through which he helped change the course of history. If only for his long list of discoveries and inventions, this self-taught scientist would be an Edison-like legend, but his talents and indefatigable energy took him into the highest levels of civic administration and statesmanship.<\/p>"},
+        "Facts":[],
+        "URL":"http://rotunda.upress.virginia.edu/founders/BNFN.html",
+        "EditorCredit":"Edited by Ellen R. Cohn et al.",
+        "Prizes":null,
+        "Reviews":[],
+        "imageFilename":"BNFN.jpg",
+        "access":"sub",
+         "uvapID":"10212"
     }
 ]
