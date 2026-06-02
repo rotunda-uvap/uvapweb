@@ -1,7 +1,7 @@
 ---
 templateKey: news
 type: news
-title: UVA Press Announces New Series, Dis(place)ment, Migration, and Social Justice
+title: "UVA Press Announces New Series: Dis(place)ment, Migration, and Social Justice"
 related_series: []
 date: 2026-06-02
 ---
