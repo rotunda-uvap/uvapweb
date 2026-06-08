@@ -6,7 +6,8 @@ top_banner:
     banner_author: Brent Tarter
     banner_subtitle: The World of Robert Carter Nicholas
     banner_id: "10201"
-    banner_quote: Readers will have a much fuller appreciation of both the man and the era.
+    banner_quote: Tarter’s deep knowledge and understanding of eighteenth-century
+      Virginia shines throughout this excellent work.
     banner_attr: Phillip Hamilton, Christopher Newport University
 related_book:
   - "5744"
