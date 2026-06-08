@@ -2,13 +2,12 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: Out of Virginia
-    banner_author: Joseph P. Stinnett
-    banner_subtitle: Black Americans' Search for Freedom in Nineteenth-Century Liberia
-    banner_id: "10187"
-    banner_quote: I'm adding this to my collection of 'things they didn't teach us
-      in school.'
-    banner_attr: Dwayne Yancey, founding editor, Cardinal News
+  - banner_title: Virginia's Forgotten Founder
+    banner_author: Brent Tarter
+    banner_subtitle: The World of Robert Carter Nicholas
+    banner_id: "10201"
+    banner_quote: Readers will have a much fuller appreciation of both the man and the era.
+    banner_attr: Phillip Hamilton, Christopher Newport University
 related_book:
   - "5744"
   - "5617"
@@ -22,12 +21,11 @@ related_collection:
 banner_id: "10085"
 featured_books:
   - "10200"
-  - "10145"
+  - "10187"
   - "10208"
   - "10095"
+  - "10088"
   - "10165"
   - "10153"
-  - "10187"
-  - "10075"
-  - "10088"
+  - "10145"
 ---
