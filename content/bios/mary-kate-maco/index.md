@@ -3,7 +3,7 @@ templateKey: bio
 title: Mary Kate Maco
 staff_name: Mary Kate Maco
 name_slug: MK-Maco
-job_title: Publicist
+job_title: Publicity Manager
 department:
   - MKG
 email: faa6je@virginia.edu

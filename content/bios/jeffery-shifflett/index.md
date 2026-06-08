@@ -4,7 +4,7 @@ title: Jeffrey Shifflett
 staff_name: Jeff Shifflett
 profile_photo: ""
 name_slug: jeffrey-shifflett
-job_title: Director of Finance and Operations
+job_title: Assistant Press Director & Chief Operating Officer
 department:
   - OPS
 email: jgs7u​@​virginia.edu
