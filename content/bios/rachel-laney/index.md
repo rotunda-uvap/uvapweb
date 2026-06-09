@@ -4,7 +4,7 @@ title: Rachel Laney
 staff_name: Rachel Laney
 profile_photo: rachel.jpg
 name_slug: rachel-laney
-job_title: Editorial, Design, and Production Coordinator
+job_title: Design and Production Associate
 department:
   - EDP
 email: rlaney@virginia.edu

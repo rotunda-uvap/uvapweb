@@ -4,7 +4,7 @@ title: Wren Morgan Myers
 staff_name: Wren Morgan Myers
 profile_photo: ""
 name_slug: wren-morgan-myers
-job_title: Senior Project Editor
+job_title: Assistant Managing Editor
 department:
   - EDP
 email: wrenmorganmyers@virginia.edu
