@@ -9,6 +9,10 @@ related_series:
   - RA
   - JA
   - ITPSS
+related_blog:
+  - Author's Corner with Steve Sarson, author of THE COURSE OF HUMAN EVENTS
+  - Author's Corner with Shira Lurie, author of THE AMERICAN LIBERTY POLE
+  - Author's Corner with T. H. Breen, author of THE AMERICAN REVOLUTION ON TRIAL
 featured_books:
   - "10183"
   - "10198"
