@@ -57,7 +57,7 @@ const bookPage = ({ data }) => {
 
           {book.CoverImageFull ?
             // <img className="pt-12 hidden md:block" src={imglink} alt="cover" /> 
-            <div className="pt-12 hidden md:block">
+            <div className="pt-8 hidden md:block">
               <IKContext urlEndpoint="https://ik.imagekit.io/uvapress/">
                 <IKImage
                   path={imageKitBookPath}
