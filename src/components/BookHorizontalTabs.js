@@ -29,7 +29,7 @@ const BookHorizontalTabs = ({summary, reviews, bio, TOC, add}) => {
   dangerouslySetInnerHTML={{
     __html: sanitizeHtml(wrapInParagraph(summary))
   }}
-  className="text-ceci-gray-dark dropCap font-serif cms text-lg"
+  className="text-ceci-gray-dark font-serif cms text-lg"
 />
         </TabPanel>
         <TabPanel className="py-3 ">
