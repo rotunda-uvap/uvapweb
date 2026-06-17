@@ -143,15 +143,15 @@ const bookPage = ({ data }) => {
           )} */}
 
           {book.Subtitle && (
-            <p className="text-center md:text-left italic py-2 md:py-0 font-thin font-sans text-ceci-gray-mid tracking-booped">{book.Subtitle}
+            <div className="text-center md:text-left py-1 md:py-0 font-display text-xl">{book.Subtitle}
               {book.InternalSeriesVolume && (
                 <span>— {book.InternalSeriesVolume}</span>
-              )}</p>
+              )}</div>
           )}
 
-          <p className="py-2 font-display text-center md:text-left">
+          <div className="py-2 font-display text-center md:text-left">
             {book.AuthorCredit}
-          </p>
+          </div>
           {book.Bindings.map((binding, index) => {
             // Check if it is an Open Access binding
             const isOABinding =
