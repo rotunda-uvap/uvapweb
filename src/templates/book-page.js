@@ -200,9 +200,7 @@ const bookPage = ({ data }) => {
                         </div>
 
                         <div className="font-display text-sm">
-                          {binding.date && binding.date}{" "}
-                          {binding.pages && <span>{binding.pages} pages</span>}{" "}
-                          {binding.ISBN && <span>ISBN: {binding.ISBN} </span>}
+                          {binding.specs}
                         </div>
 
                         {/* Display 'Go to publication' text for BOTH standard Digital AND Open Access bindings */}
