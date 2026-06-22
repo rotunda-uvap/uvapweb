@@ -52,7 +52,7 @@ const bookPage = ({ data }) => {
         book={true}
       />
 
-      <div className="flex flex-col md:grid md:grid-cols-3 md:gap-10 py-3 ml-6 text-ceci-gray-dark max-w-6xl">
+      <div className="flex flex-col md:grid md:grid-cols-3 md:items-start md:gap-10 py-3 ml-6 text-ceci-gray-dark max-w-6xl">
         <div className="col-span-1">
 
           {book.CoverImageFull ?
@@ -136,7 +136,7 @@ const bookPage = ({ data }) => {
 
         </div>
         <div className="py-6 md:col-span-2 text-ceci-gray-dark">
-          <h1 className="pb-3 font-thin font-sans uppercase tracking-booped leading-snug text-2xl text-center md:text-left">{book.Title}</h1>
+          <h1 className="mt-0 pb-3 font-thin font-sans uppercase tracking-booped leading-snug text-2xl text-center md:text-left">{book.Title}</h1>
 
           {/*    {book.InternalSeriesVolume && (
             <h6 className="py-3">{book.InternalSeriesVolume}</h6>
