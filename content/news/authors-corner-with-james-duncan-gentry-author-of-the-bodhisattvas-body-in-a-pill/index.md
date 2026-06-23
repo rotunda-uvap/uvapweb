@@ -22,7 +22,7 @@ Foremost, I hope this book can give readers a vivid sense of how important pills
 
 *What surprised you the most in the process of writing your book?* 
 
-One of the things that surprised me most about the process of writing this book is the interest expressed by Tibetan friends and colleagues in my research on the maṇi pill. Along similar lines, I was continually surprised by how vital the maṇi pill has been over the centuries in the Tibetan adoption and adaptation of Indian Buddhist tantra, and how seriously invested so many of Tibet’s leading spiritual figures were in promoting the production of maṇi pills or adopting it for their own institutions.  In sum, it has been the intensive interest among Tibetans in the pill and its potential effects, sustained and rejuvenated repeatedly over the past one thousand years, that has been most eye opening.  
+One of the things that surprised me most about the process of writing this book is the interest expressed by Tibetan friends and colleagues in my research on the maṇi pill. Along similar lines, I was continually surprised by how vital the maṇi pill has been over the centuries in the Tibetan adoption and adaptation of Indian Buddhist tantra, and how seriously invested so many of Tibet’s leading spiritual figures were in promoting the production of maṇi pills or adopting it for their own institutions. In sum, it has been the intensive interest among Tibetans in the pill and its potential effects, sustained and rejuvenated repeatedly over the past one thousand years, that has been most eye opening.  
 
 *What’s your favorite anecdote from your book?*
 
