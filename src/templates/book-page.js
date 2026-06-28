@@ -202,13 +202,6 @@ const bookPage = ({ data }) => {
                         <div className="font-display text-sm">
                           {binding.specs}
                         </div>
-
-                        {/* Display 'Go to publication' text for BOTH standard Digital AND Open Access bindings */}
-                        {(isDigitalBinding || isOABinding) && binding.specs && (
-                          <div className="font-display text-sm">
-                            {binding.specs}
-                          </div>
-                        )}
                       </>
                     )
                   })()}
