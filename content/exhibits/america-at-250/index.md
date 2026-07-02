@@ -21,6 +21,7 @@ featured_books:
   - "10016"
   - "10150"
   - "10217"
+  - "10097"
   - "10201"
   - "10219"
 related_collection:
