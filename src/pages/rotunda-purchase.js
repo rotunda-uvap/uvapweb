@@ -142,6 +142,18 @@ export default function RotundaPurchasePage() {
               <td className="money text-ceci-gray-dark font-thin p-2">$1,819</td>
               <td className="money text-ceci-gray-dark font-thin p-2">$700</td>
             </tr>
+            <tr id="bnfn">
+              <th className="title text-ceci-gray-dark tracking-wide font-light">
+                &emsp;
+                <a href="https://www.upress.virginia.edu/title/BNFN">
+                  Franklin Papers
+                </a>
+              </th>
+             <td className="money text-ceci-gray-dark font-thin p-2">$8,228</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$6,171</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$4,114</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$1,645</td> 
+            </tr>
             <tr id="rncn">
               <th className="title text-ceci-gray-dark tracking-wide font-light">
                 &emsp;
@@ -322,19 +334,7 @@ export default function RotundaPurchasePage() {
               <td className="money text-ceci-gray-dark font-thin p-2">$4,316</td>
               <td className="money text-ceci-gray-dark font-thin p-2">$1,660</td>
             </tr>
-            <tr id="bnfn">
-              <th className="title text-ceci-gray-dark tracking-wide font-light">
-                &emsp;
-                <a href="https://www.upress.virginia.edu/title/BNFN">
-                  Franklin Papers
-                </a>
-              </th>
-              <td>Forthcoming, contact Jason Coleman at <a href="mailto:jgc3h@virginia.edu">jgc3h@virginia.edu</a></td>
-             {/*  <td className="money text-ceci-gray-dark font-thin p-2">$6,816</td>
-              <td className="money text-ceci-gray-dark font-thin p-2">$5,112</td>
-              <td className="money text-ceci-gray-dark font-thin p-2">$3,544</td>
-              <td className="money text-ceci-gray-dark font-thin p-2">$1,363</td> */}
-            </tr>
+          
             <tr>
               <th colspan="7" className="border-t-3 border-gray-400 py-4 font-thin text-ceci-gray-dark tracking-wide">
                 Antebellum, Civil War, and Reconstruction
