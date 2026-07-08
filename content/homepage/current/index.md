@@ -2,13 +2,12 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: Virginia's Forgotten Founder
-    banner_author: Brent Tarter
-    banner_subtitle: The World of Robert Carter Nicholas
-    banner_id: "10201"
-    banner_quote: Tarter’s deep knowledge and understanding of eighteenth-century
-      Virginia shines throughout this excellent work.
-    banner_attr: Phillip Hamilton, Christopher Newport University
+  - banner_title: The Bodhisattva’s Body in a Pill
+    banner_author: James Duncan Gentry
+    banner_subtitle: The Material and Spiritual History of a Buddhist Relic Tradition
+    banner_id: "10185"
+    banner_quote: Hands-down the best book on Tibetan Buddhism in a decade.
+    banner_attr: Jacob Dalton, University of California, Berkeley
 related_book:
   - "5744"
   - "5617"
@@ -24,9 +23,12 @@ featured_books:
   - "10200"
   - "10187"
   - "10208"
-  - "10095"
-  - "10088"
-  - "10165"
-  - "10153"
   - "10145"
+  - "10088"
+  - "10204"
+  - "10165"
+  - "10201"
+  - "10153"
+  - "10206"
+  - "10207"
 ---
