@@ -142,18 +142,6 @@ export default function RotundaPurchasePage() {
               <td className="money text-ceci-gray-dark font-thin p-2">$1,819</td>
               <td className="money text-ceci-gray-dark font-thin p-2">$700</td>
             </tr>
-            <tr id="bnfn">
-              <th className="title text-ceci-gray-dark tracking-wide font-light">
-                &emsp;
-                <a href="https://www.upress.virginia.edu/title/BNFN">
-                  Franklin Papers
-                </a>
-              </th>
-             <td className="money text-ceci-gray-dark font-thin p-2">$8,228</td>
-              <td className="money text-ceci-gray-dark font-thin p-2">$6,171</td>
-              <td className="money text-ceci-gray-dark font-thin p-2">$4,114</td>
-              <td className="money text-ceci-gray-dark font-thin p-2">$1,645</td> 
-            </tr>
             <tr id="rncn">
               <th className="title text-ceci-gray-dark tracking-wide font-light">
                 &emsp;
@@ -177,6 +165,18 @@ export default function RotundaPurchasePage() {
               <td className="money text-ceci-gray-dark font-thin p-2">$3,558</td>
               <td className="money text-ceci-gray-dark font-thin p-2">$2,467</td>
               <td className="money text-ceci-gray-dark font-thin p-2">$940</td>
+            </tr>
+            <tr id="bnfn">
+              <th className="title text-ceci-gray-dark tracking-wide font-light">
+                &emsp;
+                <a href="https://www.upress.virginia.edu/title/BNFN">
+                  Franklin Papers
+                </a>
+              </th>
+             <td className="money text-ceci-gray-dark font-thin p-2">$8,228</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$6,171</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$4,114</td>
+              <td className="money text-ceci-gray-dark font-thin p-2">$1,645</td> 
             </tr>
             <tr id="arhn">
               <th className="title text-ceci-gray-dark tracking-wide font-light">
