@@ -1,0 +1,22 @@
+---
+import { getCollection, render } from 'astro:content';
+import kebabCase from 'lodash-es/kebabCase';
+import Interim from '../../components/Interim.astro';
+
+export async function getStaticPaths() {
+  const imprints = await getCollection('imprintsData');
+  return imprints.map((imp) => ({
+    params: { imprint: kebabCase(imp.data.imprintName) },
+    props: { imp },
+  }));
+}
+const { imp } = Astro.props;
+const infoEntries = await getCollection('imprintInfo', (e) => e.data.imprintID === imp.data.imprintID);
+const info = infoEntries[0];
+const Content = info ? (await render(info)).Content : null;
+---
+
+<Interim title={imp.data.imprintName} kicker="Imprint">
+  {info?.data.editors && <p class="text-ceci-gray-mid">{info.data.editors}</p>}
+  {Content && <Content />}
+</Interim>

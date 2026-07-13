@@ -1,0 +1,29 @@
+# Intentionally removed pages (kill-list decisions). Each needs a redirect
+# in the Netlify _redirects file at cutover (Phase 4).
+/collections/AHA 25/
+/collections/ASALH 24/
+/collections/ASECS 25/
+/collections/AWP 25/
+/collections/African American History/
+/collections/African History/
+/collections/Black History/
+/collections/Colonial America/
+/collections/DC History 25/
+/collections/EVENT 2024/
+/collections/Early Republic/
+/collections/European History/
+/collections/HSS 24/
+/collections/Legal History/
+/collections/MLA 24/
+/collections/MLA 25/
+/collections/OAH 24/
+/collections/OAH 25/
+/collections/SAH 24/
+/collections/SCWH 24/
+/collections/SHA 24/
+/collections/SHEAR 24/
+/collections/Twentieth Century/
+/collections/VA FORUM 25/
+/collections/VAF 25/
+/collections/VAF24/
+/collections/VMHC Symposium/

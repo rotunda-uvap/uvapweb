@@ -1,0 +1,12 @@
+---
+import { getCollection } from 'astro:content';
+import PostPage from '../../components/PostPage.astro';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('news', (p) => p.data.type === 'author-corner');
+  return posts.map((post) => ({ params: { slug: post.id }, props: { post } }));
+}
+const { post } = Astro.props;
+---
+
+<PostPage post={post} kicker="Author's Corner" />

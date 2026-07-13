@@ -1,0 +1,30 @@
+---
+// /collection/{MainCollection}/ — rotunda collection pages, URL segment is
+// the raw MainCollection value (spaces included), as gatsby-node created it.
+import { getCollection } from 'astro:content';
+import Interim from '../../components/Interim.astro';
+
+export async function getStaticPaths() {
+  const rotunda = await getCollection('rotundaData');
+  const mains = [...new Set(rotunda.map((r) => r.data.MainCollection).filter(Boolean))];
+  return mains.map((main) => ({ params: { coll: main! }, props: { main: main! } }));
+}
+const { main } = Astro.props;
+const [rotunda, rotundaInfo] = await Promise.all([
+  getCollection('rotundaData', (r) => r.data.MainCollection === main),
+  getCollection('rotundaInfo'),
+]);
+const titleByRid = new Map(rotundaInfo.map((e) => [e.data.rid, e.data.title]));
+---
+
+<Interim title={main} kicker="Rotunda Collection">
+  <ul class="py-4">
+    {rotunda.map((r) => (
+      <li class="border-b border-greige py-2">
+        <a href={`/title/${r.data.RotID}/`} class="hover:text-ceci-gray-mid">
+          {titleByRid.get(r.data.RotID) ?? r.data.RotID}
+        </a>
+      </li>
+    ))}
+  </ul>
+</Interim>

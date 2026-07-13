@@ -1,0 +1,36 @@
+---
+import { getCollection, render } from 'astro:content';
+import Interim from '../../components/Interim.astro';
+
+export async function getStaticPaths() {
+  const series = await getCollection('seriesData');
+  return series.map((s) => ({ params: { sid: s.data.seriesID }, props: { s } }));
+}
+const { s } = Astro.props;
+
+const [seriesInfo, books] = await Promise.all([
+  getCollection('seriesInfo', (e) => e.data.seriesID === s.data.seriesID),
+  getCollection('books'),
+]);
+const info = seriesInfo[0];
+const Content = info ? (await render(info)).Content : null;
+const title = info?.data.title ?? (s.data as any).name ?? s.data.seriesID;
+const seriesBooks = books
+  .filter((b) => b.data.Series?.some((ser: any) => ser.seriesID === s.data.seriesID))
+  .sort((a, b) => a.data.DaysSincePublication - b.data.DaysSincePublication);
+---
+
+<Interim title={title} kicker="Series">
+  {info?.data.editors && <p class="text-ceci-gray-mid">{info.data.editors}</p>}
+  {Content && <Content />}
+  <ul class="py-4">
+    {seriesBooks.map((b) => (
+      <li class="border-b border-greige py-2">
+        <a href={`/title/${b.data.BookID}/`} class="hover:text-ceci-gray-mid">
+          {b.data.Title}
+          {b.data.AuthorCredit && <span class="text-sm text-ceci-gray-mid"> — {b.data.AuthorCredit}</span>}
+        </a>
+      </li>
+    ))}
+  </ul>
+</Interim>

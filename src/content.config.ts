@@ -1,6 +1,12 @@
 import { defineCollection, z } from 'astro:content';
 import { glob, file } from 'astro/loaders';
 
+// URL parity: entry ids must be the raw folder name (Gatsby built slugs from
+// file paths verbatim — including unicode apostrophes and any casing), so we
+// must not let the default id generation slugify anything.
+const rawFolderId = ({ entry }: { entry: string }) =>
+  entry.replace(/\/index\.md$/, '').replace(/\.md$/, '');
+
 // A handful of legacy entries use "" or null where a value is missing;
 // normalize those to undefined so optional() handles them.
 const blankable = <T extends z.ZodTypeAny>(schema: T) =>
@@ -13,7 +19,7 @@ const blankable = <T extends z.ZodTypeAny>(schema: T) =>
 // news, media posts, and author-corner posts share one folder and shape,
 // discriminated by `type`
 const news = defineCollection({
-  loader: glob({ pattern: '**/*.md', base: './content/news' }),
+  loader: glob({ pattern: '**/*.md', base: './content/news', generateId: rawFolderId }),
   schema: z.object({
     templateKey: z.literal('news'),
     type: z.enum(['news', 'author-corner', 'media']),
@@ -32,7 +38,7 @@ const news = defineCollection({
 });
 
 const bios = defineCollection({
-  loader: glob({ pattern: '**/*.md', base: './content/bios' }),
+  loader: glob({ pattern: '**/*.md', base: './content/bios', generateId: rawFolderId }),
   schema: z.object({
     templateKey: z.literal('bio'),
     title: z.string(),

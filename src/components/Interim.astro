@@ -1,0 +1,26 @@
+---
+// Interim page shell for Phase 2 route scaffolding. Every dynamic route uses
+// this until its real template is built — it renders real data plainly so
+// URL parity and data plumbing can be verified end to end.
+import Base from '../layouts/Base.astro';
+
+interface Props {
+  title: string;
+  kicker?: string;
+  description?: string;
+}
+const { title, kicker, description } = Astro.props;
+---
+
+<Base title={title} description={description}>
+  <main class="container mx-auto max-w-3xl px-5 py-12">
+    {kicker && (
+      <p class="uppercase text-sm tracking-wider text-ceci-gray-mid font-display">{kicker}</p>
+    )}
+    <h1 class="font-display text-3xl tracking-wide py-2">{title}</h1>
+    <slot />
+    <p class="mt-16 border-t border-greige pt-4 text-sm text-ceci-gray-mid">
+      Interim template — final design lands in Phase 2.
+    </p>
+  </main>
+</Base>

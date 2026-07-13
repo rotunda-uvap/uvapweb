@@ -1,0 +1,31 @@
+---
+// /collections/{title}/ — the URL segment is the collection title verbatim
+// (spaces included), exactly as gatsby-node created it.
+import { getCollection, render } from 'astro:content';
+import Interim from '../../components/Interim.astro';
+
+export async function getStaticPaths() {
+  const colls = await getCollection('bookCollections');
+  return colls.map((coll) => ({ params: { title: coll.data.title }, props: { coll } }));
+}
+const { coll } = Astro.props;
+const { Content } = await render(coll);
+
+const books = await getCollection('books');
+const byId = new Map(books.map((b) => [b.data.BookID, b]));
+const collBooks = coll.data.related_book.map((id) => byId.get(id)).filter(Boolean);
+---
+
+<Interim title={coll.data.title} kicker="Collection">
+  <Content />
+  <ul class="py-4">
+    {collBooks.map((b) => (
+      <li class="border-b border-greige py-2">
+        <a href={`/title/${b!.data.BookID}/`} class="hover:text-ceci-gray-mid">
+          {b!.data.Title}
+          {b!.data.AuthorCredit && <span class="text-sm text-ceci-gray-mid"> — {b!.data.AuthorCredit}</span>}
+        </a>
+      </li>
+    ))}
+  </ul>
+</Interim>

@@ -1,0 +1,20 @@
+---
+import { getCollection, render } from 'astro:content';
+import Interim from '../../components/Interim.astro';
+
+export async function getStaticPaths() {
+  const bios = await getCollection('bios');
+  return bios.map((bio) => ({ params: { name_slug: bio.data.name_slug }, props: { bio } }));
+}
+const { bio } = Astro.props;
+const { Content } = await render(bio);
+---
+
+<Interim title={bio.data.staff_name} kicker="Staff">
+  <p class="font-display uppercase tracking-wider">{bio.data.job_title}</p>
+  <p class="text-sm text-ceci-gray-mid pb-4">
+    {bio.data.department.join(', ')} · {bio.data.email}
+    {bio.data.phone && ` · ${bio.data.phone}`}
+  </p>
+  <Content />
+</Interim>

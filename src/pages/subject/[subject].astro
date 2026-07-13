@@ -1,0 +1,39 @@
+---
+// /subject/{kebab-case name}/ — subjects are derived from book records,
+// grouped by name then kebab-cased with lodash (same as gatsby-node).
+import { getCollection } from 'astro:content';
+import kebabCase from 'lodash-es/kebabCase';
+import Interim from '../../components/Interim.astro';
+
+export async function getStaticPaths() {
+  const books = await getCollection('books', (b) => !b.data.Rotunda);
+  const bySubject = new Map<string, typeof books>();
+  for (const book of books) {
+    for (const s of book.data.Subjects ?? []) {
+      if (!bySubject.has(s.name)) bySubject.set(s.name, []);
+      bySubject.get(s.name)!.push(book);
+    }
+  }
+  return [...bySubject.entries()].map(([name, subjectBooks]) => ({
+    params: { subject: kebabCase(name) },
+    props: { name, subjectBooks },
+  }));
+}
+const { name, subjectBooks } = Astro.props;
+const sorted = subjectBooks.sort(
+  (a, b) => a.data.DaysSincePublication - b.data.DaysSincePublication
+);
+---
+
+<Interim title={name} kicker="Subject">
+  <ul class="py-4">
+    {sorted.map((b) => (
+      <li class="border-b border-greige py-2">
+        <a href={`/title/${b.data.BookID}/`} class="hover:text-ceci-gray-mid">
+          {b.data.Title}
+          {b.data.AuthorCredit && <span class="text-sm text-ceci-gray-mid"> — {b.data.AuthorCredit}</span>}
+        </a>
+      </li>
+    ))}
+  </ul>
+</Interim>

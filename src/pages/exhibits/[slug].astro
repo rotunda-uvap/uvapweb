@@ -1,0 +1,18 @@
+---
+import { getCollection, render } from 'astro:content';
+import Interim from '../../components/Interim.astro';
+
+export async function getStaticPaths() {
+  const exhibits = await getCollection('exhibits');
+  return exhibits.map((ex) => ({ params: { slug: ex.data.exhibit_slug }, props: { ex } }));
+}
+const { ex } = Astro.props;
+const { Content } = await render(ex);
+---
+
+<Interim title={ex.data.title} kicker="Exhibit">
+  {ex.data.coupon && (
+    <p class="font-display uppercase tracking-wider py-2">Discount code: {ex.data.coupon}</p>
+  )}
+  <Content />
+</Interim>
