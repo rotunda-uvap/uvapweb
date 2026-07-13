@@ -54,7 +54,9 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
     <!-- TODO(phase 4): GTM (GTM-MRC4NJR) goes here at cutover — deliberately
          omitted on staging so analytics don't record test traffic -->
   </head>
-  <body class="bg-white text-ceci-gray-dark font-serif">
+  {/* font-sans (Antonio) is the site-wide default, matching the Gatsby site's
+      Tailwind preflight; paragraphs get Crimson Text via the global p rule */}
+  <body class="bg-white text-ceci-gray-dark font-sans">
     <a
       href="#main-content"
       class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-50 focus:bg-white focus:text-ceci-gray-dark focus:px-4 focus:py-2 focus:font-sans focus:text-lg focus:underline"
