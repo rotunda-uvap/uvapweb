@@ -1,0 +1,66 @@
+---
+// Top-of-homepage featured book banner, ported from HomepageBanner.js.
+// All fields come from the homepage entry's top_banner (Decap-managed).
+interface Props {
+  id: string;
+  book_title?: string;
+  author?: string;
+  quote?: string;
+  subtitle?: string;
+  attr?: string;
+}
+const { id, book_title, author, quote, subtitle, attr } = Astro.props;
+const cover = `https://ik.imagekit.io/uvapress/${id}.jpg`;
+const booklink = `/title/${id}/`;
+---
+
+<section class="max-w-sm md:max-w-4xl mx-auto py-5 text-ceci-gray-dark">
+  <div class="mx-auto grid gap-3 md:gap-4 grid-cols-2 lg:grid-cols-3">
+    <div class="col-span-2 lg:col-span-3 md:w-full py-5 place-content-center">
+      <div class="px-4 md:px-auto text-center pb-5">
+        <img
+          src="/uvap_full.svg"
+          alt="University of Virginia Press"
+          width="400"
+          height="166"
+          class="mx-auto"
+          loading="eager"
+        />
+      </div>
+    </div>
+
+    <div class="col-span-1 flex flex-col justify-center place-content-center pr-2">
+      <a href={booklink} aria-label={`Featured book: ${book_title}`}>
+        <div class="mx-auto font-sans font-light text-sm md:text-lg tracking-wide text-ceci-gray-mid text-right uppercase">
+          {author}
+        </div>
+        <div class="font-display text-xl md:text-3xl font-light text-right tracking-wide uppercase">
+          {book_title}
+        </div>
+        <div class="font-serif py-2 text-xl max-w-sm text-right text-ceci-gray-mid">{subtitle}</div>
+      </a>
+    </div>
+
+    <div class="col-span-1 flex flex-col justify-center items-center">
+      <div class="self-center">
+        <a href={booklink} aria-label={`Featured book: ${book_title}`}>
+          <img
+            src={cover}
+            alt={`Cover of ${book_title}`}
+            width="200"
+            height="375"
+            class="aspect-[67/100] drop-shadow-img"
+            loading="eager"
+          />
+        </a>
+      </div>
+    </div>
+
+    <div class="hidden lg:block lg:col-span-1 py-3 font-serif font-light text-2xl self-center text-left md:pl-2">
+      <a href={booklink} aria-label={`Featured book: ${book_title}`}>
+        &ldquo;&nbsp;{quote}&nbsp;&rdquo;
+        {attr && <div class="self-center text-ceci-gray-mid italic text-lg">- {attr}</div>}
+      </a>
+    </div>
+  </div>
+</section>

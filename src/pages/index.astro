@@ -1,142 +1,90 @@
 ---
-// Phase 1/2 proof-of-life page: exercises every content collection and links
-// into sample pages of each type so the route layer is browsable. Replaced
-// by the real homepage in Phase 2.
+// Homepage, ported from the Gatsby index.js
 import { getCollection } from 'astro:content';
-import kebabCase from 'lodash-es/kebabCase';
+import { Image } from 'astro:assets';
 import Base from '../layouts/Base.astro';
+import SectionHeader from '../components/SectionHeader.astro';
+import HomepageBanner from '../components/HomepageBanner.astro';
+import CoverCarousel from '../components/CoverCarousel.astro';
+import NewsEventEx from '../components/NewsEventEx.astro';
+import RotundaNews from '../components/RotundaNews.astro';
+import FeaturedCollectionSection from '../components/FeaturedCollectionSection.astro';
+import NewsletterForm from '../components/NewsletterForm.astro';
+import voLogo from '../assets/vo.png';
+// NOTE: seasonal catalog cover — swapped by hand each season, same as the
+// Gatsby site. Candidate for a Decap-managed field in the Phase 3 CMS pass.
+import catalogCover from '../assets/fall26.jpg';
 
-const [books, news, bios, bookCollections, exhibits, seriesData, seriesInfo, imprintsData, rotundaData, rotundaInfo] =
-  await Promise.all([
-    getCollection('books'),
-    getCollection('news'),
-    getCollection('bios'),
-    getCollection('bookCollections'),
-    getCollection('exhibits'),
-    getCollection('seriesData'),
-    getCollection('seriesInfo'),
-    getCollection('imprintsData'),
-    getCollection('rotundaData'),
-    getCollection('rotundaInfo'),
-  ]);
-
-const pressBooks = books.filter((b) => !b.data.Rotunda);
-const newest = [...pressBooks].sort((a, b) => a.data.DaysSincePublication - b.data.DaysSincePublication);
-const latestOf = (type: string, n: number) =>
-  news
-    .filter((p) => p.data.type === type)
-    .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
-    .slice(0, n);
-
-const subjectNames = [...new Set(pressBooks.flatMap((b) => (b.data.Subjects ?? []).map((s) => s.name)))].sort();
-const seriesTitleById = new Map(seriesInfo.map((s) => [s.data.seriesID, s.data.title]));
-const rotTitleByRid = new Map(rotundaInfo.map((r) => [r.data.rid, r.data.title]));
-const rotMains = [...new Set(rotundaData.map((r) => r.data.MainCollection).filter(Boolean))];
-
-type LinkItem = { label: string; href: string };
-const sections: { heading: string; count: number; links: LinkItem[] }[] = [
-  {
-    heading: 'Books',
-    count: pressBooks.length,
-    links: newest.slice(0, 5).map((b) => ({ label: b.data.Title, href: `/title/${b.data.BookID}/` })),
-  },
-  {
-    heading: 'Rotunda titles',
-    count: rotundaData.length,
-    links: rotundaData.slice(0, 4).map((r) => ({
-      label: rotTitleByRid.get(r.data.RotID) ?? r.data.RotID,
-      href: `/title/${r.data.RotID}/`,
-    })),
-  },
-  {
-    heading: 'News',
-    count: news.filter((p) => p.data.type === 'news').length,
-    links: latestOf('news', 4).map((p) => ({ label: p.data.title, href: `/news/${p.id}/` })),
-  },
-  {
-    heading: "Author's Corner",
-    count: news.filter((p) => p.data.type === 'author-corner').length,
-    links: latestOf('author-corner', 4).map((p) => ({ label: p.data.title, href: `/author-corner/${p.id}/` })),
-  },
-  {
-    heading: 'Media',
-    count: news.filter((p) => p.data.type === 'media').length,
-    links: latestOf('media', 3).map((p) => ({ label: p.data.title, href: `/media/${p.id}/` })),
-  },
-  {
-    heading: 'Staff',
-    count: bios.length,
-    links: bios.slice(0, 4).map((b) => ({ label: b.data.staff_name, href: `/staff/${b.data.name_slug}/` })),
-  },
-  {
-    heading: 'Collections',
-    count: bookCollections.length,
-    links: bookCollections.slice(0, 4).map((c) => ({
-      label: c.data.title,
-      href: `/collections/${c.data.title}/`,
-    })),
-  },
-  {
-    heading: 'Exhibits',
-    count: exhibits.length,
-    links: exhibits.slice(0, 4).map((e) => ({ label: e.data.title, href: `/exhibits/${e.data.exhibit_slug}/` })),
-  },
-  {
-    heading: 'Subjects',
-    count: subjectNames.length,
-    links: subjectNames.slice(0, 5).map((n) => ({ label: n, href: `/subject/${kebabCase(n)}/` })),
-  },
-  {
-    heading: 'Series',
-    count: seriesData.length,
-    links: seriesData.slice(0, 4).map((s) => ({
-      label: seriesTitleById.get(s.data.seriesID) ?? s.data.seriesID,
-      href: `/series/${s.data.seriesID}/`,
-    })),
-  },
-  {
-    heading: 'Imprints',
-    count: imprintsData.length,
-    links: imprintsData.map((i) => ({
-      label: i.data.imprintName,
-      href: `/imprints/${kebabCase(i.data.imprintName)}/`,
-    })),
-  },
-  {
-    heading: 'Rotunda collections',
-    count: rotMains.length,
-    links: rotMains.map((m) => ({ label: m!, href: `/collection/${m}/` })),
-  },
-];
+const [homepage, books] = await Promise.all([
+  getCollection('homepage', (e) => e.data.title === 'Current'),
+  getCollection('books'),
+]);
+const home = homepage[0].data;
+const top = home.top_banner[0] as Record<string, string>;
+const titleById = new Map(books.map((b) => [b.data.BookID, b.data.Title]));
+const featuredItems = home.featured_books.map((bid) => ({ bid, title: titleById.get(bid) }));
 ---
 
-<Base title="Rebuild scaffold">
-  <main class="container mx-auto max-w-5xl px-5 py-12">
-    <h1 class="font-display text-3xl tracking-wide uppercase">
-      UVA Press — Astro rebuild scaffold
-    </h1>
-    <p class="py-4 text-ceci-gray-mid">
-      Route-layer check: every page type below is built and browsable at its
-      production URL. 2,627 pages total. Final designs land in Phase 2.
-    </p>
+<Base>
+  <HomepageBanner
+    id={top.banner_id}
+    book_title={top.banner_title}
+    author={top.banner_author}
+    quote={top.banner_quote}
+    subtitle={top.banner_subtitle}
+    attr={top.banner_attr}
+  />
 
-    <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3 py-6">
-      {sections.map((s) => (
-        <section>
-          <h2 class="font-display uppercase tracking-wide border-b-2 border-ceci-gray-light pb-1">
-            {s.heading} <span class="text-ceci-gray-mid font-normal">({s.count})</span>
-          </h2>
-          <ul class="py-2">
-            {s.links.map((l) => (
-              <li class="py-1 text-sm leading-snug">
-                <a href={l.href} class="hover:text-ceci-gray-mid underline decoration-ceci-gray-light">
-                  {l.label}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </section>
-      ))}
+  <section class="py-4 border-b-2 border-gray-100">
+    <SectionHeader text="Featured Books" />
+    <div class="py-5">
+      <CoverCarousel items={featuredItems} label="Featured books carousel" />
     </div>
-  </main>
+  </section>
+
+  <section class="py-4 border-b-2 border-gray-100">
+    <NewsEventEx />
+  </section>
+
+  <section class="py-4 border-b-2 border-gray-100 greige w100">
+    <SectionHeader text="ROTUNDA DIGITAL IMPRINT" />
+    <RotundaNews />
+  </section>
+
+  <section class="py-4 border-b-2 border-gray-100">
+    <SectionHeader text="IN THE NEWS" />
+    <FeaturedCollectionSection />
+  </section>
+
+  <section class="py-4 border-b-2 border-gray-100">
+    <SectionHeader text="Open Access" />
+    <div class="flex flex-col items-center">
+      <a href="https://open.upress.virginia.edu/">
+        <Image src={voLogo} width={500} alt="virginia open logo" />
+      </a>
+      <p class="py-4 dropCap text-base text-gray-800">
+        V/O: Virginia Open, a collection of University of Virginia Press titles made freely
+        available. On this imprint, you will find both open-access monographs from The University of
+        Virginia Press, readable in your browser or via download, and links to open-access websites
+        published under our Rotunda imprint or in collaboration with partner institutions.
+      </p>
+    </div>
+  </section>
+
+  <section class="py-4 border-b-2 border-gray-100">
+    <SectionHeader text="Current Catalog" />
+    <div class="flex flex-col items-center">
+      <div class="md:pb-0 pb-4">
+        <a href="/catalog/">
+          <Image src={catalogCover} width={300} alt="current catalog cover" />
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <div class="py-4 greige">
+    <div class="container mx-auto px-6">
+      <NewsletterForm />
+    </div>
+  </div>
 </Base>

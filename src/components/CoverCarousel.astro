@@ -1,0 +1,67 @@
+---
+// Horizontal strip of book covers with prev/next arrows. Replaces the two
+// react-slick carousels (ExCarousel, RelCarousel) with CSS scroll-snap and
+// a few lines of script; covers come from ImageKit as before.
+interface Item {
+  bid: string;
+  title?: string;
+}
+interface Props {
+  items: Item[];
+  label?: string;
+}
+const { items, label = 'Book carousel' } = Astro.props;
+const ik = (bid: string) => `https://ik.imagekit.io/uvapress/${bid}.jpg?tr=w-150,h-224,c-at_max`;
+---
+
+<div role="region" aria-label={label} aria-roledescription="carousel" class="cover-carousel relative">
+  <button type="button" class="carousel-arrow left-0" data-dir="-1" aria-label="Previous books">‹</button>
+  <ul class="strip hide-scroll-bar flex flex-row overflow-x-auto gap-2 px-10">
+    {items.map((item) => (
+      <li class="shrink-0 snap-start flex items-center px-10 py-2">
+        <a href={`/title/${item.bid}/`} aria-label={item.title ? `Featured book: ${item.title}` : `Featured book ${item.bid}`}>
+          <img
+            src={ik(item.bid)}
+            width="150"
+            height="224"
+            alt={item.title ? `cover of ${item.title}` : `cover of ${item.bid}`}
+            loading="lazy"
+          />
+        </a>
+      </li>
+    ))}
+  </ul>
+  <button type="button" class="carousel-arrow right-0" data-dir="1" aria-label="Next books">›</button>
+</div>
+
+<style>
+  .strip {
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+  }
+  .carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    font-size: 2.5rem;
+    line-height: 1;
+    color: #727272;
+    padding: 0.25rem 0.5rem;
+    background: transparent;
+  }
+  .carousel-arrow:hover {
+    color: #414042;
+  }
+</style>
+
+<script>
+  for (const root of document.querySelectorAll('.cover-carousel')) {
+    const strip = root.querySelector('.strip')!;
+    for (const btn of root.querySelectorAll<HTMLButtonElement>('.carousel-arrow')) {
+      btn.addEventListener('click', () => {
+        strip.scrollBy({ left: Number(btn.dataset.dir) * strip.clientWidth * 0.8, behavior: 'smooth' });
+      });
+    }
+  }
+</script>

@@ -1,0 +1,35 @@
+---
+// "In the News" featured collection, ported from FeaturedCollection.js:
+// the featured-collection entry's body text + a cover carousel per
+// referenced collection.
+import { getCollection } from 'astro:content';
+import CoverCarousel from './CoverCarousel.astro';
+
+const [featured, bookCollections, books] = await Promise.all([
+  getCollection('featuredCollection'),
+  getCollection('bookCollections'),
+  getCollection('books'),
+]);
+const entry = featured[0];
+const bodyHtml = entry?.rendered?.html ?? '';
+const titleById = new Map(books.map((b) => [b.data.BookID, b.data.Title]));
+
+const carousels = (entry?.data.related_collection ?? [])
+  .map((collTitle) => bookCollections.find((c) => c.data.title === collTitle))
+  .filter(Boolean)
+  .map((coll) => ({
+    title: coll!.data.title,
+    items: coll!.data.related_book.map((bid) => ({ bid, title: titleById.get(bid) })),
+  }));
+---
+
+<div class="flex flex-col mx-auto">
+  <div class="flex flex-col">
+    <div class="font-serif text-base text-center" set:html={bodyHtml} />
+  </div>
+  <div class="py-2">
+    {carousels.map((c) => (
+      <CoverCarousel items={c.items} label={`${c.title} books carousel`} />
+    ))}
+  </div>
+</div>

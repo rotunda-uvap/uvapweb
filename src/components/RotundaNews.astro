@@ -1,0 +1,63 @@
+---
+// Rotunda Digital Imprint section, ported from RotundaNews.js.
+// NOTE: the blurb is hardcoded here just as it was in the Gatsby component —
+// candidate for a Decap-managed field in the Phase 3 CMS pass.
+import { Image } from 'astro:assets';
+import { faCircleArrowRight } from '@fortawesome/free-solid-svg-icons';
+import Icon from './Icon.astro';
+import tgeHall from '../assets/tge_hall.jpg';
+---
+
+<section class="md:flex justify-center mx-auto md:space-x-8 md:ml-5">
+  <Image
+    class="px-5 pb-5 pt-5 md:block mx-auto md:self-start md:shrink-0 md:max-w-xs lg:max-w-none"
+    src={tgeHall}
+    width={500}
+    alt="ROTUNDA Digital Imprint"
+  />
+  <article class="flex flex-col flex-1 px-2 py-5 md:p-5">
+    <div class="flex items-center md:px-10 space-x-3 font-serif uppercase tracking-wider text-sm text-ceci-gray-dark">
+      <div class="border-r-2 pr-2 font-serif uppercase tracking-wider self-center">rotunda news</div>
+      <div class="text-ceci-gray-mid text-sm pt-1">2026-04</div>
+    </div>
+
+    <div class="md:px-10 flex flex-col">
+      <h5 class="font-display tracking-wide uppercase py-2 font-thin">
+        <a href="/great-experiment/">Experience the Constitutional Convention in Virtual Reality</a>
+      </h5>
+      <div class="font-serif text-ceci-gray-dark text-base leading-relaxed">
+        <p>
+          An innovative new resource resulting from half a decade of development, The Great
+          Experiment places users within a virtual Independence Hall in Philadelphia during the
+          Constitutional Convention of 1787. Through a series of progressively immersive and
+          interactive stages, participants join the country's founders as they discuss and debate
+          how to select the chief executive of the new republic.
+        </p>
+        <p>
+          The Great Experiment is being offered as a virtual reality app to primary and secondary
+          schools and universities, museums and historical sites, researchers and scholars, and any
+          individual wanting to learn more about the Constitution, the Constitutional Convention,
+          and the origins of the Electoral College. State-of-the-art spatial computing and immersive
+          content combine to bring to life some of the most iconic personages in American history,
+          from George Washington and Ben Franklin to James Madison and Gouverneur Morris. Like the
+          Constitutional Convention itself, The Great Experiment is vital, visionary, and something
+          wholly new.
+        </p>
+        <p>
+          <a href="/great-experiment/">Read more here</a> or visit the
+          <a href="https://www.su.edu/scil/projects/the-great-experiment/" target="_blank" rel="noopener noreferrer">
+            project homepage
+          </a>
+          at Shenandoah University
+        </p>
+      </div>
+
+      <div class="font-display uppercase text-sm tracking-widest">
+        <a class="flex items-center gap-2 mx-4" href="/rotunda/">
+          <Icon icon={faCircleArrowRight} />
+          See all ROTUNDA Collections
+        </a>
+      </div>
+    </div>
+  </article>
+</section>
