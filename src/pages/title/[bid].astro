@@ -2,6 +2,7 @@
 // /title/{BookID}/ (press books) and /title/{RotID}/ (rotunda titles) —
 // one URL namespace, two shapes, exactly as gatsby-node created them.
 import { getCollection, render } from 'astro:content';
+import BookPage from '../../components/BookPage.astro';
 import Interim from '../../components/Interim.astro';
 
 export async function getStaticPaths() {
@@ -24,27 +25,14 @@ export async function getStaticPaths() {
 }
 
 const { kind, book, rot, info } = Astro.props;
-const title = kind === 'book' ? book!.data.Title : (info?.data.title ?? rot!.data.RotID);
+const rotTitle = info?.data.title ?? rot?.data.RotID;
 const Content = info ? (await render(info)).Content : null;
-const description = (book?.data as any)?.MainDescription?.html as string | undefined;
 ---
 
 {kind === 'book' ? (
-  <Interim title={title} kicker="Book">
-    {book!.data.Subtitle && <h2 class="italic text-ceci-gray-mid">{book!.data.Subtitle}</h2>}
-    {book!.data.AuthorCredit && (
-      <p class="font-display uppercase tracking-wider py-2">{book!.data.AuthorCredit}</p>
-    )}
-    {description && <div class="py-4" set:html={description} />}
-    {book!.data.Series?.length ? (
-      <p class="text-sm text-ceci-gray-mid">Series: {book!.data.Series.map((s) => s.name).join(', ')}</p>
-    ) : null}
-    {book!.data.Subjects?.length ? (
-      <p class="text-sm text-ceci-gray-mid">Subjects: {book!.data.Subjects.map((s) => s.name).join(', ')}</p>
-    ) : null}
-  </Interim>
+  <BookPage book={book!} />
 ) : (
-  <Interim title={title} kicker="Rotunda">
+  <Interim title={rotTitle!} kicker="Rotunda">
     {Content && <div class="py-4"><Content /></div>}
     {rot!.data.MainCollection && (
       <p class="text-sm text-ceci-gray-mid">Collection: {rot!.data.MainCollection}</p>

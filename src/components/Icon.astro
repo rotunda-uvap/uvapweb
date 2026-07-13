@@ -1,0 +1,27 @@
+---
+// Build-time inline SVG from Font Awesome icon definitions (no client JS,
+// replaces react-icons). Pass any icon from @fortawesome/free-*-svg-icons.
+import type { IconDefinition } from '@fortawesome/free-solid-svg-icons';
+
+interface Props {
+  icon: IconDefinition;
+  class?: string;
+  label?: string;
+}
+const { icon, class: className, label } = Astro.props;
+const [width, height, , , path] = icon.icon;
+const paths = Array.isArray(path) ? path : [path];
+---
+
+<svg
+  viewBox={`0 0 ${width} ${height}`}
+  fill="currentColor"
+  width="1em"
+  height="1em"
+  class={className}
+  aria-hidden={label ? undefined : 'true'}
+  aria-label={label}
+  role={label ? 'img' : undefined}
+>
+  {paths.map((d) => <path d={d} />)}
+</svg>

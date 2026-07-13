@@ -1,0 +1,119 @@
+---
+// Summary / Reviews / Bio / TOC / Resources tabs. Design ported from
+// BookHorizontalTabs.js; react-tabs replaced with ~20 lines of vanilla JS.
+interface Review {
+  attribution?: string;
+  html?: string;
+}
+interface ResourceLink {
+  link: string;
+  name: string;
+}
+interface Props {
+  summary: string;
+  reviews?: Review[];
+  bio?: string;
+  toc?: string;
+  resources?: ResourceLink[];
+}
+const { summary, reviews, bio, toc, resources } = Astro.props;
+
+const wrapInParagraph = (html: string) => (/<p[\s>]/.test(html) ? html : `<p>${html}</p>`);
+
+const tabClass =
+  'uppercase py-2 font-thin tracking-widest px-3 sm:px-6 text-sm md:text-lg border-b-4 border-white hover:border-black aria-selected:border-black';
+
+const tabs = [
+  { key: 'summary', label: 'Summary', show: true },
+  { key: 'reviews', label: 'Reviews', show: true },
+  { key: 'bio', label: 'Author Bio(s)', show: true },
+  { key: 'toc', label: 'Table of Contents', show: Boolean(toc) },
+  { key: 'resources', label: 'Additional Resources', show: Boolean(resources?.length) },
+].filter((t) => t.show);
+---
+
+<div class="flex flex-col justify-center md:max-w-5xl" data-tabs>
+  <div role="tablist" class="flex flex-col md:flex-row self-center text-ceci-gray-dark">
+    {tabs.map((t, i) => (
+      <button
+        role="tab"
+        id={`tab-${t.key}`}
+        aria-controls={`panel-${t.key}`}
+        aria-selected={i === 0 ? 'true' : 'false'}
+        class={tabClass}
+      >
+        {t.label}
+      </button>
+    ))}
+  </div>
+
+  <div role="tabpanel" id="panel-summary" aria-labelledby="tab-summary" class="py-3">
+    <div class="text-ceci-gray-dark font-serif cms text-lg" set:html={wrapInParagraph(summary)} />
+  </div>
+
+  <div role="tabpanel" id="panel-reviews" aria-labelledby="tab-reviews" class="py-3" hidden>
+    {reviews?.length ? (
+      <div class="py-3">
+        {reviews.map((review) => (
+          <>
+            <blockquote
+              class="pt-3 cms text-lg text-ceci-gray-dark dropCap font-serif"
+              set:html={review.html ?? ''}
+            />
+            <cite class="block pl-10 pb-5 font-display text-sm text-ceci-gray-mid not-italic">
+              - {review.attribution}
+            </cite>
+            <hr />
+          </>
+        ))}
+      </div>
+    ) : (
+      <div class="py-2"><p>No review available</p></div>
+    )}
+  </div>
+
+  <div role="tabpanel" id="panel-bio" aria-labelledby="tab-bio" class="py-3" hidden>
+    {bio && bio !== 'EMPTY: BioNote' ? (
+      <div class="cms dropCap font-serif text-lg text-ceci-gray-dark" set:html={bio} />
+    ) : (
+      <div><p>No biographical information available</p></div>
+    )}
+  </div>
+
+  {toc && (
+    <div role="tabpanel" id="panel-toc" aria-labelledby="tab-toc" class="py-3" hidden>
+      <div class="cms text-lg font-serif tracking-wide text-ceci-gray-dark" set:html={toc} />
+    </div>
+  )}
+
+  {resources?.length ? (
+    <div role="tabpanel" id="panel-resources" aria-labelledby="tab-resources" class="py-3" hidden>
+      {resources.map((r) => (
+        <div class="p-2">
+          <a
+            href={r.link}
+            target="_blank"
+            rel="noreferrer"
+            class="text-ceci-gray-dark tracking-wide font-thin pl-5"
+          >
+            {r.name}
+          </a>
+        </div>
+      ))}
+      <hr />
+    </div>
+  ) : null}
+</div>
+
+<script>
+  for (const root of document.querySelectorAll('[data-tabs]')) {
+    const tabs = root.querySelectorAll<HTMLButtonElement>('[role="tab"]');
+    const panels = root.querySelectorAll<HTMLElement>('[role="tabpanel"]');
+    for (const tab of tabs) {
+      tab.addEventListener('click', () => {
+        for (const t of tabs) t.setAttribute('aria-selected', String(t === tab));
+        for (const p of panels) p.hidden = p.id !== tab.getAttribute('aria-controls');
+      });
+    }
+  }
+</script>

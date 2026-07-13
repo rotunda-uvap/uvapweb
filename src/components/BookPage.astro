@@ -1,0 +1,303 @@
+---
+// Book page, design ported from the Gatsby book-page.js template.
+// Covers come from ImageKit (unchanged); react-share and react-tabs replaced
+// with plain links and BookTabs.
+import { getCollection } from 'astro:content';
+import type { CollectionEntry } from 'astro:content';
+import kebabCase from 'lodash-es/kebabCase';
+import { faFacebookF, faXTwitter, faRedditAlien } from '@fortawesome/free-brands-svg-icons';
+import Base from '../layouts/Base.astro';
+import Icon from './Icon.astro';
+import BookTabs from './BookTabs.astro';
+
+interface Props {
+  book: CollectionEntry<'books'>;
+}
+const { book } = Astro.props;
+const b = book.data as any;
+
+const isbn: string | undefined = b.Bindings?.[0]?.ISBN;
+const hasDigitalEdition =
+  !b.isDigitalOA && Array.isArray(b.Bindings)
+    ? b.Bindings.some((x: any) => x && x.type === 'Online Digital Edition')
+    : false;
+const googleBooks = `https://books.google.com/books?vid=${isbn}`;
+const rightsLink = `https://marketplace.copyright.com/rs-ui-web/mp/search/all/${isbn}`;
+const url = `https://www.upress.virginia.edu/title/${b.BookID}/`;
+
+const ik = 'https://ik.imagekit.io/uvapress/';
+const coverPath = b.CoverImageFull ? `${b.BookID}.jpg` : null;
+const ikSrc = (path: string, w: number) => `${ik}${path}?tr=w-${w},c-at_max`;
+
+// resources markdown entry attached to this book; related news posts
+const [resourceEntries, allNews] = await Promise.all([
+  getCollection('resources', (r) => r.data.attached_book === b.BookID),
+  getCollection('news'),
+]);
+const resources = resourceEntries[0]?.data.attached_links as
+  | { link: string; name: string }[]
+  | undefined;
+const relatedNews = allNews.filter((n) => n.data.related_book?.includes(b.BookID));
+
+const description = (b.MainDescription?.html ?? '').replace(/<[^>]*>/g, '').substring(0, 150);
+
+const shares = [
+  {
+    icon: faFacebookF,
+    bg: '#3b5998',
+    label: 'Share on Facebook',
+    href: `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`,
+  },
+  {
+    icon: faXTwitter,
+    bg: '#000000',
+    label: 'Share on X (formerly Twitter)',
+    href: `https://twitter.com/intent/tweet?url=${encodeURIComponent(url)}&text=${encodeURIComponent(b.Title)}`,
+  },
+  {
+    icon: faRedditAlien,
+    bg: '#ff4500',
+    label: 'Share on Reddit',
+    href: `https://www.reddit.com/submit?url=${encodeURIComponent(url)}&title=${encodeURIComponent(b.Title)}`,
+  },
+];
+
+const chipClass =
+  'bg-greige hover:bg-white font-thin text-sm rounded-md text-ceci-gray-mid p-2 tracking-wide uppercase';
+const linkIconPath =
+  'M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1';
+const cartIconPath =
+  'M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z';
+---
+
+<Base title={b.Title} description={description} image={coverPath ? ikSrc(coverPath, 500) : undefined}>
+  <div class="flex flex-col md:grid md:grid-cols-3 md:items-start md:gap-10 py-3 ml-6 text-ceci-gray-dark max-w-6xl">
+    <div class="col-span-1">
+      {/* desktop cover */}
+      <div class="pt-8 hidden md:block">
+        {coverPath ? (
+          <img
+            src={ikSrc(coverPath, 500)}
+            srcset={`${ikSrc(coverPath, 400)} 400w, ${ikSrc(coverPath, 500)} 500w`}
+            alt={`Cover for ${b.Title}`}
+            loading="eager"
+          />
+        ) : (
+          <img src={ikSrc('noimg_lg.png', 300)} alt="Placeholder Cover" loading="eager" />
+        )}
+      </div>
+      {/* mobile cover */}
+      <div class="md:hidden text-center py-4 w-1/2 mx-auto">
+        {coverPath ? (
+          <img
+            src={ikSrc(coverPath, 300)}
+            srcset={`${ikSrc(coverPath, 300)} 300w, ${ikSrc(coverPath, 400)} 400w`}
+            alt={`Cover for ${b.Title}`}
+            loading="eager"
+          />
+        ) : (
+          <img src={ikSrc('noimg_sm.png', 200)} alt="Placeholder Cover" loading="eager" />
+        )}
+      </div>
+    </div>
+
+    <div class="py-6 md:col-span-2 text-ceci-gray-dark">
+      <h1 class="mt-0 pb-3 font-thin font-sans uppercase tracking-booped leading-snug text-2xl text-center md:text-left">
+        {b.Title}
+      </h1>
+
+      {b.Subtitle && (
+        <div class="text-center md:text-left py-1 md:py-0 font-display text-xl">
+          {b.Subtitle}
+          {b.InternalSeriesVolume && <span>— {b.InternalSeriesVolume}</span>}
+        </div>
+      )}
+
+      <div class="py-2 font-display text-center md:text-left">{b.AuthorCredit}</div>
+
+      {(b.Bindings ?? []).map((binding: any) => {
+        const isOABinding =
+          (typeof binding.type === 'string' && binding.type.toLowerCase().includes('open access')) ||
+          b.isDigitalOA;
+        const isOnlineDigital = binding.type === 'Online Digital Edition';
+        const showLinkIcon = isOABinding || isOnlineDigital;
+        return (
+          <div class="flex-row inline-flex items-center w-full leading-normal">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-ceci-gray-mid" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d={showLinkIcon ? linkIconPath : cartIconPath} />
+            </svg>
+            <a href={binding.buylink} class="block group p-2 ml-4 border-b">
+              <div class="font-thin uppercase text-ceci-gray-dark buyme">
+                <span class="tracking-wide">{binding.type}{' '}</span>
+                {binding.price != null && binding.price !== '' && (
+                  <span class="pl-2 font-thin">${binding.price}</span>
+                )}
+              </div>
+              <div class="font-display text-sm">{binding.specs}</div>
+            </a>
+          </div>
+        );
+      })}
+
+      {!b.isDigitalOA &&
+        (hasDigitalEdition ? (
+          <div>
+            <div class="flex-row inline-flex items-center w-full leading-normal">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-ceci-gray-mid" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d={cartIconPath} />
+              </svg>
+              <a href="/rotunda-purchase/" class="block group p-2 mb-4 ml-4 border-b">
+                <div class="font-thin uppercase text-ceci-gray-dark tracking-wide">Purchase</div>
+                <div class="text-sm font-display">See pricing for access to this digital publication</div>
+              </a>
+            </div>
+            <div class="flex-row inline-flex items-center w-full leading-normal">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-ceci-gray-mid" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d={linkIconPath} />
+              </svg>
+              <a href="https://rotunda.upress.virginia.edu/register/default.xqy" class="block group p-2 mb-4 ml-4 border-b">
+                <div class="font-thin uppercase text-ceci-gray-dark tracking-wide">Rotunda Free Trial</div>
+                <div class="text-sm font-display">Request trial access to all Rotunda Collections</div>
+              </a>
+            </div>
+          </div>
+        ) : (
+          <>
+            <div class="flex-row inline-flex items-center w-full leading-normal">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-ceci-gray-mid" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d={linkIconPath} />
+              </svg>
+              <a href="https://forms.gle/H8J1NbtN4BBZZwgy7" class="block group p-2 ml-4 border-b">
+                <div class="font-thin uppercase text-ceci-gray-dark tracking-wide">Exam Copy</div>
+                <div class="text-sm font-display">Review for Course Use</div>
+              </a>
+            </div>
+            <div class="flex-row inline-flex items-center w-full leading-normal">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-ceci-gray-mid" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d={linkIconPath} />
+              </svg>
+              <a href="https://forms.gle/H8J1NbtN4BBZZwgy7" class="block group p-2 mb-4 ml-4 border-b">
+                <div class="font-thin tracking-wide text-ceci-gray-dark uppercase">Desk Copy</div>
+                <div class="text-sm font-display">For Instructors who have already adopted this in their course</div>
+              </a>
+            </div>
+          </>
+        ))}
+
+      {b.Series?.length ? (
+        <div class="py-2 flex flex-col md:flex-row place-items-center">
+          <span class="xs:py-4 sm:py-4 md:py-0 text-sm text-ceci-gray-mid uppercase pr-5 font-thin tracking-wide">
+            Series:
+          </span>
+          <ul class="flex flex-col md:flex-row md:flex-wrap gap-4">
+            {b.Series.map((ser: any) => (
+              <li>
+                <a href={`/series/${ser.seriesID}/`} class={`${chipClass} hover:bg-white bg-greige`}>
+                  {ser.name}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ) : null}
+
+      {b.Subjects?.length ? (
+        <div class="flex flex-col md:flex-row place-items-center">
+          <span class="text-sm xs:py-4 sm:py-4 md:py-0 font-thin uppercase pr-5 text-ceci-gray-mid tracking-wide">
+            subjects:
+          </span>
+          <ul class="flex flex-col md:flex-row md:flex-wrap gap-4">
+            {b.Subjects.map((subj: any) => (
+              <li>
+                <a href={`/subject/${kebabCase(subj.name)}/`} class={chipClass}>
+                  {subj.name}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ) : null}
+
+      {b.Imprint?.length ? (
+        <div class="flex flex-col md:flex-row place-items-center">
+          <span class="text-sm xs:py-4 sm:py-4 md:py-4 font-thin uppercase pr-5 text-ceci-gray-mid tracking-wide">
+            imprint:
+          </span>
+          <ul class="flex flex-col md:flex-row md:flex-wrap gap-4">
+            {b.Imprint.map((imp: any) => (
+              <li>
+                <a href={`/imprints/${kebabCase(imp.imprintName)}/`} class={chipClass}>
+                  {imp.imprintName}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ) : null}
+
+      <section>
+        {b.Prizes && (
+          <div class="py-2 flex-row inline-flex items-center w-full leading-normal text-gray-700">
+            <span class="text-sm uppercase pr-5 tracking-wider font-thin text-ceci-gray-mid">awards:</span>
+            <p class="text-ceci-gray-mid tracking-wide font-thin text-sm p-2">{b.Prizes}</p>
+          </div>
+        )}
+      </section>
+    </div>
+  </div>
+
+  <div class="container py-2 md:max-w-5xl">
+    <section id="horiz_tabs">
+      <BookTabs
+        summary={b.MainDescription?.html ?? ''}
+        reviews={b.Reviews}
+        bio={b.BioNote?.html}
+        toc={b.TableOfContents?.html}
+        resources={resources}
+      />
+    </section>
+
+    <section class="pb-4 flex flex-col md:flex-row">
+      <div class="flex flex-row gap-1">
+        {shares.map((s) => (
+          <a
+            href={s.href}
+            aria-label={s.label}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center justify-center rounded-full w-10 h-10 text-white"
+            style={`background-color:${s.bg}`}
+          >
+            <Icon icon={s.icon} class="text-xl" />
+          </a>
+        ))}
+      </div>
+      <div class="py-2 md:py-0 md:pl-6">
+        <a target="_blank" rel="noopener noreferrer" href={rightsLink}>
+          <img alt="Get Permission" src="/RightsLink-Button_ReprintsPermissions.png" />
+        </a>
+      </div>
+      <div class="py-2 md:py-0 md:pl-6">
+        <a href={googleBooks}>
+          <img src="/gbs_preview_sticker1.png" alt="view on google books" height="23" width="69" />
+        </a>
+      </div>
+    </section>
+
+    {relatedNews.length > 0 && (
+      <section class="py-4">
+        <span class="text-sm uppercase text-ceci-gray-mid tracking-wider">Related News:</span>
+        {relatedNews.map((n) => (
+          <article class="flex flex-wrap items-center py-2">
+            <a
+              href={`/${n.data.type}/${n.id}/`}
+              class="text-lg font-thin tracking-wide text-ceci-gray-dark"
+            >
+              {n.data.title}
+            </a>
+          </article>
+        ))}
+      </section>
+    )}
+  </div>
+</Base>

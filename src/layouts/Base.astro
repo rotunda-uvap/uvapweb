@@ -1,17 +1,40 @@
 ---
+// Site shell: fonts, meta, skip link, header (mega-menu), footer.
+// Structure ported from the Gatsby layout.js + SeoComponent.
 import '../styles/global.css';
+import '@fontsource/antonio';
+import '@fontsource/antonio/100.css';
+import '@fontsource/antonio/200.css';
+import '@fontsource/antonio/300.css';
+import '@fontsource/quicksand';
+import '@fontsource/quicksand/300.css';
+import '@fontsource/crimson-text';
+import '@fontsource/crimson-text/400.css';
+import '@fontsource/crimson-text/600.css';
+import '@fontsource/crimson-text/700.css';
+import '@fontsource/crimson-text/400-italic.css';
+import '@fontsource/playfair-display-sc/400.css';
+import '@fontsource/assistant/200.css';
+import '@fontsource/assistant/300.css';
+import '@fontsource/assistant/400.css';
+import '@fontsource/assistant/600.css';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
 
 interface Props {
   title?: string;
   description?: string;
+  image?: string;
 }
 
 const {
   title,
   description = 'The website for the University of Virginia Press',
+  image = '/uvap_sm.png',
 } = Astro.props;
 
 const fullTitle = title ? `${title} - UVA Press` : 'University of Virginia Press';
+const canonical = new URL(Astro.url.pathname, Astro.site);
 ---
 
 <!doctype html>
@@ -21,13 +44,33 @@ const fullTitle = title ? `${title} - UVA Press` : 'University of Virginia Press
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{fullTitle}</title>
     <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
     <meta property="og:title" content={fullTitle} />
     <meta property="og:description" content={description} />
+    <meta property="og:image" content={new URL(image, Astro.site)} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:creator" content="@uvapress" />
     <link rel="sitemap" href="/sitemap-index.xml" />
     <!-- TODO(phase 4): GTM (GTM-MRC4NJR) goes here at cutover — deliberately
          omitted on staging so analytics don't record test traffic -->
   </head>
   <body class="bg-white text-ceci-gray-dark font-serif">
-    <slot />
+    <a
+      href="#main-content"
+      class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-50 focus:bg-white focus:text-ceci-gray-dark focus:px-4 focus:py-2 focus:font-sans focus:text-lg focus:underline"
+    >
+      Skip to main content
+    </a>
+    <div class="max-w-full mx-auto px-12 py-5">
+      <header>
+        <Header />
+      </header>
+      <main id="main-content" class="max-w-full mx-auto pb-5">
+        <slot />
+      </main>
+      <footer class="max-w-full mx-auto pb-5">
+        <Footer />
+      </footer>
+    </div>
   </body>
 </html>

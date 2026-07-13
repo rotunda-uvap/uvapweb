@@ -1,0 +1,105 @@
+---
+// Site footer, ported from the Gatsby footer.js
+import { Image } from 'astro:assets';
+import {
+  faFacebook,
+  faXTwitter,
+  faInstagram,
+  faBluesky,
+} from '@fortawesome/free-brands-svg-icons';
+import { faPhone, faMapLocation, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import Icon from './Icon.astro';
+import uvaLogo from '../assets/rev_uva_logo_color.png';
+import aupLogo from '../assets/aup_member.jpg';
+import bookStack from '../assets/book-stack.png';
+
+const quickLinks = [
+  { href: '/book-search/', text: 'Find a Book' },
+  { href: '/authors/', text: 'For Our Authors' },
+  { href: '/permissions/', text: 'Rights and Permissions' },
+  { href: '/rotunda/', text: 'Rotunda Digital Imprint' },
+  { href: '/support/', text: 'Support UVA Press' },
+  { href: '/career/', text: 'Career Opportunities' },
+  { href: '/walker-cowen-award/', text: 'Walker Cowen Memorial Prize' },
+  { href: '/privacy/', text: 'Privacy Policy' },
+];
+const socials = [
+  { icon: faFacebook, href: 'https://www.facebook.com/uvapress', label: 'Facebook' },
+  { icon: faBluesky, href: 'https://bsky.app/profile/uvapress.bsky.social', label: 'Bluesky' },
+  { icon: faXTwitter, href: 'https://twitter.com/uvapress', label: 'X (formerly Twitter)' },
+  { icon: faInstagram, href: 'https://www.instagram.com/uvapress', label: 'Instagram' },
+];
+const year = new Date().getFullYear();
+---
+
+<div class="flex flex-col md:flex-row border-t-2 border-b-2 text-ceci-gray-mid p-4 gap-2">
+  <section class="text-sm flex flex-col gap-2 md:gap-0 basis-1/4 border-b-2 md:border-b-0">
+    <h2 class="sr-only">Quick Links</h2>
+    {quickLinks.map((l) => (
+      <a href={l.href} class="uppercase text-sm py-2 md:py-1 font-thin tracking-wide hover:text-gray-700">
+        {l.text}
+      </a>
+    ))}
+    <div class="flex flex-row py-2">
+      {socials.map((s) => (
+        <a href={s.href} aria-label={s.label} class="pr-2">
+          <Icon icon={s.icon} class="text-3xl" />
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <section class="flex flex-col basis-1/4 border-b-2 md:border-b-0">
+    <h2 class="sr-only">Contact Us</h2>
+    <div id="address" class="flex flex-row py-2">
+      <Icon icon={faMapLocation} class="hidden md:block self-center justify-self-center text-2xl" />
+      <ul class="text-sm font-thin tracking-wide flex flex-col md:pl-3">
+        <li>P.O. Box 400318 (Postal)</li>
+        <li>Charlottesville, VA 22904-4318</li>
+        <li>210 Sprigg Lane (Courier)</li>
+        <li>Charlottesville, VA 22903-2417</li>
+      </ul>
+    </div>
+    <div id="phone" class="flex flex-row py-2">
+      <Icon icon={faPhone} class="hidden md:block self-center justify-self-center text-2xl" />
+      <ul class="text-sm md:pl-3 flex flex-col font-thin tracking-wide">
+        <li>434 924-3468 (main)</li>
+        <li>1-800-831-3406 (toll-free)</li>
+        <li>434 982-2655 (fax)</li>
+      </ul>
+    </div>
+    <div id="email" class="flex flex-row py-2 font-thin">
+      <Icon icon={faEnvelope} class="hidden md:block self-center justify-self-center text-2xl" />
+      <ul class="text-sm flex flex-col font-thin tracking-wide md:pl-3 gap-4 md:gap-0">
+        <li><a href="mailto:vapress@virginia.edu" class="py-8 md:py-1">General Inquiries</a></li>
+        <li><a href="/staff-list/" class="py-4 md:py-3">Staff Directory</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="basis-1/4 border-b-2 md:border-b-0">
+    <a href="/support/" class="hover:text-gray-300">
+      <div class="flex flex-col md:place-items-center">
+        <div><Image src={bookStack} alt="" width={75} /></div>
+        <div class="uppercase font-thin py-2 tracking-wide text-xl">
+          Be a part of<br /> the future<br /> of publishing
+        </div>
+        <div class="uppercase text-xl tracking-wide font-bold py-4">Support UVA Press</div>
+      </div>
+    </a>
+  </section>
+
+  <section class="flex flex-col basis-1/4 gap-4 grow-0">
+    <h2 class="sr-only">Affiliates</h2>
+    <a href="http://www.virginia.edu/">
+      <Image src={uvaLogo} alt="University of Virginia" />
+    </a>
+    <a href="http://www.aupresses.org">
+      <Image src={aupLogo} alt="Association of University Presses member" />
+    </a>
+  </section>
+</div>
+
+<div class="text-center w-full uppercase text-ceci-gray-mid text-base font-thin tracking-wider py-2">
+  © {year} UNIVERSITY OF VIRGINIA PRESS
+</div>
