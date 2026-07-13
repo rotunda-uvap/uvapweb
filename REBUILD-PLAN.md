@@ -26,6 +26,16 @@
 
 ---
 
+## Rebuild principles (Patricia, 2026-07-13)
+
+Port the **what**, not the **how**. The rough design, features, and URLs stay; the implementation does not. Much of the Gatsby code is bespoke learning-era React — the rebuild works from each page's *rendered design and behavior*, not from its component code. Goals, in order: stable and efficient codebase, easier editing for CMS editors, same design/features. Practical implications:
+
+- Phase 2 is "rebuild ~12 page types from their visible design," not "translate 45 components." Expect many bespoke components to collapse into a few simple Astro patterns.
+- The CMS config is a design surface, not a port target: clearer labels/hints, sensible required fields, dead fields removed (`draft`, legacy relation names), collections organized around how editors actually work.
+- When old code does something convoluted, ask "what was this *for*?" and build that — don't replicate the mechanism.
+
+---
+
 ## Current-state findings (review, 2026-07-13)
 
 **Two data worlds:**
@@ -54,10 +64,18 @@
 - [x] Crawl current production sitemap → URL inventory file (the cutover parity checklist)
       → **`url-inventory.txt`** (2,685 URLs, crawled 2026-07-13): 2,163 title · 190 author-corner · 83 news · 61 series · 57 collections · 39 subject · 27 exhibits · 21 staff · 8 media · 3 imprints · 3 collection · ~30 static pages.
       Note: `content/news/` holds 492 files but only 281 become pages (news + media + author-corner types); the folder mixes page content with images/assets — expect this when defining collections in Phase 1.
-- [ ] Kill list decided for pages/exhibits
+- [x] Kill list (analysis run 2026-07-13; deletions happen **on the `astro` branch only** — production stays untouched, dropped URLs get redirects at cutover):
+  - **Exhibits: nothing to kill.** All 24 dated exhibits are 2025–2026 conference pages (actively maintained). The 2 undated ones (`conrad-m-hall-symposium-for-virginia-history-2025`, `the-sar-annual-conference-on-the-american-revolution`) are also current.
+  - **Collections: 30 of 57 are referenced by current content** (2025–26 exhibits, homepage, featured-collection, promos, reading-series, pages incl. Instructors). 27 are unreferenced:
+    - *Kill per marketing (2024 and earlier, 10):* ASALH 24, EVENT 2024, HSS 24, MLA 24, OAH 24, SAH 24, SCWH 24, SHA 24, SHEAR 24, VAF24
+    - *Orphaned 2025 conference collections (8) — marketing said keep post-2024, but these are past events nothing references:* AHA 25, ASECS 25, AWP 25, DC History 25, MLA 25, OAH 25, VA FORUM 25, VAF 25 → confirm with marketing
+    - *Undated thematic collections NOT used by any post-2024 content (9):* Colonial America, African American History, African History, Black History, Early Republic, European History, Legal History, Twentieth Century, VMHC Symposium → Patricia decides
+    - *Undated but actively used (keep):* Atlantic History, Eighteenth-Century Studies, Urban Studies, trade, uvamag, Homepage Featured, US 250, SAR Books, Reading Series 2021
+  - **News/author-corner/media: keep all.** `draft` field is always `"false"` (no real drafts exist) — drop the field from files and CMS config.
+- [ ] Static-pages kill list (the ~30 top-level pages) — still open
 - [x] Styling decision: Tailwind v4
 - [x] Frontmatter consistency pass on `content/` (run 2026-07-13) — **content is in good shape overall; ~16 files need small fixes before schemas will validate:**
-  - [ ] `seriesinfo/displacement-migration-and-social-justice/index.md` — malformed YAML key (`editors:"Series Editors` missing a space after the colon)
+  - [x] `seriesinfo/displacement-migration-and-social-justice/index.md` — malformed YAML key — fixed by Patricia 2026-07-13
   - [ ] 2 exhibits with `date: ""` (empty string; other 24 are real dates): `conrad-m-hall-symposium-for-virginia-history-2025`, `the-sar-annual-conference-on-the-american-revolution`
   - [ ] 4 pages missing `templateKey`/`type`: `about`, `permissions`, `prospective-authors`, `outline-for-a-book-proposal`
   - [ ] 3 rotunda entries missing `id` (have `rid` only): `btwn`, `monr`, `rncn`
@@ -84,6 +102,7 @@
 - [ ] Serve `/admin` statically; port `static/admin/config.yml` (collections unchanged)
 - [ ] Netlify GitHub OAuth replaces `auth_type: implicit`
 - [ ] `decap-server` for local editing; drop the one preview template or rebuild later
+- [ ] Editor-experience pass on config.yml: clear labels/hints on every field, correct required/optional flags, remove dead fields (`draft`, legacy relation names), widget choices that match how editors work (relation widgets for related_book/related_collection instead of raw string lists)
 
 ### Phase 4 — Integrations, redirects, SEO
 - [ ] All redirects → Netlify `_redirects` (301s + the two 200 proxies)
