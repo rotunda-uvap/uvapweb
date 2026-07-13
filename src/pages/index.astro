@@ -1,107 +1,142 @@
 ---
-// Phase 1 proof-of-life page: exercises every content collection so schema
-// or data problems surface at build time. Replaced by the real homepage in
-// Phase 2.
+// Phase 1/2 proof-of-life page: exercises every content collection and links
+// into sample pages of each type so the route layer is browsable. Replaced
+// by the real homepage in Phase 2.
 import { getCollection } from 'astro:content';
+import kebabCase from 'lodash-es/kebabCase';
 import Base from '../layouts/Base.astro';
 
-const [
-  books,
-  news,
-  bios,
-  bookCollections,
-  exhibits,
-  pages,
-  seriesInfo,
-  imprintInfo,
-  rotundaInfo,
-  rotundaData,
-  seriesData,
-  imprintsData,
-  homepage,
-  promos,
-  featuredCollection,
-  readingSeries,
-  resources,
-] = await Promise.all([
-  getCollection('books'),
-  getCollection('news'),
-  getCollection('bios'),
-  getCollection('bookCollections'),
-  getCollection('exhibits'),
-  getCollection('pages'),
-  getCollection('seriesInfo'),
-  getCollection('imprintInfo'),
-  getCollection('rotundaInfo'),
-  getCollection('rotundaData'),
-  getCollection('seriesData'),
-  getCollection('imprintsData'),
-  getCollection('homepage'),
-  getCollection('promos'),
-  getCollection('featuredCollection'),
-  getCollection('readingSeries'),
-  getCollection('resources'),
-]);
+const [books, news, bios, bookCollections, exhibits, seriesData, seriesInfo, imprintsData, rotundaData, rotundaInfo] =
+  await Promise.all([
+    getCollection('books'),
+    getCollection('news'),
+    getCollection('bios'),
+    getCollection('bookCollections'),
+    getCollection('exhibits'),
+    getCollection('seriesData'),
+    getCollection('seriesInfo'),
+    getCollection('imprintsData'),
+    getCollection('rotundaData'),
+    getCollection('rotundaInfo'),
+  ]);
 
 const pressBooks = books.filter((b) => !b.data.Rotunda);
-const latestNews = news
-  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
-  .slice(0, 5);
+const newest = [...pressBooks].sort((a, b) => a.data.DaysSincePublication - b.data.DaysSincePublication);
+const latestOf = (type: string, n: number) =>
+  news
+    .filter((p) => p.data.type === type)
+    .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
+    .slice(0, n);
 
-const counts: [string, number][] = [
-  ['Books (press)', pressBooks.length],
-  ['Books (rotunda titles in books.json)', books.length - pressBooks.length],
-  ['News / author-corner / media posts', news.length],
-  ['Staff bios', bios.length],
-  ['Book collections', bookCollections.length],
-  ['Exhibits', exhibits.length],
-  ['Static pages (content)', pages.length],
-  ['Series info', seriesInfo.length],
-  ['Imprint info', imprintInfo.length],
-  ['Rotunda descriptions', rotundaInfo.length],
-  ['Rotunda data records', rotundaData.length],
-  ['Series data records', seriesData.length],
-  ['Imprints', imprintsData.length],
-  ['Homepage entries', homepage.length],
-  ['Promos', promos.length],
-  ['Featured collections', featuredCollection.length],
-  ['Reading series', readingSeries.length],
-  ['Resources', resources.length],
+const subjectNames = [...new Set(pressBooks.flatMap((b) => (b.data.Subjects ?? []).map((s) => s.name)))].sort();
+const seriesTitleById = new Map(seriesInfo.map((s) => [s.data.seriesID, s.data.title]));
+const rotTitleByRid = new Map(rotundaInfo.map((r) => [r.data.rid, r.data.title]));
+const rotMains = [...new Set(rotundaData.map((r) => r.data.MainCollection).filter(Boolean))];
+
+type LinkItem = { label: string; href: string };
+const sections: { heading: string; count: number; links: LinkItem[] }[] = [
+  {
+    heading: 'Books',
+    count: pressBooks.length,
+    links: newest.slice(0, 5).map((b) => ({ label: b.data.Title, href: `/title/${b.data.BookID}/` })),
+  },
+  {
+    heading: 'Rotunda titles',
+    count: rotundaData.length,
+    links: rotundaData.slice(0, 4).map((r) => ({
+      label: rotTitleByRid.get(r.data.RotID) ?? r.data.RotID,
+      href: `/title/${r.data.RotID}/`,
+    })),
+  },
+  {
+    heading: 'News',
+    count: news.filter((p) => p.data.type === 'news').length,
+    links: latestOf('news', 4).map((p) => ({ label: p.data.title, href: `/news/${p.id}/` })),
+  },
+  {
+    heading: "Author's Corner",
+    count: news.filter((p) => p.data.type === 'author-corner').length,
+    links: latestOf('author-corner', 4).map((p) => ({ label: p.data.title, href: `/author-corner/${p.id}/` })),
+  },
+  {
+    heading: 'Media',
+    count: news.filter((p) => p.data.type === 'media').length,
+    links: latestOf('media', 3).map((p) => ({ label: p.data.title, href: `/media/${p.id}/` })),
+  },
+  {
+    heading: 'Staff',
+    count: bios.length,
+    links: bios.slice(0, 4).map((b) => ({ label: b.data.staff_name, href: `/staff/${b.data.name_slug}/` })),
+  },
+  {
+    heading: 'Collections',
+    count: bookCollections.length,
+    links: bookCollections.slice(0, 4).map((c) => ({
+      label: c.data.title,
+      href: `/collections/${c.data.title}/`,
+    })),
+  },
+  {
+    heading: 'Exhibits',
+    count: exhibits.length,
+    links: exhibits.slice(0, 4).map((e) => ({ label: e.data.title, href: `/exhibits/${e.data.exhibit_slug}/` })),
+  },
+  {
+    heading: 'Subjects',
+    count: subjectNames.length,
+    links: subjectNames.slice(0, 5).map((n) => ({ label: n, href: `/subject/${kebabCase(n)}/` })),
+  },
+  {
+    heading: 'Series',
+    count: seriesData.length,
+    links: seriesData.slice(0, 4).map((s) => ({
+      label: seriesTitleById.get(s.data.seriesID) ?? s.data.seriesID,
+      href: `/series/${s.data.seriesID}/`,
+    })),
+  },
+  {
+    heading: 'Imprints',
+    count: imprintsData.length,
+    links: imprintsData.map((i) => ({
+      label: i.data.imprintName,
+      href: `/imprints/${kebabCase(i.data.imprintName)}/`,
+    })),
+  },
+  {
+    heading: 'Rotunda collections',
+    count: rotMains.length,
+    links: rotMains.map((m) => ({ label: m!, href: `/collection/${m}/` })),
+  },
 ];
 ---
 
 <Base title="Rebuild scaffold">
-  <main class="container mx-auto px-5 py-12">
+  <main class="container mx-auto max-w-5xl px-5 py-12">
     <h1 class="font-display text-3xl tracking-wide uppercase">
       UVA Press — Astro rebuild scaffold
     </h1>
     <p class="py-4 text-ceci-gray-mid">
-      Phase 1 data-layer check. Every collection below loaded and validated at
-      build time.
+      Route-layer check: every page type below is built and browsable at its
+      production URL. 2,627 pages total. Final designs land in Phase 2.
     </p>
 
-    <h2 class="font-display text-xl uppercase tracking-wide pt-6">Collections</h2>
-    <ul class="py-3">
-      {counts.map(([label, n]) => (
-        <li class="border-b border-greige py-1">
-          <span class="font-assistant">{label}:</span>
-          <span class="font-bold">{n}</span>
-        </li>
+    <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3 py-6">
+      {sections.map((s) => (
+        <section>
+          <h2 class="font-display uppercase tracking-wide border-b-2 border-ceci-gray-light pb-1">
+            {s.heading} <span class="text-ceci-gray-mid font-normal">({s.count})</span>
+          </h2>
+          <ul class="py-2">
+            {s.links.map((l) => (
+              <li class="py-1 text-sm leading-snug">
+                <a href={l.href} class="hover:text-ceci-gray-mid underline decoration-ceci-gray-light">
+                  {l.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </section>
       ))}
-    </ul>
-
-    <h2 class="font-display text-xl uppercase tracking-wide pt-6">
-      Latest posts (data check)
-    </h2>
-    <ul class="py-3">
-      {latestNews.map((post) => (
-        <li class="py-1">
-          <span class="uppercase text-sm tracking-wider text-ceci-gray-mid">
-            {post.data.type}
-          </span>
-          — {post.data.title}
-        </li>
-      ))}
-    </ul>
+    </div>
   </main>
 </Base>
