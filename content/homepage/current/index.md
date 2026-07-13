@@ -2,13 +2,13 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: Redeemer, Reformer, Rebel
-    banner_author: Kathleen Waters Sander
-    banner_subtitle: The Progressive Era Activism of Dr. Kate Waller Barrett
-    banner_id: "10195"
-    banner_quote: A fascinating woman, unwavering in her social activism and
-      tireless commitment to reform.
-    banner_attr: Clayton McClure Brooks, Mary Baldwin University
+  - banner_title: To Save Us All from Slavery's Power
+    banner_author: Mark Wahlgren Summers
+    banner_subtitle: Republican Alarms, Southern Terrors, and the Plunge into Civil War
+    banner_id: "10209"
+    banner_quote: Readers will be struck with how relevant and scary his story is
+      for us today.
+    banner_attr: Michael Fitzgerald, St. Olaf College
 related_book:
   - "5744"
   - "5617"
