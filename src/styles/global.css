@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+/* Theme ported from the Gatsby site's tailwind.config.js.
+   Tailwind v4: theme lives in CSS, no config file. */
+@theme {
+  /* brand colors */
+  --color-ceci-gray-light: #cecfce;
+  --color-ceci-gray-mid: #575757;
+  --color-ceci-gray-dark: #414042;
+  --color-greige: #f7f7f7;
+
+  /* letter spacing (the old config replaced the default scale) */
+  --tracking-tightest: -0.075em;
+  --tracking-tighter: -0.05em;
+  --tracking-tight: -0.025em;
+  --tracking-normal: 0;
+  --tracking-booped: 0.05em;
+  --tracking-wide: 0.1em;
+  --tracking-wider: 0.2em;
+  --tracking-widest: 0.3em;
+
+  /* type: the old config bumped sm/base */
+  --text-sm: 1rem;
+  --text-base: 1.2em;
+
+  /* font stacks (font files wired up in Phase 2) */
+  --font-serif: "Crimson Text", ui-serif, Georgia, serif;
+  --font-sans: "Antonio", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Quicksand", ui-sans-serif, system-ui, sans-serif;
+  --font-playfair: "Playfair Display SC", serif;
+  --font-assistant: "Assistant", sans-serif;
+
+  /* fixed heights used by banners/sliders */
+  --spacing-250: 250px;
+  --spacing-500: 500px;
+}

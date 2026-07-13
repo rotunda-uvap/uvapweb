@@ -74,20 +74,22 @@ Port the **what**, not the **how**. The rough design, features, and URLs stay; t
 - [x] Styling decision: Tailwind v4
 - [x] Frontmatter consistency pass on `content/` (run 2026-07-13) — **content is in good shape overall; ~16 files need small fixes before schemas will validate:**
   - [x] `seriesinfo/displacement-migration-and-social-justice/index.md` — malformed YAML key — fixed by Patricia 2026-07-13
-  - [ ] 2 exhibits with `date: ""` (empty string; other 24 are real dates): `conrad-m-hall-symposium-for-virginia-history-2025`, `the-sar-annual-conference-on-the-american-revolution`
-  - [ ] 4 pages missing `templateKey`/`type`: `about`, `permissions`, `prospective-authors`, `outline-for-a-book-proposal`
-  - [ ] 3 rotunda entries missing `id` (have `rid` only): `btwn`, `monr`, `rncn`
-  - [ ] 6 news posts with legacy field names (`relbook`, `related_books` as objects, `related`, `link`, `path`) — normalize to `related_book`
-  - [ ] `draft` field exists in 44 news posts, always `"false"` (string, never true) — drop the field, or schema-coerce
+  - [x] 2 exhibits with `date: ""` → handled in schema (`blankable()` preprocess); no file edits
+  - [x] 4 pages missing `templateKey`/`type` → optional in schema (pages are statically routed anyway); no file edits
+  - [x] 3 rotunda entries missing `id` → schema reads `rid` only (`id` was a duplicate); no file edits
+  - [x] 6 news posts with legacy field names → verified each also carries a correct `related_book`; schemas don't read the legacy fields. File cleanup deferred to cutover to avoid content divergence from production
+  - [x] `draft` field (44 posts, always `"false"`) → not read by schema; remove from files + CMS config at cutover
   - Schema notes (no file fixes needed): empty arrays (`related_series: []`) and occasional `null` values (seriesinfo `related_staff`/`uvaeditors`) → make these fields optional/nullable; `imprintinfo` has `editors` vs `uvaeditors` drift across its 3 files
   - Structure note: images are co-located with content (208 in `news/`, 10 in `bios/`) — fine for Astro glob collections (`**/index.md`), keep the pattern
 - [ ] Register GitHub OAuth app for Decap; confirm Netlify site + OAuth settings
 
 ### Phase 1 — Scaffold & data layer
-- [ ] New Astro project on the `astro` branch (Gatsby files removed there; content/ and src/data/ paths kept identical for clean merges)
-- [ ] Content collections with zod schemas for every `content/` dir; `file()` loader collections for the `src/data/*.json` catalog files
-- [ ] Weekly books.json update workflow carries over unchanged
+- [x] New Astro project on the `astro` branch (scaffolded 2026-07-13: Astro 5 + Tailwind v4 + @astrojs/sitemap + Pagefind + sharp; 0 npm vulnerabilities vs 119 on the Gatsby tree). Gatsby code removed; `content/` and `src/data/` paths unchanged; `downloads/` moved to `static/downloads` (URLs unchanged); `publicDir: 'static'` preserves `/assets` Decap media paths; `trailingSlash: 'always'` preserved
+- [x] Content collections with zod schemas for every `content/` dir + `file()` loaders for `src/data/*.json` — **full build validates: 2,129 press books + 34 rotunda = 2,163 title pages (matches sitemap exactly), 281 posts, 30 collections, 26 exhibits, 66 series, 21 bios**
+  - books.json quirks handled in the loader parser, file on disk untouched: single-element `Series` collapsed to bare object on ~1,036 books (XML→JSON export artifact), `Series: null` on some
+- [x] Weekly books.json update workflow carries over unchanged (path identical; loader normalizes on read)
 - [ ] Slug/URL helpers replicating gatsby-plugin-slug + kebab-case behavior **exactly**
+- Scaffold placeholder: `src/pages/index.astro` is a data-layer proof page (collection counts); replaced by the real homepage in Phase 2. GTM deliberately omitted until cutover so staging traffic isn't tracked.
 
 ### Phase 2 — Templates & pages
 - [ ] 12 templates → `.astro` (book-page is the big one; then rotunda-page, series, subject, imprint, news, media, author-corner, exhibit, staff, collection pages)

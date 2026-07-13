@@ -1,0 +1,107 @@
+---
+// Phase 1 proof-of-life page: exercises every content collection so schema
+// or data problems surface at build time. Replaced by the real homepage in
+// Phase 2.
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+
+const [
+  books,
+  news,
+  bios,
+  bookCollections,
+  exhibits,
+  pages,
+  seriesInfo,
+  imprintInfo,
+  rotundaInfo,
+  rotundaData,
+  seriesData,
+  imprintsData,
+  homepage,
+  promos,
+  featuredCollection,
+  readingSeries,
+  resources,
+] = await Promise.all([
+  getCollection('books'),
+  getCollection('news'),
+  getCollection('bios'),
+  getCollection('bookCollections'),
+  getCollection('exhibits'),
+  getCollection('pages'),
+  getCollection('seriesInfo'),
+  getCollection('imprintInfo'),
+  getCollection('rotundaInfo'),
+  getCollection('rotundaData'),
+  getCollection('seriesData'),
+  getCollection('imprintsData'),
+  getCollection('homepage'),
+  getCollection('promos'),
+  getCollection('featuredCollection'),
+  getCollection('readingSeries'),
+  getCollection('resources'),
+]);
+
+const pressBooks = books.filter((b) => !b.data.Rotunda);
+const latestNews = news
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
+  .slice(0, 5);
+
+const counts: [string, number][] = [
+  ['Books (press)', pressBooks.length],
+  ['Books (rotunda titles in books.json)', books.length - pressBooks.length],
+  ['News / author-corner / media posts', news.length],
+  ['Staff bios', bios.length],
+  ['Book collections', bookCollections.length],
+  ['Exhibits', exhibits.length],
+  ['Static pages (content)', pages.length],
+  ['Series info', seriesInfo.length],
+  ['Imprint info', imprintInfo.length],
+  ['Rotunda descriptions', rotundaInfo.length],
+  ['Rotunda data records', rotundaData.length],
+  ['Series data records', seriesData.length],
+  ['Imprints', imprintsData.length],
+  ['Homepage entries', homepage.length],
+  ['Promos', promos.length],
+  ['Featured collections', featuredCollection.length],
+  ['Reading series', readingSeries.length],
+  ['Resources', resources.length],
+];
+---
+
+<Base title="Rebuild scaffold">
+  <main class="container mx-auto px-5 py-12">
+    <h1 class="font-display text-3xl tracking-wide uppercase">
+      UVA Press — Astro rebuild scaffold
+    </h1>
+    <p class="py-4 text-ceci-gray-mid">
+      Phase 1 data-layer check. Every collection below loaded and validated at
+      build time.
+    </p>
+
+    <h2 class="font-display text-xl uppercase tracking-wide pt-6">Collections</h2>
+    <ul class="py-3">
+      {counts.map(([label, n]) => (
+        <li class="border-b border-greige py-1">
+          <span class="font-assistant">{label}:</span>
+          <span class="font-bold">{n}</span>
+        </li>
+      ))}
+    </ul>
+
+    <h2 class="font-display text-xl uppercase tracking-wide pt-6">
+      Latest posts (data check)
+    </h2>
+    <ul class="py-3">
+      {latestNews.map((post) => (
+        <li class="py-1">
+          <span class="uppercase text-sm tracking-wider text-ceci-gray-mid">
+            {post.data.type}
+          </span>
+          — {post.data.title}
+        </li>
+      ))}
+    </ul>
+  </main>
+</Base>
