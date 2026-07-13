@@ -56,7 +56,15 @@
       Note: `content/news/` holds 492 files but only 281 become pages (news + media + author-corner types); the folder mixes page content with images/assets — expect this when defining collections in Phase 1.
 - [ ] Kill list decided for pages/exhibits
 - [x] Styling decision: Tailwind v4
-- [ ] Frontmatter consistency pass on `content/` (Astro zod schemas will hard-fail on inconsistencies; find them now)
+- [x] Frontmatter consistency pass on `content/` (run 2026-07-13) — **content is in good shape overall; ~16 files need small fixes before schemas will validate:**
+  - [ ] `seriesinfo/displacement-migration-and-social-justice/index.md` — malformed YAML key (`editors:"Series Editors` missing a space after the colon)
+  - [ ] 2 exhibits with `date: ""` (empty string; other 24 are real dates): `conrad-m-hall-symposium-for-virginia-history-2025`, `the-sar-annual-conference-on-the-american-revolution`
+  - [ ] 4 pages missing `templateKey`/`type`: `about`, `permissions`, `prospective-authors`, `outline-for-a-book-proposal`
+  - [ ] 3 rotunda entries missing `id` (have `rid` only): `btwn`, `monr`, `rncn`
+  - [ ] 6 news posts with legacy field names (`relbook`, `related_books` as objects, `related`, `link`, `path`) — normalize to `related_book`
+  - [ ] `draft` field exists in 44 news posts, always `"false"` (string, never true) — drop the field, or schema-coerce
+  - Schema notes (no file fixes needed): empty arrays (`related_series: []`) and occasional `null` values (seriesinfo `related_staff`/`uvaeditors`) → make these fields optional/nullable; `imprintinfo` has `editors` vs `uvaeditors` drift across its 3 files
+  - Structure note: images are co-located with content (208 in `news/`, 10 in `bios/`) — fine for Astro glob collections (`**/index.md`), keep the pattern
 - [ ] Register GitHub OAuth app for Decap; confirm Netlify site + OAuth settings
 
 ### Phase 1 — Scaffold & data layer
