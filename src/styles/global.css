@@ -40,6 +40,19 @@
    global.css (slick-carousel and Algolia leftovers dropped).
    ------------------------------------------------------------------ */
 
+/* Tailwind v3 compat: v4 changed the default border color from gray-200 to
+   currentColor, which turned every border-b-2 (nav, footer, book bindings)
+   dark. Restore the v3 default the design was built against. */
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
+}
+
 @layer base {
   h1 { @apply text-7xl; }
   h2 { @apply text-6xl; }

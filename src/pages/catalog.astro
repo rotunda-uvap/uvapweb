@@ -17,11 +17,15 @@ import fall24 from '../assets/fall24.jpg';
 <Base title="Seasonal Catalogs">
   <div class=" mx-auto">
     <section class="py-4 border-b-2 border-gray-100">
+      {/* the old markup's md:h-128 was inert in Tailwind v3 but v4 gives it a
+          real 512px height, which made the oversized cover overflow up over
+          the nav — dropped, and the cover constrained to 300px like the
+          Gatsby gatsbyImageData(width: 300) original */}
       <div
-        class="container flex flex-col px-6 py-4 mx-auto space-y-6 md:h-128  md:flex-row md:items-center md:space-x-6"
+        class="container flex flex-col px-6 py-4 mx-auto space-y-6 md:flex-row md:items-center md:space-x-6"
       >
         <div class="flex  w-full md:w-1/3">
-          <Image src={fall26} alt="current catalog cover" />
+          <Image src={fall26} width={300} alt="current catalog cover" />
         </div>
 
         <div class="flex flex-col items-center w-full md:flex-row md:w-1/2">

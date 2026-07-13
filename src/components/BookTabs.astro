@@ -18,6 +18,10 @@ interface Props {
 }
 const { summary, reviews, bio, toc, resources } = Astro.props;
 
+// summary and reviews were sanitized in the Gatsby component too — catalog
+// HTML occasionally has unbalanced tags that would otherwise leak styling
+// into the rest of the page
+import { sanitizeHtml } from '../lib/excerpt';
 const wrapInParagraph = (html: string) => (/<p[\s>]/.test(html) ? html : `<p>${html}</p>`);
 
 const tabClass =
@@ -48,7 +52,7 @@ const tabs = [
   </div>
 
   <div role="tabpanel" id="panel-summary" aria-labelledby="tab-summary" class="py-3">
-    <div class="text-ceci-gray-dark font-serif cms text-lg" set:html={wrapInParagraph(summary)} />
+    <div class="text-ceci-gray-dark font-serif cms text-lg" set:html={sanitizeHtml(wrapInParagraph(summary))} />
   </div>
 
   <div role="tabpanel" id="panel-reviews" aria-labelledby="tab-reviews" class="py-3" hidden>
@@ -58,7 +62,7 @@ const tabs = [
           <>
             <blockquote
               class="pt-3 cms text-lg text-ceci-gray-dark dropCap font-serif"
-              set:html={review.html ?? ''}
+              set:html={sanitizeHtml(review.html ?? '')}
             />
             <cite class="block pl-10 pb-5 font-display text-sm text-ceci-gray-mid not-italic">
               - {review.attribution}

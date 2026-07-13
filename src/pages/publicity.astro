@@ -4,6 +4,7 @@
 import { getCollection } from 'astro:content';
 import { faCircleArrowRight } from '@fortawesome/free-solid-svg-icons';
 import Base from '../layouts/Base.astro';
+import { excerptHtml } from '../lib/excerpt';
 import Icon from '../components/Icon.astro';
 import PageHeader from '../components/PageHeader.astro';
 import SectionHeader from '../components/SectionHeader.astro';
@@ -12,7 +13,7 @@ const posts = (await getCollection('news', (n) => n.data.type === 'news')).sort(
   (a, b) => b.data.date.getTime() - a.data.date.getTime()
 );
 // the old page truncated the rendered post HTML to 100 space-separated words
-const excerpt = (html: string) => html.split(' ').splice(0, 100).join(' ') + '...';
+const excerpt = (html: string) => excerptHtml(html, 100);
 const fmtDate = (d: Date) => d.toISOString().slice(0, 10);
 ---
 

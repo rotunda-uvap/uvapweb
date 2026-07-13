@@ -3,6 +3,7 @@
 import { getCollection } from 'astro:content';
 import { faCircleArrowRight } from '@fortawesome/free-solid-svg-icons';
 import Icon from './Icon.astro';
+import { excerptHtml } from '../lib/excerpt';
 
 const [news, exhibits] = await Promise.all([getCollection('news'), getCollection('exhibits')]);
 
@@ -17,10 +18,8 @@ const latestExhibits = exhibits
   .sort((a, b) => (b.data.date?.valueOf() ?? 0) - (a.data.date?.valueOf() ?? 0))
   .slice(0, 4);
 
-const preview = (entry: typeof newsPost, words: number) => {
-  const html = entry?.rendered?.html ?? entry?.body ?? '';
-  return html.split(' ').slice(0, words).join(' ') + '...';
-};
+const preview = (entry: typeof newsPost, words: number) =>
+  excerptHtml(entry?.rendered?.html ?? entry?.body ?? '', words);
 const dateStr = (d: Date) => d.toISOString().slice(0, 10);
 ---
 
