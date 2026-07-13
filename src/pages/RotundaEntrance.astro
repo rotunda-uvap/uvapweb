@@ -1,0 +1,18 @@
+---
+// /RotundaEntrance/ — capitalization is part of the URL (file name must stay
+// RotundaEntrance.astro). Port of src/pages/RotundaEntrance.js; the old page's
+// relative <img src="../../images/rotunda_logo.png"> resolved to a
+// nonexistent /images/ path, so the logo is imported as a real asset here.
+import Base from '../layouts/Base.astro';
+import PageHeader from '../components/PageHeader.astro';
+import { Image } from 'astro:assets';
+import rotundaLogo from '../assets/rotunda_logo.png';
+---
+
+<Base>
+  <div class="container px-5 py-12 mx-auto">
+    <PageHeader text="Rotunda Entrance" />
+
+    <Image src={rotundaLogo} alt="rotunda logo" />
+  </div>
+</Base>

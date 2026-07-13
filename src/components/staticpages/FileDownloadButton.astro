@@ -1,0 +1,25 @@
+---
+// Ported from FileDownloadButton.js. The Gatsby site served the downloads
+// folder at the site root ('../' + file); files now live in static/downloads.
+import { faFileArrowDown } from '@fortawesome/free-solid-svg-icons';
+import Icon from '../Icon.astro';
+
+interface Props {
+  name: string;
+  file: string;
+}
+const { name, file } = Astro.props;
+const href = `/downloads/${file}`;
+---
+
+<div class="flex p-2 h-full items-center">
+  <a href={href}>
+    <Icon icon={faFileArrowDown} class="text-gray-800 w-6 h-6 flex-shrink-0 mr-4" />
+  </a>
+  <a
+    href={href}
+    title="Download form"
+    class="text-ceci-gray-dark font-thin tracking-wide text-lg font-serif hover:text-gray-800"
+    >Download {name}</a
+  >
+</div>

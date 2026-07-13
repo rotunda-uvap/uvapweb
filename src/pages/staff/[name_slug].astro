@@ -1,6 +1,9 @@
 ---
+// /staff/{name_slug}/ — design ported from the Gatsby staff-page.js template.
 import { getCollection, render } from 'astro:content';
-import Interim from '../../components/Interim.astro';
+import type { ImageMetadata } from 'astro';
+import Base from '../../layouts/Base.astro';
+import PageHeader from '../../components/PageHeader.astro';
 
 export async function getStaticPaths() {
   const bios = await getCollection('bios');
@@ -8,13 +11,50 @@ export async function getStaticPaths() {
 }
 const { bio } = Astro.props;
 const { Content } = await render(bio);
+const hasBody = Boolean(bio.body?.trim());
+
+// The Gatsby page pulled the photo with file(relativeDirectory: {eq: $relDir})
+// — i.e. whatever image sits next to the bio's index.md, regardless of the
+// profile_photo filename (which is stale for one bio). Mirror that: glob the
+// bios content folders and match on this entry's folder id.
+const photos = import.meta.glob<{ default: ImageMetadata }>(
+  '../../../content/bios/*/*.{jpg,jpeg,png,gif}',
+  { eager: true }
+);
+const photoEntry = Object.entries(photos).find(([path]) => path.includes(`/bios/${bio.id}/`));
+const photo = photoEntry?.[1].default;
 ---
 
-<Interim title={bio.data.staff_name} kicker="Staff">
-  <p class="font-display uppercase tracking-wider">{bio.data.job_title}</p>
-  <p class="text-sm text-ceci-gray-mid pb-4">
-    {bio.data.department.join(', ')} · {bio.data.email}
-    {bio.data.phone && ` · ${bio.data.phone}`}
-  </p>
-  <Content />
-</Interim>
+<Base title={bio.data.title}>
+  <div class="mx-auto">
+    <PageHeader text={bio.data.title} />
+    {
+      bio.data.profile_photo && photo && (
+        <div class="text-center py-2">
+          <img src={photo.src} width="300" alt={bio.data.title} loading="lazy" />
+        </div>
+      )
+    }
+    {
+      bio.data.job_title && (
+        <h5 class="pt-4 pb-2 text-ceci-gray-mid font-thin tracking-wide text-center italic">
+          {bio.data.job_title}
+        </h5>
+      )
+    }
+    {
+      bio.data.email && (
+        <h6 class="text-center tracking-wide font-thin">
+          <a href={`mailto:${bio.data.email}`}>{bio.data.email}</a>
+        </h6>
+      )
+    }
+    {
+      hasBody && (
+        <article class="md:w-1/2 md:mx-auto py-7 cms dropCap text-lg">
+          <Content />
+        </article>
+      )
+    }
+  </div>
+</Base>

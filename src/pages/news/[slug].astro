@@ -1,12 +1,71 @@
 ---
+// News post page, design ported from the Gatsby news-page.js template
+// (which rendered through components/NewsPageTemplate.js).
 import { getCollection } from 'astro:content';
-import PostPage from '../../components/PostPage.astro';
+import { Image } from 'astro:assets';
+import type { ImageMetadata } from 'astro';
+import Base from '../../layouts/Base.astro';
+import PageHeader from '../../components/PageHeader.astro';
+import PostBody from '../../components/posts/PostBody.astro';
+import RelatedBooksRail from '../../components/posts/RelatedBooksRail.astro';
+import ShareButtons from '../../components/posts/ShareButtons.astro';
 
 export async function getStaticPaths() {
   const posts = await getCollection('news', (p) => p.data.type === 'news');
   return posts.map((post) => ({ params: { slug: post.id }, props: { post } }));
 }
 const { post } = Astro.props;
+
+const title = post.data.title;
+const url = new URL(`/news/${post.id}/`, Astro.site).href;
+
+// Header image: the Gatsby query pulled the image file colocated in the
+// post's content folder (relativeDirectory eq $relDir); frontmatter `image`
+// names that same file, so resolve it through an asset glob.
+const images = import.meta.glob<{ default: ImageMetadata }>(
+  '/content/news/**/*.{jpg,jpeg,png,gif}',
+  { eager: true }
+);
+const pic = post.data.image
+  ? images[`/content/news/${post.id}/${post.data.image}`]?.default
+  : undefined;
+
+// related_book frontmatter holds BookID strings; titles come from the catalog
+const books = await getCollection('books');
+const titleById = new Map(books.map((b) => [b.data.BookID, b.data.Title]));
+const relatedBooks = post.data.related_book?.map((id) => ({
+  id,
+  title: titleById.get(id) ?? '',
+}));
+
+const description = (post.rendered?.html ?? '').replace(/<[^>]*>/g, '').substring(0, 150);
 ---
 
-<PostPage post={post} kicker="News" />
+<Base title={title} description={description} image={pic?.src}>
+  <section class="text-gray-600">
+    <div class="container px-5 py-12 mx-auto">
+      <div class="flex flex-row px-5 inline-flex items-center w-full leading-normal">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
+          <path fill-rule="evenodd" d="M7.707 14.707a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l2.293 2.293a1 1 0 010 1.414z" clip-rule="evenodd" />
+        </svg>
+        <a href="/publicity/" class="block p-2  text-sm font-thin uppercase ">All News</a>
+      </div>
+      <PageHeader text={title} />
+
+      <div class="flex flex-col md:flex-row leading-relaxed font-serif ">
+        {relatedBooks && <RelatedBooksRail books={relatedBooks} />}
+        <div class="md:w-4/5">
+          {pic && (
+            <div class="float-left pb-4 pt-2 px-4 m-1 ">
+              <Image src={pic} width={Math.min(400, pic.width)} alt={title || 'related image'} />
+            </div>
+          )}
+          <PostBody post={post} class="cms text-base dropCap" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="px-10">
+    <ShareButtons title={title} url={url} />
+  </div>
+</Base>

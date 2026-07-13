@@ -1,0 +1,168 @@
+---
+// /rotunda-customer-page/ — customer information for librarians/purchasers
+// (proxy stanza, usage stats, accessibility, MARC records, customer list).
+// Port of src/pages/rotunda-customer-page.js; the customer list comes from
+// src/data/customers.json (same file, imported directly), in file order like
+// the old allCustomersJson query.
+import Base from '../layouts/Base.astro';
+import RotundaMain from '../components/rotunda/RotundaMain.astro';
+import RotundaHeader from '../components/rotunda/RotundaHeader.astro';
+import customers from '../data/customers.json';
+---
+
+<Base title="A list of our current customers">
+  <RotundaMain>
+    <RotundaHeader />
+    <h2 class="rot-h2">Customer Information</h2>
+    <section>
+      <h3 class="rot-h3">Proxy Access</h3>
+      {/* NOTE: the old page nested this <ul> inside the paragraph; kept the
+          same rendered content with the list as a sibling for valid HTML. */}
+      <p class="rot-para rot-para--tight">
+        For those using EZ Proxy, you can use this stanza to access our collections:
+      </p>
+      <ul class="pt-1">
+        <li>Title University of Virginia Press - Rotunda</li>
+        <li>URL https://rotunda.upress.virginia.edu</li>
+        <li>HJ http://rotunda.upress.virginia.edu</li>
+        <li>HJ https://digitaltemple.rotunda.upress.virginia.edu</li>
+        <li>HJ http://digitaltemple.rotunda.upress.virginia.edu</li>
+        <li>HJ https://digitaltemple.upress.virginia.edu</li>
+        <li>HJ http://digitaltemple.upress.virginia.edu</li>
+        <li>HJ https://pfe.rotunda.upress.virginia.edu</li>
+        <li>HJ http://pfe.rotunda.upress.virginia.edu</li>
+        <li>HJ https://pfe.upress.virginia.edu</li>
+        <li>HJ http://pfe.upress.virginia.edu</li>
+        <li>H https://prde.upress.virginia.edu</li>
+        <li>H http://prde.upress.virginia.edu</li>
+        <li>DJ upress.virginia.edu</li>
+      </ul>
+    </section>
+    <section>
+      <h3 class="rot-h3">Usage Statistics</h3>
+      <p class="rot-para rot-para--tight">
+        As of Jan 1, 2024, we are using Liblynx to provide COUNTER5-compliant stats. Rotunda's
+        COUNTER page can be found here: <a href=" https://registry.projectcounter.org/platform/0aa2f3da-f784-465f-b9cf-e4f315eb33cb"> https://registry.projectcounter.org/platform/0aa2f3da-f784-465f-b9cf-e4f315eb33cb</a>
+      </p>
+      <p class="rot-para rot-para--tight">
+        For a COUNTER portal account or SUSHI statistics, please <a href="https://www.upress.virginia.edu/rotunda/#contacts">contact us</a> along with the email address you would like to use to set up your
+        institution's access. For historical non-COUNTER statistics, you can still access them via
+        this URL: <a href="https://rotunda.upress.virginia.edu/UsageStats/default.xqy">https://rotunda.upress.virginia.edu/UsageStats/default.xqy</a>.
+      </p>
+    </section>
+    <section class="px-5">
+      <h3 class="rot-h3">Accessibility</h3>
+      <p class="rot-para rot-para--tight">
+        In 2024, Rotunda passed its 20th anniversary. While the platform has maintained all its
+        core features over this long stretch of time, it has not continued to meet modern
+        standards for assistive web technologies. In 2025, we have begun a complete modernization
+        of the entire Rotunda platform, which will include an WCAG compliant redesign of our
+        publication websites. This redesign will begin with our American History Collection, and
+        is expected to be completed in 2027.
+      </p>
+      <p class="rot-para rot-para--tight">
+        Understanding this, <a href="/downloads/VPAT_RotundaAHC.pdf">click here</a> for our VPAT for the
+        current American History Collection.
+      </p>
+    </section>
+    <section class="px-5">
+      <h3 class="rot-h3">MARC Records</h3>
+
+      <p class="font-assistant">
+        For a zip archive of all of the below records, click here: <a href="https://rotunda.upress.virginia.edu/MARC/all_rotunda_marc_records.zip">All records</a>
+      </p>
+      <ul>
+        <li class="tracking-wider font-playfair"><b>American Founding Era</b></li>
+        <li>
+          <ul class="py-5 font-assistant">
+            <li><a href="https://rotunda.upress.virginia.edu/MARC/10-adams.mrc">Adams Papers Digital Edition</a></li>
+            <li><a href="https://rotunda.upress.virginia.edu/MARC/12-docu.mrc">Documentary History of the Ratification of
+                the Constitution</a></li>
+            <li><a href="https://rotunda.upress.virginia.edu/MARC/28-Dochistfirst.mrc">Documentary History of the First
+                Federal Congress</a></li>
+            <li><a href="https://rotunda.upress.virginia.edu/MARC/15-hamilton.mrc">Papers of Alexander Hamilton Digital
+                Edition</a></li>
+            <li><a href="https://rotunda.upress.virginia.edu/MARC/19-jay.mrc">Selected Papers of John Jay Digital
+                Edition</a></li>
+            <li><a href="https://rotunda.upress.virginia.edu/MARC/11-jeff.mrc">Papers of Thomas Jefferson Digital
+                Edition</a></li>
+            <li><a href="https://rotunda.upress.virginia.edu/MARC/1-dmde.mrc">Dolley Madison Digital Edition</a></li>
+            <li><a href="https://rotunda.upress.virginia.edu/MARC/13-madison.mrc">Papers of James Madison Digital
+                Edition</a></li>
+            <li><a href="https://rotunda.upress.virginia.edu/MARC/21-Marshall.mrc">Papers of John Marshall Digital
+                Edition</a></li>
+            <li><a href="https://rotunda.upress.virginia.edu/MARC/33-monroe.mrc">Papers of James Monroe Digital Edition</a></li>
+
+            <li><a href="https://rotunda.upress.virginia.edu/MARC/22-morris.mrc">Diaries of Gouverneur Morris Digital
+                Edition</a></li>
+            <li><a href="https://rotunda.upress.virginia.edu/MARC/16-pinckneyhorry.mrc">Papers of Eliza Lucas Pinckney
+                and Harriott Pinckney Horry Digital Edition</a></li>
+            <li><a href="https://rotunda.upress.virginia.edu/MARC/24-pinckneystatesmen.mrc">The Revolutionary Era
+                Pinckney Statesmen of South Carolina</a></li>
+            <li><a href=" https://rotunda.upress.virginia.edu/MARC/35-rush.mrc">Letters of Benjamin Rush Digital Edition</a></li>
+            <li><a href="https://rotunda.upress.virginia.edu/MARC/7-george.mrc">Papers of George Washington Digital
+                Edition</a></li>
+            <li><a href="https://rotunda.upress.virginia.edu/MARC/23-people.mrc">People of the
+                Founding Era</a></li>
+          </ul>
+        </li>
+        <li class="tracking-wider font-playfair"><b>Antebellum, Civil War, and Reconstruction</b></li>
+        <li>
+          <ul class="py-5 font-assistant">
+            <li><a href="https://rotunda.upress.virginia.edu/MARC/27-grant.mrc">Papers of Ulysses S. Grant Digital
+                Edition</a></li>
+            <li><a href="https://rotunda.upress.virginia.edu/MARC/20-jackson.mrc">Papers of Andrew Jackson Digital
+                Edition</a></li>
+            <li><a href="https://rotunda.upress.virginia.edu/MARC/29-johnson.mrc">Papers of Andrew Johnson Digital
+                Edition</a></li>
+            <li><a href="https://rotunda.upress.virginia.edu/MARC/34-olmsted.mrc">Papers of Frederick Law Olmsted Digital
+                Edition</a></li>
+            <li><a href="https://rotunda.upress.virginia.edu/MARC/30-webster.mrc">Papers of Daniel Webster Digital
+                Edition</a></li>
+          </ul>
+        </li>
+        <li class="tracking-wider font-playfair"><b>American Century</b></li>
+        <li>
+          <ul class="py-5 font-assistant">
+            <li><a href="https://rotunda.upress.virginia.edu/MARC/14-presrecord.mrc">Presidential Recordings Digital
+                Edition</a></li>
+            <li><a href="https://rotunda.upress.virginia.edu/MARC/25-woodrowwilson.mrc">Papers of Woodrow Wilson Digital
+                Edition</a></li>
+            <li><a href="https://rotunda.upress.virginia.edu/MARC/32-BookerTWashington.mrc">Papers of Booker T. Washington Digital
+                Edition</a></li>
+          </ul>
+        </li>
+        <li class="tracking-wider font-playfair"><b>Literature and Culture Collection</b></li>
+        <li>
+          <ul class="py-5 font-assistant">
+            <li><a href="https://rotunda.upress.virginia.edu/MARC/5-arnold.mrc">Letters of Matthew Arnold</a></li>
+            <li><a href="https://rotunda.upress.virginia.edu/MARC/6-clotel.mrc"><i>Clotel</i> by William Wells Brown</a>
+            </li>
+            <li><a href="https://rotunda.upress.virginia.edu/MARC/8-emily.mrc">Emily Dickinson&rsquo;s
+                Correspondences</a></li>
+            <li><a href="https://rotunda.upress.virginia.edu/MARC/26-digitaltemple.mrc">The Digital Temple: A Documentary
+                Edition of George Herbert&rsquo;s English Verse</a></li>
+            <li><a href="https://rotunda.upress.virginia.edu/MARC/4-melville.mrc">Herman Melville&rsquo;s
+                <i>Typee</i></a></li>
+            <li><a href="https://rotunda.upress.virginia.edu/MARC/2-rossetti.mrc">Letters of Christina Rossetti</a>
+            </li>
+            <li><a href="https://rotunda.upress.virginia.edu/MARC/3-shore.mrc">Journal of Emily Shore</a></li>
+          </ul>
+        </li>
+        <li class="tracking-wider font-playfair"><b>Architecture</b></li>
+        <li>
+          <ul class="py-5 font-assistant">
+            <li><a href="https://rotunda.upress.virginia.edu/MARC/18-sah-archipedia.mrc">SAH Archipedia</a></li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <section class="px-5">
+      <h3 class="rot-h3">Current Rotunda Customers</h3>
+      <ul class="leading-relaxed md:grid md:grid-cols-2" id="customers">
+        {customers.map((cust) => <li class="font-assistant">{cust.name}</li>)}
+      </ul>
+    </section>
+  </RotundaMain>
+</Base>

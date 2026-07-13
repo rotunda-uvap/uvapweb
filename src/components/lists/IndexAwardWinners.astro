@@ -1,0 +1,19 @@
+---
+// Award-winners grid, ported from the Gatsby AwardWinners.js: every book
+// whose Prizes field matches the old regex /.[A-Z]/.
+import { getCollection } from 'astro:content';
+import SectionHeader from '../SectionHeader.astro';
+import IndexBookCard from './IndexBookCard.astro';
+
+const winners = await getCollection('books', (book) => {
+  const prizes = (book.data as any).Prizes;
+  return typeof prizes === 'string' && /.[A-Z]/.test(prizes);
+});
+---
+
+<section>
+  <SectionHeader text={'Award Winners'} />
+  <div class=" mx-auto py-5 flex flex-wrap">
+    {winners.map((book) => <IndexBookCard fields={book.data as any} />)}
+  </div>
+</section>

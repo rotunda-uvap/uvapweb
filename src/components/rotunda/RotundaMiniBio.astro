@@ -1,0 +1,58 @@
+---
+// Staff contact card for the Rotunda landing page. Port of
+// src/components/rotunda/RotundaMiniBio.js (its Heading4 differed from the
+// page-level one: padding 0 / margin-bottom 0). The phone field was queried
+// but never rendered — same here.
+import type { CollectionEntry } from 'astro:content';
+
+interface Props {
+  bio: CollectionEntry<'bios'>;
+}
+const { bio } = Astro.props;
+const { title, job_title, name_slug, email, contact_for } = bio.data;
+const slink = `/staff/${name_slug}/`;
+// legacy frontmatter emails contain zero-width characters; strip non-ASCII
+const clean_email = email.replace(/[^\x00-\x7F]/g, '');
+---
+
+<div class="p-3 rotunda">
+  <ul class="flex flex-col items-center ">
+    <a href={slink}>
+      <h4 class="minibio-h4">{title}</h4>
+    </a>
+    <li class="text-sm font-assistant ">{job_title}</li>
+    <li class="text-sm font-light pb-2">
+      <a href={`mailto:${clean_email}`} class="text-ceci-gray-dark inline-flex items-center">
+        {clean_email}
+        <svg
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          class="w-4 h-4 ml-2"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+          ></path>
+        </svg>
+      </a>
+    </li>
+    {contact_for && <li class="text-sm text-ceci-gray-dark border-t pt-2">{contact_for}</li>}
+  </ul>
+</div>
+
+<style>
+  .minibio-h4 {
+    font-family: 'Playfair Display SC', serif;
+    letter-spacing: 0.3em;
+    font-weight: 200;
+    color: #757575;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0;
+    margin-bottom: 0;
+    font-size: var(--fs-200);
+  }
+</style>

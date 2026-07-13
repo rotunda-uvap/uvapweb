@@ -1,0 +1,27 @@
+---
+// Cover-image link for an exhibit's collection book grid, ported from the
+// Gatsby RelatedBookList.js. If the ImageKit cover 404s, the react state
+// swap becomes an inline onerror that reveals the title-card fallback.
+interface Props {
+  id: string;
+  title?: string;
+}
+const { id, title } = Astro.props;
+const cover = `https://ik.imagekit.io/uvapress/${id}_M.jpg`;
+---
+
+<a href={`/title/${id}/`} class="object-cover px-2">
+  <img
+    src={cover}
+    alt={`Cover of ${title ?? id}`}
+    title={title}
+    width="150"
+    height="224"
+    style="object-fit: contain"
+    loading="lazy"
+    onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'"
+  />
+  <div style="display: none; width: 150px; height: 224px; align-items: center; justify-content: center; background-color: white; border: 1px solid #e5e7eb">
+    <p class="text-base text-ceci-gray-dark uppercase pt-3 px-2 underline font-sans text-center">{title ?? id}</p>
+  </div>
+</a>

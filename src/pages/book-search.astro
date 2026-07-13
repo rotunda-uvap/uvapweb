@@ -1,0 +1,50 @@
+---
+// Book search, ported from book-search.js. Algolia InstantSearch replaced by
+// Pagefind: the index is built from the book pages' own HTML at deploy time
+// (npm run build), searches run entirely in the browser, no service or keys.
+// NOTE: /pagefind/ assets exist only after a full build — use
+// `npm run build && npm run preview` to test locally; `astro dev` will show
+// an empty search box.
+import Base from '../layouts/Base.astro';
+import PageHeader from '../components/PageHeader.astro';
+---
+
+<Base title="Search for Books">
+  <section class="container px-5 py-12 mx-auto">
+    <PageHeader text="Search" />
+    <div class="mx-auto max-w-4xl" id="search"></div>
+  </section>
+</Base>
+
+<link rel="stylesheet" href="/pagefind/pagefind-ui.css" />
+<script is:inline src="/pagefind/pagefind-ui.js"></script>
+<script is:inline>
+  window.addEventListener('DOMContentLoaded', () => {
+    new PagefindUI({
+      element: '#search',
+      showImages: true,
+      pageSize: 10,
+      translations: {
+        placeholder: 'Search for a book',
+        zero_results: 'No books found for [SEARCH_TERM]',
+      },
+    });
+  });
+</script>
+
+<style is:global>
+  /* Align Pagefind UI with site typography */
+  #search {
+    --pagefind-ui-font: 'Crimson Text', serif;
+    --pagefind-ui-primary: #414042;
+    --pagefind-ui-text: #414042;
+    --pagefind-ui-border: #cecfce;
+    --pagefind-ui-tag: #f7f7f7;
+  }
+  #search .pagefind-ui__result-title {
+    font-family: 'Antonio', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 300;
+  }
+</style>

@@ -1,31 +1,43 @@
 ---
 // /collections/{title}/ — the URL segment is the collection title verbatim
 // (spaces included), exactly as gatsby-node created it.
-import { getCollection, render } from 'astro:content';
-import Interim from '../../components/Interim.astro';
+// Design ported from the Gatsby coll-page.js template.
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import PageHeader from '../../components/PageHeader.astro';
+import RelatedBookList from '../../components/lists/RelatedBookList.astro';
 
 export async function getStaticPaths() {
   const colls = await getCollection('bookCollections');
   return colls.map((coll) => ({ params: { title: coll.data.title }, props: { coll } }));
 }
 const { coll } = Astro.props;
-const { Content } = await render(coll);
 
 const books = await getCollection('books');
-const byId = new Map(books.map((b) => [b.data.BookID, b]));
-const collBooks = coll.data.related_book.map((id) => byId.get(id)).filter(Boolean);
+const titleById = new Map(books.map((b) => [b.data.BookID, b.data.Title]));
+const relatedBooks = coll.data.related_book.map((id) => ({
+  BookID: id,
+  Title: titleById.get(id) ?? id,
+}));
 ---
 
-<Interim title={coll.data.title} kicker="Collection">
-  <Content />
-  <ul class="py-4">
-    {collBooks.map((b) => (
-      <li class="border-b border-greige py-2">
-        <a href={`/title/${b!.data.BookID}/`} class="hover:text-ceci-gray-mid">
-          {b!.data.Title}
-          {b!.data.AuthorCredit && <span class="text-sm text-ceci-gray-mid"> — {b!.data.AuthorCredit}</span>}
-        </a>
-      </li>
-    ))}
-  </ul>
-</Interim>
+<Base title={coll.data.title}>
+  <div class="container px-5 py-7 mx-auto">
+    <PageHeader text={coll.data.title} />
+    <div class="lg:w-2/3 mx-auto leading-relaxed text-base py-2">
+      {/* TODO(port): the Gatsby template rendered frontmatter `description`
+          here, but no collection file (old or new) carries that field, so
+          production always rendered this paragraph empty. Kept for parity. */}
+      <p class="dropCap cms"></p>
+    </div>
+    {
+      relatedBooks.length > 0 && (
+        <div class="flex flex-row flex-wrap gap-4">
+          {relatedBooks.map((book) => (
+            <RelatedBookList id={book.BookID} title={book.Title} />
+          ))}
+        </div>
+      )
+    }
+  </div>
+</Base>

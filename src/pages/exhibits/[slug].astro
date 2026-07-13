@@ -1,6 +1,17 @@
 ---
+// /exhibits/{exhibit_slug}/ — virtual book exhibit page, ported from the
+// Gatsby exhibit-page.js template. The Gatsby GraphQL mappings resolved the
+// frontmatter string arrays; here we join them by hand:
+//   related_series     → seriesData by seriesID
+//   related_staff      → bios by staff_name
+//   related_collection → bookCollections by title
+//   related_blog       → news by title
 import { getCollection, render } from 'astro:content';
-import Interim from '../../components/Interim.astro';
+import Base from '../../layouts/Base.astro';
+import PageHeader from '../../components/PageHeader.astro';
+import SectionHeader from '../../components/SectionHeader.astro';
+import CoverCarousel from '../../components/CoverCarousel.astro';
+import RelatedBookList from '../../components/exhibits/RelatedBookList.astro';
 
 export async function getStaticPaths() {
   const exhibits = await getCollection('exhibits');
@@ -8,11 +19,135 @@ export async function getStaticPaths() {
 }
 const { ex } = Astro.props;
 const { Content } = await render(ex);
+const { bgcolor, txtcolor, coupon } = ex.data;
+
+const [books, allSeries, allBios, allNews, allColls] = await Promise.all([
+  getCollection('books'),
+  getCollection('seriesData'),
+  getCollection('bios'),
+  getCollection('news'),
+  getCollection('bookCollections'),
+]);
+const titleById = new Map(books.map((b) => [b.data.BookID, b.data.Title]));
+
+const featBooks = ex.data.featured_books.map((bid) => ({ bid, title: titleById.get(bid) }));
+
+const seriesById = new Map(allSeries.map((s) => [s.data.seriesID, s.data as any]));
+const relatedSeries = (ex.data.related_series ?? [])
+  .map((sid) => seriesById.get(sid))
+  .filter(Boolean);
+
+const biosByName = new Map(allBios.map((b) => [b.data.staff_name, b]));
+const relatedStaff = (ex.data.related_staff ?? [])
+  .map((name) => biosByName.get(name))
+  .filter((b) => b !== undefined);
+const staffBodies = await Promise.all(relatedStaff.map((b) => render(b)));
+
+const newsByTitle = new Map(allNews.map((n) => [n.data.title, n]));
+// The Gatsby template linked every post to /news/{slug}/; here we build the
+// type-correct URL (/news/, /author-corner/, /media/) so author-corner posts
+// don't 404 like they did on the old site.
+const relatedPosts = ex.data.related_blog
+  .map((title) => newsByTitle.get(title))
+  .filter((n) => n !== undefined);
+
+const collsByTitle = new Map(allColls.map((c) => [c.data.title, c]));
+const bookColls = ex.data.related_collection
+  .map((title) => collsByTitle.get(title))
+  .filter((c) => c !== undefined);
 ---
 
-<Interim title={ex.data.title} kicker="Exhibit">
-  {ex.data.coupon && (
-    <p class="font-display uppercase tracking-wider py-2">Discount code: {ex.data.coupon}</p>
-  )}
-  <Content />
-</Interim>
+{/* old SeO title had a template-literal typo ("Virtual Book Exhibit: + X"); intent preserved */}
+<Base title={`Virtual Book Exhibit: ${ex.data.title}`}>
+  <div>
+    <PageHeader text={ex.data.title} />
+
+    {coupon && (
+      <div class={`${bgcolor} ${txtcolor} p-2 text-xl font-thin tracking-wide text-center`}>
+        {coupon}
+      </div>
+    )}
+    <div>
+      <div class=" px-10 text-base text-ceci-gray-dark font-light tracking-wide text-center">
+        <Content />
+      </div>
+
+      {featBooks.length > 0 && (
+        <section class="py-2 border-b-2">
+          <SectionHeader text="Featured Books" />
+          <div class="pt-6"><CoverCarousel items={featBooks} /></div>
+        </section>
+      )}
+
+      {relatedStaff.length > 0 && (
+        <section class="py-8 border-b-2">
+          <SectionHeader text="Meet our Editors" />
+          {relatedStaff.map((staff, index) => {
+            const StaffBody = staffBodies[index].Content;
+            return (
+              <div>
+                <div class="tracking-wide text-lg font-thin text-ceci-gray-mid">
+                  <a href={`/staff/${staff.data.name_slug}/`}>
+                    {staff.data.title}{' '}
+                    <span class="font-thin text-sm">&nbsp; - &nbsp;{staff.data.job_title}</span>
+                  </a>
+                </div>
+                <div class="py-2 font-light text-ceci-gray-dark text-lg leading-relaxed dropCap">
+                  <StaffBody />
+                </div>
+              </div>
+            );
+          })}
+        </section>
+      )}
+
+      <SectionHeader text="Related Content" />
+      <section class="py-8 border-b-2 flex flex-col md:flex-row">
+        {relatedSeries.length > 0 && (
+          <div class="md:w-1/2">
+            <p class="text-center uppercase text-ceci-gray-mid mx-auto font-sans tracking-wide py-4">
+              Related Series
+            </p>
+            <ul class="content-center">
+              {relatedSeries.map((series) => (
+                <li class="py-3 text-gray-700 text-center font-display">
+                  <a href={`/series/${series.seriesID}/`}>{series.seriesName}</a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+
+        <div class="md:w-1/2">
+          <p class="text-center uppercase text-ceci-gray-mid mx-auto font-sans tracking-wide py-4">
+            Related Posts
+          </p>
+          <ul class="content-center">
+            {relatedPosts.map((post) => (
+              <a href={`/${post.data.type}/${post.id}/`}>
+                <li class="py-3 text-gray-700 text-center font-display">{post.data.title}</li>
+              </a>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      <section class="py-8">
+        <SectionHeader text="Books" />
+        {bookColls.length > 0 &&
+          bookColls.map((coll) => (
+            <div>
+              {/* TODO(port): the old query read coll.frontmatter.description, but no
+                  collection file has ever had a description field (and the Astro
+                  bookCollections schema doesn't define one), so nothing rendered */}
+              <div class="flex flex-row flex-wrap gap-4 p-4">
+                {coll.data.related_book.map((bid) => (
+                  <RelatedBookList id={bid} title={titleById.get(bid)} />
+                ))}
+              </div>
+            </div>
+          ))}
+      </section>
+    </div>
+  </div>
+</Base>

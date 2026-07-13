@@ -1,0 +1,35 @@
+---
+// Author's Corner index, ported from the Gatsby authors-corner.js: every
+// `author-corner` post, newest first, whole card linked to the post.
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import PageHeader from '../components/PageHeader.astro';
+
+const posts = (await getCollection('news', (n) => n.data.type === 'author-corner')).sort(
+  (a, b) => b.data.date.getTime() - a.data.date.getTime()
+);
+const excerpt = (text: string) => text.split(' ').splice(0, 50).join(' ') + '...';
+const fmtDate = (d: Date) => d.toISOString().slice(0, 10);
+---
+
+<Base>
+  <div class="container px-5 py-12 mx-auto">
+    <PageHeader text={"Author's Corner"} />
+    {posts.map((post) => (
+      <a href={`/${post.data.type}/${post.id}/`} class="grid grid-cols-3">
+        {post.data.related_book?.length ? (
+          <img src={`https://ik.imagekit.io/uvapress/${post.data.related_book[0]}_M.jpg`} alt="cover" class="justify-self-center object-cover" />
+        ) : (
+          <div></div>
+        )}
+        <div class="py-6 bg-white col-span-2">
+          <div class="flex justify-between items-center"><span class="font-light text-gray-800">{fmtDate(post.data.date)}</span>
+          </div>
+          <div class="mt-2 text-2xl text-gray-700 font-bold hover:underline">{post.data.title}
+            {post.data.description && <article class="mt-2 text-gray-600 font-light leading-relaxed text-base cms" set:html={excerpt(post.data.description)} />}
+          </div>
+        </div>
+      </a>
+    ))}
+  </div>
+</Base>

@@ -1,0 +1,49 @@
+---
+// /uvamagazine/ — ported from uvamagazine.js. The page renders the
+// "UVA Magazine" markdown entry plus the books of its related collection
+// (the "uvamag" collection).
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import PageHeader from '../components/PageHeader.astro';
+import SectionHeader from '../components/SectionHeader.astro';
+import RelatedBookList from '../components/staticpages/RelatedBookList.astro';
+
+const [page] = await getCollection('pages', (p) => p.data.title === 'UVA Magazine');
+
+const collNames = page.data.related_collection ?? [];
+const allColls = await getCollection('bookCollections');
+const colls = collNames
+  .map((name) => allColls.find((c) => c.data.title === name))
+  .filter((c) => c !== undefined);
+
+const books = await getCollection('books');
+const titleById = new Map(books.map((b) => [b.data.BookID, b.data.Title]));
+---
+
+<Base title="UVA Magazine">
+  <div class="container px-5 py-12 mx-auto">
+    <PageHeader text="SAVINGS FOR UVA ALUMNI" />
+
+    <h5 class="py-4 pl-1">Thomas Jefferson said, “I cannot live without books.” Can you?</h5>
+
+    <div class="cms" set:html={page.rendered?.html ?? ''} />
+
+    <section class="py-8">
+      <SectionHeader text="Featured Books" />
+      {/* TODO(port): the Gatsby query also rendered a collection `description`
+          frontmatter field; the bookCollections schema has no description and
+          the uvamag entry doesn't carry one, so nothing is lost today. */}
+      {
+        colls.map((coll) => (
+          <div>
+            <div class="flex flex-row flex-wrap gap-4 p-4">
+              {coll!.data.related_book.map((bid) => (
+                <RelatedBookList id={bid} title={titleById.get(bid) ?? ''} />
+              ))}
+            </div>
+          </div>
+        ))
+      }
+    </section>
+  </div>
+</Base>

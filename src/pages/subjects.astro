@@ -1,0 +1,32 @@
+---
+// Subjects index, ported from the Gatsby subjects.js: every subject name with
+// its book count, grouped over the full catalog.
+// NOTE(port): the old page linked each subject to /subject/{subjectID}, but
+// subject pages have always been built at /subject/{kebab-case name} (see
+// gatsby-node.js), so those links were broken. We link the kebab-case slugs
+// that actually exist.
+import { getCollection } from 'astro:content';
+import kebabCase from 'lodash-es/kebabCase';
+import Base from '../layouts/Base.astro';
+import PageHeader from '../components/PageHeader.astro';
+
+const books = await getCollection('books');
+const subjectCounts = new Map<string, number>();
+for (const book of books) {
+  for (const subj of book.data.Subjects ?? []) {
+    subjectCounts.set(subj.name, (subjectCounts.get(subj.name) ?? 0) + 1);
+  }
+}
+const subjects = [...subjectCounts.entries()].sort((a, b) => a[0].localeCompare(b[0], 'en'));
+---
+
+<Base title="Our Subjects">
+  <PageHeader text={'Book Subjects'} />
+  <ul class="grid md:grid-cols-4 md:grid-4">
+    {subjects.map(([name, count]) => (
+      <li class="lg:w-1/3 mb-1 w-1/2">
+        <a href={`/subject/${kebabCase(name)}/`} class="text-gray-600 hover:text-gray-800">{name} ({count})</a>
+      </li>
+    ))}
+  </ul>
+</Base>

@@ -1,9 +1,12 @@
 ---
 // /subject/{kebab-case name}/ — subjects are derived from book records,
 // grouped by name then kebab-cased with lodash (same as gatsby-node).
+// Design ported from the Gatsby subject-page.js template.
 import { getCollection } from 'astro:content';
 import kebabCase from 'lodash-es/kebabCase';
-import Interim from '../../components/Interim.astro';
+import Base from '../../layouts/Base.astro';
+import PageHeader from '../../components/PageHeader.astro';
+import BookCard from '../../components/lists/BookCard.astro';
 
 export async function getStaticPaths() {
   const books = await getCollection('books', (b) => !b.data.Rotunda);
@@ -25,15 +28,18 @@ const sorted = subjectBooks.sort(
 );
 ---
 
-<Interim title={name} kicker="Subject">
-  <ul class="py-4">
-    {sorted.map((b) => (
-      <li class="border-b border-greige py-2">
-        <a href={`/title/${b.data.BookID}/`} class="hover:text-ceci-gray-mid">
-          {b.data.Title}
-          {b.data.AuthorCredit && <span class="text-sm text-ceci-gray-mid"> — {b.data.AuthorCredit}</span>}
-        </a>
-      </li>
-    ))}
-  </ul>
-</Interim>
+<Base title={name}>
+  <PageHeader text={name} />
+  <div class="flex flex-row px-5 inline-flex items-center w-full leading-normal">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
+      <path
+        fill-rule="evenodd"
+        d="M7.707 14.707a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l2.293 2.293a1 1 0 010 1.414z"
+        clip-rule="evenodd"></path>
+    </svg>
+    <a href="/books/#subjects" class="block p-2  text-sm font-thin tracking-wide uppercase ">All Subjects</a>
+  </div>
+  <div class="flex flex-wrap gap-2 py-5">
+    {sorted.map((b) => <BookCard book={b} />)}
+  </div>
+</Base>

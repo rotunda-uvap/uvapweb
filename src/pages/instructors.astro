@@ -1,0 +1,124 @@
+---
+// /instructors/ — ported from instructors.js: desk/exam copy info, course
+// collections (from the Instructors page entry), subject counts grouped from
+// the books catalog, and the series list.
+import { getCollection } from 'astro:content';
+import kebabCase from 'lodash-es/kebabCase';
+import Base from '../layouts/Base.astro';
+import PageHeader from '../components/PageHeader.astro';
+import SectionHeader from '../components/SectionHeader.astro';
+import GoToTop from '../components/GoToTop.astro';
+
+const [page] = await getCollection('pages', (p) => p.data.title === 'Instructors');
+const collTitles = page.data.related_collection ?? [];
+
+// subjects grouped by name with counts, alphabetical (Gatsby group behavior)
+const books = await getCollection('books');
+const subjectCounts = new Map<string, number>();
+for (const b of books) {
+  for (const s of b.data.Subjects ?? []) {
+    subjectCounts.set(s.name, (subjectCounts.get(s.name) ?? 0) + 1);
+  }
+}
+const subjects = [...subjectCounts.entries()].sort((a, b) => a[0].localeCompare(b[0]));
+
+const series = (await getCollection('seriesData'))
+  .map((s) => s.data as { seriesID: string; seriesName: string })
+  .sort((a, b) => a.seriesName.localeCompare(b.seriesName));
+---
+
+<Base title="For Instructors">
+  <div class="flex flex-col text-center w-full" id="top">
+    <PageHeader text="For Instructors" />
+  </div>
+
+  <section class="py-4 border-b-2 border-gray-100" id="copyinfo">
+    <SectionHeader text="Desk and Exam Copies" />
+    <p class="leading-relaxed text-base text-gray-700">
+      <span class="font-bold">Complimentary desk copies</span> are provided to professors who have already
+      adopted a title for course use and an order with a university or local bookstore has been placed
+      or will be forthcoming. Please indicate the name of this bookstore in your request. To receive
+      a desk copy, <a
+        href="https://docs.google.com/forms/d/e/1FAIpQLSdM83xFI63YLUWkuv7zEko9cMBD-9csrbizC_VH7U7Mmmr5sg/viewform"
+        >please fill out this form.</a
+      >
+    </p>
+    <p class="leading-relaxed text-base text-gray-700">
+      <span class="font-bold">Examination copies</span> are available to qualified instructors of relevant
+      courses at the discretion of UVA Press. Please provide affiliation and course details to be considered.
+      Examination copies are available in print format only. To request an exam copy, <a
+        href="https://docs.google.com/forms/d/e/1FAIpQLSdM83xFI63YLUWkuv7zEko9cMBD-9csrbizC_VH7U7Mmmr5sg/viewform"
+        >please fill out this form.</a
+      >
+    </p>
+    <p class="leading-relaxed text-base text-gray-700">
+      For classroom and academic permission requests, please see <a href="/permissions/"
+        >this page</a
+      >
+    </p>
+  </section>
+
+  <section class="py-5 text-gray-700 border-b-2 border-gray-100">
+    <SectionHeader text="Course Collections" />
+    <div class="container flex flex-wrap py-10 mx-auto items-center">
+      {
+        collTitles.map((title) => (
+          <div class="b-2 px-4 font-display items-center">
+            <a href={`/collections/${title}/`}>{title}</a>
+          </div>
+        ))
+      }
+    </div>
+    <GoToTop />
+  </section>
+
+  <section class="py-4 text-gray-700 border-b-2 border-gray-100" id="subjects">
+    <SectionHeader text="Our Subjects" />
+    <div class="container flex flex-wrap py-10 mx-auto items-center">
+      {
+        subjects.map(([name, count]) => (
+          <div class="md:w-1/2 mb-2 px-2 font-display">
+            <a href={`/subject/${kebabCase(name)}/`} class="text-ceci-gray-dark hover:text-gray-800">
+              {name} ({count})
+            </a>
+          </div>
+        ))
+      }
+    </div>
+    <GoToTop />
+  </section>
+
+  <section class="text-gray-700 py-4" id="series">
+    <SectionHeader text="Our Series" />
+    <a href="/series/">
+      <div class="text-sm text-right uppercase font-thin text-ceci-gray-mid">
+        All Active Series <span class="inline-flex items-center mt-4">
+          <svg
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            class="w-4 h-4 ml-2"
+            viewBox="0 0 24 24"
+          >
+            <path d="M13 5l7 7-7 7M5 5l7 7-7 7"></path>
+          </svg></span
+        >
+      </div>
+    </a>
+
+    <div class="md:flex md:flex-wrap py-6 mx-auto">
+      {
+        series.map((s) => (
+          <div class="md:w-1/2 mb-2 px-2 font-display">
+            <a href={`/series/${s.seriesID}/`} class="text-gray-600 hover:text-gray-800">
+              {s.seriesName}
+            </a>
+          </div>
+        ))
+      }
+    </div>
+    <GoToTop />
+  </section>
+</Base>

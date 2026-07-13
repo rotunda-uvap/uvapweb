@@ -1,0 +1,89 @@
+---
+// Staff directory, ported from the Gatsby staff-list.js. Bios are grouped by
+// department code; the old page sorted ACQ/EDP/ROT by name and left the rest
+// in default order — we sort every group by name for a stable build.
+import { getCollection } from 'astro:content';
+import { Image } from 'astro:assets';
+import Base from '../layouts/Base.astro';
+import PageHeader from '../components/PageHeader.astro';
+import SectionHeader from '../components/SectionHeader.astro';
+import IndexMiniBio from '../components/lists/IndexMiniBio.astro';
+import staffPhoto from '../assets/staff_25.jpg';
+
+const bios = await getCollection('bios');
+const dept = (code: string) =>
+  bios
+    .filter((b) => b.data.department.includes(code))
+    .sort((a, b) => a.data.title.localeCompare(b.data.title, 'en'));
+
+const dirz = dept('DIR');
+const opss = dept('OPS');
+const acqs = dept('ACQ');
+const edps = dept('EDP');
+const mkgs = dept('MKG');
+const rots = dept('ROT');
+---
+
+<Base title="Staff Directory">
+  <div class=" mx-auto">
+    <PageHeader text={'Our Team'} />
+    <div class="w-full flex place-items-center">
+      <Image src={staffPhoto} alt="photo of UVA Press Staff as of Sept 2023" quality={100} class="mx-auto" />
+    </div>
+
+    <section class="py-4 border-b-2 border-gray-100">
+      <SectionHeader text={'Director'} />
+      <div class="py-2 mx-auto">
+        <div class="flex flex-wrap -m-4 text-center">
+          {dirz.map((bio) => <IndexMiniBio bio={bio} />)}
+        </div>
+      </div>
+    </section>
+
+    <section class="py-4 border-b-2 border-gray-100">
+      <SectionHeader text={'Finance and Operations'} />
+      <div class="py-2 mx-auto">
+        <div class="flex flex-wrap -m-4 text-center">
+          {opss.map((bio) => <IndexMiniBio bio={bio} />)}
+        </div>
+      </div>
+    </section>
+
+    <section class="py-4 border-b-2 border-gray-100">
+      <SectionHeader text={'Acquisitions'} />
+      <div class="py-2 mx-auto">
+        <div class="flex flex-wrap -m-4 text-center">
+          {acqs.map((bio) => <IndexMiniBio bio={bio} />)}
+        </div>
+      </div>
+    </section>
+
+    <section class="py-4 border-b-2 border-gray-100">
+      <SectionHeader text={'Editorial, Design, and Production'} />
+      <div class="py-2 mx-auto">
+        <p class="text-center text-base font-display"> Freelance copyeditors and indexers, please send inquiries to <a href="mailto:wrenmorganmyers@virginia.edu">Wren Morgan Myers</a>.</p>
+        <div class="flex flex-wrap -m-4 text-center">
+          {edps.map((bio) => <IndexMiniBio bio={bio} />)}
+        </div>
+      </div>
+    </section>
+
+    <section class="py-4 border-b-2 border-gray-100">
+      <SectionHeader text={'Sales, Marketing, and Publicity'} />
+      <div class="py-2 mx-auto">
+        <div class="flex flex-wrap -m-4 text-center">
+          {mkgs.map((bio) => <IndexMiniBio bio={bio} />)}
+        </div>
+      </div>
+    </section>
+
+    <section class="py-4">
+      <SectionHeader text={'ROTUNDA Digital Imprint'} />
+      <div class="py-2 mx-auto">
+        <div class="flex flex-wrap -m-4 text-center">
+          {rots.map((bio) => <IndexMiniBio bio={bio} />)}
+        </div>
+      </div>
+    </section>
+  </div>
+</Base>

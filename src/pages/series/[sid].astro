@@ -1,6 +1,10 @@
 ---
+// /series/{seriesID}/ — design ported from the Gatsby series-page.js template.
 import { getCollection, render } from 'astro:content';
-import Interim from '../../components/Interim.astro';
+import Base from '../../layouts/Base.astro';
+import PageHeader from '../../components/PageHeader.astro';
+import SectionHeader from '../../components/SectionHeader.astro';
+import BookCard from '../../components/lists/BookCard.astro';
 
 export async function getStaticPaths() {
   const series = await getCollection('seriesData');
@@ -8,29 +12,76 @@ export async function getStaticPaths() {
 }
 const { s } = Astro.props;
 
-const [seriesInfo, books] = await Promise.all([
+const [seriesInfo, books, bios] = await Promise.all([
   getCollection('seriesInfo', (e) => e.data.seriesID === s.data.seriesID),
   getCollection('books'),
+  getCollection('bios'),
 ]);
 const info = seriesInfo[0];
 const Content = info ? (await render(info)).Content : null;
+const hasBody = Boolean(info?.body?.trim());
 const title = info?.data.title ?? (s.data as any).name ?? s.data.seriesID;
 const seriesBooks = books
   .filter((b) => b.data.Series?.some((ser: any) => ser.seriesID === s.data.seriesID))
   .sort((a, b) => a.data.DaysSincePublication - b.data.DaysSincePublication);
+
+// related_staff holds staff_name strings (the Gatsby mapping joined them to
+// bio nodes); resolve name_slug and display title from the bios collection.
+const bioByName = new Map(bios.map((bio) => [bio.data.staff_name, bio]));
+const relatedStaff = (info?.data.related_staff ?? []).map((name) => {
+  const bio = bioByName.get(name);
+  return {
+    title: bio?.data.title ?? name,
+    name_slug: bio?.data.name_slug ?? name.replace(' ', '-').toLowerCase(),
+  };
+});
 ---
 
-<Interim title={title} kicker="Series">
-  {info?.data.editors && <p class="text-ceci-gray-mid">{info.data.editors}</p>}
-  {Content && <Content />}
-  <ul class="py-4">
-    {seriesBooks.map((b) => (
-      <li class="border-b border-greige py-2">
-        <a href={`/title/${b.data.BookID}/`} class="hover:text-ceci-gray-mid">
-          {b.data.Title}
-          {b.data.AuthorCredit && <span class="text-sm text-ceci-gray-mid"> — {b.data.AuthorCredit}</span>}
-        </a>
-      </li>
-    ))}
-  </ul>
-</Interim>
+<Base title={title}>
+  <PageHeader text={title} />
+  <div class="flex flex-row px-5 inline-flex items-center w-full leading-normal">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
+      <path fill-rule="evenodd" d=" M11 19l-7-7 7-7m8 14l-7-7 7-7" clip-rule="evenodd"></path>
+    </svg>
+    <a href="/books/#series" class="block p-2  text-sm font-thin tracking-wide uppercase ">All Series</a>
+  </div>
+  <section class="py-4 border-b-2 border-gray-100">
+    <div class="ml-4 text-center uppercase text-ceci-gray-mid tracking-wider font-thin">
+      <a href="/series/">{info?.data.status} series</a>
+    </div>
+    {
+      hasBody && Content && (
+        <div class="pt-5 cms dropCap text-lg text-ceci-gray-dark leading-relaxed">
+          <Content />
+        </div>
+      )
+    }
+    {
+      info?.data.editors && (
+        <div class="text-ceci-gray-mid leading-relaxed font-serif ml-4 cms" set:html={info.data.editors} />
+      )
+    }
+    {
+      info?.data.moreEditors && (
+        <div class="text-ceci-gray-mid leading-relaxed font-serif pt-2 ml-4 cms" set:html={info.data.moreEditors} />
+      )
+    }
+    {
+      relatedStaff.length > 0 && (
+        <div class="pt-2 text-ceci-gray-mid leading-relaxed font-serif ml-4 cms">
+          UVA Editor(s):
+          {relatedStaff.map((staff, index) => (
+            <a href={`/staff/${staff.name_slug}/`}>{' ' + (index ? '& ' : '') + staff.title}</a>
+          ))}
+        </div>
+      )
+    }
+  </section>
+
+  <section class="py-4">
+    <SectionHeader text={'Titles in this Series'} />
+    <div class="flex flex-wrap gap-2 py-5">
+      {seriesBooks.map((b) => <BookCard book={b} />)}
+    </div>
+  </section>
+</Base>

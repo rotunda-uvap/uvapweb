@@ -1,0 +1,97 @@
+---
+// /catalog/ — ported from catalog.js. Seasonal covers/PDF links and the
+// CurrentList season string are swapped by hand each season, same as the
+// Gatsby site (the PDFs were served from the site root there; they live at
+// /downloads/ here).
+import { Image } from 'astro:assets';
+import Base from '../layouts/Base.astro';
+import SectionHeader from '../components/SectionHeader.astro';
+import CurrentList from '../components/staticpages/CurrentList.astro';
+import fall26 from '../assets/fall26.jpg';
+import spring26 from '../assets/spring26.jpg';
+import fall25 from '../assets/fall25.jpg';
+import spring25 from '../assets/spring25.jpg';
+import fall24 from '../assets/fall24.jpg';
+---
+
+<Base title="Seasonal Catalogs">
+  <div class=" mx-auto">
+    <section class="py-4 border-b-2 border-gray-100">
+      <div
+        class="container flex flex-col px-6 py-4 mx-auto space-y-6 md:h-128  md:flex-row md:items-center md:space-x-6"
+      >
+        <div class="flex  w-full md:w-1/3">
+          <Image src={fall26} alt="current catalog cover" />
+        </div>
+
+        <div class="flex flex-col items-center w-full md:flex-row md:w-1/2">
+          <div class="max-w-lg md:mx-12 md:order-2">
+            <h1 class="ml-4 text-3xl  font-medium tracking-wide text-ceci-gray-mid md:text-4xl">
+              Current Catalog
+            </h1>
+            <div class="py-2 ml-4 font-serif text-center md:text-left text-ceci-gray-mid">
+              View the selection of books from our Fall 2026 list.
+            </div>
+            <div class="ml-4 flex flex-row py-5">
+              <span class="font-thin text-lg tracking-wide text-ceci-gray-mid">
+                <a href="/downloads/fall26.pdf">
+                  Download Catalog<span class="inline-flex items-center mt-4">
+                    <svg
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      class="w-4 h-4 ml-2"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg></span
+                  >
+                </a>
+              </span>
+              <span class="font-thin text-lg ml-4 tracking-wide text-ceci-gray-mid">
+                <a href="https://www.edelweiss.plus/#catalogID=5379146&page=1">
+                  View on Edelweiss<span class="inline-flex items-center mt-4">
+                    <svg
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      class="w-4 h-4 ml-2"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg></span
+                  ></a
+                >
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <SectionHeader text="Previous Seasons" />
+    <section class="flex flex-row basis-0 gap-2 py-4 border-b-2 border-gray-100">
+      <a href="/downloads/spring26.pdf" class="h-full">
+        <Image src={spring26} alt="Spring 26 catalog cover" class="object-cover" />
+      </a>
+      <a href="/downloads/fall25.pdf" class="h-full" title="Fall 25">
+        <Image src={fall25} alt="fall 25 catalog cover" class="object-cover" />
+      </a>
+      <a href="/downloads/spring25.pdf" class="h-full" title="Spring 25">
+        <Image src={spring25} alt="spring 25 catalog cover" class="object-cover" />
+      </a>
+      <a href="/downloads/fall24.pdf" class="h-full">
+        <Image src={fall24} alt="fall 24 catalog cover" class="object-cover" />
+      </a>
+    </section>
+
+    <section id="list" class="py-4">
+      <SectionHeader text="Books in Current Catalog" />
+
+      <CurrentList />
+    </section>
+  </div>
+</Base>

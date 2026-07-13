@@ -1,0 +1,57 @@
+---
+// Ported from active-series.js — seriesinfo entries with type "series" and
+// status "active" (the Gatsby query filtered on type, which excludes the
+// handful of seriesinfo files that only carry templateKey), sorted by title.
+import { getCollection } from 'astro:content';
+import SectionHeader from '../SectionHeader.astro';
+
+const series = (
+  await getCollection('seriesInfo', (s) => s.data.type === 'series' && s.data.status === 'active')
+).sort((a, b) => a.data.title.localeCompare(b.data.title));
+---
+
+<section class="overflow-hidden">
+  <div class="container px-5 py-12 mx-auto">
+    <div class="flex flex-col text-center w-full pb-4" id="active">
+      <SectionHeader text="Active Series" />
+      <a href="#completed">
+        <div class="text-sm text-right font-thin tracking-wide text-ceci-gray-mid uppercase">
+          Completed Series <span class="inline-flex items-center mt-4">
+            <svg
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              class="w-4 h-4 ml-2"
+              viewBox="0 0 24 24"
+            >
+              <path d="M19 13l-7 7-7-7m14-8l-7 7-7-7"></path>
+            </svg></span
+          >
+        </div>
+      </a>
+    </div>
+
+    <div class="flex flex-wrap text-gray-600">
+      {
+        series.map((s) => (
+          <div class="w-full flex flex-col hover:bg-greige hover:text-ceci-gray-dark">
+            <span class="inline-block py-2 uppercase text-ceci-gray-mid text-sm font-medium tracking-wider">
+              {s.data.seriestype}
+            </span>
+            <a href={`/series/${s.data.seriesID}/`}>
+              <div class="sm:text-xl text-lg text-gray-700 tracking-wide font-serif ">
+                {s.data.title}
+              </div>
+            </a>
+            <article class="cms text-base leading-relaxed py-2" set:html={s.rendered?.html ?? ''} />
+            <div class="flex items-center flex-wrap pb-4 my-2 border-b-2 border-gray-100  mt-auto w-full">
+              <span class="text-gray-600 leading-relaxed font-serif ml-4 cms">{s.data.editors}</span>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>

@@ -1,0 +1,13 @@
+---
+// Ported from BoardMember.js — name + affiliation row for the About page boards.
+interface Props {
+  name: string;
+  title: string;
+}
+const { name, title } = Astro.props;
+---
+
+<div class="flex flex-col px-7 py-2">
+  <h6 class="tracking-wide text-ceci-gray-mid">{name}</h6>
+  <span class="text-ceci-gray-dark font-serif">{title}</span>
+</div>

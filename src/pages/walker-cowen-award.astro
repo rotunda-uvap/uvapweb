@@ -1,0 +1,19 @@
+---
+// /walker-cowen-award/ — ported from walker-cowen-award.js
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import PageHeader from '../components/PageHeader.astro';
+
+const [page] = await getCollection('pages', (p) => p.data.title === 'Walker Cowen Memorial Prize');
+---
+
+<Base
+  title="Walker Cowen Memorial Prize"
+  description="The prize is awarded to the author of a scholarly book-length manuscript in eighteenth-century studies, including the Americas and the Atlantic world. "
+>
+  <div class="container px-5 py-12 mx-auto">
+    <PageHeader text="Walker Cowen Memorial Prize" />
+
+    <div class="cms" set:html={page.rendered?.html ?? ''} />
+  </div>
+</Base>

@@ -1,0 +1,27 @@
+---
+// /exhibits/ — list of current exhibits, ported from the Gatsby
+// src/pages/exhibits.js page (all exhibits, newest date first).
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import PageHeader from '../../components/PageHeader.astro';
+
+const exhibits = (await getCollection('exhibits')).sort(
+  (a, b) => (b.data.date?.getTime() ?? 0) - (a.data.date?.getTime() ?? 0)
+);
+---
+
+<Base title="Current Exhibits">
+  <div class="container px-5 py-2 mx-auto">
+    <PageHeader text="Exhibits" />
+    <div class="flex flex-col">
+      {exhibits.map((ex) => (
+        <a
+          class="p-4 md:px-10 text-lg font-display text-gray-700 tracking-wider hover:underline"
+          href={`/exhibits/${ex.data.exhibit_slug}/`}
+        >
+          {ex.data.title}
+        </a>
+      ))}
+    </div>
+  </div>
+</Base>

@@ -1,0 +1,29 @@
+---
+// Cover-only book link, ported from the Gatsby RelatedBookList.js.
+// If the ImageKit cover 404s, the onerror handler swaps in the title box
+// (replaces the React useState fallback).
+interface Props {
+  id: string;
+  title: string;
+}
+const { id, title } = Astro.props;
+const cover = `https://ik.imagekit.io/uvapress/${id}_M.jpg`;
+---
+
+<a href={`/title/${id}/`} class="object-cover px-2">
+  <img
+    src={cover}
+    alt={`Cover of ${title}`}
+    title={title}
+    width="150"
+    height="224"
+    style="object-fit: contain;"
+    loading="lazy"
+    onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+  />
+  <div
+    style="width: 150px; height: 224px; display: none; align-items: center; justify-content: center; background-color: white; border: 1px solid #e5e7eb;"
+  >
+    <p class="text-base text-ceci-gray-dark uppercase pt-3 px-2 underline font-sans text-center">{title}</p>
+  </div>
+</a>

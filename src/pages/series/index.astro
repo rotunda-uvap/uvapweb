@@ -1,0 +1,13 @@
+---
+// /series/ index, ported from the Gatsby series.js page
+import Base from '../../layouts/Base.astro';
+import ActiveSeries from '../../components/staticpages/ActiveSeries.astro';
+import CompletedSeries from '../../components/staticpages/CompletedSeries.astro';
+---
+
+<Base title="Our Series">
+  <ActiveSeries />
+  <div id="completed">
+    <CompletedSeries />
+  </div>
+</Base>

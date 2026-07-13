@@ -1,0 +1,16 @@
+---
+// /privacy/ — ported from privacy.js
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import PageHeader from '../components/PageHeader.astro';
+
+const [page] = await getCollection('pages', (p) => p.data.title === 'Privacy Policy');
+---
+
+<Base title="Privacy Policy">
+  <div class="container px-5 py-12 mx-auto">
+    <PageHeader text="Privacy Policy" />
+
+    <div class="cms" set:html={page.rendered?.html ?? ''} />
+  </div>
+</Base>

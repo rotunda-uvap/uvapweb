@@ -1,0 +1,37 @@
+---
+// Rotunda logo + secondary nav shown at the top of the Rotunda-branded pages.
+// Port of src/components/rotunda/RotundaHeader.js (StaticImage + emotion
+// RotNav/RotNavLink). Font sizes rely on the --fs-* variables defined by
+// RotundaMain, which always wraps this component.
+import { Image } from 'astro:assets';
+import rotundaLogo from '../../assets/rotunda_logo.svg';
+---
+
+<header class=" my-4 py-4 flex flex-col w-full place-items-center gap-4 rotunda">
+  <Image src={rotundaLogo} alt="Rotunda Home" width={150} />
+  <nav aria-label="Rotunda secondary navigation" class="rotunda">
+    <a href="https://www.upress.virginia.edu/rotunda">about</a>
+    <a href="https://www.upress.virginia.edu/rotunda-purchase">purchase</a>
+    <a href="https://rotunda.upress.virginia.edu/entrance.xqy">entrance</a>
+  </nav>
+</header>
+
+<style>
+  nav {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    margin-top: 2rem;
+    font-weight: 100;
+    font-size: var(--fs-100);
+    font-family: 'Playfair Display SC', sans-serif;
+    letter-spacing: 0.3em;
+    border-top: 1px solid #a7a9ac;
+    border-bottom: 1px solid #a7a9ac;
+  }
+  nav a {
+    color: #757575;
+    text-decoration: none;
+    padding: 0.4rem 0;
+  }
+</style>

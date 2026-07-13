@@ -1,0 +1,86 @@
+---
+// Publicity landing, ported from the Gatsby publicity.js. The site nav links
+// to the #review anchor — keep that id exactly.
+import { getCollection } from 'astro:content';
+import { faCircleArrowRight } from '@fortawesome/free-solid-svg-icons';
+import Base from '../layouts/Base.astro';
+import Icon from '../components/Icon.astro';
+import PageHeader from '../components/PageHeader.astro';
+import SectionHeader from '../components/SectionHeader.astro';
+
+const posts = (await getCollection('news', (n) => n.data.type === 'news')).sort(
+  (a, b) => b.data.date.getTime() - a.data.date.getTime()
+);
+// the old page truncated the rendered post HTML to 100 space-separated words
+const excerpt = (html: string) => html.split(' ').splice(0, 100).join(' ') + '...';
+const fmtDate = (d: Date) => d.toISOString().slice(0, 10);
+---
+
+<Base title="Publicity Information: News and Events">
+  <div class="container md:p-5 px-5 mx-auto">
+    <div class="flex flex-col text-center w-full">
+      <PageHeader text={'Media, News and Events'} />
+    </div>
+  </div>
+
+  <section>
+    <div class="flex flex-col text-center items-center border-b-2 pb-4">
+      <a href="/staff/MK-Maco/"><h5 class="title-font font-medium text-base py-1 text-ceci-gray-mid">Mary Kate Maco</h5></a>
+      <span class="text-ceci-gray-mid font-light font-serif">Publicist</span>
+      <span class="font-serif text-ceci-gray-mid">(434) 982-2932</span>
+      <a class="text-ceci-gray-mid text-base font-serif inline-flex items-center" href="mailto:faa6je@virginia.edu">Email Mary Kate
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+          <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+        </svg>
+      </a>
+    </div>
+  </section>
+
+  <section id="review">
+    <SectionHeader text="Review Copy Requests" />
+    <p class="cms leading-relaxed text-base text-left">
+      If you are a journalist or journal interested in a copy of a book for review, we can supply gratis copies of titles published within the past two years.  </p>
+    <p class="cms text-base">Please include the following in your email:</p>
+    <ul class="pl-8 list-disc">
+      <li class="font-serif text-base">Name of book and author</li>
+      <li class="font-serif text-base">Your media outlet</li>
+      <li class="font-serif text-base">Full contact information (name, mailing address), along with any deadlines</li>
+      <li class="font-serif text-base">Links to your outlet's website</li>
+    </ul>
+    <p class="pt-2 text-base">Review copy requests can take up to four weeks to process. Due to the volume of requests, we are unable to provide status updates. Upon publication, please send PDFs and/or links to coverage to <a href="mailto:sborgatti@virginia.edu">sborgatti@virginia.edu.</a></p>
+  </section>
+
+  <div class="mx-auto px-4">
+    <section class="flex flex-col">
+      <SectionHeader text="All News Posts" />
+      {posts.map((post) => {
+        const html = post.rendered?.html ?? '';
+        return (
+          <a href={`/${post.data.type}/${post.id}/`} class="flex flex-col border-b-2 last:border-b-0 py-2">
+            <div class="flex flex-col py-2">
+              <div class="text-sm font-serif font-thin text-ceci-gray-mid">{fmtDate(post.data.date)}</div>
+              <div class="font-thin uppercase tracking-wide font-display">{post.data.title}</div>
+            </div>
+
+            <div class="flex md:flex-row gap-2  ">
+              {post.data.related_book?.length ? (
+                <div class="md:base-1/5 shrink-0 pr-2"><img src={`https://ik.imagekit.io/uvapress/${post.data.related_book[0]}_M.jpg`} alt="cover" /></div>
+              ) : (
+                <div></div>
+              )}
+
+              {html ? (
+                <div>
+                  <div class=" text-ceci-gray-dark text-base font-light dropCap px-2 md:px-1" set:html={excerpt(html)} />
+                  <div class="font-display uppercase text-sm tracking-widest py-3 md:py-2"><Icon icon={faCircleArrowRight} class="inline mx-4" /> Continue Reading</div>
+                </div>
+              ) : (
+                <div></div>
+              )}
+            </div>
+          </a>
+        );
+      })}
+    </section>
+  </div>
+</Base>

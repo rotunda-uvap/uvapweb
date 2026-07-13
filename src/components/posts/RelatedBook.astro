@@ -1,0 +1,11 @@
+---
+// Cover-image link to a book page. Ported from the Gatsby
+// src/components/RelatedBook.js (relative ../../title/{id} → absolute /title/{id}/).
+interface Props {
+  id: string;
+  title: string;
+}
+const { id, title } = Astro.props;
+---
+
+<a href={`/title/${id}/`}><img src={`https://ik.imagekit.io/uvapress/${id}_M.jpg`} alt={title} title={title} /></a>

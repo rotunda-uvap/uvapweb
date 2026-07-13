@@ -1,9 +1,9 @@
 ---
 // /title/{BookID}/ (press books) and /title/{RotID}/ (rotunda titles) —
 // one URL namespace, two shapes, exactly as gatsby-node created them.
-import { getCollection, render } from 'astro:content';
+import { getCollection } from 'astro:content';
 import BookPage from '../../components/BookPage.astro';
-import Interim from '../../components/Interim.astro';
+import RotundaTitlePage from '../../components/RotundaTitlePage.astro';
 
 export async function getStaticPaths() {
   const [books, rotundaData, rotundaInfo] = await Promise.all([
@@ -25,17 +25,10 @@ export async function getStaticPaths() {
 }
 
 const { kind, book, rot, info } = Astro.props;
-const rotTitle = info?.data.title ?? rot?.data.RotID;
-const Content = info ? (await render(info)).Content : null;
 ---
 
 {kind === 'book' ? (
   <BookPage book={book!} />
 ) : (
-  <Interim title={rotTitle!} kicker="Rotunda">
-    {Content && <div class="py-4"><Content /></div>}
-    {rot!.data.MainCollection && (
-      <p class="text-sm text-ceci-gray-mid">Collection: {rot!.data.MainCollection}</p>
-    )}
-  </Interim>
+  <RotundaTitlePage rot={rot!} info={info} />
 )}

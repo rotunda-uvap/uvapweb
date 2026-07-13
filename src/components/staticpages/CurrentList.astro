@@ -1,0 +1,15 @@
+---
+// Ported from current-list.js — books on the current seasonal list.
+// NOTE: the season string is swapped by hand each season, same as the
+// Gatsby component (kept in sync with the /catalog/ page copy and cover).
+import { getCollection } from 'astro:content';
+import BookCard from './BookCard.astro';
+
+const books = await getCollection('books', (b) => (b.data as any).List === 'Fall 2026');
+---
+
+<section>
+  <div class="flex flex-wrap ">
+    {books.map((b) => <BookCard fields={b.data} />)}
+  </div>
+</section>

@@ -1,0 +1,49 @@
+---
+// Social share buttons for the digital-project promo pages. Replaces
+// react-share (ShareButtons.js) with plain intent links + Font Awesome brand
+// icons — the same treatment BookPage.astro uses for its share row.
+import { faFacebookF, faXTwitter, faRedditAlien } from '@fortawesome/free-brands-svg-icons';
+import Icon from '../Icon.astro';
+
+interface Props {
+  title: string;
+  url: string;
+}
+const { title, url } = Astro.props;
+
+const shares = [
+  {
+    icon: faFacebookF,
+    bg: '#3b5998',
+    label: 'Share on Facebook',
+    href: `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`,
+  },
+  {
+    icon: faXTwitter,
+    bg: '#000000',
+    label: 'Share on X (formerly Twitter)',
+    href: `https://twitter.com/intent/tweet?url=${encodeURIComponent(url)}&text=${encodeURIComponent(title)}`,
+  },
+  {
+    icon: faRedditAlien,
+    bg: '#ff4500',
+    label: 'Share on Reddit',
+    href: `https://www.reddit.com/submit?url=${encodeURIComponent(url)}&title=${encodeURIComponent(title)}`,
+  },
+];
+---
+
+<div class="flex flex-row gap-1">
+  {shares.map((s) => (
+    <a
+      href={s.href}
+      aria-label={s.label}
+      target="_blank"
+      rel="noopener noreferrer"
+      class="inline-flex items-center justify-center rounded-full w-10 h-10 text-white"
+      style={`background-color:${s.bg}`}
+    >
+      <Icon icon={s.icon} class="text-xl" />
+    </a>
+  ))}
+</div>

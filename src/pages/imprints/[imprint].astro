@@ -1,7 +1,14 @@
 ---
+// /imprints/{kebab-case imprintName}/ — design ported from the Gatsby
+// imprint-page.js template.
 import { getCollection, render } from 'astro:content';
+import { Image } from 'astro:assets';
 import kebabCase from 'lodash-es/kebabCase';
-import Interim from '../../components/Interim.astro';
+import Base from '../../layouts/Base.astro';
+import PageHeader from '../../components/PageHeader.astro';
+import SectionHeader from '../../components/SectionHeader.astro';
+import BookCard from '../../components/lists/BookCard.astro';
+import rivanna from '../../assets/rivanna.jpg';
 
 export async function getStaticPaths() {
   const imprints = await getCollection('imprintsData');
@@ -11,12 +18,73 @@ export async function getStaticPaths() {
   }));
 }
 const { imp } = Astro.props;
-const infoEntries = await getCollection('imprintInfo', (e) => e.data.imprintID === imp.data.imprintID);
+
+const [infoEntries, books, bios] = await Promise.all([
+  getCollection('imprintInfo', (e) => e.data.imprintID === imp.data.imprintID),
+  getCollection('books'),
+  getCollection('bios'),
+]);
 const info = infoEntries[0];
 const Content = info ? (await render(info)).Content : null;
+const hasBody = Boolean(info?.body?.trim());
+const title = info?.data.title ?? imp.data.imprintName;
+
+// No sort in the old page query — keep the books.json file order.
+const imprintBooks = books.filter((b) =>
+  (b.data as any).Imprint?.some((i: any) => i.imprintID === imp.data.imprintID)
+);
+
+// related_staff holds staff_name strings (the Gatsby mapping joined them to
+// bio nodes; the old template built the /staff/ link from the bio title).
+const bioByName = new Map(bios.map((bio) => [bio.data.staff_name, bio]));
+const relatedStaff = (info?.data.related_staff ?? []).map((name) => {
+  const bio = bioByName.get(name);
+  return {
+    title: bio?.data.title ?? name,
+    name_slug: bio?.data.name_slug ?? name.replace(' ', '-').toLowerCase(),
+  };
+});
+
+// TODO(port): the old query also requested frontmatter `moreEditors`, but no
+// imprintinfo file has that field (and it is not in the imprintInfo schema),
+// so that block never rendered and is omitted here.
 ---
 
-<Interim title={imp.data.imprintName} kicker="Imprint">
-  {info?.data.editors && <p class="text-ceci-gray-mid">{info.data.editors}</p>}
-  {Content && <Content />}
-</Interim>
+<Base title={title}>
+  <PageHeader text={title} />
+
+  <section>
+    {title === 'Rivanna' && <Image src={rivanna} alt="logo for rivanna imprint" />}
+  </section>
+  <section class="py-4 border-b-2 border-gray-100">
+    {
+      hasBody && Content && (
+        <div class="pt-5 cms dropCap text-lg text-ceci-gray-dark leading-relaxed">
+          <Content />
+        </div>
+      )
+    }
+    {
+      info?.data.editors && (
+        <div class="text-ceci-gray-mid leading-relaxed font-serif ml-4 cms" set:html={info.data.editors} />
+      )
+    }
+    {
+      relatedStaff.length > 0 && (
+        <div class="pt-2 text-ceci-gray-mid leading-relaxed font-serif ml-4 cms">
+          UVA Editor(s):
+          {relatedStaff.map((staff, index) => (
+            <a href={`/staff/${staff.name_slug}/`}>{' ' + (index ? '& ' : '') + staff.title}</a>
+          ))}
+        </div>
+      )
+    }
+  </section>
+
+  <section class="py-4">
+    <SectionHeader text={'Titles in this Imprint'} />
+    <div class="flex flex-wrap gap-2 py-5">
+      {imprintBooks.map((b) => <BookCard book={b} />)}
+    </div>
+  </section>
+</Base>

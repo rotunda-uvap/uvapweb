@@ -1,0 +1,71 @@
+---
+// Screenshot gallery for the digital-project promo pages (furnace-and-fugue,
+// great-experiment). Replaces the react-slick ImgCarousel.js with the same
+// CSS scroll-snap + arrows pattern as CoverCarousel.astro. Slide markup and
+// classes match the original (each image links to its full-size ImageKit URL).
+interface Props {
+  filename_array: string[];
+}
+const { filename_array } = Astro.props;
+const src = (name: string) => `https://ik.imagekit.io/uvapress/${name}`;
+---
+
+<div
+  role="region"
+  aria-label="Image gallery"
+  aria-roledescription="carousel"
+  class="img-carousel relative"
+>
+  <button type="button" class="carousel-arrow left-0" data-dir="-1" aria-label="Previous images"
+    >‹</button
+  >
+  <ul class="strip hide-scroll-bar flex flex-row overflow-x-auto gap-2 px-10">
+    {filename_array.map((name) => (
+      <li class="shrink-0 snap-start">
+        <a href={src(name)}>
+          <div class="image-slider-container flex justify-center items-center px-2">
+            <img src={src(name)} alt={name} class="h-64 w-auto object-contain" loading="lazy" />
+          </div>
+        </a>
+      </li>
+    ))}
+  </ul>
+  <button type="button" class="carousel-arrow right-0" data-dir="1" aria-label="Next images"
+    >›</button
+  >
+</div>
+
+<style>
+  .strip {
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+  }
+  .carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    font-size: 2.5rem;
+    line-height: 1;
+    color: #727272;
+    padding: 0.25rem 0.5rem;
+    background: transparent;
+  }
+  .carousel-arrow:hover {
+    color: #414042;
+  }
+</style>
+
+<script>
+  for (const root of document.querySelectorAll('.img-carousel')) {
+    const strip = root.querySelector('.strip')!;
+    for (const btn of root.querySelectorAll<HTMLButtonElement>('.carousel-arrow')) {
+      btn.addEventListener('click', () => {
+        strip.scrollBy({
+          left: Number(btn.dataset.dir) * strip.clientWidth * 0.8,
+          behavior: 'smooth',
+        });
+      });
+    }
+  }
+</script>

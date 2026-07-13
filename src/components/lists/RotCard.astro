@@ -1,0 +1,27 @@
+---
+// Rotunda publication card, ported from the Gatsby
+// components/rotunda/RotundaListFragment.js (RotCard).
+import type { CollectionEntry } from 'astro:content';
+
+interface Props {
+  rot: CollectionEntry<'rotundaData'>;
+}
+const { rot } = Astro.props;
+const r = rot.data as any;
+// The old card linked to /title/{uvapID}; one record (ESHR) has no uvapID —
+// fall back to the RotID title page rather than a dead /title/undefined link.
+const titleId = r.uvapID ?? r.RotID;
+---
+
+<a href={`/title/${titleId}/`}>
+  <div class="hover:bg-gray-100 flex p-2 h-full items-center">
+    <img
+      class="flex-shrink-0 h-40 w-40  object-cover mr-5"
+      src={'https://ik.imagekit.io/uvapress/rotunda/' + r.imageFilename}
+      width="50"
+      alt={r.Title}
+      loading="lazy"
+    />
+    <span class="text-lg text-ceci-gray-dark font-display font-thin uppercase">{r.Title}</span>
+  </div>
+</a>

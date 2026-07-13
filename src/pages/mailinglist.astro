@@ -1,0 +1,64 @@
+---
+// /mailinglist/ — ported from mailinglist.js. The React class +
+// gatsby-plugin-mailchimp submit becomes a plain HTML form POSTing to the
+// list-manage endpoint from gatsby-config.js (same pattern as
+// NewsletterForm.astro, including the honeypot). The original sent the name
+// field as `name`, which Mailchimp ignored; it maps to the audience's FNAME
+// merge field here so it actually saves.
+import Base from '../layouts/Base.astro';
+import PageHeader from '../components/PageHeader.astro';
+---
+
+<Base title="Sign up for Updates">
+  <div class="container px-5 py-12 mx-auto">
+    <PageHeader text="Keep in Touch" />
+    <p>
+      Sign up for the UVA Press newsletter to receive special discounted offers and information on
+      the latest titles in American, European, and African history, African American studies,
+      literature, architecture, environmental studies, and Virginia and the South
+    </p>
+
+    <div class="container px-5 py-2 flex flex-col md:flex-row mx-auto place-content-center items-center">
+      <form
+        action="https://virginia.us5.list-manage.com/subscribe/post?u=ef1bb24fccf12e802068da002&amp;id=471ea965df"
+        method="post"
+        class="flex lg:w-2/3 w-full sm:flex-row flex-col mx-auto px-8 sm:px-0 items-end"
+        target="_self"
+        novalidate
+      >
+        <div class="relative sm:mr-4 mb-4 sm:mb-0 flex-grow w-full">
+          <label for="full-name" class="sr-only">Full Name</label>
+          <input
+            type="text"
+            id="full-name"
+            placeholder="Full Name"
+            name="FNAME"
+            autocomplete="name"
+            class="w-full bg-gray-100 rounded border border-gray-300 focus:border-teal-500 text-base text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+          />
+        </div>
+        <div class="relative sm:mr-4 mb-4 sm:mb-0 flex-grow w-full">
+          <label for="email" class="sr-only">Email</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="Email"
+            name="EMAIL"
+            autocomplete="email"
+            required
+            aria-required="true"
+            class="w-full bg-gray-100 rounded border border-gray-300 focus:border-teal-500 text-base text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+          />
+        </div>
+        <div aria-hidden="true" style="position: absolute; left: -5000px">
+          <input type="text" name="b_ef1bb24fccf12e802068da002_471ea965df" tabindex="-1" value="" />
+        </div>
+        <input
+          type="submit"
+          value="Submit"
+          class="w-full bg-ceci-gray-light text-gray-700 uppercase font-sans border-0 py-2 px-8 rounded text-lg cursor-pointer"
+        />
+      </form>
+    </div>
+  </div>
+</Base>

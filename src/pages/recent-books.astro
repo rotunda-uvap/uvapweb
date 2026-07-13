@@ -1,0 +1,53 @@
+---
+// New & forthcoming books, ported from the Gatsby recent-books.js.
+// Anchor ids #top, #new, #upc are linked from within the page.
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import PageHeader from '../components/PageHeader.astro';
+import SectionHeader from '../components/SectionHeader.astro';
+import IndexBookCard from '../components/lists/IndexBookCard.astro';
+
+const books = await getCollection('books');
+// upcoming: DaysSincePublication < 1, closest to publication first (DESC)
+const upcoming = books
+  .filter((b) => b.data.DaysSincePublication < 1)
+  .sort((a, b) => b.data.DaysSincePublication - a.data.DaysSincePublication);
+// recent: published within the last year, newest first (ASC)
+const recent = books
+  .filter((b) => b.data.DaysSincePublication > 0 && b.data.DaysSincePublication < 365)
+  .sort((a, b) => a.data.DaysSincePublication - b.data.DaysSincePublication);
+---
+
+<Base title="Books most recently published by the University of Virginia Press">
+  <div class="container px-5 py-12 mx-auto" id="top">
+    <PageHeader text={'New and Forthcoming Books'} />
+
+    <section class="py-5 flex md:flex-row items-center gap-4 md:gap-8 justify-center flex-col mx-auto border-b">
+      <span class="text-center font-thin pb-4 text-ceci-gray-mid tracking-wide uppercase"><a href="#upc">
+        Forthcoming Books
+      </a></span>
+      <span class="font-thin text-center pb-4 text-ceci-gray-mid tracking-wide uppercase"><a href="#new">
+        Books Published This Year
+      </a></span>
+    </section>
+
+    <section id="new">
+      <SectionHeader text={'Recent Releases'} />
+      <div class="container flex flex-wrap gap-2 py-5">
+        {recent.map((book) => (
+          <IndexBookCard fields={book.data as any} />
+        ))}<a href="#top" class="uppercase text-ceci-gray-mid text-sm p-2 ">Go to top</a>
+      </div>
+    </section>
+
+    <section id="upc">
+      <SectionHeader text={'Coming Soon'} />
+      <ul class="container flex flex-wrap gap-2 py-5">
+        {upcoming.map((book) => (
+          <IndexBookCard fields={book.data as any} />
+        ))}
+      </ul>
+      <a href="#top" class="uppercase text-ceci-gray-mid text-sm p-2 ">Go to top</a>
+    </section>
+  </div>
+</Base>

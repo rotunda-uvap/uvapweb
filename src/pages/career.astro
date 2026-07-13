@@ -1,0 +1,16 @@
+---
+// /career/ — ported from career.js ("Opportunties" typo preserved from the original)
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import PageHeader from '../components/PageHeader.astro';
+
+const [page] = await getCollection('pages', (p) => p.data.title === 'Career');
+---
+
+<Base title="Career Opportunties at UVA Press">
+  <div class="mx-auto">
+    <PageHeader text="Career Opportunties" />
+
+    <div class="cms" set:html={page.rendered?.html ?? ''} />
+  </div>
+</Base>

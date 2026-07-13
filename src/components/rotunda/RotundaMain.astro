@@ -1,0 +1,91 @@
+---
+// Shared wrapper for the Rotunda-branded pages (/rotunda/, /rotunda-purchase/,
+// /rotunda-customer-page/). Replaces the emotion styled components the Gatsby
+// pages redeclared on every page (Main, Heading2/3/4, Para, RotSection,
+// RotSectionZinc, Article) with one set of classes. Styles are copied verbatim
+// from the old styled-component template literals.
+//
+// Note: the old pages rendered a nested <main> inside the layout's <main>;
+// this is a <div> for valid HTML, styled identically.
+---
+
+<div class="rotunda-main">
+  <slot />
+</div>
+
+<style is:global>
+  .rotunda-main {
+    --fs-100: clamp(0.84rem, calc(0.94rem + -0.13vw), 0.91rem);
+    --fs-200: clamp(1.09rem, calc(1.08rem + 0.06vw), 1.13rem);
+    --fs-300: clamp(1.31rem, calc(1.24rem + 0.37vw), 1.5rem);
+    --fs-400: clamp(1.58rem, calc(1.41rem + 0.83vw), 2rem);
+    --fs-500: clamp(1.89rem, calc(1.59rem + 1.51vw), 2.67rem);
+    --fs-600: clamp(2.27rem, calc(1.77rem + 2.51vw), 3.55rem);
+    --fs-700: clamp(2.72rem, calc(1.94rem + 3.93vw), 4.74rem);
+    --fs-800: clamp(3.27rem, calc(2.08rem + 5.95vw), 6.31rem);
+    width: min(calc(100% - 2rem), 60rem);
+    margin: 0 auto;
+    color: #414042;
+    font-family: 'Assistant', sans;
+    letter-spacing: 0.05em;
+    padding: 1em;
+    font-size: var(--fs-200);
+  }
+  .rotunda-main .rot-h2 {
+    font-family: 'Playfair Display SC', serif;
+    letter-spacing: 0.3em;
+    font-weight: 200;
+    color: #757575;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1em 0;
+    font-size: var(--fs-400);
+  }
+  .rotunda-main .rot-h3 {
+    font-family: 'Playfair Display SC', serif;
+    letter-spacing: 0.3em;
+    font-weight: 200;
+    color: #757575;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1em 0;
+    font-size: var(--fs-300);
+  }
+  .rotunda-main .rot-h4 {
+    font-family: 'Playfair Display SC', serif;
+    letter-spacing: 0.3em;
+    font-weight: 200;
+    color: #757575;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0.2em 0;
+    font-size: var(--fs-200);
+  }
+  .rotunda-main .rot-para {
+    font-family: 'Assistant', sans;
+    padding: 1em;
+    font-size: var(--fs-200);
+  }
+  /* the customer page's Para used slightly tighter padding (.5em 1em) */
+  .rotunda-main .rot-para--tight {
+    padding: 0.5em 1em;
+  }
+  .rotunda-main .rot-section {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    padding: 0em;
+  }
+  .rotunda-main .rot-section-zinc {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    background-color: rgb(250 250 250);
+    padding: 1em;
+  }
+  .rotunda-main .rot-article {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+  }
+</style>

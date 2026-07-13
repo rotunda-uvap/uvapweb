@@ -1,0 +1,95 @@
+---
+// Flip-card book tile, ported from the Gatsby BookCard.js + BookCard.css.
+// Front shows the cover (or text when no cover); hover flips to the text back.
+import type { CollectionEntry } from 'astro:content';
+
+interface Props {
+  book: CollectionEntry<'books'>;
+}
+const { book } = Astro.props;
+const b = book.data as any;
+
+const BASE_URL = 'https://covers.upress.virginia.edu';
+const imageSrc = `${BASE_URL}/${b.CoverImageMain}`;
+---
+
+<a href={`/title/${b.BookID}/`}>
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      {
+        b.CoverImageMain ? (
+          <div class="flip-card-front">
+            <div class="mx-auto my-auto self-center">
+              <img
+                src={imageSrc}
+                width="150"
+                height="224"
+                alt={b.Title}
+                style="object-fit: contain;"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        ) : (
+          <div class="flip-card-front px-1 bg-white ">
+            <p class="text-base text-ceci-gray-dark uppercase pt-3 px-1 underline font-sans">{b.Title}</p>
+            {b.InternalSeriesVolume && (
+              <p class="text-sm pt-2 text-ceci-gray-mid italic font-serif ">{b.InternalSeriesVolume}</p>
+            )}
+            <p class="text-sm pt-2 text-ceci-gray-mid italic font-serif ">{b.Subtitle}</p>
+            <p class="text-sm font-light font-display text-gray-400  pt-2">{b.AuthorCredit}</p>
+          </div>
+        )
+      }
+      <div class="flip-card-back px-1 bg-white  ">
+        <p class="text-base text-gray-700 uppercase pt-3 px-1 underline font-sans">{b.Title}</p>
+        {
+          b.InternalSeriesVolume && (
+            <p class="text-sm pt-2 text-ceci-gray-mid italic font-serif ">{b.InternalSeriesVolume}</p>
+          )
+        }
+        <p class="text-sm pt-2 text-gray-500 italic font-serif ">{b.Subtitle}</p>
+        <p class="text-sm font-light font-display text-gray-400  pt-2">{b.AuthorCredit}</p>
+      </div>
+    </div>
+  </div>
+</a>
+
+<style>
+  .flip-card {
+    background-color: transparent;
+    width: 200px;
+    height: 275px;
+    perspective: 1000px;
+  }
+
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+  }
+
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-front,
+  .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+
+  .flip-card-front {
+    color: black;
+  }
+
+  .flip-card-back {
+    transform: rotateY(180deg);
+  }
+</style>

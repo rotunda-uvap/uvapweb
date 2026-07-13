@@ -1,12 +1,91 @@
 ---
+// Author's Corner post page, design ported from the Gatsby author-corner.js
+// template.
 import { getCollection } from 'astro:content';
-import PostPage from '../../components/PostPage.astro';
+import { Image } from 'astro:assets';
+import type { ImageMetadata } from 'astro';
+import Base from '../../layouts/Base.astro';
+import PageHeader from '../../components/PageHeader.astro';
+import PostBody from '../../components/posts/PostBody.astro';
+import RelatedBooksRail from '../../components/posts/RelatedBooksRail.astro';
+import ShareButtons from '../../components/posts/ShareButtons.astro';
 
 export async function getStaticPaths() {
   const posts = await getCollection('news', (p) => p.data.type === 'author-corner');
   return posts.map((post) => ({ params: { slug: post.id }, props: { post } }));
 }
 const { post } = Astro.props;
+
+const title = post.data.title;
+const url = new URL(`/author-corner/${post.id}/`, Astro.site).href;
+
+// Header image: the Gatsby query pulled the image file colocated in the
+// post's content folder; frontmatter `image` names that same file.
+const images = import.meta.glob<{ default: ImageMetadata }>(
+  '/content/news/**/*.{jpg,jpeg,png,gif}',
+  { eager: true }
+);
+const pic = post.data.image
+  ? images[`/content/news/${post.id}/${post.data.image}`]?.default
+  : undefined;
+
+// related_book / related_series frontmatter hold ID strings; names come
+// from the catalog data collections
+const [books, seriesEntries] = await Promise.all([
+  getCollection('books'),
+  getCollection('seriesData'),
+]);
+const titleById = new Map(books.map((b) => [b.data.BookID, b.data.Title]));
+const relatedBooks = post.data.related_book?.map((id) => ({
+  id,
+  title: titleById.get(id) ?? '',
+}));
+const seriesNameById = new Map(
+  seriesEntries.map((s) => [s.data.seriesID, (s.data as any).seriesName as string])
+);
+const relatedSeries = post.data.related_series?.map((sid) => ({
+  seriesID: sid,
+  seriesName: seriesNameById.get(sid) ?? sid,
+}));
+
+const description = (post.rendered?.html ?? '').replace(/<[^>]*>/g, '').substring(0, 150);
 ---
 
-<PostPage post={post} kicker="Author's Corner" />
+<Base title={title} description={description} image={pic?.src}>
+  <section class="text-gray-600 body-font">
+    <div class="container py-12 mx-auto">
+      <div class="flex-row px-5 inline-flex items-center w-full leading-normal">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
+          <path fill-rule="evenodd" d="M7.707 14.707a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l2.293 2.293a1 1 0 010 1.414z" clip-rule="evenodd" />
+        </svg>
+        <a href="/publicity/" class="block p-2  text-sm font-thin uppercase ">All News</a>
+      </div>
+
+      <PageHeader text={title} />
+      <div class="flex flex-col md:flex-row leading-relaxed font-serif ">
+        {relatedBooks && <RelatedBooksRail books={relatedBooks} />}
+        <div class="md:w-4/5">
+          <p class="lg-w-3/3 leading-relaxed italic py-5 text-center font-serif">Welcome back to the UVA Press Author's Corner! Here, we feature conversations with the authors of our latest releases to provide a glimpse into the writer's mind, their book's main lessons, and what’s next for them. We hope you enjoy these inside stories.</p>
+
+          {pic && (
+            <div class="md:float-left px-6 pb-5">
+              <Image src={pic} width={Math.min(300, pic.width)} alt="related image" />
+            </div>
+          )}
+          <div>
+            <PostBody post={post} class="cms" />
+
+            {relatedSeries?.map((series) => (
+              <div class="float-right px-7 pb-5">
+                <h6 class="uppercase py-2"><span class="font-semibold">Related Series: </span><a href={`/series/${series.seriesID}/`} class="pl-2">{series.seriesName}</a></h6>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+      <div class="px-10">
+        <ShareButtons title={title} url={url} />
+      </div>
+    </div>
+  </section>
+</Base>

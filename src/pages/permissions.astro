@@ -1,0 +1,16 @@
+---
+// /permissions/ — ported from permissions.js
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import PageHeader from '../components/PageHeader.astro';
+
+const [page] = await getCollection('pages', (p) => p.data.title === 'Permissions');
+---
+
+<Base title="Rights and Permissions">
+  <div class="mx-auto">
+    <PageHeader text="Rights and Permissions" />
+
+    <div class="cms" set:html={page.rendered?.html ?? ''} />
+  </div>
+</Base>

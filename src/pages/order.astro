@@ -1,0 +1,16 @@
+---
+// /order/ — ported from order.js
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import PageHeader from '../components/PageHeader.astro';
+
+const [page] = await getCollection('pages', (p) => p.data.title === 'Order');
+---
+
+<Base title="How to Order Books">
+  <div class="container p-5 mx-auto">
+    <PageHeader text="Order Books" />
+
+    <div class="cms" set:html={page.rendered?.html ?? ''} />
+  </div>
+</Base>

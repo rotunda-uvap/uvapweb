@@ -1,0 +1,25 @@
+---
+// Ported from AcqStaff.js — bios with department ACQ, sorted by name.
+import { getCollection } from 'astro:content';
+import MiniBio from './MiniBio.astro';
+
+const acq = (await getCollection('bios', (b) => b.data.department.includes('ACQ'))).sort((a, b) =>
+  a.data.title.localeCompare(b.data.title)
+);
+---
+
+<div class="container px-5 py-12 mx-auto">
+  <div class="flex flex-wrap -m-4 text-center">
+    {
+      acq.map((e) => (
+        <MiniBio
+          title={e.data.title}
+          job_title={e.data.job_title}
+          name_slug={e.data.name_slug}
+          email={e.data.email}
+          phone={e.data.phone}
+        />
+      ))
+    }
+  </div>
+</div>

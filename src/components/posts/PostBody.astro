@@ -1,0 +1,32 @@
+---
+// Markdown body for news / media / author-corner posts.
+//
+// Rendered from `entry.rendered.html` (not <Content/>) because the Gatsby
+// remark pipeline ran gatsby-remark-embed-soundcloud on every post body:
+// a paragraph consisting of a bare soundcloud.com URL becomes the SoundCloud
+// player iframe. We reproduce that transform on the rendered HTML string
+// (six "LISTEN:" media posts rely on it). The iframe matches the plugin's
+// defaults (100% x 300, orange, visual mode); we pass the full https URL
+// where the plugin's protocol-stripping quirk sent "://soundcloud.com/..."
+// — SoundCloud resolves both identically.
+//
+// The old config also loaded gatsby-remark-embed-youtube, but no post body
+// contains a bare YouTube URL, so that transform is not reproduced.
+import type { CollectionEntry } from 'astro:content';
+
+interface Props {
+  post: CollectionEntry<'news'>;
+  class?: string;
+}
+const { post, class: className } = Astro.props;
+
+const html = post.rendered?.html ?? '';
+const soundcloudPattern =
+  /<p>(?:<a href="(https?:\/\/(?:www\.)?soundcloud\.com\/[^"]+)"[^>]*>[^<]*<\/a>|(https?:\/\/(?:www\.)?soundcloud\.com\/\S+))<\/p>/g;
+const withEmbeds = html.replace(soundcloudPattern, (_match, hrefUrl, textUrl) => {
+  const url = encodeURIComponent(hrefUrl ?? textUrl);
+  return `<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=${url}&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>`;
+});
+---
+
+<article class={className} set:html={withEmbeds} />

@@ -71,7 +71,8 @@ const cartIconPath =
 ---
 
 <Base title={b.Title} description={description} image={coverPath ? ikSrc(coverPath, 500) : undefined}>
-  <div class="flex flex-col md:grid md:grid-cols-3 md:items-start md:gap-10 py-3 ml-6 text-ceci-gray-dark max-w-6xl">
+  {/* data-pagefind-body scopes the Pagefind index to book pages only */}
+  <div class="flex flex-col md:grid md:grid-cols-3 md:items-start md:gap-10 py-3 ml-6 text-ceci-gray-dark max-w-6xl" data-pagefind-body>
     <div class="col-span-1">
       {/* desktop cover */}
       <div class="pt-8 hidden md:block">
@@ -81,6 +82,7 @@ const cartIconPath =
             srcset={`${ikSrc(coverPath, 400)} 400w, ${ikSrc(coverPath, 500)} 500w`}
             alt={`Cover for ${b.Title}`}
             loading="eager"
+            data-pagefind-meta="image[src], image_alt[alt]"
           />
         ) : (
           <img src={ikSrc('noimg_lg.png', 300)} alt="Placeholder Cover" loading="eager" />
@@ -102,7 +104,10 @@ const cartIconPath =
     </div>
 
     <div class="py-6 md:col-span-2 text-ceci-gray-dark">
-      <h1 class="mt-0 pb-3 font-thin font-sans uppercase tracking-booped leading-snug text-2xl text-center md:text-left">
+      <h1
+        class="mt-0 pb-3 font-thin font-sans uppercase tracking-booped leading-snug text-2xl text-center md:text-left"
+        data-pagefind-meta="title"
+      >
         {b.Title}
       </h1>
 
@@ -113,7 +118,7 @@ const cartIconPath =
         </div>
       )}
 
-      <div class="py-2 font-display text-center md:text-left">{b.AuthorCredit}</div>
+      <div class="py-2 font-display text-center md:text-left" data-pagefind-meta="author">{b.AuthorCredit}</div>
 
       {(b.Bindings ?? []).map((binding: any) => {
         const isOABinding =
@@ -192,7 +197,7 @@ const cartIconPath =
           <ul class="flex flex-col md:flex-row md:flex-wrap gap-4">
             {b.Series.map((ser: any) => (
               <li>
-                <a href={`/series/${ser.seriesID}/`} class={`${chipClass} hover:bg-white bg-greige`}>
+                <a href={`/series/${ser.seriesID}/`} class={`${chipClass} hover:bg-white bg-greige`} data-pagefind-filter="Series">
                   {ser.name}
                 </a>
               </li>
@@ -209,7 +214,7 @@ const cartIconPath =
           <ul class="flex flex-col md:flex-row md:flex-wrap gap-4">
             {b.Subjects.map((subj: any) => (
               <li>
-                <a href={`/subject/${kebabCase(subj.name)}/`} class={chipClass}>
+                <a href={`/subject/${kebabCase(subj.name)}/`} class={chipClass} data-pagefind-filter="Subject">
                   {subj.name}
                 </a>
               </li>
@@ -246,7 +251,7 @@ const cartIconPath =
     </div>
   </div>
 
-  <div class="container py-2 md:max-w-5xl">
+  <div class="container py-2 md:max-w-5xl" data-pagefind-body>
     <section id="horiz_tabs">
       <BookTabs
         summary={b.MainDescription?.html ?? ''}
@@ -257,7 +262,7 @@ const cartIconPath =
       />
     </section>
 
-    <section class="pb-4 flex flex-col md:flex-row">
+    <section class="pb-4 flex flex-col md:flex-row" data-pagefind-ignore>
       <div class="flex flex-row gap-1">
         {shares.map((s) => (
           <a

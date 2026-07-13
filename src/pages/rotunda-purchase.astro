@@ -1,0 +1,570 @@
+---
+// /rotunda-purchase/ — Rotunda pricing page. Port of
+// src/pages/rotunda-purchase.js. This page is edited regularly by the press:
+// tables, prices, text, and classes are kept verbatim from the Gatsby page
+// (including its duplicate id="TIERS" and lowercase colspan attributes).
+import Base from '../layouts/Base.astro';
+import RotundaMain from '../components/rotunda/RotundaMain.astro';
+import RotundaHeader from '../components/rotunda/RotundaHeader.astro';
+---
+
+<Base title="How to Purchase ROTUNDA Publications">
+  <RotundaMain>
+    <RotundaHeader />
+    <h2 class="rot-h2">Purchasing Rotunda Publications</h2>
+    <p class="rot-para font-light">
+      If you are connecting via a campus Internet connection, you can expect
+      to gain access to any Rotunda publication purchased by your institution.
+      If your institution has not purchased a particular Rotunda publication,
+      contact your institution’s library about ordering. You may also sign up
+      for an individual <a href="https://rotunda.upress.virginia.edu/register/default.xqy">free trial</a> to evaluate Rotunda before making a purchase decision.
+    </p>
+    <p class="rot-para font-light">
+      View a <a href="/rotunda-customer-page/#customers">list of Rotunda customers</a>
+    </p>
+    <p class="rot-para font-light">
+      Rotunda publications are available for purchase by libraries, schools,
+      and individuals. To order, send the <a href="/downloads/rotunda_license.doc">signed Rotunda license agreement</a> and completed <a href="/downloads/rotunda_registration.doc">registration form</a> to
+      Jason Coleman, University of Virginia Press, Rotunda, P.O. Box 400318,
+      Charlottesville, VA 22904-4318. Pricing  inquiries may be addressed to <a href="mailto:jcoleman@virginia.edu">jcoleman@virginia.edu</a>.
+    </p>
+    <p class="rot-para font-light">
+      Access will begin upon receipt of payment, in addition to a completed
+      license agreement and the specific IP address access information. We
+      accept payment by purchase order, check, VISA, or MasterCard.
+    </p>
+
+    <p class="rot-para font-light">
+      (Please <a href="mailto:jcoleman@virginia.edu">contact us</a> for
+      information on pricing for consortia and public libraries, details on
+      annual maintenance fees, or any other questions about purchasing.)
+    </p>
+
+    <section>
+      <h4 class="rot-h4">Architecture</h4>
+      <table id="ARCH" class="mb-1 w-full">
+        <tbody>
+          <tr>
+            <td class="italic text-center">
+              <p class="rot-para">Beginning July 2019, <a href="https://sah-archipedia.org">SAH Archipedia</a> is now open access</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="rot-para">
+        (See <a href="#TIERS">below</a> for explanation of pricing tiers)
+      </p>
+
+      <h4 class="rot-h4">American History Collection</h4>
+      <table class="pricing w-full" id="FGEA">
+        <tbody>
+          <tr class="heading">
+            <th class="text-ceci-gray-dark font-thin">&nbsp;</th>
+            <th class="text-ceci-gray-dark font-thin">TIER 4</th>
+            <th class="text-ceci-gray-dark font-thin">TIER 3</th>
+            <th class="text-ceci-gray-dark font-thin">TIER 2</th>
+            <th class="text-ceci-gray-dark font-thin">TIER 1</th>
+          </tr>
+          <tr>
+            <th colspan="7" class="py-4 font-thin text-ceci-gray-dark tracking-wide">
+              American Founding Era
+            </th>
+          </tr>
+          <tr id="adms">
+            <th class="title text-ceci-gray-dark tracking-wide font-light">
+              &emsp;
+              <a href="https://www.upress.virginia.edu/title/ADMS">
+                Adams Papers
+              </a>
+            </th>
+            <td class="money text-ceci-gray-dark font-thin p-2">$3,498</td>
+            <td class="money text-ceci-gray-dark font-thin p-2">$2,624</td>
+            <td class="money text-ceci-gray-dark font-thin p-2">$1,819</td>
+            <td class="money text-ceci-gray-dark font-thin p-2">$700</td>
+          </tr>
+          <tr id="rncn">
+            <th class="title text-ceci-gray-dark tracking-wide font-light">
+              &emsp;
+              <a href="https://www.upress.virginia.edu/title/RNCN">
+                Documentary History of the Ratification of the Constitution
+              </a>
+            </th>
+            <td class="money text-ceci-gray-dark font-thin p-2">$3,002</td>
+            <td class="money text-ceci-gray-dark font-thin p-2">$2,251</td>
+            <td class="money text-ceci-gray-dark font-thin p-2">$1,561</td>
+            <td class="money text-ceci-gray-dark font-thin p-2">$600</td>
+          </tr>
+          <tr>
+            <th class="title text-ceci-gray-dark tracking-wide font-light">
+              &emsp;
+              <a href="https://www.upress.virginia.edu/title/FFC">
+                Documentary History of the First Federal Congress
+              </a>
+            </th>
+            <td class="money text-ceci-gray-dark font-thin p-2">$4,745</td>
+            <td class="money text-ceci-gray-dark font-thin p-2">$3,558</td>
+            <td class="money text-ceci-gray-dark font-thin p-2">$2,467</td>
+            <td class="money text-ceci-gray-dark font-thin p-2">$940</td>
+          </tr>
+          <tr id="bnfn">
+            <th class="title text-ceci-gray-dark tracking-wide font-light">
+              &emsp;
+              <a href="https://www.upress.virginia.edu/title/BNFN">
+                Franklin Papers
+              </a>
+            </th>
+            <td class="money text-ceci-gray-dark font-thin p-2">$8,228</td>
+            <td class="money text-ceci-gray-dark font-thin p-2">$6,171</td>
+            <td class="money text-ceci-gray-dark font-thin p-2">$4,114</td>
+            <td class="money text-ceci-gray-dark font-thin p-2">$1,645</td>
+          </tr>
+          <tr id="arhn">
+            <th class="title text-ceci-gray-dark tracking-wide font-light">
+              &emsp;
+              <a href="https://www.upress.virginia.edu/title/ARHN">
+                Hamilton Papers
+              </a>
+            </th>
+            <td class="money text-ceci-gray-dark font-thin p-2">$4,528</td>
+            <td class="money text-ceci-gray-dark font-thin p-2">$3,396</td>
+            <td class="money text-ceci-gray-dark font-thin p-2">$2,354</td>
+            <td class="money text-ceci-gray-dark font-thin p-2">$906</td>
+          </tr>
+          <tr id="jnjy">
+            <th class="title text-ceci-gray-dark tracking-wide font-light">
+              &emsp;
+              <a href="https://www.upress.virginia.edu/title/JNJY">
+                Jay Papers
+              </a>
+            </th>
+            <td class="money text-ceci-gray-dark font-thin p-2">$867</td>
+            <td class="money text-ceci-gray-dark font-thin p-2">$650</td>
+            <td class="money text-ceci-gray-dark font-thin p-2">$450</td>
+            <td class="money text-ceci-gray-dark font-thin p-2">$173</td>
+          </tr>
+          <tr id="tsjn">
+            <th class="title text-ceci-gray-dark tracking-wide font-light">
+              &emsp;
+              <a href="https://www.upress.virginia.edu/title/TSJN">
+                Jefferson Papers
+              </a>
+            </th>
+            <td class="money text-ceci-gray-dark font-thin p-2">$6,816</td>
+            <td class="money text-ceci-gray-dark font-thin p-2">$5,112</td>
+            <td class="money text-ceci-gray-dark font-thin p-2">$3,544</td>
+            <td class="money text-ceci-gray-dark font-thin p-2">$1,363</td>
+          </tr>
+          <tr id="dmde">
+            <th class="title text-ceci-gray-dark tracking-wide font-light">
+              &emsp;
+              <a href="https://www.upress.virginia.edu/title/DMDE">
+                Dolley Madison Digital Edition
+              </a>
+            </th>
+            <td class="money text-ceci-gray-dark font-thin p-2">$895</td>
+            <td class="money text-ceci-gray-dark font-thin p-2">$670</td>
+            <td class="money text-ceci-gray-dark font-thin p-2">$395</td>
+            <td class="money text-ceci-gray-dark font-thin p-2">$295</td>
+          </tr>
+          <tr id="jmde">
+            <th class="title text-ceci-gray-dark tracking-wide font-light">
+              &emsp;
+              <a href="https://www.upress.virginia.edu/title/JMDE">
+                James Madison Papers
+              </a>
+            </th>
+            <td class="money text-ceci-gray-dark font-thin p-2">$4,552</td>
+            <td class="money text-ceci-gray-dark font-thin p-2">$3,414</td>
+            <td class="money text-ceci-gray-dark font-thin p-2">$2,367</td>
+            <td class="money text-ceci-gray-dark font-thin p-2">$910</td>
+          </tr>
+          <tr id="jnml">
+            <th class="title text-ceci-gray-dark tracking-wide font-light">
+              &emsp;
+              <a href="https://www.upress.virginia.edu/title/JNML">
+                John Marshall Papers
+              </a>
+            </th>
+            <td class="money text-ceci-gray-dark font-thin p-2">$1,577</td>
+            <td class="money text-ceci-gray-dark font-thin p-2">$1,183</td>
+            <td class="money text-ceci-gray-dark font-thin p-2">$820</td>
+            <td class="money text-ceci-gray-dark font-thin p-2">$315</td>
+          </tr>
+          <tr id="monr">
+            <th class="title text-ceci-gray-dark tracking-wide font-light">
+              &emsp;
+              <a href="https://www.upress.virginia.edu/title/MONR">James Monroe Papers</a>
+            </th>
+            <td class="money text-ceci-gray-dark font-thin p-2">$1,812</td>
+            <td class="money text-ceci-gray-dark font-thin p-2">$1,359</td>
+            <td class="money text-ceci-gray-dark font-thin p-2">$942</td>
+            <td class="money text-ceci-gray-dark font-thin p-2">$362</td>
+          </tr>
+          <tr id="grms">
+            <th class="title text-ceci-gray-dark tracking-wide font-light">
+              &emsp;
+              <a href="https://www.upress.virginia.edu/title/GRMS">
+                Gouverneur Morris Diaries
+              </a>
+            </th>
+            <td class="money text-ceci-gray-dark font-thin p-2">$679</td>
+            <td class="money text-ceci-gray-dark font-thin p-2">$510</td>
+            <td class="money text-ceci-gray-dark font-thin p-2">$353</td>
+            <td class="money text-ceci-gray-dark font-thin p-2">$136</td>
+          </tr>
+          <tr id="pfe">
+            <th class="title text-ceci-gray-dark tracking-wide font-light">
+              &emsp;
+              <a href="https://www.upress.virginia.edu/title/PFE">
+                People of the Founding Era
+              </a>
+            </th>
+            <td class="money text-ceci-gray-dark font-thin p-2">$3,100</td>
+            <td class="money text-ceci-gray-dark font-thin p-2">$2,325</td>
+            <td class="money text-ceci-gray-dark font-thin p-2">$1,612</td>
+            <td class="money text-ceci-gray-dark font-thin p-2">$620</td>
+          </tr>
+          <tr id="pknyw">
+            <th class="title text-ceci-gray-dark tracking-wide font-light">
+              &emsp;
+              <a href="https://www.upress.virginia.edu/title/PKNYW">
+                Pinckney&ndash;Horry Papers
+              </a>
+            </th>
+            <td class="money text-ceci-gray-dark font-thin p-2 py-2" colspan="6">
+              <p class="rot-para"><i>
+                Included with purchase of the Pinckney Statesmen Papers
+                (below)
+              </i></p>
+            </td>
+          </tr>
+          <tr id="pkny">
+            <th class="title text-ceci-gray-dark tracking-wide font-light">
+              &emsp;
+              <a href="https://www.upress.virginia.edu/title/PKNY">
+                Pinckney Statesmen Papers
+              </a>
+            </th>
+            <td class="money text-ceci-gray-dark font-thin p-2">$1,300</td>
+            <td class="money text-ceci-gray-dark font-thin p-2">$975</td>
+            <td class="money text-ceci-gray-dark font-thin p-2">$676</td>
+            <td class="money text-ceci-gray-dark font-thin p-2">$260</td>
+          </tr>
+          <tr id="rush">
+            <th class="title text-ceci-gray-dark tracking-wide font-light">
+              &emsp;
+              <a href="https://www.upress.virginia.edu/title/RUSH">
+                Rush Letters
+              </a>
+            </th>
+            <td class="money text-ceci-gray-dark font-thin p-2">$450</td>
+            <td class="money text-ceci-gray-dark font-thin p-2">$338</td>
+            <td class="money text-ceci-gray-dark font-thin p-2">$235</td>
+            <td class="money text-ceci-gray-dark font-thin p-2">$90</td>
+          </tr>
+          <tr id="gewn">
+            <th class="title text-ceci-gray-dark tracking-wide font-light">
+              &emsp;
+              <a href="https://www.upress.virginia.edu/title/GEWN">
+                Washington Papers
+              </a>
+            </th>
+            <td class="money text-ceci-gray-dark font-thin p-2">$8,301</td>
+            <td class="money text-ceci-gray-dark font-thin p-2">$6,226</td>
+            <td class="money text-ceci-gray-dark font-thin p-2">$4,316</td>
+            <td class="money text-ceci-gray-dark font-thin p-2">$1,660</td>
+          </tr>
+
+          <tr>
+            <th colspan="7" class="border-t-3 border-gray-400 py-4 font-thin text-ceci-gray-dark tracking-wide">
+              Antebellum, Civil War, and Reconstruction
+            </th>
+          </tr>
+          <tr id="grnt">
+            <th class="title text-ceci-gray-dark tracking-wide font-light">
+              &emsp;
+              <a href="https://www.upress.virginia.edu/title/GRNT">
+                Grant Papers
+              </a>
+            </th>
+            <td class="money text-ceci-gray-dark font-thin p-2">$4,200</td>
+            <td class="money text-ceci-gray-dark font-thin p-2">$3,150</td>
+            <td class="money text-ceci-gray-dark font-thin p-2">$2,184</td>
+            <td class="money text-ceci-gray-dark font-thin p-2">$840</td>
+          </tr>
+          <tr id="jksn">
+            <th class="title text-ceci-gray-dark tracking-wide font-light">
+              &emsp;
+              <a href="https://www.upress.virginia.edu/title/JKSN">
+                Andrew Jackson Papers
+              </a>
+            </th>
+            <td class="money text-ceci-gray-dark font-thin p-2">$1,329</td>
+            <td class="money text-ceci-gray-dark font-thin p-2">$997</td>
+            <td class="money text-ceci-gray-dark font-thin p-2">$691</td>
+            <td class="money text-ceci-gray-dark font-thin p-2">$266</td>
+          </tr>
+          <tr id="ajhn">
+            <th class="title text-ceci-gray-dark tracking-wide font-light">
+              &emsp;
+              <a href="https://www.upress.virginia.edu/title/AJHN">
+                Andrew Johnson Papers
+              </a>
+            </th>
+            <td class="money text-ceci-gray-dark font-thin p-2">$2,866</td>
+            <td class="money text-ceci-gray-dark font-thin p-2">$2,150</td>
+            <td class="money text-ceci-gray-dark font-thin p-2">$1,490</td>
+            <td class="money text-ceci-gray-dark font-thin p-2">$573</td>
+          </tr>
+          <tr id="olms">
+            <th class="title text-ceci-gray-dark tracking-wide font-light">
+              &emsp;
+              <a href="https://www.upress.virginia.edu/title/OLMS">
+                Frederick Law Olmsted Papers
+              </a>
+            </th>
+            <td class="money text-ceci-gray-dark font-thin p-2">Open Access</td>
+          </tr>
+          <tr id="polk">
+            <th class="title text-ceci-gray-dark tracking-wide font-light">
+              &emsp;
+              <a href="https://www.upress.virginia.edu/title/POLK">
+                Correspondence of James K. Polk
+              </a>
+            </th>
+            <td class="money text-ceci-gray-dark font-thin p-2">$2,304</td>
+            <td class="money text-ceci-gray-dark font-thin p-2">$1,728</td>
+            <td class="money text-ceci-gray-dark font-thin p-2">$1,198</td>
+            <td class="money text-ceci-gray-dark font-thin p-2">$460</td>
+          </tr>
+          <tr id="webster">
+            <th class="title text-ceci-gray-dark tracking-wide font-light">
+              &emsp;
+              <a href="https://www.upress.virginia.edu/title/DWDE">
+                Daniel Webster Papers
+              </a>
+            </th>
+            <td class="money text-ceci-gray-dark font-thin p-2">$2,460</td>
+            <td class="money text-ceci-gray-dark font-thin p-2">$1,845</td>
+            <td class="money text-ceci-gray-dark font-thin p-2">$1,280</td>
+            <td class="money text-ceci-gray-dark font-thin p-2">$492</td>
+          </tr>
+          <tr>
+            <th colspan="7" class="border-t-3 border-gray-400 py-4 font-thin text-ceci-gray-dark tracking-wide">
+              American Century
+            </th>
+          </tr>
+          <tr id="prde">
+            <th class="title text-ceci-gray-dark tracking-wide font-light">
+              &emsp;
+              <a href="http://prde.upress.virginia.edu/">
+                Presidential Recordings Digital Edition
+              </a>
+            </th>
+            <td class="money text-ceci-gray-dark font-thin p-2">$3,697</td>
+            <td class="money text-ceci-gray-dark font-thin p-2">$2,773</td>
+            <td class="money text-ceci-gray-dark font-thin p-2">$1,922</td>
+            <td class="money text-ceci-gray-dark font-thin p-2">$739</td>
+          </tr>
+          <tr id="btwn">
+            <th class="title text-ceci-gray-dark tracking-wide font-light">
+              &emsp;
+              <a href="https://www.upress.virginia.edu/title/BTWN">
+                Booker T. Washington Papers
+              </a>
+            </th>
+            <td class="money text-ceci-gray-dark font-thin p-2">$2,146</td>
+            <td class="money text-ceci-gray-dark font-thin p-2">$1,609</td>
+            <td class="money text-ceci-gray-dark font-thin p-2">$1,115</td>
+            <td class="money text-ceci-gray-dark font-thin p-2">$429</td>
+          </tr>
+          <tr>
+            <th class="title text-ceci-gray-dark tracking-wide font-light">
+              &emsp;
+              <a href="https://www.upress.virginia.edu/title/WILS">
+                Woodrow Wilson Papers
+              </a>
+            </th>
+            <td class="money text-ceci-gray-dark font-thin p-2">$10,500</td>
+            <td class="money text-ceci-gray-dark font-thin p-2">$7,875</td>
+            <td class="money text-ceci-gray-dark font-thin p-2">$5,460</td>
+            <td class="money text-ceci-gray-dark font-thin p-2">$2,100</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <section>
+      <p class="rot-para py-7 w-full" id="TIERS">
+        Pricing tiers for the American History
+        Collection are based on Carnegie classifications:
+      </p>
+
+      <table class="font-assistant text-ceci-gray-dark table-auto mx-4">
+        <tbody>
+          <tr class="bg-zinc-100">
+            <td class="pr-4">
+              <strong>Tier&nbsp;4:</strong>
+            </td>
+            <td class="py-4">Research Universities (very high research activity)</td>
+          </tr>
+          <tr>
+            <td>
+              <strong>Tier&nbsp;3:</strong>
+            </td>
+            <td class="py-2">
+              Research Universities (high research activity);
+              Doctoral/Research Universities; Master&rsquo;s L institutions
+              (large programs)
+            </td>
+          </tr>
+          <tr class="bg-zinc-100">
+            <td>
+              <strong>Tier&nbsp;2:</strong>
+            </td>
+            <td class="py-2">
+              Master&rsquo;s M and Master&rsquo;s S universities and colleges
+              (medium and small programs); Special Focus institutions &ndash;
+              Schools of Law; Baccalaureate &ndash; Arts &amp; Sciences
+              colleges
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <strong>Tier&nbsp;1:</strong>
+            </td>
+            <td class="py-1">
+              Baccalaureate General colleges; Baccalaureate/Associates
+              institutions; Research institutions with 50 or more FTE
+              (full-time employees). Also includes individual subscriptions.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p class="rot-para py-5">
+        <strong>Discounts:</strong> Customers acquiring two or more titles in
+        the American Founding Era collection will receive a discount of 10
+        percent on total purchase price. Customers acquiring the <strong>complete collection</strong> will receive a discount of 20
+        percent. Additional discounts are available for customers who have
+        purchased the print edition corresponding to a title.
+      </p>
+    </section>
+
+    <section>
+      <h4 class="rot-h4">Literature and Culture Collection</h4>
+      <table class="pricing w-full" id="NHCY">
+        <tbody>
+          <tr class="heading">
+            <th class="text-ceci-gray-dark font-thin">&nbsp;</th>
+            <th class="text-ceci-gray-dark font-thin">TIER 3</th>
+            <th class="text-ceci-gray-dark font-thin">TIER 2</th>
+            <th class="text-ceci-gray-dark font-thin">TIER 1</th>
+          </tr>
+          <tr>
+            <th class="title text-ceci-gray-dark tracking-wide font-light">
+              &emsp;<a href="https://www.upress.virginia.edu/title/LMAD">
+                The Letters of Matthew Arnold
+              </a>
+            </th>
+            <td class="money text-ceci-gray-dark font-thin p-2">$840</td>
+            <td class="money text-ceci-gray-dark font-thin p-2">$520</td>
+            <td class="money text-ceci-gray-dark font-thin p-2">$420</td>
+          </tr>
+          <tr>
+            <th class="title text-ceci-gray-dark tracking-wide font-light">
+              &emsp;<a href="https://www.upress.virginia.edu/title/CLO">
+                <em>Clotel,</em> by William Wells Brown
+              </a>
+            </th>
+            <td class="money text-ceci-gray-dark font-thin p-2">$545</td>
+            <td class="money text-ceci-gray-dark font-thin p-2">$375</td>
+            <td class="money text-ceci-gray-dark font-thin p-2">$275</td>
+          </tr>
+          <tr>
+            <th class="title text-ceci-gray-dark tracking-wide font-light">
+              &emsp;<a href="https://www.upress.virginia.edu/title/EDKC">
+                Emily Dickinson&rsquo;s Correspondences
+              </a>
+            </th>
+            <td class="money text-ceci-gray-dark font-thin p-2">$295</td>
+            <td class="money text-ceci-gray-dark font-thin p-2">$221</td>
+            <td class="money text-ceci-gray-dark font-thin p-2">$148</td>
+          </tr>
+          <tr>
+            <th class="title text-ceci-gray-dark tracking-wide font-light">
+              &emsp;<a href="https://www.upress.virginia.edu/title/TDTM">
+                <em>The Digital Temple:</em> George Herbert&rsquo;s Verse
+              </a>
+            </th>
+            <td class="money text-ceci-gray-dark font-thin p-2">$695</td>
+            <td class="money text-ceci-gray-dark font-thin p-2">$430</td>
+            <td class="money text-ceci-gray-dark font-thin p-2">
+              $347&thinsp;/&thinsp;138<span class="fn">*</span>
+            </td>
+          </tr>
+          <tr>
+            <th class="title text-ceci-gray-dark tracking-wide font-light">
+              &emsp;<a href="https://www.upress.virginia.edu/title/HMTY">
+                Herman Melville&rsquo;s <em>Typee</em>
+              </a>
+            </th>
+            <td class="money text-ceci-gray-dark font-thin p-2">$545</td>
+            <td class="money text-ceci-gray-dark font-thin p-2">$375</td>
+            <td class="money text-ceci-gray-dark font-thin p-2">$275</td>
+          </tr>
+          <tr>
+            <th class="title text-ceci-gray-dark tracking-wide font-light">
+              &emsp;<a href="https://www.upress.virginia.edu/title/CROS">
+                The Letters of Christina Rossetti
+              </a>
+            </th>
+            <td class="money text-ceci-gray-dark font-thin p-2">$560</td>
+            <td class="money text-ceci-gray-dark font-thin p-2">$325</td>
+            <td class="money text-ceci-gray-dark font-thin p-2">$270</td>
+          </tr>
+          <tr>
+            <th class="title text-ceci-gray-dark tracking-wide font-light">
+              &emsp;<a href="https://www.upress.virginia.edu/title/ESHR">
+                Journal of Emily Shore
+              </a>
+            </th>
+            <td class="money text-ceci-gray-dark font-thin p-2 item-center"><p class="rot-para italic">Open Access</p></td>
+          </tr>
+          <tr>
+            <td colspan="4" class="border-t-1 border-black py-2">
+              <p class="rot-para fn py-2">* $347 for institutions, $138
+              for individual (password-access) <em>Digital Temple</em> purchasers</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="rot-para py-7 w-full" id="TIERS">
+        Pricing tiers:
+      </p>
+      <table class="font-assistant text-ceci-gray-dark table-auto mx-4">
+        <tbody>
+          <tr class="bg-zinc-100">
+            <td class="pr-4">
+              <strong>Tier&nbsp;3:</strong>
+            </td>
+            <td class="py-4">Doctoral research institutions, ARL-member public libraries</td>
+          </tr>
+          <tr>
+            <td>
+              <strong>Tier&nbsp;2:</strong>
+            </td>
+            <td class="py-2">Master’s I and II institutions, Baccalaureate, and Bac/Assoc institutions
+            </td>
+          </tr>
+          <tr class="bg-zinc-100">
+            <td>
+              <strong>Tier&nbsp;1:</strong>
+            </td>
+            <td class="py-2">Associates institutions, high schools, individuals
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </RotundaMain>
+</Base>

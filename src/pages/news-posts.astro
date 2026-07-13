@@ -1,0 +1,38 @@
+---
+// All-news index, ported from the Gatsby news-posts.js: every `news` post,
+// newest first, with cover thumbnail and 50-word description excerpt.
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import PageHeader from '../components/PageHeader.astro';
+
+const posts = (await getCollection('news', (n) => n.data.type === 'news')).sort(
+  (a, b) => b.data.date.getTime() - a.data.date.getTime()
+);
+const excerpt = (text: string) => text.split(' ').splice(0, 50).join(' ') + '...';
+const fmtDate = (d: Date) => d.toISOString().slice(0, 10);
+---
+
+<Base>
+  <div class="container px-5 py-12 mx-auto">
+    <PageHeader text={'All News'} />
+    {posts.map((post) => (
+      <div class="grid grid-cols-3">
+        {post.data.related_book?.length ? (
+          <img src={`https://ik.imagekit.io/uvapress/mediums/${post.data.related_book[0]}_M.jpg`} alt="cover" class="justify-self-center object-cover" />
+        ) : (
+          <div></div>
+        )}
+        <div class="py-6 bg-white col-span-2">
+          <div class="flex justify-between items-center"><span class="font-light text-gray-800">{fmtDate(post.data.date)}</span><span
+            class="px-2 py-1 bg-gray-600 text-gray-100 font-bold rounded hover:bg-gray-500">{post.data.type}</span>
+          </div>
+          <div class="mt-2"><a class="text-2xl text-gray-700 font-bold hover:underline" href={`/${post.data.type}/${post.id}/`}>{post.data.title}</a>
+            {post.data.description && <article class="mt-2 text-gray-600 font-light leading-relaxed text-base cms" set:html={excerpt(post.data.description)} />}
+          </div>
+          <div class="flex justify-between items-center mt-4"><a href={`/${post.data.type}/${post.id}/`}>Read more</a>
+          </div>
+        </div>
+      </div>
+    ))}
+  </div>
+</Base>

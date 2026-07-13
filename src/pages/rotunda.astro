@@ -1,0 +1,247 @@
+---
+// /rotunda/ — Rotunda imprint landing page. Port of src/pages/rotunda.js.
+// Collection lists come from rotundaData (src/data/rotunda.json); staff
+// contacts are the bios with department ROT. Group/list ordering matches the
+// Gatsby build: sub-collection groups alphabetical, items in JSON file order.
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import RotundaMain from '../components/rotunda/RotundaMain.astro';
+import RotundaHeader from '../components/rotunda/RotundaHeader.astro';
+import RotundaMiniBio from '../components/rotunda/RotundaMiniBio.astro';
+
+const staffs = (await getCollection('bios', (b) => b.data.department.includes('ROT'))).sort(
+  (a, b) => a.data.title.localeCompare(b.data.title)
+);
+
+const rotunda = (await getCollection('rotundaData')).map((r) => r.data as any);
+
+const ahc = rotunda.filter((r) => r.MainCollection === 'American History Collection');
+const ahcGroups = [...new Set(ahc.map((r) => r.SubCollection as string))]
+  .sort()
+  .map((sub) => ({ sub, nodes: ahc.filter((r) => r.SubCollection === sub) }));
+
+const lit = rotunda.filter((r) => r.MainCollection === 'Literature and Culture Collection');
+const arc = rotunda.filter((r) => ['OLMS', 'ARCHI'].includes(r.RotID));
+---
+
+<Base
+  title="ROTUNDA: Digital Imprint of the University of Virginia Press"
+  description="Since 2004, Rotunda has published innovative peer-reviewed digital projects, both born-digital and from authoritative letterpress editions."
+>
+  <RotundaMain>
+    <RotundaHeader />
+    <section class="rot-section">
+      <p class="rot-para">
+        <span class="font-bold">Rotunda</span> is the digital imprint of the University of Virginia
+        Press. It was conceived as an experiment in the feasibility of electronic academic
+        publishing at the dawn of the Internet age, launching its first Founding Era publication in
+        2004, The Dolley Madison Digital Edition. Today, Rotunda continues to legitimize and
+        preserve digital scholarly editions by integrating them with an established university
+        press. Rotunda’s flagship offering is its <a href="#ahc">American History Collection</a>,
+        containing over 300,000 materials, spanning George Washington’s earliest surveying journals
+        to audio recordings of Ronald Reagan’s Oval Office phone conversations. These editions,
+        primarily derived from the authoritative printed book series, are used by over 200
+        subscribing universities and libraries around the world, and are of particular value to
+        authors, researchers, and students, who appreciate knowing they can experience all the
+        content contained in the printed volumes with the added benefit of keyword and metadata
+        search.
+      </p>
+    </section>
+
+    <section class="rot-section">
+      <h2 class="rot-h2">rotunda collections</h2>
+      <p class="rot-para">
+        Rotunda publications are available to both libraries and independent scholars as single
+        titles or as collections. The American History Collection includes the sub-collections
+        American Founding Era; Antebellum, Civil War, and Reconstruction; and the American Century.
+      </p>
+    </section>
+
+    <section class="rot-section">
+      <h3 id="ahc" class="rot-h3 border-b border-ceci-gray-light pb-2">
+        American History Collection
+      </h3>
+      {ahcGroups.map((group) => (
+        <div class="border-b border-ceci-gray-light pb-2">
+          <h4 class="rot-h4">{group.sub}</h4>
+          <ul class="md:grid md:grid-cols-2">
+            {group.nodes.map((n) => {
+              // Match the original behavior: use uvapID only when it's truthy;
+              // otherwise fall back to RotID.
+              const id = n.uvapID ? n.uvapID : n.RotID;
+              // If neither id exists, skip rendering this item to avoid broken links.
+              if (!id) return null;
+              return (
+                <li class=" md:col-span-1">
+                  <a href={`/title/${id}/`} class="hover:bg-gray-100 flex p-2 h-full items-center">
+                    <img
+                      class="flex-shrink-0 h-20 w-20  object-cover mr-5"
+                      src={'https://ik.imagekit.io/uvapress/rotunda/' + n.imageFilename}
+                      width="50"
+                      alt={n.Title}
+                    />
+                    <span class="text-lg text-ceci-gray-dark font-assistant font-thin uppercase">
+                      {n.Title}
+                    </span>
+                  </a>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+      ))}
+    </section>
+    <section class="rot-section">
+      <h3 id="lit" class="rot-h3">Literature and Culture Collection</h3>
+      <ul class="md:grid md:grid-cols-2 border-b border-ceci-gray-light pb-2">
+        {/* TODO(port): Journal of Emily Shore (ESHR) has no uvapID in
+            rotunda.json; the old site emitted a broken /title/null/ link here.
+            Reproduced as-is for parity — fix by giving ESHR a uvapID (or a
+            real destination) in the data. */}
+        {lit.map((n) => (
+          <li class=" md:col-span-1">
+            <a
+              href={`/title/${n.uvapID ?? 'null'}/`}
+              class="hover:bg-gray-100 flex p-2 h-full items-center"
+            >
+              <img
+                class="flex-shrink-0 h-20 w-20  object-cover mr-5"
+                src={'https://ik.imagekit.io/uvapress/rotunda/' + n.imageFilename}
+                width="50"
+                alt={n.Title}
+              />
+              <span class="text-lg text-ceci-gray-dark font-assistant font-thin uppercase">
+                {n.Title}
+              </span>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </section>
+    <section class="rot-section">
+      <h3 id="Arch" class="rot-h3">Architecture</h3>
+      <ul class="md:grid md:grid-cols-2  border-b border-ceci-gray-light pb-2">
+        {arc.map((n) => (
+          <li class="md:col-span-1 ">
+            <a href={`/title/${n.uvapID}/`} class="hover:bg-gray-100 flex p-2 h-full items-center">
+              <img
+                class="flex-shrink-0 h-20 w-20  object-cover mr-5"
+                src={'https://ik.imagekit.io/uvapress/rotunda/' + n.imageFilename}
+                width="50"
+                alt={n.Title}
+              />
+              <span class="text-lg text-ceci-gray-dark font-assistant font-thin uppercase">
+                {n.Title}
+              </span>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </section>
+    <section class="rot-section">
+      <h3 id="Inno" class="rot-h3">Innovations</h3>
+      <ul class="md:grid md:grid-cols-2  border-b border-ceci-gray-light pb-2">
+        <li class="md:col-span-1 ">
+          <a href="/great-experiment/" class="hover:bg-gray-100 flex p-2 h-full items-center">
+            <img
+              class="flex-shrink-0 h-20 w-20  object-cover mr-5"
+              src="https://ik.imagekit.io/uvapress/rotunda/tge.jpg"
+              width="50"
+              alt="The Great Experiment"
+            />
+            <span class="text-lg text-ceci-gray-dark font-assistant font-thin uppercase">
+              The Great Experiment: The Constitutional Convention in VR
+            </span>
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section class="rot-section">
+      <h3 class="rot-h3">legacy projects</h3>
+      <p class="rot-para">
+        These two guides to resources in African American history, dating from the 1990s, were the
+        very first online publications under the imprint of the University of Virginia Press.
+      </p>
+      <ul class="border-b border-ceci-gray-light pb-2">
+        <li class="hover:bg-gray-100 flex p-2 h-full items-center">
+          <img
+            class="flex-shrink-0 h-10 w-10  object-cover mr-5"
+            src="https://legacy.upress.virginia.edu/plunkett/3072.gif"
+            width="80px"
+            alt="Afro-American Sources in Virginia: A Guide to Manuscripts"
+          />
+          <a
+            href="https://legacy.upress.virginia.edu/plunkett/nc-toc.html"
+            class=" text-ceci-gray-dark font-assistant font-thin uppercase"
+          >
+            Afro-American Sources in Virginia: A Guide to Manuscripts
+          </a>
+        </li>
+        <li class="hover:bg-gray-100 flex p-2 h-full items-center">
+          <img
+            class="flex-shrink-0 h-10 w-10  object-cover mr-5"
+            src="https://legacy.upress.virginia.edu/epub/pyatt/seb.jpg"
+            width="80px"
+            alt="Guide to African-American Documentary Resources in North Carolina"
+          />
+          <a
+            href="https://legacy.upress.virginia.edu/epub/pyatt/index.html"
+            class=" text-ceci-gray-dark font-assistant font-thin uppercase"
+          >
+            Guide to African-American Documentary Resources in North Carolina
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section class="rot-section-zinc bg-zinc-50 py-4">
+      <h3 class="rot-h3">Accessing Rotunda Publications</h3>
+      <p class="rot-para">
+        If you are connecting via a campus Internet connection, you can expect to gain access to
+        any Rotunda publication purchased by your institution. If your institution has not
+        purchased a particular Rotunda publication, contact your institution’s library about
+        ordering. You may also sign up for an individual free trial to evaluate Rotunda before
+        making a purchase decision.
+      </p>
+    </section>
+
+    <section class="rot-section-zinc bg-zinc-50 py-4 bg-zinc-50 border-b border-ceci-gray-light">
+      <article class="rot-article">
+        <a href="https://rotunda.upress.virginia.edu/entrance.xqy">
+          <h4 class="rot-h4 underline">Collection Entrance</h4>
+        </a>
+        <p class="rot-para">
+          Access the Rotunda titles provided by your institution (must be on campus network or
+          VPN), or log in with individual account.
+        </p>
+      </article>
+
+      <article class="rot-article">
+        <a href="/rotunda-customer-page/">
+          <h4 class="rot-h4 underline">MARC Records, Access Statistics and Accessibility</h4>
+        </a>
+        <p class="rot-para">Customer information for librarians or purchasers of Rotunda Publications.</p>
+      </article>
+      <article class="rot-article">
+        <a href="/rotunda-purchase/">
+          <h4 class="rot-h4 underline">Purchase</h4>
+        </a>
+        <p class="rot-para">
+          Information about institutional or individual purchase of Rotunda publications.
+        </p>
+      </article>
+      <article class="rot-article">
+        <a href="https://rotunda.upress.virginia.edu/register/default.xqy">
+          <h4 class="rot-h4 underline">Free Trial</h4>
+        </a>
+        <p class="rot-para">Register for a free 48 hour trial of all of our publications.</p>
+      </article>
+    </section>
+
+    <section class="rot-section-zinc bg-zinc-50 border-b border-ceci-gray-light pb-8">
+      <h3 class="rot-h3">rotunda contacts</h3>
+      <div class="flex flex-wrap gap-4 text-center" id="contacts">
+        {staffs.map((bio) => <RotundaMiniBio bio={bio} />)}
+      </div>
+    </section>
+  </RotundaMain>
+</Base>
