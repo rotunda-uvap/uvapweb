@@ -93,7 +93,9 @@ Port the **what**, not the **how**. The rough design, features, and URLs stay; t
 
 ### Phase 2 — Templates & pages
 - [x] All 11 dynamic route files with correct getStaticPaths (title incl. rotunda, news, author-corner, media, staff, collections, exhibits, subject, series, imprints, rotunda collection) — **interim templates**: real data, plain layout. Full build = 2,627 pages in ~12s
-- [ ] Design port per page type: replace each interim template with the real design, working from the production site's rendered pages (old components on `production` branch for reference). Order: book-page → homepage → news/AC/media → series/subject/collections → staff/exhibits/imprints/rotunda
+- [x] Site chrome (2026-07-13): header/mega-menu (defined once in nav-data.ts, was duplicated in Gatsby), footer, fonts (fontsource, same weights), global typography. react-icons → build-time inline SVGs
+- [x] **Book page** (2026-07-13) — full design port, visually verified against production side by side: ImageKit covers, bindings, OA/digital branches, chips, awards, tabs (react-tabs → vanilla), share intents (react-share dropped), related news
+- [ ] Design port, remaining page types: homepage → news/AC/media → series/subject/collections → staff/exhibits/imprints/rotunda (old components on `production` branch for reference)
 - [ ] Surviving static pages (31 tracked in `scripts/parity-pending.txt` — remove lines as pages land; parity check enforces the rest)
 - [ ] Islands only where interactive: Pagefind search UI, mobile nav if needed
 - [ ] Mailchimp: static form POSTing to the existing list-manage endpoint
