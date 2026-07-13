@@ -96,11 +96,13 @@ Port the **what**, not the **how**. The rough design, features, and URLs stay; t
 - [x] Site chrome (2026-07-13): header/mega-menu (defined once in nav-data.ts, was duplicated in Gatsby), footer, fonts (fontsource, same weights), global typography. react-icons → build-time inline SVGs
 - [x] **Book page** (2026-07-13) — full design port, visually verified against production side by side: ImageKit covers, bindings, OA/digital branches, chips, awards, tabs (react-tabs → vanilla), share intents (react-share dropped), related news
 - [x] **Homepage** (2026-07-13) — banner, featured-books carousel, news/AC/exhibits trio, Rotunda section, featured collection, OA, catalog, newsletter. react-slick → CSS scroll-snap CoverCarousel. Hardcodes kept as-is and flagged for Phase 3 CMS pass: seasonal catalog cover image, Rotunda-news blurb
-- [ ] Design port, remaining page types: news/AC/media → series/subject/collections → staff/exhibits/imprints/rotunda (old components on `production` branch for reference)
-- [ ] Surviving static pages (31 tracked in `scripts/parity-pending.txt` — remove lines as pages land; parity check enforces the rest)
-- [ ] Islands only where interactive: Pagefind search UI, mobile nav if needed
-- [ ] Mailchimp: static form POSTing to the existing list-manage endpoint
-- [ ] Images: gatsby-image → `astro:assets`; verify Decap media paths (`static/assets` → `/assets`) resolve
+- [x] Design port, ALL page types (2026-07-13, via parallel port agents; conventions in PORTING-NOTES.md): news/AC/media posts (incl. SoundCloud embed reproduction for 6 LISTEN posts), series/subject/collections/imprints/staff detail pages, exhibits + index, full Rotunda suite (pricing page verified 116/116 prices vs production), all 31 static pages
+- [x] **Pagefind search live** at /book-search/: book pages instrumented (`data-pagefind-body` scopes index to books; title/author/image meta; Subject + Series filters). Index: 2,129 pages, 45k words, built by `npm run build`. Verified in browser
+- [x] Mailchimp: static forms on homepage + /mailinglist/ POST to the existing list-manage endpoint (port also fixed name field: was sent as `name`, Mailchimp expects `FNAME`)
+- [x] Images: astro:assets for local images; ImageKit untouched; Decap media paths resolve via publicDir
+- **Parity: 2,658/2,658 buildable URLs, 0 missing, 0 extra** (only the 27 dropped collections remain, as redirects)
+- Small production bugs fixed in passing (all commented in code): exhibit author-corner links 404'd, subjects.astro dead subjectID links, mailing-list name field, exhibit title typo, about-page malformed mailto
+- Data fix for Patricia: rotunda.json ESHR (Journal of Emily Shore) has no `uvapID` — old site rendered a dead /title/null/ link, reproduced for parity; fix the data when convenient
 
 ### Phase 3 — Decap CMS
 - [ ] Serve `/admin` statically; port `static/admin/config.yml` (collections unchanged)
@@ -110,6 +112,8 @@ Port the **what**, not the **how**. The rough design, features, and URLs stay; t
 
 ### Phase 4 — Integrations, redirects, SEO
 - [ ] All redirects → Netlify `_redirects` (301s + the two 200 proxies)
+- [ ] **Root-level download redirects**: the Gatsby site served `downloads/` files at the site root (`/fall26.pdf`, `/UVaP_Book_Proposal.doc`, `/walker-cowen-application.pdf` — the last is hardcoded in walker-cowen content markdown); files now live at `/downloads/<file>`. Generate one redirect per file in `static/downloads/` (~43)
+- [ ] 27 dropped `/collections/...` URLs → redirect (list in `scripts/parity-dropped.txt`)
 - [ ] GTM in base layout; `@astrojs/sitemap`; robots.txt (port the bot disallow list)
 - [ ] Pagefind indexing in build command (`astro build && pagefind --site dist`)
 - [ ] Meta/OG tags port (replaces react-helmet SeoComponent)
