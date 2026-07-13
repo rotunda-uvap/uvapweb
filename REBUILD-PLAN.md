@@ -88,12 +88,13 @@ Port the **what**, not the **how**. The rough design, features, and URLs stay; t
 - [x] Content collections with zod schemas for every `content/` dir + `file()` loaders for `src/data/*.json` — **full build validates: 2,129 press books + 34 rotunda = 2,163 title pages (matches sitemap exactly), 281 posts, 30 collections, 26 exhibits, 66 series, 21 bios**
   - books.json quirks handled in the loader parser, file on disk untouched: single-element `Series` collapsed to bare object on ~1,036 books (XML→JSON export artifact), `Series: null` on some
 - [x] Weekly books.json update workflow carries over unchanged (path identical; loader normalizes on read)
-- [ ] Slug/URL helpers replicating gatsby-plugin-slug + kebab-case behavior **exactly**
+- [x] Slug/URL helpers replicating gatsby-plugin-slug + kebab-case behavior **exactly** — entry ids preserve raw folder names (custom `generateId`, no re-slugification); subjects/imprints use lodash `kebabCase`. **Verified empirically: 2,627/2,627 dynamic URLs match the production sitemap, 0 missing, 0 extra** (`node scripts/check-parity.mjs` after any build)
 - Scaffold placeholder: `src/pages/index.astro` is a data-layer proof page (collection counts); replaced by the real homepage in Phase 2. GTM deliberately omitted until cutover so staging traffic isn't tracked.
 
 ### Phase 2 — Templates & pages
-- [ ] 12 templates → `.astro` (book-page is the big one; then rotunda-page, series, subject, imprint, news, media, author-corner, exhibit, staff, collection pages)
-- [ ] Surviving static pages
+- [x] All 11 dynamic route files with correct getStaticPaths (title incl. rotunda, news, author-corner, media, staff, collections, exhibits, subject, series, imprints, rotunda collection) — **interim templates**: real data, plain layout. Full build = 2,627 pages in ~12s
+- [ ] Design port per page type: replace each interim template with the real design, working from the production site's rendered pages (old components on `production` branch for reference). Order: book-page → homepage → news/AC/media → series/subject/collections → staff/exhibits/imprints/rotunda
+- [ ] Surviving static pages (31 tracked in `scripts/parity-pending.txt` — remove lines as pages land; parity check enforces the rest)
 - [ ] Islands only where interactive: Pagefind search UI, mobile nav if needed
 - [ ] Mailchimp: static form POSTing to the existing list-manage endpoint
 - [ ] Images: gatsby-image → `astro:assets`; verify Decap media paths (`static/assets` → `/assets`) resolve
