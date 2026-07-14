@@ -112,7 +112,7 @@ Port the **what**, not the **how**. The rough design, features, and URLs stay; t
 
 ### Phase 4 — Integrations, redirects, SEO
 - [ ] All redirects → Netlify `_redirects` (301s + the two 200 proxies)
-- [ ] **URL-case decision (Patricia)** — Netlify force-lowercases static URLs (301) with no opt-out; affects ~130 mixed-case URLs (61 /series/{ID}/, 34 uppercase /title/{RotID}/, 30 /collections/{Title}/, 3 /collection/.../, /RotundaEntrance/). All 2,129 numeric book URLs unaffected. Options: (a) adopt lowercase as canonical — lowercase the route params + internal links + sitemap; old uppercase URLs 301 automatically (recommended), or (b) per-URL 200 rewrites to preserve case (fights the platform, needs testing)
+- [x] ~~URL-case decision~~ RESOLVED 2026-07-14: **the live site is already hosted on Netlify** (server: Netlify) and already 301s every mixed-case URL to lowercase (/series/ADHC/ → /series/adhc/ in production today). Cutover changes nothing. Optional cleanliness item: lowercase internal links/sitemap to skip the redirect hop
 - [ ] **Slack deploy notifications** (Patricia wants at switchover — how she learns a marketing CMS edit broke a build): re-add the notify function WITHOUT node-fetch (Node 22 has global fetch), wire Netlify deploy webhooks for BOTH deploy-succeeded and **deploy-failed** (the old function only ever reported success), `SLACK_WEBHOOK` env var in Netlify UI
 - [ ] **Root-level download redirects**: the Gatsby site served `downloads/` files at the site root (`/fall26.pdf`, `/UVaP_Book_Proposal.doc`, `/walker-cowen-application.pdf` — the last is hardcoded in walker-cowen content markdown); files now live at `/downloads/<file>`. Generate one redirect per file in `static/downloads/` (~43)
 - [ ] 27 dropped `/collections/...` URLs → redirect (list in `scripts/parity-dropped.txt`)
@@ -121,6 +121,7 @@ Port the **what**, not the **how**. The rough design, features, and URLs stay; t
 - [ ] Meta/OG tags port (replaces react-helmet SeoComponent)
 
 ### Phase 5 — Parity check & cutover
+**Cutover simplification (discovered 2026-07-14):** the live site already runs on Netlify, so cutover likely needs NO DNS change — merge `astro` → `production` and the *existing* Netlify site rebuilds as the new site (its production branch is already `production`). Verify the existing site's build settings read netlify.toml (they will, it's committed); re-point/verify the Slack deploy webhooks; retire the staging site after. Confirm the existing Netlify site's build command isn't hardcoded to gatsby in the UI before merging.
 - [ ] Remove the staging X-Robots-Tag noindex header from netlify.toml
 - [ ] Diff new build URLs vs Phase 0 inventory — zero unexplained missing URLs
 - [ ] Spot-check: book pages, search, Decap editing round-trip, Mailchimp signup, redirects
