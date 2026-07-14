@@ -113,14 +113,14 @@ Port the **what**, not the **how**. The rough design, features, and URLs stay; t
 - Note: the old config's per-collection `publish_mode: editorial_workflow` on news was silently ignored by Decap (it's a global-only setting) — dropped. If editorial workflow (drafts/review) is wanted, it's a one-line global setting to discuss
 
 ### Phase 4 — Integrations, redirects, SEO
-- [ ] All redirects → Netlify `_redirects` (301s + the two 200 proxies)
+- [x] All redirects → `static/_redirects` (2026-07-14, 91 rules): gatsby-node legacy redirects, both 200 proxies, dropped collections → /books/, root-level download files → /downloads/
 - [x] ~~URL-case decision~~ RESOLVED 2026-07-14: **the live site is already hosted on Netlify** (server: Netlify) and already 301s every mixed-case URL to lowercase (/series/ADHC/ → /series/adhc/ in production today). Cutover changes nothing. Optional cleanliness item: lowercase internal links/sitemap to skip the redirect hop
-- [ ] **Slack deploy notifications** (Patricia wants at switchover — how she learns a marketing CMS edit broke a build): re-add the notify function WITHOUT node-fetch (Node 22 has global fetch), wire Netlify deploy webhooks for BOTH deploy-succeeded and **deploy-failed** (the old function only ever reported success), `SLACK_WEBHOOK` env var in Netlify UI
-- [ ] **Root-level download redirects**: the Gatsby site served `downloads/` files at the site root (`/fall26.pdf`, `/UVaP_Book_Proposal.doc`, `/walker-cowen-application.pdf` — the last is hardcoded in walker-cowen content markdown); files now live at `/downloads/<file>`. Generate one redirect per file in `static/downloads/` (~43)
-- [ ] 27 dropped `/collections/...` URLs → redirect (list in `scripts/parity-dropped.txt`)
-- [ ] GTM in base layout; `@astrojs/sitemap`; robots.txt (port the bot disallow list)
+- [x] Slack deploy notifier re-added: `netlify/functions/deploy-notify.mjs` (dependency-free, handles success + failure). **Patricia wires it in the Netlify UI** (can test on staging now): env var `SLACK_WEBHOOK` + two outgoing webhooks (Deploy succeeded / Deploy failed) → `https://<site>/.netlify/functions/deploy-notify`
+- [x] Root-level download redirects — generated, in `static/_redirects`
+- [x] 27 dropped `/collections/...` URLs → 301 to /books/, in `static/_redirects`
+- [x] `@astrojs/sitemap` + robots.txt done. GTM (GTM-MRC4NJR) stays out until cutover — insert in Base.astro at the marked TODO on cutover day
 - [x] Pagefind indexing in build command (`astro build && pagefind --site dist`)
-- [ ] Polish: internal links + sitemap emit lowercase URLs directly (skips the platform 301 hop on series/collections/rotunda-title clicks)
+- [x] Polish: pages build at lowercase paths (route params) + post-build `fix-link-case` pass lowercases internal hrefs; sitemap follows automatically. Parity checker compares case-insensitively
 - [ ] Meta/OG tags port (replaces react-helmet SeoComponent)
 
 ### Phase 5 — Parity check & cutover
