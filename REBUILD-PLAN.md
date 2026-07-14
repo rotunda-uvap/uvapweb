@@ -105,10 +105,12 @@ Port the **what**, not the **how**. The rough design, features, and URLs stay; t
 - Data fix for Patricia: rotunda.json ESHR (Journal of Emily Shore) has no `uvapID` — old site rendered a dead /title/null/ link, reproduced for parity; fix the data when convenient
 
 ### Phase 3 — Decap CMS
-- [ ] Serve `/admin` statically; port `static/admin/config.yml` (collections unchanged)
-- [ ] Netlify GitHub OAuth replaces `auth_type: implicit`
-- [ ] `decap-server` for local editing; drop the one preview template or rebuild later
-- [ ] Editor-experience pass on config.yml: clear labels/hints on every field, correct required/optional flags, remove dead fields (`draft`, legacy relation names), widget choices that match how editors work (relation widgets for related_book/related_collection instead of raw string lists)
+- [x] `/admin` served statically (Decap 3 via CDN); config rebuilt 2026-07-14, verified locally with decap-server (`npx decap-server` + `npm run dev` → localhost:4321/admin/index.html, no GitHub login needed)
+- [x] Editor-experience pass done: labels/hints/descriptions on every field, collections reordered by editing frequency, homepage banner book is a searchable picker, homepage create disabled. Real bugs fixed: bios related_series widget pointed at a nonexistent file; DIR department missing from options; phone wrongly required; imprintID string→number; new series were created without `type: series` (invisible on /series/)
+- [ ] **Patricia: Netlify OAuth** — create the GitHub OAuth app (org-owned, callback `https://api.netlify.com/auth/done`) and install it on the staging site: Site configuration → Access & security → OAuth → GitHub. Then /admin on staging works end-to-end (edits commit to the astro branch)
+- [ ] **Patricia (data): 9 active series lack `type: series`** and are invisible on /series/ and Prospective Authors — on the live site too, today (e.g. american-century, scholarly-editing). Adding the line to those files fixes both sites; happy to apply on request
+- [ ] At cutover: flip config.yml `branch:` + site_url/display_url; remove `draft` and legacy relation fields from content files (recorded in Phase 0)
+- Note: the old config's per-collection `publish_mode: editorial_workflow` on news was silently ignored by Decap (it's a global-only setting) — dropped. If editorial workflow (drafts/review) is wanted, it's a one-line global setting to discuss
 
 ### Phase 4 — Integrations, redirects, SEO
 - [ ] All redirects → Netlify `_redirects` (301s + the two 200 proxies)
