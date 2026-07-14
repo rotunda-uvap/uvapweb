@@ -1,471 +1,564 @@
+# Decap CMS configuration — UVA Press
+#
+# Rebuilt 2026-07 for the Astro site. Field names and file structure are
+# unchanged (existing content stays valid); labels, hints, and widget fixes
+# are new. Collections are ordered by how often editors use them.
+#
+# AT CUTOVER: change `branch: astro` to `branch: production`, and update
+# site_url/display_url to https://www.upress.virginia.edu
+
 backend:
   name: github
   repo: rotunda-uvap/uvapweb
-  branch: production
-  auth_type: implicit
+  branch: astro # ← flip to `production` at cutover
 
-  #base_url: https://www.upress.virginia.edu  # Ensure this matches your GitHub OAuth application
-  #auth_endpoint: /admin/callback
-  #auth_endpoint: api/auth
-  #base_url: https://www.upress.virginia.edu/
-# publish_mode: editorial_workflow
+# Local editing: run `npx decap-server` beside `npm run dev`, then open
+# http://localhost:4321/admin/ — no GitHub login needed locally.
+local_backend: true
+
+site_url: https://uvapastromigration.netlify.app # ← flip at cutover
+display_url: https://uvapastromigration.netlify.app # ← flip at cutover
+logo_url: /uvap_logo_full.png
+
 media_folder: static/assets
 public_folder: /assets
 
 collections:
-  - name: 'homepage'
-    label: "Homepage"
-    folder: "content/homepage" 
-    create: true
-    identifier_field: '{{title}}'
-    slug: "index"
-    path: "{{title}}/index"
-    fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "homepage"}
-      - {label: "version", name: "title", default: "Current"}
-      - label: "Top Banner"
-        name: "top_banner"
-        widget: "list"
-        hint: "Featured book above the fold. Create new Top Banner (remove/X out old) and fill out the required fields "
-        fields:
-          - {label: "Book Title", name: "banner_title", widget: "string"}
-          - {label: "Author", name: "banner_author", widget: "string"}
-          - {label: "Subtitle", name: "banner_subtitle", widget: "string"}
-          - {label: "Quote", name: "banner_quote", widget: "string", hint: "max 60ish characters"}
-          - {label: "Quote Attribution", name: "banner_attr", widget: "string", hint: "max 50ish characters", required:false}
-          - {label: "Book ID", name: "banner_id", widget: "string"}
-      - label: Featured Books 
-        name: featured_books
-        widget: relation
-        hint: "Slider of featured books. Choose at least 5"
-        collection: files
-        multiple: true
-        max:  1000
-        value_field:  "book.*.BookID"
-        search_fields: ['book.*.Title'] 
-        display_fields: ['book.*.Title']
-        file: booklist_cms
+  # ------------------------------------------------------------------ #
   - name: 'news'
-    label: 'News'
+    label: 'News & Posts'
+    label_singular: 'Post'
+    description: 'News, media, and Author''s Corner posts. The Type field decides where a post appears on the site.'
     folder: 'content/news'
-    publish_mode: editorial_workflow
     preview_path: '{{title}}/index'
     create: true
     slug: 'index'
     media_folder: ''
     public_folder: ''
     path: '{{title}}/index'
+    sortable_fields: ['date', 'title']
     fields:
-      - { label: "Template Key", name: "templateKey", widget: "hidden", default: "news"}
-      - { label: "Type", name: "type", widget: "select", options: ["news", "media", "author-corner"], required: true}
-      - { name: "title", label: "Title" }
-      - { label: "Summary", name: "description", widget: "markdown", modes: ["rich_text", "raw"], required: false, hint: "Text for homepage and previews"}
-      - { name: "body", label: "Body", widget: "markdown" }
-      - {label: "Image", name: "image", widget: "image", required: false, hint: "PLEASE CHECK SIZE! Should not be over 1mb file."}
-      - label: Related Book(s)
-        name: related_book
-        widget: relation
-        collection: files
+      - { label: 'Template Key', name: 'templateKey', widget: 'hidden', default: 'news' }
+      - {
+          label: 'Type',
+          name: 'type',
+          widget: 'select',
+          options: ['news', 'media', 'author-corner'],
+          required: true,
+          hint: 'news → News section · media → Media section · author-corner → Author''s Corner',
+        }
+      - { name: 'title', label: 'Title', hint: 'Also becomes the page URL — avoid renaming after publishing' }
+      - {
+          label: 'Publish Date',
+          name: 'date',
+          widget: 'datetime',
+          date_format: 'YYYY-MM-DD',
+          time_format: false,
+          format: 'YYYY-MM-DD',
+          required: true,
+        }
+      - {
+          label: 'Summary',
+          name: 'description',
+          widget: 'markdown',
+          modes: ['rich_text', 'raw'],
+          required: false,
+          hint: 'Short text shown on the homepage and in list previews',
+        }
+      - { name: 'body', label: 'Body', widget: 'markdown' }
+      - {
+          label: 'Header Image',
+          name: 'image',
+          widget: 'image',
+          required: false,
+          hint: 'Shown at the top of the post. Keep the file under 1 MB.',
+        }
+      - label: 'Related Book(s)'
+        name: 'related_book'
+        widget: 'relation'
+        collection: 'files'
+        file: 'booklist_cms'
         multiple: true
-        max:  1000
-        value_field: "book.*.BookID"
-        search_fields: ['book.*.Title'] 
+        max: 1000
+        value_field: 'book.*.BookID'
+        search_fields: ['book.*.Title']
         display_fields: ['book.*.Title']
-        target_field: book
-        file: booklist_cms
+        target_field: 'book'
         required: false
-      - label: Related Series
-        name: related_series
-        widget: relation
-        collection: files
+        hint: 'Covers shown beside the post; the post also appears on each book''s page'
+      - label: 'Related Series'
+        name: 'related_series'
+        widget: 'relation'
+        collection: 'files'
+        file: 'series_cms'
         multiple: true
-        value_field: "series.*.seriesID"
-        search_fields: ['series.*.seriesName'] 
+        value_field: 'series.*.seriesID'
+        search_fields: ['series.*.seriesName']
         display_fields: ['series.*.seriesName']
-        file: series_cms
-        target_field: series
-        required: false 
-      - label: "date"
-        name: "date"
-        widget: "datetime"
-        default: ""
-        date_format: "YYYY-MM-DD"
-        time_format: "false" 
-        format: "YYYY-MM-DD"
-        required: true
-  
-  - name: 'pages'
-    identifier_field: '{{title}}'
-    label: 'Pages'
-    folder: 'content/pages'
-    preview_path: '{{title}}/index'
-    create: true
-    slug: 'index'
-    media_folder: ''
-    public_folder: ''
-    path: '{{title}}/index'
-    fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "page"}
-      - { name: "title", label: "Title" }
-      - { name: "body", label: "Body", widget: "markdown" }
-      - label: "Related Book Collection(s)"
-        name: "related_collection"
-        widget: "relation"
-        collection: "book_collection"
-        search_fields: ['title']
-        value_field: "{{title}}"
-        multiple: true
-        required: false    
-  - name: 'addl_resources'
-    identifier_field: '{{title}}'
-    label: 'Additional Resources'
-    folder: 'content/resources'
-    preview_path: '{{title}}/index'
-    create: true
-    slug: 'index'
-    media_folder: ''
-    public_folder: ''
-    path: '{{title}}/index'
-    fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "resource"}
-      - { name: "title", label: "Title", hint: "Title of book attached to these resources. (For CMS label)", required: true }
-      - label: Attached Book
-        name: attached_book
-        widget: relation
-        hint: "ID of book to which these resources attach. Required to connect!"
-        collection: files
-        value_field:  "book.*.BookID"
-        search_fields: ['book.*.Title'] 
-        display_fields: ['book.*.Title']
-        file: booklist_cms
-        required: true
-      - label: Related Book(s)
-        name: related_book
-        widget: relation
-        hint: "Manual list of UVaP books that may be similar"
-        collection: files
-        multiple: true
-        max:  1000
-        options_length: 1000   
-        value_field: "book.*.BookID"
-        search_fields: ['book.*.Title'] 
-        display_fields: ['book.*.Title']
-        file: booklist_cms
+        target_field: 'series'
         required: false
-      - label: "Related Links"
-        name: "attached_links"
-        hint: "Links to resources (internal files or external sites)"
-        widget: "list"
+
+  # ------------------------------------------------------------------ #
+  - name: 'exhibits'
+    label: 'Exhibits'
+    label_singular: 'Exhibit'
+    description: 'Virtual conference exhibits, listed at /exhibits/.'
+    identifier_field: '{{title}}'
+    folder: 'content/exhibits'
+    preview_path: 'exhibits/{{exhibit_slug}}'
+    create: true
+    slug: 'index'
+    media_folder: ''
+    public_folder: ''
+    path: '{{title}}/index'
+    sortable_fields: ['date', 'title']
+    fields:
+      - { label: 'Template Key', name: 'templateKey', widget: 'hidden', default: 'exhibit' }
+      - { name: 'title', label: 'Title', hint: 'Page title, and the link text on the main exhibits page' }
+      - {
+          name: 'exhibit_slug',
+          label: 'URL Shortcut',
+          required: true,
+          hint: 'The page address becomes /exhibits/<this>/ — lowercase, hyphens, no spaces',
+        }
+      - {
+          label: 'Conference Date',
+          name: 'date',
+          widget: 'datetime',
+          date_format: 'YYYY-MM-DD',
+          time_format: false,
+          format: 'YYYY-MM-DD',
+          required: false,
+          hint: 'Orders exhibits on the exhibits page and the homepage (newest first)',
+        }
+      - { name: 'coupon', label: 'Coupon / Promo Text', widget: 'text', required: false }
+      - {
+          name: 'bgcolor',
+          label: 'Coupon Background Color',
+          widget: 'string',
+          default: 'bg-white',
+          required: false,
+          hint: 'A Tailwind class, e.g. bg-blue-400 — pick from tailwindcss.com/docs/colors',
+        }
+      - {
+          name: 'txtcolor',
+          label: 'Coupon Text Color',
+          widget: 'string',
+          default: 'text-black',
+          required: false,
+          hint: 'A Tailwind class, e.g. text-white',
+        }
+      - { name: 'body', label: 'Body', widget: 'markdown', required: false }
+      - label: 'Featured Books'
+        name: 'featured_books'
+        widget: 'relation'
+        collection: 'files'
+        file: 'booklist_cms'
         multiple: true
+        value_field: 'book.*.BookID'
+        search_fields: ['book.*.Title']
+        display_fields: ['book.*.Title']
+        required: false
+        hint: 'Cover carousel near the top of the exhibit'
+      - label: 'Book Collection(s)'
+        name: 'related_collection'
+        widget: 'relation'
+        collection: 'book_collection'
+        search_fields: ['title']
+        value_field: '{{title}}'
+        multiple: true
+        max: 1000
+        options_length: 1000
+        required: false
+        hint: 'The full book grids at the bottom of the exhibit'
+      - label: 'Related Series'
+        name: 'related_series'
+        widget: 'relation'
+        collection: 'files'
+        file: 'series_cms'
+        multiple: true
+        value_field: 'series.*.seriesID'
+        search_fields: ['series.*.seriesName']
+        display_fields: ['series.*.seriesName']
+        required: false
+      - label: 'Related Post(s)'
+        name: 'related_blog'
+        widget: 'relation'
+        collection: 'news'
+        search_fields: ['title']
+        value_field: '{{title}}'
+        display_fields: ['{{title}}']
+        multiple: true
+        required: false
+      - label: 'Related Staff'
+        name: 'related_staff'
+        widget: 'relation'
+        collection: 'bios'
+        search_fields: ['title']
+        value_field: '{{title}}'
+        multiple: true
+        required: false
+        hint: 'Shown as "Meet our Editors" with their bios'
+
+  # ------------------------------------------------------------------ #
+  - name: 'homepage'
+    label: 'Homepage'
+    description: 'The site homepage. Edit the existing "Current" entry — do not create a second one.'
+    folder: 'content/homepage'
+    create: false
+    identifier_field: '{{title}}'
+    slug: 'index'
+    path: '{{title}}/index'
+    fields:
+      - { label: 'Template Key', name: 'templateKey', widget: 'hidden', default: 'homepage' }
+      - { label: 'Version', name: 'title', default: 'Current', hint: 'Must stay "Current" — the site loads the entry with this exact title' }
+      - label: 'Top Banner'
+        name: 'top_banner'
+        widget: 'list'
+        max: 1
+        hint: 'The featured book above the fold. Edit the existing banner in place.'
+        fields:
+          - label: 'Book'
+            name: 'banner_id'
+            widget: 'relation'
+            collection: 'files'
+            file: 'booklist_cms'
+            value_field: 'book.*.BookID'
+            search_fields: ['book.*.Title']
+            display_fields: ['book.*.Title']
+            hint: 'Pick the featured book — supplies the cover image and link'
+          - { label: 'Book Title', name: 'banner_title', widget: 'string', hint: 'As it should display in the banner' }
+          - { label: 'Author', name: 'banner_author', widget: 'string' }
+          - { label: 'Subtitle', name: 'banner_subtitle', widget: 'string' }
+          - { label: 'Quote', name: 'banner_quote', widget: 'string', hint: 'About 60 characters max' }
+          - { label: 'Quote Attribution', name: 'banner_attr', widget: 'string', hint: 'About 50 characters max', required: false }
+      - label: 'Featured Books'
+        name: 'featured_books'
+        widget: 'relation'
+        collection: 'files'
+        file: 'booklist_cms'
+        multiple: true
+        max: 1000
+        value_field: 'book.*.BookID'
+        search_fields: ['book.*.Title']
+        display_fields: ['book.*.Title']
+        hint: 'The homepage cover carousel — choose at least 5'
+
+  # ------------------------------------------------------------------ #
+  - name: 'book_collection'
+    label: 'Book Collections'
+    label_singular: 'Book Collection'
+    description: 'Named groups of books used by exhibits, the homepage, and the Instructors page.'
+    identifier_field: '{{title}}'
+    folder: 'content/collections'
+    preview_path: 'collections/{{title}}'
+    create: true
+    slug: 'index'
+    media_folder: ''
+    public_folder: ''
+    path: '{{title}}/index'
+    fields:
+      - { label: 'Template Key', name: 'templateKey', widget: 'hidden', default: 'collection' }
+      - { name: 'title', label: 'Title', required: true, hint: 'Also the page address: /collections/<title>/ — renaming breaks links from exhibits' }
+      - { name: 'body', label: 'Description', widget: 'markdown', required: false }
+      - label: 'Books'
+        name: 'related_book'
+        widget: 'relation'
+        collection: 'files'
+        file: 'booklist_cms'
+        multiple: true
+        max: 1000
+        options_length: 1000
+        value_field: 'book.*.BookID'
+        search_fields: ['book.*.Title']
+        display_fields: ['book.*.Title']
+        required: true
+
+  # ------------------------------------------------------------------ #
+  - name: 'featured-collection'
+    label: 'Featured Collection'
+    description: 'The "In the News" section of the homepage.'
+    identifier_field: '{{title}}'
+    folder: 'content/featured-collection'
+    create: false
+    slug: 'index'
+    media_folder: ''
+    public_folder: ''
+    path: '{{title}}/index'
+    fields:
+      - { label: 'Template Key', name: 'templateKey', widget: 'hidden', default: 'featured-collection' }
+      - { name: 'title', label: 'Title' }
+      - { name: 'body', label: 'Intro Text', widget: 'markdown', hint: 'Short centered text above the carousel' }
+      - { label: 'Summary', name: 'description', widget: 'string', required: false }
+      - label: 'Book Collection(s)'
+        name: 'related_collection'
+        widget: 'relation'
+        collection: 'book_collection'
+        search_fields: ['title']
+        value_field: '{{title}}'
+        multiple: true
+        required: true
+
+  # ------------------------------------------------------------------ #
+  - name: 'promo'
+    label: 'Promotions'
+    label_singular: 'Promotion'
+    identifier_field: '{{title}}'
+    folder: 'content/promos'
+    create: true
+    slug: 'index'
+    media_folder: ''
+    public_folder: ''
+    path: '{{title}}/index'
+    fields:
+      - { label: 'Template Key', name: 'templateKey', widget: 'hidden', default: 'promo' }
+      - { name: 'title', label: 'Title' }
+      - { name: 'body', label: 'Body', widget: 'markdown' }
+      - { label: 'Summary', name: 'description', widget: 'string', required: false }
+      - { label: 'Image', name: 'image', widget: 'image', required: false }
+      - label: 'Books'
+        name: 'related_book'
+        widget: 'relation'
+        collection: 'files'
+        file: 'booklist_cms'
+        multiple: true
+        max: 1000
+        options_length: 1000
+        value_field: 'book.*.BookID'
+        search_fields: ['book.*.Title']
+        display_fields: ['book.*.Title']
+        required: false
+      - label: 'Book Collection(s)'
+        name: 'related_collection'
+        widget: 'relation'
+        collection: 'book_collection'
+        search_fields: ['title']
+        value_field: '{{title}}'
+        multiple: true
+        required: false
+
+  # ------------------------------------------------------------------ #
+  - name: 'pages'
+    label: 'Pages'
+    label_singular: 'Page'
+    description: 'Text content for fixed site pages (About, Permissions, Instructors...). The page layout is code; this is the editable copy inside it.'
+    identifier_field: '{{title}}'
+    folder: 'content/pages'
+    create: true
+    slug: 'index'
+    media_folder: ''
+    public_folder: ''
+    path: '{{title}}/index'
+    fields:
+      - { label: 'Template Key', name: 'templateKey', widget: 'hidden', default: 'page' }
+      - { name: 'title', label: 'Title', hint: 'The site matches pages by this exact title — do not rename existing entries' }
+      - { name: 'body', label: 'Body', widget: 'markdown' }
+      - label: 'Related Book Collection(s)'
+        name: 'related_collection'
+        widget: 'relation'
+        collection: 'book_collection'
+        search_fields: ['title']
+        value_field: '{{title}}'
+        multiple: true
+        required: false
+        hint: 'Used by the Instructors page for course-collection book lists'
+
+  # ------------------------------------------------------------------ #
+  - name: 'bios'
+    label: 'Staff Bios'
+    label_singular: 'Staff Bio'
+    identifier_field: '{{title}}'
+    folder: 'content/bios'
+    preview_path: 'staff/{{name_slug}}'
+    create: true
+    slug: 'index'
+    media_folder: ''
+    public_folder: ''
+    path: '{{title}}/index'
+    fields:
+      - { label: 'Template Key', name: 'templateKey', widget: 'hidden', default: 'bio' }
+      - { name: 'title', label: 'Display Name', hint: 'As shown on the staff page' }
+      - { name: 'staff_name', label: 'Staff Name', hint: 'Used to link this person from series/imprints/exhibits — keep identical to Display Name' }
+      - { label: 'Name Slug', name: 'name_slug', widget: 'string', required: true, hint: 'Page address: /staff/<this>/ — lowercase-hyphenated, e.g. jane-doe' }
+      - { label: 'Profile Photo', name: 'profile_photo', widget: 'image', required: false }
+      - { label: 'Job Title', name: 'job_title', widget: 'string', required: true }
+      - {
+          label: 'Department',
+          name: 'department',
+          widget: 'select',
+          options: ['DIR', 'OPS', 'ACQ', 'EDP', 'MKG', 'ROT'],
+          multiple: true,
+          required: true,
+          hint: 'Controls grouping on the staff directory',
+        }
+      - { name: 'body', label: 'Bio', widget: 'markdown' }
+      - { label: 'Email', name: 'email', widget: 'string', required: true }
+      - { label: 'Phone', name: 'phone', widget: 'string', required: false, hint: 'Format (XXX) XXX-XXXX' }
+      - { label: 'Contact For', name: 'contact_for', widget: 'string', required: false }
+      - label: 'Related Series'
+        name: 'related_series'
+        widget: 'relation'
+        collection: 'files'
+        file: 'series_cms'
+        multiple: true
+        value_field: 'series.*.seriesID'
+        search_fields: ['series.*.seriesName']
+        display_fields: ['series.*.seriesName']
+        required: false
+
+  # ------------------------------------------------------------------ #
+  - name: 'series_info'
+    label: 'Series Info'
+    label_singular: 'Series'
+    identifier_field: '{{title}}'
+    folder: 'content/seriesinfo'
+    preview_path: 'series/{{seriesID}}'
+    create: true
+    slug: 'index'
+    media_folder: ''
+    public_folder: ''
+    path: '{{title}}/index'
+    fields:
+      - { label: 'Template Key', name: 'templateKey', widget: 'hidden', default: 'series' }
+      # `type: series` marks real series (vs. legacy stubs); the series index
+      # and Prospective Authors page only list entries that have it
+      - { label: 'Type', name: 'type', widget: 'hidden', default: 'series' }
+      - { name: 'title', label: 'Series Title' }
+      - { label: 'Series ID', name: 'seriesID', widget: 'string', hint: 'Page address: /series/<ID>/ — must match the catalog''s series code; do not change after publishing' }
+      - { label: 'Status', name: 'status', widget: 'select', options: ['active', 'completed'], required: true }
+      - {
+          label: 'Series Type',
+          name: 'seriestype',
+          widget: 'select',
+          options: ['Academic Book Series', 'Documentary Editions', 'Lecture Series', 'Distributed Series', 'Rotunda Digital'],
+          required: true,
+        }
+      - { label: 'Series Editors', name: 'editors', widget: 'string', required: false, hint: 'Displayed under the series title' }
+      - { label: 'Additional Editors', name: 'moreEditors', widget: 'string', required: false }
+      - label: 'UVA Press Editor(s)'
+        name: 'related_staff'
+        widget: 'relation'
+        collection: 'bios'
+        search_fields: ['title']
+        value_field: '{{title}}'
+        multiple: true
+        required: false
+      - { name: 'body', label: 'Description', widget: 'markdown', required: false }
+
+  # ------------------------------------------------------------------ #
+  - name: 'imprint_info'
+    label: 'Imprint Info'
+    label_singular: 'Imprint'
+    identifier_field: '{{title}}'
+    folder: 'content/imprintinfo'
+    create: true
+    slug: 'index'
+    media_folder: ''
+    public_folder: ''
+    path: '{{title}}/index'
+    fields:
+      - { label: 'Template Key', name: 'templateKey', widget: 'hidden', default: 'imprint' }
+      - { name: 'title', label: 'Imprint Name' }
+      - { label: 'Imprint ID', name: 'imprintID', widget: 'number', value_type: 'int', hint: 'Must match the catalog''s imprint number' }
+      - { label: 'Imprint Editors', name: 'editors', widget: 'string', required: false }
+      - label: 'UVA Press Editor(s)'
+        name: 'related_staff'
+        widget: 'relation'
+        collection: 'bios'
+        search_fields: ['title']
+        value_field: '{{title}}'
+        multiple: true
+        required: false
+      - { name: 'body', label: 'Description', widget: 'markdown', required: false }
+
+  # ------------------------------------------------------------------ #
+  - name: 'rotundas'
+    label: 'Rotunda Items'
+    label_singular: 'Rotunda Item'
+    identifier_field: '{{rid}}'
+    folder: 'content/rotunda'
+    preview_path: 'title/{{rid}}'
+    create: true
+    slug: 'index'
+    media_folder: ''
+    public_folder: ''
+    path: '{{rid}}/index'
+    fields:
+      - { label: 'Template Key', name: 'templateKey', widget: 'hidden', default: 'rotunda' }
+      - { name: 'title', label: 'Title' }
+      - { name: 'rid', label: 'Rotunda ID', hint: 'Page address: /title/<ID>/ — must match rotunda.json; do not change after publishing' }
+      - { name: 'body', label: 'Marketing Summary', widget: 'markdown' }
+      - label: 'Related Book(s)'
+        name: 'related_book'
+        widget: 'relation'
+        collection: 'files'
+        file: 'booklist_cms'
+        multiple: true
+        max: 1000
+        options_length: 1000
+        value_field: 'book.*.BookID'
+        search_fields: ['book.*.Title']
+        display_fields: ['book.*.Title']
+        required: false
+
+  # ------------------------------------------------------------------ #
+  - name: 'addl_resources'
+    label: 'Book Resources'
+    label_singular: 'Resource Set'
+    description: 'Extra links shown in a book page''s "Additional Resources" tab.'
+    identifier_field: '{{title}}'
+    folder: 'content/resources'
+    create: true
+    slug: 'index'
+    media_folder: ''
+    public_folder: ''
+    path: '{{title}}/index'
+    fields:
+      - { label: 'Template Key', name: 'templateKey', widget: 'hidden', default: 'resource' }
+      - { name: 'title', label: 'Title', required: true, hint: 'For the CMS list only — use the book''s title' }
+      - label: 'Attached Book'
+        name: 'attached_book'
+        widget: 'relation'
+        collection: 'files'
+        file: 'booklist_cms'
+        value_field: 'book.*.BookID'
+        search_fields: ['book.*.Title']
+        display_fields: ['book.*.Title']
+        required: true
+        hint: 'The book page these resources appear on'
+      - label: 'Links'
+        name: 'attached_links'
+        widget: 'list'
         required: false
         summary: '{{fields.name}}'
         fields:
-         - {label: "Name", name: "name", widget: "string", hint: "Text to display for the link"}
-         - {label: "Link", name: "link", widget: "string", hint: "Hyperlink to resource"}
-         
-  - name: 'exhibits'
-    label: 'Exhibits'
-    identifier_field: '{{title}}'
-    folder: 'content/exhibits'
-    preview_path: '{{title}}/index'
-    create: true
-    slug: 'index'
-    media_folder: ''
-    public_folder: ''
-    path: '{{title}}/index'      
-    fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "exhibit"}
-      - { name: "title", label: "Title", hint: "This will be the title of the page and the link from the main exhibits page"}
-      - { name: "exhibit_slug", label: "URL shortcut", hint: "will appear after /exhibits/", required: true}
-      - { name: "coupon", label: "Coupon Promo", widget: "text", required: false}
-      - { name: "bgcolor", label: "Coupon Area Background Color", widget: "string", hint: "Go to https://tailwindcss.com/docs/customizing-colors#overview and choose color, example: bg-blue-400", default: "bg-white", required: false }
-      - { name: "txtcolor", label: "Coupon Text Color", widget: "string", hint: "Go to https://tailwindcss.com/docs/customizing-colors#overview and choose color, example: bg-blue-400 or text-white",  default: "text-black", required: false}
-      - { label: "Exhibit Logo", name: "exhibit_logo", widget: "image", required: false}
-      - { name: "body", label: "Body", widget: "markdown", required: false }
-      - label: Related Series
-        name: related_series
-        widget: relation
-        collection: files
-        multiple: true
-        max:  1000
-        value_field: "series.*.seriesID"
-        search_fields: ['series.*.seriesName'] 
-        display_fields: ['series.*.seriesName']
-        file: series_cms
-        required: false 
-      - label: "Related Blog(s)"
-        name: "related_blog"
-        widget: "relation"
-        collection: "news"
-        search_fields: ['title']
-        value_field: "{{title}}"
-        display_fields: ["{{title}}"]
-        multiple: true
-        required: false
-      - label: "Related Staff"
-        name: "related_staff"
-        widget: "relation"
-        collection: "bios"
-        search_fields: ['title']
-        value_field: "{{title}}"
-        multiple: true
-        required: false
-      - label: Featured Books 
-        name: featured_books
-        widget: relation
-        collection: files
-        multiple: true
-        value_field: "book.*.BookID"
-        search_fields: ['book.*.Title'] 
-        display_fields: ['book.*.Title']
-        file: booklist_cms
-        required: false 
-      - label: "Related Book Collection(s)"
-        name: "related_collection"
-        widget: "relation"
-        collection: "book_collection"
-        search_fields: ['title']
-        value_field: "{{title}}"
-        multiple: true
-        max:  1000
-        options_length: 1000   
-        required: false
-      - label: "date"
-        name: "date"
-        widget: "datetime"
-        default: ""
-        date_format: "YYYY-MM-DD"
-        time_format: "false" 
-        format: "YYYY-MM-DD"
-        required: false
-      
-  - name: 'book_collection'
-    label: 'Book Collection'
-    identifier_field: '{{title}}'
-    folder: 'content/collections'
-    preview_path: '{{title}}/index'
-    create: true
-    slug: 'index'
-    media_folder: ''
-    public_folder: ''
-    path: '{{title}}/index'      
-    fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "collection"}
-      - { name: "title", label: "Title", required: true }
-      - { name: "description", label: "description", widget: "markdown", required: false }
-      - label: Related Book(s)
-        name: related_book
-        widget: relation
-        collection: files
-        multiple: true
-        max:  1000
-        options_length: 1000   
-        value_field: "book.*.BookID"
-        search_fields: ['book.*.Title'] 
-        display_fields: ['book.*.Title']
-        file: booklist_cms
-        required: true
-          
-  - name: 'bios'
-    label: 'Staff Bio'
-    identifier_field: '{{title}}'
-    folder: 'content/bios'
-    preview_path: '{{title}}/index'
-    create: true
-    slug: 'index'
-    media_folder: ''
-    public_folder: ''
-    path: '{{title}}/index'      
-    fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "bio"}
-      - { name: "title", label: "Title" }
-      - { name: "staff_name", label: "Staff Name"}
-      - { label: "Profile Photo", name: "profile_photo", widget: "image", required: false}
-      - { label: "Name Slug", name: "name_slug", widget: "string", required: true}
-      - { label: "Job Title", name: "job_title", widget: "string", required: true}
-      - { label: "Department", name: "department", widget: "select", options: ["OPS", "ACQ","EDP", "MKG", "PUB", "ROT"], multiple: true, required: true}
-      - { name: "body", label: "bio", widget: "markdown" }
-      - { label: "Email", name: "email", widget: "string", required: true}
-      - { label: "Phone", name: "phone", widget: "string", required: true, hint: "Format (XXX) XXX-XXXX"}
-      - { label: "Contact For", name: "contact_for", widget: "string", required: false}
-      - label: Related Series
-        name: related_series
-        widget: relation
-        collection: files
-        multiple: true
-        value_field: "series.*.seriesID"
-        search_fields: ['series.*.seriesName'] 
-        display_fields: ['series.*.seriesName']
-        file: series
-        required: false 
-  - name: 'rotundas'
-    label: 'Rotunda Items'
-    identifier_field: '{{rid}}'
-    folder: 'content/rotunda'
-    preview_path: '{{title}}/index'
-    create: true
-    slug: 'index'
-    media_folder: ''
-    public_folder: ''
-    path: '{{rid}}/index'      
-    fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "rotunda"}
-      - { name: "title", label: "Title" }
-      - { name: "rid", label: "Rotunda Internal ID"}
-      - { name: "body", label: "Marketing Summary", widget: "markdown" }
-      - label: Related Book(s)
-        name: related_book
-        widget: relation
-        collection: files
-        multiple: true
-        max:  1000
-        options_length: 1000   
-        value_field: "book.*.BookID"
-        search_fields: ['book.*.Title'] 
-        display_fields: ['book.*.Title']
-        file: booklist_cms
-        required: false
-  
-  - name: 'promo'
-    label: 'Promotion'
-    identifier_field: '{{title}}'
-    folder: 'content/promos'
-    preview_path: '{{title}}/index'
-    create: true
-    slug: 'index'
-    media_folder: ''
-    public_folder: ''
-    path: '{{title}}/index'      
-    fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "promo"}
-      - { name: "title", label: "Title" }
-      - { name: "body", label: "Body", widget: "markdown" }
-      - { label: "Summary", name: "description", widget: "string", required: false, hint: "Text for homepage and previews"}
-      - {label: "Image", name: "image", widget: "image", required: false}
-      - label: Promotion Books
-        name: related_book
-        widget: relation
-        collection: files
-        multiple: true
-        max:  1000
-        options_length: 1000   
-        value_field: "book.*.BookID"
-        search_fields: ['book.*.Title'] 
-        display_fields: ['book.*.Title']
-        file: booklist_cms
-        required: false 
-      - label: "Related Book Collection(s)"
-        name: "related_collection"
-        widget: "relation"
-        collection: "book_collection"
-        search_fields: ['title']
-        value_field: "{{title}}"
-        multiple: true
-        required: false  
-  - name: 'featured-collection'
-    label: 'Featured Collection'
-    identifier_field: '{{title}}'
-    folder: 'content/featured-collection'
-    preview_path: '{{title}}/index'
-    create: true
-    slug: 'index'
-    media_folder: ''
-    public_folder: ''
-    path: '{{title}}/index'      
-    fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "featured-collection"}
-      - { name: "title", label: "Title" }
-      - { name: "body", label: "Body", widget: "markdown" }
-      - { label: "Summary", name: "description", widget: "string", required: false, hint: "Text for homepage and previews"}
-      - label: "Related Book Collection(s)"
-        name: "related_collection"
-        widget: "relation"
-        collection: "book_collection"
-        search_fields: ['title']
-        value_field: "{{title}}"
-        multiple: true
-        required: true
-       
-  - name: 'imprint_info'
-    identifier_field: '{{title}}'
-    label: 'Imprint Info'
-    folder: 'content/imprintinfo'
-    preview_path: '{{title}}/index'
-    create: true
-    slug: 'index'
-    media_folder: ''
-    public_folder: ''
-    path: '{{title}}/index'
-    fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "imprint"}
-      - { name: "title", label: "Title" }
-      - { label: "Imprint Editors", name: "editors", widget: "string", required: false }
-      - { label: "Addtional Editors", name: "moreEditors", widget: "string", required: false }
-      - { label: "Imprint ID", name: "imprintID", widget: "string" }
-      - label: "UVaP Editor"
-        name: "related_staff"
-        widget: "relation"
-        collection: "bios"
-        search_fields: ['title']
-        value_field: "{{title}}"
-        multiple: true
-        required: false
-      - { name: "body", label: "Body", widget: "markdown", required: false}
-     
-  - name: 'series_info'
-    identifier_field: '{{title}}'
-    label: 'Series Info'
-    folder: 'content/seriesinfo'
-    preview_path: '{{title}}/index'
-    create: true
-    slug: 'index'
-    media_folder: ''
-    public_folder: ''
-    path: '{{title}}/index'
-    fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "series"}
-      - { name: "title", label: "Title" }
-      - { label: "Series Status", name: "status", widget: "select", options: ["active", "completed"], required: true}
-      - { label: "Series Type", name: "seriestype", widget: "select", options: ["Academic Book Series", "Documentary Editions", "Lecture Series", "Distributed Series", "Rotunda Digital"], required: true}
-      - { label: "Series Editors", name: "editors", widget: "string", required: false }
-      - { label: "Addtional Editors", name: "moreEditors", widget: "string", required: false }
-      - label: "UVaP Editor"
-        name: "related_staff"
-        widget: "relation"
-        collection: "bios"
-        search_fields: ['title']
-        value_field: "{{title}}"
-        multiple: true
-        required: false
-      - { name: "body", label: "Body", widget: "markdown", required: false}
-      - { label: "Series ID", name: "seriesID", widget: "string" }
+          - { label: 'Display Text', name: 'name', widget: 'string' }
+          - { label: 'URL', name: 'link', widget: 'string', hint: 'Full address, e.g. https://... or /downloads/file.pdf' }
 
-  - name: files
-    label: Files
-    label_singular: 'File'
+  # ------------------------------------------------------------------ #
+  - name: 'files'
+    label: 'Reference Lists (advanced)'
+    description: 'The book and series lists that power the pickers above. Updated with the weekly catalog export — editors normally never touch these.'
     files:
       - label: 'Books'
         name: 'booklist_cms'
         file: 'content/booklist_cms.json'
-        extension: "json"
+        extension: 'json'
         fields:
           - label: 'Book'
             name: 'book'
             widget: 'list'
             fields:
-              - {label: "id", name: "BookID", widget: "string"}
-              - {label: "Title", name: "Title", widget: "string"}
-      - label: 'SeriesList'
+              - { label: 'id', name: 'BookID', widget: 'string' }
+              - { label: 'Title', name: 'Title', widget: 'string' }
+      - label: 'Series List'
         name: 'series_cms'
         file: 'content/series_cms.json'
-        extension: "json"
+        extension: 'json'
         fields:
           - label: 'Series'
             name: 'series'
             widget: 'list'
             fields:
-              - {label: "Series ID", name: "seriesID", widget: "string"}
-              - {label: "Series Name", name: "seriesName", widget: "string"}
-       
-  
-  
+              - { label: 'Series ID', name: 'seriesID', widget: 'string' }
+              - { label: 'Series Name', name: 'seriesName', widget: 'string' }
