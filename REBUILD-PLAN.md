@@ -119,6 +119,7 @@ Port the **what**, not the **how**. The rough design, features, and URLs stay; t
 - [ ] Meta/OG tags port (replaces react-helmet SeoComponent)
 
 ### Phase 5 — Parity check & cutover
+- [ ] Remove the staging X-Robots-Tag noindex header from netlify.toml
 - [ ] Diff new build URLs vs Phase 0 inventory — zero unexplained missing URLs
 - [ ] Spot-check: book pages, search, Decap editing round-trip, Mailchimp signup, redirects
 - [ ] Lighthouse pass; DNS cutover; Gatsby repo archived untouched

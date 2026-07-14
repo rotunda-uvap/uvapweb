@@ -4,3 +4,10 @@
 
 [build.environment]
   NODE_VERSION = "22"
+
+# STAGING ONLY — keeps search engines from indexing the staging copy while
+# the Gatsby site is still live. REMOVE THIS HEADER AT CUTOVER (Phase 5).
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Robots-Tag = "noindex"
