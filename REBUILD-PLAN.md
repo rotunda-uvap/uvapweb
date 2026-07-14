@@ -117,7 +117,8 @@ Port the **what**, not the **how**. The rough design, features, and URLs stay; t
 - [ ] **Root-level download redirects**: the Gatsby site served `downloads/` files at the site root (`/fall26.pdf`, `/UVaP_Book_Proposal.doc`, `/walker-cowen-application.pdf` — the last is hardcoded in walker-cowen content markdown); files now live at `/downloads/<file>`. Generate one redirect per file in `static/downloads/` (~43)
 - [ ] 27 dropped `/collections/...` URLs → redirect (list in `scripts/parity-dropped.txt`)
 - [ ] GTM in base layout; `@astrojs/sitemap`; robots.txt (port the bot disallow list)
-- [ ] Pagefind indexing in build command (`astro build && pagefind --site dist`)
+- [x] Pagefind indexing in build command (`astro build && pagefind --site dist`)
+- [ ] Polish: internal links + sitemap emit lowercase URLs directly (skips the platform 301 hop on series/collections/rotunda-title clicks)
 - [ ] Meta/OG tags port (replaces react-helmet SeoComponent)
 
 ### Phase 5 — Parity check & cutover
