@@ -21,7 +21,7 @@
 ## Open questions
 
 1. **Kill list** — which of the 33 top-level pages and 26 exhibits (many past-conference one-offs) survive?
-2. **`netlify/functions/deploy-status.js`** — what consumes it? Port or drop.
+2. ~~`netlify/functions/deploy-status.js`~~ — RESOLVED 2026-07-14: it was a Slack deploy-notification webhook (workaround for Netlify's paywalled Slack notifications), triggered by a deploy webhook on the old Netlify site, not by the site itself. Dropped from the astro branch (broke staging builds — required node-fetch). Re-add with its dependency if Slack deploy pings are wanted.
 3. **`api/auth.ts` / `api/callback.ts`** — leftover Vercel OAuth handlers; likely dead once Netlify OAuth is set up. Confirm and drop.
 
 ---
