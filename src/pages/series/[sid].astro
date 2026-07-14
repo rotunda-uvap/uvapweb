@@ -8,7 +8,8 @@ import BookCard from '../../components/lists/BookCard.astro';
 
 export async function getStaticPaths() {
   const series = await getCollection('seriesData');
-  return series.map((s) => ({ params: { sid: s.data.seriesID }, props: { s } }));
+  // lowercase: Netlify force-lowercases URLs; build there directly
+  return series.map((s) => ({ params: { sid: s.data.seriesID.toLowerCase() }, props: { s } }));
 }
 const { s } = Astro.props;
 

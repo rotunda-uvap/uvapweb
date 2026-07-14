@@ -21,22 +21,25 @@ const readList = (p) =>
     ? fs.readFileSync(p, 'utf8').split('\n').map((l) => l.trim()).filter((l) => l && !l.startsWith('#'))
     : [];
 
-// production URLs → decoded paths like "/title/5501/"
+// production URLs → decoded paths like "/title/5501/". Compared lowercase:
+// Netlify force-lowercases URLs (the live site 301s mixed-case today), and
+// the new site builds at lowercase paths directly.
+const norm = (p) => decodeURIComponent(p).toLowerCase();
 const inventory = fs
   .readFileSync(path.join(root, 'url-inventory.txt'), 'utf8')
   .split('\n')
   .filter(Boolean)
-  .map((u) => decodeURIComponent(u.replace(ORIGIN, '')) || '/');
+  .map((u) => norm(u.replace(ORIGIN, '')) || '/');
 
-const pending = new Set(readList(path.join(root, 'scripts/parity-pending.txt')));
-const dropped = new Set(readList(path.join(root, 'scripts/parity-dropped.txt')));
+const pending = new Set(readList(path.join(root, 'scripts/parity-pending.txt')).map(norm));
+const dropped = new Set(readList(path.join(root, 'scripts/parity-dropped.txt')).map(norm));
 
 // built pages: every dist/**/index.html → "/path/"
 const built = new Set();
 (function walk(dir, rel) {
   for (const e of fs.readdirSync(dir, { withFileTypes: true })) {
     if (e.isDirectory()) walk(path.join(dir, e.name), `${rel}${e.name}/`);
-    else if (e.name === 'index.html') built.add(rel);
+    else if (e.name === 'index.html') built.add(rel.toLowerCase());
   }
 })(path.join(root, 'dist'), '/');
 

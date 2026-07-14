@@ -15,7 +15,8 @@ import RelatedBookList from '../../components/exhibits/RelatedBookList.astro';
 
 export async function getStaticPaths() {
   const exhibits = await getCollection('exhibits');
-  return exhibits.map((ex) => ({ params: { slug: ex.data.exhibit_slug }, props: { ex } }));
+  // lowercase: Netlify force-lowercases URLs; build there directly
+  return exhibits.map((ex) => ({ params: { slug: ex.data.exhibit_slug.toLowerCase() }, props: { ex } }));
 }
 const { ex } = Astro.props;
 const { Content } = await render(ex);

@@ -1,0 +1,31 @@
+# Ported from the Gatsby site's gatsby-plugin-robots-txt policy.
+# NOTE: staging additionally sends X-Robots-Tag: noindex (netlify.toml)
+# until cutover, which overrides anything here.
+User-agent: *
+Allow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: Baiduspider
+Disallow: /
+
+User-agent: YandexBot
+Disallow: /
+
+User-agent: Sogou Spider
+Disallow: /
+
+User-agent: Exabot
+Disallow: /
+
+Sitemap: https://www.upress.virginia.edu/sitemap-index.xml

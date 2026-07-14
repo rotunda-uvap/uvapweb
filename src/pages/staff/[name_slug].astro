@@ -7,7 +7,8 @@ import PageHeader from '../../components/PageHeader.astro';
 
 export async function getStaticPaths() {
   const bios = await getCollection('bios');
-  return bios.map((bio) => ({ params: { name_slug: bio.data.name_slug }, props: { bio } }));
+  // lowercase: Netlify force-lowercases URLs; build there directly
+  return bios.map((bio) => ({ params: { name_slug: bio.data.name_slug.toLowerCase() }, props: { bio } }));
 }
 const { bio } = Astro.props;
 const { Content } = await render(bio);

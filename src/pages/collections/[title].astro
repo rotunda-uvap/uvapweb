@@ -9,7 +9,8 @@ import RelatedBookList from '../../components/lists/RelatedBookList.astro';
 
 export async function getStaticPaths() {
   const colls = await getCollection('bookCollections');
-  return colls.map((coll) => ({ params: { title: coll.data.title }, props: { coll } }));
+  // lowercase: Netlify force-lowercases URLs; build there directly
+  return colls.map((coll) => ({ params: { title: coll.data.title.toLowerCase() }, props: { coll } }));
 }
 const { coll } = Astro.props;
 

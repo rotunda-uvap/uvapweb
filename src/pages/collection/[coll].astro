@@ -10,7 +10,8 @@ import RotCard from '../../components/lists/RotCard.astro';
 export async function getStaticPaths() {
   const rotunda = await getCollection('rotundaData');
   const mains = [...new Set(rotunda.map((r) => r.data.MainCollection).filter(Boolean))];
-  return mains.map((main) => ({ params: { coll: main! }, props: { main: main! } }));
+  // lowercase: Netlify force-lowercases URLs; build there directly
+  return mains.map((main) => ({ params: { coll: main!.toLowerCase() }, props: { main: main! } }));
 }
 const { main } = Astro.props;
 const rotunda = await getCollection('rotundaData', (r) => r.data.MainCollection === main);

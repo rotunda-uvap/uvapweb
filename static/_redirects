@@ -1,0 +1,104 @@
+# Netlify redirects — generated for the Astro rebuild (Phase 4).
+# First match wins.
+
+# --- Legacy redirects carried over from gatsby-node.js createRedirect ---
+/2021/11/16/authors-corner-sara-jensen-carr-author-topography-wellness/ /author-corner/authors-corner-with-sara-jensen-carr-author-of-the-topography-of-wellness/ 301
+/2021/11/01/authors-corner-jonathan-w-white-and-lydia-j-davis-editors-my-work-among-freedmen/ /author-corner/authors-corner-with-jonathan-w-white-and-lydia-j-davis-editors-of-my-work-among-the-freedmen/ 301
+/2021/11/09/celebrating-week-keepup-grace-mitchell-tada-and-walter-hood-coeditors-black-landscapes/ /news/celebrating-up-week-keepup-with-grace-mitchell-tada-and-walter-hood-coeditors-of-black-landscapes-matter/ 301
+/2021/11/22/federal-fixation-new-blog-post-david-j-toscano-author-fighting-political-gridlock/ /news/federal-fixation-a-new-blog-post-by-david-j-toscano-author-of-fighting-political-gridlock/ 301
+/title/5501/ /furnace-and-fugue/ 301
+/title/10289/ /great-experiment/ 301
+/content/about-press/ /about/ 301
+/content/apsa/ /exhibits/apsa/ 301
+/content/asa-2021/ /exhibits/asa-2021/ 301
+/content/sha-2021/ /exhibits/sha-2021/ 301
+/content/neasecs-2021/ /exhibits/neasecs-2021/ 301
+/content/aswad/ /exhibits/aswad/ 301
+/content/current-authors/ /authors/ 301
+/content/opportunities/ /career/ 301
+/content/order/ /order/ 301
+/content/privacy/ /privacy/ 301
+/content/rotunda-customers-page/ /rotunda-customer-page/ 301
+/blog/ /publicity/ 301
+/robb/ /title/5679/ 301
+/robertson/ /title/5780/ 301
+/series/papers/ /books/#series 301
+/rotunda/purchase/ /rotunda-purchase/ 301
+# gatsby served processed image assets at hashed paths; serve the source image instead
+/images/blacksolidersseries.avif /images/blacksolidersseries.jpg 301
+
+# --- 200 proxy rewrites to the legacy server (as on the Gatsby site) ---
+/plunkett/mfp.html https://legacy.upress.virginia.edu/plunkett/mfp.html 200
+/epub/pyatt/nchome.html https://legacy.upress.virginia.edu/epub/pyatt/index.html 200
+
+# --- Collections dropped in the rebuild (kill-list, 2026-07-13) ---
+/collections/aha%2025/ /books/ 301
+/collections/asalh%2024/ /books/ 301
+/collections/asecs%2025/ /books/ 301
+/collections/awp%2025/ /books/ 301
+/collections/african%20american%20history/ /books/ 301
+/collections/african%20history/ /books/ 301
+/collections/black%20history/ /books/ 301
+/collections/colonial%20america/ /books/ 301
+/collections/dc%20history%2025/ /books/ 301
+/collections/event%202024/ /books/ 301
+/collections/early%20republic/ /books/ 301
+/collections/european%20history/ /books/ 301
+/collections/hss%2024/ /books/ 301
+/collections/legal%20history/ /books/ 301
+/collections/mla%2024/ /books/ 301
+/collections/mla%2025/ /books/ 301
+/collections/oah%2024/ /books/ 301
+/collections/oah%2025/ /books/ 301
+/collections/sah%2024/ /books/ 301
+/collections/scwh%2024/ /books/ 301
+/collections/sha%2024/ /books/ 301
+/collections/shear%2024/ /books/ 301
+/collections/twentieth%20century/ /books/ 301
+/collections/va%20forum%2025/ /books/ 301
+/collections/vaf%2025/ /books/ 301
+/collections/vaf24/ /books/ 301
+/collections/vmhc%20symposium/ /books/ 301
+
+# --- Author-resource files: the Gatsby site served these at the site root ---
+/CARAF_Proposal_Outline.doc /downloads/CARAF_Proposal_Outline.doc 301
+/UVA-Press-Marketing-Questionnaire.docx /downloads/UVA-Press-Marketing-Questionnaire.docx 301
+/UVA-Press_Abstract-Instructions-Samples_0.docx /downloads/UVA-Press_Abstract-Instructions-Samples_0.docx 301
+/UVAP_Alt_Text_Guidelines.docx /downloads/UVAP_Alt_Text_Guidelines.docx 301
+/UVAP_Art_Guidelines.pdf /downloads/UVAP_Art_Guidelines.pdf 301
+/UVAP_Art_Log.docx /downloads/UVAP_Art_Log.docx 301
+/UVAP_Author-Cover-Q_0.docx /downloads/UVAP_Author-Cover-Q_0.docx 301
+/UVAP_Guidelines_on_Keywords.docx /downloads/UVAP_Guidelines_on_Keywords.docx 301
+/UVAP_Marketing_FAQ_Tips.docx /downloads/UVAP_Marketing_FAQ_Tips.docx 301
+/UVAP_Text_Permissions_Log.docx /downloads/UVAP_Text_Permissions_Log.docx 301
+/UVAPress-AnnualReport-022824.pdf /downloads/UVAPress-AnnualReport-022824.pdf 301
+/UVA_Press_Events_Guide_2022.pdf /downloads/UVA_Press_Events_Guide_2022.pdf 301
+/UVA_Press_Social_Media_Guide_2022.pdf /downloads/UVA_Press_Social_Media_Guide_2022.pdf 301
+/UVaP_Author_Questionnaire.doc /downloads/UVaP_Author_Questionnaire.doc 301
+/UVaP_Book_Proposal.doc /downloads/UVaP_Book_Proposal.doc 301
+/UVaP_Final_MS_Basics.docx /downloads/UVaP_Final_MS_Basics.docx 301
+/UVaP_MS_Prep_Guide.doc /downloads/UVaP_MS_Prep_Guide.doc 301
+/UVaP_MS_Prep_Guide.docx /downloads/UVaP_MS_Prep_Guide.docx 301
+/UVaP_MS_Prep_Guide_old.doc /downloads/UVaP_MS_Prep_Guide_old.doc 301
+/UVaP_Order_MS_Elements.doc /downloads/UVaP_Order_MS_Elements.doc 301
+/UVaP_Proof_Index_Gdlns.pdf /downloads/UVaP_Proof_Index_Gdlns.pdf 301
+/UVaP_Sample_Perm_Let.doc /downloads/UVaP_Sample_Perm_Let.doc 301
+/UVaP_Vol_Ed_Gd.doc /downloads/UVaP_Vol_Ed_Gd.doc 301
+/VPAT_RotundaAHC.pdf /downloads/VPAT_RotundaAHC.pdf 301
+/Woodson_Series_Mission_Statement.docx /downloads/Woodson_Series_Mission_Statement.docx 301
+/escott_instructor_suggestion.pdf /downloads/escott_instructor_suggestion.pdf 301
+/examination_Copy_Form_2021.pdf /downloads/examination_Copy_Form_2021.pdf 301
+/fall23.pdf /downloads/fall23.pdf 301
+/fall24.pdf /downloads/fall24.pdf 301
+/fall25.pdf /downloads/fall25.pdf 301
+/fall26.pdf /downloads/fall26.pdf 301
+/proofers1.gif /downloads/proofers1.gif 301
+/rot_rec_form.pdf /downloads/rot_rec_form.pdf 301
+/rotunda_license.doc /downloads/rotunda_license.doc 301
+/rotunda_marc_records.zip /downloads/rotunda_marc_records.zip 301
+/rotunda_registration.doc /downloads/rotunda_registration.doc 301
+/spring23.pdf /downloads/spring23.pdf 301
+/spring24.pdf /downloads/spring24.pdf 301
+/spring25.pdf /downloads/spring25.pdf 301
+/spring26.pdf /downloads/spring26.pdf 301
+/walker-cowen-application.pdf /downloads/walker-cowen-application.pdf 301
