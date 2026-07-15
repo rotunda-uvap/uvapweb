@@ -2,10 +2,10 @@
   "version": "0.0.1",
   "configurations": [
     {
-      "name": "preview",
-      "runtimeExecutable": "npm",
-      "runtimeArgs": ["run", "preview"],
-      "port": 4321
+      "name": "preview-dist",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["astro", "preview", "--port", "4400"],
+      "port": 4400
     }
   ]
 }

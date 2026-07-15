@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build && node scripts/fix-link-case.mjs && pagefind --site dist",
+    "build": "astro build && node scripts/fix-link-case.mjs && node scripts/prune-unused-assets.mjs && pagefind --site dist",
     "preview": "astro preview",
     "check": "astro check"
   },
