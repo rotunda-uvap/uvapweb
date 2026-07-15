@@ -1,50 +1,342 @@
 ---
-// Book search, ported from book-search.js. Algolia InstantSearch replaced by
-// Pagefind: the index is built from the book pages' own HTML at deploy time
-// (npm run build), searches run entirely in the browser, no service or keys.
+// Faceted book search, matching the layout of the old Algolia InstantSearch
+// page (search box, sort + stats, result cards, and List/Subject/Series
+// facets in a left sidebar). Algolia is replaced by Pagefind's JS API: the
+// index is built from the book pages' own HTML at deploy time (npm run
+// build), searches run entirely in the browser, no service or keys.
+//
+// On load the page shows the full catalog newest-first plus every facet
+// with counts (pagefind.search(null) + pagefind.filters()), so visitors see
+// what's searchable before typing anything.
+//
 // NOTE: /pagefind/ assets exist only after a full build — use
 // `npm run build && npm run preview` to test locally; `astro dev` will show
-// an empty search box.
+// the fallback message.
 import Base from '../layouts/Base.astro';
 import PageHeader from '../components/PageHeader.astro';
+
+const facetHeading =
+  'text-lg uppercase border-b border-gray-400 text-ceci-gray-mid pb-2 font-thin tracking-wider';
 ---
 
 <Base title="Search for Books">
   <section class="container px-5 py-12 mx-auto">
     <PageHeader text="Search" />
-    <div class="mx-auto max-w-4xl" id="search"></div>
+
+    <form id="search-form" class="p-2 m-1" role="search">
+      <label for="search-input" class="sr-only">Search</label>
+      <div class="flex flex-row gap-2 max-w-2xl">
+        <input
+          type="search"
+          id="search-input"
+          name="q"
+          placeholder="Search for a book"
+          class="flex-grow border border-gray-400 rounded-sm p-2 font-serif text-lg text-ceci-gray-dark"
+        />
+        <button
+          type="submit"
+          class="bg-greige hover:bg-white border border-gray-400 font-thin text-sm rounded-md text-ceci-gray-mid px-4 tracking-wide uppercase"
+        >
+          Search
+        </button>
+      </div>
+    </form>
+
+    <div id="search-fallback" class="hidden py-8 font-serif text-lg text-ceci-gray-mid">
+      Search isn’t available right now. If you’re previewing locally, run a full
+      build first (<code>npm run build &amp;&amp; npm run preview</code>).
+    </div>
+
+    <div id="search-app" class="hidden flex flex-col md:flex-row gap-8">
+      <section class="md:flex-grow" id="results" aria-live="polite">
+        <div class="md:hidden">
+          <a href="#filter" class="flex flex-row gap-2 py-8 text-sm tracking-wide font-thin">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6h9.75M10.5 6a1.5 1.5 0 11-3 0m3 0a1.5 1.5 0 10-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-9.75 0h9.75" />
+            </svg>
+            <span>Filter Results</span>
+          </a>
+        </div>
+
+        <h3 class="text-lg uppercase text-ceci-gray-mid py-2 font-thin tracking-widest">Results</h3>
+
+        <div class="border-b border-gray-400 pb-3 flex flex-row flex-wrap gap-x-6 items-baseline">
+          <label class="text-sm text-gray-600">
+            <span class="sr-only">Sort results</span>
+            <select id="sort-select" class="border border-gray-300 rounded-sm p-1 bg-white">
+              <option value="relevance">Most Relevant</option>
+              <option value="newest">Most Recent Books First</option>
+            </select>
+          </label>
+          <p id="stats" class="text-sm text-gray-600"></p>
+        </div>
+
+        <ol id="hits" class="pt-5 list-none p-0 m-0"></ol>
+
+        <nav id="pagination" class="flex flex-row flex-wrap gap-2 py-8 text-sm font-thin tracking-wide" aria-label="Search results pages"></nav>
+      </section>
+
+      <section class="py-5 md:order-first md:w-64 md:flex-shrink-0" id="filter">
+        <a href="#results" class="md:hidden py-8 text-sm tracking-wide font-thin">Up to Results</a>
+
+        <div class="pb-5">
+          <h3 class={facetHeading}>Filter by List</h3>
+          <div id="facet-List" class="facet-group pt-2"></div>
+        </div>
+        <div class="pb-5">
+          <h3 class={facetHeading}>Filter by Subject</h3>
+          <div id="facet-Subject" class="facet-group facet-scroll pt-2"></div>
+        </div>
+        <div class="pb-5">
+          <h3 class={facetHeading}>Filter by Series</h3>
+          <div id="facet-Series" class="facet-group facet-scroll pt-2"></div>
+        </div>
+      </section>
+    </div>
   </section>
 </Base>
 
-<link rel="stylesheet" href="/pagefind/pagefind-ui.css" />
-<script is:inline src="/pagefind/pagefind-ui.js"></script>
 <script is:inline>
-  window.addEventListener('DOMContentLoaded', () => {
-    new PagefindUI({
-      element: '#search',
-      showImages: true,
-      pageSize: 10,
-      translations: {
-        placeholder: 'Search for a book',
-        zero_results: 'No books found for [SEARCH_TERM]',
-      },
+  (async () => {
+    const app = document.getElementById('search-app');
+    const fallback = document.getElementById('search-fallback');
+
+    let pagefind;
+    try {
+      pagefind = await import('/pagefind/pagefind.js');
+      await pagefind.init();
+    } catch (e) {
+      fallback.classList.remove('hidden');
+      return;
+    }
+    app.classList.remove('hidden');
+
+    const PAGE_SIZE = 10;
+    const FACETS = ['List', 'Subject', 'Series'];
+    const IK_PLACEHOLDER = 'https://ik.imagekit.io/uvapress/noimg_lg.png?tr=w-300,c-at_max';
+
+    // Full facet universe, captured once so options keep their place (with a
+    // zero count) instead of vanishing when a search excludes them.
+    const allFilters = await pagefind.filters();
+
+    const state = {
+      query: '',
+      sort: 'newest', // browsing default; switches to relevance on search
+      page: 1,
+      selected: { List: new Set(), Subject: new Set(), Series: new Set() },
+    };
+
+    // --- URL sync (the old Algolia page had routing=true) ---------------
+    function readUrl() {
+      const p = new URLSearchParams(location.search);
+      state.query = p.get('q') || '';
+      state.sort = p.get('sort') === 'relevance' ? 'relevance' : state.query ? 'relevance' : 'newest';
+      if (p.get('sort') === 'newest') state.sort = 'newest';
+      state.page = Math.max(1, parseInt(p.get('page') || '1', 10) || 1);
+      for (const f of FACETS) state.selected[f] = new Set(p.getAll(f));
+    }
+    function writeUrl() {
+      const p = new URLSearchParams();
+      if (state.query) p.set('q', state.query);
+      if (state.sort === 'relevance' && state.query) p.set('sort', 'relevance');
+      if (state.page > 1) p.set('page', String(state.page));
+      for (const f of FACETS) for (const v of state.selected[f]) p.append(f, v);
+      const qs = p.toString();
+      history.replaceState(null, '', qs ? `?${qs}` : location.pathname);
+    }
+
+    // --- Search ----------------------------------------------------------
+    let lastSearch = null;
+
+    async function runSearch() {
+      const filters = {};
+      for (const f of FACETS) {
+        if (state.selected[f].size) filters[f] = { any: [...state.selected[f]] };
+      }
+      const opts = { filters };
+      // Pagefind sorts by relevance unless a sort is given; a null query has
+      // no relevance, so browsing is always newest-first.
+      if (state.sort === 'newest' || !state.query) opts.sort = { date: 'desc' };
+      lastSearch = await pagefind.search(state.query || null, opts);
+      writeUrl();
+      renderStats();
+      renderFacets(lastSearch.filters);
+      await renderHits();
+    }
+
+    // --- Rendering -------------------------------------------------------
+    const statsEl = document.getElementById('stats');
+    const hitsEl = document.getElementById('hits');
+    const pagEl = document.getElementById('pagination');
+
+    function renderStats() {
+      const n = lastSearch.results.length;
+      statsEl.textContent = `${n.toLocaleString()} ${n === 1 ? 'result' : 'results'}${
+        state.query ? ` for “${state.query}”` : ''
+      }`;
+    }
+
+    function facetLabel(value, count) {
+      return `<span class="flex-grow">${escapeHtml(value)}</span><span class="text-gray-500">${count.toLocaleString()}</span>`;
+    }
+
+    function renderFacets(current) {
+      for (const f of FACETS) {
+        const container = document.getElementById(`facet-${f}`);
+        const universe = allFilters[f] || {};
+        const counts = (current && current[f]) || {};
+        const entries = Object.keys(universe)
+          .map((v) => [v, counts[v] ?? 0])
+          .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));
+        container.innerHTML = entries
+          .map(([value, count]) => {
+            const checked = state.selected[f].has(value);
+            return `<label class="flex flex-row items-baseline gap-2 py-1 text-sm font-thin tracking-wide text-ceci-gray-dark ${
+              count === 0 && !checked ? 'opacity-50' : ''
+            }">
+              <input type="checkbox" data-facet="${f}" value="${escapeHtml(value)}" ${checked ? 'checked' : ''} />
+              ${facetLabel(value, count)}
+            </label>`;
+          })
+          .join('');
+      }
+    }
+
+    async function renderHits() {
+      const start = (state.page - 1) * PAGE_SIZE;
+      const pageResults = lastSearch.results.slice(start, start + PAGE_SIZE);
+      const data = await Promise.all(pageResults.map((r) => r.data()));
+
+      hitsEl.innerHTML = data
+        .map((d) => {
+          const m = d.meta || {};
+          // covers are indexed at w-500; result cards show them small
+          const img = m.image
+            ? m.image.replace('w-500', 'w-300')
+            : IK_PLACEHOLDER;
+          const date = m.date ? formatDate(m.date) : '';
+          // With a query, show Pagefind's highlighted excerpt; when just
+          // browsing, the excerpt is arbitrary page text, so omit it.
+          const excerpt = state.query
+            ? `<div class="pt-3 text-ceci-gray-dark font-serif text-lg">${d.excerpt}</div>`
+            : '';
+          return `<li class="py-2 border-b-2 border-gray-300">
+            <a href="${d.url}" class="flex flex-col md:flex-row md:gap-4 py-2">
+              <img src="${img}" width="150" alt="" loading="lazy" class="self-start flex-shrink-0" style="max-width:150px" />
+              <div>
+                <h3 class="font-thin font-sans text-base py-0 hover:bg-greige text-ceci-gray-dark tracking-wide uppercase">${escapeHtml(m.title || d.url)}</h3>
+                ${m.subtitle ? `<p class="text-sm tracking-booped text-ceci-gray-mid font-thin font-sans pb-1">${escapeHtml(m.subtitle)}</p>` : ''}
+                ${m.author ? `<p class="text-sm tracking-widest font-display uppercase">${escapeHtml(m.author)}</p>` : ''}
+                ${excerpt}
+                ${date ? `<p class="pt-3 text-sm uppercase tracking-wide text-ceci-gray-mid font-thin font-sans pb-5">Published: ${date}</p>` : ''}
+              </div>
+            </a>
+          </li>`;
+        })
+        .join('');
+
+      renderPagination();
+    }
+
+    function renderPagination() {
+      const total = Math.ceil(lastSearch.results.length / PAGE_SIZE);
+      if (total <= 1) {
+        pagEl.innerHTML = '';
+        return;
+      }
+      const cur = state.page;
+      const pages = [];
+      for (let i = 1; i <= total; i++) {
+        if (i === 1 || i === total || Math.abs(i - cur) <= 2) pages.push(i);
+        else if (pages[pages.length - 1] !== '…') pages.push('…');
+      }
+      const btn = (label, page, opts = {}) =>
+        `<button type="button" data-page="${page}" ${opts.disabled ? 'disabled' : ''}
+          class="px-3 py-1 border border-gray-300 rounded-sm ${
+            opts.current ? 'bg-greige font-normal' : 'bg-white hover:bg-greige'
+          } disabled:opacity-40" ${opts.current ? 'aria-current="page"' : ''}>${label}</button>`;
+      pagEl.innerHTML = [
+        btn('‹ Prev', cur - 1, { disabled: cur === 1 }),
+        ...pages.map((p) =>
+          p === '…' ? '<span class="px-2 self-center">…</span>' : btn(String(p), p, { current: p === cur })
+        ),
+        btn('Next ›', cur + 1, { disabled: cur === total }),
+      ].join('');
+    }
+
+    // --- Helpers ---------------------------------------------------------
+    function escapeHtml(s) {
+      return String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
+    }
+    function formatDate(iso) {
+      const d = new Date(`${iso}T00:00:00`);
+      return isNaN(d)
+        ? iso
+        : d.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+    }
+
+    // --- Events ----------------------------------------------------------
+    const form = document.getElementById('search-form');
+    const input = document.getElementById('search-input');
+    const sortSelect = document.getElementById('sort-select');
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      state.query = input.value.trim();
+      state.sort = state.query ? 'relevance' : 'newest';
+      sortSelect.value = state.sort;
+      state.page = 1;
+      runSearch();
     });
-  });
+
+    sortSelect.addEventListener('change', () => {
+      state.sort = sortSelect.value;
+      state.page = 1;
+      runSearch();
+    });
+
+    document.getElementById('filter').addEventListener('change', (e) => {
+      const cb = e.target;
+      if (!cb.matches('input[type=checkbox][data-facet]')) return;
+      const set = state.selected[cb.dataset.facet];
+      cb.checked ? set.add(cb.value) : set.delete(cb.value);
+      state.page = 1;
+      runSearch();
+    });
+
+    pagEl.addEventListener('click', (e) => {
+      const b = e.target.closest('button[data-page]');
+      if (!b || b.disabled) return;
+      state.page = parseInt(b.dataset.page, 10);
+      renderHits();
+      writeUrl();
+      document.getElementById('results').scrollIntoView({ behavior: 'smooth' });
+    });
+
+    // --- Initial load: facets + full catalog, newest first ---------------
+    readUrl();
+    input.value = state.query;
+    sortSelect.value = state.sort;
+    renderFacets(allFilters);
+    await runSearch();
+  })();
 </script>
 
 <style is:global>
-  /* Align Pagefind UI with site typography */
-  #search {
-    --pagefind-ui-font: 'Crimson Text', serif;
-    --pagefind-ui-primary: #414042;
-    --pagefind-ui-text: #414042;
-    --pagefind-ui-border: #cecfce;
-    --pagefind-ui-tag: #f7f7f7;
+  #hits {
+    list-style: none;
+    padding: 0;
+    margin: 0;
   }
-  #search .pagefind-ui__result-title {
-    font-family: 'Antonio', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    font-weight: 300;
+  #search-app .facet-scroll {
+    max-height: 18rem;
+    overflow-y: auto;
+  }
+  #search-app mark {
+    background-color: #f0ead6;
+    color: inherit;
+  }
+  #search-app input[type='checkbox'] {
+    accent-color: #414042;
   }
 </style>

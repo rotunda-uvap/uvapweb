@@ -71,8 +71,18 @@ const cartIconPath =
 ---
 
 <Base title={b.Title} description={description} image={coverPath ? ikSrc(coverPath, 500) : undefined}>
-  {/* data-pagefind-body scopes the Pagefind index to book pages only */}
-  <div class="flex flex-col md:grid md:grid-cols-3 md:items-start md:gap-10 py-3 ml-6 text-ceci-gray-dark max-w-6xl" data-pagefind-body>
+  {/* data-pagefind-body scopes the Pagefind index to book pages only.
+      The filter/sort/meta attributes feed the faceted search page:
+      List facet, date sort (ISO dates sort correctly as strings), and a
+      date value for display in result cards. */}
+  <div
+    class="flex flex-col md:grid md:grid-cols-3 md:items-start md:gap-10 py-3 ml-6 text-ceci-gray-dark max-w-6xl"
+    data-pagefind-body
+    data-pagefind-filter={`List:${b.List}`}
+    data-date={b.PublicationDate}
+    data-pagefind-sort="date[data-date]"
+    data-pagefind-meta="date[data-date]"
+  >
     <div class="col-span-1">
       {/* desktop cover */}
       <div class="pt-8 hidden md:block">
@@ -112,7 +122,10 @@ const cartIconPath =
       </h1>
 
       {b.Subtitle && (
-        <div class="text-center md:text-left py-1 md:py-0 font-display text-xl">
+        <div
+          class="text-center md:text-left py-1 md:py-0 font-display text-xl"
+          data-pagefind-meta={`subtitle:${b.Subtitle}`}
+        >
           {b.Subtitle}
           {b.InternalSeriesVolume && <span>— {b.InternalSeriesVolume}</span>}
         </div>
@@ -120,6 +133,9 @@ const cartIconPath =
 
       <div class="py-2 font-display text-center md:text-left" data-pagefind-meta="author">{b.AuthorCredit}</div>
 
+      {/* purchase links excluded from the search index so result excerpts
+          show book content, not "Exam Copy / Desk Copy" boilerplate */}
+      <div data-pagefind-ignore>
       {(b.Bindings ?? []).map((binding: any) => {
         const isOABinding =
           (typeof binding.type === 'string' && binding.type.toLowerCase().includes('open access')) ||
@@ -188,6 +204,7 @@ const cartIconPath =
             </div>
           </>
         ))}
+      </div>
 
       {b.Series?.length ? (
         <div class="py-2 flex flex-col md:flex-row place-items-center">

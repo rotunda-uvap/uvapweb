@@ -37,7 +37,8 @@ const tabs = [
 ---
 
 <div class="flex flex-col justify-center md:max-w-5xl" data-tabs>
-  <div role="tablist" class="flex flex-col md:flex-row self-center text-ceci-gray-dark">
+  {/* tab labels excluded from the search index so they don't pollute excerpts */}
+  <div role="tablist" class="flex flex-col md:flex-row self-center text-ceci-gray-dark" data-pagefind-ignore>
     {tabs.map((t, i) => (
       <button
         role="tab"
