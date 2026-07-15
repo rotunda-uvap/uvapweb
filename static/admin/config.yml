@@ -66,13 +66,14 @@ collections:
           hint: 'Short text shown on the homepage and in list previews',
         }
       - { name: 'body', label: 'Body', widget: 'markdown' }
-      - {
-          label: 'Header Image',
-          name: 'image',
-          widget: 'image',
-          required: false,
-          hint: 'Shown at the top of the post. Keep the file under 1 MB.',
-        }
+      - label: 'Header Image'
+        name: 'image'
+        widget: 'image'
+        required: false
+        hint: 'Shown at the top of the post (~400px wide; also used as the social-share image). Resize to about 1200px on the long side before uploading — uploads over 2 MB are rejected.'
+        media_library:
+          config:
+            max_file_size: 2000000 # 2 MB — keeps camera originals out of the repo
       - label: 'Related Book(s)'
         name: 'related_book'
         widget: 'relation'
@@ -315,7 +316,14 @@ collections:
       - { name: 'title', label: 'Title' }
       - { name: 'body', label: 'Body', widget: 'markdown' }
       - { label: 'Summary', name: 'description', widget: 'string', required: false }
-      - { label: 'Image', name: 'image', widget: 'image', required: false }
+      - label: 'Image'
+        name: 'image'
+        widget: 'image'
+        required: false
+        hint: 'Resize to about 1200px on the long side before uploading — uploads over 2 MB are rejected.'
+        media_library:
+          config:
+            max_file_size: 2000000 # 2 MB
       - label: 'Books'
         name: 'related_book'
         widget: 'relation'
@@ -380,7 +388,14 @@ collections:
       - { name: 'title', label: 'Display Name', hint: 'As shown on the staff page' }
       - { name: 'staff_name', label: 'Staff Name', hint: 'Used to link this person from series/imprints/exhibits — keep identical to Display Name' }
       - { label: 'Name Slug', name: 'name_slug', widget: 'string', required: true, hint: 'Page address: /staff/<this>/ — lowercase-hyphenated, e.g. jane-doe' }
-      - { label: 'Profile Photo', name: 'profile_photo', widget: 'image', required: false }
+      - label: 'Profile Photo'
+        name: 'profile_photo'
+        widget: 'image'
+        required: false
+        hint: 'Shown at 300px wide — about 600–800px wide is plenty. Uploads over 2 MB are rejected.'
+        media_library:
+          config:
+            max_file_size: 2000000 # 2 MB
       - { label: 'Job Title', name: 'job_title', widget: 'string', required: true }
       - {
           label: 'Department',
