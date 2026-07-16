@@ -27,6 +27,10 @@ const wrapInParagraph = (html: string) => (/<p[\s>]/.test(html) ? html : `<p>${h
 const tabClass =
   'uppercase py-2 font-thin tracking-widest px-3 sm:px-6 text-sm md:text-lg border-b-4 border-white hover:border-black aria-selected:border-black';
 
+// same chain-link icon BookPage uses for Exam/Desk Copy links
+const linkIconPath =
+  'M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1';
+
 const tabs = [
   { key: 'summary', label: 'Summary', show: true },
   { key: 'reviews', label: 'Reviews', show: true },
@@ -94,12 +98,22 @@ const tabs = [
   {resources?.length ? (
     <div role="tabpanel" id="panel-resources" aria-labelledby="tab-resources" class="py-3 min-h-32" hidden>
       {resources.map((r) => (
-        <div class="py-2">
+        <div class="py-2 pl-5 flex items-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5 shrink-0 text-ceci-gray-mid"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            aria-hidden="true"
+          >
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d={linkIconPath} />
+          </svg>
           <a
             href={r.link}
             target="_blank"
             rel="noreferrer"
-            class="text-ceci-gray-dark tracking-wide font-thin pl-5"
+            class="text-ceci-gray-dark tracking-wide font-serif text-lg pl-3"
           >
             {r.name}
           </a>
