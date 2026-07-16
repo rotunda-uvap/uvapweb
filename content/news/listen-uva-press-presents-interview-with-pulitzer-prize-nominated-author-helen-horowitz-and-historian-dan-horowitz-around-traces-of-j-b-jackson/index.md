@@ -1,7 +1,6 @@
 ---
 templateKey: news
 type: media
-draft: "false"
 title: 'LISTEN: "UVA Press Presents" interview with Pulitzer Prize-nominated
   author Helen Horowitz and historian Dan Horowitz around TRACES OF J. B.
   JACKSON'

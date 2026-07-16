@@ -1,7 +1,6 @@
 ---
 templateKey: news
 type: news
-draft: "false"
 title: The Need for African American Studies to Make George Floyd a Visible Man
 date: 2020-06-18
 

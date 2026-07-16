@@ -1,7 +1,6 @@
 ---
 templateKey: news
 type: news
-draft: "false"
 title: Q&A with Winner of the New Academy Prize in Literature, Maryse Condé, and
   translator Nicole Simek
 image: conde_author_0.jpg

@@ -1,7 +1,6 @@
 ---
 templateKey: news
 type: news
-draft: "false"
 title: So long, Aunt Jemima (1889-2020)
 date: 2020-06-19
 description: "UVA Press author Maurice M. Manring, whose book Slave in a Box:

@@ -1,7 +1,6 @@
 ---
 templateKey: news
 type: news
-draft: "false"
 title: Rotunda Imprint Seeking User Feedback for its American History Collection
 description: "[Rotunda](/rotunda), UVA Press's digital imprint, is seeking
   feedback on the user experience of its American History Collection. If you

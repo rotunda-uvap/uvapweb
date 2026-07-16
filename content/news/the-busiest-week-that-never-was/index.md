@@ -1,7 +1,6 @@
 ---
 templateKey: news
 type: news
-draft: "false"
 title: The Busiest Week That Never Was
 description: A post from our History editor, Nadine Zimmerli
 related_book:

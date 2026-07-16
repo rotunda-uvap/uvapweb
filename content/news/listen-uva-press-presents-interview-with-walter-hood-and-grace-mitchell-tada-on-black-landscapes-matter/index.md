@@ -1,6 +1,4 @@
 ---
-draft: "false"
-relbook: "5389"
 templateKey: news
 type: media
 related_book:

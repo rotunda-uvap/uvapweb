@@ -1,12 +1,10 @@
 ---
 templateKey: news
 type: media
-draft: "false"
 title: "Virtual Launch Event: By Broad Potomac's Shore by Kim Roberts"
 date: 2020-10-06
-related_books:
-  - book_title: By Broad Potomac's Shore
-    book_id: "5493"
+related_book:
+  - "5493"
 description: UVA Press is pleased to invite you to the launch event for BY BROAD
   POTOMAC'S SHORE: Great Poems from the Early Days of Our Nation's Capital with
   poet and literary historian Kim Roberts on Thursday, October 8, from 6-7 pm

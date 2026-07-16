@@ -1,7 +1,6 @@
 ---
 templateKey: news
 type: news
-draft: "false"
 title: "Hemingway, The Garden of Eden, and Authenticity: A Post by Len Gutkin"
 description: "Hemingway, The Garden of Eden, and Authenticity: A Post by Len Gutkin"
 related_book:

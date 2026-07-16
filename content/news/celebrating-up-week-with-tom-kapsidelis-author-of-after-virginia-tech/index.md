@@ -1,7 +1,6 @@
 ---
 templateKey: news
 type: news
-draft: "false"
 title: Celebrating UP Week with Tom Kapsidelis, author of After Virginia Tech
 related_book:
   - "5226"

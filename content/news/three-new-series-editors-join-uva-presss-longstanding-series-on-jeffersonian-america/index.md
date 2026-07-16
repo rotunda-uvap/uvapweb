@@ -1,7 +1,6 @@
 ---
 templateKey: news
 type: news
-draft: "false"
 title: Three New Series Editors Join UVA Press's Longstanding Series on
   Jeffersonian America
 description: The University of Virginia Press is pleased to announce that

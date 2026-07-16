@@ -1,32 +1,8 @@
 ---
 templateKey: news
 type: news
-draft: "false"
 title: Announcing UVA Press Reading Club - Virginia Pathways and People
 date: 2020-07-13
-related_books:
-  - book_title: Mr. and Mrs. Dog
-    book_id: "4654"
-  - book_title: The Dooleys of Richmond
-    book_id: "4544"
-  - book_title: The Collected Essays of Josephine J. Turpin Washington
-    book_id: "5249"
-  - book_title: Frederick Douglass
-    book_id: "4457"
-  - book_title: We Face the Dawn
-    book_id: "5145"
-  - book_title: Journey on the James
-    book_id: "1941"
-  - book_title: Hidden History
-    book_id: "4298"
-  - book_title: Rot, Riot, and Rebellion
-    book_id: "4700"
-  - book_title: You Come Too
-    book_id: "4924"
-  - book_title: Becoming Lincoln
-    book_id: "5136"
-  - book_title: Cultural Entanglements
-    book_id: "5333"
 description: The University of Virginia Press is pleased to announce the new UVA
   Press Reading Club, which will feature themed books throughout the year at a
   40% discounted rate. The 2020 theme, already underway, is Virginia Pathways

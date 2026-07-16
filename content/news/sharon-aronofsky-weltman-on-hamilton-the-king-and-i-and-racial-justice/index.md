@@ -1,6 +1,4 @@
 ---
-draft: "false"
-relbook: "5450"
 templateKey: news
 type: media
 description: Watch a trailer for VICTORIANS ON BROADWAY by Sharon Aronofsky Weltman

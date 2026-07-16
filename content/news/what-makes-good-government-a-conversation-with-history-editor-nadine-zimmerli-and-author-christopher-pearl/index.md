@@ -1,7 +1,4 @@
 ---
-draft: "false"
-relbook: "5457"
-path: good-government
 templateKey: news
 description: Blog post from Nadine Zimmerli, Editor for History and Social Sciences
 date: 2020-10-15

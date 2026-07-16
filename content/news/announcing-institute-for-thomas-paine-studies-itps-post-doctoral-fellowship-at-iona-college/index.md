@@ -1,7 +1,6 @@
 ---
 templateKey: news
 type: news
-draft: "false"
 title: Announcing Institute for Thomas Paine Studies (ITPS) Post-Doctoral
   Fellowship at Iona College
 description: Thanks to the generous support of the Robert David Lion Gardiner

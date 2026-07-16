@@ -1,7 +1,6 @@
 ---
 templateKey: news
 type: news
-draft: "false"
 title: Celebrating Black History Month - An Excerpt from RACISM IN AMERICAN
   PUBLIC LIFE by Dr. Johnetta Betsch Cole
 related_book:

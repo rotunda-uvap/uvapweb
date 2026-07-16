@@ -1,7 +1,6 @@
 ---
 templateKey: news
 type: news
-draft: "false"
 title: "SHEAR 2021: A Q&A with Frank Cogliano"
 description: >-
   This month, right in time for SHEAR, UVA Press is proud to release Ireland and

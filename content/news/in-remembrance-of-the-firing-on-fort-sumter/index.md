@@ -1,7 +1,6 @@
 ---
 templateKey: news
 type: news
-draft: "false"
 title: In Remembrance of the Firing on Fort Sumter
 description: "April 12, 2021 marks 160 years to the day since the firing on Fort
   Sumter, the opening salvo of the Civil War. It can be tempting to think of

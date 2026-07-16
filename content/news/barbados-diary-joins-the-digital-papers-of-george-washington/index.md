@@ -1,7 +1,6 @@
 ---
 templateKey: news
 type: news
-draft: "false"
 title: Barbados Diary Joins the Digital Papers of George Washington
 description: We’re pleased to announce the addition of the recently published
   edition of George Washington’s Barbados Diary, edited by Alicia K. Anderson

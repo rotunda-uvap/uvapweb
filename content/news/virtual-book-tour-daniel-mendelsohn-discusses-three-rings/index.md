@@ -1,7 +1,6 @@
 ---
 templateKey: news
 type: news
-draft: "false"
 title: "Virtual Book Tour: Daniel Mendelsohn Discusses Three Rings"
 date: 2020-08-24
 description: We are delighted to announce dates for Daniel Mendelsohn's virtual

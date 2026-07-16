@@ -1,7 +1,6 @@
 ---
 templateKey: news
 type: news
-draft: "false"
 title: University of Virginia Press Partners with the Darden School of Business
   on New Imprint
 related_series:

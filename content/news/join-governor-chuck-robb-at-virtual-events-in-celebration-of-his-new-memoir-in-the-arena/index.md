@@ -1,7 +1,6 @@
 ---
 templateKey: news
 type: news
-draft: "false"
 title: Join Governor Chuck Robb at Virtual Events in Celebration of His New
   Memoir In the Arena
 description: Governor Robb will be taking part in a series of online

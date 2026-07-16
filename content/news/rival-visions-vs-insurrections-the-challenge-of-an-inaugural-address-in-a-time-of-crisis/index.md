@@ -1,7 +1,6 @@
 ---
 templateKey: news
 type: news
-draft: "false"
 title: "Rival Visions vs. Insurrections: The Challenge of an Inaugural Address
   in a Time of Crisis"
 date: 2021-01-21

@@ -1,7 +1,6 @@
 ---
 templateKey: news
 type: news
-draft: "false"
 title: In Honor of Earth Day, A Post From Our Senior Acquiring Editor,
   Architecture and Environment, Boyd Zenner
 date: 2020-04-22

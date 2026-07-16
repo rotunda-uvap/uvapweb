@@ -1,7 +1,6 @@
 ---
 templateKey: news
 type: news
-draft: "false"
 title: "Honoring Dr. King: Creating the Path to Non-Violence"
 description: "We join everyone celebrating MLK Day with this blog post from
   Peter Eisenstadt, author of the new book Against the Hounds of Hell: A Life of

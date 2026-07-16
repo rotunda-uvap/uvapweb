@@ -1,7 +1,6 @@
 ---
 templateKey: news
 type: media
-draft: "false"
 title: 'LISTEN: "UVA Press Presents" Interview with Carl Rollyson, Author of THE
   LIFE OF WILLIAM FAULKNER, and Stephen Railton, Professor Emeritus at the
   University of Virginia and Director of Digital Yoknapatawpha'

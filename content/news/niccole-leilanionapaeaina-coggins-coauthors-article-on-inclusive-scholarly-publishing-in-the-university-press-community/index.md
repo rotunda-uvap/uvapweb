@@ -1,7 +1,6 @@
 ---
 templateKey: news
 type: news
-draft: "false"
 title: Niccole Leilanionapae'aina Coggins Coauthors Article on Inclusive
   Scholarly Publishing in the University Press Community
 image: niccole_b.jpg

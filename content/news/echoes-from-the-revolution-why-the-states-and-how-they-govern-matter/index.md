@@ -1,7 +1,6 @@
 ---
 templateKey: news
 type: news
-draft: "false"
 title: "Echoes from the Revolution: Why the States and How they Govern Matter"
 date: 2020-07-22
 description: Christopher R. Pearl, author of Conceived in Crisis, finds echoes

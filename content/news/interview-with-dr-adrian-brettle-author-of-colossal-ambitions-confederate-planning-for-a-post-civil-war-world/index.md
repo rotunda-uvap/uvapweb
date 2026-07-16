@@ -1,7 +1,6 @@
 ---
 templateKey: news
 type: news
-draft: "false"
 title: "Interview with Dr. Adrian Brettle, author of COLOSSAL AMBITIONS:
   Confederate Planning for a Post-Civil War World"
 description: "In July 2020, UVA Press was proud to publish Dr. Adrian Brettle’s

@@ -1,7 +1,6 @@
 ---
 templateKey: news
 type: news
-draft: "false"
 title: Please Vote!
 description: Over 98 million U.S. citizens have already voted in this year’s
   presidential election. Many millions more will do so today. Voting has been

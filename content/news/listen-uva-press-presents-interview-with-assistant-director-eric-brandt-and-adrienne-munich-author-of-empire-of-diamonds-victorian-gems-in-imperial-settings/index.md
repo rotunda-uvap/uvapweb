@@ -1,7 +1,6 @@
 ---
 templateKey: news
 type: media
-draft: "false"
 title: 'LISTEN: "UVA Press Presents" interview with Assistant Director, Eric
   Brandt, and Adrienne Munich, author of EMPIRE OF DIAMONDS: Victorian Gems in
   Imperial Settings'

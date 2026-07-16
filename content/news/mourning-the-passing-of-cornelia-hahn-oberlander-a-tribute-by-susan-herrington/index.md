@@ -1,7 +1,6 @@
 ---
 templateKey: news
 type: news
-draft: "false"
 title: "Mourning the Passing of Cornelia Hahn Oberlander: A Tribute by Susan
   Herrington"
 description: "UVA Press joins the architecture community in mourning the loss of

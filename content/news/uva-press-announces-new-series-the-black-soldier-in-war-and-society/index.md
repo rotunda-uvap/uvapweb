@@ -1,7 +1,6 @@
 ---
 templateKey: news
 type: news
-draft: "false"
 title: UVA Press Announces New Series "The Black Soldier in War and Society"
 description: "The University of Virginia Press is pleased to announce “The Black
   Soldier in War and Society: New Narratives and Critical Perspectives,” a new

@@ -1,7 +1,6 @@
 ---
 templateKey: news
 type: news
-draft: "false"
 title: On Entanglements and Viruses by Shane Graham
 date: 2020-06-12
 description: "We are pleased to offer this blog post from UVA Press author Shane

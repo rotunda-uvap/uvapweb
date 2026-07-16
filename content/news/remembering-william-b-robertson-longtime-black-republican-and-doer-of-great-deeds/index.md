@@ -1,7 +1,6 @@
 ---
 templateKey: news
 type: news
-draft: "false"
 title: Remembering William B. Robertson, Longtime Black Republican and "Doer of
   Great Deeds"
 description: We share in mourning the loss of William "Bill" Robertson, the

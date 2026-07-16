@@ -1,9 +1,6 @@
 ---
 templateKey: news
 type: news
-draft: "false"
-related:
-  - "4600"
 description: Booker T. Washington, who emerged from slavery to become one of the
   leading African American intellectuals around the turn of the 20th century,
   had ties to Charlottesville that eventually led to a city park being named

@@ -3,21 +3,18 @@
 # Rebuilt 2026-07 for the Astro site. Field names and file structure are
 # unchanged (existing content stays valid); labels, hints, and widget fixes
 # are new. Collections are ordered by how often editors use them.
-#
-# AT CUTOVER: change `branch: astro` to `branch: production`, and update
-# site_url/display_url to https://www.upress.virginia.edu
 
 backend:
   name: github
   repo: rotunda-uvap/uvapweb
-  branch: astro # ← flip to `production` at cutover
+  branch: production
 
 # Local editing: run `npx decap-server` beside `npm run dev`, then open
 # http://localhost:4321/admin/ — no GitHub login needed locally.
 local_backend: true
 
-site_url: https://uvapastromigration.netlify.app # ← flip at cutover
-display_url: https://uvapastromigration.netlify.app # ← flip at cutover
+site_url: https://www.upress.virginia.edu
+display_url: https://www.upress.virginia.edu
 logo_url: /uvap_logo_full.png
 
 media_folder: static/assets

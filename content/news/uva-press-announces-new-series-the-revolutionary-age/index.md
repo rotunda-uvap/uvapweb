@@ -1,7 +1,6 @@
 ---
 templateKey: news
 type: news
-draft: "false"
 title: UVA Press Announces New Series "The Revolutionary Age"
 description: The University of Virginia Press is pleased to announce “The
   Revolutionary Age,” a new series designed to bring a fresh and international

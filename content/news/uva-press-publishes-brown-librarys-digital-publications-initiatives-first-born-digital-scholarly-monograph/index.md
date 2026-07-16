@@ -1,7 +1,6 @@
 ---
 templateKey: news
 type: news
-draft: "false"
 title: UVA Press Publishes Brown Library's Digital Publications Initiative's
   First Born-Digital Scholarly Monograph
 description: "The University of Virginia Press is pleased to announce the

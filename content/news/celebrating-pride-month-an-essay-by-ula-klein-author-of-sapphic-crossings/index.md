@@ -1,7 +1,6 @@
 ---
 templateKey: news
 type: news
-draft: "false"
 title: "Celebrating Pride Month: An Essay by Ula Klein, Author of Sapphic Crossings"
 description: "June is Pride Month, and I’m proud to be a member of the LGBTQ
   community, working on LGBTQ literary and cultural history. My book, Sapphic

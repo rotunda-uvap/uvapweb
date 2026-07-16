@@ -1,7 +1,6 @@
 ---
 templateKey: news
 type: news
-draft: "false"
 title: Hopes, Fears, and Prophecies. An Essay for Inauguration Day by Historians
   Robert M. S. McDonald and Peter S. Onuf
 related_book:

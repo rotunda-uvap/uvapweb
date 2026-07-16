@@ -1,13 +1,9 @@
 ---
 templateKey: news
 type: media
-draft: "false"
 title: 'LISTEN: "UVA Press Presents" interview with Daniel Mendelsohn and Jahan
   Ramazani'
 date: 2020-09-18
-related_books:
-  - book_id: "5626"
-    book_title: Three Rings
 description: 'We are delighted to offer the fifth installment in our new podcast
   series, "UVA Press Presents," via this interview with Daniel Mendelsohn,
   Editor at Large at The New York Review of Books and author of Three Rings: A
