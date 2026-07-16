@@ -123,12 +123,16 @@ Port the **what**, not the **how**. The rough design, features, and URLs stay; t
 - [x] Polish: pages build at lowercase paths (route params) + post-build `fix-link-case` pass lowercases internal hrefs; sitemap follows automatically. Parity checker compares case-insensitively
 - [ ] Meta/OG tags port (replaces react-helmet SeoComponent)
 
-### Phase 5 — Parity check & cutover
-**Cutover simplification (discovered 2026-07-14):** the live site already runs on Netlify, so cutover likely needs NO DNS change — merge `astro` → `production` and the *existing* Netlify site rebuilds as the new site (its production branch is already `production`). Verify the existing site's build settings read netlify.toml (they will, it's committed); re-point/verify the Slack deploy webhooks; retire the staging site after. Confirm the existing Netlify site's build command isn't hardcoded to gatsby in the UI before merging.
-- [ ] Remove the staging X-Robots-Tag noindex header from netlify.toml
-- [ ] Diff new build URLs vs Phase 0 inventory — zero unexplained missing URLs
-- [ ] Spot-check: book pages, search, Decap editing round-trip, Mailchimp signup, redirects
-- [ ] Lighthouse pass; DNS cutover; Gatsby repo archived untouched
+### Phase 5 — Parity check & cutover — ✅ CUTOVER COMPLETE 2026-07-16
+**Cutover simplification (discovered 2026-07-14):** the live site already runs on Netlify, so cutover needed NO DNS change — merged `astro` → `production` (fast-forward) and the existing Netlify site rebuilt as the new site.
+- [x] Netlify UI prepped before merge: Gatsby runtime removed (it silently injects the Essential Gatsby integration — doesn't show in the plugins list), build command/publish dir updated, `NODE_ENV=production` env var deleted (it made npm skip devDependencies; sanitize-html also moved to regular deps as belt-and-suspenders), GitHub OAuth provider on live site replaced with the same OAuth app as staging, Slack deploy webhooks re-pointed to `deploy-notify`
+- [x] Staging X-Robots-Tag noindex header removed from netlify.toml
+- [x] GTM (script + noscript) added to Base.astro; Decap config.yml flipped to production branch + live URLs
+- [x] Legacy frontmatter cleaned: `draft`/`relbook`/`related`/`path`/`related_books` stripped from 44 news posts (NOTE: `related` is a REAL field on promos and reading-series — only legacy on news); Kim Roberts post's `related_books` converted to modern `related_book`
+- [x] Parity diff vs Phase 0 inventory: 2,639 matched, 0 unexplained missing — 27 "missing" URLs verified already-404 on live (editorial deletions after the crawl); extra = /admin/ + new SHEAR 26 content
+- [x] Post-cutover spot checks all pass: book pages 200, GTM present, noindex gone, 200-proxy (plunkett) works, dropped-collection 301s (URLs use %20, not hyphens), search + pagefind + sitemap + admin 200. Slack deploy notification confirmed working
+- [ ] Patricia: verify Decap editing round-trip on live /admin (login + test edit commits to production)
+- [ ] Post-cutover cleanup (non-urgent): delete env vars ALGOLIA_* (esp. ADMIN_KEY — write-capable), GATSBY_*, GTM, GITHUB_CLIENT_ID/SECRET (after /admin verified); delete orphaned GitHub OAuth app in org settings if old client ID differs; retire staging Netlify site; Lighthouse pass
 
 ---
 
