@@ -52,11 +52,11 @@ const tabs = [
     ))}
   </div>
 
-  <div role="tabpanel" id="panel-summary" aria-labelledby="tab-summary" class="py-3">
+  <div role="tabpanel" id="panel-summary" aria-labelledby="tab-summary" class="py-3 min-h-32">
     <div class="text-ceci-gray-dark font-serif cms text-lg" set:html={sanitizeHtml(wrapInParagraph(summary))} />
   </div>
 
-  <div role="tabpanel" id="panel-reviews" aria-labelledby="tab-reviews" class="py-3" hidden>
+  <div role="tabpanel" id="panel-reviews" aria-labelledby="tab-reviews" class="py-3 min-h-32" hidden>
     {reviews?.length ? (
       <div class="py-3">
         {reviews.map((review) => (
@@ -77,24 +77,24 @@ const tabs = [
     )}
   </div>
 
-  <div role="tabpanel" id="panel-bio" aria-labelledby="tab-bio" class="py-3" hidden>
+  <div role="tabpanel" id="panel-bio" aria-labelledby="tab-bio" class="py-3 min-h-32" hidden>
     {bio && bio !== 'EMPTY: BioNote' ? (
-      <div class="cms dropCap font-serif text-lg text-ceci-gray-dark" set:html={bio} />
+      <div class="cms py-2 dropCap font-serif text-lg text-ceci-gray-dark" set:html={bio} />
     ) : (
-      <div><p>No biographical information available</p></div>
+      <div class="cms py-2 font-serif text-lg text-ceci-gray-dark"><p>No biographical information available</p></div>
     )}
   </div>
 
   {toc && (
-    <div role="tabpanel" id="panel-toc" aria-labelledby="tab-toc" class="py-3" hidden>
+    <div role="tabpanel" id="panel-toc" aria-labelledby="tab-toc" class="py-3 min-h-32" hidden>
       <div class="cms text-lg font-serif tracking-wide text-ceci-gray-dark" set:html={toc} />
     </div>
   )}
 
   {resources?.length ? (
-    <div role="tabpanel" id="panel-resources" aria-labelledby="tab-resources" class="py-3" hidden>
+    <div role="tabpanel" id="panel-resources" aria-labelledby="tab-resources" class="py-3 min-h-32" hidden>
       {resources.map((r) => (
-        <div class="p-2">
+        <div class="py-2">
           <a
             href={r.link}
             target="_blank"
