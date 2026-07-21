@@ -14,3 +14,10 @@ dist/
 
 # logs
 *.log
+
+# Claude Code session worktrees (each has its own .git)
+.claude/worktrees/
+
+# legacy Gatsby artifacts
+.cache/
+public/
