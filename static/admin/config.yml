@@ -79,7 +79,7 @@ collections:
         multiple: true
         max: 1000
         value_field: 'book.*.BookID'
-        search_fields: ['book.*.Title']
+        search_fields: ['book.*.Title', 'book.*.BookID']
         display_fields: ['book.*.Title']
         target_field: 'book'
         required: false
@@ -154,7 +154,7 @@ collections:
         file: 'booklist_cms'
         multiple: true
         value_field: 'book.*.BookID'
-        search_fields: ['book.*.Title']
+        search_fields: ['book.*.Title', 'book.*.BookID']
         display_fields: ['book.*.Title']
         required: false
         hint: 'Cover carousel near the top of the exhibit'
@@ -222,7 +222,7 @@ collections:
             collection: 'files'
             file: 'booklist_cms'
             value_field: 'book.*.BookID'
-            search_fields: ['book.*.Title']
+            search_fields: ['book.*.Title', 'book.*.BookID']
             display_fields: ['book.*.Title']
             hint: 'Pick the featured book — supplies the cover image and link'
           - { label: 'Book Title', name: 'banner_title', widget: 'string', hint: 'As it should display in the banner' }
@@ -238,7 +238,7 @@ collections:
         multiple: true
         max: 1000
         value_field: 'book.*.BookID'
-        search_fields: ['book.*.Title']
+        search_fields: ['book.*.Title', 'book.*.BookID']
         display_fields: ['book.*.Title']
         hint: 'The homepage cover carousel — choose at least 5'
 
@@ -268,7 +268,7 @@ collections:
         max: 1000
         options_length: 1000
         value_field: 'book.*.BookID'
-        search_fields: ['book.*.Title']
+        search_fields: ['book.*.Title', 'book.*.BookID']
         display_fields: ['book.*.Title']
         required: true
 
@@ -330,7 +330,7 @@ collections:
         max: 1000
         options_length: 1000
         value_field: 'book.*.BookID'
-        search_fields: ['book.*.Title']
+        search_fields: ['book.*.Title', 'book.*.BookID']
         display_fields: ['book.*.Title']
         required: false
       - label: 'Book Collection(s)'
@@ -509,7 +509,7 @@ collections:
         max: 1000
         options_length: 1000
         value_field: 'book.*.BookID'
-        search_fields: ['book.*.Title']
+        search_fields: ['book.*.Title', 'book.*.BookID']
         display_fields: ['book.*.Title']
         required: false
 
@@ -534,7 +534,7 @@ collections:
         collection: 'files'
         file: 'booklist_cms'
         value_field: 'book.*.BookID'
-        search_fields: ['book.*.Title']
+        search_fields: ['book.*.Title', 'book.*.BookID']
         display_fields: ['book.*.Title']
         required: true
         hint: 'The book page these resources appear on'
