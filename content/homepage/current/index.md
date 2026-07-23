@@ -2,13 +2,13 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_title: To Save Us All from Slavery's Power
-    banner_author: Mark Wahlgren Summers
-    banner_subtitle: Republican Alarms, Southern Terrors, and the Plunge into Civil War
-    banner_id: "10209"
-    banner_quote: Readers will be struck with how relevant and scary his story is
-      for us today.
-    banner_attr: Michael Fitzgerald, St. Olaf College
+  - banner_id: "5626"
+    banner_title: Three Rings
+    banner_subtitle: A Tale of Exile, Narrative, and Fate
+    banner_author: Daniel Mendelsohn
+    banner_quote: A glorious celebration of multiplicity, diversity, journeys,
+      transformations, and our common humanity.
+    banner_attr: Times Literary Supplement
 related_book:
   - "5744"
   - "5617"
