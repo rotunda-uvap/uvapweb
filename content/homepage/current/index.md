@@ -5,9 +5,7 @@ top_banner:
   - banner_id: "10217"
     banner_title: Vignettes of Revolutionary Virginia
     banner_author: Brent Tarter
-    banner_quote: Tarter has a sharp eye for the true-but-barely-believable
-      anecdote—and a knack for weaving these incidents into novelesque
-      narratives that crackle with his characteristic sharp wit.
+    banner_quote: Tarter has a sharp eye for the true-but-barely-believable anecdote.
     banner_attr: Woody Holton, University of South Carolina
     banner_subtitle: Remarkable Stories from the Founding of the Nation
 related_book:
