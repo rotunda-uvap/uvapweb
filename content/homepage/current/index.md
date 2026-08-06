@@ -2,13 +2,14 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_id: "5626"
-    banner_title: Three Rings
-    banner_subtitle: A Tale of Exile, Narrative, and Fate
-    banner_author: Daniel Mendelsohn
-    banner_quote: A glorious celebration of multiplicity, diversity, journeys,
-      transformations, and our common humanity.
-    banner_attr: Times Literary Supplement
+  - banner_id: "10217"
+    banner_title: Vignettes of Revolutionary Virginia
+    banner_author: Brent Tarter
+    banner_quote: Tarter has a sharp eye for the true-but-barely-believable
+      anecdote—and a knack for weaving these incidents into novelesque
+      narratives that crackle with his characteristic sharp wit.
+    banner_attr: Woody Holton, University of South Carolina
+    banner_subtitle: Remarkable Stories from the Founding of the Nation
 related_book:
   - "5744"
   - "5617"
