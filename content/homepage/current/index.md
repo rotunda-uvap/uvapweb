@@ -2,12 +2,12 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_id: "10217"
-    banner_title: Vignettes of Revolutionary Virginia
-    banner_author: Brent Tarter
-    banner_quote: Tarter has a sharp eye for the true-but-barely-believable anecdote.
-    banner_attr: Woody Holton, University of South Carolina
-    banner_subtitle: Remarkable Stories from the Founding of the Nation
+  - banner_id: "10225"
+    banner_title: Where Love Leads
+    banner_author: Mary Dana Hinton
+    banner_subtitle: Leadership and the Liberal Arts
+    banner_quote: Dr. Hinton’s prophetic voice lifts the spirit and the intellect.
+    banner_attr: Marjorie Hass, President of the Council of Independent Colleges
 related_book:
   - "5744"
   - "5617"
