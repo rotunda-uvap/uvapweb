@@ -112,7 +112,7 @@ const bookColls = ex.data.related_collection
             <ul class="content-center">
               {relatedSeries.map((series) => (
                 <li class="py-3 text-gray-700 text-center font-display">
-                  <a href={`/series/${series.seriesID}/`}>{series.seriesName}</a>
+                  <a href={`/series/${series.seriesID.toLowerCase()}/`}>{series.seriesName}</a>
                 </li>
               ))}
             </ul>

@@ -112,7 +112,7 @@ const series = (await getCollection('seriesData'))
       {
         series.map((s) => (
           <div class="md:w-1/2 mb-2 px-2 font-display">
-            <a href={`/series/${s.seriesID}/`} class="text-gray-600 hover:text-gray-800">
+            <a href={`/series/${s.seriesID.toLowerCase()}/`} class="text-gray-600 hover:text-gray-800">
               {s.seriesName}
             </a>
           </div>

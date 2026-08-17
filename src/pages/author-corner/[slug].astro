@@ -76,7 +76,7 @@ const description = (post.rendered?.html ?? '').replace(/<[^>]*>/g, '').substrin
 
             {relatedSeries?.map((series) => (
               <div class="float-right px-7 pb-5">
-                <h6 class="uppercase py-2"><span class="font-semibold">Related Series: </span><a href={`/series/${series.seriesID}/`} class="pl-2">{series.seriesName}</a></h6>
+                <h6 class="uppercase py-2"><span class="font-semibold">Related Series: </span><a href={`/series/${series.seriesID.toLowerCase()}/`} class="pl-2">{series.seriesName}</a></h6>
               </div>
             ))}
           </div>

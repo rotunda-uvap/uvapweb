@@ -116,7 +116,7 @@ const allbooks = [...books].sort((a, b) => a.data.Title.localeCompare(b.data.Tit
     <div class="container flex flex-wrap py-10 mx-auto items-center">
       {series.map((ser) => (
         <div class="md:w-1/2 mb-2 px-2 font-display">
-          <a href={`/series/${ser.seriesID}/`} class="text-ceci-gray-dark hover:text-gray-800">{ser.seriesName}</a>
+          <a href={`/series/${ser.seriesID.toLowerCase()}/`} class="text-ceci-gray-dark hover:text-gray-800">{ser.seriesName}</a>
         </div>
       ))}
       <GoToTop />

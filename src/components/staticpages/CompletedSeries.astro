@@ -40,7 +40,7 @@ const series = (
               {s.data.seriestype}
             </span>
             <a
-              href={`/series/${s.data.seriesID}/`}
+              href={`/series/${s.data.seriesID.toLowerCase()}/`}
               class="sm:text-xl font-serif text-lg text-gray-700 tracking-wide "
             >
               {s.data.title}

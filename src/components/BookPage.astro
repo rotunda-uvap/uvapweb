@@ -214,7 +214,7 @@ const cartIconPath =
           <ul class="flex flex-col md:flex-row md:flex-wrap gap-4">
             {b.Series.map((ser: any) => (
               <li>
-                <a href={`/series/${ser.seriesID}/`} class={`${chipClass} hover:bg-white bg-greige`} data-pagefind-filter="Series">
+                <a href={`/series/${ser.seriesID.toLowerCase()}/`} class={`${chipClass} hover:bg-white bg-greige`} data-pagefind-filter="Series">
                   {ser.name}
                 </a>
               </li>

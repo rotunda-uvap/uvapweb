@@ -64,8 +64,8 @@ export const navColumns: NavColumn[] = [
       { label: 'About Rotunda', href: '/rotunda/' },
       { label: 'Rotunda Contacts', href: '/rotunda/#contacts' },
       { label: 'Customer Entrance', href: 'https://rotunda.upress.virginia.edu/entrance.xqy' },
-      { label: 'American Documentary History Collection', href: '/series/ADHC/' },
-      { label: 'Literature & Culture Collection', href: '/series/LCC/' },
+      { label: 'American Documentary History Collection', href: '/series/adhc/' },
+      { label: 'Literature & Culture Collection', href: '/series/lcc/' },
     ],
   },
 ];

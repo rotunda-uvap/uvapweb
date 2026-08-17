@@ -40,7 +40,7 @@ const series = (
             <span class="inline-block py-2 uppercase text-ceci-gray-mid text-sm font-medium tracking-wider">
               {s.data.seriestype}
             </span>
-            <a href={`/series/${s.data.seriesID}/`}>
+            <a href={`/series/${s.data.seriesID.toLowerCase()}/`}>
               <div class="sm:text-xl text-lg text-gray-700 tracking-wide font-serif ">
                 {s.data.title}
               </div>
