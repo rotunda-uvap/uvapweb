@@ -2,12 +2,14 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_id: "10225"
-    banner_title: Where Love Leads
-    banner_author: Mary Dana Hinton
-    banner_subtitle: Leadership and the Liberal Arts
-    banner_quote: Dr. Hinton’s prophetic voice lifts the spirit and the intellect.
-    banner_attr: Marjorie Hass, President of the Council of Independent Colleges
+  - banner_id: "10217"
+    banner_title: Vignettes of Revolutionary Virginia
+    banner_author: Brent Tarter
+    banner_subtitle: Remarkable Stories from the Founding of the Nation
+    banner_quote: "Compares to most histories as Cheerios compare to Shredded Wheat:
+      it’s just as nourishing, but being divided into spoonfuls makes it
+      infinitely more digestible."
+    banner_attr: Robert G. Parkinson, Binghamton University
 related_book:
   - "5744"
   - "5617"
