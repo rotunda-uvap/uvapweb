@@ -3,7 +3,7 @@ templateKey: news
 type: author-corner
 title: Author's Corner with Kenneth J. Banks, author of A SEA OF POSSIBILITIES
 date: 2026-08-24
-image: banks.image-1.2026.jpg
+image: d41_0025.jpeg
 related_book:
   - "10219"
 related_series:
