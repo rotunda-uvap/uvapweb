@@ -2,14 +2,13 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_id: "10217"
-    banner_title: Vignettes of Revolutionary Virginia
-    banner_author: Brent Tarter
-    banner_subtitle: Remarkable Stories from the Founding of the Nation
-    banner_quote: "Compares to most histories as Cheerios compare to Shredded Wheat:
-      it’s just as nourishing, but being divided into spoonfuls makes it
-      infinitely more digestible."
-    banner_attr: Robert G. Parkinson, Binghamton University
+  - banner_id: "10219"
+    banner_title: A Sea of Possibilities
+    banner_subtitle: The Revolutionary Atlantic World of Captain Thomas Allen
+    banner_author: Kenneth J. Banks
+    banner_quote: Banks offers nothing less than an essential and compelling
+      corrective to the canonical interpretation of the Revolution.
+    banner_attr: David J. Hancock, University of Michigan
 related_book:
   - "5744"
   - "5617"
