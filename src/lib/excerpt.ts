@@ -5,8 +5,17 @@
 // sanitize-html, which auto-balances tags — do exactly the same at build time.
 import sanitizeHtml from 'sanitize-html';
 
-export function excerptHtml(html: string, words: number): string {
-  return sanitizeHtml(html.split(' ').slice(0, words).join(' ') + '...');
+export function excerptHtml(html: string, words: number, stripLinks = false): string {
+  const opts = stripLinks
+    ? { exclusiveFilter: (frame: { tag: string }) => frame.tag === 'a', textFilter: undefined }
+    : {};
+  const truncated = html.split(' ').slice(0, words).join(' ') + '...';
+  return sanitizeHtml(truncated, {
+    ...opts,
+    allowedTags: stripLinks
+      ? sanitizeHtml.defaults.allowedTags.filter((t: string) => t !== 'a')
+      : sanitizeHtml.defaults.allowedTags,
+  });
 }
 
 export { sanitizeHtml };
