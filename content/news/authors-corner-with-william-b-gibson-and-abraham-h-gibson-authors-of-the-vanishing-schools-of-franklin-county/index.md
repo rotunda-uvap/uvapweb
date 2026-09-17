@@ -4,6 +4,7 @@ type: author-corner
 title: Author's Corner with William B. Gibson and Abraham H. Gibson, authors of
   THE VANISHING SCHOOLS OF FRANKLIN COUNTY
 date: 2026-09-14
+image: screenshot-2026-09-17-at-3.16.26 pm.jpg
 related_book:
   - "10232"
 ---
