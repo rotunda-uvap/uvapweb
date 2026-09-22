@@ -2,13 +2,12 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_id: "10219"
-    banner_title: A Sea of Possibilities
-    banner_subtitle: The Revolutionary Atlantic World of Captain Thomas Allen
-    banner_author: Kenneth J. Banks
-    banner_quote: Banks offers nothing less than an essential and compelling
-      corrective to the canonical interpretation of the Revolution.
-    banner_attr: David J. Hancock, University of Michigan
+  - banner_id: "10232"
+    banner_title: The Vanishing Schools of Franklin County
+    banner_author: William B. Gibson and Abraham H. Gibson
+    banner_subtitle: A History of Public Education in Rural Virginia
+    banner_quote: This is an important undertaking, and the authors deserve our thanks.
+    banner_attr: Charles Thompson, Duke University
 related_book:
   - "5744"
   - "5617"
