@@ -11,7 +11,7 @@ interface Props {
   label?: string;
 }
 const { items, label = 'Book carousel' } = Astro.props;
-const ik = (bid: string) => `https://ik.imagekit.io/uvapress/${bid}.jpg?tr=w-150,h-224,c-at_max`;
+const ik = (bid: string) => `https://upress-covers.s3.us-east-1.amazonaws.com/${bid}.jpg`;
 ---
 
 <div role="region" aria-label={label} aria-roledescription="carousel" class="cover-carousel relative">

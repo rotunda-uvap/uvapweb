@@ -10,7 +10,7 @@ interface Props {
   attr?: string;
 }
 const { id, book_title, author, quote, subtitle, attr } = Astro.props;
-const cover = `https://ik.imagekit.io/uvapress/${id}.jpg`;
+const cover = `https://upress-covers.s3.us-east-1.amazonaws.com/${id}.jpg`;
 const booklink = `/title/${id}/`;
 ---
 

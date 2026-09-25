@@ -25,9 +25,9 @@ const googleBooks = `https://books.google.com/books?vid=${isbn}`;
 const rightsLink = `https://marketplace.copyright.com/rs-ui-web/mp/search/all/${isbn}`;
 const url = `https://www.upress.virginia.edu/title/${b.BookID}/`;
 
-const ik = 'https://ik.imagekit.io/uvapress/';
+const ik = 'https://upress-covers.s3.us-east-1.amazonaws.com/';
 const coverPath = b.CoverImageFull ? `${b.BookID}.jpg` : null;
-const ikSrc = (path: string, w: number) => `${ik}${path}?tr=w-${w},c-at_max`;
+const ikSrc = (path: string, w: number) => `${ik}${path}`;
 
 // resources markdown entry attached to this book; related news posts
 const [resourceEntries, allNews] = await Promise.all([

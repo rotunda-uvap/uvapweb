@@ -18,7 +18,7 @@ const fmtDate = (d: Date) => d.toISOString().slice(0, 10);
     {posts.map((post) => (
       <a href={`/${post.data.type}/${post.id}/`} class="grid grid-cols-3">
         {post.data.related_book?.length ? (
-          <img src={`https://ik.imagekit.io/uvapress/${post.data.related_book[0]}_M.jpg`} alt="cover" class="justify-self-center object-cover" />
+          <img src={`https://upress-covers.s3.us-east-1.amazonaws.com/${post.data.related_book[0]}_M.jpg`} alt="cover" class="justify-self-center object-cover" />
         ) : (
           <div></div>
         )}

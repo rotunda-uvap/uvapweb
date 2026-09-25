@@ -59,13 +59,13 @@ const fmtDate = (d: Date) => d.toISOString().slice(0, 10);
             <div class="shrink-0 w-16 md:w-20 h-24 md:h-28 overflow-hidden rounded-sm">
               {post.data.related_book?.length ? (
                 <img
-                  src={`https://ik.imagekit.io/uvapress/${post.data.related_book[0]}_M.jpg`}
+                  src={`https://upress-covers.s3.us-east-1.amazonaws.com/${post.data.related_book[0]}_M.jpg`}
                   alt="cover"
                   class="w-full h-full object-cover object-top shadow-sm"
                 />
               ) : (
                 <img
-                  src="https://ik.imagekit.io/uvapress/noimg_lg.png?tr=w-200,c-at_max"
+                  src="https://upress-covers.s3.us-east-1.amazonaws.com/noimg_lg.png"
                   alt="No cover available"
                   class="w-full h-full object-contain bg-white"
                 />

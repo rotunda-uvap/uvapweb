@@ -7,7 +7,7 @@ interface Props {
   title?: string;
 }
 const { id, title } = Astro.props;
-const cover = `https://ik.imagekit.io/uvapress/${id}_M.jpg`;
+const cover = `https://upress-covers.s3.us-east-1.amazonaws.com/${id}_M.jpg`;
 ---
 
 <a href={`/title/${id}/`} class="object-cover px-2">

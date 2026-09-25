@@ -7,7 +7,7 @@ interface Props {
   filename_array: string[];
 }
 const { filename_array } = Astro.props;
-const src = (name: string) => `https://ik.imagekit.io/uvapress/${name}`;
+const src = (name: string) => `https://upress-covers.s3.us-east-1.amazonaws.com/${name}`;
 ---
 
 <div
