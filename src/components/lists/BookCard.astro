@@ -9,7 +9,7 @@ interface Props {
 const { book } = Astro.props;
 const b = book.data as any;
 
-const BASE_URL = 'https://covers.upress.virginia.edu';
+const BASE_URL = 'https://upress-covers.s3.us-east-1.amazonaws.com';
 const imageSrc = `${BASE_URL}/${b.CoverImageMain}`;
 ---
 
