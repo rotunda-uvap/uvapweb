@@ -2,13 +2,12 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_id: "10208"
-    banner_title: The District’s Departed
-    banner_author: Kim Roberts Meikle
-    banner_subtitle: A Guidebook to DC Cemeteries
-    banner_quote: A well-researched resource and a fascinating read for residents,
-      scholars, and visitors alike.
-    banner_attr: Paul K. Williams, Superintendent of the Oak Hill Cemetery in Georgetown
+  - banner_id: "10241"
+    banner_title: Prizefighter
+    banner_author: Patrick Griffin
+    banner_subtitle: Yankee Sullivan and the Hands That Built the Modern World
+    banner_quote: "A tour de force of narrative history. "
+    banner_attr: Kevin Kenny, New York University
 related_book:
   - "5744"
   - "5617"
