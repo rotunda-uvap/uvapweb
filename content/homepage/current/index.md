@@ -2,12 +2,12 @@
 templateKey: homepage
 title: Current
 top_banner:
-  - banner_id: "10241"
-    banner_title: Prizefighter
-    banner_author: Patrick Griffin
-    banner_subtitle: Yankee Sullivan and the Hands That Built the Modern World
-    banner_quote: "A tour de force of narrative history. "
-    banner_attr: Kevin Kenny, New York University
+  - banner_id: "10235"
+    banner_title: Making Rounds
+    banner_subtitle: Love, Loss, and Lessons Learned from an Indomitable Woman in Medicine
+    banner_author: Sharon L. Hostler, MD
+    banner_quote: Sharon’s tale is a triumph song.
+    banner_attr: John T. Casteen III, seventh president of UVA
 related_book:
   - "5744"
   - "5617"
