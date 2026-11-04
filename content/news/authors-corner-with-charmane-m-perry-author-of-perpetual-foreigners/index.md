@@ -1,0 +1,32 @@
+---
+templateKey: news
+type: author-corner
+title: Author's Corner with Charmane M. Perry, author of PERPETUAL FOREIGNERS
+date: 2026-11-04
+image: dsc09985-1-.jpg
+related_book:
+  - "10239"
+related_series:
+  - NWS
+---
+Today, we are happy to bring you our conversation with Charmane M. Perry, author of *Perpetual Foreigners: Stigma, Citizenship, and Anti-Haitianism in The Bahamas*
+
+*What inspired you to write this book?* 
+
+I have been researching Haitians in The Bahamas for roughly fifteen years. It started as a master’s project, became a dissertation project, and then I returned to my dissertation when I started as an assistant professor at the University of Alabama at Birmingham. My father is Haitian, and so I knew in graduate school that I wanted the focus of my research to be on the Haitian diaspora as a way of learning more about my culture and history. Long story short (as this story is in the preface), I found myself in Nassau conducting research on Haitians in June 2010, and now we are here. In the earlier stages of my career, I had gone back and forth about writing a book, but I was not sure what to do, and so I focused on taking my dissertation chapters and turning them into articles. Because of this work, and after a co-authored book project on The Bahamas dissolved, I had enough material to write my own book. And so, I focused on writing a book. Moreover, there is such limited scholarship on Haitian in The Bahamas, I knew a book would make a significant contribution to the literature. But all those steps were necessary because had I not gone through them, *Perpetual Foreigners* would most likely not be the book it is today but rather something else or nothing at all.
+
+*What did you learn and what are you hoping readers will learn from your book?* 
+
+I learned a lot writing this book which I think sometimes can be hard to see because you are so close to the topic. One thing I learned that was interesting is the role the United States played in orchestrating a Dominican racial identity that was not Black. This is discussed in chapter one, but basically it was one of many responses to the Haitian Revolution and the United States wanting to prevent another Black independent nation from existing in the Caribbean. I also learned that at one point, The Bahamas was a poor colony, and Haiti was highly respected by Bahamians. The narrative changed for both countries around the same time as Haiti slowly became identified as the poorest country in the western hemisphere, and The Bahamas—through tourism and offshore banking—became one of the wealthiest countries in the Caribbean in the late twentieth century. One thing that I am hoping people will learn from my book is that states and governments create statelessness and inequality; states create borders to keep people out. I believe most people would want to stay in their home country if the socioeconomic and political conditions are conducive to creating a safe, productive, and fulfilling life. People would not travel such dangerous routes if the situation was not dire enough. So, I hope that people will see the humanity in undocumented migrants and stigmatized and historically marginalized groups. And, in this case, I hope that people will see the humanity in people of Haitian descent who continue to pay the price for demanding freedom and declaring independence in 1804.
+
+*What surprised you the most in the process of writing your book?* 
+
+Honestly, I was most surprised by how hard it is to write a book. Of course, I knew writing a book takes work and time, but I did not realize I technically did not know how to write a book. It is funny because you read books and that is a part of your training and development as a graduate student and professor. And so, you think you have an idea of the structure of writing a book but that was not true for me, and I also found out it is a common experience for many academics who are writing their first book. No one teaches you how to do this, but it is expected for you to do it. It was a very hard learning curve and one that at many times I had moments (very brief moments) of doubt that I could complete it. It is one of the hardest things that I have ever done so hard that in the writing process I told myself that I was never doing this again. However, it is so exciting to see it in its final form. Like, I created this, you know? 
+
+*What’s your favorite anecdote from your book?*
+
+One of my favorite anecdotes from my book is, honestly, the text that opens the book from Edwidge Danticat’s *Children of the Sea*. This story has stayed with me for years, and I think represents one of the undercurrents of my work. The protagonist shares that Haitians are treated like dogs, less than human in The Bahamas. Haitians are treated poorly even though there are similarities in culture, history, and lineage from West Africa and through the Trans-Atlantic slave trade between Bahamians and Haitians. One of my participants spoke about this in his interview. He discussed the ways nationalism and national identity are often counterproductive to the goals of Pan Africanism. Instead of viewing Haitians as a part of a similar struggle against the legacy of slavery, colonialism, and imperialism, many Bahamians view Haitians as their enemy and a threat to their sense of self and country. 
+
+*What’s next?* 
+
+I have a few projects that I am working on that I am excited about. I am currently working on my next book project which details the desegregation of Girard College, a boarding school created for white orphaned boys in 1848. I am working on a special issue with two colleagues in my department for the *Journal of Black Studies* which focuses on disciplinarity in the 21st century. I am also engaging in projects that promote and introduce undergraduate students to research. In spring 2026, I launched a podcast, *Black San Diego*, which explores the experiences of Black people in San Diego and how they create, find, and navigate community. In my Africana Research Lab, I worked with undergraduate students at San Diego State University to develop research questions and interview questions. Students are responsible for conducting their own interviews and editing and naming their episodes. This year, we will be producing season two, and I am looking forward to the stories that will be shared. There are a few other things in the pipeline, but they need a bit more time to marinate before sharing with the world.
