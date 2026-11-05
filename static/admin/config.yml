@@ -6,7 +6,7 @@
 
 backend:
   name: github
-  repo: rotunda-uvap/uvapweb
+  repo: uva-press/uvapweb
   branch: production
 
 # Local editing: run `npx decap-server` beside `npm run dev`, then open
